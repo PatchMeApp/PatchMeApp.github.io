@@ -1,0 +1,878 @@
+{
+    "ChampionName": "Yuumi",
+    "ChangePatches": [
+        "9.19",
+        "9.24",
+        "10.3",
+        "10.13",
+        "10.15",
+        "11.10",
+        "11.18",
+        "11.22",
+        "12.10",
+        "12.12"
+    ],
+    "Changes": {
+        "9.19": {
+            "B": "",
+            "P": "",
+            "Q": {
+                "SpellName": "Q - Prowling Projectile",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "SLOW: ",
+                            "Before": "20/32/44/56/68/80%",
+                            "Indicator": " ⇒ ",
+                            "After": "20% at all ranks"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "SLOW DURATION: ",
+                            "Before": "1.5 seconds",
+                            "Indicator": " ⇒ ",
+                            "After": "1 seconds"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "CAT NAP: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "Slow no longer decays over time"
+                        }
+                    }
+                ]
+            },
+            "W": "",
+            "E": "",
+            "R": ""
+        },
+        "9.24": {
+            "B": "",
+            "P": {
+                "SpellName": "Passive - Bop 'n' Block",
+                "Changes": [
+                    {
+                        "Tag": "NEW",
+                        "Change": {
+                            "Attribute": "BACK TO THE OG: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "Now restores 50-160 (levels 1-18) mana"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "BASE SHIELD: ",
+                            "Before": "50-300 (levels 1-18)",
+                            "Indicator": " ⇒ ",
+                            "After": "60-400 (levels 1-18)"
+                        }
+                    }
+                ]
+            },
+            "Q": {
+                "SpellName": "Q - Prowling Projectile",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "COST: ",
+                            "Before": "75/80/85/90/95/100 mana",
+                            "Indicator": " ⇒ ",
+                            "After": "85/90/95/100/105/110 mana"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "DAMAGE RATIO: ",
+                            "Before": "0.45 ability power",
+                            "Indicator": " ⇒ ",
+                            "After": "0.3 ability power"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "EMPOWERED DAMAGE: ",
+                            "Before": "50/85/120/155/190/225 (+0.65 ability power)",
+                            "Indicator": " ⇒ ",
+                            "After": "50/95/140/185/230/275 (+0.4 ability power)"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "MISSILE DURATION: ",
+                            "Before": "3 seconds",
+                            "Indicator": " ⇒ ",
+                            "After": "2 seconds"
+                        }
+                    }
+                ]
+            },
+            "W": {
+                "SpellName": "W - You and Me!",
+                "Changes": [
+                    {
+                        "Tag": "NEW",
+                        "Change": {
+                            "Attribute": "CHANNEL: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "Now has a channel time of 0.25 seconds when attaching from an unattached state"
+                        }
+                    },
+                    {
+                        "Tag": "REMOVED",
+                        "Change": {
+                            "Attribute": "LEAVE ME: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "Yuumi no longer teleports with her Anchor when attached"
+                        }
+                    },
+                    {
+                        "Tag": "NEW",
+                        "Change": {
+                            "Attribute": "SURPRISED ELECTRIC RAT FACE: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "Immobilizing Yuumi places this ability on a 5 second cooldown"
+                        }
+                    },
+                    {
+                        "Tag": "UPDATED",
+                        "Change": {
+                            "Attribute": "ADAPTIVE FORCE: ",
+                            "Before": "Yuumi and her ally grant each other 5/7/9/11/13 adaptive force (+4/7/10/13/16% of their respective adaptive force",
+                            "Indicator": " ⇒ ",
+                            "After": "Yuumi increases her ally's adaptive force by 12/14/16/18/20 (+12/14/16/18/20% of her attached ally's adaptive force) (Yuumi grants herself the same amount)"
+                        }
+                    }
+                ]
+            },
+            "E": {
+                "SpellName": "E - Zoomies",
+                "Changes": [
+                    {
+                        "Tag": "NEW",
+                        "Change": {
+                            "Attribute": "ATTACK ZOOMS: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "Grants 25/30/35/40/45% attack speed to herself or the Anchored target"
+                        }
+                    },
+                    {
+                        "Tag": "REMOVED",
+                        "Change": {
+                            "Attribute": "PASSIVE: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "No longer stocks charges"
+                        }
+                    },
+                    {
+                        "Tag": "REMOVED",
+                        "Change": {
+                            "Attribute": "INCREASED HEAL: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "No longer increases Yuumi's healing based on the target's missing health"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "HEAL: ",
+                            "Before": "30/40/50/60/70 (+0.1 ability power)",
+                            "Indicator": " ⇒ ",
+                            "After": "70/110/150/190/230 (+0.3 ability power)"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "COOLDOWN: ",
+                            "Before": "18/17/16/15/14 seconds",
+                            "Indicator": " ⇒ ",
+                            "After": "12/11/10/9/8 seconds"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "COST: ",
+                            "Before": "30/40/50/60/70 mana",
+                            "Indicator": " ⇒ ",
+                            "After": "100/115/130/145/160 mana"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "MOVEMENT SPEED: ",
+                            "Before": "25%, decays over time",
+                            "Indicator": " ⇒ ",
+                            "After": "15%, no longer decays over time"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "DURATION: ",
+                            "Before": "2 seconds",
+                            "Indicator": " ⇒ ",
+                            "After": "3 seconds"
+                        }
+                    }
+                ]
+            },
+            "R": ""
+        },
+        "10.3": {
+            "B": "",
+            "P": "",
+            "Q": {
+                "SpellName": "Q - Prowling Projectile",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "EMPOWERED DAMAGE: ",
+                            "Before": "50/95/140/185/230/275 (+0.4 ability power)",
+                            "Indicator": " ⇒ ",
+                            "After": "45/80/115/150/185/220 (+0.4 ability power) (+0.02-0.08 of target's current health)"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "COST: ",
+                            "Before": "85/90/95/100/105/110 mana",
+                            "Indicator": " ⇒ ",
+                            "After": "90 mana at all ranks"
+                        }
+                    }
+                ]
+            },
+            "W": {
+                "SpellName": "W - You and Me!",
+                "Changes": [
+                    {
+                        "Tag": "NEW",
+                        "Change": {
+                            "Attribute": ": ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "Silence no longer counts as an immobilizing effect that places You and Me! on a 5 second cooldown"
+                        }
+                    }
+                ]
+            },
+            "E": {
+                "SpellName": "E - Zoomies",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "HEAL: ",
+                            "Before": "70/110/150/190/230 (+0.3 ability power)",
+                            "Indicator": " ⇒ ",
+                            "After": "70/94/118/142/166/190 (+0.4 ability power)"
+                        }
+                    }
+                ]
+            },
+            "R": ""
+        },
+        "10.13": {
+            "B": "",
+            "P": "",
+            "Q": "",
+            "W": "",
+            "E": {
+                "SpellName": "E - Zoomies",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "COST: ",
+                            "Before": "100/115/130/145/160 mana",
+                            "Indicator": " ⇒ ",
+                            "After": "40/45/50/55/60 mana (+15% max mana)"
+                        }
+                    }
+                ]
+            },
+            "R": ""
+        },
+        "10.15": {
+            "B": "",
+            "P": {
+                "SpellName": "Passive - Bop ‘n’ Block",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "MANA RESTORE: ",
+                            "Before": "50-160 (levels 1-18)",
+                            "Indicator": " ⇒ ",
+                            "After": "25-100 (+8% maximum mana) (levels 1-18)"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "COOLDOWN: ",
+                            "Before": "20-8 seconds (levels 1-18)",
+                            "Indicator": " ⇒ ",
+                            "After": "18-6 seconds (levels 1-18)"
+                        }
+                    }
+                ]
+            },
+            "Q": "",
+            "W": "",
+            "E": "",
+            "R": ""
+        },
+        "11.10": {
+            "B": "",
+            "P": "",
+            "Q": {
+                "SpellName": "Q - Prowling Projectile",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "BASE DAMAGE: ",
+                            "Before": "40/70/100/130/160/190",
+                            "Indicator": " ⇒ ",
+                            "After": "50/80/110/140/170/200"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "BASE EMPOWERED DAMAGE: ",
+                            "Before": "45/85/125/165/205/245",
+                            "Indicator": " ⇒ ",
+                            "After": "60/100/140/180/220/260"
+                        }
+                    }
+                ]
+            },
+            "W": {
+                "SpellName": "W - You and Me!",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "ALLY ICON BUGFIX: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "Yuumi's ally's level icon now properly reverts back to normal when Yuumi detaches from said ally"
+                        }
+                    }
+                ]
+            },
+            "E": "",
+            "R": ""
+        },
+        "11.18": {
+            "B": "",
+            "P": {
+                "SpellName": "Passive - Bop 'n' Block",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Cooldown: ",
+                            "Before": "18-6 seconds (based on level)",
+                            "Indicator": " ⇒ ",
+                            "After": "14-6 seconds (based on level)"
+                        }
+                    }
+                ]
+            },
+            "Q": "",
+            "W": "",
+            "E": "",
+            "R": ""
+        },
+        "11.22": {
+            "B": "",
+            "P": "",
+            "Q": "",
+            "W": "",
+            "E": {
+                "SpellName": "E - Zoomies",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Move Speed: ",
+                            "Before": "15% (+10% per 100 AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "15% (+6% per 100 AP)"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Heal: ",
+                            "Before": "70/105/140/175/210 (+40% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "70/100/130/160/190 (+35% AP)"
+                        }
+                    }
+                ]
+            },
+            "R": ""
+        },
+        "12.10": {
+            "B": {
+                "SpellName": "Base Stats",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "BASE HEALTH: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "+70"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "HEALTH GROWTH: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "+14"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "ARMOR GROWTH: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "+1.2"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "MAGIC RESIST GROWTH: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "+0.8"
+                        }
+                    }
+                ]
+            },
+            "P": {
+                "SpellName": "Passive - Bop 'n' Block",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "SHIELD: ",
+                            "Before": "60-400 (levels 1-18) (+30% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "56-360 (levels 1-18) (+25% AP)"
+                        }
+                    }
+                ]
+            },
+            "Q": "",
+            "W": "",
+            "E": {
+                "SpellName": "E - Zoomies",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "MANA COST: ",
+                            "Before": "40/45/50/55/60 (+15% maximum mana)",
+                            "Indicator": " ⇒ ",
+                            "After": "40/45/50/55/60 (+12% maximum mana)"
+                        }
+                    }
+                ]
+            },
+            "R": ""
+        },
+        "12.12": {
+            "B": "",
+            "P": {
+                "SpellName": "Passive - Bop 'n' Block",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Shield: ",
+                            "Before": "56-360 (varies, levels 1-18)",
+                            "Indicator": " ⇒ ",
+                            "After": "60-380 (varies, levels 1-18)"
+                        }
+                    },
+                    {
+                        "Tag": "MID-PATCH",
+                        "Change": {
+                            "Attribute": "BASIC ATTACK BONUS RANGE: ",
+                            "Before": "50",
+                            "Indicator": " ⇒ ",
+                            "After": "0"
+                        }
+                    }
+                ]
+            },
+            "Q": "",
+            "W": "",
+            "E": {
+                "SpellName": "E - Zoomies",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Heal: ",
+                            "Before": "70/100/130/160/190 (+35% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "70/90/110/130/150 (+35% AP)"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Bonus Move Speed: ",
+                            "Before": "15% (+6% per 100 AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "20% (+6% per 100 AP)"
+                        }
+                    }
+                ]
+            },
+            "R": ""
+        }
+    },
+    "stats": {
+        "hp": {
+            "base": 550,
+            "increment": 84
+        },
+        "mp": {
+            "base": 400,
+            "increment": 45
+        },
+        "armor": {
+            "base": 25,
+            "increment": 4.2
+        },
+        "spellBlock": {
+            "base": 25,
+            "increment": 1.1
+        },
+        "hpRegen": {
+            "base": 7,
+            "increment": 0.55
+        },
+        "mpRegen": {
+            "base": 10,
+            "increment": 0.4
+        },
+        "attackSpeed": {
+            "base": 0.625,
+            "increment": 0.01
+        },
+        "ms": {
+            "base": 330,
+            "increment": 0
+        },
+        "attackDamage": {
+            "base": 55,
+            "increment": 3.1
+        },
+        "attackRange": {
+            "base": 500,
+            "increment": 0
+        }
+    },
+    "spells": {
+        "P": {
+            "name": "Bop 'n' Block",
+            "cooldown": "14 - 6 (Level 1-18)",
+            "_rawTooltip": {
+                "fullTooltip": "Innate: Periodically, Yuumi's next basic attack against an enemy champion has an uncancelable windup, gains 50 bonus range, turns into a non-projectile, restores 25 − 100 (based on level) (+ 8% maximum mana) mana and grants her a 56 − 360 (based on level) (+ 25% AP) shield that lasts until it is broken.<br>While attached, the shield transfers to her Anchor.",
+                "parseInfo": []
+            }
+        },
+        "Q": {
+            "id": "YuumiQ",
+            "name": "Prowling Projectile",
+            "_rawTooltip": {
+                "fullTooltip": "Yuumi summons an errant missile that deals [[0]] to the first enemy hit. If the missile travels for 1 (+0.05) second before impacting, it deals [[1]] instead and [[2]] champions by 20% for 1 second.<br /><br />If cast while [[3]], Yuumi can control the missile using her mouse.?",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "50/80/110/140/170/200 {{0}} magic damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+30% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "magicDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "60/100/140/180/220/260 {{0}} plus 2/3.2/4.4/5.6/6.8/8% current Health magic damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+40% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "magicDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "Slows",
+                            "scaleHolders": []
+                        },
+                        "type": "status"
+                    },
+                    {
+                        "text": {
+                            "text": "Attached",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    }
+                ]
+            },
+            "maxRank": 6,
+            "cooldown": "13.5/12/10.5/9/7.5/6",
+            "cooldownByLevel": [
+                13.5,
+                12,
+                10.5,
+                9,
+                7.5,
+                6
+            ],
+            "cost": "90 Mana",
+            "costByLevel": [
+                90,
+                90,
+                90,
+                90,
+                90,
+                90
+            ],
+            "costType": " Mana"
+        },
+        "W": {
+            "id": "YuumiW",
+            "name": "You and Me!",
+            "_rawTooltip": {
+                "fullTooltip": "[[0]] Yuumi increases her [[1]] ally's Adaptive Force by 12/14/16/18 + 12/14/16/18/20%, and grants herself the same amount.<br /><br />[[2]] Yuumi dashes to an ally champion and [[3]] to them. While Yuumi is [[4]], she follows her partner's movement and is Untargetable except from towers.<br /><br />[[5]] effects on Yuumi place this Ability on a 5 second Cooldown.?",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "Passive:",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "Attached",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "Active:",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "Attaches",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "Attached",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "Immobilizing",
+                            "scaleHolders": []
+                        },
+                        "type": "status"
+                    }
+                ]
+            },
+            "maxRank": 5,
+            "cooldown": "0",
+            "cooldownByLevel": [
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            "cost": "No Cost",
+            "costByLevel": [
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            "costType": "No Cost"
+        },
+        "E": {
+            "id": "YuumiE",
+            "name": "Zoomies",
+            "_rawTooltip": {
+                "fullTooltip": "Yuumi restores [[0]] to herself and gains [[1]] and [[2]] for 3 seconds. If Yuumi is [[3]], this Ability affects her ally instead.?",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "70/90/110/130/150 {{0}} Health",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+35% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "healing"
+                    },
+                    {
+                        "text": {
+                            "text": "20 {{0}}% Move Speed",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+6% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "speed"
+                    },
+                    {
+                        "text": {
+                            "text": "25/30/35/40/45% Attack Speed",
+                            "scaleHolders": []
+                        },
+                        "type": "attackSpeed"
+                    },
+                    {
+                        "text": {
+                            "text": "Attached",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    }
+                ]
+            },
+            "maxRank": 5,
+            "cooldown": "12/11/10/9/8",
+            "cooldownByLevel": [
+                12,
+                11,
+                10,
+                9,
+                8
+            ],
+            "cost": "40/45/50/55 Mana + {{ percentmanacost*100 }}% Max Mana",
+            "costByLevel": [
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            "costType": " Mana + {{ percentmanacost*100 }}% Max Mana"
+        },
+        "R": {
+            "id": "YuumiR",
+            "name": "Final Chapter",
+            "_rawTooltip": {
+                "fullTooltip": "Yuumi channels for 3.5 seconds, launching 7 waves dealing [[0]]. Champions hit by 3 waves are [[1]] for 1.75 seconds.<br /><br />Yuumi can move and cast [[2]] and [[3]] while channeling.?",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "60/80/100 {{0}} magic damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+20% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "magicDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "Rooted",
+                            "scaleHolders": []
+                        },
+                        "type": "status"
+                    },
+                    {
+                        "text": {
+                            "text": "You and Me!",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "Zoomies",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    }
+                ]
+            },
+            "maxRank": 3,
+            "cooldown": "130/110/90",
+            "cooldownByLevel": [
+                130,
+                110,
+                90
+            ],
+            "cost": "100 Mana",
+            "costByLevel": [
+                100,
+                100,
+                100
+            ],
+            "costType": " Mana"
+        }
+    }
+}

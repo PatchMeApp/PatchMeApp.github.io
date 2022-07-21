@@ -1,0 +1,439 @@
+{
+    "ChampionName": "Nasus",
+    "ChangePatches": [
+        "10.7",
+        "10.22",
+        "10.25",
+        "11.12",
+        "12.10"
+    ],
+    "Changes": {
+        "10.7": {
+            "B": "",
+            "P": "",
+            "Q": "",
+            "W": {
+                "SpellName": "W - Wither",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "RANGE: ",
+                            "Before": "600",
+                            "Indicator": " ⇒ ",
+                            "After": "700"
+                        }
+                    }
+                ]
+            },
+            "E": {
+                "SpellName": "E - Spirit Fire",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "ARMOR REDUCTION: ",
+                            "Before": "15/20/25/30/35%",
+                            "Indicator": " ⇒ ",
+                            "After": "25/30/35/40/45%"
+                        }
+                    }
+                ]
+            },
+            "R": ""
+        },
+        "10.22": {
+            "B": "",
+            "P": "",
+            "Q": "",
+            "W": "",
+            "E": "",
+            "R": {
+                "SpellName": "R - Fury of the Sands",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "BONUS RESISTANCES: ",
+                            "Before": "",
+                            "Indicator": " ⇒ ",
+                            "After": "15/35/55"
+                        }
+                    },
+                    {
+                        "Tag": "REMOVED",
+                        "Change": {
+                            "Attribute": "BONUS RESISTANCES PER SECOND: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "Nasus no longer gains 1/2/3 bonus resistances per second"
+                        }
+                    }
+                ]
+            }
+        },
+        "10.25": {
+            "B": "",
+            "P": "",
+            "Q": {
+                "SpellName": "Q - Siphoning Strike",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "COOLDOWN: ",
+                            "Before": "8/7/6/5/4 seconds",
+                            "Indicator": " ⇒ ",
+                            "After": "7.5/6.5/5.5/4.5/3.5 seconds"
+                        }
+                    }
+                ]
+            },
+            "W": "",
+            "E": "",
+            "R": ""
+        },
+        "11.12": {
+            "B": "",
+            "P": {
+                "SpellName": "Passive - Soul Eater",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "LIFE STEAL: ",
+                            "Before": "12/18/24% (level 1/7/13)",
+                            "Indicator": " ⇒ ",
+                            "After": "10/16/22% (level 1/7/13)"
+                        }
+                    }
+                ]
+            },
+            "Q": "",
+            "W": "",
+            "E": "",
+            "R": ""
+        },
+        "12.10": {
+            "B": {
+                "SpellName": "Base Stats",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "BASE HEALTH: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "+70"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "HEALTH GROWTH: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "+14"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "ARMOR GROWTH: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "+1.2"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "MAGIC RESIST GROWTH: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "+0.8"
+                        }
+                    }
+                ]
+            },
+            "P": {
+                "SpellName": "Passive - Soul Eater",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Passive - Life Steal: ",
+                            "Before": "10/16/22%",
+                            "Indicator": " ⇒ ",
+                            "After": "9/14/19% (levels 1/7/13)"
+                        }
+                    }
+                ]
+            },
+            "Q": "",
+            "W": "",
+            "E": "",
+            "R": ""
+        }
+    },
+    "stats": {
+        "hp": {
+            "base": 631,
+            "increment": 104
+        },
+        "mp": {
+            "base": 326,
+            "increment": 62
+        },
+        "armor": {
+            "base": 34,
+            "increment": 4.7
+        },
+        "spellBlock": {
+            "base": 32,
+            "increment": 2.05
+        },
+        "hpRegen": {
+            "base": 9,
+            "increment": 0.9
+        },
+        "mpRegen": {
+            "base": 7.44,
+            "increment": 0.5
+        },
+        "attackSpeed": {
+            "base": 0.638,
+            "increment": 0.0348
+        },
+        "ms": {
+            "base": 350,
+            "increment": 0
+        },
+        "attackDamage": {
+            "base": 67,
+            "increment": 3.5
+        },
+        "attackRange": {
+            "base": 125,
+            "increment": 0
+        }
+    },
+    "spells": {
+        "P": {
+            "name": "Soul Eater",
+            "cooldown": "",
+            "_rawTooltip": {
+                "fullTooltip": "Innate: Nasus gains 9 / 14 / 19% (based on level) life steal.",
+                "parseInfo": []
+            }
+        },
+        "Q": {
+            "id": "NasusQ",
+            "name": "Siphoning Strike",
+            "_rawTooltip": {
+                "fullTooltip": "Nasus' next Attack deals an additional [[0]]. Killing an enemy with this Attack permanently increases its damage by 3, increased to 12 against champions, large minions and large jungle monsters.<br /><br />[[1]]?",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "30/50/70/90/110 {{0}} physical damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+1 per stack of ?)",
+                                    "scaleId": "?"
+                                }
+                            ]
+                        },
+                        "type": "physicalDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "This Ability triggers spell effects upon dealing damage.",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    }
+                ]
+            },
+            "maxRank": 5,
+            "cooldown": "7.5/6.5/5.5/4.5/3.5",
+            "cooldownByLevel": [
+                7.5,
+                6.5,
+                5.5,
+                4.5,
+                3.5
+            ],
+            "cost": "20 Mana",
+            "costByLevel": [
+                20,
+                20,
+                20,
+                20,
+                20
+            ],
+            "costType": " Mana"
+        },
+        "W": {
+            "id": "NasusW",
+            "name": "Wither",
+            "_rawTooltip": {
+                "fullTooltip": "Nasus ages a champion, [[0]] them by 35%, increasing to 47/59/71/83/95% over 5 seconds. Their Attack Speed is also reduced by 50% of the [[1]].?",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "Slowing",
+                            "scaleHolders": []
+                        },
+                        "type": "status"
+                    },
+                    {
+                        "text": {
+                            "text": "Slow",
+                            "scaleHolders": []
+                        },
+                        "type": "status"
+                    }
+                ]
+            },
+            "maxRank": 5,
+            "cooldown": "15/14/13/12/11",
+            "cooldownByLevel": [
+                15,
+                14,
+                13,
+                12,
+                11
+            ],
+            "cost": "80 Mana",
+            "costByLevel": [
+                80,
+                80,
+                80,
+                80,
+                80
+            ],
+            "costType": " Mana"
+        },
+        "E": {
+            "id": "NasusE",
+            "name": "Spirit Fire",
+            "_rawTooltip": {
+                "fullTooltip": "Nasus ignites a spirit flame, dealing [[0]]. Enemies in the area lose [[1]] and take [[2]] over 5 seconds.?",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "55/95/135/175/215 {{0}} magic damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+60% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "magicDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "25/30/35/40/45% Armor",
+                            "scaleHolders": []
+                        },
+                        "type": "scaleArmor"
+                    },
+                    {
+                        "text": {
+                            "text": "55/95/135/175/215 {{0}} magic damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+60% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "magicDamage"
+                    }
+                ]
+            },
+            "maxRank": 5,
+            "cooldown": "12",
+            "cooldownByLevel": [
+                12,
+                12,
+                12,
+                12,
+                12
+            ],
+            "cost": "70/85/100/115/130 Mana",
+            "costByLevel": [
+                70,
+                85,
+                100,
+                115,
+                130
+            ],
+            "costType": " Mana"
+        },
+        "R": {
+            "id": "NasusR",
+            "name": "Fury of the Sands",
+            "_rawTooltip": {
+                "fullTooltip": "Nasus becomes empowered in the sandstorm for 15 seconds, increasing his [[0]] and [[1]] and [[2]] by 40/55.<br /><br />While the storm rages, nearby enemies take [[3]] each second and [[4]] has a 50% reduced Cooldown.?",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "maximum Health by 300/450",
+                            "scaleHolders": []
+                        },
+                        "type": "healing"
+                    },
+                    {
+                        "text": {
+                            "text": "Armor",
+                            "scaleHolders": []
+                        },
+                        "type": "scaleArmor"
+                    },
+                    {
+                        "text": {
+                            "text": "Magic Resistance",
+                            "scaleHolders": []
+                        },
+                        "type": "scaleMR"
+                    },
+                    {
+                        "text": {
+                            "text": "3/4/5% {{0}} of their maximum Health as magic damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+1% per 100 AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "magicDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "Siphoning Strike",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    }
+                ]
+            },
+            "maxRank": 3,
+            "cooldown": "120",
+            "cooldownByLevel": [
+                120,
+                120,
+                120
+            ],
+            "cost": "100 Mana",
+            "costByLevel": [
+                100,
+                100,
+                100
+            ],
+            "costType": " Mana"
+        }
+    }
+}

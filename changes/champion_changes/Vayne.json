@@ -1,0 +1,387 @@
+{
+    "ChampionName": "Vayne",
+    "ChangePatches": [
+        "9.19",
+        "10.19",
+        "12.10"
+    ],
+    "Changes": {
+        "9.19": {
+            "B": "",
+            "P": "",
+            "Q": "",
+            "W": "",
+            "E": "",
+            "R": {
+                "SpellName": "R - Final Hour",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "BONUS ATTACK DAMAGE: ",
+                            "Before": "20/30/40",
+                            "Indicator": " ⇒ ",
+                            "After": "25/40/55"
+                        }
+                    }
+                ]
+            }
+        },
+        "10.19": {
+            "B": "",
+            "P": "",
+            "Q": "",
+            "W": "",
+            "E": "",
+            "R": {
+                "SpellName": "R - Final Hour",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "BONUS ATTACK DAMAGE: ",
+                            "Before": "25/40/55",
+                            "Indicator": " ⇒ ",
+                            "After": "35/50/65"
+                        }
+                    }
+                ]
+            }
+        },
+        "12.10": {
+            "B": {
+                "SpellName": "Base Stats",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "BASE HEALTH: ",
+                            "Before": "585",
+                            "Indicator": " ⇒ ",
+                            "After": "550"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "BASE HEALTH: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "+70"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "HEALTH GROWTH: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "+14"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "ARMOR GROWTH: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "+1.2"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "MAGIC RESIST GROWTH: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": " +0.8"
+                        }
+                    }
+                ]
+            },
+            "P": "",
+            "Q": "",
+            "W": {
+                "SpellName": "W - Silver Bolts",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "BONUS TRUE DAMAGE: ",
+                            "Before": "50/65/80/95/110 (+4/6.5/9/11.5/14% of target's maximum health)",
+                            "Indicator": " ⇒ ",
+                            "After": "50/65/80/95/110 (+4/6/8/10/12% of target's maximum health)"
+                        }
+                    }
+                ]
+            },
+            "E": "",
+            "R": ""
+        }
+    },
+    "stats": {
+        "hp": {
+            "base": 550,
+            "increment": 103
+        },
+        "mp": {
+            "base": 231.8,
+            "increment": 35
+        },
+        "armor": {
+            "base": 23,
+            "increment": 4.6
+        },
+        "spellBlock": {
+            "base": 30,
+            "increment": 1.3
+        },
+        "hpRegen": {
+            "base": 3.5,
+            "increment": 0.55
+        },
+        "mpRegen": {
+            "base": 6.97,
+            "increment": 0.4
+        },
+        "attackSpeed": {
+            "base": 0.658,
+            "increment": 0.033
+        },
+        "ms": {
+            "base": 330,
+            "increment": 0
+        },
+        "attackDamage": {
+            "base": 60,
+            "increment": 2.36
+        },
+        "attackRange": {
+            "base": 550,
+            "increment": 0
+        }
+    },
+    "spells": {
+        "P": {
+            "name": "Night Hunter",
+            "cooldown": "",
+            "_rawTooltip": {
+                "fullTooltip": "Innate: Vayne gains [[0]] when moving towards a nearby visible enemy champion.<br>Final Hour: Night Hunter's bonus movement spee is tripled to 90.",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "30 bonus movement speed",
+                            "scaleHolders": []
+                        },
+                        "type": "speed"
+                    }
+                ]
+            }
+        },
+        "Q": {
+            "id": "VayneTumble",
+            "name": "Tumble",
+            "_rawTooltip": {
+                "fullTooltip": "Vayne rolls a short distance, and deals an additional [[0]] on her next Attack.<br /><br />[[1]]?",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "60/65/70/75/80% AD physical damage",
+                            "scaleHolders": []
+                        },
+                        "type": "physicalDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "This Ability triggers spell effects upon dealing damage.",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    }
+                ]
+            },
+            "maxRank": 5,
+            "cooldown": "4/3.5/3/2.5/2",
+            "cooldownByLevel": [
+                4,
+                3.5,
+                3,
+                2.5,
+                2
+            ],
+            "cost": "30 Mana",
+            "costByLevel": [
+                30,
+                30,
+                30,
+                30,
+                30
+            ],
+            "costType": " Mana"
+        },
+        "W": {
+            "id": "VayneSilveredBolts",
+            "name": "Silver Bolts",
+            "_rawTooltip": {
+                "fullTooltip": "[[0]]: Every third consecutive Attack or Ability against an enemy deals an additional [[1]].?",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "Passive",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "4/6/8/10/12% max Health true damage",
+                            "scaleHolders": []
+                        },
+                        "type": "trueDamage"
+                    }
+                ]
+            },
+            "maxRank": 5,
+            "cooldown": "0",
+            "cooldownByLevel": [
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            "cost": "Passive",
+            "costByLevel": [
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            "costType": "Passive"
+        },
+        "E": {
+            "id": "VayneCondemn",
+            "name": "Condemn",
+            "_rawTooltip": {
+                "fullTooltip": "Vayne fires a bolt that [[0]] and deals [[1]]. If the target collides with terrain, they take [[2]] and become [[3]] for 1.5 seconds. ?",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "Knocks Back",
+                            "scaleHolders": []
+                        },
+                        "type": "status"
+                    },
+                    {
+                        "text": {
+                            "text": "50/85/120/155/190 {{0}} physical damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+50% Bonus AD)",
+                                    "scaleId": "AD"
+                                }
+                            ]
+                        },
+                        "type": "physicalDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "75/127.5/180/232.5/285 {{0}} bonus physical damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+75% Bonus AD)",
+                                    "scaleId": "AD"
+                                }
+                            ]
+                        },
+                        "type": "physicalDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "Stunned",
+                            "scaleHolders": []
+                        },
+                        "type": "status"
+                    }
+                ]
+            },
+            "maxRank": 5,
+            "cooldown": "20/18/16/14/12",
+            "cooldownByLevel": [
+                20,
+                18,
+                16,
+                14,
+                12
+            ],
+            "cost": "90 Mana",
+            "costByLevel": [
+                90,
+                90,
+                90,
+                90,
+                90
+            ],
+            "costType": " Mana"
+        },
+        "R": {
+            "id": "VayneInquisition",
+            "name": "Final Hour",
+            "_rawTooltip": {
+                "fullTooltip": "Vayne gains [[0]] for 8/10 seconds, extended by 4 seconds whenever a champion damaged by Vayne dies within 3 seconds. Additionally, during the duration:[[1]] instead grants [[2]].[[3]] is reduced by 30/40%, and grants [[4]] for 1 second.?",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "25/40 Attack Damage",
+                            "scaleHolders": []
+                        },
+                        "type": "physicalDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "Night Hunter",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "90 Move Speed",
+                            "scaleHolders": []
+                        },
+                        "type": "speed"
+                    },
+                    {
+                        "text": {
+                            "text": "The Cooldown of Tumble",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "Invisibility",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    }
+                ]
+            },
+            "maxRank": 3,
+            "cooldown": "100/85/70",
+            "cooldownByLevel": [
+                100,
+                85,
+                70
+            ],
+            "cost": "80 Mana",
+            "costByLevel": [
+                80,
+                80,
+                80
+            ],
+            "costType": " Mana"
+        }
+    }
+}

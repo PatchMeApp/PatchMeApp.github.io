@@ -1,0 +1,390 @@
+{
+    "ChampionName": "Nilah",
+    "ChangePatches": [
+        "12.13"
+    ],
+    "Changes": {
+        "12.13": {
+            "B": {
+                "SpellName": "Base Stats",
+                "Changes": [
+                    {
+                        "Tag": "MID-PATCH",
+                        "Change": {
+                            "Attribute": "BASE HEALTH: ",
+                            "Before": "590",
+                            "Indicator": " ⇒ ",
+                            "After": "570"
+                        }
+                    },
+                    {
+                        "Tag": "MID-PATCH",
+                        "Change": {
+                            "Attribute": "BASE ARMOR: ",
+                            "Before": "30",
+                            "Indicator": " ⇒ ",
+                            "After": "27"
+                        }
+                    }
+                ]
+            },
+            "P": {
+                "SpellName": "P - Joy Unending",
+                "Changes": [
+                    {
+                        "Tag": "MID-PATCH",
+                        "Change": {
+                            "Attribute": "HEAL INCREASE: ",
+                            "Before": "10%",
+                            "Indicator": " ⇒ ",
+                            "After": "7.5%"
+                        }
+                    },
+                    {
+                        "Tag": "MID-PATCH",
+                        "Change": {
+                            "Attribute": "SHIELD INCREASE: ",
+                            "Before": "20%",
+                            "Indicator": " ⇒ ",
+                            "After": "15%"
+                        }
+                    }
+                ]
+            },
+            "Q": {
+                "SpellName": "Q - Formless Blade",
+                "Changes": [
+                    {
+                        "Tag": "MID-PATCH",
+                        "Change": {
+                            "Attribute": "EMPOWERED ATTACKS: ",
+                            "Before": "110% Total AD",
+                            "Indicator": " ⇒ ",
+                            "After": "100% Total AD"
+                        }
+                    },
+                    {
+                        "Tag": "MID-PATCH",
+                        "Change": {
+                            "Attribute": "EMPOWERED BONUS ATTACK SPEED: ",
+                            "Before": "15-65% (based on level)",
+                            "Indicator": " ⇒ ",
+                            "After": "10-60% (based on level)"
+                        }
+                    }
+                ]
+            },
+            "W": "",
+            "E": {
+                "SpellName": "E - Slipstream",
+                "Changes": [
+                    {
+                        "Tag": "MID-PATCH",
+                        "Change": {
+                            "Attribute": "RECHARGE RATE: ",
+                            "Before": "24/21/18/15/12",
+                            "Indicator": " ⇒ ",
+                            "After": "26/22.5/19/15.5/12"
+                        }
+                    }
+                ]
+            },
+            "R": ""
+        }
+    },
+    "stats": {
+        "hp": {
+            "base": 590,
+            "increment": 101
+        },
+        "mp": {
+            "base": 350,
+            "increment": 35
+        },
+        "armor": {
+            "base": 30,
+            "increment": 4.2
+        },
+        "spellBlock": {
+            "base": 32,
+            "increment": 2.05
+        },
+        "hpRegen": {
+            "base": 4,
+            "increment": 0.9
+        },
+        "mpRegen": {
+            "base": 8.18,
+            "increment": 0.7
+        },
+        "attackSpeed": {
+            "base": 0.697,
+            "increment": 0.03
+        },
+        "ms": {
+            "base": 340,
+            "increment": 0
+        },
+        "attackDamage": {
+            "base": 58,
+            "increment": 2
+        },
+        "attackRange": {
+            "base": 225,
+            "increment": 0
+        }
+    },
+    "spells": {
+        "P": {
+            "name": "Joy Unending",
+            "cooldown": "",
+            "_rawTooltip": {
+                "fullTooltip": "Innate: Whenever Nilah kills a minion, she and the nearest allied champion gain an additional 50% of the experience they would have lost from sharing.<br>Innate: Whenever a nearby allied champion uses an ability to heal or shield either Nilah or themselves, they both receive a bonus amount equal to 7.5% of the healing or 15% of the shielding after a 0.5-second delay. Bonus shielding lasts as long as the shield that triggered the effect, up to a maximum duration of 4 seconds.",
+                "parseInfo": []
+            }
+        },
+        "Q": {
+            "id": "NilahQ",
+            "name": "Formless Blade",
+            "_rawTooltip": {
+                "fullTooltip": "[[0]] Nilah gains 3300% per 100 Crit Chance Armor Penetration, and her Attacks against champions restore [[1]]. Overhealing from this is converted into a [[2]] for 6 seconds.<br /><br />[[3]] Nilah cracks her whip-blade, dealing [[4]], increased by her Critical Strike Chance. If an enemy unit or structure is hit, Nilah gains 125 Attack Range and [[5]], and her Attacks hit in a cone as [[6]] for 4 seconds.<br />?",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "Passive:",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "1500% per 100 Crit Chance damage dealt as Health",
+                            "scaleHolders": []
+                        },
+                        "type": "healing"
+                    },
+                    {
+                        "text": {
+                            "text": "Shield",
+                            "scaleHolders": []
+                        },
+                        "type": "shield"
+                    },
+                    {
+                        "text": {
+                            "text": "Active:",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "5/10/15/20/25 {{0}} * {{1}} physical damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+90/100/110/120/130% AD)",
+                                    "scaleId": "AD"
+                                },
+                                {
+                                    "scale": "(1 + 100% Crit Chance)",
+                                    "scaleId": "Chance"
+                                }
+                            ]
+                        },
+                        "type": "physicalDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "15 - 65 {{0}}% Attack Speed",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(based on champion level)",
+                                    "scaleId": "level"
+                                }
+                            ]
+                        },
+                        "type": "attackSpeed"
+                    },
+                    {
+                        "text": {
+                            "text": "110% AD physical damage",
+                            "scaleHolders": []
+                        },
+                        "type": "physicalDamage"
+                    }
+                ]
+            },
+            "maxRank": 5,
+            "cooldown": "4",
+            "cooldownByLevel": [
+                4,
+                4,
+                4,
+                4,
+                4
+            ],
+            "cost": "30 Mana",
+            "costByLevel": [
+                30,
+                30,
+                30,
+                30,
+                30
+            ],
+            "costType": " Mana"
+        },
+        "W": {
+            "id": "NilahW",
+            "name": "Jubilant Veil",
+            "_rawTooltip": {
+                "fullTooltip": "Nilah envelops herself in mist for 2.25 seconds, becoming Ghosted, gaining [[0]], dodging Attacks, and reducing [[1]] taken by 25%.<br /><br />While active, touching allied champions envelops them in mist, granting the same benefits for 1.5 seconds.<br />?",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "15/17.5/20/22.5/25% Move Speed",
+                            "scaleHolders": []
+                        },
+                        "type": "speed"
+                    },
+                    {
+                        "text": {
+                            "text": "magic damage",
+                            "scaleHolders": []
+                        },
+                        "type": "magicDamage"
+                    }
+                ]
+            },
+            "maxRank": 5,
+            "cooldown": "26/25/24/23/22",
+            "cooldownByLevel": [
+                26,
+                25,
+                24,
+                23,
+                22
+            ],
+            "cost": "60/45/30/15/0 Mana",
+            "costByLevel": [
+                60,
+                45,
+                30,
+                15,
+                0
+            ],
+            "costType": " Mana"
+        },
+        "E": {
+            "id": "NilahE",
+            "name": "Slipstream",
+            "_rawTooltip": {
+                "fullTooltip": "Nilah dashes through a unit, dealing [[0]] to any enemies she passes through.?",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "65/90/115/140/165 {{0}} physical damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+20% Bonus AD)",
+                                    "scaleId": "AD"
+                                }
+                            ]
+                        },
+                        "type": "physicalDamage"
+                    }
+                ]
+            },
+            "maxRank": 5,
+            "cooldown": "0.5",
+            "cooldownByLevel": [
+                0.5,
+                0.5,
+                0.5,
+                0.5,
+                0.5
+            ],
+            "cost": "40 Mana",
+            "costByLevel": [
+                40,
+                40,
+                40,
+                40,
+                40
+            ],
+            "costType": " Mana"
+        },
+        "R": {
+            "id": "NilahR",
+            "name": "Apotheosis",
+            "_rawTooltip": {
+                "fullTooltip": "Nilah whirls her whip-blade, dealing [[0]] over 1 second, then finishes with a burst of [[1]] that also [[2]] nearby enemies toward her.<br /><br />Nilah heals herself and nearby allies by [[3]], converting any overhealing into a [[4]] for 6 seconds.<br />{{ spellmodifierdescriptionappend }}",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "60/120/180 {{0}} physical damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+140% Bonus AD)",
+                                    "scaleId": "AD"
+                                }
+                            ]
+                        },
+                        "type": "physicalDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "125/225/325 {{0}} physical damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+120% Bonus AD)",
+                                    "scaleId": "AD"
+                                }
+                            ]
+                        },
+                        "type": "physicalDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "Pulls",
+                            "scaleHolders": []
+                        },
+                        "type": "status"
+                    },
+                    {
+                        "text": {
+                            "text": "30% + {{ spell.nilahq:critlifesteal }} of her damage dealt to enemy champions' Health {{0}}",
+                            "scaleHolders": [
+                                {
+                                    "scale": "({{ otherhealingpercent*100 }}% for non-champions)",
+                                    "scaleId": "non-champions"
+                                }
+                            ]
+                        },
+                        "type": "healing"
+                    },
+                    {
+                        "text": {
+                            "text": "Shield",
+                            "scaleHolders": []
+                        },
+                        "type": "shield"
+                    }
+                ]
+            },
+            "maxRank": 3,
+            "cooldown": "110/95/80",
+            "cooldownByLevel": [
+                110,
+                95,
+                80
+            ],
+            "cost": "80 Mana",
+            "costByLevel": [
+                80,
+                80,
+                80
+            ],
+            "costType": " Mana"
+        }
+    }
+}

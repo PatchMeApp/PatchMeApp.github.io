@@ -1,0 +1,489 @@
+{
+    "ChampionName": "Kha'Zix",
+    "ChangePatches": [
+        "10.14",
+        "10.16",
+        "11.22",
+        "12.10"
+    ],
+    "Changes": {
+        "10.14": {
+            "B": "",
+            "P": "",
+            "Q": {
+                "SpellName": "Q - Taste Their Fear",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "ISOLATED TARGET BONUS DAMAGE: ",
+                            "Before": "100%",
+                            "Indicator": " ⇒ ",
+                            "After": "120%"
+                        }
+                    }
+                ]
+            },
+            "W": "",
+            "E": "",
+            "R": ""
+        },
+        "10.16": {
+            "B": "",
+            "P": "",
+            "Q": {
+                "SpellName": "Q - Taste Their Fear",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "ISOLATED TARGET BONUS DAMAGE: ",
+                            "Before": "120%",
+                            "Indicator": " ⇒ ",
+                            "After": "110%"
+                        }
+                    }
+                ]
+            },
+            "W": "",
+            "E": "",
+            "R": ""
+        },
+        "11.22": {
+            "B": "",
+            "P": "",
+            "Q": {
+                "SpellName": "Q - Taste Their Fear",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Total Damage: ",
+                            "Before": "60/85/110/135/160 (+130% bonus AD)",
+                            "Indicator": " ⇒ ",
+                            "After": "60/85/110/135/160 (+115% bonus AD)"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Isolated Damage: ",
+                            "Before": "126/178.5/231/283.55/336 (+273% bonus AD)",
+                            "Indicator": " ⇒ ",
+                            "After": "126/178.5/231/283.55/336 (+241.5% bonus AD)"
+                        }
+                    }
+                ]
+            },
+            "W": "",
+            "E": "",
+            "R": ""
+        },
+        "12.10": {
+            "B": {
+                "SpellName": "Base Stats",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "BASE HEALTH: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "+70"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "HEALTH GROWTH: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "+14"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "ARMOR GROWTH: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "+1.2"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "MAGIC RESIST GROWTH: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "+0.8"
+                        }
+                    }
+                ]
+            },
+            "P": "",
+            "Q": "",
+            "W": {
+                "SpellName": "W - Void Spike",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "W - Heal: ",
+                            "Before": "60/85/110/135/160 (+50% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "55/75/95/115/135 (+50% AP)"
+                        }
+                    }
+                ]
+            },
+            "E": "",
+            "R": ""
+        }
+    },
+    "stats": {
+        "hp": {
+            "base": 643,
+            "increment": 99
+        },
+        "mp": {
+            "base": 327,
+            "increment": 40
+        },
+        "armor": {
+            "base": 36,
+            "increment": 4.2
+        },
+        "spellBlock": {
+            "base": 32,
+            "increment": 2.05
+        },
+        "hpRegen": {
+            "base": 7.5,
+            "increment": 0.75
+        },
+        "mpRegen": {
+            "base": 7.59,
+            "increment": 0.5
+        },
+        "attackSpeed": {
+            "base": 0.668,
+            "increment": 0.027000000000000003
+        },
+        "ms": {
+            "base": 350,
+            "increment": 0
+        },
+        "attackDamage": {
+            "base": 63,
+            "increment": 3.1
+        },
+        "attackRange": {
+            "base": 125,
+            "increment": 0
+        }
+    },
+    "spells": {
+        "P": {
+            "name": "Unseen Threat",
+            "cooldown": "",
+            "_rawTooltip": {
+                "fullTooltip": "Innate: Kha'Zix gains Unseen Threat whenever the enemy loses sight of him or he activates Void Assault. Unseen Threat: Kha'Zix's next basic attack against an enemy champion deals [[0]] and slows them by 25% for 2 seconds.",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "14 − 116 {{0}} {{1}} bonus magic damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(based on level)",
+                                    "scaleId": "level"
+                                },
+                                {
+                                    "scale": "(+ 40% bonus AD)",
+                                    "scaleId": "AD"
+                                }
+                            ]
+                        },
+                        "type": "magicDamage"
+                    }
+                ]
+            }
+        },
+        "Q": {
+            "id": "KhazixQ",
+            "name": "Taste Their Fear",
+            "_rawTooltip": {
+                "fullTooltip": "Kha'zix slashes a nearby enemy, dealing [[0]]. This deals [[1]] instead to enemies [[2]] from their allies. ?",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "60/85/110/135/160 {{0}} physical damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+115% Bonus AD)",
+                                    "scaleId": "AD"
+                                }
+                            ]
+                        },
+                        "type": "physicalDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "126/178.5/231/283.5/336 {{0}} damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+241.5% Bonus AD)",
+                                    "scaleId": "AD"
+                                }
+                            ]
+                        },
+                        "type": "physicalDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "Isolated",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    }
+                ]
+            },
+            "maxRank": 5,
+            "cooldown": "4",
+            "cooldownByLevel": [
+                4,
+                4,
+                4,
+                4,
+                4
+            ],
+            "cost": "20 Mana",
+            "costByLevel": [
+                20,
+                20,
+                20,
+                20,
+                20
+            ],
+            "costType": " Mana"
+        },
+        "W": {
+            "id": "KhazixW",
+            "name": "Void Spike",
+            "_rawTooltip": {
+                "fullTooltip": "Kha'Zix fires a spike dealing [[0]] to the first enemy hit in a small area. If Kha'Zix is inside the area, he restores [[1]]?",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "85/115/145/175/205 {{0}} physical damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+100% Bonus AD)",
+                                    "scaleId": "AD"
+                                }
+                            ]
+                        },
+                        "type": "physicalDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "55/75/95/115/135 {{0}} Health",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+50% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "healing"
+                    }
+                ]
+            },
+            "maxRank": 5,
+            "cooldown": "9",
+            "cooldownByLevel": [
+                9,
+                9,
+                9,
+                9,
+                9
+            ],
+            "cost": "55/60/65/70/75 Mana",
+            "costByLevel": [
+                55,
+                60,
+                65,
+                70,
+                75
+            ],
+            "costType": " Mana"
+        },
+        "E": {
+            "id": "KhazixE",
+            "name": "Leap",
+            "_rawTooltip": {
+                "fullTooltip": "Kha'Zix leaps, dealing [[0]] upon landing.?",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "65/100/135/170/205 {{0}} physical damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+20% Bonus AD)",
+                                    "scaleId": "AD"
+                                }
+                            ]
+                        },
+                        "type": "physicalDamage"
+                    }
+                ]
+            },
+            "maxRank": 5,
+            "cooldown": "20/18/16/14/12",
+            "cooldownByLevel": [
+                20,
+                18,
+                16,
+                14,
+                12
+            ],
+            "cost": "50 Mana",
+            "costByLevel": [
+                50,
+                50,
+                50,
+                50,
+                50
+            ],
+            "costType": " Mana"
+        },
+        "R": {
+            "id": "KhazixR",
+            "name": "Void Assault",
+            "_rawTooltip": {
+                "fullTooltip": "[[0]] Kha'Zix becomes [[1]] for 1.25 seconds and gains [[2]]. Kha'zix may [[3]] this Ability once within 10 seconds.<br /><br />[[4]] Leveling up this Ability allows Kha'zix to [[5]] one of his Abilities, granting it additional effects.[[6]] Gain Ability range, Attack range, and lowers Cooldown by 45% against [[7]] targets.[[8]] Fires 3 spikes and [[9]] by 60%, increased against [[10]] targets.[[11]] Increased range and refreshes Cooldown on champion takedown.[[12]] [[13]] duration lasts 2 seconds and gains second [[14]].?",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "Active:",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "Invisible",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "40% Move Speed",
+                            "scaleHolders": []
+                        },
+                        "type": "speed"
+                    },
+                    {
+                        "text": {
+                            "text": "Recast",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "Passive:",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "Evolve",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "Taste Their Fear:",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "Isolated",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "Void Spike:",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "Slows",
+                            "scaleHolders": []
+                        },
+                        "type": "status"
+                    },
+                    {
+                        "text": {
+                            "text": "Isolated",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "Leap:",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "Void Assault:",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "Invisibility",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "Recast",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    }
+                ]
+            },
+            "maxRank": 3,
+            "cooldown": "100/85/70",
+            "cooldownByLevel": [
+                100,
+                85,
+                70
+            ],
+            "cost": "100 Mana",
+            "costByLevel": [
+                100,
+                100,
+                100
+            ],
+            "costType": " Mana"
+        }
+    }
+}

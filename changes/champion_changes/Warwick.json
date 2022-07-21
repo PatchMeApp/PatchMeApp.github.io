@@ -1,0 +1,470 @@
+{
+    "ChampionName": "Warwick",
+    "ChangePatches": [
+        "9.18",
+        "9.21",
+        "10.25",
+        "12.10"
+    ],
+    "Changes": {
+        "9.18": {
+            "B": "",
+            "P": "",
+            "Q": "",
+            "W": {
+                "SpellName": "W - Blood Hunt",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "BUGFIX: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "Warwick now properly gains bonus attack speed against all Blood Hunted enemies"
+                        }
+                    }
+                ]
+            },
+            "E": "",
+            "R": ""
+        },
+        "9.21": {
+            "B": "",
+            "P": "",
+            "Q": {
+                "SpellName": "Q - Jaws of the Beast",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "DAMAGE RATIO: ",
+                            "Before": "6/6.5/7/7.5/8% of the target's maximum health",
+                            "Indicator": " ⇒ ",
+                            "After": "6/7/8/9/10% of the target's maximum health"
+                        }
+                    }
+                ]
+            },
+            "W": {
+                "SpellName": "W - Blood Hunt",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "BONUS ATTACK SPEED : ",
+                            "Before": " 50/65/80/95/110% upon attacking a Blood Hunted target or an enemy unit below 50% of their maximum health",
+                            "Indicator": " ⇒ ",
+                            "After": "70/80/90/100/110% upon attacking a Blood Hunted target or an enemy unit below 50% of their maximum health"
+                        }
+                    }
+                ]
+            },
+            "E": "",
+            "R": ""
+        },
+        "10.25": {
+            "B": "",
+            "P": {
+                "SpellName": "Passive - Eternal Hunger",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "BONUS DAMAGE: ",
+                            "Before": "10-44 (level 1-18)",
+                            "Indicator": " ⇒ ",
+                            "After": "12-46 (levels 1-18) (+15% bonus AD) (+10% AP)"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "TOOLTIP BUGFIX: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "Updated tooltip from incorrectly stating that Eternal Hunger's bonus damage is 8-42 instead of 10-44, that healing is equal to damage attempted instead of damage dealt, and that below 25% health the healing is increased 300% instead of 250%"
+                        }
+                    }
+                ]
+            },
+            "Q": "",
+            "W": "",
+            "E": "",
+            "R": ""
+        },
+        "12.10": {
+            "B": {
+                "SpellName": "Base Stats",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "BASE HEALTH: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "+70"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "HEALTH GROWTH: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "+14"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "ARMOR GROWTH: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "+1.2"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "MAGIC RESIST GROWTH: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "+0.8"
+                        }
+                    }
+                ]
+            },
+            "P": "",
+            "Q": {
+                "SpellName": "Q - Jaws of the Beast",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Q - Heal Percentage: ",
+                            "Before": "30/45/60/75/90%",
+                            "Indicator": " ⇒ ",
+                            "After": "25/37.5/50/62.5/75%"
+                        }
+                    }
+                ]
+            },
+            "W": "",
+            "E": "",
+            "R": ""
+        }
+    },
+    "stats": {
+        "hp": {
+            "base": 620,
+            "increment": 99
+        },
+        "mp": {
+            "base": 280,
+            "increment": 35
+        },
+        "armor": {
+            "base": 33,
+            "increment": 4.4
+        },
+        "spellBlock": {
+            "base": 32,
+            "increment": 2.05
+        },
+        "hpRegen": {
+            "base": 4,
+            "increment": 0.75
+        },
+        "mpRegen": {
+            "base": 7.47,
+            "increment": 0.58
+        },
+        "attackSpeed": {
+            "base": 0.638,
+            "increment": 0.023
+        },
+        "ms": {
+            "base": 335,
+            "increment": 0
+        },
+        "attackDamage": {
+            "base": 65,
+            "increment": 3
+        },
+        "attackRange": {
+            "base": 125,
+            "increment": 0
+        }
+    },
+    "spells": {
+        "P": {
+            "name": "Eternal Hunger",
+            "cooldown": "",
+            "_rawTooltip": {
+                "fullTooltip": "Innate: Warwick deals [[0]] on-hit.<br>While below [[2]], Warwick also heals for [[1]] dealt by Eternal Hunger, increased to 250% while below [[3]].",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "12 − 46 {{0}} {{1}} {{2}} bonus magic damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(based on level)",
+                                    "scaleId": "level"
+                                },
+                                {
+                                    "scale": "(+ 15% bonus AD)",
+                                    "scaleId": "AD"
+                                },
+                                {
+                                    "scale": "(+ 10% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "magicDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "100% of the post-mitigation damage",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "50% maximum health",
+                            "scaleHolders": []
+                        },
+                        "type": "Health"
+                    },
+                    {
+                        "text": {
+                            "text": "25% maximum health",
+                            "scaleHolders": []
+                        },
+                        "type": "Health"
+                    }
+                ]
+            }
+        },
+        "Q": {
+            "id": "WarwickQ",
+            "name": "Jaws of the Beast",
+            "_rawTooltip": {
+                "fullTooltip": "[[0]] Warwick lunges forward and bites, dealing [[1]] and restoring [[2]].<br /><br />[[3]] Warwick lunges and clamps his jaws on the target, leaping behind them. While clamped, Warwick follows all movement of the target. After releasing his hold, he does the same damage and healing.?",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "Tap:",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "120% AD {{0}} plus 6/7/8/9/10% max Health magic damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+100% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "magicDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "25/37.5/50/62.5/75% of damage dealt as Health",
+                            "scaleHolders": []
+                        },
+                        "type": "healing"
+                    },
+                    {
+                        "text": {
+                            "text": "Hold:",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    }
+                ]
+            },
+            "maxRank": 5,
+            "cooldown": "6",
+            "cooldownByLevel": [
+                6,
+                6,
+                6,
+                6,
+                6
+            ],
+            "cost": "50/60/70/80/90 Mana",
+            "costByLevel": [
+                50,
+                60,
+                70,
+                80,
+                90
+            ],
+            "costType": " Mana"
+        },
+        "W": {
+            "id": "WarwickW",
+            "name": "Blood Hunt",
+            "_rawTooltip": {
+                "fullTooltip": "[[0]] Warwick can sense champions below 50% Health, gaining [[1]] towards them and gaining [[2]] against them. These bonuses are tripled against enemies below 20% Health.<br /><br />[[3]] Warwick can briefly sense all enemies, and gains this Ability's passive effect against the closest champion for 8 seconds, regardless of Health. Warwick cannot use this Ability while in combat with champions.?",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "Passive:",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "35/40/45/50/55% Move Speed",
+                            "scaleHolders": []
+                        },
+                        "type": "speed"
+                    },
+                    {
+                        "text": {
+                            "text": "70/80/90/100/110% Attack Speed",
+                            "scaleHolders": []
+                        },
+                        "type": "attackSpeed"
+                    },
+                    {
+                        "text": {
+                            "text": "Active:",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    }
+                ]
+            },
+            "maxRank": 5,
+            "cooldown": "120/105/90/75/60",
+            "cooldownByLevel": [
+                120,
+                105,
+                90,
+                75,
+                60
+            ],
+            "cost": "70 Mana",
+            "costByLevel": [
+                70,
+                70,
+                70,
+                70,
+                70
+            ],
+            "costType": " Mana"
+        },
+        "E": {
+            "id": "WarwickE",
+            "name": "Primal Howl",
+            "_rawTooltip": {
+                "fullTooltip": "Warwick gains 35/40/45/50/55% damage reduction for 2.5 seconds. After it ends, Warwick howls, [[0]] nearby enemies for 1 second. Warwick can [[1]] to end the Ability early.?",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "Fearing",
+                            "scaleHolders": []
+                        },
+                        "type": "status"
+                    },
+                    {
+                        "text": {
+                            "text": "Recast",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    }
+                ]
+            },
+            "maxRank": 5,
+            "cooldown": "15/14/13/12/11",
+            "cooldownByLevel": [
+                15,
+                14,
+                13,
+                12,
+                11
+            ],
+            "cost": "40 Mana",
+            "costByLevel": [
+                40,
+                40,
+                40,
+                40,
+                40
+            ],
+            "costType": " Mana"
+        },
+        "R": {
+            "id": "WarwickR",
+            "name": "Infinite Duress",
+            "_rawTooltip": {
+                "fullTooltip": "Warwick leaps a huge distance that scales with his [[0]], [[1]] the first champion he collides with while he channels for 1.5 seconds. He attacks that champion 3 times over the duration, applying %i:OnHit% [[2]] effects and dealing [[3]]. Warwick restores [[4]] during the channel as Health.?",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "Move Speed",
+                            "scaleHolders": []
+                        },
+                        "type": "speed"
+                    },
+                    {
+                        "text": {
+                            "text": "Suppressing",
+                            "scaleHolders": []
+                        },
+                        "type": "status"
+                    },
+                    {
+                        "text": {
+                            "text": "On-Hit",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "175/350/525 {{0}} magic damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+167% Bonus AD)",
+                                    "scaleId": "AD"
+                                }
+                            ]
+                        },
+                        "type": "magicDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "100% of all damage dealt",
+                            "scaleHolders": []
+                        },
+                        "type": "healing"
+                    }
+                ]
+            },
+            "maxRank": 3,
+            "cooldown": "110/90/70",
+            "cooldownByLevel": [
+                110,
+                90,
+                70
+            ],
+            "cost": "100 Mana",
+            "costByLevel": [
+                100,
+                100,
+                100
+            ],
+            "costType": " Mana"
+        }
+    }
+}

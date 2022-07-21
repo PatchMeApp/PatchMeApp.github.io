@@ -1,0 +1,537 @@
+{
+    "ChampionName": "Zac",
+    "ChangePatches": [
+        "9.19",
+        "11.8",
+        "12.10"
+    ],
+    "Changes": {
+        "9.19": {
+            "B": "",
+            "P": "",
+            "Q": "",
+            "W": "",
+            "E": "",
+            "R": {
+                "SpellName": "R - Let's Bounce!",
+                "Changes": [
+                    {
+                        "Tag": "NEW",
+                        "Change": {
+                            "Attribute": "GREEN POTION: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "Bloblets restore an additional 1/2/3% maximum health"
+                        }
+                    }
+                ]
+            }
+        },
+        "11.8": {
+            "B": "",
+            "P": "",
+            "Q": "",
+            "W": {
+                "SpellName": "W - Unstable Matter",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "DAMAGE: ",
+                            "Before": "25/40/55/70/85 (+4/5/6/7/8% of target’s maximum health) (+2% per 100 AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "35/50/65/80/95 (+4/5/6/7/8% of target’s maximum health) (+4% per 100 AP)"
+                        }
+                    }
+                ]
+            },
+            "E": "",
+            "R": ""
+        },
+        "12.10": {
+            "B": {
+                "SpellName": "Base Stats",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "BASE HEALTH: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "+70"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "HEALTH GROWTH: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "+14"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "ARMOR GROWTH: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "+1.2"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "MAGIC RESIST GROWTH: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "+0.8"
+                        }
+                    }
+                ]
+            },
+            "P": {
+                "SpellName": "P - Cell Division",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Passive - Healing Upon Consuming Chunks: ",
+                            "Before": "5/6/7/8%",
+                            "Indicator": " ⇒ ",
+                            "After": "4/4.75/5.5/6.25% maximum health"
+                        }
+                    }
+                ]
+            },
+            "Q": "",
+            "W": "",
+            "E": "",
+            "R": ""
+        }
+    },
+    "stats": {
+        "hp": {
+            "base": 685,
+            "increment": 109
+        },
+        "mp": {
+            "base": 0,
+            "increment": 0
+        },
+        "armor": {
+            "base": 33,
+            "increment": 4.7
+        },
+        "spellBlock": {
+            "base": 32,
+            "increment": 2.05
+        },
+        "hpRegen": {
+            "base": 8,
+            "increment": 0.5
+        },
+        "mpRegen": {
+            "base": 0,
+            "increment": 0
+        },
+        "attackSpeed": {
+            "base": 0.736,
+            "increment": 0.016
+        },
+        "ms": {
+            "base": 340,
+            "increment": 0
+        },
+        "attackDamage": {
+            "base": 60,
+            "increment": 3.4
+        },
+        "attackRange": {
+            "base": 175,
+            "increment": 0
+        }
+    },
+    "spells": {
+        "P": {
+            "name": "Cell Division",
+            "cooldown": 300,
+            "_rawTooltip": {
+                "fullTooltip": "Innate - The Secret Weapon: Zac gains increased percentage size equal to [[0]], capped at 35% increased size at [[1]]. Zac's size also reduces based on his missing health, down to 70% total size while at [[2]].<br>Innate: Every time Zac damages at least one enemy with an ability, he sheds, depending on the ability, a number of chunks of himself to a nearby location, landing towards visible nearby enemy champions and lasting for 6 seconds.<br>Both Zac and enemy champions can interact with these chunks by being within 50 units of them: Zac can move over them to consume them, healing for [[3]]; enemy champions can move over them to destroy them.<br>Periodically, upon taking fatal damagge, Zac enters resurrection for 8 / 7 / 6 / 5 / 4 (based on level) seconds and restores [[4]], splitting into 4 uncontrollable Bloblets. Each bloblet has [[5]] and moves towards Zac's location over the duration. Any damage the bloblets receive, excluding damage dealt in excess of their total health, is also redirected to Zac in true damage. While in resurrection, Zac is untargetable and unable to act, and cannot take damage from sources other than the redirected damage from his bloblets.<br>If any of the bloblets remain alive by the end of the duration, Zac is revived with [[6]]. If all bloblets are killed, the resurrection ends and Zac dies.",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "1.5% of his bonus health",
+                            "scaleHolders": []
+                        },
+                        "type": "Health"
+                    },
+                    {
+                        "text": {
+                            "text": "2333.33 bonus health",
+                            "scaleHolders": []
+                        },
+                        "type": "Health"
+                    },
+                    {
+                        "text": {
+                            "text": "0% health",
+                            "scaleHolders": []
+                        },
+                        "type": "Health"
+                    },
+                    {
+                        "text": {
+                            "text": "4 / 4.75 / 5.5 / 6.25% {{0}} of his maximum health",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(based on Let's Bounce!'s rank)",
+                                    "scaleId": "rank"
+                                }
+                            ]
+                        },
+                        "type": "Health"
+                    },
+                    {
+                        "text": {
+                            "text": "50% of his maximum health",
+                            "scaleHolders": []
+                        },
+                        "type": "Health"
+                    },
+                    {
+                        "text": {
+                            "text": "12% of his maximum health",
+                            "scaleHolders": []
+                        },
+                        "type": "Health"
+                    },
+                    {
+                        "text": {
+                            "text": "10 - 50% maximum health",
+                            "scaleHolders": []
+                        },
+                        "type": "Health"
+                    }
+                ]
+            }
+        },
+        "Q": {
+            "id": "ZacQ",
+            "name": "Stretching Strikes",
+            "_rawTooltip": {
+                "fullTooltip": "Zac stretches his arm out, attaching it to the first enemy hit to deal [[0]] and briefly [[1]] them. Zac's next Attack gains increased range and applies the same damage and [[2]]. <br /><br />If Zac hits a [[3]] enemy with this Attack, he [[4]] both towards each other. If they collide, they and surrounding enemies take [[5]] and are briefly [[6]].?",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "40/55/70/85/100 {{0}} {{1}} magic damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+30% AP)",
+                                    "scaleId": "AP"
+                                },
+                                {
+                                    "scale": "(+2.5% Health)",
+                                    "scaleId": "Health"
+                                }
+                            ]
+                        },
+                        "type": "magicDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "Slow",
+                            "scaleHolders": []
+                        },
+                        "type": "status"
+                    },
+                    {
+                        "text": {
+                            "text": "Slow",
+                            "scaleHolders": []
+                        },
+                        "type": "status"
+                    },
+                    {
+                        "text": {
+                            "text": "different",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "Knocks Up",
+                            "scaleHolders": []
+                        },
+                        "type": "status"
+                    },
+                    {
+                        "text": {
+                            "text": "40/55/70/85/100 {{0}} {{1}} magic damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+30% AP)",
+                                    "scaleId": "AP"
+                                },
+                                {
+                                    "scale": "(+2.5% Health)",
+                                    "scaleId": "Health"
+                                }
+                            ]
+                        },
+                        "type": "magicDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "Slowed",
+                            "scaleHolders": []
+                        },
+                        "type": "status"
+                    }
+                ]
+            },
+            "maxRank": 5,
+            "cooldown": "15/13.5/12/10.5/9",
+            "cooldownByLevel": [
+                15,
+                13.5,
+                12,
+                10.5,
+                9
+            ],
+            "cost": "8% of current Health ",
+            "costByLevel": [
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            "costType": "% of current Health ({{ healthcosttooltip }})"
+        },
+        "W": {
+            "id": "ZacW",
+            "name": "Unstable Matter",
+            "_rawTooltip": {
+                "fullTooltip": "Zac's body erupts, dealing [[0]] to nearby enemies.<br /><br />Absorbing [[1]] reduces this Ability's Cooldown by 1 second.?",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "35/50/65/80 + 4/5/6/7/8% {{0}} max Health magic damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+4% per 100 AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "magicDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "Goo",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    }
+                ]
+            },
+            "maxRank": 5,
+            "cooldown": "5",
+            "cooldownByLevel": [
+                5,
+                5,
+                5,
+                5,
+                5
+            ],
+            "cost": "4% of current Health ",
+            "costByLevel": [
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            "costType": "% of current Health ({{ tooltiphealthcost }})"
+        },
+        "E": {
+            "id": "ZacE",
+            "name": "Elastic Slingshot",
+            "_rawTooltip": {
+                "fullTooltip": "[[0]] Zac pulls himself taut, charging up a dash over 0.9/1/1.1/1.2/1.3 seconds.<br /><br />[[1]] Zac launches himself and [[2]] enemies where he lands for up to 1 second (based on charge time), dealing them [[3]]. Zac spawns an extra chunk of [[4]] for each enemy champion hit.?",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "Begin Charging:",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "Release:",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "Knocks Up",
+                            "scaleHolders": []
+                        },
+                        "type": "status"
+                    },
+                    {
+                        "text": {
+                            "text": "60/110/160/210/260 {{0}} magic damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+90% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "magicDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "Goo",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    }
+                ]
+            },
+            "maxRank": 5,
+            "cooldown": "24/21/18/15/12",
+            "cooldownByLevel": [
+                24,
+                21,
+                18,
+                15,
+                12
+            ],
+            "cost": "4% of current Health ",
+            "costByLevel": [
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            "costType": "% of current Health ({{ healthcosttooltip }})"
+        },
+        "R": {
+            "id": "ZacR",
+            "name": "Let's Bounce!",
+            "_rawTooltip": {
+                "fullTooltip": "[[0]] [[1]] healing is increased to [[2]] per [[3]] chunk.<br /><br />[[4]] Zac bounces 4 times. The first bounce to hit each enemy [[5]] them back and deals [[6]]. Subsequent bounces deal [[7]] and [[8]] by 20% for 1 second.<br /><br />Zac gains up to [[9]] over time and can cast [[10]] while bouncing.?",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "Passive:",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "Cell Division",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "4.75/5.5/6.25% Health Health",
+                            "scaleHolders": []
+                        },
+                        "type": "healing"
+                    },
+                    {
+                        "text": {
+                            "text": "Goo",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "Active:",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "Knocks",
+                            "scaleHolders": []
+                        },
+                        "type": "status"
+                    },
+                    {
+                        "text": {
+                            "text": "140/210/280 {{0}} magic damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+40% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "magicDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "70/105/140 {{0}} magic damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+20% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "magicDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "Slow",
+                            "scaleHolders": []
+                        },
+                        "type": "status"
+                    },
+                    {
+                        "text": {
+                            "text": "50% Move Speed",
+                            "scaleHolders": []
+                        },
+                        "type": "speed"
+                    },
+                    {
+                        "text": {
+                            "text": "Unstable Matter",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    }
+                ]
+            },
+            "maxRank": 3,
+            "cooldown": "130/115/100",
+            "cooldownByLevel": [
+                130,
+                115,
+                100
+            ],
+            "cost": "No Cost",
+            "costByLevel": [
+                0,
+                0,
+                0
+            ],
+            "costType": "No Cost"
+        }
+    }
+}

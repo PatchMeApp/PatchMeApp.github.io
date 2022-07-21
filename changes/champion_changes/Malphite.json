@@ -1,0 +1,443 @@
+{
+    "ChampionName": "Malphite",
+    "ChangePatches": [
+        "9.22",
+        "11.12",
+        "12.10"
+    ],
+    "Changes": {
+        "9.22": {
+            "B": "",
+            "P": "",
+            "Q": "",
+            "W": "",
+            "E": "",
+            "R": {
+                "SpellName": "R - Unstoppable Force",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "RATIO: ",
+                            "Before": "1.0 ability power",
+                            "Indicator": " ⇒ ",
+                            "After": "0.8 ability power"
+                        }
+                    }
+                ]
+            }
+        },
+        "11.12": {
+            "B": "",
+            "P": "",
+            "Q": "",
+            "W": {
+                "SpellName": "W - Thunderclap",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "ON-HIT DAMAGE: ",
+                            "Before": "10/20/30/40/50 (+10% armor)",
+                            "Indicator": " ⇒ ",
+                            "After": "15/25/35/45/55 (+15% armor)"
+                        }
+                    }
+                ]
+            },
+            "E": "",
+            "R": ""
+        },
+        "12.10": {
+            "B": {
+                "SpellName": "Base Stats",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "BASE HEALTH: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "+70"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "HEALTH GROWTH: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "+14"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "ARMOR GROWTH: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "+1.2"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "MAGIC RESIST GROWTH: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "+0.8"
+                        }
+                    }
+                ]
+            },
+            "P": {
+                "SpellName": "P - Granite Shield",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Passive - Shield: ",
+                            "Before": "10%",
+                            "Indicator": " ⇒ ",
+                            "After": "9% maximum health"
+                        }
+                    }
+                ]
+            },
+            "Q": "",
+            "W": "",
+            "E": "",
+            "R": ""
+        }
+    },
+    "stats": {
+        "hp": {
+            "base": 644,
+            "increment": 104
+        },
+        "mp": {
+            "base": 280,
+            "increment": 60
+        },
+        "armor": {
+            "base": 37,
+            "increment": 4.95
+        },
+        "spellBlock": {
+            "base": 28,
+            "increment": 2.05
+        },
+        "hpRegen": {
+            "base": 7,
+            "increment": 0.55
+        },
+        "mpRegen": {
+            "base": 7.32,
+            "increment": 0.55
+        },
+        "attackSpeed": {
+            "base": 0.736,
+            "increment": 0.034
+        },
+        "ms": {
+            "base": 335,
+            "increment": 0
+        },
+        "attackDamage": {
+            "base": 62,
+            "increment": 4
+        },
+        "attackRange": {
+            "base": 125,
+            "increment": 0
+        }
+    },
+    "spells": {
+        "P": {
+            "name": "Granite Shield",
+            "cooldown": "10/8/6",
+            "_rawTooltip": {
+                "fullTooltip": "Innate- Shard of the Monolith: Malphite gains increased percentage size equal to [[1]], capped at 35% increased size at [[2]].<br>Innate: Malphite shields himself for [[0]]. The shield lasts until it is broken, and refreshes after a few seconds of not taking damage.",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "9% of his maximum health",
+                            "scaleHolders": []
+                        },
+                        "type": "Health"
+                    },
+                    {
+                        "text": {
+                            "text": "8% of his total armor",
+                            "scaleHolders": []
+                        },
+                        "type": "armor"
+                    },
+                    {
+                        "text": {
+                            "text": "437.5 armor",
+                            "scaleHolders": []
+                        },
+                        "type": "armor"
+                    }
+                ]
+            }
+        },
+        "Q": {
+            "id": "SeismicShard",
+            "name": "Seismic Shard",
+            "_rawTooltip": {
+                "fullTooltip": "Malphite launches a shard of earth at an enemy, dealing [[0]] and [[1]] them by 20/25/30/35/40% for 3 seconds. Malphite also steals the amount [[2]], gaining it as [[3]] for 3 seconds.?",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "70/120/170/220/270 {{0}} magic damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+60% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "magicDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "Slowing",
+                            "scaleHolders": []
+                        },
+                        "type": "status"
+                    },
+                    {
+                        "text": {
+                            "text": "Slowed",
+                            "scaleHolders": []
+                        },
+                        "type": "status"
+                    },
+                    {
+                        "text": {
+                            "text": "Move Speed",
+                            "scaleHolders": []
+                        },
+                        "type": "speed"
+                    }
+                ]
+            },
+            "maxRank": 5,
+            "cooldown": "8",
+            "cooldownByLevel": [
+                8,
+                8,
+                8,
+                8,
+                8
+            ],
+            "cost": "70/75/80/85/90 Mana",
+            "costByLevel": [
+                70,
+                75,
+                80,
+                85,
+                90
+            ],
+            "costType": " Mana"
+        },
+        "W": {
+            "id": "Obduracy",
+            "name": "Thunderclap",
+            "_rawTooltip": {
+                "fullTooltip": "[[0]]Malphite gains [[1]]. This effect is increased to [[2]] while [[3]] is active.<br /><br />[[4]]Malphite's next Attack deals an additional [[5]] and creates an aftershock which deals [[6]] in their direction. His Attacks continue to create aftershocks for the next 5 seconds.",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "Passive: ",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "10/15/20/25/30% Armor {{0}}",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(armor)",
+                                    "scaleId": "(armor"
+                                }
+                            ]
+                        },
+                        "type": "scaleArmor"
+                    },
+                    {
+                        "text": {
+                            "text": "30/45/60/75/90% {{0}}",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(armor)",
+                                    "scaleId": "(armor"
+                                }
+                            ]
+                        },
+                        "type": "scaleArmor"
+                    },
+                    {
+                        "text": {
+                            "text": "Granite Shield",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "Active: ",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "30/45/60/75/90 {{0}} {{1}} physical damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+20% AP)",
+                                    "scaleId": "AP"
+                                },
+                                {
+                                    "scale": "(+10% Armor)",
+                                    "scaleId": "Armor"
+                                }
+                            ]
+                        },
+                        "type": "physicalDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "15/25/35/45/55 {{0}} {{1}} physical damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+20% AP)",
+                                    "scaleId": "AP"
+                                },
+                                {
+                                    "scale": "(+15% Armor)",
+                                    "scaleId": "Armor"
+                                }
+                            ]
+                        },
+                        "type": "physicalDamage"
+                    }
+                ]
+            },
+            "maxRank": 5,
+            "cooldown": "12",
+            "cooldownByLevel": [
+                12,
+                12,
+                12,
+                12,
+                12
+            ],
+            "cost": "30/35/40/45/50 Mana",
+            "costByLevel": [
+                30,
+                35,
+                40,
+                45,
+                50
+            ],
+            "costType": " Mana"
+        },
+        "E": {
+            "id": "Landslide",
+            "name": "Ground Slam",
+            "_rawTooltip": {
+                "fullTooltip": "Malphite slams the ground, dealing [[0]] and reducing [[1]] for 3 seconds.?",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "60/95/130/165/200 {{0}} {{1}} magic damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+30% Armor)",
+                                    "scaleId": "Armor"
+                                },
+                                {
+                                    "scale": "(+60% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "magicDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "Attack Speed by 30/35/40/45%",
+                            "scaleHolders": []
+                        },
+                        "type": "attackSpeed"
+                    }
+                ]
+            },
+            "maxRank": 5,
+            "cooldown": "7",
+            "cooldownByLevel": [
+                7,
+                7,
+                7,
+                7,
+                7
+            ],
+            "cost": "50/55/60/65/70 Mana",
+            "costByLevel": [
+                50,
+                55,
+                60,
+                65,
+                70
+            ],
+            "costType": " Mana"
+        },
+        "R": {
+            "id": "UFSlash",
+            "name": "Unstoppable Force",
+            "_rawTooltip": {
+                "fullTooltip": "Malphite charges with the force of a landslide, dashing Unstoppably. At the end of the dash, Malphite [[0]] for 1.5 seconds and deals [[1]].?",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "Knocks Up",
+                            "scaleHolders": []
+                        },
+                        "type": "status"
+                    },
+                    {
+                        "text": {
+                            "text": "200/300/400 {{0}} magic damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+80% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "magicDamage"
+                    }
+                ]
+            },
+            "maxRank": 3,
+            "cooldown": "130/105/80",
+            "cooldownByLevel": [
+                130,
+                105,
+                80
+            ],
+            "cost": "100 Mana",
+            "costByLevel": [
+                100,
+                100,
+                100
+            ],
+            "costType": " Mana"
+        }
+    }
+}

@@ -1,0 +1,490 @@
+{
+    "ChampionName": "Cassiopeia",
+    "ChangePatches": [
+        "10.12",
+        "10.13",
+        "11.8",
+        "11.15",
+        "12.10"
+    ],
+    "Changes": {
+        "10.12": {
+            "B": {
+                "SpellName": "Base Stats",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "HEALTH: ",
+                            "Before": "575",
+                            "Indicator": " ⇒ ",
+                            "After": "560"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "ARMOR: ",
+                            "Before": "20",
+                            "Indicator": " ⇒ ",
+                            "After": "18"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "MAGIC RESIST: ",
+                            "Before": "30",
+                            "Indicator": " ⇒ ",
+                            "After": "34"
+                        }
+                    }
+                ]
+            },
+            "P": "",
+            "Q": "",
+            "W": "",
+            "E": "",
+            "R": ""
+        },
+        "10.13": {
+            "B": {
+                "SpellName": "Base Stats",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "MAGIC RESIST: ",
+                            "Before": "34",
+                            "Indicator": " ⇒ ",
+                            "After": "32"
+                        }
+                    }
+                ]
+            },
+            "P": "",
+            "Q": "",
+            "W": "",
+            "E": "",
+            "R": ""
+        },
+        "11.8": {
+            "B": "",
+            "P": "",
+            "Q": "",
+            "W": "",
+            "E": {
+                "SpellName": "E - Twin Fang",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "COST: ",
+                            "Before": "50 mana",
+                            "Indicator": " ⇒ ",
+                            "After": "50/48/46/44/42 mana"
+                        }
+                    }
+                ]
+            },
+            "R": ""
+        },
+        "11.15": {
+            "B": "",
+            "P": "",
+            "Q": "",
+            "W": "",
+            "E": {
+                "SpellName": "E - Twin Fang",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "BASE EMPOWERED DAMAGE: ",
+                            "Before": "10/30/50/70/90",
+                            "Indicator": " ⇒ ",
+                            "After": "20/40/60/80/100"
+                        }
+                    }
+                ]
+            },
+            "R": ""
+        },
+        "12.10": {
+            "B": {
+                "SpellName": "Base Stats",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "BASE HEALTH: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "+70"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "HEALTH GROWTH: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "+14"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "ARMOR GROWTH: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "+1.2"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "MAGIC RESIST GROWTH: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "+0.8"
+                        }
+                    }
+                ]
+            },
+            "P": "",
+            "Q": "",
+            "W": "",
+            "E": {
+                "SpellName": "E - Twin Fang",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "E - Healing Against Poisoned Targets: ",
+                            "Before": "12/14/16/18/20% AP",
+                            "Indicator": " ⇒ ",
+                            "After": "10/11.5/13/14.5/16% AP, (still reduced by 75% against minions and small monsters)"
+                        }
+                    }
+                ]
+            },
+            "R": ""
+        }
+    },
+    "stats": {
+        "hp": {
+            "base": 630,
+            "increment": 104
+        },
+        "mp": {
+            "base": 350,
+            "increment": 60
+        },
+        "armor": {
+            "base": 18,
+            "increment": 4.7
+        },
+        "spellBlock": {
+            "base": 32,
+            "increment": 1.3
+        },
+        "hpRegen": {
+            "base": 5.5,
+            "increment": 0.5
+        },
+        "mpRegen": {
+            "base": 8,
+            "increment": 0.8
+        },
+        "attackSpeed": {
+            "base": 0.647,
+            "increment": 0.015
+        },
+        "ms": {
+            "base": 328,
+            "increment": 0
+        },
+        "attackDamage": {
+            "base": 53,
+            "increment": 3
+        },
+        "attackRange": {
+            "base": 550,
+            "increment": 0
+        }
+    },
+    "spells": {
+        "P": {
+            "name": "Serpentine Grace",
+            "cooldown": "",
+            "_rawTooltip": {
+                "fullTooltip": "Innate: Cassiopeia cannot purchase boots and instead gains [[0]], for a total of [[1]].",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "4 − 72 {{0}} bonus movement speed",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(based on level)",
+                                    "scaleId": "level"
+                                }
+                            ]
+                        },
+                        "type": "speed"
+                    },
+                    {
+                        "text": {
+                            "text": "332 − 400 {{0}} movement speed",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(based on level)",
+                                    "scaleId": "level"
+                                }
+                            ]
+                        },
+                        "type": "speed"
+                    }
+                ]
+            }
+        },
+        "Q": {
+            "id": "CassiopeiaQ",
+            "name": "Noxious Blast",
+            "_rawTooltip": {
+                "fullTooltip": "Cassiopeia blasts noxious gas, [[0]] enemies and dealing [[1]] over 3 seconds. Hitting a champion grants Cassiopeia [[2]] decaying over 3 seconds.?",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "Poisoning",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "75/110/145/180/215 {{0}} magic damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+90% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "magicDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "30/35/40/45/50% Move Speed",
+                            "scaleHolders": []
+                        },
+                        "type": "speed"
+                    }
+                ]
+            },
+            "maxRank": 5,
+            "cooldown": "3.5",
+            "cooldownByLevel": [
+                3.5,
+                3.5,
+                3.5,
+                3.5,
+                3.5
+            ],
+            "cost": "50/60/70/80/90 Mana",
+            "costByLevel": [
+                50,
+                60,
+                70,
+                80,
+                90
+            ],
+            "costType": " Mana"
+        },
+        "W": {
+            "id": "CassiopeiaW",
+            "name": "Miasma",
+            "_rawTooltip": {
+                "fullTooltip": "Cassiopeia spews venom, leaving toxic clouds for 5 seconds. Enemies in the clouds take [[0]] per second, are [[1]], [[2]], and [[3]] by 40/50/60/70/80%.?",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "20/25/30/35/40 {{0}} magic damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+15% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "magicDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "Poisoned",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "Grounded",
+                            "scaleHolders": []
+                        },
+                        "type": "status"
+                    },
+                    {
+                        "text": {
+                            "text": "Slowed",
+                            "scaleHolders": []
+                        },
+                        "type": "status"
+                    }
+                ]
+            },
+            "maxRank": 5,
+            "cooldown": "24/22/20/18/16",
+            "cooldownByLevel": [
+                24,
+                22,
+                20,
+                18,
+                16
+            ],
+            "cost": "70/80/90/100/110 Mana",
+            "costByLevel": [
+                70,
+                80,
+                90,
+                100,
+                110
+            ],
+            "costType": " Mana"
+        },
+        "E": {
+            "id": "CassiopeiaE",
+            "name": "Twin Fang",
+            "_rawTooltip": {
+                "fullTooltip": "Cassiopeia launches deadly fangs, dealing [[0]]. If the enemy is [[1]], they take an additional [[2]] and Cassiopeia restores [[3]].<br /><br />If this kills the target, Cassiopeia restores [[4]].<br /><br />?",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "52 - 120 {{0}} {{1}} magic damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(based on champion level)",
+                                    "scaleId": "level"
+                                },
+                                {
+                                    "scale": "(+10% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "magicDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "Poisoned",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "20/40/60/80/100 {{0}} magic damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+60% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "magicDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "10/11.5/13/14.5/16% AP Health",
+                            "scaleHolders": []
+                        },
+                        "type": "healing"
+                    },
+                    {
+                        "text": {
+                            "text": "? Mana",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    }
+                ]
+            },
+            "maxRank": 5,
+            "cooldown": "0.75",
+            "cooldownByLevel": [
+                0.75,
+                0.75,
+                0.75,
+                0.75,
+                0.75
+            ],
+            "cost": "50/48/46/44/42 Mana",
+            "costByLevel": [
+                50,
+                48,
+                46,
+                44,
+                42
+            ],
+            "costType": " Mana"
+        },
+        "R": {
+            "id": "CassiopeiaR",
+            "name": "Petrifying Gaze",
+            "_rawTooltip": {
+                "fullTooltip": "Cassiopeia unleashes a petrifying gaze, dealing [[0]] and [[1]] enemies facing her for 2 seconds. Enemies facing away are [[2]] by 40% decaying over the same duration instead.?",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "150/250/350 {{0}} magic damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+50% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "magicDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "Stunning",
+                            "scaleHolders": []
+                        },
+                        "type": "status"
+                    },
+                    {
+                        "text": {
+                            "text": "Slowed",
+                            "scaleHolders": []
+                        },
+                        "type": "status"
+                    }
+                ]
+            },
+            "maxRank": 3,
+            "cooldown": "120/100/80",
+            "cooldownByLevel": [
+                120,
+                100,
+                80
+            ],
+            "cost": "100 Mana",
+            "costByLevel": [
+                100,
+                100,
+                100
+            ],
+            "costType": " Mana"
+        }
+    }
+}

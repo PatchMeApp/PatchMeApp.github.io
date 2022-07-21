@@ -1,0 +1,841 @@
+{
+    "ChampionName": "Garen",
+    "ChangePatches": [
+        "9.20",
+        "9.21",
+        "9.24",
+        "9.24b",
+        "10.4",
+        "10.6",
+        "10.7",
+        "11.9",
+        "11.14",
+        "12.10"
+    ],
+    "Changes": {
+        "9.20": {
+            "B": {
+                "SpellName": "Base Stats",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "ATTACK SPEED GROWTH: ",
+                            "Before": "2.9%",
+                            "Indicator": " ⇒ ",
+                            "After": "3.65%"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "HEALTH: ",
+                            "Before": "616.28",
+                            "Indicator": " ⇒ ",
+                            "After": "620"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "HEALTH GROWTH: ",
+                            "Before": "84.25",
+                            "Indicator": " ⇒ ",
+                            "After": "84"
+                        }
+                    }
+                ]
+            },
+            "P": {
+                "SpellName": "Passive - Perseverance",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "REGENERATION: ",
+                            "Before": "2/8% (based on level) of his maximum health per 5 seconds",
+                            "Indicator": " ⇒ ",
+                            "After": "1.5-10.1% (levels 1-18) of his maximum health per 5 seconds"
+                        }
+                    },
+                    {
+                        "Tag": "REMOVED",
+                        "Change": {
+                            "Attribute": "EMPOWERED REGENERATION: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "Garen no longer passively doubly regenerates health while below 25/50% (based on level) of his maximum health"
+                        }
+                    },
+                    {
+                        "Tag": "UPDATED",
+                        "Change": {
+                            "Attribute": "REGENERATION INTERRUPTION: ",
+                            "Before": "9 seconds when hit by non-minions before level 11; 4 seconds when hit by epic monsters, towers, or champions after level 11",
+                            "Indicator": " ⇒ ",
+                            "After": "7 seconds when hit by epic monsters, towers, or champions"
+                        }
+                    }
+                ]
+            },
+            "Q": {
+                "SpellName": "Q - Decisive Strike",
+                "Changes": [
+                    {
+                        "Tag": "NEW",
+                        "Change": {
+                            "Attribute": "CAST TIME: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "Now scales with Garen's attack speed, behaving more similarly to a basic attack"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "BUGFIX: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "Fixed a bug where when Garen is slowed, his Q's lockout time dramatically increased"
+                        }
+                    }
+                ]
+            },
+            "W": {
+                "SpellName": "W - Courage",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "RESISTANCES PER KILL: ",
+                            "Before": "0.33 bonus armor and magic resistance (max of 50 at 150 unit kills)",
+                            "Indicator": " ⇒ ",
+                            "After": "0.25 bonus armor and magic resistance (max of 30 at 150 unit kills)"
+                        }
+                    },
+                    {
+                        "Tag": "UPDATED",
+                        "Change": {
+                            "Attribute": "SHIELD ME: ",
+                            "Before": "Grants 30% extra damage reduction and Tenacity for the first 0.75 seconds",
+                            "Indicator": " ⇒ ",
+                            "After": "Grants a shield for 10% of his maximum health and 60% Tenacity for the first 0.75 seconds"
+                        }
+                    }
+                ]
+            },
+            "E": {
+                "SpellName": "E - Judgment",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "SPINS: ",
+                            "Before": "5-10 (levels 1-16)",
+                            "Indicator": " ⇒ ",
+                            "After": "7 (+1 per 20% attack speed from items and levels)"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "DAMAGE PER SPIN: ",
+                            "Before": "14/18/22/26/30 (+0.36-0.4 attack damage)",
+                            "Indicator": " ⇒ ",
+                            "After": "8/12/16/20/24 (+0-8 based on level) (+0.32-0.4 attack damage)"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "BONUS DAMAGE: ",
+                            "Before": "33% to a single enemy",
+                            "Indicator": " ⇒ ",
+                            "After": "25% to the nearest enemy"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "SPINS BEFORE SHRED: ",
+                            "Before": "4",
+                            "Indicator": " ⇒ ",
+                            "After": "6"
+                        }
+                    },
+                    {
+                        "Tag": "NEW",
+                        "Change": {
+                            "Attribute": "ALEXANDER THE GREAT: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "Now grants stacks of Conqueror on each spin"
+                        }
+                    }
+                ]
+            },
+            "R": {
+                "SpellName": "R - Demacian Justice",
+                "Changes": [
+                    {
+                        "Tag": "REMOVED",
+                        "Change": {
+                            "Attribute": "PASSIVE: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "Garen no longer marks enemies with the most kills in the last 5 minutes as the Villain"
+                        }
+                    },
+                    {
+                        "Tag": "NEW",
+                        "Change": {
+                            "Attribute": "LASIK: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "Grants vision of the target for 1 second, preventing it from cancelling if the target breaks line of sight"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "DAMAGE: ",
+                            "Before": "175/350/525 (+0.286 /0.333 /0.4 of the target’s missing health) as magic damage",
+                            "Indicator": " ⇒ ",
+                            "After": "150/300/450 (+0.2/0.25/0.3 of the target’s missing health) as true damage"
+                        }
+                    }
+                ]
+            }
+        },
+        "9.21": {
+            "B": "",
+            "P": "",
+            "Q": "",
+            "W": "",
+            "E": {
+                "SpellName": "E - Judgment",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "BASE DAMAGE PER SPIN: ",
+                            "Before": "8/12/16/20/24",
+                            "Indicator": " ⇒ ",
+                            "After": "4/8/12/16/20"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "DAMAGE RATIO PER SPIN: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "0-8.2 (levels 1-18) (+32/34/36/38/40% attack damage) (unchanged)"
+                        }
+                    }
+                ]
+            },
+            "R": ""
+        },
+        "9.24": {
+            "B": "",
+            "P": "",
+            "Q": "",
+            "W": "",
+            "E": {
+                "SpellName": "E - Judgment",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "NUMBER OF SPINS: ",
+                            "Before": "7 (+1 spin per 20% attack speed)",
+                            "Indicator": " ⇒ ",
+                            "After": "7 (+1 spin per 25% attack speed)"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "SPIN DAMAGE: ",
+                            "Before": "4/8/12/16/20 (+0-8.2 based on level) (+0.32-0.4 attack damage)",
+                            "Indicator": " ⇒ ",
+                            "After": "4/8/12/16/20 (+0-6.6 based on level) (+0.32-0.4 attack damage)"
+                        }
+                    }
+                ]
+            },
+            "R": ""
+        },
+        "9.24b": {
+            "B": "",
+            "P": "",
+            "Q": "",
+            "W": "",
+            "E": {
+                "SpellName": "E - Judgment",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "SPIN DAMAGE: ",
+                            "Before": "4/8/12/16/20 (+0-6.6 based on level) (+0.32-0.4 attack damage)",
+                            "Indicator": " ⇒ ",
+                            "After": "4/8/12/16/20 (+0-8.2 based on level) (+0.32-0.4 attack damage)"
+                        }
+                    }
+                ]
+            },
+            "R": ""
+        },
+        "10.4": {
+            "B": "",
+            "P": "",
+            "Q": {
+                "SpellName": "Q - Decisive Strike",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "EMPOWERED BASIC ATTACK DAMAGE RATIO: ",
+                            "Before": "0.4 attack damage",
+                            "Indicator": " ⇒ ",
+                            "After": "0.5 attack damage"
+                        }
+                    }
+                ]
+            },
+            "W": {
+                "SpellName": "W - Courage",
+                "Changes": [
+                    {
+                        "Tag": "NEW",
+                        "Change": {
+                            "Attribute": "BLOOD OF MY ENEMIES: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "At max resistances from enemy kills, Garen increases his bonus armor and magic resist by 10%"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "SHIELD: ",
+                            "Before": "0.1 maximum health",
+                            "Indicator": " ⇒ ",
+                            "After": "70/95/120/145/170 (+0.2 bonus health)"
+                        }
+                    }
+                ]
+            },
+            "E": "",
+            "R": ""
+        },
+        "10.6": {
+            "B": {
+                "SpellName": "Base Stats",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "MAGIC RESIST GROWTH: ",
+                            "Before": "1.25",
+                            "Indicator": " ⇒ ",
+                            "After": "0.75"
+                        }
+                    }
+                ]
+            },
+            "P": "",
+            "Q": "",
+            "W": "",
+            "E": {
+                "SpellName": "E - Judgment",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "CRIT STRIKE RATIO: ",
+                            "Before": "50%",
+                            "Indicator": " ⇒ ",
+                            "After": "33%"
+                        }
+                    }
+                ]
+            },
+            "R": ""
+        },
+        "10.7": {
+            "B": "",
+            "P": {
+                "SpellName": "Passive - Perseverance",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "COOLDOWN: ",
+                            "Before": "7 seconds",
+                            "Indicator": " ⇒ ",
+                            "After": "8 seconds"
+                        }
+                    }
+                ]
+            },
+            "Q": {
+                "SpellName": "Q - Decisive Strike",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "MOVEMENT SPEED DURATION: ",
+                            "Before": "1.5/2/2.5/3/3.5 seconds",
+                            "Indicator": " ⇒ ",
+                            "After": "1/1.65/2.3/2.95/3.6 seconds"
+                        }
+                    }
+                ]
+            },
+            "W": "",
+            "E": "",
+            "R": ""
+        },
+        "11.9": {
+            "B": "",
+            "P": "",
+            "Q": "",
+            "W": {
+                "SpellName": "W - Courage",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "BONUS RESISTANCES: ",
+                            "Before": "0.25 armor resist and magic resist per stack",
+                            "Indicator": " ⇒ ",
+                            "After": "0.2 armor resist and magic resist per stack"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "BONUS RESISTANCES UNITS KILL CAP: ",
+                            "Before": "120",
+                            "Indicator": " ⇒ ",
+                            "After": "150"
+                        }
+                    }
+                ]
+            },
+            "E": "",
+            "R": ""
+        },
+        "11.14": {
+            "B": "",
+            "P": "",
+            "Q": {
+                "SpellName": "Q - Decisive Strike",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "BONUS MOVEMENT SPEED: ",
+                            "Before": "30%",
+                            "Indicator": " ⇒ ",
+                            "After": "35%"
+                        }
+                    }
+                ]
+            },
+            "W": "",
+            "E": "",
+            "R": {
+                "SpellName": "R - Demacian Justice",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "DAMAGE FROM TARGET’S MISSING HEALTH: ",
+                            "Before": "20/25/30%",
+                            "Indicator": " ⇒ ",
+                            "After": "25/30/35%"
+                        }
+                    }
+                ]
+            }
+        },
+        "12.10": {
+            "B": {
+                "SpellName": "Base Stats",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "BASE HEALTH: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "+70"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "HEALTH GROWTH: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "+14"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "ARMOR GROWTH: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "+1.2"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "MAGIC RESIST GROWTH: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "+0.8"
+                        }
+                    }
+                ]
+            },
+            "P": "",
+            "Q": "",
+            "W": {
+                "SpellName": "W - Courage",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "W - Shield: ",
+                            "Before": "70/95/120/145/170 (+20% bonus health)",
+                            "Indicator": " ⇒ ",
+                            "After": "65/85/105/125/145 (+18% bonus health)"
+                        }
+                    }
+                ]
+            },
+            "E": "",
+            "R": ""
+        }
+    },
+    "stats": {
+        "hp": {
+            "base": 690,
+            "increment": 98
+        },
+        "mp": {
+            "base": 0,
+            "increment": 0
+        },
+        "armor": {
+            "base": 36,
+            "increment": 4.2
+        },
+        "spellBlock": {
+            "base": 32,
+            "increment": 1.55
+        },
+        "hpRegen": {
+            "base": 8,
+            "increment": 0.5
+        },
+        "mpRegen": {
+            "base": 0,
+            "increment": 0
+        },
+        "attackSpeed": {
+            "base": 0.625,
+            "increment": 0.0365
+        },
+        "ms": {
+            "base": 340,
+            "increment": 0
+        },
+        "attackDamage": {
+            "base": 66,
+            "increment": 4.5
+        },
+        "attackRange": {
+            "base": 175,
+            "increment": 0
+        }
+    },
+    "spells": {
+        "P": {
+            "name": "Perseverance",
+            "cooldown": "",
+            "_rawTooltip": {
+                "fullTooltip": "Innate: Garen regenerates[ [[1]] every 5 seconds. ]<br>Garen loses Perseverance for [[0]] from epic monsters, enemy turrets, or enemy champions, or if he is hit by an enemy ability or affected by an enemy summoner spell, refreshing on subsequent damage or hits to Garen from them.",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "8 seconds if he takes damage",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "1.5% − 10.1% {{0}} of his maximum health",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(based on level)",
+                                    "scaleId": "level"
+                                }
+                            ]
+                        },
+                        "type": "Health"
+                    }
+                ]
+            }
+        },
+        "Q": {
+            "id": "GarenQ",
+            "name": "Decisive Strike",
+            "_rawTooltip": {
+                "fullTooltip": "Garen removes all [[0]] effects on him and gains [[1]] for 1/1.65/2.3/2.95 second(s).<br /><br />His next Attack [[2]] for 1.5 seconds and does [[3]].?",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "Slowing",
+                            "scaleHolders": []
+                        },
+                        "type": "status"
+                    },
+                    {
+                        "text": {
+                            "text": "35% Move Speed",
+                            "scaleHolders": []
+                        },
+                        "type": "speed"
+                    },
+                    {
+                        "text": {
+                            "text": "Silences",
+                            "scaleHolders": []
+                        },
+                        "type": "status"
+                    },
+                    {
+                        "text": {
+                            "text": "30/60/90/120/150 {{0}} physical damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+150% AD)",
+                                    "scaleId": "AD"
+                                }
+                            ]
+                        },
+                        "type": "physicalDamage"
+                    }
+                ]
+            },
+            "maxRank": 5,
+            "cooldown": "8",
+            "cooldownByLevel": [
+                8,
+                8,
+                8,
+                8,
+                8
+            ],
+            "cost": "No Cost",
+            "costByLevel": [
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            "costType": "No Cost"
+        },
+        "W": {
+            "id": "GarenW",
+            "name": "Courage",
+            "_rawTooltip": {
+                "fullTooltip": "[[0]] Killing units permanently grants [[1]] and [[2]], up to a max of 30. At max stacks, Garen gains [[3]] and [[4]].<br /><br />[[5]] Garen steels his courage for 2/2.75/3.5/4.25 seconds, reducing incoming damage by 30%. He also gains [[6]] and 60% Tenacity for 0.75 seconds.?",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "Passive:",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "0.2 Armor",
+                            "scaleHolders": []
+                        },
+                        "type": "scaleArmor"
+                    },
+                    {
+                        "text": {
+                            "text": "0.2 Magic Resist",
+                            "scaleHolders": []
+                        },
+                        "type": "scaleMR"
+                    },
+                    {
+                        "text": {
+                            "text": "10% Bonus Armor Armor",
+                            "scaleHolders": []
+                        },
+                        "type": "scaleArmor"
+                    },
+                    {
+                        "text": {
+                            "text": "10% Bonus MR Magic Resist",
+                            "scaleHolders": []
+                        },
+                        "type": "scaleMR"
+                    },
+                    {
+                        "text": {
+                            "text": "Active:",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "65/85/105/125/145 {{0}} Shield",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+18% Bonus Health)",
+                                    "scaleId": "Health"
+                                }
+                            ]
+                        },
+                        "type": "shield"
+                    }
+                ]
+            },
+            "maxRank": 5,
+            "cooldown": "23/21/19/17/15",
+            "cooldownByLevel": [
+                23,
+                21,
+                19,
+                17,
+                15
+            ],
+            "cost": "No Cost",
+            "costByLevel": [
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            "costType": "No Cost"
+        },
+        "E": {
+            "id": "GarenE",
+            "name": "Judgment",
+            "_rawTooltip": {
+                "fullTooltip": "Garen rapidly spins his sword for 3 seconds, dealing [[0]]  over the duration. The nearest enemy takes [[1]] per strike instead.<br /><br />Champions hit by 6 strikes lose [[2]] for 6 seconds.?",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "4/8/12/16/20 {{0}}) {{1}} physical damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+0 - 8.2 (based on champion level)",
+                                    "scaleId": "level"
+                                },
+                                {
+                                    "scale": "(+32/34/36/38/40% AD)",
+                                    "scaleId": "AD"
+                                }
+                            ]
+                        },
+                        "type": "physicalDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "4/8/12/16/20 {{0}}) {{1}} * {{2}} physical damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+0 - 8.2 (based on champion level)",
+                                    "scaleId": "level"
+                                },
+                                {
+                                    "scale": "(+32/34/36/38/40% AD)",
+                                    "scaleId": "AD"
+                                },
+                                {
+                                    "scale": "(1 + 0.25)",
+                                    "scaleId": "0.25"
+                                }
+                            ]
+                        },
+                        "type": "physicalDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "25% Armor",
+                            "scaleHolders": []
+                        },
+                        "type": "scaleArmor"
+                    }
+                ]
+            },
+            "maxRank": 5,
+            "cooldown": "9",
+            "cooldownByLevel": [
+                9,
+                9,
+                9,
+                9,
+                9
+            ],
+            "cost": "No Cost",
+            "costByLevel": [
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            "costType": "No Cost"
+        },
+        "R": {
+            "id": "GarenR",
+            "name": "Demacian Justice",
+            "_rawTooltip": {
+                "fullTooltip": "Garen calls upon the might of Demacia to slay his enemy, dealing [[0]].?",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "150/300 plus 25/30/35% missing Health true damage",
+                            "scaleHolders": []
+                        },
+                        "type": "trueDamage"
+                    }
+                ]
+            },
+            "maxRank": 3,
+            "cooldown": "120/100/80",
+            "cooldownByLevel": [
+                120,
+                100,
+                80
+            ],
+            "cost": "No Cost",
+            "costByLevel": [
+                0,
+                0,
+                0
+            ],
+            "costType": "No Cost"
+        }
+    }
+}

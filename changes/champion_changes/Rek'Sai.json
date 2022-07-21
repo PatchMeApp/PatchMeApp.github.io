@@ -1,0 +1,407 @@
+{
+    "ChampionName": "Rek'Sai",
+    "ChangePatches": [
+        "9.19",
+        "11.14",
+        "12.1",
+        "12.10"
+    ],
+    "Changes": {
+        "9.19": {
+            "B": {
+                "SpellName": "Base Stats",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "ARMOR: ",
+                            "Before": "33",
+                            "Indicator": " ⇒ ",
+                            "After": "36"
+                        }
+                    }
+                ]
+            },
+            "P": "",
+            "Q": {
+                "SpellName": "Q - Queen's Wrath",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "FACE MY WRATH: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "Rek'Sai's Unburrowed Q now works on turrets"
+                        }
+                    }
+                ]
+            },
+            "W": "",
+            "E": "",
+            "R": ""
+        },
+        "11.14": {
+            "B": "",
+            "P": "",
+            "Q": {
+                "SpellName": "Q - Queen's Wrath",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "BASE DAMAGE: ",
+                            "Before": "20/25/30/35/40",
+                            "Indicator": " ⇒ ",
+                            "After": "21/27/33/39/45"
+                        }
+                    }
+                ]
+            },
+            "W": "",
+            "E": "",
+            "R": "",
+            "Q -": {
+                "SpellName": "Q - Prey Seeker",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "BASE DAMAGE: ",
+                            "Before": "60/90/120/150/180",
+                            "Indicator": " ⇒ ",
+                            "After": "60/95/130/165/200"
+                        }
+                    }
+                ]
+            }
+        },
+        "12.1": {
+            "B": "",
+            "P": "",
+            "Q": "",
+            "W": "",
+            "E": {
+                "SpellName": "E - Furious Bite",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Physical Damage: ",
+                            "Before": "50/60/70/80/90 (+85% bonus AD)",
+                            "Indicator": " ⇒ ",
+                            "After": "55/60/65/70/75 (+85% bonus AD)"
+                        }
+                    }
+                ]
+            },
+            "R": "",
+            "E -": {
+                "SpellName": "E - Tunnel",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Cooldown: ",
+                            "Before": "26/23/20/17/14 seconds",
+                            "Indicator": " ⇒ ",
+                            "After": "26/24/22/20/18 seconds"
+                        }
+                    }
+                ]
+            }
+        },
+        "12.10": {
+            "B": {
+                "SpellName": "Base Stats",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "BASE HEALTH: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "+70"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "HEALTH GROWTH: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "+14"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "ARMOR GROWTH: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "+1.2"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "MAGIC RESIST GROWTH: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": " +0.8"
+                        }
+                    }
+                ]
+            },
+            "P": "",
+            "Q": "",
+            "W": "",
+            "E": "",
+            "R": ""
+        }
+    },
+    "stats": {
+        "hp": {
+            "base": 640,
+            "increment": 99
+        },
+        "mp": {
+            "base": 100,
+            "increment": 0
+        },
+        "armor": {
+            "base": 36,
+            "increment": 4.95
+        },
+        "spellBlock": {
+            "base": 32,
+            "increment": 2.05
+        },
+        "hpRegen": {
+            "base": 7.5,
+            "increment": 0.65
+        },
+        "mpRegen": {
+            "base": 0,
+            "increment": 0
+        },
+        "attackSpeed": {
+            "base": 0.667,
+            "increment": 0.02
+        },
+        "ms": {
+            "base": 335,
+            "increment": 0
+        },
+        "attackDamage": {
+            "base": 64,
+            "increment": 3
+        },
+        "attackRange": {
+            "base": 175,
+            "increment": 0
+        }
+    },
+    "spells": {
+        "P": {
+            "name": "Fury of the Xer'Sai",
+            "cooldown": "",
+            "_rawTooltip": {
+                "fullTooltip": "Innate: Rek'Sai basic attacks and ability hits generate 25 Fury, which expires by 20 Fury per second after 5 seconds without generating Fury. Prey Seeker will not generate Fury against non- champions.<br>When Rek'sai becomes Burrowed, she consumes her current Fury over 3 seconds to heal for up to 20 − 190 (based on level) at 100 Fury, stopping once fully consumed or she reaches full healt. If she starts generating Fury while Burrowed, the consumption occurs after 5 seconds.",
+                "parseInfo": []
+            }
+        },
+        "Q": {
+            "id": "RekSaiQ",
+            "name": "Queen's Wrath / Prey Seeker",
+            "_rawTooltip": {
+                "fullTooltip": "[[0]]: Rek'Sai's next 3 Attacks within 5 seconds deal an additional [[1]] to nearby enemies.?",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "Un-Burrowed",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "21/27/33/39/45 {{0}} physical damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+50% Bonus AD)",
+                                    "scaleId": "AD"
+                                }
+                            ]
+                        },
+                        "type": "physicalDamage"
+                    }
+                ]
+            },
+            "maxRank": 5,
+            "cooldown": "4",
+            "cooldownByLevel": [
+                4,
+                4,
+                4,
+                4,
+                4
+            ],
+            "cost": "No Cost",
+            "costByLevel": [
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            "costType": "No Cost"
+        },
+        "W": {
+            "id": "RekSaiW",
+            "name": "Burrow / Un-burrow",
+            "_rawTooltip": {
+                "fullTooltip": "[[0]] Rek'sai burrows into the ground, gaining access to new Abilities, and [[1]], but cannot Attack. She has reduced vision range, but nearby enemies that move and are otherwise unseen will have their positions revealed to Rek'sai and her allies.?",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "Un-Burrowed:",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "15 - 80 {{0}} Move Speed",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(based on champion level)",
+                                    "scaleId": "level"
+                                }
+                            ]
+                        },
+                        "type": "speed"
+                    }
+                ]
+            },
+            "maxRank": 5,
+            "cooldown": "4",
+            "cooldownByLevel": [
+                4,
+                4,
+                4,
+                4,
+                4
+            ],
+            "cost": "No Cost",
+            "costByLevel": [
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            "costType": "No Cost"
+        },
+        "E": {
+            "id": "RekSaiE",
+            "name": "Furious Bite / Tunnel",
+            "_rawTooltip": {
+                "fullTooltip": "[[0]] Rek'Sai bites a target, dealing [[1]]. At max [[2]], the bite deals [[3]] instead.?",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "Un-Burrowed:",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "55/60/65/70/75 {{0}} physical damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+85% Bonus AD)",
+                                    "scaleId": "AD"
+                                }
+                            ]
+                        },
+                        "type": "physicalDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "Fury",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "110/120/130/140/150 {{0}} true damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+170% Bonus AD)",
+                                    "scaleId": "AD"
+                                }
+                            ]
+                        },
+                        "type": "trueDamage"
+                    }
+                ]
+            },
+            "maxRank": 5,
+            "cooldown": "12",
+            "cooldownByLevel": [
+                12,
+                12,
+                12,
+                12,
+                12
+            ],
+            "cost": "No Cost",
+            "costByLevel": [
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            "costType": "No Cost"
+        },
+        "R": {
+            "id": "RekSaiRWrapper",
+            "name": "Void Rush",
+            "_rawTooltip": {
+                "fullTooltip": "Rek'Sai targets an enemy damaged by her in the last 5 seconds and then dives underground, becoming untargetable. Moments later, she leaps unstoppably at her target, dealing [[0]].?",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "100/250/400 {{0}} plus 20/25% missing Health physical damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+175% Bonus AD)",
+                                    "scaleId": "AD"
+                                }
+                            ]
+                        },
+                        "type": "physicalDamage"
+                    }
+                ]
+            },
+            "maxRank": 3,
+            "cooldown": "100/90/80",
+            "cooldownByLevel": [
+                100,
+                90,
+                80
+            ],
+            "cost": "No Cost",
+            "costByLevel": [
+                0,
+                0,
+                0
+            ],
+            "costType": "No Cost"
+        }
+    }
+}
