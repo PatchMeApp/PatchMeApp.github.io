@@ -1,10 +1,59 @@
 {
     "ChampionName": "Bel'Veth",
     "ChangePatches": [
+        "12.10",
         "12.11",
         "12.12"
     ],
     "Changes": {
+        "12.10": {
+            "B": {
+                "SpellName": "Base Stats",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "BASE HEALTH: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "+70"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "HEALTH GROWTH: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "+14"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "ARMOR GROWTH: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "+1.2"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "MAGIC RESIST GROWTH: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": " +0.8"
+                        }
+                    }
+                ]
+            },
+            "P": "",
+            "Q": "",
+            "W": "",
+            "E": "",
+            "R": ""
+        },
         "12.11": {
             "B": "",
             "P": "",
@@ -229,7 +278,7 @@
             "name": "Death in Lavender",
             "cooldown": "",
             "_rawTooltip": {
-                "fullTooltip": "Innate: Bel'Veth attacks 36% faster than the median champion and can exceed the attack spee cap, but all sources of damage (including on-hit effects) dealt or triggered by her basic attacks are reduced to [[0]] does not increase through growth (per level).<br>Innate: Bel'Veth's ability casts each generate 2 stacks of Death in Lavender on her resource bar, which lasts 5 seconds, refreshes on basic attacks and subsequent casts, and stacks up to 6 times. While Bel'Veth has stacks, she becomes ghosted and gains [[1]]. Her basic attacks each consume 1 stack.<br>Innate: Whenever Bel'Veth scores a takedown against a champion or monster within 3 seconds of damaging them, she generates a permanent stack of Lavender. Large monsters generate 1 stack, champions and epic monsters generate 2 stacks.<br>Lavender: For each stack, Bel'Veth gains [[2]].",
+                "fullTooltip": "Innate: Bel'Veth attacks 36% faster than the median champion and can exceed the attack spee cap, but all sources of damag (including on-hit effects) dealt or triggered by her basic attacks are reduced to [[0]] does not increase through growth (per level).<br>Innate: Bel'Veth's ability casts each generate 2 stacks of Death in Lavender on her resource bar, which lasts 5 seconds, refreshes on basic attacks and subsequent casts, and stacks up to 6 times. While Bel'Veth has stacks, she becomes ghosted and gains [[1]]. Her basic attacks each consume 1 stack.<br>Innate: Whenever Bel'Veth scores a takedown against a champion or monster within 3 seconds of damaging them, she generates a permanent stack of Lavender. Large monsters generate 1 stack, champions and epic monsters generate 2 stacks.<br>Lavender: For each stack, Bel'Veth gains [[2]].",
                 "parseInfo": [
                     {
                         "text": {
@@ -269,7 +318,7 @@
             "id": "BelvethQ",
             "name": "Void Surge",
             "_rawTooltip": {
-                "fullTooltip": "Bel'Veth dashes, dealing [[0]] to enemies she passes through.<br /><br />Each direction has an unique Cooldown of ? seconds that scales down based on her [[1]].<br />?",
+                "fullTooltip": "Bel'Veth dashes, dealing [[0]] to enemies she passes through.<br /><br />Each direction has an unique Cooldown of ? seconds that scales down based on her [[1]].<br />",
                 "parseInfo": [
                     {
                         "text": {
@@ -315,7 +364,7 @@
             "id": "BelvethW",
             "name": "Above and Below",
             "_rawTooltip": {
-                "fullTooltip": "Bel'Veth slams her tail, dealing [[0]], [[1]] foes for 0.75 seconds, and [[2]] them by 50% for 1.25/1.5/1.75/2 seconds. If a champion is hit, this refreshes the Cooldown of [[3]] in that direction.?",
+                "fullTooltip": "Bel'Veth slams her tail, dealing [[0]], [[1]] foes for 0.75 seconds, and [[2]] them by 50% for 1.25/1.5/1.75/2 seconds. If a champion is hit, this refreshes the Cooldown of [[3]] in that direction.",
                 "parseInfo": [
                     {
                         "text": {
@@ -379,7 +428,7 @@
             "id": "BelvethE",
             "name": "Royal Maelstrom",
             "_rawTooltip": {
-                "fullTooltip": "Bel'Veth channels and slashes around herself, gaining 70% Damage Reduction, 20% (+100% Life steal) Life Steal, and Attacking ? times over 1.5 seconds with the number of Attacks increasing based on her [[0]]. Each Attack strikes the lowest-health enemy, dealing [[1]] to [[2]] based on the target's missing Health.<br /><br />Using another Ability or [[3]] ends this Ability early.<br />?",
+                "fullTooltip": "Bel'Veth channels and slashes around herself, gaining 70% Damage Reduction, 20% (+100% Life steal) Life Steal, and Attacking ? times over 1.5 seconds with the number of Attacks increasing based on her [[0]]. Each Attack strikes the lowest-health enemy, dealing [[1]] to [[2]] based on the target's missing Health.<br /><br />Using another Ability or [[3]] ends this Ability early.<br />",
                 "parseInfo": [
                     {
                         "text": {
@@ -444,7 +493,7 @@
             "id": "BelvethR",
             "name": "Endless Banquet",
             "_rawTooltip": {
-                "fullTooltip": "[[0]] Every second Attack against the same target deals an additional [[1]], stacking infinitely. Takedowns against champions and epic monsters leave behind a piece of Void Coral.<br /><br />[[2]] Consuming Void Coral grants [[3]] stack and activates Bel'Veth's true form for 60 seconds. Void Coral from Void epic monsters increases the duration to 180 seconds and causes minions that die nearby to become Void Remora. While casting, Bel'Veth [[4]] nearby enemies before exploding, dealing [[5]].<br /><br />In her true form, Bel'Veth gains [[6]], [[7]] out of combat, 50 Attack range, [[8]], and [[9]] can pass through walls.<br /><br /><br />?",
+                "fullTooltip": "[[0]] Every second Attack against the same target deals an additional [[1]], stacking infinitely. Takedowns against champions and epic monsters leave behind a piece of Void Coral.<br /><br />[[2]] Consuming Void Coral grants [[3]] stack and activates Bel'Veth's true form for 60 seconds. Void Coral from Void epic monsters increases the duration to 180 seconds and causes minions that die nearby to become Void Remora. While casting, Bel'Veth [[4]] nearby enemies before exploding, dealing [[5]].<br /><br />In her true form, Bel'Veth gains [[6]], [[7]] out of combat, 50 Attack range, [[8]], and [[9]] can pass through walls.<br /><br /><br />",
                 "parseInfo": [
                     {
                         "text": {

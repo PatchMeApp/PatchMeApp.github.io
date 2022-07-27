@@ -3,7 +3,8 @@
     "ChangePatches": [
         "12.4",
         "12.9",
-        "12.10"
+        "12.10",
+        "12.14"
     ],
     "Changes": {
         "12.4": {
@@ -117,11 +118,41 @@
                 ]
             },
             "R": ""
+        },
+        "12.14": {
+            "B": {
+                "SpellName": "Base Stats",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Base Health: ",
+                            "Before": "595",
+                            "Indicator": " ⇒ ",
+                            "After": "545"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Base AD: ",
+                            "Before": "51",
+                            "Indicator": " ⇒ ",
+                            "After": "49"
+                        }
+                    }
+                ]
+            },
+            "P": "",
+            "Q": "",
+            "W": "",
+            "E": "",
+            "R": ""
         }
     },
     "stats": {
         "hp": {
-            "base": 595,
+            "base": 545,
             "increment": 94
         },
         "mp": {
@@ -153,7 +184,7 @@
             "increment": 0
         },
         "attackDamage": {
-            "base": 51,
+            "base": 49,
             "increment": 3
         },
         "attackRange": {
@@ -166,8 +197,15 @@
             "name": "Leverage",
             "cooldown": "",
             "_rawTooltip": {
-                "fullTooltip": "Innate: Renata's basic attacks apply a mark that lasts 6 seconds, which refreshes on subsequent hits and expires when attacking a new enemy. If the enemy was unmarked, this also deals [[0]] bonus magic damagge.<br>Allied champions' damaging attacks and abilities against a marked target will consume the mark to deal [[1]] as additional bonus magic damage.<br>Leverage's damage is capped at 150 against monsters.",
+                "fullTooltip": "Innate: Renata's basic attacks apply a mark that lasts 6 seconds, which refreshes on subsequent hits and expires when attacking a new enemy. If the enemy was unmarked, this also deals [[1]] bonus magic damage.<br>Allied champions' damaging attacks and abilities against a marked target will consume the mark to deal [[2]] as additional bonus magic [[0]] is capped at 150 against monsters.",
                 "parseInfo": [
+                    {
+                        "text": {
+                            "text": "5z89je.<br>Leverage's damage",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
                     {
                         "text": {
                             "text": "1% − 2% {{0}} {{1}} of the target's maximum health",
@@ -207,7 +245,7 @@
             "id": "RenataQ",
             "name": "Handshake",
             "_rawTooltip": {
-                "fullTooltip": "Renata sends out a missile from her arm, [[0]] the first enemy hit for 1 second and dealing [[1]] [[2]].<br /><br />[[3]] Renata [[4]] the enemy in a direction, dealing [[5]] to enemies they are thrown into and [[6]] for 0.5 seconds if the thrown enemy is a champion.?",
+                "fullTooltip": "Renata sends out a missile from her arm, [[0]] the first enemy hit for 1 second and dealing [[1]] [[2]].<br /><br />[[3]] Renata [[4]] the enemy in a direction, dealing [[5]] to enemies they are thrown into and [[6]] for 0.5 seconds if the thrown enemy is a champion.",
                 "parseInfo": [
                     {
                         "text": {
@@ -293,7 +331,7 @@
             "id": "RenataW",
             "name": "Bailout",
             "_rawTooltip": {
-                "fullTooltip": "Renata infuses an ally champion, granting [[0]] and [[1]] towards enemies, increasing to [[2]] and [[3]] over 5 seconds. Takedowns refresh the duration of the buff.<br /><br />If the ally would die, they instead return to full Health, which then decays over 3 seconds.<br /><br />If they get a Takedown while decaying, they will be set to [[4]] and stop decaying.<br /><br />[[5]]?",
+                "fullTooltip": "Renata infuses an ally champion, granting [[0]] and [[1]] towards enemies, increasing to [[2]] and [[3]] over 5 seconds. Takedowns refresh the duration of the buff.<br /><br />If the ally would die, they instead return to full Health, which then decays over 3 seconds.<br /><br />If they get a Takedown while decaying, they will be set to [[4]] and stop decaying.<br /><br />[[5]]",
                 "parseInfo": [
                     {
                         "text": {
@@ -382,7 +420,7 @@
             "id": "RenataE",
             "name": "Loyalty Program",
             "_rawTooltip": {
-                "fullTooltip": "Renata sends out a pair of chemtech missiles, dealing [[0]] and [[1]] surrounding enemies and enemies hit by 30% for 2 seconds. Allies hit gain [[2]] for 3 seconds.?",
+                "fullTooltip": "Renata sends out a pair of chemtech missiles, dealing [[0]] and [[1]] surrounding enemies and enemies hit by 30% for 2 seconds. Allies hit gain [[2]] for 3 seconds.",
                 "parseInfo": [
                     {
                         "text": {
@@ -440,7 +478,7 @@
             "id": "RenataR",
             "name": "Hostile Takeover",
             "_rawTooltip": {
-                "fullTooltip": "Renata sends out a wave of chemicals, [[0]] enemies for 1.25/1.75 seconds, causing them to Attack the nearest unit, prioritizing their allies.<br /><br />While [[1]], enemies gain [[2]].?",
+                "fullTooltip": "Renata sends out a wave of chemicals, [[0]] enemies for 1.25/1.75 seconds, causing them to Attack the nearest unit, prioritizing their allies.<br /><br />While [[1]], enemies gain [[2]].",
                 "parseInfo": [
                     {
                         "text": {

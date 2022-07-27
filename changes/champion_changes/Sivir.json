@@ -7,7 +7,8 @@
         "10.19",
         "11.16",
         "12.10",
-        "12.13"
+        "12.13",
+        "12.14"
     ],
     "Changes": {
         "9.24": {
@@ -558,6 +559,49 @@
                     }
                 ]
             }
+        },
+        "12.14": {
+            "B": "",
+            "P": "",
+            "Q": {
+                "SpellName": "Q - Boomerang Blade",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "CAST TIME BUGFIX: ",
+                            "Before": "0.25-0.18 seconds scaling down with Attack Speed",
+                            "Indicator": " ⇒ ",
+                            "After": "0.25-0.10 seconds scaling down with Attack Speed"
+                        }
+                    }
+                ]
+            },
+            "W": {
+                "SpellName": "W - Ricochet",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Damage to Minions: ",
+                            "Before": "80%",
+                            "Indicator": " ⇒ ",
+                            "After": "65%"
+                        }
+                    },
+                    {
+                        "Tag": "NEW",
+                        "Change": {
+                            "Attribute": "GOLD IS FOREVER: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "Bounces now execute minions that are hit by a ricochet and would have been left at less than 15 health"
+                        }
+                    }
+                ]
+            },
+            "E": "",
+            "R": ""
         }
     },
     "stats": {
@@ -635,11 +679,11 @@
             "id": "SivirQ",
             "name": "Boomerang Blade",
             "_rawTooltip": {
-                "fullTooltip": "Sivir hurls her crossblade like a boomerang, dealing [[0]] to all enemies it cuts through. Hitting non-champions reduces the damage to subsequent targets, down to a minimum of 40%.?",
+                "fullTooltip": "Sivir hurls her crossblade like a boomerang, dealing [[0]] to all enemies it cuts through. Hitting non-champions reduces the damage to subsequent targets, down to a minimum of 40%.",
                 "parseInfo": [
                     {
                         "text": {
-                            "text": "25/40/55/70/85 {{0}} {{1}} * {{2}}",
+                            "text": "15/30/45/60/75 {{0}} {{1}} * {{2}}",
                             "scaleHolders": [
                                 {
                                     "scale": "(+80/85/90/95/100% AD)",
@@ -682,7 +726,7 @@
             "id": "SivirW",
             "name": "Ricochet",
             "_rawTooltip": {
-                "fullTooltip": "For the next 4 seconds, Sivir's gains [[0]] and her auto attacks are empowered to bounce to additional surrounding enemies dealing [[1]] each bounce for up to 8 bounces.<br /><br />These bounces critically strike if the auto attack generating them does.?",
+                "fullTooltip": "For the next 4 seconds, Sivir gains [[0]] and her auto attacks are empowered to bounce to additional surrounding enemies dealing [[1]] each bounce for up to 8 bounces.<br /><br />These bounces critically strike if the attack generating them does.",
                 "parseInfo": [
                     {
                         "text": {
@@ -701,21 +745,21 @@
                 ]
             },
             "maxRank": 5,
-            "cooldown": "10",
+            "cooldown": "12",
             "cooldownByLevel": [
-                10,
-                10,
-                10,
-                10,
-                10
+                12,
+                12,
+                12,
+                12,
+                12
             ],
-            "cost": "60 Mana",
+            "cost": "60/65/70/75/80 Mana",
             "costByLevel": [
                 60,
-                60,
-                60,
-                60,
-                60
+                65,
+                70,
+                75,
+                80
             ],
             "costType": " Mana"
         },
@@ -723,7 +767,7 @@
             "id": "SivirE",
             "name": "Spell Shield",
             "_rawTooltip": {
-                "fullTooltip": "Sivir creates a magical barrier for 1.5 seconds that blocks the next incoming enemy Ability. If an ability is blocked, Sivir restores [[0]] and triggers Fleet of Foot.?",
+                "fullTooltip": "Sivir creates a magical barrier for 1.5 seconds that blocks the next incoming enemy Ability. If an ability is blocked, Sivir restores [[0]] and triggers Fleet of Foot.",
                 "parseInfo": [
                     {
                         "text": {
@@ -762,7 +806,7 @@
             "id": "SivirR",
             "name": "On The Hunt",
             "_rawTooltip": {
-                "fullTooltip": "Sivir rallies her nearby allies, granting them [[0]] for 8/10 seconds.<br /><br />Sivir's auto attacks against champions while On The Hunt reduce the cooldown of her basic abilities by 0.5 seconds.<br /><br />Takedowns on recently damaged enemies refreshes the duration of the hunt.?",
+                "fullTooltip": "Sivir rallies her nearby allies, granting them [[0]] for 8/10 seconds.<br /><br />Sivir's attacks against champions while On The Hunt reduce the cooldown of her basic abilities by 0.5 seconds.<br /><br />Takedowns on recently damaged enemies refreshes the duration of the hunt.",
                 "parseInfo": [
                     {
                         "text": {

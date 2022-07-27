@@ -8,7 +8,8 @@
         "11.2",
         "11.19",
         "12.4",
-        "12.10"
+        "12.10",
+        "12.14"
     ],
     "Changes": {
         "9.18": {
@@ -266,12 +267,59 @@
                     }
                 ]
             }
+        },
+        "12.14": {
+            "B": {
+                "SpellName": "Base Stats",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Health Growth: ",
+                            "Before": "104",
+                            "Indicator": " ⇒ ",
+                            "After": "114"
+                        }
+                    }
+                ]
+            },
+            "P": "",
+            "Q": "",
+            "W": "",
+            "E": {
+                "SpellName": "E - Umbral Dash",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Passive Healing: ",
+                            "Before": "18/20/22/24/26%",
+                            "Indicator": " ⇒ ",
+                            "After": "18/19.5/21/22.5/24%"
+                        }
+                    }
+                ]
+            },
+            "R": {
+                "SpellName": "R - World Ender",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Increased Healing: ",
+                            "Before": "25/40/55%",
+                            "Indicator": " ⇒ ",
+                            "After": "25/35/45%"
+                        }
+                    }
+                ]
+            }
         }
     },
     "stats": {
         "hp": {
             "base": 650,
-            "increment": 104
+            "increment": 114
         },
         "mp": {
             "base": 0,
@@ -343,7 +391,7 @@
             "id": "AatroxQ",
             "name": "The Darkin Blade",
             "_rawTooltip": {
-                "fullTooltip": "Aatrox slams his greatsword, dealing [[0]]. If they are hit on the edge, they are briefly [[1]] and they take [[2]] instead. This Ability can be [[3]] twice, each one changing shape and dealing 25% more damage than the previous one.?",
+                "fullTooltip": "Aatrox slams his greatsword, dealing [[0]]. If they are hit on the edge, they are briefly [[1]] and they take [[2]] instead. This Ability can be [[3]] twice, each one changing shape and dealing 25% more damage than the previous one.",
                 "parseInfo": [
                     {
                         "text": {
@@ -412,7 +460,7 @@
             "id": "AatroxW",
             "name": "Infernal Chains",
             "_rawTooltip": {
-                "fullTooltip": "Aatrox fires a chain, [[0]] the first enemy hit by 25% for 1.5 seconds and dealing [[1]]. Champions and large jungle monsters have 1.5 seconds to leave the impact area or be [[2]] back to the center and damaged again for the same amount.?",
+                "fullTooltip": "Aatrox fires a chain, [[0]] the first enemy hit by 25% for 1.5 seconds and dealing [[1]]. Champions and large jungle monsters have 1.5 seconds to leave the impact area or be [[2]] back to the center and damaged again for the same amount.",
                 "parseInfo": [
                     {
                         "text": {
@@ -465,7 +513,7 @@
             "id": "AatroxE",
             "name": "Umbral Dash",
             "_rawTooltip": {
-                "fullTooltip": "[[0]] Aatrox gains [[1]] against champions, increased to [[2]] during [[3]].<br /><br />[[4]] Aatrox dashes. He can use this Ability while winding up his other Abilities.?",
+                "fullTooltip": "[[0]] Aatrox gains [[1]] against champions, increased to [[2]] during [[3]].<br /><br />[[4]] Aatrox dashes. He can use this Ability while winding up his other Abilities.",
                 "parseInfo": [
                     {
                         "text": {
@@ -476,7 +524,7 @@
                     },
                     {
                         "text": {
-                            "text": "18/20/22/24% Omnivamp",
+                            "text": "18/19.5/21/22.5% Omnivamp",
                             "scaleHolders": []
                         },
                         "type": ""
@@ -527,7 +575,7 @@
             "id": "AatroxR",
             "name": "World Ender",
             "_rawTooltip": {
-                "fullTooltip": "Aatrox reveals his true demonic form, [[0]] nearby minions for 3 seconds and gaining [[1]] decaying over 10 seconds. He also gains [[2]] and increases [[3]] for the duration.<br /><br />Champion takedowns extend the duration of this effect by 5 seconds and refresh the [[4]] effect.?",
+                "fullTooltip": "Aatrox reveals his true demonic form, [[0]] nearby minions for 3 seconds and gaining [[1]] decaying over 10 seconds. He also gains [[2]] and increases [[3]] for the duration.<br /><br />Champion takedowns extend the duration of this effect by 5 seconds and refresh the [[4]] effect.",
                 "parseInfo": [
                     {
                         "text": {
@@ -552,7 +600,7 @@
                     },
                     {
                         "text": {
-                            "text": "self-healing by 25/40/55%",
+                            "text": "self-healing by 25/35/45%",
                             "scaleHolders": []
                         },
                         "type": "healing"

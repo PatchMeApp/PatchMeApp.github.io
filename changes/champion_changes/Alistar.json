@@ -5,7 +5,8 @@
         "10.5",
         "10.14",
         "11.7",
-        "12.10"
+        "12.10",
+        "12.14"
     ],
     "Changes": {
         "9.24b": {
@@ -209,6 +210,36 @@
             "W": "",
             "E": "",
             "R": ""
+        },
+        "12.14": {
+            "B": "",
+            "P": "",
+            "Q": {
+                "SpellName": "Q - Pulverize",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Mana Cost: ",
+                            "Before": "65/70/75/80/85",
+                            "Indicator": " ⇒ ",
+                            "After": "55/60/65/70/75"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Cooldown: ",
+                            "Before": "15/14/13/12/11",
+                            "Indicator": " ⇒ ",
+                            "After": "14/13/12/11/10"
+                        }
+                    }
+                ]
+            },
+            "W": "",
+            "E": "",
+            "R": ""
         }
     },
     "stats": {
@@ -266,7 +297,7 @@
             "id": "Pulverize",
             "name": "Pulverize",
             "_rawTooltip": {
-                "fullTooltip": "Alistar smashes the ground, [[0]] enemies for 1 second and dealing [[1]].?",
+                "fullTooltip": "Alistar smashes the ground, [[0]] enemies for 1 second and dealing [[1]].",
                 "parseInfo": [
                     {
                         "text": {
@@ -290,21 +321,21 @@
                 ]
             },
             "maxRank": 5,
-            "cooldown": "15/14/13/12/11",
+            "cooldown": "14/13/12/11/10",
             "cooldownByLevel": [
-                15,
                 14,
                 13,
                 12,
-                11
+                11,
+                10
             ],
-            "cost": "65/70/75/80/85 Mana",
+            "cost": "55/60/65/70/75 Mana",
             "costByLevel": [
+                55,
+                60,
                 65,
                 70,
-                75,
-                80,
-                85
+                75
             ],
             "costType": " Mana"
         },
@@ -312,7 +343,7 @@
             "id": "Headbutt",
             "name": "Headbutt",
             "_rawTooltip": {
-                "fullTooltip": "Alistar rams into an enemy, [[0]] them [[1]] and dealing [[2]].?",
+                "fullTooltip": "Alistar rams into an enemy, [[0]] them [[1]] and dealing [[2]].",
                 "parseInfo": [
                     {
                         "text": {
@@ -365,7 +396,7 @@
             "id": "AlistarE",
             "name": "Trample",
             "_rawTooltip": {
-                "fullTooltip": "Alistar begins trampling the ground, becoming Ghosted and dealing [[0]] over 5 seconds to nearby enemies. Each pulse that damages a champion grants a stack.<br /><br />At 5 stacks, Alistar's next Attack [[1]] for 1 second and deals an additional [[2]].?",
+                "fullTooltip": "Alistar begins trampling the ground, becoming Ghosted and dealing [[0]] over 5 seconds to nearby enemies. Each pulse that damages a champion grants a stack.<br /><br />At 5 stacks, Alistar's next Attack [[1]] for 1 second and deals an additional [[2]].",
                 "parseInfo": [
                     {
                         "text": {
@@ -423,7 +454,7 @@
             "id": "FerociousHowl",
             "name": "Unbreakable Will",
             "_rawTooltip": {
-                "fullTooltip": "Alistar immediately cleanses all [[0]] effects and takes 55/65% reduced damage for 7 seconds.?",
+                "fullTooltip": "Alistar immediately cleanses all [[0]] effects and takes 55/65% reduced damage for 7 seconds.",
                 "parseInfo": [
                     {
                         "text": {

@@ -293,7 +293,7 @@
             "id": "YorickQ",
             "name": "Last Rites",
             "_rawTooltip": {
-                "fullTooltip": "Yorick's next Attack deals an additional [[0]] and restores [[1]], or [[2]] if Yorick is below 50% Health. If this Attack kills the target, it leaves a grave.<br /><br />When there are 3 or more graves nearby and this Ability has already been used, Yorick can [[3]] to raise [[4]] from all nearby graves.<br /><br />[[5]]?",
+                "fullTooltip": "Yorick's next Attack deals an additional [[0]] and restores [[1]], or [[2]] if Yorick is below 50% Health. If this Attack kills the target, it leaves a grave.<br /><br />When there are 3 or more graves nearby and this Ability has already been used, Yorick can [[3]] to raise [[4]] from all nearby graves.<br /><br />[[5]]",
                 "parseInfo": [
                     {
                         "text": {
@@ -377,7 +377,7 @@
             "id": "YorickW",
             "name": "Dark Procession",
             "_rawTooltip": {
-                "fullTooltip": "Yorick summons a wall of spirits blocking enemies' path, but not allies'. The wall can be Attacked, and disappears after 2/2/3/3/4 hits.?",
+                "fullTooltip": "Yorick summons a wall of spirits blocking enemies' path, but not allies'. The wall can be Attacked, and disappears after 2/2/3/3/4 hits.",
                 "parseInfo": []
             },
             "maxRank": 5,
@@ -403,15 +403,15 @@
             "id": "YorickE",
             "name": "Mourning Mist",
             "_rawTooltip": {
-                "fullTooltip": "Yorick throws a globule of Black Mist that deals [[0]], [[1]] by 30% for 2 seconds, and marks champions and monsters for 4 seconds. Marked enemies continuously [[2]] nearby graves (but not exceeding the maximum of 4), and take 40% increased damage from up to 8 attacks by [[3]].<br /><br />Yorick and his summoned units gain [[4]] toward the mark. [[5]] will leap once at marked enemies that get away from them.?",
+                "fullTooltip": "Yorick throws a globule of Black Mist that deals [[0]], [[1]] by 30% for 2 seconds, and marks champions and monsters for 4 seconds. Marked enemies continuously [[2]] nearby graves (but not exceeding the maximum of 4), and take 40% increased damage from up to 8 attacks by [[3]].<br /><br />Yorick and his summoned units gain [[4]] toward the mark. [[5]] will leap once at marked enemies that get away from them.",
                 "parseInfo": [
                     {
                         "text": {
                             "text": "15% current Health magic damage {{0}})",
                             "scaleHolders": [
                                 {
-                                    "scale": "(min: 70% AP (+70/105/140/175/210)",
-                                    "scaleId": "(+70/105/140/175/210"
+                                    "scale": "(min: 70/105/140/175/210 (+70% AP)",
+                                    "scaleId": "AP"
                                 }
                             ]
                         },
@@ -477,7 +477,7 @@
             "id": "YorickR",
             "name": "Eulogy of the Isles",
             "_rawTooltip": {
-                "fullTooltip": "Yorick summons the Maiden of the Mist and 2/3 [[0]]. The Maiden has [[1]], deals [[2]], and raises [[3]] from nearby enemy deaths.<br /><br />When Yorick damages the Maiden's target, he will deal [[4]]. This effect has a 2 second Cooldown.<br /><br />After 10 seconds, Yorick can [[5]] this Ability to free the Maiden, sending her down the nearest lane.?",
+                "fullTooltip": "Yorick summons the Maiden of the Mist and 2/3 [[0]]. The Maiden has [[1]], deals [[2]], and raises [[3]] from nearby enemy deaths.<br /><br />When Yorick damages the Maiden's target, he will deal [[4]]. This effect has a 2 second Cooldown.<br /><br />After 10 seconds, Yorick can [[5]] this Ability to free the Maiden, sending her down the nearest lane.",
                 "parseInfo": [
                     {
                         "text": {
@@ -488,11 +488,11 @@
                     },
                     {
                         "text": {
-                            "text": "75% Health {{0}} Health",
+                            "text": "350/1100/3300 {{0}} Health",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+350/1100/3300)",
-                                    "scaleId": "(+350/1100/3300"
+                                    "scale": "(+75% Health)",
+                                    "scaleId": "Health"
                                 }
                             ]
                         },
@@ -500,11 +500,11 @@
                     },
                     {
                         "text": {
-                            "text": "50% AD {{0}} magic damage",
+                            "text": "0/10/40 {{0}} magic damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+0/10/40)",
-                                    "scaleId": "(+0/10/40"
+                                    "scale": "(+50% AD)",
+                                    "scaleId": "AD"
                                 }
                             ]
                         },

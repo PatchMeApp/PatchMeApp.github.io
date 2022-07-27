@@ -7,7 +7,8 @@
         "12.7",
         "12.10",
         "12.11",
-        "12.12"
+        "12.12",
+        "12.14"
     ],
     "Changes": {
         "12.2": {
@@ -606,6 +607,49 @@
                     }
                 ]
             }
+        },
+        "12.14": {
+            "B": "",
+            "P": "",
+            "Q": {
+                "SpellName": "Q - Burst Fire",
+                "Changes": [
+                    {
+                        "Tag": "NEW",
+                        "Change": {
+                            "Attribute": "ELECTROCUTION: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "Right clicks executes enemies with health under 60-150 (levels 1-18)(+18% AP) (note: Damage to shields or invulnerabilities does not proc this execute)"
+                        }
+                    },
+                    {
+                        "Tag": "REMOVED",
+                        "Change": {
+                            "Attribute": " LOW ON BATTERY: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "Uncharged Zeri’s right click attack no longer does increased damage to enemies below a certain health threshold"
+                        }
+                    }
+                ]
+            },
+            "W": "",
+            "E": "",
+            "R": {
+                "SpellName": "R - Lightning Crash",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Bonus Magic Damage: ",
+                            "Before": "10/15/20 (+15% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "5/10/15 (+15% AP)"
+                        }
+                    }
+                ]
+            }
         }
     },
     "stats": {
@@ -655,7 +699,7 @@
             "name": "Living Battery",
             "cooldown": "",
             "_rawTooltip": {
-                "fullTooltip": "Innate: Zeri absorbs the energy of shields she damages, shielding herself equal to [[0]] dealt to the shield. Each instance of shield gained by Living Battery lasts for 3 seconds.<br>Innate: Whenever Zeri receives a shield, she gains [[1]] for 3 seconds.",
+                "fullTooltip": "Innate: Zeri absorbs the energy of shields she damags, shielding herself equal to [[0]] dealt to the shield. Each instance of shield gained by Living Battery lasts for 3 seconds.<br>Innate: Whenever Zeri receives a shield, she gains [[1]] for 3 seconds.",
                 "parseInfo": [
                     {
                         "text": {
@@ -678,7 +722,7 @@
             "id": "ZeriQ",
             "name": "Burst Fire",
             "_rawTooltip": {
-                "fullTooltip": "[[0]] Zeri's Attacks are treated as Abilities and can be charged up by moving and casting this ability. Uncharged Attacks deal [[1]], increased to [[2]] vs. enemies below 35% health, and consume some charge. A fully charged Attack deals [[3]] and consumes all charge.<br /><br />[[4]] This Ability is treated as an Attack. Zeri fires a burst of 7 rounds that deals [[5]] to the first enemy hit.?",
+                "fullTooltip": "[[0]] Zeri's Attacks are treated as Abilities and can be charged up by moving and casting this ability. Uncharged Attacks consume a small amount of charge, deal [[1]] and [[2]] enemies below [[3]]. A fully charged Attack deals [[4]] and consumes all charge.<br /><br />[[5]] This Ability is treated as an Attack. Zeri fires a burst of 7 rounds that deals [[6]] to the first enemy hit.",
                 "parseInfo": [
                     {
                         "text": {
@@ -705,7 +749,14 @@
                     },
                     {
                         "text": {
-                            "text": "60 - 150 {{0}} {{1}} damage",
+                            "text": "execute",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "60 - 150 {{0}} {{1}} Health",
                             "scaleHolders": [
                                 {
                                     "scale": "(based on champion level)",
@@ -717,7 +768,7 @@
                                 }
                             ]
                         },
-                        "type": "magicDamage"
+                        "type": ""
                     },
                     {
                         "text": {
@@ -783,7 +834,7 @@
             "id": "ZeriW",
             "name": "Ultrashock Laser",
             "_rawTooltip": {
-                "fullTooltip": "Zeri fires an electric pulse that deals [[0]] and [[1]] the first enemy hit by 30/35/40/45/50% for 2 seconds.<br /><br />If the pulse hits terrain, it expands into a laser that applies the effects in an area and Critically Strikes champions and monsters.?",
+                "fullTooltip": "Zeri fires an electric pulse that deals [[0]] and [[1]] the first enemy hit by 30/35/40/45/50% for 2 seconds.<br /><br />If the pulse hits terrain, it expands into a laser that applies the effects in an area and Critically Strikes champions and monsters.",
                 "parseInfo": [
                     {
                         "text": {
@@ -833,7 +884,7 @@
             "id": "ZeriE",
             "name": "Spark Surge",
             "_rawTooltip": {
-                "fullTooltip": "Zeri dashes a short distance and vaults over any terrain she touches, greatly extending the dash range. Her next 3 shots of [[0]] pierce, dealing 60/70/80/90/100% damage to enemies after the first.<br /><br />Hitting an enemy champion with an Attack or Ability reduces this Ability's cooldown by 0.5 seconds. Critical strikes reduce the cooldown 2 additional times.?",
+                "fullTooltip": "Zeri dashes a short distance and vaults over any terrain she touches, greatly extending the dash range. Her next 3 shots of [[0]] pierce, dealing 60/70/80/90/100% damage to enemies after the first.<br /><br />Hitting an enemy champion with an Attack or Ability reduces this Ability's cooldown by 0.5 seconds. Critical strikes reduce the cooldown 2 additional times.",
                 "parseInfo": [
                     {
                         "text": {
@@ -867,7 +918,7 @@
             "id": "ZeriR",
             "name": "Lightning Crash",
             "_rawTooltip": {
-                "fullTooltip": "Zeri discharges a nova of electricity, dealing [[0]] to nearby enemies and gaining 8 stacks of Overcharge for each champion hit for 6 seconds. Each stack grants [[1]]. Hitting an enemy champion with an Attack or Ability adds a stack of Overcharge and refreshes its duration by 2 seconds. Critical strikes add 2 additional stacks.<br /><br />While Overcharged Zeri also gains [[2]] and [[3]] becomes a faster triple shot that deals an additional [[4]] and chains [[5]] + [[6]] to nearby enemies. <br />?",
+                "fullTooltip": "Zeri discharges a nova of electricity, dealing [[0]] to nearby enemies and gaining 8 stacks of Overcharge for each champion hit for 6 seconds. Each stack grants [[1]]. Hitting an enemy champion with an Attack or Ability adds a stack of Overcharge and refreshes its duration by 2 seconds. Critical strikes add 2 additional stacks.<br /><br />While Overcharged Zeri also gains [[2]] and [[3]] becomes a faster triple shot that deals an additional [[4]] and chains [[5]] + [[6]] to nearby enemies. <br />",
                 "parseInfo": [
                     {
                         "text": {
@@ -908,7 +959,7 @@
                     },
                     {
                         "text": {
-                            "text": "10/15/20 {{0}} magic damage",
+                            "text": "5/10/15 {{0}} magic damage",
                             "scaleHolders": [
                                 {
                                     "scale": "(+15% AP)",
@@ -920,7 +971,7 @@
                     },
                     {
                         "text": {
-                            "text": "10/15/20 {{0}} magic damage",
+                            "text": "5/10/15 {{0}} magic damage",
                             "scaleHolders": [
                                 {
                                     "scale": "(+15% AP)",

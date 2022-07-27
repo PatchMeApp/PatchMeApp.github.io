@@ -94,7 +94,7 @@
     },
     "stats": {
         "hp": {
-            "base": 590,
+            "base": 570,
             "increment": 101
         },
         "mp": {
@@ -102,7 +102,7 @@
             "increment": 35
         },
         "armor": {
-            "base": 30,
+            "base": 27,
             "increment": 4.2
         },
         "spellBlock": {
@@ -147,7 +147,7 @@
             "id": "NilahQ",
             "name": "Formless Blade",
             "_rawTooltip": {
-                "fullTooltip": "[[0]] Nilah gains 3300% per 100 Crit Chance Armor Penetration, and her Attacks against champions restore [[1]]. Overhealing from this is converted into a [[2]] for 6 seconds.<br /><br />[[3]] Nilah cracks her whip-blade, dealing [[4]], increased by her Critical Strike Chance. If an enemy unit or structure is hit, Nilah gains 125 Attack Range and [[5]], and her Attacks hit in a cone as [[6]] for 4 seconds.<br />?",
+                "fullTooltip": "[[0]] Nilah gains 3300% per 100 Crit Chance Armor Penetration, and her Attacks against champions restore [[1]]. Overhealing from this is converted into a [[2]] for 4 seconds.<br /><br />[[3]] Nilah cracks her whip-blade, dealing [[4]], increased by her Critical Strike Chance. If an enemy unit or structure is hit, Nilah gains 125 Attack Range and [[5]], and her Attacks hit in a cone as [[6]] for 4 seconds.<br />",
                 "parseInfo": [
                     {
                         "text": {
@@ -195,7 +195,7 @@
                     },
                     {
                         "text": {
-                            "text": "15 - 65 {{0}}% Attack Speed",
+                            "text": "10 - 60 {{0}}% Attack Speed",
                             "scaleHolders": [
                                 {
                                     "scale": "(based on champion level)",
@@ -207,7 +207,7 @@
                     },
                     {
                         "text": {
-                            "text": "110% AD physical damage",
+                            "text": "100% AD physical damage",
                             "scaleHolders": []
                         },
                         "type": "physicalDamage"
@@ -237,7 +237,7 @@
             "id": "NilahW",
             "name": "Jubilant Veil",
             "_rawTooltip": {
-                "fullTooltip": "Nilah envelops herself in mist for 2.25 seconds, becoming Ghosted, gaining [[0]], dodging Attacks, and reducing [[1]] taken by 25%.<br /><br />While active, touching allied champions envelops them in mist, granting the same benefits for 1.5 seconds.<br />?",
+                "fullTooltip": "Nilah envelops herself in mist for 2.25 seconds, becoming Ghosted, gaining [[0]], dodging Attacks, and reducing [[1]] taken by 25%.<br /><br />While active, touching allied champions envelops them in mist, granting the same benefits for 1.5 seconds.<br />",
                 "parseInfo": [
                     {
                         "text": {
@@ -278,7 +278,7 @@
             "id": "NilahE",
             "name": "Slipstream",
             "_rawTooltip": {
-                "fullTooltip": "Nilah dashes through a unit, dealing [[0]] to any enemies she passes through.?",
+                "fullTooltip": "Nilah dashes through a unit, dealing [[0]] to any enemies she passes through.",
                 "parseInfo": [
                     {
                         "text": {
@@ -317,7 +317,7 @@
             "id": "NilahR",
             "name": "Apotheosis",
             "_rawTooltip": {
-                "fullTooltip": "Nilah whirls her whip-blade, dealing [[0]] over 1 second, then finishes with a burst of [[1]] that also [[2]] nearby enemies toward her.<br /><br />Nilah heals herself and nearby allies by [[3]], converting any overhealing into a [[4]] for 6 seconds.<br />{{ spellmodifierdescriptionappend }}",
+                "fullTooltip": "Nilah whirls her whip-blade, dealing [[0]] over 1 second, then finishes with a burst of [[1]] that also [[2]] nearby enemies toward her.<br /><br />Nilah heals herself and nearby allies by [[3]], converting any overhealing into a [[4]] for 6 seconds.<br />",
                 "parseInfo": [
                     {
                         "text": {
@@ -352,11 +352,11 @@
                     },
                     {
                         "text": {
-                            "text": "30% + {{ spell.nilahq:critlifesteal }} of her damage dealt to enemy champions' Health {{0}}",
+                            "text": "30% − 45% {{0}} of the post-mitigation damage dealt to Champion icon.png champions, reduced to 10% against non-champions",
                             "scaleHolders": [
                                 {
-                                    "scale": "({{ otherhealingpercent*100 }}% for non-champions)",
-                                    "scaleId": "non-champions"
+                                    "scale": "(based on critical strike chance)",
+                                    "scaleId": "chance"
                                 }
                             ]
                         },

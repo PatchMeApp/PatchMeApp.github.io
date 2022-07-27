@@ -6,7 +6,8 @@
         "11.11",
         "11.17",
         "11.21",
-        "12.10"
+        "12.10",
+        "12.14"
     ],
     "Changes": {
         "9.18": {
@@ -245,6 +246,58 @@
             "W": "",
             "E": "",
             "R": ""
+        },
+        "12.14": {
+            "B": {
+                "SpellName": "Base Stats",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Mana Growth: ",
+                            "Before": "20",
+                            "Indicator": " ⇒ ",
+                            "After": "25"
+                        }
+                    }
+                ]
+            },
+            "P": "",
+            "Q": "",
+            "W": "",
+            "E": "",
+            "R": {
+                "SpellName": "R - Noxious Trap",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Placement Range: ",
+                            "Before": "400 / 650 / 900",
+                            "Indicator": " ⇒ ",
+                            "After": "600 / 750 / 900"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Damage: ",
+                            "Before": "200 / 325 / 450 (+ 50% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "200 / 325 / 450 (+ 55% AP)"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Mana Cost: ",
+                            "Before": "75 Mana",
+                            "Indicator": " ⇒ ",
+                            "After": "75 / 55 / 35 Mana"
+                        }
+                    }
+                ]
+            }
         }
     },
     "stats": {
@@ -254,7 +307,7 @@
         },
         "mp": {
             "base": 334,
-            "increment": 20
+            "increment": 25
         },
         "armor": {
             "base": 24,
@@ -315,7 +368,7 @@
             "id": "BlindingDart",
             "name": "Blinding Dart",
             "_rawTooltip": {
-                "fullTooltip": "Teemo fires a dart, [[0]] the target for 2/2.25/2.5/2.75 seconds and dealing [[1]].?",
+                "fullTooltip": "Teemo fires a dart, [[0]] the target for 2/2.25/2.5/2.75 seconds and dealing [[1]].",
                 "parseInfo": [
                     {
                         "text": {
@@ -361,7 +414,7 @@
             "id": "MoveQuick",
             "name": "Move Quick",
             "_rawTooltip": {
-                "fullTooltip": "[[0]] Teemo gains [[1]] while he hasn't been damaged by a champion or turret in the last 5 seconds.<br /><br />[[2]] Teemo sprints, gaining [[3]] that is not lost when struck for 3 seconds.?",
+                "fullTooltip": "[[0]] Teemo gains [[1]] while he hasn't been damaged by a champion or turret in the last 5 seconds.<br /><br />[[2]] Teemo sprints, gaining [[3]] that is not lost when struck for 3 seconds.",
                 "parseInfo": [
                     {
                         "text": {
@@ -416,7 +469,7 @@
             "id": "ToxicShot",
             "name": "Toxic Shot",
             "_rawTooltip": {
-                "fullTooltip": "[[0]] Teemo's Attacks apply poison, dealing an additional [[1]] plus [[2]] over 4 seconds.?",
+                "fullTooltip": "[[0]] Teemo's Attacks apply poison, dealing an additional [[1]] plus [[2]] over 4 seconds.",
                 "parseInfo": [
                     {
                         "text": {
@@ -474,7 +527,7 @@
             "id": "TeemoRCast",
             "name": "Noxious Trap",
             "_rawTooltip": {
-                "fullTooltip": "Teemo tosses a mushroom trap that detonates when stepped on. The traps [[0]] by 30/40% and deal [[1]] over 4 seconds. Enemies are revealed for the same duration.<br /><br />Traps last 5 minutes and are stealthed. A mushroom tossed onto another mushroom bounces before landing at its position. This Ability has 3/4 charges (30/25/20 second refresh).<br />?",
+                "fullTooltip": "Teemo tosses a mushroom trap that detonates when stepped on. The traps [[0]] by 30/40% and deal [[1]] over 4 seconds. Enemies are revealed for the same duration.<br /><br />Traps last 5 minutes and are stealthed. A mushroom tossed onto another mushroom bounces before landing at its position. This Ability has 3/4 charges (30/25/20 second refresh).<br />",
                 "parseInfo": [
                     {
                         "text": {
@@ -488,7 +541,7 @@
                             "text": "200/325/450 {{0}} magic damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+50% AP)",
+                                    "scale": "(+55% AP)",
                                     "scaleId": "AP"
                                 }
                             ]
@@ -504,11 +557,11 @@
                 0.25,
                 0.25
             ],
-            "cost": "75 Mana",
+            "cost": "75/55/35 Mana",
             "costByLevel": [
                 75,
-                75,
-                75
+                55,
+                35
             ],
             "costType": " Mana"
         }

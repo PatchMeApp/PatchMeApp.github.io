@@ -11,7 +11,8 @@
         "11.19",
         "12.5",
         "12.10",
-        "12.12"
+        "12.12",
+        "12.14"
     ],
     "Changes": {
         "10.22": {
@@ -483,6 +484,36 @@
                 ]
             },
             "R": ""
+        },
+        "12.14": {
+            "B": "",
+            "P": "",
+            "Q": "",
+            "W": {
+                "SpellName": "W - Surround Sound",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Shield: ",
+                            "Before": "50/70/90/110/130 (+35% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "50/70/90/110/130 (+25% AP)"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Heal Per Ally: ",
+                            "Before": "5/5.5/6/6.5/7% (+0.6% per 100 AP) missing health",
+                            "Indicator": " ⇒ ",
+                            "After": "5/5.5/6/6.5/7% (+0.4% per 100 AP) missing health"
+                        }
+                    }
+                ]
+            },
+            "E": "",
+            "R": ""
         }
     },
     "stats": {
@@ -557,7 +588,7 @@
             "id": "SeraphineQ",
             "name": "High Note",
             "_rawTooltip": {
-                "fullTooltip": "Seraphine projects a pure note, dealing [[0]], increased by the target's missing Health percentage up to [[1]] below 25% Health.?",
+                "fullTooltip": "Seraphine projects a pure note, dealing [[0]], increased by the target's missing Health percentage up to [[1]] below 25% Health.",
                 "parseInfo": [
                     {
                         "text": {
@@ -608,7 +639,7 @@
             "id": "SeraphineW",
             "name": "Surround Sound",
             "_rawTooltip": {
-                "fullTooltip": "Seraphine spurs her nearby allied champions in song, granting herself [[0]] and [[1]] for 2.5 seconds (allies granted [[2]] and [[3]] instead).<br /><br />If Seraphine is already [[4]], she calls out to her allies to join her, restoring [[5]] to them per nearby ally champion after a 2.5 second delay.?",
+                "fullTooltip": "Seraphine spurs her nearby allied champions in song, granting herself [[0]] and [[1]] for 2.5 seconds (allies granted [[2]] and [[3]] instead).<br /><br />If Seraphine is already [[4]], she calls out to her allies to join her, restoring [[5]] to them per nearby ally champion after a 2.5 second delay.",
                 "parseInfo": [
                     {
                         "text": {
@@ -627,7 +658,7 @@
                             "text": "50/70/90/110/130 {{0}} Shield",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+35% AP)",
+                                    "scale": "(+25% AP)",
                                     "scaleId": "AP"
                                 }
                             ]
@@ -651,7 +682,7 @@
                             "text": "50/70/90/110/130 {{0}} Shield",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+35% AP)",
+                                    "scale": "(+25% AP)",
                                     "scaleId": "AP"
                                 }
                             ]
@@ -670,7 +701,7 @@
                             "text": "5/5.5/6/6.5/7 {{0}}% missing Health",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+0.6% AP)",
+                                    "scale": "(+0.4% AP)",
                                     "scaleId": "AP"
                                 }
                             ]
@@ -702,7 +733,7 @@
             "id": "SeraphineE",
             "name": "Beat Drop",
             "_rawTooltip": {
-                "fullTooltip": "Seraphine unleashes a heavy soundwave, dealing [[0]] to enemies in a line and [[1]] them by 99% for 1.25 seconds.<br /><br />Enemies that are already [[2]] are [[3]] instead, and [[4]] enemies are [[5]].?",
+                "fullTooltip": "Seraphine unleashes a heavy soundwave, dealing [[0]] to enemies in a line and [[1]] them by 99% for 1.25 seconds.<br /><br />Enemies that are already [[2]] are [[3]] instead, and [[4]] enemies are [[5]].",
                 "parseInfo": [
                     {
                         "text": {
@@ -776,7 +807,7 @@
             "id": "SeraphineR",
             "name": "Encore",
             "_rawTooltip": {
-                "fullTooltip": "Seraphine takes the stage, projecting a captivating force that [[0]] for 1.25/1.5 seconds and deals [[1]].<br /><br />Any champions struck (including allies) become part of the performance, extending the range of this Ability. Allied champions gain maximum [[2]].?",
+                "fullTooltip": "Seraphine takes the stage, projecting a captivating force that [[0]] for 1.25/1.5 seconds and deals [[1]].<br /><br />Any champions struck (including allies) become part of the performance, extending the range of this Ability. Allied champions gain maximum [[2]].",
                 "parseInfo": [
                     {
                         "text": {

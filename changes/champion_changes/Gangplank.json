@@ -6,7 +6,8 @@
         "11.18",
         "12.1",
         "12.7",
-        "12.10"
+        "12.10",
+        "12.14"
     ],
     "Changes": {
         "10.11": {
@@ -262,19 +263,115 @@
             },
             "E": "",
             "R": ""
+        },
+        "12.14": {
+            "B": {
+                "SpellName": "Base Stats",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Base Health: ",
+                            "Before": "640",
+                            "Indicator": " ⇒ ",
+                            "After": "600"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Health Growth: ",
+                            "Before": "104",
+                            "Indicator": " ⇒ ",
+                            "After": "114"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Base Armor: ",
+                            "Before": "35",
+                            "Indicator": " ⇒ ",
+                            "After": "31"
+                        }
+                    }
+                ]
+            },
+            "P": {
+                "SpellName": "Passive - Trial by Fire",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Damage: ",
+                            "Before": "55-310 (based on level)(+100% bonus AD)",
+                            "Indicator": " ⇒ ",
+                            "After": "55-310 (based on level)(+100% bonus AD)(+200% Critical Strike Chance)"
+                        }
+                    }
+                ]
+            },
+            "Q": {
+                "SpellName": "Q - Parrrley",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Base Damage: ",
+                            "Before": "20/45/70/95/120",
+                            "Indicator": " ⇒ ",
+                            "After": "10/40/70/100/130"
+                        }
+                    }
+                ]
+            },
+            "W": "",
+            "E": {
+                "SpellName": "E - Powder Keg",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Slow Amount: ",
+                            "Before": "40/50/60/70/80%",
+                            "Indicator": " ⇒ ",
+                            "After": "30/37.5/45/52.5/60% (+0.25% per 1% Crit Chance at all ranks)"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Bonus physical damage: ",
+                            "Before": "80 / 105 / 130 / 155 / 180",
+                            "Indicator": " ⇒ ",
+                            "After": "75 / 105 / 135 / 165 / 195"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "E bonus damage on crit: ",
+                            "Before": "25%",
+                            "Indicator": " ⇒ ",
+                            "After": "10%"
+                        }
+                    }
+                ]
+            },
+            "R": ""
         }
     },
     "stats": {
         "hp": {
-            "base": 640,
-            "increment": 104
+            "base": 600,
+            "increment": 114
         },
         "mp": {
             "base": 280,
             "increment": 60
         },
         "armor": {
-            "base": 35,
+            "base": 31,
             "increment": 4.2
         },
         "spellBlock": {
@@ -311,7 +408,7 @@
             "name": "Trial by Fire",
             "cooldown": 15,
             "_rawTooltip": {
-                "fullTooltip": "Innate: Gangplank periodically empowers his next basic attack to burn the target, dealing them[ [[0]] over 2.5 seconds. ] Turrets receive [[1]].<br>If Gangplank successfully hits a target with Trial by Fire, he gains [[2]] for 2 seconds. Every time a Powder Keg explodes, the cooldown for Trial by Fire resets and Gangplank gains its bonus movement spee.<br>Trial by Fire cannot be applied with Parrrley nor Powder Keg.",
+                "fullTooltip": "Innate: Gangplank periodically empowers his next basic attack to burn the target, dealing them[ [[0]] over 2.5 seconds. ] Turrets receive [[1]].<br>If Gangplank successfully hits a target with Trial by Fire, he gains [[2]] for 2 seconds. Every time a Powder Keg explodes, the cooldown for Trial by Fire resets and Gangplank gains its bonus movement spee<br>Trial by Fire cannot be applied with Parrrley nor Powder Keg.",
                 "parseInfo": [
                     {
                         "text": {
@@ -355,11 +452,11 @@
             "id": "GangplankQWrapper",
             "name": "Parrrley",
             "_rawTooltip": {
-                "fullTooltip": "Gangplank fires a bullet dealing [[0]]. If this kills the target, Gangplank gains an additional 3/4/5/6/7 Gold and 4/5/6/7/8 Silver Serpents. <br /><br />Gangplank can spend Silver Serpents in the shop to upgrade [[1]].?",
+                "fullTooltip": "Gangplank fires a bullet dealing [[0]]. If this kills the target, Gangplank gains an additional 3/4/5/6/7 Gold and 4/5/6/7/8 Silver Serpents.<br /><br />Gangplank can spend Silver Serpents in the shop to upgrade [[1]].",
                 "parseInfo": [
                     {
                         "text": {
-                            "text": "20/45/70/95/120 {{0}} physical damage",
+                            "text": "10/40/70/100/130 {{0}} physical damage",
                             "scaleHolders": [
                                 {
                                     "scale": "(+100% AD)",
@@ -401,7 +498,7 @@
             "id": "GangplankW",
             "name": "Remove Scurvy",
             "_rawTooltip": {
-                "fullTooltip": "Gangplank consumes a large amount of citrus fruit, removing all [[0]] effects and restoring [[1]].?",
+                "fullTooltip": "Gangplank consumes a large amount of citrus fruit, removing all [[0]] effects and restoring [[1]].",
                 "parseInfo": [
                     {
                         "text": {
@@ -447,7 +544,7 @@
             "id": "GangplankE",
             "name": "Powder Keg",
             "_rawTooltip": {
-                "fullTooltip": "Gangplank places a powder keg that can be attacked by Gangplank and enemy champions for 25 seconds. When an enemy destroys it, the keg is defused. When Gangplank destroys it, it explodes, [[0]] by 40/50/60/70/80% for 2 seconds and dealing the [[1]], ignoring 40% Armor. Champions take an additional [[2]].<br /><br />Keg explosions detonate other kegs with overlapping blast zones, but don't deal damage to the same target more than once. Keg explosions triggered by [[3]] will grant the bonus gold for targets killed.?",
+                "fullTooltip": "Gangplank places a powder keg that can be attacked by Gangplank and enemy champions for 25 seconds. When an enemy destroys it, the keg is defused. When Gangplank destroys it, it explodes, [[0]] by 30/37.5/45/52.5/60 (+2500% Crit Chance)% for 2 seconds and dealing the [[1]], ignoring 40% Armor. Champions take an additional [[2]].<br /><br />Keg explosions detonate other kegs with overlapping blast zones, but don't deal damage to the same target more than once. Keg explosions triggered by [[3]] will grant the bonus gold for targets killed.",
                 "parseInfo": [
                     {
                         "text": {
@@ -465,7 +562,7 @@
                     },
                     {
                         "text": {
-                            "text": "80/105/130/155/180 physical damage",
+                            "text": "75/105/135/165/195 physical damage",
                             "scaleHolders": []
                         },
                         "type": "physicalDamage"
@@ -502,7 +599,7 @@
             "id": "GangplankR",
             "name": "Cannon Barrage",
             "_rawTooltip": {
-                "fullTooltip": "Gangplank signals his ship to fire ? waves of cannonballs anywhere on the map over 8 seconds. Each wave [[0]] by 30% for 0.5 seconds and deals [[1]].<br /><br />This Ability can be upgraded in the shop via [[2]].?",
+                "fullTooltip": "Gangplank signals his ship to fire ? waves of cannonballs anywhere on the map over 8 seconds. Each wave [[0]] by 30% for 0.5 seconds and deals [[1]].<br /><br />This Ability can be upgraded in the shop via [[2]].",
                 "parseInfo": [
                     {
                         "text": {

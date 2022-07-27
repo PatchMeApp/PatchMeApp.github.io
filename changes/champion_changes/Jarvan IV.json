@@ -6,7 +6,8 @@
         "11.16",
         "11.20",
         "12.10",
-        "12.12"
+        "12.12",
+        "12.14"
     ],
     "Changes": {
         "10.18": {
@@ -218,6 +219,40 @@
             "W": "",
             "E": "",
             "R": ""
+        },
+        "12.14": {
+            "B": "",
+            "P": "",
+            "Q": {
+                "SpellName": "Q - Dragon Strike",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Damage: ",
+                            "Before": "90/130/170/210/250 (+120% bonus AD)",
+                            "Indicator": " ⇒ ",
+                            "After": "90/130/170/210/250 (+140% bonus AD)"
+                        }
+                    }
+                ]
+            },
+            "W": "",
+            "E": {
+                "SpellName": "E - Demacian Standard",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Cooldown: ",
+                            "Before": "12 seconds",
+                            "Indicator": " ⇒ ",
+                            "After": "12/11.5/11/10.5/10 seconds"
+                        }
+                    }
+                ]
+            },
+            "R": ""
         }
     },
     "stats": {
@@ -283,14 +318,14 @@
             "id": "JarvanIVDragonStrike",
             "name": "Dragon Strike",
             "_rawTooltip": {
-                "fullTooltip": "Jarvan extends his lance, dealing [[0]] and removing [[1]] for 3 seconds.<br /><br />If the lance connects with [[2]], Jarvan will pull himself to it, [[3]] those in his path for 0.75 seconds.?",
+                "fullTooltip": "Jarvan extends his lance, dealing [[0]] and removing [[1]] for 3 seconds.<br /><br />If the lance connects with [[2]], Jarvan will pull himself to it, [[3]] those in his path for 0.75 seconds.",
                 "parseInfo": [
                     {
                         "text": {
                             "text": "90/130/170/210/250 {{0}} physical damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+120% Bonus AD)",
+                                    "scale": "(+140% Bonus AD)",
                                     "scaleId": "AD"
                                 }
                             ]
@@ -343,7 +378,7 @@
             "id": "JarvanIVGoldenAegis",
             "name": "Golden Aegis",
             "_rawTooltip": {
-                "fullTooltip": "Jarvan summons an aegis, [[0]] nearby enemies by 15/20/25/30/35% for 2 seconds and granting him [[1]] for each enemy champion hit.?",
+                "fullTooltip": "Jarvan summons an aegis, [[0]] nearby enemies by 15/20/25/30/35% for 2 seconds and granting him a [[1]], increased by [[2]] for each enemy champion hit.",
                 "parseInfo": [
                     {
                         "text": {
@@ -354,13 +389,15 @@
                     },
                     {
                         "text": {
-                            "text": "60/80/100/120/140 {{0}} Shield",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+1.3% Health)",
-                                    "scaleId": "Health"
-                                }
-                            ]
+                            "text": "60/80/100/120/140 Shield",
+                            "scaleHolders": []
+                        },
+                        "type": "shield"
+                    },
+                    {
+                        "text": {
+                            "text": "1.3% Health",
+                            "scaleHolders": []
                         },
                         "type": "shield"
                     }
@@ -389,7 +426,7 @@
             "id": "JarvanIVDemacianStandard",
             "name": "Demacian Standard",
             "_rawTooltip": {
-                "fullTooltip": "[[0]] Jarvan gains [[1]].<br /><br />[[2]] Jarvan throws a standard into the ground, dealing [[3]] and granting allies near the standard [[4]] for 8 seconds.?",
+                "fullTooltip": "[[0]] Jarvan gains [[1]].<br /><br />[[2]] Jarvan throws a standard into the ground, dealing [[3]] and granting allies near the standard [[4]] for 8 seconds.",
                 "parseInfo": [
                     {
                         "text": {
@@ -434,13 +471,13 @@
                 ]
             },
             "maxRank": 5,
-            "cooldown": "12",
+            "cooldown": "12/11.5/11/10.5/10",
             "cooldownByLevel": [
                 12,
-                12,
-                12,
-                12,
-                12
+                11.5,
+                11,
+                10.5,
+                10
             ],
             "cost": "55 Mana",
             "costByLevel": [
@@ -456,7 +493,7 @@
             "id": "JarvanIVCataclysm",
             "name": "Cataclysm",
             "_rawTooltip": {
-                "fullTooltip": "Jarvan heroically leaps to an enemy Champion, dealing [[0]] to them and surrounding enemies and creating an arena of impassable terrain around them for 3.5 seconds.<br /><br />Jarvan can [[1]] to collapse the terrain.?",
+                "fullTooltip": "Jarvan heroically leaps to an enemy Champion, dealing [[0]] to them and surrounding enemies and creating an arena of impassable terrain around them for 3.5 seconds.<br /><br />Jarvan can [[1]] to collapse the terrain.",
                 "parseInfo": [
                     {
                         "text": {

@@ -6,7 +6,8 @@
         "11.6",
         "11.8",
         "12.3",
-        "12.10"
+        "12.10",
+        "12.14"
     ],
     "Changes": {
         "10.22": {
@@ -201,6 +202,49 @@
             "W": "",
             "E": "",
             "R": ""
+        },
+        "12.14": {
+            "B": {
+                "SpellName": "Base Stats",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Base Mana: ",
+                            "Before": "334",
+                            "Indicator": " ⇒ ",
+                            "After": "400"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Mana Growth: ",
+                            "Before": "50",
+                            "Indicator": " ⇒ ",
+                            "After": "55"
+                        }
+                    }
+                ]
+            },
+            "P": "",
+            "Q": "",
+            "W": {
+                "SpellName": "W - Distortion",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Damage: ",
+                            "Before": "75/110/145/180/215 (+60% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "75/115/155/195/235 (+60% AP)"
+                        }
+                    }
+                ]
+            },
+            "E": "",
+            "R": ""
         }
     },
     "stats": {
@@ -209,8 +253,8 @@
             "increment": 111
         },
         "mp": {
-            "base": 334,
-            "increment": 50
+            "base": 400,
+            "increment": 55
         },
         "armor": {
             "base": 22,
@@ -250,11 +294,11 @@
             "name": "Mirror Image",
             "cooldown": 60,
             "_rawTooltip": {
-                "fullTooltip": "Innate: When LeBlanc is damaged to [[0]], she creates a clone of herself, after which they both instantly become invisible for 1 second.<br>The clone can basic attack but deals no damage, lasts for 8 seconds, and starts running 1900 units towards a random place in front of LeBlanc decided the moment it spawns.<br>Mirror Image can occur once every few seconds.<br>See Pets for more details about LeBlanc's clone.",
+                "fullTooltip": "Innate: When LeBlanc is [[0]], she creates a clone of herself, after which they both instantly become invisible for 1 second.<br>The clone can basic attack but deals no damag, lasts for 8 seconds, and starts running 1900 units towards a random place in front of LeBlanc decided the moment it spawns.<br>Mirror Image can occur once every few seconds.<br>See Pets for more details about LeBlanc's clone.",
                 "parseInfo": [
                     {
                         "text": {
-                            "text": "40% maximum health",
+                            "text": "7bwl5ed to 40% maximum health",
                             "scaleHolders": []
                         },
                         "type": "Health"
@@ -266,7 +310,7 @@
             "id": "LeblancQ",
             "name": "Sigil of Malice",
             "_rawTooltip": {
-                "fullTooltip": "LeBlanc projects a sigil to an enemy, dealing [[0]] and marking them for 3.5 seconds.<br /><br />Damaging the marked enemy with an Ability detonates the sigil, dealing [[1]].?",
+                "fullTooltip": "LeBlanc projects a sigil to an enemy, dealing [[0]] and marking them for 3.5 seconds.<br /><br />Damaging the marked enemy with an Ability detonates the sigil, dealing [[1]].",
                 "parseInfo": [
                     {
                         "text": {
@@ -317,11 +361,11 @@
             "id": "LeblancW",
             "name": "Distortion",
             "_rawTooltip": {
-                "fullTooltip": "LeBlanc dashes then deals [[0]] to nearby enemies. For 4 seconds after dashing, LeBlanc can [[1]].<br /><br />[[2]] LeBlanc returns to her starting location.?",
+                "fullTooltip": "LeBlanc dashes then deals [[0]] to nearby enemies. For 4 seconds after dashing, LeBlanc can [[1]].<br /><br />[[2]] LeBlanc returns to her starting location.",
                 "parseInfo": [
                     {
                         "text": {
-                            "text": "75/110/145/180/215 {{0}} magic damage",
+                            "text": "75/115/145/195/235 {{0}} magic damage",
                             "scaleHolders": [
                                 {
                                     "scale": "(+60% AP)",
@@ -370,7 +414,7 @@
             "id": "LeblancE",
             "name": "Ethereal Chains",
             "_rawTooltip": {
-                "fullTooltip": "LeBlanc launches a chain that shackles the first enemy hit, dealing [[0]] and granting [[1]].<br /><br />If they remain shackled for 1.5 seconds, LeBlanc [[2]] them for 1.5 seconds and deals an additional [[3]].?",
+                "fullTooltip": "LeBlanc launches a chain that shackles the first enemy hit, dealing [[0]] and granting [[1]].<br /><br />If they remain shackled for 1.5 seconds, LeBlanc [[2]] them for 1.5 seconds and deals an additional [[3]].",
                 "parseInfo": [
                     {
                         "text": {
@@ -435,7 +479,7 @@
             "id": "LeblancR",
             "name": "Mimic",
             "_rawTooltip": {
-                "fullTooltip": "LeBlanc mimics her most recent Ability, using it again. The mimicked Ability deals increased damage.<br /><br />[[0]] deals [[1]] when applied, and [[2]] when consumed.<br />[[3]] deals [[4]].<br />[[5]] deals [[6]] when shackled and [[7]] when [[8]].?",
+                "fullTooltip": "LeBlanc mimics her most recent Ability, using it again. The mimicked Ability deals increased damage.<br /><br />[[0]] deals [[1]] when applied, and [[2]] when consumed.<br />[[3]] deals [[4]].<br />[[5]] deals [[6]] when shackled and [[7]] when [[8]].",
                 "parseInfo": [
                     {
                         "text": {

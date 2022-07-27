@@ -12,7 +12,8 @@
         "11.17",
         "11.22",
         "12.10",
-        "12.11"
+        "12.11",
+        "12.14"
     ],
     "Changes": {
         "9.21": {
@@ -420,12 +421,46 @@
             "W": "",
             "E": "",
             "R": ""
+        },
+        "12.14": {
+            "B": {
+                "SpellName": "Base Stats",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Health Growth: ",
+                            "Before": "99",
+                            "Indicator": " ⇒ ",
+                            "After": "109"
+                        }
+                    }
+                ]
+            },
+            "P": {
+                "SpellName": "Passive - The Darkin Scythe",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Rhaast Passive: ",
+                            "Before": "Heal 25-35% (based on level) of damage dealt to champions",
+                            "Indicator": " ⇒ ",
+                            "After": "Heal 20-30% (based on level) of damage dealt to champions"
+                        }
+                    }
+                ]
+            },
+            "Q": "",
+            "W": "",
+            "E": "",
+            "R": ""
         }
     },
     "stats": {
         "hp": {
             "base": 655,
-            "increment": 99
+            "increment": 109
         },
         "mp": {
             "base": 410,
@@ -469,11 +504,11 @@
             "name": "The Darkin Scythe",
             "cooldown": "",
             "_rawTooltip": {
-                "fullTooltip": "Innate: Kayn has a secondary experience bar that tracks progress toward Darkin and Shadow Assassin forms. He gathers orbs from champion takedowns and each instance of [[0]] over time) against champions. Once he has earned enough orbs, he unlocks a form based on whether he earned more from Melee or Ranged champions (for Darkin and Shadow Assassin, respectively), with the other form unlocked later.<br>Kayn can return to the summoning platform to transform over 6 seconds, during which he is invulnerable, untargetable, and unable to act. Kayn cannot choose a form if he is unable to cast abilities. The transformation will permanently empower some of Kayn's abilities, and he gains a one-time Homeguard.<br>Shadow Assassin Bonus: If Kayn has been out of combat with enemy champions for over 8 seconds, or he casts Umbral Trespass, he deals [[1]] dealt against enemy champions as bonus magic damage, lasting for 3 seconds upon entering combat and also applying on the first instance of damage dealt. If this effect is ready, it will not go on cooldown by receiving damag.<br>Darkin Bonus: Rhaast heals for 25% − 35% (based on level) of the post-mitigation physical damag that he deals to enemy champions with his abilities.",
+                "fullTooltip": "Innate: Kayn has a secondary experience bar that tracks progress toward Darkin and Shadow Assassin forms. He gathers orbs from champion takedowns and each instance of [[0]] over time) against champions. Once he has earned enough orbs, he unlocks a form based on whether he earned more from Melee or Ranged champions (for Darkin and Shadow Assassin, respectively), with the other form unlocked later.<br>Kayn can return to the summoning platform to transform over 6 seconds, during which he is invulnerable, untargetable, and unable to act. Kayn cannot choose a form if he is unable to cast abilities. The transformation will permanently empower some of Kayn's abilities, and he gains a one-time Homeguard.<br>Shadow Assassin Bonus: If Kayn has been out of combat with enemy champions for over 8 seconds, or he casts Umbral Trespass, he deals [[1]] dealt against enemy champions as bonus magic damage, lasting for 3 seconds upon entering combat and also applying on the first instance of damage dealt. If this effect is ready, it will not go on cooldown by receiving damage.<br>Darkin Bonus: Rhaast heals for 25% − 35% (based on level) of the post-mitigation physical damage that he deals to enemy champions with his abilities.",
                 "parseInfo": [
                     {
                         "text": {
-                            "text": "51mase (excluding damage",
+                            "text": "4mzfbe (excluding damage",
                             "scaleHolders": []
                         },
                         "type": ""
@@ -497,7 +532,7 @@
             "id": "KaynQ",
             "name": "Reaping Slash",
             "_rawTooltip": {
-                "fullTooltip": "Kayn dashes then spins his scythe, dealing [[0]] to enemies he passes through, then deals the damage again to nearby enemies.<br /><br />[[1]] Instead deal [[2]].?",
+                "fullTooltip": "Kayn dashes then spins his scythe, dealing [[0]] to enemies he passes through, then deals the damage again to nearby enemies.<br /><br />[[1]] Instead deal [[2]].",
                 "parseInfo": [
                     {
                         "text": {
@@ -555,7 +590,7 @@
             "id": "KaynW",
             "name": "Blade's Reach",
             "_rawTooltip": {
-                "fullTooltip": "Kayn swipes his scythe upward, dealing [[0]] and [[1]] enemies hit by 90%, decaying over 1.5 seconds.<br /><br />[[2]] Kayn can move while using this Ability and increases its range.<br /><br />[[3]] Additionally [[4]] enemies hit for 1 second(s).?",
+                "fullTooltip": "Kayn swipes his scythe upward, dealing [[0]] and [[1]] enemies hit by 90%, decaying over 1.5 seconds.<br /><br />[[2]] Kayn can move while using this Ability and increases its range.<br /><br />[[3]] Additionally [[4]] enemies hit for 1 second(s).",
                 "parseInfo": [
                     {
                         "text": {
@@ -622,7 +657,7 @@
             "id": "KaynE",
             "name": "Shadow Step",
             "_rawTooltip": {
-                "fullTooltip": "Kayn gains [[0]], becomes Ghosted, and can move through Terrain for 7/7.5/8/8.5/9 seconds. When he first enters terrain, he restores [[1]].<br /><br />Being [[2]] and spending more than 1.5 consecutive seconds outside of Terrain ends this Ability early.<br /><br />[[3]] Gain [[4]], [[5]] immunity, and reduce the Cooldown to 8 seconds.?",
+                "fullTooltip": "Kayn gains [[0]], becomes Ghosted, and can move through Terrain for 7/7.5/8/8.5/9 seconds. When he first enters terrain, he restores [[1]].<br /><br />Being [[2]] and spending more than 1.5 consecutive seconds outside of Terrain ends this Ability early.<br /><br />[[3]] Gain [[4]], [[5]] immunity, and reduce the Cooldown to 8 seconds.",
                 "parseInfo": [
                     {
                         "text": {
@@ -696,7 +731,7 @@
             "id": "KaynR",
             "name": "Umbral Trespass",
             "_rawTooltip": {
-                "fullTooltip": "[[0]] Champions damaged by Kayn are marked for 3.15 seconds.<br /><br />Kayn infests a marked enemy, becoming Untargetable. After 2.5 seconds or after [[1]], Kayn bursts out, dealing [[2]] to the enemy.<br /><br />[[3]] Increases this Ability's range, the distance Kayn exits, and refreshes [[4]] Cooldown on exit.<br /><br />[[5]] Instead deals [[6]] and restores [[7]] (65% damage amount).?",
+                "fullTooltip": "[[0]] Champions damaged by Kayn are marked for 3.15 seconds.<br /><br />Kayn infests a marked enemy, becoming Untargetable. After 2.5 seconds or after [[1]], Kayn bursts out, dealing [[2]] to the enemy.<br /><br />[[3]] Increases this Ability's range, the distance Kayn exits, and refreshes [[4]] Cooldown on exit.<br /><br />[[5]] Instead deals [[6]] and restores [[7]] (65% damage amount).",
                 "parseInfo": [
                     {
                         "text": {

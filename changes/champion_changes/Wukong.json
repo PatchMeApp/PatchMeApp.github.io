@@ -11,6 +11,7 @@
         "12.7",
         "12.10",
         "12.11",
+        "12.14",
         "12.12"
     ],
     "Changes": {
@@ -759,6 +760,40 @@
             },
             "R": ""
         },
+        "12.14": {
+            "B": {
+                "SpellName": "Base Stats",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Base Health Regeneration: ",
+                            "Before": "2.5",
+                            "Indicator": " ⇒ ",
+                            "After": "3.5 per 5 seconds"
+                        }
+                    }
+                ]
+            },
+            "P": {
+                "SpellName": "Passive - Stone Skin",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Health Regeneration Per Stack (max 10): ",
+                            "Before": "0.5%",
+                            "Indicator": " ⇒ ",
+                            "After": "0.35%"
+                        }
+                    }
+                ]
+            },
+            "Q": "",
+            "W": "",
+            "E": "",
+            "R": ""
+        },
         "12.12": {
             "B": "",
             "P": "",
@@ -812,7 +847,7 @@
             "increment": 2.05
         },
         "hpRegen": {
-            "base": 2.5,
+            "base": 3.5,
             "increment": 0.65
         },
         "mpRegen": {
@@ -888,7 +923,7 @@
             "id": "MonkeyKingDoubleAttack",
             "name": "Crushing Blow",
             "_rawTooltip": {
-                "fullTooltip": "Wukong and his [[0]] next Attack gains 75/100/125/150 range, deals an additional [[1]], and removes [[2]] for 3 seconds.<br /><br />This Ability's cooldown is reduced by 0.5 seconds every time Wukong or his [[3]] hit an enemy with an Attack or Ability.<br /><br />[[4]]?",
+                "fullTooltip": "Wukong and his [[0]] next Attack gains 75/100/125/150 range, deals an additional [[1]], and removes [[2]] for 3 seconds.<br /><br />This Ability's cooldown is reduced by 0.5 seconds every time Wukong or his [[3]] hit an enemy with an Attack or Ability.<br /><br />[[4]]",
                 "parseInfo": [
                     {
                         "text": {
@@ -955,7 +990,7 @@
             "id": "MonkeyKingDecoy",
             "name": "Warrior Trickster",
             "_rawTooltip": {
-                "fullTooltip": "Wukong dashes and becomes [[0]] for 1 second, leaving behind a stationary [[1]] for 3.25 seconds.<br /><br />The [[2]] Attacks nearby enemies Wukong has recently damaged and will mimic his ultimate, each dealing 35/40/45/50/55% of normal damage.?",
+                "fullTooltip": "Wukong dashes and becomes [[0]] for 1 second, leaving behind a stationary [[1]] for 3.25 seconds.<br /><br />The [[2]] Attacks nearby enemies Wukong has recently damaged and will mimic his ultimate, each dealing 35/40/45/50/55% of normal damage.",
                 "parseInfo": [
                     {
                         "text": {
@@ -1003,7 +1038,7 @@
             "id": "MonkeyKingNimbus",
             "name": "Nimbus Strike",
             "_rawTooltip": {
-                "fullTooltip": "Wukong dashes to an enemy, sending out [[0]] that mimic the dash to up to 2 additional enemies nearby. Each enemy struck takes [[1]]. He and his [[2]] gain [[3]] for 5 seconds.<br /><br />[[4]]</rules>?",
+                "fullTooltip": "Wukong dashes to an enemy, sending out [[0]] that mimic the dash to up to 2 additional enemies nearby. Each enemy struck takes [[1]]. He and his [[2]] gain [[3]] for 5 seconds.<br /><br />[[4]]</rules>",
                 "parseInfo": [
                     {
                         "text": {
@@ -1075,7 +1110,7 @@
             "id": "MonkeyKingSpinToWin",
             "name": "Cyclone",
             "_rawTooltip": {
-                "fullTooltip": "Wukong gains [[0]] and spins his staff, [[1]] nearby enemies for 0.6 seconds and take [[2]] over 2 seconds.<br /><br />This Ability can be cast a second time within 8 seconds before going on cooldown.?",
+                "fullTooltip": "Wukong gains [[0]] and spins his staff, [[1]] nearby enemies for 0.6 seconds and take [[2]] over 2 seconds.<br /><br />This Ability can be cast a second time within 8 seconds before going on cooldown.",
                 "parseInfo": [
                     {
                         "text": {

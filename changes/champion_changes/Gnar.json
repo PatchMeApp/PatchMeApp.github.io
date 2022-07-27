@@ -9,7 +9,8 @@
         "11.6",
         "11.8",
         "11.12",
-        "12.10"
+        "12.10",
+        "12.14"
     ],
     "Changes": {
         "9.24b": {
@@ -324,11 +325,41 @@
             "W": "",
             "E": "",
             "R": ""
+        },
+        "12.14": {
+            "B": {
+                "SpellName": "Base Stats",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Base Health: ",
+                            "Before": "580",
+                            "Indicator": " ⇒ ",
+                            "After": "540"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Health Regeneration Growth: ",
+                            "Before": "1.75",
+                            "Indicator": " ⇒ ",
+                            "After": "1.25"
+                        }
+                    }
+                ]
+            },
+            "P": "",
+            "Q": "",
+            "W": "",
+            "E": "",
+            "R": ""
         }
     },
     "stats": {
         "hp": {
-            "base": 580,
+            "base": 540,
             "increment": 79
         },
         "mp": {
@@ -345,7 +376,7 @@
         },
         "hpRegen": {
             "base": 4.5,
-            "increment": 1.75
+            "increment": 1.25
         },
         "mpRegen": {
             "base": 0,
@@ -373,7 +404,7 @@
             "name": "Rage Gene",
             "cooldown": "",
             "_rawTooltip": {
-                "fullTooltip": "Innate - Rage Gene: Mini Gnar generates 4 / 7 / 11 (based on level) Rage over 2 seconds upon dealing or receiving damage. Against non-champions, basic attacks and Boomerang Throw instantly generate[ 12.5% of the amount. ] Against champions, Boomerang Throw instantly generates[ 25% of the amount, ]and basic attacks instantly generate[ 50% of the amount. ] Boomerang Throw can only generate Rage once per cast, and grants Rage based on the first enemy hit. Gnar's Rage decays if he has not dealt or taken damage in the last 13 seconds.<br>At maximum Rage, Gnar's abilities are switched to Mega Gnar's abilities for 4 seconds. Casting one of Mega Gnar's abilities will cause him to transform into Mega Gnar, else he will transform automatically after the 4 seconds have elapsed.<br>Gnar's Mega form lasts for 15 seconds, with his Rage bar depleting as an indication of remaining time. Rage cannot be generated while in this form. Afterwards, Gnar returns to Mini Gnar, retaining his current percentage healt and becoming too tired to generate Rage for 15 seconds.<br>Gnar gains different stat bonuses based on whether he is in mini or mega form. Both of Gnar's forms share ability cooldowns.",
+                "fullTooltip": "Innate - Rage Gene: Mini Gnar generates 4 / 7 / 11 (based on level) Rage over 2 seconds upon dealing or receiving damage. Against non-champions, basic attacks and Boomerang Throw instantly generate[ 12.5% of the amount. ] Against champions, Boomerang Throw instantly generates[ 25% of the amount, ]and basic attacks instantly generate[ 50% of the amount. ] Boomerang Throw can only generate Rage once per cast, and grants Rage based on the first enemy hit. Gnar's Rage decays if he has not dealt or taken damag in the last 13 seconds.<br>At maximum Rage, Gnar's abilities are switched to Mega Gnar's abilities for 4 seconds. Casting one of Mega Gnar's abilities will cause him to transform into Mega Gnar, else he will transform automatically after the 4 seconds have elapsed.<br>Gnar's Mega form lasts for 15 seconds, with his Rage bar depleting as an indication of remaining time. Rage cannot be generated while in this form. Afterwards, Gnar returns to Mini Gnar, retaining his current percentage healt and becoming too tired to generate Rage for 15 seconds.<br>Gnar gains different stat bonuses based on whether he is in mini or mega form. Both of Gnar's forms share ability cooldowns.",
                 "parseInfo": []
             }
         },
@@ -381,7 +412,7 @@
             "id": "GnarQ",
             "name": "Boomerang Throw / Boulder Toss",
             "_rawTooltip": {
-                "fullTooltip": "[[0]] Gnar throws a boomerang that deals [[1]] and [[2]] by 15/20/25/30/35% for 2 seconds. The boomerang returns after hitting an enemy, dealing reduced damage to subsequent targets. Each enemy can only be hit once. Catching the boomerang reduces its Cooldown by 40%.?",
+                "fullTooltip": "[[0]] Gnar throws a boomerang that deals [[1]] and [[2]] by 15/20/25/30/35% for 2 seconds. The boomerang returns after hitting an enemy, dealing reduced damage to subsequent targets. Each enemy can only be hit once. Catching the boomerang reduces its Cooldown by 40%.",
                 "parseInfo": [
                     {
                         "text": {
@@ -434,7 +465,7 @@
             "id": "GnarW",
             "name": "Hyper / Wallop",
             "_rawTooltip": {
-                "fullTooltip": "[[0]] Every third Attack or Ability on the same enemy deals an additional [[1]] and grants [[2]] decaying over 3 seconds.?",
+                "fullTooltip": "[[0]] Every third Attack or Ability on the same enemy deals an additional [[1]] and grants [[2]] decaying over 3 seconds.",
                 "parseInfo": [
                     {
                         "text": {
@@ -487,7 +518,7 @@
             "id": "GnarE",
             "name": "Hop / Crunch",
             "_rawTooltip": {
-                "fullTooltip": "[[0]] Gnar leaps, gaining [[1]] for 6 seconds. If Gnar lands on a unit he will bounce off it, traveling further. Bouncing off an enemy deals [[2]] and briefly [[3]] by 80%.?",
+                "fullTooltip": "[[0]] Gnar leaps, gaining [[1]] for 6 seconds. If Gnar lands on a unit he will bounce off it, traveling further. Bouncing off an enemy deals [[2]] and briefly [[3]] by 80%.",
                 "parseInfo": [
                     {
                         "text": {
@@ -547,7 +578,7 @@
             "id": "GnarR",
             "name": "GNAR!",
             "_rawTooltip": {
-                "fullTooltip": "[[0]] Increase [[1]] [[2]].<br /><br />[[3]] Gnar tosses nearby enemies, dealing [[4]], [[5]], and [[6]] them by 45% for 1.25/1.5 seconds. Enemies that hit a wall instead take [[7]] and are [[8]].?",
+                "fullTooltip": "[[0]] Increase [[1]] [[2]].<br /><br />[[3]] Gnar tosses nearby enemies, dealing [[4]], [[5]], and [[6]] them by 45% for 1.25/1.5 seconds. Enemies that hit a wall instead take [[7]] and are [[8]].",
                 "parseInfo": [
                     {
                         "text": {

@@ -4,7 +4,8 @@
         "10.11",
         "12.2",
         "12.10",
-        "12.12"
+        "12.12",
+        "12.14"
     ],
     "Changes": {
         "10.11": {
@@ -356,6 +357,49 @@
                 ]
             },
             "R": ""
+        },
+        "12.14": {
+            "B": "",
+            "P": "",
+            "Q": "",
+            "W": "",
+            "E": {
+                "SpellName": "E - Eye Of The Storm",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Shield Amount: ",
+                            "Before": "65/90/115/140/165",
+                            "Indicator": " ⇒ ",
+                            "After": "75/100/125/150/175"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Bonus Heal and Shield Power: ",
+                            "Before": "20%",
+                            "Indicator": " ⇒ ",
+                            "After": "15%"
+                        }
+                    }
+                ]
+            },
+            "R": {
+                "SpellName": "R - Monsoon",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Heal per Second: ",
+                            "Before": "90/145/200 (+45% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "100/150/200 (+50% AP)"
+                        }
+                    }
+                ]
+            }
         }
     },
     "stats": {
@@ -421,7 +465,7 @@
             "id": "HowlingGale",
             "name": "Howling Gale",
             "_rawTooltip": {
-                "fullTooltip": "Janna summons a tornado that grows stronger over 3 seconds then blows along its path. It deals [[0]] and [[1]] for 0.5 seconds. The distance, damage, and [[2]] duration increase based on how much the tornado grew. Janna can [[3]] to send the tornado early.?",
+                "fullTooltip": "Janna summons a tornado that grows stronger over 3 seconds then blows along its path. It deals [[0]] and [[1]] for 0.5 seconds. The distance, damage, and [[2]] duration increase based on how much the tornado grew. Janna can [[3]] to send the tornado early.",
                 "parseInfo": [
                     {
                         "text": {
@@ -481,7 +525,7 @@
             "id": "SowTheWind",
             "name": "Zephyr",
             "_rawTooltip": {
-                "fullTooltip": "[[0]] While this Ability is available, Janna gains [[1]] and is Ghosted.<br /><br />[[2]] Janna's elemental strikes an enemy, [[3]] them by 20/24/28/32/36 (+6% AP)% for 3 seconds, and dealing [[4]].?",
+                "fullTooltip": "[[0]] While this Ability is available, Janna gains [[1]] and is Ghosted.<br /><br />[[2]] Janna's elemental strikes an enemy, [[3]] them by 20/24/28/32/36 (+6% AP)% for 3 seconds, and dealing [[4]].",
                 "parseInfo": [
                     {
                         "text": {
@@ -553,7 +597,7 @@
             "id": "EyeOfTheStorm",
             "name": "Eye Of The Storm",
             "_rawTooltip": {
-                "fullTooltip": "[[0]] Janna gains 20% Heal and Shield Power for 4 seconds whenever she impairs an enemy champion's movement.<br /><br />[[1]] Janna grants an ally champion or turret [[2]] decaying over 5 seconds. While shielded, they gain [[3]].?",
+                "fullTooltip": "[[0]] Janna gains 15% Heal and Shield Power for 4 seconds whenever she impairs an enemy champion's movement.<br /><br />[[1]] Janna grants an ally champion or turret [[2]] decaying over 5 seconds. While shielded, they gain [[3]].",
                 "parseInfo": [
                     {
                         "text": {
@@ -571,7 +615,7 @@
                     },
                     {
                         "text": {
-                            "text": "65/90/115/140/165 {{0}} Shield",
+                            "text": "75/100/125/150/175 {{0}} Shield",
                             "scaleHolders": [
                                 {
                                     "scale": "(+55% AP)",
@@ -618,7 +662,7 @@
             "id": "ReapTheWhirlwind",
             "name": "Monsoon",
             "_rawTooltip": {
-                "fullTooltip": "Janna summons a magical monsoon, [[0]] nearby enemies then healing nearby allies for [[1]] over 3 seconds. Moving or using an Ability ends the monsoon early.?",
+                "fullTooltip": "Janna summons a magical monsoon, [[0]] nearby enemies then healing nearby allies for [[1]] over 3 seconds. Moving or using an Ability ends the monsoon early.",
                 "parseInfo": [
                     {
                         "text": {
@@ -629,10 +673,10 @@
                     },
                     {
                         "text": {
-                            "text": "270/435/600 {{0}} Health",
+                            "text": "300/450/600 {{0}} Health",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+135% AP)",
+                                    "scale": "(+150% AP)",
                                     "scaleId": "AP"
                                 }
                             ]
