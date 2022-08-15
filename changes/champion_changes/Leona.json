@@ -5,6 +5,7 @@
         "11.11",
         "11.17",
         "12.10",
+        "12.15",
         "12.12"
     ],
     "Changes": {
@@ -132,6 +133,40 @@
             "E": "",
             "R": ""
         },
+        "12.15": {
+            "B": "",
+            "P": "",
+            "Q": {
+                "SpellName": "Q - Shield of Daybreak",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Mana Cost: ",
+                            "Before": "45/50/55/60/65",
+                            "Indicator": " ⇒ ",
+                            "After": "35/40/45/50/55"
+                        }
+                    }
+                ]
+            },
+            "W": "",
+            "E": "",
+            "R": {
+                "SpellName": "R - Solar Flare",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Stun and Slow Duration: ",
+                            "Before": "1.5",
+                            "Indicator": " ⇒ ",
+                            "After": "1.75 seconds"
+                        }
+                    }
+                ]
+            }
+        },
         "12.12": {
             "B": "",
             "P": {
@@ -254,13 +289,13 @@
                 5,
                 5
             ],
-            "cost": "45/50/55/60/65 Mana",
+            "cost": "35/40/45/50/55 Mana",
             "costByLevel": [
+                35,
+                40,
                 45,
                 50,
-                55,
-                60,
-                65
+                55
             ],
             "costType": " Mana"
         },
@@ -391,7 +426,7 @@
             "id": "LeonaSolarFlare",
             "name": "Solar Flare",
             "_rawTooltip": {
-                "fullTooltip": "Leona calls down a radiant beam of solar energy dealing [[0]] and [[1]] by 80% for 1.5 seconds. Enemies in the center of the flare are [[2]] instead of [[3]].",
+                "fullTooltip": "Leona calls down a radiant beam of solar energy dealing [[0]] and [[1]] by 80% for 1.75 seconds. Enemies in the center of the flare are [[2]] instead of [[3]].",
                 "parseInfo": [
                     {
                         "text": {

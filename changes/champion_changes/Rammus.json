@@ -8,7 +8,8 @@
         "11.5",
         "11.8",
         "11.12",
-        "12.10"
+        "12.10",
+        "12.15"
     ],
     "Changes": {
         "9.24": {
@@ -288,6 +289,63 @@
             "W": "",
             "E": "",
             "R": ""
+        },
+        "12.15": {
+            "B": "",
+            "P": "",
+            "Q": "",
+            "W": "",
+            "E": "",
+            "R": {
+                "SpellName": "R - Soaring Slam",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Cooldown: ",
+                            "Before": "110/95/80",
+                            "Indicator": " ⇒ ",
+                            "After": "90 at all ranks"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Base Cast Range: ",
+                            "Before": "600",
+                            "Indicator": " ⇒ ",
+                            "After": "800"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Dash Range Growth: ",
+                            "Before": "1.3",
+                            "Indicator": " ⇒ ",
+                            "After": "1.5 (note: this is how much the range will scale with movespeed)"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Minimum Dash Speed: ",
+                            "Before": "700",
+                            "Indicator": " ⇒ ",
+                            "After": "900"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Maximum Dash Speed: ",
+                            "Before": "1800",
+                            "Indicator": " ⇒ ",
+                            "After": "2000"
+                        }
+                    }
+                ]
+            }
         }
     },
     "stats": {
@@ -650,11 +708,11 @@
                 ]
             },
             "maxRank": 3,
-            "cooldown": "110/95/80",
+            "cooldown": "90",
             "cooldownByLevel": [
-                110,
-                95,
-                80
+                90,
+                90,
+                90
             ],
             "cost": "100 Mana",
             "costByLevel": [

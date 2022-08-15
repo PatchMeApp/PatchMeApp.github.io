@@ -5,7 +5,8 @@
         "11.15",
         "11.19",
         "12.5",
-        "12.10"
+        "12.10",
+        "12.15"
     ],
     "Changes": {
         "11.10": {
@@ -139,6 +140,49 @@
             "W": "",
             "E": "",
             "R": ""
+        },
+        "12.15": {
+            "B": "",
+            "P": "",
+            "Q": "",
+            "W": {
+                "SpellName": "W - Electrical Surge",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Cooldown: ",
+                            "Before": "14/12/10/8/6",
+                            "Indicator": " ⇒ ",
+                            "After": "13/11.25/9.5/7.75/6"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Magic Damage: ",
+                            "Before": "60/85/110/135/160",
+                            "Indicator": " ⇒ ",
+                            "After": "70/95/120/145/170"
+                        }
+                    }
+                ]
+            },
+            "E": "",
+            "R": {
+                "SpellName": "R - Slicing Maelstrom",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Magic Damage Per Bolt: ",
+                            "Before": "40/75/110 (+20% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "40/75/110 (+22.5% AP)"
+                        }
+                    }
+                ]
+            }
         }
     },
     "stats": {
@@ -269,7 +313,7 @@
                     },
                     {
                         "text": {
-                            "text": "60/85/110/135/160 {{0}} magic damage",
+                            "text": "70/95/120/145/170 {{0}} magic damage",
                             "scaleHolders": [
                                 {
                                     "scale": "(+80% AP)",
@@ -289,12 +333,12 @@
                 ]
             },
             "maxRank": 5,
-            "cooldown": "14/12/10/8/6",
+            "cooldown": "13/11.25/9.5/7.75/6",
             "cooldownByLevel": [
-                14,
-                12,
-                10,
-                8,
+                13,
+                11.25,
+                9.5,
+                7.75,
                 6
             ],
             "cost": "40 Energy",
@@ -378,7 +422,7 @@
                             "text": "40/75/110 {{0}} magic damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+20% AP)",
+                                    "scale": "(+22.5% AP)",
                                     "scaleId": "AP"
                                 }
                             ]

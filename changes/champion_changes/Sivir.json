@@ -8,7 +8,8 @@
         "11.16",
         "12.10",
         "12.13",
-        "12.14"
+        "12.14",
+        "12.15"
     ],
     "Changes": {
         "9.24": {
@@ -602,6 +603,53 @@
             },
             "E": "",
             "R": ""
+        },
+        "12.15": {
+            "B": {
+                "SpellName": "Base Stats",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Attack Damage Growth: ",
+                            "Before": "3.3",
+                            "Indicator": " ⇒ ",
+                            "After": "3"
+                        }
+                    }
+                ]
+            },
+            "P": "",
+            "Q": "",
+            "W": "",
+            "E": {
+                "SpellName": "E - Spell Shield",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Cooldown: ",
+                            "Before": "22/20/18/16/14",
+                            "Indicator": " ⇒ ",
+                            "After": "24/22.5/21/19.5/18"
+                        }
+                    }
+                ]
+            },
+            "R": {
+                "SpellName": "R - On The Hunt",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Cooldown: ",
+                            "Before": "100/85/70",
+                            "Indicator": " ⇒ ",
+                            "After": "120/100/80"
+                        }
+                    }
+                ]
+            }
         }
     },
     "stats": {
@@ -639,7 +687,7 @@
         },
         "attackDamage": {
             "base": 58,
-            "increment": 3.3
+            "increment": 3
         },
         "attackRange": {
             "base": 500,
@@ -784,13 +832,13 @@
                 ]
             },
             "maxRank": 5,
-            "cooldown": "22/20/18/16/14",
+            "cooldown": "24/22.5/21/19.5/18",
             "cooldownByLevel": [
-                22,
-                20,
-                18,
-                16,
-                14
+                24,
+                22.5,
+                21,
+                19.5,
+                18
             ],
             "cost": "0 Mana",
             "costByLevel": [
@@ -818,11 +866,11 @@
                 ]
             },
             "maxRank": 3,
-            "cooldown": "100/85/70",
+            "cooldown": "120/100/80",
             "cooldownByLevel": [
+                120,
                 100,
-                85,
-                70
+                80
             ],
             "cost": "100 Mana",
             "costByLevel": [
