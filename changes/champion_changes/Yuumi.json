@@ -11,7 +11,8 @@
         "11.22",
         "12.10",
         "12.12",
-        "12.14"
+        "12.14",
+        "12.16"
     ],
     "Changes": {
         "9.19": {
@@ -586,6 +587,36 @@
                 ]
             },
             "R": ""
+        },
+        "12.16": {
+            "B": "",
+            "P": "",
+            "Q": "",
+            "W": "",
+            "E": {
+                "SpellName": "E - Zoomies",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Bonus movement speed: ",
+                            "Before": "20% (+ 6% per 100 AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "20% (+ 2% per 100 AP)"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Cooldown: ",
+                            "Before": "12/11/10/9/8 seconds",
+                            "Indicator": " ⇒ ",
+                            "After": "12/11.5/11/10.5/10 seconds"
+                        }
+                    }
+                ]
+            },
+            "R": ""
         }
     },
     "stats": {
@@ -798,7 +829,7 @@
                             "text": "20 {{0}}% Move Speed",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+6% AP)",
+                                    "scale": "(+2% AP)",
                                     "scaleId": "AP"
                                 }
                             ]
@@ -822,13 +853,13 @@
                 ]
             },
             "maxRank": 5,
-            "cooldown": "12/11/10/9/8",
+            "cooldown": "12/11.5/11/10.5/10",
             "cooldownByLevel": [
                 12,
+                11.5,
                 11,
-                10,
-                9,
-                8
+                10.5,
+                10
             ],
             "cost": "40/45/50/55 Mana + {{ percentmanacost*100 }}% Max Mana",
             "costByLevel": [

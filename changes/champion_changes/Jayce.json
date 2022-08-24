@@ -5,7 +5,8 @@
         "10.4",
         "11.18",
         "12.7",
-        "12.10"
+        "12.10",
+        "12.16"
     ],
     "Changes": {
         "10.1": {
@@ -197,6 +198,40 @@
             "W": "",
             "E": "",
             "R": ""
+        },
+        "12.16": {
+            "B": "",
+            "P": "",
+            "Q": {
+                "SpellName": "Q (Hammer Form) - To the Skies!",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Damage: ",
+                            "Before": "55/95/135/175/215/255 (+ 120% bonus AD)",
+                            "Indicator": " ⇒ ",
+                            "After": "55/100/145/190/235/280 (+ 120% bonus AD)"
+                        }
+                    }
+                ]
+            },
+            "W": "",
+            "E": {
+                "SpellName": "E (Hammer Form) - Thundering Blow",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Damage: ",
+                            "Before": "8/10.4/12.8/15.2/17.6/20% of target's maximum health ( 100% bonus AD)",
+                            "Indicator": " ⇒ ",
+                            "After": "8/10.8/13.6/16.4/19.2/22% of target's maximum health ( 100% bonus AD)"
+                        }
+                    }
+                ]
+            },
+            "R": ""
         }
     },
     "stats": {
@@ -273,7 +308,7 @@
                     },
                     {
                         "text": {
-                            "text": "55/95/135/175/215/255 {{0}} physical damage",
+                            "text": "55/100/145/190/235/280 {{0}} physical damage",
                             "scaleHolders": [
                                 {
                                     "scale": "(+120% Bonus AD)",
@@ -404,7 +439,7 @@
                     },
                     {
                         "text": {
-                            "text": "100% Bonus AD plus 8/10.4/12.8/15.2/17.6/20% max Health magic damage",
+                            "text": "100% Bonus AD plus 8/10.8/13.6/16.4/19.2/22% max Health magic damage",
                             "scaleHolders": []
                         },
                         "type": "magicDamage"

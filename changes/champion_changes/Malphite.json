@@ -3,7 +3,8 @@
     "ChangePatches": [
         "9.22",
         "11.12",
-        "12.10"
+        "12.10",
+        "12.16"
     ],
     "Changes": {
         "9.22": {
@@ -106,6 +107,40 @@
             },
             "Q": "",
             "W": "",
+            "E": "",
+            "R": ""
+        },
+        "12.16": {
+            "B": "",
+            "P": {
+                "SpellName": "Passive - Granite Shield",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Cooldown (levels 1/7/13): ",
+                            "Before": "10/8/6 seconds",
+                            "Indicator": " ⇒ ",
+                            "After": "8/7/6 seconds"
+                        }
+                    }
+                ]
+            },
+            "Q": "",
+            "W": {
+                "SpellName": "W - Thunderclap",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Cooldown: ",
+                            "Before": "12 at all ranks",
+                            "Indicator": " ⇒ ",
+                            "After": "12/11.5/11/10.5/10 seconds"
+                        }
+                    }
+                ]
+            },
             "E": "",
             "R": ""
         }
@@ -329,13 +364,13 @@
                 ]
             },
             "maxRank": 5,
-            "cooldown": "12",
+            "cooldown": "12/11.5/11/10.5/10",
             "cooldownByLevel": [
                 12,
-                12,
-                12,
-                12,
-                12
+                11.5,
+                11,
+                10.5,
+                10
             ],
             "cost": "30/35/40/45/50 Mana",
             "costByLevel": [

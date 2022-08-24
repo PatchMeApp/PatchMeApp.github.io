@@ -14,7 +14,8 @@
         "12.3",
         "12.10",
         "12.11",
-        "12.12"
+        "12.12",
+        "12.16"
     ],
     "Changes": {
         "9.18": {
@@ -415,6 +416,40 @@
             },
             "R": ""
         },
+        "12.16": {
+            "B": "",
+            "P": {
+                "SpellName": "Passive - Headshot",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Attack Damage Ratio: ",
+                            "Before": "60/85/110% (based on level)",
+                            "Indicator": " ⇒ ",
+                            "After": "60/90/120% (based on level)"
+                        }
+                    }
+                ]
+            },
+            "Q": "",
+            "W": "",
+            "E": "",
+            "R": {
+                "SpellName": "R - Ace in the Hole",
+                "Changes": [
+                    {
+                        "Tag": "NEW",
+                        "Change": {
+                            "Attribute": "SHARP SHOOTIN: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "Damage is now increased by 0-25% based on current critical strike chance"
+                        }
+                    }
+                ]
+            }
+        },
         "12.12": {
             "B": {
                 "SpellName": "Base Stats",
@@ -693,11 +728,15 @@
                 "parseInfo": [
                     {
                         "text": {
-                            "text": "300/525/750 {{0}} physical damage",
+                            "text": "300/525/750 {{0}} * {{1}} physical damage",
                             "scaleHolders": [
                                 {
                                     "scale": "(+200% Bonus AD)",
                                     "scaleId": "AD"
+                                },
+                                {
+                                    "scale": "(1 + 25% Crit Chance)",
+                                    "scaleId": "Chance"
                                 }
                             ]
                         },
