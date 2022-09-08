@@ -7,7 +7,8 @@
         "10.15",
         "10.19",
         "12.3",
-        "12.10"
+        "12.10",
+        "12.17"
     ],
     "Changes": {
         "9.19": {
@@ -236,6 +237,40 @@
             "W": "",
             "E": "",
             "R": ""
+        },
+        "12.17": {
+            "B": "",
+            "P": "",
+            "Q": {
+                "SpellName": "Q - Wild Card",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "AP Ratio: ",
+                            "Before": "70%",
+                            "Indicator": " ⇒ ",
+                            "After": "80%"
+                        }
+                    }
+                ]
+            },
+            "W": {
+                "SpellName": "W - Pick A Card",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Mana Cost: ",
+                            "Before": "40/55/70/85/100",
+                            "Indicator": " ⇒ ",
+                            "After": "30/40/50/60/70"
+                        }
+                    }
+                ]
+            },
+            "E": "",
+            "R": ""
         }
     },
     "stats": {
@@ -300,7 +335,7 @@
                             "text": "60/100/140/180/220 {{0}} magic damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+70% AP)",
+                                    "scale": "(+80% AP)",
                                     "scaleId": "AP"
                                 }
                             ]
@@ -421,13 +456,13 @@
                 6.5,
                 6
             ],
-            "cost": "40/55/70/85/100 Mana",
+            "cost": "30/40/50/60/70 Mana",
             "costByLevel": [
+                30,
                 40,
-                55,
-                70,
-                85,
-                100
+                50,
+                60,
+                70
             ],
             "costType": " Mana"
         },

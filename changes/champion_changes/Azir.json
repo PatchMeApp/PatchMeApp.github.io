@@ -8,7 +8,8 @@
         "11.5",
         "11.11",
         "12.6",
-        "12.10"
+        "12.10",
+        "12.17"
     ],
     "Changes": {
         "10.1": {
@@ -258,6 +259,49 @@
                 ]
             },
             "R": ""
+        },
+        "12.17": {
+            "B": "",
+            "P": "",
+            "Q": "",
+            "W": {
+                "SpellName": "W - Arise!",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Sand Soldier Damage: ",
+                            "Before": "50-150 (based on level) (+60% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "(+55% AP)"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Cooldown: ",
+                            "Before": "8/7.5/7/6.5/6 seconds",
+                            "Indicator": " ⇒ ",
+                            "After": "9/8.25/7.5/6.75/6 seconds"
+                        }
+                    }
+                ]
+            },
+            "E": {
+                "SpellName": "E - Shifting Sands",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Cooldown: ",
+                            "Before": "19/18/17/16/15 seconds",
+                            "Indicator": " ⇒ ",
+                            "After": "22/20.5/19/17.5/16 seconds"
+                        }
+                    }
+                ]
+            },
+            "R": ""
         }
     },
     "stats": {
@@ -443,7 +487,7 @@
                                     "scaleId": "level"
                                 },
                                 {
-                                    "scale": "(+60% AP)",
+                                    "scale": "(+55% AP)",
                                     "scaleId": "AP"
                                 }
                             ]
@@ -518,13 +562,13 @@
                 ]
             },
             "maxRank": 5,
-            "cooldown": "19/18/17/16/15",
+            "cooldown": "22/20.5/19/17.5/16",
             "cooldownByLevel": [
+                22,
+                20.5,
                 19,
-                18,
-                17,
-                16,
-                15
+                17.5,
+                16
             ],
             "cost": "60 Mana",
             "costByLevel": [

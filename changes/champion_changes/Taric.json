@@ -5,7 +5,8 @@
         "11.9",
         "11.14",
         "12.10",
-        "12.11"
+        "12.11",
+        "12.17"
     ],
     "Changes": {
         "10.10": {
@@ -236,6 +237,40 @@
                 ]
             },
             "R": ""
+        },
+        "12.17": {
+            "B": {
+                "SpellName": "Base Stats",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Base Magic Resist: ",
+                            "Before": "32",
+                            "Indicator": " ⇒ ",
+                            "After": "28"
+                        }
+                    }
+                ]
+            },
+            "P": "",
+            "Q": "",
+            "W": "",
+            "E": {
+                "SpellName": "E - Dazzle",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Cooldown: ",
+                            "Before": "15/14/13/12/11 seconds",
+                            "Indicator": " ⇒ ",
+                            "After": "16/15/14/13/12 seconds"
+                        }
+                    }
+                ]
+            },
+            "R": ""
         }
     },
     "stats": {
@@ -252,7 +287,7 @@
             "increment": 4.6
         },
         "spellBlock": {
-            "base": 32,
+            "base": 28,
             "increment": 2.05
         },
         "hpRegen": {
@@ -491,13 +526,13 @@
                 ]
             },
             "maxRank": 5,
-            "cooldown": "15/14/13/12/11",
+            "cooldown": "16/15/14/13/12",
             "cooldownByLevel": [
+                16,
                 15,
                 14,
                 13,
-                12,
-                11
+                12
             ],
             "cost": "40 Mana",
             "costByLevel": [

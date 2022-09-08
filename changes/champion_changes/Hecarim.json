@@ -15,7 +15,8 @@
         "11.20",
         "12.6",
         "12.9",
-        "12.10"
+        "12.10",
+        "12.17"
     ],
     "Changes": {
         "10.6": {
@@ -535,19 +536,191 @@
             "W": "",
             "E": "",
             "R": ""
+        },
+        "12.17": {
+            "B": {
+                "SpellName": "Base Stats",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Base Armor: ",
+                            "Before": "35",
+                            "Indicator": " ⇒ ",
+                            "After": "32"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "HP Growth: ",
+                            "Before": "104",
+                            "Indicator": " ⇒ ",
+                            "After": "99"
+                        }
+                    }
+                ]
+            },
+            "P": "",
+            "Q": {
+                "SpellName": "Q - Rampage",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Damage: ",
+                            "Before": "60/90/120/150/180 (+90% bonus AD)",
+                            "Indicator": " ⇒ ",
+                            "After": "60/85/110/135/160 (+95% bonus AD)"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Damage per stack: ",
+                            "Before": "2% (+3% per 100 bonus AD)",
+                            "Indicator": " ⇒ ",
+                            "After": "4% (+6% per 100 bonus AD)"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Q Cooldown per stack: ",
+                            "Before": "1 second",
+                            "Indicator": " ⇒ ",
+                            "After": "0.75 seconds"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Max number of stacks: ",
+                            "Before": "2",
+                            "Indicator": " ⇒ ",
+                            "After": "3"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Stack Falloff: ",
+                            "Before": "All at duration end",
+                            "Indicator": " ⇒ ",
+                            "After": "1 stack per second at duration end"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Mana Cost: ",
+                            "Before": "28/31/34/37/40",
+                            "Indicator": " ⇒ ",
+                            "After": "30"
+                        }
+                    }
+                ]
+            },
+            "W": {
+                "SpellName": "W - Spirit of Dread",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Cooldown: ",
+                            "Before": "14 seconds",
+                            "Indicator": " ⇒ ",
+                            "After": "16/15.5/15/14.5/14 seconds"
+                        }
+                    },
+                    {
+                        "Tag": "NEW",
+                        "Change": {
+                            "Attribute": "ARMORED CAVALRY: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "Hecarim gains 15/20/25/30/35 Armor and Magic Resist while Spirit of Dread is active"
+                        }
+                    }
+                ]
+            },
+            "E": {
+                "SpellName": "E - Devastating Charge",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Min Damage: ",
+                            "Before": "30/45/60/75/90 (+55% bonus AD)",
+                            "Indicator": " ⇒ ",
+                            "After": "30/45/60/75/90 (+50% bonus AD)"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Max Damage: ",
+                            "Before": "60/90/120/150/180 (+110% bonus AD)",
+                            "Indicator": " ⇒ ",
+                            "After": "60/90/120/150/180 (+100% bonus AD)"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Minimum Knockback: ",
+                            "Before": "250",
+                            "Indicator": " ⇒ ",
+                            "After": "150"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Maximum Knockback: ",
+                            "Before": "450",
+                            "Indicator": " ⇒ ",
+                            "After": "350"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Cooldown: ",
+                            "Before": "20/19/18/17/16",
+                            "Indicator": " ⇒ ",
+                            "After": "18 at all ranks"
+                        }
+                    }
+                ]
+            },
+            "R": {
+                "SpellName": "R - Onslaught of Shadows",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Fear duration: ",
+                            "Before": "0.75-2 seconds based on distance traveled",
+                            "Indicator": " ⇒ ",
+                            "After": "0.75-1.5 seconds based on distance traveled"
+                        }
+                    }
+                ]
+            }
         }
     },
     "stats": {
         "hp": {
             "base": 650,
-            "increment": 104
+            "increment": 99
         },
         "mp": {
             "base": 277,
             "increment": 60
         },
         "armor": {
-            "base": 35,
+            "base": 32,
             "increment": 5.45
         },
         "spellBlock": {
@@ -605,14 +778,14 @@
             "id": "HecarimRapidSlash",
             "name": "Rampage",
             "_rawTooltip": {
-                "fullTooltip": "Hecarim cleaves nearby enemies for [[0]]. If this Ability hits, he gains a stack that decreases its Cooldown by 1 second and increases its damage by 2 (+3% Bonus AD)% for 6 seconds. Stacks up to 2 times.",
+                "fullTooltip": "Hecarim cleaves nearby enemies for [[0]]. If this Ability hits, he gains a stack that decreases its Cooldown by 0.75 seconds and increases its damage by 4 (+6% Bonus AD)% for 8 seconds. Stacks up to 3 times.<br />",
                 "parseInfo": [
                     {
                         "text": {
-                            "text": "60/90/120/150/180 {{0}} physical damage",
+                            "text": "60/85/110/135/160 {{0}} physical damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+90% Bonus AD)",
+                                    "scale": "(+95% Bonus AD)",
                                     "scaleId": "AD"
                                 }
                             ]
@@ -630,13 +803,13 @@
                 4,
                 4
             ],
-            "cost": "28/31/34/37/40 Mana",
+            "cost": "30 Mana",
             "costByLevel": [
-                28,
-                31,
-                34,
-                37,
-                40
+                30,
+                30,
+                30,
+                30,
+                30
             ],
             "costType": " Mana"
         },
@@ -644,7 +817,7 @@
             "id": "HecarimW",
             "name": "Spirit of Dread",
             "_rawTooltip": {
-                "fullTooltip": "Hecarim deals [[0]] over 4 seconds to nearby enemies, and heals for [[1]] these enemies take from Hecarim and [[2]] taken from his allies.",
+                "fullTooltip": "Hecarim deals [[0]] over 4 seconds to nearby enemies. <br /><br />Hecarim gains [[1]] [[2]] and [[3]] and heals for [[4]] nearby enemies take from Hecarim and [[5]] taken from his allies.",
                 "parseInfo": [
                     {
                         "text": {
@@ -657,6 +830,27 @@
                             ]
                         },
                         "type": "magicDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "15/20/25/30",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "Armor",
+                            "scaleHolders": []
+                        },
+                        "type": "scaleArmor"
+                    },
+                    {
+                        "text": {
+                            "text": "Magic Resist",
+                            "scaleHolders": []
+                        },
+                        "type": "scaleMR"
                     },
                     {
                         "text": {
@@ -685,12 +879,12 @@
                 ]
             },
             "maxRank": 5,
-            "cooldown": "14",
+            "cooldown": "16/15.5/15/14.5/14",
             "cooldownByLevel": [
-                14,
-                14,
-                14,
-                14,
+                16,
+                15.5,
+                15,
+                14.5,
                 14
             ],
             "cost": "50/60/70/80/90 Mana",
@@ -735,7 +929,7 @@
                             "text": "30/45/60/75/90 {{0}}",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+55% Bonus AD)",
+                                    "scale": "(+50% Bonus AD)",
                                     "scaleId": "AD"
                                 }
                             ]
@@ -747,7 +941,7 @@
                             "text": "60/90/120/150/180 {{0}} physical damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+110% Bonus AD)",
+                                    "scale": "(+100% Bonus AD)",
                                     "scaleId": "AD"
                                 }
                             ]
@@ -764,13 +958,13 @@
                 ]
             },
             "maxRank": 5,
-            "cooldown": "20/19/18/17/16",
+            "cooldown": "18",
             "cooldownByLevel": [
-                20,
-                19,
                 18,
-                17,
-                16
+                18,
+                18,
+                18,
+                18
             ],
             "cost": "60 Mana",
             "costByLevel": [
@@ -786,7 +980,7 @@
             "id": "HecarimUlt",
             "name": "Onslaught of Shadows",
             "_rawTooltip": {
-                "fullTooltip": "Hecarim summons spectral riders and charges forward, dealing [[0]]. Hecarim unleashes a shockwave at the end of the charge that [[1]] for between 0.75 to 2 seconds, increased by charge distance.",
+                "fullTooltip": "Hecarim summons spectral riders and charges forward, dealing [[0]]. Hecarim unleashes a shockwave at the end of the charge that [[1]] for between 0.75 to 1.5 seconds, increased by charge distance.",
                 "parseInfo": [
                     {
                         "text": {

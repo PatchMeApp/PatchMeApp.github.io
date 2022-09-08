@@ -11,7 +11,8 @@
         "11.17",
         "11.21",
         "11.22",
-        "12.10"
+        "12.10",
+        "12.17"
     ],
     "Changes": {
         "9.19": {
@@ -343,6 +344,40 @@
             "W": "",
             "E": "",
             "R": ""
+        },
+        "12.17": {
+            "B": "",
+            "P": "",
+            "Q": {
+                "SpellName": "Q - End of the Line",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Cooldown: ",
+                            "Before": "12/11/10/9/8 seconds",
+                            "Indicator": " ⇒ ",
+                            "After": "13/11.5/10/8.5/7 seconds"
+                        }
+                    }
+                ]
+            },
+            "W": "",
+            "E": "",
+            "R": {
+                "SpellName": "R - Collateral Damage",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Damage: ",
+                            "Before": "250/400/550 (+150% bonus AD)",
+                            "Indicator": " ⇒ ",
+                            "After": "275/425/575 (+150% bonus AD)"
+                        }
+                    }
+                ]
+            }
         }
     },
     "stats": {
@@ -485,13 +520,13 @@
                 ]
             },
             "maxRank": 5,
-            "cooldown": "12/11/10/9/8",
+            "cooldown": "13/11.5/10/8.5/7",
             "cooldownByLevel": [
-                12,
-                11,
+                13,
+                11.5,
                 10,
-                9,
-                8
+                8.5,
+                7
             ],
             "cost": "80 Mana",
             "costByLevel": [
@@ -598,7 +633,7 @@
                 "parseInfo": [
                     {
                         "text": {
-                            "text": "250/400/550 {{0}} physical damage",
+                            "text": "275/425/575 {{0}} physical damage",
                             "scaleHolders": [
                                 {
                                     "scale": "(+150% Bonus AD)",

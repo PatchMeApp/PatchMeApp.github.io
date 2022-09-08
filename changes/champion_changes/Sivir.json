@@ -9,7 +9,8 @@
         "12.10",
         "12.13",
         "12.14",
-        "12.15"
+        "12.15",
+        "12.17"
     ],
     "Changes": {
         "9.24": {
@@ -650,6 +651,40 @@
                     }
                 ]
             }
+        },
+        "12.17": {
+            "B": {
+                "SpellName": "Base Stats",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "AD Growth: ",
+                            "Before": "3",
+                            "Indicator": " ⇒ ",
+                            "After": "2.8"
+                        }
+                    }
+                ]
+            },
+            "P": "",
+            "Q": "",
+            "W": {
+                "SpellName": "W - Ricochet",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Bounce Damage AD Ratio: ",
+                            "Before": "30/35/40/45/50% total AD",
+                            "Indicator": " ⇒ ",
+                            "After": "25/30/35/40/45% total AD"
+                        }
+                    }
+                ]
+            },
+            "E": "",
+            "R": ""
         }
     },
     "stats": {
@@ -687,7 +722,7 @@
         },
         "attackDamage": {
             "base": 58,
-            "increment": 3
+            "increment": 2.8
         },
         "attackRange": {
             "base": 500,
@@ -785,7 +820,7 @@
                     },
                     {
                         "text": {
-                            "text": "30/35/40/45/50% AD physical damage",
+                            "text": "25/30/35/40/45% AD physical damage",
                             "scaleHolders": []
                         },
                         "type": "physicalDamage"

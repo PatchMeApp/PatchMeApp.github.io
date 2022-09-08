@@ -9,7 +9,8 @@
         "10.18",
         "11.9",
         "12.4",
-        "12.10"
+        "12.10",
+        "12.17"
     ],
     "Changes": {
         "10.1": {
@@ -324,6 +325,40 @@
             "W": "",
             "E": "",
             "R": ""
+        },
+        "12.17": {
+            "B": "",
+            "P": "",
+            "Q": "",
+            "W": {
+                "SpellName": "W - Haymaker",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "AD ratio: ",
+                            "Before": "20% per 100 bonus AD",
+                            "Indicator": " ⇒ ",
+                            "After": "25% per 100 bonus AD"
+                        }
+                    }
+                ]
+            },
+            "E": {
+                "SpellName": "E - Facebreaker",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Slow: ",
+                            "Before": "50%",
+                            "Indicator": " ⇒ ",
+                            "After": "70%"
+                        }
+                    }
+                ]
+            },
+            "R": ""
         }
     },
     "stats": {
@@ -519,7 +554,7 @@
                             "text": "80/100/120/140/160 plus 25% {{0}} Grit consumed true damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+20% per 100 Bonus AD)",
+                                    "scale": "(+25% per 100 Bonus AD)",
                                     "scaleId": "AD"
                                 }
                             ]
@@ -565,7 +600,7 @@
             "id": "SettE",
             "name": "Facebreaker",
             "_rawTooltip": {
-                "fullTooltip": "Sett smashes enemies on either side of him into each other, dealing [[0]] and [[1]] them by 50% for 0.5 seconds. If Sett grabbed at least one enemy on each side, all enemies are [[2]] for 1 second.",
+                "fullTooltip": "Sett smashes enemies on either side of him into each other, dealing [[0]] and [[1]] them by 70% for 0.5 seconds. If Sett grabbed at least one enemy on each side, all enemies are [[2]] for 1 second.",
                 "parseInfo": [
                     {
                         "text": {
