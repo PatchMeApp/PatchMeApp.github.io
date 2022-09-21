@@ -16,7 +16,8 @@
         "12.6",
         "12.9",
         "12.10",
-        "12.17"
+        "12.17",
+        "12.18"
     ],
     "Changes": {
         "10.6": {
@@ -708,11 +709,67 @@
                     }
                 ]
             }
+        },
+        "12.18": {
+            "B": {
+                "SpellName": "Base Stats",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Base Health: ",
+                            "Before": "650",
+                            "Indicator": " ⇒ ",
+                            "After": "625"
+                        }
+                    }
+                ]
+            },
+            "P": "",
+            "Q": {
+                "SpellName": "Q -Rampage",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Physical Damage Bonus AD Ratio: ",
+                            "Before": "95%",
+                            "Indicator": " ⇒ ",
+                            "After": "90%"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Increased Damage Per Stack: ",
+                            "Before": "4% (+6% per 100 bonus AD)",
+                            "Indicator": " ⇒ ",
+                            "After": "4% (+5% per 100 bonus AD)"
+                        }
+                    }
+                ]
+            },
+            "W": {
+                "SpellName": "W - Spirit of Dread",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Percent of Post-Mitigation Damage Healed: ",
+                            "Before": "30% (+2.5% per 100 bonus AD)",
+                            "Indicator": " ⇒ ",
+                            "After": "25% (+2% per 100 bonus AD) (Note: remains halved for damage not dealt by Hecarim)"
+                        }
+                    }
+                ]
+            },
+            "E": "",
+            "R": ""
         }
     },
     "stats": {
         "hp": {
-            "base": 650,
+            "base": 625,
             "increment": 99
         },
         "mp": {
@@ -778,14 +835,14 @@
             "id": "HecarimRapidSlash",
             "name": "Rampage",
             "_rawTooltip": {
-                "fullTooltip": "Hecarim cleaves nearby enemies for [[0]]. If this Ability hits, he gains a stack that decreases its Cooldown by 0.75 seconds and increases its damage by 4 (+6% Bonus AD)% for 8 seconds. Stacks up to 3 times.<br />",
+                "fullTooltip": "Hecarim cleaves nearby enemies for [[0]]. If this Ability hits, he gains a stack that decreases its Cooldown by 0.75 seconds and increases its damage by 4 (+5% Bonus AD)% for 8 seconds. Stacks up to 3 times.<br />",
                 "parseInfo": [
                     {
                         "text": {
                             "text": "60/85/110/135/160 {{0}} physical damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+95% Bonus AD)",
+                                    "scale": "(+90% Bonus AD)",
                                     "scaleId": "AD"
                                 }
                             ]
@@ -854,10 +911,10 @@
                     },
                     {
                         "text": {
-                            "text": "30 {{0}}% of damage",
+                            "text": "25 {{0}}% of damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+2.5% Bonus AD)",
+                                    "scale": "(+2% Bonus AD)",
                                     "scaleId": "AD"
                                 }
                             ]
@@ -866,10 +923,10 @@
                     },
                     {
                         "text": {
-                            "text": "15 {{0}}% of damage",
+                            "text": "12.5 {{0}}% of damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+1.25% Bonus AD)",
+                                    "scale": "(+1% Bonus AD)",
                                     "scaleId": "AD"
                                 }
                             ]

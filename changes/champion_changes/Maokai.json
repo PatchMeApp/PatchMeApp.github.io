@@ -8,7 +8,8 @@
         "11.16",
         "11.22",
         "12.10",
-        "12.17"
+        "12.17",
+        "12.18"
     ],
     "Changes": {
         "9.21": {
@@ -448,6 +449,62 @@
                     }
                 ]
             }
+        },
+        "12.18": {
+            "B": "",
+            "P": {
+                "SpellName": "Passive - Sap Magic",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Heal: ",
+                            "Before": "4.8-14% (based on level)",
+                            "Indicator": " ⇒ ",
+                            "After": "4.5 -12% (based on level)"
+                        }
+                    }
+                ]
+            },
+            "Q": {
+                "SpellName": "Q - Bramble Smash",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Bonus Damage to Monsters: ",
+                            "Before": "40/60/80/100/120",
+                            "Indicator": " ⇒ ",
+                            "After": "80/100/120/140/160"
+                        }
+                    }
+                ]
+            },
+            "W": "",
+            "E": {
+                "SpellName": "E - Sapling Toss",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Damage: ",
+                            "Before": "55/80/105/130/155 (+ 6% bonus health) (+ 42.5% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "55/80/105/130/155 (+ 6% bonus health) (+ 40% AP)"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Empowered Damage: ",
+                            "Before": "110/160/210/260/310 (+ 12% bonus health) (+ 85% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "110/160/210/260/310 (+ 12% bonus health) (+ 80% AP)"
+                        }
+                    }
+                ]
+            },
+            "R": ""
         }
     },
     "stats": {
@@ -635,7 +692,7 @@
                             "text": "55/80/105/130/155 {{0}} {{1}} magic damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+42.5% AP)",
+                                    "scale": "(+40% AP)",
                                     "scaleId": "AP"
                                 },
                                 {
@@ -665,7 +722,7 @@
                             "text": "110/160/210/260/310 {{0}} {{1}} magic damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+85% AP)",
+                                    "scale": "(+80% AP)",
                                     "scaleId": "AP"
                                 },
                                 {

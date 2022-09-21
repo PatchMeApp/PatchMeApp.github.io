@@ -9,7 +9,8 @@
         "11.9",
         "11.16",
         "12.2",
-        "12.10"
+        "12.10",
+        "12.18"
     ],
     "Changes": {
         "9.21": {
@@ -333,6 +334,45 @@
                     }
                 ]
             }
+        },
+        "12.18": {
+            "B": "",
+            "P": "",
+            "Q": "",
+            "W": {
+                "SpellName": "W - Whimsy",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Movement Speed: ",
+                            "Before": "30%",
+                            "Indicator": " ⇒ ",
+                            "After": "25%"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Disable duration: ",
+                            "Before": "1.25/1.5/1.75/2.0/2.25",
+                            "Indicator": " ⇒ ",
+                            "After": "1.2/1.4/1.6/1.8/2.0 seconds"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Cooldown: ",
+                            "Before": "17/16/15/14/13",
+                            "Indicator": " ⇒ ",
+                            "After": "17/16.5/16/15.5/15 seconds"
+                        }
+                    }
+                ]
+            },
+            "E": "",
+            "R": ""
         }
     },
     "stats": {
@@ -469,11 +509,11 @@
             "id": "LuluW",
             "name": "Whimsy",
             "_rawTooltip": {
-                "fullTooltip": "When used on an ally, Lulu grants [[0]] and [[1]] for 3/3.25/3.5/3.75/4 seconds.<br /><br />When used on an enemy, Lulu [[2]] them for 1.25/1.5/1.75/2/2.25 seconds.",
+                "fullTooltip": "When used on an ally, Lulu grants [[0]] and [[1]] for 3/3.25/3.5/3.75/4 seconds.<br /><br />When used on an enemy, Lulu [[2]] them for 1.2/1.4/1.6/1.8/2 seconds.",
                 "parseInfo": [
                     {
                         "text": {
-                            "text": "30% {{0}} Move Speed",
+                            "text": "25% {{0}} Move Speed",
                             "scaleHolders": [
                                 {
                                     "scale": "(+5% per 100 AP)",
@@ -500,13 +540,13 @@
                 ]
             },
             "maxRank": 5,
-            "cooldown": "17/16/15/14/13",
+            "cooldown": "17/16.5/16/15.5/15",
             "cooldownByLevel": [
                 17,
+                16.5,
                 16,
-                15,
-                14,
-                13
+                15.5,
+                15
             ],
             "cost": "65 Mana",
             "costByLevel": [
