@@ -4,7 +4,8 @@
         "9.22",
         "11.12",
         "12.10",
-        "12.16"
+        "12.16",
+        "12.19"
     ],
     "Changes": {
         "9.22": {
@@ -143,6 +144,40 @@
             },
             "E": "",
             "R": ""
+        },
+        "12.19": {
+            "B": "",
+            "P": "",
+            "Q": "",
+            "W": {
+                "SpellName": "W - Thunderclap",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Cone AoE Physical Damage: ",
+                            "Before": "15/25/35/45/55 (+ 20% AP) (+ 15% armor)",
+                            "Indicator": " ⇒ ",
+                            "After": "15/25/35/45/55 (+ 30% AP) (+ 15% armor)"
+                        }
+                    }
+                ]
+            },
+            "E": "",
+            "R": {
+                "SpellName": "R - Unstoppable Force",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Magic Damage: ",
+                            "Before": "200/300/400 (+ 80% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "200/300/400 (+ 90% AP)"
+                        }
+                    }
+                ]
+            }
         }
     },
     "stats": {
@@ -350,7 +385,7 @@
                             "text": "15/25/35/45/55 {{0}} {{1}} physical damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+20% AP)",
+                                    "scale": "(+30% AP)",
                                     "scaleId": "AP"
                                 },
                                 {
@@ -450,7 +485,7 @@
                             "text": "200/300/400 {{0}} magic damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+80% AP)",
+                                    "scale": "(+90% AP)",
                                     "scaleId": "AP"
                                 }
                             ]

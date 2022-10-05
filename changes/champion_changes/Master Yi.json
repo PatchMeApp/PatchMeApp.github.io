@@ -11,7 +11,8 @@
         "12.10",
         "12.11",
         "12.13",
-        "12.15"
+        "12.15",
+        "12.19"
     ],
     "Changes": {
         "9.21": {
@@ -453,6 +454,40 @@
                 ]
             },
             "R": ""
+        },
+        "12.19": {
+            "B": {
+                "SpellName": "Base Stats",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Attack Damage Growth: ",
+                            "Before": "2.5",
+                            "Indicator": " ⇒ ",
+                            "After": "2.2"
+                        }
+                    }
+                ]
+            },
+            "P": "",
+            "Q": "",
+            "W": "",
+            "E": {
+                "SpellName": "E - Wuju Style",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Bonus True Damage: ",
+                            "Before": "30/35/40/45/50 (+35% bonus AD)",
+                            "Indicator": " ⇒ ",
+                            "After": "30/35/40/45/50 (+30% bonus AD)"
+                        }
+                    }
+                ]
+            },
+            "R": ""
         }
     },
     "stats": {
@@ -490,7 +525,7 @@
         },
         "attackDamage": {
             "base": 65,
-            "increment": 2.5
+            "increment": 2.2
         },
         "attackRange": {
             "base": 175,
@@ -626,7 +661,7 @@
                             "text": "30/35/40/45/50 {{0}} true damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+35% Bonus AD)",
+                                    "scale": "(+30% Bonus AD)",
                                     "scaleId": "AD"
                                 }
                             ]

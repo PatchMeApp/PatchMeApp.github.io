@@ -5,7 +5,8 @@
         "10.15",
         "10.16",
         "12.10",
-        "12.11"
+        "12.11",
+        "12.19"
     ],
     "Changes": {
         "10.13": {
@@ -213,6 +214,40 @@
                 ]
             },
             "R": ""
+        },
+        "12.19": {
+            "B": "",
+            "P": {
+                "SpellName": "Passive - Fey Feathers",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Shield Strength: ",
+                            "Before": "30-225 (based on level) (+ 85% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "30-225 (based on level) (+ 95% AP)"
+                        }
+                    }
+                ]
+            },
+            "Q": {
+                "SpellName": "Q - Gleaming Quill",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Magic Damage: ",
+                            "Before": "70/115/160/205/250 (+ 60% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "70/115/160/205/250 (+ 70% AP)"
+                        }
+                    }
+                ]
+            },
+            "W": "",
+            "E": "",
+            "R": ""
         }
     },
     "stats": {
@@ -277,7 +312,7 @@
                             "text": "70/115/160/205/250 {{0}} magic damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+60% AP)",
+                                    "scale": "(+70% AP)",
                                     "scaleId": "AP"
                                 }
                             ]
@@ -303,13 +338,13 @@
                 ]
             },
             "maxRank": 5,
-            "cooldown": "0",
+            "cooldown": "12/11/10/9/8",
             "cooldownByLevel": [
-                0,
-                0,
-                0,
-                0,
-                0
+                12,
+                11,
+                10,
+                9,
+                8
             ],
             "cost": "60 Mana",
             "costByLevel": [

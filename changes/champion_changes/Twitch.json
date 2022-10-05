@@ -7,7 +7,8 @@
         "11.5",
         "11.18",
         "11.24",
-        "12.10"
+        "12.10",
+        "12.19"
     ],
     "Changes": {
         "10.18": {
@@ -270,6 +271,40 @@
             "W": "",
             "E": "",
             "R": ""
+        },
+        "12.19": {
+            "B": "",
+            "P": {
+                "SpellName": "Passive - Deadly Venom",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Damage Per Stack: ",
+                            "Before": "1/2/3/4/5 (based on level) (+ 2.5% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "1/2/3/4/5 (based on level) (+ 3% AP)"
+                        }
+                    }
+                ]
+            },
+            "Q": "",
+            "W": "",
+            "E": {
+                "SpellName": "E - Contaminate",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Magic Damage per Stack: ",
+                            "Before": "35/50/65/80/95 (+ 35% bonus AD) (+ 33% AP) AP",
+                            "Indicator": " ⇒ ",
+                            "After": "35/50/65/80/95 (+ 35% bonus AD) (+ 35% AP)"
+                        }
+                    }
+                ]
+            },
+            "R": ""
         }
     },
     "stats": {
@@ -470,7 +505,7 @@
             "id": "TwitchExpunge",
             "name": "Contaminate",
             "_rawTooltip": {
-                "fullTooltip": "Deals [[0]] to all nearby enemies affected by [[1]], plus an additional [[2]] and [[3]] per stack of [[4]].<br /><br />Max Stack Damage: [[5]] and [[6]].",
+                "fullTooltip": "Deals [[0]] to all nearby enemies affected by [[1]], plus an additional [[2]] and [[3]] per stack of [[4]].<br /><br />Max Damage: [[5]] and [[6]].",
                 "parseInfo": [
                     {
                         "text": {
@@ -500,7 +535,7 @@
                     },
                     {
                         "text": {
-                            "text": "33% AP magical damage",
+                            "text": "35% AP magical damage",
                             "scaleHolders": []
                         },
                         "type": "magicDamage"
@@ -514,7 +549,7 @@
                     },
                     {
                         "text": {
-                            "text": "60 {{0}} {{1}} physical damage",
+                            "text": "20.4/30.6/40.8/51/61.2 {{0}} {{1}} physical damage",
                             "scaleHolders": [
                                 {
                                     "scale": "(+90/120/150/180/210)",
@@ -530,7 +565,7 @@
                     },
                     {
                         "text": {
-                            "text": "198% AP magical damage",
+                            "text": "210% AP magical damage",
                             "scaleHolders": []
                         },
                         "type": "magicDamage"

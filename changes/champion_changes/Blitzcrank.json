@@ -8,7 +8,8 @@
         "11.15",
         "12.4",
         "12.10",
-        "12.12"
+        "12.12",
+        "12.19"
     ],
     "Changes": {
         "9.19": {
@@ -253,6 +254,138 @@
                     }
                 ]
             }
+        },
+        "12.19": {
+            "B": {
+                "SpellName": "Base Stats",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Base Attack Speed: ",
+                            "Before": "0.625",
+                            "Indicator": " ⇒ ",
+                            "After": "0.65"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Attack Speed Ratio: ",
+                            "Before": "0.625",
+                            "Indicator": " ⇒ ",
+                            "After": "0.7"
+                        }
+                    }
+                ]
+            },
+            "P": "",
+            "Q": "",
+            "W": {
+                "SpellName": "W - Overdrive",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Mana Cost: ",
+                            "Before": "75",
+                            "Indicator": " ⇒ ",
+                            "After": "85"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Bonus Attack Speed: ",
+                            "Before": "30/38/46/54/62%",
+                            "Indicator": " ⇒ ",
+                            "After": "40/53/66/79/92%"
+                        }
+                    },
+                    {
+                        "Tag": "NEW",
+                        "Change": {
+                            "Attribute": "Magical Punch: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "Attacks during W deal an additional 1% of target’s maximum HP in magic damage. Against non-champions, this damage is increased by an extra 60-180 (based on level) damage."
+                        }
+                    }
+                ]
+            },
+            "E": {
+                "SpellName": "E - Power Fist",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Mana Cost: ",
+                            "Before": "25",
+                            "Indicator": " ⇒ ",
+                            "After": "40"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Knock Up Duration: ",
+                            "Before": "0.9 seconds",
+                            "Indicator": " ⇒ ",
+                            "After": "1 second"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Empowered Auto Attack Damage: ",
+                            "Before": "200% total AD",
+                            "Indicator": " ⇒ ",
+                            "After": "200% total AD (+ 25% AP)"
+                        }
+                    },
+                    {
+                        "Tag": "NEW",
+                        "Change": {
+                            "Attribute": "No One is Safe: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "Against non-champions, Blitzcrank’s E empowered auto attacks will deal a bonus 150% total AD (+ 125% AP) damage"
+                        }
+                    }
+                ]
+            },
+            "R": {
+                "SpellName": "R - Static Field",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Maximum Stacks from Passive: ",
+                            "Before": "3",
+                            "Indicator": " ⇒ ",
+                            "After": "Unlimited"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Magic Damage from Stacks On-Hit: ",
+                            "Before": "50/100/150 (+ 30% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "50/100/150 (+ 30/40/50% AP)"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Magic Damage: ",
+                            "Before": "275/400/525 (+ 100% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "275/400/525 (+ 125% AP)"
+                        }
+                    }
+                ]
+            }
         }
     },
     "stats": {
@@ -281,7 +414,7 @@
             "increment": 0.8
         },
         "attackSpeed": {
-            "base": 0.625,
+            "base": 0.65,
             "increment": 0.0113
         },
         "ms": {
@@ -364,21 +497,35 @@
             "id": "Overdrive",
             "name": "Overdrive",
             "_rawTooltip": {
-                "fullTooltip": "Blitzcrank supercharges themself, gaining [[0]] and [[1]] for 5 seconds. Afterwards, Blitzcrank is [[2]] by 30% for 1.5 seconds.",
+                "fullTooltip": "Blitzcrank supercharges themself, gaining [[0]] and [[1]] for 5 seconds. During this time, their attacks deal an additional [[2]] %i:OnHit% [[3]].<br /><br />Afterwards, Blitzcrank is [[4]] by 30% for 1.5 seconds.",
                 "parseInfo": [
                     {
                         "text": {
-                            "text": "70/75/80/85% decaying Move Speed",
+                            "text": "70/75/80/85/90% decaying Move Speed",
                             "scaleHolders": []
                         },
                         "type": "speed"
                     },
                     {
                         "text": {
-                            "text": "30/38/46/54/62% Attack Speed",
+                            "text": "40/53/66/79/92% Attack Speed",
                             "scaleHolders": []
                         },
                         "type": "attackSpeed"
+                    },
+                    {
+                        "text": {
+                            "text": "1% Target Max Health magic damage",
+                            "scaleHolders": []
+                        },
+                        "type": "magicDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "On-Hit",
+                            "scaleHolders": []
+                        },
+                        "type": ""
                     },
                     {
                         "text": {
@@ -398,13 +545,13 @@
                 15,
                 15
             ],
-            "cost": "75 Mana",
+            "cost": "85 Mana",
             "costByLevel": [
-                75,
-                75,
-                75,
-                75,
-                75
+                85,
+                85,
+                85,
+                85,
+                85
             ],
             "costType": " Mana"
         },
@@ -412,7 +559,7 @@
             "id": "PowerFist",
             "name": "Power Fist",
             "_rawTooltip": {
-                "fullTooltip": "Blitzcrank charges up their fist, causing their next Attack to [[0]] and deal [[1]].<br /><br />[[2]]",
+                "fullTooltip": "Blitzcrank charges up their fist, causing their next Attack to [[0]] for 1 second(s) and deal [[1]].<br /><br />Monsters and Minions take an additional [[2]] bonus damage.",
                 "parseInfo": [
                     {
                         "text": {
@@ -423,17 +570,27 @@
                     },
                     {
                         "text": {
-                            "text": "200% AD physical damage",
-                            "scaleHolders": []
+                            "text": "200% AD {{0}} physical damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+25% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
                         },
                         "type": "physicalDamage"
                     },
                     {
                         "text": {
-                            "text": "This Ability triggers spell effects upon dealing damage.",
-                            "scaleHolders": []
+                            "text": "150% AD {{0}} physical damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+125% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
                         },
-                        "type": ""
+                        "type": "physicalDamage"
                     }
                 ]
             },
@@ -446,13 +603,13 @@
                 6,
                 5
             ],
-            "cost": "25 Mana",
+            "cost": "40 Mana",
             "costByLevel": [
-                25,
-                25,
-                25,
-                25,
-                25
+                40,
+                40,
+                40,
+                40,
+                40
             ],
             "costType": " Mana"
         },
@@ -474,7 +631,7 @@
                             "text": "50/100/150 {{0}} magic damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+30% AP)",
+                                    "scale": "(+30/40/50% AP)",
                                     "scaleId": "AP"
                                 }
                             ]

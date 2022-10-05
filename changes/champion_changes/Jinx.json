@@ -11,7 +11,8 @@
         "11.18",
         "11.21",
         "12.8",
-        "12.10"
+        "12.10",
+        "12.19"
     ],
     "Changes": {
         "10.2": {
@@ -363,6 +364,40 @@
             "W": "",
             "E": "",
             "R": ""
+        },
+        "12.19": {
+            "B": {
+                "SpellName": "Base Stats",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Base Attack Damage: ",
+                            "Before": "57",
+                            "Indicator": " ⇒ ",
+                            "After": "59"
+                        }
+                    }
+                ]
+            },
+            "P": "",
+            "Q": "",
+            "W": "",
+            "E": "",
+            "R": {
+                "SpellName": "R - Super Mega Death Rocket!",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Base Damage to Primary Target: ",
+                            "Before": "250/400/550",
+                            "Indicator": " ⇒ ",
+                            "After": "300/450/600"
+                        }
+                    }
+                ]
+            }
         }
     },
     "stats": {
@@ -399,7 +434,7 @@
             "increment": 0
         },
         "attackDamage": {
-            "base": 57,
+            "base": 59,
             "increment": 3.4
         },
         "attackRange": {
@@ -579,7 +614,7 @@
                 "parseInfo": [
                     {
                         "text": {
-                            "text": "25/40/55 {{0}} to 250/400/550 {{1}} + 25/30% missing Health physical damage",
+                            "text": "25/40/55 {{0}} to 300/450/600 {{1}} + 25/30% missing Health physical damage",
                             "scaleHolders": [
                                 {
                                     "scale": "(+15% Bonus AD)",

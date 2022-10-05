@@ -7,7 +7,8 @@
         "11.3",
         "11.15",
         "12.9",
-        "12.10"
+        "12.10",
+        "12.19"
     ],
     "Changes": {
         "10.1": {
@@ -299,6 +300,80 @@
             "W": "",
             "E": "",
             "R": ""
+        },
+        "12.19": {
+            "B": "",
+            "P": "",
+            "Q": "",
+            "W": {
+                "SpellName": "W - Burnout",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Magic Damage per Tick: ",
+                            "Before": "10/16.25/22.5/28.75/35 (+ 10% bonus AD)",
+                            "Indicator": " ⇒ ",
+                            "After": "10/16.25/22.5/28.75/35 (+ 15% bonus AD)"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Bonus On-Hit Magic Damage: ",
+                            "Before": "5/8.125/11.25/14.375/17.5 (+ 5% bonus AD)",
+                            "Indicator": " ⇒ ",
+                            "After": "5/8.125/11.25/14.375/17.5 (+ 7.5% bonus AD)"
+                        }
+                    }
+                ]
+            },
+            "E": {
+                "SpellName": "E - Flame Breath",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Auto Attacks Against Marked Enemies Damage: ",
+                            "Before": "3.75% of target’s maximum health",
+                            "Indicator": " ⇒ ",
+                            "After": "3.5% of target’s maximum health"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Damage: ",
+                            "Before": "60/100/140/180/220 (+30% AD) (+70% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "60/100/140/180/220 (+40% AD) (+90% AP)"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Dragon Form Extra Damage: ",
+                            "Before": "Additional 100-160 (based on level) (+30% AD) (+30% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "Additional 75-135 (based on level) (+30% AD) (+30% AP) (Notethis is in addition to the E base damage)"
+                        }
+                    }
+                ]
+            },
+            "R": {
+                "SpellName": "R - Dragon's Descent",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Magic Damage: ",
+                            "Before": "150/250/350 (+ 100% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "150/250/350 (+ 130% AP)"
+                        }
+                    }
+                ]
+            }
         }
     },
     "stats": {
@@ -455,7 +530,7 @@
                             "text": "20/32/45/57/70 {{0}} magic damage per second",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+20% Bonus AD)",
+                                    "scale": "(+30% Bonus AD)",
                                     "scaleId": "AD"
                                 }
                             ]
@@ -467,7 +542,7 @@
                             "text": "5/8/11.25/14.25/17.5 {{0}} magic damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+5% Bonus AD)",
+                                    "scale": "(+7.5% Bonus AD)",
                                     "scaleId": "AD"
                                 }
                             ]
@@ -513,11 +588,11 @@
                             "text": "60/100/140/180/220 {{0}} {{1}} magic damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+70% AP)",
+                                    "scale": "(+90% AP)",
                                     "scaleId": "AP"
                                 },
                                 {
-                                    "scale": "(+30% AD)",
+                                    "scale": "(+40% AD)",
                                     "scaleId": "AD"
                                 }
                             ]
@@ -526,7 +601,7 @@
                     },
                     {
                         "text": {
-                            "text": "3.75% max Health magic damage",
+                            "text": "3.5% max Health magic damage",
                             "scaleHolders": []
                         },
                         "type": "magicDamage"
@@ -540,7 +615,7 @@
                     },
                     {
                         "text": {
-                            "text": "100 - 160 {{0}} {{1}} {{2}} magic damage",
+                            "text": "75 - 135 {{0}} {{1}} {{2}} magic damage",
                             "scaleHolders": [
                                 {
                                     "scale": "(based on champion level)",
@@ -652,7 +727,7 @@
                             "text": "150/250/350 {{0}} magic damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+100% AP)",
+                                    "scale": "(+130% AP)",
                                     "scaleId": "AP"
                                 }
                             ]
