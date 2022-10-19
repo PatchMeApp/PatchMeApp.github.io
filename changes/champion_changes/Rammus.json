@@ -9,7 +9,8 @@
         "11.8",
         "11.12",
         "12.10",
-        "12.15"
+        "12.15",
+        "12.20"
     ],
     "Changes": {
         "9.24": {
@@ -346,6 +347,40 @@
                     }
                 ]
             }
+        },
+        "12.20": {
+            "B": "",
+            "P": "",
+            "Q": "",
+            "W": {
+                "SpellName": "W - Defensive Ball Curl",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Self Slow: ",
+                            "Before": "30%",
+                            "Indicator": " ⇒ ",
+                            "After": "0% (Removed)"
+                        }
+                    }
+                ]
+            },
+            "E": "",
+            "R": {
+                "SpellName": "R - Soaring Slam",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Dash Speed: ",
+                            "Before": "105% of Move Speed",
+                            "Indicator": " ⇒ ",
+                            "After": "110% of Move Speed"
+                        }
+                    }
+                ]
+            }
         }
     },
     "stats": {
@@ -507,7 +542,7 @@
             "id": "DefensiveBallCurl",
             "name": "Defensive Ball Curl",
             "_rawTooltip": {
-                "fullTooltip": "Rammus enters a defensive formation, gaining [[0]], [[1]], and [[2]] himself by 30% for 6 seconds. While active, [[3]] damage is increased by 150 (+100)% and also damages enemies that Attack Rammus.<br /><br />Rammus's Attacks increase the duration by 0.4 seconds (max: 4).<br /><br />[[4]]: Rammus ends this Ability early.<br />",
+                "fullTooltip": "Rammus enters a defensive formation, gaining [[0]] and [[1]]. While active, [[2]] damage is increased by 150 (+100)% and also damages enemies that Attack Rammus.<br /><br />Rammus's Attacks increase the duration by 0.4 seconds (max: 4).<br /><br />[[3]]: Rammus ends this Ability early.<br />",
                 "parseInfo": [
                     {
                         "text": {
@@ -540,13 +575,6 @@
                             ]
                         },
                         "type": "scaleMR"
-                    },
-                    {
-                        "text": {
-                            "text": "Slowing",
-                            "scaleHolders": []
-                        },
-                        "type": "status"
                     },
                     {
                         "text": {
