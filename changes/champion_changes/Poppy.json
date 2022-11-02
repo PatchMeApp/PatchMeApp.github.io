@@ -324,7 +324,7 @@
             "id": "PoppyW",
             "name": "Steadfast Presence",
             "_rawTooltip": {
-                "fullTooltip": "[[0]] Poppy gains [[1]] and [[2]]. This bonus is doubled if Poppy is below 40% Health.<br /><br />[[3]] Poppy gains [[4]] and projects a field around her for 2 seconds that stops enemy dashes. Enemies who are stopped by the field are [[5]] and [[6]] by 25% for 2 seconds and take [[7]].",
+                "fullTooltip": "[[0]] Poppy gains [[1]] and [[2]]. This bonus is doubled if Poppy is below 40% Health.<br /><br />[[3]] For 2 seconds, Poppy gains 40% Movement Speed. During this time, she stops nearby enemy dashes, dealing 70/110/150/190/230 [[4]] magic damage, grounding and slowing them by 25% for 2 seconds.",
                 "parseInfo": [
                     {
                         "text": {
@@ -356,36 +356,15 @@
                     },
                     {
                         "text": {
-                            "text": "40% Move Speed",
-                            "scaleHolders": []
-                        },
-                        "type": "speed"
-                    },
-                    {
-                        "text": {
-                            "text": "Grounded",
-                            "scaleHolders": []
-                        },
-                        "type": "status"
-                    },
-                    {
-                        "text": {
-                            "text": "Slowed",
-                            "scaleHolders": []
-                        },
-                        "type": "status"
-                    },
-                    {
-                        "text": {
-                            "text": "70/110/150/190/230 {{0}} magic damage",
+                            "text": "{{0}}",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+70% AP)",
-                                    "scaleId": "AP"
+                                    "scale": "(+?)",
+                                    "scaleId": "(+?"
                                 }
                             ]
                         },
-                        "type": "magicDamage"
+                        "type": ""
                     }
                 ]
             },
