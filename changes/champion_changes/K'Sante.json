@@ -12,5 +12,450 @@
             "E": "",
             "R": ""
         }
+    },
+    "stats": {
+        "hp": {
+            "base": 610,
+            "increment": 104
+        },
+        "mp": {
+            "base": 290,
+            "increment": 60
+        },
+        "armor": {
+            "base": 33,
+            "increment": 4.7
+        },
+        "spellBlock": {
+            "base": 30,
+            "increment": 2.1
+        },
+        "hpRegen": {
+            "base": 8.5,
+            "increment": 0.85
+        },
+        "mpRegen": {
+            "base": 7,
+            "increment": 1
+        },
+        "attackSpeed": {
+            "base": 0.625,
+            "increment": 0.025
+        },
+        "ms": {
+            "base": 335,
+            "increment": 0
+        },
+        "attackDamage": {
+            "base": 64,
+            "increment": 3.5
+        },
+        "attackRange": {
+            "base": 175,
+            "increment": 0
+        }
+    },
+    "spells": {
+        "P": {
+            "name": "Dauntless Instinct",
+            "cooldown": "",
+            "_rawTooltip": {
+                "fullTooltip": "Innate: K'Sante's abilities mark enemies hit for 4 seconds. His basic attacks against marked enemies will gain 25 bonus range and consume the mark on-hit, dealing [[0]].<br>All Out Bonus: Both the attack's damage and the mark damage are increased by [[1]] dealt by consuming a mark is converted to true damage.",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "10 − 25 {{0}} {{1}} of target's maximum health) bonus physical damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(based on level)",
+                                    "scaleId": "level"
+                                },
+                                {
+                                    "scale": "(+ 1 / 1.33 / 1.66 / 2% (based on level)",
+                                    "scaleId": "level"
+                                }
+                            ]
+                        },
+                        "type": "Health"
+                    },
+                    {
+                        "text": {
+                            "text": "35% {{0}} {{1}}. The bonus damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+ 20% per 100 bonus armor)",
+                                    "scaleId": "armor"
+                                },
+                                {
+                                    "scale": "(+ 20% per 100 bonus magic resistance)",
+                                    "scaleId": "resistance"
+                                }
+                            ]
+                        },
+                        "type": "armor"
+                    }
+                ]
+            }
+        },
+        "Q": {
+            "id": "KSanteQ",
+            "name": "Ntofo Strikes",
+            "_rawTooltip": {
+                "fullTooltip": "K'Sante slams his weapon down, dealing [[0]] and briefly [[1]] the enemies struck by 80%.<br /><br />When an enemy is hit, K'Sante gains a stack of Ntofo Strikes for 6 seconds. At 2 stacks, K'Sante instead fires a shockwave that [[2]] and [[3]] enemies for 1 second.<br /><br />[[4]]: This Ability's Cooldown is reduced by 1 seconds and no longer inflicts [[5]].<br />",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "50/75/100/125/150 {{0}} {{1}} {{2}} physical damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+40% AD)",
+                                    "scaleId": "AD"
+                                },
+                                {
+                                    "scale": "(+0.3 bonus armor)",
+                                    "scaleId": "armor"
+                                },
+                                {
+                                    "scale": "(+0.3 bonus magic resistance)",
+                                    "scaleId": "resistance"
+                                }
+                            ]
+                        },
+                        "type": "physicalDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "Slowing",
+                            "scaleHolders": []
+                        },
+                        "type": "status"
+                    },
+                    {
+                        "text": {
+                            "text": "Stuns",
+                            "scaleHolders": []
+                        },
+                        "type": "status"
+                    },
+                    {
+                        "text": {
+                            "text": "Pulls",
+                            "scaleHolders": []
+                        },
+                        "type": "status"
+                    },
+                    {
+                        "text": {
+                            "text": "All Out",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "Slow",
+                            "scaleHolders": []
+                        },
+                        "type": "status"
+                    }
+                ]
+            },
+            "maxRank": 5,
+            "cooldown": "4",
+            "cooldownByLevel": [
+                4,
+                4,
+                4,
+                4,
+                4
+            ],
+            "cost": "15 Mana",
+            "costByLevel": [
+                15,
+                15,
+                15,
+                15,
+                15
+            ],
+            "costType": " Mana"
+        },
+        "W": {
+            "id": "KSanteW",
+            "name": "Path Maker",
+            "_rawTooltip": {
+                "fullTooltip": "[[0]] K'Sante raises his weapons defensively for up to 1 second, becoming Unstoppable and reducing incoming damage by 25% (+ 10% per 100 bonus armor) (+ 10% per 100 bonus magic resistance) (+ 1% per 100 bonus health).<br /><br />[[1]] K'Sante rams forward, dealing between [[2]] based on charge time. K'Sante [[3]] and [[4]] enemies for a duration between 0.35/0.45/0.55/0.65 and 0.85/0.95/1.05/1.15 seconds.<br /><br />[[5]] This Ability's Cooldown is refreshed. This Ability will no longer [[6]] or [[7]]. This Ability's damage reduction increases to 30% (+ 12% per 100 bonus armor) (+ 12% per 100 bonus magic resistance) (+ 1.2% per 100 bonus health), it deals additional [[8]] between [[9]], and its charge and dash speed are doubled.<br />",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "Begin Charging:",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "Release:",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "4.25/4.5/4.75/5/5.25% and 8.25/8.5/8.75/9/9.25% max Health physical damage",
+                            "scaleHolders": []
+                        },
+                        "type": "physicalDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "Knocks Back",
+                            "scaleHolders": []
+                        },
+                        "type": "status"
+                    },
+                    {
+                        "text": {
+                            "text": "Stuns",
+                            "scaleHolders": []
+                        },
+                        "type": "status"
+                    },
+                    {
+                        "text": {
+                            "text": "All Out:",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "Knock Back",
+                            "scaleHolders": []
+                        },
+                        "type": "status"
+                    },
+                    {
+                        "text": {
+                            "text": "Stun",
+                            "scaleHolders": []
+                        },
+                        "type": "status"
+                    },
+                    {
+                        "text": {
+                            "text": "physical damage",
+                            "scaleHolders": []
+                        },
+                        "type": "physicalDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "25/35/45/55/65 {{0}} and 110/170/230/290/350 {{1}}",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+50% AD)",
+                                    "scaleId": "AD"
+                                },
+                                {
+                                    "scale": "(+50% AD)",
+                                    "scaleId": "AD"
+                                }
+                            ]
+                        },
+                        "type": "physicalDamage"
+                    }
+                ]
+            },
+            "maxRank": 5,
+            "cooldown": "24/22/20/18/16",
+            "cooldownByLevel": [
+                24,
+                22,
+                20,
+                18,
+                16
+            ],
+            "cost": "75/80/85/90/95 Mana",
+            "costByLevel": [
+                75,
+                80,
+                85,
+                90,
+                95
+            ],
+            "costType": " Mana"
+        },
+        "E": {
+            "id": "KSanteE",
+            "name": "Footwork",
+            "_rawTooltip": {
+                "fullTooltip": "K'Sante dashes, gaining [[0]] for 2 seconds. If dashing to an ally, the distance of the dash is significantly increased and the ally is also [[1]].<br /><br />[[2]]: This Ability's dash speed is increased. Dashing without an ally has increased range and can go over walls.",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "45/65/85/105/125 {{0}} Shield",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+ 15% bonus health)",
+                                    "scaleId": "health"
+                                }
+                            ]
+                        },
+                        "type": "shield"
+                    },
+                    {
+                        "text": {
+                            "text": "Shielded",
+                            "scaleHolders": []
+                        },
+                        "type": "shield"
+                    },
+                    {
+                        "text": {
+                            "text": "All Out",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    }
+                ]
+            },
+            "maxRank": 5,
+            "cooldown": "9/8.5/8/7.5/7",
+            "cooldownByLevel": [
+                9,
+                8.5,
+                8,
+                7.5,
+                7
+            ],
+            "cost": "45/50/55/60/65 Mana",
+            "costByLevel": [
+                45,
+                50,
+                55,
+                60,
+                65
+            ],
+            "costType": " Mana"
+        },
+        "R": {
+            "id": "KSanteR",
+            "name": "All Out",
+            "_rawTooltip": {
+                "fullTooltip": "K'Sante shatters his ntofos, dealing [[0]] and [[1]] an enemy champion. Enemies that hit a wall instead take [[2]], are [[3]] over the wall, and are briefly [[4]]. K'Sante then dashes after the enemy and goes [[5]] for 20 seconds.<br /><br />[[6]] K'Sante loses [[7]], [[8]], and [[9]]. K'Sante gains [[10]], 10 (+ 0.75% per 100 bonus health Omnivamp, and transforms his Abilities.",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "35/70/105 {{0}} physical damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+20% AD)",
+                                    "scaleId": "AD"
+                                }
+                            ]
+                        },
+                        "type": "physicalDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "Knocking Back",
+                            "scaleHolders": []
+                        },
+                        "type": "status"
+                    },
+                    {
+                        "text": {
+                            "text": "150/250/350 {{0}} physical damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+20% AD)",
+                                    "scaleId": "AD"
+                                }
+                            ]
+                        },
+                        "type": "physicalDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "Knocked Back",
+                            "scaleHolders": []
+                        },
+                        "type": "status"
+                    },
+                    {
+                        "text": {
+                            "text": "Stunned",
+                            "scaleHolders": []
+                        },
+                        "type": "status"
+                    },
+                    {
+                        "text": {
+                            "text": "All Out",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "All Out",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "45% max Health",
+                            "scaleHolders": []
+                        },
+                        "type": "healing"
+                    },
+                    {
+                        "text": {
+                            "text": "65% Bonus Armor",
+                            "scaleHolders": []
+                        },
+                        "type": "scaleArmor"
+                    },
+                    {
+                        "text": {
+                            "text": "65% Bonus Magic Resistance",
+                            "scaleHolders": []
+                        },
+                        "type": "scaleMR"
+                    },
+                    {
+                        "text": {
+                            "text": "5 {{0}} {{1}} Attack Damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+ 32.5% bonus armor)",
+                                    "scaleId": "armor"
+                                },
+                                {
+                                    "scale": "(+ 32.5% bonus magic resistance)",
+                                    "scaleId": "resistance"
+                                }
+                            ]
+                        },
+                        "type": ""
+                    }
+                ]
+            },
+            "maxRank": 3,
+            "cooldown": "120/100/80",
+            "cooldownByLevel": [
+                120,
+                100,
+                80
+            ],
+            "cost": "100 Mana",
+            "costByLevel": [
+                100,
+                100,
+                100
+            ],
+            "costType": " Mana"
+        }
     }
 }

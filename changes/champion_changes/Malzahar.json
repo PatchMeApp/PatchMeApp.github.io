@@ -117,7 +117,7 @@
         },
         "mp": {
             "base": 375,
-            "increment": 27.5
+            "increment": 28
         },
         "armor": {
             "base": 18,
@@ -280,7 +280,7 @@
             "id": "MalzaharE",
             "name": "Malefic Visions",
             "_rawTooltip": {
-                "fullTooltip": "Malzahar inflicts terrible visions, dealing [[0]] over 4 seconds. Applying [[1]] or [[2]] to the victim during this time refreshes the visions.<br /><br />If the victim dies, Malzahar gains [[3]] and the visions spread to the nearest enemy.",
+                "fullTooltip": "Malzahar inflicts terrible visions, dealing [[0]] over 4 seconds. Applying [[1]] or [[2]] to the victim during this time refreshes the visions.<br /><br />If the victim dies, Malzahar gains [[3]] and the visions spread to the nearest enemy.<br /><br />[[4]]",
                 "parseInfo": [
                     {
                         "text": {
@@ -312,6 +312,18 @@
                         "text": {
                             "text": "2% of the maximum mana Mana",
                             "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "Malefic Visions executes minions below 15 - 45 {{0}} health.",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(based on champion level)",
+                                    "scaleId": "level"
+                                }
+                            ]
                         },
                         "type": ""
                     }
