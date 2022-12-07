@@ -1,16 +1,249 @@
 {
-    "ChampionName": "Talon",
-    "ChangePatches": [
-        "10.7",
-        "10.11",
-        "10.25",
-        "11.4",
-        "11.10",
-        "11.12",
-        "11.18",
-        "12.2",
-        "12.10"
-    ],
+    "stats": {
+        "hp": {
+            "base": 658,
+            "increment": 109
+        },
+        "mp": {
+            "base": 377,
+            "increment": 37
+        },
+        "armor": {
+            "base": 30,
+            "increment": 4.7
+        },
+        "spellBlock": {
+            "base": 39,
+            "increment": 2.05
+        },
+        "hpRegen": {
+            "base": 8.5,
+            "increment": 0.75
+        },
+        "mpRegen": {
+            "base": 7.6,
+            "increment": 0.8
+        },
+        "attackSpeed": {
+            "base": 0.625,
+            "increment": 0.028999999999999998
+        },
+        "ms": {
+            "base": 335,
+            "increment": 0
+        },
+        "attackDamage": {
+            "base": 68,
+            "increment": 3.1
+        },
+        "attackRange": {
+            "base": 125,
+            "increment": 0
+        }
+    },
+    "spells": {
+        "P": {
+            "cooldown": "",
+            "_rawTooltip": {
+                "fullTooltip": "Innate: Talon's abilities apply a Wound stack to enemy champions and large monsters hit for 6 seconds, stacking up to 3 times. Basic attacks and damaging abilities refresh the duration.<br>Talon's next basic attack against a target with 3 Wound stacks will consume the stacks to cause them to bleed, dealing them[ [[0]] over 2 seconds, ]increased to [[1]] against monsters. The target cannot gain stacks during this time.",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "75 − 245 {{0}} {{1}} total physical damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(based on level)",
+                                    "scaleId": "level"
+                                },
+                                {
+                                    "scale": "(+ 200% bonus AD)",
+                                    "scaleId": "AD"
+                                }
+                            ]
+                        },
+                        "type": "physicalDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "120% damage",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    }
+                ]
+            },
+            "name": "Blade's End"
+        },
+        "Q": {
+            "_rawTooltip": {
+                "fullTooltip": "Talon leaps to a target and deals [[0]]. If used in melee range, this Ability instead critically strikes for [[1]].<br /><br />If this Ability kills the target, Talon restores [[2]] and refunds 50% of its Cooldown.",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "65/85/105/125/145 {{0}} physical damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+100% Bonus AD)",
+                                    "scaleId": "AD"
+                                }
+                            ]
+                        },
+                        "type": "physicalDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "65/85/105/125/145 {{0}} * {{1}} physical damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+100% Bonus AD)",
+                                    "scaleId": "AD"
+                                },
+                                {
+                                    "scale": "(1.5 + 100% Bonus Crit)",
+                                    "scaleId": "Crit"
+                                }
+                            ]
+                        },
+                        "type": "physicalDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "9 - 55 {{0}} Health",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(based on champion level)",
+                                    "scaleId": "level"
+                                }
+                            ]
+                        },
+                        "type": "healing"
+                    }
+                ]
+            },
+            "cooldown": "8/7.5/7/6.5/6",
+            "cost": "40 Mana",
+            "name": "Noxian Diplomacy"
+        },
+        "W": {
+            "_rawTooltip": {
+                "fullTooltip": "Talon tosses a volley of blades, dealing [[0]]. The blades then return to him, dealing [[1]] and [[2]] by 40/45/50/55/60% for 1 second.",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "40/50/60/70/80 {{0}} physical damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+40% Bonus AD)",
+                                    "scaleId": "AD"
+                                }
+                            ]
+                        },
+                        "type": "physicalDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "50/80/110/140/170 {{0}} physical damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+80% Bonus AD)",
+                                    "scaleId": "AD"
+                                }
+                            ]
+                        },
+                        "type": "physicalDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "Slowing",
+                            "scaleHolders": []
+                        },
+                        "type": "status"
+                    }
+                ]
+            },
+            "cooldown": "9/8.5/8/7.5/7",
+            "cost": "55/60/65/70/75 Mana",
+            "name": "Rake"
+        },
+        "E": {
+            "_rawTooltip": {
+                "fullTooltip": "Talon vaults over the nearest terrain or structure. Talon cannot dash over the same terrain more than once every 160/135/110/85/60 seconds.",
+                "parseInfo": []
+            },
+            "cooldown": "0",
+            "cost": "No Cost",
+            "name": "Assassin's Path"
+        },
+        "R": {
+            "_rawTooltip": {
+                "fullTooltip": "Talon disperses a ring of blades that deal [[0]], gains [[1]], and becomes [[2]] for 2.5 seconds. When the [[3]] ends, the blades return to Talon, dealing [[4]] again.<br /><br />If Talon cancels the [[5]] with an Attack or with [[6]], the blades return to the target instead.",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "90/135/180 {{0}} physical damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+100% Bonus AD)",
+                                    "scaleId": "AD"
+                                }
+                            ]
+                        },
+                        "type": "physicalDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "40/55/70% Move Speed",
+                            "scaleHolders": []
+                        },
+                        "type": "speed"
+                    },
+                    {
+                        "text": {
+                            "text": "Invisible",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "Invisibility",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "90/135/180 {{0}} physical damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+100% Bonus AD)",
+                                    "scaleId": "AD"
+                                }
+                            ]
+                        },
+                        "type": "physicalDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "Invisibility",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "Noxian Diplomacy",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    }
+                ]
+            },
+            "cooldown": "100/80/60",
+            "cost": "100 Mana",
+            "name": "Shadow Assault"
+        }
+    },
     "Changes": {
         "10.7": {
             "B": "",
@@ -291,313 +524,16 @@
             "R": ""
         }
     },
-    "stats": {
-        "hp": {
-            "base": 658,
-            "increment": 109
-        },
-        "mp": {
-            "base": 377,
-            "increment": 37
-        },
-        "armor": {
-            "base": 30,
-            "increment": 4.7
-        },
-        "spellBlock": {
-            "base": 39,
-            "increment": 2.05
-        },
-        "hpRegen": {
-            "base": 8.5,
-            "increment": 0.75
-        },
-        "mpRegen": {
-            "base": 7.6,
-            "increment": 0.8
-        },
-        "attackSpeed": {
-            "base": 0.625,
-            "increment": 0.028999999999999998
-        },
-        "ms": {
-            "base": 335,
-            "increment": 0
-        },
-        "attackDamage": {
-            "base": 68,
-            "increment": 3.1
-        },
-        "attackRange": {
-            "base": 125,
-            "increment": 0
-        }
-    },
-    "spells": {
-        "P": {
-            "name": "Blade's End",
-            "cooldown": "",
-            "_rawTooltip": {
-                "fullTooltip": "Innate: Talon's abilities apply a Wound stack to enemy champions and large monsters hit for 6 seconds, stacking up to 3 times. Basic attacks and damaging abilities refresh the duration.<br>Talon's next basic attack against a target with 3 Wound stacks will consume the stacks to cause them to bleed, dealing them[ [[0]] over 2 seconds, ]increased to [[1]] against monsters. The target cannot gain stacks during this time.",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "75 − 245 {{0}} {{1}} total physical damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(based on level)",
-                                    "scaleId": "level"
-                                },
-                                {
-                                    "scale": "(+ 200% bonus AD)",
-                                    "scaleId": "AD"
-                                }
-                            ]
-                        },
-                        "type": "physicalDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "120% damage",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    }
-                ]
-            }
-        },
-        "Q": {
-            "id": "TalonQ",
-            "name": "Noxian Diplomacy",
-            "_rawTooltip": {
-                "fullTooltip": "Talon leaps to a target and deals [[0]]. If used in melee range, this Ability instead critically strikes for [[1]].<br /><br />If this Ability kills the target, Talon restores [[2]] and refunds 50% of its Cooldown.",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "65/85/105/125/145 {{0}} physical damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+100% Bonus AD)",
-                                    "scaleId": "AD"
-                                }
-                            ]
-                        },
-                        "type": "physicalDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "65/85/105/125/145 {{0}} * {{1}} physical damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+100% Bonus AD)",
-                                    "scaleId": "AD"
-                                },
-                                {
-                                    "scale": "(1.5 + 100% Bonus Crit)",
-                                    "scaleId": "Crit"
-                                }
-                            ]
-                        },
-                        "type": "physicalDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "9 - 55 {{0}} Health",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(based on champion level)",
-                                    "scaleId": "level"
-                                }
-                            ]
-                        },
-                        "type": "healing"
-                    }
-                ]
-            },
-            "maxRank": 5,
-            "cooldown": "8/7.5/7/6.5/6",
-            "cooldownByLevel": [
-                8,
-                7.5,
-                7,
-                6.5,
-                6
-            ],
-            "cost": "40 Mana",
-            "costByLevel": [
-                40,
-                40,
-                40,
-                40,
-                40
-            ],
-            "costType": " Mana"
-        },
-        "W": {
-            "id": "TalonW",
-            "name": "Rake",
-            "_rawTooltip": {
-                "fullTooltip": "Talon tosses a volley of blades, dealing [[0]]. The blades then return to him, dealing [[1]] and [[2]] by 40/45/50/55/60% for 1 second.",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "40/50/60/70/80 {{0}} physical damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+40% Bonus AD)",
-                                    "scaleId": "AD"
-                                }
-                            ]
-                        },
-                        "type": "physicalDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "50/80/110/140/170 {{0}} physical damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+80% Bonus AD)",
-                                    "scaleId": "AD"
-                                }
-                            ]
-                        },
-                        "type": "physicalDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "Slowing",
-                            "scaleHolders": []
-                        },
-                        "type": "status"
-                    }
-                ]
-            },
-            "maxRank": 5,
-            "cooldown": "9/8.5/8/7.5/7",
-            "cooldownByLevel": [
-                9,
-                8.5,
-                8,
-                7.5,
-                7
-            ],
-            "cost": "55/60/65/70/75 Mana",
-            "costByLevel": [
-                55,
-                60,
-                65,
-                70,
-                75
-            ],
-            "costType": " Mana"
-        },
-        "E": {
-            "id": "TalonE",
-            "name": "Assassin's Path",
-            "_rawTooltip": {
-                "fullTooltip": "Talon vaults over the nearest terrain or structure. Talon cannot dash over the same terrain more than once every 160/135/110/85/60 seconds.",
-                "parseInfo": []
-            },
-            "maxRank": 5,
-            "cooldown": "0",
-            "cooldownByLevel": [
-                0,
-                0,
-                0,
-                0,
-                0
-            ],
-            "cost": "No Cost",
-            "costByLevel": [
-                0,
-                0,
-                0,
-                0,
-                0
-            ],
-            "costType": "No Cost"
-        },
-        "R": {
-            "id": "TalonR",
-            "name": "Shadow Assault",
-            "_rawTooltip": {
-                "fullTooltip": "Talon disperses a ring of blades that deal [[0]], gains [[1]], and becomes [[2]] for 2.5 seconds. When the [[3]] ends, the blades return to Talon, dealing [[4]] again.<br /><br />If Talon cancels the [[5]] with an Attack or with [[6]], the blades return to the target instead.",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "90/135/180 {{0}} physical damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+100% Bonus AD)",
-                                    "scaleId": "AD"
-                                }
-                            ]
-                        },
-                        "type": "physicalDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "40/55/70% Move Speed",
-                            "scaleHolders": []
-                        },
-                        "type": "speed"
-                    },
-                    {
-                        "text": {
-                            "text": "Invisible",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "Invisibility",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "90/135/180 {{0}} physical damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+100% Bonus AD)",
-                                    "scaleId": "AD"
-                                }
-                            ]
-                        },
-                        "type": "physicalDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "Invisibility",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "Noxian Diplomacy",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    }
-                ]
-            },
-            "maxRank": 3,
-            "cooldown": "100/80/60",
-            "cooldownByLevel": [
-                100,
-                80,
-                60
-            ],
-            "cost": "100 Mana",
-            "costByLevel": [
-                100,
-                100,
-                100
-            ],
-            "costType": " Mana"
-        }
-    }
+    "ChangePatches": [
+        "10.7",
+        "10.11",
+        "10.25",
+        "11.4",
+        "11.10",
+        "11.12",
+        "11.18",
+        "12.2",
+        "12.10"
+    ],
+    "ChampionName": "Talon"
 }

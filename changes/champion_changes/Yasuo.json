@@ -1,17 +1,177 @@
 {
-    "ChampionName": "Yasuo",
-    "ChangePatches": [
-        "10.12",
-        "10.16",
-        "10.23",
-        "10.24",
-        "10.25",
-        "11.1",
-        "11.7",
-        "12.2",
-        "12.7",
-        "12.10"
-    ],
+    "stats": {
+        "hp": {
+            "base": 590,
+            "increment": 101
+        },
+        "mp": {
+            "base": 100,
+            "increment": 0
+        },
+        "armor": {
+            "base": 30,
+            "increment": 4.6
+        },
+        "spellBlock": {
+            "base": 32,
+            "increment": 2.05
+        },
+        "hpRegen": {
+            "base": 6.5,
+            "increment": 0.9
+        },
+        "mpRegen": {
+            "base": 0,
+            "increment": 0
+        },
+        "attackSpeed": {
+            "base": 0.697,
+            "increment": 0.035
+        },
+        "ms": {
+            "base": 345,
+            "increment": 0
+        },
+        "attackDamage": {
+            "base": 60,
+            "increment": 3
+        },
+        "attackRange": {
+            "base": 175,
+            "increment": 0
+        }
+    },
+    "spells": {
+        "P": {
+            "cooldown": "",
+            "_rawTooltip": {
+                "fullTooltip": "Innate - Intent: Yasuo's total critical strike chance is multiplied by 2.5 from all other sources, but his critical strikes deal only [ 90% of the normal critical strike damage ] Additionally, [ every 1% critical strike chance in excess of 100% is converted into 0.4 bonus AD. ]<br>Innate - Resolve: Yasuo generates Flow for every 59 / 52.5 / 46 (based on level) units he travels by any means. At[ 100 stacks ]and upon taking damage from enemy champions or monsters, Yasuo consumes all Flow to shield himself for 100 − 475 (based on level) for up to 1 second.",
+                "parseInfo": []
+            },
+            "name": "Way of the Wanderer"
+        },
+        "Q": {
+            "_rawTooltip": {
+                "fullTooltip": "Yasuo thrusts, dealing [[0]]. If he hits, he gains a stack for 6 seconds. While he has 2 stacks, his next use of this Ability fires a whirlwind from range, dealing the same damage and [[1]] for 1 second.<br /><br />If used while dashing, this Ability strikes in a circle rather than a stab.",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "20/45/70/95/120 {{0}} physical damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+105% AD)",
+                                    "scaleId": "AD"
+                                }
+                            ]
+                        },
+                        "type": "physicalDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "Knocking Up",
+                            "scaleHolders": []
+                        },
+                        "type": "status"
+                    }
+                ]
+            },
+            "cooldown": "4",
+            "cost": "No Cost",
+            "name": "Steel Tempest"
+        },
+        "W": {
+            "_rawTooltip": {
+                "fullTooltip": "Yasuo creates a drifting wall of wind that blocks all enemy projectiles for 4 seconds.",
+                "parseInfo": []
+            },
+            "cooldown": "30/27/24/21/18",
+            "cost": "No Cost",
+            "name": "Wind Wall"
+        },
+        "E": {
+            "_rawTooltip": {
+                "fullTooltip": "Yasuo dashes through a target, dealing [[0]]. Each use of this Ability grants 25% bonus damage to the next use for 5 seconds, stacking up to 50%.<br /><br />This Ability has a 10/9/8/7/6 second per-target Cooldown.",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "60/70/80/90/100 {{0}} {{1}} magic damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+20% Bonus AD)",
+                                    "scaleId": "AD"
+                                },
+                                {
+                                    "scale": "(+60% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "magicDamage"
+                    }
+                ]
+            },
+            "cooldown": "0.5/0.4/0.3/0.2/0.1",
+            "cost": "No Cost",
+            "name": "Sweeping Blade"
+        },
+        "R": {
+            "_rawTooltip": {
+                "fullTooltip": "Yasuo teleports to an [[0]] enemy champion, dealing [[1]] and holding all nearby [[2]] enemies up for an additional 1 second. Yasuo also gains maximum [[3]], but loses all [[4]] stacks.<br /><br />Afterwards, Yasuo's critical strikes ignore [[5]] for 15 seconds.",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "Airborne",
+                            "scaleHolders": []
+                        },
+                        "type": "status"
+                    },
+                    {
+                        "text": {
+                            "text": "200/350/500 {{0}} physical damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+150% Bonus AD)",
+                                    "scaleId": "AD"
+                                }
+                            ]
+                        },
+                        "type": "physicalDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "Airborne",
+                            "scaleHolders": []
+                        },
+                        "type": "status"
+                    },
+                    {
+                        "text": {
+                            "text": "Flow",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "Steel Tempest",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "50% bonus Armor",
+                            "scaleHolders": []
+                        },
+                        "type": "scaleArmor"
+                    }
+                ]
+            },
+            "cooldown": "70/50/30",
+            "cost": "No Cost",
+            "name": "Last Breath"
+        }
+    },
     "Changes": {
         "10.12": {
             "B": {
@@ -338,241 +498,17 @@
             "R": ""
         }
     },
-    "stats": {
-        "hp": {
-            "base": 590,
-            "increment": 101
-        },
-        "mp": {
-            "base": 100,
-            "increment": 0
-        },
-        "armor": {
-            "base": 30,
-            "increment": 4.6
-        },
-        "spellBlock": {
-            "base": 32,
-            "increment": 2.05
-        },
-        "hpRegen": {
-            "base": 6.5,
-            "increment": 0.9
-        },
-        "mpRegen": {
-            "base": 0,
-            "increment": 0
-        },
-        "attackSpeed": {
-            "base": 0.697,
-            "increment": 0.035
-        },
-        "ms": {
-            "base": 345,
-            "increment": 0
-        },
-        "attackDamage": {
-            "base": 60,
-            "increment": 3
-        },
-        "attackRange": {
-            "base": 175,
-            "increment": 0
-        }
-    },
-    "spells": {
-        "P": {
-            "name": "Way of the Wanderer",
-            "cooldown": "",
-            "_rawTooltip": {
-                "fullTooltip": "Innate - Intent: Yasuo's total critical strike chance is multiplied by 2.5 from all other sources, but his critical strikes deal only [ 90% of the normal critical strike damage ] Additionally, [ every 1% critical strike chance in excess of 100% is converted into 0.4 bonus AD. ]<br>Innate - Resolve: Yasuo generates Flow for every 59 / 52.5 / 46 (based on level) units he travels by any means. At[ 100 stacks ]and upon taking damage from enemy champions or monsters, Yasuo consumes all Flow to shield himself for 100 − 475 (based on level) for up to 1 second.",
-                "parseInfo": []
-            }
-        },
-        "Q": {
-            "id": "YasuoQ1Wrapper",
-            "name": "Steel Tempest",
-            "_rawTooltip": {
-                "fullTooltip": "Yasuo thrusts, dealing [[0]]. If he hits, he gains a stack for 6 seconds. While he has 2 stacks, his next use of this Ability fires a whirlwind from range, dealing the same damage and [[1]] for 1 second.<br /><br />If used while dashing, this Ability strikes in a circle rather than a stab.",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "20/45/70/95/120 {{0}} physical damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+105% AD)",
-                                    "scaleId": "AD"
-                                }
-                            ]
-                        },
-                        "type": "physicalDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "Knocking Up",
-                            "scaleHolders": []
-                        },
-                        "type": "status"
-                    }
-                ]
-            },
-            "maxRank": 5,
-            "cooldown": "4",
-            "cooldownByLevel": [
-                4,
-                4,
-                4,
-                4,
-                4
-            ],
-            "cost": "No Cost",
-            "costByLevel": [
-                0,
-                0,
-                0,
-                0,
-                0
-            ],
-            "costType": "No Cost"
-        },
-        "W": {
-            "id": "YasuoW",
-            "name": "Wind Wall",
-            "_rawTooltip": {
-                "fullTooltip": "Yasuo creates a drifting wall of wind that blocks all enemy projectiles for 4 seconds.",
-                "parseInfo": []
-            },
-            "maxRank": 5,
-            "cooldown": "30/27/24/21/18",
-            "cooldownByLevel": [
-                30,
-                27,
-                24,
-                21,
-                18
-            ],
-            "cost": "No Cost",
-            "costByLevel": [
-                0,
-                0,
-                0,
-                0,
-                0
-            ],
-            "costType": "No Cost"
-        },
-        "E": {
-            "id": "YasuoE",
-            "name": "Sweeping Blade",
-            "_rawTooltip": {
-                "fullTooltip": "Yasuo dashes through a target, dealing [[0]]. Each use of this Ability grants 25% bonus damage to the next use for 5 seconds, stacking up to 50%.<br /><br />This Ability has a 10/9/8/7/6 second per-target Cooldown.",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "60/70/80/90/100 {{0}} {{1}} magic damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+20% Bonus AD)",
-                                    "scaleId": "AD"
-                                },
-                                {
-                                    "scale": "(+60% AP)",
-                                    "scaleId": "AP"
-                                }
-                            ]
-                        },
-                        "type": "magicDamage"
-                    }
-                ]
-            },
-            "maxRank": 5,
-            "cooldown": "0.5/0.4/0.3/0.2/0.1",
-            "cooldownByLevel": [
-                0.5,
-                0.4,
-                0.3,
-                0.2,
-                0.1
-            ],
-            "cost": "No Cost",
-            "costByLevel": [
-                0,
-                0,
-                0,
-                0,
-                0
-            ],
-            "costType": "No Cost"
-        },
-        "R": {
-            "id": "YasuoR",
-            "name": "Last Breath",
-            "_rawTooltip": {
-                "fullTooltip": "Yasuo teleports to an [[0]] enemy champion, dealing [[1]] and holding all nearby [[2]] enemies up for an additional 1 second. Yasuo also gains maximum [[3]], but loses all [[4]] stacks.<br /><br />Afterwards, Yasuo's critical strikes ignore [[5]] for 15 seconds.",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "Airborne",
-                            "scaleHolders": []
-                        },
-                        "type": "status"
-                    },
-                    {
-                        "text": {
-                            "text": "200/350/500 {{0}} physical damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+150% Bonus AD)",
-                                    "scaleId": "AD"
-                                }
-                            ]
-                        },
-                        "type": "physicalDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "Airborne",
-                            "scaleHolders": []
-                        },
-                        "type": "status"
-                    },
-                    {
-                        "text": {
-                            "text": "Flow",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "Steel Tempest",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "50% bonus Armor",
-                            "scaleHolders": []
-                        },
-                        "type": "scaleArmor"
-                    }
-                ]
-            },
-            "maxRank": 3,
-            "cooldown": "70/50/30",
-            "cooldownByLevel": [
-                70,
-                50,
-                30
-            ],
-            "cost": "No Cost",
-            "costByLevel": [
-                0,
-                0,
-                0
-            ],
-            "costType": "No Cost"
-        }
-    }
+    "ChangePatches": [
+        "10.12",
+        "10.16",
+        "10.23",
+        "10.24",
+        "10.25",
+        "11.1",
+        "11.7",
+        "12.2",
+        "12.7",
+        "12.10"
+    ],
+    "ChampionName": "Yasuo"
 }

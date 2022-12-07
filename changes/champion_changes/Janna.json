@@ -1,12 +1,239 @@
 {
-    "ChampionName": "Janna",
-    "ChangePatches": [
-        "10.11",
-        "12.2",
-        "12.10",
-        "12.12",
-        "12.14"
-    ],
+    "stats": {
+        "hp": {
+            "base": 570,
+            "increment": 84
+        },
+        "mp": {
+            "base": 350,
+            "increment": 64
+        },
+        "armor": {
+            "base": 28,
+            "increment": 5
+        },
+        "spellBlock": {
+            "base": 30,
+            "increment": 1.3
+        },
+        "hpRegen": {
+            "base": 5.5,
+            "increment": 0.55
+        },
+        "mpRegen": {
+            "base": 11.5,
+            "increment": 0.4
+        },
+        "attackSpeed": {
+            "base": 0.625,
+            "increment": 0.03
+        },
+        "ms": {
+            "base": 325,
+            "increment": 0
+        },
+        "attackDamage": {
+            "base": 52,
+            "increment": 3
+        },
+        "attackRange": {
+            "base": 500,
+            "increment": 0
+        }
+    },
+    "spells": {
+        "P": {
+            "cooldown": "",
+            "_rawTooltip": {
+                "fullTooltip": "Innate: Janna gains [[0]] while moving towards nearby allied champions, and grants them the same amount when they are moving towards her.",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "8% bonus movement speed",
+                            "scaleHolders": []
+                        },
+                        "type": "speed"
+                    }
+                ]
+            },
+            "name": "Tailwind"
+        },
+        "Q": {
+            "_rawTooltip": {
+                "fullTooltip": "Janna summons a tornado that grows stronger over 3 seconds then blows along its path. It deals [[0]] and [[1]] for 0.5 seconds. The distance, damage, and [[2]] duration increase based on how much the tornado grew. Janna can [[3]] to send the tornado early.",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "60/85/110/135/160 {{0}} magic damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+35% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "magicDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "Knocks Up",
+                            "scaleHolders": []
+                        },
+                        "type": "status"
+                    },
+                    {
+                        "text": {
+                            "text": "Knock Up",
+                            "scaleHolders": []
+                        },
+                        "type": "status"
+                    },
+                    {
+                        "text": {
+                            "text": "Recast",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    }
+                ]
+            },
+            "cooldown": "12",
+            "cost": "60/70/80/90/100 Mana",
+            "name": "Howling Gale"
+        },
+        "W": {
+            "_rawTooltip": {
+                "fullTooltip": "[[0]] While this Ability is available, Janna gains [[1]] and is Ghosted.<br /><br />[[2]] Janna's elemental strikes an enemy, [[3]] them by 20/24/28/32/36 (+6% AP)% for 3 seconds, and dealing [[4]].",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "Passive:",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "6/7/8/9/10% {{0}}% Move Speed",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+2% per 100 AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "speed"
+                    },
+                    {
+                        "text": {
+                            "text": "Active:",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "Slowing",
+                            "scaleHolders": []
+                        },
+                        "type": "status"
+                    },
+                    {
+                        "text": {
+                            "text": "70/100/130/160/190 {{0}} magic damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+50% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "magicDamage"
+                    }
+                ]
+            },
+            "cooldown": "12",
+            "cost": "50/60/70/80/90 Mana",
+            "name": "Zephyr"
+        },
+        "E": {
+            "_rawTooltip": {
+                "fullTooltip": "[[0]] Janna gains 15% Heal and Shield Power for 4 seconds whenever she impairs an enemy champion's movement.<br /><br />[[1]] Janna grants an ally champion or turret [[2]] decaying over 5 seconds. While shielded, they gain [[3]].",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "Passive:",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "Active:",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "75/100/125/150/175 {{0}} Shield",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+55% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "shield"
+                    },
+                    {
+                        "text": {
+                            "text": "10/17.5/25/32.5/40 {{0}} Attack Damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+10% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": ""
+                    }
+                ]
+            },
+            "cooldown": "15/13.5/12/10.5/9",
+            "cost": "70/80/90/100/110 Mana",
+            "name": "Eye Of The Storm"
+        },
+        "R": {
+            "_rawTooltip": {
+                "fullTooltip": "Janna summons a magical monsoon, [[0]] nearby enemies then healing nearby allies for [[1]] over 3 seconds. Moving or using an Ability ends the monsoon early.",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "Knocking Back",
+                            "scaleHolders": []
+                        },
+                        "type": "status"
+                    },
+                    {
+                        "text": {
+                            "text": "300/450/600 {{0}} Health",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+150% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "healing"
+                    }
+                ]
+            },
+            "cooldown": "150/135/120",
+            "cost": "100 Mana",
+            "name": "Monsoon"
+        }
+    },
     "Changes": {
         "10.11": {
             "B": "",
@@ -402,303 +629,12 @@
             }
         }
     },
-    "stats": {
-        "hp": {
-            "base": 570,
-            "increment": 84
-        },
-        "mp": {
-            "base": 350,
-            "increment": 64
-        },
-        "armor": {
-            "base": 28,
-            "increment": 5
-        },
-        "spellBlock": {
-            "base": 30,
-            "increment": 1.3
-        },
-        "hpRegen": {
-            "base": 5.5,
-            "increment": 0.55
-        },
-        "mpRegen": {
-            "base": 11.5,
-            "increment": 0.4
-        },
-        "attackSpeed": {
-            "base": 0.625,
-            "increment": 0.03
-        },
-        "ms": {
-            "base": 325,
-            "increment": 0
-        },
-        "attackDamage": {
-            "base": 52,
-            "increment": 3
-        },
-        "attackRange": {
-            "base": 500,
-            "increment": 0
-        }
-    },
-    "spells": {
-        "P": {
-            "name": "Tailwind",
-            "cooldown": "",
-            "_rawTooltip": {
-                "fullTooltip": "Innate: Janna gains [[0]] while moving towards nearby allied champions, and grants them the same amount when they are moving towards her.",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "8% bonus movement speed",
-                            "scaleHolders": []
-                        },
-                        "type": "speed"
-                    }
-                ]
-            }
-        },
-        "Q": {
-            "id": "HowlingGale",
-            "name": "Howling Gale",
-            "_rawTooltip": {
-                "fullTooltip": "Janna summons a tornado that grows stronger over 3 seconds then blows along its path. It deals [[0]] and [[1]] for 0.5 seconds. The distance, damage, and [[2]] duration increase based on how much the tornado grew. Janna can [[3]] to send the tornado early.",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "60/85/110/135/160 {{0}} magic damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+35% AP)",
-                                    "scaleId": "AP"
-                                }
-                            ]
-                        },
-                        "type": "magicDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "Knocks Up",
-                            "scaleHolders": []
-                        },
-                        "type": "status"
-                    },
-                    {
-                        "text": {
-                            "text": "Knock Up",
-                            "scaleHolders": []
-                        },
-                        "type": "status"
-                    },
-                    {
-                        "text": {
-                            "text": "Recast",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    }
-                ]
-            },
-            "maxRank": 5,
-            "cooldown": "12",
-            "cooldownByLevel": [
-                12,
-                12,
-                12,
-                12,
-                12
-            ],
-            "cost": "60/70/80/90/100 Mana",
-            "costByLevel": [
-                60,
-                70,
-                80,
-                90,
-                100
-            ],
-            "costType": " Mana"
-        },
-        "W": {
-            "id": "SowTheWind",
-            "name": "Zephyr",
-            "_rawTooltip": {
-                "fullTooltip": "[[0]] While this Ability is available, Janna gains [[1]] and is Ghosted.<br /><br />[[2]] Janna's elemental strikes an enemy, [[3]] them by 20/24/28/32/36 (+6% AP)% for 3 seconds, and dealing [[4]].",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "Passive:",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "6/7/8/9/10% {{0}}% Move Speed",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+2% per 100 AP)",
-                                    "scaleId": "AP"
-                                }
-                            ]
-                        },
-                        "type": "speed"
-                    },
-                    {
-                        "text": {
-                            "text": "Active:",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "Slowing",
-                            "scaleHolders": []
-                        },
-                        "type": "status"
-                    },
-                    {
-                        "text": {
-                            "text": "70/100/130/160/190 {{0}} magic damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+50% AP)",
-                                    "scaleId": "AP"
-                                }
-                            ]
-                        },
-                        "type": "magicDamage"
-                    }
-                ]
-            },
-            "maxRank": 5,
-            "cooldown": "12",
-            "cooldownByLevel": [
-                12,
-                12,
-                12,
-                12,
-                12
-            ],
-            "cost": "50/60/70/80/90 Mana",
-            "costByLevel": [
-                50,
-                60,
-                70,
-                80,
-                90
-            ],
-            "costType": " Mana"
-        },
-        "E": {
-            "id": "EyeOfTheStorm",
-            "name": "Eye Of The Storm",
-            "_rawTooltip": {
-                "fullTooltip": "[[0]] Janna gains 15% Heal and Shield Power for 4 seconds whenever she impairs an enemy champion's movement.<br /><br />[[1]] Janna grants an ally champion or turret [[2]] decaying over 5 seconds. While shielded, they gain [[3]].",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "Passive:",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "Active:",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "75/100/125/150/175 {{0}} Shield",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+55% AP)",
-                                    "scaleId": "AP"
-                                }
-                            ]
-                        },
-                        "type": "shield"
-                    },
-                    {
-                        "text": {
-                            "text": "10/17.5/25/32.5/40 {{0}} Attack Damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+10% AP)",
-                                    "scaleId": "AP"
-                                }
-                            ]
-                        },
-                        "type": ""
-                    }
-                ]
-            },
-            "maxRank": 5,
-            "cooldown": "15/13.5/12/10.5/9",
-            "cooldownByLevel": [
-                15,
-                13.5,
-                12,
-                10.5,
-                9
-            ],
-            "cost": "70/80/90/100/110 Mana",
-            "costByLevel": [
-                70,
-                80,
-                90,
-                100,
-                110
-            ],
-            "costType": " Mana"
-        },
-        "R": {
-            "id": "ReapTheWhirlwind",
-            "name": "Monsoon",
-            "_rawTooltip": {
-                "fullTooltip": "Janna summons a magical monsoon, [[0]] nearby enemies then healing nearby allies for [[1]] over 3 seconds. Moving or using an Ability ends the monsoon early.",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "Knocking Back",
-                            "scaleHolders": []
-                        },
-                        "type": "status"
-                    },
-                    {
-                        "text": {
-                            "text": "300/450/600 {{0}} Health",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+150% AP)",
-                                    "scaleId": "AP"
-                                }
-                            ]
-                        },
-                        "type": "healing"
-                    }
-                ]
-            },
-            "maxRank": 3,
-            "cooldown": "150/135/120",
-            "cooldownByLevel": [
-                150,
-                135,
-                120
-            ],
-            "cost": "100 Mana",
-            "costByLevel": [
-                100,
-                100,
-                100
-            ],
-            "costType": " Mana"
-        }
-    }
+    "ChangePatches": [
+        "10.11",
+        "12.2",
+        "12.10",
+        "12.12",
+        "12.14"
+    ],
+    "ChampionName": "Janna"
 }

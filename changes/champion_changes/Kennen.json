@@ -1,14 +1,216 @@
 {
-    "ChampionName": "Kennen",
-    "ChangePatches": [
-        "11.10",
-        "11.15",
-        "11.19",
-        "12.5",
-        "12.10",
-        "12.15",
-        "12.20"
-    ],
+    "stats": {
+        "hp": {
+            "base": 611,
+            "increment": 98
+        },
+        "mp": {
+            "base": 200,
+            "increment": 0
+        },
+        "armor": {
+            "base": 29,
+            "increment": 4.95
+        },
+        "spellBlock": {
+            "base": 30,
+            "increment": 1.3
+        },
+        "hpRegen": {
+            "base": 5.5,
+            "increment": 0.65
+        },
+        "mpRegen": {
+            "base": 50,
+            "increment": 0
+        },
+        "attackSpeed": {
+            "base": 0.625,
+            "increment": 0.034
+        },
+        "ms": {
+            "base": 335,
+            "increment": 0
+        },
+        "attackDamage": {
+            "base": 48,
+            "increment": 3.75
+        },
+        "attackRange": {
+            "base": 550,
+            "increment": 0
+        }
+    },
+    "spells": {
+        "P": {
+            "cooldown": "",
+            "_rawTooltip": {
+                "fullTooltip": "Innate: Kennen's abilities apply a stack of Mark of the Storm to affected enemies for 6 seconds, which refreshes on subsequent hits and stacks up to 3 times. The third stack consumes them all to stun the target for 1.25 seconds and restore 25 energy. The duration is reduced to 0.5 seconds if this occurs on the same target again within 6 seconds,<br>Slicing Maelstrom can only apply up to 3 stacks on a target.",
+                "parseInfo": []
+            },
+            "name": "Mark of the Storm"
+        },
+        "Q": {
+            "_rawTooltip": {
+                "fullTooltip": "Kennen throws a shuriken, dealing [[0]] to the first enemy hit.",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "75/120/165/210/255 {{0}} magic damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+75% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "magicDamage"
+                    }
+                ]
+            },
+            "cooldown": "8/7/6/5/4",
+            "cost": "60/55/50/45/40 Energy",
+            "name": "Thundering Shuriken"
+        },
+        "W": {
+            "_rawTooltip": {
+                "fullTooltip": "[[0]] Every 5th Attack deals an additional [[1]].<br /><br />[[2]] Kennen sends out a blast of electricity, dealing [[3]] to nearby enemies affected by [[4]].<br />",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "Passive:",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "35/45/55/65/75 {{0}} {{1}}% Bonus AD) magic damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+35% AP)",
+                                    "scaleId": "AP"
+                                },
+                                {
+                                    "scale": "(+(80/90/100/110/120)",
+                                    "scaleId": "(+(80/90/100/110/120"
+                                }
+                            ]
+                        },
+                        "type": "magicDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "Active:",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "70/95/120/145/170 {{0}} magic damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+80% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "magicDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "Mark of the Storm",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    }
+                ]
+            },
+            "cooldown": "13/11.25/9.5/7.75/6",
+            "cost": "40 Energy",
+            "name": "Electrical Surge"
+        },
+        "E": {
+            "_rawTooltip": {
+                "fullTooltip": "Kennen turns into a ball of lightning, gaining [[0]], dealing [[1]] to enemies he passes through, and becoming Ghosted for 2 seconds. If Kennen damages at least one enemy, he gains 40 Energy. <br /><br />After this ability ends, Kennen gains [[2]] for 4 seconds. Kennen can [[3]] to end this Ability early.",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "100% Move Speed",
+                            "scaleHolders": []
+                        },
+                        "type": "speed"
+                    },
+                    {
+                        "text": {
+                            "text": "80/120/160/200/240 {{0}} magic damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+80% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "magicDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "40/50/60/70/80% Attack Speed",
+                            "scaleHolders": []
+                        },
+                        "type": "attackSpeed"
+                    },
+                    {
+                        "text": {
+                            "text": "Recast",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    }
+                ]
+            },
+            "cooldown": "10/9/8/7/6",
+            "cost": "100/95/90/85/80 Energy",
+            "name": "Lightning Rush"
+        },
+        "R": {
+            "_rawTooltip": {
+                "fullTooltip": "Kennen unleashes a magical storm, dealing [[0]] to all nearby enemies every 0.5 seconds, and gaining [[1]] and [[2]] for 3 seconds. Successive hits deal 10% increased damage for each hit the enemy has already suffered.",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "40/75/110 {{0}} magic damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+22.5% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "magicDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "20/40 Armor",
+                            "scaleHolders": []
+                        },
+                        "type": "scaleArmor"
+                    },
+                    {
+                        "text": {
+                            "text": "20/40 Magic Resist",
+                            "scaleHolders": []
+                        },
+                        "type": "scaleMR"
+                    }
+                ]
+            },
+            "cooldown": "120",
+            "cost": "No Cost",
+            "name": "Slicing Maelstrom"
+        }
+    },
     "Changes": {
         "11.10": {
             "B": "",
@@ -207,280 +409,14 @@
             "R": ""
         }
     },
-    "stats": {
-        "hp": {
-            "base": 611,
-            "increment": 98
-        },
-        "mp": {
-            "base": 200,
-            "increment": 0
-        },
-        "armor": {
-            "base": 29,
-            "increment": 4.95
-        },
-        "spellBlock": {
-            "base": 30,
-            "increment": 1.3
-        },
-        "hpRegen": {
-            "base": 5.5,
-            "increment": 0.65
-        },
-        "mpRegen": {
-            "base": 50,
-            "increment": 0
-        },
-        "attackSpeed": {
-            "base": 0.625,
-            "increment": 0.034
-        },
-        "ms": {
-            "base": 335,
-            "increment": 0
-        },
-        "attackDamage": {
-            "base": 48,
-            "increment": 3.75
-        },
-        "attackRange": {
-            "base": 550,
-            "increment": 0
-        }
-    },
-    "spells": {
-        "P": {
-            "name": "Mark of the Storm",
-            "cooldown": "",
-            "_rawTooltip": {
-                "fullTooltip": "Innate: Kennen's abilities apply a stack of Mark of the Storm to affected enemies for 6 seconds, which refreshes on subsequent hits and stacks up to 3 times. The third stack consumes them all to stun the target for 1.25 seconds and restore 25 energy. The duration is reduced to 0.5 seconds if this occurs on the same target again within 6 seconds,<br>Slicing Maelstrom can only apply up to 3 stacks on a target.",
-                "parseInfo": []
-            }
-        },
-        "Q": {
-            "id": "KennenShurikenHurlMissile1",
-            "name": "Thundering Shuriken",
-            "_rawTooltip": {
-                "fullTooltip": "Kennen throws a shuriken, dealing [[0]] to the first enemy hit.",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "75/120/165/210/255 {{0}} magic damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+75% AP)",
-                                    "scaleId": "AP"
-                                }
-                            ]
-                        },
-                        "type": "magicDamage"
-                    }
-                ]
-            },
-            "maxRank": 5,
-            "cooldown": "8/7/6/5/4",
-            "cooldownByLevel": [
-                8,
-                7,
-                6,
-                5,
-                4
-            ],
-            "cost": "60/55/50/45/40 Energy",
-            "costByLevel": [
-                60,
-                55,
-                50,
-                45,
-                40
-            ],
-            "costType": " Energy"
-        },
-        "W": {
-            "id": "KennenBringTheLight",
-            "name": "Electrical Surge",
-            "_rawTooltip": {
-                "fullTooltip": "[[0]] Every 5th Attack deals an additional [[1]].<br /><br />[[2]] Kennen sends out a blast of electricity, dealing [[3]] to nearby enemies affected by [[4]].<br />",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "Passive:",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "35/45/55/65/75 {{0}} {{1}}% Bonus AD) magic damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+35% AP)",
-                                    "scaleId": "AP"
-                                },
-                                {
-                                    "scale": "(+(80/90/100/110/120)",
-                                    "scaleId": "(+(80/90/100/110/120"
-                                }
-                            ]
-                        },
-                        "type": "magicDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "Active:",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "70/95/120/145/170 {{0}} magic damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+80% AP)",
-                                    "scaleId": "AP"
-                                }
-                            ]
-                        },
-                        "type": "magicDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "Mark of the Storm",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    }
-                ]
-            },
-            "maxRank": 5,
-            "cooldown": "13/11.25/9.5/7.75/6",
-            "cooldownByLevel": [
-                13,
-                11.25,
-                9.5,
-                7.75,
-                6
-            ],
-            "cost": "40 Energy",
-            "costByLevel": [
-                40,
-                40,
-                40,
-                40,
-                40
-            ],
-            "costType": " Energy"
-        },
-        "E": {
-            "id": "KennenLightningRush",
-            "name": "Lightning Rush",
-            "_rawTooltip": {
-                "fullTooltip": "Kennen turns into a ball of lightning, gaining [[0]], dealing [[1]] to enemies he passes through, and becoming Ghosted for 2 seconds. If Kennen damages at least one enemy, he gains 40 Energy. <br /><br />After this ability ends, Kennen gains [[2]] for 4 seconds. Kennen can [[3]] to end this Ability early.",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "100% Move Speed",
-                            "scaleHolders": []
-                        },
-                        "type": "speed"
-                    },
-                    {
-                        "text": {
-                            "text": "80/120/160/200/240 {{0}} magic damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+80% AP)",
-                                    "scaleId": "AP"
-                                }
-                            ]
-                        },
-                        "type": "magicDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "40/50/60/70/80% Attack Speed",
-                            "scaleHolders": []
-                        },
-                        "type": "attackSpeed"
-                    },
-                    {
-                        "text": {
-                            "text": "Recast",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    }
-                ]
-            },
-            "maxRank": 5,
-            "cooldown": "10/9/8/7/6",
-            "cooldownByLevel": [
-                10,
-                9,
-                8,
-                7,
-                6
-            ],
-            "cost": "100/95/90/85/80 Energy",
-            "costByLevel": [
-                100,
-                95,
-                90,
-                85,
-                80
-            ],
-            "costType": " Energy"
-        },
-        "R": {
-            "id": "KennenShurikenStorm",
-            "name": "Slicing Maelstrom",
-            "_rawTooltip": {
-                "fullTooltip": "Kennen unleashes a magical storm, dealing [[0]] to all nearby enemies every 0.5 seconds, and gaining [[1]] and [[2]] for 3 seconds. Successive hits deal 10% increased damage for each hit the enemy has already suffered.",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "40/75/110 {{0}} magic damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+22.5% AP)",
-                                    "scaleId": "AP"
-                                }
-                            ]
-                        },
-                        "type": "magicDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "20/40 Armor",
-                            "scaleHolders": []
-                        },
-                        "type": "scaleArmor"
-                    },
-                    {
-                        "text": {
-                            "text": "20/40 Magic Resist",
-                            "scaleHolders": []
-                        },
-                        "type": "scaleMR"
-                    }
-                ]
-            },
-            "maxRank": 3,
-            "cooldown": "120",
-            "cooldownByLevel": [
-                120,
-                120,
-                120
-            ],
-            "cost": "No Cost",
-            "costByLevel": [
-                0,
-                0,
-                0
-            ],
-            "costType": "No Cost"
-        }
-    }
+    "ChangePatches": [
+        "11.10",
+        "11.15",
+        "11.19",
+        "12.5",
+        "12.10",
+        "12.15",
+        "12.20"
+    ],
+    "ChampionName": "Kennen"
 }

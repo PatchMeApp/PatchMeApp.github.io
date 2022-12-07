@@ -1,13 +1,341 @@
 {
-    "ChampionName": "Syndra",
-    "ChangePatches": [
-        "10.11",
-        "10.13",
-        "10.16",
-        "11.15",
-        "12.10",
-        "12.19"
-    ],
+    "stats": {
+        "hp": {
+            "base": 563,
+            "increment": 104
+        },
+        "mp": {
+            "base": 480,
+            "increment": 40
+        },
+        "armor": {
+            "base": 25,
+            "increment": 4.6
+        },
+        "spellBlock": {
+            "base": 30,
+            "increment": 1.3
+        },
+        "hpRegen": {
+            "base": 6.5,
+            "increment": 0.6
+        },
+        "mpRegen": {
+            "base": 8,
+            "increment": 0.8
+        },
+        "attackSpeed": {
+            "base": 0.625,
+            "increment": 0.02
+        },
+        "ms": {
+            "base": 330,
+            "increment": 0
+        },
+        "attackDamage": {
+            "base": 54,
+            "increment": 2.9
+        },
+        "attackRange": {
+            "base": 550,
+            "increment": 0
+        }
+    },
+    "spells": {
+        "P": {
+            "cooldown": "",
+            "_rawTooltip": {
+                "fullTooltip": "Innate: Each of Syndra's abilities gain an additional effect at maximum rank.",
+                "parseInfo": []
+            },
+            "name": "Transcendent"
+        },
+        "Q": {
+            "_rawTooltip": {
+                "fullTooltip": "Syndra conjures a [[0]], dealing [[1]]. The [[2]] remains for 6 seconds and can be manipulated by Syndra's other Abilities.<br /><br />[[3]]: Syndra can store 2 charges of [[4]].",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "Dark Sphere",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "70/105/140/175/210 {{0}} magic damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+70% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "magicDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "Dark Sphere",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "40 Splinters of Wrath",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "Dark Sphere",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    }
+                ]
+            },
+            "cooldown": "7",
+            "cost": "40/45/50/55/60 Mana",
+            "name": "Dark Sphere"
+        },
+        "W": {
+            "_rawTooltip": {
+                "fullTooltip": "Syndra grabs a [[0]], enemy minion, or non-epic monster. She drags it with her and can [[1]] for up to 5 seconds.<br /><br />[[2]]: Syndra hurls the object, dealing [[3]] and [[4]] by 25/30/35/40/45% for ? seconds.<br /><br />[[5]]: This Ability deals an additional [[6]].<br />",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "Dark Sphere",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "Recast",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "Recast",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "70/110/150/190/230 {{0}} magic damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+70% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "magicDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "Slowing",
+                            "scaleHolders": []
+                        },
+                        "type": "status"
+                    },
+                    {
+                        "text": {
+                            "text": "60 Splinters of Wrath",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "12% {{0}} true damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "( 2% per 100 AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "trueDamage"
+                    }
+                ]
+            },
+            "cooldown": "12/11/10/9/8",
+            "cost": "60/70/80/90/100 Mana",
+            "name": "Force of Will"
+        },
+        "E": {
+            "_rawTooltip": {
+                "fullTooltip": "Syndra projects a wave of force, [[0]] enemies and [[1]] and dealing [[2]].<br /><br />[[3]] that are pushed [[4]] enemies for 1.25 seconds and deal [[5]].<br /><br />[[6]]: This Ability's width is increased and [[7]] enemies by [[8]] for 1.25 seconds.",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "Knocking Back",
+                            "scaleHolders": []
+                        },
+                        "type": "status"
+                    },
+                    {
+                        "text": {
+                            "text": "Dark Spheres",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "75/115/155/195/235 {{0}} magic damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+55% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "magicDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "Dark Spheres",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "Stun",
+                            "scaleHolders": []
+                        },
+                        "type": "status"
+                    },
+                    {
+                        "text": {
+                            "text": "75/115/155/195/235 {{0}} magic damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+45% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "magicDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "80 Splinters of Wrath",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "Slows",
+                            "scaleHolders": []
+                        },
+                        "type": "status"
+                    },
+                    {
+                        "text": {
+                            "text": "70%",
+                            "scaleHolders": []
+                        },
+                        "type": "status"
+                    }
+                ]
+            },
+            "cooldown": "17",
+            "cost": "50 Mana",
+            "name": "Scatter the Weak"
+        },
+        "R": {
+            "_rawTooltip": {
+                "fullTooltip": "[[0]]: [[1]] gains an additional 10 Ability Haste for each rank of [[2]].<br /><br />Syndra draws on her full cataclysmic power, launching the 3 [[3]] orbiting her plus up to 4 more nearby at an enemy champion. Each [[4]] deals [[5]] (max [[6]]).<br /><br />[[7]]: This Ability [[8]] enemies below 15% health.",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "Passive",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "Dark Sphere",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "Unleashed Power",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "Dark Spheres",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "Dark Sphere",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "90/130/170 {{0}} magic damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+17% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "magicDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "630/910/1190 {{0}} magic damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+119% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "magicDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "100 Splinters of Wrath",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "executes",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    }
+                ]
+            },
+            "cooldown": "120/100/80",
+            "cost": "100 Mana",
+            "name": "Unleashed Power"
+        }
+    },
     "Changes": {
         "10.11": {
             "B": "",
@@ -406,407 +734,59 @@
                     }
                 ]
             }
+        },
+        "12.23": {
+            "B": "",
+            "P": "",
+            "Q": "",
+            "W": {
+                "SpellName": "W - Force of Will",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Transcendent Upgrade Bonus Damage: ",
+                            "Before": "15% (+1.5% per 100 AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "12% ( 2% per 100 AP)"
+                        }
+                    }
+                ]
+            },
+            "E": {
+                "SpellName": "E - Scatter the Weak",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Cooldown: ",
+                            "Before": "15 seconds",
+                            "Indicator": " ⇒ ",
+                            "After": "17 seconds"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Magic Damage: ",
+                            "Before": "75/115/155/195/235 (+55% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "75/115/155/195/235 (+45% AP)"
+                        }
+                    }
+                ]
+            },
+            "R": ""
         }
     },
-    "stats": {
-        "hp": {
-            "base": 563,
-            "increment": 104
-        },
-        "mp": {
-            "base": 480,
-            "increment": 40
-        },
-        "armor": {
-            "base": 25,
-            "increment": 4.6
-        },
-        "spellBlock": {
-            "base": 30,
-            "increment": 1.3
-        },
-        "hpRegen": {
-            "base": 6.5,
-            "increment": 0.6
-        },
-        "mpRegen": {
-            "base": 8,
-            "increment": 0.8
-        },
-        "attackSpeed": {
-            "base": 0.625,
-            "increment": 0.02
-        },
-        "ms": {
-            "base": 330,
-            "increment": 0
-        },
-        "attackDamage": {
-            "base": 54,
-            "increment": 2.9
-        },
-        "attackRange": {
-            "base": 550,
-            "increment": 0
-        }
-    },
-    "spells": {
-        "P": {
-            "name": "Transcendent",
-            "cooldown": "",
-            "_rawTooltip": {
-                "fullTooltip": "Innate: Each of Syndra's abilities gain an additional effect at maximum rank.",
-                "parseInfo": []
-            }
-        },
-        "Q": {
-            "id": "SyndraQ",
-            "name": "Dark Sphere",
-            "_rawTooltip": {
-                "fullTooltip": "Syndra conjures a [[0]], dealing [[1]]. The [[2]] remains for 6 seconds and can be manipulated by Syndra's other Abilities.<br /><br />[[3]]: Syndra can store 2 charges of [[4]].",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "Dark Sphere",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "70/105/140/175/210 {{0}} magic damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+70% AP)",
-                                    "scaleId": "AP"
-                                }
-                            ]
-                        },
-                        "type": "magicDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "Dark Sphere",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "40 Splinters of Wrath",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "Dark Sphere",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    }
-                ]
-            },
-            "maxRank": 5,
-            "cooldown": "7",
-            "cooldownByLevel": [
-                7,
-                7,
-                7,
-                7,
-                7
-            ],
-            "cost": "40/45/50/55/60 Mana",
-            "costByLevel": [
-                40,
-                45,
-                50,
-                55,
-                60
-            ],
-            "costType": " Mana"
-        },
-        "W": {
-            "id": "SyndraW",
-            "name": "Force of Will",
-            "_rawTooltip": {
-                "fullTooltip": "Syndra grabs a [[0]], enemy minion, or non-epic monster. She drags it with her and can [[1]] for up to 5 seconds.<br /><br />[[2]]: Syndra hurls the object, dealing [[3]] and [[4]] by 25/30/35/40/45% for ? seconds.<br /><br />[[5]]: This Ability deals an additional [[6]].<br />",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "Dark Sphere",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "Recast",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "Recast",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "70/110/150/190/230 {{0}} magic damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+70% AP)",
-                                    "scaleId": "AP"
-                                }
-                            ]
-                        },
-                        "type": "magicDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "Slowing",
-                            "scaleHolders": []
-                        },
-                        "type": "status"
-                    },
-                    {
-                        "text": {
-                            "text": "60 Splinters of Wrath",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "15% {{0}} true damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+1.5% per 100 AP)",
-                                    "scaleId": "AP"
-                                }
-                            ]
-                        },
-                        "type": "trueDamage"
-                    }
-                ]
-            },
-            "maxRank": 5,
-            "cooldown": "12/11/10/9/8",
-            "cooldownByLevel": [
-                12,
-                11,
-                10,
-                9,
-                8
-            ],
-            "cost": "60/70/80/90/100 Mana",
-            "costByLevel": [
-                60,
-                70,
-                80,
-                90,
-                100
-            ],
-            "costType": " Mana"
-        },
-        "E": {
-            "id": "SyndraE",
-            "name": "Scatter the Weak",
-            "_rawTooltip": {
-                "fullTooltip": "Syndra projects a wave of force, [[0]] enemies and [[1]] and dealing [[2]].<br /><br />[[3]] that are pushed [[4]] enemies for 1.25 seconds and deal [[5]].<br /><br />[[6]]: This Ability's width is increased and [[7]] enemies by [[8]] for 1.25 seconds.",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "Knocking Back",
-                            "scaleHolders": []
-                        },
-                        "type": "status"
-                    },
-                    {
-                        "text": {
-                            "text": "Dark Spheres",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "75/115/155/195/235 {{0}} magic damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+55% AP)",
-                                    "scaleId": "AP"
-                                }
-                            ]
-                        },
-                        "type": "magicDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "Dark Spheres",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "Stun",
-                            "scaleHolders": []
-                        },
-                        "type": "status"
-                    },
-                    {
-                        "text": {
-                            "text": "75/115/155/195/235 {{0}} magic damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+55% AP)",
-                                    "scaleId": "AP"
-                                }
-                            ]
-                        },
-                        "type": "magicDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "80 Splinters of Wrath",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "Slows",
-                            "scaleHolders": []
-                        },
-                        "type": "status"
-                    },
-                    {
-                        "text": {
-                            "text": "70%",
-                            "scaleHolders": []
-                        },
-                        "type": "status"
-                    }
-                ]
-            },
-            "maxRank": 5,
-            "cooldown": "15",
-            "cooldownByLevel": [
-                15,
-                15,
-                15,
-                15,
-                15
-            ],
-            "cost": "50 Mana",
-            "costByLevel": [
-                50,
-                50,
-                50,
-                50,
-                50
-            ],
-            "costType": " Mana"
-        },
-        "R": {
-            "id": "SyndraR",
-            "name": "Unleashed Power",
-            "_rawTooltip": {
-                "fullTooltip": "[[0]]: [[1]] gains an additional 10 Ability Haste for each rank of [[2]].<br /><br />Syndra draws on her full cataclysmic power, launching the 3 [[3]] orbiting her plus up to 4 more nearby at an enemy champion. Each [[4]] deals [[5]] (max [[6]]).<br /><br />[[7]]: This Ability [[8]] enemies below 15% health.",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "Passive",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "Dark Sphere",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "Unleashed Power",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "Dark Spheres",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "Dark Sphere",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "90/130/170 {{0}} magic damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+17% AP)",
-                                    "scaleId": "AP"
-                                }
-                            ]
-                        },
-                        "type": "magicDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "630/910/1190 {{0}} magic damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+119% AP)",
-                                    "scaleId": "AP"
-                                }
-                            ]
-                        },
-                        "type": "magicDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "100 Splinters of Wrath",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "executes",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    }
-                ]
-            },
-            "maxRank": 3,
-            "cooldown": "120/100/80",
-            "cooldownByLevel": [
-                120,
-                100,
-                80
-            ],
-            "cost": "100 Mana",
-            "costByLevel": [
-                100,
-                100,
-                100
-            ],
-            "costType": " Mana"
-        }
-    }
+    "ChangePatches": [
+        "10.11",
+        "10.13",
+        "10.16",
+        "11.15",
+        "12.10",
+        "12.19",
+        "12.23"
+    ],
+    "ChampionName": "Syndra"
 }

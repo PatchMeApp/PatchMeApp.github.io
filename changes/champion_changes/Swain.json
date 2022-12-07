@@ -1,11 +1,266 @@
 {
-    "ChampionName": "Swain",
-    "ChangePatches": [
-        "10.15",
-        "12.8",
-        "12.10",
-        "12.11"
-    ],
+    "stats": {
+        "hp": {
+            "base": 595,
+            "increment": 99
+        },
+        "mp": {
+            "base": 468,
+            "increment": 29
+        },
+        "armor": {
+            "base": 26,
+            "increment": 5.2
+        },
+        "spellBlock": {
+            "base": 30,
+            "increment": 1.3
+        },
+        "hpRegen": {
+            "base": 7,
+            "increment": 0.65
+        },
+        "mpRegen": {
+            "base": 8,
+            "increment": 0.8
+        },
+        "attackSpeed": {
+            "base": 0.625,
+            "increment": 0.021099999999999997
+        },
+        "ms": {
+            "base": 330,
+            "increment": 0
+        },
+        "attackDamage": {
+            "base": 58,
+            "increment": 2.7
+        },
+        "attackRange": {
+            "base": 525,
+            "increment": 0
+        }
+    },
+    "spells": {
+        "P": {
+            "cooldown": "",
+            "_rawTooltip": {
+                "fullTooltip": "Innate: Enemy champions leave behind a Soul Fragment for 16 seconds upon their death, which can be harvested by Swain after 1 second.<br>Swain's ravens bring nearby Soul Fragments to him, healing him for [[0]]. Each Soul Fragment collected grants him [[1]].",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "3.5 / 4.5 / 5.5 / 7% {{0}} of his maximum health",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(based on level)",
+                                    "scaleId": "level"
+                                }
+                            ]
+                        },
+                        "type": "Health"
+                    },
+                    {
+                        "text": {
+                            "text": "12 bonus health",
+                            "scaleHolders": []
+                        },
+                        "type": "Health"
+                    }
+                ]
+            },
+            "name": "Ravenous Flock"
+        },
+        "Q": {
+            "_rawTooltip": {
+                "fullTooltip": "Swain unleashes eldritch bolts, dealing [[0]] plus [[1]] per bolt past the first (max [[2]]).",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "60/80/100/120/140 {{0}} magic damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+38% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "magicDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "12/22/32/42/52 {{0}} magic damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+8% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "magicDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "60/80/100/120/140 + 38% AP + 48/88/128/168/208 + 32% AP magic damage",
+                            "scaleHolders": []
+                        },
+                        "type": "magicDamage"
+                    }
+                ]
+            },
+            "cooldown": "7/6/5/4/3",
+            "cost": "45/50/55/60/65 Mana",
+            "name": "Death's Hand"
+        },
+        "W": {
+            "_rawTooltip": {
+                "fullTooltip": "Swain opens a demon eye, revealing a location for 1.5 seconds, then deals [[0]] and [[1]] by 25/35/45/55/65% for 2.5 seconds. Champions hit grant Swain a <span class=\"size18 colorFF3F3F\">Soul Fragment</span> and are revealed for 4/5/6/7/8 seconds.",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "80/115/150/185/220 {{0}} magic damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+55% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "magicDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "Slows",
+                            "scaleHolders": []
+                        },
+                        "type": "status"
+                    }
+                ]
+            },
+            "cooldown": "22/21/20/19/18",
+            "cost": "60/65/70/75/80 Mana",
+            "name": "Vision of Empire"
+        },
+        "E": {
+            "_rawTooltip": {
+                "fullTooltip": "Swain launches a wave of demonic power, dealing [[0]]. The wave then returns, detonating on the first enemy hit dealing [[1]] and [[2]] enemies in an area for 1.5 seconds. During [[3]], this ability's cooldown is reduced by 20%.<br /><br />Hitting a champion with Nevermove allows Swain to reactivate this ability to pull all champions hit by Nevermove, gaining a <span class=\"size18 colorFF3F3F\">Soul Fragment</span> for each.",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "35/70/105/140/175 {{0}} magic damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+25% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "magicDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "35/45/55/65/75 {{0}} magic damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+25% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "magicDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "Rooting",
+                            "scaleHolders": []
+                        },
+                        "type": "status"
+                    },
+                    {
+                        "text": {
+                            "text": "Demonic Ascension",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    }
+                ]
+            },
+            "cooldown": "10",
+            "cost": "50 Mana",
+            "name": "Nevermove"
+        },
+        "R": {
+            "_rawTooltip": {
+                "fullTooltip": "Swain frees the demon, dealing [[0]] each second and restoring [[1]] per target damaged. His Demonic Energy depletes over time, and can be recharged indefinitely by draining enemy Champions and is fully restored on Champion takedowns.<br /><br />After 2 seconds, Swain can cast [[2]] which deals [[3]] and [[4]] enemies by 60% for 1.5s.<br /><br />[[5]] against non-champions.<br />After 5 seconds, Swain's Demonic Energy depletes faster.</rules>",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "20/40/60 {{0}} magic damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+10% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "magicDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "15/27.5/40 {{0}} Health",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+18% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "healing"
+                    },
+                    {
+                        "text": {
+                            "text": "Demonflare",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "150/225/300 {{0}} magic damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+60% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "magicDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "Slows",
+                            "scaleHolders": []
+                        },
+                        "type": "status"
+                    },
+                    {
+                        "text": {
+                            "text": "Healing is reduced to 1.5/2.75/4 {{0}}",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+1.8% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "healing"
+                    }
+                ]
+            },
+            "cooldown": "100/80/60",
+            "cost": "",
+            "name": "Demonic Ascension"
+        }
+    },
     "Changes": {
         "10.15": {
             "B": {
@@ -550,330 +805,11 @@
             }
         }
     },
-    "stats": {
-        "hp": {
-            "base": 595,
-            "increment": 99
-        },
-        "mp": {
-            "base": 468,
-            "increment": 29
-        },
-        "armor": {
-            "base": 26,
-            "increment": 5.2
-        },
-        "spellBlock": {
-            "base": 30,
-            "increment": 1.3
-        },
-        "hpRegen": {
-            "base": 7,
-            "increment": 0.65
-        },
-        "mpRegen": {
-            "base": 8,
-            "increment": 0.8
-        },
-        "attackSpeed": {
-            "base": 0.625,
-            "increment": 0.021099999999999997
-        },
-        "ms": {
-            "base": 330,
-            "increment": 0
-        },
-        "attackDamage": {
-            "base": 58,
-            "increment": 2.7
-        },
-        "attackRange": {
-            "base": 525,
-            "increment": 0
-        }
-    },
-    "spells": {
-        "P": {
-            "name": "Ravenous Flock",
-            "cooldown": "",
-            "_rawTooltip": {
-                "fullTooltip": "Innate: Enemy champions leave behind a Soul Fragment for 16 seconds upon their death, which can be harvested by Swain after 1 second.<br>Swain's ravens bring nearby Soul Fragments to him, healing him for [[0]]. Each Soul Fragment collected grants him [[1]].",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "3.5 / 4.5 / 5.5 / 7% {{0}} of his maximum health",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(based on level)",
-                                    "scaleId": "level"
-                                }
-                            ]
-                        },
-                        "type": "Health"
-                    },
-                    {
-                        "text": {
-                            "text": "12 bonus health",
-                            "scaleHolders": []
-                        },
-                        "type": "Health"
-                    }
-                ]
-            }
-        },
-        "Q": {
-            "id": "SwainQ",
-            "name": "Death's Hand",
-            "_rawTooltip": {
-                "fullTooltip": "Swain unleashes eldritch bolts, dealing [[0]] plus [[1]] per bolt past the first (max [[2]]).",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "60/80/100/120/140 {{0}} magic damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+38% AP)",
-                                    "scaleId": "AP"
-                                }
-                            ]
-                        },
-                        "type": "magicDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "12/22/32/42/52 {{0}} magic damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+8% AP)",
-                                    "scaleId": "AP"
-                                }
-                            ]
-                        },
-                        "type": "magicDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "60/80/100/120/140 + 38% AP + 48/88/128/168/208 + 32% AP magic damage",
-                            "scaleHolders": []
-                        },
-                        "type": "magicDamage"
-                    }
-                ]
-            },
-            "maxRank": 5,
-            "cooldown": "7/6/5/4/3",
-            "cooldownByLevel": [
-                7,
-                6,
-                5,
-                4,
-                3
-            ],
-            "cost": "45/50/55/60/65 Mana",
-            "costByLevel": [
-                45,
-                50,
-                55,
-                60,
-                65
-            ],
-            "costType": " Mana"
-        },
-        "W": {
-            "id": "SwainW",
-            "name": "Vision of Empire",
-            "_rawTooltip": {
-                "fullTooltip": "Swain opens a demon eye, revealing a location for 1.5 seconds, then deals [[0]] and [[1]] by 25/35/45/55/65% for 2.5 seconds. Champions hit grant Swain a <span class=\"size18 colorFF3F3F\">Soul Fragment</span> and are revealed for 4/5/6/7/8 seconds.",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "80/115/150/185/220 {{0}} magic damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+55% AP)",
-                                    "scaleId": "AP"
-                                }
-                            ]
-                        },
-                        "type": "magicDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "Slows",
-                            "scaleHolders": []
-                        },
-                        "type": "status"
-                    }
-                ]
-            },
-            "maxRank": 5,
-            "cooldown": "22/21/20/19/18",
-            "cooldownByLevel": [
-                22,
-                21,
-                20,
-                19,
-                18
-            ],
-            "cost": "60/65/70/75/80 Mana",
-            "costByLevel": [
-                60,
-                65,
-                70,
-                75,
-                80
-            ],
-            "costType": " Mana"
-        },
-        "E": {
-            "id": "SwainE",
-            "name": "Nevermove",
-            "_rawTooltip": {
-                "fullTooltip": "Swain launches a wave of demonic power, dealing [[0]]. The wave then returns, detonating on the first enemy hit dealing [[1]] and [[2]] enemies in an area for 1.5 seconds. During [[3]], this ability's cooldown is reduced by 20%.<br /><br />Hitting a champion with Nevermove allows Swain to reactivate this ability to pull all champions hit by Nevermove, gaining a <span class=\"size18 colorFF3F3F\">Soul Fragment</span> for each.",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "35/70/105/140/175 {{0}} magic damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+25% AP)",
-                                    "scaleId": "AP"
-                                }
-                            ]
-                        },
-                        "type": "magicDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "35/45/55/65/75 {{0}} magic damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+25% AP)",
-                                    "scaleId": "AP"
-                                }
-                            ]
-                        },
-                        "type": "magicDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "Rooting",
-                            "scaleHolders": []
-                        },
-                        "type": "status"
-                    },
-                    {
-                        "text": {
-                            "text": "Demonic Ascension",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    }
-                ]
-            },
-            "maxRank": 5,
-            "cooldown": "10",
-            "cooldownByLevel": [
-                10,
-                10,
-                10,
-                10,
-                10
-            ],
-            "cost": "50 Mana",
-            "costByLevel": [
-                50,
-                50,
-                50,
-                50,
-                50
-            ],
-            "costType": " Mana"
-        },
-        "R": {
-            "id": "SwainR",
-            "name": "Demonic Ascension",
-            "_rawTooltip": {
-                "fullTooltip": "Swain frees the demon, dealing [[0]] each second and restoring [[1]] per target damaged. His Demonic Energy depletes over time, and can be recharged indefinitely by draining enemy Champions and is fully restored on Champion takedowns.<br /><br />After 2 seconds, Swain can cast [[2]] which deals [[3]] and [[4]] enemies by 60% for 1.5s.<br /><br />[[5]] against non-champions.<br />After 5 seconds, Swain's Demonic Energy depletes faster.</rules>",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "20/40/60 {{0}} magic damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+10% AP)",
-                                    "scaleId": "AP"
-                                }
-                            ]
-                        },
-                        "type": "magicDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "15/27.5/40 {{0}} Health",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+18% AP)",
-                                    "scaleId": "AP"
-                                }
-                            ]
-                        },
-                        "type": "healing"
-                    },
-                    {
-                        "text": {
-                            "text": "Demonflare",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "150/225/300 {{0}} magic damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+60% AP)",
-                                    "scaleId": "AP"
-                                }
-                            ]
-                        },
-                        "type": "magicDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "Slows",
-                            "scaleHolders": []
-                        },
-                        "type": "status"
-                    },
-                    {
-                        "text": {
-                            "text": "Healing is reduced to 1.5/2.75/4 {{0}}",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+1.8% AP)",
-                                    "scaleId": "AP"
-                                }
-                            ]
-                        },
-                        "type": "healing"
-                    }
-                ]
-            },
-            "maxRank": 3,
-            "cooldown": "100/80/60",
-            "cooldownByLevel": [
-                100,
-                80,
-                60
-            ],
-            "cost": "",
-            "costByLevel": [
-                100,
-                100,
-                100
-            ],
-            "costType": ""
-        }
-    }
+    "ChangePatches": [
+        "10.15",
+        "12.8",
+        "12.10",
+        "12.11"
+    ],
+    "ChampionName": "Swain"
 }

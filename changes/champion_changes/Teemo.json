@@ -1,14 +1,206 @@
 {
-    "ChampionName": "Teemo",
-    "ChangePatches": [
-        "9.18",
-        "11.7",
-        "11.11",
-        "11.17",
-        "11.21",
-        "12.10",
-        "12.14"
-    ],
+    "stats": {
+        "hp": {
+            "base": 598,
+            "increment": 104
+        },
+        "mp": {
+            "base": 334,
+            "increment": 25
+        },
+        "armor": {
+            "base": 24,
+            "increment": 4.95
+        },
+        "spellBlock": {
+            "base": 30,
+            "increment": 1.3
+        },
+        "hpRegen": {
+            "base": 5.5,
+            "increment": 0.65
+        },
+        "mpRegen": {
+            "base": 9.6,
+            "increment": 0.45
+        },
+        "attackSpeed": {
+            "base": 0.69,
+            "increment": 0.0338
+        },
+        "ms": {
+            "base": 330,
+            "increment": 0
+        },
+        "attackDamage": {
+            "base": 54,
+            "increment": 3
+        },
+        "attackRange": {
+            "base": 500,
+            "increment": 0
+        }
+    },
+    "spells": {
+        "P": {
+            "cooldown": "",
+            "_rawTooltip": {
+                "fullTooltip": "Innate: Teemo gains invisibility after 1.5 seconds of not moving, taking damage, performing actions that break stealth, channeling, and being in stasis. Teemo will remain invisible so long as he does not move or act, and is not displaced. If within brush, Teemo gains invisibility after 1.5 seconds even while moving and may do so freely within its boundaries without breaking stealth.<br>Innate - Element of Surprise: When Teemo breaks stealth, he gains the Element of Surprise for 5 seconds, granting him [[0]].",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "20 / 40 / 60 / 80% {{0}} bonus attack speed",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(based on level)",
+                                    "scaleId": "level"
+                                }
+                            ]
+                        },
+                        "type": "attackSpeed"
+                    }
+                ]
+            },
+            "name": "Guerrilla Warfare"
+        },
+        "Q": {
+            "_rawTooltip": {
+                "fullTooltip": "Teemo fires a dart, [[0]] the target for 2/2.25/2.5/2.75 seconds and dealing [[1]].",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "Blinding",
+                            "scaleHolders": []
+                        },
+                        "type": "status"
+                    },
+                    {
+                        "text": {
+                            "text": "80/125/170/215/260 {{0}} magic damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+80% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "magicDamage"
+                    }
+                ]
+            },
+            "cooldown": "7",
+            "cost": "70/75/80/85/90 Mana",
+            "name": "Blinding Dart"
+        },
+        "W": {
+            "_rawTooltip": {
+                "fullTooltip": "[[0]] Teemo gains [[1]] while he hasn't been damaged by a champion or turret in the last 5 seconds.<br /><br />[[2]] Teemo sprints, gaining [[3]] that is not lost when struck for 3 seconds.",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "Passive:",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "10/14/18/22/26% Move Speed",
+                            "scaleHolders": []
+                        },
+                        "type": "speed"
+                    },
+                    {
+                        "text": {
+                            "text": "Active:",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "20/28/36/44/52% Move Speed",
+                            "scaleHolders": []
+                        },
+                        "type": "speed"
+                    }
+                ]
+            },
+            "cooldown": "14",
+            "cost": "40 Mana",
+            "name": "Move Quick"
+        },
+        "E": {
+            "_rawTooltip": {
+                "fullTooltip": "[[0]] Teemo's Attacks apply poison, dealing an additional [[1]] plus [[2]] over 4 seconds.",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "Passive:",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "14/25/36/47/58 {{0}} magic damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+30% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "magicDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "24/48/72/96/120 {{0}} magic damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+40% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "magicDamage"
+                    }
+                ]
+            },
+            "cooldown": "0",
+            "cost": "Passive",
+            "name": "Toxic Shot"
+        },
+        "R": {
+            "_rawTooltip": {
+                "fullTooltip": "Teemo tosses a mushroom trap that detonates when stepped on. The traps [[0]] by 30/40% and deal [[1]] over 4 seconds. Enemies are revealed for the same duration.<br /><br />Traps last 5 minutes and are stealthed. A mushroom tossed onto another mushroom bounces before landing at its position. This Ability has 3/4 charges (30/25/20 second refresh).<br />",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "Slow",
+                            "scaleHolders": []
+                        },
+                        "type": "status"
+                    },
+                    {
+                        "text": {
+                            "text": "200/325/450 {{0}} magic damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+55% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "magicDamage"
+                    }
+                ]
+            },
+            "cooldown": "0.25",
+            "cost": "75/55/35 Mana",
+            "name": "Noxious Trap"
+        }
+    },
     "Changes": {
         "9.18": {
             "B": "",
@@ -300,270 +492,14 @@
             }
         }
     },
-    "stats": {
-        "hp": {
-            "base": 598,
-            "increment": 104
-        },
-        "mp": {
-            "base": 334,
-            "increment": 25
-        },
-        "armor": {
-            "base": 24,
-            "increment": 4.95
-        },
-        "spellBlock": {
-            "base": 30,
-            "increment": 1.3
-        },
-        "hpRegen": {
-            "base": 5.5,
-            "increment": 0.65
-        },
-        "mpRegen": {
-            "base": 9.6,
-            "increment": 0.45
-        },
-        "attackSpeed": {
-            "base": 0.69,
-            "increment": 0.0338
-        },
-        "ms": {
-            "base": 330,
-            "increment": 0
-        },
-        "attackDamage": {
-            "base": 54,
-            "increment": 3
-        },
-        "attackRange": {
-            "base": 500,
-            "increment": 0
-        }
-    },
-    "spells": {
-        "P": {
-            "name": "Guerrilla Warfare",
-            "cooldown": "",
-            "_rawTooltip": {
-                "fullTooltip": "Innate: Teemo gains invisibility after 1.5 seconds of not moving, taking damage, performing actions that break stealth, channeling, and being in stasis. Teemo will remain invisible so long as he does not move or act, and is not displaced. If within brush, Teemo gains invisibility after 1.5 seconds even while moving and may do so freely within its boundaries without breaking stealth.<br>Innate - Element of Surprise: When Teemo breaks stealth, he gains the Element of Surprise for 5 seconds, granting him [[0]].",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "20 / 40 / 60 / 80% {{0}} bonus attack speed",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(based on level)",
-                                    "scaleId": "level"
-                                }
-                            ]
-                        },
-                        "type": "attackSpeed"
-                    }
-                ]
-            }
-        },
-        "Q": {
-            "id": "BlindingDart",
-            "name": "Blinding Dart",
-            "_rawTooltip": {
-                "fullTooltip": "Teemo fires a dart, [[0]] the target for 2/2.25/2.5/2.75 seconds and dealing [[1]].",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "Blinding",
-                            "scaleHolders": []
-                        },
-                        "type": "status"
-                    },
-                    {
-                        "text": {
-                            "text": "80/125/170/215/260 {{0}} magic damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+80% AP)",
-                                    "scaleId": "AP"
-                                }
-                            ]
-                        },
-                        "type": "magicDamage"
-                    }
-                ]
-            },
-            "maxRank": 5,
-            "cooldown": "7",
-            "cooldownByLevel": [
-                7,
-                7,
-                7,
-                7,
-                7
-            ],
-            "cost": "70/75/80/85/90 Mana",
-            "costByLevel": [
-                70,
-                75,
-                80,
-                85,
-                90
-            ],
-            "costType": " Mana"
-        },
-        "W": {
-            "id": "MoveQuick",
-            "name": "Move Quick",
-            "_rawTooltip": {
-                "fullTooltip": "[[0]] Teemo gains [[1]] while he hasn't been damaged by a champion or turret in the last 5 seconds.<br /><br />[[2]] Teemo sprints, gaining [[3]] that is not lost when struck for 3 seconds.",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "Passive:",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "10/14/18/22/26% Move Speed",
-                            "scaleHolders": []
-                        },
-                        "type": "speed"
-                    },
-                    {
-                        "text": {
-                            "text": "Active:",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "20/28/36/44/52% Move Speed",
-                            "scaleHolders": []
-                        },
-                        "type": "speed"
-                    }
-                ]
-            },
-            "maxRank": 5,
-            "cooldown": "14",
-            "cooldownByLevel": [
-                14,
-                14,
-                14,
-                14,
-                14
-            ],
-            "cost": "40 Mana",
-            "costByLevel": [
-                40,
-                40,
-                40,
-                40,
-                40
-            ],
-            "costType": " Mana"
-        },
-        "E": {
-            "id": "ToxicShot",
-            "name": "Toxic Shot",
-            "_rawTooltip": {
-                "fullTooltip": "[[0]] Teemo's Attacks apply poison, dealing an additional [[1]] plus [[2]] over 4 seconds.",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "Passive:",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "14/25/36/47/58 {{0}} magic damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+30% AP)",
-                                    "scaleId": "AP"
-                                }
-                            ]
-                        },
-                        "type": "magicDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "24/48/72/96/120 {{0}} magic damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+40% AP)",
-                                    "scaleId": "AP"
-                                }
-                            ]
-                        },
-                        "type": "magicDamage"
-                    }
-                ]
-            },
-            "maxRank": 5,
-            "cooldown": "0",
-            "cooldownByLevel": [
-                0,
-                0,
-                0,
-                0,
-                0
-            ],
-            "cost": "Passive",
-            "costByLevel": [
-                0,
-                0,
-                0,
-                0,
-                0
-            ],
-            "costType": "Passive"
-        },
-        "R": {
-            "id": "TeemoRCast",
-            "name": "Noxious Trap",
-            "_rawTooltip": {
-                "fullTooltip": "Teemo tosses a mushroom trap that detonates when stepped on. The traps [[0]] by 30/40% and deal [[1]] over 4 seconds. Enemies are revealed for the same duration.<br /><br />Traps last 5 minutes and are stealthed. A mushroom tossed onto another mushroom bounces before landing at its position. This Ability has 3/4 charges (30/25/20 second refresh).<br />",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "Slow",
-                            "scaleHolders": []
-                        },
-                        "type": "status"
-                    },
-                    {
-                        "text": {
-                            "text": "200/325/450 {{0}} magic damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+55% AP)",
-                                    "scaleId": "AP"
-                                }
-                            ]
-                        },
-                        "type": "magicDamage"
-                    }
-                ]
-            },
-            "maxRank": 3,
-            "cooldown": "0.25",
-            "cooldownByLevel": [
-                0.25,
-                0.25,
-                0.25
-            ],
-            "cost": "75/55/35 Mana",
-            "costByLevel": [
-                75,
-                55,
-                35
-            ],
-            "costType": " Mana"
-        }
-    }
+    "ChangePatches": [
+        "9.18",
+        "11.7",
+        "11.11",
+        "11.17",
+        "11.21",
+        "12.10",
+        "12.14"
+    ],
+    "ChampionName": "Teemo"
 }

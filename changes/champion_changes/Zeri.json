@@ -1,16 +1,294 @@
 {
-    "ChampionName": "Zeri",
-    "ChangePatches": [
-        "12.2",
-        "12.3",
-        "12.4",
-        "12.7",
-        "12.10",
-        "12.11",
-        "12.12",
-        "12.14",
-        "12.16"
-    ],
+    "stats": {
+        "hp": {
+            "base": 600,
+            "increment": 109
+        },
+        "mp": {
+            "base": 250,
+            "increment": 45
+        },
+        "armor": {
+            "base": 20,
+            "increment": 4.2
+        },
+        "spellBlock": {
+            "base": 30,
+            "increment": 1.3
+        },
+        "hpRegen": {
+            "base": 3.25,
+            "increment": 0.7
+        },
+        "mpRegen": {
+            "base": 6,
+            "increment": 0.8
+        },
+        "attackSpeed": {
+            "base": 0.658,
+            "increment": 0.02
+        },
+        "ms": {
+            "base": 325,
+            "increment": 0
+        },
+        "attackDamage": {
+            "base": 50,
+            "increment": 1.5
+        },
+        "attackRange": {
+            "base": 500,
+            "increment": 0
+        }
+    },
+    "spells": {
+        "P": {
+            "cooldown": "",
+            "_rawTooltip": {
+                "fullTooltip": "Innate: Zeri absorbs the energy of shields she damages, shielding herself equal to [[0]] dealt to the shield. Each instance of shield gained by Living Battery lasts for 3 seconds.<br>Innate: Whenever Zeri receives a shield, she gains [[1]] for 3 seconds.",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "60% of the post-mitigation damage",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "10% bonus movement speed",
+                            "scaleHolders": []
+                        },
+                        "type": "speed"
+                    }
+                ]
+            },
+            "name": "Living Battery"
+        },
+        "Q": {
+            "_rawTooltip": {
+                "fullTooltip": "[[0]] Zeri's Attacks are treated as Abilities and can be charged up by moving and casting this ability. Uncharged Attacks consume a small amount of charge, deal [[1]] and [[2]] enemies below [[3]]. A fully charged Attack deals [[4]] and consumes all charge.<br /><br />[[5]] This Ability is treated as an Attack. Zeri fires a burst of 7 rounds that deals [[6]] to the first enemy hit.",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "Passive:",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "10 - 25 {{0}} {{1}} magic damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(based on champion level)",
+                                    "scaleId": "level"
+                                },
+                                {
+                                    "scale": "(+3% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "magicDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "execute",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "60 - 150 {{0}} {{1}} Health",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(based on champion level)",
+                                    "scaleId": "level"
+                                },
+                                {
+                                    "scale": "(+18% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "90 - 200 {{0}} {{1}} + 1% - 15% {{2}} max Health magic damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(based on champion level)",
+                                    "scaleId": "level"
+                                },
+                                {
+                                    "scale": "(+90% AP)",
+                                    "scaleId": "AP"
+                                },
+                                {
+                                    "scale": "(based on champion level)",
+                                    "scaleId": "level"
+                                }
+                            ]
+                        },
+                        "type": "magicDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "Active:",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "8/11/14/17/20 {{0}} physical damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+100/105/110/115/120% AD)",
+                                    "scaleId": "AD"
+                                }
+                            ]
+                        },
+                        "type": "physicalDamage"
+                    }
+                ]
+            },
+            "cooldown": "0",
+            "cost": "No Cost",
+            "name": "Burst Fire"
+        },
+        "W": {
+            "_rawTooltip": {
+                "fullTooltip": "Zeri fires an electric pulse that deals [[0]] and [[1]] the first enemy hit by 30/35/40/45/50% for 2 seconds.<br /><br />If the pulse hits terrain, it expands into a laser that applies the effects in an area and Critically Strikes champions and monsters.",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "20/55/90/125/160 {{0}} {{1}} magic damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+100% AD)",
+                                    "scaleId": "AD"
+                                },
+                                {
+                                    "scale": "(+40% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "magicDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "Slows",
+                            "scaleHolders": []
+                        },
+                        "type": "status"
+                    }
+                ]
+            },
+            "cooldown": "12/11/10/9/8",
+            "cost": "50/60/70/80/90 Mana",
+            "name": "Ultrashock Laser"
+        },
+        "E": {
+            "_rawTooltip": {
+                "fullTooltip": "Zeri dashes a short distance and vaults over any terrain she touches, greatly extending the dash range. Her next 3 shots of [[0]] pierce, dealing 60/70/80/90/100% damage to enemies after the first.<br /><br />Hitting an enemy champion with an Attack or Ability reduces this Ability's cooldown by 0.5 seconds. Critical strikes reduce the cooldown 2 additional times.",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "Burst Fire",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    }
+                ]
+            },
+            "cooldown": "24/22.5/21/19.5/18",
+            "cost": "80 Mana",
+            "name": "Spark Surge"
+        },
+        "R": {
+            "_rawTooltip": {
+                "fullTooltip": "Zeri discharges a nova of electricity, dealing [[0]] to nearby enemies and gaining 8 stacks of Overcharge for each champion hit for 6 seconds. Each stack grants [[1]]. Hitting an enemy champion with an Attack or Ability adds a stack of Overcharge and refreshes its duration by 2 seconds. Critical strikes add 2 additional stacks.<br /><br />While Overcharged Zeri also gains [[2]] and [[3]] becomes a faster triple shot that deals an additional [[4]] and chains [[5]] + [[6]] to nearby enemies. <br />",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "150/250/350 {{0}} {{1}} magic damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+80% AP)",
+                                    "scaleId": "AP"
+                                },
+                                {
+                                    "scale": "(+80% Bonus AD)",
+                                    "scaleId": "AD"
+                                }
+                            ]
+                        },
+                        "type": "magicDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "0.5% Move Speed",
+                            "scaleHolders": []
+                        },
+                        "type": "speed"
+                    },
+                    {
+                        "text": {
+                            "text": "30% Attack Speed",
+                            "scaleHolders": []
+                        },
+                        "type": "attackSpeed"
+                    },
+                    {
+                        "text": {
+                            "text": "Burst Fire",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "5/10/15 {{0}} magic damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+15% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "magicDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "5/10/15 {{0}} magic damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+15% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "magicDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "25% AD physical damage",
+                            "scaleHolders": []
+                        },
+                        "type": "physicalDamage"
+                    }
+                ]
+            },
+            "cooldown": "100/85/70",
+            "cost": "100 Mana",
+            "name": "Lightning Crash"
+        }
+    },
     "Changes": {
         "12.2": {
             "B": "",
@@ -685,360 +963,303 @@
             },
             "E": "",
             "R": ""
-        }
-    },
-    "stats": {
-        "hp": {
-            "base": 600,
-            "increment": 109
         },
-        "mp": {
-            "base": 250,
-            "increment": 45
-        },
-        "armor": {
-            "base": 20,
-            "increment": 4.2
-        },
-        "spellBlock": {
-            "base": 30,
-            "increment": 1.3
-        },
-        "hpRegen": {
-            "base": 3.25,
-            "increment": 0.7
-        },
-        "mpRegen": {
-            "base": 6,
-            "increment": 0.8
-        },
-        "attackSpeed": {
-            "base": 0.658,
-            "increment": 0.02
-        },
-        "ms": {
-            "base": 325,
-            "increment": 0
-        },
-        "attackDamage": {
-            "base": 50,
-            "increment": 1.5
-        },
-        "attackRange": {
-            "base": 500,
-            "increment": 0
-        }
-    },
-    "spells": {
-        "P": {
-            "name": "Living Battery",
-            "cooldown": "",
-            "_rawTooltip": {
-                "fullTooltip": "Innate: Zeri absorbs the energy of shields she damages, shielding herself equal to [[0]] dealt to the shield. Each instance of shield gained by Living Battery lasts for 3 seconds.<br>Innate: Whenever Zeri receives a shield, she gains [[1]] for 3 seconds.",
-                "parseInfo": [
+        "12.23": {
+            "B": {
+                "SpellName": "Base Stats",
+                "Changes": [
                     {
-                        "text": {
-                            "text": "60% of the post-mitigation damage",
-                            "scaleHolders": []
-                        },
-                        "type": ""
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Move Speed: ",
+                            "Before": "325",
+                            "Indicator": " ⇒ ",
+                            "After": "330"
+                        }
                     },
                     {
-                        "text": {
-                            "text": "10% bonus movement speed",
-                            "scaleHolders": []
-                        },
-                        "type": "speed"
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Base Attack Damage: ",
+                            "Before": "50",
+                            "Indicator": " ⇒ ",
+                            "After": "53"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Base Armor: ",
+                            "Before": "20",
+                            "Indicator": " ⇒ ",
+                            "After": "24"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Base Health: ",
+                            "Before": "600",
+                            "Indicator": " ⇒ ",
+                            "After": "630"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Attack Speed Ratio: ",
+                            "Before": "0.568",
+                            "Indicator": " ⇒ ",
+                            "After": "0.625"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "HP Growth: ",
+                            "Before": "109",
+                            "Indicator": " ⇒ ",
+                            "After": "115"
+                        }
+                    }
+                ]
+            },
+            "P": {
+                "SpellName": "Passive - Living Battery",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Fully Charged Basic Attack Damage: ",
+                            "Before": "90-200 (based on level) (+90%AP) (+1-15% (based on level) target maximum HP)",
+                            "Indicator": " ⇒ ",
+                            "After": "90-200 (based on level) (+110%AP) (+1-15% target maximum HP)"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Gotta Zip Shield Bonus: ",
+                            "Before": "10% multiplicative Move Speed",
+                            "Indicator": " ⇒ ",
+                            "After": "10% Move Speed (Notethis should make the shield stack worse with other Move Speed sources)"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Bonus Move Speed Duration: ",
+                            "Before": "3 seconds",
+                            "Indicator": " ⇒ ",
+                            "After": "2 seconds"
+                        }
+                    }
+                ]
+            },
+            "Q": {
+                "SpellName": "Q - Burst Fire",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Range: ",
+                            "Before": "825",
+                            "Indicator": " ⇒ ",
+                            "After": "750"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Conversion of Excess Attack Speed to Bonus AD: ",
+                            "Before": "60%",
+                            "Indicator": " ⇒ ",
+                            "After": "70%"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Physical Damage: ",
+                            "Before": "8/11/14/17/20 (+ 100/105/110/115/120% AD)",
+                            "Indicator": " ⇒ ",
+                            "After": "15/18/21/24/27 (+ 104/108/112/116/120% AD)"
+                        }
+                    }
+                ]
+            },
+            "W": {
+                "SpellName": "W - Ultrashock Laser",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Damage Type: ",
+                            "Before": "Magic",
+                            "Indicator": " ⇒ ",
+                            "After": "Physical"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Physical Damage: ",
+                            "Before": "20/55/90/125/160 (+100% AD)(+40% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "20/60/100/140/180 (+130% AD) (+25% AP)"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Cast Time: ",
+                            "Before": "2.5x Attack Time",
+                            "Indicator": " ⇒ ",
+                            "After": "0.55-0.3 seconds (based on Attack Speed)"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Missile Speed: ",
+                            "Before": "2200",
+                            "Indicator": " ⇒ ",
+                            "After": "2500"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Beam Cast Time: ",
+                            "Before": "0.75 seconds",
+                            "Indicator": " ⇒ ",
+                            "After": "0.85 seconds"
+                        }
+                    }
+                ]
+            },
+            "E": {
+                "SpellName": "E - Spark Surge",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Mana Cost: ",
+                            "Before": "80",
+                            "Indicator": " ⇒ ",
+                            "After": "90/85/80/75/70"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Cooldown: ",
+                            "Before": "24/22.5/21/19.5/18 seconds",
+                            "Indicator": " ⇒ ",
+                            "After": "22/21/20/19/18 seconds"
+                        }
+                    },
+                    {
+                        "Tag": "NEW",
+                        "Change": {
+                            "Attribute": "Lightning Rounds are Magic: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "For 5 seconds after using her E, Zeri gains Lightning Rounds and her Q - Burst Fire will deal additional magic damage to the first enemy hit"
+                        }
+                    },
+                    {
+                        "Tag": "NEW",
+                        "Change": {
+                            "Attribute": "Bonus Magic Damage to First Target Hit with Lightning Rounds: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "20/22/24/26/28 (+20% AP)(+12% bonus AD).This damage is increased by up to 65% based on Zeri's Critical Strike Chance."
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Lightning Rounds Pierce Damage Falloff after First Target Hit: ",
+                            "Before": "60/70/80/90/100%",
+                            "Indicator": " ⇒ ",
+                            "After": "80/85/90/95/100%"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Vision while Sliding on Terrain: ",
+                            "Before": "850 units",
+                            "Indicator": " ⇒ ",
+                            "After": "1500 units"
+                        }
+                    }
+                ]
+            },
+            "R": {
+                "SpellName": "R - Lightning Crash",
+                "Changes": [
+                    {
+                        "Tag": "REMOVED",
+                        "Change": {
+                            "Attribute": "Short Circuited: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "Zeri’s Overcharged attacks no longer deal 5/10/15(+15% AP) Bonus Magic Damage On-Hit"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Chain Lightning Range: ",
+                            "Before": "450",
+                            "Indicator": " ⇒ ",
+                            "After": "650"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "On-Cast Magic Damage: ",
+                            "Before": "150/250/350 (+80% AP)(+80% bonus AD)",
+                            "Indicator": " ⇒ ",
+                            "After": "175/275/375 (+110% AP)(+100% bonus AD)"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Kerchow: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "If Zeri’s R hits at least one enemy champion, Zeri gains 10% Move Speed, 30% Attack Speed, and chaining shots for 5 seconds. Hitting champions with Q or auto attacks refresh this buff by 1.5 seconds. (Notethis buff cannot be extended to be longer than its original duration.)"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Boundless Energy: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "Hitting enemy champions grants Zeri 1 stack (3 stacks for critical strikes) of Overcharge for 1.5 seconds. Zeri gains 0.5% Move Speed for each stack of Overcharge, stacking infinitely."
+                        }
                     }
                 ]
             }
-        },
-        "Q": {
-            "id": "ZeriQ",
-            "name": "Burst Fire",
-            "_rawTooltip": {
-                "fullTooltip": "[[0]] Zeri's Attacks are treated as Abilities and can be charged up by moving and casting this ability. Uncharged Attacks consume a small amount of charge, deal [[1]] and [[2]] enemies below [[3]]. A fully charged Attack deals [[4]] and consumes all charge.<br /><br />[[5]] This Ability is treated as an Attack. Zeri fires a burst of 7 rounds that deals [[6]] to the first enemy hit.",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "Passive:",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "10 - 25 {{0}} {{1}} magic damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(based on champion level)",
-                                    "scaleId": "level"
-                                },
-                                {
-                                    "scale": "(+3% AP)",
-                                    "scaleId": "AP"
-                                }
-                            ]
-                        },
-                        "type": "magicDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "execute",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "60 - 150 {{0}} {{1}} Health",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(based on champion level)",
-                                    "scaleId": "level"
-                                },
-                                {
-                                    "scale": "(+18% AP)",
-                                    "scaleId": "AP"
-                                }
-                            ]
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "90 - 200 {{0}} {{1}} + 1% - 15% {{2}} max Health magic damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(based on champion level)",
-                                    "scaleId": "level"
-                                },
-                                {
-                                    "scale": "(+90% AP)",
-                                    "scaleId": "AP"
-                                },
-                                {
-                                    "scale": "(based on champion level)",
-                                    "scaleId": "level"
-                                }
-                            ]
-                        },
-                        "type": "magicDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "Active:",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "8/11/14/17/20 {{0}} physical damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+100/105/110/115/120% AD)",
-                                    "scaleId": "AD"
-                                }
-                            ]
-                        },
-                        "type": "physicalDamage"
-                    }
-                ]
-            },
-            "maxRank": 5,
-            "cooldown": "0",
-            "cooldownByLevel": [
-                0,
-                0,
-                0,
-                0,
-                0
-            ],
-            "cost": "No Cost",
-            "costByLevel": [
-                0,
-                0,
-                0,
-                0,
-                0
-            ],
-            "costType": "No Cost"
-        },
-        "W": {
-            "id": "ZeriW",
-            "name": "Ultrashock Laser",
-            "_rawTooltip": {
-                "fullTooltip": "Zeri fires an electric pulse that deals [[0]] and [[1]] the first enemy hit by 30/35/40/45/50% for 2 seconds.<br /><br />If the pulse hits terrain, it expands into a laser that applies the effects in an area and Critically Strikes champions and monsters.",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "20/55/90/125/160 {{0}} {{1}} magic damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+100% AD)",
-                                    "scaleId": "AD"
-                                },
-                                {
-                                    "scale": "(+40% AP)",
-                                    "scaleId": "AP"
-                                }
-                            ]
-                        },
-                        "type": "magicDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "Slows",
-                            "scaleHolders": []
-                        },
-                        "type": "status"
-                    }
-                ]
-            },
-            "maxRank": 5,
-            "cooldown": "12/11/10/9/8",
-            "cooldownByLevel": [
-                12,
-                11,
-                10,
-                9,
-                8
-            ],
-            "cost": "50/60/70/80/90 Mana",
-            "costByLevel": [
-                50,
-                60,
-                70,
-                80,
-                90
-            ],
-            "costType": " Mana"
-        },
-        "E": {
-            "id": "ZeriE",
-            "name": "Spark Surge",
-            "_rawTooltip": {
-                "fullTooltip": "Zeri dashes a short distance and vaults over any terrain she touches, greatly extending the dash range. Her next 3 shots of [[0]] pierce, dealing 60/70/80/90/100% damage to enemies after the first.<br /><br />Hitting an enemy champion with an Attack or Ability reduces this Ability's cooldown by 0.5 seconds. Critical strikes reduce the cooldown 2 additional times.",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "Burst Fire",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    }
-                ]
-            },
-            "maxRank": 5,
-            "cooldown": "24/22.5/21/19.5/18",
-            "cooldownByLevel": [
-                24,
-                22.5,
-                21,
-                19.5,
-                18
-            ],
-            "cost": "80 Mana",
-            "costByLevel": [
-                80,
-                80,
-                80,
-                80,
-                80
-            ],
-            "costType": " Mana"
-        },
-        "R": {
-            "id": "ZeriR",
-            "name": "Lightning Crash",
-            "_rawTooltip": {
-                "fullTooltip": "Zeri discharges a nova of electricity, dealing [[0]] to nearby enemies and gaining 8 stacks of Overcharge for each champion hit for 6 seconds. Each stack grants [[1]]. Hitting an enemy champion with an Attack or Ability adds a stack of Overcharge and refreshes its duration by 2 seconds. Critical strikes add 2 additional stacks.<br /><br />While Overcharged Zeri also gains [[2]] and [[3]] becomes a faster triple shot that deals an additional [[4]] and chains [[5]] + [[6]] to nearby enemies. <br />",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "150/250/350 {{0}} {{1}} magic damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+80% AP)",
-                                    "scaleId": "AP"
-                                },
-                                {
-                                    "scale": "(+80% Bonus AD)",
-                                    "scaleId": "AD"
-                                }
-                            ]
-                        },
-                        "type": "magicDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "0.5% Move Speed",
-                            "scaleHolders": []
-                        },
-                        "type": "speed"
-                    },
-                    {
-                        "text": {
-                            "text": "30% Attack Speed",
-                            "scaleHolders": []
-                        },
-                        "type": "attackSpeed"
-                    },
-                    {
-                        "text": {
-                            "text": "Burst Fire",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "5/10/15 {{0}} magic damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+15% AP)",
-                                    "scaleId": "AP"
-                                }
-                            ]
-                        },
-                        "type": "magicDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "5/10/15 {{0}} magic damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+15% AP)",
-                                    "scaleId": "AP"
-                                }
-                            ]
-                        },
-                        "type": "magicDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "25% AD physical damage",
-                            "scaleHolders": []
-                        },
-                        "type": "physicalDamage"
-                    }
-                ]
-            },
-            "maxRank": 3,
-            "cooldown": "100/85/70",
-            "cooldownByLevel": [
-                100,
-                85,
-                70
-            ],
-            "cost": "100 Mana",
-            "costByLevel": [
-                100,
-                100,
-                100
-            ],
-            "costType": " Mana"
         }
-    }
+    },
+    "ChangePatches": [
+        "12.2",
+        "12.3",
+        "12.4",
+        "12.7",
+        "12.10",
+        "12.11",
+        "12.12",
+        "12.14",
+        "12.16",
+        "12.23"
+    ],
+    "ChampionName": "Zeri"
 }

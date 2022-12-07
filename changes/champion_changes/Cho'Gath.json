@@ -1,12 +1,203 @@
 {
-    "ChampionName": "Cho'Gath",
-    "ChangePatches": [
-        "10.9",
-        "11.3",
-        "11.19",
-        "12.10",
-        "12.22"
-    ],
+    "stats": {
+        "hp": {
+            "base": 644,
+            "increment": 94
+        },
+        "mp": {
+            "base": 270,
+            "increment": 60
+        },
+        "armor": {
+            "base": 38,
+            "increment": 4.7
+        },
+        "spellBlock": {
+            "base": 32,
+            "increment": 2.05
+        },
+        "hpRegen": {
+            "base": 9,
+            "increment": 0.85
+        },
+        "mpRegen": {
+            "base": 7.2,
+            "increment": 0.45
+        },
+        "attackSpeed": {
+            "base": 0.625,
+            "increment": 0.0144
+        },
+        "ms": {
+            "base": 345,
+            "increment": 0
+        },
+        "attackDamage": {
+            "base": 69,
+            "increment": 4.2
+        },
+        "attackRange": {
+            "base": 125,
+            "increment": 0
+        }
+    },
+    "spells": {
+        "P": {
+            "cooldown": "",
+            "_rawTooltip": {
+                "fullTooltip": "Innate: Whenever Cho'Gath kills an enemy, it heals for 18 − 52 (based on level) and restores 4.7-9.5 (based on level) mana.",
+                "parseInfo": []
+            },
+            "name": "Carnivore"
+        },
+        "Q": {
+            "_rawTooltip": {
+                "fullTooltip": "Cho'Gath ruptures the ground, [[0]] enemies for 1 second, dealing [[1]], and [[2]] them by 60% for 1.5 seconds.",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "Knocking Up",
+                            "scaleHolders": []
+                        },
+                        "type": "status"
+                    },
+                    {
+                        "text": {
+                            "text": "80/135/190/245/300 {{0}} magic damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+100% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "magicDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "Slowing",
+                            "scaleHolders": []
+                        },
+                        "type": "status"
+                    }
+                ]
+            },
+            "cooldown": "6",
+            "cost": "60 Mana",
+            "name": "Rupture"
+        },
+        "W": {
+            "_rawTooltip": {
+                "fullTooltip": "Cho'Gath roars, [[0]] enemies for 1.6/1.7/1.8/1.9/2 seconds and dealing [[1]].",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "Silencing",
+                            "scaleHolders": []
+                        },
+                        "type": "status"
+                    },
+                    {
+                        "text": {
+                            "text": "80/135/190/245/300 {{0}} magic damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+70% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "magicDamage"
+                    }
+                ]
+            },
+            "cooldown": "13/12/11/10/9",
+            "cost": "70/80/90/100/110 Mana",
+            "name": "Feral Scream"
+        },
+        "E": {
+            "_rawTooltip": {
+                "fullTooltip": "Cho'Gath's next 3 Attacks launch spikes that deal [[0]] and [[1]] by 30/35/40/45/50%, decaying over 1.5 seconds.",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "22/34/46/58/70 {{0}} plus 0.5% per stack of Feast {{1}} of the target's max Health magic damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+30% AP)",
+                                    "scaleId": "AP"
+                                },
+                                {
+                                    "scale": "(+3%)",
+                                    "scaleId": "(+3%"
+                                }
+                            ]
+                        },
+                        "type": "magicDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "Slow",
+                            "scaleHolders": []
+                        },
+                        "type": "status"
+                    }
+                ]
+            },
+            "cooldown": "8/7/6/5/4",
+            "cost": "30 Mana",
+            "name": "Vorpal Spikes"
+        },
+        "R": {
+            "_rawTooltip": {
+                "fullTooltip": "Cho'Gath ravenously feeds on an enemy, dealing [[0]] to champions or [[1]] to minions or jungle monsters. If this kills the target, Cho'Gath gains a stack of Feast, which causes him to grow in size and gain [[2]]. Only 6 stacks can be gained from minions and non-epic jungle monsters. ",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "300/475/650 {{0}} {{1}} true damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+50% AP)",
+                                    "scaleId": "AP"
+                                },
+                                {
+                                    "scale": "(+10% Bonus Health)",
+                                    "scaleId": "Health"
+                                }
+                            ]
+                        },
+                        "type": "trueDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "1200 {{0}} {{1}}",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+50% AP)",
+                                    "scaleId": "AP"
+                                },
+                                {
+                                    "scale": "(+10% Bonus Health)",
+                                    "scaleId": "Health"
+                                }
+                            ]
+                        },
+                        "type": "trueDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "80/120 max Health",
+                            "scaleHolders": []
+                        },
+                        "type": "healing"
+                    }
+                ]
+            },
+            "cooldown": "80/70/60",
+            "cost": "100 Mana",
+            "name": "Feast"
+        }
+    },
     "Changes": {
         "10.9": {
             "B": "",
@@ -152,269 +343,62 @@
                     }
                 ]
             }
-        }
-    },
-    "stats": {
-        "hp": {
-            "base": 644,
-            "increment": 94
         },
-        "mp": {
-            "base": 270,
-            "increment": 60
-        },
-        "armor": {
-            "base": 38,
-            "increment": 4.7
-        },
-        "spellBlock": {
-            "base": 32,
-            "increment": 2.05
-        },
-        "hpRegen": {
-            "base": 9,
-            "increment": 0.85
-        },
-        "mpRegen": {
-            "base": 7.2,
-            "increment": 0.45
-        },
-        "attackSpeed": {
-            "base": 0.625,
-            "increment": 0.0144
-        },
-        "ms": {
-            "base": 345,
-            "increment": 0
-        },
-        "attackDamage": {
-            "base": 69,
-            "increment": 4.2
-        },
-        "attackRange": {
-            "base": 125,
-            "increment": 0
-        }
-    },
-    "spells": {
-        "P": {
-            "name": "Carnivore",
-            "cooldown": "",
-            "_rawTooltip": {
-                "fullTooltip": "Innate: Whenever Cho'Gath kills an enemy, it heals for 18 − 52 (based on level) and restores 3.5 − 7.75 (based on level) mana.",
-                "parseInfo": []
+        "12.23": {
+            "B": "",
+            "P": {
+                "SpellName": "Passive - Carnivore",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Mana Restored on Enemy Kills: ",
+                            "Before": "3.5-7.75 (based on level)",
+                            "Indicator": " ⇒ ",
+                            "After": "4.7-9.5 (based on level)"
+                        }
+                    }
+                ]
+            },
+            "Q": "",
+            "W": {
+                "SpellName": "W - Feral Scream",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Base Damage: ",
+                            "Before": "75/125/175/225/275",
+                            "Indicator": " ⇒ ",
+                            "After": "80/135/190/245/300"
+                        }
+                    }
+                ]
+            },
+            "E": "",
+            "R": {
+                "SpellName": "R - Feast",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Cooldown: ",
+                            "Before": "80 seconds",
+                            "Indicator": " ⇒ ",
+                            "After": "80/70/60 seconds"
+                        }
+                    }
+                ]
             }
-        },
-        "Q": {
-            "id": "Rupture",
-            "name": "Rupture",
-            "_rawTooltip": {
-                "fullTooltip": "Cho'Gath ruptures the ground, [[0]] enemies for 1 second, dealing [[1]], and [[2]] them by 60% for 1.5 seconds.",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "Knocking Up",
-                            "scaleHolders": []
-                        },
-                        "type": "status"
-                    },
-                    {
-                        "text": {
-                            "text": "80/135/190/245/300 {{0}} magic damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+100% AP)",
-                                    "scaleId": "AP"
-                                }
-                            ]
-                        },
-                        "type": "magicDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "Slowing",
-                            "scaleHolders": []
-                        },
-                        "type": "status"
-                    }
-                ]
-            },
-            "maxRank": 5,
-            "cooldown": "6",
-            "cooldownByLevel": [
-                6,
-                6,
-                6,
-                6,
-                6
-            ],
-            "cost": "60 Mana",
-            "costByLevel": [
-                60,
-                60,
-                60,
-                60,
-                60
-            ],
-            "costType": " Mana"
-        },
-        "W": {
-            "id": "FeralScream",
-            "name": "Feral Scream",
-            "_rawTooltip": {
-                "fullTooltip": "Cho'Gath roars, [[0]] enemies for 1.6/1.7/1.8/1.9/2 seconds and dealing [[1]].",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "Silencing",
-                            "scaleHolders": []
-                        },
-                        "type": "status"
-                    },
-                    {
-                        "text": {
-                            "text": "75/125/175/225/275 {{0}} magic damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+70% AP)",
-                                    "scaleId": "AP"
-                                }
-                            ]
-                        },
-                        "type": "magicDamage"
-                    }
-                ]
-            },
-            "maxRank": 5,
-            "cooldown": "13/12/11/10/9",
-            "cooldownByLevel": [
-                13,
-                12,
-                11,
-                10,
-                9
-            ],
-            "cost": "70/80/90/100/110 Mana",
-            "costByLevel": [
-                70,
-                80,
-                90,
-                100,
-                110
-            ],
-            "costType": " Mana"
-        },
-        "E": {
-            "id": "VorpalSpikes",
-            "name": "Vorpal Spikes",
-            "_rawTooltip": {
-                "fullTooltip": "Cho'Gath's next 3 Attacks launch spikes that deal [[0]] and [[1]] by 30/35/40/45/50%, decaying over 1.5 seconds.",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "22/34/46/58/70 {{0}} plus 0.5% per stack of Feast {{1}} of the target's max Health magic damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+30% AP)",
-                                    "scaleId": "AP"
-                                },
-                                {
-                                    "scale": "(+3%)",
-                                    "scaleId": "(+3%"
-                                }
-                            ]
-                        },
-                        "type": "magicDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "Slow",
-                            "scaleHolders": []
-                        },
-                        "type": "status"
-                    }
-                ]
-            },
-            "maxRank": 5,
-            "cooldown": "8/7/6/5/4",
-            "cooldownByLevel": [
-                8,
-                7,
-                6,
-                5,
-                4
-            ],
-            "cost": "30 Mana",
-            "costByLevel": [
-                30,
-                30,
-                30,
-                30,
-                30
-            ],
-            "costType": " Mana"
-        },
-        "R": {
-            "id": "Feast",
-            "name": "Feast",
-            "_rawTooltip": {
-                "fullTooltip": "Cho'Gath ravenously feeds on an enemy, dealing [[0]] to champions or [[1]] to minions or jungle monsters. If this kills the target, Cho'Gath gains a stack of Feast, which causes him to grow in size and gain [[2]]. Only 6 stacks can be gained from minions and non-epic jungle monsters. ",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "300/475/650 {{0}} {{1}} true damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+50% AP)",
-                                    "scaleId": "AP"
-                                },
-                                {
-                                    "scale": "(+10% Bonus Health)",
-                                    "scaleId": "Health"
-                                }
-                            ]
-                        },
-                        "type": "trueDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "1200 {{0}} {{1}}",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+50% AP)",
-                                    "scaleId": "AP"
-                                },
-                                {
-                                    "scale": "(+10% Bonus Health)",
-                                    "scaleId": "Health"
-                                }
-                            ]
-                        },
-                        "type": "trueDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "80/120 max Health",
-                            "scaleHolders": []
-                        },
-                        "type": "healing"
-                    }
-                ]
-            },
-            "maxRank": 3,
-            "cooldown": "80",
-            "cooldownByLevel": [
-                80,
-                80,
-                80
-            ],
-            "cost": "100 Mana",
-            "costByLevel": [
-                100,
-                100,
-                100
-            ],
-            "costType": " Mana"
         }
-    }
+    },
+    "ChangePatches": [
+        "10.9",
+        "11.3",
+        "11.19",
+        "12.10",
+        "12.22",
+        "12.23"
+    ],
+    "ChampionName": "Cho'Gath"
 }

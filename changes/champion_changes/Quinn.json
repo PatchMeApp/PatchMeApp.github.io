@@ -1,11 +1,274 @@
 {
-    "ChampionName": "Quinn",
-    "ChangePatches": [
-        "10.9",
-        "11.21",
-        "12.3",
-        "12.10"
-    ],
+    "stats": {
+        "hp": {
+            "base": 603,
+            "increment": 99
+        },
+        "mp": {
+            "base": 269,
+            "increment": 35
+        },
+        "armor": {
+            "base": 28,
+            "increment": 4.7
+        },
+        "spellBlock": {
+            "base": 30,
+            "increment": 1.3
+        },
+        "hpRegen": {
+            "base": 5.5,
+            "increment": 0.55
+        },
+        "mpRegen": {
+            "base": 7,
+            "increment": 0.4
+        },
+        "attackSpeed": {
+            "base": 0.668,
+            "increment": 0.031
+        },
+        "ms": {
+            "base": 335,
+            "increment": 0
+        },
+        "attackDamage": {
+            "base": 59,
+            "increment": 2.4
+        },
+        "attackRange": {
+            "base": 525,
+            "increment": 0
+        }
+    },
+    "spells": {
+        "P": {
+            "cooldown": "",
+            "_rawTooltip": {
+                "fullTooltip": "Innate: Quinn's damaging abilities mark enemies with Vulnerable, revealing them for 4 seconds. If no Vulnerable target exists for 1 second, Valor automatically marks a nearby visible enemy, which cannot recur for 8 − 2.93 (based on critical strike chance) seconds after the mark has timed out, was consumed or was overwritten by another mark.<br>Quinn's next basic attack against a Vulnerable target consumes the mark to deal [[0]].<br>While Behind Enemy Lines is active, Harrier is disabled and all Vulnerable marks are removed.",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "10 − 95 {{0}} {{1}} AD) bonus physical damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(based on level)",
+                                    "scaleId": "level"
+                                },
+                                {
+                                    "scale": "(+ 16% − 50% (based on level)",
+                                    "scaleId": "level"
+                                }
+                            ]
+                        },
+                        "type": "physicalDamage"
+                    }
+                ]
+            },
+            "name": "Harrier"
+        },
+        "Q": {
+            "_rawTooltip": {
+                "fullTooltip": "Quinn orders Valor to dive, making the first enemy hit [[0]], reducing their vision radius for 1.75 seconds and dealing [[1]] to all surrounding enemies.<br /><br />If the first enemy struck is not a champion, it is [[2]] for 1.75 seconds.",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "Vulnerable",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "20/45/70/95/120 {{0}}% AD) {{1}} physical damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+(80/90/100/110/120)",
+                                    "scaleId": "(+(80/90/100/110/120"
+                                },
+                                {
+                                    "scale": "(+50% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "physicalDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "Disarmed",
+                            "scaleHolders": []
+                        },
+                        "type": "status"
+                    }
+                ]
+            },
+            "cooldown": "11/10.5/10/9.5/9",
+            "cost": "50/55/60/65/70 Mana",
+            "name": "Blinding Assault"
+        },
+        "W": {
+            "_rawTooltip": {
+                "fullTooltip": "[[0]] Attacking a [[1]] target grants Quinn [[2]] and [[3]] for 2 seconds.<br /><br />[[4]] Valor reveals a large area nearby for 2 seconds.",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "Passive:",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "Vulnerable",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "28/36/44/52/60% Attack Speed",
+                            "scaleHolders": []
+                        },
+                        "type": "attackSpeed"
+                    },
+                    {
+                        "text": {
+                            "text": "20/25/30/35/40% Move Speed",
+                            "scaleHolders": []
+                        },
+                        "type": "speed"
+                    },
+                    {
+                        "text": {
+                            "text": "Active:",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    }
+                ]
+            },
+            "cooldown": "50/45/40/35/30",
+            "cost": "No Cost",
+            "name": "Heightened Senses"
+        },
+        "E": {
+            "_rawTooltip": {
+                "fullTooltip": "Quinn dashes to an enemy, dealing [[0]] and marking them [[1]]. Quinn then leaps backwards from the target, slightly [[2]] them [[3]] and [[4]] them by 50%, decaying over 1.5 seconds.",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "40/70/100/130/160 {{0}} physical damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+20% Bonus AD)",
+                                    "scaleId": "AD"
+                                }
+                            ]
+                        },
+                        "type": "physicalDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "Vulnerable",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "Knocking",
+                            "scaleHolders": []
+                        },
+                        "type": "status"
+                    },
+                    {
+                        "text": {
+                            "text": "Back",
+                            "scaleHolders": []
+                        },
+                        "type": "status"
+                    },
+                    {
+                        "text": {
+                            "text": "Slowing",
+                            "scaleHolders": []
+                        },
+                        "type": "status"
+                    }
+                ]
+            },
+            "cooldown": "12/11/10/9/8",
+            "cost": "50 Mana",
+            "name": "Vault"
+        },
+        "R": {
+            "_rawTooltip": {
+                "fullTooltip": "Quinn calls to Valor, pairing up after channeling for 2 seconds gaining [[0]] and allowing her to [[1]] this Ability. Attacking or using [[2]] or [[3]] automatically [[4]] this Ability.<br /><br />[[5]]: Quinn and Valor perform an aerial maneuver, dealing [[6]], marking champions as [[7]], and ending this Ability.",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "70/100/130% Move Speed",
+                            "scaleHolders": []
+                        },
+                        "type": "speed"
+                    },
+                    {
+                        "text": {
+                            "text": "Recast",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "Blinding Assault",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "Vault",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "Recasts",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "Recast",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "70% AD physical damage",
+                            "scaleHolders": []
+                        },
+                        "type": "physicalDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "Vulnerable",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    }
+                ]
+            },
+            "cooldown": "3",
+            "cost": "100/50/0 Mana",
+            "name": "Behind Enemy Lines"
+        }
+    },
     "Changes": {
         "10.9": {
             "B": "",
@@ -132,338 +395,11 @@
             "R": ""
         }
     },
-    "stats": {
-        "hp": {
-            "base": 603,
-            "increment": 99
-        },
-        "mp": {
-            "base": 269,
-            "increment": 35
-        },
-        "armor": {
-            "base": 28,
-            "increment": 4.7
-        },
-        "spellBlock": {
-            "base": 30,
-            "increment": 1.3
-        },
-        "hpRegen": {
-            "base": 5.5,
-            "increment": 0.55
-        },
-        "mpRegen": {
-            "base": 7,
-            "increment": 0.4
-        },
-        "attackSpeed": {
-            "base": 0.668,
-            "increment": 0.031
-        },
-        "ms": {
-            "base": 335,
-            "increment": 0
-        },
-        "attackDamage": {
-            "base": 59,
-            "increment": 2.4
-        },
-        "attackRange": {
-            "base": 525,
-            "increment": 0
-        }
-    },
-    "spells": {
-        "P": {
-            "name": "Harrier",
-            "cooldown": "",
-            "_rawTooltip": {
-                "fullTooltip": "Innate: Quinn's damaging abilities mark enemies with Vulnerable, revealing them for 4 seconds. If no Vulnerable target exists for 1 second, Valor automatically marks a nearby visible enemy, which cannot recur for 8 − 2.93 (based on critical strike chance) seconds after the mark has timed out, was consumed or was overwritten by another mark.<br>Quinn's next basic attack against a Vulnerable target consumes the mark to deal [[0]].<br>While Behind Enemy Lines is active, Harrier is disabled and all Vulnerable marks are removed.",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "10 − 95 {{0}} {{1}} AD) bonus physical damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(based on level)",
-                                    "scaleId": "level"
-                                },
-                                {
-                                    "scale": "(+ 16% − 50% (based on level)",
-                                    "scaleId": "level"
-                                }
-                            ]
-                        },
-                        "type": "physicalDamage"
-                    }
-                ]
-            }
-        },
-        "Q": {
-            "id": "QuinnQ",
-            "name": "Blinding Assault",
-            "_rawTooltip": {
-                "fullTooltip": "Quinn orders Valor to dive, making the first enemy hit [[0]], reducing their vision radius for 1.75 seconds and dealing [[1]] to all surrounding enemies.<br /><br />If the first enemy struck is not a champion, it is [[2]] for 1.75 seconds.",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "Vulnerable",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "20/45/70/95/120 {{0}}% AD) {{1}} physical damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+(80/90/100/110/120)",
-                                    "scaleId": "(+(80/90/100/110/120"
-                                },
-                                {
-                                    "scale": "(+50% AP)",
-                                    "scaleId": "AP"
-                                }
-                            ]
-                        },
-                        "type": "physicalDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "Disarmed",
-                            "scaleHolders": []
-                        },
-                        "type": "status"
-                    }
-                ]
-            },
-            "maxRank": 5,
-            "cooldown": "11/10.5/10/9.5/9",
-            "cooldownByLevel": [
-                11,
-                10.5,
-                10,
-                9.5,
-                9
-            ],
-            "cost": "50/55/60/65/70 Mana",
-            "costByLevel": [
-                50,
-                55,
-                60,
-                65,
-                70
-            ],
-            "costType": " Mana"
-        },
-        "W": {
-            "id": "QuinnW",
-            "name": "Heightened Senses",
-            "_rawTooltip": {
-                "fullTooltip": "[[0]] Attacking a [[1]] target grants Quinn [[2]] and [[3]] for 2 seconds.<br /><br />[[4]] Valor reveals a large area nearby for 2 seconds.",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "Passive:",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "Vulnerable",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "28/36/44/52/60% Attack Speed",
-                            "scaleHolders": []
-                        },
-                        "type": "attackSpeed"
-                    },
-                    {
-                        "text": {
-                            "text": "20/25/30/35/40% Move Speed",
-                            "scaleHolders": []
-                        },
-                        "type": "speed"
-                    },
-                    {
-                        "text": {
-                            "text": "Active:",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    }
-                ]
-            },
-            "maxRank": 5,
-            "cooldown": "50/45/40/35/30",
-            "cooldownByLevel": [
-                50,
-                45,
-                40,
-                35,
-                30
-            ],
-            "cost": "No Cost",
-            "costByLevel": [
-                0,
-                0,
-                0,
-                0,
-                0
-            ],
-            "costType": "No Cost"
-        },
-        "E": {
-            "id": "QuinnE",
-            "name": "Vault",
-            "_rawTooltip": {
-                "fullTooltip": "Quinn dashes to an enemy, dealing [[0]] and marking them [[1]]. Quinn then leaps backwards from the target, slightly [[2]] them [[3]] and [[4]] them by 50%, decaying over 1.5 seconds.",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "40/70/100/130/160 {{0}} physical damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+20% Bonus AD)",
-                                    "scaleId": "AD"
-                                }
-                            ]
-                        },
-                        "type": "physicalDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "Vulnerable",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "Knocking",
-                            "scaleHolders": []
-                        },
-                        "type": "status"
-                    },
-                    {
-                        "text": {
-                            "text": "Back",
-                            "scaleHolders": []
-                        },
-                        "type": "status"
-                    },
-                    {
-                        "text": {
-                            "text": "Slowing",
-                            "scaleHolders": []
-                        },
-                        "type": "status"
-                    }
-                ]
-            },
-            "maxRank": 5,
-            "cooldown": "12/11/10/9/8",
-            "cooldownByLevel": [
-                12,
-                11,
-                10,
-                9,
-                8
-            ],
-            "cost": "50 Mana",
-            "costByLevel": [
-                50,
-                50,
-                50,
-                50,
-                50
-            ],
-            "costType": " Mana"
-        },
-        "R": {
-            "id": "QuinnR",
-            "name": "Behind Enemy Lines",
-            "_rawTooltip": {
-                "fullTooltip": "Quinn calls to Valor, pairing up after channeling for 2 seconds gaining [[0]] and allowing her to [[1]] this Ability. Attacking or using [[2]] or [[3]] automatically [[4]] this Ability.<br /><br />[[5]]: Quinn and Valor perform an aerial maneuver, dealing [[6]], marking champions as [[7]], and ending this Ability.",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "70/100/130% Move Speed",
-                            "scaleHolders": []
-                        },
-                        "type": "speed"
-                    },
-                    {
-                        "text": {
-                            "text": "Recast",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "Blinding Assault",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "Vault",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "Recasts",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "Recast",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "70% AD physical damage",
-                            "scaleHolders": []
-                        },
-                        "type": "physicalDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "Vulnerable",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    }
-                ]
-            },
-            "maxRank": 3,
-            "cooldown": "3",
-            "cooldownByLevel": [
-                3,
-                3,
-                3
-            ],
-            "cost": "100/50/0 Mana",
-            "costByLevel": [
-                100,
-                50,
-                0
-            ],
-            "costType": " Mana"
-        }
-    }
+    "ChangePatches": [
+        "10.9",
+        "11.21",
+        "12.3",
+        "12.10"
+    ],
+    "ChampionName": "Quinn"
 }

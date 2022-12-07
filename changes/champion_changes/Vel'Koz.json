@@ -1,9 +1,243 @@
 {
-    "ChampionName": "Vel'Koz",
-    "ChangePatches": [
-        "12.8",
-        "12.10"
-    ],
+    "stats": {
+        "hp": {
+            "base": 590,
+            "increment": 102
+        },
+        "mp": {
+            "base": 469,
+            "increment": 21
+        },
+        "armor": {
+            "base": 22,
+            "increment": 4.7
+        },
+        "spellBlock": {
+            "base": 30,
+            "increment": 1.3
+        },
+        "hpRegen": {
+            "base": 5.5,
+            "increment": 0.55
+        },
+        "mpRegen": {
+            "base": 8,
+            "increment": 0.8
+        },
+        "attackSpeed": {
+            "base": 0.625,
+            "increment": 0.013600000000000001
+        },
+        "ms": {
+            "base": 340,
+            "increment": 0
+        },
+        "attackDamage": {
+            "base": 55,
+            "increment": 3.1416
+        },
+        "attackRange": {
+            "base": 525,
+            "increment": 0
+        }
+    },
+    "spells": {
+        "P": {
+            "cooldown": "",
+            "_rawTooltip": {
+                "fullTooltip": "Innate: Vel'Koz's abilities apply a Deconstruction stack to enemies hit for 7 seconds, stacking up to 3 times. Basic attacks and further applications refresh the duration.<br>The third stack consumes them all to deal [[0]].",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "33 − 169 {{0}} {{1}} bonus true damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(based on level)",
+                                    "scaleId": "level"
+                                },
+                                {
+                                    "scale": "(+ 50% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "trueDamage"
+                    }
+                ]
+            },
+            "name": "Organic Deconstruction"
+        },
+        "Q": {
+            "_rawTooltip": {
+                "fullTooltip": "Vel'Koz shoots a plasma bolt that deals [[0]] and [[1]] by 70% decaying over 1/1.4/1.8/2.2 second(s). At the end of it's range, on hitting a target, or on [[2]], the bolt splits and fires two new bolts at a 90 degree angle.<br /><br />Killing a unit with this restores [[3]].",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "80/120/160/200/240 {{0}} magic damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+90% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "magicDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "Slows",
+                            "scaleHolders": []
+                        },
+                        "type": "status"
+                    },
+                    {
+                        "text": {
+                            "text": "Recasting",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "20/22.5/25/27.5 Mana",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    }
+                ]
+            },
+            "cooldown": "7",
+            "cost": "40/45/50/55/60 Mana",
+            "name": "Plasma Fission"
+        },
+        "W": {
+            "_rawTooltip": {
+                "fullTooltip": "Vel'Koz opens a rift to the void, dealing [[0]]. The rift then erupts, dealing [[1]].<br /><br />This Ability has 2 charges (18/17/16/15/14 second refresh).",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "30/50/70/90/110 {{0}} magic damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+20% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "magicDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "45/75/105/135/165 {{0}} magic damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+25% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "magicDamage"
+                    }
+                ]
+            },
+            "cooldown": "1.5",
+            "cost": "50/55/60/65/70 Mana",
+            "name": "Void Rift"
+        },
+        "E": {
+            "_rawTooltip": {
+                "fullTooltip": "Vel'Koz disrupts a nearby area, causing it to explode, [[0]] for 0.75 seconds and dealing [[1]]. Enemies close to Vel'koz will be [[2]] instead of [[3]].",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "Knocking Up",
+                            "scaleHolders": []
+                        },
+                        "type": "status"
+                    },
+                    {
+                        "text": {
+                            "text": "70/100/130/160/190 {{0}} magic damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+30% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "magicDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "Knocked Back",
+                            "scaleHolders": []
+                        },
+                        "type": "status"
+                    },
+                    {
+                        "text": {
+                            "text": "Knocked Up",
+                            "scaleHolders": []
+                        },
+                        "type": "status"
+                    }
+                ]
+            },
+            "cooldown": "16/15/14/13/12",
+            "cost": "50/55/60/65/70 Mana",
+            "name": "Tectonic Disruption"
+        },
+        "R": {
+            "_rawTooltip": {
+                "fullTooltip": "Vel'Koz channels a ray of energy that follows the cursor, dealing a total of [[0]] over 2.5 seconds and [[1]] by 20%. Deals [[2]] instead to enemies recently damaged by [[3]].<br /><br />Enemies gain stacks of [[4]] periodically while in the beam.",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "450/625/800 {{0}} magic damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+125% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "magicDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "Slowing",
+                            "scaleHolders": []
+                        },
+                        "type": "status"
+                    },
+                    {
+                        "text": {
+                            "text": "true damage",
+                            "scaleHolders": []
+                        },
+                        "type": "trueDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "Organic Deconstruction",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "Deconstruction",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    }
+                ]
+            },
+            "cooldown": "120/100/80",
+            "cost": "100 Mana",
+            "name": "Life Form Disintegration Ray"
+        }
+    },
     "Changes": {
         "12.8": {
             "B": "",
@@ -88,307 +322,9 @@
             "R": ""
         }
     },
-    "stats": {
-        "hp": {
-            "base": 590,
-            "increment": 102
-        },
-        "mp": {
-            "base": 469,
-            "increment": 21
-        },
-        "armor": {
-            "base": 22,
-            "increment": 4.7
-        },
-        "spellBlock": {
-            "base": 30,
-            "increment": 1.3
-        },
-        "hpRegen": {
-            "base": 5.5,
-            "increment": 0.55
-        },
-        "mpRegen": {
-            "base": 8,
-            "increment": 0.8
-        },
-        "attackSpeed": {
-            "base": 0.625,
-            "increment": 0.013600000000000001
-        },
-        "ms": {
-            "base": 340,
-            "increment": 0
-        },
-        "attackDamage": {
-            "base": 55,
-            "increment": 3.1416
-        },
-        "attackRange": {
-            "base": 525,
-            "increment": 0
-        }
-    },
-    "spells": {
-        "P": {
-            "name": "Organic Deconstruction",
-            "cooldown": "",
-            "_rawTooltip": {
-                "fullTooltip": "Innate: Vel'Koz's abilities apply a Deconstruction stack to enemies hit for 7 seconds, stacking up to 3 times. Basic attacks and further applications refresh the duration.<br>The third stack consumes them all to deal [[0]].",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "33 − 169 {{0}} {{1}} bonus true damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(based on level)",
-                                    "scaleId": "level"
-                                },
-                                {
-                                    "scale": "(+ 50% AP)",
-                                    "scaleId": "AP"
-                                }
-                            ]
-                        },
-                        "type": "trueDamage"
-                    }
-                ]
-            }
-        },
-        "Q": {
-            "id": "VelkozQ",
-            "name": "Plasma Fission",
-            "_rawTooltip": {
-                "fullTooltip": "Vel'Koz shoots a plasma bolt that deals [[0]] and [[1]] by 70% decaying over 1/1.4/1.8/2.2 second(s). At the end of it's range, on hitting a target, or on [[2]], the bolt splits and fires two new bolts at a 90 degree angle.<br /><br />Killing a unit with this restores [[3]].",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "80/120/160/200/240 {{0}} magic damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+90% AP)",
-                                    "scaleId": "AP"
-                                }
-                            ]
-                        },
-                        "type": "magicDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "Slows",
-                            "scaleHolders": []
-                        },
-                        "type": "status"
-                    },
-                    {
-                        "text": {
-                            "text": "Recasting",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "20/22.5/25/27.5 Mana",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    }
-                ]
-            },
-            "maxRank": 5,
-            "cooldown": "7",
-            "cooldownByLevel": [
-                7,
-                7,
-                7,
-                7,
-                7
-            ],
-            "cost": "40/45/50/55/60 Mana",
-            "costByLevel": [
-                40,
-                45,
-                50,
-                55,
-                60
-            ],
-            "costType": " Mana"
-        },
-        "W": {
-            "id": "VelkozW",
-            "name": "Void Rift",
-            "_rawTooltip": {
-                "fullTooltip": "Vel'Koz opens a rift to the void, dealing [[0]]. The rift then erupts, dealing [[1]].<br /><br />This Ability has 2 charges (18/17/16/15/14 second refresh).",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "30/50/70/90/110 {{0}} magic damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+20% AP)",
-                                    "scaleId": "AP"
-                                }
-                            ]
-                        },
-                        "type": "magicDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "45/75/105/135/165 {{0}} magic damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+25% AP)",
-                                    "scaleId": "AP"
-                                }
-                            ]
-                        },
-                        "type": "magicDamage"
-                    }
-                ]
-            },
-            "maxRank": 5,
-            "cooldown": "1.5",
-            "cooldownByLevel": [
-                1.5,
-                1.5,
-                1.5,
-                1.5,
-                1.5
-            ],
-            "cost": "50/55/60/65/70 Mana",
-            "costByLevel": [
-                50,
-                55,
-                60,
-                65,
-                70
-            ],
-            "costType": " Mana"
-        },
-        "E": {
-            "id": "VelkozE",
-            "name": "Tectonic Disruption",
-            "_rawTooltip": {
-                "fullTooltip": "Vel'Koz disrupts a nearby area, causing it to explode, [[0]] for 0.75 seconds and dealing [[1]]. Enemies close to Vel'koz will be [[2]] instead of [[3]].",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "Knocking Up",
-                            "scaleHolders": []
-                        },
-                        "type": "status"
-                    },
-                    {
-                        "text": {
-                            "text": "70/100/130/160/190 {{0}} magic damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+30% AP)",
-                                    "scaleId": "AP"
-                                }
-                            ]
-                        },
-                        "type": "magicDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "Knocked Back",
-                            "scaleHolders": []
-                        },
-                        "type": "status"
-                    },
-                    {
-                        "text": {
-                            "text": "Knocked Up",
-                            "scaleHolders": []
-                        },
-                        "type": "status"
-                    }
-                ]
-            },
-            "maxRank": 5,
-            "cooldown": "16/15/14/13/12",
-            "cooldownByLevel": [
-                16,
-                15,
-                14,
-                13,
-                12
-            ],
-            "cost": "50/55/60/65/70 Mana",
-            "costByLevel": [
-                50,
-                55,
-                60,
-                65,
-                70
-            ],
-            "costType": " Mana"
-        },
-        "R": {
-            "id": "VelkozR",
-            "name": "Life Form Disintegration Ray",
-            "_rawTooltip": {
-                "fullTooltip": "Vel'Koz channels a ray of energy that follows the cursor, dealing a total of [[0]] over 2.5 seconds and [[1]] by 20%. Deals [[2]] instead to enemies recently damaged by [[3]].<br /><br />Enemies gain stacks of [[4]] periodically while in the beam.",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "450/625/800 {{0}} magic damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+125% AP)",
-                                    "scaleId": "AP"
-                                }
-                            ]
-                        },
-                        "type": "magicDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "Slowing",
-                            "scaleHolders": []
-                        },
-                        "type": "status"
-                    },
-                    {
-                        "text": {
-                            "text": "true damage",
-                            "scaleHolders": []
-                        },
-                        "type": "trueDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "Organic Deconstruction",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "Deconstruction",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    }
-                ]
-            },
-            "maxRank": 3,
-            "cooldown": "120/100/80",
-            "cooldownByLevel": [
-                120,
-                100,
-                80
-            ],
-            "cost": "100 Mana",
-            "costByLevel": [
-                100,
-                100,
-                100
-            ],
-            "costType": " Mana"
-        }
-    }
+    "ChangePatches": [
+        "12.8",
+        "12.10"
+    ],
+    "ChampionName": "Vel'Koz"
 }

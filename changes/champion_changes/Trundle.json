@@ -1,18 +1,203 @@
 {
-    "ChampionName": "Trundle",
-    "ChangePatches": [
-        "10.2",
-        "10.9",
-        "10.12",
-        "10.14",
-        "10.21",
-        "11.2",
-        "11.5",
-        "11.9",
-        "11.18",
-        "12.10",
-        "12.17"
-    ],
+    "stats": {
+        "hp": {
+            "base": 686,
+            "increment": 110
+        },
+        "mp": {
+            "base": 281,
+            "increment": 45
+        },
+        "armor": {
+            "base": 37,
+            "increment": 3.9
+        },
+        "spellBlock": {
+            "base": 32,
+            "increment": 2.05
+        },
+        "hpRegen": {
+            "base": 6,
+            "increment": 0.75
+        },
+        "mpRegen": {
+            "base": 7.5,
+            "increment": 0.6
+        },
+        "attackSpeed": {
+            "base": 0.67,
+            "increment": 0.028999999999999998
+        },
+        "ms": {
+            "base": 350,
+            "increment": 0
+        },
+        "attackDamage": {
+            "base": 68,
+            "increment": 3
+        },
+        "attackRange": {
+            "base": 175,
+            "increment": 0
+        }
+    },
+    "spells": {
+        "P": {
+            "cooldown": "",
+            "_rawTooltip": {
+                "fullTooltip": "Innate: Whenever a nearby enemy dies, Trundle heals himself for [[0]].",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "1.8% − 5.5% {{0}} of their maximum health",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(based on level)",
+                                    "scaleId": "level"
+                                }
+                            ]
+                        },
+                        "type": "Health"
+                    }
+                ]
+            },
+            "name": "King's Tribute"
+        },
+        "Q": {
+            "_rawTooltip": {
+                "fullTooltip": "Trundle's next Attack deals an additional [[0]] and briefly [[1]] by 75%, then Trundle gains [[2]] for 5 seconds and the enemy loses [[3]] for the same duration.<br /><br />[[4]]",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "20/40/60/80/100 {{0}} physical damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+15/25/35/45/55% AD)",
+                                    "scaleId": "AD"
+                                }
+                            ]
+                        },
+                        "type": "physicalDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "Slows",
+                            "scaleHolders": []
+                        },
+                        "type": "status"
+                    },
+                    {
+                        "text": {
+                            "text": "20/25/30/35/40 Attack Damage",
+                            "scaleHolders": []
+                        },
+                        "type": "physicalDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "? Attack Damage",
+                            "scaleHolders": []
+                        },
+                        "type": "physicalDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "This Ability triggers spell effects upon dealing damage.",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    }
+                ]
+            },
+            "cooldown": "3.5",
+            "cost": "30 Mana",
+            "name": "Chomp"
+        },
+        "W": {
+            "_rawTooltip": {
+                "fullTooltip": "Trundle freezes an area for 8 seconds. While inside he gains [[0]], [[1]], and 25% increased healing.",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "20/28/36/44/52% Move Speed",
+                            "scaleHolders": []
+                        },
+                        "type": "speed"
+                    },
+                    {
+                        "text": {
+                            "text": "30/50/70/90/110% Attack Speed",
+                            "scaleHolders": []
+                        },
+                        "type": "attackSpeed"
+                    }
+                ]
+            },
+            "cooldown": "18/17/16/15/14",
+            "cost": "40 Mana",
+            "name": "Frozen Domain"
+        },
+        "E": {
+            "_rawTooltip": {
+                "fullTooltip": "Trundle creates an icy pillar for 6 seconds, briefly [[0]] enemies directly over it and [[1]] nearby enemies by 30/34/38/42/46%.",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "Knocking Back",
+                            "scaleHolders": []
+                        },
+                        "type": "status"
+                    },
+                    {
+                        "text": {
+                            "text": "Slowing",
+                            "scaleHolders": []
+                        },
+                        "type": "status"
+                    }
+                ]
+            },
+            "cooldown": "24/22/20/18/16",
+            "cost": "75 Mana",
+            "name": "Pillar of Ice"
+        },
+        "R": {
+            "_rawTooltip": {
+                "fullTooltip": "Trundle drains the lifeforce of an enemy champion, dealing [[0]] and stealing [[1]] and [[2]] over 5 seconds.",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "20/25/30% {{0}} max Health magic damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+2% per 100 AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "magicDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "40% Armor",
+                            "scaleHolders": []
+                        },
+                        "type": "scaleArmor"
+                    },
+                    {
+                        "text": {
+                            "text": "Magic Resist",
+                            "scaleHolders": []
+                        },
+                        "type": "scaleMR"
+                    }
+                ]
+            },
+            "cooldown": "120/100/80",
+            "cost": "100 Mana",
+            "name": "Subjugate"
+        }
+    },
     "Changes": {
         "10.2": {
             "B": "",
@@ -354,269 +539,55 @@
             },
             "E": "",
             "R": ""
-        }
-    },
-    "stats": {
-        "hp": {
-            "base": 686,
-            "increment": 110
         },
-        "mp": {
-            "base": 281,
-            "increment": 45
-        },
-        "armor": {
-            "base": 37,
-            "increment": 3.9
-        },
-        "spellBlock": {
-            "base": 32,
-            "increment": 2.05
-        },
-        "hpRegen": {
-            "base": 6,
-            "increment": 0.75
-        },
-        "mpRegen": {
-            "base": 7.5,
-            "increment": 0.6
-        },
-        "attackSpeed": {
-            "base": 0.67,
-            "increment": 0.028999999999999998
-        },
-        "ms": {
-            "base": 350,
-            "increment": 0
-        },
-        "attackDamage": {
-            "base": 68,
-            "increment": 3
-        },
-        "attackRange": {
-            "base": 175,
-            "increment": 0
-        }
-    },
-    "spells": {
-        "P": {
-            "name": "King's Tribute",
-            "cooldown": "",
-            "_rawTooltip": {
-                "fullTooltip": "Innate: Whenever a nearby enemy dies, Trundle heals himself for [[0]].",
-                "parseInfo": [
+        "12.23": {
+            "B": {
+                "SpellName": "Base Stats",
+                "Changes": [
                     {
-                        "text": {
-                            "text": "1.8% − 5.5% {{0}} of their maximum health",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(based on level)",
-                                    "scaleId": "level"
-                                }
-                            ]
-                        },
-                        "type": "Health"
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Base Attack Speed: ",
+                            "Before": "0.67",
+                            "Indicator": " ⇒ ",
+                            "After": "0.60"
+                        }
+                    }
+                ]
+            },
+            "P": "",
+            "Q": "",
+            "W": "",
+            "E": "",
+            "R": {
+                "SpellName": "R - Subjugate",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Damage Based on Target’s Maximum Health: ",
+                            "Before": "20/27.5/35% (+2% per 100 AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "20/25/30% (+2% per 100 AP)"
+                        }
                     }
                 ]
             }
-        },
-        "Q": {
-            "id": "TrundleTrollSmash",
-            "name": "Chomp",
-            "_rawTooltip": {
-                "fullTooltip": "Trundle's next Attack deals an additional [[0]] and briefly [[1]] by 75%, then Trundle gains [[2]] for 5 seconds and the enemy loses [[3]] for the same duration.<br /><br />[[4]]",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "20/40/60/80/100 {{0}} physical damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+15/25/35/45/55% AD)",
-                                    "scaleId": "AD"
-                                }
-                            ]
-                        },
-                        "type": "physicalDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "Slows",
-                            "scaleHolders": []
-                        },
-                        "type": "status"
-                    },
-                    {
-                        "text": {
-                            "text": "20/25/30/35/40 Attack Damage",
-                            "scaleHolders": []
-                        },
-                        "type": "physicalDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "? Attack Damage",
-                            "scaleHolders": []
-                        },
-                        "type": "physicalDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "This Ability triggers spell effects upon dealing damage.",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    }
-                ]
-            },
-            "maxRank": 5,
-            "cooldown": "3.5",
-            "cooldownByLevel": [
-                3.5,
-                3.5,
-                3.5,
-                3.5,
-                3.5
-            ],
-            "cost": "30 Mana",
-            "costByLevel": [
-                30,
-                30,
-                30,
-                30,
-                30
-            ],
-            "costType": " Mana"
-        },
-        "W": {
-            "id": "trundledesecrate",
-            "name": "Frozen Domain",
-            "_rawTooltip": {
-                "fullTooltip": "Trundle freezes an area for 8 seconds. While inside he gains [[0]], [[1]], and 25% increased healing.",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "20/28/36/44/52% Move Speed",
-                            "scaleHolders": []
-                        },
-                        "type": "speed"
-                    },
-                    {
-                        "text": {
-                            "text": "30/50/70/90/110% Attack Speed",
-                            "scaleHolders": []
-                        },
-                        "type": "attackSpeed"
-                    }
-                ]
-            },
-            "maxRank": 5,
-            "cooldown": "18/17/16/15/14",
-            "cooldownByLevel": [
-                18,
-                17,
-                16,
-                15,
-                14
-            ],
-            "cost": "40 Mana",
-            "costByLevel": [
-                40,
-                40,
-                40,
-                40,
-                40
-            ],
-            "costType": " Mana"
-        },
-        "E": {
-            "id": "TrundleCircle",
-            "name": "Pillar of Ice",
-            "_rawTooltip": {
-                "fullTooltip": "Trundle creates an icy pillar for 6 seconds, briefly [[0]] enemies directly over it and [[1]] nearby enemies by 30/34/38/42/46%.",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "Knocking Back",
-                            "scaleHolders": []
-                        },
-                        "type": "status"
-                    },
-                    {
-                        "text": {
-                            "text": "Slowing",
-                            "scaleHolders": []
-                        },
-                        "type": "status"
-                    }
-                ]
-            },
-            "maxRank": 5,
-            "cooldown": "24/22/20/18/16",
-            "cooldownByLevel": [
-                24,
-                22,
-                20,
-                18,
-                16
-            ],
-            "cost": "75 Mana",
-            "costByLevel": [
-                75,
-                75,
-                75,
-                75,
-                75
-            ],
-            "costType": " Mana"
-        },
-        "R": {
-            "id": "TrundlePain",
-            "name": "Subjugate",
-            "_rawTooltip": {
-                "fullTooltip": "Trundle drains the lifeforce of an enemy champion, dealing [[0]] and stealing [[1]] and [[2]] over 5 seconds.",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "20/27.5/35% {{0}} max Health magic damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+2% per 100 AP)",
-                                    "scaleId": "AP"
-                                }
-                            ]
-                        },
-                        "type": "magicDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "40% Armor",
-                            "scaleHolders": []
-                        },
-                        "type": "scaleArmor"
-                    },
-                    {
-                        "text": {
-                            "text": "Magic Resist",
-                            "scaleHolders": []
-                        },
-                        "type": "scaleMR"
-                    }
-                ]
-            },
-            "maxRank": 3,
-            "cooldown": "120/100/80",
-            "cooldownByLevel": [
-                120,
-                100,
-                80
-            ],
-            "cost": "100 Mana",
-            "costByLevel": [
-                100,
-                100,
-                100
-            ],
-            "costType": " Mana"
         }
-    }
+    },
+    "ChangePatches": [
+        "10.2",
+        "10.9",
+        "10.12",
+        "10.14",
+        "10.21",
+        "11.2",
+        "11.5",
+        "11.9",
+        "11.18",
+        "12.10",
+        "12.17",
+        "12.23"
+    ],
+    "ChampionName": "Trundle"
 }

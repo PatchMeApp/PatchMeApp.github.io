@@ -1,13 +1,244 @@
 {
-    "ChampionName": "Brand",
-    "ChangePatches": [
-        "10.12",
-        "10.22",
-        "10.23",
-        "12.3",
-        "12.10",
-        "12.11"
-    ],
+    "stats": {
+        "hp": {
+            "base": 590,
+            "increment": 102
+        },
+        "mp": {
+            "base": 469,
+            "increment": 21
+        },
+        "armor": {
+            "base": 22,
+            "increment": 4.7
+        },
+        "spellBlock": {
+            "base": 30,
+            "increment": 1.3
+        },
+        "hpRegen": {
+            "base": 5.5,
+            "increment": 0.55
+        },
+        "mpRegen": {
+            "base": 10.65,
+            "increment": 0.6
+        },
+        "attackSpeed": {
+            "base": 0.625,
+            "increment": 0.013600000000000001
+        },
+        "ms": {
+            "base": 340,
+            "increment": 0
+        },
+        "attackDamage": {
+            "base": 57,
+            "increment": 3
+        },
+        "attackRange": {
+            "base": 550,
+            "increment": 0
+        }
+    },
+    "spells": {
+        "P": {
+            "cooldown": "",
+            "_rawTooltip": {
+                "fullTooltip": "Innate: Brand's abilities apply a stack of Ablaze to enemies hit that lasts 4 seconds, which refreshes on subsequent hits and stacks up to 3 times. Subsequent abilities used against a target with Ablaze are empowered. Killing an enemy afflicted with Ablaze or with an ability restores 20 − 40 (based on level) mana.<br>Ablaze: While afflicted with Ablaze, the target is dealt[ [[2]] over 3.25 seconds ]as magic damage. Ablaze deals [[0]] per tick to monsters, capped at 80.<br>Upon applying 3 stacks of Ablaze to a large monster or enemy champion, the fire becomes unstable, forming an area around the target that grants sight and explodes after 2 seconds, consuming all stacks. All enemies within the detonation are dealt [[3]] [[1]] and applied a stack of Ablaze. The explosion will still occur if the target dies to the ability applying the third stack or during the delay.<br>Brand cannot stack Ablaze more than once on enemies who have exploded in the last 4 seconds.",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "120% damage",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "{{0}} as magic damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+ 2% per 100 AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "magicDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "3% of their maximum health",
+                            "scaleHolders": []
+                        },
+                        "type": "Health"
+                    },
+                    {
+                        "text": {
+                            "text": "10% − 14% {{0}} of their maximum health",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(based on level)",
+                                    "scaleId": "level"
+                                }
+                            ]
+                        },
+                        "type": "Health"
+                    }
+                ]
+            },
+            "name": "Blaze"
+        },
+        "Q": {
+            "_rawTooltip": {
+                "fullTooltip": "Brand launches a fireball that deals [[0]] to the first enemy hit.<br /><br />If the target is [[1]], they will be [[2]] for 1.5 seconds.",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "80/110/140/170/200 {{0}} magic damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+55% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "magicDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "Ablaze",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "Stunned",
+                            "scaleHolders": []
+                        },
+                        "type": "status"
+                    }
+                ]
+            },
+            "cooldown": "8/7.5/7/6.5/6",
+            "cost": "50 Mana",
+            "name": "Sear"
+        },
+        "W": {
+            "_rawTooltip": {
+                "fullTooltip": "Brand creates a pillar of pure fire, dealing [[0]].<br /><br />Units that are [[1]] take [[2]] instead.",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "75/120/165/210/255 {{0}} magic damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+60% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "magicDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "Ablaze",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "93.75/150/206.25/262.5/318.75 {{0}} damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+75% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "magicDamage"
+                    }
+                ]
+            },
+            "cooldown": "10/9.5/9/8.5/8",
+            "cost": "60/70/80/90/100 Mana",
+            "name": "Pillar of Flame"
+        },
+        "E": {
+            "_rawTooltip": {
+                "fullTooltip": "Brand conjures a powerful blast at his target, dealing [[0]] to surrounding units.<br /><br />If the target is [[1]], the spread range is doubled.",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "70/95/120/145/170 {{0}} magic damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+45% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "magicDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "Ablaze",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    }
+                ]
+            },
+            "cooldown": "12/11/10/9/8",
+            "cost": "70/75/80/85/90 Mana",
+            "name": "Conflagration"
+        },
+        "R": {
+            "_rawTooltip": {
+                "fullTooltip": "Brand unleashes a devastating torrent of fire that can bounce to Brand or another enemy up to 5 times, dealing [[0]] to enemies each bounce. Bounces prioritize stacking [[1]] to max on champions.<br /><br />If the target is [[2]], they are briefly [[3]] by 30/45%.",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "100/200/300 {{0}} magic damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+25% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "magicDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "Blaze",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "Ablaze",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "Slowed",
+                            "scaleHolders": []
+                        },
+                        "type": "status"
+                    }
+                ]
+            },
+            "cooldown": "105/90/75",
+            "cost": "100 Mana",
+            "name": "Pyroclasm"
+        }
+    },
     "Changes": {
         "10.12": {
             "B": "",
@@ -251,308 +482,13 @@
             "R": ""
         }
     },
-    "stats": {
-        "hp": {
-            "base": 590,
-            "increment": 102
-        },
-        "mp": {
-            "base": 469,
-            "increment": 21
-        },
-        "armor": {
-            "base": 22,
-            "increment": 4.7
-        },
-        "spellBlock": {
-            "base": 30,
-            "increment": 1.3
-        },
-        "hpRegen": {
-            "base": 5.5,
-            "increment": 0.55
-        },
-        "mpRegen": {
-            "base": 10.65,
-            "increment": 0.6
-        },
-        "attackSpeed": {
-            "base": 0.625,
-            "increment": 0.013600000000000001
-        },
-        "ms": {
-            "base": 340,
-            "increment": 0
-        },
-        "attackDamage": {
-            "base": 57,
-            "increment": 3
-        },
-        "attackRange": {
-            "base": 550,
-            "increment": 0
-        }
-    },
-    "spells": {
-        "P": {
-            "name": "Blaze",
-            "cooldown": "",
-            "_rawTooltip": {
-                "fullTooltip": "Innate: Brand's abilities apply a stack of Ablaze to enemies hit that lasts 4 seconds, which refreshes on subsequent hits and stacks up to 3 times. Subsequent abilities used against a target with Ablaze are empowered. Killing an enemy afflicted with Ablaze or with an ability restores 20 − 40 (based on level) mana.<br>Ablaze: While afflicted with Ablaze, the target is dealt[ [[2]] over 3.25 seconds ]as magic damage. Ablaze deals [[0]] per tick to monsters, capped at 80.<br>Upon applying 3 stacks of Ablaze to a large monster or enemy champion, the fire becomes unstable, forming an area around the target that grants sight and explodes after 2 seconds, consuming all stacks. All enemies within the detonation are dealt [[3]] [[1]] and applied a stack of Ablaze. The explosion will still occur if the target dies to the ability applying the third stack or during the delay.<br>Brand cannot stack Ablaze more than once on enemies who have exploded in the last 4 seconds.",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "120% damage",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "{{0}} as magic damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+ 2% per 100 AP)",
-                                    "scaleId": "AP"
-                                }
-                            ]
-                        },
-                        "type": "magicDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "3% of their maximum health",
-                            "scaleHolders": []
-                        },
-                        "type": "Health"
-                    },
-                    {
-                        "text": {
-                            "text": "10% − 14% {{0}} of their maximum health",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(based on level)",
-                                    "scaleId": "level"
-                                }
-                            ]
-                        },
-                        "type": "Health"
-                    }
-                ]
-            }
-        },
-        "Q": {
-            "id": "BrandQ",
-            "name": "Sear",
-            "_rawTooltip": {
-                "fullTooltip": "Brand launches a fireball that deals [[0]] to the first enemy hit.<br /><br />If the target is [[1]], they will be [[2]] for 1.5 seconds.",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "80/110/140/170/200 {{0}} magic damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+55% AP)",
-                                    "scaleId": "AP"
-                                }
-                            ]
-                        },
-                        "type": "magicDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "Ablaze",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "Stunned",
-                            "scaleHolders": []
-                        },
-                        "type": "status"
-                    }
-                ]
-            },
-            "maxRank": 5,
-            "cooldown": "8/7.5/7/6.5/6",
-            "cooldownByLevel": [
-                8,
-                7.5,
-                7,
-                6.5,
-                6
-            ],
-            "cost": "50 Mana",
-            "costByLevel": [
-                50,
-                50,
-                50,
-                50,
-                50
-            ],
-            "costType": " Mana"
-        },
-        "W": {
-            "id": "BrandW",
-            "name": "Pillar of Flame",
-            "_rawTooltip": {
-                "fullTooltip": "Brand creates a pillar of pure fire, dealing [[0]].<br /><br />Units that are [[1]] take [[2]] instead.",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "75/120/165/210/255 {{0}} magic damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+60% AP)",
-                                    "scaleId": "AP"
-                                }
-                            ]
-                        },
-                        "type": "magicDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "Ablaze",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "93.75/150/206.25/262.5/318.75 {{0}} damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+75% AP)",
-                                    "scaleId": "AP"
-                                }
-                            ]
-                        },
-                        "type": "magicDamage"
-                    }
-                ]
-            },
-            "maxRank": 5,
-            "cooldown": "10/9.5/9/8.5/8",
-            "cooldownByLevel": [
-                10,
-                9.5,
-                9,
-                8.5,
-                8
-            ],
-            "cost": "60/70/80/90/100 Mana",
-            "costByLevel": [
-                60,
-                70,
-                80,
-                90,
-                100
-            ],
-            "costType": " Mana"
-        },
-        "E": {
-            "id": "BrandE",
-            "name": "Conflagration",
-            "_rawTooltip": {
-                "fullTooltip": "Brand conjures a powerful blast at his target, dealing [[0]] to surrounding units.<br /><br />If the target is [[1]], the spread range is doubled.",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "70/95/120/145/170 {{0}} magic damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+45% AP)",
-                                    "scaleId": "AP"
-                                }
-                            ]
-                        },
-                        "type": "magicDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "Ablaze",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    }
-                ]
-            },
-            "maxRank": 5,
-            "cooldown": "12/11/10/9/8",
-            "cooldownByLevel": [
-                12,
-                11,
-                10,
-                9,
-                8
-            ],
-            "cost": "70/75/80/85/90 Mana",
-            "costByLevel": [
-                70,
-                75,
-                80,
-                85,
-                90
-            ],
-            "costType": " Mana"
-        },
-        "R": {
-            "id": "BrandR",
-            "name": "Pyroclasm",
-            "_rawTooltip": {
-                "fullTooltip": "Brand unleashes a devastating torrent of fire that can bounce to Brand or another enemy up to 5 times, dealing [[0]] to enemies each bounce. Bounces prioritize stacking [[1]] to max on champions.<br /><br />If the target is [[2]], they are briefly [[3]] by 30/45%.",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "100/200/300 {{0}} magic damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+25% AP)",
-                                    "scaleId": "AP"
-                                }
-                            ]
-                        },
-                        "type": "magicDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "Blaze",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "Ablaze",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "Slowed",
-                            "scaleHolders": []
-                        },
-                        "type": "status"
-                    }
-                ]
-            },
-            "maxRank": 3,
-            "cooldown": "105/90/75",
-            "cooldownByLevel": [
-                105,
-                90,
-                75
-            ],
-            "cost": "100 Mana",
-            "costByLevel": [
-                100,
-                100,
-                100
-            ],
-            "costType": " Mana"
-        }
-    }
+    "ChangePatches": [
+        "10.12",
+        "10.22",
+        "10.23",
+        "12.3",
+        "12.10",
+        "12.11"
+    ],
+    "ChampionName": "Brand"
 }

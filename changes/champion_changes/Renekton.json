@@ -1,17 +1,401 @@
 {
-    "ChampionName": "Renekton",
-    "ChangePatches": [
-        "11.4",
-        "11.6",
-        "11.12",
-        "11.18",
-        "11.19",
-        "11.22",
-        "12.9",
-        "12.10",
-        "12.13",
-        "12.17"
-    ],
+    "stats": {
+        "hp": {
+            "base": 660,
+            "increment": 111
+        },
+        "mp": {
+            "base": 100,
+            "increment": 0
+        },
+        "armor": {
+            "base": 35,
+            "increment": 5.2
+        },
+        "spellBlock": {
+            "base": 32,
+            "increment": 2.05
+        },
+        "hpRegen": {
+            "base": 8,
+            "increment": 0.75
+        },
+        "mpRegen": {
+            "base": 0,
+            "increment": 0
+        },
+        "attackSpeed": {
+            "base": 0.665,
+            "increment": 0.0275
+        },
+        "ms": {
+            "base": 345,
+            "increment": 0
+        },
+        "attackDamage": {
+            "base": 69,
+            "increment": 4.15
+        },
+        "attackRange": {
+            "base": 125,
+            "increment": 0
+        }
+    },
+    "spells": {
+        "P": {
+            "cooldown": "",
+            "_rawTooltip": {
+                "fullTooltip": "Innate: Renekton's basic attacks generate 5 Fury, which expires by 1 Fury every 0.25 seconds after 12 seconds without dealing or taking damage.<br>While Renekton has at least 50 Fury, his next basic ability consumes 50 Fury to become empowered with an additional effect, and does not generate Fury.<br>Renekton generates 50% bonus Fury from all sources while below [[0]].",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "50% of his maximum health",
+                            "scaleHolders": []
+                        },
+                        "type": "Health"
+                    }
+                ]
+            },
+            "name": "Reign of Anger"
+        },
+        "Q": {
+            "_rawTooltip": {
+                "fullTooltip": "Renekton swings his blade, dealing [[0]] and restoring [[1]] per non-champion and [[2]] per champion hit (max [[3]]). He also generates [[4]] per non-champion and [[5]] per champion (max [[6]]).<br /><br />[[7]]: Damage is increased to [[8]] and healing is increased to [[9]] against non-champions and [[10]] against champions (max [[11]]). Does not generate any [[12]].",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "60/90/120/150/180 {{0}} physical damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+100% Bonus AD)",
+                                    "scaleId": "AD"
+                                }
+                            ]
+                        },
+                        "type": "physicalDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "2/3/4/5/6 {{0}} Health",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+2% Bonus AD)",
+                                    "scaleId": "AD"
+                                }
+                            ]
+                        },
+                        "type": "healing"
+                    },
+                    {
+                        "text": {
+                            "text": "12/18/24/30/36 {{0}}",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+15% Bonus AD)",
+                                    "scaleId": "AD"
+                                }
+                            ]
+                        },
+                        "type": "healing"
+                    },
+                    {
+                        "text": {
+                            "text": "50/75/100/125/150 Health",
+                            "scaleHolders": []
+                        },
+                        "type": "healing"
+                    },
+                    {
+                        "text": {
+                            "text": "2.5 Fury",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "10 Fury",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "30 Fury",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "Fury Bonus",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "90/135/180/225/270 {{0}} physical damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+140% Bonus AD)",
+                                    "scaleId": "AD"
+                                }
+                            ]
+                        },
+                        "type": "physicalDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "6/9/12/15/18 {{0}} Health",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+6% Bonus AD)",
+                                    "scaleId": "AD"
+                                }
+                            ]
+                        },
+                        "type": "healing"
+                    },
+                    {
+                        "text": {
+                            "text": "36/54/72/90/108 {{0}} Health",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+45% Bonus AD)",
+                                    "scaleId": "AD"
+                                }
+                            ]
+                        },
+                        "type": "healing"
+                    },
+                    {
+                        "text": {
+                            "text": "200/300/400/500/600 Health",
+                            "scaleHolders": []
+                        },
+                        "type": "healing"
+                    },
+                    {
+                        "text": {
+                            "text": "Fury",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    }
+                ]
+            },
+            "cooldown": "7",
+            "cost": "No Cost",
+            "name": "Cull the Meek"
+        },
+        "W": {
+            "_rawTooltip": {
+                "fullTooltip": "Renekton's next Attack strikes twice, [[0]] for 0.75 seconds and dealing a total of [[1]]. Hitting a champion generates an additional [[2]].<br /><br />[[3]]: Renekton Attacks 3 times instead, destroying [[4]] before dealing [[5]] and [[6]] for 1.5 seconds. Does not generate any [[7]].",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "Stunning",
+                            "scaleHolders": []
+                        },
+                        "type": "status"
+                    },
+                    {
+                        "text": {
+                            "text": "10/40/70/100/130 {{0}} physical damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+150% AD)",
+                                    "scaleId": "AD"
+                                }
+                            ]
+                        },
+                        "type": "physicalDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "10 Fury",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "Fury Bonus",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "Shields",
+                            "scaleHolders": []
+                        },
+                        "type": "shield"
+                    },
+                    {
+                        "text": {
+                            "text": "15/60/105/150/195 {{0}} physical damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+225% AD)",
+                                    "scaleId": "AD"
+                                }
+                            ]
+                        },
+                        "type": "physicalDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "Stunning",
+                            "scaleHolders": []
+                        },
+                        "type": "status"
+                    },
+                    {
+                        "text": {
+                            "text": "Fury",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    }
+                ]
+            },
+            "cooldown": "16/14/12/10/8",
+            "cost": "No Cost",
+            "name": "Ruthless Predator"
+        },
+        "E": {
+            "_rawTooltip": {
+                "fullTooltip": "Renekton dashes, dealing [[0]]. He generates [[1]] per non-champion and [[2]] per champion hit. Hitting at least one enemy allows Renekton to [[3]] this Ability once for 4 seconds. <br /><br />[[4]]: The [[5]] dash deals [[6]] instead and removes [[7]] for 4 seconds. Does not generate [[8]].",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "40/70/100/130/160 {{0}} physical damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+90% Bonus AD)",
+                                    "scaleId": "AD"
+                                }
+                            ]
+                        },
+                        "type": "physicalDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "2 Fury",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "10 Fury",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "Recast",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "Fury Bonus",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "Recast",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "70/115/160/205/250 {{0}} physical damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+135% Bonus AD)",
+                                    "scaleId": "AD"
+                                }
+                            ]
+                        },
+                        "type": "physicalDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "25/27.5/30/32.5/35% Armor",
+                            "scaleHolders": []
+                        },
+                        "type": "scaleArmor"
+                    },
+                    {
+                        "text": {
+                            "text": "Fury",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    }
+                ]
+            },
+            "cooldown": "18/17/16/15/14",
+            "cost": "No Cost",
+            "name": "Slice and Dice"
+        },
+        "R": {
+            "_rawTooltip": {
+                "fullTooltip": "Renekton surrounds himself with dark energies for 15 seconds, gaining [[0]] and [[1]]. While active, he deals [[2]] and gains [[3]] per second.",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "250/400 max Health",
+                            "scaleHolders": []
+                        },
+                        "type": "healing"
+                    },
+                    {
+                        "text": {
+                            "text": "20 Fury",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "50/100/150 {{0}} {{1}} magic damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+10% AP)",
+                                    "scaleId": "AP"
+                                },
+                                {
+                                    "scale": "(+10% Bonus AD)",
+                                    "scaleId": "AD"
+                                }
+                            ]
+                        },
+                        "type": "magicDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "5 Fury",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    }
+                ]
+            },
+            "cooldown": "120",
+            "cost": "No Cost",
+            "name": "Dominus"
+        }
+    },
     "Changes": {
         "11.4": {
             "B": "",
@@ -438,465 +822,17 @@
             "R": ""
         }
     },
-    "stats": {
-        "hp": {
-            "base": 660,
-            "increment": 111
-        },
-        "mp": {
-            "base": 100,
-            "increment": 0
-        },
-        "armor": {
-            "base": 35,
-            "increment": 5.2
-        },
-        "spellBlock": {
-            "base": 32,
-            "increment": 2.05
-        },
-        "hpRegen": {
-            "base": 8,
-            "increment": 0.75
-        },
-        "mpRegen": {
-            "base": 0,
-            "increment": 0
-        },
-        "attackSpeed": {
-            "base": 0.665,
-            "increment": 0.0275
-        },
-        "ms": {
-            "base": 345,
-            "increment": 0
-        },
-        "attackDamage": {
-            "base": 69,
-            "increment": 4.15
-        },
-        "attackRange": {
-            "base": 125,
-            "increment": 0
-        }
-    },
-    "spells": {
-        "P": {
-            "name": "Reign of Anger",
-            "cooldown": "",
-            "_rawTooltip": {
-                "fullTooltip": "Innate: Renekton's basic attacks generate 5 Fury, which expires by 1 Fury every 0.25 seconds after 12 seconds without dealing or taking damage.<br>While Renekton has at least 50 Fury, his next basic ability consumes 50 Fury to become empowered with an additional effect, and does not generate Fury.<br>Renekton generates 50% bonus Fury from all sources while below [[0]].",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "50% of his maximum health",
-                            "scaleHolders": []
-                        },
-                        "type": "Health"
-                    }
-                ]
-            }
-        },
-        "Q": {
-            "id": "RenektonCleave",
-            "name": "Cull the Meek",
-            "_rawTooltip": {
-                "fullTooltip": "Renekton swings his blade, dealing [[0]] and restoring [[1]] per non-champion and [[2]] per champion hit (max [[3]]). He also generates [[4]] per non-champion and [[5]] per champion (max [[6]]).<br /><br />[[7]]: Damage is increased to [[8]] and healing is increased to [[9]] against non-champions and [[10]] against champions (max [[11]]). Does not generate any [[12]].",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "60/90/120/150/180 {{0}} physical damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+100% Bonus AD)",
-                                    "scaleId": "AD"
-                                }
-                            ]
-                        },
-                        "type": "physicalDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "2/3/4/5/6 {{0}} Health",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+2% Bonus AD)",
-                                    "scaleId": "AD"
-                                }
-                            ]
-                        },
-                        "type": "healing"
-                    },
-                    {
-                        "text": {
-                            "text": "12/18/24/30/36 {{0}}",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+15% Bonus AD)",
-                                    "scaleId": "AD"
-                                }
-                            ]
-                        },
-                        "type": "healing"
-                    },
-                    {
-                        "text": {
-                            "text": "50/75/100/125/150 Health",
-                            "scaleHolders": []
-                        },
-                        "type": "healing"
-                    },
-                    {
-                        "text": {
-                            "text": "2.5 Fury",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "10 Fury",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "30 Fury",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "Fury Bonus",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "90/135/180/225/270 {{0}} physical damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+140% Bonus AD)",
-                                    "scaleId": "AD"
-                                }
-                            ]
-                        },
-                        "type": "physicalDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "6/9/12/15/18 {{0}} Health",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+6% Bonus AD)",
-                                    "scaleId": "AD"
-                                }
-                            ]
-                        },
-                        "type": "healing"
-                    },
-                    {
-                        "text": {
-                            "text": "36/54/72/90/108 {{0}} Health",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+45% Bonus AD)",
-                                    "scaleId": "AD"
-                                }
-                            ]
-                        },
-                        "type": "healing"
-                    },
-                    {
-                        "text": {
-                            "text": "200/300/400/500/600 Health",
-                            "scaleHolders": []
-                        },
-                        "type": "healing"
-                    },
-                    {
-                        "text": {
-                            "text": "Fury",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    }
-                ]
-            },
-            "maxRank": 5,
-            "cooldown": "7",
-            "cooldownByLevel": [
-                7,
-                7,
-                7,
-                7,
-                7
-            ],
-            "cost": "No Cost",
-            "costByLevel": [
-                0,
-                0,
-                0,
-                0,
-                0
-            ],
-            "costType": "No Cost"
-        },
-        "W": {
-            "id": "RenektonPreExecute",
-            "name": "Ruthless Predator",
-            "_rawTooltip": {
-                "fullTooltip": "Renekton's next Attack strikes twice, [[0]] for 0.75 seconds and dealing a total of [[1]]. Hitting a champion generates an additional [[2]].<br /><br />[[3]]: Renekton Attacks 3 times instead, destroying [[4]] before dealing [[5]] and [[6]] for 1.5 seconds. Does not generate any [[7]].",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "Stunning",
-                            "scaleHolders": []
-                        },
-                        "type": "status"
-                    },
-                    {
-                        "text": {
-                            "text": "10/40/70/100/130 {{0}} physical damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+150% AD)",
-                                    "scaleId": "AD"
-                                }
-                            ]
-                        },
-                        "type": "physicalDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "10 Fury",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "Fury Bonus",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "Shields",
-                            "scaleHolders": []
-                        },
-                        "type": "shield"
-                    },
-                    {
-                        "text": {
-                            "text": "15/60/105/150/195 {{0}} physical damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+225% AD)",
-                                    "scaleId": "AD"
-                                }
-                            ]
-                        },
-                        "type": "physicalDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "Stunning",
-                            "scaleHolders": []
-                        },
-                        "type": "status"
-                    },
-                    {
-                        "text": {
-                            "text": "Fury",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    }
-                ]
-            },
-            "maxRank": 5,
-            "cooldown": "16/14/12/10/8",
-            "cooldownByLevel": [
-                16,
-                14,
-                12,
-                10,
-                8
-            ],
-            "cost": "No Cost",
-            "costByLevel": [
-                0,
-                0,
-                0,
-                0,
-                0
-            ],
-            "costType": "No Cost"
-        },
-        "E": {
-            "id": "RenektonSliceAndDice",
-            "name": "Slice and Dice",
-            "_rawTooltip": {
-                "fullTooltip": "Renekton dashes, dealing [[0]]. He generates [[1]] per non-champion and [[2]] per champion hit. Hitting at least one enemy allows Renekton to [[3]] this Ability once for 4 seconds. <br /><br />[[4]]: The [[5]] dash deals [[6]] instead and removes [[7]] for 4 seconds. Does not generate [[8]].",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "40/70/100/130/160 {{0}} physical damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+90% Bonus AD)",
-                                    "scaleId": "AD"
-                                }
-                            ]
-                        },
-                        "type": "physicalDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "2 Fury",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "10 Fury",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "Recast",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "Fury Bonus",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "Recast",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "70/115/160/205/250 {{0}} physical damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+135% Bonus AD)",
-                                    "scaleId": "AD"
-                                }
-                            ]
-                        },
-                        "type": "physicalDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "25/27.5/30/32.5/35% Armor",
-                            "scaleHolders": []
-                        },
-                        "type": "scaleArmor"
-                    },
-                    {
-                        "text": {
-                            "text": "Fury",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    }
-                ]
-            },
-            "maxRank": 5,
-            "cooldown": "18/17/16/15/14",
-            "cooldownByLevel": [
-                18,
-                17,
-                16,
-                15,
-                14
-            ],
-            "cost": "No Cost",
-            "costByLevel": [
-                0,
-                0,
-                0,
-                0,
-                0
-            ],
-            "costType": "No Cost"
-        },
-        "R": {
-            "id": "RenektonReignOfTheTyrant",
-            "name": "Dominus",
-            "_rawTooltip": {
-                "fullTooltip": "Renekton surrounds himself with dark energies for 15 seconds, gaining [[0]] and [[1]]. While active, he deals [[2]] and gains [[3]] per second.",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "250/400 max Health",
-                            "scaleHolders": []
-                        },
-                        "type": "healing"
-                    },
-                    {
-                        "text": {
-                            "text": "20 Fury",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "50/100/150 {{0}} {{1}} magic damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+10% AP)",
-                                    "scaleId": "AP"
-                                },
-                                {
-                                    "scale": "(+10% Bonus AD)",
-                                    "scaleId": "AD"
-                                }
-                            ]
-                        },
-                        "type": "magicDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "5 Fury",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    }
-                ]
-            },
-            "maxRank": 3,
-            "cooldown": "120",
-            "cooldownByLevel": [
-                120,
-                120,
-                120
-            ],
-            "cost": "No Cost",
-            "costByLevel": [
-                0,
-                0,
-                0
-            ],
-            "costType": "No Cost"
-        }
-    }
+    "ChangePatches": [
+        "11.4",
+        "11.6",
+        "11.12",
+        "11.18",
+        "11.19",
+        "11.22",
+        "12.9",
+        "12.10",
+        "12.13",
+        "12.17"
+    ],
+    "ChampionName": "Renekton"
 }

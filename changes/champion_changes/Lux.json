@@ -1,13 +1,196 @@
 {
-    "ChampionName": "Lux",
-    "ChangePatches": [
-        "10.4",
-        "10.11",
-        "10.17",
-        "11.10",
-        "11.21",
-        "12.10"
-    ],
+    "stats": {
+        "hp": {
+            "base": 560,
+            "increment": 99
+        },
+        "mp": {
+            "base": 480,
+            "increment": 23.5
+        },
+        "armor": {
+            "base": 19,
+            "increment": 5.2
+        },
+        "spellBlock": {
+            "base": 30,
+            "increment": 1.3
+        },
+        "hpRegen": {
+            "base": 5.5,
+            "increment": 0.55
+        },
+        "mpRegen": {
+            "base": 8,
+            "increment": 0.8
+        },
+        "attackSpeed": {
+            "base": 0.669,
+            "increment": 0.02
+        },
+        "ms": {
+            "base": 330,
+            "increment": 0
+        },
+        "attackDamage": {
+            "base": 54,
+            "increment": 3.3
+        },
+        "attackRange": {
+            "base": 550,
+            "increment": 0
+        }
+    },
+    "spells": {
+        "P": {
+            "cooldown": "",
+            "_rawTooltip": {
+                "fullTooltip": "Innate: Lux's abilities apply a mark to enemies hit that lasts 6 seconds, which refreshes on subsequent hits. Lux's basic attacks and Final Spark consume the mark to deal [[0]].",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "20 − 190 {{0}} {{1}} bonus magic damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(based on level)",
+                                    "scaleId": "level"
+                                },
+                                {
+                                    "scale": "(+ 20% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "magicDamage"
+                    }
+                ]
+            },
+            "name": "Illumination"
+        },
+        "Q": {
+            "_rawTooltip": {
+                "fullTooltip": "Lux fires a ball of light, [[0]] the first two enemies for 2 seconds and dealing [[1]] to each.",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "Rooting",
+                            "scaleHolders": []
+                        },
+                        "type": "status"
+                    },
+                    {
+                        "text": {
+                            "text": "80/120/160/200/240 {{0}} magic damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+60% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "magicDamage"
+                    }
+                ]
+            },
+            "cooldown": "11",
+            "cost": "50 Mana",
+            "name": "Light Binding"
+        },
+        "W": {
+            "_rawTooltip": {
+                "fullTooltip": "Lux throws her wand, granting [[0]] for 2.5 seconds to allies it passes through. Then it returns, granting the same [[1]] on its return.",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "40/55/70/85/100 {{0}} Shield",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+35% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "shield"
+                    },
+                    {
+                        "text": {
+                            "text": "Shield",
+                            "scaleHolders": []
+                        },
+                        "type": "shield"
+                    }
+                ]
+            },
+            "cooldown": "14/13/12/11/10",
+            "cost": "60/65/70/75/80 Mana",
+            "name": "Prismatic Barrier"
+        },
+        "E": {
+            "_rawTooltip": {
+                "fullTooltip": "Lux creates a light zone that [[0]] by 25/30/35/40/45% and reveals the area. After 5 seconds or on [[1]] this Ability, it detonates, dealing [[2]] and [[3]] for an additional 1 second.",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "Slows",
+                            "scaleHolders": []
+                        },
+                        "type": "status"
+                    },
+                    {
+                        "text": {
+                            "text": "Recasting",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "70/120/170/220/270 {{0}} magic damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+70% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "magicDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "Slowing",
+                            "scaleHolders": []
+                        },
+                        "type": "status"
+                    }
+                ]
+            },
+            "cooldown": "10/9.5/9/8.5/8",
+            "cost": "70/80/90/100/110 Mana",
+            "name": "Lucent Singularity"
+        },
+        "R": {
+            "_rawTooltip": {
+                "fullTooltip": "Lux fires a dazzling ray of light, dealing [[0]] to all enemies in a line.",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "300/400/500 {{0}} magic damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+100% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "magicDamage"
+                    }
+                ]
+            },
+            "cooldown": "60/50/40",
+            "cost": "100 Mana",
+            "name": "Final Spark"
+        }
+    },
     "Changes": {
         "10.4": {
             "B": "",
@@ -264,260 +447,13 @@
             "R": ""
         }
     },
-    "stats": {
-        "hp": {
-            "base": 560,
-            "increment": 99
-        },
-        "mp": {
-            "base": 480,
-            "increment": 23.5
-        },
-        "armor": {
-            "base": 19,
-            "increment": 5.2
-        },
-        "spellBlock": {
-            "base": 30,
-            "increment": 1.3
-        },
-        "hpRegen": {
-            "base": 5.5,
-            "increment": 0.55
-        },
-        "mpRegen": {
-            "base": 8,
-            "increment": 0.8
-        },
-        "attackSpeed": {
-            "base": 0.669,
-            "increment": 0.02
-        },
-        "ms": {
-            "base": 330,
-            "increment": 0
-        },
-        "attackDamage": {
-            "base": 54,
-            "increment": 3.3
-        },
-        "attackRange": {
-            "base": 550,
-            "increment": 0
-        }
-    },
-    "spells": {
-        "P": {
-            "name": "Illumination",
-            "cooldown": "",
-            "_rawTooltip": {
-                "fullTooltip": "Innate: Lux's abilities apply a mark to enemies hit that lasts 6 seconds, which refreshes on subsequent hits. Lux's basic attacks and Final Spark consume the mark to deal [[0]].",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "20 − 190 {{0}} {{1}} bonus magic damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(based on level)",
-                                    "scaleId": "level"
-                                },
-                                {
-                                    "scale": "(+ 20% AP)",
-                                    "scaleId": "AP"
-                                }
-                            ]
-                        },
-                        "type": "magicDamage"
-                    }
-                ]
-            }
-        },
-        "Q": {
-            "id": "LuxLightBinding",
-            "name": "Light Binding",
-            "_rawTooltip": {
-                "fullTooltip": "Lux fires a ball of light, [[0]] the first two enemies for 2 seconds and dealing [[1]] to each.",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "Rooting",
-                            "scaleHolders": []
-                        },
-                        "type": "status"
-                    },
-                    {
-                        "text": {
-                            "text": "80/120/160/200/240 {{0}} magic damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+60% AP)",
-                                    "scaleId": "AP"
-                                }
-                            ]
-                        },
-                        "type": "magicDamage"
-                    }
-                ]
-            },
-            "maxRank": 5,
-            "cooldown": "11",
-            "cooldownByLevel": [
-                11,
-                11,
-                11,
-                11,
-                11
-            ],
-            "cost": "50 Mana",
-            "costByLevel": [
-                50,
-                50,
-                50,
-                50,
-                50
-            ],
-            "costType": " Mana"
-        },
-        "W": {
-            "id": "LuxPrismaticWave",
-            "name": "Prismatic Barrier",
-            "_rawTooltip": {
-                "fullTooltip": "Lux throws her wand, granting [[0]] for 2.5 seconds to allies it passes through. Then it returns, granting the same [[1]] on its return.",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "40/55/70/85/100 {{0}} Shield",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+35% AP)",
-                                    "scaleId": "AP"
-                                }
-                            ]
-                        },
-                        "type": "shield"
-                    },
-                    {
-                        "text": {
-                            "text": "Shield",
-                            "scaleHolders": []
-                        },
-                        "type": "shield"
-                    }
-                ]
-            },
-            "maxRank": 5,
-            "cooldown": "14/13/12/11/10",
-            "cooldownByLevel": [
-                14,
-                13,
-                12,
-                11,
-                10
-            ],
-            "cost": "60/65/70/75/80 Mana",
-            "costByLevel": [
-                60,
-                65,
-                70,
-                75,
-                80
-            ],
-            "costType": " Mana"
-        },
-        "E": {
-            "id": "LuxLightStrikeKugel",
-            "name": "Lucent Singularity",
-            "_rawTooltip": {
-                "fullTooltip": "Lux creates a light zone that [[0]] by 25/30/35/40/45% and reveals the area. After 5 seconds or on [[1]] this Ability, it detonates, dealing [[2]] and [[3]] for an additional 1 second.",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "Slows",
-                            "scaleHolders": []
-                        },
-                        "type": "status"
-                    },
-                    {
-                        "text": {
-                            "text": "Recasting",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "70/120/170/220/270 {{0}} magic damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+70% AP)",
-                                    "scaleId": "AP"
-                                }
-                            ]
-                        },
-                        "type": "magicDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "Slowing",
-                            "scaleHolders": []
-                        },
-                        "type": "status"
-                    }
-                ]
-            },
-            "maxRank": 5,
-            "cooldown": "10/9.5/9/8.5/8",
-            "cooldownByLevel": [
-                10,
-                9.5,
-                9,
-                8.5,
-                8
-            ],
-            "cost": "70/80/90/100/110 Mana",
-            "costByLevel": [
-                70,
-                80,
-                90,
-                100,
-                110
-            ],
-            "costType": " Mana"
-        },
-        "R": {
-            "id": "LuxR",
-            "name": "Final Spark",
-            "_rawTooltip": {
-                "fullTooltip": "Lux fires a dazzling ray of light, dealing [[0]] to all enemies in a line.",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "300/400/500 {{0}} magic damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+100% AP)",
-                                    "scaleId": "AP"
-                                }
-                            ]
-                        },
-                        "type": "magicDamage"
-                    }
-                ]
-            },
-            "maxRank": 3,
-            "cooldown": "60/50/40",
-            "cooldownByLevel": [
-                60,
-                50,
-                40
-            ],
-            "cost": "100 Mana",
-            "costByLevel": [
-                100,
-                100,
-                100
-            ],
-            "costType": " Mana"
-        }
-    }
+    "ChangePatches": [
+        "10.4",
+        "10.11",
+        "10.17",
+        "11.10",
+        "11.21",
+        "12.10"
+    ],
+    "ChampionName": "Lux"
 }

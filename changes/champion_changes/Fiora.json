@@ -1,13 +1,295 @@
 {
-    "ChampionName": "Fiora",
-    "ChangePatches": [
-        "9.19",
-        "10.16",
-        "11.4",
-        "11.16",
-        "12.10",
-        "12.12"
-    ],
+    "stats": {
+        "hp": {
+            "base": 620,
+            "increment": 99
+        },
+        "mp": {
+            "base": 300,
+            "increment": 60
+        },
+        "armor": {
+            "base": 33,
+            "increment": 4.7
+        },
+        "spellBlock": {
+            "base": 32,
+            "increment": 2.05
+        },
+        "hpRegen": {
+            "base": 8.5,
+            "increment": 0.55
+        },
+        "mpRegen": {
+            "base": 8,
+            "increment": 0.7
+        },
+        "attackSpeed": {
+            "base": 0.69,
+            "increment": 0.032
+        },
+        "ms": {
+            "base": 345,
+            "increment": 0
+        },
+        "attackDamage": {
+            "base": 68,
+            "increment": 3.3
+        },
+        "attackRange": {
+            "base": 150,
+            "increment": 0
+        }
+    },
+    "spells": {
+        "P": {
+            "cooldown": "",
+            "_rawTooltip": {
+                "fullTooltip": "Innate: Fiora identifies the Vitals of nearby visible enemy champions, marked as an arc around them in North-, East-, South- or Westward direction. Vitals take 1.75 seconds to become targetable and linger for 13.25 seconds afterwards while Fiora remains near the target, otherwise the Vital will disappear. After a Vital ends, Fiora identifies a new one on her target.<br>Fiora's damage against a Vital will trigger it to deal [[0]] bonus true damage, heal Fiora for 35 − 100 (based on level) and grant her [[1]] that decays over 1.5 seconds.",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "3% {{0}} of target's maximum health",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+ 5.5% per 100 bonus AD)",
+                                    "scaleId": "AD"
+                                }
+                            ]
+                        },
+                        "type": "Health"
+                    },
+                    {
+                        "text": {
+                            "text": "20 / 30 / 40 / 50% {{0}} bonus movement speed",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(based on Grand Challenge's Rank)",
+                                    "scaleId": "Rank"
+                                }
+                            ]
+                        },
+                        "type": "speed"
+                    }
+                ]
+            },
+            "name": "Duelist's Dance"
+        },
+        "Q": {
+            "_rawTooltip": {
+                "fullTooltip": "Fiora lunges in a direction and stabs the closest enemy, ward, or structure, dealing [[0]]. The strike will prioritize [[1]] and enemies it will kill.<br /><br />If Fiora strikes an enemy, this Ability's Cooldown is reduced by 50%.",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "70/80/90/100/110 {{0}}% Bonus AD) physical damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+(95/100/105/110/115)",
+                                    "scaleId": "(+(95/100/105/110/115"
+                                }
+                            ]
+                        },
+                        "type": "physicalDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "Vitals",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    }
+                ]
+            },
+            "cooldown": "13/11.25/9.5/7.75/6",
+            "cost": "20/25/30/35/40 Mana",
+            "name": "Lunge"
+        },
+        "W": {
+            "_rawTooltip": {
+                "fullTooltip": "Fiora parries all incoming damage, disables, and negative effects for 0.75 seconds, then stabs. The stab deals [[0]] to the first champion hit and [[1]] both [[2]] and [[3]] for 2 seconds. If Fiora parries an [[4]] effect, the stabbed enemy is [[5]] rather than [[6]].",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "110/150/190/230/270 {{0}} magic damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+100% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "magicDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "Slows",
+                            "scaleHolders": []
+                        },
+                        "type": "status"
+                    },
+                    {
+                        "text": {
+                            "text": "Move Speed",
+                            "scaleHolders": []
+                        },
+                        "type": "speed"
+                    },
+                    {
+                        "text": {
+                            "text": "Attack Speed by 50%",
+                            "scaleHolders": []
+                        },
+                        "type": "attackSpeed"
+                    },
+                    {
+                        "text": {
+                            "text": "Immobilizing",
+                            "scaleHolders": []
+                        },
+                        "type": "status"
+                    },
+                    {
+                        "text": {
+                            "text": "Stunned",
+                            "scaleHolders": []
+                        },
+                        "type": "status"
+                    },
+                    {
+                        "text": {
+                            "text": "Slowed",
+                            "scaleHolders": []
+                        },
+                        "type": "status"
+                    }
+                ]
+            },
+            "cooldown": "24/22/20/18/16",
+            "cost": "50 Mana",
+            "name": "Riposte"
+        },
+        "E": {
+            "_rawTooltip": {
+                "fullTooltip": "Fiora gains [[0]] for her next two Attacks. The first Attack [[1]] by 30% for 1 second. The second Attack always critically strikes for [[2]].",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "50/60/70/80/90% Attack Speed",
+                            "scaleHolders": []
+                        },
+                        "type": "attackSpeed"
+                    },
+                    {
+                        "text": {
+                            "text": "Slows",
+                            "scaleHolders": []
+                        },
+                        "type": "status"
+                    },
+                    {
+                        "text": {
+                            "text": "?% damage",
+                            "scaleHolders": []
+                        },
+                        "type": "physicalDamage"
+                    }
+                ]
+            },
+            "cooldown": "11/10/9/8/7",
+            "cost": "40 Mana",
+            "name": "Bladework"
+        },
+        "R": {
+            "_rawTooltip": {
+                "fullTooltip": "[[0]] [[1]] [[2]] bonus is increased to 30/40%.<br /><br />[[3]] Fiora reveals all four [[4]] on a champion for a max of [[5]] and gains [[6]]'s Move Speed</speed> bonus while near the target.<br /><br />If Fiora strikes all four [[7]] within 8 seconds or if the target dies after she has hit at least one, Fiora restores [[8]] to surrounding allied champions for between 2 to 5 seconds, scaling with the number of [[9]] hit.",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "Passive:",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "Duelist's Dance",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "Move Speed",
+                            "scaleHolders": []
+                        },
+                        "type": "speed"
+                    },
+                    {
+                        "text": {
+                            "text": "Active:",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "Vitals",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "12% {{0}} max Health true damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+18% per 100 Bonus AD)",
+                                    "scaleId": "AD"
+                                }
+                            ]
+                        },
+                        "type": "trueDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "Duelist's Dance",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "Vitals",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "75/100/125 {{0}} Health per second",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+60% Bonus AD)",
+                                    "scaleId": "AD"
+                                }
+                            ]
+                        },
+                        "type": "healing"
+                    },
+                    {
+                        "text": {
+                            "text": "Vitals",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    }
+                ]
+            },
+            "cooldown": "110/90/70",
+            "cost": "100 Mana",
+            "name": "Grand Challenge"
+        }
+    },
     "Changes": {
         "9.19": {
             "B": "",
@@ -211,359 +493,13 @@
             "R": ""
         }
     },
-    "stats": {
-        "hp": {
-            "base": 620,
-            "increment": 99
-        },
-        "mp": {
-            "base": 300,
-            "increment": 60
-        },
-        "armor": {
-            "base": 33,
-            "increment": 4.7
-        },
-        "spellBlock": {
-            "base": 32,
-            "increment": 2.05
-        },
-        "hpRegen": {
-            "base": 8.5,
-            "increment": 0.55
-        },
-        "mpRegen": {
-            "base": 8,
-            "increment": 0.7
-        },
-        "attackSpeed": {
-            "base": 0.69,
-            "increment": 0.032
-        },
-        "ms": {
-            "base": 345,
-            "increment": 0
-        },
-        "attackDamage": {
-            "base": 68,
-            "increment": 3.3
-        },
-        "attackRange": {
-            "base": 150,
-            "increment": 0
-        }
-    },
-    "spells": {
-        "P": {
-            "name": "Duelist's Dance",
-            "cooldown": "",
-            "_rawTooltip": {
-                "fullTooltip": "Innate: Fiora identifies the Vitals of nearby visible enemy champions, marked as an arc around them in North-, East-, South- or Westward direction. Vitals take 1.75 seconds to become targetable and linger for 13.25 seconds afterwards while Fiora remains near the target, otherwise the Vital will disappear. After a Vital ends, Fiora identifies a new one on her target.<br>Fiora's damage against a Vital will trigger it to deal [[0]] bonus true damage, heal Fiora for 35 − 100 (based on level) and grant her [[1]] that decays over 1.5 seconds.",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "3% {{0}} of target's maximum health",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+ 5.5% per 100 bonus AD)",
-                                    "scaleId": "AD"
-                                }
-                            ]
-                        },
-                        "type": "Health"
-                    },
-                    {
-                        "text": {
-                            "text": "20 / 30 / 40 / 50% {{0}} bonus movement speed",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(based on Grand Challenge's Rank)",
-                                    "scaleId": "Rank"
-                                }
-                            ]
-                        },
-                        "type": "speed"
-                    }
-                ]
-            }
-        },
-        "Q": {
-            "id": "FioraQ",
-            "name": "Lunge",
-            "_rawTooltip": {
-                "fullTooltip": "Fiora lunges in a direction and stabs the closest enemy, ward, or structure, dealing [[0]]. The strike will prioritize [[1]] and enemies it will kill.<br /><br />If Fiora strikes an enemy, this Ability's Cooldown is reduced by 50%.",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "70/80/90/100/110 {{0}}% Bonus AD) physical damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+(95/100/105/110/115)",
-                                    "scaleId": "(+(95/100/105/110/115"
-                                }
-                            ]
-                        },
-                        "type": "physicalDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "Vitals",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    }
-                ]
-            },
-            "maxRank": 5,
-            "cooldown": "13/11.25/9.5/7.75/6",
-            "cooldownByLevel": [
-                13,
-                11.25,
-                9.5,
-                7.75,
-                6
-            ],
-            "cost": "20/25/30/35/40 Mana",
-            "costByLevel": [
-                20,
-                25,
-                30,
-                35,
-                40
-            ],
-            "costType": " Mana"
-        },
-        "W": {
-            "id": "FioraW",
-            "name": "Riposte",
-            "_rawTooltip": {
-                "fullTooltip": "Fiora parries all incoming damage, disables, and negative effects for 0.75 seconds, then stabs. The stab deals [[0]] to the first champion hit and [[1]] both [[2]] and [[3]] for 2 seconds. If Fiora parries an [[4]] effect, the stabbed enemy is [[5]] rather than [[6]].",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "110/150/190/230/270 {{0}} magic damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+100% AP)",
-                                    "scaleId": "AP"
-                                }
-                            ]
-                        },
-                        "type": "magicDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "Slows",
-                            "scaleHolders": []
-                        },
-                        "type": "status"
-                    },
-                    {
-                        "text": {
-                            "text": "Move Speed",
-                            "scaleHolders": []
-                        },
-                        "type": "speed"
-                    },
-                    {
-                        "text": {
-                            "text": "Attack Speed by 50%",
-                            "scaleHolders": []
-                        },
-                        "type": "attackSpeed"
-                    },
-                    {
-                        "text": {
-                            "text": "Immobilizing",
-                            "scaleHolders": []
-                        },
-                        "type": "status"
-                    },
-                    {
-                        "text": {
-                            "text": "Stunned",
-                            "scaleHolders": []
-                        },
-                        "type": "status"
-                    },
-                    {
-                        "text": {
-                            "text": "Slowed",
-                            "scaleHolders": []
-                        },
-                        "type": "status"
-                    }
-                ]
-            },
-            "maxRank": 5,
-            "cooldown": "24/22/20/18/16",
-            "cooldownByLevel": [
-                24,
-                22,
-                20,
-                18,
-                16
-            ],
-            "cost": "50 Mana",
-            "costByLevel": [
-                50,
-                50,
-                50,
-                50,
-                50
-            ],
-            "costType": " Mana"
-        },
-        "E": {
-            "id": "FioraE",
-            "name": "Bladework",
-            "_rawTooltip": {
-                "fullTooltip": "Fiora gains [[0]] for her next two Attacks. The first Attack [[1]] by 30% for 1 second. The second Attack always critically strikes for [[2]].",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "50/60/70/80/90% Attack Speed",
-                            "scaleHolders": []
-                        },
-                        "type": "attackSpeed"
-                    },
-                    {
-                        "text": {
-                            "text": "Slows",
-                            "scaleHolders": []
-                        },
-                        "type": "status"
-                    },
-                    {
-                        "text": {
-                            "text": "?% damage",
-                            "scaleHolders": []
-                        },
-                        "type": "physicalDamage"
-                    }
-                ]
-            },
-            "maxRank": 5,
-            "cooldown": "11/10/9/8/7",
-            "cooldownByLevel": [
-                11,
-                10,
-                9,
-                8,
-                7
-            ],
-            "cost": "40 Mana",
-            "costByLevel": [
-                40,
-                40,
-                40,
-                40,
-                40
-            ],
-            "costType": " Mana"
-        },
-        "R": {
-            "id": "FioraR",
-            "name": "Grand Challenge",
-            "_rawTooltip": {
-                "fullTooltip": "[[0]] [[1]] [[2]] bonus is increased to 30/40%.<br /><br />[[3]] Fiora reveals all four [[4]] on a champion for a max of [[5]] and gains [[6]]'s Move Speed</speed> bonus while near the target.<br /><br />If Fiora strikes all four [[7]] within 8 seconds or if the target dies after she has hit at least one, Fiora restores [[8]] to surrounding allied champions for between 2 to 5 seconds, scaling with the number of [[9]] hit.",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "Passive:",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "Duelist's Dance",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "Move Speed",
-                            "scaleHolders": []
-                        },
-                        "type": "speed"
-                    },
-                    {
-                        "text": {
-                            "text": "Active:",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "Vitals",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "12% {{0}} max Health true damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+18% per 100 Bonus AD)",
-                                    "scaleId": "AD"
-                                }
-                            ]
-                        },
-                        "type": "trueDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "Duelist's Dance",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "Vitals",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "75/100/125 {{0}} Health per second",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+60% Bonus AD)",
-                                    "scaleId": "AD"
-                                }
-                            ]
-                        },
-                        "type": "healing"
-                    },
-                    {
-                        "text": {
-                            "text": "Vitals",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    }
-                ]
-            },
-            "maxRank": 3,
-            "cooldown": "110/90/70",
-            "cooldownByLevel": [
-                110,
-                90,
-                70
-            ],
-            "cost": "100 Mana",
-            "costByLevel": [
-                100,
-                100,
-                100
-            ],
-            "costType": " Mana"
-        }
-    }
+    "ChangePatches": [
+        "9.19",
+        "10.16",
+        "11.4",
+        "11.16",
+        "12.10",
+        "12.12"
+    ],
+    "ChampionName": "Fiora"
 }

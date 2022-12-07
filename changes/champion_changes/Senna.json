@@ -1,24 +1,251 @@
 {
-    "ChampionName": "Senna",
-    "ChangePatches": [
-        "9.22",
-        "9.23",
-        "9.24",
-        "10.3",
-        "10.6",
-        "10.8",
-        "10.12",
-        "10.19",
-        "10.23",
-        "11.2",
-        "11.11",
-        "11.17",
-        "12.2",
-        "12.3",
-        "12.10",
-        "12.11",
-        "12.12"
-    ],
+    "stats": {
+        "hp": {
+            "base": 530,
+            "increment": 89
+        },
+        "mp": {
+            "base": 350,
+            "increment": 45
+        },
+        "armor": {
+            "base": 28,
+            "increment": 4.7
+        },
+        "spellBlock": {
+            "base": 30,
+            "increment": 1.3
+        },
+        "hpRegen": {
+            "base": 3.5,
+            "increment": 0.55
+        },
+        "mpRegen": {
+            "base": 11.5,
+            "increment": 0.4
+        },
+        "attackSpeed": {
+            "base": 0.625,
+            "increment": 0.04
+        },
+        "ms": {
+            "base": 330,
+            "increment": 0
+        },
+        "attackDamage": {
+            "base": 50,
+            "increment": 0
+        },
+        "attackRange": {
+            "base": 600,
+            "increment": 0
+        }
+    },
+    "spells": {
+        "P": {
+            "cooldown": "",
+            "_rawTooltip": {
+                "fullTooltip": "Innate - Weakened Soul: Senna's basic attacks on-hit and damaging abilities on enemy champions apply a stack of Mist for 4 seconds, modified to 0.75 seconds if Senna starts winding up a basic attack on them. Subsequent hits will collect Mist, dealing [[3]] as bonus physical damage, and rendering the target immune to further Mist applications for a few seconds. This damage applies life steal at 100% effectiveness.<br>Enemy units that die near Senna have a chance to spawn a Mist Wraith from their corpse, increased to 2 Mist Wraiths for epic monsters. Mist Wraiths last 8 seconds and Senna can basic attack or hit them with Piercing Darkness or Dawning Shadow to kill them instantly, granting her 8 and collecting their Mist.<br>Enemy champions and large monsters are guaranteed to spawn a Mist Wraith.<br> Minions and lesser monsters that Senna kills have a 2.7% chance to spawn a Mist Wraith.<br>Large minions that Senna doesn't kill are guaranteed to spawn a Mist Wraith, while lesser minions and lesser monsters that Senna doesn't kill have a 28% chance to do so.<br>Mist: For each stack of Mist, Senna gains [[0]]. For every 20 stacks, she also gains 20 bonus attack range and 10% critical strike chance, capped at 100% critical strike chance. Additionally, 35% of the generated excess critical strike chance is converted into life steal.<br>Innate - Relic Cannon: Senna's basic attacks on-hit deal [[1]] and grant her [[4]] as bonus movement speed for [[2]] applies life steal at 100% effectiveness.",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "0.75 bonus attack damage",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "20% AD bonus physical damage",
+                            "scaleHolders": []
+                        },
+                        "type": "physicalDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "0.5 seconds. This damage",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "1% − 10% {{0}} of target's current health",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(based on level)",
+                                    "scaleId": "level"
+                                }
+                            ]
+                        },
+                        "type": "Health"
+                    },
+                    {
+                        "text": {
+                            "text": "10 / 15 / 20% {{0}} of the target's movement speed",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(based on level)",
+                                    "scaleId": "level"
+                                }
+                            ]
+                        },
+                        "type": "speed"
+                    }
+                ]
+            },
+            "name": "Absolution"
+        },
+        "Q": {
+            "_rawTooltip": {
+                "fullTooltip": "Senna shoots a bolt of piercing shadow through an ally or enemy, dealing [[0]] to enemies and [[1]] them by 15% (+6% per 100 AP) (+10% per 100 Bonus AD) for 1/1.25/1.5/1.75 second(s). Restores [[2]] to allied champions. <br /><br />Attacks reduce this Ability's Cooldown by 1 second.",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "30/65/100/135/170 {{0}} physical damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+50% Bonus AD)",
+                                    "scaleId": "AD"
+                                }
+                            ]
+                        },
+                        "type": "physicalDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "Slowing",
+                            "scaleHolders": []
+                        },
+                        "type": "status"
+                    },
+                    {
+                        "text": {
+                            "text": "40/55/70/85/100 {{0}} {{1}} {{2}} Health",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+40% AP)",
+                                    "scaleId": "AP"
+                                },
+                                {
+                                    "scale": "(+30% Bonus AD)",
+                                    "scaleId": "AD"
+                                },
+                                {
+                                    "scale": "(+160% Bonus Lethality)",
+                                    "scaleId": "Lethality"
+                                }
+                            ]
+                        },
+                        "type": "healing"
+                    }
+                ]
+            },
+            "cooldown": "15",
+            "cost": "70/80/90/100/110 Mana",
+            "name": "Piercing Darkness"
+        },
+        "W": {
+            "_rawTooltip": {
+                "fullTooltip": "Senna sends forth the Black Mist, dealing [[0]] to the first enemy hit. After a 1 second delay the target and other nearby enemies are [[1]] for 1/1.25/1.5/1.75 second(s).",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "70/115/160/205/250 {{0}} physical damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+70% Bonus AD)",
+                                    "scaleId": "AD"
+                                }
+                            ]
+                        },
+                        "type": "physicalDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "Rooted",
+                            "scaleHolders": []
+                        },
+                        "type": "status"
+                    }
+                ]
+            },
+            "cooldown": "11",
+            "cost": "50/55/60/65/70 Mana",
+            "name": "Last Embrace"
+        },
+        "E": {
+            "_rawTooltip": {
+                "fullTooltip": "Senna dissolves into a cloud of Black Mist for 6/6.5/7/7.5 seconds, becoming a Wraith. Allied champions who enter the Mist are [[0]] and become Wraiths when they leave. Wraiths gain [[1]], are Unselectable, and hide their identities as long as no enemy champions are nearby.",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "Camouflaged",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "20% {{0}} Move Speed",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+5% per 100 AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "speed"
+                    }
+                ]
+            },
+            "cooldown": "26/24.5/23/21.5/20",
+            "cost": "70 Mana",
+            "name": "Curse of the Black Mist"
+        },
+        "R": {
+            "_rawTooltip": {
+                "fullTooltip": "Senna fires a beam of light that deals [[0]] to all enemy champions hit. Allied champions hit in a wider area receive [[1]] for 3 seconds.",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "250/375/500 {{0}} {{1}} physical damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+70% AP)",
+                                    "scaleId": "AP"
+                                },
+                                {
+                                    "scale": "(+100% Bonus AD)",
+                                    "scaleId": "AD"
+                                }
+                            ]
+                        },
+                        "type": "physicalDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "100/150/200 {{0}} {{1}} Shield",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+40% AP)",
+                                    "scaleId": "AP"
+                                },
+                                {
+                                    "scale": "(+1.5 per Mist collected)",
+                                    "scaleId": "collected"
+                                }
+                            ]
+                        },
+                        "type": "shield"
+                    }
+                ]
+            },
+            "cooldown": "160/140/120",
+            "cost": "100 Mana",
+            "name": "Dawning Shadow"
+        }
+    },
     "Changes": {
         "9.22": {
             "B": "",
@@ -695,315 +922,24 @@
             "R": ""
         }
     },
-    "stats": {
-        "hp": {
-            "base": 530,
-            "increment": 89
-        },
-        "mp": {
-            "base": 350,
-            "increment": 45
-        },
-        "armor": {
-            "base": 28,
-            "increment": 4.7
-        },
-        "spellBlock": {
-            "base": 30,
-            "increment": 1.3
-        },
-        "hpRegen": {
-            "base": 3.5,
-            "increment": 0.55
-        },
-        "mpRegen": {
-            "base": 11.5,
-            "increment": 0.4
-        },
-        "attackSpeed": {
-            "base": 0.625,
-            "increment": 0.04
-        },
-        "ms": {
-            "base": 330,
-            "increment": 0
-        },
-        "attackDamage": {
-            "base": 50,
-            "increment": 0
-        },
-        "attackRange": {
-            "base": 600,
-            "increment": 0
-        }
-    },
-    "spells": {
-        "P": {
-            "name": "Absolution",
-            "cooldown": "",
-            "_rawTooltip": {
-                "fullTooltip": "Innate - Weakened Soul: Senna's basic attacks on-hit and damaging abilities on enemy champions apply a stack of Mist for 4 seconds, modified to 0.75 seconds if Senna starts winding up a basic attack on them. Subsequent hits will collect Mist, dealing [[3]] as bonus physical damage, and rendering the target immune to further Mist applications for a few seconds. This damage applies life steal at 100% effectiveness.<br>Enemy units that die near Senna have a chance to spawn a Mist Wraith from their corpse, increased to 2 Mist Wraiths for epic monsters. Mist Wraiths last 8 seconds and Senna can basic attack or hit them with Piercing Darkness or Dawning Shadow to kill them instantly, granting her 8 and collecting their Mist.<br>Enemy champions and large monsters are guaranteed to spawn a Mist Wraith.<br> Minions and lesser monsters that Senna kills have a 2.7% chance to spawn a Mist Wraith.<br>Large minions that Senna doesn't kill are guaranteed to spawn a Mist Wraith, while lesser minions and lesser monsters that Senna doesn't kill have a 28% chance to do so.<br>Mist: For each stack of Mist, Senna gains [[0]]. For every 20 stacks, she also gains 20 bonus attack range and 10% critical strike chance, capped at 100% critical strike chance. Additionally, 35% of the generated excess critical strike chance is converted into life steal.<br>Innate - Relic Cannon: Senna's basic attacks on-hit deal [[1]] and grant her [[4]] as bonus movement speed for [[2]] applies life steal at 100% effectiveness.",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "0.75 bonus attack damage",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "20% AD bonus physical damage",
-                            "scaleHolders": []
-                        },
-                        "type": "physicalDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "0.5 seconds. This damage",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "1% − 10% {{0}} of target's current health",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(based on level)",
-                                    "scaleId": "level"
-                                }
-                            ]
-                        },
-                        "type": "Health"
-                    },
-                    {
-                        "text": {
-                            "text": "10 / 15 / 20% {{0}} of the target's movement speed",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(based on level)",
-                                    "scaleId": "level"
-                                }
-                            ]
-                        },
-                        "type": "speed"
-                    }
-                ]
-            }
-        },
-        "Q": {
-            "id": "SennaQ",
-            "name": "Piercing Darkness",
-            "_rawTooltip": {
-                "fullTooltip": "Senna shoots a bolt of piercing shadow through an ally or enemy, dealing [[0]] to enemies and [[1]] them by 15% (+6% per 100 AP) (+10% per 100 Bonus AD) for 1/1.25/1.5/1.75 second(s). Restores [[2]] to allied champions. <br /><br />Attacks reduce this Ability's Cooldown by 1 second.",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "30/65/100/135/170 {{0}} physical damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+50% Bonus AD)",
-                                    "scaleId": "AD"
-                                }
-                            ]
-                        },
-                        "type": "physicalDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "Slowing",
-                            "scaleHolders": []
-                        },
-                        "type": "status"
-                    },
-                    {
-                        "text": {
-                            "text": "40/55/70/85/100 {{0}} {{1}} {{2}} Health",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+40% AP)",
-                                    "scaleId": "AP"
-                                },
-                                {
-                                    "scale": "(+30% Bonus AD)",
-                                    "scaleId": "AD"
-                                },
-                                {
-                                    "scale": "(+160% Bonus Lethality)",
-                                    "scaleId": "Lethality"
-                                }
-                            ]
-                        },
-                        "type": "healing"
-                    }
-                ]
-            },
-            "maxRank": 5,
-            "cooldown": "15",
-            "cooldownByLevel": [
-                15,
-                15,
-                15,
-                15,
-                15
-            ],
-            "cost": "70/80/90/100/110 Mana",
-            "costByLevel": [
-                70,
-                80,
-                90,
-                100,
-                110
-            ],
-            "costType": " Mana"
-        },
-        "W": {
-            "id": "SennaW",
-            "name": "Last Embrace",
-            "_rawTooltip": {
-                "fullTooltip": "Senna sends forth the Black Mist, dealing [[0]] to the first enemy hit. After a 1 second delay the target and other nearby enemies are [[1]] for 1/1.25/1.5/1.75 second(s).",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "70/115/160/205/250 {{0}} physical damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+70% Bonus AD)",
-                                    "scaleId": "AD"
-                                }
-                            ]
-                        },
-                        "type": "physicalDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "Rooted",
-                            "scaleHolders": []
-                        },
-                        "type": "status"
-                    }
-                ]
-            },
-            "maxRank": 5,
-            "cooldown": "11",
-            "cooldownByLevel": [
-                11,
-                11,
-                11,
-                11,
-                11
-            ],
-            "cost": "50/55/60/65/70 Mana",
-            "costByLevel": [
-                50,
-                55,
-                60,
-                65,
-                70
-            ],
-            "costType": " Mana"
-        },
-        "E": {
-            "id": "SennaE",
-            "name": "Curse of the Black Mist",
-            "_rawTooltip": {
-                "fullTooltip": "Senna dissolves into a cloud of Black Mist for 6/6.5/7/7.5 seconds, becoming a Wraith. Allied champions who enter the Mist are [[0]] and become Wraiths when they leave. Wraiths gain [[1]], are Unselectable, and hide their identities as long as no enemy champions are nearby.",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "Camouflaged",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "20% {{0}} Move Speed",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+5% per 100 AP)",
-                                    "scaleId": "AP"
-                                }
-                            ]
-                        },
-                        "type": "speed"
-                    }
-                ]
-            },
-            "maxRank": 5,
-            "cooldown": "26/24.5/23/21.5/20",
-            "cooldownByLevel": [
-                26,
-                24.5,
-                23,
-                21.5,
-                20
-            ],
-            "cost": "70 Mana",
-            "costByLevel": [
-                70,
-                70,
-                70,
-                70,
-                70
-            ],
-            "costType": " Mana"
-        },
-        "R": {
-            "id": "SennaR",
-            "name": "Dawning Shadow",
-            "_rawTooltip": {
-                "fullTooltip": "Senna fires a beam of light that deals [[0]] to all enemy champions hit. Allied champions hit in a wider area receive [[1]] for 3 seconds.",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "250/375/500 {{0}} {{1}} physical damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+70% AP)",
-                                    "scaleId": "AP"
-                                },
-                                {
-                                    "scale": "(+100% Bonus AD)",
-                                    "scaleId": "AD"
-                                }
-                            ]
-                        },
-                        "type": "physicalDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "100/150/200 {{0}} {{1}} Shield",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+40% AP)",
-                                    "scaleId": "AP"
-                                },
-                                {
-                                    "scale": "(+1.5 per Mist collected)",
-                                    "scaleId": "collected"
-                                }
-                            ]
-                        },
-                        "type": "shield"
-                    }
-                ]
-            },
-            "maxRank": 3,
-            "cooldown": "160/140/120",
-            "cooldownByLevel": [
-                160,
-                140,
-                120
-            ],
-            "cost": "100 Mana",
-            "costByLevel": [
-                100,
-                100,
-                100
-            ],
-            "costType": " Mana"
-        }
-    }
+    "ChangePatches": [
+        "9.22",
+        "9.23",
+        "9.24",
+        "10.3",
+        "10.6",
+        "10.8",
+        "10.12",
+        "10.19",
+        "10.23",
+        "11.2",
+        "11.11",
+        "11.17",
+        "12.2",
+        "12.3",
+        "12.10",
+        "12.11",
+        "12.12"
+    ],
+    "ChampionName": "Senna"
 }

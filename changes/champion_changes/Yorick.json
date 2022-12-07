@@ -1,12 +1,251 @@
 {
-    "ChampionName": "Yorick",
-    "ChangePatches": [
-        "10.13",
-        "11.7",
-        "11.8",
-        "12.10",
-        "12.12"
-    ],
+    "stats": {
+        "hp": {
+            "base": 650,
+            "increment": 114
+        },
+        "mp": {
+            "base": 300,
+            "increment": 60
+        },
+        "armor": {
+            "base": 39,
+            "increment": 5.2
+        },
+        "spellBlock": {
+            "base": 32,
+            "increment": 2.05
+        },
+        "hpRegen": {
+            "base": 8,
+            "increment": 0.8
+        },
+        "mpRegen": {
+            "base": 7.5,
+            "increment": 0.75
+        },
+        "attackSpeed": {
+            "base": 0.625,
+            "increment": 0.02
+        },
+        "ms": {
+            "base": 340,
+            "increment": 0
+        },
+        "attackDamage": {
+            "base": 62,
+            "increment": 5
+        },
+        "attackRange": {
+            "base": 175,
+            "increment": 0
+        }
+    },
+    "spells": {
+        "P": {
+            "cooldown": "",
+            "_rawTooltip": {
+                "fullTooltip": "Innate- Final Service: Yorick raises a grave for every enemy champion, large monster and 12th / 6th / 2nd (based on level) non-champion enemy that dies near him, as well as for every enemy he kills with Last Rites. Only 4 graves can exist at the same time, with the furthest ones being replaced by the newest. Large monsters that die near Yorick always leave a grave.<br>Yorick can use Awakening and Mourning Mist's mark to raise a Mist Walker from each grave.<br>Innate - The Horde: Only 4 Mist Walkers can be active on the battlefield at a time, with the closest ones being replaced by the newest.<br>See Pets for more details about Mist Walkers.",
+                "parseInfo": []
+            },
+            "name": "Shepherd of Souls"
+        },
+        "Q": {
+            "_rawTooltip": {
+                "fullTooltip": "Yorick's next Attack deals an additional [[0]] and restores [[1]], or [[2]] if Yorick is below 50% Health. If this Attack kills the target, it leaves a grave.<br /><br />When there are 3 or more graves nearby and this Ability has already been used, Yorick can [[3]] to raise [[4]] from all nearby graves.<br /><br />[[5]]",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "30/55/80/105/130 {{0}} physical damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+40% AD)",
+                                    "scaleId": "AD"
+                                }
+                            ]
+                        },
+                        "type": "physicalDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "10 - 68 {{0}} Health",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(based on champion level)",
+                                    "scaleId": "level"
+                                }
+                            ]
+                        },
+                        "type": "healing"
+                    },
+                    {
+                        "text": {
+                            "text": "20 - 136 {{0}} Health",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(based on champion level)",
+                                    "scaleId": "level"
+                                }
+                            ]
+                        },
+                        "type": "healing"
+                    },
+                    {
+                        "text": {
+                            "text": "Recast",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "Mist Walkers",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "This Ability triggers spell effects upon dealing damage.",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    }
+                ]
+            },
+            "cooldown": "7/6.25/5.5/4.75/4",
+            "cost": "25 Mana",
+            "name": "Last Rites"
+        },
+        "W": {
+            "_rawTooltip": {
+                "fullTooltip": "Yorick summons a wall of spirits blocking enemies' path, but not allies'. The wall can be Attacked, and disappears after 2/2/3/3/4 hits.",
+                "parseInfo": []
+            },
+            "cooldown": "20/18/16/14/12",
+            "cost": "70 Mana",
+            "name": "Dark Procession"
+        },
+        "E": {
+            "_rawTooltip": {
+                "fullTooltip": "Yorick throws a globule of Black Mist that deals [[0]], [[1]] by 30% for 2 seconds, and marks champions and monsters for 4 seconds. Marked enemies continuously [[2]] nearby graves (but not exceeding the maximum of 4), and take 40% increased damage from up to 8 attacks by [[3]].<br /><br />Yorick and his summoned units gain [[4]] toward the mark. [[5]] will leap once at marked enemies that get away from them.",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "15% current Health magic damage {{0}})",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(min: 70/105/140/175/210 (+70% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "magicDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "Slows",
+                            "scaleHolders": []
+                        },
+                        "type": "status"
+                    },
+                    {
+                        "text": {
+                            "text": "Awaken",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "Mist Walkers",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "20% Move Speed",
+                            "scaleHolders": []
+                        },
+                        "type": "speed"
+                    },
+                    {
+                        "text": {
+                            "text": "Mist Walkers",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    }
+                ]
+            },
+            "cooldown": "12/11/10/9/8",
+            "cost": "50/55/60/65/70 Mana",
+            "name": "Mourning Mist"
+        },
+        "R": {
+            "_rawTooltip": {
+                "fullTooltip": "Yorick summons the Maiden of the Mist and 2/3 [[0]]. The Maiden has [[1]], deals [[2]], and raises [[3]] from nearby enemy deaths.<br /><br />When Yorick damages the Maiden's target, he will deal [[4]]. This effect has a 2 second Cooldown.<br /><br />After 10 seconds, Yorick can [[5]] this Ability to free the Maiden, sending her down the nearest lane.",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "Mist Walkers",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "350/1100/3300 {{0}} Health",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+75% Health)",
+                                    "scaleId": "Health"
+                                }
+                            ]
+                        },
+                        "type": "healing"
+                    },
+                    {
+                        "text": {
+                            "text": "0/10/40 {{0}} magic damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+50% AD)",
+                                    "scaleId": "AD"
+                                }
+                            ]
+                        },
+                        "type": "magicDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "Mist Walkers",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "3/6% max Health magic damage",
+                            "scaleHolders": []
+                        },
+                        "type": "magicDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "Recast",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    }
+                ]
+            },
+            "cooldown": "160/130/100",
+            "cost": "100 Mana",
+            "name": "Eulogy of the Isles"
+        }
+    },
     "Changes": {
         "10.13": {
             "B": "",
@@ -238,315 +477,12 @@
             }
         }
     },
-    "stats": {
-        "hp": {
-            "base": 650,
-            "increment": 114
-        },
-        "mp": {
-            "base": 300,
-            "increment": 60
-        },
-        "armor": {
-            "base": 39,
-            "increment": 5.2
-        },
-        "spellBlock": {
-            "base": 32,
-            "increment": 2.05
-        },
-        "hpRegen": {
-            "base": 8,
-            "increment": 0.8
-        },
-        "mpRegen": {
-            "base": 7.5,
-            "increment": 0.75
-        },
-        "attackSpeed": {
-            "base": 0.625,
-            "increment": 0.02
-        },
-        "ms": {
-            "base": 340,
-            "increment": 0
-        },
-        "attackDamage": {
-            "base": 62,
-            "increment": 5
-        },
-        "attackRange": {
-            "base": 175,
-            "increment": 0
-        }
-    },
-    "spells": {
-        "P": {
-            "name": "Shepherd of Souls",
-            "cooldown": "",
-            "_rawTooltip": {
-                "fullTooltip": "Innate- Final Service: Yorick raises a grave for every enemy champion, large monster and 12th / 6th / 2nd (based on level) non-champion enemy that dies near him, as well as for every enemy he kills with Last Rites. Only 4 graves can exist at the same time, with the furthest ones being replaced by the newest. Large monsters that die near Yorick always leave a grave.<br>Yorick can use Awakening and Mourning Mist's mark to raise a Mist Walker from each grave.<br>Innate - The Horde: Only 4 Mist Walkers can be active on the battlefield at a time, with the closest ones being replaced by the newest.<br>See Pets for more details about Mist Walkers.",
-                "parseInfo": []
-            }
-        },
-        "Q": {
-            "id": "YorickQ",
-            "name": "Last Rites",
-            "_rawTooltip": {
-                "fullTooltip": "Yorick's next Attack deals an additional [[0]] and restores [[1]], or [[2]] if Yorick is below 50% Health. If this Attack kills the target, it leaves a grave.<br /><br />When there are 3 or more graves nearby and this Ability has already been used, Yorick can [[3]] to raise [[4]] from all nearby graves.<br /><br />[[5]]",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "30/55/80/105/130 {{0}} physical damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+40% AD)",
-                                    "scaleId": "AD"
-                                }
-                            ]
-                        },
-                        "type": "physicalDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "10 - 68 {{0}} Health",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(based on champion level)",
-                                    "scaleId": "level"
-                                }
-                            ]
-                        },
-                        "type": "healing"
-                    },
-                    {
-                        "text": {
-                            "text": "20 - 136 {{0}} Health",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(based on champion level)",
-                                    "scaleId": "level"
-                                }
-                            ]
-                        },
-                        "type": "healing"
-                    },
-                    {
-                        "text": {
-                            "text": "Recast",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "Mist Walkers",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "This Ability triggers spell effects upon dealing damage.",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    }
-                ]
-            },
-            "maxRank": 5,
-            "cooldown": "7/6.25/5.5/4.75/4",
-            "cooldownByLevel": [
-                7,
-                6.25,
-                5.5,
-                4.75,
-                4
-            ],
-            "cost": "25 Mana",
-            "costByLevel": [
-                25,
-                25,
-                25,
-                25,
-                25
-            ],
-            "costType": " Mana"
-        },
-        "W": {
-            "id": "YorickW",
-            "name": "Dark Procession",
-            "_rawTooltip": {
-                "fullTooltip": "Yorick summons a wall of spirits blocking enemies' path, but not allies'. The wall can be Attacked, and disappears after 2/2/3/3/4 hits.",
-                "parseInfo": []
-            },
-            "maxRank": 5,
-            "cooldown": "20/18/16/14/12",
-            "cooldownByLevel": [
-                20,
-                18,
-                16,
-                14,
-                12
-            ],
-            "cost": "70 Mana",
-            "costByLevel": [
-                70,
-                70,
-                70,
-                70,
-                70
-            ],
-            "costType": " Mana"
-        },
-        "E": {
-            "id": "YorickE",
-            "name": "Mourning Mist",
-            "_rawTooltip": {
-                "fullTooltip": "Yorick throws a globule of Black Mist that deals [[0]], [[1]] by 30% for 2 seconds, and marks champions and monsters for 4 seconds. Marked enemies continuously [[2]] nearby graves (but not exceeding the maximum of 4), and take 40% increased damage from up to 8 attacks by [[3]].<br /><br />Yorick and his summoned units gain [[4]] toward the mark. [[5]] will leap once at marked enemies that get away from them.",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "15% current Health magic damage {{0}})",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(min: 70/105/140/175/210 (+70% AP)",
-                                    "scaleId": "AP"
-                                }
-                            ]
-                        },
-                        "type": "magicDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "Slows",
-                            "scaleHolders": []
-                        },
-                        "type": "status"
-                    },
-                    {
-                        "text": {
-                            "text": "Awaken",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "Mist Walkers",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "20% Move Speed",
-                            "scaleHolders": []
-                        },
-                        "type": "speed"
-                    },
-                    {
-                        "text": {
-                            "text": "Mist Walkers",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    }
-                ]
-            },
-            "maxRank": 5,
-            "cooldown": "12/11/10/9/8",
-            "cooldownByLevel": [
-                12,
-                11,
-                10,
-                9,
-                8
-            ],
-            "cost": "50/55/60/65/70 Mana",
-            "costByLevel": [
-                50,
-                55,
-                60,
-                65,
-                70
-            ],
-            "costType": " Mana"
-        },
-        "R": {
-            "id": "YorickR",
-            "name": "Eulogy of the Isles",
-            "_rawTooltip": {
-                "fullTooltip": "Yorick summons the Maiden of the Mist and 2/3 [[0]]. The Maiden has [[1]], deals [[2]], and raises [[3]] from nearby enemy deaths.<br /><br />When Yorick damages the Maiden's target, he will deal [[4]]. This effect has a 2 second Cooldown.<br /><br />After 10 seconds, Yorick can [[5]] this Ability to free the Maiden, sending her down the nearest lane.",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "Mist Walkers",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "350/1100/3300 {{0}} Health",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+75% Health)",
-                                    "scaleId": "Health"
-                                }
-                            ]
-                        },
-                        "type": "healing"
-                    },
-                    {
-                        "text": {
-                            "text": "0/10/40 {{0}} magic damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+50% AD)",
-                                    "scaleId": "AD"
-                                }
-                            ]
-                        },
-                        "type": "magicDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "Mist Walkers",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "3/6% max Health magic damage",
-                            "scaleHolders": []
-                        },
-                        "type": "magicDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "Recast",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    }
-                ]
-            },
-            "maxRank": 3,
-            "cooldown": "160/130/100",
-            "cooldownByLevel": [
-                160,
-                130,
-                100
-            ],
-            "cost": "100 Mana",
-            "costByLevel": [
-                100,
-                100,
-                100
-            ],
-            "costType": " Mana"
-        }
-    }
+    "ChangePatches": [
+        "10.13",
+        "11.7",
+        "11.8",
+        "12.10",
+        "12.12"
+    ],
+    "ChampionName": "Yorick"
 }

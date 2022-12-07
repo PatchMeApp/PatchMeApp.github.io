@@ -1,20 +1,456 @@
 {
-    "ChampionName": "Udyr",
-    "ChangePatches": [
-        "10.4",
-        "10.10",
-        "10.19",
-        "10.21",
-        "11.3",
-        "11.5",
-        "11.7",
-        "11.12",
-        "11.20",
-        "12.10",
-        "12.16",
-        "12.18",
-        "12.19"
-    ],
+    "stats": {
+        "hp": {
+            "base": 664,
+            "increment": 98
+        },
+        "mp": {
+            "base": 271,
+            "increment": 50
+        },
+        "armor": {
+            "base": 34,
+            "increment": 4.7
+        },
+        "spellBlock": {
+            "base": 32,
+            "increment": 2.05
+        },
+        "hpRegen": {
+            "base": 6,
+            "increment": 0.75
+        },
+        "mpRegen": {
+            "base": 7.5,
+            "increment": 0.45
+        },
+        "attackSpeed": {
+            "base": 0.65,
+            "increment": 0.03
+        },
+        "ms": {
+            "base": 350,
+            "increment": 0
+        },
+        "attackDamage": {
+            "base": 62,
+            "increment": 4
+        },
+        "attackRange": {
+            "base": 125,
+            "increment": 0
+        }
+    },
+    "spells": {
+        "P": {
+            "cooldown": "",
+            "_rawTooltip": {
+                "fullTooltip": "Innate: Udyr's abilities generate a stack of Monkey's Agility for 5 seconds, stacking up to 3 times, with the duration refreshing on subsequent ability casts. Each stack grants him [[0]] and [[1]], up to [[2]] and [[3]] at 3 stacks.<br>Innate - Four Stances: Udyr has no ultimate ability and instead has 4 basic abilities. Each of his abilities provides a passive effect that lasts until he activates a different ability, called his current Stance. Activating any of his abilities will prevent his previous Stance from triggering any more on-hit effects, and will place his other abilities on a 1.5-second cooldown if they are not on cooldown or have a remaining cooldown less than 1.5 seconds.<br>Starting at level 16, all abilities can gain a 6th rank.",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "5 bonus movement speed",
+                            "scaleHolders": []
+                        },
+                        "type": "speed"
+                    },
+                    {
+                        "text": {
+                            "text": "10% bonus attack speed",
+                            "scaleHolders": []
+                        },
+                        "type": "attackSpeed"
+                    },
+                    {
+                        "text": {
+                            "text": "15 bonus movement speed",
+                            "scaleHolders": []
+                        },
+                        "type": "speed"
+                    },
+                    {
+                        "text": {
+                            "text": "30% bonus attack speed",
+                            "scaleHolders": []
+                        },
+                        "type": "attackSpeed"
+                    }
+                ]
+            },
+            "name": "Monkey's Agility"
+        },
+        "Q": {
+            "_rawTooltip": {
+                "fullTooltip": "[[0]] Udyr gains [[1]] and his Attacks deal [[2]]  [[3]] for 4 seconds. Additionally, Udyr's next two Attacks in this stance deal a bonus [[4]] and gain 50 range.<br /><br />[[5]] Increase bonus [[6]] to [[7]] and max Health damage to [[8]]. Additionally, Udyr's next two Attacks call lightning six times, dealing a total of [[9]] to isolated targets (strikes bounce to other nearby targets when possible).<br />",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "Claw Stance:",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "20/30/40/50/60/70% Attack Speed",
+                            "scaleHolders": []
+                        },
+                        "type": "attackSpeed"
+                    },
+                    {
+                        "text": {
+                            "text": "5/13/21/29/37/45 {{0}} physical damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+20% Bonus AD)",
+                                    "scaleId": "AD"
+                                }
+                            ]
+                        },
+                        "type": "physicalDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "On-Hit",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "3/4.4/5.8/7.2/8.6/10% {{0}} max Health physical damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+6% per 100 Bonus AD)",
+                                    "scaleId": "AD"
+                                }
+                            ]
+                        },
+                        "type": "physicalDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "Awaken:",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "Attack Speed",
+                            "scaleHolders": []
+                        },
+                        "type": "attackSpeed"
+                    },
+                    {
+                        "text": {
+                            "text": "20/30/40/50/60/70% {{0}})",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+20% - 70% (based on champion level)",
+                                    "scaleId": "level"
+                                }
+                            ]
+                        },
+                        "type": "attackSpeed"
+                    },
+                    {
+                        "text": {
+                            "text": "3/4.4/5.8/7.2/8.6/10% {{0}}) {{1}}",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+2% - 5% (based on champion level)",
+                                    "scaleId": "level"
+                                },
+                                {
+                                    "scale": "(+9% per 100 Bonus AD)",
+                                    "scaleId": "AD"
+                                }
+                            ]
+                        },
+                        "type": "physicalDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "0.8% per 100 AP + 1% - 3% {{0}} * {{1}}) max Health magic damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(based on champion level)",
+                                    "scaleId": "level"
+                                },
+                                {
+                                    "scale": "(100% + 600% + 100% * (100%)",
+                                    "scaleId": "(100%"
+                                }
+                            ]
+                        },
+                        "type": "magicDamage"
+                    }
+                ]
+            },
+            "cooldown": "6",
+            "cost": "20 Mana",
+            "name": "Wilding Claw"
+        },
+        "W": {
+            "_rawTooltip": {
+                "fullTooltip": "[[0]] Udyr gains [[1]] for 4 seconds. Additionally, Udyr's next two Attacks gain 15/16/17/18/19/20% Life Steal and restore [[2]].<br /><br />[[3]] Gain [[4]], restore [[5]] over 4 seconds, and Udyr's next two Attacks instead have 30/32/34/36/38/40% Life Steal and restore [[6]].<br />",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "Mantle Stance:",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "45/60/75/90/105/120 {{0}} {{1}} Shield",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+2/2.3/2.6/2.9/3.2/3.5% Health)",
+                                    "scaleId": "Health"
+                                },
+                                {
+                                    "scale": "(+40% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "shield"
+                    },
+                    {
+                        "text": {
+                            "text": "1.2% Health {{0}} Health",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+8% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "healing"
+                    },
+                    {
+                        "text": {
+                            "text": "Awaken:",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "20 - 150 {{0}} {{1}} {{2}} {{3}} Shield",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(based on champion level)",
+                                    "scaleId": "level"
+                                },
+                                {
+                                    "scale": "(+45/60/75/90/105/120)",
+                                    "scaleId": "(+45/60/75/90/105/120"
+                                },
+                                {
+                                    "scale": "(+65% AP)",
+                                    "scaleId": "AP"
+                                },
+                                {
+                                    "scale": "(+8% Health)",
+                                    "scaleId": "Health"
+                                }
+                            ]
+                        },
+                        "type": "shield"
+                    },
+                    {
+                        "text": {
+                            "text": "10 - 75 {{0}} {{1}} {{2}} {{3}} Health",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(based on champion level)",
+                                    "scaleId": "level"
+                                },
+                                {
+                                    "scale": "(+22.5/30/37.5/45/52.5/60)",
+                                    "scaleId": "(+22.5/30/37.5/45/52.5/60"
+                                },
+                                {
+                                    "scale": "(+32.5% AP)",
+                                    "scaleId": "AP"
+                                },
+                                {
+                                    "scale": "(+4% Health)",
+                                    "scaleId": "Health"
+                                }
+                            ]
+                        },
+                        "type": "healing"
+                    },
+                    {
+                        "text": {
+                            "text": "2.4% Health {{0}} Health",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+16% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "healing"
+                    }
+                ]
+            },
+            "cooldown": "6",
+            "cost": "45 Mana",
+            "name": "Iron Mantle"
+        },
+        "E": {
+            "_rawTooltip": {
+                "fullTooltip": "[[0]] Udyr gains [[1]], decaying over 4 seconds. Additionally, Udyr's Attacks dash him to the target and [[2]] for 0.75 seconds (6/5.6/5.2/4.8/4.4 second Cooldown per target).<br /><br />[[3]] Grants immunity to [[4]] and [[5]] effects and an additional [[6]] for 1.5 seconds.",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "Stampede Stance:",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "30/37/44/51/58/65% Move Speed",
+                            "scaleHolders": []
+                        },
+                        "type": "speed"
+                    },
+                    {
+                        "text": {
+                            "text": "Stun",
+                            "scaleHolders": []
+                        },
+                        "type": "status"
+                    },
+                    {
+                        "text": {
+                            "text": "Awaken:",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "Immobilizing",
+                            "scaleHolders": []
+                        },
+                        "type": "status"
+                    },
+                    {
+                        "text": {
+                            "text": "Disabling",
+                            "scaleHolders": []
+                        },
+                        "type": "status"
+                    },
+                    {
+                        "text": {
+                            "text": "30% - 40% {{0}} Move Speed",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(based on champion level)",
+                                    "scaleId": "level"
+                                }
+                            ]
+                        },
+                        "type": "speed"
+                    }
+                ]
+            },
+            "cooldown": "6",
+            "cost": "45 Mana",
+            "name": "Blazing Stampede"
+        },
+        "R": {
+            "_rawTooltip": {
+                "fullTooltip": "[[0]] Udyr surrounds himself in a glacial storm for 4 seconds, dealing [[1]] per second to nearby enemies and [[2]] them by 15/18/21/24/27/30%. Additionally, Udyr's next two Attacks in this stance deal [[3]] to enemies in the storm.<br /><br />[[4]] Unleash the storm, causing it to follow Udyr's last Attacked enemy, deal an additional [[5]] over the duration, and [[6]] by an additional 10%.",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "Storm Stance:",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "20/36/52/68/84/100 {{0}} magic damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+35% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "magicDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "Slowing",
+                            "scaleHolders": []
+                        },
+                        "type": "status"
+                    },
+                    {
+                        "text": {
+                            "text": "10 - 30 {{0}} {{1}} magic damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(based on champion level)",
+                                    "scaleId": "level"
+                                },
+                                {
+                                    "scale": "(+30% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "magicDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "Awaken:",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "8% - 16% {{0}} {{1}} max Health magic damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(based on champion level)",
+                                    "scaleId": "level"
+                                },
+                                {
+                                    "scale": "(+3.5% per 100 AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "magicDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "Slow",
+                            "scaleHolders": []
+                        },
+                        "type": "status"
+                    }
+                ]
+            },
+            "cooldown": "6",
+            "cost": "45 Mana",
+            "name": "Wingborne Storm"
+        }
+    },
     "Changes": {
         "10.4": {
             "B": "",
@@ -494,532 +930,20 @@
             }
         }
     },
-    "stats": {
-        "hp": {
-            "base": 664,
-            "increment": 98
-        },
-        "mp": {
-            "base": 271,
-            "increment": 50
-        },
-        "armor": {
-            "base": 34,
-            "increment": 4.7
-        },
-        "spellBlock": {
-            "base": 32,
-            "increment": 2.05
-        },
-        "hpRegen": {
-            "base": 6,
-            "increment": 0.75
-        },
-        "mpRegen": {
-            "base": 7.5,
-            "increment": 0.45
-        },
-        "attackSpeed": {
-            "base": 0.65,
-            "increment": 0.03
-        },
-        "ms": {
-            "base": 350,
-            "increment": 0
-        },
-        "attackDamage": {
-            "base": 62,
-            "increment": 4
-        },
-        "attackRange": {
-            "base": 125,
-            "increment": 0
-        }
-    },
-    "spells": {
-        "P": {
-            "name": "Monkey's Agility",
-            "cooldown": "",
-            "_rawTooltip": {
-                "fullTooltip": "Innate: Udyr's abilities generate a stack of Monkey's Agility for 5 seconds, stacking up to 3 times, with the duration refreshing on subsequent ability casts. Each stack grants him [[0]] and [[1]], up to [[2]] and [[3]] at 3 stacks.<br>Innate - Four Stances: Udyr has no ultimate ability and instead has 4 basic abilities. Each of his abilities provides a passive effect that lasts until he activates a different ability, called his current Stance. Activating any of his abilities will prevent his previous Stance from triggering any more on-hit effects, and will place his other abilities on a 1.5-second cooldown if they are not on cooldown or have a remaining cooldown less than 1.5 seconds.<br>Starting at level 16, all abilities can gain a 6th rank.",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "5 bonus movement speed",
-                            "scaleHolders": []
-                        },
-                        "type": "speed"
-                    },
-                    {
-                        "text": {
-                            "text": "10% bonus attack speed",
-                            "scaleHolders": []
-                        },
-                        "type": "attackSpeed"
-                    },
-                    {
-                        "text": {
-                            "text": "15 bonus movement speed",
-                            "scaleHolders": []
-                        },
-                        "type": "speed"
-                    },
-                    {
-                        "text": {
-                            "text": "30% bonus attack speed",
-                            "scaleHolders": []
-                        },
-                        "type": "attackSpeed"
-                    }
-                ]
-            }
-        },
-        "Q": {
-            "id": "UdyrQ",
-            "name": "Wilding Claw",
-            "_rawTooltip": {
-                "fullTooltip": "[[0]] Udyr gains [[1]] and his Attacks deal [[2]]  [[3]] for 4 seconds. Additionally, Udyr's next two Attacks in this stance deal a bonus [[4]] and gain 50 range.<br /><br />[[5]] Increase bonus [[6]] to [[7]] and max Health damage to [[8]]. Additionally, Udyr's next two Attacks call lightning six times, dealing a total of [[9]] to isolated targets (strikes bounce to other nearby targets when possible).<br />",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "Claw Stance:",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "20/30/40/50/60/70% Attack Speed",
-                            "scaleHolders": []
-                        },
-                        "type": "attackSpeed"
-                    },
-                    {
-                        "text": {
-                            "text": "5/13/21/29/37/45 {{0}} physical damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+20% Bonus AD)",
-                                    "scaleId": "AD"
-                                }
-                            ]
-                        },
-                        "type": "physicalDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "On-Hit",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "3/4.4/5.8/7.2/8.6/10% {{0}} max Health physical damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+6% per 100 Bonus AD)",
-                                    "scaleId": "AD"
-                                }
-                            ]
-                        },
-                        "type": "physicalDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "Awaken:",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "Attack Speed",
-                            "scaleHolders": []
-                        },
-                        "type": "attackSpeed"
-                    },
-                    {
-                        "text": {
-                            "text": "20/30/40/50/60/70% {{0}})",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+20% - 70% (based on champion level)",
-                                    "scaleId": "level"
-                                }
-                            ]
-                        },
-                        "type": "attackSpeed"
-                    },
-                    {
-                        "text": {
-                            "text": "3/4.4/5.8/7.2/8.6/10% {{0}}) {{1}}",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+2% - 5% (based on champion level)",
-                                    "scaleId": "level"
-                                },
-                                {
-                                    "scale": "(+9% per 100 Bonus AD)",
-                                    "scaleId": "AD"
-                                }
-                            ]
-                        },
-                        "type": "physicalDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "0.8% per 100 AP + 1% - 3% {{0}} * {{1}}) max Health magic damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(based on champion level)",
-                                    "scaleId": "level"
-                                },
-                                {
-                                    "scale": "(100% + 600% + 100% * (100%)",
-                                    "scaleId": "(100%"
-                                }
-                            ]
-                        },
-                        "type": "magicDamage"
-                    }
-                ]
-            },
-            "maxRank": 6,
-            "cooldown": "6",
-            "cooldownByLevel": [
-                6,
-                6,
-                6,
-                6,
-                6,
-                6
-            ],
-            "cost": "20 Mana",
-            "costByLevel": [
-                20,
-                20,
-                20,
-                20,
-                20,
-                20
-            ],
-            "costType": " Mana"
-        },
-        "W": {
-            "id": "UdyrW",
-            "name": "Iron Mantle",
-            "_rawTooltip": {
-                "fullTooltip": "[[0]] Udyr gains [[1]] for 4 seconds. Additionally, Udyr's next two Attacks gain 15/16/17/18/19/20% Life Steal and restore [[2]].<br /><br />[[3]] Gain [[4]], restore [[5]] over 4 seconds, and Udyr's next two Attacks instead have 30/32/34/36/38/40% Life Steal and restore [[6]].<br />",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "Mantle Stance:",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "45/60/75/90/105/120 {{0}} {{1}} Shield",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+2/2.3/2.6/2.9/3.2/3.5% Health)",
-                                    "scaleId": "Health"
-                                },
-                                {
-                                    "scale": "(+40% AP)",
-                                    "scaleId": "AP"
-                                }
-                            ]
-                        },
-                        "type": "shield"
-                    },
-                    {
-                        "text": {
-                            "text": "1.2% Health {{0}} Health",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+8% AP)",
-                                    "scaleId": "AP"
-                                }
-                            ]
-                        },
-                        "type": "healing"
-                    },
-                    {
-                        "text": {
-                            "text": "Awaken:",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "20 - 150 {{0}} {{1}} {{2}} {{3}} Shield",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(based on champion level)",
-                                    "scaleId": "level"
-                                },
-                                {
-                                    "scale": "(+45/60/75/90/105/120)",
-                                    "scaleId": "(+45/60/75/90/105/120"
-                                },
-                                {
-                                    "scale": "(+65% AP)",
-                                    "scaleId": "AP"
-                                },
-                                {
-                                    "scale": "(+8% Health)",
-                                    "scaleId": "Health"
-                                }
-                            ]
-                        },
-                        "type": "shield"
-                    },
-                    {
-                        "text": {
-                            "text": "10 - 75 {{0}} {{1}} {{2}} {{3}} Health",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(based on champion level)",
-                                    "scaleId": "level"
-                                },
-                                {
-                                    "scale": "(+22.5/30/37.5/45/52.5/60)",
-                                    "scaleId": "(+22.5/30/37.5/45/52.5/60"
-                                },
-                                {
-                                    "scale": "(+32.5% AP)",
-                                    "scaleId": "AP"
-                                },
-                                {
-                                    "scale": "(+4% Health)",
-                                    "scaleId": "Health"
-                                }
-                            ]
-                        },
-                        "type": "healing"
-                    },
-                    {
-                        "text": {
-                            "text": "2.4% Health {{0}} Health",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+16% AP)",
-                                    "scaleId": "AP"
-                                }
-                            ]
-                        },
-                        "type": "healing"
-                    }
-                ]
-            },
-            "maxRank": 6,
-            "cooldown": "6",
-            "cooldownByLevel": [
-                6,
-                6,
-                6,
-                6,
-                6,
-                6
-            ],
-            "cost": "45 Mana",
-            "costByLevel": [
-                45,
-                45,
-                45,
-                45,
-                45,
-                45
-            ],
-            "costType": " Mana"
-        },
-        "E": {
-            "id": "UdyrE",
-            "name": "Blazing Stampede",
-            "_rawTooltip": {
-                "fullTooltip": "[[0]] Udyr gains [[1]], decaying over 4 seconds. Additionally, Udyr's Attacks dash him to the target and [[2]] for 0.75 seconds (6/5.6/5.2/4.8/4.4 second Cooldown per target).<br /><br />[[3]] Grants immunity to [[4]] and [[5]] effects and an additional [[6]] for 1.5 seconds.",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "Stampede Stance:",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "30/37/44/51/58/65% Move Speed",
-                            "scaleHolders": []
-                        },
-                        "type": "speed"
-                    },
-                    {
-                        "text": {
-                            "text": "Stun",
-                            "scaleHolders": []
-                        },
-                        "type": "status"
-                    },
-                    {
-                        "text": {
-                            "text": "Awaken:",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "Immobilizing",
-                            "scaleHolders": []
-                        },
-                        "type": "status"
-                    },
-                    {
-                        "text": {
-                            "text": "Disabling",
-                            "scaleHolders": []
-                        },
-                        "type": "status"
-                    },
-                    {
-                        "text": {
-                            "text": "30% - 40% {{0}} Move Speed",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(based on champion level)",
-                                    "scaleId": "level"
-                                }
-                            ]
-                        },
-                        "type": "speed"
-                    }
-                ]
-            },
-            "maxRank": 6,
-            "cooldown": "6",
-            "cooldownByLevel": [
-                6,
-                6,
-                6,
-                6,
-                6,
-                6
-            ],
-            "cost": "45 Mana",
-            "costByLevel": [
-                45,
-                45,
-                45,
-                45,
-                45,
-                45
-            ],
-            "costType": " Mana"
-        },
-        "R": {
-            "id": "UdyrR",
-            "name": "Wingborne Storm",
-            "_rawTooltip": {
-                "fullTooltip": "[[0]] Udyr surrounds himself in a glacial storm for 4 seconds, dealing [[1]] per second to nearby enemies and [[2]] them by 15/18/21/24/27/30%. Additionally, Udyr's next two Attacks in this stance deal [[3]] to enemies in the storm.<br /><br />[[4]] Unleash the storm, causing it to follow Udyr's last Attacked enemy, deal an additional [[5]] over the duration, and [[6]] by an additional 10%.",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "Storm Stance:",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "20/36/52/68/84/100 {{0}} magic damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+35% AP)",
-                                    "scaleId": "AP"
-                                }
-                            ]
-                        },
-                        "type": "magicDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "Slowing",
-                            "scaleHolders": []
-                        },
-                        "type": "status"
-                    },
-                    {
-                        "text": {
-                            "text": "10 - 30 {{0}} {{1}} magic damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(based on champion level)",
-                                    "scaleId": "level"
-                                },
-                                {
-                                    "scale": "(+30% AP)",
-                                    "scaleId": "AP"
-                                }
-                            ]
-                        },
-                        "type": "magicDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "Awaken:",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "8% - 16% {{0}} {{1}} max Health magic damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(based on champion level)",
-                                    "scaleId": "level"
-                                },
-                                {
-                                    "scale": "(+3.5% per 100 AP)",
-                                    "scaleId": "AP"
-                                }
-                            ]
-                        },
-                        "type": "magicDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "Slow",
-                            "scaleHolders": []
-                        },
-                        "type": "status"
-                    }
-                ]
-            },
-            "maxRank": 6,
-            "cooldown": "6",
-            "cooldownByLevel": [
-                6,
-                6,
-                6,
-                6,
-                6,
-                6
-            ],
-            "cost": "45 Mana",
-            "costByLevel": [
-                45,
-                45,
-                45,
-                45,
-                45,
-                45
-            ],
-            "costType": " Mana"
-        }
-    }
+    "ChangePatches": [
+        "10.4",
+        "10.10",
+        "10.19",
+        "10.21",
+        "11.3",
+        "11.5",
+        "11.7",
+        "11.12",
+        "11.20",
+        "12.10",
+        "12.16",
+        "12.18",
+        "12.19"
+    ],
+    "ChampionName": "Udyr"
 }

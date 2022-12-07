@@ -1,19 +1,257 @@
 {
-    "ChampionName": "Miss Fortune",
-    "ChangePatches": [
-        "9.18",
-        "10.3",
-        "10.10",
-        "10.16",
-        "10.18",
-        "11.18",
-        "11.21",
-        "12.5",
-        "12.10",
-        "12.17",
-        "12.18",
-        "12.21"
-    ],
+    "stats": {
+        "hp": {
+            "base": 640,
+            "increment": 103
+        },
+        "mp": {
+            "base": 300,
+            "increment": 35
+        },
+        "armor": {
+            "base": 28,
+            "increment": 4.2
+        },
+        "spellBlock": {
+            "base": 30,
+            "increment": 1.3
+        },
+        "hpRegen": {
+            "base": 3.75,
+            "increment": 0.65
+        },
+        "mpRegen": {
+            "base": 8.05,
+            "increment": 0.65
+        },
+        "attackSpeed": {
+            "base": 0.656,
+            "increment": 0.03
+        },
+        "ms": {
+            "base": 325,
+            "increment": 0
+        },
+        "attackDamage": {
+            "base": 52,
+            "increment": 2.4
+        },
+        "attackRange": {
+            "base": 550,
+            "increment": 0
+        }
+    },
+    "spells": {
+        "P": {
+            "cooldown": "",
+            "_rawTooltip": {
+                "fullTooltip": "Innate: Miss Fortune's basic attacks apply a mark that expires when attacking a new enemy. If the enemy was unmarked, this also deals [[0]], halved to 25% − 50% (based on level) AD against minions.",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "50% − 100% {{0}} AD bonus physical damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(based on level)",
+                                    "scaleId": "level"
+                                }
+                            ]
+                        },
+                        "type": "physicalDamage"
+                    }
+                ]
+            },
+            "name": "Love Tap"
+        },
+        "Q": {
+            "_rawTooltip": {
+                "fullTooltip": "Miss Fortune fires a bouncing shot, dealing [[0]] to an enemy and to another one behind them. <br /><br />The second shot can critically strike. It always critically strikes if the first shot kills its target. ",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "20/45/70/95/120 {{0}} {{1}} physical damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+100% AD)",
+                                    "scaleId": "AD"
+                                },
+                                {
+                                    "scale": "(+35% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "physicalDamage"
+                    }
+                ]
+            },
+            "cooldown": "7/6/5/4/3",
+            "cost": "43/46/49/52/55 Mana",
+            "name": "Double Up"
+        },
+        "W": {
+            "_rawTooltip": {
+                "fullTooltip": "[[0]] After 5 seconds of not taking damage, Miss Fortune gains [[1]]. After another 5 seconds, this increases to [[2]].<br /><br />[[3]] Gain the passive effect's full [[4]] bonus and [[5]] for 4 seconds.<br /><br />[[6]] reduce the Cooldown of this Ability by 2 seconds.",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "Passive:",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "25 Move Speed",
+                            "scaleHolders": []
+                        },
+                        "type": "speed"
+                    },
+                    {
+                        "text": {
+                            "text": "55/65/75/85",
+                            "scaleHolders": []
+                        },
+                        "type": "speed"
+                    },
+                    {
+                        "text": {
+                            "text": "Active:",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "Move Speed",
+                            "scaleHolders": []
+                        },
+                        "type": "speed"
+                    },
+                    {
+                        "text": {
+                            "text": "40/55/70/85/100% Attack Speed",
+                            "scaleHolders": []
+                        },
+                        "type": "attackSpeed"
+                    },
+                    {
+                        "text": {
+                            "text": "Love Taps",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    }
+                ]
+            },
+            "cooldown": "12",
+            "cost": "45 Mana",
+            "name": "Strut"
+        },
+        "E": {
+            "_rawTooltip": {
+                "fullTooltip": "Miss Fortune rains bullets, revealing an area, [[0]] by 40% (+6% per 100 AP) and dealing [[1]] per second for 2 seconds (total [[2]]).",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "Slowing",
+                            "scaleHolders": []
+                        },
+                        "type": "status"
+                    },
+                    {
+                        "text": {
+                            "text": "35/50/65/80/95 {{0}} magic damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+60% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "magicDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "70/100/130/160/190 {{0}} magic damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+120% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "magicDamage"
+                    }
+                ]
+            },
+            "cooldown": "18/17/16/15/14",
+            "cost": "80 Mana",
+            "name": "Make It Rain"
+        },
+        "R": {
+            "_rawTooltip": {
+                "fullTooltip": "Miss Fortune channels a barrage of bullets, firing 14/16/18 waves over 3 seconds, dealing [[0]] per wave (total [[1]]).<br /><br />Each wave can critically strike for %i:scaleCrit% [[2]] (total %i:scaleCrit% [[3]]).",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "75% AD {{0}} physical damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+25% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "physicalDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "14/16/18 * {{0}} physical damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(75% AD + 25% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "physicalDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "1.2 {{0}} * {{1}} physical damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+20% Bonus Crit)",
+                                    "scaleId": "Crit"
+                                },
+                                {
+                                    "scale": "(75% AD + 25% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "physicalDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "14/16/18 * {{0}}) physical damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(75% AD + 25% AP * (1.2 + 20% Bonus Crit)",
+                                    "scaleId": "Crit"
+                                }
+                            ]
+                        },
+                        "type": "physicalDamage"
+                    }
+                ]
+            },
+            "cooldown": "120/110/100",
+            "cost": "100 Mana",
+            "name": "Bullet Time"
+        }
+    },
     "Changes": {
         "9.18": {
             "B": "",
@@ -432,321 +670,19 @@
             }
         }
     },
-    "stats": {
-        "hp": {
-            "base": 640,
-            "increment": 103
-        },
-        "mp": {
-            "base": 300,
-            "increment": 35
-        },
-        "armor": {
-            "base": 28,
-            "increment": 4.2
-        },
-        "spellBlock": {
-            "base": 30,
-            "increment": 1.3
-        },
-        "hpRegen": {
-            "base": 3.75,
-            "increment": 0.65
-        },
-        "mpRegen": {
-            "base": 8.05,
-            "increment": 0.65
-        },
-        "attackSpeed": {
-            "base": 0.656,
-            "increment": 0.03
-        },
-        "ms": {
-            "base": 325,
-            "increment": 0
-        },
-        "attackDamage": {
-            "base": 52,
-            "increment": 2.4
-        },
-        "attackRange": {
-            "base": 550,
-            "increment": 0
-        }
-    },
-    "spells": {
-        "P": {
-            "name": "Love Tap",
-            "cooldown": "",
-            "_rawTooltip": {
-                "fullTooltip": "Innate: Miss Fortune's basic attacks apply a mark that expires when attacking a new enemy. If the enemy was unmarked, this also deals [[0]], halved to 25% − 50% (based on level) AD against minions.",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "50% − 100% {{0}} AD bonus physical damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(based on level)",
-                                    "scaleId": "level"
-                                }
-                            ]
-                        },
-                        "type": "physicalDamage"
-                    }
-                ]
-            }
-        },
-        "Q": {
-            "id": "MissFortuneRicochetShot",
-            "name": "Double Up",
-            "_rawTooltip": {
-                "fullTooltip": "Miss Fortune fires a bouncing shot, dealing [[0]] to an enemy and to another one behind them. <br /><br />The second shot can critically strike. It always critically strikes if the first shot kills its target. ",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "20/45/70/95/120 {{0}} {{1}} physical damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+100% AD)",
-                                    "scaleId": "AD"
-                                },
-                                {
-                                    "scale": "(+35% AP)",
-                                    "scaleId": "AP"
-                                }
-                            ]
-                        },
-                        "type": "physicalDamage"
-                    }
-                ]
-            },
-            "maxRank": 5,
-            "cooldown": "7/6/5/4/3",
-            "cooldownByLevel": [
-                7,
-                6,
-                5,
-                4,
-                3
-            ],
-            "cost": "43/46/49/52/55 Mana",
-            "costByLevel": [
-                43,
-                46,
-                49,
-                52,
-                55
-            ],
-            "costType": " Mana"
-        },
-        "W": {
-            "id": "MissFortuneViciousStrikes",
-            "name": "Strut",
-            "_rawTooltip": {
-                "fullTooltip": "[[0]] After 5 seconds of not taking damage, Miss Fortune gains [[1]]. After another 5 seconds, this increases to [[2]].<br /><br />[[3]] Gain the passive effect's full [[4]] bonus and [[5]] for 4 seconds.<br /><br />[[6]] reduce the Cooldown of this Ability by 2 seconds.",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "Passive:",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "25 Move Speed",
-                            "scaleHolders": []
-                        },
-                        "type": "speed"
-                    },
-                    {
-                        "text": {
-                            "text": "55/65/75/85",
-                            "scaleHolders": []
-                        },
-                        "type": "speed"
-                    },
-                    {
-                        "text": {
-                            "text": "Active:",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "Move Speed",
-                            "scaleHolders": []
-                        },
-                        "type": "speed"
-                    },
-                    {
-                        "text": {
-                            "text": "40/55/70/85/100% Attack Speed",
-                            "scaleHolders": []
-                        },
-                        "type": "attackSpeed"
-                    },
-                    {
-                        "text": {
-                            "text": "Love Taps",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    }
-                ]
-            },
-            "maxRank": 5,
-            "cooldown": "12",
-            "cooldownByLevel": [
-                12,
-                12,
-                12,
-                12,
-                12
-            ],
-            "cost": "45 Mana",
-            "costByLevel": [
-                45,
-                45,
-                45,
-                45,
-                45
-            ],
-            "costType": " Mana"
-        },
-        "E": {
-            "id": "MissFortuneScattershot",
-            "name": "Make It Rain",
-            "_rawTooltip": {
-                "fullTooltip": "Miss Fortune rains bullets, revealing an area, [[0]] by 40% (+6% per 100 AP) and dealing [[1]] per second for 2 seconds (total [[2]]).",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "Slowing",
-                            "scaleHolders": []
-                        },
-                        "type": "status"
-                    },
-                    {
-                        "text": {
-                            "text": "35/50/65/80/95 {{0}} magic damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+60% AP)",
-                                    "scaleId": "AP"
-                                }
-                            ]
-                        },
-                        "type": "magicDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "70/100/130/160/190 {{0}} magic damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+120% AP)",
-                                    "scaleId": "AP"
-                                }
-                            ]
-                        },
-                        "type": "magicDamage"
-                    }
-                ]
-            },
-            "maxRank": 5,
-            "cooldown": "18/17/16/15/14",
-            "cooldownByLevel": [
-                18,
-                17,
-                16,
-                15,
-                14
-            ],
-            "cost": "80 Mana",
-            "costByLevel": [
-                80,
-                80,
-                80,
-                80,
-                80
-            ],
-            "costType": " Mana"
-        },
-        "R": {
-            "id": "MissFortuneBulletTime",
-            "name": "Bullet Time",
-            "_rawTooltip": {
-                "fullTooltip": "Miss Fortune channels a barrage of bullets, firing 14/16/18 waves over 3 seconds, dealing [[0]] per wave (total [[1]]).<br /><br />Each wave can critically strike for %i:scaleCrit% [[2]] (total %i:scaleCrit% [[3]]).",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "75% AD {{0}} physical damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+25% AP)",
-                                    "scaleId": "AP"
-                                }
-                            ]
-                        },
-                        "type": "physicalDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "14/16/18 * {{0}} physical damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(75% AD + 25% AP)",
-                                    "scaleId": "AP"
-                                }
-                            ]
-                        },
-                        "type": "physicalDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "1.2 {{0}} * {{1}} physical damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+20% Bonus Crit)",
-                                    "scaleId": "Crit"
-                                },
-                                {
-                                    "scale": "(75% AD + 25% AP)",
-                                    "scaleId": "AP"
-                                }
-                            ]
-                        },
-                        "type": "physicalDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "14/16/18 * {{0}}) physical damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(75% AD + 25% AP * (1.2 + 20% Bonus Crit)",
-                                    "scaleId": "Crit"
-                                }
-                            ]
-                        },
-                        "type": "physicalDamage"
-                    }
-                ]
-            },
-            "maxRank": 3,
-            "cooldown": "120/110/100",
-            "cooldownByLevel": [
-                120,
-                110,
-                100
-            ],
-            "cost": "100 Mana",
-            "costByLevel": [
-                100,
-                100,
-                100
-            ],
-            "costType": " Mana"
-        }
-    }
+    "ChangePatches": [
+        "9.18",
+        "10.3",
+        "10.10",
+        "10.16",
+        "10.18",
+        "11.18",
+        "11.21",
+        "12.5",
+        "12.10",
+        "12.17",
+        "12.18",
+        "12.21"
+    ],
+    "ChampionName": "Miss Fortune"
 }

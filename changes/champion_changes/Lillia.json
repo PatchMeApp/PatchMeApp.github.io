@@ -1,17 +1,247 @@
 {
-    "ChampionName": "Lillia",
-    "ChangePatches": [
-        "10.15",
-        "11.6",
-        "11.14",
-        "11.18",
-        "12.3",
-        "12.7",
-        "12.10",
-        "12.11",
-        "12.15",
-        "12.22"
-    ],
+    "stats": {
+        "hp": {
+            "base": 605,
+            "increment": 105
+        },
+        "mp": {
+            "base": 410,
+            "increment": 50
+        },
+        "armor": {
+            "base": 22,
+            "increment": 5.2
+        },
+        "spellBlock": {
+            "base": 32,
+            "increment": 1.55
+        },
+        "hpRegen": {
+            "base": 2.5,
+            "increment": 0.55
+        },
+        "mpRegen": {
+            "base": 11.5,
+            "increment": 0.95
+        },
+        "attackSpeed": {
+            "base": 0.625,
+            "increment": 0.027000000000000003
+        },
+        "ms": {
+            "base": 330,
+            "increment": 0
+        },
+        "attackDamage": {
+            "base": 61,
+            "increment": 3.1
+        },
+        "attackRange": {
+            "base": 325,
+            "increment": 0
+        }
+    },
+    "spells": {
+        "P": {
+            "cooldown": "",
+            "_rawTooltip": {
+                "fullTooltip": "Innate: Lillia's abilities apply Dream Dust to enemies hit, which deals[ [[1]] total magic damage over 3 seconds, ]capped at [[0]] against monsters.<br>Lillia heals for 24 − 75 (based on level) (+ 5.4% AP) against large monsters and 6-120 (based on level)(+18% AP) AP) against champions over the duration of Dream Dust, reduced to 33% effectiveness for each target beyond the first. She may only heal against 1 monster at a time.",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "40 − 100 {{0}} damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(based on level)",
+                                    "scaleId": "level"
+                                }
+                            ]
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "6% {{0}} of the target's maximum health",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+ 1.5% per 100 AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "Health"
+                    }
+                ]
+            },
+            "name": "Dream-Laden Bough"
+        },
+        "Q": {
+            "_rawTooltip": {
+                "fullTooltip": "[[0]] Lillia's Ability hits grant [[1]] for 6.5 seconds, stacking up to 4 times.<br /><br />[[2]] Lillia whirls her censer, dealing [[3]], plus an additional [[4]] at the outer edge.",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "Passive:",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "3/4/5/6/7% {{0}} Move Speed",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+3% per 100 AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "speed"
+                    },
+                    {
+                        "text": {
+                            "text": "Active:",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "40/50/60/70/80 {{0}} magic damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+40% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "magicDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "40/50/60/70/80 {{0}} true damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+40% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "trueDamage"
+                    }
+                ]
+            },
+            "cooldown": "6/5.5/5/4.5/4",
+            "cost": "65 Mana",
+            "name": "Blooming Blows"
+        },
+        "W": {
+            "_rawTooltip": {
+                "fullTooltip": "Lillia winds up a huge strike, dealing [[0]]. Enemies in the center take [[1]] instead.",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "80/100/120/140/160 {{0}} magic damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+35% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "magicDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "240/300/360/420/480 {{0}} damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+105% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "magicDamage"
+                    }
+                ]
+            },
+            "cooldown": "14/13/12/11/10",
+            "cost": "50 Mana",
+            "name": "Watch Out! Eep!"
+        },
+        "E": {
+            "_rawTooltip": {
+                "fullTooltip": "Lillia lobs a swirlseed overhead, dealing [[0]] where it lands and revealing and [[1]] them by 40% for 3 seconds. If no enemies are hit, the seed rolls until it hits an enemy or collides with terrain.",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "70/95/120/145/170 {{0}} magic damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+45% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "magicDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "Slowing",
+                            "scaleHolders": []
+                        },
+                        "type": "status"
+                    }
+                ]
+            },
+            "cooldown": "16",
+            "cost": "70 Mana",
+            "name": "Swirlseed"
+        },
+        "R": {
+            "_rawTooltip": {
+                "fullTooltip": "Lillia causes all enemy champions with [[0]] to become [[1]] for 1.5 seconds. Afterward, they fall [[2]] for 2/2.25 seconds.<br /><br />When awakened by damage, they take an additional [[3]].",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "Dream Dust",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "Drowsy",
+                            "scaleHolders": []
+                        },
+                        "type": "status"
+                    },
+                    {
+                        "text": {
+                            "text": "Asleep",
+                            "scaleHolders": []
+                        },
+                        "type": "status"
+                    },
+                    {
+                        "text": {
+                            "text": "100/150/200 {{0}} magic damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+40% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "magicDamage"
+                    }
+                ]
+            },
+            "cooldown": "150/130/110",
+            "cost": "50 Mana",
+            "name": "Lilting Lullaby"
+        }
+    },
     "Changes": {
         "10.15": {
             "B": "",
@@ -545,313 +775,50 @@
             "W": "",
             "E": "",
             "R": ""
+        },
+        "12.23": {
+            "B": "",
+            "P": "",
+            "Q": {
+                "SpellName": "Q - Blooming Blows",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Magic Damage: ",
+                            "Before": "35/50/65/80/95 (+40% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "40/50/60/70/80 (+40% AP)"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Outer Edge True Damage: ",
+                            "Before": "35/50/65/80/95 (+40% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "40/50/60/70/80 (+40% AP)"
+                        }
+                    }
+                ]
+            },
+            "W": "",
+            "E": "",
+            "R": ""
         }
     },
-    "stats": {
-        "hp": {
-            "base": 605,
-            "increment": 105
-        },
-        "mp": {
-            "base": 410,
-            "increment": 50
-        },
-        "armor": {
-            "base": 22,
-            "increment": 5.2
-        },
-        "spellBlock": {
-            "base": 32,
-            "increment": 1.55
-        },
-        "hpRegen": {
-            "base": 2.5,
-            "increment": 0.55
-        },
-        "mpRegen": {
-            "base": 11.5,
-            "increment": 0.95
-        },
-        "attackSpeed": {
-            "base": 0.625,
-            "increment": 0.027000000000000003
-        },
-        "ms": {
-            "base": 330,
-            "increment": 0
-        },
-        "attackDamage": {
-            "base": 61,
-            "increment": 3.1
-        },
-        "attackRange": {
-            "base": 325,
-            "increment": 0
-        }
-    },
-    "spells": {
-        "P": {
-            "name": "Dream-Laden Bough",
-            "cooldown": "",
-            "_rawTooltip": {
-                "fullTooltip": "Innate: Lillia's abilities apply Dream Dust to enemies hit, which deals[ [[1]] total magic damage over 3 seconds, ]capped at [[0]] against monsters.<br>Lillia heals for 24 − 75 (based on level) (+ 5.4% AP) against large monsters and 10.5 − 124.5 (based on level) (+ 18% AP) against champions over the duration of Dream Dust, reduced to 33% effectiveness for each target beyond the first. She may only heal against 1 monster at a time.",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "40 − 100 {{0}} damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(based on level)",
-                                    "scaleId": "level"
-                                }
-                            ]
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "6% {{0}} of the target's maximum health",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+ 1.5% per 100 AP)",
-                                    "scaleId": "AP"
-                                }
-                            ]
-                        },
-                        "type": "Health"
-                    }
-                ]
-            }
-        },
-        "Q": {
-            "id": "LilliaQ",
-            "name": "Blooming Blows",
-            "_rawTooltip": {
-                "fullTooltip": "[[0]] Lillia's Ability hits grant [[1]] for 6.5 seconds, stacking up to 4 times.<br /><br />[[2]] Lillia whirls her censer, dealing [[3]], plus an additional [[4]] at the outer edge.",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "Passive:",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "3/4/5/6/7% {{0}} Move Speed",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+3% per 100 AP)",
-                                    "scaleId": "AP"
-                                }
-                            ]
-                        },
-                        "type": "speed"
-                    },
-                    {
-                        "text": {
-                            "text": "Active:",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "35/50/65/80/95 {{0}} magic damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+40% AP)",
-                                    "scaleId": "AP"
-                                }
-                            ]
-                        },
-                        "type": "magicDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "35/50/65/80/95 {{0}} true damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+40% AP)",
-                                    "scaleId": "AP"
-                                }
-                            ]
-                        },
-                        "type": "trueDamage"
-                    }
-                ]
-            },
-            "maxRank": 5,
-            "cooldown": "6/5.5/5/4.5/4",
-            "cooldownByLevel": [
-                6,
-                5.5,
-                5,
-                4.5,
-                4
-            ],
-            "cost": "65 Mana",
-            "costByLevel": [
-                65,
-                65,
-                65,
-                65,
-                65
-            ],
-            "costType": " Mana"
-        },
-        "W": {
-            "id": "LilliaW",
-            "name": "Watch Out! Eep!",
-            "_rawTooltip": {
-                "fullTooltip": "Lillia winds up a huge strike, dealing [[0]]. Enemies in the center take [[1]] instead.",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "80/100/120/140/160 {{0}} magic damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+35% AP)",
-                                    "scaleId": "AP"
-                                }
-                            ]
-                        },
-                        "type": "magicDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "240/300/360/420/480 {{0}} damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+105% AP)",
-                                    "scaleId": "AP"
-                                }
-                            ]
-                        },
-                        "type": "magicDamage"
-                    }
-                ]
-            },
-            "maxRank": 5,
-            "cooldown": "14/13/12/11/10",
-            "cooldownByLevel": [
-                14,
-                13,
-                12,
-                11,
-                10
-            ],
-            "cost": "50 Mana",
-            "costByLevel": [
-                50,
-                50,
-                50,
-                50,
-                50
-            ],
-            "costType": " Mana"
-        },
-        "E": {
-            "id": "LilliaE",
-            "name": "Swirlseed",
-            "_rawTooltip": {
-                "fullTooltip": "Lillia lobs a swirlseed overhead, dealing [[0]] where it lands and revealing and [[1]] them by 40% for 3 seconds. If no enemies are hit, the seed rolls until it hits an enemy or collides with terrain.",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "70/95/120/145/170 {{0}} magic damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+45% AP)",
-                                    "scaleId": "AP"
-                                }
-                            ]
-                        },
-                        "type": "magicDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "Slowing",
-                            "scaleHolders": []
-                        },
-                        "type": "status"
-                    }
-                ]
-            },
-            "maxRank": 5,
-            "cooldown": "16",
-            "cooldownByLevel": [
-                16,
-                16,
-                16,
-                16,
-                16
-            ],
-            "cost": "70 Mana",
-            "costByLevel": [
-                70,
-                70,
-                70,
-                70,
-                70
-            ],
-            "costType": " Mana"
-        },
-        "R": {
-            "id": "LilliaR",
-            "name": "Lilting Lullaby",
-            "_rawTooltip": {
-                "fullTooltip": "Lillia causes all enemy champions with [[0]] to become [[1]] for 1.5 seconds. Afterward, they fall [[2]] for 2/2.25 seconds.<br /><br />When awakened by damage, they take an additional [[3]].",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "Dream Dust",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "Drowsy",
-                            "scaleHolders": []
-                        },
-                        "type": "status"
-                    },
-                    {
-                        "text": {
-                            "text": "Asleep",
-                            "scaleHolders": []
-                        },
-                        "type": "status"
-                    },
-                    {
-                        "text": {
-                            "text": "100/150/200 {{0}} magic damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+40% AP)",
-                                    "scaleId": "AP"
-                                }
-                            ]
-                        },
-                        "type": "magicDamage"
-                    }
-                ]
-            },
-            "maxRank": 3,
-            "cooldown": "150/130/110",
-            "cooldownByLevel": [
-                150,
-                130,
-                110
-            ],
-            "cost": "50 Mana",
-            "costByLevel": [
-                50,
-                50,
-                50
-            ],
-            "costType": " Mana"
-        }
-    }
+    "ChangePatches": [
+        "10.15",
+        "11.6",
+        "11.14",
+        "11.18",
+        "12.3",
+        "12.7",
+        "12.10",
+        "12.11",
+        "12.15",
+        "12.22",
+        "12.23"
+    ],
+    "ChampionName": "Lillia"
 }

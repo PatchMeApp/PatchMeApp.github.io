@@ -1,13 +1,262 @@
 {
-    "ChampionName": "Fizz",
-    "ChangePatches": [
-        "10.25",
-        "11.18",
-        "11.19",
-        "12.10",
-        "12.11",
-        "12.19"
-    ],
+    "stats": {
+        "hp": {
+            "base": 640,
+            "increment": 106
+        },
+        "mp": {
+            "base": 317,
+            "increment": 52
+        },
+        "armor": {
+            "base": 22,
+            "increment": 4.6
+        },
+        "spellBlock": {
+            "base": 32,
+            "increment": 2.05
+        },
+        "hpRegen": {
+            "base": 8,
+            "increment": 0.7
+        },
+        "mpRegen": {
+            "base": 6,
+            "increment": 0.8
+        },
+        "attackSpeed": {
+            "base": 0.658,
+            "increment": 0.031
+        },
+        "ms": {
+            "base": 335,
+            "increment": 0
+        },
+        "attackDamage": {
+            "base": 58,
+            "increment": 3
+        },
+        "attackRange": {
+            "base": 175,
+            "increment": 0
+        }
+    },
+    "spells": {
+        "P": {
+            "cooldown": "",
+            "_rawTooltip": {
+                "fullTooltip": "Innate: Fizz is permanently ghosted.<br>Fizz takes [[0]] from every instance of damage, up to a maximum of 50% reduction.",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "4 {{0}} reduced damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+ 1% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": ""
+                    }
+                ]
+            },
+            "name": "Nimble Fighter"
+        },
+        "Q": {
+            "_rawTooltip": {
+                "fullTooltip": "Fizz dashes through an enemy, dealing [[0]] plus [[1]].",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "100% AD physical damage",
+                            "scaleHolders": []
+                        },
+                        "type": "physicalDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "10/25/40/55/70 {{0}} magic damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+55% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "magicDamage"
+                    }
+                ]
+            },
+            "cooldown": "8/7.5/7/6.5/6",
+            "cost": "50 Mana",
+            "name": "Urchin Strike"
+        },
+        "W": {
+            "_rawTooltip": {
+                "fullTooltip": "[[0]]: Fizz's Attacks cause his enemies to bleed, dealing [[1]] over 3 seconds. <br /><br />[[2]]: Fizz's next Attack deals an additional [[3]]. If this Attack kills its target, Fizz refunds [[4]] and reduces the cooldown of this Ability to 1 second. If it does not kill, Fizz's Attacks deal an additional [[5]] for 5 seconds.",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "Passive",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "20/30/40/50/60 {{0}} magic damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+40% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "magicDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "Active",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "50/70/90/110/130 {{0}} magic damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+50% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "magicDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "20/28/36/44 Mana",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "10/15/20/25/30 {{0}} magic damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+35% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "magicDamage"
+                    }
+                ]
+            },
+            "cooldown": "7/6.5/6/5.5/5",
+            "cost": "30/40/50/60/70 Mana",
+            "name": "Seastone Trident"
+        },
+        "E": {
+            "_rawTooltip": {
+                "fullTooltip": "Fizz hops onto his trident, becoming Untargetable for 0.75 seconds, after which he deals [[0]] to nearby enemies and [[1]] them by 40/45/50/55/60% for 2 seconds. <br /><br />Fizz can [[2]] this Ability while Untargetable to dash again, which ends the effect early, deals damage in a smaller area, and doesn't [[3]].",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "70/120/170/220/270 {{0}} magic damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+90% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "magicDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "Slows",
+                            "scaleHolders": []
+                        },
+                        "type": "status"
+                    },
+                    {
+                        "text": {
+                            "text": "Recast",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "Slow",
+                            "scaleHolders": []
+                        },
+                        "type": "status"
+                    }
+                ]
+            },
+            "cooldown": "16/14/12/10/8",
+            "cost": "90/95/100/105/110 Mana",
+            "name": "Playful / Trickster"
+        },
+        "R": {
+            "_rawTooltip": {
+                "fullTooltip": "Fizz launches a fish that attaches to the first champion hit. The victim is afflicted with [[0]] and [[1]] by between 40% to 80% based on how far the fish travelled before attaching. <br /><br />After 2 seconds a shark erupts on the target, [[2]] the target with the fish for 1 second, [[3]] everything else, and dealing between [[4]] based on how far the fish travelled before attaching.",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "True Sight",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "Slowed",
+                            "scaleHolders": []
+                        },
+                        "type": "status"
+                    },
+                    {
+                        "text": {
+                            "text": "Knocking Up",
+                            "scaleHolders": []
+                        },
+                        "type": "status"
+                    },
+                    {
+                        "text": {
+                            "text": "Knocking Back",
+                            "scaleHolders": []
+                        },
+                        "type": "status"
+                    },
+                    {
+                        "text": {
+                            "text": "150/250/350 {{0}} to 300/400/500 {{1}} magic damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+80% AP)",
+                                    "scaleId": "AP"
+                                },
+                                {
+                                    "scale": "(+120% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "magicDamage"
+                    }
+                ]
+            },
+            "cooldown": "100/85/70",
+            "cost": "100 Mana",
+            "name": "Chum the Waters"
+        }
+    },
     "Changes": {
         "10.25": {
             "B": {
@@ -291,326 +540,13 @@
             "R": ""
         }
     },
-    "stats": {
-        "hp": {
-            "base": 640,
-            "increment": 106
-        },
-        "mp": {
-            "base": 317,
-            "increment": 52
-        },
-        "armor": {
-            "base": 22,
-            "increment": 4.6
-        },
-        "spellBlock": {
-            "base": 32,
-            "increment": 2.05
-        },
-        "hpRegen": {
-            "base": 8,
-            "increment": 0.7
-        },
-        "mpRegen": {
-            "base": 6,
-            "increment": 0.8
-        },
-        "attackSpeed": {
-            "base": 0.658,
-            "increment": 0.031
-        },
-        "ms": {
-            "base": 335,
-            "increment": 0
-        },
-        "attackDamage": {
-            "base": 58,
-            "increment": 3
-        },
-        "attackRange": {
-            "base": 175,
-            "increment": 0
-        }
-    },
-    "spells": {
-        "P": {
-            "name": "Nimble Fighter",
-            "cooldown": "",
-            "_rawTooltip": {
-                "fullTooltip": "Innate: Fizz is permanently ghosted.<br>Fizz takes [[0]] from every instance of damage, up to a maximum of 50% reduction.",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "4 {{0}} reduced damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+ 1% AP)",
-                                    "scaleId": "AP"
-                                }
-                            ]
-                        },
-                        "type": ""
-                    }
-                ]
-            }
-        },
-        "Q": {
-            "id": "FizzQ",
-            "name": "Urchin Strike",
-            "_rawTooltip": {
-                "fullTooltip": "Fizz dashes through an enemy, dealing [[0]] plus [[1]].",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "100% AD physical damage",
-                            "scaleHolders": []
-                        },
-                        "type": "physicalDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "10/25/40/55/70 {{0}} magic damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+55% AP)",
-                                    "scaleId": "AP"
-                                }
-                            ]
-                        },
-                        "type": "magicDamage"
-                    }
-                ]
-            },
-            "maxRank": 5,
-            "cooldown": "8/7.5/7/6.5/6",
-            "cooldownByLevel": [
-                8,
-                7.5,
-                7,
-                6.5,
-                6
-            ],
-            "cost": "50 Mana",
-            "costByLevel": [
-                50,
-                50,
-                50,
-                50,
-                50
-            ],
-            "costType": " Mana"
-        },
-        "W": {
-            "id": "FizzW",
-            "name": "Seastone Trident",
-            "_rawTooltip": {
-                "fullTooltip": "[[0]]: Fizz's Attacks cause his enemies to bleed, dealing [[1]] over 3 seconds. <br /><br />[[2]]: Fizz's next Attack deals an additional [[3]]. If this Attack kills its target, Fizz refunds [[4]] and reduces the cooldown of this Ability to 1 second. If it does not kill, Fizz's Attacks deal an additional [[5]] for 5 seconds.",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "Passive",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "20/30/40/50/60 {{0}} magic damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+40% AP)",
-                                    "scaleId": "AP"
-                                }
-                            ]
-                        },
-                        "type": "magicDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "Active",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "50/70/90/110/130 {{0}} magic damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+50% AP)",
-                                    "scaleId": "AP"
-                                }
-                            ]
-                        },
-                        "type": "magicDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "20/28/36/44 Mana",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "10/15/20/25/30 {{0}} magic damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+35% AP)",
-                                    "scaleId": "AP"
-                                }
-                            ]
-                        },
-                        "type": "magicDamage"
-                    }
-                ]
-            },
-            "maxRank": 5,
-            "cooldown": "7/6.5/6/5.5/5",
-            "cooldownByLevel": [
-                7,
-                6.5,
-                6,
-                5.5,
-                5
-            ],
-            "cost": "30/40/50/60/70 Mana",
-            "costByLevel": [
-                30,
-                40,
-                50,
-                60,
-                70
-            ],
-            "costType": " Mana"
-        },
-        "E": {
-            "id": "FizzE",
-            "name": "Playful / Trickster",
-            "_rawTooltip": {
-                "fullTooltip": "Fizz hops onto his trident, becoming Untargetable for 0.75 seconds, after which he deals [[0]] to nearby enemies and [[1]] them by 40/45/50/55/60% for 2 seconds. <br /><br />Fizz can [[2]] this Ability while Untargetable to dash again, which ends the effect early, deals damage in a smaller area, and doesn't [[3]].",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "70/120/170/220/270 {{0}} magic damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+90% AP)",
-                                    "scaleId": "AP"
-                                }
-                            ]
-                        },
-                        "type": "magicDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "Slows",
-                            "scaleHolders": []
-                        },
-                        "type": "status"
-                    },
-                    {
-                        "text": {
-                            "text": "Recast",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "Slow",
-                            "scaleHolders": []
-                        },
-                        "type": "status"
-                    }
-                ]
-            },
-            "maxRank": 5,
-            "cooldown": "16/14/12/10/8",
-            "cooldownByLevel": [
-                16,
-                14,
-                12,
-                10,
-                8
-            ],
-            "cost": "90/95/100/105/110 Mana",
-            "costByLevel": [
-                90,
-                95,
-                100,
-                105,
-                110
-            ],
-            "costType": " Mana"
-        },
-        "R": {
-            "id": "FizzR",
-            "name": "Chum the Waters",
-            "_rawTooltip": {
-                "fullTooltip": "Fizz launches a fish that attaches to the first champion hit. The victim is afflicted with [[0]] and [[1]] by between 40% to 80% based on how far the fish travelled before attaching. <br /><br />After 2 seconds a shark erupts on the target, [[2]] the target with the fish for 1 second, [[3]] everything else, and dealing between [[4]] based on how far the fish travelled before attaching.",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "True Sight",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "Slowed",
-                            "scaleHolders": []
-                        },
-                        "type": "status"
-                    },
-                    {
-                        "text": {
-                            "text": "Knocking Up",
-                            "scaleHolders": []
-                        },
-                        "type": "status"
-                    },
-                    {
-                        "text": {
-                            "text": "Knocking Back",
-                            "scaleHolders": []
-                        },
-                        "type": "status"
-                    },
-                    {
-                        "text": {
-                            "text": "150/250/350 {{0}} to 300/400/500 {{1}} magic damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+80% AP)",
-                                    "scaleId": "AP"
-                                },
-                                {
-                                    "scale": "(+120% AP)",
-                                    "scaleId": "AP"
-                                }
-                            ]
-                        },
-                        "type": "magicDamage"
-                    }
-                ]
-            },
-            "maxRank": 3,
-            "cooldown": "100/85/70",
-            "cooldownByLevel": [
-                100,
-                85,
-                70
-            ],
-            "cost": "100 Mana",
-            "costByLevel": [
-                100,
-                100,
-                100
-            ],
-            "costType": " Mana"
-        }
-    }
+    "ChangePatches": [
+        "10.25",
+        "11.18",
+        "11.19",
+        "12.10",
+        "12.11",
+        "12.19"
+    ],
+    "ChampionName": "Fizz"
 }

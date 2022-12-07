@@ -1,18 +1,294 @@
 {
-    "ChampionName": "Sejuani",
-    "ChangePatches": [
-        "9.19",
-        "9.22",
-        "10.1",
-        "10.3",
-        "10.14",
-        "10.22",
-        "11.5",
-        "11.10",
-        "11.19",
-        "12.8",
-        "12.10"
-    ],
+    "stats": {
+        "hp": {
+            "base": 630,
+            "increment": 114
+        },
+        "mp": {
+            "base": 400,
+            "increment": 40
+        },
+        "armor": {
+            "base": 34,
+            "increment": 5.45
+        },
+        "spellBlock": {
+            "base": 32,
+            "increment": 2.05
+        },
+        "hpRegen": {
+            "base": 8.5,
+            "increment": 1
+        },
+        "mpRegen": {
+            "base": 7,
+            "increment": 0.7
+        },
+        "attackSpeed": {
+            "base": 0.688,
+            "increment": 0.035
+        },
+        "ms": {
+            "base": 340,
+            "increment": 0
+        },
+        "attackDamage": {
+            "base": 66,
+            "increment": 4
+        },
+        "attackRange": {
+            "base": 150,
+            "increment": 0
+        }
+    },
+    "spells": {
+        "P": {
+            "cooldown": "",
+            "_rawTooltip": {
+                "fullTooltip": "Innate - Icebreaker: Enemies stunned by Sejuani are marked Frozen for the disable's duration. Sejuani's next basic attack or ability against a Frozen enemy will consume the mark to deal bonus magic damage equal to [[2]], capped at 300 against epic monsters.<br>Innate - Frost Armor: Sejuani gains Frost Armor, which lingers for [[0]] from enemy champions or monsters. She restores it after [[1]] from them.<br>Frost Armor: Sejuani gains slow immunity, cripple immunity, [[3]][[4]], and 10 (+ 50% bonus magic resistance) bonus magic resistance.",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "3 seconds after taking damage",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "12 − 6 {{0}} without taking damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(based on level)",
+                                    "scaleId": "level"
+                                }
+                            ]
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "10% of their maximum health",
+                            "scaleHolders": []
+                        },
+                        "type": "Health"
+                    },
+                    {
+                        "text": {
+                            "text": "10 (+ 50% bonus armor",
+                            "scaleHolders": []
+                        },
+                        "type": "armor"
+                    },
+                    {
+                        "text": {
+                            "text": ") bonus armor",
+                            "scaleHolders": []
+                        },
+                        "type": "armor"
+                    }
+                ]
+            },
+            "name": "Fury of the North"
+        },
+        "Q": {
+            "_rawTooltip": {
+                "fullTooltip": "Sejuani charges, dealing [[0]] to enemies and [[1]] them [[2]] for 0.5 seconds. The charge ends after hitting an enemy champion.",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "90/140/190/240/290 {{0}} magic damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+60% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "magicDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "Knocking",
+                            "scaleHolders": []
+                        },
+                        "type": "status"
+                    },
+                    {
+                        "text": {
+                            "text": "Up",
+                            "scaleHolders": []
+                        },
+                        "type": "status"
+                    }
+                ]
+            },
+            "cooldown": "18/16.5/15/13.5/12",
+            "cost": "70/75/80/85/90 Mana",
+            "name": "Arctic Assault"
+        },
+        "W": {
+            "_rawTooltip": {
+                "fullTooltip": "Sejuani swings her flail, dealing [[0]] and [[1]] minions and jungle monsters. She then lashes out again, dealing [[2]] and briefly [[3]] targets.<br /><br />Both swings apply stacks of [[4]].",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "20/25/30/35/40 {{0}} {{1}} physical damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+20% AP)",
+                                    "scaleId": "AP"
+                                },
+                                {
+                                    "scale": "(+2% Health)",
+                                    "scaleId": "Health"
+                                }
+                            ]
+                        },
+                        "type": "physicalDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "Knocking Back",
+                            "scaleHolders": []
+                        },
+                        "type": "status"
+                    },
+                    {
+                        "text": {
+                            "text": "30/70/110/150/190 {{0}} {{1}} physical damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+60% AP)",
+                                    "scaleId": "AP"
+                                },
+                                {
+                                    "scale": "(+6% Health)",
+                                    "scaleId": "Health"
+                                }
+                            ]
+                        },
+                        "type": "physicalDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "Slowing",
+                            "scaleHolders": []
+                        },
+                        "type": "status"
+                    },
+                    {
+                        "text": {
+                            "text": "Permafrost",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    }
+                ]
+            },
+            "cooldown": "9/8/7/6/5",
+            "cost": "65 Mana",
+            "name": "Winter's Wrath"
+        },
+        "E": {
+            "_rawTooltip": {
+                "fullTooltip": "[[0]] Nearby melee allied champions' Attacks apply a stack to champions and jungle monsters.<br /><br />[[1]] Sejuani deals [[2]] to target enemy with 4 stacks and [[3]] them for 1 second. ",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "Passive:",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "Active:",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "55/105/155/205/255 {{0}} magic damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+60% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "magicDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "Stuns",
+                            "scaleHolders": []
+                        },
+                        "type": "status"
+                    }
+                ]
+            },
+            "cooldown": "1.5",
+            "cost": "20 Mana",
+            "name": "Permafrost"
+        },
+        "R": {
+            "_rawTooltip": {
+                "fullTooltip": "Sejuani throws her True Ice bola, [[0]] and revealing the first enemy champion hit for 1 second and dealing [[1]].<br /><br />If the bola travels at least 25% of its range, it [[2]] and reveals for 1.5 seconds instead. It then also creates an ice storm that [[3]] surrounding enemies by 80% for 2 seconds. All affected enemies take [[4]].",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "Stunning",
+                            "scaleHolders": []
+                        },
+                        "type": "status"
+                    },
+                    {
+                        "text": {
+                            "text": "125/150/175 {{0}} magic damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+40% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "magicDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "Stuns",
+                            "scaleHolders": []
+                        },
+                        "type": "status"
+                    },
+                    {
+                        "text": {
+                            "text": "Slows",
+                            "scaleHolders": []
+                        },
+                        "type": "status"
+                    },
+                    {
+                        "text": {
+                            "text": "200/300/400 {{0}} magic damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+80% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "magicDamage"
+                    }
+                ]
+            },
+            "cooldown": "120/100/80",
+            "cost": "100 Mana",
+            "name": "Glacial Prison"
+        }
+    },
     "Changes": {
         "9.19": {
             "B": "",
@@ -383,358 +659,18 @@
             "R": ""
         }
     },
-    "stats": {
-        "hp": {
-            "base": 630,
-            "increment": 114
-        },
-        "mp": {
-            "base": 400,
-            "increment": 40
-        },
-        "armor": {
-            "base": 34,
-            "increment": 5.45
-        },
-        "spellBlock": {
-            "base": 32,
-            "increment": 2.05
-        },
-        "hpRegen": {
-            "base": 8.5,
-            "increment": 1
-        },
-        "mpRegen": {
-            "base": 7,
-            "increment": 0.7
-        },
-        "attackSpeed": {
-            "base": 0.688,
-            "increment": 0.035
-        },
-        "ms": {
-            "base": 340,
-            "increment": 0
-        },
-        "attackDamage": {
-            "base": 66,
-            "increment": 4
-        },
-        "attackRange": {
-            "base": 150,
-            "increment": 0
-        }
-    },
-    "spells": {
-        "P": {
-            "name": "Fury of the North",
-            "cooldown": "",
-            "_rawTooltip": {
-                "fullTooltip": "Innate - Icebreaker: Enemies stunned by Sejuani are marked Frozen for the disable's duration. Sejuani's next basic attack or ability against a Frozen enemy will consume the mark to deal bonus magic damage equal to [[2]], capped at 300 against epic monsters.<br>Innate - Frost Armor: Sejuani gains Frost Armor, which lingers for [[0]] from enemy champions or monsters. She restores it after [[1]] from them.<br>Frost Armor: Sejuani gains slow immunity, cripple immunity, [[3]][[4]], and 10 (+ 50% bonus magic resistance) bonus magic resistance.",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "3 seconds after taking damage",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "12 − 6 {{0}} without taking damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(based on level)",
-                                    "scaleId": "level"
-                                }
-                            ]
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "10% of their maximum health",
-                            "scaleHolders": []
-                        },
-                        "type": "Health"
-                    },
-                    {
-                        "text": {
-                            "text": "10 (+ 50% bonus armor",
-                            "scaleHolders": []
-                        },
-                        "type": "armor"
-                    },
-                    {
-                        "text": {
-                            "text": ") bonus armor",
-                            "scaleHolders": []
-                        },
-                        "type": "armor"
-                    }
-                ]
-            }
-        },
-        "Q": {
-            "id": "SejuaniQ",
-            "name": "Arctic Assault",
-            "_rawTooltip": {
-                "fullTooltip": "Sejuani charges, dealing [[0]] to enemies and [[1]] them [[2]] for 0.5 seconds. The charge ends after hitting an enemy champion.",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "90/140/190/240/290 {{0}} magic damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+60% AP)",
-                                    "scaleId": "AP"
-                                }
-                            ]
-                        },
-                        "type": "magicDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "Knocking",
-                            "scaleHolders": []
-                        },
-                        "type": "status"
-                    },
-                    {
-                        "text": {
-                            "text": "Up",
-                            "scaleHolders": []
-                        },
-                        "type": "status"
-                    }
-                ]
-            },
-            "maxRank": 5,
-            "cooldown": "18/16.5/15/13.5/12",
-            "cooldownByLevel": [
-                18,
-                16.5,
-                15,
-                13.5,
-                12
-            ],
-            "cost": "70/75/80/85/90 Mana",
-            "costByLevel": [
-                70,
-                75,
-                80,
-                85,
-                90
-            ],
-            "costType": " Mana"
-        },
-        "W": {
-            "id": "SejuaniW",
-            "name": "Winter's Wrath",
-            "_rawTooltip": {
-                "fullTooltip": "Sejuani swings her flail, dealing [[0]] and [[1]] minions and jungle monsters. She then lashes out again, dealing [[2]] and briefly [[3]] targets.<br /><br />Both swings apply stacks of [[4]].",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "20/25/30/35/40 {{0}} {{1}} physical damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+20% AP)",
-                                    "scaleId": "AP"
-                                },
-                                {
-                                    "scale": "(+2% Health)",
-                                    "scaleId": "Health"
-                                }
-                            ]
-                        },
-                        "type": "physicalDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "Knocking Back",
-                            "scaleHolders": []
-                        },
-                        "type": "status"
-                    },
-                    {
-                        "text": {
-                            "text": "30/70/110/150/190 {{0}} {{1}} physical damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+60% AP)",
-                                    "scaleId": "AP"
-                                },
-                                {
-                                    "scale": "(+6% Health)",
-                                    "scaleId": "Health"
-                                }
-                            ]
-                        },
-                        "type": "physicalDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "Slowing",
-                            "scaleHolders": []
-                        },
-                        "type": "status"
-                    },
-                    {
-                        "text": {
-                            "text": "Permafrost",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    }
-                ]
-            },
-            "maxRank": 5,
-            "cooldown": "9/8/7/6/5",
-            "cooldownByLevel": [
-                9,
-                8,
-                7,
-                6,
-                5
-            ],
-            "cost": "65 Mana",
-            "costByLevel": [
-                65,
-                65,
-                65,
-                65,
-                65
-            ],
-            "costType": " Mana"
-        },
-        "E": {
-            "id": "SejuaniE",
-            "name": "Permafrost",
-            "_rawTooltip": {
-                "fullTooltip": "[[0]] Nearby melee allied champions' Attacks apply a stack to champions and jungle monsters.<br /><br />[[1]] Sejuani deals [[2]] to target enemy with 4 stacks and [[3]] them for 1 second. ",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "Passive:",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "Active:",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "55/105/155/205/255 {{0}} magic damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+60% AP)",
-                                    "scaleId": "AP"
-                                }
-                            ]
-                        },
-                        "type": "magicDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "Stuns",
-                            "scaleHolders": []
-                        },
-                        "type": "status"
-                    }
-                ]
-            },
-            "maxRank": 5,
-            "cooldown": "1.5",
-            "cooldownByLevel": [
-                1.5,
-                1.5,
-                1.5,
-                1.5,
-                1.5
-            ],
-            "cost": "20 Mana",
-            "costByLevel": [
-                20,
-                20,
-                20,
-                20,
-                20
-            ],
-            "costType": " Mana"
-        },
-        "R": {
-            "id": "SejuaniR",
-            "name": "Glacial Prison",
-            "_rawTooltip": {
-                "fullTooltip": "Sejuani throws her True Ice bola, [[0]] and revealing the first enemy champion hit for 1 second and dealing [[1]].<br /><br />If the bola travels at least 25% of its range, it [[2]] and reveals for 1.5 seconds instead. It then also creates an ice storm that [[3]] surrounding enemies by 80% for 2 seconds. All affected enemies take [[4]].",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "Stunning",
-                            "scaleHolders": []
-                        },
-                        "type": "status"
-                    },
-                    {
-                        "text": {
-                            "text": "125/150/175 {{0}} magic damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+40% AP)",
-                                    "scaleId": "AP"
-                                }
-                            ]
-                        },
-                        "type": "magicDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "Stuns",
-                            "scaleHolders": []
-                        },
-                        "type": "status"
-                    },
-                    {
-                        "text": {
-                            "text": "Slows",
-                            "scaleHolders": []
-                        },
-                        "type": "status"
-                    },
-                    {
-                        "text": {
-                            "text": "200/300/400 {{0}} magic damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+80% AP)",
-                                    "scaleId": "AP"
-                                }
-                            ]
-                        },
-                        "type": "magicDamage"
-                    }
-                ]
-            },
-            "maxRank": 3,
-            "cooldown": "120/100/80",
-            "cooldownByLevel": [
-                120,
-                100,
-                80
-            ],
-            "cost": "100 Mana",
-            "costByLevel": [
-                100,
-                100,
-                100
-            ],
-            "costType": " Mana"
-        }
-    }
+    "ChangePatches": [
+        "9.19",
+        "9.22",
+        "10.1",
+        "10.3",
+        "10.14",
+        "10.22",
+        "11.5",
+        "11.10",
+        "11.19",
+        "12.8",
+        "12.10"
+    ],
+    "ChampionName": "Sejuani"
 }

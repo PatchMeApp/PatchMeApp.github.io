@@ -1,18 +1,253 @@
 {
-    "ChampionName": "Garen",
-    "ChangePatches": [
-        "9.20",
-        "9.21",
-        "9.24",
-        "9.24b",
-        "10.4",
-        "10.6",
-        "10.7",
-        "11.9",
-        "11.14",
-        "12.10",
-        "12.19"
-    ],
+    "stats": {
+        "hp": {
+            "base": 690,
+            "increment": 98
+        },
+        "mp": {
+            "base": 0,
+            "increment": 0
+        },
+        "armor": {
+            "base": 36,
+            "increment": 4.2
+        },
+        "spellBlock": {
+            "base": 32,
+            "increment": 1.55
+        },
+        "hpRegen": {
+            "base": 8,
+            "increment": 0.5
+        },
+        "mpRegen": {
+            "base": 0,
+            "increment": 0
+        },
+        "attackSpeed": {
+            "base": 0.625,
+            "increment": 0.0365
+        },
+        "ms": {
+            "base": 340,
+            "increment": 0
+        },
+        "attackDamage": {
+            "base": 66,
+            "increment": 4.5
+        },
+        "attackRange": {
+            "base": 175,
+            "increment": 0
+        }
+    },
+    "spells": {
+        "P": {
+            "cooldown": "",
+            "_rawTooltip": {
+                "fullTooltip": "Innate: Garen regenerates[ [[1]] every 5 seconds. ]<br>Garen loses Perseverance for [[0]] from epic monsters, enemy turrets, or enemy champions, or if he is hit by an enemy ability or affected by an enemy summoner spell, refreshing on subsequent damage or hits to Garen from them.",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "8 seconds if he takes damage",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "1.5% − 10.1% {{0}} of his maximum health",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(based on level)",
+                                    "scaleId": "level"
+                                }
+                            ]
+                        },
+                        "type": "Health"
+                    }
+                ]
+            },
+            "name": "Perseverance"
+        },
+        "Q": {
+            "_rawTooltip": {
+                "fullTooltip": "Garen removes all [[0]] effects on him and gains [[1]] for 1/1.65/2.3/2.95 second(s).<br /><br />His next Attack [[2]] for 1.5 seconds and does [[3]].",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "Slowing",
+                            "scaleHolders": []
+                        },
+                        "type": "status"
+                    },
+                    {
+                        "text": {
+                            "text": "35% Move Speed",
+                            "scaleHolders": []
+                        },
+                        "type": "speed"
+                    },
+                    {
+                        "text": {
+                            "text": "Silences",
+                            "scaleHolders": []
+                        },
+                        "type": "status"
+                    },
+                    {
+                        "text": {
+                            "text": "30/60/90/120/150 {{0}} physical damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+150% AD)",
+                                    "scaleId": "AD"
+                                }
+                            ]
+                        },
+                        "type": "physicalDamage"
+                    }
+                ]
+            },
+            "cooldown": "8",
+            "cost": "No Cost",
+            "name": "Decisive Strike"
+        },
+        "W": {
+            "_rawTooltip": {
+                "fullTooltip": "[[0]] Killing units permanently grants [[1]] and [[2]], up to a max of 30. At max stacks, Garen gains [[3]] and [[4]].<br /><br />[[5]] Garen steels his courage for 2/2.75/3.5/4.25 seconds, reducing incoming damage by 30%. He also gains [[6]] and 60% Tenacity for 0.75 seconds.",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "Passive:",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "0.2 Armor",
+                            "scaleHolders": []
+                        },
+                        "type": "scaleArmor"
+                    },
+                    {
+                        "text": {
+                            "text": "0.2 Magic Resist",
+                            "scaleHolders": []
+                        },
+                        "type": "scaleMR"
+                    },
+                    {
+                        "text": {
+                            "text": "10% Bonus Armor Armor",
+                            "scaleHolders": []
+                        },
+                        "type": "scaleArmor"
+                    },
+                    {
+                        "text": {
+                            "text": "10% Bonus MR Magic Resist",
+                            "scaleHolders": []
+                        },
+                        "type": "scaleMR"
+                    },
+                    {
+                        "text": {
+                            "text": "Active:",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "65/85/105/125/145 {{0}} Shield",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+18% Bonus Health)",
+                                    "scaleId": "Health"
+                                }
+                            ]
+                        },
+                        "type": "shield"
+                    }
+                ]
+            },
+            "cooldown": "23/21/19/17/15",
+            "cost": "No Cost",
+            "name": "Courage"
+        },
+        "E": {
+            "_rawTooltip": {
+                "fullTooltip": "Garen rapidly spins his sword for 3 seconds, dealing [[0]]  over the duration. The nearest enemy takes [[1]] per strike instead.<br /><br />Champions hit by 6 strikes lose [[2]] for 6 seconds.",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "4/8/12/16/20 {{0}}) {{1}} physical damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+0 - 8.2 (based on champion level)",
+                                    "scaleId": "level"
+                                },
+                                {
+                                    "scale": "(+32/34/36/38/40% AD)",
+                                    "scaleId": "AD"
+                                }
+                            ]
+                        },
+                        "type": "physicalDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "4/8/12/16/20 {{0}}) {{1}} * {{2}} physical damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+0 - 8.2 (based on champion level)",
+                                    "scaleId": "level"
+                                },
+                                {
+                                    "scale": "(+32/34/36/38/40% AD)",
+                                    "scaleId": "AD"
+                                },
+                                {
+                                    "scale": "(1 + 0.25)",
+                                    "scaleId": "0.25"
+                                }
+                            ]
+                        },
+                        "type": "physicalDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "25% Armor",
+                            "scaleHolders": []
+                        },
+                        "type": "scaleArmor"
+                    }
+                ]
+            },
+            "cooldown": "9",
+            "cost": "No Cost",
+            "name": "Judgment"
+        },
+        "R": {
+            "_rawTooltip": {
+                "fullTooltip": "Garen calls upon the might of Demacia to slay his enemy, dealing [[0]].",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "150/300 plus 25/30/35% missing Health true damage",
+                            "scaleHolders": []
+                        },
+                        "type": "trueDamage"
+                    }
+                ]
+            },
+            "cooldown": "120/100/80",
+            "cost": "No Cost",
+            "name": "Demacian Justice"
+        }
+    },
     "Changes": {
         "9.20": {
             "B": {
@@ -547,317 +782,18 @@
             "R": ""
         }
     },
-    "stats": {
-        "hp": {
-            "base": 690,
-            "increment": 98
-        },
-        "mp": {
-            "base": 0,
-            "increment": 0
-        },
-        "armor": {
-            "base": 36,
-            "increment": 4.2
-        },
-        "spellBlock": {
-            "base": 32,
-            "increment": 1.55
-        },
-        "hpRegen": {
-            "base": 8,
-            "increment": 0.5
-        },
-        "mpRegen": {
-            "base": 0,
-            "increment": 0
-        },
-        "attackSpeed": {
-            "base": 0.625,
-            "increment": 0.0365
-        },
-        "ms": {
-            "base": 340,
-            "increment": 0
-        },
-        "attackDamage": {
-            "base": 66,
-            "increment": 4.5
-        },
-        "attackRange": {
-            "base": 175,
-            "increment": 0
-        }
-    },
-    "spells": {
-        "P": {
-            "name": "Perseverance",
-            "cooldown": "",
-            "_rawTooltip": {
-                "fullTooltip": "Innate: Garen regenerates[ [[1]] every 5 seconds. ]<br>Garen loses Perseverance for [[0]] from epic monsters, enemy turrets, or enemy champions, or if he is hit by an enemy ability or affected by an enemy summoner spell, refreshing on subsequent damage or hits to Garen from them.",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "8 seconds if he takes damage",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "1.5% − 10.1% {{0}} of his maximum health",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(based on level)",
-                                    "scaleId": "level"
-                                }
-                            ]
-                        },
-                        "type": "Health"
-                    }
-                ]
-            }
-        },
-        "Q": {
-            "id": "GarenQ",
-            "name": "Decisive Strike",
-            "_rawTooltip": {
-                "fullTooltip": "Garen removes all [[0]] effects on him and gains [[1]] for 1/1.65/2.3/2.95 second(s).<br /><br />His next Attack [[2]] for 1.5 seconds and does [[3]].",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "Slowing",
-                            "scaleHolders": []
-                        },
-                        "type": "status"
-                    },
-                    {
-                        "text": {
-                            "text": "35% Move Speed",
-                            "scaleHolders": []
-                        },
-                        "type": "speed"
-                    },
-                    {
-                        "text": {
-                            "text": "Silences",
-                            "scaleHolders": []
-                        },
-                        "type": "status"
-                    },
-                    {
-                        "text": {
-                            "text": "30/60/90/120/150 {{0}} physical damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+150% AD)",
-                                    "scaleId": "AD"
-                                }
-                            ]
-                        },
-                        "type": "physicalDamage"
-                    }
-                ]
-            },
-            "maxRank": 5,
-            "cooldown": "8",
-            "cooldownByLevel": [
-                8,
-                8,
-                8,
-                8,
-                8
-            ],
-            "cost": "No Cost",
-            "costByLevel": [
-                0,
-                0,
-                0,
-                0,
-                0
-            ],
-            "costType": "No Cost"
-        },
-        "W": {
-            "id": "GarenW",
-            "name": "Courage",
-            "_rawTooltip": {
-                "fullTooltip": "[[0]] Killing units permanently grants [[1]] and [[2]], up to a max of 30. At max stacks, Garen gains [[3]] and [[4]].<br /><br />[[5]] Garen steels his courage for 2/2.75/3.5/4.25 seconds, reducing incoming damage by 30%. He also gains [[6]] and 60% Tenacity for 0.75 seconds.",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "Passive:",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "0.2 Armor",
-                            "scaleHolders": []
-                        },
-                        "type": "scaleArmor"
-                    },
-                    {
-                        "text": {
-                            "text": "0.2 Magic Resist",
-                            "scaleHolders": []
-                        },
-                        "type": "scaleMR"
-                    },
-                    {
-                        "text": {
-                            "text": "10% Bonus Armor Armor",
-                            "scaleHolders": []
-                        },
-                        "type": "scaleArmor"
-                    },
-                    {
-                        "text": {
-                            "text": "10% Bonus MR Magic Resist",
-                            "scaleHolders": []
-                        },
-                        "type": "scaleMR"
-                    },
-                    {
-                        "text": {
-                            "text": "Active:",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "65/85/105/125/145 {{0}} Shield",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+18% Bonus Health)",
-                                    "scaleId": "Health"
-                                }
-                            ]
-                        },
-                        "type": "shield"
-                    }
-                ]
-            },
-            "maxRank": 5,
-            "cooldown": "23/21/19/17/15",
-            "cooldownByLevel": [
-                23,
-                21,
-                19,
-                17,
-                15
-            ],
-            "cost": "No Cost",
-            "costByLevel": [
-                0,
-                0,
-                0,
-                0,
-                0
-            ],
-            "costType": "No Cost"
-        },
-        "E": {
-            "id": "GarenE",
-            "name": "Judgment",
-            "_rawTooltip": {
-                "fullTooltip": "Garen rapidly spins his sword for 3 seconds, dealing [[0]]  over the duration. The nearest enemy takes [[1]] per strike instead.<br /><br />Champions hit by 6 strikes lose [[2]] for 6 seconds.",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "4/8/12/16/20 {{0}}) {{1}} physical damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+0 - 8.2 (based on champion level)",
-                                    "scaleId": "level"
-                                },
-                                {
-                                    "scale": "(+32/34/36/38/40% AD)",
-                                    "scaleId": "AD"
-                                }
-                            ]
-                        },
-                        "type": "physicalDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "4/8/12/16/20 {{0}}) {{1}} * {{2}} physical damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+0 - 8.2 (based on champion level)",
-                                    "scaleId": "level"
-                                },
-                                {
-                                    "scale": "(+32/34/36/38/40% AD)",
-                                    "scaleId": "AD"
-                                },
-                                {
-                                    "scale": "(1 + 0.25)",
-                                    "scaleId": "0.25"
-                                }
-                            ]
-                        },
-                        "type": "physicalDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "25% Armor",
-                            "scaleHolders": []
-                        },
-                        "type": "scaleArmor"
-                    }
-                ]
-            },
-            "maxRank": 5,
-            "cooldown": "9",
-            "cooldownByLevel": [
-                9,
-                9,
-                9,
-                9,
-                9
-            ],
-            "cost": "No Cost",
-            "costByLevel": [
-                0,
-                0,
-                0,
-                0,
-                0
-            ],
-            "costType": "No Cost"
-        },
-        "R": {
-            "id": "GarenR",
-            "name": "Demacian Justice",
-            "_rawTooltip": {
-                "fullTooltip": "Garen calls upon the might of Demacia to slay his enemy, dealing [[0]].",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "150/300 plus 25/30/35% missing Health true damage",
-                            "scaleHolders": []
-                        },
-                        "type": "trueDamage"
-                    }
-                ]
-            },
-            "maxRank": 3,
-            "cooldown": "120/100/80",
-            "cooldownByLevel": [
-                120,
-                100,
-                80
-            ],
-            "cost": "No Cost",
-            "costByLevel": [
-                0,
-                0,
-                0
-            ],
-            "costType": "No Cost"
-        }
-    }
+    "ChangePatches": [
+        "9.20",
+        "9.21",
+        "9.24",
+        "9.24b",
+        "10.4",
+        "10.6",
+        "10.7",
+        "11.9",
+        "11.14",
+        "12.10",
+        "12.19"
+    ],
+    "ChampionName": "Garen"
 }

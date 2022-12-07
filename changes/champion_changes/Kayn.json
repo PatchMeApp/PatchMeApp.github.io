@@ -1,21 +1,305 @@
 {
-    "ChampionName": "Kayn",
-    "ChangePatches": [
-        "9.21",
-        "10.5",
-        "10.6",
-        "10.9",
-        "10.10",
-        "10.25",
-        "11.9",
-        "11.13",
-        "11.17",
-        "11.22",
-        "12.10",
-        "12.11",
-        "12.14",
-        "12.18"
-    ],
+    "stats": {
+        "hp": {
+            "base": 655,
+            "increment": 109
+        },
+        "mp": {
+            "base": 410,
+            "increment": 50
+        },
+        "armor": {
+            "base": 38,
+            "increment": 4.5
+        },
+        "spellBlock": {
+            "base": 32,
+            "increment": 2.05
+        },
+        "hpRegen": {
+            "base": 8,
+            "increment": 0.75
+        },
+        "mpRegen": {
+            "base": 11.5,
+            "increment": 0.95
+        },
+        "attackSpeed": {
+            "base": 0.669,
+            "increment": 0.027000000000000003
+        },
+        "ms": {
+            "base": 340,
+            "increment": 0
+        },
+        "attackDamage": {
+            "base": 68,
+            "increment": 3.3
+        },
+        "attackRange": {
+            "base": 175,
+            "increment": 0
+        }
+    },
+    "spells": {
+        "P": {
+            "cooldown": "",
+            "_rawTooltip": {
+                "fullTooltip": "Innate: Kayn has a secondary experience bar that tracks progress toward Darkin and Shadow Assassin forms. He gathers orbs from champion takedowns and each instance of damage [[0]] over time) against champions. Once he has earned enough orbs, he unlocks a form based on whether he earned more from Melee or Ranged champions (for Darkin and Shadow Assassin, respectively), with the other form unlocked later.<br>Kayn can return to the summoning platform to transform over 6 seconds, during which he is invulnerable, untargetable, and unable to act. Kayn cannot choose a form if he is unable to cast abilities. The transformation will permanently empower some of Kayn's abilities, and he gains a one-time Homeguard.<br>Shadow Assassin Bonus: If Kayn has been out of combat with enemy champions for over 8 seconds, or he casts Umbral Trespass, he deals [[1]] dealt against enemy champions as bonus magic damage, lasting for 3 seconds upon entering combat and also applying on the first instance of damage dealt. If this effect is ready, it will not go on cooldown by receiving damage.<br>Darkin Bonus: Rhaast heals for 25% − 35% (based on level) of the post-mitigation physical damage that he deals to enemy champions with his abilities.",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "(excluding damage",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "13-40% {{0}} of post-mitigation damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(based on level)",
+                                    "scaleId": "level"
+                                }
+                            ]
+                        },
+                        "type": ""
+                    }
+                ]
+            },
+            "name": "The Darkin Scythe"
+        },
+        "Q": {
+            "_rawTooltip": {
+                "fullTooltip": "Kayn dashes then spins his scythe, dealing [[0]] to enemies he passes through, then deals the damage again to nearby enemies.<br /><br />[[1]] Instead deal [[2]].",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "75/95/115/135/155 {{0}} physical damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+65% Bonus AD)",
+                                    "scaleId": "AD"
+                                }
+                            ]
+                        },
+                        "type": "physicalDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "Darkin Slayer:",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "65% AD plus 0.05% {{0}} max Health physical damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+3.5% per 100 Bonus AD)",
+                                    "scaleId": "AD"
+                                }
+                            ]
+                        },
+                        "type": "physicalDamage"
+                    }
+                ]
+            },
+            "cooldown": "7/6.5/6/5.5/5",
+            "cost": "50 Mana",
+            "name": "Reaping Slash"
+        },
+        "W": {
+            "_rawTooltip": {
+                "fullTooltip": "Kayn swipes his scythe upward, dealing [[0]] and [[1]] enemies hit by 90%, decaying over 1.5 seconds.<br /><br />[[2]] Kayn can move while using this Ability and increases its range.<br /><br />[[3]] Additionally [[4]] enemies hit for 1 second.",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "90/135/180/225/270 {{0}} physical damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+130% Bonus AD)",
+                                    "scaleId": "AD"
+                                }
+                            ]
+                        },
+                        "type": "physicalDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "Slowing",
+                            "scaleHolders": []
+                        },
+                        "type": "status"
+                    },
+                    {
+                        "text": {
+                            "text": "Shadow Assassin:",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "Darkin Slayer:",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "Knocks Up",
+                            "scaleHolders": []
+                        },
+                        "type": "status"
+                    }
+                ]
+            },
+            "cooldown": "13/12/11/10/9",
+            "cost": "60/65/70/75/80 Mana",
+            "name": "Blade's Reach"
+        },
+        "E": {
+            "_rawTooltip": {
+                "fullTooltip": "Kayn gains [[0]], becomes Ghosted, and can move through Terrain for 7/7.5/8/8.5/9 seconds. When he first enters terrain, he restores [[1]].<br /><br />Being [[2]] and spending more than 1.5 consecutive seconds outside of Terrain ends this Ability early.<br /><br />[[3]] Gain [[4]], [[5]] immunity, and reduce the Cooldown to 8 seconds.",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "40% Move Speed",
+                            "scaleHolders": []
+                        },
+                        "type": "speed"
+                    },
+                    {
+                        "text": {
+                            "text": "90/100/110/120/130 {{0}} Health",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+45% bonus AD)",
+                                    "scaleId": "AD"
+                                }
+                            ]
+                        },
+                        "type": "healing"
+                    },
+                    {
+                        "text": {
+                            "text": "Immobilized",
+                            "scaleHolders": []
+                        },
+                        "type": "status"
+                    },
+                    {
+                        "text": {
+                            "text": "Shadow Assassin:",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "80% Move Speed",
+                            "scaleHolders": []
+                        },
+                        "type": "speed"
+                    },
+                    {
+                        "text": {
+                            "text": "Slow",
+                            "scaleHolders": []
+                        },
+                        "type": "status"
+                    }
+                ]
+            },
+            "cooldown": "21/19/17/15/13",
+            "cost": "90 Mana",
+            "name": "Shadow Step"
+        },
+        "R": {
+            "_rawTooltip": {
+                "fullTooltip": "[[0]] Champions damaged by Kayn are marked for 3.15 seconds.<br /><br />Kayn infests a marked enemy, becoming Untargetable. After 2.5 seconds or after [[1]], Kayn bursts out, dealing [[2]] to the enemy.<br /><br />[[3]] Increases this Ability's range, the distance Kayn exits, and refreshes [[4]] Cooldown on exit.<br /><br />[[5]] Instead deals [[6]] and restores [[7]] (65% damage amount).",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "Passive:",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "Recasting",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "150/250/350 {{0}} physical damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+175% Bonus AD)",
+                                    "scaleId": "AD"
+                                }
+                            ]
+                        },
+                        "type": "physicalDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "Shadow Assassin:",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "The Darkin Scythe's",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "Darkin Slayer:",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "15% {{0}} max Health physical damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+13% per 100 Bonus AD)",
+                                    "scaleId": "AD"
+                                }
+                            ]
+                        },
+                        "type": "physicalDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "9.75% {{0}} Health",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+8.45% per 100 Bonus AD)",
+                                    "scaleId": "AD"
+                                }
+                            ]
+                        },
+                        "type": "healing"
+                    }
+                ]
+            },
+            "cooldown": "120/100/80",
+            "cost": "100 Mana",
+            "name": "Umbral Trespass"
+        }
+    },
     "Changes": {
         "9.21": {
             "B": "",
@@ -477,371 +761,58 @@
             "W": "",
             "E": "",
             "R": ""
+        },
+        "12.23": {
+            "B": "",
+            "P": {
+                "SpellName": "Passive - The Darkin Scythe",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Shadow Assassin Bonus Damage: ",
+                            "Before": "8-30% (based on level)",
+                            "Indicator": " ⇒ ",
+                            "After": "13-40% (based on level)"
+                        }
+                    }
+                ]
+            },
+            "Q": "",
+            "W": "",
+            "E": {
+                "SpellName": "E - Shadow Step",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Heal upon entering Terrain: ",
+                            "Before": "90/100/110/120/130 (+35% bonus AD)",
+                            "Indicator": " ⇒ ",
+                            "After": "90/100/110/120/130 (+45% bonus AD)"
+                        }
+                    }
+                ]
+            },
+            "R": ""
         }
     },
-    "stats": {
-        "hp": {
-            "base": 655,
-            "increment": 109
-        },
-        "mp": {
-            "base": 410,
-            "increment": 50
-        },
-        "armor": {
-            "base": 38,
-            "increment": 4.5
-        },
-        "spellBlock": {
-            "base": 32,
-            "increment": 2.05
-        },
-        "hpRegen": {
-            "base": 8,
-            "increment": 0.75
-        },
-        "mpRegen": {
-            "base": 11.5,
-            "increment": 0.95
-        },
-        "attackSpeed": {
-            "base": 0.669,
-            "increment": 0.027000000000000003
-        },
-        "ms": {
-            "base": 340,
-            "increment": 0
-        },
-        "attackDamage": {
-            "base": 68,
-            "increment": 3.3
-        },
-        "attackRange": {
-            "base": 175,
-            "increment": 0
-        }
-    },
-    "spells": {
-        "P": {
-            "name": "The Darkin Scythe",
-            "cooldown": "",
-            "_rawTooltip": {
-                "fullTooltip": "Innate: Kayn has a secondary experience bar that tracks progress toward Darkin and Shadow Assassin forms. He gathers orbs from champion takedowns and each instance of damage [[0]] over time) against champions. Once he has earned enough orbs, he unlocks a form based on whether he earned more from Melee or Ranged champions (for Darkin and Shadow Assassin, respectively), with the other form unlocked later.<br>Kayn can return to the summoning platform to transform over 6 seconds, during which he is invulnerable, untargetable, and unable to act. Kayn cannot choose a form if he is unable to cast abilities. The transformation will permanently empower some of Kayn's abilities, and he gains a one-time Homeguard.<br>Shadow Assassin Bonus: If Kayn has been out of combat with enemy champions for over 8 seconds, or he casts Umbral Trespass, he deals [[1]] dealt against enemy champions as bonus magic damage, lasting for 3 seconds upon entering combat and also applying on the first instance of damage dealt. If this effect is ready, it will not go on cooldown by receiving damage.<br>Darkin Bonus: Rhaast heals for 25% − 35% (based on level) of the post-mitigation physical damage that he deals to enemy champions with his abilities.",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "(excluding damage",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "8% − 30% {{0}} of post-mitigation damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(based on level)",
-                                    "scaleId": "level"
-                                }
-                            ]
-                        },
-                        "type": ""
-                    }
-                ]
-            }
-        },
-        "Q": {
-            "id": "KaynQ",
-            "name": "Reaping Slash",
-            "_rawTooltip": {
-                "fullTooltip": "Kayn dashes then spins his scythe, dealing [[0]] to enemies he passes through, then deals the damage again to nearby enemies.<br /><br />[[1]] Instead deal [[2]].",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "75/95/115/135/155 {{0}} physical damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+65% Bonus AD)",
-                                    "scaleId": "AD"
-                                }
-                            ]
-                        },
-                        "type": "physicalDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "Darkin Slayer:",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "65% AD plus 0.05% {{0}} max Health physical damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+3.5% per 100 Bonus AD)",
-                                    "scaleId": "AD"
-                                }
-                            ]
-                        },
-                        "type": "physicalDamage"
-                    }
-                ]
-            },
-            "maxRank": 5,
-            "cooldown": "7/6.5/6/5.5/5",
-            "cooldownByLevel": [
-                7,
-                6.5,
-                6,
-                5.5,
-                5
-            ],
-            "cost": "50 Mana",
-            "costByLevel": [
-                50,
-                50,
-                50,
-                50,
-                50
-            ],
-            "costType": " Mana"
-        },
-        "W": {
-            "id": "KaynW",
-            "name": "Blade's Reach",
-            "_rawTooltip": {
-                "fullTooltip": "Kayn swipes his scythe upward, dealing [[0]] and [[1]] enemies hit by 90%, decaying over 1.5 seconds.<br /><br />[[2]] Kayn can move while using this Ability and increases its range.<br /><br />[[3]] Additionally [[4]] enemies hit for 1 second.",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "90/135/180/225/270 {{0}} physical damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+130% Bonus AD)",
-                                    "scaleId": "AD"
-                                }
-                            ]
-                        },
-                        "type": "physicalDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "Slowing",
-                            "scaleHolders": []
-                        },
-                        "type": "status"
-                    },
-                    {
-                        "text": {
-                            "text": "Shadow Assassin:",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "Darkin Slayer:",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "Knocks Up",
-                            "scaleHolders": []
-                        },
-                        "type": "status"
-                    }
-                ]
-            },
-            "maxRank": 5,
-            "cooldown": "13/12/11/10/9",
-            "cooldownByLevel": [
-                13,
-                12,
-                11,
-                10,
-                9
-            ],
-            "cost": "60/65/70/75/80 Mana",
-            "costByLevel": [
-                60,
-                65,
-                70,
-                75,
-                80
-            ],
-            "costType": " Mana"
-        },
-        "E": {
-            "id": "KaynE",
-            "name": "Shadow Step",
-            "_rawTooltip": {
-                "fullTooltip": "Kayn gains [[0]], becomes Ghosted, and can move through Terrain for 7/7.5/8/8.5/9 seconds. When he first enters terrain, he restores [[1]].<br /><br />Being [[2]] and spending more than 1.5 consecutive seconds outside of Terrain ends this Ability early.<br /><br />[[3]] Gain [[4]], [[5]] immunity, and reduce the Cooldown to 8 seconds.",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "40% Move Speed",
-                            "scaleHolders": []
-                        },
-                        "type": "speed"
-                    },
-                    {
-                        "text": {
-                            "text": "90/100/110/120/130 {{0}} Health",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+35% Bonus AD)",
-                                    "scaleId": "AD"
-                                }
-                            ]
-                        },
-                        "type": "healing"
-                    },
-                    {
-                        "text": {
-                            "text": "Immobilized",
-                            "scaleHolders": []
-                        },
-                        "type": "status"
-                    },
-                    {
-                        "text": {
-                            "text": "Shadow Assassin:",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "80% Move Speed",
-                            "scaleHolders": []
-                        },
-                        "type": "speed"
-                    },
-                    {
-                        "text": {
-                            "text": "Slow",
-                            "scaleHolders": []
-                        },
-                        "type": "status"
-                    }
-                ]
-            },
-            "maxRank": 5,
-            "cooldown": "21/19/17/15/13",
-            "cooldownByLevel": [
-                21,
-                19,
-                17,
-                15,
-                13
-            ],
-            "cost": "90 Mana",
-            "costByLevel": [
-                90,
-                90,
-                90,
-                90,
-                90
-            ],
-            "costType": " Mana"
-        },
-        "R": {
-            "id": "KaynR",
-            "name": "Umbral Trespass",
-            "_rawTooltip": {
-                "fullTooltip": "[[0]] Champions damaged by Kayn are marked for 3.15 seconds.<br /><br />Kayn infests a marked enemy, becoming Untargetable. After 2.5 seconds or after [[1]], Kayn bursts out, dealing [[2]] to the enemy.<br /><br />[[3]] Increases this Ability's range, the distance Kayn exits, and refreshes [[4]] Cooldown on exit.<br /><br />[[5]] Instead deals [[6]] and restores [[7]] (65% damage amount).",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "Passive:",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "Recasting",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "150/250/350 {{0}} physical damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+175% Bonus AD)",
-                                    "scaleId": "AD"
-                                }
-                            ]
-                        },
-                        "type": "physicalDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "Shadow Assassin:",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "The Darkin Scythe's",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "Darkin Slayer:",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "15% {{0}} max Health physical damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+13% per 100 Bonus AD)",
-                                    "scaleId": "AD"
-                                }
-                            ]
-                        },
-                        "type": "physicalDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "9.75% {{0}} Health",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+8.45% per 100 Bonus AD)",
-                                    "scaleId": "AD"
-                                }
-                            ]
-                        },
-                        "type": "healing"
-                    }
-                ]
-            },
-            "maxRank": 3,
-            "cooldown": "120/100/80",
-            "cooldownByLevel": [
-                120,
-                100,
-                80
-            ],
-            "cost": "100 Mana",
-            "costByLevel": [
-                100,
-                100,
-                100
-            ],
-            "costType": " Mana"
-        }
-    }
+    "ChangePatches": [
+        "9.21",
+        "10.5",
+        "10.6",
+        "10.9",
+        "10.10",
+        "10.25",
+        "11.9",
+        "11.13",
+        "11.17",
+        "11.22",
+        "12.10",
+        "12.11",
+        "12.14",
+        "12.18",
+        "12.23"
+    ],
+    "ChampionName": "Kayn"
 }

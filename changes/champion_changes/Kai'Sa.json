@@ -1,21 +1,252 @@
 {
-    "ChampionName": "Kai'Sa",
-    "ChangePatches": [
-        "9.18",
-        "9.22",
-        "10.5",
-        "10.7",
-        "10.11",
-        "10.17",
-        "11.4",
-        "11.7",
-        "11.12",
-        "11.18",
-        "12.8",
-        "12.10",
-        "12.16",
-        "12.19"
-    ],
+    "stats": {
+        "hp": {
+            "base": 670,
+            "increment": 102
+        },
+        "mp": {
+            "base": 344.88,
+            "increment": 38
+        },
+        "armor": {
+            "base": 28,
+            "increment": 4.2
+        },
+        "spellBlock": {
+            "base": 30,
+            "increment": 1.3
+        },
+        "hpRegen": {
+            "base": 3.5,
+            "increment": 0.55
+        },
+        "mpRegen": {
+            "base": 8.2,
+            "increment": 0.45
+        },
+        "attackSpeed": {
+            "base": 0.644,
+            "increment": 0.018000000000000002
+        },
+        "ms": {
+            "base": 335,
+            "increment": 0
+        },
+        "attackDamage": {
+            "base": 59,
+            "increment": 2
+        },
+        "attackRange": {
+            "base": 525,
+            "increment": 0
+        }
+    },
+    "spells": {
+        "P": {
+            "cooldown": "",
+            "_rawTooltip": {
+                "fullTooltip": "Innate - Living Weapon: Upon gaining a set amount of permanent stats from items and stat growth, Kai'Sa can evolve the related basic ability after being in cast time for 2 seconds. The upgrade is lost if the stat requirement is no longer met.<br>Innate - Plasma: Kai'Sa's basic attacks on-hit and Void Seeker apply stacks of Plasma to enemies that lasts 4 seconds, which refreshes on subsequent stacks and stacks up to 4 times. Her and nearby allies' immobilizing effects and polymorphs against enemy champions will also apply Plasma.<br>Innate - Caustic Wounds: Plasma stacks applied by Kai'Sa's basic attacks or Void Seeker deal [[0]]. Her next stack against a target with 4 Plasma will instead consume them to deal an additional [[1]] bonus magic damage, capped at 400 against monsters.",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "4 − 16 {{0}} {{1}} per Plasma stack before application) {{2}} AP) bonus magic damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(based on level)",
+                                    "scaleId": "level"
+                                },
+                                {
+                                    "scale": "(+ 1 − 8 (based on level)",
+                                    "scaleId": "level"
+                                },
+                                {
+                                    "scale": "(+ 15% − 25% (based on Plasma stacks before application)",
+                                    "scaleId": "application"
+                                }
+                            ]
+                        },
+                        "type": "magicDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "15% {{0}} of the target's missing health",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+ 5% per 100 AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "Health"
+                    }
+                ]
+            },
+            "name": "Second Skin"
+        },
+        "Q": {
+            "_rawTooltip": {
+                "fullTooltip": "Kai'Sa launches 6 missiles that split among nearby enemies, each dealing [[0]]. Additional hits on champions or monsters deal 25% damage.<br /><br />[[1]]: Kai'Sa instead fires 12 missiles.",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "40/55/70/85/100 {{0}} {{1}} physical damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+30% AP)",
+                                    "scaleId": "AP"
+                                },
+                                {
+                                    "scale": "(+50% Bonus AD)",
+                                    "scaleId": "AD"
+                                }
+                            ]
+                        },
+                        "type": "physicalDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "Evolved",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    }
+                ]
+            },
+            "cooldown": "10/9/8/7/6",
+            "cost": "55 Mana",
+            "name": "Icathian Rain"
+        },
+        "W": {
+            "_rawTooltip": {
+                "fullTooltip": "Kai'Sa fires a void blast that deals [[0]], applies 2 stacks of [[1]], and grants [[2]] of the first enemy hit for 4 seconds.<br /><br />[[3]]: Kai'Sa instead applies 3 stacks of [[4]] and hitting a champion reduces the Cooldown by 77%.",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "30/55/80/105/130 {{0}} {{1}} magic damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+45% AP)",
+                                    "scaleId": "AP"
+                                },
+                                {
+                                    "scale": "(+130% AD)",
+                                    "scaleId": "AD"
+                                }
+                            ]
+                        },
+                        "type": "magicDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "Plasma",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "True Sight",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "Evolved",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "Plasma",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    }
+                ]
+            },
+            "cooldown": "22/20/18/16/14",
+            "cost": "55/60/65/70/75 Mana",
+            "name": "Void Seeker"
+        },
+        "E": {
+            "_rawTooltip": {
+                "fullTooltip": "Kai'Sa supercharges her void energy, gaining [[0]] and becoming Ghosted while charging, then gaining [[1]] for 4 seconds.<br /><br />Attacks reduce this Ability's Cooldown by 0.5 seconds.<br /><br />[[2]]: Kai'Sa also becomes [[3]] for 0.5 seconds.",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "55/60/65/70/75% {{0}} Move Speed",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+100% Bonus AS)",
+                                    "scaleId": "AS"
+                                }
+                            ]
+                        },
+                        "type": "speed"
+                    },
+                    {
+                        "text": {
+                            "text": "40/50/60/70/80% Attack Speed",
+                            "scaleHolders": []
+                        },
+                        "type": "attackSpeed"
+                    },
+                    {
+                        "text": {
+                            "text": "Evolved",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "Invisible",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    }
+                ]
+            },
+            "cooldown": "16/14.5/13/11.5/10",
+            "cost": "30 Mana",
+            "name": "Supercharge"
+        },
+        "R": {
+            "_rawTooltip": {
+                "fullTooltip": "Kai'Sa warps near an enemy champion affected by [[0]] and gains [[1]] for 2 seconds.",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "Plasma",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "70/90/110 {{0}} {{1}} Shield",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+90/135/180% AD)",
+                                    "scaleId": "AD"
+                                },
+                                {
+                                    "scale": "(+120% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "shield"
+                    }
+                ]
+            },
+            "cooldown": "130/100/70",
+            "cost": "100 Mana",
+            "name": "Killer Instinct"
+        }
+    },
     "Changes": {
         "9.18": {
             "B": "",
@@ -488,316 +719,21 @@
             "R": ""
         }
     },
-    "stats": {
-        "hp": {
-            "base": 670,
-            "increment": 102
-        },
-        "mp": {
-            "base": 344.88,
-            "increment": 38
-        },
-        "armor": {
-            "base": 28,
-            "increment": 4.2
-        },
-        "spellBlock": {
-            "base": 30,
-            "increment": 1.3
-        },
-        "hpRegen": {
-            "base": 3.5,
-            "increment": 0.55
-        },
-        "mpRegen": {
-            "base": 8.2,
-            "increment": 0.45
-        },
-        "attackSpeed": {
-            "base": 0.644,
-            "increment": 0.018000000000000002
-        },
-        "ms": {
-            "base": 335,
-            "increment": 0
-        },
-        "attackDamage": {
-            "base": 59,
-            "increment": 2
-        },
-        "attackRange": {
-            "base": 525,
-            "increment": 0
-        }
-    },
-    "spells": {
-        "P": {
-            "name": "Second Skin",
-            "cooldown": "",
-            "_rawTooltip": {
-                "fullTooltip": "Innate - Living Weapon: Upon gaining a set amount of permanent stats from items and stat growth, Kai'Sa can evolve the related basic ability after being in cast time for 2 seconds. The upgrade is lost if the stat requirement is no longer met.<br>Innate - Plasma: Kai'Sa's basic attacks on-hit and Void Seeker apply stacks of Plasma to enemies that lasts 4 seconds, which refreshes on subsequent stacks and stacks up to 4 times. Her and nearby allies' immobilizing effects and polymorphs against enemy champions will also apply Plasma.<br>Innate - Caustic Wounds: Plasma stacks applied by Kai'Sa's basic attacks or Void Seeker deal [[0]]. Her next stack against a target with 4 Plasma will instead consume them to deal an additional [[1]] bonus magic damage, capped at 400 against monsters.",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "4 − 16 {{0}} {{1}} per Plasma stack before application) {{2}} AP) bonus magic damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(based on level)",
-                                    "scaleId": "level"
-                                },
-                                {
-                                    "scale": "(+ 1 − 8 (based on level)",
-                                    "scaleId": "level"
-                                },
-                                {
-                                    "scale": "(+ 15% − 25% (based on Plasma stacks before application)",
-                                    "scaleId": "application"
-                                }
-                            ]
-                        },
-                        "type": "magicDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "15% {{0}} of the target's missing health",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+ 5% per 100 AP)",
-                                    "scaleId": "AP"
-                                }
-                            ]
-                        },
-                        "type": "Health"
-                    }
-                ]
-            }
-        },
-        "Q": {
-            "id": "KaisaQ",
-            "name": "Icathian Rain",
-            "_rawTooltip": {
-                "fullTooltip": "Kai'Sa launches 6 missiles that split among nearby enemies, each dealing [[0]]. Additional hits on champions or monsters deal 25% damage.<br /><br />[[1]]: Kai'Sa instead fires 12 missiles.",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "40/55/70/85/100 {{0}} {{1}} physical damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+30% AP)",
-                                    "scaleId": "AP"
-                                },
-                                {
-                                    "scale": "(+50% Bonus AD)",
-                                    "scaleId": "AD"
-                                }
-                            ]
-                        },
-                        "type": "physicalDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "Evolved",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    }
-                ]
-            },
-            "maxRank": 5,
-            "cooldown": "10/9/8/7/6",
-            "cooldownByLevel": [
-                10,
-                9,
-                8,
-                7,
-                6
-            ],
-            "cost": "55 Mana",
-            "costByLevel": [
-                55,
-                55,
-                55,
-                55,
-                55
-            ],
-            "costType": " Mana"
-        },
-        "W": {
-            "id": "KaisaW",
-            "name": "Void Seeker",
-            "_rawTooltip": {
-                "fullTooltip": "Kai'Sa fires a void blast that deals [[0]], applies 2 stacks of [[1]], and grants [[2]] of the first enemy hit for 4 seconds.<br /><br />[[3]]: Kai'Sa instead applies 3 stacks of [[4]] and hitting a champion reduces the Cooldown by 77%.",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "30/55/80/105/130 {{0}} {{1}} magic damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+45% AP)",
-                                    "scaleId": "AP"
-                                },
-                                {
-                                    "scale": "(+130% AD)",
-                                    "scaleId": "AD"
-                                }
-                            ]
-                        },
-                        "type": "magicDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "Plasma",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "True Sight",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "Evolved",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "Plasma",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    }
-                ]
-            },
-            "maxRank": 5,
-            "cooldown": "22/20/18/16/14",
-            "cooldownByLevel": [
-                22,
-                20,
-                18,
-                16,
-                14
-            ],
-            "cost": "55/60/65/70/75 Mana",
-            "costByLevel": [
-                55,
-                60,
-                65,
-                70,
-                75
-            ],
-            "costType": " Mana"
-        },
-        "E": {
-            "id": "KaisaE",
-            "name": "Supercharge",
-            "_rawTooltip": {
-                "fullTooltip": "Kai'Sa supercharges her void energy, gaining [[0]] and becoming Ghosted while charging, then gaining [[1]] for 4 seconds.<br /><br />Attacks reduce this Ability's Cooldown by 0.5 seconds.<br /><br />[[2]]: Kai'Sa also becomes [[3]] for 0.5 seconds.",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "55/60/65/70/75% {{0}} Move Speed",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+100% Bonus AS)",
-                                    "scaleId": "AS"
-                                }
-                            ]
-                        },
-                        "type": "speed"
-                    },
-                    {
-                        "text": {
-                            "text": "40/50/60/70/80% Attack Speed",
-                            "scaleHolders": []
-                        },
-                        "type": "attackSpeed"
-                    },
-                    {
-                        "text": {
-                            "text": "Evolved",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "Invisible",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    }
-                ]
-            },
-            "maxRank": 5,
-            "cooldown": "16/14.5/13/11.5/10",
-            "cooldownByLevel": [
-                16,
-                14.5,
-                13,
-                11.5,
-                10
-            ],
-            "cost": "30 Mana",
-            "costByLevel": [
-                30,
-                30,
-                30,
-                30,
-                30
-            ],
-            "costType": " Mana"
-        },
-        "R": {
-            "id": "KaisaR",
-            "name": "Killer Instinct",
-            "_rawTooltip": {
-                "fullTooltip": "Kai'Sa warps near an enemy champion affected by [[0]] and gains [[1]] for 2 seconds.",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "Plasma",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "70/90/110 {{0}} {{1}} Shield",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+90/135/180% AD)",
-                                    "scaleId": "AD"
-                                },
-                                {
-                                    "scale": "(+120% AP)",
-                                    "scaleId": "AP"
-                                }
-                            ]
-                        },
-                        "type": "shield"
-                    }
-                ]
-            },
-            "maxRank": 3,
-            "cooldown": "130/100/70",
-            "cooldownByLevel": [
-                130,
-                100,
-                70
-            ],
-            "cost": "100 Mana",
-            "costByLevel": [
-                100,
-                100,
-                100
-            ],
-            "costType": " Mana"
-        }
-    }
+    "ChangePatches": [
+        "9.18",
+        "9.22",
+        "10.5",
+        "10.7",
+        "10.11",
+        "10.17",
+        "11.4",
+        "11.7",
+        "11.12",
+        "11.18",
+        "12.8",
+        "12.10",
+        "12.16",
+        "12.19"
+    ],
+    "ChampionName": "Kai'Sa"
 }

@@ -1,15 +1,290 @@
 {
-    "ChampionName": "Diana",
-    "ChangePatches": [
-        "9.24",
-        "10.3",
-        "10.10",
-        "11.9",
-        "11.16",
-        "12.1",
-        "12.10",
-        "12.16"
-    ],
+    "stats": {
+        "hp": {
+            "base": 640,
+            "increment": 109
+        },
+        "mp": {
+            "base": 375,
+            "increment": 25
+        },
+        "armor": {
+            "base": 31,
+            "increment": 4.3
+        },
+        "spellBlock": {
+            "base": 32,
+            "increment": 2.05
+        },
+        "hpRegen": {
+            "base": 6.5,
+            "increment": 0.85
+        },
+        "mpRegen": {
+            "base": 8,
+            "increment": 0.8
+        },
+        "attackSpeed": {
+            "base": 0.625,
+            "increment": 0.0225
+        },
+        "ms": {
+            "base": 345,
+            "increment": 0
+        },
+        "attackDamage": {
+            "base": 57,
+            "increment": 3
+        },
+        "attackRange": {
+            "base": 150,
+            "increment": 0
+        }
+    },
+    "spells": {
+        "P": {
+            "cooldown": "",
+            "_rawTooltip": {
+                "fullTooltip": "Innate: Diana gains [[2]]. After casting an ability, this bonus is tripled to 45% − 120% (based on level) for 3 seconds.<br>Diana's basic attacks on-hit grant a stack for 3.5 seconds, stacking up to 2 times, and refreshing the duration upon receiving the second stack. At 2 stacks, Diana's next basic attack on-hit consumes the stacks to additionally cleave nearby enemies, dealing them [[0]]. Moonsilver Blade deals [[1]] against non- epic monsters.",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "20 − 250 {{0}} {{1}} magic damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(based on level)",
+                                    "scaleId": "level"
+                                },
+                                {
+                                    "scale": "(+ 50% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "magicDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "300% damage",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "15% − 40% {{0}} bonus attack speed",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(based on level)",
+                                    "scaleId": "level"
+                                }
+                            ]
+                        },
+                        "type": "attackSpeed"
+                    }
+                ]
+            },
+            "name": "Moonsilver Blade"
+        },
+        "Q": {
+            "_rawTooltip": {
+                "fullTooltip": "Diana unleashes an arc of lunar energy, dealing [[0]] and marking with [[1]] for 3 seconds. <br /><br />[[2]] reveals enemies that are not [[3]].",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "60/95/130/165/200 {{0}} magic damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+70% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "magicDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "Moonlight",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "Moonlight",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "stealthed",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    }
+                ]
+            },
+            "cooldown": "8/7.5/7/6.5/6",
+            "cost": "50 Mana",
+            "name": "Crescent Strike"
+        },
+        "W": {
+            "_rawTooltip": {
+                "fullTooltip": "Diana creates three orbiting spheres for 5 seconds that explode on contact, each dealing [[0]], up to a max of [[1]].<br /><br />Diana also gains [[2]] for the same duration. When the last sphere detonates, she gains an additional [[3]] and refreshes the duration.",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "18/30/42/54/66 {{0}} magic damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+15% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "magicDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "54/90/126/162/198 {{0}} damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+45% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "magicDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "40/55/70/85/100 {{0}} {{1}} Shield",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+25% AP)",
+                                    "scaleId": "AP"
+                                },
+                                {
+                                    "scale": "(+9% Bonus Health)",
+                                    "scaleId": "Health"
+                                }
+                            ]
+                        },
+                        "type": "shield"
+                    },
+                    {
+                        "text": {
+                            "text": "40/55/70/85/100 {{0}} {{1}} Shield",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+25% AP)",
+                                    "scaleId": "AP"
+                                },
+                                {
+                                    "scale": "(+9% Bonus Health)",
+                                    "scaleId": "Health"
+                                }
+                            ]
+                        },
+                        "type": "shield"
+                    }
+                ]
+            },
+            "cooldown": "15/13.5/12/10.5/9",
+            "cost": "40/45/50/55/60 Mana",
+            "name": "Pale Cascade"
+        },
+        "E": {
+            "_rawTooltip": {
+                "fullTooltip": "Diana becomes as the vengeful moon, dashing to an enemy and dealing [[0]]. If the target is afflicted with [[1]], this Ability's Cooldown is refreshed.",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "50/70/90/110/130 {{0}} magic damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+50% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "magicDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "Moonlight",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    }
+                ]
+            },
+            "cooldown": "22/20/18/16/14",
+            "cost": "40/45/50/55/60 Mana",
+            "name": "Lunar Rush"
+        },
+        "R": {
+            "_rawTooltip": {
+                "fullTooltip": "Diana [[0]], [[1]] by 40/50%, and reveals nearby enemies for 2 seconds.<br /><br />If Diana hits at least one enemy champion, she calls to the moon, dealing [[2]] plus [[3]] for each champion pulled beyond the first, up to a max of an additional [[4]].",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "Pulls In",
+                            "scaleHolders": []
+                        },
+                        "type": "status"
+                    },
+                    {
+                        "text": {
+                            "text": "Slows",
+                            "scaleHolders": []
+                        },
+                        "type": "status"
+                    },
+                    {
+                        "text": {
+                            "text": "200/300/400 {{0}} magic damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+60% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "magicDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "35/60/85 {{0}}",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+15% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "magicDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "175/300/425 {{0}} damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+75% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "magicDamage"
+                    }
+                ]
+            },
+            "cooldown": "100/90/80",
+            "cost": "100 Mana",
+            "name": "Moonfall"
+        }
+    },
     "Changes": {
         "9.24": {
             "B": {
@@ -515,354 +790,15 @@
             "R": ""
         }
     },
-    "stats": {
-        "hp": {
-            "base": 640,
-            "increment": 109
-        },
-        "mp": {
-            "base": 375,
-            "increment": 25
-        },
-        "armor": {
-            "base": 31,
-            "increment": 4.3
-        },
-        "spellBlock": {
-            "base": 32,
-            "increment": 2.05
-        },
-        "hpRegen": {
-            "base": 6.5,
-            "increment": 0.85
-        },
-        "mpRegen": {
-            "base": 8,
-            "increment": 0.8
-        },
-        "attackSpeed": {
-            "base": 0.625,
-            "increment": 0.0225
-        },
-        "ms": {
-            "base": 345,
-            "increment": 0
-        },
-        "attackDamage": {
-            "base": 57,
-            "increment": 3
-        },
-        "attackRange": {
-            "base": 150,
-            "increment": 0
-        }
-    },
-    "spells": {
-        "P": {
-            "name": "Moonsilver Blade",
-            "cooldown": "",
-            "_rawTooltip": {
-                "fullTooltip": "Innate: Diana gains [[2]]. After casting an ability, this bonus is tripled to 45% − 120% (based on level) for 3 seconds.<br>Diana's basic attacks on-hit grant a stack for 3.5 seconds, stacking up to 2 times, and refreshing the duration upon receiving the second stack. At 2 stacks, Diana's next basic attack on-hit consumes the stacks to additionally cleave nearby enemies, dealing them [[0]]. Moonsilver Blade deals [[1]] against non- epic monsters.",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "20 − 250 {{0}} {{1}} magic damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(based on level)",
-                                    "scaleId": "level"
-                                },
-                                {
-                                    "scale": "(+ 50% AP)",
-                                    "scaleId": "AP"
-                                }
-                            ]
-                        },
-                        "type": "magicDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "300% damage",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "15% − 40% {{0}} bonus attack speed",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(based on level)",
-                                    "scaleId": "level"
-                                }
-                            ]
-                        },
-                        "type": "attackSpeed"
-                    }
-                ]
-            }
-        },
-        "Q": {
-            "id": "DianaQ",
-            "name": "Crescent Strike",
-            "_rawTooltip": {
-                "fullTooltip": "Diana unleashes an arc of lunar energy, dealing [[0]] and marking with [[1]] for 3 seconds. <br /><br />[[2]] reveals enemies that are not [[3]].",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "60/95/130/165/200 {{0}} magic damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+70% AP)",
-                                    "scaleId": "AP"
-                                }
-                            ]
-                        },
-                        "type": "magicDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "Moonlight",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "Moonlight",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "stealthed",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    }
-                ]
-            },
-            "maxRank": 5,
-            "cooldown": "8/7.5/7/6.5/6",
-            "cooldownByLevel": [
-                8,
-                7.5,
-                7,
-                6.5,
-                6
-            ],
-            "cost": "50 Mana",
-            "costByLevel": [
-                50,
-                50,
-                50,
-                50,
-                50
-            ],
-            "costType": " Mana"
-        },
-        "W": {
-            "id": "DianaOrbs",
-            "name": "Pale Cascade",
-            "_rawTooltip": {
-                "fullTooltip": "Diana creates three orbiting spheres for 5 seconds that explode on contact, each dealing [[0]], up to a max of [[1]].<br /><br />Diana also gains [[2]] for the same duration. When the last sphere detonates, she gains an additional [[3]] and refreshes the duration.",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "18/30/42/54/66 {{0}} magic damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+15% AP)",
-                                    "scaleId": "AP"
-                                }
-                            ]
-                        },
-                        "type": "magicDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "54/90/126/162/198 {{0}} damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+45% AP)",
-                                    "scaleId": "AP"
-                                }
-                            ]
-                        },
-                        "type": "magicDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "40/55/70/85/100 {{0}} {{1}} Shield",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+25% AP)",
-                                    "scaleId": "AP"
-                                },
-                                {
-                                    "scale": "(+9% Bonus Health)",
-                                    "scaleId": "Health"
-                                }
-                            ]
-                        },
-                        "type": "shield"
-                    },
-                    {
-                        "text": {
-                            "text": "40/55/70/85/100 {{0}} {{1}} Shield",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+25% AP)",
-                                    "scaleId": "AP"
-                                },
-                                {
-                                    "scale": "(+9% Bonus Health)",
-                                    "scaleId": "Health"
-                                }
-                            ]
-                        },
-                        "type": "shield"
-                    }
-                ]
-            },
-            "maxRank": 5,
-            "cooldown": "15/13.5/12/10.5/9",
-            "cooldownByLevel": [
-                15,
-                13.5,
-                12,
-                10.5,
-                9
-            ],
-            "cost": "40/45/50/55/60 Mana",
-            "costByLevel": [
-                40,
-                45,
-                50,
-                55,
-                60
-            ],
-            "costType": " Mana"
-        },
-        "E": {
-            "id": "DianaTeleport",
-            "name": "Lunar Rush",
-            "_rawTooltip": {
-                "fullTooltip": "Diana becomes as the vengeful moon, dashing to an enemy and dealing [[0]]. If the target is afflicted with [[1]], this Ability's Cooldown is refreshed.",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "50/70/90/110/130 {{0}} magic damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+50% AP)",
-                                    "scaleId": "AP"
-                                }
-                            ]
-                        },
-                        "type": "magicDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "Moonlight",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    }
-                ]
-            },
-            "maxRank": 5,
-            "cooldown": "22/20/18/16/14",
-            "cooldownByLevel": [
-                22,
-                20,
-                18,
-                16,
-                14
-            ],
-            "cost": "40/45/50/55/60 Mana",
-            "costByLevel": [
-                40,
-                45,
-                50,
-                55,
-                60
-            ],
-            "costType": " Mana"
-        },
-        "R": {
-            "id": "DianaR",
-            "name": "Moonfall",
-            "_rawTooltip": {
-                "fullTooltip": "Diana [[0]], [[1]] by 40/50%, and reveals nearby enemies for 2 seconds.<br /><br />If Diana hits at least one enemy champion, she calls to the moon, dealing [[2]] plus [[3]] for each champion pulled beyond the first, up to a max of an additional [[4]].",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "Pulls In",
-                            "scaleHolders": []
-                        },
-                        "type": "status"
-                    },
-                    {
-                        "text": {
-                            "text": "Slows",
-                            "scaleHolders": []
-                        },
-                        "type": "status"
-                    },
-                    {
-                        "text": {
-                            "text": "200/300/400 {{0}} magic damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+60% AP)",
-                                    "scaleId": "AP"
-                                }
-                            ]
-                        },
-                        "type": "magicDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "35/60/85 {{0}}",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+15% AP)",
-                                    "scaleId": "AP"
-                                }
-                            ]
-                        },
-                        "type": "magicDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "175/300/425 {{0}} damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+75% AP)",
-                                    "scaleId": "AP"
-                                }
-                            ]
-                        },
-                        "type": "magicDamage"
-                    }
-                ]
-            },
-            "maxRank": 3,
-            "cooldown": "100/90/80",
-            "cooldownByLevel": [
-                100,
-                90,
-                80
-            ],
-            "cost": "100 Mana",
-            "costByLevel": [
-                100,
-                100,
-                100
-            ],
-            "costType": " Mana"
-        }
-    }
+    "ChangePatches": [
+        "9.24",
+        "10.3",
+        "10.10",
+        "11.9",
+        "11.16",
+        "12.1",
+        "12.10",
+        "12.16"
+    ],
+    "ChampionName": "Diana"
 }

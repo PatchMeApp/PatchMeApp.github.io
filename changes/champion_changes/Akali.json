@@ -1,23 +1,252 @@
 {
-    "ChampionName": "Akali",
-    "ChangePatches": [
-        "9.18",
-        "9.19",
-        "9.24",
-        "10.3",
-        "10.7",
-        "10.12",
-        "10.16",
-        "10.19",
-        "10.23",
-        "11.2",
-        "11.6",
-        "11.14",
-        "11.19",
-        "11.22",
-        "12.10",
-        "12.15"
-    ],
+    "stats": {
+        "hp": {
+            "base": 570,
+            "increment": 119
+        },
+        "mp": {
+            "base": 200,
+            "increment": 0
+        },
+        "armor": {
+            "base": 23,
+            "increment": 4.7
+        },
+        "spellBlock": {
+            "base": 37,
+            "increment": 2.05
+        },
+        "hpRegen": {
+            "base": 9,
+            "increment": 0.9
+        },
+        "mpRegen": {
+            "base": 50,
+            "increment": 0
+        },
+        "attackSpeed": {
+            "base": 0.625,
+            "increment": 0.032
+        },
+        "ms": {
+            "base": 345,
+            "increment": 0
+        },
+        "attackDamage": {
+            "base": 62,
+            "increment": 3.3
+        },
+        "attackRange": {
+            "base": 125,
+            "increment": 0
+        }
+    },
+    "spells": {
+        "P": {
+            "cooldown": "",
+            "_rawTooltip": {
+                "fullTooltip": "Innate: Akali's damaging abilities against enemy champions will mark a ring around them for 4 seconds, granting her [[1]] for 2 seconds while moving away from them. Subsequent damaging abilities against enemy champions while a ring is active will only refresh its duration.<br>If Akali leaves the ring within its duration, she regains the bonus movement speed while moving towards enemy champions for 2 seconds and gains Swinging Kama for 4 seconds, during which she cannot create another ring.<br>Swinging Kama: Akali's next basic attack's range is doubled and deals [[0]].",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "35 − 182 {{0}} {{1}} {{2}} bonus magic damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(based on level)",
+                                    "scaleId": "level"
+                                },
+                                {
+                                    "scale": "(+ 60% bonus AD)",
+                                    "scaleId": "AD"
+                                },
+                                {
+                                    "scale": "(+ 55% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "magicDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "30 / 40 / 50 / 60% {{0}} bonus movement speed",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(based on level)",
+                                    "scaleId": "level"
+                                }
+                            ]
+                        },
+                        "type": "speed"
+                    }
+                ]
+            },
+            "name": "Assassin's Mark"
+        },
+        "Q": {
+            "_rawTooltip": {
+                "fullTooltip": "Akali slings kunai in an arc, dealing [[0]] and [[1]] enemies at the tip by 50% for 0.5 seconds.",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "30/55/80/105/130 {{0}} {{1}} magic damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+65% AD)",
+                                    "scaleId": "AD"
+                                },
+                                {
+                                    "scale": "(+60% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "magicDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "Slowing",
+                            "scaleHolders": []
+                        },
+                        "type": "status"
+                    }
+                ]
+            },
+            "cooldown": "1.5",
+            "cost": "130/115/100/85/70 Energy",
+            "name": "Five Point Strike"
+        },
+        "W": {
+            "_rawTooltip": {
+                "fullTooltip": "Akali drops a smoke bomb, unleashing a spreading cover of smoke lasting 5/5.5/6/6.5 seconds and granting herself [[0]] decaying over 2 seconds.<br /><br />Akali increases her max Energy by 100 while the shroud is active. <br /><br />While inside the smoke, Akali is [[1]].",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "30/35/40/45/50% Move Speed",
+                            "scaleHolders": []
+                        },
+                        "type": "speed"
+                    },
+                    {
+                        "text": {
+                            "text": "Invisible",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    }
+                ]
+            },
+            "cooldown": "20",
+            "cost": "Restores 100 Energy",
+            "name": "Twilight Shroud"
+        },
+        "E": {
+            "_rawTooltip": {
+                "fullTooltip": "Akali flips backwards as she throws a shuriken, dealing [[0]] and marking the first enemy or smoke cloud hit. Akali can [[1]] this once to dash to the marked target, dealing [[2]].",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "30/56.25/82.5/108.75/135 {{0}} {{1}} magic damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+25.5% AD)",
+                                    "scaleId": "AD"
+                                },
+                                {
+                                    "scale": "(+36% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "magicDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "Recast",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "70/131.25/192.5/253.75/315 {{0}} {{1}} magic damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+59.5% AD)",
+                                    "scaleId": "AD"
+                                },
+                                {
+                                    "scale": "(+84% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "magicDamage"
+                    }
+                ]
+            },
+            "cooldown": "16/14.5/13/11.5/10",
+            "cost": "30 Energy",
+            "name": "Shuriken Flip"
+        },
+        "R": {
+            "_rawTooltip": {
+                "fullTooltip": "Akali vaults over an enemy champion, dealing [[0]] to all enemies in her path. <br /><br />Akali can [[1]] after 2.5 seconds to execute a piercing thrust, dashing and dealing [[2]] to [[3]] based on missing health.",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "80/220/360 {{0}} {{1}} magic damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+50% Bonus AD)",
+                                    "scaleId": "AD"
+                                },
+                                {
+                                    "scale": "(+30% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "magicDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "Recast",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "60/130/200 {{0}}",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+30% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "magicDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "180/390/600 {{0}} magic damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+90% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "magicDamage"
+                    }
+                ]
+            },
+            "cooldown": "100/80/60",
+            "cost": "No Cost",
+            "name": "Perfect Execution"
+        }
+    },
     "Changes": {
         "9.18": {
             "B": "",
@@ -608,316 +837,23 @@
             "R": ""
         }
     },
-    "stats": {
-        "hp": {
-            "base": 570,
-            "increment": 119
-        },
-        "mp": {
-            "base": 200,
-            "increment": 0
-        },
-        "armor": {
-            "base": 23,
-            "increment": 4.7
-        },
-        "spellBlock": {
-            "base": 37,
-            "increment": 2.05
-        },
-        "hpRegen": {
-            "base": 9,
-            "increment": 0.9
-        },
-        "mpRegen": {
-            "base": 50,
-            "increment": 0
-        },
-        "attackSpeed": {
-            "base": 0.625,
-            "increment": 0.032
-        },
-        "ms": {
-            "base": 345,
-            "increment": 0
-        },
-        "attackDamage": {
-            "base": 62,
-            "increment": 3.3
-        },
-        "attackRange": {
-            "base": 125,
-            "increment": 0
-        }
-    },
-    "spells": {
-        "P": {
-            "name": "Assassin's Mark",
-            "cooldown": "",
-            "_rawTooltip": {
-                "fullTooltip": "Innate: Akali's damaging abilities against enemy champions will mark a ring around them for 4 seconds, granting her [[1]] for 2 seconds while moving away from them. Subsequent damaging abilities against enemy champions while a ring is active will only refresh its duration.<br>If Akali leaves the ring within its duration, she regains the bonus movement speed while moving towards enemy champions for 2 seconds and gains Swinging Kama for 4 seconds, during which she cannot create another ring.<br>Swinging Kama: Akali's next basic attack's range is doubled and deals [[0]].",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "35 − 182 {{0}} {{1}} {{2}} bonus magic damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(based on level)",
-                                    "scaleId": "level"
-                                },
-                                {
-                                    "scale": "(+ 60% bonus AD)",
-                                    "scaleId": "AD"
-                                },
-                                {
-                                    "scale": "(+ 55% AP)",
-                                    "scaleId": "AP"
-                                }
-                            ]
-                        },
-                        "type": "magicDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "30 / 40 / 50 / 60% {{0}} bonus movement speed",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(based on level)",
-                                    "scaleId": "level"
-                                }
-                            ]
-                        },
-                        "type": "speed"
-                    }
-                ]
-            }
-        },
-        "Q": {
-            "id": "AkaliQ",
-            "name": "Five Point Strike",
-            "_rawTooltip": {
-                "fullTooltip": "Akali slings kunai in an arc, dealing [[0]] and [[1]] enemies at the tip by 50% for 0.5 seconds.",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "30/55/80/105/130 {{0}} {{1}} magic damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+65% AD)",
-                                    "scaleId": "AD"
-                                },
-                                {
-                                    "scale": "(+60% AP)",
-                                    "scaleId": "AP"
-                                }
-                            ]
-                        },
-                        "type": "magicDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "Slowing",
-                            "scaleHolders": []
-                        },
-                        "type": "status"
-                    }
-                ]
-            },
-            "maxRank": 5,
-            "cooldown": "1.5",
-            "cooldownByLevel": [
-                1.5,
-                1.5,
-                1.5,
-                1.5,
-                1.5
-            ],
-            "cost": "130/115/100/85/70 Energy",
-            "costByLevel": [
-                130,
-                115,
-                100,
-                85,
-                70
-            ],
-            "costType": " Energy"
-        },
-        "W": {
-            "id": "AkaliW",
-            "name": "Twilight Shroud",
-            "_rawTooltip": {
-                "fullTooltip": "Akali drops a smoke bomb, unleashing a spreading cover of smoke lasting 5/5.5/6/6.5 seconds and granting herself [[0]] decaying over 2 seconds.<br /><br />Akali increases her max Energy by 100 while the shroud is active. <br /><br />While inside the smoke, Akali is [[1]].",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "30/35/40/45/50% Move Speed",
-                            "scaleHolders": []
-                        },
-                        "type": "speed"
-                    },
-                    {
-                        "text": {
-                            "text": "Invisible",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    }
-                ]
-            },
-            "maxRank": 5,
-            "cooldown": "20",
-            "cooldownByLevel": [
-                20,
-                20,
-                20,
-                20,
-                20
-            ],
-            "cost": "Restores 100 Energy",
-            "costByLevel": [
-                0,
-                0,
-                0,
-                0,
-                0
-            ],
-            "costType": " Energy"
-        },
-        "E": {
-            "id": "AkaliE",
-            "name": "Shuriken Flip",
-            "_rawTooltip": {
-                "fullTooltip": "Akali flips backwards as she throws a shuriken, dealing [[0]] and marking the first enemy or smoke cloud hit. Akali can [[1]] this once to dash to the marked target, dealing [[2]].",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "30/56.25/82.5/108.75/135 {{0}} {{1}} magic damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+25.5% AD)",
-                                    "scaleId": "AD"
-                                },
-                                {
-                                    "scale": "(+36% AP)",
-                                    "scaleId": "AP"
-                                }
-                            ]
-                        },
-                        "type": "magicDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "Recast",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "70/131.25/192.5/253.75/315 {{0}} {{1}} magic damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+59.5% AD)",
-                                    "scaleId": "AD"
-                                },
-                                {
-                                    "scale": "(+84% AP)",
-                                    "scaleId": "AP"
-                                }
-                            ]
-                        },
-                        "type": "magicDamage"
-                    }
-                ]
-            },
-            "maxRank": 5,
-            "cooldown": "16/14.5/13/11.5/10",
-            "cooldownByLevel": [
-                16,
-                14.5,
-                13,
-                11.5,
-                10
-            ],
-            "cost": "30 Energy",
-            "costByLevel": [
-                30,
-                30,
-                30,
-                30,
-                30
-            ],
-            "costType": " Energy"
-        },
-        "R": {
-            "id": "AkaliR",
-            "name": "Perfect Execution",
-            "_rawTooltip": {
-                "fullTooltip": "Akali vaults over an enemy champion, dealing [[0]] to all enemies in her path. <br /><br />Akali can [[1]] after 2.5 seconds to execute a piercing thrust, dashing and dealing [[2]] to [[3]] based on missing health.",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "80/220/360 {{0}} {{1}} magic damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+50% Bonus AD)",
-                                    "scaleId": "AD"
-                                },
-                                {
-                                    "scale": "(+30% AP)",
-                                    "scaleId": "AP"
-                                }
-                            ]
-                        },
-                        "type": "magicDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "Recast",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "60/130/200 {{0}}",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+30% AP)",
-                                    "scaleId": "AP"
-                                }
-                            ]
-                        },
-                        "type": "magicDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "180/390/600 {{0}} magic damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+90% AP)",
-                                    "scaleId": "AP"
-                                }
-                            ]
-                        },
-                        "type": "magicDamage"
-                    }
-                ]
-            },
-            "maxRank": 3,
-            "cooldown": "100/80/60",
-            "cooldownByLevel": [
-                100,
-                80,
-                60
-            ],
-            "cost": "No Cost",
-            "costByLevel": [
-                0,
-                0,
-                0
-            ],
-            "costType": "No Cost"
-        }
-    }
+    "ChangePatches": [
+        "9.18",
+        "9.19",
+        "9.24",
+        "10.3",
+        "10.7",
+        "10.12",
+        "10.16",
+        "10.19",
+        "10.23",
+        "11.2",
+        "11.6",
+        "11.14",
+        "11.19",
+        "11.22",
+        "12.10",
+        "12.15"
+    ],
+    "ChampionName": "Akali"
 }

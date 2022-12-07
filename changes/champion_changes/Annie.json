@@ -1,16 +1,213 @@
 {
-    "ChampionName": "Annie",
-    "ChangePatches": [
-        "9.18",
-        "9.19",
-        "10.10",
-        "10.22",
-        "10.25",
-        "11.8",
-        "11.15",
-        "12.10",
-        "12.12"
-    ],
+    "stats": {
+        "hp": {
+            "base": 594,
+            "increment": 102
+        },
+        "mp": {
+            "base": 418,
+            "increment": 25
+        },
+        "armor": {
+            "base": 19,
+            "increment": 5.2
+        },
+        "spellBlock": {
+            "base": 30,
+            "increment": 1.3
+        },
+        "hpRegen": {
+            "base": 5.5,
+            "increment": 0.55
+        },
+        "mpRegen": {
+            "base": 8,
+            "increment": 0.8
+        },
+        "attackSpeed": {
+            "base": 0.579,
+            "increment": 0.013600000000000001
+        },
+        "ms": {
+            "base": 335,
+            "increment": 0
+        },
+        "attackDamage": {
+            "base": 50,
+            "increment": 2.65
+        },
+        "attackRange": {
+            "base": 625,
+            "increment": 0
+        }
+    },
+    "spells": {
+        "P": {
+            "cooldown": "",
+            "_rawTooltip": {
+                "fullTooltip": "Innate - Pyromania: Annie generates a stack of Pyromania whenever she casts an ability, stacking up to 4 times, at which she gains Energized.<br>Energized: When Annie succeeds in her next cast damaging ability, she consumes all Pyromania stacks and stuns enemies hit for 1.25 / 1.5 / 1.75 (based on level) seconds.<br>Annie loses Energized and all Pyromania stacks upon death.",
+                "parseInfo": []
+            },
+            "name": "Pyromania"
+        },
+        "Q": {
+            "_rawTooltip": {
+                "fullTooltip": "Annie hurls a fireball, dealing [[0]]. If the target dies, Annie refunds the Mana cost and reduces the Cooldown by 50%.",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "80/115/150/185/220 {{0}} magic damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+80% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "magicDamage"
+                    }
+                ]
+            },
+            "cooldown": "4",
+            "cost": "60/65/70/75/80 Mana",
+            "name": "Disintegrate"
+        },
+        "W": {
+            "_rawTooltip": {
+                "fullTooltip": "Annie projects a wave of fire, dealing [[0]].",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "70/115/160/205/250 {{0}} magic damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+85% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "magicDamage"
+                    }
+                ]
+            },
+            "cooldown": "8",
+            "cost": "90/95/100/105/110 Mana",
+            "name": "Incinerate"
+        },
+        "E": {
+            "_rawTooltip": {
+                "fullTooltip": "Annie grants herself or an ally [[0]] for 3 seconds and [[1]] decaying over 1.5 seconds. While the shield holds, enemies who Attack it take [[2]].<br /><br />Tibbers always gains the effects of Molten Shield if summoned.",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "40/85/130/175/220 {{0}} Shield",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+35% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "shield"
+                    },
+                    {
+                        "text": {
+                            "text": "20% - 50% {{0}} Move Speed",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(based on champion level)",
+                                    "scaleId": "level"
+                                }
+                            ]
+                        },
+                        "type": "speed"
+                    },
+                    {
+                        "text": {
+                            "text": "20/30/40/50/60 {{0}} magic damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+20% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "magicDamage"
+                    }
+                ]
+            },
+            "cooldown": "14/13/12/11/10",
+            "cost": "40 Mana",
+            "name": "Molten Shield"
+        },
+        "R": {
+            "_rawTooltip": {
+                "fullTooltip": "Annie summons her bear Tibbers, dealing [[0]]. For the next 45 seconds, Tibbers burns nearby enemies for [[1]] and his Attacks deal [[2]]. Annie can [[3]] this ability to direct Tibbers.<br /><br />Tibbers becomes enraged when summoned, if Annie stuns an enemy champion, and if Annie dies. When enraged, Tibbers gains [[4]] and [[5]] decaying over 3 seconds.",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "150/275/400 {{0}} magic damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+75% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "magicDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "20/30/40 {{0}} magic damage per second",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+12% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "magicDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "50/75/100 {{0}} magic damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+15% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "magicDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "Recast",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "275% Attack Speed",
+                            "scaleHolders": []
+                        },
+                        "type": "attackSpeed"
+                    },
+                    {
+                        "text": {
+                            "text": "100% Move Speed",
+                            "scaleHolders": []
+                        },
+                        "type": "speed"
+                    }
+                ]
+            },
+            "cooldown": "120/100/80",
+            "cost": "100 Mana",
+            "name": "Summon: Tibbers"
+        }
+    },
     "Changes": {
         "9.18": {
             "B": "",
@@ -349,277 +546,16 @@
             }
         }
     },
-    "stats": {
-        "hp": {
-            "base": 594,
-            "increment": 102
-        },
-        "mp": {
-            "base": 418,
-            "increment": 25
-        },
-        "armor": {
-            "base": 19,
-            "increment": 5.2
-        },
-        "spellBlock": {
-            "base": 30,
-            "increment": 1.3
-        },
-        "hpRegen": {
-            "base": 5.5,
-            "increment": 0.55
-        },
-        "mpRegen": {
-            "base": 8,
-            "increment": 0.8
-        },
-        "attackSpeed": {
-            "base": 0.579,
-            "increment": 0.013600000000000001
-        },
-        "ms": {
-            "base": 335,
-            "increment": 0
-        },
-        "attackDamage": {
-            "base": 50,
-            "increment": 2.65
-        },
-        "attackRange": {
-            "base": 625,
-            "increment": 0
-        }
-    },
-    "spells": {
-        "P": {
-            "name": "Pyromania",
-            "cooldown": "",
-            "_rawTooltip": {
-                "fullTooltip": "Innate - Pyromania: Annie generates a stack of Pyromania whenever she casts an ability, stacking up to 4 times, at which she gains Energized.<br>Energized: When Annie succeeds in her next cast damaging ability, she consumes all Pyromania stacks and stuns enemies hit for 1.25 / 1.5 / 1.75 (based on level) seconds.<br>Annie loses Energized and all Pyromania stacks upon death.",
-                "parseInfo": []
-            }
-        },
-        "Q": {
-            "id": "AnnieQ",
-            "name": "Disintegrate",
-            "_rawTooltip": {
-                "fullTooltip": "Annie hurls a fireball, dealing [[0]]. If the target dies, Annie refunds the Mana cost and reduces the Cooldown by 50%.",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "80/115/150/185/220 {{0}} magic damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+80% AP)",
-                                    "scaleId": "AP"
-                                }
-                            ]
-                        },
-                        "type": "magicDamage"
-                    }
-                ]
-            },
-            "maxRank": 5,
-            "cooldown": "4",
-            "cooldownByLevel": [
-                4,
-                4,
-                4,
-                4,
-                4
-            ],
-            "cost": "60/65/70/75/80 Mana",
-            "costByLevel": [
-                60,
-                65,
-                70,
-                75,
-                80
-            ],
-            "costType": " Mana"
-        },
-        "W": {
-            "id": "AnnieW",
-            "name": "Incinerate",
-            "_rawTooltip": {
-                "fullTooltip": "Annie projects a wave of fire, dealing [[0]].",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "70/115/160/205/250 {{0}} magic damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+85% AP)",
-                                    "scaleId": "AP"
-                                }
-                            ]
-                        },
-                        "type": "magicDamage"
-                    }
-                ]
-            },
-            "maxRank": 5,
-            "cooldown": "8",
-            "cooldownByLevel": [
-                8,
-                8,
-                8,
-                8,
-                8
-            ],
-            "cost": "90/95/100/105/110 Mana",
-            "costByLevel": [
-                90,
-                95,
-                100,
-                105,
-                110
-            ],
-            "costType": " Mana"
-        },
-        "E": {
-            "id": "AnnieE",
-            "name": "Molten Shield",
-            "_rawTooltip": {
-                "fullTooltip": "Annie grants herself or an ally [[0]] for 3 seconds and [[1]] decaying over 1.5 seconds. While the shield holds, enemies who Attack it take [[2]].<br /><br />Tibbers always gains the effects of Molten Shield if summoned.",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "40/85/130/175/220 {{0}} Shield",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+35% AP)",
-                                    "scaleId": "AP"
-                                }
-                            ]
-                        },
-                        "type": "shield"
-                    },
-                    {
-                        "text": {
-                            "text": "20% - 50% {{0}} Move Speed",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(based on champion level)",
-                                    "scaleId": "level"
-                                }
-                            ]
-                        },
-                        "type": "speed"
-                    },
-                    {
-                        "text": {
-                            "text": "20/30/40/50/60 {{0}} magic damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+20% AP)",
-                                    "scaleId": "AP"
-                                }
-                            ]
-                        },
-                        "type": "magicDamage"
-                    }
-                ]
-            },
-            "maxRank": 5,
-            "cooldown": "14/13/12/11/10",
-            "cooldownByLevel": [
-                14,
-                13,
-                12,
-                11,
-                10
-            ],
-            "cost": "40 Mana",
-            "costByLevel": [
-                40,
-                40,
-                40,
-                40,
-                40
-            ],
-            "costType": " Mana"
-        },
-        "R": {
-            "id": "AnnieR",
-            "name": "Summon: Tibbers",
-            "_rawTooltip": {
-                "fullTooltip": "Annie summons her bear Tibbers, dealing [[0]]. For the next 45 seconds, Tibbers burns nearby enemies for [[1]] and his Attacks deal [[2]]. Annie can [[3]] this ability to direct Tibbers.<br /><br />Tibbers becomes enraged when summoned, if Annie stuns an enemy champion, and if Annie dies. When enraged, Tibbers gains [[4]] and [[5]] decaying over 3 seconds.",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "150/275/400 {{0}} magic damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+75% AP)",
-                                    "scaleId": "AP"
-                                }
-                            ]
-                        },
-                        "type": "magicDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "20/30/40 {{0}} magic damage per second",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+12% AP)",
-                                    "scaleId": "AP"
-                                }
-                            ]
-                        },
-                        "type": "magicDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "50/75/100 {{0}} magic damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+15% AP)",
-                                    "scaleId": "AP"
-                                }
-                            ]
-                        },
-                        "type": "magicDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "Recast",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "275% Attack Speed",
-                            "scaleHolders": []
-                        },
-                        "type": "attackSpeed"
-                    },
-                    {
-                        "text": {
-                            "text": "100% Move Speed",
-                            "scaleHolders": []
-                        },
-                        "type": "speed"
-                    }
-                ]
-            },
-            "maxRank": 3,
-            "cooldown": "120/100/80",
-            "cooldownByLevel": [
-                120,
-                100,
-                80
-            ],
-            "cost": "100 Mana",
-            "costByLevel": [
-                100,
-                100,
-                100
-            ],
-            "costType": " Mana"
-        }
-    }
+    "ChangePatches": [
+        "9.18",
+        "9.19",
+        "10.10",
+        "10.22",
+        "10.25",
+        "11.8",
+        "11.15",
+        "12.10",
+        "12.12"
+    ],
+    "ChampionName": "Annie"
 }

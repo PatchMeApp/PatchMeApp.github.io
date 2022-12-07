@@ -1,18 +1,240 @@
 {
-    "ChampionName": "Maokai",
-    "ChangePatches": [
-        "9.21",
-        "10.10",
-        "10.20",
-        "11.2",
-        "11.16",
-        "11.22",
-        "12.10",
-        "12.17",
-        "12.18",
-        "12.20",
-        "12.22"
-    ],
+    "stats": {
+        "hp": {
+            "base": 635,
+            "increment": 109
+        },
+        "mp": {
+            "base": 375,
+            "increment": 43
+        },
+        "armor": {
+            "base": 39,
+            "increment": 5.2
+        },
+        "spellBlock": {
+            "base": 32,
+            "increment": 2.05
+        },
+        "hpRegen": {
+            "base": 5,
+            "increment": 0.75
+        },
+        "mpRegen": {
+            "base": 7.2,
+            "increment": 0.6
+        },
+        "attackSpeed": {
+            "base": 0.8,
+            "increment": 0.02125
+        },
+        "ms": {
+            "base": 335,
+            "increment": 0
+        },
+        "attackDamage": {
+            "base": 64,
+            "increment": 3.3
+        },
+        "attackRange": {
+            "base": 125,
+            "increment": 0
+        }
+    },
+    "spells": {
+        "P": {
+            "cooldown": "30/25/20",
+            "_rawTooltip": {
+                "fullTooltip": "Innate: Periodically, Maokai's next basic attack has an uncancelable windup and heals him for [[0]] (based on level)) after a 0.25-second delay.<br>Each time Maokai casts an ability or is struck by an enemy's ability, Sap Magic's cooldown is reduced by 4 seconds.<br>Sap Magic will not activate if Maokai is above [[1]].<br>Sap Magic resets Maokai's basic attack timer.",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "4-34 {{0}} + (4-12% maximum health",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(based on level)",
+                                    "scaleId": "level"
+                                }
+                            ]
+                        },
+                        "type": "Health"
+                    },
+                    {
+                        "text": {
+                            "text": "95% maximum health",
+                            "scaleHolders": []
+                        },
+                        "type": "Health"
+                    }
+                ]
+            },
+            "name": "Sap Magic"
+        },
+        "Q": {
+            "_rawTooltip": {
+                "fullTooltip": "Maokai smashes his fist into the ground, dealing [[0]] and briefly [[1]]. Nearby enemies are also [[2]].",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "70/120/170/220/270 {{0}} plus 2/2.25/2.5/2.75/3% max Health magic damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+40% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "magicDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "Slowing",
+                            "scaleHolders": []
+                        },
+                        "type": "status"
+                    },
+                    {
+                        "text": {
+                            "text": "Knocked Back",
+                            "scaleHolders": []
+                        },
+                        "type": "status"
+                    }
+                ]
+            },
+            "cooldown": "8/7.25/6.5/5.75/5",
+            "cost": "60 Mana",
+            "name": "Bramble Smash"
+        },
+        "W": {
+            "_rawTooltip": {
+                "fullTooltip": "Maokai transforms into a moving mass of roots, becoming Untargetable and dashing to an enemy. Upon arrival, he [[0]] the enemy for 1/1.1/1.2/1.3/1.4 second(s) and deals [[1]]. ",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "Roots",
+                            "scaleHolders": []
+                        },
+                        "type": "status"
+                    },
+                    {
+                        "text": {
+                            "text": "60/85/110/135/160 {{0}} magic damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+40% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "magicDamage"
+                    }
+                ]
+            },
+            "cooldown": "13/12/11/10/9",
+            "cost": "60 Mana",
+            "name": "Twisted Advance"
+        },
+        "E": {
+            "_rawTooltip": {
+                "fullTooltip": "Maokai flings a sapling, which stands watch for 30 seconds. Saplings chase nearby enemies, detonating on arrival to deal [[0]] and [[1]] surrounding enemies by 45% for 2 seconds. [[2]] Cooldown is reduced by an additional 4 seconds if the sapling hits an enemy champion or epic monster.<br /><br />If placed in brush, Saplings instead last for 30 (+2.5% Bonus Health) seconds and cause a larger explosion, dealing [[3]] over 2 seconds and [[4]] enemies by 45% (+0.9% per 100 bonus HP) (+4% per 100 AP))% Bonus Health).",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "55/80/105/130/155 {{0}} {{1}} magic damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+40% AP)",
+                                    "scaleId": "AP"
+                                },
+                                {
+                                    "scale": "(+6% Bonus Health)",
+                                    "scaleId": "Health"
+                                }
+                            ]
+                        },
+                        "type": "magicDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "Slow",
+                            "scaleHolders": []
+                        },
+                        "type": "status"
+                    },
+                    {
+                        "text": {
+                            "text": "Sap Magic's",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "110/160/210/260/310 {{0}} {{1}} magic damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+80% AP)",
+                                    "scaleId": "AP"
+                                },
+                                {
+                                    "scale": "(+12% Bonus Health)",
+                                    "scaleId": "Health"
+                                }
+                            ]
+                        },
+                        "type": "magicDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "Slowing",
+                            "scaleHolders": []
+                        },
+                        "type": "status"
+                    }
+                ]
+            },
+            "cooldown": "10",
+            "cost": "45/55/65/75/85 Mana",
+            "name": "Sapling Toss"
+        },
+        "R": {
+            "_rawTooltip": {
+                "fullTooltip": "Maokai summons a colossal wave of brambles and thorns, [[0]] enemies for 0.8 to 2.6 seconds, increasing with distance travelled, and dealing [[1]]. Hitting a champion gives Maokai [[2]], decaying over 2 seconds. ",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "Rooting",
+                            "scaleHolders": []
+                        },
+                        "type": "status"
+                    },
+                    {
+                        "text": {
+                            "text": "150/225/300 {{0}} magic damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+75% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "magicDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "40/50/60% Move Speed",
+                            "scaleHolders": []
+                        },
+                        "type": "speed"
+                    }
+                ]
+            },
+            "cooldown": "120/110/100",
+            "cost": "100 Mana",
+            "name": "Nature's Grasp"
+        }
+    },
     "Changes": {
         "9.21": {
             "B": "",
@@ -542,6 +764,49 @@
                 ]
             }
         },
+        "12.23": {
+            "B": "",
+            "P": {
+                "SpellName": "Passive - Sap Magic",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Heal: ",
+                            "Before": "4-34 (based on level) + (4-10% maximum health (based on level))",
+                            "Indicator": " ⇒ ",
+                            "After": "4-34 (based on level) + (4-12% maximum health (based on level))"
+                        }
+                    }
+                ]
+            },
+            "Q": {
+                "SpellName": "Q - Bramble Smash",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Base Damage: ",
+                            "Before": "65/110/155/200/245 (+2/2.25/2.5/2.75/3% of the target’s maximum HP)",
+                            "Indicator": " ⇒ ",
+                            "After": "70/120/170/220/270 (+2/2.25/2.5/2.75/3% of the target’s maximum HP)"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Bonus Damage to Monsters: ",
+                            "Before": "80/100/120/140/160",
+                            "Indicator": " ⇒ ",
+                            "After": "120/140/160/180/200"
+                        }
+                    }
+                ]
+            },
+            "W": "",
+            "E": "",
+            "R": ""
+        },
         "12.22": {
             "B": "",
             "P": "",
@@ -564,308 +829,19 @@
             "R": ""
         }
     },
-    "stats": {
-        "hp": {
-            "base": 635,
-            "increment": 109
-        },
-        "mp": {
-            "base": 375,
-            "increment": 43
-        },
-        "armor": {
-            "base": 39,
-            "increment": 5.2
-        },
-        "spellBlock": {
-            "base": 32,
-            "increment": 2.05
-        },
-        "hpRegen": {
-            "base": 5,
-            "increment": 0.75
-        },
-        "mpRegen": {
-            "base": 7.2,
-            "increment": 0.6
-        },
-        "attackSpeed": {
-            "base": 0.8,
-            "increment": 0.02125
-        },
-        "ms": {
-            "base": 335,
-            "increment": 0
-        },
-        "attackDamage": {
-            "base": 64,
-            "increment": 3.3
-        },
-        "attackRange": {
-            "base": 125,
-            "increment": 0
-        }
-    },
-    "spells": {
-        "P": {
-            "name": "Sap Magic",
-            "cooldown": "30/25/20",
-            "_rawTooltip": {
-                "fullTooltip": "Innate: Periodically, Maokai's next basic attack has an uncancelable windup and heals him for [[0]]) after a 0.25-second delay.<br>Each time Maokai casts an ability or is struck by an enemy's ability, Sap Magic's cooldown is reduced by 4 seconds.<br>Sap Magic will not activate if Maokai is above [[1]].<br>Sap Magic resets Maokai's basic attack timer.",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "5 − 45 {{0}} {{1}} maximum health",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(based on level)",
-                                    "scaleId": "level"
-                                },
-                                {
-                                    "scale": "(+ 4.5% − 11% (based on level)",
-                                    "scaleId": "level"
-                                }
-                            ]
-                        },
-                        "type": "Health"
-                    },
-                    {
-                        "text": {
-                            "text": "95% maximum health",
-                            "scaleHolders": []
-                        },
-                        "type": "Health"
-                    }
-                ]
-            }
-        },
-        "Q": {
-            "id": "MaokaiQ",
-            "name": "Bramble Smash",
-            "_rawTooltip": {
-                "fullTooltip": "Maokai smashes his fist into the ground, dealing [[0]] and briefly [[1]]. Nearby enemies are also [[2]].",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "65/110/155/200/245 {{0}} plus 2/2.25/2.5/2.75/3% max Health magic damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+40% AP)",
-                                    "scaleId": "AP"
-                                }
-                            ]
-                        },
-                        "type": "magicDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "Slowing",
-                            "scaleHolders": []
-                        },
-                        "type": "status"
-                    },
-                    {
-                        "text": {
-                            "text": "Knocked Back",
-                            "scaleHolders": []
-                        },
-                        "type": "status"
-                    }
-                ]
-            },
-            "maxRank": 5,
-            "cooldown": "8/7.25/6.5/5.75/5",
-            "cooldownByLevel": [
-                8,
-                7.25,
-                6.5,
-                5.75,
-                5
-            ],
-            "cost": "60 Mana",
-            "costByLevel": [
-                60,
-                60,
-                60,
-                60,
-                60
-            ],
-            "costType": " Mana"
-        },
-        "W": {
-            "id": "MaokaiW",
-            "name": "Twisted Advance",
-            "_rawTooltip": {
-                "fullTooltip": "Maokai transforms into a moving mass of roots, becoming Untargetable and dashing to an enemy. Upon arrival, he [[0]] the enemy for 1/1.1/1.2/1.3/1.4 second(s) and deals [[1]]. ",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "Roots",
-                            "scaleHolders": []
-                        },
-                        "type": "status"
-                    },
-                    {
-                        "text": {
-                            "text": "60/85/110/135/160 {{0}} magic damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+40% AP)",
-                                    "scaleId": "AP"
-                                }
-                            ]
-                        },
-                        "type": "magicDamage"
-                    }
-                ]
-            },
-            "maxRank": 5,
-            "cooldown": "13/12/11/10/9",
-            "cooldownByLevel": [
-                13,
-                12,
-                11,
-                10,
-                9
-            ],
-            "cost": "60 Mana",
-            "costByLevel": [
-                60,
-                60,
-                60,
-                60,
-                60
-            ],
-            "costType": " Mana"
-        },
-        "E": {
-            "id": "MaokaiE",
-            "name": "Sapling Toss",
-            "_rawTooltip": {
-                "fullTooltip": "Maokai flings a sapling, which stands watch for 30 seconds. Saplings chase nearby enemies, detonating on arrival to deal [[0]] and [[1]] surrounding enemies by 45% for 2 seconds. [[2]] Cooldown is reduced by an additional 4 seconds if the sapling hits an enemy champion or epic monster.<br /><br />If placed in brush, Saplings instead last for 30 (+2.5% Bonus Health) seconds and cause a larger explosion, dealing [[3]] over 2 seconds and [[4]] enemies by 45% (+2% per 100 AP) (+(60% * (100%))% Bonus Health).",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "55/80/105/130/155 {{0}} {{1}} magic damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+40% AP)",
-                                    "scaleId": "AP"
-                                },
-                                {
-                                    "scale": "(+6% Bonus Health)",
-                                    "scaleId": "Health"
-                                }
-                            ]
-                        },
-                        "type": "magicDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "Slow",
-                            "scaleHolders": []
-                        },
-                        "type": "status"
-                    },
-                    {
-                        "text": {
-                            "text": "Sap Magic's",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "110/160/210/260/310 {{0}} {{1}} magic damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+80% AP)",
-                                    "scaleId": "AP"
-                                },
-                                {
-                                    "scale": "(+12% Bonus Health)",
-                                    "scaleId": "Health"
-                                }
-                            ]
-                        },
-                        "type": "magicDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "Slowing",
-                            "scaleHolders": []
-                        },
-                        "type": "status"
-                    }
-                ]
-            },
-            "maxRank": 5,
-            "cooldown": "10",
-            "cooldownByLevel": [
-                10,
-                10,
-                10,
-                10,
-                10
-            ],
-            "cost": "45/55/65/75/85 Mana",
-            "costByLevel": [
-                45,
-                55,
-                65,
-                75,
-                85
-            ],
-            "costType": " Mana"
-        },
-        "R": {
-            "id": "MaokaiR",
-            "name": "Nature's Grasp",
-            "_rawTooltip": {
-                "fullTooltip": "Maokai summons a colossal wave of brambles and thorns, [[0]] enemies for 0.8 to 2.6 seconds, increasing with distance travelled, and dealing [[1]]. Hitting a champion gives Maokai [[2]], decaying over 2 seconds. ",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "Rooting",
-                            "scaleHolders": []
-                        },
-                        "type": "status"
-                    },
-                    {
-                        "text": {
-                            "text": "150/225/300 {{0}} magic damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+75% AP)",
-                                    "scaleId": "AP"
-                                }
-                            ]
-                        },
-                        "type": "magicDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "40/50/60% Move Speed",
-                            "scaleHolders": []
-                        },
-                        "type": "speed"
-                    }
-                ]
-            },
-            "maxRank": 3,
-            "cooldown": "120/110/100",
-            "cooldownByLevel": [
-                120,
-                110,
-                100
-            ],
-            "cost": "100 Mana",
-            "costByLevel": [
-                100,
-                100,
-                100
-            ],
-            "costType": " Mana"
-        }
-    }
+    "ChangePatches": [
+        "9.21",
+        "10.10",
+        "10.20",
+        "11.2",
+        "11.16",
+        "11.22",
+        "12.10",
+        "12.17",
+        "12.18",
+        "12.20",
+        "12.22",
+        "12.23"
+    ],
+    "ChampionName": "Maokai"
 }

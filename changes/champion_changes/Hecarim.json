@@ -1,24 +1,249 @@
 {
-    "ChampionName": "Hecarim",
-    "ChangePatches": [
-        "10.6",
-        "10.11",
-        "10.16",
-        "10.17",
-        "10.21",
-        "10.24",
-        "11.6",
-        "11.7",
-        "11.9",
-        "11.11",
-        "11.12",
-        "11.20",
-        "12.6",
-        "12.9",
-        "12.10",
-        "12.17",
-        "12.18"
-    ],
+    "stats": {
+        "hp": {
+            "base": 625,
+            "increment": 99
+        },
+        "mp": {
+            "base": 277,
+            "increment": 60
+        },
+        "armor": {
+            "base": 32,
+            "increment": 5.45
+        },
+        "spellBlock": {
+            "base": 32,
+            "increment": 2.05
+        },
+        "hpRegen": {
+            "base": 7,
+            "increment": 0.75
+        },
+        "mpRegen": {
+            "base": 6.5,
+            "increment": 0.6
+        },
+        "attackSpeed": {
+            "base": 0.67,
+            "increment": 0.025
+        },
+        "ms": {
+            "base": 345,
+            "increment": 0
+        },
+        "attackDamage": {
+            "base": 66,
+            "increment": 3.2
+        },
+        "attackRange": {
+            "base": 175,
+            "increment": 0
+        }
+    },
+    "spells": {
+        "P": {
+            "cooldown": "",
+            "_rawTooltip": {
+                "fullTooltip": "Innate: Hecarim gains bonus attack damage equal to [[0]].",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "12% − 24% {{0}} of his bonus movement speed",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(based on level)",
+                                    "scaleId": "level"
+                                }
+                            ]
+                        },
+                        "type": "speed"
+                    }
+                ]
+            },
+            "name": "Warpath"
+        },
+        "Q": {
+            "_rawTooltip": {
+                "fullTooltip": "Hecarim cleaves nearby enemies for [[0]]. If this Ability hits, he gains a stack that decreases its Cooldown by 0.75 seconds and increases its damage by 4 (+5% Bonus AD)% for 8 seconds. Stacks up to 3 times.<br />",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "60/85/110/135/160 {{0}} physical damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+90% Bonus AD)",
+                                    "scaleId": "AD"
+                                }
+                            ]
+                        },
+                        "type": "physicalDamage"
+                    }
+                ]
+            },
+            "cooldown": "4",
+            "cost": "30 Mana",
+            "name": "Rampage"
+        },
+        "W": {
+            "_rawTooltip": {
+                "fullTooltip": "Hecarim deals [[0]] over 4 seconds to nearby enemies. <br /><br />Hecarim gains [[1]] [[2]] and [[3]] and heals for [[4]] nearby enemies take from Hecarim and [[5]] taken from his allies.",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "80/120/160/200/240 {{0}} magic damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+80% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "magicDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "15/20/25/30",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "Armor",
+                            "scaleHolders": []
+                        },
+                        "type": "scaleArmor"
+                    },
+                    {
+                        "text": {
+                            "text": "Magic Resist",
+                            "scaleHolders": []
+                        },
+                        "type": "scaleMR"
+                    },
+                    {
+                        "text": {
+                            "text": "25 {{0}}% of damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+2% Bonus AD)",
+                                    "scaleId": "AD"
+                                }
+                            ]
+                        },
+                        "type": "healing"
+                    },
+                    {
+                        "text": {
+                            "text": "12.5 {{0}}% of damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+1% Bonus AD)",
+                                    "scaleId": "AD"
+                                }
+                            ]
+                        },
+                        "type": "healing"
+                    }
+                ]
+            },
+            "cooldown": "16/15.5/15/14.5/14",
+            "cost": "50/60/70/80/90 Mana",
+            "name": "Spirit of Dread"
+        },
+        "E": {
+            "_rawTooltip": {
+                "fullTooltip": "Hecarim becomes Ghosted and gains [[0]] increasing to [[1]] over 4 seconds. His next Attack [[2]] and deals between [[3]] and [[4]]. [[5]] distance and damage scales with distance travelled during this Ability.",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "25% Move Speed",
+                            "scaleHolders": []
+                        },
+                        "type": "speed"
+                    },
+                    {
+                        "text": {
+                            "text": "65%",
+                            "scaleHolders": []
+                        },
+                        "type": "speed"
+                    },
+                    {
+                        "text": {
+                            "text": "Knocks Back",
+                            "scaleHolders": []
+                        },
+                        "type": "status"
+                    },
+                    {
+                        "text": {
+                            "text": "30/45/60/75/90 {{0}}",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+50% Bonus AD)",
+                                    "scaleId": "AD"
+                                }
+                            ]
+                        },
+                        "type": "physicalDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "60/90/120/150/180 {{0}} physical damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+100% Bonus AD)",
+                                    "scaleId": "AD"
+                                }
+                            ]
+                        },
+                        "type": "physicalDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "Knock Back",
+                            "scaleHolders": []
+                        },
+                        "type": "status"
+                    }
+                ]
+            },
+            "cooldown": "18",
+            "cost": "60 Mana",
+            "name": "Devastating Charge"
+        },
+        "R": {
+            "_rawTooltip": {
+                "fullTooltip": "Hecarim summons spectral riders and charges forward, dealing [[0]]. Hecarim unleashes a shockwave at the end of the charge that [[1]] for between 0.75 to 1.5 seconds, increased by charge distance.",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "150/250/350 {{0}} magic damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+100% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "magicDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "Fears",
+                            "scaleHolders": []
+                        },
+                        "type": "status"
+                    }
+                ]
+            },
+            "cooldown": "140/120/100",
+            "cost": "100 Mana",
+            "name": "Onslaught of Shadows"
+        }
+    },
     "Changes": {
         "10.6": {
             "B": "",
@@ -767,313 +992,24 @@
             "R": ""
         }
     },
-    "stats": {
-        "hp": {
-            "base": 625,
-            "increment": 99
-        },
-        "mp": {
-            "base": 277,
-            "increment": 60
-        },
-        "armor": {
-            "base": 32,
-            "increment": 5.45
-        },
-        "spellBlock": {
-            "base": 32,
-            "increment": 2.05
-        },
-        "hpRegen": {
-            "base": 7,
-            "increment": 0.75
-        },
-        "mpRegen": {
-            "base": 6.5,
-            "increment": 0.6
-        },
-        "attackSpeed": {
-            "base": 0.67,
-            "increment": 0.025
-        },
-        "ms": {
-            "base": 345,
-            "increment": 0
-        },
-        "attackDamage": {
-            "base": 66,
-            "increment": 3.2
-        },
-        "attackRange": {
-            "base": 175,
-            "increment": 0
-        }
-    },
-    "spells": {
-        "P": {
-            "name": "Warpath",
-            "cooldown": "",
-            "_rawTooltip": {
-                "fullTooltip": "Innate: Hecarim gains bonus attack damage equal to [[0]].",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "12% − 24% {{0}} of his bonus movement speed",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(based on level)",
-                                    "scaleId": "level"
-                                }
-                            ]
-                        },
-                        "type": "speed"
-                    }
-                ]
-            }
-        },
-        "Q": {
-            "id": "HecarimRapidSlash",
-            "name": "Rampage",
-            "_rawTooltip": {
-                "fullTooltip": "Hecarim cleaves nearby enemies for [[0]]. If this Ability hits, he gains a stack that decreases its Cooldown by 0.75 seconds and increases its damage by 4 (+5% Bonus AD)% for 8 seconds. Stacks up to 3 times.<br />",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "60/85/110/135/160 {{0}} physical damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+90% Bonus AD)",
-                                    "scaleId": "AD"
-                                }
-                            ]
-                        },
-                        "type": "physicalDamage"
-                    }
-                ]
-            },
-            "maxRank": 5,
-            "cooldown": "4",
-            "cooldownByLevel": [
-                4,
-                4,
-                4,
-                4,
-                4
-            ],
-            "cost": "30 Mana",
-            "costByLevel": [
-                30,
-                30,
-                30,
-                30,
-                30
-            ],
-            "costType": " Mana"
-        },
-        "W": {
-            "id": "HecarimW",
-            "name": "Spirit of Dread",
-            "_rawTooltip": {
-                "fullTooltip": "Hecarim deals [[0]] over 4 seconds to nearby enemies. <br /><br />Hecarim gains [[1]] [[2]] and [[3]] and heals for [[4]] nearby enemies take from Hecarim and [[5]] taken from his allies.",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "80/120/160/200/240 {{0}} magic damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+80% AP)",
-                                    "scaleId": "AP"
-                                }
-                            ]
-                        },
-                        "type": "magicDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "15/20/25/30",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "Armor",
-                            "scaleHolders": []
-                        },
-                        "type": "scaleArmor"
-                    },
-                    {
-                        "text": {
-                            "text": "Magic Resist",
-                            "scaleHolders": []
-                        },
-                        "type": "scaleMR"
-                    },
-                    {
-                        "text": {
-                            "text": "25 {{0}}% of damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+2% Bonus AD)",
-                                    "scaleId": "AD"
-                                }
-                            ]
-                        },
-                        "type": "healing"
-                    },
-                    {
-                        "text": {
-                            "text": "12.5 {{0}}% of damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+1% Bonus AD)",
-                                    "scaleId": "AD"
-                                }
-                            ]
-                        },
-                        "type": "healing"
-                    }
-                ]
-            },
-            "maxRank": 5,
-            "cooldown": "16/15.5/15/14.5/14",
-            "cooldownByLevel": [
-                16,
-                15.5,
-                15,
-                14.5,
-                14
-            ],
-            "cost": "50/60/70/80/90 Mana",
-            "costByLevel": [
-                50,
-                60,
-                70,
-                80,
-                90
-            ],
-            "costType": " Mana"
-        },
-        "E": {
-            "id": "HecarimRamp",
-            "name": "Devastating Charge",
-            "_rawTooltip": {
-                "fullTooltip": "Hecarim becomes Ghosted and gains [[0]] increasing to [[1]] over 4 seconds. His next Attack [[2]] and deals between [[3]] and [[4]]. [[5]] distance and damage scales with distance travelled during this Ability.",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "25% Move Speed",
-                            "scaleHolders": []
-                        },
-                        "type": "speed"
-                    },
-                    {
-                        "text": {
-                            "text": "65%",
-                            "scaleHolders": []
-                        },
-                        "type": "speed"
-                    },
-                    {
-                        "text": {
-                            "text": "Knocks Back",
-                            "scaleHolders": []
-                        },
-                        "type": "status"
-                    },
-                    {
-                        "text": {
-                            "text": "30/45/60/75/90 {{0}}",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+50% Bonus AD)",
-                                    "scaleId": "AD"
-                                }
-                            ]
-                        },
-                        "type": "physicalDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "60/90/120/150/180 {{0}} physical damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+100% Bonus AD)",
-                                    "scaleId": "AD"
-                                }
-                            ]
-                        },
-                        "type": "physicalDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "Knock Back",
-                            "scaleHolders": []
-                        },
-                        "type": "status"
-                    }
-                ]
-            },
-            "maxRank": 5,
-            "cooldown": "18",
-            "cooldownByLevel": [
-                18,
-                18,
-                18,
-                18,
-                18
-            ],
-            "cost": "60 Mana",
-            "costByLevel": [
-                60,
-                60,
-                60,
-                60,
-                60
-            ],
-            "costType": " Mana"
-        },
-        "R": {
-            "id": "HecarimUlt",
-            "name": "Onslaught of Shadows",
-            "_rawTooltip": {
-                "fullTooltip": "Hecarim summons spectral riders and charges forward, dealing [[0]]. Hecarim unleashes a shockwave at the end of the charge that [[1]] for between 0.75 to 1.5 seconds, increased by charge distance.",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "150/250/350 {{0}} magic damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+100% AP)",
-                                    "scaleId": "AP"
-                                }
-                            ]
-                        },
-                        "type": "magicDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "Fears",
-                            "scaleHolders": []
-                        },
-                        "type": "status"
-                    }
-                ]
-            },
-            "maxRank": 3,
-            "cooldown": "140/120/100",
-            "cooldownByLevel": [
-                140,
-                120,
-                100
-            ],
-            "cost": "100 Mana",
-            "costByLevel": [
-                100,
-                100,
-                100
-            ],
-            "costType": " Mana"
-        }
-    }
+    "ChangePatches": [
+        "10.6",
+        "10.11",
+        "10.16",
+        "10.17",
+        "10.21",
+        "10.24",
+        "11.6",
+        "11.7",
+        "11.9",
+        "11.11",
+        "11.12",
+        "11.20",
+        "12.6",
+        "12.9",
+        "12.10",
+        "12.17",
+        "12.18"
+    ],
+    "ChampionName": "Hecarim"
 }

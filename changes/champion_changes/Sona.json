@@ -1,19 +1,318 @@
 {
-    "ChampionName": "Sona",
-    "ChangePatches": [
-        "9.20",
-        "9.21",
-        "10.2",
-        "10.3",
-        "10.4",
-        "10.5",
-        "10.17",
-        "11.16",
-        "11.19",
-        "12.1",
-        "12.10",
-        "12.19"
-    ],
+    "stats": {
+        "hp": {
+            "base": 550,
+            "increment": 91
+        },
+        "mp": {
+            "base": 340,
+            "increment": 45
+        },
+        "armor": {
+            "base": 26,
+            "increment": 4.2
+        },
+        "spellBlock": {
+            "base": 30,
+            "increment": 1.3
+        },
+        "hpRegen": {
+            "base": 5.5,
+            "increment": 0.55
+        },
+        "mpRegen": {
+            "base": 11.5,
+            "increment": 0.4
+        },
+        "attackSpeed": {
+            "base": 0.644,
+            "increment": 0.023
+        },
+        "ms": {
+            "base": 325,
+            "increment": 0
+        },
+        "attackDamage": {
+            "base": 49,
+            "increment": 3
+        },
+        "attackRange": {
+            "base": 550,
+            "increment": 0
+        }
+    },
+    "spells": {
+        "P": {
+            "cooldown": "",
+            "_rawTooltip": {
+                "fullTooltip": "Innate - Melody: Sona's basic abilities each generate a unique aura for 3 seconds that empowers her and all targetable allied champions who enter its radius, and casting them places her other basic abilities that are not on cooldown on a 0.5-second cooldown.<br>Innate - Power Chord: After casting 3 basic abilities, Sona's next basic attack has an uncancelable windup, deals [[0]] and applies an additional effect depending on the last basic ability cast.<br>Gaining Power Chord's empowered attack resets Sona's basic attack timer.<br>Innate - Accelerando: Sona gains a stack of Accelerando each time she hits an enemy with Hymn of Valor or supports an ally with Aria of Perseverance, stacking up to 120 times. Each stack grants her 0.5 basic ability haste, up to 60 basic ability haste at maximum stacks. If she has maximum stacks, the current cooldown of Crescendo is reduced by 1.5 seconds each time instead.",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "20 − 240 {{0}} {{1}} bonus magic damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(based on level)",
+                                    "scaleId": "level"
+                                },
+                                {
+                                    "scale": "(+ 20% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "magicDamage"
+                    }
+                ]
+            },
+            "name": "Power Chord"
+        },
+        "Q": {
+            "_rawTooltip": {
+                "fullTooltip": "Sona deals [[0]] to the nearest two enemies, prioritizing champions. She then begins a new [[1]]. Gain a stack of [[2]] for every champion you damage with this.<br /><br />[[3]] Sona gains an aura for 3 seconds, granting allied champions an additional [[4]]  on their next Attack within 5 seconds.<br /><br />[[5]] Power Chord bonus damage ([[6]]).",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "50/80/110/140/170 {{0}} magic damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+40% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "magicDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "Melody",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "Accelerando",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "Melody:",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "10/15/20/25/30 {{0}} magic damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+20% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "magicDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "Power Chord - Staccato:",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "28 - 336 {{0}} {{1}} total magic damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(based on champion level)",
+                                    "scaleId": "level"
+                                },
+                                {
+                                    "scale": "(+28% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "magicDamage"
+                    }
+                ]
+            },
+            "cooldown": "8",
+            "cost": "50/55/60/65/70 Mana",
+            "name": "Hymn of Valor"
+        },
+        "W": {
+            "_rawTooltip": {
+                "fullTooltip": "[[0]] Sona restores [[1]] to herself and a nearby allied champion, prioritizing the most wounded. She then begins a new [[2]].<br /><br />[[3]] Sona gains an aura for 3 seconds, granting allied champions [[4]] for 1.5 seconds.<br /><br />Gain a stack of [[5]] whenever you heal another injured ally and every time you protect another ally from at least 25/45/65/85 damage with this shield.<br /><br />[[6]] Power Chord also reduces physical and magic damage dealt by the target by 25% (+4% per 100 AP) for 3 seconds.",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "Active:",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "30/45/60/75/90 {{0}} Health",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+15% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "healing"
+                    },
+                    {
+                        "text": {
+                            "text": "Melody",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "Melody:",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "25/45/65/85/105 {{0}} Shield",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+25% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "shield"
+                    },
+                    {
+                        "text": {
+                            "text": "Accelerando",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "Power Chord - Diminuendo:",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    }
+                ]
+            },
+            "cooldown": "10",
+            "cost": "80/85/90/95/100 Mana",
+            "name": "Aria of Perseverance"
+        },
+        "E": {
+            "_rawTooltip": {
+                "fullTooltip": "[[0]] She begins a new [[1]] and grants herself [[2]] for 3 seconds, extended to up to 7 seconds if she doesn't take damage. <br /><br />[[3]] Sona gains an aura for 3 seconds that grants allied champions [[4]] for 3 seconds.<br /><br />[[5]] Power Chord also [[6]] the target by 50% (+4% per 100 AP) for 2 seconds.",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "Active:",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "Melody",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "20% {{0}} Move Speed",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+2% per 100 AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "speed"
+                    },
+                    {
+                        "text": {
+                            "text": "Melody:",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "10/11/12/13/14% {{0}} Move Speed",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+2% per 100 AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "speed"
+                    },
+                    {
+                        "text": {
+                            "text": "Power Chord - Tempo:",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "Slows",
+                            "scaleHolders": []
+                        },
+                        "type": "status"
+                    }
+                ]
+            },
+            "cooldown": "14",
+            "cost": "65 Mana",
+            "name": "Song of Celerity"
+        },
+        "R": {
+            "_rawTooltip": {
+                "fullTooltip": "Sona strikes an irresistible chord, [[0]] enemy for 1.5 seconds and dealing [[1]].",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "Stunning",
+                            "scaleHolders": []
+                        },
+                        "type": "status"
+                    },
+                    {
+                        "text": {
+                            "text": "150/250/350 {{0}} magic damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+50% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "magicDamage"
+                    }
+                ]
+            },
+            "cooldown": "140/120/100",
+            "cost": "100 Mana",
+            "name": "Crescendo"
+        }
+    },
     "Changes": {
         "9.20": {
             "B": "",
@@ -626,382 +925,19 @@
             "R": ""
         }
     },
-    "stats": {
-        "hp": {
-            "base": 550,
-            "increment": 91
-        },
-        "mp": {
-            "base": 340,
-            "increment": 45
-        },
-        "armor": {
-            "base": 26,
-            "increment": 4.2
-        },
-        "spellBlock": {
-            "base": 30,
-            "increment": 1.3
-        },
-        "hpRegen": {
-            "base": 5.5,
-            "increment": 0.55
-        },
-        "mpRegen": {
-            "base": 11.5,
-            "increment": 0.4
-        },
-        "attackSpeed": {
-            "base": 0.644,
-            "increment": 0.023
-        },
-        "ms": {
-            "base": 325,
-            "increment": 0
-        },
-        "attackDamage": {
-            "base": 49,
-            "increment": 3
-        },
-        "attackRange": {
-            "base": 550,
-            "increment": 0
-        }
-    },
-    "spells": {
-        "P": {
-            "name": "Power Chord",
-            "cooldown": "",
-            "_rawTooltip": {
-                "fullTooltip": "Innate - Melody: Sona's basic abilities each generate a unique aura for 3 seconds that empowers her and all targetable allied champions who enter its radius, and casting them places her other basic abilities that are not on cooldown on a 0.5-second cooldown.<br>Innate - Power Chord: After casting 3 basic abilities, Sona's next basic attack has an uncancelable windup, deals [[0]] and applies an additional effect depending on the last basic ability cast.<br>Gaining Power Chord's empowered attack resets Sona's basic attack timer.<br>Innate - Accelerando: Sona gains a stack of Accelerando each time she hits an enemy with Hymn of Valor or supports an ally with Aria of Perseverance, stacking up to 120 times. Each stack grants her 0.5 basic ability haste, up to 60 basic ability haste at maximum stacks. If she has maximum stacks, the current cooldown of Crescendo is reduced by 1.5 seconds each time instead.",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "20 − 240 {{0}} {{1}} bonus magic damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(based on level)",
-                                    "scaleId": "level"
-                                },
-                                {
-                                    "scale": "(+ 20% AP)",
-                                    "scaleId": "AP"
-                                }
-                            ]
-                        },
-                        "type": "magicDamage"
-                    }
-                ]
-            }
-        },
-        "Q": {
-            "id": "SonaQ",
-            "name": "Hymn of Valor",
-            "_rawTooltip": {
-                "fullTooltip": "Sona deals [[0]] to the nearest two enemies, prioritizing champions. She then begins a new [[1]]. Gain a stack of [[2]] for every champion you damage with this.<br /><br />[[3]] Sona gains an aura for 3 seconds, granting allied champions an additional [[4]] %i:OnHit% on their next Attack within 5 seconds.<br /><br />[[5]] Power Chord bonus damage ([[6]]).",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "50/80/110/140/170 {{0}} magic damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+40% AP)",
-                                    "scaleId": "AP"
-                                }
-                            ]
-                        },
-                        "type": "magicDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "Melody",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "Accelerando",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "Melody:",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "10/15/20/25/30 {{0}} magic damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+20% AP)",
-                                    "scaleId": "AP"
-                                }
-                            ]
-                        },
-                        "type": "magicDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "Power Chord - Staccato:",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "28 - 336 {{0}} {{1}} total magic damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(based on champion level)",
-                                    "scaleId": "level"
-                                },
-                                {
-                                    "scale": "(+28% AP)",
-                                    "scaleId": "AP"
-                                }
-                            ]
-                        },
-                        "type": "magicDamage"
-                    }
-                ]
-            },
-            "maxRank": 5,
-            "cooldown": "8",
-            "cooldownByLevel": [
-                8,
-                8,
-                8,
-                8,
-                8
-            ],
-            "cost": "50/55/60/65/70 Mana",
-            "costByLevel": [
-                50,
-                55,
-                60,
-                65,
-                70
-            ],
-            "costType": " Mana"
-        },
-        "W": {
-            "id": "SonaW",
-            "name": "Aria of Perseverance",
-            "_rawTooltip": {
-                "fullTooltip": "[[0]] Sona restores [[1]] to herself and a nearby allied champion, prioritizing the most wounded. She then begins a new [[2]].<br /><br />[[3]] Sona gains an aura for 3 seconds, granting allied champions [[4]] for 1.5 seconds.<br /><br />Gain a stack of [[5]] whenever you heal another injured ally and every time you protect another ally from at least 25/45/65/85 damage with this shield.<br /><br />[[6]] Power Chord also reduces physical and magic damage dealt by the target by 25% (+4% per 100 AP) for 3 seconds.",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "Active:",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "30/45/60/75/90 {{0}} Health",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+15% AP)",
-                                    "scaleId": "AP"
-                                }
-                            ]
-                        },
-                        "type": "healing"
-                    },
-                    {
-                        "text": {
-                            "text": "Melody",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "Melody:",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "25/45/65/85/105 {{0}} Shield",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+25% AP)",
-                                    "scaleId": "AP"
-                                }
-                            ]
-                        },
-                        "type": "shield"
-                    },
-                    {
-                        "text": {
-                            "text": "Accelerando",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "Power Chord - Diminuendo:",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    }
-                ]
-            },
-            "maxRank": 5,
-            "cooldown": "10",
-            "cooldownByLevel": [
-                10,
-                10,
-                10,
-                10,
-                10
-            ],
-            "cost": "80/85/90/95/100 Mana",
-            "costByLevel": [
-                80,
-                85,
-                90,
-                95,
-                100
-            ],
-            "costType": " Mana"
-        },
-        "E": {
-            "id": "SonaE",
-            "name": "Song of Celerity",
-            "_rawTooltip": {
-                "fullTooltip": "[[0]] She begins a new [[1]] and grants herself [[2]] for 3 seconds, extended to up to 7 seconds if she doesn't take damage. <br /><br />[[3]] Sona gains an aura for 3 seconds that grants allied champions [[4]] for 3 seconds.<br /><br />[[5]] Power Chord also [[6]] the target by 50% (+4% per 100 AP) for 2 seconds.",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "Active:",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "Melody",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "20% {{0}} Move Speed",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+2% per 100 AP)",
-                                    "scaleId": "AP"
-                                }
-                            ]
-                        },
-                        "type": "speed"
-                    },
-                    {
-                        "text": {
-                            "text": "Melody:",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "10/11/12/13/14% {{0}} Move Speed",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+2% per 100 AP)",
-                                    "scaleId": "AP"
-                                }
-                            ]
-                        },
-                        "type": "speed"
-                    },
-                    {
-                        "text": {
-                            "text": "Power Chord - Tempo:",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "Slows",
-                            "scaleHolders": []
-                        },
-                        "type": "status"
-                    }
-                ]
-            },
-            "maxRank": 5,
-            "cooldown": "14",
-            "cooldownByLevel": [
-                14,
-                14,
-                14,
-                14,
-                14
-            ],
-            "cost": "65 Mana",
-            "costByLevel": [
-                65,
-                65,
-                65,
-                65,
-                65
-            ],
-            "costType": " Mana"
-        },
-        "R": {
-            "id": "SonaR",
-            "name": "Crescendo",
-            "_rawTooltip": {
-                "fullTooltip": "Sona strikes an irresistible chord, [[0]] enemy for 1.5 seconds and dealing [[1]].",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "Stunning",
-                            "scaleHolders": []
-                        },
-                        "type": "status"
-                    },
-                    {
-                        "text": {
-                            "text": "150/250/350 {{0}} magic damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+50% AP)",
-                                    "scaleId": "AP"
-                                }
-                            ]
-                        },
-                        "type": "magicDamage"
-                    }
-                ]
-            },
-            "maxRank": 3,
-            "cooldown": "140/120/100",
-            "cooldownByLevel": [
-                140,
-                120,
-                100
-            ],
-            "cost": "100 Mana",
-            "costByLevel": [
-                100,
-                100,
-                100
-            ],
-            "costType": " Mana"
-        }
-    }
+    "ChangePatches": [
+        "9.20",
+        "9.21",
+        "10.2",
+        "10.3",
+        "10.4",
+        "10.5",
+        "10.17",
+        "11.16",
+        "11.19",
+        "12.1",
+        "12.10",
+        "12.19"
+    ],
+    "ChampionName": "Sona"
 }

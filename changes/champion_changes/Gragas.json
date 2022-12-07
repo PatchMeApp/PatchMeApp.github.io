@@ -1,16 +1,206 @@
 {
-    "ChampionName": "Gragas",
-    "ChangePatches": [
-        "9.19",
-        "10.15",
-        "10.17",
-        "10.25",
-        "11.5",
-        "11.9",
-        "11.19",
-        "12.10",
-        "12.11"
-    ],
+    "stats": {
+        "hp": {
+            "base": 670,
+            "increment": 109
+        },
+        "mp": {
+            "base": 400,
+            "increment": 47
+        },
+        "armor": {
+            "base": 38,
+            "increment": 4.8
+        },
+        "spellBlock": {
+            "base": 32,
+            "increment": 2.05
+        },
+        "hpRegen": {
+            "base": 5.5,
+            "increment": 0.5
+        },
+        "mpRegen": {
+            "base": 6,
+            "increment": 0.8
+        },
+        "attackSpeed": {
+            "base": 0.675,
+            "increment": 0.020499999999999997
+        },
+        "ms": {
+            "base": 330,
+            "increment": 0
+        },
+        "attackDamage": {
+            "base": 64,
+            "increment": 3.5
+        },
+        "attackRange": {
+            "base": 125,
+            "increment": 0
+        }
+    },
+    "spells": {
+        "P": {
+            "cooldown": 8,
+            "_rawTooltip": {
+                "fullTooltip": "Innate: Gragas periodically heals for [[0]] upon casting an ability.",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "6.5% of his maximum health",
+                            "scaleHolders": []
+                        },
+                        "type": "Health"
+                    }
+                ]
+            },
+            "name": "Happy Hour"
+        },
+        "Q": {
+            "_rawTooltip": {
+                "fullTooltip": "Gragas rolls a cask that explodes after 4 seconds, dealing between [[0]] and [[1]] and [[2]] a minimum of 40/45/50/55/60% for 2 seconds. The damage and [[3]] increase with time the cask spent before exploding. <br /><br />Gragas can [[4]] to detonate the cask early.",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "80/120/160/200/240 {{0}} magic damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+80% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "magicDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "120/180/240/300/360 {{0}} magic damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+120% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "magicDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "Slowing",
+                            "scaleHolders": []
+                        },
+                        "type": "status"
+                    },
+                    {
+                        "text": {
+                            "text": "Slow",
+                            "scaleHolders": []
+                        },
+                        "type": "status"
+                    },
+                    {
+                        "text": {
+                            "text": "Recast",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    }
+                ]
+            },
+            "cooldown": "10/9/8/7/6",
+            "cost": "80 Mana",
+            "name": "Barrel Roll"
+        },
+        "W": {
+            "_rawTooltip": {
+                "fullTooltip": "Gragas guzzles his brew, reducing incoming damage by 0.1/0.12/0.14/0.16/0.18% (+4% per 100 AP) for 2.5 seconds. After finishing his drink, his next Attack deals an additional [[0]] plus [[1]] to the target and surrounding enemies.",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "20/50/80/110/140 {{0}}",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+70% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "magicDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "7% max Health magic damage",
+                            "scaleHolders": []
+                        },
+                        "type": "magicDamage"
+                    }
+                ]
+            },
+            "cooldown": "5",
+            "cost": "30 Mana",
+            "name": "Drunken Rage"
+        },
+        "E": {
+            "_rawTooltip": {
+                "fullTooltip": "Gragas charges forward, colliding with the first enemy, [[0]] nearby enemies for 1 second and dealing [[1]] to them.<br /><br />This Ability's Cooldown is reduced  if Gragas collides with an enemy.",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "Knocking Up",
+                            "scaleHolders": []
+                        },
+                        "type": "status"
+                    },
+                    {
+                        "text": {
+                            "text": "80/125/170/215/260 {{0}} magic damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+60% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "magicDamage"
+                    }
+                ]
+            },
+            "cooldown": "14/13.5/13/12.5/12",
+            "cost": "50 Mana",
+            "name": "Body Slam"
+        },
+        "R": {
+            "_rawTooltip": {
+                "fullTooltip": "Gragas hurls his cask, dealing [[0]] and [[1]] enemies from the impact zone.",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "200/300/400 {{0}} magic damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+80% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "magicDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "Knocking Away",
+                            "scaleHolders": []
+                        },
+                        "type": "status"
+                    }
+                ]
+            },
+            "cooldown": "120/100/80",
+            "cost": "100 Mana",
+            "name": "Explosive Cask"
+        }
+    },
     "Changes": {
         "9.19": {
             "B": "",
@@ -299,270 +489,16 @@
             "R": ""
         }
     },
-    "stats": {
-        "hp": {
-            "base": 670,
-            "increment": 109
-        },
-        "mp": {
-            "base": 400,
-            "increment": 47
-        },
-        "armor": {
-            "base": 38,
-            "increment": 4.8
-        },
-        "spellBlock": {
-            "base": 32,
-            "increment": 2.05
-        },
-        "hpRegen": {
-            "base": 5.5,
-            "increment": 0.5
-        },
-        "mpRegen": {
-            "base": 6,
-            "increment": 0.8
-        },
-        "attackSpeed": {
-            "base": 0.675,
-            "increment": 0.020499999999999997
-        },
-        "ms": {
-            "base": 330,
-            "increment": 0
-        },
-        "attackDamage": {
-            "base": 64,
-            "increment": 3.5
-        },
-        "attackRange": {
-            "base": 125,
-            "increment": 0
-        }
-    },
-    "spells": {
-        "P": {
-            "name": "Happy Hour",
-            "cooldown": 8,
-            "_rawTooltip": {
-                "fullTooltip": "Innate: Gragas periodically heals for [[0]] upon casting an ability.",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "6.5% of his maximum health",
-                            "scaleHolders": []
-                        },
-                        "type": "Health"
-                    }
-                ]
-            }
-        },
-        "Q": {
-            "id": "GragasQ",
-            "name": "Barrel Roll",
-            "_rawTooltip": {
-                "fullTooltip": "Gragas rolls a cask that explodes after 4 seconds, dealing between [[0]] and [[1]] and [[2]] a minimum of 40/45/50/55/60% for 2 seconds. The damage and [[3]] increase with time the cask spent before exploding. <br /><br />Gragas can [[4]] to detonate the cask early.",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "80/120/160/200/240 {{0}} magic damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+80% AP)",
-                                    "scaleId": "AP"
-                                }
-                            ]
-                        },
-                        "type": "magicDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "120/180/240/300/360 {{0}} magic damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+120% AP)",
-                                    "scaleId": "AP"
-                                }
-                            ]
-                        },
-                        "type": "magicDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "Slowing",
-                            "scaleHolders": []
-                        },
-                        "type": "status"
-                    },
-                    {
-                        "text": {
-                            "text": "Slow",
-                            "scaleHolders": []
-                        },
-                        "type": "status"
-                    },
-                    {
-                        "text": {
-                            "text": "Recast",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    }
-                ]
-            },
-            "maxRank": 5,
-            "cooldown": "10/9/8/7/6",
-            "cooldownByLevel": [
-                10,
-                9,
-                8,
-                7,
-                6
-            ],
-            "cost": "80 Mana",
-            "costByLevel": [
-                80,
-                80,
-                80,
-                80,
-                80
-            ],
-            "costType": " Mana"
-        },
-        "W": {
-            "id": "GragasW",
-            "name": "Drunken Rage",
-            "_rawTooltip": {
-                "fullTooltip": "Gragas guzzles his brew, reducing incoming damage by 0.1/0.12/0.14/0.16/0.18% (+4% per 100 AP) for 2.5 seconds. After finishing his drink, his next Attack deals an additional [[0]] plus [[1]] to the target and surrounding enemies.",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "20/50/80/110/140 {{0}}",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+70% AP)",
-                                    "scaleId": "AP"
-                                }
-                            ]
-                        },
-                        "type": "magicDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "7% max Health magic damage",
-                            "scaleHolders": []
-                        },
-                        "type": "magicDamage"
-                    }
-                ]
-            },
-            "maxRank": 5,
-            "cooldown": "5",
-            "cooldownByLevel": [
-                5,
-                5,
-                5,
-                5,
-                5
-            ],
-            "cost": "30 Mana",
-            "costByLevel": [
-                30,
-                30,
-                30,
-                30,
-                30
-            ],
-            "costType": " Mana"
-        },
-        "E": {
-            "id": "GragasE",
-            "name": "Body Slam",
-            "_rawTooltip": {
-                "fullTooltip": "Gragas charges forward, colliding with the first enemy, [[0]] nearby enemies for 1 second and dealing [[1]] to them.<br /><br />This Ability's Cooldown is reduced  if Gragas collides with an enemy.",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "Knocking Up",
-                            "scaleHolders": []
-                        },
-                        "type": "status"
-                    },
-                    {
-                        "text": {
-                            "text": "80/125/170/215/260 {{0}} magic damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+60% AP)",
-                                    "scaleId": "AP"
-                                }
-                            ]
-                        },
-                        "type": "magicDamage"
-                    }
-                ]
-            },
-            "maxRank": 5,
-            "cooldown": "14/13.5/13/12.5/12",
-            "cooldownByLevel": [
-                14,
-                13.5,
-                13,
-                12.5,
-                12
-            ],
-            "cost": "50 Mana",
-            "costByLevel": [
-                50,
-                50,
-                50,
-                50,
-                50
-            ],
-            "costType": " Mana"
-        },
-        "R": {
-            "id": "GragasR",
-            "name": "Explosive Cask",
-            "_rawTooltip": {
-                "fullTooltip": "Gragas hurls his cask, dealing [[0]] and [[1]] enemies from the impact zone.",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "200/300/400 {{0}} magic damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+80% AP)",
-                                    "scaleId": "AP"
-                                }
-                            ]
-                        },
-                        "type": "magicDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "Knocking Away",
-                            "scaleHolders": []
-                        },
-                        "type": "status"
-                    }
-                ]
-            },
-            "maxRank": 3,
-            "cooldown": "120/100/80",
-            "cooldownByLevel": [
-                120,
-                100,
-                80
-            ],
-            "cost": "100 Mana",
-            "costByLevel": [
-                100,
-                100,
-                100
-            ],
-            "costType": " Mana"
-        }
-    }
+    "ChangePatches": [
+        "9.19",
+        "10.15",
+        "10.17",
+        "10.25",
+        "11.5",
+        "11.9",
+        "11.19",
+        "12.10",
+        "12.11"
+    ],
+    "ChampionName": "Gragas"
 }

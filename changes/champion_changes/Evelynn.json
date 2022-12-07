@@ -1,15 +1,279 @@
 {
-    "ChampionName": "Evelynn",
-    "ChangePatches": [
-        "9.18",
-        "10.8",
-        "10.16",
-        "10.17",
-        "11.17",
-        "12.10",
-        "12.13",
-        "12.20"
-    ],
+    "stats": {
+        "hp": {
+            "base": 642,
+            "increment": 98
+        },
+        "mp": {
+            "base": 315,
+            "increment": 42
+        },
+        "armor": {
+            "base": 37,
+            "increment": 4.7
+        },
+        "spellBlock": {
+            "base": 32,
+            "increment": 2.05
+        },
+        "hpRegen": {
+            "base": 8.5,
+            "increment": 0.75
+        },
+        "mpRegen": {
+            "base": 8.11,
+            "increment": 0.6
+        },
+        "attackSpeed": {
+            "base": 0.667,
+            "increment": 0.021
+        },
+        "ms": {
+            "base": 335,
+            "increment": 0
+        },
+        "attackDamage": {
+            "base": 61,
+            "increment": 3
+        },
+        "attackRange": {
+            "base": 125,
+            "increment": 0
+        }
+    },
+    "spells": {
+        "P": {
+            "cooldown": "",
+            "_rawTooltip": {
+                "fullTooltip": "Innate: Evelynn gains Demon Shade after not performing actions that break stealth for [[0]] from enemy champions or turrets ends Demon Shade immediately and puts it on a 1.5-second static cooldown.<br>Demon Shade: While below [[1]], Evelynn heals herself for 15 − 75 (based on level) every second. From level 6 onward, Demon Shade also grants camouflage.",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "4 seconds. Taking damage",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "250 − 590 {{0}} {{1}} health",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(based on level)",
+                                    "scaleId": "level"
+                                },
+                                {
+                                    "scale": "(+ 250% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "Health"
+                    }
+                ]
+            },
+            "name": "Demon Shade"
+        },
+        "Q": {
+            "_rawTooltip": {
+                "fullTooltip": "Evelynn strikes with her Lasher, dealing [[0]] to the first enemy hit and causing Evelynn's next 3 Attacks or Abilities on that unit to deal an additional [[1]]. Evelynn can [[2]] this Ability up to 3 times.<br /><br />[[3]] Evelynn fires spikes through the nearest enemy, dealing [[4]] to all enemies hit.",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "25/30/35/40/45 {{0}} magic damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+30% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "magicDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "15/25/35/45/55 {{0}} magic damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+25% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "magicDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "Recast",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "Recast:",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "25/30/35/40/45 {{0}} magic damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+30% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "magicDamage"
+                    }
+                ]
+            },
+            "cooldown": "4",
+            "cost": "40/45/50/55/60 Mana",
+            "name": "Hate Spike"
+        },
+        "W": {
+            "_rawTooltip": {
+                "fullTooltip": "Evelynn marks a champion or monster for 5 seconds. If Evelynn hits the target with an Attack or Ability, she will expunge the mark, refund its cost, and [[0]] the target by 65% for 0.75 seconds.<br /><br />If the mark lasts at least 2.5 seconds, expunging it has extra effects:[[1]] them for 1.25/1.5/1.75/2 second(s) and removes [[2]] for 4 seconds.[[3]] them for 3/3.25/3.5/3.75 seconds and deals [[4]].",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "Slow",
+                            "scaleHolders": []
+                        },
+                        "type": "status"
+                    },
+                    {
+                        "text": {
+                            "text": "Against champions: Charms",
+                            "scaleHolders": []
+                        },
+                        "type": "status"
+                    },
+                    {
+                        "text": {
+                            "text": "35/37.5/40/42.5/45% Magic Resist",
+                            "scaleHolders": []
+                        },
+                        "type": "scaleMR"
+                    },
+                    {
+                        "text": {
+                            "text": "Against monsters: Charms",
+                            "scaleHolders": []
+                        },
+                        "type": "status"
+                    },
+                    {
+                        "text": {
+                            "text": "250/300/350/400/450 {{0}} magic damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+60% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "magicDamage"
+                    }
+                ]
+            },
+            "cooldown": "15/14/13/12/11",
+            "cost": "60/70/80/90/100 Mana",
+            "name": "Allure"
+        },
+        "E": {
+            "_rawTooltip": {
+                "fullTooltip": "Evelynn whips an enemy, dealing [[0]]. Evelynn gains [[1]] for 2 seconds.<br /><br />Entering [[2]] refreshes this Ability's cooldown and empowers it. When this Ability is empowered, Evelynn dashes to the target and deals [[3]] to her target and everyone she passes through instead.",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "55/70/85/100 plus 3% {{0}} max Health magic damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+1.5% per 100 AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "magicDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "30% Move Speed",
+                            "scaleHolders": []
+                        },
+                        "type": "speed"
+                    },
+                    {
+                        "text": {
+                            "text": "Demon Shade",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "75/100/125/150 plus 4% {{0}} max Health magic damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+2.5% per 100 AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "magicDamage"
+                    }
+                ]
+            },
+            "cooldown": "8",
+            "cost": "40/45/50/55/60 Mana",
+            "name": "Whiplash"
+        },
+        "R": {
+            "_rawTooltip": {
+                "fullTooltip": "Evelynn unleashes her demonic energy, dealing heavy damage, becoming Untargetable and teleporting backwards. She deals [[0]], increased to [[1]] against enemies below [[2]]. Upon cast, set Demon Shade to a 1.25 second cooldown.",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "125/250/375 {{0}} magic damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+75% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "magicDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "300/600/900 {{0}}",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+180% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "magicDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "30% Health",
+                            "scaleHolders": []
+                        },
+                        "type": "healing"
+                    }
+                ]
+            },
+            "cooldown": "120/100/80",
+            "cost": "100 Mana",
+            "name": "Last Caress"
+        }
+    },
     "Changes": {
         "9.18": {
             "B": "",
@@ -273,343 +537,15 @@
             "R": ""
         }
     },
-    "stats": {
-        "hp": {
-            "base": 642,
-            "increment": 98
-        },
-        "mp": {
-            "base": 315,
-            "increment": 42
-        },
-        "armor": {
-            "base": 37,
-            "increment": 4.7
-        },
-        "spellBlock": {
-            "base": 32,
-            "increment": 2.05
-        },
-        "hpRegen": {
-            "base": 8.5,
-            "increment": 0.75
-        },
-        "mpRegen": {
-            "base": 8.11,
-            "increment": 0.6
-        },
-        "attackSpeed": {
-            "base": 0.667,
-            "increment": 0.021
-        },
-        "ms": {
-            "base": 335,
-            "increment": 0
-        },
-        "attackDamage": {
-            "base": 61,
-            "increment": 3
-        },
-        "attackRange": {
-            "base": 125,
-            "increment": 0
-        }
-    },
-    "spells": {
-        "P": {
-            "name": "Demon Shade",
-            "cooldown": "",
-            "_rawTooltip": {
-                "fullTooltip": "Innate: Evelynn gains Demon Shade after not performing actions that break stealth for [[0]] from enemy champions or turrets ends Demon Shade immediately and puts it on a 1.5-second static cooldown.<br>Demon Shade: While below [[1]], Evelynn heals herself for 15 − 75 (based on level) every second. From level 6 onward, Demon Shade also grants camouflage.",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "4 seconds. Taking damage",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "250 − 590 {{0}} {{1}} health",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(based on level)",
-                                    "scaleId": "level"
-                                },
-                                {
-                                    "scale": "(+ 250% AP)",
-                                    "scaleId": "AP"
-                                }
-                            ]
-                        },
-                        "type": "Health"
-                    }
-                ]
-            }
-        },
-        "Q": {
-            "id": "EvelynnQ",
-            "name": "Hate Spike",
-            "_rawTooltip": {
-                "fullTooltip": "Evelynn strikes with her Lasher, dealing [[0]] to the first enemy hit and causing Evelynn's next 3 Attacks or Abilities on that unit to deal an additional [[1]]. Evelynn can [[2]] this Ability up to 3 times.<br /><br />[[3]] Evelynn fires spikes through the nearest enemy, dealing [[4]] to all enemies hit.",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "25/30/35/40/45 {{0}} magic damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+30% AP)",
-                                    "scaleId": "AP"
-                                }
-                            ]
-                        },
-                        "type": "magicDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "15/25/35/45/55 {{0}} magic damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+25% AP)",
-                                    "scaleId": "AP"
-                                }
-                            ]
-                        },
-                        "type": "magicDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "Recast",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "Recast:",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "25/30/35/40/45 {{0}} magic damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+30% AP)",
-                                    "scaleId": "AP"
-                                }
-                            ]
-                        },
-                        "type": "magicDamage"
-                    }
-                ]
-            },
-            "maxRank": 5,
-            "cooldown": "4",
-            "cooldownByLevel": [
-                4,
-                4,
-                4,
-                4,
-                4
-            ],
-            "cost": "40/45/50/55/60 Mana",
-            "costByLevel": [
-                40,
-                45,
-                50,
-                55,
-                60
-            ],
-            "costType": " Mana"
-        },
-        "W": {
-            "id": "EvelynnW",
-            "name": "Allure",
-            "_rawTooltip": {
-                "fullTooltip": "Evelynn marks a champion or monster for 5 seconds. If Evelynn hits the target with an Attack or Ability, she will expunge the mark, refund its cost, and [[0]] the target by 65% for 0.75 seconds.<br /><br />If the mark lasts at least 2.5 seconds, expunging it has extra effects:[[1]] them for 1.25/1.5/1.75/2 second(s) and removes [[2]] for 4 seconds.[[3]] them for 3/3.25/3.5/3.75 seconds and deals [[4]].",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "Slow",
-                            "scaleHolders": []
-                        },
-                        "type": "status"
-                    },
-                    {
-                        "text": {
-                            "text": "Against champions: Charms",
-                            "scaleHolders": []
-                        },
-                        "type": "status"
-                    },
-                    {
-                        "text": {
-                            "text": "35/37.5/40/42.5/45% Magic Resist",
-                            "scaleHolders": []
-                        },
-                        "type": "scaleMR"
-                    },
-                    {
-                        "text": {
-                            "text": "Against monsters: Charms",
-                            "scaleHolders": []
-                        },
-                        "type": "status"
-                    },
-                    {
-                        "text": {
-                            "text": "250/300/350/400/450 {{0}} magic damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+60% AP)",
-                                    "scaleId": "AP"
-                                }
-                            ]
-                        },
-                        "type": "magicDamage"
-                    }
-                ]
-            },
-            "maxRank": 5,
-            "cooldown": "15/14/13/12/11",
-            "cooldownByLevel": [
-                15,
-                14,
-                13,
-                12,
-                11
-            ],
-            "cost": "60/70/80/90/100 Mana",
-            "costByLevel": [
-                60,
-                70,
-                80,
-                90,
-                100
-            ],
-            "costType": " Mana"
-        },
-        "E": {
-            "id": "EvelynnE",
-            "name": "Whiplash",
-            "_rawTooltip": {
-                "fullTooltip": "Evelynn whips an enemy, dealing [[0]]. Evelynn gains [[1]] for 2 seconds.<br /><br />Entering [[2]] refreshes this Ability's cooldown and empowers it. When this Ability is empowered, Evelynn dashes to the target and deals [[3]] to her target and everyone she passes through instead.",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "55/70/85/100 plus 3% {{0}} max Health magic damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+1.5% per 100 AP)",
-                                    "scaleId": "AP"
-                                }
-                            ]
-                        },
-                        "type": "magicDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "30% Move Speed",
-                            "scaleHolders": []
-                        },
-                        "type": "speed"
-                    },
-                    {
-                        "text": {
-                            "text": "Demon Shade",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "75/100/125/150 plus 4% {{0}} max Health magic damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+2.5% per 100 AP)",
-                                    "scaleId": "AP"
-                                }
-                            ]
-                        },
-                        "type": "magicDamage"
-                    }
-                ]
-            },
-            "maxRank": 5,
-            "cooldown": "8",
-            "cooldownByLevel": [
-                8,
-                8,
-                8,
-                8,
-                8
-            ],
-            "cost": "40/45/50/55/60 Mana",
-            "costByLevel": [
-                40,
-                45,
-                50,
-                55,
-                60
-            ],
-            "costType": " Mana"
-        },
-        "R": {
-            "id": "EvelynnR",
-            "name": "Last Caress",
-            "_rawTooltip": {
-                "fullTooltip": "Evelynn unleashes her demonic energy, dealing heavy damage, becoming Untargetable and teleporting backwards. She deals [[0]], increased to [[1]] against enemies below [[2]]. Upon cast, set Demon Shade to a 1.25 second cooldown.",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "125/250/375 {{0}} magic damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+75% AP)",
-                                    "scaleId": "AP"
-                                }
-                            ]
-                        },
-                        "type": "magicDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "300/600/900 {{0}}",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+180% AP)",
-                                    "scaleId": "AP"
-                                }
-                            ]
-                        },
-                        "type": "magicDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "30% Health",
-                            "scaleHolders": []
-                        },
-                        "type": "healing"
-                    }
-                ]
-            },
-            "maxRank": 3,
-            "cooldown": "120/100/80",
-            "cooldownByLevel": [
-                120,
-                100,
-                80
-            ],
-            "cost": "100 Mana",
-            "costByLevel": [
-                100,
-                100,
-                100
-            ],
-            "costType": " Mana"
-        }
-    }
+    "ChangePatches": [
+        "9.18",
+        "10.8",
+        "10.16",
+        "10.17",
+        "11.17",
+        "12.10",
+        "12.13",
+        "12.20"
+    ],
+    "ChampionName": "Evelynn"
 }

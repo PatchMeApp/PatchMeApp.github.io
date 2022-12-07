@@ -1,13 +1,309 @@
 {
-    "ChampionName": "Vladimir",
-    "ChangePatches": [
-        "11.3",
-        "11.8",
-        "11.9",
-        "11.16",
-        "12.8",
-        "12.10"
-    ],
+    "stats": {
+        "hp": {
+            "base": 607,
+            "increment": 110
+        },
+        "mp": {
+            "base": 2,
+            "increment": 0
+        },
+        "armor": {
+            "base": 27,
+            "increment": 4.5
+        },
+        "spellBlock": {
+            "base": 30,
+            "increment": 1.3
+        },
+        "hpRegen": {
+            "base": 7,
+            "increment": 0.6
+        },
+        "mpRegen": {
+            "base": 0,
+            "increment": 0
+        },
+        "attackSpeed": {
+            "base": 0.658,
+            "increment": 0.02
+        },
+        "ms": {
+            "base": 330,
+            "increment": 0
+        },
+        "attackDamage": {
+            "base": 55,
+            "increment": 3
+        },
+        "attackRange": {
+            "base": 450,
+            "increment": 0
+        }
+    },
+    "spells": {
+        "P": {
+            "cooldown": "",
+            "_rawTooltip": {
+                "fullTooltip": "Innate: Vladimir gains [[0]]) as ability power and [[1]]. These two bonuses do not stack with each other.",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "(3.3% bonus health",
+                            "scaleHolders": []
+                        },
+                        "type": "Health"
+                    },
+                    {
+                        "text": {
+                            "text": "{{0}} as bonus health",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(160% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "Health"
+                    }
+                ]
+            },
+            "name": "Crimson Pact"
+        },
+        "Q": {
+            "_rawTooltip": {
+                "fullTooltip": "Vladimir drains his target's lifeforce, dealing [[0]] and restoring [[1]]. After using this Ability twice, Vladimir gains [[2]] for 0.5 seconds and empowers the next use of this Ability for 2.5 seconds.<br /><br />The empowered version of this Ability deals [[3]] instead and restores an additional [[4]].",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "80/100/120/140/160 {{0}} magic damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+60% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "magicDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "20/25/30/35/40 {{0}} Health",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+35% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "healing"
+                    },
+                    {
+                        "text": {
+                            "text": "10 - 140 {{0}}% Move Speed",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(based on champion level)",
+                                    "scaleId": "level"
+                                }
+                            ]
+                        },
+                        "type": "speed"
+                    },
+                    {
+                        "text": {
+                            "text": "148/185/222/259/296 {{0}} magic damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+111% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "magicDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "30 - 200 {{0}} plus 500% {{1}} missing Health",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(based on champion level)",
+                                    "scaleId": "level"
+                                },
+                                {
+                                    "scale": "(+400% per 100 AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "healing"
+                    }
+                ]
+            },
+            "cooldown": "9/7.9/6.8/5.7/4.6",
+            "cost": "No Cost",
+            "name": "Transfusion"
+        },
+        "W": {
+            "_rawTooltip": {
+                "fullTooltip": "Vladimir sinks into a pool of blood for 2 seconds, gaining [[0]] for 1 second and becoming Untargetable and Ghosted while [[1]] enemies in the pool by 40%.<br /><br />Vladimir deals [[2]] over the duration and restores [[3]].",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "37.5% decaying Move Speed",
+                            "scaleHolders": []
+                        },
+                        "type": "speed"
+                    },
+                    {
+                        "text": {
+                            "text": "Slowing",
+                            "scaleHolders": []
+                        },
+                        "type": "status"
+                    },
+                    {
+                        "text": {
+                            "text": "80/135/190/245/300 {{0}} magic damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+10% Bonus Health)",
+                                    "scaleId": "Health"
+                                }
+                            ]
+                        },
+                        "type": "magicDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "Health equal to 15% of the damage dealt",
+                            "scaleHolders": []
+                        },
+                        "type": "healing"
+                    }
+                ]
+            },
+            "cooldown": "28/25/22/19/16",
+            "cost": "20% of current Health",
+            "name": "Sanguine Pool"
+        },
+        "E": {
+            "_rawTooltip": {
+                "fullTooltip": "[[0]]Vladimir charges up a reservoir of blood, spending up to 8% Health Health. While at full charge, Vladimir is [[1]] by 20%.<br /><br />[[2]]Vladimir unleashes a torrent of blood missiles at surrounding enemies, dealing between [[3]] and [[4]] based on charge time. If this Ability was charged for at least 1 second, it also [[5]] targets by 40/45/50/55/60% for 0.5 seconds.",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "Begin Charging: ",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "Slowed",
+                            "scaleHolders": []
+                        },
+                        "type": "status"
+                    },
+                    {
+                        "text": {
+                            "text": "Release: ",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "30/45/60/75/90 {{0}} {{1}}",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+1.5% Health)",
+                                    "scaleId": "Health"
+                                },
+                                {
+                                    "scale": "(+35% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "magicDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "60/90/120/150/180 {{0}} {{1}} magic damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+6% Health)",
+                                    "scaleId": "Health"
+                                },
+                                {
+                                    "scale": "(+80% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "magicDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "Slows",
+                            "scaleHolders": []
+                        },
+                        "type": "status"
+                    }
+                ]
+            },
+            "cooldown": "13/11/9/7/5",
+            "cost": "Channeling Cost 8% of max Health",
+            "name": "Tides of Blood"
+        },
+        "R": {
+            "_rawTooltip": {
+                "fullTooltip": "Vladimir creates a virulent plague, causing its victims to take 10% increased damage from all sources for 4 seconds. After it expires, Vladimir deals [[0]] to all infected targets. Vladimir restores [[1]] if he hits a champion, and restores an additional [[2]] for each champion beyond the first.",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "150/250/350 {{0}} magic damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+70% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "magicDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "150/250/350 {{0}} Health",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+70% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "healing"
+                    },
+                    {
+                        "text": {
+                            "text": "60/100/140 {{0}} Health",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+28% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "healing"
+                    }
+                ]
+            },
+            "cooldown": "120",
+            "cost": "No Cost",
+            "name": "Hemoplague"
+        }
+    },
     "Changes": {
         "11.3": {
             "B": "",
@@ -185,373 +481,13 @@
             }
         }
     },
-    "stats": {
-        "hp": {
-            "base": 607,
-            "increment": 110
-        },
-        "mp": {
-            "base": 2,
-            "increment": 0
-        },
-        "armor": {
-            "base": 27,
-            "increment": 4.5
-        },
-        "spellBlock": {
-            "base": 30,
-            "increment": 1.3
-        },
-        "hpRegen": {
-            "base": 7,
-            "increment": 0.6
-        },
-        "mpRegen": {
-            "base": 0,
-            "increment": 0
-        },
-        "attackSpeed": {
-            "base": 0.658,
-            "increment": 0.02
-        },
-        "ms": {
-            "base": 330,
-            "increment": 0
-        },
-        "attackDamage": {
-            "base": 55,
-            "increment": 3
-        },
-        "attackRange": {
-            "base": 450,
-            "increment": 0
-        }
-    },
-    "spells": {
-        "P": {
-            "name": "Crimson Pact",
-            "cooldown": "",
-            "_rawTooltip": {
-                "fullTooltip": "Innate: Vladimir gains [[0]]) as ability power and [[1]]. These two bonuses do not stack with each other.",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "(3.3% bonus health",
-                            "scaleHolders": []
-                        },
-                        "type": "Health"
-                    },
-                    {
-                        "text": {
-                            "text": "{{0}} as bonus health",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(160% AP)",
-                                    "scaleId": "AP"
-                                }
-                            ]
-                        },
-                        "type": "Health"
-                    }
-                ]
-            }
-        },
-        "Q": {
-            "id": "VladimirQ",
-            "name": "Transfusion",
-            "_rawTooltip": {
-                "fullTooltip": "Vladimir drains his target's lifeforce, dealing [[0]] and restoring [[1]]. After using this Ability twice, Vladimir gains [[2]] for 0.5 seconds and empowers the next use of this Ability for 2.5 seconds.<br /><br />The empowered version of this Ability deals [[3]] instead and restores an additional [[4]].",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "80/100/120/140/160 {{0}} magic damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+60% AP)",
-                                    "scaleId": "AP"
-                                }
-                            ]
-                        },
-                        "type": "magicDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "20/25/30/35/40 {{0}} Health",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+35% AP)",
-                                    "scaleId": "AP"
-                                }
-                            ]
-                        },
-                        "type": "healing"
-                    },
-                    {
-                        "text": {
-                            "text": "10 - 140 {{0}}% Move Speed",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(based on champion level)",
-                                    "scaleId": "level"
-                                }
-                            ]
-                        },
-                        "type": "speed"
-                    },
-                    {
-                        "text": {
-                            "text": "148/185/222/259/296 {{0}} magic damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+111% AP)",
-                                    "scaleId": "AP"
-                                }
-                            ]
-                        },
-                        "type": "magicDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "30 - 200 {{0}} plus 500% {{1}} missing Health",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(based on champion level)",
-                                    "scaleId": "level"
-                                },
-                                {
-                                    "scale": "(+400% per 100 AP)",
-                                    "scaleId": "AP"
-                                }
-                            ]
-                        },
-                        "type": "healing"
-                    }
-                ]
-            },
-            "maxRank": 5,
-            "cooldown": "9/7.9/6.8/5.7/4.6",
-            "cooldownByLevel": [
-                9,
-                7.9,
-                6.8,
-                5.7,
-                4.6
-            ],
-            "cost": "No Cost",
-            "costByLevel": [
-                0,
-                0,
-                0,
-                0,
-                0
-            ],
-            "costType": "No Cost"
-        },
-        "W": {
-            "id": "VladimirSanguinePool",
-            "name": "Sanguine Pool",
-            "_rawTooltip": {
-                "fullTooltip": "Vladimir sinks into a pool of blood for 2 seconds, gaining [[0]] for 1 second and becoming Untargetable and Ghosted while [[1]] enemies in the pool by 40%.<br /><br />Vladimir deals [[2]] over the duration and restores [[3]].",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "37.5% decaying Move Speed",
-                            "scaleHolders": []
-                        },
-                        "type": "speed"
-                    },
-                    {
-                        "text": {
-                            "text": "Slowing",
-                            "scaleHolders": []
-                        },
-                        "type": "status"
-                    },
-                    {
-                        "text": {
-                            "text": "80/135/190/245/300 {{0}} magic damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+10% Bonus Health)",
-                                    "scaleId": "Health"
-                                }
-                            ]
-                        },
-                        "type": "magicDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "Health equal to 15% of the damage dealt",
-                            "scaleHolders": []
-                        },
-                        "type": "healing"
-                    }
-                ]
-            },
-            "maxRank": 5,
-            "cooldown": "28/25/22/19/16",
-            "cooldownByLevel": [
-                28,
-                25,
-                22,
-                19,
-                16
-            ],
-            "cost": "20% of current Health",
-            "costByLevel": [
-                0,
-                0,
-                0,
-                0,
-                0
-            ],
-            "costType": "% of current Health"
-        },
-        "E": {
-            "id": "VladimirE",
-            "name": "Tides of Blood",
-            "_rawTooltip": {
-                "fullTooltip": "[[0]]Vladimir charges up a reservoir of blood, spending up to 8% Health Health. While at full charge, Vladimir is [[1]] by 20%.<br /><br />[[2]]Vladimir unleashes a torrent of blood missiles at surrounding enemies, dealing between [[3]] and [[4]] based on charge time. If this Ability was charged for at least 1 second, it also [[5]] targets by 40/45/50/55/60% for 0.5 seconds.",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "Begin Charging: ",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "Slowed",
-                            "scaleHolders": []
-                        },
-                        "type": "status"
-                    },
-                    {
-                        "text": {
-                            "text": "Release: ",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "30/45/60/75/90 {{0}} {{1}}",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+1.5% Health)",
-                                    "scaleId": "Health"
-                                },
-                                {
-                                    "scale": "(+35% AP)",
-                                    "scaleId": "AP"
-                                }
-                            ]
-                        },
-                        "type": "magicDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "60/90/120/150/180 {{0}} {{1}} magic damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+6% Health)",
-                                    "scaleId": "Health"
-                                },
-                                {
-                                    "scale": "(+80% AP)",
-                                    "scaleId": "AP"
-                                }
-                            ]
-                        },
-                        "type": "magicDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "Slows",
-                            "scaleHolders": []
-                        },
-                        "type": "status"
-                    }
-                ]
-            },
-            "maxRank": 5,
-            "cooldown": "13/11/9/7/5",
-            "cooldownByLevel": [
-                13,
-                11,
-                9,
-                7,
-                5
-            ],
-            "cost": "Channeling Cost 8% of max Health",
-            "costByLevel": [
-                0,
-                0,
-                0,
-                0,
-                0
-            ],
-            "costType": "% of max Health"
-        },
-        "R": {
-            "id": "VladimirHemoplague",
-            "name": "Hemoplague",
-            "_rawTooltip": {
-                "fullTooltip": "Vladimir creates a virulent plague, causing its victims to take 10% increased damage from all sources for 4 seconds. After it expires, Vladimir deals [[0]] to all infected targets. Vladimir restores [[1]] if he hits a champion, and restores an additional [[2]] for each champion beyond the first.",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "150/250/350 {{0}} magic damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+70% AP)",
-                                    "scaleId": "AP"
-                                }
-                            ]
-                        },
-                        "type": "magicDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "150/250/350 {{0}} Health",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+70% AP)",
-                                    "scaleId": "AP"
-                                }
-                            ]
-                        },
-                        "type": "healing"
-                    },
-                    {
-                        "text": {
-                            "text": "60/100/140 {{0}} Health",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+28% AP)",
-                                    "scaleId": "AP"
-                                }
-                            ]
-                        },
-                        "type": "healing"
-                    }
-                ]
-            },
-            "maxRank": 3,
-            "cooldown": "120",
-            "cooldownByLevel": [
-                120,
-                120,
-                120
-            ],
-            "cost": "No Cost",
-            "costByLevel": [
-                0,
-                0,
-                0
-            ],
-            "costType": "No Cost"
-        }
-    }
+    "ChangePatches": [
+        "11.3",
+        "11.8",
+        "11.9",
+        "11.16",
+        "12.8",
+        "12.10"
+    ],
+    "ChampionName": "Vladimir"
 }

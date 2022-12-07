@@ -1,14 +1,289 @@
 {
-    "ChampionName": "Rell",
-    "ChangePatches": [
-        "10.25",
-        "11.3",
-        "11.5",
-        "11.7",
-        "11.15",
-        "12.10",
-        "12.17"
-    ],
+    "stats": {
+        "hp": {
+            "base": 610,
+            "increment": 104
+        },
+        "mp": {
+            "base": 350,
+            "increment": 45
+        },
+        "armor": {
+            "base": 32,
+            "increment": 4.2
+        },
+        "spellBlock": {
+            "base": 32,
+            "increment": 2.05
+        },
+        "hpRegen": {
+            "base": 7,
+            "increment": 0.55
+        },
+        "mpRegen": {
+            "base": 6,
+            "increment": 0.35
+        },
+        "attackSpeed": {
+            "base": 0.55,
+            "increment": 0.02
+        },
+        "ms": {
+            "base": 335,
+            "increment": 0
+        },
+        "attackDamage": {
+            "base": 55,
+            "increment": 3
+        },
+        "attackRange": {
+            "base": 175,
+            "increment": 0
+        }
+    },
+    "spells": {
+        "P": {
+            "cooldown": "",
+            "_rawTooltip": {
+                "fullTooltip": "Innate: Rell's basic attacks deal [[0]] before reducing the target's armor and magic resistance by 10% for 4 seconds, refreshing on subsequent hits. Basic attacks against enemy champions will refresh the duration for all nearby afflicted enemies.<br>Rell gains bonus armor and bonus magic resistance equal to the sum resistances reduced from all afflicted enemies, and Break the Mold's bonus damage is increased equal to the sum resistances reduced from the target.<br>Break the Mold will reduce the target's armor and magic resistance by a minimum of 5 − 12 (based on level), or 0.5 / 1.25 / 2 (based on level) versus minions.<br>Rell's attack windup is reduced[ to 42% − 39% (based on level). ]",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "8 − 16 {{0}} bonus magic damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(based on level)",
+                                    "scaleId": "level"
+                                }
+                            ]
+                        },
+                        "type": "magicDamage"
+                    }
+                ]
+            },
+            "name": "Break the Mold"
+        },
+        "Q": {
+            "_rawTooltip": {
+                "fullTooltip": "Rell thrusts her lance, destroying all Shield and dealing [[0]]. The first unit hit takes [[1]] instead and suffers [[2]]'s defense steal. <br /><br />If Rell is bound to an ally with [[3]], they both recover [[4]] for each enemy champion hit.",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "35/52.5/70/87.5/105 {{0}} magic damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+25% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "magicDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "70/105/140/175/210 {{0}} damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+50% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "magicDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "Break the Mold",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "Attract and Repel",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "10/15/20/25/30 {{0}} plus 4% missing Health",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+30% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "healing"
+                    }
+                ]
+            },
+            "cooldown": "9/8/7/6/5",
+            "cost": "50 Mana",
+            "name": "Shattering Strike"
+        },
+        "W": {
+            "_rawTooltip": {
+                "fullTooltip": "[[0]] Rell gains [[1]], reduced when taking damage. <br /><br />[[2]] Rell leaps off her mount, [[3]] enemies for 1 second and dealing [[4]]. Rell then enters Armored form, gaining [[5]], reducing her [[6]], and allowing her to use [[7]].",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "Passive - Mounted:",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "5% - 15% {{0}} Move Speed",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(based on champion level)",
+                                    "scaleId": "level"
+                                }
+                            ]
+                        },
+                        "type": "speed"
+                    },
+                    {
+                        "text": {
+                            "text": "Active - Ferromancy: Crash Down:",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "Knocking Up",
+                            "scaleHolders": []
+                        },
+                        "type": "status"
+                    },
+                    {
+                        "text": {
+                            "text": "70/105/140/175/210 {{0}} magic damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+60% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "magicDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "35/60/85/110/135 {{0}} Shield",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+12% Health)",
+                                    "scaleId": "Health"
+                                }
+                            ]
+                        },
+                        "type": "shield"
+                    },
+                    {
+                        "text": {
+                            "text": "Move Speed",
+                            "scaleHolders": []
+                        },
+                        "type": "speed"
+                    },
+                    {
+                        "text": {
+                            "text": "Ferromancy: Mount Up",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    }
+                ]
+            },
+            "cooldown": "11",
+            "cost": "40 Mana",
+            "name": "Ferromancy: Crash Down"
+        },
+        "E": {
+            "_rawTooltip": {
+                "fullTooltip": "Rell binds a piece of her Armor to another allied champion, granting them [[0]] and [[1]] while near you. Doing this has no cost and puts this Ability on Cooldown for 3 seconds.<br /><br />If Rell uses this Ability without targeting an allied champion, she snaps the binding, [[2]] enemies around and between herself and her bound ally for 0.5 seconds and dealing [[3]].",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "10% Armor Armor",
+                            "scaleHolders": []
+                        },
+                        "type": "scaleArmor"
+                    },
+                    {
+                        "text": {
+                            "text": "10% MR Magic Resist",
+                            "scaleHolders": []
+                        },
+                        "type": "scaleMR"
+                    },
+                    {
+                        "text": {
+                            "text": "Stunning",
+                            "scaleHolders": []
+                        },
+                        "type": "status"
+                    },
+                    {
+                        "text": {
+                            "text": "80/120/160/200/240 {{0}} magic damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+30% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "magicDamage"
+                    }
+                ]
+            },
+            "cooldown": "13",
+            "cost": "40 Mana",
+            "name": "Attract and Repel"
+        },
+        "R": {
+            "_rawTooltip": {
+                "fullTooltip": "Rell explodes in a magnetic fury, violently [[0]] nearby enemies towards herself. Then Rell constantly [[1]] nearby enemies towards herself and deals [[2]] over the next 2 seconds.",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "Pulling",
+                            "scaleHolders": []
+                        },
+                        "type": "status"
+                    },
+                    {
+                        "text": {
+                            "text": "Drags",
+                            "scaleHolders": []
+                        },
+                        "type": "status"
+                    },
+                    {
+                        "text": {
+                            "text": "120/200/280 {{0}} magic damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+110% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "magicDamage"
+                    }
+                ]
+            },
+            "cooldown": "120/100/80",
+            "cost": "100 Mana",
+            "name": "Magnet Storm"
+        }
+    },
     "Changes": {
         "10.25": {
             "B": "",
@@ -296,353 +571,14 @@
             "R": ""
         }
     },
-    "stats": {
-        "hp": {
-            "base": 610,
-            "increment": 104
-        },
-        "mp": {
-            "base": 350,
-            "increment": 45
-        },
-        "armor": {
-            "base": 32,
-            "increment": 4.2
-        },
-        "spellBlock": {
-            "base": 32,
-            "increment": 2.05
-        },
-        "hpRegen": {
-            "base": 7,
-            "increment": 0.55
-        },
-        "mpRegen": {
-            "base": 6,
-            "increment": 0.35
-        },
-        "attackSpeed": {
-            "base": 0.55,
-            "increment": 0.02
-        },
-        "ms": {
-            "base": 335,
-            "increment": 0
-        },
-        "attackDamage": {
-            "base": 55,
-            "increment": 3
-        },
-        "attackRange": {
-            "base": 175,
-            "increment": 0
-        }
-    },
-    "spells": {
-        "P": {
-            "name": "Break the Mold",
-            "cooldown": "",
-            "_rawTooltip": {
-                "fullTooltip": "Innate: Rell's basic attacks deal [[0]] before reducing the target's armor and magic resistance by 10% for 4 seconds, refreshing on subsequent hits. Basic attacks against enemy champions will refresh the duration for all nearby afflicted enemies.<br>Rell gains bonus armor and bonus magic resistance equal to the sum resistances reduced from all afflicted enemies, and Break the Mold's bonus damage is increased equal to the sum resistances reduced from the target.<br>Break the Mold will reduce the target's armor and magic resistance by a minimum of 5 − 12 (based on level), or 0.5 / 1.25 / 2 (based on level) versus minions.<br>Rell's attack windup is reduced[ to 42% − 39% (based on level). ]",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "8 − 16 {{0}} bonus magic damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(based on level)",
-                                    "scaleId": "level"
-                                }
-                            ]
-                        },
-                        "type": "magicDamage"
-                    }
-                ]
-            }
-        },
-        "Q": {
-            "id": "RellQ",
-            "name": "Shattering Strike",
-            "_rawTooltip": {
-                "fullTooltip": "Rell thrusts her lance, destroying all Shield and dealing [[0]]. The first unit hit takes [[1]] instead and suffers [[2]]'s defense steal. <br /><br />If Rell is bound to an ally with [[3]], they both recover [[4]] for each enemy champion hit.",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "35/52.5/70/87.5/105 {{0}} magic damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+25% AP)",
-                                    "scaleId": "AP"
-                                }
-                            ]
-                        },
-                        "type": "magicDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "70/105/140/175/210 {{0}} damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+50% AP)",
-                                    "scaleId": "AP"
-                                }
-                            ]
-                        },
-                        "type": "magicDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "Break the Mold",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "Attract and Repel",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "10/15/20/25/30 {{0}} plus 4% missing Health",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+30% AP)",
-                                    "scaleId": "AP"
-                                }
-                            ]
-                        },
-                        "type": "healing"
-                    }
-                ]
-            },
-            "maxRank": 5,
-            "cooldown": "9/8/7/6/5",
-            "cooldownByLevel": [
-                9,
-                8,
-                7,
-                6,
-                5
-            ],
-            "cost": "50 Mana",
-            "costByLevel": [
-                50,
-                50,
-                50,
-                50,
-                50
-            ],
-            "costType": " Mana"
-        },
-        "W": {
-            "id": "RellW_Dismount",
-            "name": "Ferromancy: Crash Down",
-            "_rawTooltip": {
-                "fullTooltip": "[[0]] Rell gains [[1]], reduced when taking damage. <br /><br />[[2]] Rell leaps off her mount, [[3]] enemies for 1 second and dealing [[4]]. Rell then enters Armored form, gaining [[5]], reducing her [[6]], and allowing her to use [[7]].",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "Passive - Mounted:",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "5% - 15% {{0}} Move Speed",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(based on champion level)",
-                                    "scaleId": "level"
-                                }
-                            ]
-                        },
-                        "type": "speed"
-                    },
-                    {
-                        "text": {
-                            "text": "Active - Ferromancy: Crash Down:",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "Knocking Up",
-                            "scaleHolders": []
-                        },
-                        "type": "status"
-                    },
-                    {
-                        "text": {
-                            "text": "70/105/140/175/210 {{0}} magic damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+60% AP)",
-                                    "scaleId": "AP"
-                                }
-                            ]
-                        },
-                        "type": "magicDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "35/60/85/110/135 {{0}} Shield",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+12% Health)",
-                                    "scaleId": "Health"
-                                }
-                            ]
-                        },
-                        "type": "shield"
-                    },
-                    {
-                        "text": {
-                            "text": "Move Speed",
-                            "scaleHolders": []
-                        },
-                        "type": "speed"
-                    },
-                    {
-                        "text": {
-                            "text": "Ferromancy: Mount Up",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    }
-                ]
-            },
-            "maxRank": 5,
-            "cooldown": "11",
-            "cooldownByLevel": [
-                11,
-                11,
-                11,
-                11,
-                11
-            ],
-            "cost": "40 Mana",
-            "costByLevel": [
-                40,
-                40,
-                40,
-                40,
-                40
-            ],
-            "costType": " Mana"
-        },
-        "E": {
-            "id": "RellE",
-            "name": "Attract and Repel",
-            "_rawTooltip": {
-                "fullTooltip": "Rell binds a piece of her Armor to another allied champion, granting them [[0]] and [[1]] while near you. Doing this has no cost and puts this Ability on Cooldown for 3 seconds.<br /><br />If Rell uses this Ability without targeting an allied champion, she snaps the binding, [[2]] enemies around and between herself and her bound ally for 0.5 seconds and dealing [[3]].",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "10% Armor Armor",
-                            "scaleHolders": []
-                        },
-                        "type": "scaleArmor"
-                    },
-                    {
-                        "text": {
-                            "text": "10% MR Magic Resist",
-                            "scaleHolders": []
-                        },
-                        "type": "scaleMR"
-                    },
-                    {
-                        "text": {
-                            "text": "Stunning",
-                            "scaleHolders": []
-                        },
-                        "type": "status"
-                    },
-                    {
-                        "text": {
-                            "text": "80/120/160/200/240 {{0}} magic damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+30% AP)",
-                                    "scaleId": "AP"
-                                }
-                            ]
-                        },
-                        "type": "magicDamage"
-                    }
-                ]
-            },
-            "maxRank": 5,
-            "cooldown": "13",
-            "cooldownByLevel": [
-                13,
-                13,
-                13,
-                13,
-                13
-            ],
-            "cost": "40 Mana",
-            "costByLevel": [
-                40,
-                40,
-                40,
-                40,
-                40
-            ],
-            "costType": " Mana"
-        },
-        "R": {
-            "id": "RellR",
-            "name": "Magnet Storm",
-            "_rawTooltip": {
-                "fullTooltip": "Rell explodes in a magnetic fury, violently [[0]] nearby enemies towards herself. Then Rell constantly [[1]] nearby enemies towards herself and deals [[2]] over the next 2 seconds.",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "Pulling",
-                            "scaleHolders": []
-                        },
-                        "type": "status"
-                    },
-                    {
-                        "text": {
-                            "text": "Drags",
-                            "scaleHolders": []
-                        },
-                        "type": "status"
-                    },
-                    {
-                        "text": {
-                            "text": "120/200/280 {{0}} magic damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+110% AP)",
-                                    "scaleId": "AP"
-                                }
-                            ]
-                        },
-                        "type": "magicDamage"
-                    }
-                ]
-            },
-            "maxRank": 3,
-            "cooldown": "120/100/80",
-            "cooldownByLevel": [
-                120,
-                100,
-                80
-            ],
-            "cost": "100 Mana",
-            "costByLevel": [
-                100,
-                100,
-                100
-            ],
-            "costType": " Mana"
-        }
-    }
+    "ChangePatches": [
+        "10.25",
+        "11.3",
+        "11.5",
+        "11.7",
+        "11.15",
+        "12.10",
+        "12.17"
+    ],
+    "ChampionName": "Rell"
 }

@@ -1,15 +1,298 @@
 {
-    "ChampionName": "Viego",
-    "ChangePatches": [
-        "11.2",
-        "11.5",
-        "11.13",
-        "11.15",
-        "11.17",
-        "11.21",
-        "12.10",
-        "12.12"
-    ],
+    "stats": {
+        "hp": {
+            "base": 630,
+            "increment": 109
+        },
+        "mp": {
+            "base": 10000,
+            "increment": 0
+        },
+        "armor": {
+            "base": 34,
+            "increment": 5.2
+        },
+        "spellBlock": {
+            "base": 32,
+            "increment": 2.05
+        },
+        "hpRegen": {
+            "base": 7,
+            "increment": 0.7
+        },
+        "mpRegen": {
+            "base": 0,
+            "increment": 0
+        },
+        "attackSpeed": {
+            "base": 0.658,
+            "increment": 0.025
+        },
+        "ms": {
+            "base": 345,
+            "increment": 0
+        },
+        "attackDamage": {
+            "base": 57,
+            "increment": 3.5
+        },
+        "attackRange": {
+            "base": 200,
+            "increment": 0
+        }
+    },
+    "spells": {
+        "P": {
+            "cooldown": "",
+            "_rawTooltip": {
+                "fullTooltip": "Innate: Whenever Viego scores a takedown against an enemy champion while alive and within 3 seconds of damaging them, a Mist Wraith spawns from that champion's corpse for 8 seconds, disappearing prematurely when he dies. Viego can basic attack a champion's Mist Wraith to possess it, heal himself for [[0]], and blink to its location after winding up for 1 second, during which he is untargetable (except to turrets) and unable to act.<br>Possession lasts for 10 seconds and replaces Viego's basic attacks, basic abilities, items, base stats (based on Viego's level), and appearance with the champion who spawned the Mist Wraith. Viego also gains a free cast of Heartbreaker, which is initially placed on a 1.5-second cooldown, and [[1]] while moving toward enemy champions within 2500 units during this time.<br>Viego cannot use item actives, consumable items, nor the shop while under possession. Casting Heartbreaker or attacking a Mist Wraith ends possession prematurely.<br>Viego will preserve his current health percentage between transformations.",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "2.5% {{0}} {{1}} {{2}} of the target's maximum health",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+ 2.5% per 100 bonus AD)",
+                                    "scaleId": "AD"
+                                },
+                                {
+                                    "scale": "(+ 2% per 100 AP)",
+                                    "scaleId": "AP"
+                                },
+                                {
+                                    "scale": "(+ 5% per 100% bonus attack speed)",
+                                    "scaleId": "speed"
+                                }
+                            ]
+                        },
+                        "type": "attackSpeed"
+                    },
+                    {
+                        "text": {
+                            "text": "10% bonus movement speed",
+                            "scaleHolders": []
+                        },
+                        "type": "speed"
+                    }
+                ]
+            },
+            "name": "Sovereign's Domination"
+        },
+        "Q": {
+            "_rawTooltip": {
+                "fullTooltip": " [[0]] Viego's Attacks deal an additional [[1]]. His first Attack against an enemy he has recently damaged with an Ability hits a second time, dealing [[2]] and restoring [[3]]. These bonuses are kept during [[4]].<br /><br />[[5]]Viego stabs forward, dealing [[6]] increased by 0% − 100% (based on critical strike chance) increased by 0% − 100% (based on critical strike chance).",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "Passive:",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "2/3/4/5/6% current Health physical damage",
+                            "scaleHolders": []
+                        },
+                        "type": "physicalDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "20% AD {{0}} physical damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+15% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "physicalDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "135% of damage dealt as Health",
+                            "scaleHolders": []
+                        },
+                        "type": "healing"
+                    },
+                    {
+                        "text": {
+                            "text": "Possession",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "Active: ",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "15/30/45/60/75 {{0}} physical damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+70% AD)",
+                                    "scaleId": "AD"
+                                }
+                            ]
+                        },
+                        "type": "physicalDamage"
+                    }
+                ]
+            },
+            "cooldown": "5/4.5/4/3.5/3",
+            "cost": "No Cost",
+            "name": "Blade of the Ruined King"
+        },
+        "W": {
+            "_rawTooltip": {
+                "fullTooltip": "[[0]] Viego begins gathering Mist, [[1]] himself by 10%.<br /><br />[[2]] Viego dashes forward and hurls the gathered Mist. Deals [[3]] and [[4]] the first enemy hit for 0.25 to 1.25 seconds based on charge time.<br />",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "Begin Charging:",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "Slowing",
+                            "scaleHolders": []
+                        },
+                        "type": "status"
+                    },
+                    {
+                        "text": {
+                            "text": "Release:",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "80/135/190/245/300 {{0}} magic damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+100% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "magicDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "Stuns",
+                            "scaleHolders": []
+                        },
+                        "type": "status"
+                    }
+                ]
+            },
+            "cooldown": "8",
+            "cost": "No Cost",
+            "name": "Spectral Maw"
+        },
+        "E": {
+            "_rawTooltip": {
+                "fullTooltip": "Viego sends forth a spectre to haunt the first terrain hit, surrounding it with Mist for 8 seconds. Viego gains [[0]], [[1]], and [[2]] while inside the Mist.",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "Camouflage",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "25/27.5/30/32.5/35% {{0}} Move Speed",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+4% per 100 AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "speed"
+                    },
+                    {
+                        "text": {
+                            "text": "30/35/40/45/50% Attack Speed",
+                            "scaleHolders": []
+                        },
+                        "type": "attackSpeed"
+                    }
+                ]
+            },
+            "cooldown": "14/12/10/8/6",
+            "cost": "No Cost",
+            "name": "Harrowed Path"
+        },
+        "R": {
+            "_rawTooltip": {
+                "fullTooltip": "Viego discards any souls he is currently [[0]] and teleports. On arrival he Attacks the champion with the lowest percent Health, briefly [[1]] them by 99% and dealing [[2]]. Other nearby enemies are [[3]] and take [[4]].",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "Possessing",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "Slowing",
+                            "scaleHolders": []
+                        },
+                        "type": "status"
+                    },
+                    {
+                        "text": {
+                            "text": "120% AD  increased by 0% − 100% {{0}} + 12/16/20 {{1}}% missing Health physical damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(based on critical strike chance)",
+                                    "scaleId": "chance"
+                                },
+                                {
+                                    "scale": "(+3% Bonus AD)",
+                                    "scaleId": "AD"
+                                }
+                            ]
+                        },
+                        "type": "physicalDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "Knocked Back",
+                            "scaleHolders": []
+                        },
+                        "type": "status"
+                    },
+                    {
+                        "text": {
+                            "text": "120% AD  increased by 0% − 100% {{0}} physical damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(based on critical strike chance)",
+                                    "scaleId": "chance"
+                                }
+                            ]
+                        },
+                        "type": "physicalDamage"
+                    }
+                ]
+            },
+            "cooldown": "120/100/80",
+            "cost": "No Cost",
+            "name": "Heartbreaker"
+        }
+    },
     "Changes": {
         "11.2": {
             "B": "",
@@ -414,362 +697,15 @@
             }
         }
     },
-    "stats": {
-        "hp": {
-            "base": 630,
-            "increment": 109
-        },
-        "mp": {
-            "base": 10000,
-            "increment": 0
-        },
-        "armor": {
-            "base": 34,
-            "increment": 5.2
-        },
-        "spellBlock": {
-            "base": 32,
-            "increment": 2.05
-        },
-        "hpRegen": {
-            "base": 7,
-            "increment": 0.7
-        },
-        "mpRegen": {
-            "base": 0,
-            "increment": 0
-        },
-        "attackSpeed": {
-            "base": 0.658,
-            "increment": 0.025
-        },
-        "ms": {
-            "base": 345,
-            "increment": 0
-        },
-        "attackDamage": {
-            "base": 57,
-            "increment": 3.5
-        },
-        "attackRange": {
-            "base": 200,
-            "increment": 0
-        }
-    },
-    "spells": {
-        "P": {
-            "name": "Sovereign's Domination",
-            "cooldown": "",
-            "_rawTooltip": {
-                "fullTooltip": "Innate: Whenever Viego scores a takedown against an enemy champion while alive and within 3 seconds of damaging them, a Mist Wraith spawns from that champion's corpse for 8 seconds, disappearing prematurely when he dies. Viego can basic attack a champion's Mist Wraith to possess it, heal himself for [[0]], and blink to its location after winding up for 1 second, during which he is untargetable (except to turrets) and unable to act.<br>Possession lasts for 10 seconds and replaces Viego's basic attacks, basic abilities, items, base stats (based on Viego's level), and appearance with the champion who spawned the Mist Wraith. Viego also gains a free cast of Heartbreaker, which is initially placed on a 1.5-second cooldown, and [[1]] while moving toward enemy champions within 2500 units during this time.<br>Viego cannot use item actives, consumable items, nor the shop while under possession. Casting Heartbreaker or attacking a Mist Wraith ends possession prematurely.<br>Viego will preserve his current health percentage between transformations.",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "2.5% {{0}} {{1}} {{2}} of the target's maximum health",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+ 2.5% per 100 bonus AD)",
-                                    "scaleId": "AD"
-                                },
-                                {
-                                    "scale": "(+ 2% per 100 AP)",
-                                    "scaleId": "AP"
-                                },
-                                {
-                                    "scale": "(+ 5% per 100% bonus attack speed)",
-                                    "scaleId": "speed"
-                                }
-                            ]
-                        },
-                        "type": "attackSpeed"
-                    },
-                    {
-                        "text": {
-                            "text": "10% bonus movement speed",
-                            "scaleHolders": []
-                        },
-                        "type": "speed"
-                    }
-                ]
-            }
-        },
-        "Q": {
-            "id": "ViegoQ",
-            "name": "Blade of the Ruined King",
-            "_rawTooltip": {
-                "fullTooltip": " [[0]] Viego's Attacks deal an additional [[1]]. His first Attack against an enemy he has recently damaged with an Ability hits a second time, dealing [[2]] and restoring [[3]]. These bonuses are kept during [[4]].<br /><br />[[5]]Viego stabs forward, dealing [[6]] increased by 0% − 100% (based on critical strike chance).",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "Passive:",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "2/3/4/5/6% current Health physical damage",
-                            "scaleHolders": []
-                        },
-                        "type": "physicalDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "20% AD {{0}} physical damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+15% AP)",
-                                    "scaleId": "AP"
-                                }
-                            ]
-                        },
-                        "type": "physicalDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "135% of damage dealt as Health",
-                            "scaleHolders": []
-                        },
-                        "type": "healing"
-                    },
-                    {
-                        "text": {
-                            "text": "Possession",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "Active: ",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "15/30/45/60/75 {{0}} physical damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+70% AD)",
-                                    "scaleId": "AD"
-                                }
-                            ]
-                        },
-                        "type": "physicalDamage"
-                    }
-                ]
-            },
-            "maxRank": 5,
-            "cooldown": "5/4.5/4/3.5/3",
-            "cooldownByLevel": [
-                5,
-                4.5,
-                4,
-                3.5,
-                3
-            ],
-            "cost": "No Cost",
-            "costByLevel": [
-                0,
-                0,
-                0,
-                0,
-                0
-            ],
-            "costType": "No Cost"
-        },
-        "W": {
-            "id": "ViegoW",
-            "name": "Spectral Maw",
-            "_rawTooltip": {
-                "fullTooltip": "[[0]] Viego begins gathering Mist, [[1]] himself by 10%.<br /><br />[[2]] Viego dashes forward and hurls the gathered Mist. Deals [[3]] and [[4]] the first enemy hit for 0.25 to 1.25 seconds based on charge time.<br />",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "Begin Charging:",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "Slowing",
-                            "scaleHolders": []
-                        },
-                        "type": "status"
-                    },
-                    {
-                        "text": {
-                            "text": "Release:",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "80/135/190/245/300 {{0}} magic damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+100% AP)",
-                                    "scaleId": "AP"
-                                }
-                            ]
-                        },
-                        "type": "magicDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "Stuns",
-                            "scaleHolders": []
-                        },
-                        "type": "status"
-                    }
-                ]
-            },
-            "maxRank": 5,
-            "cooldown": "8",
-            "cooldownByLevel": [
-                8,
-                8,
-                8,
-                8,
-                8
-            ],
-            "cost": "No Cost",
-            "costByLevel": [
-                0,
-                0,
-                0,
-                0,
-                0
-            ],
-            "costType": "No Cost"
-        },
-        "E": {
-            "id": "ViegoE",
-            "name": "Harrowed Path",
-            "_rawTooltip": {
-                "fullTooltip": "Viego sends forth a spectre to haunt the first terrain hit, surrounding it with Mist for 8 seconds. Viego gains [[0]], [[1]], and [[2]] while inside the Mist.",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "Camouflage",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "25/27.5/30/32.5/35% {{0}} Move Speed",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+4% per 100 AP)",
-                                    "scaleId": "AP"
-                                }
-                            ]
-                        },
-                        "type": "speed"
-                    },
-                    {
-                        "text": {
-                            "text": "30/35/40/45/50% Attack Speed",
-                            "scaleHolders": []
-                        },
-                        "type": "attackSpeed"
-                    }
-                ]
-            },
-            "maxRank": 5,
-            "cooldown": "14/12/10/8/6",
-            "cooldownByLevel": [
-                14,
-                12,
-                10,
-                8,
-                6
-            ],
-            "cost": "No Cost",
-            "costByLevel": [
-                0,
-                0,
-                0,
-                0,
-                0
-            ],
-            "costType": "No Cost"
-        },
-        "R": {
-            "id": "ViegoR",
-            "name": "Heartbreaker",
-            "_rawTooltip": {
-                "fullTooltip": "Viego discards any souls he is currently [[0]] and teleports. On arrival he Attacks the champion with the lowest percent Health, briefly [[1]] them by 99% and dealing [[2]]. Other nearby enemies are [[3]] and take [[4]].",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "Possessing",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "Slowing",
-                            "scaleHolders": []
-                        },
-                        "type": "status"
-                    },
-                    {
-                        "text": {
-                            "text": "120% AD  increased by 0% − 100% {{0}} + 12/16/20 {{1}}% missing Health physical damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(based on critical strike chance)",
-                                    "scaleId": "chance"
-                                },
-                                {
-                                    "scale": "(+3% Bonus AD)",
-                                    "scaleId": "AD"
-                                }
-                            ]
-                        },
-                        "type": "physicalDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "Knocked Back",
-                            "scaleHolders": []
-                        },
-                        "type": "status"
-                    },
-                    {
-                        "text": {
-                            "text": "120% AD  increased by 0% − 100% {{0}} physical damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(based on critical strike chance)",
-                                    "scaleId": "chance"
-                                }
-                            ]
-                        },
-                        "type": "physicalDamage"
-                    }
-                ]
-            },
-            "maxRank": 3,
-            "cooldown": "120/100/80",
-            "cooldownByLevel": [
-                120,
-                100,
-                80
-            ],
-            "cost": "No Cost",
-            "costByLevel": [
-                0,
-                0,
-                0
-            ],
-            "costType": "No Cost"
-        }
-    }
+    "ChangePatches": [
+        "11.2",
+        "11.5",
+        "11.13",
+        "11.15",
+        "11.17",
+        "11.21",
+        "12.10",
+        "12.12"
+    ],
+    "ChampionName": "Viego"
 }

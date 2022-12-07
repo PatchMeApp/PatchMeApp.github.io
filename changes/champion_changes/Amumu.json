@@ -1,23 +1,201 @@
 {
-    "ChampionName": "Amumu",
-    "ChangePatches": [
-        "9.24",
-        "10.4",
-        "10.5",
-        "10.22",
-        "10.23",
-        "10.24",
-        "10.25",
-        "11.4",
-        "11.7",
-        "11.17",
-        "11.20",
-        "12.3",
-        "12.4",
-        "12.10",
-        "12.12",
-        "12.22"
-    ],
+    "stats": {
+        "hp": {
+            "base": 685,
+            "increment": 89
+        },
+        "mp": {
+            "base": 285,
+            "increment": 40
+        },
+        "armor": {
+            "base": 30,
+            "increment": 4.2
+        },
+        "spellBlock": {
+            "base": 32,
+            "increment": 2.05
+        },
+        "hpRegen": {
+            "base": 9,
+            "increment": 0.85
+        },
+        "mpRegen": {
+            "base": 7.4,
+            "increment": 0.55
+        },
+        "attackSpeed": {
+            "base": 0.736,
+            "increment": 0.0218
+        },
+        "ms": {
+            "base": 335,
+            "increment": 0
+        },
+        "attackDamage": {
+            "base": 53,
+            "increment": 3.8
+        },
+        "attackRange": {
+            "base": 125,
+            "increment": 0
+        }
+    },
+    "spells": {
+        "P": {
+            "cooldown": "",
+            "_rawTooltip": {
+                "fullTooltip": "Innate: Amumu's basic attacks and Curse of the Sad Mummy mark enemies with Curse for 3 seconds, refreshing on subsequent applications and Despair.<br>Cursed targets receive [[0]] from all incoming pre-mitigation magic damage.",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "10% bonus true damage",
+                            "scaleHolders": []
+                        },
+                        "type": "trueDamage"
+                    }
+                ]
+            },
+            "name": "Cursed Touch"
+        },
+        "Q": {
+            "_rawTooltip": {
+                "fullTooltip": "Amumu launches a bandage, pulling himself to the first enemy hit, [[0]] them for 1 second, and dealing [[1]].<br /><br />This Ability has 2 charges.",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "Stunning",
+                            "scaleHolders": []
+                        },
+                        "type": "status"
+                    },
+                    {
+                        "text": {
+                            "text": "70/95/120/145/170 {{0}} magic damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+85% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "magicDamage"
+                    }
+                ]
+            },
+            "cooldown": "3",
+            "cost": "40/45/50/55/60 Mana",
+            "name": "Bandage Toss"
+        },
+        "W": {
+            "_rawTooltip": {
+                "fullTooltip": "[[0]] Amumu begins crying, dealing [[1]] to nearby enemies every second and refreshing [[2]].",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "Toggle:",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "12/16/20/24/28 plus 1/1.25/1.5/1.75/2% {{0}} max Health magic damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+0.5% per 100 AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "magicDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "Curse",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    }
+                ]
+            },
+            "cooldown": "1",
+            "cost": "8 Mana per Second",
+            "name": "Despair"
+        },
+        "E": {
+            "_rawTooltip": {
+                "fullTooltip": "[[0]] Amumu takes 5/7/9/11/13 (+3% Bonus Armor) (+3% Bonus MR) reduced physical damage. Additionally, when Amumu is hit by an Attack, this Ability's Cooldown is reduced by 0.75 seconds seconds.<br /><br />[[1]] Amumu throws a tantrum, dealing [[2]] to nearby enemies.",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "Passive:",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "Active:",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "80/110/140/170/200 {{0}} magic damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+ 50% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "magicDamage"
+                    }
+                ]
+            },
+            "cooldown": "9/8/7/6/5",
+            "cost": "35 Mana",
+            "name": "Tantrum"
+        },
+        "R": {
+            "_rawTooltip": {
+                "fullTooltip": "Amumu flares out his bandages, [[0]] for 1.5 seconds, dealing [[1]] and applying [[2]].",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "Stunning",
+                            "scaleHolders": []
+                        },
+                        "type": "status"
+                    },
+                    {
+                        "text": {
+                            "text": "200/300/400 {{0}} magic damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+80% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "magicDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "Curse",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    }
+                ]
+            },
+            "cooldown": "150/125/100",
+            "cost": "100/150/200 Mana",
+            "name": "Curse of the Sad Mummy"
+        }
+    },
     "Changes": {
         "9.24": {
             "B": "",
@@ -599,6 +777,66 @@
                 ]
             }
         },
+        "12.23": {
+            "B": {
+                "SpellName": "Base Stats",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Health Growth: ",
+                            "Before": "89",
+                            "Indicator": " ⇒ ",
+                            "After": "100"
+                        }
+                    }
+                ]
+            },
+            "P": "",
+            "Q": {
+                "SpellName": "Q - Bandage Toss",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Mana Cost: ",
+                            "Before": "30/35/40/45/50",
+                            "Indicator": " ⇒ ",
+                            "After": "40/45/50/55/60"
+                        }
+                    }
+                ]
+            },
+            "W": {
+                "SpellName": "W - Despair",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Damage per Second: ",
+                            "Before": "12/16/20/24/28 (+1/1.15/1.3/1.45/1.6% of target’s maximum HP)",
+                            "Indicator": " ⇒ ",
+                            "After": "12/16/20/24/28 (+1/1.25/1.5/1.75/2% of target’s maximum HP)"
+                        }
+                    }
+                ]
+            },
+            "E": {
+                "SpellName": "E - Tantrum",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Base Magic Damage: ",
+                            "Before": "85/110/135/160/185 (+ 50% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "80/110/140/170/200 (+ 50% AP)"
+                        }
+                    }
+                ]
+            },
+            "R": ""
+        },
         "12.22": {
             "B": "",
             "P": "",
@@ -630,265 +868,24 @@
             "R": ""
         }
     },
-    "stats": {
-        "hp": {
-            "base": 685,
-            "increment": 89
-        },
-        "mp": {
-            "base": 285,
-            "increment": 40
-        },
-        "armor": {
-            "base": 30,
-            "increment": 4.2
-        },
-        "spellBlock": {
-            "base": 32,
-            "increment": 2.05
-        },
-        "hpRegen": {
-            "base": 9,
-            "increment": 0.85
-        },
-        "mpRegen": {
-            "base": 7.4,
-            "increment": 0.55
-        },
-        "attackSpeed": {
-            "base": 0.736,
-            "increment": 0.0218
-        },
-        "ms": {
-            "base": 335,
-            "increment": 0
-        },
-        "attackDamage": {
-            "base": 53,
-            "increment": 3.8
-        },
-        "attackRange": {
-            "base": 125,
-            "increment": 0
-        }
-    },
-    "spells": {
-        "P": {
-            "name": "Cursed Touch",
-            "cooldown": "",
-            "_rawTooltip": {
-                "fullTooltip": "Innate: Amumu's basic attacks and Curse of the Sad Mummy mark enemies with Curse for 3 seconds, refreshing on subsequent applications and Despair.<br>Cursed targets receive [[0]] from all incoming pre-mitigation magic damage.",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "10% bonus true damage",
-                            "scaleHolders": []
-                        },
-                        "type": "trueDamage"
-                    }
-                ]
-            }
-        },
-        "Q": {
-            "id": "BandageToss",
-            "name": "Bandage Toss",
-            "_rawTooltip": {
-                "fullTooltip": "Amumu launches a bandage, pulling himself to the first enemy hit, [[0]] them for 1 second, and dealing [[1]].<br /><br />This Ability has 2 charges.",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "Stunning",
-                            "scaleHolders": []
-                        },
-                        "type": "status"
-                    },
-                    {
-                        "text": {
-                            "text": "70/95/120/145/170 {{0}} magic damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+85% AP)",
-                                    "scaleId": "AP"
-                                }
-                            ]
-                        },
-                        "type": "magicDamage"
-                    }
-                ]
-            },
-            "maxRank": 5,
-            "cooldown": "3",
-            "cooldownByLevel": [
-                3,
-                3,
-                3,
-                3,
-                3
-            ],
-            "cost": "30/35/40/45/50 Mana",
-            "costByLevel": [
-                30,
-                35,
-                40,
-                45,
-                50
-            ],
-            "costType": " Mana"
-        },
-        "W": {
-            "id": "AuraofDespair",
-            "name": "Despair",
-            "_rawTooltip": {
-                "fullTooltip": "[[0]] Amumu begins crying, dealing [[1]] to nearby enemies every second and refreshing [[2]].",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "Toggle:",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "6/8/10/12/14 plus 1/1.15/1.3/1.45/1.6% {{0}} max Health magic damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+0.5% per 100 AP)",
-                                    "scaleId": "AP"
-                                }
-                            ]
-                        },
-                        "type": "magicDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "Curse",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    }
-                ]
-            },
-            "maxRank": 5,
-            "cooldown": "1",
-            "cooldownByLevel": [
-                1,
-                1,
-                1,
-                1,
-                1
-            ],
-            "cost": "8 Mana per Second",
-            "costByLevel": [
-                8,
-                8,
-                8,
-                8,
-                8
-            ],
-            "costType": " Mana per Second"
-        },
-        "E": {
-            "id": "Tantrum",
-            "name": "Tantrum",
-            "_rawTooltip": {
-                "fullTooltip": "[[0]] Amumu takes 5/7/9/11/13 (+3% Bonus Armor) (+3% Bonus MR) reduced physical damage. Additionally, when Amumu is hit by an Attack, this Ability's Cooldown is reduced by 0.5 seconds.<br /><br />[[1]] Amumu throws a tantrum, dealing [[2]] to nearby enemies.",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "Passive:",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "Active:",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "75/100/125/150/175 {{0}} magic damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+50% AP)",
-                                    "scaleId": "AP"
-                                }
-                            ]
-                        },
-                        "type": "magicDamage"
-                    }
-                ]
-            },
-            "maxRank": 5,
-            "cooldown": "9/8/7/6/5",
-            "cooldownByLevel": [
-                9,
-                8,
-                7,
-                6,
-                5
-            ],
-            "cost": "35 Mana",
-            "costByLevel": [
-                35,
-                35,
-                35,
-                35,
-                35
-            ],
-            "costType": " Mana"
-        },
-        "R": {
-            "id": "CurseoftheSadMummy",
-            "name": "Curse of the Sad Mummy",
-            "_rawTooltip": {
-                "fullTooltip": "Amumu flares out his bandages, [[0]] for 1.5 seconds, dealing [[1]] and applying [[2]].",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "Stunning",
-                            "scaleHolders": []
-                        },
-                        "type": "status"
-                    },
-                    {
-                        "text": {
-                            "text": "200/300/400 {{0}} magic damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+80% AP)",
-                                    "scaleId": "AP"
-                                }
-                            ]
-                        },
-                        "type": "magicDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "Curse",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    }
-                ]
-            },
-            "maxRank": 3,
-            "cooldown": "150/125/100",
-            "cooldownByLevel": [
-                150,
-                125,
-                100
-            ],
-            "cost": "100/150/200 Mana",
-            "costByLevel": [
-                100,
-                150,
-                200
-            ],
-            "costType": " Mana"
-        }
-    }
+    "ChangePatches": [
+        "9.24",
+        "10.4",
+        "10.5",
+        "10.22",
+        "10.23",
+        "10.24",
+        "10.25",
+        "11.4",
+        "11.7",
+        "11.17",
+        "11.20",
+        "12.3",
+        "12.4",
+        "12.10",
+        "12.12",
+        "12.22",
+        "12.23"
+    ],
+    "ChampionName": "Amumu"
 }

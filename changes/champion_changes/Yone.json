@@ -1,17 +1,243 @@
 {
-    "ChampionName": "Yone",
-    "ChangePatches": [
-        "10.16",
-        "10.17",
-        "10.23",
-        "10.24",
-        "10.25",
-        "11.1",
-        "11.18",
-        "12.2",
-        "12.7",
-        "12.10"
-    ],
+    "stats": {
+        "hp": {
+            "base": 620,
+            "increment": 99
+        },
+        "mp": {
+            "base": 500,
+            "increment": 0
+        },
+        "armor": {
+            "base": 28,
+            "increment": 4.6
+        },
+        "spellBlock": {
+            "base": 32,
+            "increment": 2.05
+        },
+        "hpRegen": {
+            "base": 7.5,
+            "increment": 0.75
+        },
+        "mpRegen": {
+            "base": 0,
+            "increment": 0
+        },
+        "attackSpeed": {
+            "base": 0.625,
+            "increment": 0.035
+        },
+        "ms": {
+            "base": 345,
+            "increment": 0
+        },
+        "attackDamage": {
+            "base": 60,
+            "increment": 2
+        },
+        "attackRange": {
+            "base": 175,
+            "increment": 0
+        }
+    },
+    "spells": {
+        "P": {
+            "cooldown": "",
+            "_rawTooltip": {
+                "fullTooltip": "Innate - Intent: Yone's total critical strike chance is multiplied by 2.5 from all other sources, but his critical strikes deal only [[0]]. Additionally, every 1% critical strike chance in excess of 100% is converted into 0.4 bonus AD.<br>Innate - Steel and Spirit: Yone's basic attacks alternate between using his Steel Sword and Azakana Sword on-attack. Yone begins attacking with his Steel Sword, and basic attacks with the Azakana Sword deal [[1]] and [[2]].",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "{{0}} AD bonus physical damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(57.5% + 31.5%)",
+                                    "scaleId": "31.5%"
+                                }
+                            ]
+                        },
+                        "type": "physicalDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "50% AD physical damage",
+                            "scaleHolders": []
+                        },
+                        "type": "physicalDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "50% AD magic damage",
+                            "scaleHolders": []
+                        },
+                        "type": "magicDamage"
+                    }
+                ]
+            },
+            "name": "Way of the Hunter"
+        },
+        "Q": {
+            "_rawTooltip": {
+                "fullTooltip": "Yone thrusts forward, dealing [[0]].<br /><br />On hit, grants a stack for 6 seconds. At 2 stacks, this skill causes Yone to dash forward with a wave of wind that [[1]] for 0.75 seconds and deals [[2]]. ",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "20/40/60/80/100 {{0}} physical damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+105% AD)",
+                                    "scaleId": "AD"
+                                }
+                            ]
+                        },
+                        "type": "physicalDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "Knocks Up",
+                            "scaleHolders": []
+                        },
+                        "type": "status"
+                    },
+                    {
+                        "text": {
+                            "text": "20/40/60/80/100 {{0}} physical damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+105% AD)",
+                                    "scaleId": "AD"
+                                }
+                            ]
+                        },
+                        "type": "physicalDamage"
+                    }
+                ]
+            },
+            "cooldown": "4",
+            "cost": "No Cost",
+            "name": "Mortal Steel"
+        },
+        "W": {
+            "_rawTooltip": {
+                "fullTooltip": "Yone cleaves forward, dealing [[0]] and [[1]].<br /><br />If Yone hits, he gains [[2]] for 1.5 seconds. The amount of [[3]] increases for each champion struck. ",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "5/10/15/20/25 + 5.5/6/6.5/7/7.5% max Health physical damage",
+                            "scaleHolders": []
+                        },
+                        "type": "physicalDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "5/10/15/20/25 + 5.5/6/6.5/7/7.5% max Health magic damage",
+                            "scaleHolders": []
+                        },
+                        "type": "magicDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "35 - 55 {{0}} {{1}} Shield",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(based on champion level)",
+                                    "scaleId": "level"
+                                },
+                                {
+                                    "scale": "(+55% Bonus AD)",
+                                    "scaleId": "AD"
+                                }
+                            ]
+                        },
+                        "type": "shield"
+                    },
+                    {
+                        "text": {
+                            "text": "Shield",
+                            "scaleHolders": []
+                        },
+                        "type": "shield"
+                    }
+                ]
+            },
+            "cooldown": "16",
+            "cost": "No Cost",
+            "name": "Spirit Cleave"
+        },
+        "E": {
+            "_rawTooltip": {
+                "fullTooltip": "Yone enters a spirit form for 5 seconds, leaving his body behind for the duration and gaining [[0]]. <br /><br />When the spirit form ends, Yone snaps back to his body and repeats 25/27.5/30/32.5/35% of all damage he dealt to champions during this time. You may [[1]] this skill during spirit form.<br /><br />[[2]]End spirit form early.",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "10% ramping Move Speed",
+                            "scaleHolders": []
+                        },
+                        "type": "speed"
+                    },
+                    {
+                        "text": {
+                            "text": "Recast",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "Recast: ",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    }
+                ]
+            },
+            "cooldown": "22/19/16/13/10",
+            "cost": "No Cost",
+            "name": "Soul Unbound"
+        },
+        "R": {
+            "_rawTooltip": {
+                "fullTooltip": "Yone strikes all enemies along a path for [[0]] and [[1]], teleporting behind the last champion hit and [[2]] victims towards Yone.",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "100/200/300 {{0}} physical damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+40% Bonus AD)",
+                                    "scaleId": "AD"
+                                }
+                            ]
+                        },
+                        "type": "physicalDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "100/200/300 {{0}} magic damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+40% Bonus AD)",
+                                    "scaleId": "AD"
+                                }
+                            ]
+                        },
+                        "type": "magicDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "Knocking Up",
+                            "scaleHolders": []
+                        },
+                        "type": "status"
+                    }
+                ]
+            },
+            "cooldown": "120/90/60",
+            "cost": "No Cost",
+            "name": "Fate Sealed"
+        }
+    },
     "Changes": {
         "10.16": {
             "B": "",
@@ -286,307 +512,17 @@
             "R": ""
         }
     },
-    "stats": {
-        "hp": {
-            "base": 620,
-            "increment": 99
-        },
-        "mp": {
-            "base": 500,
-            "increment": 0
-        },
-        "armor": {
-            "base": 28,
-            "increment": 4.6
-        },
-        "spellBlock": {
-            "base": 32,
-            "increment": 2.05
-        },
-        "hpRegen": {
-            "base": 7.5,
-            "increment": 0.75
-        },
-        "mpRegen": {
-            "base": 0,
-            "increment": 0
-        },
-        "attackSpeed": {
-            "base": 0.625,
-            "increment": 0.035
-        },
-        "ms": {
-            "base": 345,
-            "increment": 0
-        },
-        "attackDamage": {
-            "base": 60,
-            "increment": 2
-        },
-        "attackRange": {
-            "base": 175,
-            "increment": 0
-        }
-    },
-    "spells": {
-        "P": {
-            "name": "Way of the Hunter",
-            "cooldown": "",
-            "_rawTooltip": {
-                "fullTooltip": "Innate - Intent: Yone's total critical strike chance is multiplied by 2.5 from all other sources, but his critical strikes deal only [[0]]. Additionally, every 1% critical strike chance in excess of 100% is converted into 0.4 bonus AD.<br>Innate - Steel and Spirit: Yone's basic attacks alternate between using his Steel Sword and Azakana Sword on-attack. Yone begins attacking with his Steel Sword, and basic attacks with the Azakana Sword deal [[1]] and [[2]].",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "{{0}} AD bonus physical damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(57.5% + 31.5%)",
-                                    "scaleId": "31.5%"
-                                }
-                            ]
-                        },
-                        "type": "physicalDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "50% AD physical damage",
-                            "scaleHolders": []
-                        },
-                        "type": "physicalDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "50% AD magic damage",
-                            "scaleHolders": []
-                        },
-                        "type": "magicDamage"
-                    }
-                ]
-            }
-        },
-        "Q": {
-            "id": "YoneQ",
-            "name": "Mortal Steel",
-            "_rawTooltip": {
-                "fullTooltip": "Yone thrusts forward, dealing [[0]].<br /><br />On hit, grants a stack for 6 seconds. At 2 stacks, this skill causes Yone to dash forward with a wave of wind that [[1]] for 0.75 seconds and deals [[2]]. ",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "20/40/60/80/100 {{0}} physical damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+105% AD)",
-                                    "scaleId": "AD"
-                                }
-                            ]
-                        },
-                        "type": "physicalDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "Knocks Up",
-                            "scaleHolders": []
-                        },
-                        "type": "status"
-                    },
-                    {
-                        "text": {
-                            "text": "20/40/60/80/100 {{0}} physical damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+105% AD)",
-                                    "scaleId": "AD"
-                                }
-                            ]
-                        },
-                        "type": "physicalDamage"
-                    }
-                ]
-            },
-            "maxRank": 5,
-            "cooldown": "4",
-            "cooldownByLevel": [
-                4,
-                4,
-                4,
-                4,
-                4
-            ],
-            "cost": "No Cost",
-            "costByLevel": [
-                0,
-                0,
-                0,
-                0,
-                0
-            ],
-            "costType": "No Cost"
-        },
-        "W": {
-            "id": "YoneW",
-            "name": "Spirit Cleave",
-            "_rawTooltip": {
-                "fullTooltip": "Yone cleaves forward, dealing [[0]] and [[1]].<br /><br />If Yone hits, he gains [[2]] for 1.5 seconds. The amount of [[3]] increases for each champion struck. ",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "5/10/15/20/25 + 5.5/6/6.5/7/7.5% max Health physical damage",
-                            "scaleHolders": []
-                        },
-                        "type": "physicalDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "5/10/15/20/25 + 5.5/6/6.5/7/7.5% max Health magic damage",
-                            "scaleHolders": []
-                        },
-                        "type": "magicDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "35 - 55 {{0}} {{1}} Shield",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(based on champion level)",
-                                    "scaleId": "level"
-                                },
-                                {
-                                    "scale": "(+55% Bonus AD)",
-                                    "scaleId": "AD"
-                                }
-                            ]
-                        },
-                        "type": "shield"
-                    },
-                    {
-                        "text": {
-                            "text": "Shield",
-                            "scaleHolders": []
-                        },
-                        "type": "shield"
-                    }
-                ]
-            },
-            "maxRank": 5,
-            "cooldown": "16",
-            "cooldownByLevel": [
-                16,
-                16,
-                16,
-                16,
-                16
-            ],
-            "cost": "No Cost",
-            "costByLevel": [
-                0,
-                0,
-                0,
-                0,
-                0
-            ],
-            "costType": "No Cost"
-        },
-        "E": {
-            "id": "YoneE",
-            "name": "Soul Unbound",
-            "_rawTooltip": {
-                "fullTooltip": "Yone enters a spirit form for 5 seconds, leaving his body behind for the duration and gaining [[0]]. <br /><br />When the spirit form ends, Yone snaps back to his body and repeats 25/27.5/30/32.5/35% of all damage he dealt to champions during this time. You may [[1]] this skill during spirit form.<br /><br />[[2]]End spirit form early.",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "10% ramping Move Speed",
-                            "scaleHolders": []
-                        },
-                        "type": "speed"
-                    },
-                    {
-                        "text": {
-                            "text": "Recast",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "Recast: ",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    }
-                ]
-            },
-            "maxRank": 5,
-            "cooldown": "22/19/16/13/10",
-            "cooldownByLevel": [
-                22,
-                19,
-                16,
-                13,
-                10
-            ],
-            "cost": "No Cost",
-            "costByLevel": [
-                0,
-                0,
-                0,
-                0,
-                0
-            ],
-            "costType": "No Cost"
-        },
-        "R": {
-            "id": "YoneR",
-            "name": "Fate Sealed",
-            "_rawTooltip": {
-                "fullTooltip": "Yone strikes all enemies along a path for [[0]] and [[1]], teleporting behind the last champion hit and [[2]] victims towards Yone.",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "100/200/300 {{0}} physical damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+40% Bonus AD)",
-                                    "scaleId": "AD"
-                                }
-                            ]
-                        },
-                        "type": "physicalDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "100/200/300 {{0}} magic damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+40% Bonus AD)",
-                                    "scaleId": "AD"
-                                }
-                            ]
-                        },
-                        "type": "magicDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "Knocking Up",
-                            "scaleHolders": []
-                        },
-                        "type": "status"
-                    }
-                ]
-            },
-            "maxRank": 3,
-            "cooldown": "120/90/60",
-            "cooldownByLevel": [
-                120,
-                90,
-                60
-            ],
-            "cost": "No Cost",
-            "costByLevel": [
-                0,
-                0,
-                0
-            ],
-            "costType": "No Cost"
-        }
-    }
+    "ChangePatches": [
+        "10.16",
+        "10.17",
+        "10.23",
+        "10.24",
+        "10.25",
+        "11.1",
+        "11.18",
+        "12.2",
+        "12.7",
+        "12.10"
+    ],
+    "ChampionName": "Yone"
 }

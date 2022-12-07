@@ -1,14 +1,283 @@
 {
-    "ChampionName": "Shen",
-    "ChangePatches": [
-        "10.15",
-        "10.18",
-        "11.9",
-        "11.20",
-        "12.2",
-        "12.10",
-        "12.15"
-    ],
+    "stats": {
+        "hp": {
+            "base": 610,
+            "increment": 99
+        },
+        "mp": {
+            "base": 400,
+            "increment": 0
+        },
+        "armor": {
+            "base": 34,
+            "increment": 4.2
+        },
+        "spellBlock": {
+            "base": 32,
+            "increment": 2.05
+        },
+        "hpRegen": {
+            "base": 8.5,
+            "increment": 0.75
+        },
+        "mpRegen": {
+            "base": 50,
+            "increment": 0
+        },
+        "attackSpeed": {
+            "base": 0.751,
+            "increment": 0.03
+        },
+        "ms": {
+            "base": 340,
+            "increment": 0
+        },
+        "attackDamage": {
+            "base": 60,
+            "increment": 3
+        },
+        "attackRange": {
+            "base": 125,
+            "increment": 0
+        }
+    },
+    "spells": {
+        "P": {
+            "cooldown": 10,
+            "_rawTooltip": {
+                "fullTooltip": "Innate: Shen manifests a Spirit Blade that he can control with Twilight Assault and Spirit's Refuge.<br>Passive: After completing an ability's effects, Shen shields himself for [[0]]) for 2.5 seconds. If the triggering ability successfully affected at least one enemy champion, Ki Barrier's cooldown is reduced by 4 − 7.5 (based on level) seconds.",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "50 − 101 {{0}} (+ 12% bonus health",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(based on level)",
+                                    "scaleId": "level"
+                                }
+                            ]
+                        },
+                        "type": "Health"
+                    }
+                ]
+            },
+            "name": "Ki Barrier"
+        },
+        "Q": {
+            "_rawTooltip": {
+                "fullTooltip": "Shen recalls his [[0]]. Enemies hit by the pull are [[1]] by 15/20/25/30/35% while moving away from Shen for the next 2 seconds.<br /><br />Additionally, Shen's next 3 Attacks deal an additional [[2]] plus [[3]]. If Shen hit an enemy champion with the [[4]], the damage is increased to [[5]] plus [[6]] and he gains [[7]] for those Attacks.",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "Spirit Blade",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "Slowed",
+                            "scaleHolders": []
+                        },
+                        "type": "status"
+                    },
+                    {
+                        "text": {
+                            "text": "10 - 100 {{0}}",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(based on champion level)",
+                                    "scaleId": "level"
+                                }
+                            ]
+                        },
+                        "type": "magicDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "0.02/0.03/0.03/0.04/0.04% {{0}} max Health magic damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+1.5% per 100 AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "magicDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "Spirit Blade",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "10 - 100 {{0}}",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(based on champion level)",
+                                    "scaleId": "level"
+                                }
+                            ]
+                        },
+                        "type": "magicDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "0.04/0.05/0.05/0.06/0.06% {{0}} max Health magic damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+2% per 100 AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "magicDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "50% Attack Speed",
+                            "scaleHolders": []
+                        },
+                        "type": "attackSpeed"
+                    }
+                ]
+            },
+            "cooldown": "8/7.25/6.5/5.75/5",
+            "cost": "140/130/120/110/100 Energy",
+            "name": "Twilight Assault"
+        },
+        "W": {
+            "_rawTooltip": {
+                "fullTooltip": "Shen creates a defensive zone at his [[0]] for 1.75 seconds. Attacks against allied champions in the zone are blocked. <br /><br />If there are no champions to protect in the zone when it starts, it will wait for up to 2 seconds.",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "Spirit Blade",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    }
+                ]
+            },
+            "cooldown": "18/16.5/15/13.5/12",
+            "cost": "40 Energy",
+            "name": "Spirit's Refuge"
+        },
+        "E": {
+            "_rawTooltip": {
+                "fullTooltip": "[[0]] Dealing damage with [[1]] or this Ability recovers [[2]].<br /><br />[[3]] Shen dashes, [[4]] champions and jungle monsters for 1.5 seconds and dealing [[5]].",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "Passive:",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "Twilight Assault",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "30 - 180 {{0}} Energy",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(based on champion level)",
+                                    "scaleId": "level"
+                                }
+                            ]
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "Active:",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "Taunting",
+                            "scaleHolders": []
+                        },
+                        "type": "status"
+                    },
+                    {
+                        "text": {
+                            "text": "60/85/110/135/160 {{0}} physical damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+15% Bonus Health)",
+                                    "scaleId": "Health"
+                                }
+                            ]
+                        },
+                        "type": "physicalDamage"
+                    }
+                ]
+            },
+            "cooldown": "18/16/14/12/10",
+            "cost": "150 Energy",
+            "name": "Shadow Dash"
+        },
+        "R": {
+            "_rawTooltip": {
+                "fullTooltip": "Shen grants an allied champion anywhere on the map between [[0]] and [[1]] based on their missing Health for 5 seconds (max Shield at 60% missing Health). After channeling for 3 seconds, Shen teleports to his ally's location with his [[2]].",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "130/290/450 {{0}} {{1}}",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+16% Bonus Health)",
+                                    "scaleId": "Health"
+                                },
+                                {
+                                    "scale": "(+135% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "shield"
+                    },
+                    {
+                        "text": {
+                            "text": "208/464/720 {{0}} {{1}} Shield",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+25.6% Bonus Health)",
+                                    "scaleId": "Health"
+                                },
+                                {
+                                    "scale": "(+216% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "shield"
+                    },
+                    {
+                        "text": {
+                            "text": "Spirit Blade",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    }
+                ]
+            },
+            "cooldown": "200/180/160",
+            "cost": "No Cost",
+            "name": "Stand United"
+        }
+    },
     "Changes": {
         "10.15": {
             "B": "",
@@ -220,347 +489,14 @@
             "R": ""
         }
     },
-    "stats": {
-        "hp": {
-            "base": 610,
-            "increment": 99
-        },
-        "mp": {
-            "base": 400,
-            "increment": 0
-        },
-        "armor": {
-            "base": 34,
-            "increment": 4.2
-        },
-        "spellBlock": {
-            "base": 32,
-            "increment": 2.05
-        },
-        "hpRegen": {
-            "base": 8.5,
-            "increment": 0.75
-        },
-        "mpRegen": {
-            "base": 50,
-            "increment": 0
-        },
-        "attackSpeed": {
-            "base": 0.751,
-            "increment": 0.03
-        },
-        "ms": {
-            "base": 340,
-            "increment": 0
-        },
-        "attackDamage": {
-            "base": 60,
-            "increment": 3
-        },
-        "attackRange": {
-            "base": 125,
-            "increment": 0
-        }
-    },
-    "spells": {
-        "P": {
-            "name": "Ki Barrier",
-            "cooldown": 10,
-            "_rawTooltip": {
-                "fullTooltip": "Innate: Shen manifests a Spirit Blade that he can control with Twilight Assault and Spirit's Refuge.<br>Passive: After completing an ability's effects, Shen shields himself for [[0]]) for 2.5 seconds. If the triggering ability successfully affected at least one enemy champion, Ki Barrier's cooldown is reduced by 4 − 7.5 (based on level) seconds.",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "50 − 101 {{0}} (+ 12% bonus health",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(based on level)",
-                                    "scaleId": "level"
-                                }
-                            ]
-                        },
-                        "type": "Health"
-                    }
-                ]
-            }
-        },
-        "Q": {
-            "id": "ShenQ",
-            "name": "Twilight Assault",
-            "_rawTooltip": {
-                "fullTooltip": "Shen recalls his [[0]]. Enemies hit by the pull are [[1]] by 15/20/25/30/35% while moving away from Shen for the next 2 seconds.<br /><br />Additionally, Shen's next 3 Attacks deal an additional [[2]] plus [[3]]. If Shen hit an enemy champion with the [[4]], the damage is increased to [[5]] plus [[6]] and he gains [[7]] for those Attacks.",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "Spirit Blade",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "Slowed",
-                            "scaleHolders": []
-                        },
-                        "type": "status"
-                    },
-                    {
-                        "text": {
-                            "text": "10 - 100 {{0}}",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(based on champion level)",
-                                    "scaleId": "level"
-                                }
-                            ]
-                        },
-                        "type": "magicDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "0.02/0.03/0.03/0.04/0.04% {{0}} max Health magic damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+1.5% per 100 AP)",
-                                    "scaleId": "AP"
-                                }
-                            ]
-                        },
-                        "type": "magicDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "Spirit Blade",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "10 - 100 {{0}}",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(based on champion level)",
-                                    "scaleId": "level"
-                                }
-                            ]
-                        },
-                        "type": "magicDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "0.04/0.05/0.05/0.06/0.06% {{0}} max Health magic damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+2% per 100 AP)",
-                                    "scaleId": "AP"
-                                }
-                            ]
-                        },
-                        "type": "magicDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "50% Attack Speed",
-                            "scaleHolders": []
-                        },
-                        "type": "attackSpeed"
-                    }
-                ]
-            },
-            "maxRank": 5,
-            "cooldown": "8/7.25/6.5/5.75/5",
-            "cooldownByLevel": [
-                8,
-                7.25,
-                6.5,
-                5.75,
-                5
-            ],
-            "cost": "140/130/120/110/100 Energy",
-            "costByLevel": [
-                140,
-                130,
-                120,
-                110,
-                100
-            ],
-            "costType": " Energy"
-        },
-        "W": {
-            "id": "ShenW",
-            "name": "Spirit's Refuge",
-            "_rawTooltip": {
-                "fullTooltip": "Shen creates a defensive zone at his [[0]] for 1.75 seconds. Attacks against allied champions in the zone are blocked. <br /><br />If there are no champions to protect in the zone when it starts, it will wait for up to 2 seconds.",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "Spirit Blade",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    }
-                ]
-            },
-            "maxRank": 5,
-            "cooldown": "18/16.5/15/13.5/12",
-            "cooldownByLevel": [
-                18,
-                16.5,
-                15,
-                13.5,
-                12
-            ],
-            "cost": "40 Energy",
-            "costByLevel": [
-                40,
-                40,
-                40,
-                40,
-                40
-            ],
-            "costType": " Energy"
-        },
-        "E": {
-            "id": "ShenE",
-            "name": "Shadow Dash",
-            "_rawTooltip": {
-                "fullTooltip": "[[0]] Dealing damage with [[1]] or this Ability recovers [[2]].<br /><br />[[3]] Shen dashes, [[4]] champions and jungle monsters for 1.5 seconds and dealing [[5]].",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "Passive:",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "Twilight Assault",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "30 - 180 {{0}} Energy",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(based on champion level)",
-                                    "scaleId": "level"
-                                }
-                            ]
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "Active:",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "Taunting",
-                            "scaleHolders": []
-                        },
-                        "type": "status"
-                    },
-                    {
-                        "text": {
-                            "text": "60/85/110/135/160 {{0}} physical damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+15% Bonus Health)",
-                                    "scaleId": "Health"
-                                }
-                            ]
-                        },
-                        "type": "physicalDamage"
-                    }
-                ]
-            },
-            "maxRank": 5,
-            "cooldown": "18/16/14/12/10",
-            "cooldownByLevel": [
-                18,
-                16,
-                14,
-                12,
-                10
-            ],
-            "cost": "150 Energy",
-            "costByLevel": [
-                150,
-                150,
-                150,
-                150,
-                150
-            ],
-            "costType": " Energy"
-        },
-        "R": {
-            "id": "ShenR",
-            "name": "Stand United",
-            "_rawTooltip": {
-                "fullTooltip": "Shen grants an allied champion anywhere on the map between [[0]] and [[1]] based on their missing Health for 5 seconds (max Shield at 60% missing Health). After channeling for 3 seconds, Shen teleports to his ally's location with his [[2]].",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "130/290/450 {{0}} {{1}}",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+16% Bonus Health)",
-                                    "scaleId": "Health"
-                                },
-                                {
-                                    "scale": "(+135% AP)",
-                                    "scaleId": "AP"
-                                }
-                            ]
-                        },
-                        "type": "shield"
-                    },
-                    {
-                        "text": {
-                            "text": "208/464/720 {{0}} {{1}} Shield",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+25.6% Bonus Health)",
-                                    "scaleId": "Health"
-                                },
-                                {
-                                    "scale": "(+216% AP)",
-                                    "scaleId": "AP"
-                                }
-                            ]
-                        },
-                        "type": "shield"
-                    },
-                    {
-                        "text": {
-                            "text": "Spirit Blade",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    }
-                ]
-            },
-            "maxRank": 3,
-            "cooldown": "200/180/160",
-            "cooldownByLevel": [
-                200,
-                180,
-                160
-            ],
-            "cost": "No Cost",
-            "costByLevel": [
-                0,
-                0,
-                0
-            ],
-            "costType": "No Cost"
-        }
-    }
+    "ChangePatches": [
+        "10.15",
+        "10.18",
+        "11.9",
+        "11.20",
+        "12.2",
+        "12.10",
+        "12.15"
+    ],
+    "ChampionName": "Shen"
 }

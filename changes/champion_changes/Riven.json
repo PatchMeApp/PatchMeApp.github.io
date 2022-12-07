@@ -1,14 +1,237 @@
 {
-    "ChampionName": "Riven",
-    "ChangePatches": [
-        "9.19",
-        "10.7",
-        "10.14",
-        "11.3",
-        "11.13",
-        "11.22",
-        "12.10"
-    ],
+    "stats": {
+        "hp": {
+            "base": 630,
+            "increment": 100
+        },
+        "mp": {
+            "base": 0,
+            "increment": 0
+        },
+        "armor": {
+            "base": 33,
+            "increment": 4.4
+        },
+        "spellBlock": {
+            "base": 32,
+            "increment": 2.05
+        },
+        "hpRegen": {
+            "base": 8.5,
+            "increment": 0.5
+        },
+        "mpRegen": {
+            "base": 0,
+            "increment": 0
+        },
+        "attackSpeed": {
+            "base": 0.625,
+            "increment": 0.035
+        },
+        "ms": {
+            "base": 340,
+            "increment": 0
+        },
+        "attackDamage": {
+            "base": 64,
+            "increment": 3
+        },
+        "attackRange": {
+            "base": 125,
+            "increment": 0
+        }
+    },
+    "spells": {
+        "P": {
+            "cooldown": "",
+            "_rawTooltip": {
+                "fullTooltip": "Innate: Riven's ability casts generate a stack of Charge that lasts 6 seconds, which refreshes on subsequent casts and stacks up to 3 times. Riven's basic attacks consume a stack to deal [[0]].<br>The bonus damage is affected by critical strike modifiers and applies life steal at 100% effectiveness.",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "30% − 60% {{0}} AD bonus physical damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(based on level)",
+                                    "scaleId": "level"
+                                }
+                            ]
+                        },
+                        "type": "physicalDamage"
+                    }
+                ]
+            },
+            "name": "Runic Blade"
+        },
+        "Q": {
+            "_rawTooltip": {
+                "fullTooltip": "Riven dashes forward, dealing [[0]]. She can [[1]] this Ability twice. The first [[2]] is the same as the original, but the second has a different effect:<br /><br />[[3]]: Riven leaps forward and slams, dealing [[4]] and [[5]] nearby enemies for 0.75 seconds.",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "15/35/55/75/95 {{0}}% AD) physical damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+(45/50/55/60/65)",
+                                    "scaleId": "(+(45/50/55/60/65"
+                                }
+                            ]
+                        },
+                        "type": "physicalDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "Recast",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "Recast",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "Recast",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "15/35/55/75/95 {{0}}% AD) physical damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+(45/50/55/60/65)",
+                                    "scaleId": "(+(45/50/55/60/65"
+                                }
+                            ]
+                        },
+                        "type": "physicalDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "Knocks Up",
+                            "scaleHolders": []
+                        },
+                        "type": "status"
+                    }
+                ]
+            },
+            "cooldown": "13",
+            "cost": "No Cost",
+            "name": "Broken Wings"
+        },
+        "W": {
+            "_rawTooltip": {
+                "fullTooltip": "Riven's sword emits a burst of runic energy, dealing [[0]] and [[1]] for 0.75 seconds.",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "65/95/125/155/185 {{0}} physical damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+100% Bonus AD)",
+                                    "scaleId": "AD"
+                                }
+                            ]
+                        },
+                        "type": "physicalDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "Stunning",
+                            "scaleHolders": []
+                        },
+                        "type": "status"
+                    }
+                ]
+            },
+            "cooldown": "11/10/9/8/7",
+            "cost": "No Cost",
+            "name": "Ki Burst"
+        },
+        "E": {
+            "_rawTooltip": {
+                "fullTooltip": "Riven quickly dashes and gains [[0]] for 1.5 seconds.",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "80/105/130/155/180 {{0}} Shield",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+110% Bonus AD)",
+                                    "scaleId": "AD"
+                                }
+                            ]
+                        },
+                        "type": "shield"
+                    }
+                ]
+            },
+            "cooldown": "10/9/8/7/6",
+            "cost": "No Cost",
+            "name": "Valor"
+        },
+        "R": {
+            "_rawTooltip": {
+                "fullTooltip": "Riven's weapon surges with spiritual energy, granting her [[0]] and increased range on damaging Abilities and Attacks for 15 seconds. While active, she can [[1]]<br /><br />[[2]] Riven fires a wind slash that deals between [[3]] and [[4]], based on their missing Health.",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "20% AD Attack Damage",
+                            "scaleHolders": []
+                        },
+                        "type": "physicalDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "Recast.",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "Recast:",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "100/150/200 {{0}}",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+60% Bonus AD)",
+                                    "scaleId": "AD"
+                                }
+                            ]
+                        },
+                        "type": "physicalDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "300/450/600 {{0}} physical damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+180% Bonus AD)",
+                                    "scaleId": "AD"
+                                }
+                            ]
+                        },
+                        "type": "physicalDamage"
+                    }
+                ]
+            },
+            "cooldown": "120/90/60",
+            "cost": "No Cost",
+            "name": "Blade of the Exile"
+        }
+    },
     "Changes": {
         "9.19": {
             "B": "",
@@ -233,301 +456,14 @@
             "R": ""
         }
     },
-    "stats": {
-        "hp": {
-            "base": 630,
-            "increment": 100
-        },
-        "mp": {
-            "base": 0,
-            "increment": 0
-        },
-        "armor": {
-            "base": 33,
-            "increment": 4.4
-        },
-        "spellBlock": {
-            "base": 32,
-            "increment": 2.05
-        },
-        "hpRegen": {
-            "base": 8.5,
-            "increment": 0.5
-        },
-        "mpRegen": {
-            "base": 0,
-            "increment": 0
-        },
-        "attackSpeed": {
-            "base": 0.625,
-            "increment": 0.035
-        },
-        "ms": {
-            "base": 340,
-            "increment": 0
-        },
-        "attackDamage": {
-            "base": 64,
-            "increment": 3
-        },
-        "attackRange": {
-            "base": 125,
-            "increment": 0
-        }
-    },
-    "spells": {
-        "P": {
-            "name": "Runic Blade",
-            "cooldown": "",
-            "_rawTooltip": {
-                "fullTooltip": "Innate: Riven's ability casts generate a stack of Charge that lasts 6 seconds, which refreshes on subsequent casts and stacks up to 3 times. Riven's basic attacks consume a stack to deal [[0]].<br>The bonus damage is affected by critical strike modifiers and applies life steal at 100% effectiveness.",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "30% − 60% {{0}} AD bonus physical damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(based on level)",
-                                    "scaleId": "level"
-                                }
-                            ]
-                        },
-                        "type": "physicalDamage"
-                    }
-                ]
-            }
-        },
-        "Q": {
-            "id": "RivenTriCleave",
-            "name": "Broken Wings",
-            "_rawTooltip": {
-                "fullTooltip": "Riven dashes forward, dealing [[0]]. She can [[1]] this Ability twice. The first [[2]] is the same as the original, but the second has a different effect:<br /><br />[[3]]: Riven leaps forward and slams, dealing [[4]] and [[5]] nearby enemies for 0.75 seconds.",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "15/35/55/75/95 {{0}}% AD) physical damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+(45/50/55/60/65)",
-                                    "scaleId": "(+(45/50/55/60/65"
-                                }
-                            ]
-                        },
-                        "type": "physicalDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "Recast",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "Recast",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "Recast",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "15/35/55/75/95 {{0}}% AD) physical damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+(45/50/55/60/65)",
-                                    "scaleId": "(+(45/50/55/60/65"
-                                }
-                            ]
-                        },
-                        "type": "physicalDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "Knocks Up",
-                            "scaleHolders": []
-                        },
-                        "type": "status"
-                    }
-                ]
-            },
-            "maxRank": 5,
-            "cooldown": "13",
-            "cooldownByLevel": [
-                13,
-                13,
-                13,
-                13,
-                13
-            ],
-            "cost": "No Cost",
-            "costByLevel": [
-                0,
-                0,
-                0,
-                0,
-                0
-            ],
-            "costType": "No Cost"
-        },
-        "W": {
-            "id": "RivenMartyr",
-            "name": "Ki Burst",
-            "_rawTooltip": {
-                "fullTooltip": "Riven's sword emits a burst of runic energy, dealing [[0]] and [[1]] for 0.75 seconds.",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "65/95/125/155/185 {{0}} physical damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+100% Bonus AD)",
-                                    "scaleId": "AD"
-                                }
-                            ]
-                        },
-                        "type": "physicalDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "Stunning",
-                            "scaleHolders": []
-                        },
-                        "type": "status"
-                    }
-                ]
-            },
-            "maxRank": 5,
-            "cooldown": "11/10/9/8/7",
-            "cooldownByLevel": [
-                11,
-                10,
-                9,
-                8,
-                7
-            ],
-            "cost": "No Cost",
-            "costByLevel": [
-                0,
-                0,
-                0,
-                0,
-                0
-            ],
-            "costType": "No Cost"
-        },
-        "E": {
-            "id": "RivenFeint",
-            "name": "Valor",
-            "_rawTooltip": {
-                "fullTooltip": "Riven quickly dashes and gains [[0]] for 1.5 seconds.",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "80/105/130/155/180 {{0}} Shield",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+110% Bonus AD)",
-                                    "scaleId": "AD"
-                                }
-                            ]
-                        },
-                        "type": "shield"
-                    }
-                ]
-            },
-            "maxRank": 5,
-            "cooldown": "10/9/8/7/6",
-            "cooldownByLevel": [
-                10,
-                9,
-                8,
-                7,
-                6
-            ],
-            "cost": "No Cost",
-            "costByLevel": [
-                0,
-                0,
-                0,
-                0,
-                0
-            ],
-            "costType": "No Cost"
-        },
-        "R": {
-            "id": "RivenFengShuiEngine",
-            "name": "Blade of the Exile",
-            "_rawTooltip": {
-                "fullTooltip": "Riven's weapon surges with spiritual energy, granting her [[0]] and increased range on damaging Abilities and Attacks for 15 seconds. While active, she can [[1]]<br /><br />[[2]] Riven fires a wind slash that deals between [[3]] and [[4]], based on their missing Health.",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "20% AD Attack Damage",
-                            "scaleHolders": []
-                        },
-                        "type": "physicalDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "Recast.",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "Recast:",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "100/150/200 {{0}}",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+60% Bonus AD)",
-                                    "scaleId": "AD"
-                                }
-                            ]
-                        },
-                        "type": "physicalDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "300/450/600 {{0}} physical damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+180% Bonus AD)",
-                                    "scaleId": "AD"
-                                }
-                            ]
-                        },
-                        "type": "physicalDamage"
-                    }
-                ]
-            },
-            "maxRank": 3,
-            "cooldown": "120/90/60",
-            "cooldownByLevel": [
-                120,
-                90,
-                60
-            ],
-            "cost": "No Cost",
-            "costByLevel": [
-                0,
-                0,
-                0
-            ],
-            "costType": "No Cost"
-        }
-    }
+    "ChangePatches": [
+        "9.19",
+        "10.7",
+        "10.14",
+        "11.3",
+        "11.13",
+        "11.22",
+        "12.10"
+    ],
+    "ChampionName": "Riven"
 }

@@ -1,11 +1,267 @@
 {
-    "ChampionName": "Skarner",
-    "ChangePatches": [
-        "10.15",
-        "10.16",
-        "11.4",
-        "12.10"
-    ],
+    "stats": {
+        "hp": {
+            "base": 650,
+            "increment": 99
+        },
+        "mp": {
+            "base": 320,
+            "increment": 60
+        },
+        "armor": {
+            "base": 38,
+            "increment": 5
+        },
+        "spellBlock": {
+            "base": 32,
+            "increment": 2.05
+        },
+        "hpRegen": {
+            "base": 9,
+            "increment": 0.85
+        },
+        "mpRegen": {
+            "base": 7.2,
+            "increment": 0.45
+        },
+        "attackSpeed": {
+            "base": 0.625,
+            "increment": 0.021
+        },
+        "ms": {
+            "base": 335,
+            "increment": 0
+        },
+        "attackDamage": {
+            "base": 65,
+            "increment": 4.5
+        },
+        "attackRange": {
+            "base": 125,
+            "increment": 0
+        }
+    },
+    "spells": {
+        "P": {
+            "cooldown": "",
+            "_rawTooltip": {
+                "fullTooltip": "Innate: Skarner's presence causes 6 Crystal Spires to appear at set points on the battlefield:<br>One beside Baron Nashor's pit<br>One beside Dragon's pit<br>One nearby each buff monster's camp<br>Crystal Spires can be captured by champions after minions have spawned by standing near them for 2 seconds. Once captured, Crystal Spires are owned until contested and the defending team can stand on the spire to prevent the opposing team from capturing it.<br>Crystal Spires grant 30 gold split among its captors upon being captured, or 15 gold if only a single champion participated in its capture. Capturing a Crystal Spire grants sight of its radius for 1.5 seconds and renders it unable to be captured again for 15 seconds.<br>Skarner gains Crystal Charge while within range of a Crystal Spire controlled by his team, for 1.25 seconds after triggering Crystal Venom, and for 1.75 seconds after stinging an enemy champion with Impale.<br>Crystal Charge: Skarner gains [[0]], [[1]] and restores 1% maximum mana every 0.5 seconds.",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "70 − 120 {{0}} bonus movement speed",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(based on level)",
+                                    "scaleId": "level"
+                                }
+                            ]
+                        },
+                        "type": "speed"
+                    },
+                    {
+                        "text": {
+                            "text": "43% − 160% {{0}} bonus attack speed",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(based on level)",
+                                    "scaleId": "level"
+                                }
+                            ]
+                        },
+                        "type": "attackSpeed"
+                    }
+                ]
+            },
+            "name": "Crystal Spires"
+        },
+        "Q": {
+            "_rawTooltip": {
+                "fullTooltip": "[[0]] Attacks against champions reduce this Ability's Cooldown by 1 second. Attacks against minions reduce it by 0.25 seconds.<br /><br />[[1]] Skarner slashes wildly, dealing [[2]] to nearby enemies. If at least one enemy was hit, Skarner becomes charged for 5 seconds. While charged, this Ability deals an additional [[3]].",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "Passive:",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "Active:",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "20% AD plus 1/1.5/2/2.5% max Health physical damage",
+                            "scaleHolders": []
+                        },
+                        "type": "physicalDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "20% AD {{0}} plus 1/1.5/2/2.5% max Health magic damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+30% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "magicDamage"
+                    }
+                ]
+            },
+            "cooldown": "3.5/3.25/3/2.75/2.5",
+            "cost": "10 Mana",
+            "name": "Crystal Slash"
+        },
+        "W": {
+            "_rawTooltip": {
+                "fullTooltip": "Skarner gains [[0]] for 6 seconds. While active, Skarner gains [[1]], increasing up to [[2]] over 3 seconds.",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "9/10/11/12/13% Health {{0}} Shield",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+80% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "shield"
+                    },
+                    {
+                        "text": {
+                            "text": "8/10/12/14/16% Move Speed",
+                            "scaleHolders": []
+                        },
+                        "type": "speed"
+                    },
+                    {
+                        "text": {
+                            "text": "16/20/24/28/32% Move Speed",
+                            "scaleHolders": []
+                        },
+                        "type": "speed"
+                    }
+                ]
+            },
+            "cooldown": "13/12.5/12/11.5/11",
+            "cost": "60 Mana",
+            "name": "Crystalline Exoskeleton"
+        },
+        "E": {
+            "_rawTooltip": {
+                "fullTooltip": "[[0]] Consuming this Ability's mark or using [[1]] reduces this Abilty's Cooldown by the duration of the crowd control.<br /><br />[[2]] Skarner blasts crystalline energy, dealing [[3]], [[4]] by 30/35/40/45/50% for 2.5 seconds, and marking for 5 seconds. Skarner's next Attack against a marked enemy consumes it to deal an additional [[5]] and [[6]] for 1.25 seconds.",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "Passive:",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "Impale",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "Active:",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "40/65/90/115/140 {{0}} magic damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+20% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "magicDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "Slowing",
+                            "scaleHolders": []
+                        },
+                        "type": "status"
+                    },
+                    {
+                        "text": {
+                            "text": "30/50/70/90/110 physical damage",
+                            "scaleHolders": []
+                        },
+                        "type": "physicalDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "Stun",
+                            "scaleHolders": []
+                        },
+                        "type": "status"
+                    }
+                ]
+            },
+            "cooldown": "14/13.5/13/12.5/12",
+            "cost": "55 Mana",
+            "name": "Fracture"
+        },
+        "R": {
+            "_rawTooltip": {
+                "fullTooltip": "Skarner impales an enemy champion, [[0]] them for 1.75 seconds, dealing [[1]] and [[2]] at the beginning and end of the duration. While [[3]], Skarner can move and will drag his helpless victim around with him.",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "Suppressing",
+                            "scaleHolders": []
+                        },
+                        "type": "status"
+                    },
+                    {
+                        "text": {
+                            "text": "60% AD physical damage",
+                            "scaleHolders": []
+                        },
+                        "type": "physicalDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "20/60/100 {{0}} magic damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+50% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "magicDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "Suppressing",
+                            "scaleHolders": []
+                        },
+                        "type": "status"
+                    }
+                ]
+            },
+            "cooldown": "120/100/80",
+            "cost": "100 Mana",
+            "name": "Impale"
+        }
+    },
     "Changes": {
         "10.15": {
             "B": "",
@@ -190,331 +446,11 @@
             "R": ""
         }
     },
-    "stats": {
-        "hp": {
-            "base": 650,
-            "increment": 99
-        },
-        "mp": {
-            "base": 320,
-            "increment": 60
-        },
-        "armor": {
-            "base": 38,
-            "increment": 5
-        },
-        "spellBlock": {
-            "base": 32,
-            "increment": 2.05
-        },
-        "hpRegen": {
-            "base": 9,
-            "increment": 0.85
-        },
-        "mpRegen": {
-            "base": 7.2,
-            "increment": 0.45
-        },
-        "attackSpeed": {
-            "base": 0.625,
-            "increment": 0.021
-        },
-        "ms": {
-            "base": 335,
-            "increment": 0
-        },
-        "attackDamage": {
-            "base": 65,
-            "increment": 4.5
-        },
-        "attackRange": {
-            "base": 125,
-            "increment": 0
-        }
-    },
-    "spells": {
-        "P": {
-            "name": "Crystal Spires",
-            "cooldown": "",
-            "_rawTooltip": {
-                "fullTooltip": "Innate: Skarner's presence causes 6 Crystal Spires to appear at set points on the battlefield:<br>One beside Baron Nashor's pit<br>One beside Dragon's pit<br>One nearby each buff monster's camp<br>Crystal Spires can be captured by champions after minions have spawned by standing near them for 2 seconds. Once captured, Crystal Spires are owned until contested and the defending team can stand on the spire to prevent the opposing team from capturing it.<br>Crystal Spires grant 30 gold split among its captors upon being captured, or 15 gold if only a single champion participated in its capture. Capturing a Crystal Spire grants sight of its radius for 1.5 seconds and renders it unable to be captured again for 15 seconds.<br>Skarner gains Crystal Charge while within range of a Crystal Spire controlled by his team, for 1.25 seconds after triggering Crystal Venom, and for 1.75 seconds after stinging an enemy champion with Impale.<br>Crystal Charge: Skarner gains [[0]], [[1]] and restores 1% maximum mana every 0.5 seconds.",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "70 − 120 {{0}} bonus movement speed",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(based on level)",
-                                    "scaleId": "level"
-                                }
-                            ]
-                        },
-                        "type": "speed"
-                    },
-                    {
-                        "text": {
-                            "text": "43% − 160% {{0}} bonus attack speed",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(based on level)",
-                                    "scaleId": "level"
-                                }
-                            ]
-                        },
-                        "type": "attackSpeed"
-                    }
-                ]
-            }
-        },
-        "Q": {
-            "id": "SkarnerVirulentSlash",
-            "name": "Crystal Slash",
-            "_rawTooltip": {
-                "fullTooltip": "[[0]] Attacks against champions reduce this Ability's Cooldown by 1 second. Attacks against minions reduce it by 0.25 seconds.<br /><br />[[1]] Skarner slashes wildly, dealing [[2]] to nearby enemies. If at least one enemy was hit, Skarner becomes charged for 5 seconds. While charged, this Ability deals an additional [[3]].",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "Passive:",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "Active:",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "20% AD plus 1/1.5/2/2.5% max Health physical damage",
-                            "scaleHolders": []
-                        },
-                        "type": "physicalDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "20% AD {{0}} plus 1/1.5/2/2.5% max Health magic damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+30% AP)",
-                                    "scaleId": "AP"
-                                }
-                            ]
-                        },
-                        "type": "magicDamage"
-                    }
-                ]
-            },
-            "maxRank": 5,
-            "cooldown": "3.5/3.25/3/2.75/2.5",
-            "cooldownByLevel": [
-                3.5,
-                3.25,
-                3,
-                2.75,
-                2.5
-            ],
-            "cost": "10 Mana",
-            "costByLevel": [
-                10,
-                10,
-                10,
-                10,
-                10
-            ],
-            "costType": " Mana"
-        },
-        "W": {
-            "id": "SkarnerExoskeleton",
-            "name": "Crystalline Exoskeleton",
-            "_rawTooltip": {
-                "fullTooltip": "Skarner gains [[0]] for 6 seconds. While active, Skarner gains [[1]], increasing up to [[2]] over 3 seconds.",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "9/10/11/12/13% Health {{0}} Shield",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+80% AP)",
-                                    "scaleId": "AP"
-                                }
-                            ]
-                        },
-                        "type": "shield"
-                    },
-                    {
-                        "text": {
-                            "text": "8/10/12/14/16% Move Speed",
-                            "scaleHolders": []
-                        },
-                        "type": "speed"
-                    },
-                    {
-                        "text": {
-                            "text": "16/20/24/28/32% Move Speed",
-                            "scaleHolders": []
-                        },
-                        "type": "speed"
-                    }
-                ]
-            },
-            "maxRank": 5,
-            "cooldown": "13/12.5/12/11.5/11",
-            "cooldownByLevel": [
-                13,
-                12.5,
-                12,
-                11.5,
-                11
-            ],
-            "cost": "60 Mana",
-            "costByLevel": [
-                60,
-                60,
-                60,
-                60,
-                60
-            ],
-            "costType": " Mana"
-        },
-        "E": {
-            "id": "SkarnerFracture",
-            "name": "Fracture",
-            "_rawTooltip": {
-                "fullTooltip": "[[0]] Consuming this Ability's mark or using [[1]] reduces this Abilty's Cooldown by the duration of the crowd control.<br /><br />[[2]] Skarner blasts crystalline energy, dealing [[3]], [[4]] by 30/35/40/45/50% for 2.5 seconds, and marking for 5 seconds. Skarner's next Attack against a marked enemy consumes it to deal an additional [[5]] and [[6]] for 1.25 seconds.",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "Passive:",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "Impale",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "Active:",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "40/65/90/115/140 {{0}} magic damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+20% AP)",
-                                    "scaleId": "AP"
-                                }
-                            ]
-                        },
-                        "type": "magicDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "Slowing",
-                            "scaleHolders": []
-                        },
-                        "type": "status"
-                    },
-                    {
-                        "text": {
-                            "text": "30/50/70/90/110 physical damage",
-                            "scaleHolders": []
-                        },
-                        "type": "physicalDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "Stun",
-                            "scaleHolders": []
-                        },
-                        "type": "status"
-                    }
-                ]
-            },
-            "maxRank": 5,
-            "cooldown": "14/13.5/13/12.5/12",
-            "cooldownByLevel": [
-                14,
-                13.5,
-                13,
-                12.5,
-                12
-            ],
-            "cost": "55 Mana",
-            "costByLevel": [
-                55,
-                55,
-                55,
-                55,
-                55
-            ],
-            "costType": " Mana"
-        },
-        "R": {
-            "id": "SkarnerImpale",
-            "name": "Impale",
-            "_rawTooltip": {
-                "fullTooltip": "Skarner impales an enemy champion, [[0]] them for 1.75 seconds, dealing [[1]] and [[2]] at the beginning and end of the duration. While [[3]], Skarner can move and will drag his helpless victim around with him.",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "Suppressing",
-                            "scaleHolders": []
-                        },
-                        "type": "status"
-                    },
-                    {
-                        "text": {
-                            "text": "60% AD physical damage",
-                            "scaleHolders": []
-                        },
-                        "type": "physicalDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "20/60/100 {{0}} magic damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+50% AP)",
-                                    "scaleId": "AP"
-                                }
-                            ]
-                        },
-                        "type": "magicDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "Suppressing",
-                            "scaleHolders": []
-                        },
-                        "type": "status"
-                    }
-                ]
-            },
-            "maxRank": 3,
-            "cooldown": "120/100/80",
-            "cooldownByLevel": [
-                120,
-                100,
-                80
-            ],
-            "cost": "100 Mana",
-            "costByLevel": [
-                100,
-                100,
-                100
-            ],
-            "costType": " Mana"
-        }
-    }
+    "ChangePatches": [
+        "10.15",
+        "10.16",
+        "11.4",
+        "12.10"
+    ],
+    "ChampionName": "Skarner"
 }

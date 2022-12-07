@@ -1,12 +1,253 @@
 {
-    "ChampionName": "Aurelion Sol",
-    "ChangePatches": [
-        "9.18",
-        "10.1",
-        "10.4",
-        "11.15",
-        "12.10"
-    ],
+    "stats": {
+        "hp": {
+            "base": 645,
+            "increment": 106
+        },
+        "mp": {
+            "base": 350,
+            "increment": 50
+        },
+        "armor": {
+            "base": 19,
+            "increment": 4.8
+        },
+        "spellBlock": {
+            "base": 30,
+            "increment": 1.3
+        },
+        "hpRegen": {
+            "base": 7,
+            "increment": 0.6
+        },
+        "mpRegen": {
+            "base": 6,
+            "increment": 0.8
+        },
+        "attackSpeed": {
+            "base": 0.625,
+            "increment": 0.013600000000000001
+        },
+        "ms": {
+            "base": 325,
+            "increment": 0
+        },
+        "attackDamage": {
+            "base": 57,
+            "increment": 3.2
+        },
+        "attackRange": {
+            "base": 550,
+            "increment": 0
+        }
+    },
+    "spells": {
+        "P": {
+            "cooldown": 1,
+            "_rawTooltip": {
+                "fullTooltip": "Innate: Aurelion Sol is constantly orbited by three Stars, each doing a full circumference in 5.25 seconds, and beyond them exists an Outer Limit affecting his damaging abilities.<br>Each Star deals [[0]] to enemies that come into contact with them as well as executes enemy minions that have less than [[1]], including if they are brought to or below that threshold.",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "12 − 120 {{0}} {{1}} {{2}} magic damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(based on level)",
+                                    "scaleId": "level"
+                                },
+                                {
+                                    "scale": "(+ 5 / 10 / 15 / 20 / 25 (based on Celestial Expansion's Rank)",
+                                    "scaleId": "Rank"
+                                },
+                                {
+                                    "scale": "(+ 25% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "magicDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "25 health",
+                            "scaleHolders": []
+                        },
+                        "type": "Health"
+                    }
+                ]
+            },
+            "name": "Center of the Universe"
+        },
+        "Q": {
+            "_rawTooltip": {
+                "fullTooltip": "Aurelion Sol creates a small star that grows and grants him [[0]]. Upon exiting Aurelion Sol's [[1]] or after [[2]], the star explodes, dealing [[3]] and [[4]] for between 0.55/0.6/0.65/0.7/0.75 and 2.2/2.4/2.6/2.8/3 seconds, based on travel time.",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "20% Move Speed",
+                            "scaleHolders": []
+                        },
+                        "type": "speed"
+                    },
+                    {
+                        "text": {
+                            "text": "Outer Limit",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "Recasting",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "70/110/150/190/230 {{0}} magic damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+65% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "magicDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "Stunning",
+                            "scaleHolders": []
+                        },
+                        "type": "status"
+                    }
+                ]
+            },
+            "cooldown": "12/11/10/9/8",
+            "cost": "60/70/80/90/100 Mana",
+            "name": "Starsurge"
+        },
+        "W": {
+            "_rawTooltip": {
+                "fullTooltip": "[[0]] Increases [[1]] damage by 5/10/15/20.<br /><br />[[2]] Aurelion Sol's stars expand to his [[3]], increase in speed, and deal 140% damage. After 3 seconds, [[4]], or using [[5]] they retract and Aurelion Sol gains [[6]], decaying over 1.5 seconds.<br />",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "Passive:",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "Center of the Universe's",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "Active:",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "Outer Limit",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "Recasting",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "Comet of Legend",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "40% Move Speed",
+                            "scaleHolders": []
+                        },
+                        "type": "speed"
+                    }
+                ]
+            },
+            "cooldown": "8/6.5/5/3.5/2",
+            "cost": "70/80/90/100/110 Mana",
+            "name": "Celestial Expansion"
+        },
+        "E": {
+            "_rawTooltip": {
+                "fullTooltip": "Aurelion Sol starts flying along a path at [[0]]. Taking damage from champions or structures ends the flight. While flying he can see and be seen over walls.<br /><br />This ability can only be used outside of combat.",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "600/650/700/750/800 Move Speed",
+                            "scaleHolders": []
+                        },
+                        "type": "speed"
+                    }
+                ]
+            },
+            "cooldown": "80/75/70/65/60",
+            "cost": "60 Mana",
+            "name": "Comet of Legend"
+        },
+        "R": {
+            "_rawTooltip": {
+                "fullTooltip": "Aurelion Sol breathes out a blast of starfire, dealing [[0]], [[1]] by 40/50/60% for 2 seconds, and [[2]] enemies to his [[3]].",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "150/250/350 {{0}} magic damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+70% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "magicDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "Slowing",
+                            "scaleHolders": []
+                        },
+                        "type": "status"
+                    },
+                    {
+                        "text": {
+                            "text": "Knocking Back",
+                            "scaleHolders": []
+                        },
+                        "type": "status"
+                    },
+                    {
+                        "text": {
+                            "text": "Outer Limit",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    }
+                ]
+            },
+            "cooldown": "110/90/70",
+            "cost": "100 Mana",
+            "name": "Voice of Light"
+        }
+    },
     "Changes": {
         "9.18": {
             "B": {
@@ -141,317 +382,12 @@
             "R": ""
         }
     },
-    "stats": {
-        "hp": {
-            "base": 645,
-            "increment": 106
-        },
-        "mp": {
-            "base": 350,
-            "increment": 50
-        },
-        "armor": {
-            "base": 19,
-            "increment": 4.8
-        },
-        "spellBlock": {
-            "base": 30,
-            "increment": 1.3
-        },
-        "hpRegen": {
-            "base": 7,
-            "increment": 0.6
-        },
-        "mpRegen": {
-            "base": 6,
-            "increment": 0.8
-        },
-        "attackSpeed": {
-            "base": 0.625,
-            "increment": 0.013600000000000001
-        },
-        "ms": {
-            "base": 325,
-            "increment": 0
-        },
-        "attackDamage": {
-            "base": 57,
-            "increment": 3.2
-        },
-        "attackRange": {
-            "base": 550,
-            "increment": 0
-        }
-    },
-    "spells": {
-        "P": {
-            "name": "Center of the Universe",
-            "cooldown": 1,
-            "_rawTooltip": {
-                "fullTooltip": "Innate: Aurelion Sol is constantly orbited by three Stars, each doing a full circumference in 5.25 seconds, and beyond them exists an Outer Limit affecting his damaging abilities.<br>Each Star deals [[0]] to enemies that come into contact with them as well as executes enemy minions that have less than [[1]], including if they are brought to or below that threshold.",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "12 − 120 {{0}} {{1}} {{2}} magic damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(based on level)",
-                                    "scaleId": "level"
-                                },
-                                {
-                                    "scale": "(+ 5 / 10 / 15 / 20 / 25 (based on Celestial Expansion's Rank)",
-                                    "scaleId": "Rank"
-                                },
-                                {
-                                    "scale": "(+ 25% AP)",
-                                    "scaleId": "AP"
-                                }
-                            ]
-                        },
-                        "type": "magicDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "25 health",
-                            "scaleHolders": []
-                        },
-                        "type": "Health"
-                    }
-                ]
-            }
-        },
-        "Q": {
-            "id": "AurelionSolQ",
-            "name": "Starsurge",
-            "_rawTooltip": {
-                "fullTooltip": "Aurelion Sol creates a small star that grows and grants him [[0]]. Upon exiting Aurelion Sol's [[1]] or after [[2]], the star explodes, dealing [[3]] and [[4]] for between 0.55/0.6/0.65/0.7/0.75 and 2.2/2.4/2.6/2.8/3 seconds, based on travel time.",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "20% Move Speed",
-                            "scaleHolders": []
-                        },
-                        "type": "speed"
-                    },
-                    {
-                        "text": {
-                            "text": "Outer Limit",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "Recasting",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "70/110/150/190/230 {{0}} magic damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+65% AP)",
-                                    "scaleId": "AP"
-                                }
-                            ]
-                        },
-                        "type": "magicDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "Stunning",
-                            "scaleHolders": []
-                        },
-                        "type": "status"
-                    }
-                ]
-            },
-            "maxRank": 5,
-            "cooldown": "12/11/10/9/8",
-            "cooldownByLevel": [
-                12,
-                11,
-                10,
-                9,
-                8
-            ],
-            "cost": "60/70/80/90/100 Mana",
-            "costByLevel": [
-                60,
-                70,
-                80,
-                90,
-                100
-            ],
-            "costType": " Mana"
-        },
-        "W": {
-            "id": "AurelionSolW",
-            "name": "Celestial Expansion",
-            "_rawTooltip": {
-                "fullTooltip": "[[0]] Increases [[1]] damage by 5/10/15/20.<br /><br />[[2]] Aurelion Sol's stars expand to his [[3]], increase in speed, and deal 140% damage. After 3 seconds, [[4]], or using [[5]] they retract and Aurelion Sol gains [[6]], decaying over 1.5 seconds.<br />",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "Passive:",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "Center of the Universe's",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "Active:",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "Outer Limit",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "Recasting",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "Comet of Legend",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "40% Move Speed",
-                            "scaleHolders": []
-                        },
-                        "type": "speed"
-                    }
-                ]
-            },
-            "maxRank": 5,
-            "cooldown": "8/6.5/5/3.5/2",
-            "cooldownByLevel": [
-                8,
-                6.5,
-                5,
-                3.5,
-                2
-            ],
-            "cost": "70/80/90/100/110 Mana",
-            "costByLevel": [
-                70,
-                80,
-                90,
-                100,
-                110
-            ],
-            "costType": " Mana"
-        },
-        "E": {
-            "id": "AurelionSolE",
-            "name": "Comet of Legend",
-            "_rawTooltip": {
-                "fullTooltip": "Aurelion Sol starts flying along a path at [[0]]. Taking damage from champions or structures ends the flight. While flying he can see and be seen over walls.<br /><br />This ability can only be used outside of combat.",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "600/650/700/750/800 Move Speed",
-                            "scaleHolders": []
-                        },
-                        "type": "speed"
-                    }
-                ]
-            },
-            "maxRank": 5,
-            "cooldown": "80/75/70/65/60",
-            "cooldownByLevel": [
-                80,
-                75,
-                70,
-                65,
-                60
-            ],
-            "cost": "60 Mana",
-            "costByLevel": [
-                60,
-                60,
-                60,
-                60,
-                60
-            ],
-            "costType": " Mana"
-        },
-        "R": {
-            "id": "AurelionSolR",
-            "name": "Voice of Light",
-            "_rawTooltip": {
-                "fullTooltip": "Aurelion Sol breathes out a blast of starfire, dealing [[0]], [[1]] by 40/50/60% for 2 seconds, and [[2]] enemies to his [[3]].",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "150/250/350 {{0}} magic damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+70% AP)",
-                                    "scaleId": "AP"
-                                }
-                            ]
-                        },
-                        "type": "magicDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "Slowing",
-                            "scaleHolders": []
-                        },
-                        "type": "status"
-                    },
-                    {
-                        "text": {
-                            "text": "Knocking Back",
-                            "scaleHolders": []
-                        },
-                        "type": "status"
-                    },
-                    {
-                        "text": {
-                            "text": "Outer Limit",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    }
-                ]
-            },
-            "maxRank": 3,
-            "cooldown": "110/90/70",
-            "cooldownByLevel": [
-                110,
-                90,
-                70
-            ],
-            "cost": "100 Mana",
-            "costByLevel": [
-                100,
-                100,
-                100
-            ],
-            "costType": " Mana"
-        }
-    }
+    "ChangePatches": [
+        "9.18",
+        "10.1",
+        "10.4",
+        "11.15",
+        "12.10"
+    ],
+    "ChampionName": "Aurelion Sol"
 }

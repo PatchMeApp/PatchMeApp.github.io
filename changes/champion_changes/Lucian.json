@@ -1,14 +1,196 @@
 {
-    "ChampionName": "Lucian",
-    "ChangePatches": [
-        "10.13",
-        "10.16",
-        "10.19",
-        "11.17",
-        "12.4",
-        "12.10",
-        "12.12"
-    ],
+    "stats": {
+        "hp": {
+            "base": 641,
+            "increment": 100
+        },
+        "mp": {
+            "base": 349,
+            "increment": 38
+        },
+        "armor": {
+            "base": 28,
+            "increment": 4.2
+        },
+        "spellBlock": {
+            "base": 30,
+            "increment": 1.3
+        },
+        "hpRegen": {
+            "base": 3.75,
+            "increment": 0.65
+        },
+        "mpRegen": {
+            "base": 8.18,
+            "increment": 0.7
+        },
+        "attackSpeed": {
+            "base": 0.638,
+            "increment": 0.033
+        },
+        "ms": {
+            "base": 335,
+            "increment": 0
+        },
+        "attackDamage": {
+            "base": 60,
+            "increment": 2.9
+        },
+        "attackRange": {
+            "base": 500,
+            "increment": 0
+        }
+    },
+    "spells": {
+        "P": {
+            "cooldown": "",
+            "_rawTooltip": {
+                "fullTooltip": "Innate: After casting an ability, Lucian's next basic attack on-attack within 3.5 seconds fires an additional shot after 0.25 seconds, which deals [[0]], increased to 100% AD against minions.<br>The second shot applies on-hit and on-attack effects at 100% effectiveness and is affected by critical strike modifiers.<br>If Lucian's primary target is killed before the second shot can go off, he automatically shoots another enemy in range.<br>Innate - Vigilance: Whenever Lucian is healed, shielded or granted a buff by an ally, his next two shots within 6 seconds are empowered to deal [[1]] on-hit. The empowered shots can stack up to 4 times and applies against structures.",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "50 / 55 / 60% {{0}} AD physical damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(based on level)",
+                                    "scaleId": "level"
+                                }
+                            ]
+                        },
+                        "type": "physicalDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "14 {{0}} bonus magic damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+ 20% AD)",
+                                    "scaleId": "AD"
+                                }
+                            ]
+                        },
+                        "type": "magicDamage"
+                    }
+                ]
+            },
+            "name": "Lightslinger"
+        },
+        "Q": {
+            "_rawTooltip": {
+                "fullTooltip": "Lucian shoots a bolt of piercing light, dealing [[0]].<br />",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "95/125/155/185/215 {{0}} physical damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+60/75/90/105/120% Bonus AD)",
+                                    "scaleId": "AD"
+                                }
+                            ]
+                        },
+                        "type": "physicalDamage"
+                    }
+                ]
+            },
+            "cooldown": "9/8/7/6/5",
+            "cost": "48/56/64/72/80 Mana",
+            "name": "Piercing Light"
+        },
+        "W": {
+            "_rawTooltip": {
+                "fullTooltip": "Lucian fires a shot that explodes at the end of its range or on the first enemy hit, dealing [[0]], briefly revealing enemies and marking them for 6 seconds.<br /><br />When Lucian or an ally damages a marked enemy, Lucian gains [[1]] for 1 second. Allies triggering this effect will also grant Lucian [[2]].",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "75/110/145/180/215 {{0}} magic damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+90% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "magicDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "60/65/70/75/80 Move Speed",
+                            "scaleHolders": []
+                        },
+                        "type": "speed"
+                    },
+                    {
+                        "text": {
+                            "text": "Vigilance",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    }
+                ]
+            },
+            "cooldown": "14/13/12/11/10",
+            "cost": "60 Mana",
+            "name": "Ardent Blaze"
+        },
+        "E": {
+            "_rawTooltip": {
+                "fullTooltip": "Lucian dashes.<br /><br />Cooldown is reduced by 1 second whenever Lucian hits an enemy with [[0]] (2 seconds for champions). ",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "Lightslinger",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    }
+                ]
+            },
+            "cooldown": "22/20/18/16/14",
+            "cost": "40/30/20/10/0 Mana",
+            "name": "Relentless Pursuit"
+        },
+        "R": {
+            "_rawTooltip": {
+                "fullTooltip": "Lucian rapidly fires up to 22 (+ 1 per 4% critical strike chance) shots in a direction for 3 seconds or until he [[0]]. Each shot deals [[1]] to the first enemy hit.<br /><br />While firing, Lucian may use [[2]].",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "Recasts",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "15/30/45 {{0}} {{1}} physical damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+15% AP)",
+                                    "scaleId": "AP"
+                                },
+                                {
+                                    "scale": "(+25% AD)",
+                                    "scaleId": "AD"
+                                }
+                            ]
+                        },
+                        "type": "physicalDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "Relentless Pursuit",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    }
+                ]
+            },
+            "cooldown": "110/100/90",
+            "cost": "100 Mana",
+            "name": "The Culling"
+        }
+    },
     "Changes": {
         "10.13": {
             "B": "",
@@ -268,260 +450,14 @@
             "R": ""
         }
     },
-    "stats": {
-        "hp": {
-            "base": 641,
-            "increment": 100
-        },
-        "mp": {
-            "base": 349,
-            "increment": 38
-        },
-        "armor": {
-            "base": 28,
-            "increment": 4.2
-        },
-        "spellBlock": {
-            "base": 30,
-            "increment": 1.3
-        },
-        "hpRegen": {
-            "base": 3.75,
-            "increment": 0.65
-        },
-        "mpRegen": {
-            "base": 8.18,
-            "increment": 0.7
-        },
-        "attackSpeed": {
-            "base": 0.638,
-            "increment": 0.033
-        },
-        "ms": {
-            "base": 335,
-            "increment": 0
-        },
-        "attackDamage": {
-            "base": 60,
-            "increment": 2.9
-        },
-        "attackRange": {
-            "base": 500,
-            "increment": 0
-        }
-    },
-    "spells": {
-        "P": {
-            "name": "Lightslinger",
-            "cooldown": "",
-            "_rawTooltip": {
-                "fullTooltip": "Innate: After casting an ability, Lucian's next basic attack on-attack within 3.5 seconds fires an additional shot after 0.25 seconds, which deals [[0]], increased to 100% AD against minions.<br>The second shot applies on-hit and on-attack effects at 100% effectiveness and is affected by critical strike modifiers.<br>If Lucian's primary target is killed before the second shot can go off, he automatically shoots another enemy in range.<br>Innate - Vigilance: Whenever Lucian is healed, shielded or granted a buff by an ally, his next two shots within 6 seconds are empowered to deal [[1]] on-hit. The empowered shots can stack up to 4 times and applies against structures.",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "50 / 55 / 60% {{0}} AD physical damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(based on level)",
-                                    "scaleId": "level"
-                                }
-                            ]
-                        },
-                        "type": "physicalDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "14 {{0}} bonus magic damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+ 20% AD)",
-                                    "scaleId": "AD"
-                                }
-                            ]
-                        },
-                        "type": "magicDamage"
-                    }
-                ]
-            }
-        },
-        "Q": {
-            "id": "LucianQ",
-            "name": "Piercing Light",
-            "_rawTooltip": {
-                "fullTooltip": "Lucian shoots a bolt of piercing light, dealing [[0]].<br />",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "95/125/155/185/215 {{0}} physical damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+60/75/90/105/120% Bonus AD)",
-                                    "scaleId": "AD"
-                                }
-                            ]
-                        },
-                        "type": "physicalDamage"
-                    }
-                ]
-            },
-            "maxRank": 5,
-            "cooldown": "9/8/7/6/5",
-            "cooldownByLevel": [
-                9,
-                8,
-                7,
-                6,
-                5
-            ],
-            "cost": "48/56/64/72/80 Mana",
-            "costByLevel": [
-                48,
-                56,
-                64,
-                72,
-                80
-            ],
-            "costType": " Mana"
-        },
-        "W": {
-            "id": "LucianW",
-            "name": "Ardent Blaze",
-            "_rawTooltip": {
-                "fullTooltip": "Lucian fires a shot that explodes at the end of its range or on the first enemy hit, dealing [[0]], briefly revealing enemies and marking them for 6 seconds.<br /><br />When Lucian or an ally damages a marked enemy, Lucian gains [[1]] for 1 second. Allies triggering this effect will also grant Lucian [[2]].",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "75/110/145/180/215 {{0}} magic damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+90% AP)",
-                                    "scaleId": "AP"
-                                }
-                            ]
-                        },
-                        "type": "magicDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "60/65/70/75/80 Move Speed",
-                            "scaleHolders": []
-                        },
-                        "type": "speed"
-                    },
-                    {
-                        "text": {
-                            "text": "Vigilance",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    }
-                ]
-            },
-            "maxRank": 5,
-            "cooldown": "14/13/12/11/10",
-            "cooldownByLevel": [
-                14,
-                13,
-                12,
-                11,
-                10
-            ],
-            "cost": "60 Mana",
-            "costByLevel": [
-                60,
-                60,
-                60,
-                60,
-                60
-            ],
-            "costType": " Mana"
-        },
-        "E": {
-            "id": "LucianE",
-            "name": "Relentless Pursuit",
-            "_rawTooltip": {
-                "fullTooltip": "Lucian dashes.<br /><br />Cooldown is reduced by 1 second whenever Lucian hits an enemy with [[0]] (2 seconds for champions). ",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "Lightslinger",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    }
-                ]
-            },
-            "maxRank": 5,
-            "cooldown": "22/20/18/16/14",
-            "cooldownByLevel": [
-                22,
-                20,
-                18,
-                16,
-                14
-            ],
-            "cost": "40/30/20/10/0 Mana",
-            "costByLevel": [
-                40,
-                30,
-                20,
-                10,
-                0
-            ],
-            "costType": " Mana"
-        },
-        "R": {
-            "id": "LucianR",
-            "name": "The Culling",
-            "_rawTooltip": {
-                "fullTooltip": "Lucian rapidly fires up to 22 (+ 1 per 4% critical strike chance) shots in a direction for 3 seconds or until he [[0]]. Each shot deals [[1]] to the first enemy hit.<br /><br />While firing, Lucian may use [[2]].",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "Recasts",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "15/30/45 {{0}} {{1}} physical damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+15% AP)",
-                                    "scaleId": "AP"
-                                },
-                                {
-                                    "scale": "(+25% AD)",
-                                    "scaleId": "AD"
-                                }
-                            ]
-                        },
-                        "type": "physicalDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "Relentless Pursuit",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    }
-                ]
-            },
-            "maxRank": 3,
-            "cooldown": "110/100/90",
-            "cooldownByLevel": [
-                110,
-                100,
-                90
-            ],
-            "cost": "100 Mana",
-            "costByLevel": [
-                100,
-                100,
-                100
-            ],
-            "costType": " Mana"
-        }
-    }
+    "ChangePatches": [
+        "10.13",
+        "10.16",
+        "10.19",
+        "11.17",
+        "12.4",
+        "12.10",
+        "12.12"
+    ],
+    "ChampionName": "Lucian"
 }

@@ -1,18 +1,282 @@
 {
-    "ChampionName": "Irelia",
-    "ChangePatches": [
-        "10.10",
-        "10.15",
-        "10.19",
-        "10.25",
-        "11.14",
-        "11.15",
-        "11.17",
-        "11.20",
-        "12.10",
-        "12.11",
-        "12.16"
-    ],
+    "stats": {
+        "hp": {
+            "base": 590,
+            "increment": 124
+        },
+        "mp": {
+            "base": 350,
+            "increment": 50
+        },
+        "armor": {
+            "base": 36,
+            "increment": 4.7
+        },
+        "spellBlock": {
+            "base": 30,
+            "increment": 2.05
+        },
+        "hpRegen": {
+            "base": 8.5,
+            "increment": 0.85
+        },
+        "mpRegen": {
+            "base": 8,
+            "increment": 0.8
+        },
+        "attackSpeed": {
+            "base": 0.656,
+            "increment": 0.025
+        },
+        "ms": {
+            "base": 335,
+            "increment": 0
+        },
+        "attackDamage": {
+            "base": 65,
+            "increment": 4
+        },
+        "attackRange": {
+            "base": 200,
+            "increment": 0
+        }
+    },
+    "spells": {
+        "P": {
+            "cooldown": "",
+            "_rawTooltip": {
+                "fullTooltip": "Innate: Irelia generates a stack of Ionian Fervor for each enemy champion hit by her abilities, or if she hits at least one non-champion. Ionian Fervor lasts for 6 seconds, refreshing with basic attacks and ability hits against enemy champions and large monsters, and stacking up to 4 times.<br>Ionian Fervor: For each stack, Irelia gains [[1]], up to a maximum of 30% − 80% (based on level). At maximum stacks, Irelia's basic attacks deal [[0]] on-hit.<br>Innate - Unsteady: Enemy champions and large monsters hit by Flawless Duet and Vanguard's Edge's initial barrage are marked as Unsteady for 5 seconds. The mark can be consumed by Bladesurge.",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "10 − 61 {{0}} {{1}} bonus magic damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(based on level)",
+                                    "scaleId": "level"
+                                },
+                                {
+                                    "scale": "(+ 20% bonus AD)",
+                                    "scaleId": "AD"
+                                }
+                            ]
+                        },
+                        "type": "magicDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "7.5% − 20% {{0}} bonus attack speed",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(based on level)",
+                                    "scaleId": "level"
+                                }
+                            ]
+                        },
+                        "type": "attackSpeed"
+                    }
+                ]
+            },
+            "name": "Ionian Fervor"
+        },
+        "Q": {
+            "_rawTooltip": {
+                "fullTooltip": "Irelia dashes to an enemy, dealing [[0]] and restoring [[1]] to herself. If the enemy dies or was [[2]], the Cooldown is refreshed.<br /><br />Deals 5/25/45/65/85 (+55 - 259 (based on champion level)) (+60% AD) damage to minions.",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "5/25/45/65/85 {{0}} physical damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+60% AD)",
+                                    "scaleId": "AD"
+                                }
+                            ]
+                        },
+                        "type": "physicalDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "9/10/11/12/13% AD Health",
+                            "scaleHolders": []
+                        },
+                        "type": "healing"
+                    },
+                    {
+                        "text": {
+                            "text": "Unsteady",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    }
+                ]
+            },
+            "cooldown": "11/10/9/8/7",
+            "cost": "20 Mana",
+            "name": "Bladesurge"
+        },
+        "W": {
+            "_rawTooltip": {
+                "fullTooltip": "[[0]] Irelia enters a defensive stance for up to 1.5 seconds, becoming unable to act but reducing physical damage taken by 40 - 70 (based on champion level) (+7% AP)% and magic damage taken by 20 - 35 (based on champion level) (+3.5% AP)%.<br /><br />[[1]] Irelia lashes out with her blades, dealing [[2]] increased up to [[3]] based on charge time.",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "Begin Charging:",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "Release:",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "10/25/40/55/70 {{0}} {{1}} physical damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+40% AD)",
+                                    "scaleId": "AD"
+                                },
+                                {
+                                    "scale": "(+40% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "physicalDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "30/75/120/165/210 {{0}} {{1}}",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+120% AD)",
+                                    "scaleId": "AD"
+                                },
+                                {
+                                    "scale": "(+120% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "physicalDamage"
+                    }
+                ]
+            },
+            "cooldown": "20/18/16/14/12",
+            "cost": "70/75/80/85/90 Mana",
+            "name": "Defiant Dance"
+        },
+        "E": {
+            "_rawTooltip": {
+                "fullTooltip": "Irelia throws a blade into the ground and can [[0]] for up to 3.5 seconds. <br /><br />[[1]] Irelia throws a second blade, then they fly towards each other [[2]] for 0.75 seconds and dealing [[3]]. Champions and large jungle monsters become [[4]] for 5 seconds.",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "Recast",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "Recast:",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "Stunning",
+                            "scaleHolders": []
+                        },
+                        "type": "status"
+                    },
+                    {
+                        "text": {
+                            "text": "80/125/170/215/260 {{0}} magic damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+80% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "magicDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "Unsteady",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    }
+                ]
+            },
+            "cooldown": "16/15/14/13/12",
+            "cost": "50 Mana",
+            "name": "Flawless Duet"
+        },
+        "R": {
+            "_rawTooltip": {
+                "fullTooltip": "Irelia launches a barrage of blades, dealing [[0]] and making champions and large jungle monsters [[1]] for 5 seconds. The barrage explodes into a cage around the first champion hit for 2.5 seconds. The cage deals [[2]] and [[3]] by 90% for 1.5 seconds.<br /><br />[[4]]",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "125/250/375 {{0}} magic damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+70% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "magicDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "Unsteady",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "125/250/375 {{0}} magic damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+70% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "magicDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "Slows",
+                            "scaleHolders": []
+                        },
+                        "type": "status"
+                    },
+                    {
+                        "text": {
+                            "text": "Bladesurge's base cooldown is reduced by 0.5/1.5 seconds.",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    }
+                ]
+            },
+            "cooldown": "140/120/100",
+            "cost": "100 Mana",
+            "name": "Vanguard's Edge"
+        }
+    },
     "Changes": {
         "10.10": {
             "B": "",
@@ -467,346 +731,18 @@
             "R": ""
         }
     },
-    "stats": {
-        "hp": {
-            "base": 590,
-            "increment": 124
-        },
-        "mp": {
-            "base": 350,
-            "increment": 50
-        },
-        "armor": {
-            "base": 36,
-            "increment": 4.7
-        },
-        "spellBlock": {
-            "base": 30,
-            "increment": 2.05
-        },
-        "hpRegen": {
-            "base": 8.5,
-            "increment": 0.85
-        },
-        "mpRegen": {
-            "base": 8,
-            "increment": 0.8
-        },
-        "attackSpeed": {
-            "base": 0.656,
-            "increment": 0.025
-        },
-        "ms": {
-            "base": 335,
-            "increment": 0
-        },
-        "attackDamage": {
-            "base": 65,
-            "increment": 4
-        },
-        "attackRange": {
-            "base": 200,
-            "increment": 0
-        }
-    },
-    "spells": {
-        "P": {
-            "name": "Ionian Fervor",
-            "cooldown": "",
-            "_rawTooltip": {
-                "fullTooltip": "Innate: Irelia generates a stack of Ionian Fervor for each enemy champion hit by her abilities, or if she hits at least one non-champion. Ionian Fervor lasts for 6 seconds, refreshing with basic attacks and ability hits against enemy champions and large monsters, and stacking up to 4 times.<br>Ionian Fervor: For each stack, Irelia gains [[1]], up to a maximum of 30% − 80% (based on level). At maximum stacks, Irelia's basic attacks deal [[0]] on-hit.<br>Innate - Unsteady: Enemy champions and large monsters hit by Flawless Duet and Vanguard's Edge's initial barrage are marked as Unsteady for 5 seconds. The mark can be consumed by Bladesurge.",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "10 − 61 {{0}} {{1}} bonus magic damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(based on level)",
-                                    "scaleId": "level"
-                                },
-                                {
-                                    "scale": "(+ 20% bonus AD)",
-                                    "scaleId": "AD"
-                                }
-                            ]
-                        },
-                        "type": "magicDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "7.5% − 20% {{0}} bonus attack speed",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(based on level)",
-                                    "scaleId": "level"
-                                }
-                            ]
-                        },
-                        "type": "attackSpeed"
-                    }
-                ]
-            }
-        },
-        "Q": {
-            "id": "IreliaQ",
-            "name": "Bladesurge",
-            "_rawTooltip": {
-                "fullTooltip": "Irelia dashes to an enemy, dealing [[0]] and restoring [[1]] to herself. If the enemy dies or was [[2]], the Cooldown is refreshed.<br /><br />Deals 5/25/45/65/85 (+55 - 259 (based on champion level)) (+60% AD) damage to minions.",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "5/25/45/65/85 {{0}} physical damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+60% AD)",
-                                    "scaleId": "AD"
-                                }
-                            ]
-                        },
-                        "type": "physicalDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "9/10/11/12/13% AD Health",
-                            "scaleHolders": []
-                        },
-                        "type": "healing"
-                    },
-                    {
-                        "text": {
-                            "text": "Unsteady",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    }
-                ]
-            },
-            "maxRank": 5,
-            "cooldown": "11/10/9/8/7",
-            "cooldownByLevel": [
-                11,
-                10,
-                9,
-                8,
-                7
-            ],
-            "cost": "20 Mana",
-            "costByLevel": [
-                20,
-                20,
-                20,
-                20,
-                20
-            ],
-            "costType": " Mana"
-        },
-        "W": {
-            "id": "IreliaW",
-            "name": "Defiant Dance",
-            "_rawTooltip": {
-                "fullTooltip": "[[0]] Irelia enters a defensive stance for up to 1.5 seconds, becoming unable to act but reducing physical damage taken by 40 - 70 (based on champion level) (+7% AP)% and magic damage taken by 20 - 35 (based on champion level) (+3.5% AP)%.<br /><br />[[1]] Irelia lashes out with her blades, dealing [[2]] increased up to [[3]] based on charge time.",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "Begin Charging:",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "Release:",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "10/25/40/55/70 {{0}} {{1}} physical damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+40% AD)",
-                                    "scaleId": "AD"
-                                },
-                                {
-                                    "scale": "(+40% AP)",
-                                    "scaleId": "AP"
-                                }
-                            ]
-                        },
-                        "type": "physicalDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "30/75/120/165/210 {{0}} {{1}}",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+120% AD)",
-                                    "scaleId": "AD"
-                                },
-                                {
-                                    "scale": "(+120% AP)",
-                                    "scaleId": "AP"
-                                }
-                            ]
-                        },
-                        "type": "physicalDamage"
-                    }
-                ]
-            },
-            "maxRank": 5,
-            "cooldown": "20/18/16/14/12",
-            "cooldownByLevel": [
-                20,
-                18,
-                16,
-                14,
-                12
-            ],
-            "cost": "70/75/80/85/90 Mana",
-            "costByLevel": [
-                70,
-                75,
-                80,
-                85,
-                90
-            ],
-            "costType": " Mana"
-        },
-        "E": {
-            "id": "IreliaE",
-            "name": "Flawless Duet",
-            "_rawTooltip": {
-                "fullTooltip": "Irelia throws a blade into the ground and can [[0]] for up to 3.5 seconds. <br /><br />[[1]] Irelia throws a second blade, then they fly towards each other [[2]] for 0.75 seconds and dealing [[3]]. Champions and large jungle monsters become [[4]] for 5 seconds.",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "Recast",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "Recast:",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "Stunning",
-                            "scaleHolders": []
-                        },
-                        "type": "status"
-                    },
-                    {
-                        "text": {
-                            "text": "80/125/170/215/260 {{0}} magic damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+80% AP)",
-                                    "scaleId": "AP"
-                                }
-                            ]
-                        },
-                        "type": "magicDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "Unsteady",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    }
-                ]
-            },
-            "maxRank": 5,
-            "cooldown": "16/15/14/13/12",
-            "cooldownByLevel": [
-                16,
-                15,
-                14,
-                13,
-                12
-            ],
-            "cost": "50 Mana",
-            "costByLevel": [
-                50,
-                50,
-                50,
-                50,
-                50
-            ],
-            "costType": " Mana"
-        },
-        "R": {
-            "id": "IreliaR",
-            "name": "Vanguard's Edge",
-            "_rawTooltip": {
-                "fullTooltip": "Irelia launches a barrage of blades, dealing [[0]] and making champions and large jungle monsters [[1]] for 5 seconds. The barrage explodes into a cage around the first champion hit for 2.5 seconds. The cage deals [[2]] and [[3]] by 90% for 1.5 seconds.<br /><br />[[4]]",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "125/250/375 {{0}} magic damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+70% AP)",
-                                    "scaleId": "AP"
-                                }
-                            ]
-                        },
-                        "type": "magicDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "Unsteady",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "125/250/375 {{0}} magic damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+70% AP)",
-                                    "scaleId": "AP"
-                                }
-                            ]
-                        },
-                        "type": "magicDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "Slows",
-                            "scaleHolders": []
-                        },
-                        "type": "status"
-                    },
-                    {
-                        "text": {
-                            "text": "Bladesurge's base cooldown is reduced by 0.5/1.5 seconds.",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    }
-                ]
-            },
-            "maxRank": 3,
-            "cooldown": "140/120/100",
-            "cooldownByLevel": [
-                140,
-                120,
-                100
-            ],
-            "cost": "100 Mana",
-            "costByLevel": [
-                100,
-                100,
-                100
-            ],
-            "costType": " Mana"
-        }
-    }
+    "ChangePatches": [
+        "10.10",
+        "10.15",
+        "10.19",
+        "10.25",
+        "11.14",
+        "11.15",
+        "11.17",
+        "11.20",
+        "12.10",
+        "12.11",
+        "12.16"
+    ],
+    "ChampionName": "Irelia"
 }

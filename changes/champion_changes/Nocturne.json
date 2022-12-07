@@ -1,17 +1,224 @@
 {
-    "ChampionName": "Nocturne",
-    "ChangePatches": [
-        "10.7",
-        "10.13",
-        "10.16",
-        "11.2",
-        "11.14",
-        "12.2",
-        "12.10",
-        "12.14",
-        "12.17",
-        "12.18"
-    ],
+    "stats": {
+        "hp": {
+            "base": 655,
+            "increment": 109
+        },
+        "mp": {
+            "base": 275,
+            "increment": 35
+        },
+        "armor": {
+            "base": 38,
+            "increment": 4.7
+        },
+        "spellBlock": {
+            "base": 32,
+            "increment": 1.55
+        },
+        "hpRegen": {
+            "base": 7,
+            "increment": 0.75
+        },
+        "mpRegen": {
+            "base": 7,
+            "increment": 0.45
+        },
+        "attackSpeed": {
+            "base": 0.721,
+            "increment": 0.027000000000000003
+        },
+        "ms": {
+            "base": 345,
+            "increment": 0
+        },
+        "attackDamage": {
+            "base": 62,
+            "increment": 2.6
+        },
+        "attackRange": {
+            "base": 125,
+            "increment": 0
+        }
+    },
+    "spells": {
+        "P": {
+            "cooldown": 14,
+            "_rawTooltip": {
+                "fullTooltip": "Innate: Periodically, Nocturne's next basic attack causes him to slash in a circle that deals [[0]] to the target and nearby enemies, healing himself for 13 − 30 (based on level) (+ 30% AP) per enemy hit. Against minions, Umbra Blade's damage and healing are reduced by 50% and it applies on-hit effects(bug) to all targets at 100% effectiveness.<br>The attack can critically strike, modifying the physical damage dealt to the primary target to[ (192.5% + 38.5%) AD. ]<br>Basic attacks reduce Umbra Blades' cooldown by 1 second, increased to 3 seconds against monsters and enemy champions.",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "120% AD physical damage",
+                            "scaleHolders": []
+                        },
+                        "type": "physicalDamage"
+                    }
+                ]
+            },
+            "name": "Umbra Blades"
+        },
+        "Q": {
+            "_rawTooltip": {
+                "fullTooltip": "Nocturne throws a shadow blade, dealing [[0]] and leaving a dusk trail for 5 seconds. Enemy champions hit also leave a trail. <br /><br />While on the trail, Nocturne is Ghosted and gains [[1]] and [[2]].",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "65/110/155/200/245 {{0}} physical damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+85% Bonus AD)",
+                                    "scaleId": "AD"
+                                }
+                            ]
+                        },
+                        "type": "physicalDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "15/20/25/30/35% Move Speed",
+                            "scaleHolders": []
+                        },
+                        "type": "speed"
+                    },
+                    {
+                        "text": {
+                            "text": "20/30/40/50/60 Attack Damage",
+                            "scaleHolders": []
+                        },
+                        "type": "physicalDamage"
+                    }
+                ]
+            },
+            "cooldown": "8",
+            "cost": "60/65/70/75/80 Mana",
+            "name": "Duskbringer"
+        },
+        "W": {
+            "_rawTooltip": {
+                "fullTooltip": "[[0]] Nocturne gains [[1]].<br /><br />[[2]] Nocturne creates a shadow barrier for 1.5 seconds that blocks the next enemy Ability. If an Ability is blocked, this Ability's passive effect is increased to [[3]] for 5 seconds.",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "Passive:",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "60/70/80/90/100% Attack Speed",
+                            "scaleHolders": []
+                        },
+                        "type": "attackSpeed"
+                    },
+                    {
+                        "text": {
+                            "text": "Active:",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "60/70/80/90/100% Attack Speed",
+                            "scaleHolders": []
+                        },
+                        "type": "attackSpeed"
+                    }
+                ]
+            },
+            "cooldown": "20/18/16/14/12",
+            "cost": "50 Mana",
+            "name": "Shroud of Darkness"
+        },
+        "E": {
+            "_rawTooltip": {
+                "fullTooltip": "[[0]] Nocturne gains [[1]] toward [[2]] enemies.<br /><br />[[3]] Nocturne plants a nightmare tether into his target, dealing [[4]] over 2 seconds. If the tether remains unbroken, the target is [[5]] for 1.25/1.5/1.75/2/2.25 second(s).",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "Passive:",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "90% Move Speed",
+                            "scaleHolders": []
+                        },
+                        "type": "speed"
+                    },
+                    {
+                        "text": {
+                            "text": "Feared",
+                            "scaleHolders": []
+                        },
+                        "type": "status"
+                    },
+                    {
+                        "text": {
+                            "text": "Active:",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "80/125/170/215/260 {{0}} magic damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+100% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "magicDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "Feared",
+                            "scaleHolders": []
+                        },
+                        "type": "status"
+                    }
+                ]
+            },
+            "cooldown": "15/14/13/12/11",
+            "cost": "60/65/70/75/80 Mana",
+            "name": "Unspeakable Horror"
+        },
+        "R": {
+            "_rawTooltip": {
+                "fullTooltip": "Nocturne darkens the map, reducing the sight radius and removing ally vision of enemy champions for 6 seconds. Nocturne can [[0]] this Ability during the duration to launch himself at an enemy champion dealing [[1]].",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "Recast",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "150/275/400 {{0}} physical damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+120% Bonus AD)",
+                                    "scaleId": "AD"
+                                }
+                            ]
+                        },
+                        "type": "physicalDamage"
+                    }
+                ]
+            },
+            "cooldown": "140/115/90",
+            "cost": "100 Mana",
+            "name": "Paranoia"
+        }
+    },
     "Changes": {
         "10.7": {
             "B": {
@@ -335,288 +542,17 @@
             "R": ""
         }
     },
-    "stats": {
-        "hp": {
-            "base": 655,
-            "increment": 109
-        },
-        "mp": {
-            "base": 275,
-            "increment": 35
-        },
-        "armor": {
-            "base": 38,
-            "increment": 4.7
-        },
-        "spellBlock": {
-            "base": 32,
-            "increment": 1.55
-        },
-        "hpRegen": {
-            "base": 7,
-            "increment": 0.75
-        },
-        "mpRegen": {
-            "base": 7,
-            "increment": 0.45
-        },
-        "attackSpeed": {
-            "base": 0.721,
-            "increment": 0.027000000000000003
-        },
-        "ms": {
-            "base": 345,
-            "increment": 0
-        },
-        "attackDamage": {
-            "base": 62,
-            "increment": 2.6
-        },
-        "attackRange": {
-            "base": 125,
-            "increment": 0
-        }
-    },
-    "spells": {
-        "P": {
-            "name": "Umbra Blades",
-            "cooldown": 14,
-            "_rawTooltip": {
-                "fullTooltip": "Innate: Periodically, Nocturne's next basic attack causes him to slash in a circle that deals [[0]] to the target and nearby enemies, healing himself for 13 − 30 (based on level) (+ 30% AP) per enemy hit. Against minions, Umbra Blade's damage and healing are reduced by 50% and it applies on-hit effects(bug) to all targets at 100% effectiveness.<br>The attack can critically strike, modifying the physical damage dealt to the primary target to[ (192.5% + 38.5%) AD. ]<br>Basic attacks reduce Umbra Blades' cooldown by 1 second, increased to 3 seconds against monsters and enemy champions.",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "120% AD physical damage",
-                            "scaleHolders": []
-                        },
-                        "type": "physicalDamage"
-                    }
-                ]
-            }
-        },
-        "Q": {
-            "id": "NocturneDuskbringer",
-            "name": "Duskbringer",
-            "_rawTooltip": {
-                "fullTooltip": "Nocturne throws a shadow blade, dealing [[0]] and leaving a dusk trail for 5 seconds. Enemy champions hit also leave a trail. <br /><br />While on the trail, Nocturne is Ghosted and gains [[1]] and [[2]].",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "65/110/155/200/245 {{0}} physical damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+85% Bonus AD)",
-                                    "scaleId": "AD"
-                                }
-                            ]
-                        },
-                        "type": "physicalDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "15/20/25/30/35% Move Speed",
-                            "scaleHolders": []
-                        },
-                        "type": "speed"
-                    },
-                    {
-                        "text": {
-                            "text": "20/30/40/50/60 Attack Damage",
-                            "scaleHolders": []
-                        },
-                        "type": "physicalDamage"
-                    }
-                ]
-            },
-            "maxRank": 5,
-            "cooldown": "8",
-            "cooldownByLevel": [
-                8,
-                8,
-                8,
-                8,
-                8
-            ],
-            "cost": "60/65/70/75/80 Mana",
-            "costByLevel": [
-                60,
-                65,
-                70,
-                75,
-                80
-            ],
-            "costType": " Mana"
-        },
-        "W": {
-            "id": "NocturneShroudofDarkness",
-            "name": "Shroud of Darkness",
-            "_rawTooltip": {
-                "fullTooltip": "[[0]] Nocturne gains [[1]].<br /><br />[[2]] Nocturne creates a shadow barrier for 1.5 seconds that blocks the next enemy Ability. If an Ability is blocked, this Ability's passive effect is increased to [[3]] for 5 seconds.",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "Passive:",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "60/70/80/90/100% Attack Speed",
-                            "scaleHolders": []
-                        },
-                        "type": "attackSpeed"
-                    },
-                    {
-                        "text": {
-                            "text": "Active:",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "60/70/80/90/100% Attack Speed",
-                            "scaleHolders": []
-                        },
-                        "type": "attackSpeed"
-                    }
-                ]
-            },
-            "maxRank": 5,
-            "cooldown": "20/18/16/14/12",
-            "cooldownByLevel": [
-                20,
-                18,
-                16,
-                14,
-                12
-            ],
-            "cost": "50 Mana",
-            "costByLevel": [
-                50,
-                50,
-                50,
-                50,
-                50
-            ],
-            "costType": " Mana"
-        },
-        "E": {
-            "id": "NocturneUnspeakableHorror",
-            "name": "Unspeakable Horror",
-            "_rawTooltip": {
-                "fullTooltip": "[[0]] Nocturne gains [[1]] toward [[2]] enemies.<br /><br />[[3]] Nocturne plants a nightmare tether into his target, dealing [[4]] over 2 seconds. If the tether remains unbroken, the target is [[5]] for 1.25/1.5/1.75/2/2.25 second(s).",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "Passive:",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "90% Move Speed",
-                            "scaleHolders": []
-                        },
-                        "type": "speed"
-                    },
-                    {
-                        "text": {
-                            "text": "Feared",
-                            "scaleHolders": []
-                        },
-                        "type": "status"
-                    },
-                    {
-                        "text": {
-                            "text": "Active:",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "80/125/170/215/260 {{0}} magic damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+100% AP)",
-                                    "scaleId": "AP"
-                                }
-                            ]
-                        },
-                        "type": "magicDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "Feared",
-                            "scaleHolders": []
-                        },
-                        "type": "status"
-                    }
-                ]
-            },
-            "maxRank": 5,
-            "cooldown": "15/14/13/12/11",
-            "cooldownByLevel": [
-                15,
-                14,
-                13,
-                12,
-                11
-            ],
-            "cost": "60/65/70/75/80 Mana",
-            "costByLevel": [
-                60,
-                65,
-                70,
-                75,
-                80
-            ],
-            "costType": " Mana"
-        },
-        "R": {
-            "id": "NocturneParanoia",
-            "name": "Paranoia",
-            "_rawTooltip": {
-                "fullTooltip": "Nocturne darkens the map, reducing the sight radius and removing ally vision of enemy champions for 6 seconds. Nocturne can [[0]] this Ability during the duration to launch himself at an enemy champion dealing [[1]].",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "Recast",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "150/275/400 {{0}} physical damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+120% Bonus AD)",
-                                    "scaleId": "AD"
-                                }
-                            ]
-                        },
-                        "type": "physicalDamage"
-                    }
-                ]
-            },
-            "maxRank": 3,
-            "cooldown": "140/115/90",
-            "cooldownByLevel": [
-                140,
-                115,
-                90
-            ],
-            "cost": "100 Mana",
-            "costByLevel": [
-                100,
-                100,
-                100
-            ],
-            "costType": " Mana"
-        }
-    }
+    "ChangePatches": [
+        "10.7",
+        "10.13",
+        "10.16",
+        "11.2",
+        "11.14",
+        "12.2",
+        "12.10",
+        "12.14",
+        "12.17",
+        "12.18"
+    ],
+    "ChampionName": "Nocturne"
 }

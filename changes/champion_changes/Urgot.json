@@ -1,16 +1,254 @@
 {
-    "ChampionName": "Urgot",
-    "ChangePatches": [
-        "10.6",
-        "10.8",
-        "10.20",
-        "11.4",
-        "11.6",
-        "11.11",
-        "11.18",
-        "11.24",
-        "12.10"
-    ],
+    "stats": {
+        "hp": {
+            "base": 655,
+            "increment": 102
+        },
+        "mp": {
+            "base": 340,
+            "increment": 45
+        },
+        "armor": {
+            "base": 36,
+            "increment": 5.45
+        },
+        "spellBlock": {
+            "base": 32,
+            "increment": 2.05
+        },
+        "hpRegen": {
+            "base": 7.5,
+            "increment": 0.7
+        },
+        "mpRegen": {
+            "base": 7.25,
+            "increment": 0.8
+        },
+        "attackSpeed": {
+            "base": 0.625,
+            "increment": 0.0375
+        },
+        "ms": {
+            "base": 330,
+            "increment": 0
+        },
+        "attackDamage": {
+            "base": 63,
+            "increment": 4
+        },
+        "attackRange": {
+            "base": 350,
+            "increment": 0
+        }
+    },
+    "spells": {
+        "P": {
+            "cooldown": "",
+            "_rawTooltip": {
+                "fullTooltip": "Innate: Urgot's six legs each conceal a shotgun that covers an arc, together forming a full circle of cover around him. Each shotgun has one shell and an individual reload timer.<br>Urgot's next basic attack on-hit in the direction and range of a loaded shotgun causes it to fire, instantly dealing [[0]] to enemies in a cone, capped at 100 − 360 (based on level) against monsters.",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "40% − 100% {{0}} AD {{1}} of target's maximum health) physical damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(based on level)",
+                                    "scaleId": "level"
+                                },
+                                {
+                                    "scale": "(+ 2% − 6% (based on level)",
+                                    "scaleId": "level"
+                                }
+                            ]
+                        },
+                        "type": "Health"
+                    }
+                ]
+            },
+            "name": "Echoing Flames"
+        },
+        "Q": {
+            "_rawTooltip": {
+                "fullTooltip": "Urgot fires an explosive charge, dealing [[0]] and [[1]] by 45/50/55/60/65% for 1.25 seconds.",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "25/70/115/160/205 {{0}} physical damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+70% AD)",
+                                    "scaleId": "AD"
+                                }
+                            ]
+                        },
+                        "type": "physicalDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "Slowing",
+                            "scaleHolders": []
+                        },
+                        "type": "status"
+                    }
+                ]
+            },
+            "cooldown": "10/9.5/9/8.5/8",
+            "cost": "70 Mana",
+            "name": "Corrosive Charge"
+        },
+        "W": {
+            "_rawTooltip": {
+                "fullTooltip": "[[0]] Urgot's other Abilities mark the last champion hit for 5 seconds.<br /><br />[[1]] Urgot begins firing his chain gun at the closest enemy, prioritizing marked enemies. He Attacks them 3 times a second dealing [[2]] per shot. Urgot can move while firing and has 40% [[3]] resistance, but loses [[4]].<br /><br />At max rank, this Ability lasts indefinitely and can be [[5]] on and off.",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "Passive:",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "Active:",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "12 {{0}} physical damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+20/23.5/27/30.5/34% AD)",
+                                    "scaleId": "AD"
+                                }
+                            ]
+                        },
+                        "type": "physicalDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "Slow",
+                            "scaleHolders": []
+                        },
+                        "type": "status"
+                    },
+                    {
+                        "text": {
+                            "text": "125 Move Speed",
+                            "scaleHolders": []
+                        },
+                        "type": "speed"
+                    },
+                    {
+                        "text": {
+                            "text": "Toggled",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    }
+                ]
+            },
+            "cooldown": "12/9/6/3/0",
+            "cost": "40/30/20/10/0 Mana",
+            "name": "Purge"
+        },
+        "E": {
+            "_rawTooltip": {
+                "fullTooltip": "Urgot charges forward, gaining [[0]] for 4 seconds. The first champion hit is [[1]] for 1.5 seconds and thrown behind Urgot. All enemies Urgot collides with take [[2]].",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "55/75/95/115/135 {{0}} {{1}} Shield",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+135% Bonus AD)",
+                                    "scaleId": "AD"
+                                },
+                                {
+                                    "scale": "(+13.5% Bonus Health)",
+                                    "scaleId": "Health"
+                                }
+                            ]
+                        },
+                        "type": "shield"
+                    },
+                    {
+                        "text": {
+                            "text": "Stunned",
+                            "scaleHolders": []
+                        },
+                        "type": "status"
+                    },
+                    {
+                        "text": {
+                            "text": "90/120/150/180/210 {{0}} physical damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+100% Bonus AD)",
+                                    "scaleId": "AD"
+                                }
+                            ]
+                        },
+                        "type": "physicalDamage"
+                    }
+                ]
+            },
+            "cooldown": "16/15.5/15/14.5/14",
+            "cost": "60/70/80/90/100 Mana",
+            "name": "Disdain"
+        },
+        "R": {
+            "_rawTooltip": {
+                "fullTooltip": "Urgot fires a chem-drill, impaling the first champion hit, dealing [[0]] and [[1]] for 4 seconds by 1% per 1% missing Health, up to 75%.<br /><br />If the impaled victim falls below 25% Health, Urgot can [[2]] this Ability, [[3]] the victim and dragging them to himself. On reaching Urgot, they are killed and nearby enemies are [[4]] for 1.5 seconds.",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "100/225/350 {{0}} physical damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+50% Bonus AD)",
+                                    "scaleId": "AD"
+                                }
+                            ]
+                        },
+                        "type": "physicalDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "Slowing",
+                            "scaleHolders": []
+                        },
+                        "type": "status"
+                    },
+                    {
+                        "text": {
+                            "text": "Recast",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "Suppressing",
+                            "scaleHolders": []
+                        },
+                        "type": "status"
+                    },
+                    {
+                        "text": {
+                            "text": "Feared",
+                            "scaleHolders": []
+                        },
+                        "type": "status"
+                    }
+                ]
+            },
+            "cooldown": "100/85/70",
+            "cost": "100 Mana",
+            "name": "Fear Beyond Death"
+        }
+    },
     "Changes": {
         "10.6": {
             "B": "",
@@ -312,318 +550,16 @@
             "R": ""
         }
     },
-    "stats": {
-        "hp": {
-            "base": 655,
-            "increment": 102
-        },
-        "mp": {
-            "base": 340,
-            "increment": 45
-        },
-        "armor": {
-            "base": 36,
-            "increment": 5.45
-        },
-        "spellBlock": {
-            "base": 32,
-            "increment": 2.05
-        },
-        "hpRegen": {
-            "base": 7.5,
-            "increment": 0.7
-        },
-        "mpRegen": {
-            "base": 7.25,
-            "increment": 0.8
-        },
-        "attackSpeed": {
-            "base": 0.625,
-            "increment": 0.0375
-        },
-        "ms": {
-            "base": 330,
-            "increment": 0
-        },
-        "attackDamage": {
-            "base": 63,
-            "increment": 4
-        },
-        "attackRange": {
-            "base": 350,
-            "increment": 0
-        }
-    },
-    "spells": {
-        "P": {
-            "name": "Echoing Flames",
-            "cooldown": "",
-            "_rawTooltip": {
-                "fullTooltip": "Innate: Urgot's six legs each conceal a shotgun that covers an arc, together forming a full circle of cover around him. Each shotgun has one shell and an individual reload timer.<br>Urgot's next basic attack on-hit in the direction and range of a loaded shotgun causes it to fire, instantly dealing [[0]] to enemies in a cone, capped at 100 − 360 (based on level) against monsters.",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "40% − 100% {{0}} AD {{1}} of target's maximum health) physical damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(based on level)",
-                                    "scaleId": "level"
-                                },
-                                {
-                                    "scale": "(+ 2% − 6% (based on level)",
-                                    "scaleId": "level"
-                                }
-                            ]
-                        },
-                        "type": "Health"
-                    }
-                ]
-            }
-        },
-        "Q": {
-            "id": "UrgotQ",
-            "name": "Corrosive Charge",
-            "_rawTooltip": {
-                "fullTooltip": "Urgot fires an explosive charge, dealing [[0]] and [[1]] by 45/50/55/60/65% for 1.25 seconds.",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "25/70/115/160/205 {{0}} physical damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+70% AD)",
-                                    "scaleId": "AD"
-                                }
-                            ]
-                        },
-                        "type": "physicalDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "Slowing",
-                            "scaleHolders": []
-                        },
-                        "type": "status"
-                    }
-                ]
-            },
-            "maxRank": 5,
-            "cooldown": "10/9.5/9/8.5/8",
-            "cooldownByLevel": [
-                10,
-                9.5,
-                9,
-                8.5,
-                8
-            ],
-            "cost": "70 Mana",
-            "costByLevel": [
-                70,
-                70,
-                70,
-                70,
-                70
-            ],
-            "costType": " Mana"
-        },
-        "W": {
-            "id": "UrgotW",
-            "name": "Purge",
-            "_rawTooltip": {
-                "fullTooltip": "[[0]] Urgot's other Abilities mark the last champion hit for 5 seconds.<br /><br />[[1]] Urgot begins firing his chain gun at the closest enemy, prioritizing marked enemies. He Attacks them 3 times a second dealing [[2]] per shot. Urgot can move while firing and has 40% [[3]] resistance, but loses [[4]].<br /><br />At max rank, this Ability lasts indefinitely and can be [[5]] on and off.",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "Passive:",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "Active:",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "12 {{0}} physical damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+20/23.5/27/30.5/34% AD)",
-                                    "scaleId": "AD"
-                                }
-                            ]
-                        },
-                        "type": "physicalDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "Slow",
-                            "scaleHolders": []
-                        },
-                        "type": "status"
-                    },
-                    {
-                        "text": {
-                            "text": "125 Move Speed",
-                            "scaleHolders": []
-                        },
-                        "type": "speed"
-                    },
-                    {
-                        "text": {
-                            "text": "Toggled",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    }
-                ]
-            },
-            "maxRank": 5,
-            "cooldown": "12/9/6/3/0",
-            "cooldownByLevel": [
-                12,
-                9,
-                6,
-                3,
-                0
-            ],
-            "cost": "40/30/20/10/0 Mana",
-            "costByLevel": [
-                40,
-                30,
-                20,
-                10,
-                0
-            ],
-            "costType": " Mana"
-        },
-        "E": {
-            "id": "UrgotE",
-            "name": "Disdain",
-            "_rawTooltip": {
-                "fullTooltip": "Urgot charges forward, gaining [[0]] for 4 seconds. The first champion hit is [[1]] for 1.5 seconds and thrown behind Urgot. All enemies Urgot collides with take [[2]].",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "55/75/95/115/135 {{0}} {{1}} Shield",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+135% Bonus AD)",
-                                    "scaleId": "AD"
-                                },
-                                {
-                                    "scale": "(+13.5% Bonus Health)",
-                                    "scaleId": "Health"
-                                }
-                            ]
-                        },
-                        "type": "shield"
-                    },
-                    {
-                        "text": {
-                            "text": "Stunned",
-                            "scaleHolders": []
-                        },
-                        "type": "status"
-                    },
-                    {
-                        "text": {
-                            "text": "90/120/150/180/210 {{0}} physical damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+100% Bonus AD)",
-                                    "scaleId": "AD"
-                                }
-                            ]
-                        },
-                        "type": "physicalDamage"
-                    }
-                ]
-            },
-            "maxRank": 5,
-            "cooldown": "16/15.5/15/14.5/14",
-            "cooldownByLevel": [
-                16,
-                15.5,
-                15,
-                14.5,
-                14
-            ],
-            "cost": "60/70/80/90/100 Mana",
-            "costByLevel": [
-                60,
-                70,
-                80,
-                90,
-                100
-            ],
-            "costType": " Mana"
-        },
-        "R": {
-            "id": "UrgotR",
-            "name": "Fear Beyond Death",
-            "_rawTooltip": {
-                "fullTooltip": "Urgot fires a chem-drill, impaling the first champion hit, dealing [[0]] and [[1]] for 4 seconds by 1% per 1% missing Health, up to 75%.<br /><br />If the impaled victim falls below 25% Health, Urgot can [[2]] this Ability, [[3]] the victim and dragging them to himself. On reaching Urgot, they are killed and nearby enemies are [[4]] for 1.5 seconds.",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "100/225/350 {{0}} physical damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+50% Bonus AD)",
-                                    "scaleId": "AD"
-                                }
-                            ]
-                        },
-                        "type": "physicalDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "Slowing",
-                            "scaleHolders": []
-                        },
-                        "type": "status"
-                    },
-                    {
-                        "text": {
-                            "text": "Recast",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "Suppressing",
-                            "scaleHolders": []
-                        },
-                        "type": "status"
-                    },
-                    {
-                        "text": {
-                            "text": "Feared",
-                            "scaleHolders": []
-                        },
-                        "type": "status"
-                    }
-                ]
-            },
-            "maxRank": 3,
-            "cooldown": "100/85/70",
-            "cooldownByLevel": [
-                100,
-                85,
-                70
-            ],
-            "cost": "100 Mana",
-            "costByLevel": [
-                100,
-                100,
-                100
-            ],
-            "costType": " Mana"
-        }
-    }
+    "ChangePatches": [
+        "10.6",
+        "10.8",
+        "10.20",
+        "11.4",
+        "11.6",
+        "11.11",
+        "11.18",
+        "11.24",
+        "12.10"
+    ],
+    "ChampionName": "Urgot"
 }

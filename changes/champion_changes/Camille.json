@@ -1,13 +1,245 @@
 {
-    "ChampionName": "Camille",
-    "ChangePatches": [
-        "10.21",
-        "11.4",
-        "11.18",
-        "11.24",
-        "12.10",
-        "12.17"
-    ],
+    "stats": {
+        "hp": {
+            "base": 646,
+            "increment": 99
+        },
+        "mp": {
+            "base": 339,
+            "increment": 52
+        },
+        "armor": {
+            "base": 35,
+            "increment": 5
+        },
+        "spellBlock": {
+            "base": 32,
+            "increment": 2.05
+        },
+        "hpRegen": {
+            "base": 8.5,
+            "increment": 0.8
+        },
+        "mpRegen": {
+            "base": 8.15,
+            "increment": 0.75
+        },
+        "attackSpeed": {
+            "base": 0.644,
+            "increment": 0.025
+        },
+        "ms": {
+            "base": 340,
+            "increment": 0
+        },
+        "attackDamage": {
+            "base": 68,
+            "increment": 3.5
+        },
+        "attackRange": {
+            "base": 125,
+            "increment": 0
+        }
+    },
+    "spells": {
+        "P": {
+            "cooldown": "20/15/10",
+            "_rawTooltip": {
+                "fullTooltip": "Innate: Periodically, Camille's next basic attack against enemy champions is enhanced to shield her for [[0]] for 2 seconds from either exclusively physical damage or magic damage, based on which type the target has previously dealt most of against champions as well as on Camille's current armor and magic resistance.",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "17% of her maximum health",
+                            "scaleHolders": []
+                        },
+                        "type": "Health"
+                    }
+                ]
+            },
+            "name": "Adaptive Defenses"
+        },
+        "Q": {
+            "_rawTooltip": {
+                "fullTooltip": "Camille's next Attack deals an additional [[0]] and grants her [[1]] for 1 second. This ability can be [[2]] in the next 3.5 seconds.<br /><br />If the [[3]] Attack hits at least 1.5 seconds after the first, the bonus damage is increased to [[4]] and 40% - 100% (based on champion level) of the Attack's damage is converted into [[5]].<br /><br />[[6]]",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "20/25/30/35/40% AD physical damage",
+                            "scaleHolders": []
+                        },
+                        "type": "physicalDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "20/25/30/35/40% Move Speed",
+                            "scaleHolders": []
+                        },
+                        "type": "speed"
+                    },
+                    {
+                        "text": {
+                            "text": "Recast",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "Recast",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "40/50/60/70/80% AD",
+                            "scaleHolders": []
+                        },
+                        "type": "physicalDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "true damage",
+                            "scaleHolders": []
+                        },
+                        "type": "trueDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "This Ability triggers spell effects upon dealing damage.",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    }
+                ]
+            },
+            "cooldown": "9/8.25/7.5/6.75/6",
+            "cost": "25 Mana",
+            "name": "Precision Protocol"
+        },
+        "W": {
+            "_rawTooltip": {
+                "fullTooltip": "Camille winds up and slices, dealing [[0]].<br /><br />Enemies hit by the outer half are [[1]] by 80% decaying over 2 seconds, and they take an additional [[2]]. Camille restores [[3]].",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "70/100/130/160/190 {{0}} physical damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+60% Bonus AD)",
+                                    "scaleId": "AD"
+                                }
+                            ]
+                        },
+                        "type": "physicalDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "Slowed",
+                            "scaleHolders": []
+                        },
+                        "type": "status"
+                    },
+                    {
+                        "text": {
+                            "text": "5/5.5/6/6.5/7% {{0}} max Health physical damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+2.5% per 100 Bonus AD)",
+                                    "scaleId": "AD"
+                                }
+                            ]
+                        },
+                        "type": "physicalDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "100% of the bonus damage dealt to champions as Health",
+                            "scaleHolders": []
+                        },
+                        "type": "healing"
+                    }
+                ]
+            },
+            "cooldown": "17/15.5/14/12.5/11",
+            "cost": "50/55/60/65/70 Mana",
+            "name": "Tactical Sweep"
+        },
+        "E": {
+            "_rawTooltip": {
+                "fullTooltip": "Camille fires a hookshot that attaches to terrain, pulling her to it for 1 second and allowing this Ability to be [[0]].<br /><br />[[1]] Camille dashes from the wall, colliding with the first enemy champion hit. Upon landing, she deals [[2]] to nearby enemies and [[3]] enemy champions for 0.75 seconds. Dashes towards enemy champions travel twice as far and grant [[4]] for 5 seconds on impact.",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "Recast",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "Recast:",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "80/110/140/170/200 {{0}} physical damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+90% Bonus AD)",
+                                    "scaleId": "AD"
+                                }
+                            ]
+                        },
+                        "type": "physicalDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "Stuns",
+                            "scaleHolders": []
+                        },
+                        "type": "status"
+                    },
+                    {
+                        "text": {
+                            "text": "40/45/50/55/60% Attack Speed",
+                            "scaleHolders": []
+                        },
+                        "type": "attackSpeed"
+                    }
+                ]
+            },
+            "cooldown": "16/15/14/13/12",
+            "cost": "70 Mana",
+            "name": "Hookshot"
+        },
+        "R": {
+            "_rawTooltip": {
+                "fullTooltip": "Camille briefly becomes Untargetable and leaps onto an enemy champion, interrupting channels and locking them into an area they cannot escape by any means for 2.5/3.25 seconds. Other nearby enemies are [[0]]. Her Attacks against the trapped enemy deal an additional [[1]].",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "Knocked Away",
+                            "scaleHolders": []
+                        },
+                        "type": "status"
+                    },
+                    {
+                        "text": {
+                            "text": "5/10 plus 4/6% current Health magic damage",
+                            "scaleHolders": []
+                        },
+                        "type": "magicDamage"
+                    }
+                ]
+            },
+            "cooldown": "140/115/90",
+            "cost": "100 Mana",
+            "name": "The Hextech Ultimatum"
+        }
+    },
     "Changes": {
         "10.21": {
             "B": "",
@@ -202,309 +434,13 @@
             "R": ""
         }
     },
-    "stats": {
-        "hp": {
-            "base": 646,
-            "increment": 99
-        },
-        "mp": {
-            "base": 339,
-            "increment": 52
-        },
-        "armor": {
-            "base": 35,
-            "increment": 5
-        },
-        "spellBlock": {
-            "base": 32,
-            "increment": 2.05
-        },
-        "hpRegen": {
-            "base": 8.5,
-            "increment": 0.8
-        },
-        "mpRegen": {
-            "base": 8.15,
-            "increment": 0.75
-        },
-        "attackSpeed": {
-            "base": 0.644,
-            "increment": 0.025
-        },
-        "ms": {
-            "base": 340,
-            "increment": 0
-        },
-        "attackDamage": {
-            "base": 68,
-            "increment": 3.5
-        },
-        "attackRange": {
-            "base": 125,
-            "increment": 0
-        }
-    },
-    "spells": {
-        "P": {
-            "name": "Adaptive Defenses",
-            "cooldown": "20/15/10",
-            "_rawTooltip": {
-                "fullTooltip": "Innate: Periodically, Camille's next basic attack against enemy champions is enhanced to shield her for [[0]] for 2 seconds from either exclusively physical damage or magic damage, based on which type the target has previously dealt most of against champions as well as on Camille's current armor and magic resistance.",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "17% of her maximum health",
-                            "scaleHolders": []
-                        },
-                        "type": "Health"
-                    }
-                ]
-            }
-        },
-        "Q": {
-            "id": "CamilleQ",
-            "name": "Precision Protocol",
-            "_rawTooltip": {
-                "fullTooltip": "Camille's next Attack deals an additional [[0]] and grants her [[1]] for 1 second. This ability can be [[2]] in the next 3.5 seconds.<br /><br />If the [[3]] Attack hits at least 1.5 seconds after the first, the bonus damage is increased to [[4]] and 40% - 100% (based on champion level) of the Attack's damage is converted into [[5]].<br /><br />[[6]]",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "20/25/30/35/40% AD physical damage",
-                            "scaleHolders": []
-                        },
-                        "type": "physicalDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "20/25/30/35/40% Move Speed",
-                            "scaleHolders": []
-                        },
-                        "type": "speed"
-                    },
-                    {
-                        "text": {
-                            "text": "Recast",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "Recast",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "40/50/60/70/80% AD",
-                            "scaleHolders": []
-                        },
-                        "type": "physicalDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "true damage",
-                            "scaleHolders": []
-                        },
-                        "type": "trueDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "This Ability triggers spell effects upon dealing damage.",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    }
-                ]
-            },
-            "maxRank": 5,
-            "cooldown": "9/8.25/7.5/6.75/6",
-            "cooldownByLevel": [
-                9,
-                8.25,
-                7.5,
-                6.75,
-                6
-            ],
-            "cost": "25 Mana",
-            "costByLevel": [
-                25,
-                25,
-                25,
-                25,
-                25
-            ],
-            "costType": " Mana"
-        },
-        "W": {
-            "id": "CamilleW",
-            "name": "Tactical Sweep",
-            "_rawTooltip": {
-                "fullTooltip": "Camille winds up and slices, dealing [[0]].<br /><br />Enemies hit by the outer half are [[1]] by 80% decaying over 2 seconds, and they take an additional [[2]]. Camille restores [[3]].",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "70/100/130/160/190 {{0}} physical damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+60% Bonus AD)",
-                                    "scaleId": "AD"
-                                }
-                            ]
-                        },
-                        "type": "physicalDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "Slowed",
-                            "scaleHolders": []
-                        },
-                        "type": "status"
-                    },
-                    {
-                        "text": {
-                            "text": "5/5.5/6/6.5/7% {{0}} max Health physical damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+2.5% per 100 Bonus AD)",
-                                    "scaleId": "AD"
-                                }
-                            ]
-                        },
-                        "type": "physicalDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "100% of the bonus damage dealt to champions as Health",
-                            "scaleHolders": []
-                        },
-                        "type": "healing"
-                    }
-                ]
-            },
-            "maxRank": 5,
-            "cooldown": "17/15.5/14/12.5/11",
-            "cooldownByLevel": [
-                17,
-                15.5,
-                14,
-                12.5,
-                11
-            ],
-            "cost": "50/55/60/65/70 Mana",
-            "costByLevel": [
-                50,
-                55,
-                60,
-                65,
-                70
-            ],
-            "costType": " Mana"
-        },
-        "E": {
-            "id": "CamilleE",
-            "name": "Hookshot",
-            "_rawTooltip": {
-                "fullTooltip": "Camille fires a hookshot that attaches to terrain, pulling her to it for 1 second and allowing this Ability to be [[0]].<br /><br />[[1]] Camille dashes from the wall, colliding with the first enemy champion hit. Upon landing, she deals [[2]] to nearby enemies and [[3]] enemy champions for 0.75 seconds. Dashes towards enemy champions travel twice as far and grant [[4]] for 5 seconds on impact.",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "Recast",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "Recast:",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "80/110/140/170/200 {{0}} physical damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+90% Bonus AD)",
-                                    "scaleId": "AD"
-                                }
-                            ]
-                        },
-                        "type": "physicalDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "Stuns",
-                            "scaleHolders": []
-                        },
-                        "type": "status"
-                    },
-                    {
-                        "text": {
-                            "text": "40/45/50/55/60% Attack Speed",
-                            "scaleHolders": []
-                        },
-                        "type": "attackSpeed"
-                    }
-                ]
-            },
-            "maxRank": 5,
-            "cooldown": "16/15/14/13/12",
-            "cooldownByLevel": [
-                16,
-                15,
-                14,
-                13,
-                12
-            ],
-            "cost": "70 Mana",
-            "costByLevel": [
-                70,
-                70,
-                70,
-                70,
-                70
-            ],
-            "costType": " Mana"
-        },
-        "R": {
-            "id": "CamilleR",
-            "name": "The Hextech Ultimatum",
-            "_rawTooltip": {
-                "fullTooltip": "Camille briefly becomes Untargetable and leaps onto an enemy champion, interrupting channels and locking them into an area they cannot escape by any means for 2.5/3.25 seconds. Other nearby enemies are [[0]]. Her Attacks against the trapped enemy deal an additional [[1]].",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "Knocked Away",
-                            "scaleHolders": []
-                        },
-                        "type": "status"
-                    },
-                    {
-                        "text": {
-                            "text": "5/10 plus 4/6% current Health magic damage",
-                            "scaleHolders": []
-                        },
-                        "type": "magicDamage"
-                    }
-                ]
-            },
-            "maxRank": 3,
-            "cooldown": "140/115/90",
-            "cooldownByLevel": [
-                140,
-                115,
-                90
-            ],
-            "cost": "100 Mana",
-            "costByLevel": [
-                100,
-                100,
-                100
-            ],
-            "costType": " Mana"
-        }
-    }
+    "ChangePatches": [
+        "10.21",
+        "11.4",
+        "11.18",
+        "11.24",
+        "12.10",
+        "12.17"
+    ],
+    "ChampionName": "Camille"
 }

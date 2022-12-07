@@ -1,20 +1,328 @@
 {
-    "ChampionName": "Qiyana",
-    "ChangePatches": [
-        "9.20",
-        "10.2",
-        "10.17",
-        "11.1",
-        "11.5",
-        "11.11",
-        "11.18",
-        "11.19",
-        "11.22",
-        "12.2",
-        "12.4",
-        "12.10",
-        "12.15"
-    ],
+    "stats": {
+        "hp": {
+            "base": 590,
+            "increment": 124
+        },
+        "mp": {
+            "base": 320,
+            "increment": 50
+        },
+        "armor": {
+            "base": 28,
+            "increment": 4.7
+        },
+        "spellBlock": {
+            "base": 32,
+            "increment": 2.05
+        },
+        "hpRegen": {
+            "base": 6,
+            "increment": 0.9
+        },
+        "mpRegen": {
+            "base": 8,
+            "increment": 0.7
+        },
+        "attackSpeed": {
+            "base": 0.688,
+            "increment": 0.021
+        },
+        "ms": {
+            "base": 335,
+            "increment": 0
+        },
+        "attackDamage": {
+            "base": 66,
+            "increment": 3.1
+        },
+        "attackRange": {
+            "base": 150,
+            "increment": 0
+        }
+    },
+    "spells": {
+        "P": {
+            "cooldown": "",
+            "_rawTooltip": {
+                "fullTooltip": "Innate: Qiyana's basic attacks and basic abilities deal [[0]]. This effect cannot occur on the same target more than once every few seconds.<br>Gathering an Element with Terrashape resets Royal Privilege's per-target cooldown for enemies affected by Royal Privilege using a different Element (or no Element).",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "15 − 83 {{0}} {{1}} {{2}} additional physical damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(based on level)",
+                                    "scaleId": "level"
+                                },
+                                {
+                                    "scale": "(+ 45% bonus AD)",
+                                    "scaleId": "AD"
+                                },
+                                {
+                                    "scale": "(+ 30% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "physicalDamage"
+                    }
+                ]
+            },
+            "name": "Royal Privilege"
+        },
+        "Q": {
+            "_rawTooltip": {
+                "fullTooltip": "If Qiyana does not have an [[0]], she slashes, dealing [[1]] to enemies in a small area. If she does, this Ability gains extra range and an additional effect based on the type of [[2]]:[[3]]: Briefly [[4]], then [[5]] by 20% for 1 second.[[6]]: Deals an additional [[7]] to units below 50% Health.[[8]]: Leaves a trail that turns Qiyana [[9]] and grants [[10]].<br />",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "Enchantment",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "50/80/110/140/170 {{0}} physical damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+75% Bonus AD)",
+                                    "scaleId": "AD"
+                                }
+                            ]
+                        },
+                        "type": "physicalDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "Enchantment",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "Ice Enchantment",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "Roots",
+                            "scaleHolders": []
+                        },
+                        "type": "status"
+                    },
+                    {
+                        "text": {
+                            "text": "Slows",
+                            "scaleHolders": []
+                        },
+                        "type": "status"
+                    },
+                    {
+                        "text": {
+                            "text": "Rock Enchantment",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "30/48/66/84/102 {{0}} physical damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+45% Bonus AD)",
+                                    "scaleId": "AD"
+                                }
+                            ]
+                        },
+                        "type": "physicalDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "Wild Enchantment",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "Invisible",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "20% Move Speed",
+                            "scaleHolders": []
+                        },
+                        "type": "speed"
+                    }
+                ]
+            },
+            "cooldown": "7",
+            "cost": "35 Mana",
+            "name": "Elemental Wrath / Edge of Ixtal"
+        },
+        "W": {
+            "_rawTooltip": {
+                "fullTooltip": "[[0]] While Qiyana's weapon is [[1]], she gains [[2]] and her Attacks deal an additional [[3]]. She also gains [[4]] while out of combat near the corresponding terrain type.<br /><br />[[5]] Qiyana dashes towards a nearby brush, terrain, or river and [[6]] her weapon with that particular terrain type. This refreshes [[7]]'s Cooldown.",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "Passive:",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "Enchanted",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "5/10/15/20/25% Attack Speed",
+                            "scaleHolders": []
+                        },
+                        "type": "attackSpeed"
+                    },
+                    {
+                        "text": {
+                            "text": "8/22/36/50/64 {{0}} {{1}} magic damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+45% AP)",
+                                    "scaleId": "AP"
+                                },
+                                {
+                                    "scale": "(+10% Bonus AD)",
+                                    "scaleId": "AD"
+                                }
+                            ]
+                        },
+                        "type": "magicDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "3/5/7/9/11% Move Speed",
+                            "scaleHolders": []
+                        },
+                        "type": "speed"
+                    },
+                    {
+                        "text": {
+                            "text": "Active:",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "Enchants",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "Elemental Wrath / Edge of Ixtal",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    }
+                ]
+            },
+            "cooldown": "7",
+            "cost": "25/30/35/40/45 Mana",
+            "name": "Terrashape"
+        },
+        "E": {
+            "_rawTooltip": {
+                "fullTooltip": "Qiyana dashes through an enemy and deals [[0]] to them.",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "50/90/130/170/210 {{0}} physical damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+50% Bonus AD)",
+                                    "scaleId": "AD"
+                                }
+                            ]
+                        },
+                        "type": "physicalDamage"
+                    }
+                ]
+            },
+            "cooldown": "12/11/10/9/8",
+            "cost": "40/45/50/55/60 Mana",
+            "name": "Audacity"
+        },
+        "R": {
+            "_rawTooltip": {
+                "fullTooltip": "Qiyana launches a shockwave that [[0]] enemies and detonates when it hits terrain. The explosion follows the entire edge of the terrain, [[1]] for between 0.5 and 1 seconds and dealing [[2]] plus [[3]]. [[4]] duration scales down with distance the shockwave has travelled.<br /><br />Any river or brush the shockwave passes through also explode after a delay for the same damage and [[5]].",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "Knocks Back",
+                            "scaleHolders": []
+                        },
+                        "type": "status"
+                    },
+                    {
+                        "text": {
+                            "text": "Stunning",
+                            "scaleHolders": []
+                        },
+                        "type": "status"
+                    },
+                    {
+                        "text": {
+                            "text": "100/200/300 {{0}}",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+170% Bonus AD)",
+                                    "scaleId": "AD"
+                                }
+                            ]
+                        },
+                        "type": "physicalDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "10% max Health physical damage",
+                            "scaleHolders": []
+                        },
+                        "type": "physicalDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "Stun",
+                            "scaleHolders": []
+                        },
+                        "type": "status"
+                    },
+                    {
+                        "text": {
+                            "text": "Stun",
+                            "scaleHolders": []
+                        },
+                        "type": "status"
+                    }
+                ]
+            },
+            "cooldown": "120",
+            "cost": "100 Mana",
+            "name": "Supreme Display of Talent"
+        }
+    },
     "Changes": {
         "9.20": {
             "B": "",
@@ -462,392 +770,20 @@
             "R": ""
         }
     },
-    "stats": {
-        "hp": {
-            "base": 590,
-            "increment": 124
-        },
-        "mp": {
-            "base": 320,
-            "increment": 50
-        },
-        "armor": {
-            "base": 28,
-            "increment": 4.7
-        },
-        "spellBlock": {
-            "base": 32,
-            "increment": 2.05
-        },
-        "hpRegen": {
-            "base": 6,
-            "increment": 0.9
-        },
-        "mpRegen": {
-            "base": 8,
-            "increment": 0.7
-        },
-        "attackSpeed": {
-            "base": 0.688,
-            "increment": 0.021
-        },
-        "ms": {
-            "base": 335,
-            "increment": 0
-        },
-        "attackDamage": {
-            "base": 66,
-            "increment": 3.1
-        },
-        "attackRange": {
-            "base": 150,
-            "increment": 0
-        }
-    },
-    "spells": {
-        "P": {
-            "name": "Royal Privilege",
-            "cooldown": "",
-            "_rawTooltip": {
-                "fullTooltip": "Innate: Qiyana's basic attacks and basic abilities deal [[0]]. This effect cannot occur on the same target more than once every few seconds.<br>Gathering an Element with Terrashape resets Royal Privilege's per-target cooldown for enemies affected by Royal Privilege using a different Element (or no Element).",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "15 − 83 {{0}} {{1}} {{2}} additional physical damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(based on level)",
-                                    "scaleId": "level"
-                                },
-                                {
-                                    "scale": "(+ 45% bonus AD)",
-                                    "scaleId": "AD"
-                                },
-                                {
-                                    "scale": "(+ 30% AP)",
-                                    "scaleId": "AP"
-                                }
-                            ]
-                        },
-                        "type": "physicalDamage"
-                    }
-                ]
-            }
-        },
-        "Q": {
-            "id": "QiyanaQ",
-            "name": "Elemental Wrath / Edge of Ixtal",
-            "_rawTooltip": {
-                "fullTooltip": "If Qiyana does not have an [[0]], she slashes, dealing [[1]] to enemies in a small area. If she does, this Ability gains extra range and an additional effect based on the type of [[2]]:[[3]]: Briefly [[4]], then [[5]] by 20% for 1 second.[[6]]: Deals an additional [[7]] to units below 50% Health.[[8]]: Leaves a trail that turns Qiyana [[9]] and grants [[10]].<br />",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "Enchantment",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "50/80/110/140/170 {{0}} physical damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+75% Bonus AD)",
-                                    "scaleId": "AD"
-                                }
-                            ]
-                        },
-                        "type": "physicalDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "Enchantment",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "Ice Enchantment",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "Roots",
-                            "scaleHolders": []
-                        },
-                        "type": "status"
-                    },
-                    {
-                        "text": {
-                            "text": "Slows",
-                            "scaleHolders": []
-                        },
-                        "type": "status"
-                    },
-                    {
-                        "text": {
-                            "text": "Rock Enchantment",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "30/48/66/84/102 {{0}} physical damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+45% Bonus AD)",
-                                    "scaleId": "AD"
-                                }
-                            ]
-                        },
-                        "type": "physicalDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "Wild Enchantment",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "Invisible",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "20% Move Speed",
-                            "scaleHolders": []
-                        },
-                        "type": "speed"
-                    }
-                ]
-            },
-            "maxRank": 5,
-            "cooldown": "7",
-            "cooldownByLevel": [
-                7,
-                7,
-                7,
-                7,
-                7
-            ],
-            "cost": "35 Mana",
-            "costByLevel": [
-                35,
-                35,
-                35,
-                35,
-                35
-            ],
-            "costType": " Mana"
-        },
-        "W": {
-            "id": "QiyanaW",
-            "name": "Terrashape",
-            "_rawTooltip": {
-                "fullTooltip": "[[0]] While Qiyana's weapon is [[1]], she gains [[2]] and her Attacks deal an additional [[3]]. She also gains [[4]] while out of combat near the corresponding terrain type.<br /><br />[[5]] Qiyana dashes towards a nearby brush, terrain, or river and [[6]] her weapon with that particular terrain type. This refreshes [[7]]'s Cooldown.",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "Passive:",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "Enchanted",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "5/10/15/20/25% Attack Speed",
-                            "scaleHolders": []
-                        },
-                        "type": "attackSpeed"
-                    },
-                    {
-                        "text": {
-                            "text": "8/22/36/50/64 {{0}} {{1}} magic damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+45% AP)",
-                                    "scaleId": "AP"
-                                },
-                                {
-                                    "scale": "(+10% Bonus AD)",
-                                    "scaleId": "AD"
-                                }
-                            ]
-                        },
-                        "type": "magicDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "3/5/7/9/11% Move Speed",
-                            "scaleHolders": []
-                        },
-                        "type": "speed"
-                    },
-                    {
-                        "text": {
-                            "text": "Active:",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "Enchants",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "Elemental Wrath / Edge of Ixtal",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    }
-                ]
-            },
-            "maxRank": 5,
-            "cooldown": "7",
-            "cooldownByLevel": [
-                7,
-                7,
-                7,
-                7,
-                7
-            ],
-            "cost": "25/30/35/40/45 Mana",
-            "costByLevel": [
-                25,
-                30,
-                35,
-                40,
-                45
-            ],
-            "costType": " Mana"
-        },
-        "E": {
-            "id": "QiyanaE",
-            "name": "Audacity",
-            "_rawTooltip": {
-                "fullTooltip": "Qiyana dashes through an enemy and deals [[0]] to them.",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "50/90/130/170/210 {{0}} physical damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+50% Bonus AD)",
-                                    "scaleId": "AD"
-                                }
-                            ]
-                        },
-                        "type": "physicalDamage"
-                    }
-                ]
-            },
-            "maxRank": 5,
-            "cooldown": "12/11/10/9/8",
-            "cooldownByLevel": [
-                12,
-                11,
-                10,
-                9,
-                8
-            ],
-            "cost": "40/45/50/55/60 Mana",
-            "costByLevel": [
-                40,
-                45,
-                50,
-                55,
-                60
-            ],
-            "costType": " Mana"
-        },
-        "R": {
-            "id": "QiyanaR",
-            "name": "Supreme Display of Talent",
-            "_rawTooltip": {
-                "fullTooltip": "Qiyana launches a shockwave that [[0]] enemies and detonates when it hits terrain. The explosion follows the entire edge of the terrain, [[1]] for between 0.5 and 1 seconds and dealing [[2]] plus [[3]]. [[4]] duration scales down with distance the shockwave has travelled.<br /><br />Any river or brush the shockwave passes through also explode after a delay for the same damage and [[5]].",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "Knocks Back",
-                            "scaleHolders": []
-                        },
-                        "type": "status"
-                    },
-                    {
-                        "text": {
-                            "text": "Stunning",
-                            "scaleHolders": []
-                        },
-                        "type": "status"
-                    },
-                    {
-                        "text": {
-                            "text": "100/200/300 {{0}}",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+170% Bonus AD)",
-                                    "scaleId": "AD"
-                                }
-                            ]
-                        },
-                        "type": "physicalDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "10% max Health physical damage",
-                            "scaleHolders": []
-                        },
-                        "type": "physicalDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "Stun",
-                            "scaleHolders": []
-                        },
-                        "type": "status"
-                    },
-                    {
-                        "text": {
-                            "text": "Stun",
-                            "scaleHolders": []
-                        },
-                        "type": "status"
-                    }
-                ]
-            },
-            "maxRank": 3,
-            "cooldown": "120",
-            "cooldownByLevel": [
-                120,
-                120,
-                120
-            ],
-            "cost": "100 Mana",
-            "costByLevel": [
-                100,
-                100,
-                100
-            ],
-            "costType": " Mana"
-        }
-    }
+    "ChangePatches": [
+        "9.20",
+        "10.2",
+        "10.17",
+        "11.1",
+        "11.5",
+        "11.11",
+        "11.18",
+        "11.19",
+        "11.22",
+        "12.2",
+        "12.4",
+        "12.10",
+        "12.15"
+    ],
+    "ChampionName": "Qiyana"
 }

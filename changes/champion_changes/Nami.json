@@ -1,14 +1,211 @@
 {
-    "ChampionName": "Nami",
-    "ChangePatches": [
-        "10.1",
-        "10.9",
-        "11.17",
-        "12.3",
-        "12.4",
-        "12.10",
-        "12.17"
-    ],
+    "stats": {
+        "hp": {
+            "base": 560,
+            "increment": 88
+        },
+        "mp": {
+            "base": 365,
+            "increment": 43
+        },
+        "armor": {
+            "base": 29,
+            "increment": 5.2
+        },
+        "spellBlock": {
+            "base": 30,
+            "increment": 1.3
+        },
+        "hpRegen": {
+            "base": 5.5,
+            "increment": 0.55
+        },
+        "mpRegen": {
+            "base": 11.5,
+            "increment": 0.4
+        },
+        "attackSpeed": {
+            "base": 0.644,
+            "increment": 0.026099999999999998
+        },
+        "ms": {
+            "base": 335,
+            "increment": 0
+        },
+        "attackDamage": {
+            "base": 51,
+            "increment": 3.1
+        },
+        "attackRange": {
+            "base": 550,
+            "increment": 0
+        }
+    },
+    "spells": {
+        "P": {
+            "cooldown": "",
+            "_rawTooltip": {
+                "fullTooltip": "Innate: Nami's abilities grant [[0]] to allied champions hit, decaying over 1.5 seconds. The bonus is[ doubled ]from Tidal Wave.",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "90 {{0}} bonus movement speed",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+ 20% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "speed"
+                    }
+                ]
+            },
+            "name": "Surging Tides"
+        },
+        "Q": {
+            "_rawTooltip": {
+                "fullTooltip": "Nami hurls a bubble, [[0]] for 1.5 seconds and dealing [[1]].",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "Stunning",
+                            "scaleHolders": []
+                        },
+                        "type": "status"
+                    },
+                    {
+                        "text": {
+                            "text": "75/130/185/240/295 {{0}} magic damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+50% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "magicDamage"
+                    }
+                ]
+            },
+            "cooldown": "12/11/10/9/8",
+            "cost": "60 Mana",
+            "name": "Aqua Prison"
+        },
+        "W": {
+            "_rawTooltip": {
+                "fullTooltip": "Nami unleashes a stream of water that bounces between allied and enemy champions. Each champion can only be hit once, and it hits up to 3 targets.[[0]] to allies and will bounce to a nearby enemy champion. [[1]] to enemies and will bounce to a nearby allied champion.<br />The damage and healing value is modified by 15% (+7.5% per 100 AP) each bounce. ",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "Restores 55/75/95/115/135 {{0}} Health",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+25% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "healing"
+                    },
+                    {
+                        "text": {
+                            "text": "Deals 70/110/150/190/230 {{0}} magic damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+50% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "magicDamage"
+                    }
+                ]
+            },
+            "cooldown": "10",
+            "cost": "70/80/90/100/110 Mana",
+            "name": "Ebb and Flow"
+        },
+        "E": {
+            "_rawTooltip": {
+                "fullTooltip": "Nami empowers an allied champion's next 3 Attacks and Abilities for 6 seconds, causing them to [[0]] their targets by 0.15/0.2/0.25/0.3/0.35% (+5% per 100 AP) for 1 second and deal an additional [[1]]. ",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "Slow",
+                            "scaleHolders": []
+                        },
+                        "type": "status"
+                    },
+                    {
+                        "text": {
+                            "text": "25/40/55/70/85 {{0}} magic damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+20% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "magicDamage"
+                    }
+                ]
+            },
+            "cooldown": "11",
+            "cost": "55/60/65/70/75 Mana",
+            "name": "Tidecaller's Blessing"
+        },
+        "R": {
+            "_rawTooltip": {
+                "fullTooltip": "Nami summons a tidal wave, [[0]] for 0.5 seconds, [[1]] by 50/60/70%, and dealing [[2]]. The duration of the [[3]] increases based on distance the wave traveled, up to 4 seconds.<br /><br />Allies hit by the wave gain double the effect of [[4]].",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "Knocking Up",
+                            "scaleHolders": []
+                        },
+                        "type": "status"
+                    },
+                    {
+                        "text": {
+                            "text": "Slowing",
+                            "scaleHolders": []
+                        },
+                        "type": "status"
+                    },
+                    {
+                        "text": {
+                            "text": "150/250/350 {{0}} magic damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+60% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "magicDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "Slow",
+                            "scaleHolders": []
+                        },
+                        "type": "status"
+                    },
+                    {
+                        "text": {
+                            "text": "Surging Tides",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    }
+                ]
+            },
+            "cooldown": "120/110/100",
+            "cost": "100 Mana",
+            "name": "Tidal Wave"
+        }
+    },
     "Changes": {
         "10.1": {
             "B": "",
@@ -246,275 +443,14 @@
             "R": ""
         }
     },
-    "stats": {
-        "hp": {
-            "base": 560,
-            "increment": 88
-        },
-        "mp": {
-            "base": 365,
-            "increment": 43
-        },
-        "armor": {
-            "base": 29,
-            "increment": 5.2
-        },
-        "spellBlock": {
-            "base": 30,
-            "increment": 1.3
-        },
-        "hpRegen": {
-            "base": 5.5,
-            "increment": 0.55
-        },
-        "mpRegen": {
-            "base": 11.5,
-            "increment": 0.4
-        },
-        "attackSpeed": {
-            "base": 0.644,
-            "increment": 0.026099999999999998
-        },
-        "ms": {
-            "base": 335,
-            "increment": 0
-        },
-        "attackDamage": {
-            "base": 51,
-            "increment": 3.1
-        },
-        "attackRange": {
-            "base": 550,
-            "increment": 0
-        }
-    },
-    "spells": {
-        "P": {
-            "name": "Surging Tides",
-            "cooldown": "",
-            "_rawTooltip": {
-                "fullTooltip": "Innate: Nami's abilities grant [[0]] to allied champions hit, decaying over 1.5 seconds. The bonus is[ doubled ]from Tidal Wave.",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "90 {{0}} bonus movement speed",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+ 20% AP)",
-                                    "scaleId": "AP"
-                                }
-                            ]
-                        },
-                        "type": "speed"
-                    }
-                ]
-            }
-        },
-        "Q": {
-            "id": "NamiQ",
-            "name": "Aqua Prison",
-            "_rawTooltip": {
-                "fullTooltip": "Nami hurls a bubble, [[0]] for 1.5 seconds and dealing [[1]].",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "Stunning",
-                            "scaleHolders": []
-                        },
-                        "type": "status"
-                    },
-                    {
-                        "text": {
-                            "text": "75/130/185/240/295 {{0}} magic damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+50% AP)",
-                                    "scaleId": "AP"
-                                }
-                            ]
-                        },
-                        "type": "magicDamage"
-                    }
-                ]
-            },
-            "maxRank": 5,
-            "cooldown": "12/11/10/9/8",
-            "cooldownByLevel": [
-                12,
-                11,
-                10,
-                9,
-                8
-            ],
-            "cost": "60 Mana",
-            "costByLevel": [
-                60,
-                60,
-                60,
-                60,
-                60
-            ],
-            "costType": " Mana"
-        },
-        "W": {
-            "id": "NamiW",
-            "name": "Ebb and Flow",
-            "_rawTooltip": {
-                "fullTooltip": "Nami unleashes a stream of water that bounces between allied and enemy champions. Each champion can only be hit once, and it hits up to 3 targets.[[0]] to allies and will bounce to a nearby enemy champion. [[1]] to enemies and will bounce to a nearby allied champion.<br />The damage and healing value is modified by 15% (+7.5% per 100 AP) each bounce. ",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "Restores 55/75/95/115/135 {{0}} Health",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+25% AP)",
-                                    "scaleId": "AP"
-                                }
-                            ]
-                        },
-                        "type": "healing"
-                    },
-                    {
-                        "text": {
-                            "text": "Deals 70/110/150/190/230 {{0}} magic damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+50% AP)",
-                                    "scaleId": "AP"
-                                }
-                            ]
-                        },
-                        "type": "magicDamage"
-                    }
-                ]
-            },
-            "maxRank": 5,
-            "cooldown": "10",
-            "cooldownByLevel": [
-                10,
-                10,
-                10,
-                10,
-                10
-            ],
-            "cost": "70/80/90/100/110 Mana",
-            "costByLevel": [
-                70,
-                80,
-                90,
-                100,
-                110
-            ],
-            "costType": " Mana"
-        },
-        "E": {
-            "id": "NamiE",
-            "name": "Tidecaller's Blessing",
-            "_rawTooltip": {
-                "fullTooltip": "Nami empowers an allied champion's next 3 Attacks and Abilities for 6 seconds, causing them to [[0]] their targets by 0.15/0.2/0.25/0.3/0.35% (+5% per 100 AP) for 1 second and deal an additional [[1]]. ",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "Slow",
-                            "scaleHolders": []
-                        },
-                        "type": "status"
-                    },
-                    {
-                        "text": {
-                            "text": "25/40/55/70/85 {{0}} magic damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+20% AP)",
-                                    "scaleId": "AP"
-                                }
-                            ]
-                        },
-                        "type": "magicDamage"
-                    }
-                ]
-            },
-            "maxRank": 5,
-            "cooldown": "11",
-            "cooldownByLevel": [
-                11,
-                11,
-                11,
-                11,
-                11
-            ],
-            "cost": "55/60/65/70/75 Mana",
-            "costByLevel": [
-                55,
-                60,
-                65,
-                70,
-                75
-            ],
-            "costType": " Mana"
-        },
-        "R": {
-            "id": "NamiR",
-            "name": "Tidal Wave",
-            "_rawTooltip": {
-                "fullTooltip": "Nami summons a tidal wave, [[0]] for 0.5 seconds, [[1]] by 50/60/70%, and dealing [[2]]. The duration of the [[3]] increases based on distance the wave traveled, up to 4 seconds.<br /><br />Allies hit by the wave gain double the effect of [[4]].",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "Knocking Up",
-                            "scaleHolders": []
-                        },
-                        "type": "status"
-                    },
-                    {
-                        "text": {
-                            "text": "Slowing",
-                            "scaleHolders": []
-                        },
-                        "type": "status"
-                    },
-                    {
-                        "text": {
-                            "text": "150/250/350 {{0}} magic damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+60% AP)",
-                                    "scaleId": "AP"
-                                }
-                            ]
-                        },
-                        "type": "magicDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "Slow",
-                            "scaleHolders": []
-                        },
-                        "type": "status"
-                    },
-                    {
-                        "text": {
-                            "text": "Surging Tides",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    }
-                ]
-            },
-            "maxRank": 3,
-            "cooldown": "120/110/100",
-            "cooldownByLevel": [
-                120,
-                110,
-                100
-            ],
-            "cost": "100 Mana",
-            "costByLevel": [
-                100,
-                100,
-                100
-            ],
-            "costType": " Mana"
-        }
-    }
+    "ChangePatches": [
+        "10.1",
+        "10.9",
+        "11.17",
+        "12.3",
+        "12.4",
+        "12.10",
+        "12.17"
+    ],
+    "ChampionName": "Nami"
 }

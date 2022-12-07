@@ -1,17 +1,257 @@
 {
-    "ChampionName": "Pantheon",
-    "ChangePatches": [
-        "9.19",
-        "9.20",
-        "9.22",
-        "10.21",
-        "10.25",
-        "11.1",
-        "11.3",
-        "12.7",
-        "12.10",
-        "12.14"
-    ],
+    "stats": {
+        "hp": {
+            "base": 650,
+            "increment": 109
+        },
+        "mp": {
+            "base": 317,
+            "increment": 31
+        },
+        "armor": {
+            "base": 40,
+            "increment": 4.95
+        },
+        "spellBlock": {
+            "base": 28,
+            "increment": 2.05
+        },
+        "hpRegen": {
+            "base": 7.5,
+            "increment": 0.65
+        },
+        "mpRegen": {
+            "base": 7.35,
+            "increment": 0.45
+        },
+        "attackSpeed": {
+            "base": 0.644,
+            "increment": 0.029500000000000002
+        },
+        "ms": {
+            "base": 345,
+            "increment": 0
+        },
+        "attackDamage": {
+            "base": 64,
+            "increment": 3.3
+        },
+        "attackRange": {
+            "base": 175,
+            "increment": 0
+        }
+    },
+    "spells": {
+        "P": {
+            "cooldown": "",
+            "_rawTooltip": {
+                "fullTooltip": "Innate: Pantheon generates a stack of Mortal Will whenever he lands a basic attack on-hit or casts an ability, stacking up to a maximum of 5. At 5 stacks, Pantheon's next basic ability consumes the stacks to become empowered with an additional effect.<br>Pantheon gains maximum stacks of Mortal Will upon starting the game, completing a Recall channel, and respawning.",
+                "parseInfo": []
+            },
+            "name": "Mortal Will"
+        },
+        "Q": {
+            "_rawTooltip": {
+                "fullTooltip": "<span class=\"colorFF8C00\">Tap:</span> Pantheon thrusts his spear, dealing [[0]] to enemies hit. Refunds 60% of this Ability's Cooldown.<br /><br /><span class=\"colorFF8C00\">Hold:</span> Pantheon hurls his spear, dealing [[1]] to the first enemy hit and 50% less to further targets. <br /><br />This Ability critically strikes enemies below 20% health for [[2]] instead.<br /><br /><span class=\"colorEDDA74\">Mortal Will Bonus:</span> Deals an additional [[3]].",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "70/100/130/160/190 {{0}} physical damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+115% Bonus AD)",
+                                    "scaleId": "AD"
+                                }
+                            ]
+                        },
+                        "type": "physicalDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "70/100/130/160/190 {{0}} physical damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+115% Bonus AD)",
+                                    "scaleId": "AD"
+                                }
+                            ]
+                        },
+                        "type": "physicalDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "70/100/130/160/190 + 85/130/175/220/265 {{0}} physical damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+230% Bonus AD)",
+                                    "scaleId": "AD"
+                                }
+                            ]
+                        },
+                        "type": "physicalDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "20 - 240 {{0}} {{1}} physical damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(based on champion level)",
+                                    "scaleId": "level"
+                                },
+                                {
+                                    "scale": "(+115% Bonus AD)",
+                                    "scaleId": "AD"
+                                }
+                            ]
+                        },
+                        "type": "physicalDamage"
+                    }
+                ]
+            },
+            "cooldown": "13/11.75/10.5/9.25/8",
+            "cost": "30 Mana",
+            "name": "Comet Spear"
+        },
+        "W": {
+            "_rawTooltip": {
+                "fullTooltip": "Pantheon leaps on his target, [[0]] for 1 second and dealing [[1]].<br /><br />[[2]] Pantheon's next Attack strikes 3 times, dealing a total of [[3]].",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "Stunning",
+                            "scaleHolders": []
+                        },
+                        "type": "status"
+                    },
+                    {
+                        "text": {
+                            "text": "60/100/140/180/220 {{0}} physical damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+100% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "physicalDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "Mortal Will Bonus:",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "{{0}})% AD physical damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(120 - 165 (based on champion level)",
+                                    "scaleId": "level"
+                                }
+                            ]
+                        },
+                        "type": "physicalDamage"
+                    }
+                ]
+            },
+            "cooldown": "13/12/11/10/9",
+            "cost": "55 Mana",
+            "name": "Shield Vault"
+        },
+        "E": {
+            "_rawTooltip": {
+                "fullTooltip": "Pantheon braces his shield and engages enemies in a chosen direction for 1.5 seconds, becoming immune to non-tower damage from that direction and dealing [[0]] over the duration. After channeling Pantheon slams with his shield, dealing [[1]].<br /><br /><span class=\"colorEDDA74\">Mortal Will Bonus:</span> When Pantheon slams his shield he gains [[2]] for 1.5 seconds. <br />",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "100% AD physical damage",
+                            "scaleHolders": []
+                        },
+                        "type": "physicalDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "55/105/155/205/255 {{0}} physical damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+150% Bonus AD)",
+                                    "scaleId": "AD"
+                                }
+                            ]
+                        },
+                        "type": "physicalDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "60% Move Speed",
+                            "scaleHolders": []
+                        },
+                        "type": "speed"
+                    }
+                ]
+            },
+            "cooldown": "22/20.5/19/17.5/16",
+            "cost": "80 Mana",
+            "name": "Aegis Assault"
+        },
+        "R": {
+            "_rawTooltip": {
+                "fullTooltip": "[[0]] Pantheon gains 10/20/30% Armor Penetration.<br /><br />[[1]] Pantheon gathers his strength to leap high into the air. He throws his spear from above which in a small area deals [[2]] and [[3]] by 50% for 2 seconds. <br /><br />Pantheon then crashes down as a meteor at the target area. Deals up to [[4]] to enemies in a line (decreased by up to 50% at the edges of the area).<br /><br />This Ability instantly readies <span class=\"colorEDDA74\">Mortal Will</span>.",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "Passive:",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "Active:",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "70/100/130 {{0}} physical damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+115% Bonus AD)",
+                                    "scaleId": "AD"
+                                }
+                            ]
+                        },
+                        "type": "physicalDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "Slows",
+                            "scaleHolders": []
+                        },
+                        "type": "status"
+                    },
+                    {
+                        "text": {
+                            "text": "300/500/700 {{0}} magic damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+100% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "magicDamage"
+                    }
+                ]
+            },
+            "cooldown": "180/165/150",
+            "cost": "100 Mana",
+            "name": "Grand Starfall"
+        }
+    },
     "Changes": {
         "9.19": {
             "B": {
@@ -525,321 +765,17 @@
             "R": ""
         }
     },
-    "stats": {
-        "hp": {
-            "base": 650,
-            "increment": 109
-        },
-        "mp": {
-            "base": 317,
-            "increment": 31
-        },
-        "armor": {
-            "base": 40,
-            "increment": 4.95
-        },
-        "spellBlock": {
-            "base": 28,
-            "increment": 2.05
-        },
-        "hpRegen": {
-            "base": 7.5,
-            "increment": 0.65
-        },
-        "mpRegen": {
-            "base": 7.35,
-            "increment": 0.45
-        },
-        "attackSpeed": {
-            "base": 0.644,
-            "increment": 0.029500000000000002
-        },
-        "ms": {
-            "base": 345,
-            "increment": 0
-        },
-        "attackDamage": {
-            "base": 64,
-            "increment": 3.3
-        },
-        "attackRange": {
-            "base": 175,
-            "increment": 0
-        }
-    },
-    "spells": {
-        "P": {
-            "name": "Mortal Will",
-            "cooldown": "",
-            "_rawTooltip": {
-                "fullTooltip": "Innate: Pantheon generates a stack of Mortal Will whenever he lands a basic attack on-hit or casts an ability, stacking up to a maximum of 5. At 5 stacks, Pantheon's next basic ability consumes the stacks to become empowered with an additional effect.<br>Pantheon gains maximum stacks of Mortal Will upon starting the game, completing a Recall channel, and respawning.",
-                "parseInfo": []
-            }
-        },
-        "Q": {
-            "id": "PantheonQ",
-            "name": "Comet Spear",
-            "_rawTooltip": {
-                "fullTooltip": "<span class=\"colorFF8C00\">Tap:</span> Pantheon thrusts his spear, dealing [[0]] to enemies hit. Refunds 60% of this Ability's Cooldown.<br /><br /><span class=\"colorFF8C00\">Hold:</span> Pantheon hurls his spear, dealing [[1]] to the first enemy hit and 50% less to further targets. <br /><br />This Ability critically strikes enemies below 20% health for [[2]] instead.<br /><br /><span class=\"colorEDDA74\">Mortal Will Bonus:</span> Deals an additional [[3]].",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "70/100/130/160/190 {{0}} physical damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+115% Bonus AD)",
-                                    "scaleId": "AD"
-                                }
-                            ]
-                        },
-                        "type": "physicalDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "70/100/130/160/190 {{0}} physical damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+115% Bonus AD)",
-                                    "scaleId": "AD"
-                                }
-                            ]
-                        },
-                        "type": "physicalDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "70/100/130/160/190 + 85/130/175/220/265 {{0}} physical damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+230% Bonus AD)",
-                                    "scaleId": "AD"
-                                }
-                            ]
-                        },
-                        "type": "physicalDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "20 - 240 {{0}} {{1}} physical damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(based on champion level)",
-                                    "scaleId": "level"
-                                },
-                                {
-                                    "scale": "(+115% Bonus AD)",
-                                    "scaleId": "AD"
-                                }
-                            ]
-                        },
-                        "type": "physicalDamage"
-                    }
-                ]
-            },
-            "maxRank": 5,
-            "cooldown": "13/11.75/10.5/9.25/8",
-            "cooldownByLevel": [
-                13,
-                11.75,
-                10.5,
-                9.25,
-                8
-            ],
-            "cost": "30 Mana",
-            "costByLevel": [
-                30,
-                30,
-                30,
-                30,
-                30
-            ],
-            "costType": " Mana"
-        },
-        "W": {
-            "id": "PantheonW",
-            "name": "Shield Vault",
-            "_rawTooltip": {
-                "fullTooltip": "Pantheon leaps on his target, [[0]] for 1 second and dealing [[1]].<br /><br />[[2]] Pantheon's next Attack strikes 3 times, dealing a total of [[3]].",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "Stunning",
-                            "scaleHolders": []
-                        },
-                        "type": "status"
-                    },
-                    {
-                        "text": {
-                            "text": "60/100/140/180/220 {{0}} physical damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+100% AP)",
-                                    "scaleId": "AP"
-                                }
-                            ]
-                        },
-                        "type": "physicalDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "Mortal Will Bonus:",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "{{0}})% AD physical damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(120 - 165 (based on champion level)",
-                                    "scaleId": "level"
-                                }
-                            ]
-                        },
-                        "type": "physicalDamage"
-                    }
-                ]
-            },
-            "maxRank": 5,
-            "cooldown": "13/12/11/10/9",
-            "cooldownByLevel": [
-                13,
-                12,
-                11,
-                10,
-                9
-            ],
-            "cost": "55 Mana",
-            "costByLevel": [
-                55,
-                55,
-                55,
-                55,
-                55
-            ],
-            "costType": " Mana"
-        },
-        "E": {
-            "id": "PantheonE",
-            "name": "Aegis Assault",
-            "_rawTooltip": {
-                "fullTooltip": "Pantheon braces his shield and engages enemies in a chosen direction for 1.5 seconds, becoming immune to non-tower damage from that direction and dealing [[0]] over the duration. After channeling Pantheon slams with his shield, dealing [[1]].<br /><br /><span class=\"colorEDDA74\">Mortal Will Bonus:</span> When Pantheon slams his shield he gains [[2]] for 1.5 seconds. <br />",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "100% AD physical damage",
-                            "scaleHolders": []
-                        },
-                        "type": "physicalDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "55/105/155/205/255 {{0}} physical damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+150% Bonus AD)",
-                                    "scaleId": "AD"
-                                }
-                            ]
-                        },
-                        "type": "physicalDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "60% Move Speed",
-                            "scaleHolders": []
-                        },
-                        "type": "speed"
-                    }
-                ]
-            },
-            "maxRank": 5,
-            "cooldown": "22/20.5/19/17.5/16",
-            "cooldownByLevel": [
-                22,
-                20.5,
-                19,
-                17.5,
-                16
-            ],
-            "cost": "80 Mana",
-            "costByLevel": [
-                80,
-                80,
-                80,
-                80,
-                80
-            ],
-            "costType": " Mana"
-        },
-        "R": {
-            "id": "PantheonR",
-            "name": "Grand Starfall",
-            "_rawTooltip": {
-                "fullTooltip": "[[0]] Pantheon gains 10/20/30% Armor Penetration.<br /><br />[[1]] Pantheon gathers his strength to leap high into the air. He throws his spear from above which in a small area deals [[2]] and [[3]] by 50% for 2 seconds. <br /><br />Pantheon then crashes down as a meteor at the target area. Deals up to [[4]] to enemies in a line (decreased by up to 50% at the edges of the area).<br /><br />This Ability instantly readies <span class=\"colorEDDA74\">Mortal Will</span>.",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "Passive:",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "Active:",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "70/100/130 {{0}} physical damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+115% Bonus AD)",
-                                    "scaleId": "AD"
-                                }
-                            ]
-                        },
-                        "type": "physicalDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "Slows",
-                            "scaleHolders": []
-                        },
-                        "type": "status"
-                    },
-                    {
-                        "text": {
-                            "text": "300/500/700 {{0}} magic damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+100% AP)",
-                                    "scaleId": "AP"
-                                }
-                            ]
-                        },
-                        "type": "magicDamage"
-                    }
-                ]
-            },
-            "maxRank": 3,
-            "cooldown": "180/165/150",
-            "cooldownByLevel": [
-                180,
-                165,
-                150
-            ],
-            "cost": "100 Mana",
-            "costByLevel": [
-                100,
-                100,
-                100
-            ],
-            "costType": " Mana"
-        }
-    }
+    "ChangePatches": [
+        "9.19",
+        "9.20",
+        "9.22",
+        "10.21",
+        "10.25",
+        "11.1",
+        "11.3",
+        "12.7",
+        "12.10",
+        "12.14"
+    ],
+    "ChampionName": "Pantheon"
 }

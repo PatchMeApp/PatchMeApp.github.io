@@ -1,13 +1,321 @@
 {
-    "ChampionName": "Sion",
-    "ChangePatches": [
-        "9.19",
-        "10.20",
-        "11.19",
-        "11.21",
-        "12.9",
-        "12.10"
-    ],
+    "stats": {
+        "hp": {
+            "base": 615,
+            "increment": 87
+        },
+        "mp": {
+            "base": 330,
+            "increment": 42
+        },
+        "armor": {
+            "base": 32,
+            "increment": 4.2
+        },
+        "spellBlock": {
+            "base": 32,
+            "increment": 2.05
+        },
+        "hpRegen": {
+            "base": 7.5,
+            "increment": 0.8
+        },
+        "mpRegen": {
+            "base": 8,
+            "increment": 0.6
+        },
+        "attackSpeed": {
+            "base": 0.679,
+            "increment": 0.013000000000000001
+        },
+        "ms": {
+            "base": 345,
+            "increment": 0
+        },
+        "attackDamage": {
+            "base": 68,
+            "increment": 4
+        },
+        "attackRange": {
+            "base": 175,
+            "increment": 0
+        }
+    },
+    "spells": {
+        "P": {
+            "cooldown": 100,
+            "_rawTooltip": {
+                "fullTooltip": "Innate: Upon taking fatal damage, Sion enters stasis for 1.5 seconds to reanimate into a frenzy, restoring [[0]] but losing [[1]] every 0.264 seconds, increasing by[ 70% of the base value ]per subsequent tick. Sion's health regeneration and any healing (except life steal) he receives during this time is 0% effective.<br>Sion can only move and use his basic attacks and item actives, and empowers himself with the following effects:<br> [[3]] minimum and maximum<br> 100% life steal<br>Deals bonus physical damage on-hit equal to [[2]], capped at 75 against non-champions<br> Ghosting<br>One cast of Death Surge, which replaces all of his abilities<br>Sion's damage to structures is reduced to 40% under the effects of Glory in Death.<br>Active: Sion gains [[4]](bug) that decays over 2.376 seconds.<br>Once at least one ability has been learned, Death Surge can be cast using any ability key, even for the abilities that haven't been learned yet.",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "100% of his maximum health",
+                            "scaleHolders": []
+                        },
+                        "type": "Health"
+                    },
+                    {
+                        "text": {
+                            "text": "2 − 19 {{0}} health",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(based on level)",
+                                    "scaleId": "level"
+                                }
+                            ]
+                        },
+                        "type": "Health"
+                    },
+                    {
+                        "text": {
+                            "text": "10% of the target's maximum health",
+                            "scaleHolders": []
+                        },
+                        "type": "Health"
+                    },
+                    {
+                        "text": {
+                            "text": "1.75 attack speed",
+                            "scaleHolders": []
+                        },
+                        "type": "attackSpeed"
+                    },
+                    {
+                        "text": {
+                            "text": "67% bonus movement speed",
+                            "scaleHolders": []
+                        },
+                        "type": "speed"
+                    }
+                ]
+            },
+            "name": "Death Surge"
+        },
+        "Q": {
+            "_rawTooltip": {
+                "fullTooltip": "[[0]]: Sion charges a heavy blow for up to 2 seconds.<br /><br />[[1]]: Sion slams his axe down, briefly [[2]] and dealing between [[3]] based on charge time. If Sion charged for at least 1 second, enemies are [[4]] and [[5]] for between 1.25 to 2.25 seconds based on charge time.",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "Begin Charging",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "Release",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "Slowing",
+                            "scaleHolders": []
+                        },
+                        "type": "status"
+                    },
+                    {
+                        "text": {
+                            "text": "40/60/80/100/120 {{0}} and 70/135/200/265/330 {{1}} physical damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+45/52.5/60/67.5/75% AD)",
+                                    "scaleId": "AD"
+                                },
+                                {
+                                    "scale": "(+135/157.5/180/202.5/225% AD)",
+                                    "scaleId": "AD"
+                                }
+                            ]
+                        },
+                        "type": "physicalDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "Knocked Up",
+                            "scaleHolders": []
+                        },
+                        "type": "status"
+                    },
+                    {
+                        "text": {
+                            "text": "Stunned",
+                            "scaleHolders": []
+                        },
+                        "type": "status"
+                    }
+                ]
+            },
+            "cooldown": "10/9/8/7/6",
+            "cost": "45 Mana",
+            "name": "Decimating Smash"
+        },
+        "W": {
+            "_rawTooltip": {
+                "fullTooltip": "[[0]]: Sion gains [[1]] when he kills a unit, or 15 for champion takedowns, large minions and large monsters.<br /><br />[[2]]: Sion gains [[3]] for 6 seconds. After 3 seconds if the shield still holds, Sion can [[4]] to detonate the shield to deal [[5]]",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "Passive",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "4 max Health",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "Active",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "60/85/110/135/160 {{0}} {{1}} Shield",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+40% AP)",
+                                    "scaleId": "AP"
+                                },
+                                {
+                                    "scale": "(+8/9/10/11/12% Health)",
+                                    "scaleId": "Health"
+                                }
+                            ]
+                        },
+                        "type": "shield"
+                    },
+                    {
+                        "text": {
+                            "text": "Recast",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "40/65/90/115/140 {{0}} plus 10/11/12/13/14% max Health magic damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+40% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "magicDamage"
+                    }
+                ]
+            },
+            "cooldown": "15/14/13/12/11",
+            "cost": "65/70/75/80/85 Mana",
+            "name": "Soul Furnace"
+        },
+        "E": {
+            "_rawTooltip": {
+                "fullTooltip": "Sion fires a shockwave, dealing [[0]], [[1]] them by 40/45/50/55% for 2.5 seconds and removing [[2]] for 4 seconds. Non-champions hit are [[3]]. Enemies hit by a [[4]] unit take the same damage and effects.",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "65/100/135/170/205 {{0}} magic damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+55% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "magicDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "Slowing",
+                            "scaleHolders": []
+                        },
+                        "type": "status"
+                    },
+                    {
+                        "text": {
+                            "text": "20% Armor",
+                            "scaleHolders": []
+                        },
+                        "type": "scaleArmor"
+                    },
+                    {
+                        "text": {
+                            "text": "Knocked Back",
+                            "scaleHolders": []
+                        },
+                        "type": "status"
+                    },
+                    {
+                        "text": {
+                            "text": "Knocked Back",
+                            "scaleHolders": []
+                        },
+                        "type": "status"
+                    }
+                ]
+            },
+            "cooldown": "12/11/10/9/8",
+            "cost": "35/40/45/50/55 Mana",
+            "name": "Roar of the Slayer"
+        },
+        "R": {
+            "_rawTooltip": {
+                "fullTooltip": "Sion charges Unstoppably in a direction for 8 seconds, turning towards the mouse cursor. Sion stops on colliding with an enemy champion or wall or on [[0]] this Ability.  <br /><br />At the end of the charge, Sion deals between [[1]] based on distance travelled. Enemies close to Sion are [[2]] for between 0.75 and 1.75 seconds based on distance travelled. Enemies in a larger area are [[3]] by 40/45% for 3 seconds",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "Recasting",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "150/300/450 {{0}} and 400/800/1200 {{1}} physical damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+40% Bonus AD)",
+                                    "scaleId": "AD"
+                                },
+                                {
+                                    "scale": "(+80% Bonus AD)",
+                                    "scaleId": "AD"
+                                }
+                            ]
+                        },
+                        "type": "physicalDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "Stunned",
+                            "scaleHolders": []
+                        },
+                        "type": "status"
+                    },
+                    {
+                        "text": {
+                            "text": "Slowed",
+                            "scaleHolders": []
+                        },
+                        "type": "status"
+                    }
+                ]
+            },
+            "cooldown": "140/100/60",
+            "cost": "100 Mana",
+            "name": "Unstoppable Onslaught"
+        }
+    },
     "Changes": {
         "9.19": {
             "B": "",
@@ -174,387 +482,59 @@
             },
             "E": "",
             "R": ""
+        },
+        "12.23": {
+            "B": {
+                "SpellName": "Base Stats",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Base Mana: ",
+                            "Before": "330",
+                            "Indicator": " ⇒ ",
+                            "After": "400"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Mana Growth: ",
+                            "Before": "42",
+                            "Indicator": " ⇒ ",
+                            "After": "52"
+                        }
+                    }
+                ]
+            },
+            "P": "",
+            "Q": {
+                "SpellName": "Q - Decimating Smash",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Base Damage: ",
+                            "Before": "30/50/70/90/110",
+                            "Indicator": " ⇒ ",
+                            "After": "40/60/80/100/120"
+                        }
+                    }
+                ]
+            },
+            "W": "",
+            "E": "",
+            "R": ""
         }
     },
-    "stats": {
-        "hp": {
-            "base": 615,
-            "increment": 87
-        },
-        "mp": {
-            "base": 330,
-            "increment": 42
-        },
-        "armor": {
-            "base": 32,
-            "increment": 4.2
-        },
-        "spellBlock": {
-            "base": 32,
-            "increment": 2.05
-        },
-        "hpRegen": {
-            "base": 7.5,
-            "increment": 0.8
-        },
-        "mpRegen": {
-            "base": 8,
-            "increment": 0.6
-        },
-        "attackSpeed": {
-            "base": 0.679,
-            "increment": 0.013000000000000001
-        },
-        "ms": {
-            "base": 345,
-            "increment": 0
-        },
-        "attackDamage": {
-            "base": 68,
-            "increment": 4
-        },
-        "attackRange": {
-            "base": 175,
-            "increment": 0
-        }
-    },
-    "spells": {
-        "P": {
-            "name": "Death Surge",
-            "cooldown": 100,
-            "_rawTooltip": {
-                "fullTooltip": "Innate: Upon taking fatal damage, Sion enters stasis for 1.5 seconds to reanimate into a frenzy, restoring [[0]] but losing [[1]] every 0.264 seconds, increasing by[ 70% of the base value ]per subsequent tick. Sion's health regeneration and any healing (except life steal) he receives during this time is 0% effective.<br>Sion can only move and use his basic attacks and item actives, and empowers himself with the following effects:<br> [[3]] minimum and maximum<br> 100% life steal<br>Deals bonus physical damage on-hit equal to [[2]], capped at 75 against non-champions<br> Ghosting<br>One cast of Death Surge, which replaces all of his abilities<br>Sion's damage to structures is reduced to 40% under the effects of Glory in Death.<br>Active: Sion gains [[4]](bug) that decays over 2.376 seconds.<br>Once at least one ability has been learned, Death Surge can be cast using any ability key, even for the abilities that haven't been learned yet.",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "100% of his maximum health",
-                            "scaleHolders": []
-                        },
-                        "type": "Health"
-                    },
-                    {
-                        "text": {
-                            "text": "2 − 19 {{0}} health",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(based on level)",
-                                    "scaleId": "level"
-                                }
-                            ]
-                        },
-                        "type": "Health"
-                    },
-                    {
-                        "text": {
-                            "text": "10% of the target's maximum health",
-                            "scaleHolders": []
-                        },
-                        "type": "Health"
-                    },
-                    {
-                        "text": {
-                            "text": "1.75 attack speed",
-                            "scaleHolders": []
-                        },
-                        "type": "attackSpeed"
-                    },
-                    {
-                        "text": {
-                            "text": "67% bonus movement speed",
-                            "scaleHolders": []
-                        },
-                        "type": "speed"
-                    }
-                ]
-            }
-        },
-        "Q": {
-            "id": "SionQ",
-            "name": "Decimating Smash",
-            "_rawTooltip": {
-                "fullTooltip": "[[0]]: Sion charges a heavy blow for up to 2 seconds.<br /><br />[[1]]: Sion slams his axe down, briefly [[2]] and dealing between [[3]] based on charge time. If Sion charged for at least 1 second, enemies are [[4]] and [[5]] for between 1.25 to 2.25 seconds based on charge time.",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "Begin Charging",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "Release",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "Slowing",
-                            "scaleHolders": []
-                        },
-                        "type": "status"
-                    },
-                    {
-                        "text": {
-                            "text": "30/50/70/90/110 {{0}} and 70/135/200/265/330 {{1}} physical damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+45/52.5/60/67.5/75% AD)",
-                                    "scaleId": "AD"
-                                },
-                                {
-                                    "scale": "(+135/157.5/180/202.5/225% AD)",
-                                    "scaleId": "AD"
-                                }
-                            ]
-                        },
-                        "type": "physicalDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "Knocked Up",
-                            "scaleHolders": []
-                        },
-                        "type": "status"
-                    },
-                    {
-                        "text": {
-                            "text": "Stunned",
-                            "scaleHolders": []
-                        },
-                        "type": "status"
-                    }
-                ]
-            },
-            "maxRank": 5,
-            "cooldown": "10/9/8/7/6",
-            "cooldownByLevel": [
-                10,
-                9,
-                8,
-                7,
-                6
-            ],
-            "cost": "45 Mana",
-            "costByLevel": [
-                45,
-                45,
-                45,
-                45,
-                45
-            ],
-            "costType": " Mana"
-        },
-        "W": {
-            "id": "SionW",
-            "name": "Soul Furnace",
-            "_rawTooltip": {
-                "fullTooltip": "[[0]]: Sion gains [[1]] when he kills a unit, or 15 for champion takedowns, large minions and large monsters.<br /><br />[[2]]: Sion gains [[3]] for 6 seconds. After 3 seconds if the shield still holds, Sion can [[4]] to detonate the shield to deal [[5]]",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "Passive",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "4 max Health",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "Active",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "60/85/110/135/160 {{0}} {{1}} Shield",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+40% AP)",
-                                    "scaleId": "AP"
-                                },
-                                {
-                                    "scale": "(+8/9/10/11/12% Health)",
-                                    "scaleId": "Health"
-                                }
-                            ]
-                        },
-                        "type": "shield"
-                    },
-                    {
-                        "text": {
-                            "text": "Recast",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "40/65/90/115/140 {{0}} plus 10/11/12/13/14% max Health magic damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+40% AP)",
-                                    "scaleId": "AP"
-                                }
-                            ]
-                        },
-                        "type": "magicDamage"
-                    }
-                ]
-            },
-            "maxRank": 5,
-            "cooldown": "15/14/13/12/11",
-            "cooldownByLevel": [
-                15,
-                14,
-                13,
-                12,
-                11
-            ],
-            "cost": "65/70/75/80/85 Mana",
-            "costByLevel": [
-                65,
-                70,
-                75,
-                80,
-                85
-            ],
-            "costType": " Mana"
-        },
-        "E": {
-            "id": "SionE",
-            "name": "Roar of the Slayer",
-            "_rawTooltip": {
-                "fullTooltip": "Sion fires a shockwave, dealing [[0]], [[1]] them by 40/45/50/55% for 2.5 seconds and removing [[2]] for 4 seconds. Non-champions hit are [[3]]. Enemies hit by a [[4]] unit take the same damage and effects.",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "65/100/135/170/205 {{0}} magic damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+55% AP)",
-                                    "scaleId": "AP"
-                                }
-                            ]
-                        },
-                        "type": "magicDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "Slowing",
-                            "scaleHolders": []
-                        },
-                        "type": "status"
-                    },
-                    {
-                        "text": {
-                            "text": "20% Armor",
-                            "scaleHolders": []
-                        },
-                        "type": "scaleArmor"
-                    },
-                    {
-                        "text": {
-                            "text": "Knocked Back",
-                            "scaleHolders": []
-                        },
-                        "type": "status"
-                    },
-                    {
-                        "text": {
-                            "text": "Knocked Back",
-                            "scaleHolders": []
-                        },
-                        "type": "status"
-                    }
-                ]
-            },
-            "maxRank": 5,
-            "cooldown": "12/11/10/9/8",
-            "cooldownByLevel": [
-                12,
-                11,
-                10,
-                9,
-                8
-            ],
-            "cost": "35/40/45/50/55 Mana",
-            "costByLevel": [
-                35,
-                40,
-                45,
-                50,
-                55
-            ],
-            "costType": " Mana"
-        },
-        "R": {
-            "id": "SionR",
-            "name": "Unstoppable Onslaught",
-            "_rawTooltip": {
-                "fullTooltip": "Sion charges Unstoppably in a direction for 8 seconds, turning towards the mouse cursor. Sion stops on colliding with an enemy champion or wall or on [[0]] this Ability.  <br /><br />At the end of the charge, Sion deals between [[1]] based on distance travelled. Enemies close to Sion are [[2]] for between 0.75 and 1.75 seconds based on distance travelled. Enemies in a larger area are [[3]] by 40/45% for 3 seconds",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "Recasting",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "150/300/450 {{0}} and 400/800/1200 {{1}} physical damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+40% Bonus AD)",
-                                    "scaleId": "AD"
-                                },
-                                {
-                                    "scale": "(+80% Bonus AD)",
-                                    "scaleId": "AD"
-                                }
-                            ]
-                        },
-                        "type": "physicalDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "Stunned",
-                            "scaleHolders": []
-                        },
-                        "type": "status"
-                    },
-                    {
-                        "text": {
-                            "text": "Slowed",
-                            "scaleHolders": []
-                        },
-                        "type": "status"
-                    }
-                ]
-            },
-            "maxRank": 3,
-            "cooldown": "140/100/60",
-            "cooldownByLevel": [
-                140,
-                100,
-                60
-            ],
-            "cost": "100 Mana",
-            "costByLevel": [
-                100,
-                100,
-                100
-            ],
-            "costType": " Mana"
-        }
-    }
+    "ChangePatches": [
+        "9.19",
+        "10.20",
+        "11.19",
+        "11.21",
+        "12.9",
+        "12.10",
+        "12.23"
+    ],
+    "ChampionName": "Sion"
 }

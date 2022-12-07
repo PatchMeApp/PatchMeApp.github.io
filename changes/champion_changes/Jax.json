@@ -1,12 +1,227 @@
 {
-    "ChampionName": "Jax",
-    "ChangePatches": [
-        "10.1",
-        "10.16",
-        "11.5",
-        "12.6",
-        "12.10"
-    ],
+    "stats": {
+        "hp": {
+            "base": 685,
+            "increment": 99
+        },
+        "mp": {
+            "base": 339,
+            "increment": 52
+        },
+        "armor": {
+            "base": 36,
+            "increment": 4.2
+        },
+        "spellBlock": {
+            "base": 32,
+            "increment": 2.05
+        },
+        "hpRegen": {
+            "base": 8.5,
+            "increment": 0.55
+        },
+        "mpRegen": {
+            "base": 7.6,
+            "increment": 0.7
+        },
+        "attackSpeed": {
+            "base": 0.638,
+            "increment": 0.034
+        },
+        "ms": {
+            "base": 350,
+            "increment": 0
+        },
+        "attackDamage": {
+            "base": 68,
+            "increment": 4.25
+        },
+        "attackRange": {
+            "base": 125,
+            "increment": 0
+        }
+    },
+    "spells": {
+        "P": {
+            "cooldown": "",
+            "_rawTooltip": {
+                "fullTooltip": "Innate: Jax's basic attacks on-attack generate a stack of Relentless Assault that lasts 2.5 seconds, which refreshes on subsequent hits and stacks up to 8 times. Stacks expire one at a time, by one every 0.25 seconds. Relentless Assault: For each stack, Jax gains [[0]], up to a maximum of 28% − 88% (based on level).",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "3.5% − 11% {{0}} bonus attack speed",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(based on level)",
+                                    "scaleId": "level"
+                                }
+                            ]
+                        },
+                        "type": "attackSpeed"
+                    }
+                ]
+            },
+            "name": "Relentless Assault"
+        },
+        "Q": {
+            "_rawTooltip": {
+                "fullTooltip": "Jax leaps to a friendly or enemy unit or ward, dealing [[0]] if it is an enemy.",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "65/105/145/185/225 {{0}} {{1}} physical damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+100% Bonus AD)",
+                                    "scaleId": "AD"
+                                },
+                                {
+                                    "scale": "(+60% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "physicalDamage"
+                    }
+                ]
+            },
+            "cooldown": "8/7.5/7/6.5/6",
+            "cost": "65 Mana",
+            "name": "Leap Strike"
+        },
+        "W": {
+            "_rawTooltip": {
+                "fullTooltip": "Jax charges his weapon with energy, causing his next Attack or [[0]] to deal an additional [[1]].<br /><br />[[2]]",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "Leap Strike",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "50/85/120/155/190 {{0}} magic damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+60% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "magicDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "This Ability triggers spell effects upon dealing damage.",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    }
+                ]
+            },
+            "cooldown": "7/6/5/4/3",
+            "cost": "30 Mana",
+            "name": "Empower"
+        },
+        "E": {
+            "_rawTooltip": {
+                "fullTooltip": "Jax enters a defensive stance for up to 2 seconds, dodging incoming Attacks and taking 25% less damage from area of effect Abilities.<br /><br />After 2 seconds or [[0]], Jax deals [[1]] and [[2]] nearby enemies for 1 second. Deals 20% increased damage for each Attack Jax dodged (max: 100%).",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "Recasting",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "55/80/105/130/155 {{0}} physical damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+50% Bonus AD)",
+                                    "scaleId": "AD"
+                                }
+                            ]
+                        },
+                        "type": "physicalDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "Stuns",
+                            "scaleHolders": []
+                        },
+                        "type": "status"
+                    }
+                ]
+            },
+            "cooldown": "14/12.5/11/9.5/8",
+            "cost": "50/60/70/80/90 Mana",
+            "name": "Counter Strike"
+        },
+        "R": {
+            "_rawTooltip": {
+                "fullTooltip": "[[0]] Every third Attack deals an additional [[1]].<br /><br />[[2]] Jax strengthens his resolve, granting him [[3]] and [[4]] for 8 seconds.",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "Passive:",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "100/140/180 {{0}} magic damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+70% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "magicDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "Active:",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "30/50/70 {{0}} Armor",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+50% Bonus AD)",
+                                    "scaleId": "AD"
+                                }
+                            ]
+                        },
+                        "type": "scaleArmor"
+                    },
+                    {
+                        "text": {
+                            "text": "30/50/70 {{0}} Magic Resist",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+20% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "scaleMR"
+                    }
+                ]
+            },
+            "cooldown": "80",
+            "cost": "100 Mana",
+            "name": "Grandmaster's Might"
+        }
+    },
     "Changes": {
         "10.1": {
             "B": "",
@@ -154,291 +369,12 @@
             "R": ""
         }
     },
-    "stats": {
-        "hp": {
-            "base": 685,
-            "increment": 99
-        },
-        "mp": {
-            "base": 339,
-            "increment": 52
-        },
-        "armor": {
-            "base": 36,
-            "increment": 4.2
-        },
-        "spellBlock": {
-            "base": 32,
-            "increment": 2.05
-        },
-        "hpRegen": {
-            "base": 8.5,
-            "increment": 0.55
-        },
-        "mpRegen": {
-            "base": 7.6,
-            "increment": 0.7
-        },
-        "attackSpeed": {
-            "base": 0.638,
-            "increment": 0.034
-        },
-        "ms": {
-            "base": 350,
-            "increment": 0
-        },
-        "attackDamage": {
-            "base": 68,
-            "increment": 4.25
-        },
-        "attackRange": {
-            "base": 125,
-            "increment": 0
-        }
-    },
-    "spells": {
-        "P": {
-            "name": "Relentless Assault",
-            "cooldown": "",
-            "_rawTooltip": {
-                "fullTooltip": "Innate: Jax's basic attacks on-attack generate a stack of Relentless Assault that lasts 2.5 seconds, which refreshes on subsequent hits and stacks up to 8 times. Stacks expire one at a time, by one every 0.25 seconds. Relentless Assault: For each stack, Jax gains [[0]], up to a maximum of 28% − 88% (based on level).",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "3.5% − 11% {{0}} bonus attack speed",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(based on level)",
-                                    "scaleId": "level"
-                                }
-                            ]
-                        },
-                        "type": "attackSpeed"
-                    }
-                ]
-            }
-        },
-        "Q": {
-            "id": "JaxLeapStrike",
-            "name": "Leap Strike",
-            "_rawTooltip": {
-                "fullTooltip": "Jax leaps to a friendly or enemy unit or ward, dealing [[0]] if it is an enemy.",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "65/105/145/185/225 {{0}} {{1}} physical damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+100% Bonus AD)",
-                                    "scaleId": "AD"
-                                },
-                                {
-                                    "scale": "(+60% AP)",
-                                    "scaleId": "AP"
-                                }
-                            ]
-                        },
-                        "type": "physicalDamage"
-                    }
-                ]
-            },
-            "maxRank": 5,
-            "cooldown": "8/7.5/7/6.5/6",
-            "cooldownByLevel": [
-                8,
-                7.5,
-                7,
-                6.5,
-                6
-            ],
-            "cost": "65 Mana",
-            "costByLevel": [
-                65,
-                65,
-                65,
-                65,
-                65
-            ],
-            "costType": " Mana"
-        },
-        "W": {
-            "id": "JaxEmpowerTwo",
-            "name": "Empower",
-            "_rawTooltip": {
-                "fullTooltip": "Jax charges his weapon with energy, causing his next Attack or [[0]] to deal an additional [[1]].<br /><br />[[2]]",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "Leap Strike",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "50/85/120/155/190 {{0}} magic damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+60% AP)",
-                                    "scaleId": "AP"
-                                }
-                            ]
-                        },
-                        "type": "magicDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "This Ability triggers spell effects upon dealing damage.",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    }
-                ]
-            },
-            "maxRank": 5,
-            "cooldown": "7/6/5/4/3",
-            "cooldownByLevel": [
-                7,
-                6,
-                5,
-                4,
-                3
-            ],
-            "cost": "30 Mana",
-            "costByLevel": [
-                30,
-                30,
-                30,
-                30,
-                30
-            ],
-            "costType": " Mana"
-        },
-        "E": {
-            "id": "JaxCounterStrike",
-            "name": "Counter Strike",
-            "_rawTooltip": {
-                "fullTooltip": "Jax enters a defensive stance for up to 2 seconds, dodging incoming Attacks and taking 25% less damage from area of effect Abilities.<br /><br />After 2 seconds or [[0]], Jax deals [[1]] and [[2]] nearby enemies for 1 second. Deals 20% increased damage for each Attack Jax dodged (max: 100%).",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "Recasting",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "55/80/105/130/155 {{0}} physical damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+50% Bonus AD)",
-                                    "scaleId": "AD"
-                                }
-                            ]
-                        },
-                        "type": "physicalDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "Stuns",
-                            "scaleHolders": []
-                        },
-                        "type": "status"
-                    }
-                ]
-            },
-            "maxRank": 5,
-            "cooldown": "14/12.5/11/9.5/8",
-            "cooldownByLevel": [
-                14,
-                12.5,
-                11,
-                9.5,
-                8
-            ],
-            "cost": "50/60/70/80/90 Mana",
-            "costByLevel": [
-                50,
-                60,
-                70,
-                80,
-                90
-            ],
-            "costType": " Mana"
-        },
-        "R": {
-            "id": "JaxRelentlessAssault",
-            "name": "Grandmaster's Might",
-            "_rawTooltip": {
-                "fullTooltip": "[[0]] Every third Attack deals an additional [[1]].<br /><br />[[2]] Jax strengthens his resolve, granting him [[3]] and [[4]] for 8 seconds.",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "Passive:",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "100/140/180 {{0}} magic damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+70% AP)",
-                                    "scaleId": "AP"
-                                }
-                            ]
-                        },
-                        "type": "magicDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "Active:",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "30/50/70 {{0}} Armor",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+50% Bonus AD)",
-                                    "scaleId": "AD"
-                                }
-                            ]
-                        },
-                        "type": "scaleArmor"
-                    },
-                    {
-                        "text": {
-                            "text": "30/50/70 {{0}} Magic Resist",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+20% AP)",
-                                    "scaleId": "AP"
-                                }
-                            ]
-                        },
-                        "type": "scaleMR"
-                    }
-                ]
-            },
-            "maxRank": 3,
-            "cooldown": "80",
-            "cooldownByLevel": [
-                80,
-                80,
-                80
-            ],
-            "cost": "100 Mana",
-            "costByLevel": [
-                100,
-                100,
-                100
-            ],
-            "costType": " Mana"
-        }
-    }
+    "ChangePatches": [
+        "10.1",
+        "10.16",
+        "11.5",
+        "12.6",
+        "12.10"
+    ],
+    "ChampionName": "Jax"
 }

@@ -1,17 +1,254 @@
 {
-    "ChampionName": "Aatrox",
-    "ChangePatches": [
-        "9.18",
-        "9.19",
-        "10.17",
-        "10.20",
-        "11.2",
-        "11.19",
-        "12.4",
-        "12.10",
-        "12.14",
-        "12.20"
-    ],
+    "stats": {
+        "hp": {
+            "base": 650,
+            "increment": 114
+        },
+        "mp": {
+            "base": 0,
+            "increment": 0
+        },
+        "armor": {
+            "base": 38,
+            "increment": 4.45
+        },
+        "spellBlock": {
+            "base": 32,
+            "increment": 2.05
+        },
+        "hpRegen": {
+            "base": 3,
+            "increment": 1
+        },
+        "mpRegen": {
+            "base": 0,
+            "increment": 0
+        },
+        "attackSpeed": {
+            "base": 0.651,
+            "increment": 0.025
+        },
+        "ms": {
+            "base": 345,
+            "increment": 0
+        },
+        "attackDamage": {
+            "base": 60,
+            "increment": 5
+        },
+        "attackRange": {
+            "base": 175,
+            "increment": 0
+        }
+    },
+    "spells": {
+        "P": {
+            "cooldown": "24 - 12 (Level 1-18)",
+            "_rawTooltip": {
+                "fullTooltip": "Innate: Aatrox periodically empowers his next basic attack to gain 50 bonus range and deal [[1]] as bonus physical damage, capped at 100 against monsters. Aatrox heals for [[0]] dealt, reduced to 25% against minions.<br>Whenever Aatrox hits at least one enemy champion or large monster with a basic attack on-hit or an ability, the cooldown of Deathbringer Stance is reduced by 2 seconds, modified to 4 if he hits with the Sweetspot of The Darkin Blade.",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "100% of the post-mitigation damage",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "5% − 12% {{0}} of the target's maximum health",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(based on level)",
+                                    "scaleId": "level"
+                                }
+                            ]
+                        },
+                        "type": "Health"
+                    }
+                ]
+            },
+            "name": "Deathbringer Stance"
+        },
+        "Q": {
+            "_rawTooltip": {
+                "fullTooltip": "Aatrox slams his greatsword, dealing [[0]]. If they are hit on the edge, they are briefly [[1]] and they take [[2]] instead. This Ability can be [[3]] twice, each one changing shape and dealing 25% more damage than the previous one.",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "10/30/50/70/90 {{0}} physical damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+60/65/70/75/80% AD)",
+                                    "scaleId": "AD"
+                                }
+                            ]
+                        },
+                        "type": "physicalDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "Knocked Up",
+                            "scaleHolders": []
+                        },
+                        "type": "status"
+                    },
+                    {
+                        "text": {
+                            "text": "10/30/50/70/90 {{0}} * {{1}}",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+60/65/70/75/80% AD)",
+                                    "scaleId": "AD"
+                                },
+                                {
+                                    "scale": "(1 + 0.6)",
+                                    "scaleId": "0.6"
+                                }
+                            ]
+                        },
+                        "type": "physicalDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "Recast",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    }
+                ]
+            },
+            "cooldown": "14/12/10/8/6",
+            "cost": "No Cost",
+            "name": "The Darkin Blade"
+        },
+        "W": {
+            "_rawTooltip": {
+                "fullTooltip": "Aatrox fires a chain, [[0]] the first enemy hit by 25% for 1.5 seconds and dealing [[1]]. Champions and large jungle monsters have 1.5 seconds to leave the impact area or be [[2]] back to the center and damaged again for the same amount.",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "Slowing",
+                            "scaleHolders": []
+                        },
+                        "type": "status"
+                    },
+                    {
+                        "text": {
+                            "text": "30/40/50/60/70 {{0}} physical damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+40% AD)",
+                                    "scaleId": "AD"
+                                }
+                            ]
+                        },
+                        "type": "physicalDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "Pulled",
+                            "scaleHolders": []
+                        },
+                        "type": "status"
+                    }
+                ]
+            },
+            "cooldown": "20/18.5/17/15.5/14",
+            "cost": "No Cost",
+            "name": "Infernal Chains"
+        },
+        "E": {
+            "_rawTooltip": {
+                "fullTooltip": "[[0]] Aatrox gains [[1]] against champions, increased to [[2]] during [[3]].<br /><br />[[4]] Aatrox dashes. He can use this Ability while winding up his other Abilities.",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "Passive:",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "18/19.5/21/22.5% Omnivamp",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "25/30/35/40% Omnivamp",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "World Ender",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "Active:",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    }
+                ]
+            },
+            "cooldown": "9/8/7/6/5",
+            "cost": "No Cost",
+            "name": "Umbral Dash"
+        },
+        "R": {
+            "_rawTooltip": {
+                "fullTooltip": "Aatrox reveals his true demonic form, [[0]] nearby minions for 3 seconds and gaining [[1]] decaying over 10 seconds. He also gains [[2]] and increases [[3]] for the duration.<br /><br />Champion takedowns extend the duration of this effect by 5 seconds and refresh the [[4]] effect.",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "Fearing",
+                            "scaleHolders": []
+                        },
+                        "type": "status"
+                    },
+                    {
+                        "text": {
+                            "text": "60/80/100% Move Speed",
+                            "scaleHolders": []
+                        },
+                        "type": "speed"
+                    },
+                    {
+                        "text": {
+                            "text": "20/30/40% Attack Damage",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "self-healing by 25/35/45%",
+                            "scaleHolders": []
+                        },
+                        "type": "healing"
+                    },
+                    {
+                        "text": {
+                            "text": "Move Speed",
+                            "scaleHolders": []
+                        },
+                        "type": "speed"
+                    }
+                ]
+            },
+            "cooldown": "120/100/80",
+            "cost": "No Cost",
+            "name": "World Ender"
+        }
+    },
     "Changes": {
         "9.18": {
             "B": "",
@@ -338,318 +575,17 @@
             "R": ""
         }
     },
-    "stats": {
-        "hp": {
-            "base": 650,
-            "increment": 114
-        },
-        "mp": {
-            "base": 0,
-            "increment": 0
-        },
-        "armor": {
-            "base": 38,
-            "increment": 4.45
-        },
-        "spellBlock": {
-            "base": 32,
-            "increment": 2.05
-        },
-        "hpRegen": {
-            "base": 3,
-            "increment": 1
-        },
-        "mpRegen": {
-            "base": 0,
-            "increment": 0
-        },
-        "attackSpeed": {
-            "base": 0.651,
-            "increment": 0.025
-        },
-        "ms": {
-            "base": 345,
-            "increment": 0
-        },
-        "attackDamage": {
-            "base": 60,
-            "increment": 5
-        },
-        "attackRange": {
-            "base": 175,
-            "increment": 0
-        }
-    },
-    "spells": {
-        "P": {
-            "name": "Deathbringer Stance",
-            "cooldown": "24 - 12 (Level 1-18)",
-            "_rawTooltip": {
-                "fullTooltip": "Innate: Aatrox periodically empowers his next basic attack to gain 50 bonus range and deal [[1]] as bonus physical damage, capped at 100 against monsters. Aatrox heals for [[0]] dealt, reduced to 25% against minions.<br>Whenever Aatrox hits at least one enemy champion or large monster with a basic attack on-hit or an ability, the cooldown of Deathbringer Stance is reduced by 2 seconds, modified to 4 if he hits with the Sweetspot of The Darkin Blade.",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "100% of the post-mitigation damage",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "5% − 12% {{0}} of the target's maximum health",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(based on level)",
-                                    "scaleId": "level"
-                                }
-                            ]
-                        },
-                        "type": "Health"
-                    }
-                ]
-            }
-        },
-        "Q": {
-            "id": "AatroxQ",
-            "name": "The Darkin Blade",
-            "_rawTooltip": {
-                "fullTooltip": "Aatrox slams his greatsword, dealing [[0]]. If they are hit on the edge, they are briefly [[1]] and they take [[2]] instead. This Ability can be [[3]] twice, each one changing shape and dealing 25% more damage than the previous one.",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "10/30/50/70/90 {{0}} physical damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+60/65/70/75/80% AD)",
-                                    "scaleId": "AD"
-                                }
-                            ]
-                        },
-                        "type": "physicalDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "Knocked Up",
-                            "scaleHolders": []
-                        },
-                        "type": "status"
-                    },
-                    {
-                        "text": {
-                            "text": "10/30/50/70/90 {{0}} * {{1}}",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+60/65/70/75/80% AD)",
-                                    "scaleId": "AD"
-                                },
-                                {
-                                    "scale": "(1 + 0.6)",
-                                    "scaleId": "0.6"
-                                }
-                            ]
-                        },
-                        "type": "physicalDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "Recast",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    }
-                ]
-            },
-            "maxRank": 5,
-            "cooldown": "14/12/10/8/6",
-            "cooldownByLevel": [
-                14,
-                12,
-                10,
-                8,
-                6
-            ],
-            "cost": "No Cost",
-            "costByLevel": [
-                0,
-                0,
-                0,
-                0,
-                0
-            ],
-            "costType": "No Cost"
-        },
-        "W": {
-            "id": "AatroxW",
-            "name": "Infernal Chains",
-            "_rawTooltip": {
-                "fullTooltip": "Aatrox fires a chain, [[0]] the first enemy hit by 25% for 1.5 seconds and dealing [[1]]. Champions and large jungle monsters have 1.5 seconds to leave the impact area or be [[2]] back to the center and damaged again for the same amount.",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "Slowing",
-                            "scaleHolders": []
-                        },
-                        "type": "status"
-                    },
-                    {
-                        "text": {
-                            "text": "30/40/50/60/70 {{0}} physical damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+40% AD)",
-                                    "scaleId": "AD"
-                                }
-                            ]
-                        },
-                        "type": "physicalDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "Pulled",
-                            "scaleHolders": []
-                        },
-                        "type": "status"
-                    }
-                ]
-            },
-            "maxRank": 5,
-            "cooldown": "20/18.5/17/15.5/14",
-            "cooldownByLevel": [
-                20,
-                18.5,
-                17,
-                15.5,
-                14
-            ],
-            "cost": "No Cost",
-            "costByLevel": [
-                0,
-                0,
-                0,
-                0,
-                0
-            ],
-            "costType": "No Cost"
-        },
-        "E": {
-            "id": "AatroxE",
-            "name": "Umbral Dash",
-            "_rawTooltip": {
-                "fullTooltip": "[[0]] Aatrox gains [[1]] against champions, increased to [[2]] during [[3]].<br /><br />[[4]] Aatrox dashes. He can use this Ability while winding up his other Abilities.",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "Passive:",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "18/19.5/21/22.5% Omnivamp",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "25/30/35/40% Omnivamp",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "World Ender",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "Active:",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    }
-                ]
-            },
-            "maxRank": 5,
-            "cooldown": "9/8/7/6/5",
-            "cooldownByLevel": [
-                9,
-                8,
-                7,
-                6,
-                5
-            ],
-            "cost": "No Cost",
-            "costByLevel": [
-                0,
-                0,
-                0,
-                0,
-                0
-            ],
-            "costType": "No Cost"
-        },
-        "R": {
-            "id": "AatroxR",
-            "name": "World Ender",
-            "_rawTooltip": {
-                "fullTooltip": "Aatrox reveals his true demonic form, [[0]] nearby minions for 3 seconds and gaining [[1]] decaying over 10 seconds. He also gains [[2]] and increases [[3]] for the duration.<br /><br />Champion takedowns extend the duration of this effect by 5 seconds and refresh the [[4]] effect.",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "Fearing",
-                            "scaleHolders": []
-                        },
-                        "type": "status"
-                    },
-                    {
-                        "text": {
-                            "text": "60/80/100% Move Speed",
-                            "scaleHolders": []
-                        },
-                        "type": "speed"
-                    },
-                    {
-                        "text": {
-                            "text": "20/30/40% Attack Damage",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "self-healing by 25/35/45%",
-                            "scaleHolders": []
-                        },
-                        "type": "healing"
-                    },
-                    {
-                        "text": {
-                            "text": "Move Speed",
-                            "scaleHolders": []
-                        },
-                        "type": "speed"
-                    }
-                ]
-            },
-            "maxRank": 3,
-            "cooldown": "120/100/80",
-            "cooldownByLevel": [
-                120,
-                100,
-                80
-            ],
-            "cost": "No Cost",
-            "costByLevel": [
-                0,
-                0,
-                0
-            ],
-            "costType": "No Cost"
-        }
-    }
+    "ChangePatches": [
+        "9.18",
+        "9.19",
+        "10.17",
+        "10.20",
+        "11.2",
+        "11.19",
+        "12.4",
+        "12.10",
+        "12.14",
+        "12.20"
+    ],
+    "ChampionName": "Aatrox"
 }

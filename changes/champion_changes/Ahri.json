@@ -1,15 +1,182 @@
 {
-    "ChampionName": "Ahri",
-    "ChangePatches": [
-        "10.18",
-        "10.19",
-        "12.3",
-        "12.5",
-        "12.9",
-        "12.10",
-        "12.17",
-        "12.21"
-    ],
+    "stats": {
+        "hp": {
+            "base": 570,
+            "increment": 96
+        },
+        "mp": {
+            "base": 418,
+            "increment": 25
+        },
+        "armor": {
+            "base": 18,
+            "increment": 4.7
+        },
+        "spellBlock": {
+            "base": 30,
+            "increment": 1.3
+        },
+        "hpRegen": {
+            "base": 2.5,
+            "increment": 0.6
+        },
+        "mpRegen": {
+            "base": 8,
+            "increment": 0.8
+        },
+        "attackSpeed": {
+            "base": 0.668,
+            "increment": 0.02
+        },
+        "ms": {
+            "base": 330,
+            "increment": 0
+        },
+        "attackDamage": {
+            "base": 53,
+            "increment": 3
+        },
+        "attackRange": {
+            "base": 550,
+            "increment": 0
+        }
+    },
+    "spells": {
+        "P": {
+            "cooldown": "",
+            "_rawTooltip": {
+                "fullTooltip": "Innate: Ahri gains a stack of Essence Fragment whenever she kills a minion or monster. After obtaining 9 stacks, she consumes them to heal herself for 35 − 95 (based on level) (+ 20% AP).<br>Whenever Ahri scores a champion takedown within 3 seconds of damaging them, she consumes their essence to heal herself for 75 − 165 (based on level) (+ 30% AP).",
+                "parseInfo": []
+            },
+            "name": "Essence Theft"
+        },
+        "Q": {
+            "_rawTooltip": {
+                "fullTooltip": "Ahri throws then pulls back her orb, dealing [[0]] on the way out and [[1]] on the way back.",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "40/65/90/115/140 {{0}} magic damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+45% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "magicDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "40/65/90/115/140 {{0}} true damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+45% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "trueDamage"
+                    }
+                ]
+            },
+            "cooldown": "7",
+            "cost": "55/65/75/85/95 Mana",
+            "name": "Orb of Deception"
+        },
+        "W": {
+            "_rawTooltip": {
+                "fullTooltip": "Ahri releases 3 fox-fires that seek nearby enemies and deal [[0]], reduced to [[1]] beyond the first. She also gains [[2]] decaying over 2 seconds.",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "50/75/100/125/150 {{0}} magic damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+30% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "magicDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "15/22.5/30/37.5/45 {{0}} damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+9% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "magicDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "40% Move Speed",
+                            "scaleHolders": []
+                        },
+                        "type": "speed"
+                    }
+                ]
+            },
+            "cooldown": "9/8/7/6/5",
+            "cost": "30 Mana",
+            "name": "Fox-Fire"
+        },
+        "E": {
+            "_rawTooltip": {
+                "fullTooltip": "Ahri blows a kiss that [[0]] the first enemy hit for 1.2/1.4/1.6/1.8 seconds and deals [[1]].",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "Charms",
+                            "scaleHolders": []
+                        },
+                        "type": "status"
+                    },
+                    {
+                        "text": {
+                            "text": "80/110/140/170/200 {{0}} magic damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+60% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "magicDamage"
+                    }
+                ]
+            },
+            "cooldown": "14",
+            "cost": "60 Mana",
+            "name": "Charm"
+        },
+        "R": {
+            "_rawTooltip": {
+                "fullTooltip": "Ahri nimbly dashes, firing 3 essence bolts at nearby enemies, prioritizing champions. These bolts deal [[0]] each. Spirit Rush can be recast up to 2 more times within 15 seconds.<br /><br />Consuming a champion's Essence with Essence Theft during this period extends the recast window by up to 10 seconds and grants an additional recast of Spirit Rush (up to 3 stored).",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "60/90/120 {{0}} magic damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+35% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "magicDamage"
+                    }
+                ]
+            },
+            "cooldown": "140/115/90",
+            "cost": "100 Mana",
+            "name": "Spirit Rush"
+        }
+    },
     "Changes": {
         "10.18": {
             "B": {
@@ -562,246 +729,15 @@
             "R": ""
         }
     },
-    "stats": {
-        "hp": {
-            "base": 570,
-            "increment": 96
-        },
-        "mp": {
-            "base": 418,
-            "increment": 25
-        },
-        "armor": {
-            "base": 18,
-            "increment": 4.7
-        },
-        "spellBlock": {
-            "base": 30,
-            "increment": 1.3
-        },
-        "hpRegen": {
-            "base": 2.5,
-            "increment": 0.6
-        },
-        "mpRegen": {
-            "base": 8,
-            "increment": 0.8
-        },
-        "attackSpeed": {
-            "base": 0.668,
-            "increment": 0.02
-        },
-        "ms": {
-            "base": 330,
-            "increment": 0
-        },
-        "attackDamage": {
-            "base": 53,
-            "increment": 3
-        },
-        "attackRange": {
-            "base": 550,
-            "increment": 0
-        }
-    },
-    "spells": {
-        "P": {
-            "name": "Essence Theft",
-            "cooldown": "",
-            "_rawTooltip": {
-                "fullTooltip": "Innate: Ahri gains a stack of Essence Fragment whenever she kills a minion or monster. After obtaining 9 stacks, she consumes them to heal herself for 35 − 95 (based on level) (+ 20% AP).<br>Whenever Ahri scores a champion takedown within 3 seconds of damaging them, she consumes their essence to heal herself for 75 − 165 (based on level) (+ 30% AP).",
-                "parseInfo": []
-            }
-        },
-        "Q": {
-            "id": "AhriOrbofDeception",
-            "name": "Orb of Deception",
-            "_rawTooltip": {
-                "fullTooltip": "Ahri throws then pulls back her orb, dealing [[0]] on the way out and [[1]] on the way back.",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "40/65/90/115/140 {{0}} magic damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+45% AP)",
-                                    "scaleId": "AP"
-                                }
-                            ]
-                        },
-                        "type": "magicDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "40/65/90/115/140 {{0}} true damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+45% AP)",
-                                    "scaleId": "AP"
-                                }
-                            ]
-                        },
-                        "type": "trueDamage"
-                    }
-                ]
-            },
-            "maxRank": 5,
-            "cooldown": "7",
-            "cooldownByLevel": [
-                7,
-                7,
-                7,
-                7,
-                7
-            ],
-            "cost": "55/65/75/85/95 Mana",
-            "costByLevel": [
-                55,
-                65,
-                75,
-                85,
-                95
-            ],
-            "costType": " Mana"
-        },
-        "W": {
-            "id": "AhriFoxFire",
-            "name": "Fox-Fire",
-            "_rawTooltip": {
-                "fullTooltip": "Ahri releases 3 fox-fires that seek nearby enemies and deal [[0]], reduced to [[1]] beyond the first. She also gains [[2]] decaying over 2 seconds.",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "50/75/100/125/150 {{0}} magic damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+30% AP)",
-                                    "scaleId": "AP"
-                                }
-                            ]
-                        },
-                        "type": "magicDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "15/22.5/30/37.5/45 {{0}} damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+9% AP)",
-                                    "scaleId": "AP"
-                                }
-                            ]
-                        },
-                        "type": "magicDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "40% Move Speed",
-                            "scaleHolders": []
-                        },
-                        "type": "speed"
-                    }
-                ]
-            },
-            "maxRank": 5,
-            "cooldown": "9/8/7/6/5",
-            "cooldownByLevel": [
-                9,
-                8,
-                7,
-                6,
-                5
-            ],
-            "cost": "30 Mana",
-            "costByLevel": [
-                30,
-                30,
-                30,
-                30,
-                30
-            ],
-            "costType": " Mana"
-        },
-        "E": {
-            "id": "AhriSeduce",
-            "name": "Charm",
-            "_rawTooltip": {
-                "fullTooltip": "Ahri blows a kiss that [[0]] the first enemy hit for 1.2/1.4/1.6/1.8 seconds and deals [[1]].",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "Charms",
-                            "scaleHolders": []
-                        },
-                        "type": "status"
-                    },
-                    {
-                        "text": {
-                            "text": "80/110/140/170/200 {{0}} magic damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+60% AP)",
-                                    "scaleId": "AP"
-                                }
-                            ]
-                        },
-                        "type": "magicDamage"
-                    }
-                ]
-            },
-            "maxRank": 5,
-            "cooldown": "14",
-            "cooldownByLevel": [
-                14,
-                14,
-                14,
-                14,
-                14
-            ],
-            "cost": "60 Mana",
-            "costByLevel": [
-                60,
-                60,
-                60,
-                60,
-                60
-            ],
-            "costType": " Mana"
-        },
-        "R": {
-            "id": "AhriTumble",
-            "name": "Spirit Rush",
-            "_rawTooltip": {
-                "fullTooltip": "Ahri nimbly dashes, firing 3 essence bolts at nearby enemies, prioritizing champions. These bolts deal [[0]] each. Spirit Rush can be recast up to 2 more times within 15 seconds.<br /><br />Consuming a champion's Essence with Essence Theft during this period extends the recast window by up to 10 seconds and grants an additional recast of Spirit Rush (up to 3 stored).",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "60/90/120 {{0}} magic damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+35% AP)",
-                                    "scaleId": "AP"
-                                }
-                            ]
-                        },
-                        "type": "magicDamage"
-                    }
-                ]
-            },
-            "maxRank": 3,
-            "cooldown": "140/115/90",
-            "cooldownByLevel": [
-                140,
-                115,
-                90
-            ],
-            "cost": "100 Mana",
-            "costByLevel": [
-                100,
-                100,
-                100
-            ],
-            "costType": " Mana"
-        }
-    }
+    "ChangePatches": [
+        "10.18",
+        "10.19",
+        "12.3",
+        "12.5",
+        "12.9",
+        "12.10",
+        "12.17",
+        "12.21"
+    ],
+    "ChampionName": "Ahri"
 }

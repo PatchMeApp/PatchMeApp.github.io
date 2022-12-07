@@ -1,18 +1,4 @@
 {
-    "ChampionName": "K'Sante",
-    "ChangePatches": [
-        "12.21"
-    ],
-    "Changes": {
-        "12.21": {
-            "B": "",
-            "P": "",
-            "Q": "",
-            "W": "",
-            "E": "",
-            "R": ""
-        }
-    },
     "stats": {
         "hp": {
             "base": 610,
@@ -57,7 +43,6 @@
     },
     "spells": {
         "P": {
-            "name": "Dauntless Instinct",
             "cooldown": "",
             "_rawTooltip": {
                 "fullTooltip": "Innate: K'Sante's abilities mark enemies hit for 4 seconds. His basic attacks against marked enemies will gain 25 bonus range and consume the mark on-hit, dealing [[0]].<br>All Out Bonus: Both the attack's damage and the mark damage are increased by [[1]] dealt by consuming a mark is converted to true damage.",
@@ -95,11 +80,10 @@
                         "type": "armor"
                     }
                 ]
-            }
+            },
+            "name": "Dauntless Instinct"
         },
         "Q": {
-            "id": "KSanteQ",
-            "name": "Ntofo Strikes",
             "_rawTooltip": {
                 "fullTooltip": "K'Sante slams his weapon down, dealing [[0]] and briefly [[1]] the enemies struck by 80%.<br /><br />When an enemy is hit, K'Sante gains a stack of Ntofo Strikes for 6 seconds. At 2 stacks, K'Sante instead fires a shockwave that [[2]] and [[3]] enemies for 1 second.<br /><br />[[4]]: This Ability's Cooldown is reduced by 1 seconds and no longer inflicts [[5]].<br />",
                 "parseInfo": [
@@ -160,28 +144,11 @@
                     }
                 ]
             },
-            "maxRank": 5,
             "cooldown": "4",
-            "cooldownByLevel": [
-                4,
-                4,
-                4,
-                4,
-                4
-            ],
             "cost": "15 Mana",
-            "costByLevel": [
-                15,
-                15,
-                15,
-                15,
-                15
-            ],
-            "costType": " Mana"
+            "name": "Ntofo Strikes"
         },
         "W": {
-            "id": "KSanteW",
-            "name": "Path Maker",
             "_rawTooltip": {
                 "fullTooltip": "[[0]] K'Sante raises his weapons defensively for up to 1 second, becoming Unstoppable and reducing incoming damage by 25% (+ 10% per 100 bonus armor) (+ 10% per 100 bonus magic resistance) (+ 1% per 100 bonus health).<br /><br />[[1]] K'Sante rams forward, dealing between [[2]] based on charge time. K'Sante [[3]] and [[4]] enemies for a duration between 0.35/0.45/0.55/0.65 and 0.85/0.95/1.05/1.15 seconds.<br /><br />[[5]] This Ability's Cooldown is refreshed. This Ability will no longer [[6]] or [[7]]. This Ability's damage reduction increases to 30% (+ 12% per 100 bonus armor) (+ 12% per 100 bonus magic resistance) (+ 1.2% per 100 bonus health), it deals additional [[8]] between [[9]], and its charge and dash speed are doubled.<br />",
                 "parseInfo": [
@@ -266,28 +233,11 @@
                     }
                 ]
             },
-            "maxRank": 5,
             "cooldown": "24/22/20/18/16",
-            "cooldownByLevel": [
-                24,
-                22,
-                20,
-                18,
-                16
-            ],
             "cost": "75/80/85/90/95 Mana",
-            "costByLevel": [
-                75,
-                80,
-                85,
-                90,
-                95
-            ],
-            "costType": " Mana"
+            "name": "Path Maker"
         },
         "E": {
-            "id": "KSanteE",
-            "name": "Footwork",
             "_rawTooltip": {
                 "fullTooltip": "K'Sante dashes, gaining [[0]] for 2 seconds. If dashing to an ally, the distance of the dash is significantly increased and the ally is also [[1]].<br /><br />[[2]]: This Ability's dash speed is increased. Dashing without an ally has increased range and can go over walls.",
                 "parseInfo": [
@@ -319,28 +269,11 @@
                     }
                 ]
             },
-            "maxRank": 5,
             "cooldown": "9/8.5/8/7.5/7",
-            "cooldownByLevel": [
-                9,
-                8.5,
-                8,
-                7.5,
-                7
-            ],
             "cost": "45/50/55/60/65 Mana",
-            "costByLevel": [
-                45,
-                50,
-                55,
-                60,
-                65
-            ],
-            "costType": " Mana"
+            "name": "Footwork"
         },
         "R": {
-            "id": "KSanteR",
-            "name": "All Out",
             "_rawTooltip": {
                 "fullTooltip": "K'Sante shatters his ntofos, dealing [[0]] and [[1]] an enemy champion. Enemies that hit a wall instead take [[2]], are [[3]] over the wall, and are briefly [[4]]. K'Sante then dashes after the enemy and goes [[5]] for 20 seconds.<br /><br />[[6]] K'Sante loses [[7]], [[8]], and [[9]]. K'Sante gains [[10]], 10 (+ 0.75% per 100 bonus health Omnivamp, and transforms his Abilities.",
                 "parseInfo": [
@@ -442,20 +375,76 @@
                     }
                 ]
             },
-            "maxRank": 3,
             "cooldown": "120/100/80",
-            "cooldownByLevel": [
-                120,
-                100,
-                80
-            ],
             "cost": "100 Mana",
-            "costByLevel": [
-                100,
-                100,
-                100
-            ],
-            "costType": " Mana"
+            "name": "All Out"
         }
-    }
+    },
+    "Changes": {
+        "12.21": {
+            "B": "",
+            "P": "",
+            "Q": "",
+            "W": "",
+            "E": "",
+            "R": ""
+        },
+        "12.23": {
+            "B": {
+                "SpellName": "Base Stats",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Base Health Regeneration: ",
+                            "Before": "8.5",
+                            "Indicator": " ⇒ ",
+                            "After": "9.5"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Health Growth: ",
+                            "Before": "104",
+                            "Indicator": " ⇒ ",
+                            "After": "108"
+                        }
+                    }
+                ]
+            },
+            "P": "",
+            "Q": "",
+            "W": "",
+            "E": {
+                "SpellName": "E - Footwork",
+                "Changes": [
+                    {
+                        "Tag": "NEW",
+                        "Change": {
+                            "Attribute": "Auto Attack Reset: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "E will now partially reset auto attacks in K’Sante’s base form, and will be a full auto attack reset while in his All Out form"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Wall Forgiveness: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "Adjusted E so that if K’Sante is very close to dashing through a wall he will now go through the wall"
+                        }
+                    }
+                ]
+            },
+            "R": ""
+        }
+    },
+    "ChangePatches": [
+        "12.21",
+        "12.23"
+    ],
+    "ChampionName": "K'Sante"
 }

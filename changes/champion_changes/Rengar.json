@@ -1,14 +1,326 @@
 {
-    "ChampionName": "Rengar",
-    "ChangePatches": [
-        "10.25",
-        "12.2",
-        "12.6",
-        "12.7",
-        "12.9",
-        "12.10",
-        "12.11"
-    ],
+    "stats": {
+        "hp": {
+            "base": 620,
+            "increment": 104
+        },
+        "mp": {
+            "base": 4,
+            "increment": 0
+        },
+        "armor": {
+            "base": 34,
+            "increment": 4.2
+        },
+        "spellBlock": {
+            "base": 32,
+            "increment": 2.05
+        },
+        "hpRegen": {
+            "base": 7,
+            "increment": 0.5
+        },
+        "mpRegen": {
+            "base": 0,
+            "increment": 0
+        },
+        "attackSpeed": {
+            "base": 0.667,
+            "increment": 0.03
+        },
+        "ms": {
+            "base": 345,
+            "increment": 0
+        },
+        "attackDamage": {
+            "base": 68,
+            "increment": 3
+        },
+        "attackRange": {
+            "base": 125,
+            "increment": 0
+        }
+    },
+    "spells": {
+        "P": {
+            "cooldown": "",
+            "_rawTooltip": {
+                "fullTooltip": "Innate: Rengar generates 1 Ferocity upon casting a basic ability or using Savagery's first attack. At 4 Ferocity, his next basic ability consumes them to become empowered with an additional effect and grant him an additional cast along with [[1]] for 1.5 seconds. Reaching 4 Ferocity with Savagery or Bola Strike locks them from use for 0.1 seconds before and after casting. All Ferocity is lost after 10 seconds of being out of combat.<br>Innate: While in brush, Rengar gains Unseen Predator.<br>Unseen Predator: Rengar's basic attacks have massively increased range and cause him to leap to the target's location, attacking the target upon arrival and landing closer than his normal melee range. This generates 1 Ferocity if Rengar had 0 Ferocity at one point. Unseen Predator lingers for 0.35 seconds upon exiting brush but is lost immediately if Rengar casts Flash or Hexflash to do so.<br>Innate - Bonetooth Necklace: Scoring a takedown against an enemy champion within 3 seconds of damaging them grants Rengar a Trophy, once per unique champion and up to 5. An additional one is made available through the event The Hunt is On! Trophies grant [[0]].",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "1% − 36% {{0}} bonus AD as bonus attack damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(based on trophies)",
+                                    "scaleId": "trophies"
+                                }
+                            ]
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "30 / 40 / 50% {{0}} bonus movement speed",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(based on level)",
+                                    "scaleId": "level"
+                                }
+                            ]
+                        },
+                        "type": "speed"
+                    }
+                ]
+            },
+            "name": "Unseen Predator"
+        },
+        "Q": {
+            "_rawTooltip": {
+                "fullTooltip": "Rengar's next 2 Attacks gain [[0]]. The first Attack critically strikes for [[1]].<br /><br />[[2]] The first Attack critically strikes for [[3]] and grants Rengar [[4]] for 5 seconds.",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "40% Attack Speed",
+                            "scaleHolders": []
+                        },
+                        "type": "attackSpeed"
+                    },
+                    {
+                        "text": {
+                            "text": "30 / 60 / 90 / 120 / 150 {{0}} {{1}}) physical damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+ 0 / 5 / 10 / 15 / 20% AD)",
+                                    "scaleId": "AD"
+                                },
+                                {
+                                    "scale": "(increased by 0% − 66% (based on critical strike chance)",
+                                    "scaleId": "chance"
+                                }
+                            ]
+                        },
+                        "type": "physicalDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "Max Ferocity:",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "30 − 235 {{0}} {{1}} {{2}} physical damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(based on level)",
+                                    "scaleId": "level"
+                                },
+                                {
+                                    "scale": "(+ 40% AD)",
+                                    "scaleId": "AD"
+                                },
+                                {
+                                    "scale": "(increased by 0% − 66% (based on critical strike chance)",
+                                    "scaleId": "chance"
+                                }
+                            ]
+                        },
+                        "type": "physicalDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "50% - 101% {{0}} Attack Speed",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(based on champion level)",
+                                    "scaleId": "level"
+                                }
+                            ]
+                        },
+                        "type": "attackSpeed"
+                    }
+                ]
+            },
+            "cooldown": "0.25",
+            "cost": "Generates 1 Ferocity",
+            "name": "Savagery"
+        },
+        "W": {
+            "_rawTooltip": {
+                "fullTooltip": "Rengar roars, dealing [[0]] to nearby enemies and restoring [[1]] of the damage taken in the last 1.5 seconds as Health.<br /><br />[[2]] Deals [[3]] and additionally cleanses Rengar of crowd control.",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "50/80/110/140/170 {{0}} magic damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+80% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "magicDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "50%",
+                            "scaleHolders": []
+                        },
+                        "type": "healing"
+                    },
+                    {
+                        "text": {
+                            "text": "Max Ferocity:",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": " {{0}} magic damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+80% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "magicDamage"
+                    }
+                ]
+            },
+            "cooldown": "0.25",
+            "cost": "Generates 1 Ferocity",
+            "name": "Battle Roar"
+        },
+        "E": {
+            "_rawTooltip": {
+                "fullTooltip": "Rengar throws a bola, dealing [[0]] to the first enemy hit, Revealing and [[1]] them by 30/45/60/75/90% for 1.75 seconds.<br /><br />[[2]] Deals [[3]] and [[4]] for 1.75 seconds.",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "55/100/145/190/235 {{0}} physical damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+80% Bonus AD)",
+                                    "scaleId": "AD"
+                                }
+                            ]
+                        },
+                        "type": "physicalDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "Slowing",
+                            "scaleHolders": []
+                        },
+                        "type": "status"
+                    },
+                    {
+                        "text": {
+                            "text": "Max Ferocity:",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "50 - 305 {{0}} {{1}} physical damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(based on champion level)",
+                                    "scaleId": "level"
+                                },
+                                {
+                                    "scale": "(+80% Bonus AD)",
+                                    "scaleId": "AD"
+                                }
+                            ]
+                        },
+                        "type": "physicalDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "Roots",
+                            "scaleHolders": []
+                        },
+                        "type": "status"
+                    }
+                ]
+            },
+            "cooldown": "0.25",
+            "cost": "Generates 1 Ferocity",
+            "name": "Bola Strike"
+        },
+        "R": {
+            "_rawTooltip": {
+                "fullTooltip": "[[0]] Rengar will also leap attack when [[1]].<br /><br />[[2]] Rengar gains [[3]] and [[4]] in a small area around the nearest enemy champion for 12/16 seconds.<br /><br />After 2 seconds, Rengar becomes [[5]] and can leap without being in Brush. Leaping to the nearest champion deals an additional [[6]], shreds [[7]] for 4 seconds, and ends this Ability.",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "Passive:",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "Camouflaged",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "Active:",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "40/50% Move Speed",
+                            "scaleHolders": []
+                        },
+                        "type": "speed"
+                    },
+                    {
+                        "text": {
+                            "text": "True Sight",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "Camouflaged",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "50% AD physical damage",
+                            "scaleHolders": []
+                        },
+                        "type": "physicalDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "12/18 Armor",
+                            "scaleHolders": []
+                        },
+                        "type": "scaleArmor"
+                    }
+                ]
+            },
+            "cooldown": "110/100/90",
+            "cost": "No Cost",
+            "name": "Thrill of the Hunt"
+        }
+    },
     "Changes": {
         "10.25": {
             "B": "",
@@ -322,390 +634,14 @@
             }
         }
     },
-    "stats": {
-        "hp": {
-            "base": 620,
-            "increment": 104
-        },
-        "mp": {
-            "base": 4,
-            "increment": 0
-        },
-        "armor": {
-            "base": 34,
-            "increment": 4.2
-        },
-        "spellBlock": {
-            "base": 32,
-            "increment": 2.05
-        },
-        "hpRegen": {
-            "base": 7,
-            "increment": 0.5
-        },
-        "mpRegen": {
-            "base": 0,
-            "increment": 0
-        },
-        "attackSpeed": {
-            "base": 0.667,
-            "increment": 0.03
-        },
-        "ms": {
-            "base": 345,
-            "increment": 0
-        },
-        "attackDamage": {
-            "base": 68,
-            "increment": 3
-        },
-        "attackRange": {
-            "base": 125,
-            "increment": 0
-        }
-    },
-    "spells": {
-        "P": {
-            "name": "Unseen Predator",
-            "cooldown": "",
-            "_rawTooltip": {
-                "fullTooltip": "Innate: Rengar generates 1 Ferocity upon casting a basic ability or using Savagery's first attack. At 4 Ferocity, his next basic ability consumes them to become empowered with an additional effect and grant him an additional cast along with [[1]] for 1.5 seconds. Reaching 4 Ferocity with Savagery or Bola Strike locks them from use for 0.1 seconds before and after casting. All Ferocity is lost after 10 seconds of being out of combat.<br>Innate: While in brush, Rengar gains Unseen Predator.<br>Unseen Predator: Rengar's basic attacks have massively increased range and cause him to leap to the target's location, attacking the target upon arrival and landing closer than his normal melee range. This generates 1 Ferocity if Rengar had 0 Ferocity at one point. Unseen Predator lingers for 0.35 seconds upon exiting brush but is lost immediately if Rengar casts Flash or Hexflash to do so.<br>Innate - Bonetooth Necklace: Scoring a takedown against an enemy champion within 3 seconds of damaging them grants Rengar a Trophy, once per unique champion and up to 5. An additional one is made available through the event The Hunt is On! Trophies grant [[0]].",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "1% − 36% {{0}} bonus AD as bonus attack damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(based on trophies)",
-                                    "scaleId": "trophies"
-                                }
-                            ]
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "30 / 40 / 50% {{0}} bonus movement speed",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(based on level)",
-                                    "scaleId": "level"
-                                }
-                            ]
-                        },
-                        "type": "speed"
-                    }
-                ]
-            }
-        },
-        "Q": {
-            "id": "RengarQ",
-            "name": "Savagery",
-            "_rawTooltip": {
-                "fullTooltip": "Rengar's next 2 Attacks gain [[0]]. The first Attack critically strikes for [[1]].<br /><br />[[2]] The first Attack critically strikes for [[3]] and grants Rengar [[4]] for 5 seconds.",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "40% Attack Speed",
-                            "scaleHolders": []
-                        },
-                        "type": "attackSpeed"
-                    },
-                    {
-                        "text": {
-                            "text": "30 / 60 / 90 / 120 / 150 {{0}} {{1}}) physical damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+ 0 / 5 / 10 / 15 / 20% AD)",
-                                    "scaleId": "AD"
-                                },
-                                {
-                                    "scale": "(increased by 0% − 66% (based on critical strike chance)",
-                                    "scaleId": "chance"
-                                }
-                            ]
-                        },
-                        "type": "physicalDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "Max Ferocity:",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "30 − 235 {{0}} {{1}} {{2}} physical damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(based on level)",
-                                    "scaleId": "level"
-                                },
-                                {
-                                    "scale": "(+ 40% AD)",
-                                    "scaleId": "AD"
-                                },
-                                {
-                                    "scale": "(increased by 0% − 66% (based on critical strike chance)",
-                                    "scaleId": "chance"
-                                }
-                            ]
-                        },
-                        "type": "physicalDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "50% - 101% {{0}} Attack Speed",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(based on champion level)",
-                                    "scaleId": "level"
-                                }
-                            ]
-                        },
-                        "type": "attackSpeed"
-                    }
-                ]
-            },
-            "maxRank": 5,
-            "cooldown": "0.25",
-            "cooldownByLevel": [
-                0.25,
-                0.25,
-                0.25,
-                0.25,
-                0.25
-            ],
-            "cost": "Generates 1 Ferocity",
-            "costByLevel": [
-                0,
-                0,
-                0,
-                0,
-                0
-            ],
-            "costType": "Generates 1 Ferocity"
-        },
-        "W": {
-            "id": "RengarW",
-            "name": "Battle Roar",
-            "_rawTooltip": {
-                "fullTooltip": "Rengar roars, dealing [[0]] to nearby enemies and restoring [[1]] of the damage taken in the last 1.5 seconds as Health.<br /><br />[[2]] Deals [[3]] and additionally cleanses Rengar of crowd control.",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "50/80/110/140/170 {{0}} magic damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+80% AP)",
-                                    "scaleId": "AP"
-                                }
-                            ]
-                        },
-                        "type": "magicDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "50%",
-                            "scaleHolders": []
-                        },
-                        "type": "healing"
-                    },
-                    {
-                        "text": {
-                            "text": "Max Ferocity:",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": " {{0}} magic damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+80% AP)",
-                                    "scaleId": "AP"
-                                }
-                            ]
-                        },
-                        "type": "magicDamage"
-                    }
-                ]
-            },
-            "maxRank": 5,
-            "cooldown": "0.25",
-            "cooldownByLevel": [
-                0.25,
-                0.25,
-                0.25,
-                0.25,
-                0.25
-            ],
-            "cost": "Generates 1 Ferocity",
-            "costByLevel": [
-                0,
-                0,
-                0,
-                0,
-                0
-            ],
-            "costType": "Generates 1 Ferocity"
-        },
-        "E": {
-            "id": "RengarE",
-            "name": "Bola Strike",
-            "_rawTooltip": {
-                "fullTooltip": "Rengar throws a bola, dealing [[0]] to the first enemy hit, Revealing and [[1]] them by 30/45/60/75/90% for 1.75 seconds.<br /><br />[[2]] Deals [[3]] and [[4]] for 1.75 seconds.",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "55/100/145/190/235 {{0}} physical damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+80% Bonus AD)",
-                                    "scaleId": "AD"
-                                }
-                            ]
-                        },
-                        "type": "physicalDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "Slowing",
-                            "scaleHolders": []
-                        },
-                        "type": "status"
-                    },
-                    {
-                        "text": {
-                            "text": "Max Ferocity:",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "50 - 305 {{0}} {{1}} physical damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(based on champion level)",
-                                    "scaleId": "level"
-                                },
-                                {
-                                    "scale": "(+80% Bonus AD)",
-                                    "scaleId": "AD"
-                                }
-                            ]
-                        },
-                        "type": "physicalDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "Roots",
-                            "scaleHolders": []
-                        },
-                        "type": "status"
-                    }
-                ]
-            },
-            "maxRank": 5,
-            "cooldown": "0.25",
-            "cooldownByLevel": [
-                0.25,
-                0.25,
-                0.25,
-                0.25,
-                0.25
-            ],
-            "cost": "Generates 1 Ferocity",
-            "costByLevel": [
-                0,
-                0,
-                0,
-                0,
-                0
-            ],
-            "costType": "Generates 1 Ferocity"
-        },
-        "R": {
-            "id": "RengarR",
-            "name": "Thrill of the Hunt",
-            "_rawTooltip": {
-                "fullTooltip": "[[0]] Rengar will also leap attack when [[1]].<br /><br />[[2]] Rengar gains [[3]] and [[4]] in a small area around the nearest enemy champion for 12/16 seconds.<br /><br />After 2 seconds, Rengar becomes [[5]] and can leap without being in Brush. Leaping to the nearest champion deals an additional [[6]], shreds [[7]] for 4 seconds, and ends this Ability.",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "Passive:",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "Camouflaged",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "Active:",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "40/50% Move Speed",
-                            "scaleHolders": []
-                        },
-                        "type": "speed"
-                    },
-                    {
-                        "text": {
-                            "text": "True Sight",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "Camouflaged",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "50% AD physical damage",
-                            "scaleHolders": []
-                        },
-                        "type": "physicalDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "12/18 Armor",
-                            "scaleHolders": []
-                        },
-                        "type": "scaleArmor"
-                    }
-                ]
-            },
-            "maxRank": 3,
-            "cooldown": "110/100/90",
-            "cooldownByLevel": [
-                110,
-                100,
-                90
-            ],
-            "cost": "No Cost",
-            "costByLevel": [
-                0,
-                0,
-                0
-            ],
-            "costType": "No Cost"
-        }
-    }
+    "ChangePatches": [
+        "10.25",
+        "12.2",
+        "12.6",
+        "12.7",
+        "12.9",
+        "12.10",
+        "12.11"
+    ],
+    "ChampionName": "Rengar"
 }

@@ -1,15 +1,257 @@
 {
-    "ChampionName": "Corki",
-    "ChangePatches": [
-        "10.1",
-        "10.3",
-        "10.7",
-        "10.21",
-        "12.3",
-        "12.10",
-        "12.13",
-        "12.21"
-    ],
+    "stats": {
+        "hp": {
+            "base": 588,
+            "increment": 105
+        },
+        "mp": {
+            "base": 350,
+            "increment": 54
+        },
+        "armor": {
+            "base": 28,
+            "increment": 4.7
+        },
+        "spellBlock": {
+            "base": 30,
+            "increment": 1.3
+        },
+        "hpRegen": {
+            "base": 5.5,
+            "increment": 0.55
+        },
+        "mpRegen": {
+            "base": 7.4,
+            "increment": 0.55
+        },
+        "attackSpeed": {
+            "base": 0.638,
+            "increment": 0.023
+        },
+        "ms": {
+            "base": 325,
+            "increment": 0
+        },
+        "attackDamage": {
+            "base": 55,
+            "increment": 2.8
+        },
+        "attackRange": {
+            "base": 550,
+            "increment": 0
+        }
+    },
+    "spells": {
+        "P": {
+            "cooldown": 300,
+            "_rawTooltip": {
+                "fullTooltip": "Innate - Hextech Shrapnel Shells: Corki's basic attacks are modified to deal [[0]] and [[1]].<br>Innate - The Package: After 10:00, The Package is delivered to both corners of the allied fountain, which can be selected by Corki to pick up after channeling for 1 second. Upon completion of the channel, Corki gains one cast of Special Delivery for 60 seconds, replacing Valkyrie for the duration. While holding the The Package, Corki receives [[2]] out of combat and ghosting.<br>Corki cannot pick up the package while he is unable to cast abilities.",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "80% AD magic damage",
+                            "scaleHolders": []
+                        },
+                        "type": "magicDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "20% AD physical damage",
+                            "scaleHolders": []
+                        },
+                        "type": "physicalDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "40% bonus movement speed",
+                            "scaleHolders": []
+                        },
+                        "type": "speed"
+                    }
+                ]
+            },
+            "name": "Hextech Munitions"
+        },
+        "Q": {
+            "_rawTooltip": {
+                "fullTooltip": "Corki lobs a bomb, dealing [[0]]. The area and champions hit are revealed for 6 seconds.",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "75/120/165/210/255 {{0}} {{1}} magic damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+50% AP)",
+                                    "scaleId": "AP"
+                                },
+                                {
+                                    "scale": "(+70% Bonus AD)",
+                                    "scaleId": "AD"
+                                }
+                            ]
+                        },
+                        "type": "magicDamage"
+                    }
+                ]
+            },
+            "cooldown": "8",
+            "cost": "60/70/80/90/100 Mana",
+            "name": "Phosphorus Bomb"
+        },
+        "W": {
+            "_rawTooltip": {
+                "fullTooltip": "Corki flies over and scorches a path, burning it for 2.5 seconds. Enemies in the fire take [[0]] per second.<br /><br />If Corki has [[1]], he instead consumes it to fly a much greater distance, refresh this Ability's Cooldown, [[2]] enemies hit, and burn the path for 5 seconds. Enemies hit and in the path are [[3]] by 90% and take [[4]] per second for 2 seconds.",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "60/90/120/150/180 {{0}} magic damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+40% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "magicDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "The Package",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "Knock Aside",
+                            "scaleHolders": []
+                        },
+                        "type": "status"
+                    },
+                    {
+                        "text": {
+                            "text": "Slowed",
+                            "scaleHolders": []
+                        },
+                        "type": "status"
+                    },
+                    {
+                        "text": {
+                            "text": "30 - 100 {{0}} {{1}} {{2}} magic damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(based on champion level)",
+                                    "scaleId": "level"
+                                },
+                                {
+                                    "scale": "(+200% Bonus AD)",
+                                    "scaleId": "AD"
+                                },
+                                {
+                                    "scale": "(+24% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "magicDamage"
+                    }
+                ]
+            },
+            "cooldown": "20/19/18/17/16",
+            "cost": "100 Mana",
+            "name": "Valkyrie"
+        },
+        "E": {
+            "_rawTooltip": {
+                "fullTooltip": "Corki fires a gatling gun in front of him, dealing [[0]] and [[1]] per second and shredding up to [[2]] and [[3]] over 4 seconds.<br /><br />Total Damage Per Second: 30/42.52/55/67.52/80 (+60% Bonus AD)",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "3.75/5.32/6.88/8.44/10 {{0}} physical damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+7.5% Bonus AD)",
+                                    "scaleId": "AD"
+                                }
+                            ]
+                        },
+                        "type": "physicalDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "3.75/5.32/6.88/8.44/10 {{0}} magic damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+7.5% Bonus AD)",
+                                    "scaleId": "AD"
+                                }
+                            ]
+                        },
+                        "type": "magicDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "8/11/14/17/20 Armor",
+                            "scaleHolders": []
+                        },
+                        "type": "scaleArmor"
+                    },
+                    {
+                        "text": {
+                            "text": "Magic Resist",
+                            "scaleHolders": []
+                        },
+                        "type": "scaleMR"
+                    }
+                ]
+            },
+            "cooldown": "16",
+            "cost": "50 Mana",
+            "name": "Gatling Gun"
+        },
+        "R": {
+            "_rawTooltip": {
+                "fullTooltip": "Corki fires a missile that explodes on the first enemy hit, dealing [[0]] to surrounding enemies. Every third missile instead deals [[1]].<br /><br />This Ability has 7 charges.",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "80/115/150 {{0}} {{1}} magic damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+15/45/75% AD)",
+                                    "scaleId": "AD"
+                                },
+                                {
+                                    "scale": "(+12% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "magicDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "160/230/300 {{0}} {{1}} magic damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+30/90/150% AD)",
+                                    "scaleId": "AD"
+                                },
+                                {
+                                    "scale": "(+24% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "magicDamage"
+                    }
+                ]
+            },
+            "cooldown": "2",
+            "cost": "20 Mana",
+            "name": "Missile Barrage"
+        }
+    },
     "Changes": {
         "10.1": {
             "B": "",
@@ -265,321 +507,15 @@
             "R": ""
         }
     },
-    "stats": {
-        "hp": {
-            "base": 588,
-            "increment": 105
-        },
-        "mp": {
-            "base": 350,
-            "increment": 54
-        },
-        "armor": {
-            "base": 28,
-            "increment": 4.7
-        },
-        "spellBlock": {
-            "base": 30,
-            "increment": 1.3
-        },
-        "hpRegen": {
-            "base": 5.5,
-            "increment": 0.55
-        },
-        "mpRegen": {
-            "base": 7.4,
-            "increment": 0.55
-        },
-        "attackSpeed": {
-            "base": 0.638,
-            "increment": 0.023
-        },
-        "ms": {
-            "base": 325,
-            "increment": 0
-        },
-        "attackDamage": {
-            "base": 55,
-            "increment": 2.8
-        },
-        "attackRange": {
-            "base": 550,
-            "increment": 0
-        }
-    },
-    "spells": {
-        "P": {
-            "name": "Hextech Munitions",
-            "cooldown": 300,
-            "_rawTooltip": {
-                "fullTooltip": "Innate - Hextech Shrapnel Shells: Corki's basic attacks are modified to deal [[0]] and [[1]].<br>Innate - The Package: After 10:00, The Package is delivered to both corners of the allied fountain, which can be selected by Corki to pick up after channeling for 1 second. Upon completion of the channel, Corki gains one cast of Special Delivery for 60 seconds, replacing Valkyrie for the duration. While holding the The Package, Corki receives [[2]] out of combat and ghosting.<br>Corki cannot pick up the package while he is unable to cast abilities.",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "80% AD magic damage",
-                            "scaleHolders": []
-                        },
-                        "type": "magicDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "20% AD physical damage",
-                            "scaleHolders": []
-                        },
-                        "type": "physicalDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "40% bonus movement speed",
-                            "scaleHolders": []
-                        },
-                        "type": "speed"
-                    }
-                ]
-            }
-        },
-        "Q": {
-            "id": "PhosphorusBomb",
-            "name": "Phosphorus Bomb",
-            "_rawTooltip": {
-                "fullTooltip": "Corki lobs a bomb, dealing [[0]]. The area and champions hit are revealed for 6 seconds.",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "75/120/165/210/255 {{0}} {{1}} magic damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+50% AP)",
-                                    "scaleId": "AP"
-                                },
-                                {
-                                    "scale": "(+70% Bonus AD)",
-                                    "scaleId": "AD"
-                                }
-                            ]
-                        },
-                        "type": "magicDamage"
-                    }
-                ]
-            },
-            "maxRank": 5,
-            "cooldown": "8",
-            "cooldownByLevel": [
-                8,
-                8,
-                8,
-                8,
-                8
-            ],
-            "cost": "60/70/80/90/100 Mana",
-            "costByLevel": [
-                60,
-                70,
-                80,
-                90,
-                100
-            ],
-            "costType": " Mana"
-        },
-        "W": {
-            "id": "CarpetBomb",
-            "name": "Valkyrie",
-            "_rawTooltip": {
-                "fullTooltip": "Corki flies over and scorches a path, burning it for 2.5 seconds. Enemies in the fire take [[0]] per second.<br /><br />If Corki has [[1]], he instead consumes it to fly a much greater distance, refresh this Ability's Cooldown, [[2]] enemies hit, and burn the path for 5 seconds. Enemies hit and in the path are [[3]] by 90% and take [[4]] per second for 2 seconds.",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "60/90/120/150/180 {{0}} magic damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+40% AP)",
-                                    "scaleId": "AP"
-                                }
-                            ]
-                        },
-                        "type": "magicDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "The Package",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "Knock Aside",
-                            "scaleHolders": []
-                        },
-                        "type": "status"
-                    },
-                    {
-                        "text": {
-                            "text": "Slowed",
-                            "scaleHolders": []
-                        },
-                        "type": "status"
-                    },
-                    {
-                        "text": {
-                            "text": "30 - 100 {{0}} {{1}} {{2}} magic damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(based on champion level)",
-                                    "scaleId": "level"
-                                },
-                                {
-                                    "scale": "(+200% Bonus AD)",
-                                    "scaleId": "AD"
-                                },
-                                {
-                                    "scale": "(+24% AP)",
-                                    "scaleId": "AP"
-                                }
-                            ]
-                        },
-                        "type": "magicDamage"
-                    }
-                ]
-            },
-            "maxRank": 5,
-            "cooldown": "20/19/18/17/16",
-            "cooldownByLevel": [
-                20,
-                19,
-                18,
-                17,
-                16
-            ],
-            "cost": "100 Mana",
-            "costByLevel": [
-                100,
-                100,
-                100,
-                100,
-                100
-            ],
-            "costType": " Mana"
-        },
-        "E": {
-            "id": "GGun",
-            "name": "Gatling Gun",
-            "_rawTooltip": {
-                "fullTooltip": "Corki fires a gatling gun in front of him, dealing [[0]] and [[1]] per second and shredding up to [[2]] and [[3]] over 4 seconds.<br /><br />Total Damage Per Second: 30/42.52/55/67.52/80 (+60% Bonus AD)",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "3.75/5.32/6.88/8.44/10 {{0}} physical damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+7.5% Bonus AD)",
-                                    "scaleId": "AD"
-                                }
-                            ]
-                        },
-                        "type": "physicalDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "3.75/5.32/6.88/8.44/10 {{0}} magic damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+7.5% Bonus AD)",
-                                    "scaleId": "AD"
-                                }
-                            ]
-                        },
-                        "type": "magicDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "8/11/14/17/20 Armor",
-                            "scaleHolders": []
-                        },
-                        "type": "scaleArmor"
-                    },
-                    {
-                        "text": {
-                            "text": "Magic Resist",
-                            "scaleHolders": []
-                        },
-                        "type": "scaleMR"
-                    }
-                ]
-            },
-            "maxRank": 5,
-            "cooldown": "16",
-            "cooldownByLevel": [
-                16,
-                16,
-                16,
-                16,
-                16
-            ],
-            "cost": "50 Mana",
-            "costByLevel": [
-                50,
-                50,
-                50,
-                50,
-                50
-            ],
-            "costType": " Mana"
-        },
-        "R": {
-            "id": "MissileBarrage",
-            "name": "Missile Barrage",
-            "_rawTooltip": {
-                "fullTooltip": "Corki fires a missile that explodes on the first enemy hit, dealing [[0]] to surrounding enemies. Every third missile instead deals [[1]].<br /><br />This Ability has 7 charges.",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "80/115/150 {{0}} {{1}} magic damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+15/45/75% AD)",
-                                    "scaleId": "AD"
-                                },
-                                {
-                                    "scale": "(+12% AP)",
-                                    "scaleId": "AP"
-                                }
-                            ]
-                        },
-                        "type": "magicDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "160/230/300 {{0}} {{1}} magic damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+30/90/150% AD)",
-                                    "scaleId": "AD"
-                                },
-                                {
-                                    "scale": "(+24% AP)",
-                                    "scaleId": "AP"
-                                }
-                            ]
-                        },
-                        "type": "magicDamage"
-                    }
-                ]
-            },
-            "maxRank": 3,
-            "cooldown": "2",
-            "cooldownByLevel": [
-                2,
-                2,
-                2
-            ],
-            "cost": "20 Mana",
-            "costByLevel": [
-                20,
-                20,
-                20
-            ],
-            "costType": " Mana"
-        }
-    }
+    "ChangePatches": [
+        "10.1",
+        "10.3",
+        "10.7",
+        "10.21",
+        "12.3",
+        "12.10",
+        "12.13",
+        "12.21"
+    ],
+    "ChampionName": "Corki"
 }

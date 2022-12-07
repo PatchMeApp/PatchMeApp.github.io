@@ -1,13 +1,300 @@
 {
-    "ChampionName": "Pyke",
-    "ChangePatches": [
-        "9.21",
-        "10.14",
-        "11.5",
-        "11.6",
-        "12.9",
-        "12.10"
-    ],
+    "stats": {
+        "hp": {
+            "base": 670,
+            "increment": 104
+        },
+        "mp": {
+            "base": 415,
+            "increment": 50
+        },
+        "armor": {
+            "base": 45,
+            "increment": 4.7
+        },
+        "spellBlock": {
+            "base": 32,
+            "increment": 2.05
+        },
+        "hpRegen": {
+            "base": 7,
+            "increment": 0.5
+        },
+        "mpRegen": {
+            "base": 8,
+            "increment": 1
+        },
+        "attackSpeed": {
+            "base": 0.667,
+            "increment": 0.025
+        },
+        "ms": {
+            "base": 330,
+            "increment": 0
+        },
+        "attackDamage": {
+            "base": 62,
+            "increment": 2
+        },
+        "attackRange": {
+            "base": 150,
+            "increment": 0
+        }
+    },
+    "spells": {
+        "P": {
+            "cooldown": "",
+            "_rawTooltip": {
+                "fullTooltip": "Innate: Pyke's maximum health cannot increase except through growth (per level), instead he gains[ [[0]] per [[2]]. ]<br>Passive: Pyke stores [[1]] he takes from enemy champions as grey health on his health bar, increased to 40% (+ 0.4% per 1 Lethality) if there are two or more visible enemy champions nearby and storing up to [[3]], with an upper cap of [[4]].<br>When Pyke is not visible to enemies, he rapidly consumes his grey health to heal for the same amount.<br>Pyke gains [[5]] while in the river.",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "1 bonus attack damage",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "9% {{0}} of the post-mitigation damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+ 0.2% per 1 Lethality)",
+                                    "scaleId": "Lethality"
+                                }
+                            ]
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "14 bonus health",
+                            "scaleHolders": []
+                        },
+                        "type": "Health"
+                    },
+                    {
+                        "text": {
+                            "text": "80 {{0}} grey health",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+ 800% bonus AD)",
+                                    "scaleId": "AD"
+                                }
+                            ]
+                        },
+                        "type": "Health"
+                    },
+                    {
+                        "text": {
+                            "text": "60% of his maximum health",
+                            "scaleHolders": []
+                        },
+                        "type": "Health"
+                    },
+                    {
+                        "text": {
+                            "text": "1 bonus movement speed",
+                            "scaleHolders": []
+                        },
+                        "type": "speed"
+                    }
+                ]
+            },
+            "name": "Gift of the Drowned Ones"
+        },
+        "Q": {
+            "_rawTooltip": {
+                "fullTooltip": "[[0]] Pyke stabs, dealing [[1]] to the first enemy hit, preferring champions. They are then [[2]] by 90% for 1 second.<br /><br />[[3]]Pyke throws his harpoon, dealing [[4]] to the first enemy hit and [[5]] them towards him. They are then [[6]] by 90% for 1 second.<br /><br />If Pyke successfully hits an enemy champion or the channel does not complete successfully, 75% of the Mana cost is refunded.",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "Tap:",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "100/150/200/250/300 {{0}} physical damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+60% Bonus AD)",
+                                    "scaleId": "AD"
+                                }
+                            ]
+                        },
+                        "type": "physicalDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "Slowed",
+                            "scaleHolders": []
+                        },
+                        "type": "status"
+                    },
+                    {
+                        "text": {
+                            "text": "Hold: ",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "100/150/200/250/300 {{0}} physical damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+60% Bonus AD)",
+                                    "scaleId": "AD"
+                                }
+                            ]
+                        },
+                        "type": "physicalDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "Pulling",
+                            "scaleHolders": []
+                        },
+                        "type": "status"
+                    },
+                    {
+                        "text": {
+                            "text": "Slowed",
+                            "scaleHolders": []
+                        },
+                        "type": "status"
+                    }
+                ]
+            },
+            "cooldown": "10/9.5/9/8.5/8",
+            "cost": "74/78/82/86/90 Mana",
+            "name": "Bone Skewer"
+        },
+        "W": {
+            "_rawTooltip": {
+                "fullTooltip": "Pyke gains [[0]] and [[1]] decaying over 5 seconds.",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "Camouflage",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "40 {{0}}% Move Speed",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+150% Lethality)",
+                                    "scaleId": "Lethality"
+                                }
+                            ]
+                        },
+                        "type": "speed"
+                    }
+                ]
+            },
+            "cooldown": "12/11.5/11/10.5/10",
+            "cost": "50 Mana",
+            "name": "Ghostwater Dive"
+        },
+        "E": {
+            "_rawTooltip": {
+                "fullTooltip": "Pyke dashes, leaving a drowned phantom behind him that returns to him shortly. The phantom [[0]] for 1.25 (+1% Lethality) seconds and deals [[1]] to champions.",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "Stuns",
+                            "scaleHolders": []
+                        },
+                        "type": "status"
+                    },
+                    {
+                        "text": {
+                            "text": "105/135/165/195/225 {{0}} physical damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+100% Bonus AD)",
+                                    "scaleId": "AD"
+                                }
+                            ]
+                        },
+                        "type": "physicalDamage"
+                    }
+                ]
+            },
+            "cooldown": "15/14/13/12/11",
+            "cost": "40 Mana",
+            "name": "Phantom Undertow"
+        },
+        "R": {
+            "_rawTooltip": {
+                "fullTooltip": "Pyke strikes all enemy champions in an X, teleporting to and [[0]] targets below [[1]] Health. Champions above the threshold and non-champions instead take physical damage equal to 50% of that amount ([[2]]). <br /><br />When an enemy champion dies inside the X, Pyke can [[3]] this Ability for free within 20 seconds. If he executed that champion, the last assisting ally will also get kill gold. If he did not, he will still get kill gold as if he did.<br />",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "executing",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "250 - 550 {{0}} {{1}} {{2}}",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(based on champion level)",
+                                    "scaleId": "level"
+                                },
+                                {
+                                    "scale": "(+80% Bonus AD)",
+                                    "scaleId": "AD"
+                                },
+                                {
+                                    "scale": "(+150% Lethality)",
+                                    "scaleId": "Lethality"
+                                }
+                            ]
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "125 - 275 {{0}} {{1}} {{2}}",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(based on champion level)",
+                                    "scaleId": "level"
+                                },
+                                {
+                                    "scale": "(+40% Bonus AD)",
+                                    "scaleId": "AD"
+                                },
+                                {
+                                    "scale": "(+75% Lethality)",
+                                    "scaleId": "Lethality"
+                                }
+                            ]
+                        },
+                        "type": "physicalDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "Recast",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    }
+                ]
+            },
+            "cooldown": "100/85/70",
+            "cost": "100 Mana",
+            "name": "Death From Below"
+        }
+    },
     "Changes": {
         "9.21": {
             "B": {
@@ -335,364 +622,13 @@
             "R": ""
         }
     },
-    "stats": {
-        "hp": {
-            "base": 670,
-            "increment": 104
-        },
-        "mp": {
-            "base": 415,
-            "increment": 50
-        },
-        "armor": {
-            "base": 45,
-            "increment": 4.7
-        },
-        "spellBlock": {
-            "base": 32,
-            "increment": 2.05
-        },
-        "hpRegen": {
-            "base": 7,
-            "increment": 0.5
-        },
-        "mpRegen": {
-            "base": 8,
-            "increment": 1
-        },
-        "attackSpeed": {
-            "base": 0.667,
-            "increment": 0.025
-        },
-        "ms": {
-            "base": 330,
-            "increment": 0
-        },
-        "attackDamage": {
-            "base": 62,
-            "increment": 2
-        },
-        "attackRange": {
-            "base": 150,
-            "increment": 0
-        }
-    },
-    "spells": {
-        "P": {
-            "name": "Gift of the Drowned Ones",
-            "cooldown": "",
-            "_rawTooltip": {
-                "fullTooltip": "Innate: Pyke's maximum health cannot increase except through growth (per level), instead he gains[ [[0]] per [[2]]. ]<br>Passive: Pyke stores [[1]] he takes from enemy champions as grey health on his health bar, increased to 40% (+ 0.4% per 1 Lethality) if there are two or more visible enemy champions nearby and storing up to [[3]], with an upper cap of [[4]].<br>When Pyke is not visible to enemies, he rapidly consumes his grey health to heal for the same amount.<br>Pyke gains [[5]] while in the river.",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "1 bonus attack damage",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "9% {{0}} of the post-mitigation damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+ 0.2% per 1 Lethality)",
-                                    "scaleId": "Lethality"
-                                }
-                            ]
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "14 bonus health",
-                            "scaleHolders": []
-                        },
-                        "type": "Health"
-                    },
-                    {
-                        "text": {
-                            "text": "80 {{0}} grey health",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+ 800% bonus AD)",
-                                    "scaleId": "AD"
-                                }
-                            ]
-                        },
-                        "type": "Health"
-                    },
-                    {
-                        "text": {
-                            "text": "60% of his maximum health",
-                            "scaleHolders": []
-                        },
-                        "type": "Health"
-                    },
-                    {
-                        "text": {
-                            "text": "1 bonus movement speed",
-                            "scaleHolders": []
-                        },
-                        "type": "speed"
-                    }
-                ]
-            }
-        },
-        "Q": {
-            "id": "PykeQ",
-            "name": "Bone Skewer",
-            "_rawTooltip": {
-                "fullTooltip": "[[0]] Pyke stabs, dealing [[1]] to the first enemy hit, preferring champions. They are then [[2]] by 90% for 1 second.<br /><br />[[3]]Pyke throws his harpoon, dealing [[4]] to the first enemy hit and [[5]] them towards him. They are then [[6]] by 90% for 1 second.<br /><br />If Pyke successfully hits an enemy champion or the channel does not complete successfully, 75% of the Mana cost is refunded.",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "Tap:",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "100/150/200/250/300 {{0}} physical damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+60% Bonus AD)",
-                                    "scaleId": "AD"
-                                }
-                            ]
-                        },
-                        "type": "physicalDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "Slowed",
-                            "scaleHolders": []
-                        },
-                        "type": "status"
-                    },
-                    {
-                        "text": {
-                            "text": "Hold: ",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "100/150/200/250/300 {{0}} physical damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+60% Bonus AD)",
-                                    "scaleId": "AD"
-                                }
-                            ]
-                        },
-                        "type": "physicalDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "Pulling",
-                            "scaleHolders": []
-                        },
-                        "type": "status"
-                    },
-                    {
-                        "text": {
-                            "text": "Slowed",
-                            "scaleHolders": []
-                        },
-                        "type": "status"
-                    }
-                ]
-            },
-            "maxRank": 5,
-            "cooldown": "10/9.5/9/8.5/8",
-            "cooldownByLevel": [
-                10,
-                9.5,
-                9,
-                8.5,
-                8
-            ],
-            "cost": "74/78/82/86/90 Mana",
-            "costByLevel": [
-                74,
-                78,
-                82,
-                86,
-                90
-            ],
-            "costType": " Mana"
-        },
-        "W": {
-            "id": "PykeW",
-            "name": "Ghostwater Dive",
-            "_rawTooltip": {
-                "fullTooltip": "Pyke gains [[0]] and [[1]] decaying over 5 seconds.",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "Camouflage",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "40 {{0}}% Move Speed",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+150% Lethality)",
-                                    "scaleId": "Lethality"
-                                }
-                            ]
-                        },
-                        "type": "speed"
-                    }
-                ]
-            },
-            "maxRank": 5,
-            "cooldown": "12/11.5/11/10.5/10",
-            "cooldownByLevel": [
-                12,
-                11.5,
-                11,
-                10.5,
-                10
-            ],
-            "cost": "50 Mana",
-            "costByLevel": [
-                50,
-                50,
-                50,
-                50,
-                50
-            ],
-            "costType": " Mana"
-        },
-        "E": {
-            "id": "PykeE",
-            "name": "Phantom Undertow",
-            "_rawTooltip": {
-                "fullTooltip": "Pyke dashes, leaving a drowned phantom behind him that returns to him shortly. The phantom [[0]] for 1.25 (+1% Lethality) seconds and deals [[1]] to champions.",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "Stuns",
-                            "scaleHolders": []
-                        },
-                        "type": "status"
-                    },
-                    {
-                        "text": {
-                            "text": "105/135/165/195/225 {{0}} physical damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+100% Bonus AD)",
-                                    "scaleId": "AD"
-                                }
-                            ]
-                        },
-                        "type": "physicalDamage"
-                    }
-                ]
-            },
-            "maxRank": 5,
-            "cooldown": "15/14/13/12/11",
-            "cooldownByLevel": [
-                15,
-                14,
-                13,
-                12,
-                11
-            ],
-            "cost": "40 Mana",
-            "costByLevel": [
-                40,
-                40,
-                40,
-                40,
-                40
-            ],
-            "costType": " Mana"
-        },
-        "R": {
-            "id": "PykeR",
-            "name": "Death From Below",
-            "_rawTooltip": {
-                "fullTooltip": "Pyke strikes all enemy champions in an X, teleporting to and [[0]] targets below [[1]] Health. Champions above the threshold and non-champions instead take physical damage equal to 50% of that amount ([[2]]). <br /><br />When an enemy champion dies inside the X, Pyke can [[3]] this Ability for free within 20 seconds. If he executed that champion, the last assisting ally will also get kill gold. If he did not, he will still get kill gold as if he did.<br />",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "executing",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "250 - 550 {{0}} {{1}} {{2}}",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(based on champion level)",
-                                    "scaleId": "level"
-                                },
-                                {
-                                    "scale": "(+80% Bonus AD)",
-                                    "scaleId": "AD"
-                                },
-                                {
-                                    "scale": "(+150% Lethality)",
-                                    "scaleId": "Lethality"
-                                }
-                            ]
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "125 - 275 {{0}} {{1}} {{2}}",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(based on champion level)",
-                                    "scaleId": "level"
-                                },
-                                {
-                                    "scale": "(+40% Bonus AD)",
-                                    "scaleId": "AD"
-                                },
-                                {
-                                    "scale": "(+75% Lethality)",
-                                    "scaleId": "Lethality"
-                                }
-                            ]
-                        },
-                        "type": "physicalDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "Recast",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    }
-                ]
-            },
-            "maxRank": 3,
-            "cooldown": "100/85/70",
-            "cooldownByLevel": [
-                100,
-                85,
-                70
-            ],
-            "cost": "100 Mana",
-            "costByLevel": [
-                100,
-                100,
-                100
-            ],
-            "costType": " Mana"
-        }
-    }
+    "ChangePatches": [
+        "9.21",
+        "10.14",
+        "11.5",
+        "11.6",
+        "12.9",
+        "12.10"
+    ],
+    "ChampionName": "Pyke"
 }

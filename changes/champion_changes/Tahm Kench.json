@@ -1,16 +1,305 @@
 {
-    "ChampionName": "Tahm Kench",
-    "ChangePatches": [
-        "9.19",
-        "11.13",
-        "11.14",
-        "11.16",
-        "12.2",
-        "12.10",
-        "12.11",
-        "12.12",
-        "12.19"
-    ],
+    "stats": {
+        "hp": {
+            "base": 640,
+            "increment": 103
+        },
+        "mp": {
+            "base": 325,
+            "increment": 50
+        },
+        "armor": {
+            "base": 42,
+            "increment": 4.7
+        },
+        "spellBlock": {
+            "base": 32,
+            "increment": 2.05
+        },
+        "hpRegen": {
+            "base": 6.5,
+            "increment": 0.55
+        },
+        "mpRegen": {
+            "base": 8,
+            "increment": 1
+        },
+        "attackSpeed": {
+            "base": 0.658,
+            "increment": 0.025
+        },
+        "ms": {
+            "base": 335,
+            "increment": 0
+        },
+        "attackDamage": {
+            "base": 56,
+            "increment": 3.2
+        },
+        "attackRange": {
+            "base": 175,
+            "increment": 0
+        }
+    },
+    "spells": {
+        "P": {
+            "cooldown": "",
+            "_rawTooltip": {
+                "fullTooltip": "Innate: Tahm Kench's basic attacks on-hit and Tongue Lash deal [[0]].<br>Passive: Basic attacks on-hit and Tongue Lash against enemy champions apply An Acquired Taste stack for 5 seconds, stacking up to 3 times, with the duration refreshing on Tongue Lash and subsequent attacks. The stacks decay once every 0.67 seconds when the duration ends.<br>Tongue Lash and Devour gain additional effects against enemies with 3 stacks.",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "8-60 {{0}} {{1}} {{2}} bonus magic damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(based on level)",
+                                    "scaleId": "level"
+                                },
+                                {
+                                    "scale": "(+ 3% bonus health)",
+                                    "scaleId": "health"
+                                },
+                                {
+                                    "scale": "(+ 2% AP per 100 bonus health)",
+                                    "scaleId": "health"
+                                }
+                            ]
+                        },
+                        "type": "Health"
+                    }
+                ]
+            },
+            "name": "An Acquired Taste"
+        },
+        "Q": {
+            "_rawTooltip": {
+                "fullTooltip": "Deals [[0]] to the first enemy hit and slows them by 50% for 2 seconds. <br /><br />On Champion hit, heals Tahm for [[1]] and applies a stack of [[2]] dealing [[3]]. If that Champion already had 3 stacks of [[4]], they will also be stunned for 1.5 seconds, consuming the stacks.<br /><br />Activate <span class=\"color0bf7de\">Devour</span> while your tongue is in midair to devour enemy champions who already have 3 stacks of [[5]] from a distance when you hit them.",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "80/130/180/230/280 {{0}} magic damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+ 100% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "magicDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "10/15/20/25/30 {{0}}",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+ 5/5.5/6/6.5/7% missing Health)",
+                                    "scaleId": "Health"
+                                }
+                            ]
+                        },
+                        "type": "healing"
+                    },
+                    {
+                        "text": {
+                            "text": "An Acquired Taste",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "8 - 60 {{0}} {{1}} extra magic damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(based on champion level)",
+                                    "scaleId": "level"
+                                },
+                                {
+                                    "scale": "(+3% Bonus Health)",
+                                    "scaleId": "Health"
+                                }
+                            ]
+                        },
+                        "type": "magicDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "An Acquired Taste",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "An Acquired Taste",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    }
+                ]
+            },
+            "cooldown": "7/6.5/6/5.5/5",
+            "cost": "50/46/42/38/34 Mana",
+            "name": "Tongue Lash"
+        },
+        "W": {
+            "_rawTooltip": {
+                "fullTooltip": "Dive down and then re-appear at target location, dealing [[0]] and knock up all enemies in an area for 1 second. Hitting at least one enemy champion refunds 40% of the cooldown and mana cost.<br /><br /><span class=\"color0bf7de\">Devoured</span> allies can be taken along for the ride (but can always hop out early).",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "100/135/170/205/240 {{0}} magic damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+ 150% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "magicDamage"
+                    }
+                ]
+            },
+            "cooldown": "21/20/19/18/17",
+            "cost": "60/75/90/105/120 Mana",
+            "name": "Abyssal Dive"
+        },
+        "E": {
+            "_rawTooltip": {
+                "fullTooltip": "[[0]] 15/23/31/39/47% of damage Tahm Kench takes is stored by his [[1]], increased to 42/44/46/48/50% if there are at least 2 nearby enemy champions. If Kench has not taken damage within 4 seconds, [[2]] will rapidly be consumed to heal Tahm for 45% - 100% (based on champion level) of its value.<br /><br />[[3]] Convert all your stored [[4]] into a [[5]], lasting 2.5 seconds.",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "Passive:",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "Thick Skin",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "Thick Skin",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "Active:",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "Thick Skin",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "Shield",
+                            "scaleHolders": []
+                        },
+                        "type": "shield"
+                    }
+                ]
+            },
+            "cooldown": "3",
+            "cost": "0 Mana",
+            "name": "Thick Skin"
+        },
+        "R": {
+            "_rawTooltip": {
+                "fullTooltip": "Tahm Kench devours a champion for a few seconds. He can re-cast to spit them out.<br /><br />[[0]] Require 3 stacks of [[1]]. Are devoured for up to 3 seconds and take [[2]]. Tahm Kench is slowed by 40% and [[3]] during this effect.<br /><br />[[4]] Are devoured for up to 3 seconds and are granted [[5]] that decays by 50 health per 0.25 seconds after Devour has ended until gone. Allies can also choose to exit early. Tahm Kench is [[6]] during this effect, but can cast [[7]] and gains [[8]] for 3 seconds.",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "Enemy Champions:",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "An Acquired Taste",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "100/250/400 {{0}} of target's maximum health) magic damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+ 15% (+ 7% per 100 AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "magicDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "Grounded",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "Ally Champions:",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "650/800/950 {{0}} Shield",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+150% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "shield"
+                    },
+                    {
+                        "text": {
+                            "text": "Grounded",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "Abyssal Dive",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "40% Move Speed",
+                            "scaleHolders": []
+                        },
+                        "type": "speed"
+                    }
+                ]
+            },
+            "cooldown": "0",
+            "cost": "100 Mana",
+            "name": "Devour"
+        }
+    },
     "Changes": {
         "9.19": {
             "B": "",
@@ -613,6 +902,106 @@
             "E": "",
             "R": ""
         },
+        "12.23": {
+            "B": "",
+            "P": {
+                "SpellName": "Passive - An Acquired Taste",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "On-Hit and On-Q Bonus Magic Damage: ",
+                            "Before": "8-60 (based on level) (+ 3% bonus health)",
+                            "Indicator": " ⇒ ",
+                            "After": "8-60 (based on level) (+ 3% bonus health) (+ 2% AP per 100 bonus health)"
+                        }
+                    }
+                ]
+            },
+            "Q": {
+                "SpellName": "Q - Tongue Lash",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Magic Damage: ",
+                            "Before": "80/130/180/230/280 (+ 90% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "80/130/180/230/280 (+ 100% AP)"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Self Heal: ",
+                            "Before": "10/15/20/25/30 (+ 3/3.5/4/4.5/5% missing Health)",
+                            "Indicator": " ⇒ ",
+                            "After": "10/15/20/25/30 (+ 5/5.5/6/6.5/7% missing Health)"
+                        }
+                    }
+                ]
+            },
+            "W": {
+                "SpellName": "W - Abyssal Dive",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Magic Damage: ",
+                            "Before": "100/135/170/205/240 (+ 125% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "100/135/170/205/240 (+ 150% AP)"
+                        }
+                    }
+                ]
+            },
+            "E": {
+                "SpellName": "E - Thick Skin",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Damage Stored to Gray Health: ",
+                            "Before": "13/21/29/37/45%",
+                            "Indicator": " ⇒ ",
+                            "After": "15/23/31/39/47%"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Increased Damage Stored to Gray Health: ",
+                            "Before": "40/42.5/45/47.5/50%",
+                            "Indicator": " ⇒ ",
+                            "After": "42/44/46/48/50%"
+                        }
+                    }
+                ]
+            },
+            "R": {
+                "SpellName": "R - Devour",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Magic Damage: ",
+                            "Before": "100/250/400 (+ 15% (+ 5% per 100 AP) of target's maximum health)",
+                            "Indicator": " ⇒ ",
+                            "After": "100/250/400 (+ 15% (+ 7% per 100 AP) of target's maximum health)"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Shield: ",
+                            "Before": "Lasts 2.5 seconds after Devour ends",
+                            "Indicator": " ⇒ ",
+                            "After": "Decays by 50 health per 0.25 seconds after Devour has ended until gone"
+                        }
+                    }
+                ]
+            }
+        },
         "12.12": {
             "B": {
                 "SpellName": "Base Stats",
@@ -648,360 +1037,17 @@
             "R": ""
         }
     },
-    "stats": {
-        "hp": {
-            "base": 640,
-            "increment": 103
-        },
-        "mp": {
-            "base": 325,
-            "increment": 50
-        },
-        "armor": {
-            "base": 42,
-            "increment": 4.7
-        },
-        "spellBlock": {
-            "base": 32,
-            "increment": 2.05
-        },
-        "hpRegen": {
-            "base": 6.5,
-            "increment": 0.55
-        },
-        "mpRegen": {
-            "base": 8,
-            "increment": 1
-        },
-        "attackSpeed": {
-            "base": 0.658,
-            "increment": 0.025
-        },
-        "ms": {
-            "base": 335,
-            "increment": 0
-        },
-        "attackDamage": {
-            "base": 56,
-            "increment": 3.2
-        },
-        "attackRange": {
-            "base": 175,
-            "increment": 0
-        }
-    },
-    "spells": {
-        "P": {
-            "name": "An Acquired Taste",
-            "cooldown": "",
-            "_rawTooltip": {
-                "fullTooltip": "Innate: Tahm Kench's basic attacks on-hit and Tongue Lash deal [[0]].<br>Passive: Basic attacks on-hit and Tongue Lash against enemy champions apply An Acquired Taste stack for 5 seconds, stacking up to 3 times, with the duration refreshing on Tongue Lash and subsequent attacks. The stacks decay once every 0.67 seconds when the duration ends.<br>Tongue Lash and Devour gain additional effects against enemies with 3 stacks.",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "8 − 60 {{0}} {{1}} bonus magic damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(based on level)",
-                                    "scaleId": "level"
-                                },
-                                {
-                                    "scale": "(+ 2.5% of his bonus health)",
-                                    "scaleId": "health"
-                                }
-                            ]
-                        },
-                        "type": "Health"
-                    }
-                ]
-            }
-        },
-        "Q": {
-            "id": "TahmKenchQ",
-            "name": "Tongue Lash",
-            "_rawTooltip": {
-                "fullTooltip": "Deals [[0]] to the first enemy hit and slows them by 50% for 2 seconds. <br /><br />On Champion hit, heals Tahm for [[1]] and applies a stack of [[2]] dealing [[3]]. If that Champion already had 3 stacks of [[4]], they will also be stunned for 1.5 seconds, consuming the stacks.<br /><br />Activate <span class=\"color0bf7de\">Devour</span> while your tongue is in midair to devour enemy champions who already have 3 stacks of [[5]] from a distance when you hit them.",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "80/130/180/230/280 {{0}} magic damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+90% AP)",
-                                    "scaleId": "AP"
-                                }
-                            ]
-                        },
-                        "type": "magicDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "10/15/20/25 +3/3.5/4/4.5/5% of his missing health",
-                            "scaleHolders": []
-                        },
-                        "type": "healing"
-                    },
-                    {
-                        "text": {
-                            "text": "An Acquired Taste",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "8 - 60 {{0}} {{1}} extra magic damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(based on champion level)",
-                                    "scaleId": "level"
-                                },
-                                {
-                                    "scale": "(+3% Bonus Health)",
-                                    "scaleId": "Health"
-                                }
-                            ]
-                        },
-                        "type": "magicDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "An Acquired Taste",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "An Acquired Taste",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    }
-                ]
-            },
-            "maxRank": 5,
-            "cooldown": "7/6.5/6/5.5/5",
-            "cooldownByLevel": [
-                7,
-                6.5,
-                6,
-                5.5,
-                5
-            ],
-            "cost": "50/46/42/38/34 Mana",
-            "costByLevel": [
-                50,
-                46,
-                42,
-                38,
-                34
-            ],
-            "costType": " Mana"
-        },
-        "W": {
-            "id": "TahmKenchW",
-            "name": "Abyssal Dive",
-            "_rawTooltip": {
-                "fullTooltip": "Dive down and then re-appear at target location, dealing [[0]] and knock up all enemies in an area for 1 second. Hitting at least one enemy champion refunds 40% of the cooldown and mana cost.<br /><br /><span class=\"color0bf7de\">Devoured</span> allies can be taken along for the ride (but can always hop out early).",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "100/135/170/205/240 {{0}} magic damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+125% AP)",
-                                    "scaleId": "AP"
-                                }
-                            ]
-                        },
-                        "type": "magicDamage"
-                    }
-                ]
-            },
-            "maxRank": 5,
-            "cooldown": "21/20/19/18/17",
-            "cooldownByLevel": [
-                21,
-                20,
-                19,
-                18,
-                17
-            ],
-            "cost": "60/75/90/105/120 Mana",
-            "costByLevel": [
-                60,
-                75,
-                90,
-                105,
-                120
-            ],
-            "costType": " Mana"
-        },
-        "E": {
-            "id": "TahmKenchE",
-            "name": "Thick Skin",
-            "_rawTooltip": {
-                "fullTooltip": "[[0]] 13/21/29/37/45% of damage Tahm Kench takes is stored by his [[1]], increased to 40/42.5/45/47.5/50% if there are at least 2 nearby enemy champions. If Kench has not taken damage within 4 seconds, [[2]] will rapidly be consumed to heal Tahm for 45% - 100% (based on champion level) of its value.<br /><br />[[3]] Convert all your stored [[4]] into a [[5]], lasting 2.5 seconds.",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "Passive:",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "Thick Skin",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "Thick Skin",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "Active:",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "Thick Skin",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "Shield",
-                            "scaleHolders": []
-                        },
-                        "type": "shield"
-                    }
-                ]
-            },
-            "maxRank": 5,
-            "cooldown": "3",
-            "cooldownByLevel": [
-                3,
-                3,
-                3,
-                3,
-                3
-            ],
-            "cost": "0 Mana",
-            "costByLevel": [
-                0,
-                0,
-                0,
-                0,
-                0
-            ],
-            "costType": " Mana"
-        },
-        "R": {
-            "id": "TahmKenchRWrapper",
-            "name": "Devour",
-            "_rawTooltip": {
-                "fullTooltip": "Tahm Kench devours a champion for a few seconds. He can re-cast to spit them out.<br /><br />[[0]] Require 3 stacks of [[1]]. Are devoured for up to 3 seconds and take [[2]]. Tahm Kench is slowed by 40% and [[3]] during this effect.<br /><br />[[4]] Are devoured for up to 3 seconds and are granted [[5]] for up to 2.5 seconds after being spit out. Allies can also choose to exit early. Tahm Kench is [[6]] during this effect, but can cast [[7]] and gains [[8]] for 3 seconds.",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "Enemy Champions:",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "An Acquired Taste",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "100/250 {{0}} of their Max Health) magic damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+15% (+5% per 100 AP)",
-                                    "scaleId": "AP"
-                                }
-                            ]
-                        },
-                        "type": "magicDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "Grounded",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "Ally Champions:",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "650/800/950 {{0}} Shield",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+150% AP)",
-                                    "scaleId": "AP"
-                                }
-                            ]
-                        },
-                        "type": "shield"
-                    },
-                    {
-                        "text": {
-                            "text": "Grounded",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "Abyssal Dive",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "40% Move Speed",
-                            "scaleHolders": []
-                        },
-                        "type": "speed"
-                    }
-                ]
-            },
-            "maxRank": 3,
-            "cooldown": "0",
-            "cooldownByLevel": [
-                0,
-                0,
-                0
-            ],
-            "cost": "100 Mana",
-            "costByLevel": [
-                100,
-                100,
-                100
-            ],
-            "costType": " Mana"
-        }
-    }
+    "ChangePatches": [
+        "9.19",
+        "11.13",
+        "11.14",
+        "11.16",
+        "12.2",
+        "12.10",
+        "12.11",
+        "12.12",
+        "12.19",
+        "12.23"
+    ],
+    "ChampionName": "Tahm Kench"
 }
