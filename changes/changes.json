@@ -3690,7 +3690,8 @@
             "12.10",
             "12.15",
             "12.20",
-            "12.22"
+            "12.22",
+            "12.23"
         ],
         "LatestChanges": {
             "B": "",
@@ -3700,31 +3701,36 @@
                 "SpellName": "W - Defensive Ball Curl",
                 "Changes": [
                     {
-                        "Tag": "",
+                        "Tag": "MID-PATCH",
                         "Change": {
-                            "Attribute": "Self Slow: ",
-                            "Before": "30%",
+                            "Attribute": "Base Bonus Armor: ",
+                            "Before": "50",
                             "Indicator": " ⇒ ",
-                            "After": "0% (Removed)"
+                            "After": "40"
+                        }
+                    },
+                    {
+                        "Tag": "MID-PATCH",
+                        "Change": {
+                            "Attribute": "Base Bonus Magic Resistance: ",
+                            "Before": "15",
+                            "Indicator": " ⇒ ",
+                            "After": "10"
+                        }
+                    },
+                    {
+                        "Tag": "MID-PATCH",
+                        "Change": {
+                            "Attribute": "Cooldown: ",
+                            "Before": "6 seconds",
+                            "Indicator": " ⇒ ",
+                            "After": "7 seconds"
                         }
                     }
                 ]
             },
             "E": "",
-            "R": {
-                "SpellName": "R - Soaring Slam",
-                "Changes": [
-                    {
-                        "Tag": "",
-                        "Change": {
-                            "Attribute": "Dash Speed: ",
-                            "Before": "105% of Move Speed",
-                            "Indicator": " ⇒ ",
-                            "After": "110% of Move Speed"
-                        }
-                    }
-                ]
-            }
+            "R": ""
         }
     },
     "Ryze": {
@@ -4717,68 +4723,42 @@
             "10.17",
             "11.10",
             "11.21",
-            "12.10"
+            "12.10",
+            "12.23"
         ],
         "LatestChanges": {
-            "B": {
-                "SpellName": "Base Stats",
-                "Changes": [
-                    {
-                        "Tag": "",
-                        "Change": {
-                            "Attribute": "BASE HEALTH: ",
-                            "Before": "",
-                            "Indicator": "",
-                            "After": "+70"
-                        }
-                    },
-                    {
-                        "Tag": "",
-                        "Change": {
-                            "Attribute": "HEALTH GROWTH: ",
-                            "Before": "",
-                            "Indicator": "",
-                            "After": "+14"
-                        }
-                    },
-                    {
-                        "Tag": "",
-                        "Change": {
-                            "Attribute": "ARMOR GROWTH: ",
-                            "Before": "",
-                            "Indicator": "",
-                            "After": "+1.2"
-                        }
-                    },
-                    {
-                        "Tag": "",
-                        "Change": {
-                            "Attribute": "MAGIC RESIST GROWTH: ",
-                            "Before": "",
-                            "Indicator": "",
-                            "After": "+0.8"
-                        }
-                    }
-                ]
-            },
+            "B": "",
             "P": "",
             "Q": "",
-            "W": {
-                "SpellName": "W - Prismatic Barrier",
+            "W": "",
+            "E": {
+                "SpellName": "E - Lucent Singularity",
                 "Changes": [
                     {
-                        "Tag": "",
+                        "Tag": "MID-PATCH",
                         "Change": {
-                            "Attribute": "W - Shield: ",
-                            "Before": "45/65/85/105/125 (+35% AP)",
+                            "Attribute": "Magic Damage: ",
+                            "Before": "70/120/170/220/270 (+ 70% AP)",
                             "Indicator": " ⇒ ",
-                            "After": "40/55/70/85/100 (+35% AP)"
+                            "After": "70/120/170/220/270 (+ 80% AP)"
                         }
                     }
                 ]
             },
-            "E": "",
-            "R": ""
+            "R": {
+                "SpellName": "R - Final Spark",
+                "Changes": [
+                    {
+                        "Tag": "MID-PATCH",
+                        "Change": {
+                            "Attribute": "Magic Damage: ",
+                            "Before": "300/400/500 (+ 100% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "300/400/500 (+ 120% AP)"
+                        }
+                    }
+                ]
+            }
         }
     },
     "Singed": {
@@ -4898,50 +4878,135 @@
             "12.10",
             "12.16",
             "12.18",
-            "12.19"
+            "12.19",
+            "12.23"
         ],
         "LatestChanges": {
-            "B": "",
-            "P": "",
-            "Q": {
-                "SpellName": "Q - Wilding Claw",
+            "B": {
+                "SpellName": "Base Stats",
                 "Changes": [
                     {
-                        "Tag": "NEW",
+                        "Tag": "MID-PATCH",
                         "Change": {
-                            "Attribute": "Minions Beware: ",
-                            "Before": "",
-                            "Indicator": "",
-                            "After": "Awakened Wilding Claw will now deal a minimum of 40-160 damage to minions based on current level per strike of lightning"
+                            "Attribute": "Base Health Regeneration Growth: ",
+                            "Before": "0.75",
+                            "Indicator": " ⇒ ",
+                            "After": "0.55"
+                        }
+                    }
+                ]
+            },
+            "P": {
+                "SpellName": "P - Monkey's Agility",
+                "Changes": [
+                    {
+                        "Tag": "MID-PATCH",
+                        "Change": {
+                            "Attribute": "Passive Health Loss: ",
+                            "Before": "3% of Current Health",
+                            "Indicator": " ⇒ ",
+                            "After": "4% of Current Health"
+                        }
+                    },
+                    {
+                        "Tag": "MID-PATCH",
+                        "Change": {
+                            "Attribute": "Additional Maximum Health Regeneration: ",
+                            "Before": "0.4 - 2.5",
+                            "Indicator": " ⇒ ",
+                            "After": "0.4 - 2.3"
+                        }
+                    }
+                ]
+            },
+            "Q": {
+                "SpellName": "Q - Tiger Stance",
+                "Changes": [
+                    {
+                        "Tag": "MID-PATCH",
+                        "Change": {
+                            "Attribute": "Health Cost: ",
+                            "Before": "60 at all ranks",
+                            "Indicator": " ⇒ ",
+                            "After": "50/60/70/80/90"
+                        }
+                    },
+                    {
+                        "Tag": "MID-PATCH",
+                        "Change": {
+                            "Attribute": "Bonus Physical Damage: ",
+                            "Before": "3/4.4/5.8/7.2/8.6/10% (+6% per 100 bonus AD) of target's maximum health",
+                            "Indicator": " ⇒ ",
+                            "After": "3/4/5/6/7/8% (+5% per 100 bonus AD) of target's maximum health"
+                        }
+                    },
+                    {
+                        "Tag": "MID-PATCH",
+                        "Change": {
+                            "Attribute": "Bonus Physical Damage On-Hit: ",
+                            "Before": "5/13/21/28/37/45 (+20% bonus AD)",
+                            "Indicator": " ⇒ ",
+                            "After": "5/11/17/23/29/35 (+30% bonus AD)"
+                        }
+                    },
+                    {
+                        "Tag": "MID-PATCH",
+                        "Change": {
+                            "Attribute": "Awakened Physical Damage: ",
+                            "Before": "2% - 5% (+3% per 100 bonus AD) target's maximum health",
+                            "Indicator": " ⇒ ",
+                            "After": "2% - 4% (+2% per 100 bonus AD) target's maximum health"
                         }
                     }
                 ]
             },
             "W": {
-                "SpellName": "W - Iron Mantle",
+                "SpellName": "W - Turtle Stance",
                 "Changes": [
                     {
-                        "Tag": "",
+                        "Tag": "MID-PATCH",
                         "Change": {
-                            "Attribute": "On-Hit Heal Against Minions : ",
-                            "Before": "50% heal reduction",
+                            "Attribute": "Mana Cost: ",
+                            "Before": "45 - 28 (levels 1-18)",
                             "Indicator": " ⇒ ",
-                            "After": "40% heal reduction"
+                            "After": "40 - 23 (levels 1-18)"
                         }
                     }
                 ]
             },
-            "E": "",
-            "R": {
-                "SpellName": "R - Wingborne Storm",
+            "E": {
+                "SpellName": "E - Bear Stance",
                 "Changes": [
                     {
-                        "Tag": "",
+                        "Tag": "MID-PATCH",
                         "Change": {
-                            "Attribute": "Damage to Minions: ",
-                            "Before": "40/55/70/85% (levels 1/6/11/16)",
+                            "Attribute": "Mana Cost: ",
+                            "Before": "45 - 28 (levels 1-18)",
                             "Indicator": " ⇒ ",
-                            "After": "50/60/70/80% (levels 1/6/11/16)"
+                            "After": "40 - 23 (levels 1-18)"
+                        }
+                    }
+                ]
+            },
+            "R": {
+                "SpellName": "R - Phoenix Stance",
+                "Changes": [
+                    {
+                        "Tag": "MID-PATCH",
+                        "Change": {
+                            "Attribute": "Mana Cost: ",
+                            "Before": "45 - 28 (levels 1-18)",
+                            "Indicator": " ⇒ ",
+                            "After": "40 - 23 (levels 1-18)"
+                        }
+                    },
+                    {
+                        "Tag": "MID-PATCH",
+                        "Change": {
+                            "Attribute": "Base Damage per Tick: ",
+                            "Before": "10/18/26/34/42/50",
+                            "Indicator": " ⇒ ",
+                            "After": "10/20/30/40/50/60"
                         }
                     }
                 ]
@@ -5262,61 +5327,27 @@
             "12.9",
             "12.10",
             "12.17",
-            "12.18"
+            "12.18",
+            "12.23"
         ],
         "LatestChanges": {
-            "B": {
-                "SpellName": "Base Stats",
-                "Changes": [
-                    {
-                        "Tag": "",
-                        "Change": {
-                            "Attribute": "Base Health: ",
-                            "Before": "650",
-                            "Indicator": " ⇒ ",
-                            "After": "625"
-                        }
-                    }
-                ]
-            },
+            "B": "",
             "P": "",
             "Q": {
-                "SpellName": "Q -Rampage",
+                "SpellName": "Q - Rampage",
                 "Changes": [
                     {
-                        "Tag": "",
+                        "Tag": "MID-PATCH",
                         "Change": {
-                            "Attribute": "Physical Damage Bonus AD Ratio: ",
-                            "Before": "95%",
+                            "Attribute": "Percent Bonus Damage per Stack: ",
+                            "Before": "4% (+5% per 100 bonus AD)",
                             "Indicator": " ⇒ ",
-                            "After": "90%"
-                        }
-                    },
-                    {
-                        "Tag": "",
-                        "Change": {
-                            "Attribute": "Increased Damage Per Stack: ",
-                            "Before": "4% (+6% per 100 bonus AD)",
-                            "Indicator": " ⇒ ",
-                            "After": "4% (+5% per 100 bonus AD)"
+                            "After": "3% (+ 4% per 100 bonus AD)"
                         }
                     }
                 ]
             },
-            "W": {
-                "SpellName": "W - Spirit of Dread",
-                "Changes": [
-                    {
-                        "Tag": "",
-                        "Change": {
-                            "Attribute": "Percent of Post-Mitigation Damage Healed: ",
-                            "Before": "30% (+2.5% per 100 bonus AD)",
-                            "Indicator": " ⇒ ",
-                            "After": "25% (+2% per 100 bonus AD) (Note: remains halved for damage not dealt by Hecarim)"
-                        }
-                    }
-                ]
-            },
+            "W": "",
             "E": "",
             "R": ""
         }
@@ -6558,50 +6589,42 @@
             "12.2",
             "12.10",
             "12.12",
-            "12.14"
+            "12.14",
+            "12.23"
         ],
         "LatestChanges": {
             "B": "",
-            "P": "",
+            "P": {
+                "SpellName": "P - Tailwind",
+                "Changes": [
+                    {
+                        "Tag": "MID-PATCH",
+                        "Change": {
+                            "Attribute": "Bonus Move Speed: ",
+                            "Before": "8%",
+                            "Indicator": " ⇒ ",
+                            "After": "6%"
+                        }
+                    }
+                ]
+            },
             "Q": "",
             "W": "",
             "E": {
                 "SpellName": "E - Eye Of The Storm",
                 "Changes": [
                     {
-                        "Tag": "",
+                        "Tag": "MID-PATCH",
                         "Change": {
-                            "Attribute": "Shield Amount: ",
-                            "Before": "65/90/115/140/165",
+                            "Attribute": "Bonus AD: ",
+                            "Before": "10/17.5/25/32.5/40 (+10% AP)",
                             "Indicator": " ⇒ ",
-                            "After": "75/100/125/150/175"
-                        }
-                    },
-                    {
-                        "Tag": "",
-                        "Change": {
-                            "Attribute": "Bonus Heal and Shield Power: ",
-                            "Before": "20%",
-                            "Indicator": " ⇒ ",
-                            "After": "15%"
+                            "After": "10/15/20/25/30 (+10% AP)"
                         }
                     }
                 ]
             },
-            "R": {
-                "SpellName": "R - Monsoon",
-                "Changes": [
-                    {
-                        "Tag": "",
-                        "Change": {
-                            "Attribute": "Heal per Second: ",
-                            "Before": "90/145/200 (+45% AP)",
-                            "Indicator": " ⇒ ",
-                            "After": "100/150/200 (+50% AP)"
-                        }
-                    }
-                ]
-            }
+            "R": ""
         }
     },
     "Syndra": {
@@ -7067,36 +7090,46 @@
             "11.18",
             "12.2",
             "12.10",
-            "12.15"
+            "12.15",
+            "12.23"
         ],
         "LatestChanges": {
             "B": "",
             "P": "",
-            "Q": "",
-            "W": {
-                "SpellName": "W - Living Shadow",
+            "Q": {
+                "SpellName": "Q - Razor Shuriken",
                 "Changes": [
                     {
-                        "Tag": "",
+                        "Tag": "MID-PATCH",
                         "Change": {
-                            "Attribute": "Shadow Spell Mimic Range: ",
-                            "Before": "2000",
+                            "Attribute": "Base Physical Damage: ",
+                            "Before": "80/115/150/185/220",
                             "Indicator": " ⇒ ",
-                            "After": "No Limit"
+                            "After": "80/115/150/185/220"
                         }
                     }
                 ]
             },
+            "W": "",
             "E": {
                 "SpellName": "E - Shadow Slash",
                 "Changes": [
                     {
-                        "Tag": "",
+                        "Tag": "MID-PATCH",
                         "Change": {
-                            "Attribute": "Energy Cost: ",
-                            "Before": "50",
+                            "Attribute": "Base Physical Damage: ",
+                            "Before": "70/90/110/130/150",
                             "Indicator": " ⇒ ",
-                            "After": "40"
+                            "After": "65/85/105/125/145"
+                        }
+                    },
+                    {
+                        "Tag": "MID-PATCH",
+                        "Change": {
+                            "Attribute": "Cooldown: ",
+                            "Before": "5/4.5/4/3.5/3",
+                            "Indicator": " ⇒ ",
+                            "After": "5/4.75/4.5/4.25/4"
                         }
                     }
                 ]
@@ -7121,7 +7154,20 @@
         ],
         "LatestChanges": {
             "B": "",
-            "P": "",
+            "P": {
+                "SpellName": "P - Dream-Laden Bough",
+                "Changes": [
+                    {
+                        "Tag": "MID-PATCH",
+                        "Change": {
+                            "Attribute": "Percent Health Damage: ",
+                            "Before": "6%",
+                            "Indicator": " ⇒ ",
+                            "After": "5%"
+                        }
+                    }
+                ]
+            },
             "Q": {
                 "SpellName": "Q - Blooming Blows",
                 "Changes": [
@@ -7141,6 +7187,24 @@
                             "Before": "35/50/65/80/95 (+40% AP)",
                             "Indicator": " ⇒ ",
                             "After": "40/50/60/70/80 (+40% AP)"
+                        }
+                    },
+                    {
+                        "Tag": "MID-PATCH",
+                        "Change": {
+                            "Attribute": "Magic Damage: ",
+                            "Before": "40/50/60/70/80 (+ 40% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "35/45/55/65/75 (+ 40% AP)"
+                        }
+                    },
+                    {
+                        "Tag": "MID-PATCH",
+                        "Change": {
+                            "Attribute": "Outer Edge True Damage: ",
+                            "Before": "40/50/60/70/80 (+ 40% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "35/45/55/65/75 (+ 40% AP)"
                         }
                     }
                 ]
@@ -8182,6 +8246,15 @@
                             "Indicator": " ⇒ ",
                             "After": "2.5"
                         }
+                    },
+                    {
+                        "Tag": "MID-PATCH",
+                        "Change": {
+                            "Attribute": "Base Health Regeneration Growth: ",
+                            "Before": "0.75",
+                            "Indicator": " ⇒ ",
+                            "After": "0.55"
+                        }
                     }
                 ]
             },
@@ -8214,6 +8287,24 @@
                             "Indicator": " ⇒ ",
                             "After": "0.4-2.5% (non-linear progression, equal at level 11)"
                         }
+                    },
+                    {
+                        "Tag": "MID-PATCH",
+                        "Change": {
+                            "Attribute": "Passive Health Loss: ",
+                            "Before": "3% of Current Health",
+                            "Indicator": " ⇒ ",
+                            "After": "4% of Current Health"
+                        }
+                    },
+                    {
+                        "Tag": "MID-PATCH",
+                        "Change": {
+                            "Attribute": "Additional Maximum Health Regeneration: ",
+                            "Before": "0.4 - 2.5",
+                            "Indicator": " ⇒ ",
+                            "After": "0.4 - 2.3"
+                        }
                     }
                 ]
             },
@@ -8227,6 +8318,15 @@
                             "Before": "50",
                             "Indicator": " ⇒ ",
                             "After": "60"
+                        }
+                    },
+                    {
+                        "Tag": "MID-PATCH",
+                        "Change": {
+                            "Attribute": "Health Cost: ",
+                            "Before": "60 at all ranks",
+                            "Indicator": " ⇒ ",
+                            "After": "50/60/70/80/90"
                         }
                     }
                 ]
@@ -8310,6 +8410,15 @@
                             "Indicator": " ⇒ ",
                             "After": "150%"
                         }
+                    },
+                    {
+                        "Tag": "MID-PATCH",
+                        "Change": {
+                            "Attribute": "Health Cost: ",
+                            "Before": "20/30/40/50/60",
+                            "Indicator": " ⇒ ",
+                            "After": "10/25/40/55/70"
+                        }
                     }
                 ]
             },
@@ -8341,6 +8450,15 @@
                             "Before": "",
                             "Indicator": "",
                             "After": "R no longer gives bonus AD"
+                        }
+                    },
+                    {
+                        "Tag": "MID-PATCH",
+                        "Change": {
+                            "Attribute": "Cooldown: ",
+                            "Before": "110 seconds",
+                            "Indicator": " ⇒ ",
+                            "After": "120 seconds"
                         }
                     }
                 ]
@@ -9141,6 +9259,127 @@
             "R": ""
         }
     },
+    "Bel'Veth": {
+        "ChampionName": "Bel'Veth",
+        "ChangePatches": [
+            "12.10",
+            "12.11",
+            "12.12",
+            "12.21"
+        ],
+        "LatestChanges": {
+            "B": "",
+            "P": "",
+            "Q": "",
+            "W": "",
+            "E": {
+                "SpellName": "E - Royal Maelstrom",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Cooldown: ",
+                            "Before": "22/20.5/19/17.5/16",
+                            "Indicator": " ⇒ ",
+                            "After": "24/22.5/21/19.5/18"
+                        }
+                    }
+                ]
+            },
+            "R": {
+                "SpellName": "R - Endless Banquet",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Void Remora Health: ",
+                            "Before": "50/60/70%",
+                            "Indicator": " ⇒ ",
+                            "After": "40/50/60% of minion’s maximum health"
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "Nilah": {
+        "ChampionName": "Nilah",
+        "ChangePatches": [
+            "12.10",
+            "12.13",
+            "12.23"
+        ],
+        "LatestChanges": {
+            "B": "",
+            "P": "",
+            "Q": {
+                "SpellName": "Q - Formless Blade",
+                "Changes": [
+                    {
+                        "Tag": "MID-PATCH",
+                        "Change": {
+                            "Attribute": "Physical Damage: ",
+                            "Before": "5/10/15/20/25 (+90/100/110/120/130% total AD)",
+                            "Indicator": " ⇒ ",
+                            "After": "5/10/15/20/25 (+90/97.5/105/112.5/120% total AD)"
+                        }
+                    },
+                    {
+                        "Tag": "MID-PATCH",
+                        "Change": {
+                            "Attribute": "Damage Increase Based on Critical Strike Chance: ",
+                            "Before": "0-100%, scaling with Crit Chance",
+                            "Indicator": " ⇒ ",
+                            "After": "0-120%, scaling with Crit Chance"
+                        }
+                    },
+                    {
+                        "Tag": "MID-PATCH",
+                        "Change": {
+                            "Attribute": "Passive Healing on Basic and Formless Blade Attacks against Champions: ",
+                            "Before": " 0-15% post-mitigation damage, scaling with Crit Chance",
+                            "Indicator": " ⇒ ",
+                            "After": "0-20% post-mitigation damage, scaling with Crit Chance"
+                        }
+                    }
+                ]
+            },
+            "W": "",
+            "E": "",
+            "R": {
+                "SpellName": "R - Apotheosis",
+                "Changes": [
+                    {
+                        "Tag": "MID-PATCH",
+                        "Change": {
+                            "Attribute": "Damage Over Time: ",
+                            "Before": "15/30/45 (+35% bonus AD)",
+                            "Indicator": " ⇒ ",
+                            "After": "15/30/45 (+28% bonus AD)"
+                        }
+                    },
+                    {
+                        "Tag": "MID-PATCH",
+                        "Change": {
+                            "Attribute": "Total Damage: ",
+                            "Before": "185/345/505 (+260% bonus AD)",
+                            "Indicator": " ⇒ ",
+                            "After": "185/345/505 (+232% bonus AD)"
+                        }
+                    },
+                    {
+                        "Tag": "MID-PATCH",
+                        "Change": {
+                            "Attribute": "Healing: ",
+                            "Before": "30-45% post-mitigation damage, scaling with Crit Chance",
+                            "Indicator": " ⇒ ",
+                            "After": "20-50% post-mitigation damage, scaling with Crit Chance"
+                        }
+                    }
+                ]
+            }
+        }
+    },
     "Zilean": {
         "ChampionName": "Zilean",
         "ChangePatches": [
@@ -9257,62 +9496,6 @@
                     }
                 ]
             },
-            "W": "",
-            "E": "",
-            "R": ""
-        }
-    },
-    "Bel'Veth": {
-        "ChampionName": "Bel'Veth",
-        "ChangePatches": [
-            "12.11",
-            "12.12",
-            "12.21"
-        ],
-        "LatestChanges": {
-            "B": "",
-            "P": "",
-            "Q": "",
-            "W": "",
-            "E": {
-                "SpellName": "E - Royal Maelstrom",
-                "Changes": [
-                    {
-                        "Tag": "",
-                        "Change": {
-                            "Attribute": "Cooldown: ",
-                            "Before": "22/20.5/19/17.5/16",
-                            "Indicator": " ⇒ ",
-                            "After": "24/22.5/21/19.5/18"
-                        }
-                    }
-                ]
-            },
-            "R": {
-                "SpellName": "R - Endless Banquet",
-                "Changes": [
-                    {
-                        "Tag": "",
-                        "Change": {
-                            "Attribute": "Void Remora Health: ",
-                            "Before": "50/60/70%",
-                            "Indicator": " ⇒ ",
-                            "After": "40/50/60% of minion’s maximum health"
-                        }
-                    }
-                ]
-            }
-        }
-    },
-    "Nilah": {
-        "ChampionName": "Nilah",
-        "ChangePatches": [
-            "12.13"
-        ],
-        "LatestChanges": {
-            "B": "",
-            "P": "",
-            "Q": "",
             "W": "",
             "E": "",
             "R": ""
