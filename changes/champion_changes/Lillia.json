@@ -61,7 +61,7 @@
                     },
                     {
                         "text": {
-                            "text": "6% {{0}} of the target's maximum health",
+                            "text": "5% {{0}} of the target's maximum health",
                             "scaleHolders": [
                                 {
                                     "scale": "(+ 1.5% per 100 AP)",
@@ -107,10 +107,10 @@
                     },
                     {
                         "text": {
-                            "text": "40/50/60/70/80 {{0}} magic damage",
+                            "text": "35/45/55/65/75 {{0}} magic damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+40% AP)",
+                                    "scale": "(+ 40% AP)",
                                     "scaleId": "AP"
                                 }
                             ]
@@ -119,10 +119,10 @@
                     },
                     {
                         "text": {
-                            "text": "40/50/60/70/80 {{0}} true damage",
+                            "text": "35/45/55/65/75 {{0}} true damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+40% AP)",
+                                    "scale": "(+ 40% AP)",
                                     "scaleId": "AP"
                                 }
                             ]
@@ -778,7 +778,20 @@
         },
         "12.23": {
             "B": "",
-            "P": "",
+            "P": {
+                "SpellName": "P - Dream-Laden Bough",
+                "Changes": [
+                    {
+                        "Tag": "MID-PATCH",
+                        "Change": {
+                            "Attribute": "Percent Health Damage: ",
+                            "Before": "6%",
+                            "Indicator": " ⇒ ",
+                            "After": "5%"
+                        }
+                    }
+                ]
+            },
             "Q": {
                 "SpellName": "Q - Blooming Blows",
                 "Changes": [
@@ -798,6 +811,24 @@
                             "Before": "35/50/65/80/95 (+40% AP)",
                             "Indicator": " ⇒ ",
                             "After": "40/50/60/70/80 (+40% AP)"
+                        }
+                    },
+                    {
+                        "Tag": "MID-PATCH",
+                        "Change": {
+                            "Attribute": "Magic Damage: ",
+                            "Before": "40/50/60/70/80 (+ 40% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "35/45/55/65/75 (+ 40% AP)"
+                        }
+                    },
+                    {
+                        "Tag": "MID-PATCH",
+                        "Change": {
+                            "Attribute": "Outer Edge True Damage: ",
+                            "Before": "40/50/60/70/80 (+ 40% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "35/45/55/65/75 (+ 40% AP)"
                         }
                     }
                 ]

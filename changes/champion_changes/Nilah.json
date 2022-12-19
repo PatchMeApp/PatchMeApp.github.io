@@ -63,7 +63,7 @@
                     },
                     {
                         "text": {
-                            "text": "1500% per 100 Crit Chance damage dealt as Health",
+                            "text": "0-20% post-mitigation damage, scaling with Crit Chance",
                             "scaleHolders": []
                         },
                         "type": "healing"
@@ -87,11 +87,11 @@
                             "text": "5/10/15/20/25 {{0}} * {{1}} physical damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+90/100/110/120/130% AD)",
+                                    "scale": "(+90/97.5/105/112.5/120% total AD)",
                                     "scaleId": "AD"
                                 },
                                 {
-                                    "scale": "(1 + 100% Crit Chance)",
+                                    "scale": "(1 + 120% Crit Chance)",
                                     "scaleId": "Chance"
                                 }
                             ]
@@ -178,7 +178,7 @@
                             "text": "60/120/180 {{0}} physical damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+140% Bonus AD)",
+                                    "scale": "(+112% Bonus AD)",
                                     "scaleId": "AD"
                                 }
                             ]
@@ -206,7 +206,7 @@
                     },
                     {
                         "text": {
-                            "text": "30% + 1500% per 100 Crit Chance of her damage dealt to enemy champions' Health {{0}}",
+                            "text": "20-50% post-mitigation damage, scaling with Crit Chance of her damage dealt to enemy champions' Health {{0}}",
                             "scaleHolders": [
                                 {
                                     "scale": "(10% for non-champions)",
@@ -231,6 +231,54 @@
         }
     },
     "Changes": {
+        "12.10": {
+            "B": {
+                "SpellName": "Base Stats",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "BASE HEALTH: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "+70"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "HEALTH GROWTH: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "+14"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "ARMOR GROWTH: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "+1.2"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "MAGIC RESIST GROWTH: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": " +0.8"
+                        }
+                    }
+                ]
+            },
+            "P": "",
+            "Q": "",
+            "W": "",
+            "E": "",
+            "R": ""
+        },
         "12.13": {
             "B": {
                 "SpellName": "Base Stats",
@@ -317,10 +365,82 @@
                 ]
             },
             "R": ""
+        },
+        "12.23": {
+            "B": "",
+            "P": "",
+            "Q": {
+                "SpellName": "Q - Formless Blade",
+                "Changes": [
+                    {
+                        "Tag": "MID-PATCH",
+                        "Change": {
+                            "Attribute": "Physical Damage: ",
+                            "Before": "5/10/15/20/25 (+90/100/110/120/130% total AD)",
+                            "Indicator": " ⇒ ",
+                            "After": "5/10/15/20/25 (+90/97.5/105/112.5/120% total AD)"
+                        }
+                    },
+                    {
+                        "Tag": "MID-PATCH",
+                        "Change": {
+                            "Attribute": "Damage Increase Based on Critical Strike Chance: ",
+                            "Before": "0-100%, scaling with Crit Chance",
+                            "Indicator": " ⇒ ",
+                            "After": "0-120%, scaling with Crit Chance"
+                        }
+                    },
+                    {
+                        "Tag": "MID-PATCH",
+                        "Change": {
+                            "Attribute": "Passive Healing on Basic and Formless Blade Attacks against Champions: ",
+                            "Before": " 0-15% post-mitigation damage, scaling with Crit Chance",
+                            "Indicator": " ⇒ ",
+                            "After": "0-20% post-mitigation damage, scaling with Crit Chance"
+                        }
+                    }
+                ]
+            },
+            "W": "",
+            "E": "",
+            "R": {
+                "SpellName": "R - Apotheosis",
+                "Changes": [
+                    {
+                        "Tag": "MID-PATCH",
+                        "Change": {
+                            "Attribute": "Damage Over Time: ",
+                            "Before": "15/30/45 (+35% bonus AD)",
+                            "Indicator": " ⇒ ",
+                            "After": "15/30/45 (+28% bonus AD)"
+                        }
+                    },
+                    {
+                        "Tag": "MID-PATCH",
+                        "Change": {
+                            "Attribute": "Total Damage: ",
+                            "Before": "185/345/505 (+260% bonus AD)",
+                            "Indicator": " ⇒ ",
+                            "After": "185/345/505 (+232% bonus AD)"
+                        }
+                    },
+                    {
+                        "Tag": "MID-PATCH",
+                        "Change": {
+                            "Attribute": "Healing: ",
+                            "Before": "30-45% post-mitigation damage, scaling with Crit Chance",
+                            "Indicator": " ⇒ ",
+                            "After": "20-50% post-mitigation damage, scaling with Crit Chance"
+                        }
+                    }
+                ]
+            }
         }
     },
     "ChangePatches": [
-        "12.13"
+        "12.10",
+        "12.13",
+        "12.23"
     ],
     "ChampionName": "Nilah"
 }

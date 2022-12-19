@@ -49,7 +49,7 @@
                 "parseInfo": [
                     {
                         "text": {
-                            "text": "8% bonus movement speed",
+                            "text": "6% bonus movement speed",
                             "scaleHolders": []
                         },
                         "type": "speed"
@@ -188,7 +188,7 @@
                     },
                     {
                         "text": {
-                            "text": "10/17.5/25/32.5/40 {{0}} Attack Damage",
+                            "text": "10/15/20/25/30 {{0}} Attack Damage",
                             "scaleHolders": [
                                 {
                                     "scale": "(+10% AP)",
@@ -627,6 +627,40 @@
                     }
                 ]
             }
+        },
+        "12.23": {
+            "B": "",
+            "P": {
+                "SpellName": "P - Tailwind",
+                "Changes": [
+                    {
+                        "Tag": "MID-PATCH",
+                        "Change": {
+                            "Attribute": "Bonus Move Speed: ",
+                            "Before": "8%",
+                            "Indicator": " ⇒ ",
+                            "After": "6%"
+                        }
+                    }
+                ]
+            },
+            "Q": "",
+            "W": "",
+            "E": {
+                "SpellName": "E - Eye Of The Storm",
+                "Changes": [
+                    {
+                        "Tag": "MID-PATCH",
+                        "Change": {
+                            "Attribute": "Bonus AD: ",
+                            "Before": "10/17.5/25/32.5/40 (+10% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "10/15/20/25/30 (+10% AP)"
+                        }
+                    }
+                ]
+            },
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -634,7 +668,8 @@
         "12.2",
         "12.10",
         "12.12",
-        "12.14"
+        "12.14",
+        "12.23"
     ],
     "ChampionName": "Janna"
 }

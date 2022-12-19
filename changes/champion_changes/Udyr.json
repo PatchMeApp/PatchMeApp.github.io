@@ -81,7 +81,7 @@
         },
         "Q": {
             "_rawTooltip": {
-                "fullTooltip": "[[0]] Udyr gains [[1]] and his Attacks deal [[2]]  [[3]] for 4 seconds. Additionally, Udyr's next two Attacks in this stance deal a bonus [[4]] and gain 50 range.<br /><br />[[5]] Increase bonus [[6]] to [[7]] and max Health damage to [[8]]. Additionally, Udyr's next two Attacks call lightning six times, dealing a total of [[9]] to isolated targets (strikes bounce to other nearby targets when possible).<br />",
+                "fullTooltip": "[[0]] Udyr gains [[1]] and his Attacks deal [[2]]  [[3]] for 4 seconds. Additionally, Udyr's next two Attacks in this stance each deal a bonus [[4]] and gain 50 range.<br /><br />[[5]] Increase bonus [[6]] to [[7]] and max Health damage to [[8]]. Additionally, Udyr's next two Attacks call lightning six times, dealing a total of [[9]] to isolated targets (strikes bounce to other nearby targets when possible).<br />",
                 "parseInfo": [
                     {
                         "text": {
@@ -118,10 +118,10 @@
                     },
                     {
                         "text": {
-                            "text": "3/4.4/5.8/7.2/8.6/10% {{0}} max Health physical damage",
+                            "text": "3/4/5/6/7/8% {{0}} max Health physical damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+6% per 100 Bonus AD)",
+                                    "scale": "(+5% per 100 bonus AD)",
                                     "scaleId": "AD"
                                 }
                             ]
@@ -301,7 +301,7 @@
                 ]
             },
             "cooldown": "6",
-            "cost": "45 Mana",
+            "cost": "40 - 23 (levels 1-18)",
             "name": "Iron Mantle"
         },
         "E": {
@@ -365,7 +365,7 @@
                 ]
             },
             "cooldown": "6",
-            "cost": "45 Mana",
+            "cost": "40 - 23 (levels 1-18)",
             "name": "Blazing Stampede"
         },
         "R": {
@@ -381,7 +381,7 @@
                     },
                     {
                         "text": {
-                            "text": "20/36/52/68/84/100 {{0}} magic damage",
+                            "text": "20/40/60/80/100/120 {{0}} magic damage",
                             "scaleHolders": [
                                 {
                                     "scale": "(+35% AP)",
@@ -447,7 +447,7 @@
                 ]
             },
             "cooldown": "6",
-            "cost": "45 Mana",
+            "cost": "40 - 23 (levels 1-18)",
             "name": "Wingborne Storm"
         }
     },
@@ -928,6 +928,137 @@
                     }
                 ]
             }
+        },
+        "12.23": {
+            "B": {
+                "SpellName": "Base Stats",
+                "Changes": [
+                    {
+                        "Tag": "MID-PATCH",
+                        "Change": {
+                            "Attribute": "Base Health Regeneration Growth: ",
+                            "Before": "0.75",
+                            "Indicator": " ⇒ ",
+                            "After": "0.55"
+                        }
+                    }
+                ]
+            },
+            "P": {
+                "SpellName": "P - Monkey's Agility",
+                "Changes": [
+                    {
+                        "Tag": "MID-PATCH",
+                        "Change": {
+                            "Attribute": "Passive Health Loss: ",
+                            "Before": "3% of Current Health",
+                            "Indicator": " ⇒ ",
+                            "After": "4% of Current Health"
+                        }
+                    },
+                    {
+                        "Tag": "MID-PATCH",
+                        "Change": {
+                            "Attribute": "Additional Maximum Health Regeneration: ",
+                            "Before": "0.4 - 2.5",
+                            "Indicator": " ⇒ ",
+                            "After": "0.4 - 2.3"
+                        }
+                    }
+                ]
+            },
+            "Q": {
+                "SpellName": "Q - Tiger Stance",
+                "Changes": [
+                    {
+                        "Tag": "MID-PATCH",
+                        "Change": {
+                            "Attribute": "Health Cost: ",
+                            "Before": "60 at all ranks",
+                            "Indicator": " ⇒ ",
+                            "After": "50/60/70/80/90"
+                        }
+                    },
+                    {
+                        "Tag": "MID-PATCH",
+                        "Change": {
+                            "Attribute": "Bonus Physical Damage: ",
+                            "Before": "3/4.4/5.8/7.2/8.6/10% (+6% per 100 bonus AD) of target's maximum health",
+                            "Indicator": " ⇒ ",
+                            "After": "3/4/5/6/7/8% (+5% per 100 bonus AD) of target's maximum health"
+                        }
+                    },
+                    {
+                        "Tag": "MID-PATCH",
+                        "Change": {
+                            "Attribute": "Bonus Physical Damage On-Hit: ",
+                            "Before": "5/13/21/28/37/45 (+20% bonus AD)",
+                            "Indicator": " ⇒ ",
+                            "After": "5/11/17/23/29/35 (+30% bonus AD)"
+                        }
+                    },
+                    {
+                        "Tag": "MID-PATCH",
+                        "Change": {
+                            "Attribute": "Awakened Physical Damage: ",
+                            "Before": "2% - 5% (+3% per 100 bonus AD) target's maximum health",
+                            "Indicator": " ⇒ ",
+                            "After": "2% - 4% (+2% per 100 bonus AD) target's maximum health"
+                        }
+                    }
+                ]
+            },
+            "W": {
+                "SpellName": "W - Turtle Stance",
+                "Changes": [
+                    {
+                        "Tag": "MID-PATCH",
+                        "Change": {
+                            "Attribute": "Mana Cost: ",
+                            "Before": "45 - 28 (levels 1-18)",
+                            "Indicator": " ⇒ ",
+                            "After": "40 - 23 (levels 1-18)"
+                        }
+                    }
+                ]
+            },
+            "E": {
+                "SpellName": "E - Bear Stance",
+                "Changes": [
+                    {
+                        "Tag": "MID-PATCH",
+                        "Change": {
+                            "Attribute": "Mana Cost: ",
+                            "Before": "45 - 28 (levels 1-18)",
+                            "Indicator": " ⇒ ",
+                            "After": "40 - 23 (levels 1-18)"
+                        }
+                    }
+                ]
+            },
+            "R": {
+                "SpellName": "R - Phoenix Stance",
+                "Changes": [
+                    {
+                        "Tag": "MID-PATCH",
+                        "Change": {
+                            "Attribute": "Mana Cost: ",
+                            "Before": "45 - 28 (levels 1-18)",
+                            "Indicator": " ⇒ ",
+                            "After": "40 - 23 (levels 1-18)"
+                        }
+                    },
+                    {
+                        "Tag": "MID-PATCH",
+                        "Change": {
+                            "Attribute": "Base Damage per Tick: ",
+                            "Before": "10/18/26/34/42/50",
+                            "Indicator": " ⇒ ",
+                            "After": "10/20/30/40/50/60"
+                        }
+                    }
+                ]
+            }
         }
     },
     "ChangePatches": [
@@ -943,7 +1074,8 @@
         "12.10",
         "12.16",
         "12.18",
-        "12.19"
+        "12.19",
+        "12.23"
     ],
     "ChampionName": "Udyr"
 }

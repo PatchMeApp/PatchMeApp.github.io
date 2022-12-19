@@ -148,7 +148,7 @@
                             "text": "70/120/170/220/270 {{0}} magic damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+70% AP)",
+                                    "scale": "(+ 80% AP)",
                                     "scaleId": "AP"
                                 }
                             ]
@@ -177,7 +177,7 @@
                             "text": "300/400/500 {{0}} magic damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+100% AP)",
+                                    "scale": "(+ 120% AP)",
                                     "scaleId": "AP"
                                 }
                             ]
@@ -445,6 +445,40 @@
             },
             "E": "",
             "R": ""
+        },
+        "12.23": {
+            "B": "",
+            "P": "",
+            "Q": "",
+            "W": "",
+            "E": {
+                "SpellName": "E - Lucent Singularity",
+                "Changes": [
+                    {
+                        "Tag": "MID-PATCH",
+                        "Change": {
+                            "Attribute": "Magic Damage: ",
+                            "Before": "70/120/170/220/270 (+ 70% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "70/120/170/220/270 (+ 80% AP)"
+                        }
+                    }
+                ]
+            },
+            "R": {
+                "SpellName": "R - Final Spark",
+                "Changes": [
+                    {
+                        "Tag": "MID-PATCH",
+                        "Change": {
+                            "Attribute": "Magic Damage: ",
+                            "Before": "300/400/500 (+ 100% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "300/400/500 (+ 120% AP)"
+                        }
+                    }
+                ]
+            }
         }
     },
     "ChangePatches": [
@@ -453,7 +487,8 @@
         "10.17",
         "11.10",
         "11.21",
-        "12.10"
+        "12.10",
+        "12.23"
     ],
     "ChampionName": "Lux"
 }

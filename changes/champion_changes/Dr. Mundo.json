@@ -18,7 +18,7 @@
         },
         "hpRegen": {
             "base": 6.5,
-            "increment": 0.75
+            "increment": 0.55
         },
         "mpRegen": {
             "base": 0,
@@ -45,24 +45,17 @@
         "P": {
             "cooldown": "60 - 15 (Level 1-18)",
             "_rawTooltip": {
-                "fullTooltip": "Innate: Dr. Mundo regenerates an additional[ [[0]] every 5 seconds. ]<br>Passive: Periodically, Dr. Mundo gains immunity to the immobilizing effects of the next hostile spell to affect him. Upon resisting one, Dr. Mundo pays a health cost equal to [[1]] and propels a canister that lands 525 units in the general direction of its source, remaining on the ground for 7 seconds.<br>Dr. Mundo can move near the canister to consume it, healing himself for [[2]] and reducing the cooldown of Goes Where He Pleases by 15 seconds. Enemy champions can move near it to destroy it.<br>Goes Where He Pleases' cooldown resets upon respawning.",
+                "fullTooltip": "Innate: Dr. Mundo regenerates an additional[ [[0]] every 5 seconds. ]<br>Passive: Periodically, Dr. Mundo gains immunity to the immobilizing effects of the next hostile spell to affect him. Upon resisting one, Dr. Mundo pays a health cost equal to 4% of Current Health and propels a canister that lands 525 units in the general direction of its source, remaining on the ground for 7 seconds.<br>Dr. Mundo can move near the canister to consume it, healing himself for [[1]] and reducing the cooldown of Goes Where He Pleases by 15 seconds. Enemy champions can move near it to destroy it.<br>Goes Where He Pleases' cooldown resets upon respawning.",
                 "parseInfo": [
                     {
                         "text": {
-                            "text": "0.4-2.5% {{0}} of his maximum health",
+                            "text": "0.4 - 2.3 {{0}} of his maximum health",
                             "scaleHolders": [
                                 {
                                     "scale": "(based on level)",
                                     "scaleId": "level"
                                 }
                             ]
-                        },
-                        "type": "Health"
-                    },
-                    {
-                        "text": {
-                            "text": "3% of current health",
-                            "scaleHolders": []
                         },
                         "type": "Health"
                     },
@@ -112,7 +105,7 @@
                 ]
             },
             "cooldown": "4",
-            "cost": "60 Health",
+            "cost": " 50/60/70/80/90 Health",
             "name": "Infected Bonesaw"
         },
         "W": {
@@ -219,7 +212,7 @@
                 ]
             },
             "cooldown": "9/8.25/7.5/6.75/6",
-            "cost": "20/30/40/50/60 Health",
+            "cost": "10/25/40/55/70 Health",
             "name": "Blunt Force Trauma"
         },
         "R": {
@@ -249,7 +242,7 @@
                     }
                 ]
             },
-            "cooldown": "110",
+            "cooldown": "120",
             "cost": "No Cost",
             "name": "Maximum Dosage"
         }
@@ -712,6 +705,15 @@
                             "Indicator": " ⇒ ",
                             "After": "2.5"
                         }
+                    },
+                    {
+                        "Tag": "MID-PATCH",
+                        "Change": {
+                            "Attribute": "Base Health Regeneration Growth: ",
+                            "Before": "0.75",
+                            "Indicator": " ⇒ ",
+                            "After": "0.55"
+                        }
                     }
                 ]
             },
@@ -744,6 +746,24 @@
                             "Indicator": " ⇒ ",
                             "After": "0.4-2.5% (non-linear progression, equal at level 11)"
                         }
+                    },
+                    {
+                        "Tag": "MID-PATCH",
+                        "Change": {
+                            "Attribute": "Passive Health Loss: ",
+                            "Before": "3% of Current Health",
+                            "Indicator": " ⇒ ",
+                            "After": "4% of Current Health"
+                        }
+                    },
+                    {
+                        "Tag": "MID-PATCH",
+                        "Change": {
+                            "Attribute": "Additional Maximum Health Regeneration: ",
+                            "Before": "0.4 - 2.5",
+                            "Indicator": " ⇒ ",
+                            "After": "0.4 - 2.3"
+                        }
                     }
                 ]
             },
@@ -757,6 +777,15 @@
                             "Before": "50",
                             "Indicator": " ⇒ ",
                             "After": "60"
+                        }
+                    },
+                    {
+                        "Tag": "MID-PATCH",
+                        "Change": {
+                            "Attribute": "Health Cost: ",
+                            "Before": "60 at all ranks",
+                            "Indicator": " ⇒ ",
+                            "After": "50/60/70/80/90"
                         }
                     }
                 ]
@@ -840,6 +869,15 @@
                             "Indicator": " ⇒ ",
                             "After": "150%"
                         }
+                    },
+                    {
+                        "Tag": "MID-PATCH",
+                        "Change": {
+                            "Attribute": "Health Cost: ",
+                            "Before": "20/30/40/50/60",
+                            "Indicator": " ⇒ ",
+                            "After": "10/25/40/55/70"
+                        }
                     }
                 ]
             },
@@ -871,6 +909,15 @@
                             "Before": "",
                             "Indicator": "",
                             "After": "R no longer gives bonus AD"
+                        }
+                    },
+                    {
+                        "Tag": "MID-PATCH",
+                        "Change": {
+                            "Attribute": "Cooldown: ",
+                            "Before": "110 seconds",
+                            "Indicator": " ⇒ ",
+                            "After": "120 seconds"
                         }
                     }
                 ]

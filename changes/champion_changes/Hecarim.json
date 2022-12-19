@@ -65,7 +65,7 @@
         },
         "Q": {
             "_rawTooltip": {
-                "fullTooltip": "Hecarim cleaves nearby enemies for [[0]]. If this Ability hits, he gains a stack that decreases its Cooldown by 0.75 seconds and increases its damage by 4 (+5% Bonus AD)% for 8 seconds. Stacks up to 3 times.<br />",
+                "fullTooltip": "Hecarim cleaves nearby enemies for [[0]]. If this Ability hits, he gains a stack that decreases its Cooldown by 0.75 seconds and increases its damage by 3% (+ 4% per 100 bonus AD) for 8 seconds. Stacks up to 3 times.<br />",
                 "parseInfo": [
                     {
                         "text": {
@@ -990,6 +990,27 @@
             },
             "E": "",
             "R": ""
+        },
+        "12.23": {
+            "B": "",
+            "P": "",
+            "Q": {
+                "SpellName": "Q - Rampage",
+                "Changes": [
+                    {
+                        "Tag": "MID-PATCH",
+                        "Change": {
+                            "Attribute": "Percent Bonus Damage per Stack: ",
+                            "Before": "4% (+5% per 100 bonus AD)",
+                            "Indicator": " ⇒ ",
+                            "After": "3% (+ 4% per 100 bonus AD)"
+                        }
+                    }
+                ]
+            },
+            "W": "",
+            "E": "",
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -1009,7 +1030,8 @@
         "12.9",
         "12.10",
         "12.17",
-        "12.18"
+        "12.18",
+        "12.23"
     ],
     "ChampionName": "Hecarim"
 }

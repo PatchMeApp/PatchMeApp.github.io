@@ -90,7 +90,7 @@
                     },
                     {
                         "text": {
-                            "text": "80/115/150/185/220 {{0}} physical damage",
+                            "text": "70/105/140/175/210 {{0}} physical damage",
                             "scaleHolders": [
                                 {
                                     "scale": "(+110% Bonus AD)",
@@ -190,7 +190,7 @@
                     },
                     {
                         "text": {
-                            "text": "70/90/110/130/150 {{0}} physical damage",
+                            "text": "65/85/105/125/145 {{0}} physical damage",
                             "scaleHolders": [
                                 {
                                     "scale": "(+65% Bonus AD)",
@@ -230,7 +230,7 @@
                     }
                 ]
             },
-            "cooldown": "5/4.5/4/3.5/3",
+            "cooldown": "5/4.75/4.5/4.25/4",
             "cost": "40 Energy",
             "name": "Shadow Slash"
         },
@@ -495,6 +495,49 @@
                 ]
             },
             "R": ""
+        },
+        "12.23": {
+            "B": "",
+            "P": "",
+            "Q": {
+                "SpellName": "Q - Razor Shuriken",
+                "Changes": [
+                    {
+                        "Tag": "MID-PATCH",
+                        "Change": {
+                            "Attribute": "Base Physical Damage: ",
+                            "Before": "80/115/150/185/220",
+                            "Indicator": " ⇒ ",
+                            "After": "80/115/150/185/220"
+                        }
+                    }
+                ]
+            },
+            "W": "",
+            "E": {
+                "SpellName": "E - Shadow Slash",
+                "Changes": [
+                    {
+                        "Tag": "MID-PATCH",
+                        "Change": {
+                            "Attribute": "Base Physical Damage: ",
+                            "Before": "70/90/110/130/150",
+                            "Indicator": " ⇒ ",
+                            "After": "65/85/105/125/145"
+                        }
+                    },
+                    {
+                        "Tag": "MID-PATCH",
+                        "Change": {
+                            "Attribute": "Cooldown: ",
+                            "Before": "5/4.5/4/3.5/3",
+                            "Indicator": " ⇒ ",
+                            "After": "5/4.75/4.5/4.25/4"
+                        }
+                    }
+                ]
+            },
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -504,7 +547,8 @@
         "11.18",
         "12.2",
         "12.10",
-        "12.15"
+        "12.15",
+        "12.23"
     ],
     "ChampionName": "Zed"
 }
