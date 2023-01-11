@@ -52,7 +52,7 @@
                             "text": "3% {{0}} of target's maximum health",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+ 5.5% per 100 bonus AD)",
+                                    "scale": "(+ 4% per 100 bonus AD)",
                                     "scaleId": "AD"
                                 }
                             ]
@@ -81,11 +81,11 @@
                 "parseInfo": [
                     {
                         "text": {
-                            "text": "70/80/90/100/110 {{0}}% Bonus AD) physical damage",
+                            "text": "70/80/90/100/110 {{0}} physical damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+(95/100/105/110/115)",
-                                    "scaleId": "(+(95/100/105/110/115"
+                                    "scale": "(+ 90/95/100/105/110% bonus AD)",
+                                    "scaleId": "AD"
                                 }
                             ]
                         },
@@ -491,6 +491,40 @@
             "W": "",
             "E": "",
             "R": ""
+        },
+        "13.1": {
+            "B": "",
+            "P": {
+                "SpellName": "Passive - Duelist’s Dance",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Maximum Health Damage AD Scaling: ",
+                            "Before": "4.5% maximum health true damage per 100 AD",
+                            "Indicator": " ⇒ ",
+                            "After": "4% maximum health true damage per 100 AD"
+                        }
+                    }
+                ]
+            },
+            "Q": {
+                "SpellName": "Q - Lunge",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Physical Damage: ",
+                            "Before": "70/80/90/100/110 (+ 95/100/105/110/115% bonus AD)",
+                            "Indicator": " ⇒ ",
+                            "After": "70/80/90/100/110 (+ 90/95/100/105/110% bonus AD)"
+                        }
+                    }
+                ]
+            },
+            "W": "",
+            "E": "",
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -499,7 +533,8 @@
         "11.4",
         "11.16",
         "12.10",
-        "12.12"
+        "12.12",
+        "13.1"
     ],
     "ChampionName": "Fiora"
 }

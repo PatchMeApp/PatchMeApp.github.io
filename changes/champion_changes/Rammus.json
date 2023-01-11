@@ -143,11 +143,11 @@
                 "parseInfo": [
                     {
                         "text": {
-                            "text": "40 {{0}}% Armor) {{1}} Armor",
+                            "text": "25 {{0}} {{1}} Armor",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+(60/70/80/90/100)",
-                                    "scaleId": "(+(60/70/80/90/100"
+                                    "scale": "(+40/55/70/85/100%% Armor)",
+                                    "scaleId": "Armor"
                                 },
                                 {
                                     "scale": "(+24/28/32/36/40)",
@@ -673,6 +673,67 @@
                 ]
             }
         },
+        "13.1": {
+            "B": {
+                "SpellName": "Base Stats",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Base Attack Damage: ",
+                            "Before": "56",
+                            "Indicator": " ⇒ ",
+                            "After": "53"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Base Health: ",
+                            "Before": "634",
+                            "Indicator": " ⇒ ",
+                            "After": "614"
+                        }
+                    }
+                ]
+            },
+            "P": "",
+            "Q": "",
+            "W": {
+                "SpellName": "W - Defensive Ball Curl",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Flat Armor: ",
+                            "Before": "40",
+                            "Indicator": " ⇒ ",
+                            "After": "25"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Percent Armor: ",
+                            "Before": "60/70/80/90/100%",
+                            "Indicator": " ⇒ ",
+                            "After": "40/55/70/85/100%"
+                        }
+                    },
+                    {
+                        "Tag": "NEW",
+                        "Change": {
+                            "Attribute": "OK Math: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "Flat resists granted by Rammus’ W are now also amplified by the percent resists that are granted by W"
+                        }
+                    }
+                ]
+            },
+            "E": "",
+            "R": ""
+        },
         "12.22": {
             "B": "",
             "P": "",
@@ -755,7 +816,8 @@
         "12.15",
         "12.20",
         "12.22",
-        "12.23"
+        "12.23",
+        "13.1"
     ],
     "ChampionName": "Rammus"
 }

@@ -56,7 +56,7 @@
                     },
                     {
                         "text": {
-                            "text": "5% − 12% {{0}} of the target's maximum health",
+                            "text": "4 - 10% {{0}} of the target's maximum health",
                             "scaleHolders": [
                                 {
                                     "scale": "(based on level)",
@@ -178,7 +178,7 @@
                     },
                     {
                         "text": {
-                            "text": "25/30/35/40% Omnivamp",
+                            "text": "20/24/28/32/36% Omnivamp",
                             "scaleHolders": []
                         },
                         "type": ""
@@ -216,7 +216,7 @@
                     },
                     {
                         "text": {
-                            "text": "60/80/100% Move Speed",
+                            "text": "50/65/80% Move Speed",
                             "scaleHolders": []
                         },
                         "type": "speed"
@@ -573,6 +573,53 @@
             "W": "",
             "E": "",
             "R": ""
+        },
+        "13.1": {
+            "B": "",
+            "P": {
+                "SpellName": "Passive - Deathbringer Stance",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Bonus Percent Maximum Health Damage: ",
+                            "Before": "5-12% (based on level)",
+                            "Indicator": " ⇒ ",
+                            "After": "4-10% (based on level)"
+                        }
+                    }
+                ]
+            },
+            "Q": "",
+            "W": "",
+            "E": {
+                "SpellName": "E - Umbral Dash",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Passive Increased Healing during World Ender: ",
+                            "Before": "25/30/35/40/45%",
+                            "Indicator": " ⇒ ",
+                            "After": "20/24/28/32/36%"
+                        }
+                    }
+                ]
+            },
+            "R": {
+                "SpellName": "R - World Ender",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Bonus Movement Speed: ",
+                            "Before": "60/80/100%",
+                            "Indicator": " ⇒ ",
+                            "After": "50/65/80%"
+                        }
+                    }
+                ]
+            }
         }
     },
     "ChangePatches": [
@@ -585,7 +632,8 @@
         "12.4",
         "12.10",
         "12.14",
-        "12.20"
+        "12.20",
+        "13.1"
     ],
     "ChampionName": "Aatrox"
 }

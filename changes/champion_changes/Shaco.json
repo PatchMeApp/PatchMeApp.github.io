@@ -69,7 +69,7 @@
         },
         "Q": {
             "_rawTooltip": {
-                "fullTooltip": "Shaco teleports and becomes [[0]] for 2.5/2.75/3/3.25 seconds. Using [[1]] or [[2]] does not break [[3]].<br /><br />Shaco's next Attack while [[4]] deals an additional [[5]]. If striking from behind, this Attack critically strikes for 130% + 100% Bonus Crit damage.",
+                "fullTooltip": "Shaco teleports and becomes [[0]] for 2.5/2.75/3/3.25 seconds. Using [[1]] or [[2]] does not break [[3]].<br /><br />Shaco's next Attack while [[4]] deals an additional [[5]]. If striking from behind, this Attack critically strikes for 140% + 100% Bonus Crit damage.",
                 "parseInfo": [
                     {
                         "text": {
@@ -121,7 +121,7 @@
                 ]
             },
             "cooldown": "12/11.5/11/10.5/10",
-            "cost": "60 Mana",
+            "cost": "40 Mana",
             "name": "Deceive"
         },
         "W": {
@@ -202,7 +202,7 @@
                             "text": "70/95/120/145/170 {{0}} {{1}} magic damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+75% Bonus AD)",
+                                    "scale": "(+80% bonus AD)",
                                     "scaleId": "AD"
                                 },
                                 {
@@ -225,7 +225,7 @@
                             "text": "105/142.5/180/217.5/255 {{0}} {{1}} damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+112.5% Bonus AD)",
+                                    "scale": "(+120% bonus AD)",
                                     "scaleId": "AD"
                                 },
                                 {
@@ -945,6 +945,58 @@
                 ]
             },
             "R": ""
+        },
+        "13.1": {
+            "B": "",
+            "P": "",
+            "Q": {
+                "SpellName": "Q - Deceive",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Mana Cost: ",
+                            "Before": "60",
+                            "Indicator": " ⇒ ",
+                            "After": "40"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Backstab Critical Strike Bonus Damage: ",
+                            "Before": "30%",
+                            "Indicator": " ⇒ ",
+                            "After": "40%"
+                        }
+                    }
+                ]
+            },
+            "W": "",
+            "E": {
+                "SpellName": "E - Two-Shiv Poison",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Magic Damage: ",
+                            "Before": "70/95/120/145/170 (+75% bonus AD)(+60% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "70/95/120/145/170 (+80% bonus AD)(+60% AP)"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Magic Damage to Targets Below 30% Health of Maximum Health: ",
+                            "Before": "105/142.5/180/217.5/255 (+112.5% bonus AD)(+90% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "105/142.5/180/217.5/255 (+120% bonus AD)(+90% AP)"
+                        }
+                    }
+                ]
+            },
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -958,7 +1010,8 @@
         "11.14",
         "11.16",
         "12.10",
-        "12.12"
+        "12.12",
+        "13.1"
     ],
     "ChampionName": "Shaco"
 }

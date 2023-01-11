@@ -49,7 +49,7 @@
                 "parseInfo": [
                     {
                         "text": {
-                            "text": "10 − 25 {{0}} {{1}} of target's maximum health) bonus physical damage",
+                            "text": "5 - 20 {{0}} {{1}} of target's maximum health) bonus physical damage",
                             "scaleHolders": [
                                 {
                                     "scale": "(based on level)",
@@ -168,7 +168,7 @@
                     },
                     {
                         "text": {
-                            "text": "4.25/4.5/4.75/5/5.25% and 8.25/8.5/8.75/9/9.25% max Health physical damage",
+                            "text": "2/2.25/2.5/2.75/3% and 7/7.25/7.5/7.75/8% max Health physical damage",
                             "scaleHolders": []
                         },
                         "type": "physicalDamage"
@@ -440,11 +440,68 @@
                 ]
             },
             "R": ""
+        },
+        "13.1": {
+            "B": {
+                "SpellName": "Base Stats",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Base Movement Speed: ",
+                            "Before": "335",
+                            "Indicator": " ⇒ ",
+                            "After": "330"
+                        }
+                    }
+                ]
+            },
+            "P": {
+                "SpellName": "Passive - Dauntless Instinct",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Base Damage: ",
+                            "Before": "10-25 (based on level)",
+                            "Indicator": " ⇒ ",
+                            "After": "5-20 (based on level)"
+                        }
+                    }
+                ]
+            },
+            "Q": "",
+            "W": {
+                "SpellName": "W - Path Maker",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Minimum Physical Damage: ",
+                            "Before": "4.25/4.5/4.75/5/5.25% of target's maximum health",
+                            "Indicator": " ⇒ ",
+                            "After": "2/2.25/2.5/2.75/3% of target's maximum health"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Maximum Physical Damage: ",
+                            "Before": "8.25/8.5/8.75/9/9.25% of target's maximum health",
+                            "Indicator": " ⇒ ",
+                            "After": "7/7.25/7.5/7.75/8% of target's maximum health"
+                        }
+                    }
+                ]
+            },
+            "E": "",
+            "R": ""
         }
     },
     "ChangePatches": [
         "12.21",
-        "12.23"
+        "12.23",
+        "13.1"
     ],
     "ChampionName": "K'Sante"
 }

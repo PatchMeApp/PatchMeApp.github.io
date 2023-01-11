@@ -68,7 +68,7 @@
                     }
                 ]
             },
-            "cooldown": "6",
+            "cooldown": "6/5.75/5.5/5.25/5",
             "cost": "60/70/80/90/100 Mana",
             "name": "Wild Cards"
         },
@@ -92,7 +92,7 @@
                                     "scaleId": "AD"
                                 },
                                 {
-                                    "scale": "(+90% AP)",
+                                    "scale": "(+115% AP)",
                                     "scaleId": "AP"
                                 }
                             ]
@@ -108,14 +108,14 @@
                     },
                     {
                         "text": {
-                            "text": "The Red Card deals 30/45/60/75/90 {{0}} {{1}}",
+                            "text": "The Red Card deals 30/45/60/75/90 {{0}}{{1}}",
                             "scaleHolders": [
                                 {
                                     "scale": "(+100% AD)",
                                     "scaleId": "AD"
                                 },
                                 {
-                                    "scale": "(+60% AP)",
+                                    "scale": "(+70% AP)",
                                     "scaleId": "AP"
                                 }
                             ]
@@ -487,6 +487,49 @@
             },
             "E": "",
             "R": ""
+        },
+        "13.1": {
+            "B": "",
+            "P": "",
+            "Q": {
+                "SpellName": "Q - Wild Cards",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Cooldown: ",
+                            "Before": "6 seconds at all ranks",
+                            "Indicator": " ⇒ ",
+                            "After": "6/5.75/5.5/5.25/5 seconds"
+                        }
+                    }
+                ]
+            },
+            "W": {
+                "SpellName": "W - Pick A Card",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Blue Card Magic Damage: ",
+                            "Before": "40/60/80/100/120 (+100% AD)(+90% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "40/60/80/100/120 (+100% AD) (+115% AP)"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Red Card Magic Damage: ",
+                            "Before": "30/45/60/75/90 (+100% AD)(+60% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "30/45/60/75/90 (+100% AD)(+70% AP)"
+                        }
+                    }
+                ]
+            },
+            "E": "",
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -497,7 +540,8 @@
         "10.19",
         "12.3",
         "12.10",
-        "12.17"
+        "12.17",
+        "13.1"
     ],
     "ChampionName": "Twisted Fate"
 }

@@ -69,15 +69,11 @@
                 "parseInfo": [
                     {
                         "text": {
-                            "text": "65/105/145/185/225 {{0}} {{1}} physical damage",
+                            "text": "65/105/145/185/225 {{0}} physical damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+100% Bonus AD)",
+                                    "scale": "(+100% bonus AD)",
                                     "scaleId": "AD"
-                                },
-                                {
-                                    "scale": "(+60% AP)",
-                                    "scaleId": "AP"
                                 }
                             ]
                         },
@@ -138,15 +134,19 @@
                     },
                     {
                         "text": {
-                            "text": "55/80/105/130/155 {{0}} physical damage",
+                            "text": "55/85/115/145/175 {{0}} {{1}} magic damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+50% Bonus AD)",
-                                    "scaleId": "AD"
+                                    "scale": "(+4% max HP of the target)",
+                                    "scaleId": "target"
+                                },
+                                {
+                                    "scale": "(+100% AP)",
+                                    "scaleId": "AP"
                                 }
                             ]
                         },
-                        "type": "physicalDamage"
+                        "type": "magicDamage"
                     },
                     {
                         "text": {
@@ -163,7 +163,7 @@
         },
         "R": {
             "_rawTooltip": {
-                "fullTooltip": "[[0]] Every third Attack deals an additional [[1]].<br /><br />[[2]] Jax strengthens his resolve, granting him [[3]] and [[4]] for 8 seconds.",
+                "fullTooltip": "[[0]] Every third Attack deals an additional [[1]].<br /><br />[[2]] Jax swings his lantern dealing [[3]] to nearby enemies. If he hits a champion he gains [[4]] plus [[5]] per champion hit. as well as 60% of that value as Magic Resist for the next 8 seconds. During this time the passive damage applies every 2nd attack instead of every 3rd.",
                 "parseInfo": [
                     {
                         "text": {
@@ -174,10 +174,10 @@
                     },
                     {
                         "text": {
-                            "text": "100/140/180 {{0}} magic damage",
+                            "text": "80/120/160 {{0}} magic damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+70% AP)",
+                                    "scale": "(+60% AP)",
                                     "scaleId": "AP"
                                 }
                             ]
@@ -193,10 +193,22 @@
                     },
                     {
                         "text": {
-                            "text": "30/50/70 {{0}} Armor",
+                            "text": "50/250/350 {{0}} magic damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+50% Bonus AD)",
+                                    "scale": "(+100% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "magicDamage"
+                    },
+                    {
+                        "text": {
+                            "text": " 25/45/65 {{0}} Armor ",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+40% bonus AD)",
                                     "scaleId": "AD"
                                 }
                             ]
@@ -205,19 +217,19 @@
                     },
                     {
                         "text": {
-                            "text": "30/50/70 {{0}} Magic Resist",
+                            "text": "15/20/25% {{0}} Magic resist",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+20% AP)",
-                                    "scaleId": "AP"
+                                    "scale": "(+10% bonus AD)",
+                                    "scaleId": "AD"
                                 }
                             ]
                         },
-                        "type": "scaleMR"
+                        "type": "scaleArmor"
                     }
                 ]
             },
-            "cooldown": "80",
+            "cooldown": "100/90/80",
             "cost": "100 Mana",
             "name": "Grandmaster's Might"
         }
@@ -367,6 +379,89 @@
             "W": "",
             "E": "",
             "R": ""
+        },
+        "13.1": {
+            "B": "",
+            "P": "",
+            "Q": {
+                "SpellName": "Q - Leap Strike",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Physical Damage: ",
+                            "Before": "65/105/145/185/225 (+100% bonus AD)(+60% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "65/105/145/185/225 (+100% bonus AD) (+0% AP)"
+                        }
+                    }
+                ]
+            },
+            "W": "",
+            "E": {
+                "SpellName": "E - Counter Strike",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Minimum Damage: ",
+                            "Before": "55/80/105/130/155 (+50% bonus AD) Physical Damage",
+                            "Indicator": " ⇒ ",
+                            "After": "55/85/115/145/175 (+4% max HP of the target) (+100% AP) Magic Damage"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Bonus Damage per Attack Dodged: ",
+                            "Before": "20% of total damage",
+                            "Indicator": " ⇒ ",
+                            "After": "20% of base damage"
+                        }
+                    }
+                ]
+            },
+            "R": {
+                "SpellName": "R - Grandmaster’s Might",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Cooldown: ",
+                            "Before": "80 seconds",
+                            "Indicator": " ⇒ ",
+                            "After": "100/90/80 seconds"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "3rd Hit Passive Bonus Magic Damage: ",
+                            "Before": "100/140/180 (+ 70% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "80/120/160 (+ 60% AP)"
+                        }
+                    },
+                    {
+                        "Tag": "NEW",
+                        "Change": {
+                            "Attribute": "Imagine if I had a Real Animation: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "Jax’s R passive now has updated animations, sound effects, and visual effects"
+                        }
+                    },
+                    {
+                        "Tag": "NEW",
+                        "Change": {
+                            "Attribute": "NEW ACTIVE: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "Jax swings his lantern around him, dealing 150/250/350 (+100% AP) magic damage to nearby enemies. If he hits a champion he gains 25/45/65 (+40% bonus AD) Armor plus 15/20/25% (+10% bonus AD) per champion hit, as well as 60% of that value as Magic Resist for the next 8 seconds. During this time the passive damage applies every 2nd attack instead of every 3rd."
+                        }
+                    }
+                ]
+            }
         }
     },
     "ChangePatches": [
@@ -374,7 +469,8 @@
         "10.16",
         "11.5",
         "12.6",
-        "12.10"
+        "12.10",
+        "13.1"
     ],
     "ChampionName": "Jax"
 }

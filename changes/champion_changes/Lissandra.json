@@ -76,7 +76,7 @@
         },
         "Q": {
             "_rawTooltip": {
-                "fullTooltip": "Lissandra throws a spear of ice that shatters on the first enemy hit, dealing [[0]], [[1]] them by 16/19/22/25/28% for 1.5 seconds, and also dealing the damage to enemies behind them.",
+                "fullTooltip": "Lissandra throws a spear of ice that shatters on the first enemy hit, dealing [[0]], [[1]] them by 20/24/28/32/36% for 1.5 seconds, and also dealing the damage to enemies behind them.",
                 "parseInfo": [
                     {
                         "text": {
@@ -128,7 +128,7 @@
                     }
                 ]
             },
-            "cooldown": "14/13/12/11/10",
+            "cooldown": "12/11/10/9/8",
             "cost": "40 Mana",
             "name": "Ring of Frost"
         },
@@ -415,6 +415,53 @@
                     }
                 ]
             }
+        },
+        "13.1": {
+            "B": {
+                "SpellName": "Base Stats",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Health Growth: ",
+                            "Before": "104",
+                            "Indicator": " ⇒ ",
+                            "After": "110"
+                        }
+                    }
+                ]
+            },
+            "P": "",
+            "Q": {
+                "SpellName": "Q - Ice Shard",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Slow: ",
+                            "Before": "16/19/22/25/28%",
+                            "Indicator": " ⇒ ",
+                            "After": "20/24/28/32/36%"
+                        }
+                    }
+                ]
+            },
+            "W": {
+                "SpellName": "W - Ring of Frost",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Cooldown: ",
+                            "Before": "14/13/12/11/10 seconds",
+                            "Indicator": " ⇒ ",
+                            "After": "12/11/10/9/8 seconds"
+                        }
+                    }
+                ]
+            },
+            "E": "",
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -423,7 +470,8 @@
         "10.9",
         "11.7",
         "11.17",
-        "12.10"
+        "12.10",
+        "13.1"
     ],
     "ChampionName": "Lissandra"
 }

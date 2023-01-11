@@ -56,7 +56,7 @@
                 "parseInfo": [
                     {
                         "text": {
-                            "text": "50/90/130/170/210/250 {{0}} magic damage",
+                            "text": "50/80/110/140/170/200 {{0}} magic damage",
                             "scaleHolders": [
                                 {
                                     "scale": "(+30% AP)",
@@ -68,7 +68,7 @@
                     },
                     {
                         "text": {
-                            "text": "60/110/160/210/260/310 {{0}} plus 3/4.2/5.4/6.6/7.8/9% current Health magic damage",
+                            "text": "60/100/140/180/220/260 {{0}} plus 3/4.2/5.4/6.6/7.8/9% current Health magic damage",
                             "scaleHolders": [
                                 {
                                     "scale": "(+40% AP)",
@@ -914,6 +914,36 @@
                     }
                 ]
             }
+        },
+        "13.1": {
+            "B": "",
+            "P": "",
+            "Q": {
+                "SpellName": "Q - Prowling Projectile",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Base Damage: ",
+                            "Before": "50/90/130/170/210/250",
+                            "Indicator": " ⇒ ",
+                            "After": "50/80/110/140/170/200"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Empowered Base Damage: ",
+                            "Before": "60/110/160/210/260/310",
+                            "Indicator": " ⇒ ",
+                            "After": "60/100/140/180/220/260"
+                        }
+                    }
+                ]
+            },
+            "W": "",
+            "E": "",
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -929,7 +959,8 @@
         "12.12",
         "12.14",
         "12.16",
-        "12.23"
+        "12.23",
+        "13.1"
     ],
     "ChampionName": "Yuumi"
 }
