@@ -95,10 +95,10 @@
                 "parseInfo": [
                     {
                         "text": {
-                            "text": "50/75/100/125/150 {{0}} magic damage",
+                            "text": "40/65/90/115/140 {{0}} magic damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+45% AP)",
+                                    "scale": "(+55% AP)",
                                     "scaleId": "AP"
                                 }
                             ]
@@ -502,6 +502,40 @@
                 ]
             },
             "R": ""
+        },
+        "13.1B": {
+            "B": "",
+            "P": "",
+            "Q": {
+                "SpellName": "Q - H-28G Evolution Turret",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Turret Health: ",
+                            "Before": "175-700 (based on level) (+5%-40% (based on level) AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "130-640 (based on level) (+5%-45% (based on level) AP)"
+                        }
+                    }
+                ]
+            },
+            "W": {
+                "SpellName": "W - Hextech Micro-Rockets",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Initial Magic Damage: ",
+                            "Before": "50/75/100/125/150 (+45% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "40/65/90/115/140 (+55% AP)"
+                        }
+                    }
+                ]
+            },
+            "E": "",
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -509,7 +543,8 @@
         "9.24b",
         "11.9",
         "12.10",
-        "12.12"
+        "12.12",
+        "13.1B"
     ],
     "ChampionName": "Heimerdinger"
 }

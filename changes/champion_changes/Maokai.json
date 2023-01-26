@@ -144,12 +144,12 @@
                             "text": "55/80/105/130/155 {{0}} {{1}} magic damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+40% AP)",
-                                    "scaleId": "AP"
+                                    "scale": "(+5% bonus health)",
+                                    "scaleId": "health"
                                 },
                                 {
-                                    "scale": "(+6% Bonus Health)",
-                                    "scaleId": "Health"
+                                    "scale": "(+35% AP)",
+                                    "scaleId": "AP"
                                 }
                             ]
                         },
@@ -174,12 +174,12 @@
                             "text": "110/160/210/260/310 {{0}} {{1}} magic damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+80% AP)",
-                                    "scaleId": "AP"
+                                    "scale": "(+10% bonus health)",
+                                    "scaleId": "health"
                                 },
                                 {
-                                    "scale": "(+12% Bonus Health)",
-                                    "scaleId": "Health"
+                                    "scale": "(+70% AP)",
+                                    "scaleId": "AP"
                                 }
                             ]
                         },
@@ -807,6 +807,49 @@
             "E": "",
             "R": ""
         },
+        "13.1B": {
+            "B": "",
+            "P": "",
+            "Q": {
+                "SpellName": "Q - Bramble Smash",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Bonus Damage to Monsters: ",
+                            "Before": "120/140/160/180/200",
+                            "Indicator": " ⇒ ",
+                            "After": "100/120/140/160/180"
+                        }
+                    }
+                ]
+            },
+            "W": "",
+            "E": {
+                "SpellName": "E - Sapling Toss",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Magic Damage: ",
+                            "Before": "55/80/105/130/155 (+6% bonus health) (+40% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "55/80/105/130/155 (+5% bonus health) (+35% AP)"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Empowered Sapling Magic Damage: ",
+                            "Before": "110/160/210/260/310 (+12% bonus health) (+80% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "110/160/210/260/310 (+10% bonus health) (+70% AP)"
+                        }
+                    }
+                ]
+            },
+            "R": ""
+        },
         "12.22": {
             "B": "",
             "P": "",
@@ -841,7 +884,8 @@
         "12.18",
         "12.20",
         "12.22",
-        "12.23"
+        "12.23",
+        "13.1B"
     ],
     "ChampionName": "Maokai"
 }

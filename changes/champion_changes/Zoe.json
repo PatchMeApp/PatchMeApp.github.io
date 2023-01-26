@@ -160,7 +160,7 @@
         },
         "E": {
             "_rawTooltip": {
-                "fullTooltip": "Zoe dropkicks a bubble that deals [[0]], lingering as a trap if it hits nothing. The bubble's range is extended when flying over terrain.<br /><br />After a delay, the victim falls [[1]] for 2 seconds. Attacks and Ability hits wake them up but deal double damage, up to [[2]].",
+                "fullTooltip": "Zoe dropkicks a bubble that deals [[0]], lingering as a trap if it hits nothing. The bubble's range is extended when flying over terrain.<br /><br />After a delay, the victim falls [[1]] for 2 seconds. Attacks and Ability hits wake them up but deal double damage, up to [[2]].<br /><br />Enemies inflicted with sleep from Zoe’s Sleepy Trouble Bubble have their Magic Resist reduced by 20/22.5/25/27.5/30%",
                 "parseInfo": [
                     {
                         "text": {
@@ -415,6 +415,27 @@
                 ]
             },
             "R": ""
+        },
+        "13.1B": {
+            "B": "",
+            "P": "",
+            "Q": "",
+            "W": "",
+            "E": {
+                "SpellName": "E - Sleepy Trouble Bubble",
+                "Changes": [
+                    {
+                        "Tag": "NEW",
+                        "Change": {
+                            "Attribute": "Putting the Trouble in the Bubble: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "Enemies inflicted with sleep from Zoe’s Sleepy Trouble Bubble now have their Magic Resist reduced by 20/22.5/25/27.5/30%. (NoteThis debuff disappears when the target is woken up.)"
+                        }
+                    }
+                ]
+            },
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -423,7 +444,8 @@
         "11.18",
         "12.8",
         "12.10",
-        "12.16"
+        "12.16",
+        "13.1B"
     ],
     "ChampionName": "Zoe"
 }

@@ -45,7 +45,7 @@
         "P": {
             "cooldown": "18-6 seconds (based on level)",
             "_rawTooltip": {
-                "fullTooltip": "Innate: Periodically, Yuumi's next basic attack against an enemy champion has an uncancelable windup, gains 50 bonus range, turns into a non-projectile, restores 25 − 100 (based on level) (+ 8% maximum mana) mana and grants her a 56 − 360 (based on level) (+ 25% AP) shield that lasts until it is broken.<br>While attached, the shield transfers to her Anchor.",
+                "fullTooltip": "Innate: Periodically, Yuumi's next basic attack against an enemy champion has an uncancelable windup, gains 25 bonus range, turns into a non-projectile, restores 25 − 100 (based on level) (+ 8% maximum mana) mana and grants her a 45 - 300 (based on level) (+ 25% AP) shield that lasts until it is broken.<br>While attached, the shield transfers to her Anchor.",
                 "parseInfo": []
             },
             "name": "Bop 'n' Block"
@@ -100,7 +100,7 @@
         },
         "W": {
             "_rawTooltip": {
-                "fullTooltip": "[[0]] Yuumi increases her [[1]] ally's Adaptive Force by 12/14/16/18 + 12/14/16/18/20%, and grants herself the same amount.<br /><br />[[2]] Yuumi dashes to an ally champion and [[3]] to them. While Yuumi is [[4]], she follows her partner's movement and is Untargetable except from towers.<br /><br />[[5]] effects on Yuumi place this Ability on a 5 second Cooldown.",
+                "fullTooltip": "[[0]] Yuumi increases her [[1]] ally's Adaptive Force by 12-20 (+6-10% of bonus), and grants herself the same amount.<br /><br />[[2]] Yuumi dashes to an ally champion and [[3]] to them. While Yuumi is [[4]], she follows her partner's movement and is Untargetable except from towers.<br /><br />[[5]] effects on Yuumi place this Ability on a 5 second Cooldown.",
                 "parseInfo": [
                     {
                         "text": {
@@ -168,13 +168,8 @@
                     },
                     {
                         "text": {
-                            "text": "20 {{0}}% Move Speed",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+2% AP)",
-                                    "scaleId": "AP"
-                                }
-                            ]
+                            "text": "20% Move Speed",
+                            "scaleHolders": []
                         },
                         "type": "speed"
                     },
@@ -195,7 +190,7 @@
                 ]
             },
             "cooldown": "12/11.5/11/10.5/10",
-            "cost": "40/45/50/55 Mana + {{ percentmanacost*100 }}% Max Mana",
+            "cost": "40/45/50/55 Mana + 12% Max Mana",
             "name": "Zoomies"
         },
         "R": {
@@ -944,6 +939,102 @@
             "W": "",
             "E": "",
             "R": ""
+        },
+        "13.1B": {
+            "B": {
+                "SpellName": "Base Stats",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Attack Range: ",
+                            "Before": "500",
+                            "Indicator": " ⇒ ",
+                            "After": "425"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Base Attack Damage: ",
+                            "Before": "55",
+                            "Indicator": " ⇒ ",
+                            "After": "49"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Base Health: ",
+                            "Before": "550",
+                            "Indicator": " ⇒ ",
+                            "After": "500"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Base Health Regeneration: ",
+                            "Before": "7",
+                            "Indicator": " ⇒ ",
+                            "After": "5"
+                        }
+                    }
+                ]
+            },
+            "P": {
+                "SpellName": "Passive - Bop 'n' Block",
+                "Changes": [
+                    {
+                        "Tag": "NEW",
+                        "Change": {
+                            "Attribute": "Attack Range: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "When Bop ‘n’ Block is ready Yuumi will gain 25 bonus range for that attack only."
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Shield Strength: ",
+                            "Before": "60-380 (based on level)",
+                            "Indicator": " ⇒ ",
+                            "After": "45-300 (based on level)"
+                        }
+                    }
+                ]
+            },
+            "Q": "",
+            "W": {
+                "SpellName": "W - You and Me!",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Adaptive Force: ",
+                            "Before": "12-20 (+12-20% of bonus)",
+                            "Indicator": " ⇒ ",
+                            "After": "12-20 (+6-10% of bonus)"
+                        }
+                    }
+                ]
+            },
+            "E": {
+                "SpellName": "E - Zoomies",
+                "Changes": [
+                    {
+                        "Tag": "REMOVED",
+                        "Change": {
+                            "Attribute": "Movement Speed: ",
+                            "Before": "20% (+2% per 100 AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "20% (NoteAP ratio was removed)"
+                        }
+                    }
+                ]
+            },
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -960,7 +1051,8 @@
         "12.14",
         "12.16",
         "12.23",
-        "13.1"
+        "13.1",
+        "13.1B"
     ],
     "ChampionName": "Yuumi"
 }

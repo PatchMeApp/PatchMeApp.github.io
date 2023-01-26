@@ -121,7 +121,7 @@
                             "text": "3/4/5/6/7/8% {{0}} max Health physical damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+5% per 100 bonus AD)",
+                                    "scale": "(+4% per 100 bonus AD)",
                                     "scaleId": "AD"
                                 }
                             ]
@@ -144,7 +144,7 @@
                     },
                     {
                         "text": {
-                            "text": "20/30/40/50/60/70% {{0}})",
+                            "text": "20/32/44/56/68/80% {{0}})",
                             "scaleHolders": [
                                 {
                                     "scale": "(+20% - 70% (based on champion level)",
@@ -882,6 +882,96 @@
                 ]
             }
         },
+        "12.19": {
+            "B": "",
+            "P": "",
+            "Q": {
+                "SpellName": "Q - Wilding Claw",
+                "Changes": [
+                    {
+                        "Tag": "NEW",
+                        "Change": {
+                            "Attribute": "Minions Beware: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "Awakened Wilding Claw will now deal a minimum of 40-160 damage to minions based on current level per strike of lightning"
+                        }
+                    }
+                ]
+            },
+            "W": {
+                "SpellName": "W - Iron Mantle",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "On-Hit Heal Against Minions : ",
+                            "Before": "50% heal reduction",
+                            "Indicator": " ⇒ ",
+                            "After": "40% heal reduction"
+                        }
+                    }
+                ]
+            },
+            "E": "",
+            "R": {
+                "SpellName": "R - Wingborne Storm",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Damage to Minions: ",
+                            "Before": "40/55/70/85% (levels 1/6/11/16)",
+                            "Indicator": " ⇒ ",
+                            "After": "50/60/70/80% (levels 1/6/11/16)"
+                        }
+                    }
+                ]
+            }
+        },
+        "13.1B": {
+            "B": "",
+            "P": "",
+            "Q": {
+                "SpellName": "Q - Wilding Claw",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Bonus Physical Damage: ",
+                            "Before": "3/4/5/6/7/8% (+5% per 100 bonus AD)",
+                            "Indicator": " ⇒ ",
+                            "After": "3/4/5/6/7/8% (+4% per 100 bonus AD)"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Bonus Attack Speed: ",
+                            "Before": "20/30/40/50/60/70%",
+                            "Indicator": " ⇒ ",
+                            "After": "20/32/44/56/68/80%"
+                        }
+                    }
+                ]
+            },
+            "W": "",
+            "E": "",
+            "R": {
+                "SpellName": "R - Wingborne Storm",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Base Damage per Tick: ",
+                            "Before": "10/20/30/40/50/60",
+                            "Indicator": " ⇒ ",
+                            "After": "10/19/28/37/46/55"
+                        }
+                    }
+                ]
+            }
+        },
         "12.23": {
             "B": "",
             "P": "",
@@ -983,7 +1073,9 @@
         "12.10",
         "12.16",
         "12.18",
-        "12.23"
+        "12.19",
+        "12.23",
+        "13.1B"
     ],
     "ChampionName": "Udyr"
 }

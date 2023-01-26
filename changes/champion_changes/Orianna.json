@@ -85,7 +85,7 @@
         },
         "Q": {
             "_rawTooltip": {
-                "fullTooltip": "Orianna commands her [[0]] to move to an area, dealing [[1]] to surrounding enemies and to enemies it passes through. Deals 10% less damage per enemy hit.",
+                "fullTooltip": "Orianna commands her [[0]] to move to an area, dealing [[1]] to surrounding enemies and to enemies it passes through. Deals 70% to all enemies hit after the first",
                 "parseInfo": [
                     {
                         "text": {
@@ -152,7 +152,7 @@
                 ]
             },
             "cooldown": "7",
-            "cost": "70/80/90/100/110 Mana",
+            "cost": "70/75/80/85/90 Mana",
             "name": "Command: Dissonance"
         },
         "E": {
@@ -251,10 +251,10 @@
                     },
                     {
                         "text": {
-                            "text": "200/275/350 {{0}} magic damage",
+                            "text": "250/350/450 {{0}} magic damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+80% AP)",
+                                    "scale": "(+90% AP)",
                                     "scaleId": "AP"
                                 }
                             ]
@@ -419,13 +419,74 @@
                 ]
             },
             "R": ""
+        },
+        "13.1B": {
+            "B": "",
+            "P": {
+                "SpellName": "Passive - Clockwork Windup",
+                "Changes": [
+                    {
+                        "Tag": "UPDATED",
+                        "Change": {
+                            "Attribute": "Tik Tok: ",
+                            "Before": "10-50 (levels 1, 4, 7, 10, 13, and 16)",
+                            "Indicator": " ⇒ ",
+                            "After": "10-50 (levels 1-18)(NoteDamage is unchanged)"
+                        }
+                    }
+                ]
+            },
+            "Q": {
+                "SpellName": "Q - Command: Attack",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Pass Through Damage Reduction: ",
+                            "Before": "The ball deals 100% damage to the first target hit and damage afterwards is reduced by 10% per enemy hit",
+                            "Indicator": " ⇒ ",
+                            "After": "The ball deals 100% damage to the first target hit and damage afterwards is reduced to 70% to all enemies hit after the first"
+                        }
+                    }
+                ]
+            },
+            "W": {
+                "SpellName": "W - Command: Dissonance",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Mana Cost: ",
+                            "Before": "70/80/90/100/110",
+                            "Indicator": " ⇒ ",
+                            "After": "70/75/ 80/85/90"
+                        }
+                    }
+                ]
+            },
+            "E": "",
+            "R": {
+                "SpellName": "R - Command: Shockwave",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Magic Damage: ",
+                            "Before": "200/275/350 (+80% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "250/350/450 (+90% AP)"
+                        }
+                    }
+                ]
+            }
         }
     },
     "ChangePatches": [
         "9.19",
         "10.8",
         "11.8",
-        "12.10"
+        "12.10",
+        "13.1B"
     ],
     "ChampionName": "Orianna"
 }

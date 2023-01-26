@@ -110,7 +110,7 @@
                             "text": "35/45/55/65/75 {{0}} magic damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+ 40% AP)",
+                                    "scale": "(+ 45% AP)",
                                     "scaleId": "AP"
                                 }
                             ]
@@ -122,7 +122,7 @@
                             "text": "35/45/55/65/75 {{0}} true damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+ 40% AP)",
+                                    "scale": "(+ 45% AP)",
                                     "scaleId": "AP"
                                 }
                             ]
@@ -178,7 +178,7 @@
                             "text": "70/95/120/145/170 {{0}} magic damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+45% AP)",
+                                    "scale": "(+60% AP)",
                                     "scaleId": "AP"
                                 }
                             ]
@@ -194,7 +194,7 @@
                     }
                 ]
             },
-            "cooldown": "16",
+            "cooldown": "14",
             "cost": "70 Mana",
             "name": "Swirlseed"
         },
@@ -836,6 +836,71 @@
             "W": "",
             "E": "",
             "R": ""
+        },
+        "13.1B": {
+            "B": "",
+            "P": {
+                "SpellName": "Passive - Dream-Laden Bough",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Magic Damage: ",
+                            "Before": "5% (+1.2% per 100 AP) of target’s maximum health",
+                            "Indicator": " ⇒ ",
+                            "After": "5% (+1.5% per 100 AP) of target’s maximum health"
+                        }
+                    }
+                ]
+            },
+            "Q": {
+                "SpellName": "Q - Blooming Blows",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Magic Damage: ",
+                            "Before": "35/45/55/65/75 (+40% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "35/45/55/65/75 (+45% AP)"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Outer Edge True Damage: ",
+                            "Before": "35/45/55/65/75 (+40% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "35/45/55/65/75 (+45% AP)"
+                        }
+                    }
+                ]
+            },
+            "W": "",
+            "E": {
+                "SpellName": "E - Swirlseed",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Magic Damage: ",
+                            "Before": "70/95/120/145/170 (+45% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "70/95/120/145/170 (+60% AP)"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Cooldown: ",
+                            "Before": "16 seconds at all ranks",
+                            "Indicator": " ⇒ ",
+                            "After": "14 seconds"
+                        }
+                    }
+                ]
+            },
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -849,7 +914,8 @@
         "12.11",
         "12.15",
         "12.22",
-        "12.23"
+        "12.23",
+        "13.1B"
     ],
     "ChampionName": "Lillia"
 }
