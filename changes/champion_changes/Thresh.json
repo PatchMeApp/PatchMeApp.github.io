@@ -78,10 +78,10 @@
                     },
                     {
                         "text": {
-                            "text": "100/140/180/220/260 {{0}} magic damage",
+                            "text": "100/145/190/235/280 {{0}} magic damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+50% AP)",
+                                    "scale": "(+80% AP)",
                                     "scaleId": "AP"
                                 }
                             ]
@@ -117,7 +117,7 @@
                             "text": "50/75/100/125/150 {{0}} Shield",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+2 per Soul collected)",
+                                    "scale": "(+1.5 per Soul collected)",
                                     "scaleId": "collected"
                                 }
                             ]
@@ -190,13 +190,8 @@
                     },
                     {
                         "text": {
-                            "text": "75/110/145/180/215 {{0}} magic damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+40% AP)",
-                                    "scaleId": "AP"
-                                }
-                            ]
+                            "text": "75/110/145/180/215 magic damage",
+                            "scaleHolders": []
                         },
                         "type": "magicDamage"
                     }
@@ -611,6 +606,53 @@
                 ]
             },
             "R": ""
+        },
+        "13.3": {
+            "B": "",
+            "P": "",
+            "Q": {
+                "SpellName": "Q - Death Sentence",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Magic Damage: ",
+                            "Before": "100/140/180/220/260 (+50% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "100/145/190/235/280 (+80% AP)"
+                        }
+                    }
+                ]
+            },
+            "W": {
+                "SpellName": "W - Dark Passage",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Shield per Soul: ",
+                            "Before": "2",
+                            "Indicator": " ⇒ ",
+                            "After": "1.5"
+                        }
+                    }
+                ]
+            },
+            "E": {
+                "SpellName": "E - Flay",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Magic Damage: ",
+                            "Before": "75/110/145/180/215 (+40% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "75/110/145/180/215"
+                        }
+                    }
+                ]
+            },
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -625,7 +667,8 @@
         "12.9",
         "12.10",
         "12.15",
-        "12.18"
+        "12.18",
+        "13.3"
     ],
     "ChampionName": "Thresh"
 }

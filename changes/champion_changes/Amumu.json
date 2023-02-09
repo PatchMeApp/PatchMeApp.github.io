@@ -84,7 +84,7 @@
                 ]
             },
             "cooldown": "3",
-            "cost": "40/45/50/55/60 Mana",
+            "cost": "45/50/55/60/65 Mana",
             "name": "Bandage Toss"
         },
         "W": {
@@ -143,8 +143,12 @@
                     },
                     {
                         "text": {
-                            "text": "80/110/140/170/200 {{0}} magic damage",
+                            "text": "865/100/135/170/205 {{0}}0/110/140/170/200 {{1}} magic damage",
                             "scaleHolders": [
+                                {
+                                    "scale": "(+50% AP)",
+                                    "scaleId": "AP"
+                                },
                                 {
                                     "scale": "(+ 50% AP)",
                                     "scaleId": "AP"
@@ -837,6 +841,40 @@
             },
             "R": ""
         },
+        "13.3": {
+            "B": "",
+            "P": "",
+            "Q": {
+                "SpellName": "Q - Bandage Toss",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Mana Cost: ",
+                            "Before": "40/45/50/55/60",
+                            "Indicator": " ⇒ ",
+                            "After": "45/50/55/60/65"
+                        }
+                    }
+                ]
+            },
+            "W": "",
+            "E": {
+                "SpellName": "E - Tantrum",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Damage: ",
+                            "Before": "80/110/140/170/200 (+50% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "65/100/135/170/205 (+50% AP)"
+                        }
+                    }
+                ]
+            },
+            "R": ""
+        },
         "12.22": {
             "B": "",
             "P": "",
@@ -885,7 +923,8 @@
         "12.10",
         "12.12",
         "12.22",
-        "12.23"
+        "12.23",
+        "13.3"
     ],
     "ChampionName": "Amumu"
 }

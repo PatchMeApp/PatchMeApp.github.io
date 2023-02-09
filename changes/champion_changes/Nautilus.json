@@ -49,7 +49,7 @@
                 "parseInfo": [
                     {
                         "text": {
-                            "text": "8 − 110 {{0}} bonus physical damage",
+                            "text": "14 - 116 {{0}} bonus physical damage",
                             "scaleHolders": [
                                 {
                                     "scale": "(based on level)",
@@ -98,7 +98,7 @@
                 "parseInfo": [
                     {
                         "text": {
-                            "text": "40/50/60/70/80 {{0}} Shield",
+                            "text": "50/60/70/80/90 {{0}} Shield",
                             "scaleHolders": [
                                 {
                                     "scale": "(+8/9/10/11/12% Health)",
@@ -130,7 +130,7 @@
                 ]
             },
             "cooldown": "12",
-            "cost": "80 Mana",
+            "cost": "60 Mana",
             "name": "Titan's Wrath"
         },
         "E": {
@@ -139,10 +139,10 @@
                 "parseInfo": [
                     {
                         "text": {
-                            "text": "55/85/115/145/175 {{0}} magic damage",
+                            "text": "55/90/125/160/195 {{0}} magic damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+30% AP)",
+                                    "scale": "(+50% AP)",
                                     "scaleId": "AP"
                                 }
                             ]
@@ -377,6 +377,62 @@
             },
             "E": "",
             "R": ""
+        },
+        "13.3": {
+            "B": "",
+            "P": {
+                "SpellName": "P - Staggering Blow",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Bonus Damage: ",
+                            "Before": "8-110 (based on level)",
+                            "Indicator": " ⇒ ",
+                            "After": "14-116 (based on level)"
+                        }
+                    }
+                ]
+            },
+            "Q": "",
+            "W": {
+                "SpellName": "W - Titan's Wrath",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Mana Cost: ",
+                            "Before": "80",
+                            "Indicator": " ⇒ ",
+                            "After": "60"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Shield Strength: ",
+                            "Before": "40/50/60/70/80 (+8/9/10/11/12% maximum health)",
+                            "Indicator": " ⇒ ",
+                            "After": "50/60/70/80/90 (+8/9/10/11/12% maximum health)"
+                        }
+                    }
+                ]
+            },
+            "E": {
+                "SpellName": "E - Riptide",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Magic Damage: ",
+                            "Before": "55/85/115/145/175 (+30% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "55/90/125/160/195 (+50% AP)"
+                        }
+                    }
+                ]
+            },
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -384,7 +440,8 @@
         "10.2",
         "10.16",
         "11.11",
-        "12.10"
+        "12.10",
+        "13.3"
     ],
     "ChampionName": "Nautilus"
 }

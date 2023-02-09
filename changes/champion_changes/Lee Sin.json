@@ -67,7 +67,7 @@
                             "text": "55/80/105/130/155 {{0}} physical damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+100% Bonus AD)",
+                                    "scale": "(+110% bonus AD)",
                                     "scaleId": "AD"
                                 }
                             ]
@@ -93,7 +93,7 @@
                             "text": "55/80/105/130/155 {{0}} to 110/160/210/260/310 {{1}} physical damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+100% Bonus AD)",
+                                    "scale": "(+110% bonus AD)",
                                     "scaleId": "AD"
                                 },
                                 {
@@ -148,11 +148,11 @@
         },
         "E": {
             "_rawTooltip": {
-                "fullTooltip": "Lee Sin smashes the ground, sending out a shockwave that deals [[0]] and reveals them for 4 seconds. If this hits an enemy, Lee Sin can [[1]] for the next 3 seconds.<br /><br />[[2]] Lee Sin [[3]] nearby enemies struck by the shockwave by 20/30/40/50/60% decaying over 4 seconds.",
+                "fullTooltip": "Lee Sin smashes the ground, sending out a shockwave that deals [[0]] and reveals them for 4 seconds. If this hits an enemy, Lee Sin can [[1]] for the next 3 seconds.<br /><br />[[2]] Lee Sin [[3]] nearby enemies struck by the shockwave by 20/35/50/65/80% decaying over 4 seconds.",
                 "parseInfo": [
                     {
                         "text": {
-                            "text": "100/130/160/190/220 {{0}} magic damage",
+                            "text": "35/65/95/125/155 {{0}} magic damage",
                             "scaleHolders": [
                                 {
                                     "scale": "(+100% Bonus AD)",
@@ -751,6 +751,58 @@
             },
             "E": "",
             "R": ""
+        },
+        "13.3": {
+            "B": "",
+            "P": "",
+            "Q": {
+                "SpellName": "Q - Sonic Wave / Resonating Strike",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Sonic Wave Physical Damage: ",
+                            "Before": "55/80/105/130/155 (+100% bonus AD)",
+                            "Indicator": " ⇒ ",
+                            "After": "55/80/105/130/155 (+110% bonus AD)"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Resonating Strike Minimum Physical Damage: ",
+                            "Before": "55/80/105/130/155 (+100% bonus AD)",
+                            "Indicator": " ⇒ ",
+                            "After": "55/80/105/130/155 (+110% bonus AD) (NoteMaximum damage is still double the value of the minimum damage)"
+                        }
+                    }
+                ]
+            },
+            "W": "",
+            "E": {
+                "SpellName": "E - Tempest / Cripple",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Total Damage: ",
+                            "Before": "100/130/160/190/220 (+100% bonus AD)",
+                            "Indicator": " ⇒ ",
+                            "After": "35/65/95/125/155 (+100% total AD)"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Slow: ",
+                            "Before": "20/30/40/50/60%",
+                            "Indicator": " ⇒ ",
+                            "After": "20/35/50/65/80%"
+                        }
+                    }
+                ]
+            },
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -768,7 +820,8 @@
         "12.10",
         "12.11",
         "12.15",
-        "12.18"
+        "12.18",
+        "13.3"
     ],
     "ChampionName": "Lee Sin"
 }

@@ -100,10 +100,10 @@
                 "parseInfo": [
                     {
                         "text": {
-                            "text": "40/85/130/175/220 {{0}} Shield",
+                            "text": "60/100/140/180/220 {{0}} Shield",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+35% AP)",
+                                    "scale": "(+55% AP)",
                                     "scaleId": "AP"
                                 }
                             ]
@@ -124,10 +124,10 @@
                     },
                     {
                         "text": {
-                            "text": "20/30/40/50/60 {{0}} magic damage",
+                            "text": "30/45/60/75/90 {{0}} magic damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+20% AP)",
+                                    "scale": "(+40% AP)",
                                     "scaleId": "AP"
                                 }
                             ]
@@ -136,7 +136,7 @@
                     }
                 ]
             },
-            "cooldown": "14/13/12/11/10",
+            "cooldown": "12/11/10/9/8",
             "cost": "40 Mana",
             "name": "Molten Shield"
         },
@@ -544,6 +544,107 @@
                     }
                 ]
             }
+        },
+        "13.3": {
+            "B": "",
+            "P": {
+                "SpellName": "Passive - Pyromania",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "First Flame: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "Annie will now spawn with her passive fully charged on game start and when she respawns"
+                        }
+                    }
+                ]
+            },
+            "Q": "",
+            "W": "",
+            "E": {
+                "SpellName": "E - Molten Shield",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Shield Strength: ",
+                            "Before": "40/85/130/175/220 (+35% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "60/100/140/180/220 (+55% AP)"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Cooldown: ",
+                            "Before": "14/13/12/11/10 seconds",
+                            "Indicator": " ⇒ ",
+                            "After": "12/11/10/9/8 seconds"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Retaliation Magic Damage: ",
+                            "Before": "20/30/40/50/60 (+20% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "30/45/60/75/90 (+40% AP)"
+                        }
+                    },
+                    {
+                        "Tag": "NEW",
+                        "Change": {
+                            "Attribute": "Retaliation Magic Damage Conditions: ",
+                            "Before": "When Molten Shield is active, enemies whosebasic attacks hit the shield receive magic damage",
+                            "Indicator": " ⇒ ",
+                            "After": "When Molten Shield is active, enemies whose basic attacks AND spells hit the shield receive magic damage"
+                        }
+                    },
+                    {
+                        "Tag": "NEW",
+                        "Change": {
+                            "Attribute": "Retaliation Magic Damage Details: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "E - Molten Shield will now only inflict damage against opponents once per target, per shield. (NoteTibbers’ duplicated shield counts as a new shield and can inflict damage once per target, per shield.)"
+                        }
+                    }
+                ]
+            },
+            "R": {
+                "SpellName": "R - Summon: Tibbers",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Tibbers’ Health: ",
+                            "Before": "1300/2200/3100",
+                            "Indicator": " ⇒ ",
+                            "After": "1300/2200/3100 (+75% AP)"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Tibbers’ Resistances: ",
+                            "Before": "30/60/90 Armor and MR",
+                            "Indicator": " ⇒ ",
+                            "After": "30/60/90 (+5% AP) Armor and MR"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Tibbers’ Movespeed: ",
+                            "Before": "350 at all ranks",
+                            "Indicator": " ⇒ ",
+                            "After": "350/375/400"
+                        }
+                    }
+                ]
+            }
         }
     },
     "ChangePatches": [
@@ -555,7 +656,8 @@
         "11.8",
         "11.15",
         "12.10",
-        "12.12"
+        "12.12",
+        "13.3"
     ],
     "ChampionName": "Annie"
 }

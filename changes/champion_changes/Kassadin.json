@@ -156,7 +156,7 @@
         },
         "E": {
             "_rawTooltip": {
-                "fullTooltip": "[[0]] Ally and enemy spells cast nearby Kassadin reduce E’s cooldown by 1 second.<br /><br />[[1]] Kassadin unleashes a void pulse, dealing [[2]] and [[3]] by 50/60/70/80/90% for 1 second.",
+                "fullTooltip": "[[0]] Ally and enemy spells cast nearby Kassadin reduce E’s cooldown by 0.75 seconds second.<br /><br />[[1]] Kassadin unleashes a void pulse, dealing [[2]] and [[3]] by 50/60/70/80/90% for 1 second.",
                 "parseInfo": [
                     {
                         "text": {
@@ -174,7 +174,7 @@
                     },
                     {
                         "text": {
-                            "text": "80/105/130/155/180 {{0}} magic damage",
+                            "text": "60/90/120/150/180 {{0}} magic damage",
                             "scaleHolders": [
                                 {
                                     "scale": "(+85% AP)",
@@ -203,7 +203,7 @@
                 "parseInfo": [
                     {
                         "text": {
-                            "text": "80/100/120 {{0}} {{1}} magic damage",
+                            "text": "70/90/110 {{0}} {{1}} magic damage",
                             "scaleHolders": [
                                 {
                                     "scale": "(+40% AP)",
@@ -219,7 +219,7 @@
                     },
                     {
                         "text": {
-                            "text": "40/50/60 {{0}} {{1}} magic damage",
+                            "text": "35/45/55 {{0}} {{1}} magic damage",
                             "scaleHolders": [
                                 {
                                     "scale": "(+10% AP)",
@@ -523,6 +523,58 @@
                 ]
             },
             "R": ""
+        },
+        "13.3": {
+            "B": "",
+            "P": "",
+            "Q": "",
+            "W": "",
+            "E": {
+                "SpellName": "E - Force Pulse",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Base Damage: ",
+                            "Before": "80/105/130/155/180 (+85% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "60/90/120/150/180 (+85% AP)"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Cooldown from Nearby Casts: ",
+                            "Before": ":1 second",
+                            "Indicator": " ⇒ ",
+                            "After": "0.75 seconds"
+                        }
+                    }
+                ]
+            },
+            "R": {
+                "SpellName": "R - Riftwalk",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Magic Damage: ",
+                            "Before": "80/100/120 (+40% AP) (+2% maximum mana)",
+                            "Indicator": " ⇒ ",
+                            "After": "70/90/110 (+40% AP) (+2% maximum mana)"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Bonus Damage per Stack: ",
+                            "Before": "40/50/60 (+10% AP) (+1% maximum mana)",
+                            "Indicator": " ⇒ ",
+                            "After": "35/45/55 (+10% AP) (+1% maximum mana)"
+                        }
+                    }
+                ]
+            }
         }
     },
     "ChangePatches": [
@@ -533,7 +585,8 @@
         "12.10",
         "12.17",
         "12.23",
-        "13.1B"
+        "13.1B",
+        "13.3"
     ],
     "ChampionName": "Kassadin"
 }

@@ -45,8 +45,16 @@
         "P": {
             "cooldown": 3,
             "_rawTooltip": {
-                "fullTooltip": "Innate: Alistar gains a stack of Triumph for every enemy champion he stuns or displaces with Pulverize, Headbutt, or Trample, and every time an enemy minion or non-epic monster dies nearby.<br>At 7 Triumph stacks, Alistar consumes them and roars, healing himself for 23 − 142 (based on level) and all nearby allied champions for[ double the amount. ]<br>Alistar roars instantly if a nearby enemy champion or epic monster dies. Once Triumph stacks are consumed Alistar cannot roar again for a short duration, but can still gain stacks.",
-                "parseInfo": []
+                "fullTooltip": "Innate: Alistar gains a stack of Triumph for every enemy champion he stuns or displaces with Pulverize, Headbutt, or Trample, and every time an enemy minion or non-epic monster dies nearby.<br>At 7 Triumph stacks, Alistar consumes them and roars, healing himself for [[0]] and all nearby allied champions for[ double the amount. ]<br>Alistar roars instantly if a nearby enemy champion or epic monster dies. Once Triumph stacks are consumed Alistar cannot roar again for a short duration, but can still gain stacks.",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "5% maximum health",
+                            "scaleHolders": []
+                        },
+                        "type": "Health"
+                    }
+                ]
             },
             "name": "Triumphant Roar"
         },
@@ -66,7 +74,7 @@
                             "text": "60/100/140/180/220 {{0}} magic damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+50% AP)",
+                                    "scale": "(+70% AP)",
                                     "scaleId": "AP"
                                 }
                             ]
@@ -76,7 +84,7 @@
                 ]
             },
             "cooldown": "14/13/12/11/10",
-            "cost": "55/60/65/70/75 Mana",
+            "cost": "50/55/60/65/70 Mana",
             "name": "Pulverize"
         },
         "W": {
@@ -102,7 +110,7 @@
                             "text": "55/110/165/220/275 {{0}} magic damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+70% AP)",
+                                    "scale": "(+90% AP)",
                                     "scaleId": "AP"
                                 }
                             ]
@@ -112,7 +120,7 @@
                 ]
             },
             "cooldown": "14/13/12/11/10",
-            "cost": "65/70/75/80/85 Mana",
+            "cost": "50/55/60/65/70 Mana",
             "name": "Headbutt"
         },
         "E": {
@@ -124,7 +132,7 @@
                             "text": "80/110/140/170/200 {{0}} magic damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+40% AP)",
+                                    "scale": "(+70% AP)",
                                     "scaleId": "AP"
                                 }
                             ]
@@ -153,7 +161,7 @@
                 ]
             },
             "cooldown": "12/11.5/11/10.5/10",
-            "cost": "50/60/70/80/90 Mana",
+            "cost": "50/55/60/65/70 Mana",
             "name": "Trample"
         },
         "R": {
@@ -406,6 +414,102 @@
             "W": "",
             "E": "",
             "R": ""
+        },
+        "13.3": {
+            "B": "",
+            "P": {
+                "SpellName": "P - Triumphant Roar",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Self Heal: ",
+                            "Before": "23-142 (based on level)",
+                            "Indicator": " ⇒ ",
+                            "After": "5% maximum health"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Ally Heal: ",
+                            "Before": "46-284 (based on level)",
+                            "Indicator": " ⇒ ",
+                            "After": "6% of Alistar's maximum health"
+                        }
+                    }
+                ]
+            },
+            "Q": {
+                "SpellName": "Q - Pulverize",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Mana Cost: ",
+                            "Before": "55/60/65/70/75",
+                            "Indicator": " ⇒ ",
+                            "After": "50/55/60/65/70"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Magic Damage: ",
+                            "Before": "60/100/140/180/220 (+50% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "60/100/140/180/220 (+70% AP)"
+                        }
+                    }
+                ]
+            },
+            "W": {
+                "SpellName": "W - Headbutt",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Mana Cost: ",
+                            "Before": "65/70/75/80/85",
+                            "Indicator": " ⇒ ",
+                            "After": "50/55/60/65/70"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Magic Damage: ",
+                            "Before": "55/110/165/220/275 (+70% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "55/110/165/220/275 (+90% AP)"
+                        }
+                    }
+                ]
+            },
+            "E": {
+                "SpellName": "E - Trample",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Mana Cost: ",
+                            "Before": "50/60/70/80/90",
+                            "Indicator": " ⇒ ",
+                            "After": "50/55/60/65/70"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Total Magic Damage: ",
+                            "Before": "80/110/140/170/200 (+40% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "80/110/140/170/200 (+70% AP)"
+                        }
+                    }
+                ]
+            },
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -414,7 +518,8 @@
         "10.14",
         "11.7",
         "12.10",
-        "12.14"
+        "12.14",
+        "13.3"
     ],
     "ChampionName": "Alistar"
 }

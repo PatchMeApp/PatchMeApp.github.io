@@ -81,7 +81,7 @@
                     },
                     {
                         "text": {
-                            "text": "8% bonus movement speed",
+                            "text": "10% bonus movement speed",
                             "scaleHolders": []
                         },
                         "type": "speed"
@@ -187,12 +187,12 @@
                             "text": "15/20/25/30/35 {{0}} {{1}} magic damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+20% AP)",
-                                    "scaleId": "AP"
+                                    "scale": "(+10% bonus AD)",
+                                    "scaleId": "AD"
                                 },
                                 {
-                                    "scale": "(+10% Bonus AD)",
-                                    "scaleId": "AD"
+                                    "scale": "(+25% AP)",
+                                    "scaleId": "AP"
                                 }
                             ]
                         },
@@ -574,6 +574,40 @@
                 ]
             },
             "R": ""
+        },
+        "13.3": {
+            "B": "",
+            "P": {
+                "SpellName": "Passive - Divine Ascent",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Exalted Bonus Move Speed: ",
+                            "Before": "8%",
+                            "Indicator": " ⇒ ",
+                            "After": "10%"
+                        }
+                    }
+                ]
+            },
+            "Q": "",
+            "W": "",
+            "E": {
+                "SpellName": "E - Starfire Spellblade",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Passive On-hit Damage: ",
+                            "Before": "15/20/25/30/35 (+10% bonus AD) (+20% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "15/20/25/30/35 (+10% bonus AD) (+25% AP)"
+                        }
+                    }
+                ]
+            },
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -586,7 +620,8 @@
         "11.10",
         "11.15",
         "11.24",
-        "12.10"
+        "12.10",
+        "13.3"
     ],
     "ChampionName": "Kayle"
 }

@@ -107,7 +107,7 @@
                     }
                 ]
             },
-            "cooldown": "10/9/8/7/6",
+            "cooldown": "8/7.5/7/6.5/6",
             "cost": "45/50/55/60/65 Mana",
             "name": "Winter's Bite"
         },
@@ -117,7 +117,7 @@
                 "parseInfo": [
                     {
                         "text": {
-                            "text": "10/14/18/22/26 {{0}} Armor",
+                            "text": "20/25/30/35/40 {{0}} Armor",
                             "scaleHolders": [
                                 {
                                     "scale": "(+12% Bonus Armor)",
@@ -129,7 +129,7 @@
                     },
                     {
                         "text": {
-                            "text": "10/14/18/22/26 {{0}} Magic Resist",
+                            "text": "20/25/30/35/40 {{0}} Magic Resist",
                             "scaleHolders": [
                                 {
                                     "scale": "(+12% Bonus MR)",
@@ -141,7 +141,7 @@
                     },
                     {
                         "text": {
-                            "text": "10/14/18/22/26 {{0}}",
+                            "text": "20/25/30/35/40 {{0}}",
                             "scaleHolders": [
                                 {
                                     "scale": "(+36% Bonus Armor)",
@@ -153,7 +153,7 @@
                     },
                     {
                         "text": {
-                            "text": "10/14/18/22/26 {{0}}",
+                            "text": "20/25/30/35/40 {{0}}",
                             "scaleHolders": [
                                 {
                                     "scale": "(+36% Bonus MR)",
@@ -496,6 +496,53 @@
             "W": "",
             "E": "",
             "R": ""
+        },
+        "13.3": {
+            "B": "",
+            "P": {
+                "SpellName": "P - Concussive Blows",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Target Immunity Duration: ",
+                            "Before": "8/6/4 seconds (levels 1/7/13)",
+                            "Indicator": " ⇒ ",
+                            "After": "8/6/4 (levels 1/6/11)"
+                        }
+                    }
+                ]
+            },
+            "Q": {
+                "SpellName": "Q - Winter's Bite",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Cooldown: ",
+                            "Before": "10/9/8/7/6 seconds",
+                            "Indicator": " ⇒ ",
+                            "After": "8/7.5/7/6.5/6 seconds"
+                        }
+                    }
+                ]
+            },
+            "W": {
+                "SpellName": "W - Stand Behind Me",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Bonus Armor and Magic Resist: ",
+                            "Before": "10/14/18/22/26",
+                            "Indicator": " ⇒ ",
+                            "After": "20/25/30/35/40"
+                        }
+                    }
+                ]
+            },
+            "E": "",
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -504,7 +551,8 @@
         "11.4",
         "11.7",
         "12.9",
-        "12.10"
+        "12.10",
+        "13.3"
     ],
     "ChampionName": "Braum"
 }

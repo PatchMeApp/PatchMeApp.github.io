@@ -116,14 +116,14 @@
                     },
                     {
                         "text": {
-                            "text": "Stuns",
+                            "text": "Pulls",
                             "scaleHolders": []
                         },
                         "type": "status"
                     },
                     {
                         "text": {
-                            "text": "Pulls",
+                            "text": "Stuns",
                             "scaleHolders": []
                         },
                         "type": "status"
@@ -150,7 +150,7 @@
         },
         "W": {
             "_rawTooltip": {
-                "fullTooltip": "[[0]] K'Sante raises his weapons defensively for up to 1 second, becoming Unstoppable and reducing incoming damage by 25% (+ 10% per 100 bonus armor) (+ 10% per 100 bonus magic resistance) (+ 1% per 100 bonus health).<br /><br />[[1]] K'Sante rams forward, dealing between [[2]] based on charge time. K'Sante [[3]] and [[4]] enemies for a duration between 0.35/0.45/0.55/0.65 and 0.85/0.95/1.05/1.15 seconds.<br /><br />[[5]] This Ability's Cooldown is refreshed. This Ability will no longer [[6]] or [[7]]. This Ability's damage reduction increases to 30% (+ 12% per 100 bonus armor) (+ 12% per 100 bonus magic resistance) (+ 1.2% per 100 bonus health), it deals additional [[8]] between [[9]], and its charge and dash speed are doubled.<br />",
+                "fullTooltip": "[[0]] K'Sante raises his weapons defensively for up to 1 second, becoming Unstoppable and reducing incoming damage by 25% (+ 10% per 100 bonus armor) (+ 10% per 100 bonus magic resistance) (+ 1% per 100 bonus health).<br /><br />[[1]] K'Sante rams forward, dealing between [[2]] based on charge time. K'Sante [[3]] and [[4]] enemies for a duration between 0.3/0.35/0.4/0.45/0.5 and 0.85/0.95/1.05/1.15 seconds.<br /><br />[[5]] This Ability's Cooldown is refreshed. This Ability will no longer [[6]] or [[7]]. This Ability's damage reduction increases to 30% (+ 12% per 100 bonus armor) (+ 12% per 100 bonus magic resistance) (+ 1.2% per 100 bonus health), it deals additional [[8]] between [[9]], and its charge and dash speed are doubled.<br />",
                 "parseInfo": [
                     {
                         "text": {
@@ -345,14 +345,14 @@
                     },
                     {
                         "text": {
-                            "text": "65% Bonus Armor",
+                            "text": "85% Bonus Armor",
                             "scaleHolders": []
                         },
                         "type": "scaleArmor"
                     },
                     {
                         "text": {
-                            "text": "65% Bonus Magic Resistance",
+                            "text": "85% Bonus Magic Resistance",
                             "scaleHolders": []
                         },
                         "type": "scaleMR"
@@ -496,12 +496,82 @@
             },
             "E": "",
             "R": ""
+        },
+        "13.3": {
+            "B": {
+                "SpellName": "Base Stats",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Health Growth: ",
+                            "Before": "108",
+                            "Indicator": " ⇒ ",
+                            "After": "114"
+                        }
+                    }
+                ]
+            },
+            "P": "",
+            "Q": {
+                "SpellName": "Q - Ntofo Strikes",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Q3 Knock Up Duration: ",
+                            "Before": "1 second",
+                            "Indicator": " ⇒ ",
+                            "After": "0.65 seconds"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Q3 Stun Duration: ",
+                            "Before": "1-1.25 seconds",
+                            "Indicator": " ⇒ ",
+                            "After": "1 second"
+                        }
+                    }
+                ]
+            },
+            "W": {
+                "SpellName": "W - Path Maker",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Minimum Stun Duration: ",
+                            "Before": "0.35/0.45/0.55/0.65/0.75 seconds",
+                            "Indicator": " ⇒ ",
+                            "After": "0.3/0.35/0.4/0.45/0.5 seconds"
+                        }
+                    }
+                ]
+            },
+            "E": "",
+            "R": {
+                "SpellName": "R - All Out",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Resistances Lost: ",
+                            "Before": "65% Bonus Resistances",
+                            "Indicator": " ⇒ ",
+                            "After": "85% Bonus Resistances"
+                        }
+                    }
+                ]
+            }
         }
     },
     "ChangePatches": [
         "12.21",
         "12.23",
-        "13.1"
+        "13.1",
+        "13.3"
     ],
     "ChampionName": "K'Sante"
 }

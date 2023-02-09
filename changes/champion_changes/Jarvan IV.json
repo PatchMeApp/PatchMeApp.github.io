@@ -114,8 +114,13 @@
                     },
                     {
                         "text": {
-                            "text": "60/80/100/120/140 Shield",
-                            "scaleHolders": []
+                            "text": "60/80/100/120/140 {{0}} Shield",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+80% bonus AD)",
+                                    "scaleId": "AD"
+                                }
+                            ]
                         },
                         "type": "shield"
                     },
@@ -128,7 +133,7 @@
                     }
                 ]
             },
-            "cooldown": "9",
+            "cooldown": "8",
             "cost": "30 Mana",
             "name": "Golden Aegis"
         },
@@ -456,6 +461,58 @@
                 ]
             },
             "R": ""
+        },
+        "13.3": {
+            "B": {
+                "SpellName": "Base Stats",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Base Armor: ",
+                            "Before": "34",
+                            "Indicator": " ⇒ ",
+                            "After": "36"
+                        }
+                    }
+                ]
+            },
+            "P": "",
+            "Q": "",
+            "W": {
+                "SpellName": "W - Golden Aegis",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Cooldown: ",
+                            "Before": "9 seconds",
+                            "Indicator": " ⇒ ",
+                            "After": "8 seconds"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Shield Strength: ",
+                            "Before": "60/80/100/120/140",
+                            "Indicator": " ⇒ ",
+                            "After": "60/80/100/120/140 (+80% bonus AD)"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Shield Duration: ",
+                            "Before": "5 seconds",
+                            "Indicator": " ⇒ ",
+                            "After": "4 seconds"
+                        }
+                    }
+                ]
+            },
+            "E": "",
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -465,7 +522,8 @@
         "11.20",
         "12.10",
         "12.12",
-        "12.14"
+        "12.14",
+        "13.3"
     ],
     "ChampionName": "Jarvan IV"
 }
