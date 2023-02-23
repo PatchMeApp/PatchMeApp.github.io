@@ -124,10 +124,10 @@
                     },
                     {
                         "text": {
-                            "text": "30/45/60/75/90 {{0}} magic damage",
+                            "text": "25/35/45/55/65 {{0}} magic damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+40% AP)",
+                                    "scale": "(+ 40% AP)",
                                     "scaleId": "AP"
                                 }
                             ]
@@ -203,7 +203,7 @@
                     }
                 ]
             },
-            "cooldown": "120/100/80",
+            "cooldown": "130/115/100",
             "cost": "100 Mana",
             "name": "Summon: Tibbers"
         }
@@ -676,6 +676,53 @@
                     }
                 ]
             }
+        },
+        "13.4": {
+            "B": {
+                "SpellName": "Base Stats",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Base Health: ",
+                            "Before": "594",
+                            "Indicator": " ⇒ ",
+                            "After": "560"
+                        }
+                    }
+                ]
+            },
+            "P": "",
+            "Q": "",
+            "W": "",
+            "E": {
+                "SpellName": "E - Molten Shield",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Shield Retaliation Magic Damage: ",
+                            "Before": "30/45/60/75/90 (+ 40% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "25/35/45/55/65 (+ 40% AP)"
+                        }
+                    }
+                ]
+            },
+            "R": {
+                "SpellName": "R - Summon: Tibbers",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Cooldown: ",
+                            "Before": "120/100/80 seconds",
+                            "Indicator": " ⇒ ",
+                            "After": "130/115/100 seconds"
+                        }
+                    }
+                ]
+            }
         }
     },
     "ChangePatches": [
@@ -688,7 +735,8 @@
         "11.15",
         "12.10",
         "12.12",
-        "13.3"
+        "13.3",
+        "13.4"
     ],
     "ChampionName": "Annie"
 }

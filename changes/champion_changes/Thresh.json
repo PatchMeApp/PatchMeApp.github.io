@@ -78,10 +78,10 @@
                     },
                     {
                         "text": {
-                            "text": "100/145/190/235/280 {{0}} magic damage",
+                            "text": "100/150/200/250/300 {{0}} magic damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+80% AP)",
+                                    "scale": "(+90% AP)",
                                     "scaleId": "AP"
                                 }
                             ]
@@ -104,7 +104,7 @@
                     }
                 ]
             },
-            "cooldown": "19/17/15/13/11",
+            "cooldown": "19/16.5/14/11.5/9",
             "cost": "70 Mana",
             "name": "Death Sentence"
         },
@@ -114,7 +114,7 @@
                 "parseInfo": [
                     {
                         "text": {
-                            "text": "50/75/100/125/150 {{0}} Shield",
+                            "text": "50/70/90/110/130 {{0}} Shield",
                             "scaleHolders": [
                                 {
                                     "scale": "(+1.5 per Soul collected)",
@@ -126,7 +126,7 @@
                     }
                 ]
             },
-            "cooldown": "22/20.5/19/17.5/16",
+            "cooldown": "21/20/19/18/17",
             "cost": "50/55/60/65/70 Mana",
             "name": "Dark Passage"
         },
@@ -190,8 +190,13 @@
                     },
                     {
                         "text": {
-                            "text": "75/110/145/180/215 magic damage",
-                            "scaleHolders": []
+                            "text": "75/115/155/195/235 {{0}} magic damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+ 70% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
                         },
                         "type": "magicDamage"
                     }
@@ -607,6 +612,71 @@
             },
             "R": ""
         },
+        "13.4": {
+            "B": "",
+            "P": "",
+            "Q": {
+                "SpellName": "Q - Death Sentence",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Magic Damage: ",
+                            "Before": "100/145/190/235/280 (+80% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "100/150/200/250/300 (+90% AP)"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Cooldown: ",
+                            "Before": "19/17/15/13/11 seconds",
+                            "Indicator": " ⇒ ",
+                            "After": "19/16.5/14/11.5/9 seconds (NoteLanding a Death Sentence still reduces its cooldown by 3 seconds.)"
+                        }
+                    }
+                ]
+            },
+            "W": {
+                "SpellName": "W - Dark Passage",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Cooldown: ",
+                            "Before": "22/20.5/19/17.5/16 seconds",
+                            "Indicator": " ⇒ ",
+                            "After": "21/20/19/18/17 seconds"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Base Shield Strength: ",
+                            "Before": "50/75/100/125/150",
+                            "Indicator": " ⇒ ",
+                            "After": "50/70/90/110/130"
+                        }
+                    }
+                ]
+            },
+            "E": {
+                "SpellName": "E - Flay",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Magic Damage: ",
+                            "Before": "75/110/145/180/215 (+ 60% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "75/115/155/195/235 (+ 70% AP)"
+                        }
+                    }
+                ]
+            },
+            "R": ""
+        },
         "13.3": {
             "B": "",
             "P": "",
@@ -668,7 +738,8 @@
         "12.10",
         "12.15",
         "12.18",
-        "13.3"
+        "13.3",
+        "13.4"
     ],
     "ChampionName": "Thresh"
 }

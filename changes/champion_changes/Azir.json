@@ -201,10 +201,10 @@
                     },
                     {
                         "text": {
-                            "text": "60/90/120/150/180 {{0}} magic damage",
+                            "text": "60/100/140/180/220 {{0}} magic damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+40% AP)",
+                                    "scale": "(+ 55% AP)",
                                     "scaleId": "AP"
                                 }
                             ]
@@ -237,10 +237,10 @@
                     },
                     {
                         "text": {
-                            "text": "175/325/475 {{0}} magic damage",
+                            "text": "200/400/600 {{0}} magic damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+60% AP)",
+                                    "scale": "(+75% AP)",
                                     "scaleId": "AP"
                                 }
                             ]
@@ -545,6 +545,75 @@
                 ]
             },
             "R": ""
+        },
+        "13.4": {
+            "B": {
+                "SpellName": "Base Stats",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Base Mana: ",
+                            "Before": "480",
+                            "Indicator": " ⇒ ",
+                            "After": "380"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Mana Growth: ",
+                            "Before": "21",
+                            "Indicator": " ⇒ ",
+                            "After": "36"
+                        }
+                    }
+                ]
+            },
+            "P": "",
+            "Q": "",
+            "W": {
+                "SpellName": "W - Arise!",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Soldier Recharge Time: ",
+                            "Before": "9/8.25/7.5/6.75/6 seconds",
+                            "Indicator": " ⇒ ",
+                            "After": "10/9/8/7/6 seconds"
+                        }
+                    }
+                ]
+            },
+            "E": {
+                "SpellName": "E - Shifting Sands",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Magic Damage: ",
+                            "Before": "60/90/120/150/180 (+ 40% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "60/100/140/180/220 (+ 55% AP)"
+                        }
+                    }
+                ]
+            },
+            "R": {
+                "SpellName": "R - Emperor's Divide",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Magic Damage: ",
+                            "Before": "175/325/475 (+ 60% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "200/400/600 (+75% AP)"
+                        }
+                    }
+                ]
+            }
         }
     },
     "ChangePatches": [
@@ -556,7 +625,8 @@
         "11.11",
         "12.6",
         "12.10",
-        "12.17"
+        "12.17",
+        "13.4"
     ],
     "ChampionName": "Azir"
 }

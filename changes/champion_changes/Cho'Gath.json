@@ -63,7 +63,7 @@
                     },
                     {
                         "text": {
-                            "text": "80/135/190/245/300 {{0}} magic damage",
+                            "text": " 80/140/200/260/320 {{0}} magic damage",
                             "scaleHolders": [
                                 {
                                     "scale": "(+100% AP)",
@@ -83,7 +83,7 @@
                 ]
             },
             "cooldown": "6",
-            "cost": "60 Mana",
+            "cost": "50 Mana",
             "name": "Rupture"
         },
         "W": {
@@ -112,7 +112,7 @@
                 ]
             },
             "cooldown": "13/12/11/10/9",
-            "cost": "70/80/90/100/110 Mana",
+            "cost": "70/75/80/85/90 Mana",
             "name": "Feral Scream"
         },
         "E": {
@@ -390,6 +390,62 @@
                     }
                 ]
             }
+        },
+        "13.4": {
+            "B": {
+                "SpellName": "Base Stats",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Armor Growth: ",
+                            "Before": "4.7",
+                            "Indicator": " ⇒ ",
+                            "After": "5"
+                        }
+                    }
+                ]
+            },
+            "P": "",
+            "Q": {
+                "SpellName": "Q - Rupture",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Mana Cost: ",
+                            "Before": "60",
+                            "Indicator": " ⇒ ",
+                            "After": "50"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Magic Damage: ",
+                            "Before": "80/135/190/245/300 (+100% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "80/140/200/260/320 (+100% AP)"
+                        }
+                    }
+                ]
+            },
+            "W": {
+                "SpellName": "W - Feral Scream",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Mana Cost: ",
+                            "Before": "70/80/90/100/110",
+                            "Indicator": " ⇒ ",
+                            "After": "70/75/80/85/90"
+                        }
+                    }
+                ]
+            },
+            "E": "",
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -398,7 +454,8 @@
         "11.19",
         "12.10",
         "12.22",
-        "12.23"
+        "12.23",
+        "13.4"
     ],
     "ChampionName": "Cho'Gath"
 }

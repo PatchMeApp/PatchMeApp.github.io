@@ -141,7 +141,7 @@
                                     "scaleId": "target"
                                 },
                                 {
-                                    "scale": "(+100% AP)",
+                                    "scale": "(+70% AP)",
                                     "scaleId": "AP"
                                 }
                             ]
@@ -174,7 +174,7 @@
                     },
                     {
                         "text": {
-                            "text": "80/120/160 {{0}} magic damage",
+                            "text": "60/110/160 {{0}} magic damage",
                             "scaleHolders": [
                                 {
                                     "scale": "(+60% AP)",
@@ -205,7 +205,7 @@
                     },
                     {
                         "text": {
-                            "text": " 25/45/65 {{0}} Armor ",
+                            "text": " 15/40/65 {{0}} Armor ",
                             "scaleHolders": [
                                 {
                                     "scale": "(+40% bonus AD)",
@@ -462,6 +462,98 @@
                     }
                 ]
             }
+        },
+        "13.4": {
+            "B": {
+                "SpellName": "Base Stats",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Base Health: ",
+                            "Before": "685",
+                            "Indicator": " ⇒ ",
+                            "After": "665"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Health Growth: ",
+                            "Before": "99",
+                            "Indicator": " ⇒ ",
+                            "After": "100"
+                        }
+                    }
+                ]
+            },
+            "P": "",
+            "Q": "",
+            "W": "",
+            "E": {
+                "SpellName": "E - Counter Strike",
+                "Changes": [
+                    {
+                        "Tag": "NEW",
+                        "Change": {
+                            "Attribute": "ALL THE DAMAGE: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "Dodging attacks now increases the entire damage of the spell, no longer just the base damage."
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Minimum Magic Damage: ",
+                            "Before": "55/85/115/145/175 (+100% AP) (+4% of target's maximum health)",
+                            "Indicator": " ⇒ ",
+                            "After": "55/85/115/145/175 (+70% AP) (+4% of target's maximum health)"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Maximum Magic Damage: ",
+                            "Before": "110/170/230/290/350 (+100% AP) (+4% of target's maximum health)",
+                            "Indicator": " ⇒ ",
+                            "After": "110/170/230/290/350 (+140% AP) (+8% of target's maximum health)"
+                        }
+                    }
+                ]
+            },
+            "R": {
+                "SpellName": "R - Grandmaster-At-Arms",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Passive On-Hit Damage: ",
+                            "Before": "80/120/160 (+60% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "60/110/160 (+60% AP)"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Bonus Armor for First Champion Hit: ",
+                            "Before": "25/45/65 (+40% bonus AD)",
+                            "Indicator": " ⇒ ",
+                            "After": "15/40/65 (+40% bonus AD)"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Bonus Magic Resist for First Champion Hit: ",
+                            "Before": "15/27/39 (+24% bonus AD)",
+                            "Indicator": " ⇒ ",
+                            "After": "9/24/39 (+24% bonus AD)"
+                        }
+                    }
+                ]
+            }
         }
     },
     "ChangePatches": [
@@ -470,7 +562,8 @@
         "11.5",
         "12.6",
         "12.10",
-        "13.1"
+        "13.1",
+        "13.4"
     ],
     "ChampionName": "Jax"
 }

@@ -260,7 +260,7 @@
                                     "scaleId": "chance"
                                 },
                                 {
-                                    "scale": "(+3% Bonus AD)",
+                                    "scale": "(+5% Bonus AD)",
                                     "scaleId": "AD"
                                 }
                             ]
@@ -695,6 +695,40 @@
                     }
                 ]
             }
+        },
+        "13.4": {
+            "B": "",
+            "P": "",
+            "Q": {
+                "SpellName": "Q - Blade of the Ruined King",
+                "Changes": [
+                    {
+                        "Tag": "NEW",
+                        "Change": {
+                            "Attribute": "Shot Through the Heart: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "The passive damage from Q on basic attacks can now critically strike."
+                        }
+                    }
+                ]
+            },
+            "W": "",
+            "E": "",
+            "R": {
+                "SpellName": "R - Heartbreaker",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Physical Damage: ",
+                            "Before": "12/16/20% (+3% per 100 bonus AD) of target's missing health",
+                            "Indicator": " ⇒ ",
+                            "After": "12/16/20% (+5% per 100 bonus AD) of target's missing health"
+                        }
+                    }
+                ]
+            }
         }
     },
     "ChangePatches": [
@@ -705,7 +739,8 @@
         "11.17",
         "11.21",
         "12.10",
-        "12.12"
+        "12.12",
+        "13.4"
     ],
     "ChampionName": "Viego"
 }

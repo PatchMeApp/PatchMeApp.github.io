@@ -80,7 +80,7 @@
                     },
                     {
                         "text": {
-                            "text": "40/75/110/145/180 plus 4% {{0}} current Health magic damage",
+                            "text": "60/90/120/150/180 plus 4% {{0}} current Health magic damage",
                             "scaleHolders": [
                                 {
                                     "scale": "(+3% per 100 AP)",
@@ -458,6 +458,40 @@
             "W": "",
             "E": "",
             "R": ""
+        },
+        "13.4": {
+            "B": "",
+            "P": "",
+            "Q": {
+                "SpellName": "Q - Venomous Bite",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Magic Damage: ",
+                            "Before": "70/105/140/175/210 (+8% (+3% per 100 AP) target's missing hp)",
+                            "Indicator": " ⇒ ",
+                            "After": "60/90/120/150/180 (+8% (+3% per 100 AP) target's missing hp)"
+                        }
+                    }
+                ]
+            },
+            "W": "",
+            "E": "",
+            "R": {
+                "SpellName": "R - Spider Form",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Spiderling Magic Damage: ",
+                            "Before": "10/15/20/25 (levels 1/6/11/16)",
+                            "Indicator": " ⇒ ",
+                            "After": "8/14/20/26 (levels 1/6/11/16)"
+                        }
+                    }
+                ]
+            }
         }
     },
     "ChangePatches": [
@@ -468,7 +502,8 @@
         "11.20",
         "12.10",
         "12.13",
-        "12.20"
+        "12.20",
+        "13.4"
     ],
     "ChampionName": "Elise"
 }

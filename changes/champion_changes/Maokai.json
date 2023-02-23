@@ -76,7 +76,7 @@
                 "parseInfo": [
                     {
                         "text": {
-                            "text": "70/120/170/220/270 {{0}} plus 2/2.25/2.5/2.75/3% max Health magic damage",
+                            "text": "70/120/170/220/270 {{0}} plus 2/2.5/3/3.5/4% max Health magic damage",
                             "scaleHolders": [
                                 {
                                     "scale": "(+40% AP)",
@@ -137,18 +137,18 @@
         },
         "E": {
             "_rawTooltip": {
-                "fullTooltip": "Maokai flings a sapling, which stands watch for 30 seconds. Saplings chase nearby enemies, detonating on arrival to deal [[0]] and [[1]] surrounding enemies by 45% for 2 seconds. [[2]] Cooldown is reduced by an additional 4 seconds if the sapling hits an enemy champion or epic monster.<br /><br />If placed in brush, Saplings instead last for 30 (+2.5% Bonus Health) seconds and cause a larger explosion, dealing [[3]] over 2 seconds and [[4]] enemies by 45% (+0.9% per 100 bonus HP) (+4% per 100 AP))% Bonus Health).",
+                "fullTooltip": "Maokai flings a sapling, which stands watch for 30 seconds. Saplings chase nearby enemies, detonating on arrival to deal [[0]] and [[1]] surrounding enemies by 45% for 2 seconds. [[2]] Cooldown is reduced by an additional 4 seconds if the sapling hits an enemy champion or epic monster.<br /><br />If placed in brush, Saplings instead last for 30 (+2.5% Bonus Health) seconds and cause a larger explosion, dealing [[3]] over 2 seconds and [[4]] enemies by 45% (+1% per 100 bonus health) (+1% per 100 AP))% Bonus Health).",
                 "parseInfo": [
                     {
                         "text": {
-                            "text": "55/80/105/130/155 {{0}} {{1}} magic damage",
+                            "text": "50/75/100/125/150 {{0}} {{1}} magic damage",
                             "scaleHolders": [
                                 {
                                     "scale": "(+5% bonus health)",
                                     "scaleId": "health"
                                 },
                                 {
-                                    "scale": "(+35% AP)",
+                                    "scale": "(+25% AP)",
                                     "scaleId": "AP"
                                 }
                             ]
@@ -194,7 +194,7 @@
                     }
                 ]
             },
-            "cooldown": "10",
+            "cooldown": "14",
             "cost": "45/55/65/75/85 Mana",
             "name": "Sapling Toss"
         },
@@ -850,6 +850,58 @@
             },
             "R": ""
         },
+        "13.4": {
+            "B": "",
+            "P": "",
+            "Q": {
+                "SpellName": "Q - Bramble Smash",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Magic Damage: ",
+                            "Before": "70/120/170/220/270 (+2/2.25/2.5/2.75/3% of target's maximum health) (+40% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "70/120/170/220/270 (+2/2.5/3/3.5/4% of target's maximum health) (+40% AP) (NoteThis nets out at about a 7% damage increase.)"
+                        }
+                    }
+                ]
+            },
+            "W": "",
+            "E": {
+                "SpellName": "E - Sapling Toss",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Cooldown: ",
+                            "Before": "10 seconds",
+                            "Indicator": " ⇒ ",
+                            "After": "14 seconds"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Magic Damage: ",
+                            "Before": "55/80/105/130/155 (+5% bonus health) (+35% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "50/75/100/125/150 (+5% bonus health) (+25% AP) (Notedamage is still doubled when Saplings are placed in brush.)"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Brush Empowered Sapling Slow: ",
+                            "Before": "45% (+0.9% per 100 bonus health) (+4% per 100 AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "45% (+1% per 100 bonus health) (+1% per 100 AP)"
+                        }
+                    }
+                ]
+            },
+            "R": ""
+        },
         "12.22": {
             "B": "",
             "P": "",
@@ -885,7 +937,8 @@
         "12.20",
         "12.22",
         "12.23",
-        "13.1B"
+        "13.1B",
+        "13.4"
     ],
     "ChampionName": "Maokai"
 }

@@ -216,7 +216,7 @@
                                     "scaleId": "AP"
                                 },
                                 {
-                                    "scale": "(+100% Bonus AD)",
+                                    "scale": "(+115% bonus AD)",
                                     "scaleId": "AD"
                                 }
                             ]
@@ -241,7 +241,7 @@
                     }
                 ]
             },
-            "cooldown": "160/140/120",
+            "cooldown": "140/120/100",
             "cost": "100 Mana",
             "name": "Dawning Shadow"
         }
@@ -874,6 +874,49 @@
             "E": "",
             "R": ""
         },
+        "13.4": {
+            "B": {
+                "SpellName": "Base Stats",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Attack Ratio (Attack Speed per 100% bonus Attack Speed): ",
+                            "Before": "0.30",
+                            "Indicator": " ⇒ ",
+                            "After": "0.40"
+                        }
+                    }
+                ]
+            },
+            "P": "",
+            "Q": "",
+            "W": "",
+            "E": "",
+            "R": {
+                "SpellName": "R - Dawning Shadow",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Physical Damage: ",
+                            "Before": "250/375/500 (+100% bonus AD) (+70% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "250/400/550 (+115% bonus AD) (+70% AP)"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Cooldown: ",
+                            "Before": "160/140/120 seconds",
+                            "Indicator": " ⇒ ",
+                            "After": "140/120/100 seconds"
+                        }
+                    }
+                ]
+            }
+        },
         "12.12": {
             "B": {
                 "SpellName": "Base Stats",
@@ -961,7 +1004,8 @@
         "12.10",
         "12.11",
         "12.12",
-        "13.1B"
+        "13.1B",
+        "13.4"
     ],
     "ChampionName": "Senna"
 }

@@ -173,8 +173,8 @@
                                     "scaleId": "AP"
                                 },
                                 {
-                                    "scale": "(+10% Armor)",
-                                    "scaleId": "Armor"
+                                    "scale": "(+ 15% armor)",
+                                    "scaleId": "armor"
                                 }
                             ]
                         },
@@ -189,8 +189,8 @@
                                     "scaleId": "AP"
                                 },
                                 {
-                                    "scale": "(+15% Armor)",
-                                    "scaleId": "Armor"
+                                    "scale": "(+20% armor)",
+                                    "scaleId": "armor"
                                 }
                             ]
                         },
@@ -198,7 +198,7 @@
                     }
                 ]
             },
-            "cooldown": "12/11.5/11/10.5/10",
+            "cooldown": "10/9.5/9/8.5/8",
             "cost": "30/35/40/45/50 Mana",
             "name": "Thunderclap"
         },
@@ -466,6 +466,45 @@
                 ]
             },
             "R": ""
+        },
+        "13.4": {
+            "B": "",
+            "P": "",
+            "Q": "",
+            "W": {
+                "SpellName": "W - Thunderclap",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Cooldown: ",
+                            "Before": "12/11.5/11/10.5/10 seconds",
+                            "Indicator": " ⇒ ",
+                            "After": "10/9.5/9/8.5/8 seconds"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Empowered Attacks Physical Damage: ",
+                            "Before": "30/45/60/75/90 (+20% AP) (+10% armor)",
+                            "Indicator": " ⇒ ",
+                            "After": "30/45/60/75/90 (+ 20% AP) (+ 15% armor)"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Cone Physical Damage: ",
+                            "Before": "15/25/35/45/55 (+30% AP) (+15% armor)",
+                            "Indicator": " ⇒ ",
+                            "After": "15/25/35/45/55 (+30% AP) (+20% armor)"
+                        }
+                    }
+                ]
+            },
+            "E": "",
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -474,7 +513,8 @@
         "12.10",
         "12.16",
         "12.19",
-        "12.23"
+        "12.23",
+        "13.4"
     ],
     "ChampionName": "Malphite"
 }
