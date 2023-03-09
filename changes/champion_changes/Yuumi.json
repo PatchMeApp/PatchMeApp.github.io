@@ -2,10 +2,10 @@
     "stats": {
         "hp": {
             "base": 500,
-            "increment": 84
+            "increment": 69
         },
         "mp": {
-            "base": 400,
+            "base": 440,
             "increment": 45
         },
         "armor": {
@@ -43,35 +43,23 @@
     },
     "spells": {
         "P": {
-            "cooldown": "18-6 seconds (based on level)",
+            "cooldown": "20-10 seconds (levels 1-11)",
             "_rawTooltip": {
-                "fullTooltip": "Innate: Periodically, Yuumi's next basic attack against an enemy champion has an uncancelable windup, gains 25 bonus range, turns into a non-projectile, restores 25 − 100 (based on level) (+ 8% maximum mana) mana and grants her a 45 - 300 (based on level) (+ 25% AP) shield that lasts until it is broken.<br>While attached, the shield transfers to her Anchor.",
+                "fullTooltip": "INNATE: Periodically, Yuumi's next basic attack, which gains 50 bonus range, or ability hit against enemy champions will heal her for 25 − 110 (based on level) (+ 15% AP). If she is attached to an ally within 4 seconds, they are healed for the same amount.<br>INNATE: While attached to an ally, Yuumi grants them 2 permanent Friendship stacks for killing enemy champions and minions. The ally with the highest Friendship stacks becomes Yuumi's Best Friend, which empowers her abilities with additional effects while she is attached to them.",
                 "parseInfo": []
             },
-            "name": "Bop 'n' Block"
+            "name": "Feline Friendship"
         },
         "Q": {
             "_rawTooltip": {
-                "fullTooltip": "Yuumi summons an errant missile that deals [[0]] to the first enemy hit. If the missile travels for 1 (+0.05) second before impacting, it deals [[1]] instead and [[2]] champions by 20% for 1 second.<br /><br />If cast while [[3]], Yuumi can control the missile using her mouse.",
+                "fullTooltip": "Yuumi summons an errant missile that deals [[0]] to the first enemy and [[1]] the target for 20%, decaying over 1 seconds.<br /><br />If cast while [[2]] Yuumi can control the missile using her mouse for a short period before it accelerates in the a straight line. The accelerated missile deals [[3]] and [[4]] the target for 55% for 2 seconds, instead.<br /><br />[[5]] Prowling Projectile's Slow will always be enhanced and hitting an enemy champion also grants them [[6]] On-Hit for 5 seconds.            ",
                 "parseInfo": [
                     {
                         "text": {
-                            "text": "50/80/110/140/170/200 {{0}} magic damage",
+                            "text": "60/90/120/150/180/210 {{0}} magic damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+30% AP)",
-                                    "scaleId": "AP"
-                                }
-                            ]
-                        },
-                        "type": "magicDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "60/100/140/180/220/260 {{0}} plus 3/4.2/5.4/6.6/7.8/9% current Health magic damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+40% AP)",
+                                    "scale": "(+20% AP)",
                                     "scaleId": "AP"
                                 }
                             ]
@@ -91,16 +79,54 @@
                             "scaleHolders": []
                         },
                         "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "80/140/200/260/320/380 {{0}} magic damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+35% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "magicDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "Slows",
+                            "scaleHolders": []
+                        },
+                        "type": "status"
+                    },
+                    {
+                        "text": {
+                            "text": "Best Friend Bonus:",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "10/12/14/16/18/20 {{0}} magic damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+10% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "magicDamage"
                     }
                 ]
             },
-            "cooldown": "13.5/12/10.5/9/7.5/6",
-            "cost": "90 Mana",
+            "cooldown": "7.5/7.25/7.0/6.75/6.5/6.25",
+            "cost": "50/55/60/65/70/75 Mana",
             "name": "Prowling Projectile"
         },
         "W": {
             "_rawTooltip": {
-                "fullTooltip": "[[0]] Yuumi increases her [[1]] ally's Adaptive Force by 12-20 (+6-10% of bonus), and grants herself the same amount.<br /><br />[[2]] Yuumi dashes to an ally champion and [[3]] to them. While Yuumi is [[4]], she follows her partner's movement and is Untargetable except from towers.<br /><br />[[5]] effects on Yuumi place this Ability on a 5 second Cooldown.",
+                "fullTooltip": "[[0]] While on her [[1]], Yuumi gains an additional [[2]] (based on Ally level) and her Best Friend restores [[3]] On-Hit.<br /><br />[[4]] Yuumi dashes to an ally champion and [[5]] to them. While Yuumi is [[6]], she follows her partner's movement and is Untargetable except from towers.<br /><br />[[7]] effects on Yuumi place this Ablity on a 5 second Cooldown.",
                 "parseInfo": [
                     {
                         "text": {
@@ -111,10 +137,29 @@
                     },
                     {
                         "text": {
-                            "text": "Attached",
+                            "text": "Best Friend",
                             "scaleHolders": []
                         },
                         "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "10-20% heal and shield power",
+                            "scaleHolders": []
+                        },
+                        "type": "healing"
+                    },
+                    {
+                        "text": {
+                            "text": "3/5/7/9/11 {{0}}",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+4% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "healing"
                     },
                     {
                         "text": {
@@ -152,11 +197,18 @@
         },
         "E": {
             "_rawTooltip": {
-                "fullTooltip": "Yuumi restores [[0]] to herself and gains [[1]] and [[2]] for 3 seconds. If Yuumi is [[3]], this Ability affects her ally instead.",
+                "fullTooltip": "Yuumi [[0]] herself blocking [[1]] and gains [[2]] for 3 seconds. While the shield persists, the target also gains [[3]].<br /><br />If yuumi is [[4]], this Ability affects her ally instead and also restores 20/24/28/32/36 Mana to them, increased by up to 100% based on their missing Mana.",
                 "parseInfo": [
                     {
                         "text": {
-                            "text": "70/90/110/130/150 {{0}} Health",
+                            "text": "sheilds",
+                            "scaleHolders": []
+                        },
+                        "type": "shield"
+                    },
+                    {
+                        "text": {
+                            "text": "90/120/150/180/210 {{0}} damage",
                             "scaleHolders": [
                                 {
                                     "scale": "(+30% AP)",
@@ -164,7 +216,19 @@
                                 }
                             ]
                         },
-                        "type": "healing"
+                        "type": "magicDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "35% {{0}}",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+8% per 100 AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "attackSpeed"
                     },
                     {
                         "text": {
@@ -172,13 +236,6 @@
                             "scaleHolders": []
                         },
                         "type": "speed"
-                    },
-                    {
-                        "text": {
-                            "text": "25/30/35/40/45% Attack Speed",
-                            "scaleHolders": []
-                        },
-                        "type": "attackSpeed"
                     },
                     {
                         "text": {
@@ -190,16 +247,23 @@
                 ]
             },
             "cooldown": "12/11.5/11/10.5/10",
-            "cost": "40/45/50/55 Mana + 12% Max Mana",
+            "cost": "80/90/100/110/120 Mana",
             "name": "Zoomies"
         },
         "R": {
             "_rawTooltip": {
-                "fullTooltip": " Yuumi channels for 3.5 seconds, launching 7 waves dealing [[0]]. Champions hit by 3 waves are [[1]] for 1.25 seconds.<br /><br />Yuumi can move and cast [[2]] and [[3]] while channeling.",
+                "fullTooltip": "Yuumi channels for 3.5 seconds, launching 5 magical waves affecting both teams. If intitially cast while [[0]], Yuumi can steer the waves to follow her mouse.<br /><br />Enemies struck are dealt [[1]] and [[2]] by 10% for 1.25 seconds. increased by 10% per wave hit.<br /><br />Ally champions are healed for [[3]] per wave. Excess healing is converted to a [[4]] instead.<br /><br />[[5]] For her [[6]], [[7]] and also grants [[8]] and [[9]].",
                 "parseInfo": [
                     {
                         "text": {
-                            "text": "60/80/100 {{0}} magic damage",
+                            "text": "Attached",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "75/100/125 {{0}} magic damage",
                             "scaleHolders": [
                                 {
                                     "scale": "(+20% AP)",
@@ -211,28 +275,83 @@
                     },
                     {
                         "text": {
-                            "text": "Rooted",
+                            "text": "Slowed",
                             "scaleHolders": []
                         },
                         "type": "status"
                     },
                     {
                         "text": {
-                            "text": "You and Me!",
+                            "text": "35/50/65 {{0}} health",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+15% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "healing"
+                    },
+                    {
+                        "text": {
+                            "text": "Shield",
+                            "scaleHolders": []
+                        },
+                        "type": "shield"
+                    },
+                    {
+                        "text": {
+                            "text": "Best Friend Bonus:",
                             "scaleHolders": []
                         },
                         "type": ""
                     },
                     {
                         "text": {
-                            "text": "Zoomies",
+                            "text": "Best Friend",
                             "scaleHolders": []
                         },
                         "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "the heal is increased to 45.5/65/84.5 {{0}} health",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+19.5 AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "healing"
+                    },
+                    {
+                        "text": {
+                            "text": "20/40/60 {{0}} Armor",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+10% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "scaleArmor"
+                    },
+                    {
+                        "text": {
+                            "text": "20/40/60 {{0}} Magic Resistance",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+10% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "scaleMR"
                     }
                 ]
             },
-            "cooldown": "110/100/90",
+            "cooldown": "120/110/100",
             "cost": "100 Mana",
             "name": "Final Chapter"
         }

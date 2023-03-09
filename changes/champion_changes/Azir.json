@@ -1,16 +1,16 @@
 {
     "stats": {
         "hp": {
-            "base": 622,
+            "base": 550,
             "increment": 119
         },
         "mp": {
-            "base": 380,
-            "increment": 36
+            "base": 320,
+            "increment": 40
         },
         "armor": {
             "base": 19,
-            "increment": 4.2
+            "increment": 5
         },
         "spellBlock": {
             "base": 30,
@@ -26,7 +26,7 @@
         },
         "attackSpeed": {
             "base": 0.625,
-            "increment": 0.03
+            "increment": 0.05
         },
         "ms": {
             "base": 335,
@@ -34,7 +34,7 @@
         },
         "attackDamage": {
             "base": 52,
-            "increment": 2.8
+            "increment": 3.5
         },
         "attackRange": {
             "base": 525,
@@ -43,7 +43,7 @@
     },
     "spells": {
         "P": {
-            "cooldown": 180,
+            "cooldown": "90 seconds",
             "_rawTooltip": {
                 "fullTooltip": "Innate: Whenever a turret outside the enemy team's base is destroyed, a marker is placed above its ruins which can be targeted by Azir.<br>Innate - Disc of the Sun: Azir can select a marker to construct the Sun Disc above the ruins after a 0.5-second cast time. The Sun Disc will activate after being assembled over 5 seconds.<br>The Sun Disc functions the same as a standard inner turret, gains [[0]], and grants its kill credit to Azir. The Sun Disc's health decays over 60 seconds and loses [[1]] while Azir is not alive or is too far away.<br>Azir cannot construct a Sun Disc with the marker while he is unable to cast abilities.<br>See Pets for more details about the Sun Disc.",
                 "parseInfo": [
@@ -78,10 +78,10 @@
                     },
                     {
                         "text": {
-                            "text": "70/90/110/130/150 {{0}} magic damage",
+                            "text": "60/80/100/120/140 {{0}} magic damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+30% AP)",
+                                    "scale": "(+35% AP)",
                                     "scaleId": "AP"
                                 }
                             ]
@@ -98,7 +98,7 @@
                 ]
             },
             "cooldown": "14/12/10/8/6",
-            "cost": "55 Mana",
+            "cost": "65/70/75/80/85 Mana",
             "name": "Conquering Sands"
         },
         "W": {
@@ -204,7 +204,7 @@
                             "text": "60/100/140/180/220 {{0}} magic damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+ 55% AP)",
+                                    "scale": "(+ 40% AP)",
                                     "scaleId": "AP"
                                 }
                             ]
