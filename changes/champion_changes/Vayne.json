@@ -45,11 +45,11 @@
         "P": {
             "cooldown": "",
             "_rawTooltip": {
-                "fullTooltip": "Innate: Vayne gains [[0]] when moving towards a nearby visible enemy champion.<br>Final Hour: Night Hunter's bonus movement speed is tripled to 90.",
+                "fullTooltip": "Innate: Vayne gains [[0]] when moving towards a nearby visible enemy champion.<br>Final Hour: Night Hunter's bonus movement speed is tripled to 135.",
                 "parseInfo": [
                     {
                         "text": {
-                            "text": "30 bonus movement speed",
+                            "text": "45 bonus movement speed",
                             "scaleHolders": []
                         },
                         "type": "speed"
@@ -64,7 +64,7 @@
                 "parseInfo": [
                     {
                         "text": {
-                            "text": "60/65/70/75/80% AD physical damage",
+                            "text": "75/85/95/105/115% AD physical damage",
                             "scaleHolders": []
                         },
                         "type": "physicalDamage"
@@ -95,7 +95,7 @@
                     },
                     {
                         "text": {
-                            "text": "4/6/8/10/12% max Health true damage",
+                            "text": "6/7/8/9/10% max Health true damage",
                             "scaleHolders": []
                         },
                         "type": "trueDamage"
@@ -312,12 +312,69 @@
             },
             "E": "",
             "R": ""
+        },
+        "13.6": {
+            "B": "",
+            "P": {
+                "SpellName": "Passive - Night Hunter",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Bonus Movement Speed: ",
+                            "Before": "30",
+                            "Indicator": " ⇒ ",
+                            "After": "45"
+                        }
+                    }
+                ]
+            },
+            "Q": {
+                "SpellName": "Q - Tumble",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Bonus Physical Damage: ",
+                            "Before": "60/65/70/75/80% AD",
+                            "Indicator": " ⇒ ",
+                            "After": "75/85/95/105/115% AD"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Empowered Attack Duration: ",
+                            "Before": "7 seconds",
+                            "Indicator": " ⇒ ",
+                            "After": "3 seconds"
+                        }
+                    }
+                ]
+            },
+            "W": {
+                "SpellName": "W - Silver Bolts",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Percent Health Damage: ",
+                            "Before": "4/6/8/10/12% target's maximum health",
+                            "Indicator": " ⇒ ",
+                            "After": "6/7/8/9/10% target's maximum health"
+                        }
+                    }
+                ]
+            },
+            "E": "",
+            "R": ""
         }
     },
     "ChangePatches": [
         "9.19",
         "10.19",
-        "12.10"
+        "12.10",
+        "13.6"
     ],
     "ChampionName": "Vayne"
 }

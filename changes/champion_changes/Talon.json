@@ -49,14 +49,14 @@
                 "parseInfo": [
                     {
                         "text": {
-                            "text": "75 − 245 {{0}} {{1}} total physical damage",
+                            "text": "80 − 280 {{0}} {{1}} total physical damage",
                             "scaleHolders": [
                                 {
                                     "scale": "(based on level)",
                                     "scaleId": "level"
                                 },
                                 {
-                                    "scale": "(+ 200% bonus AD)",
+                                    "scale": "(+ 210 bonus AD)",
                                     "scaleId": "AD"
                                 }
                             ]
@@ -162,7 +162,7 @@
                 ]
             },
             "cooldown": "9/8.5/8/7.5/7",
-            "cost": "55/60/65/70/75 Mana",
+            "cost": "50/55/60/65/70 Mana",
             "name": "Rake"
         },
         "E": {
@@ -522,6 +522,53 @@
             "W": "",
             "E": "",
             "R": ""
+        },
+        "13.6": {
+            "B": {
+                "SpellName": "Base Stats",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Mana: ",
+                            "Before": "377",
+                            "Indicator": " ⇒ ",
+                            "After": "400"
+                        }
+                    }
+                ]
+            },
+            "P": {
+                "SpellName": "Passive - Blade's End",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Damage: ",
+                            "Before": "75-255 (based on level) (+200% bonus AD)",
+                            "Indicator": " ⇒ ",
+                            "After": "80-280 (based on level) (+210% bonus AD)"
+                        }
+                    }
+                ]
+            },
+            "Q": "",
+            "W": {
+                "SpellName": "W - Rake",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Mana Cost: ",
+                            "Before": "55/60/65/70/75",
+                            "Indicator": " ⇒ ",
+                            "After": "50/55/60/65/70"
+                        }
+                    }
+                ]
+            },
+            "E": "",
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -533,7 +580,8 @@
         "11.12",
         "11.18",
         "12.2",
-        "12.10"
+        "12.10",
+        "13.6"
     ],
     "ChampionName": "Talon"
 }

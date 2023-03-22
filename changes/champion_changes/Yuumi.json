@@ -120,8 +120,8 @@
                     }
                 ]
             },
-            "cooldown": "7.5/7.25/7.0/6.75/6.5/6.25",
-            "cost": "50/55/60/65/70/75 Mana",
+            "cooldown": "6.5",
+            "cost": "50/60/70/80/90/100 Mana",
             "name": "Prowling Projectile"
         },
         "W": {
@@ -252,7 +252,7 @@
         },
         "R": {
             "_rawTooltip": {
-                "fullTooltip": "Yuumi channels for 3.5 seconds, launching 5 magical waves affecting both teams. If intitially cast while [[0]], Yuumi can steer the waves to follow her mouse.<br /><br />Enemies struck are dealt [[1]] and [[2]] by 10% for 1.25 seconds. increased by 10% per wave hit.<br /><br />Ally champions are healed for [[3]] per wave. Excess healing is converted to a [[4]] instead.<br /><br />[[5]] For her [[6]], [[7]] and also grants [[8]] and [[9]].",
+                "fullTooltip": "Yuumi channels for 3.5 seconds, launching 5 magical waves affecting both teams. If intitially cast while [[0]], Yuumi can steer the waves to follow her mouse.<br /><br />Enemies struck are dealt [[1]] and [[2]] by 10% for 1.25 seconds. increased by 10% per wave hit.<br /><br />Ally champions are healed for [[3]] per wave. Excess healing is converted to a [[4]] instead.<br /><br />[[5]] For her [[6]], [[7]].",
                 "parseInfo": [
                     {
                         "text": {
@@ -324,30 +324,6 @@
                             ]
                         },
                         "type": "healing"
-                    },
-                    {
-                        "text": {
-                            "text": "20/40/60 {{0}} Armor",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+10% AP)",
-                                    "scaleId": "AP"
-                                }
-                            ]
-                        },
-                        "type": "scaleArmor"
-                    },
-                    {
-                        "text": {
-                            "text": "20/40/60 {{0}} Magic Resistance",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+10% AP)",
-                                    "scaleId": "AP"
-                                }
-                            ]
-                        },
-                        "type": "scaleMR"
                     }
                 ]
             },
@@ -1501,6 +1477,85 @@
                     }
                 ]
             }
+        },
+        "13.6": {
+            "B": "",
+            "P": "",
+            "Q": {
+                "SpellName": "Q - Prowling Projectile",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Cooldown: ",
+                            "Before": "7.5/7.25/7/6.75/6.5/6.25 seconds",
+                            "Indicator": " ⇒ ",
+                            "After": "6.5 seconds at all ranks"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Mana Cost: ",
+                            "Before": "50/55/60/65/70/75",
+                            "Indicator": " ⇒ ",
+                            "After": "50/60/70/80/90/100"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Unattached Missile Speed: ",
+                            "Before": "1000",
+                            "Indicator": " ⇒ ",
+                            "After": "850"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Enhanced Missile Speed: ",
+                            "Before": "1900",
+                            "Indicator": " ⇒ ",
+                            "After": "1650"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Max Range (in a straight line): ",
+                            "Before": "2000",
+                            "Indicator": " ⇒ ",
+                            "After": "1725"
+                        }
+                    }
+                ]
+            },
+            "W": "",
+            "E": "",
+            "R": {
+                "SpellName": "R - Final Chapter",
+                "Changes": [
+                    {
+                        "Tag": "NEW",
+                        "Change": {
+                            "Attribute": "Overheal Shield Duration: ",
+                            "Before": "3 seconds",
+                            "Indicator": " ⇒ ",
+                            "After": "1.5 seconds (Notethe shield will last the full duration of the spell (3.5 seconds) plus this amount of time)"
+                        }
+                    },
+                    {
+                        "Tag": "REMOVED",
+                        "Change": {
+                            "Attribute": "Best Friend Bonus Resistances: ",
+                            "Before": "20/40/60 (+10% AP) Armor & Magic Resistance",
+                            "Indicator": " ⇒ ",
+                            "After": "REMOVED"
+                        }
+                    }
+                ]
+            }
         }
     },
     "ChangePatches": [
@@ -1519,7 +1574,8 @@
         "12.23",
         "13.1",
         "13.1B",
-        "13.5"
+        "13.5",
+        "13.6"
     ],
     "ChampionName": "Yuumi"
 }

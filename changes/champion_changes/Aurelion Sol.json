@@ -143,13 +143,13 @@
                     }
                 ]
             },
-            "cooldown": "12/11.5/11/10.5/10",
+            "cooldown": "12",
             "cost": "60/70/80/90/100 Mana",
             "name": "Singularity"
         },
         "R": {
             "_rawTooltip": {
-                "fullTooltip": "Aurelion Sol plucks a star from the heavens and crashes it into the earth, dealing [[0]], [[1]] enemies for 1.25 seconds, and absorbing 5 stardust for each champion hit.<br /><br />Gathering 75 stardust transform the next Falling Star into The Skies Descend.<br /><br />The Skies Descend: Aurelion Sol drags a constellation's worth of fury down from the cosmos, dealing [[2]] in a larger area, [[3]] enemies hit for 1.25 seconds, unleaching a massive shockwave that deals [[4]] to champions and Epic Monster and [[5]] all enemies hit by 50% for 1 second.",
+                "fullTooltip": "Aurelion Sol plucks a star from the heavens and crashes it into the earth, dealing [[0]], [[1]] enemies for 1 seconds, and absorbing 5 stardust for each champion hit.<br /><br />Gathering 100 stardust transform the next Falling Star into The Skies Descend.<br /><br />The Skies Descend: Aurelion Sol drags a constellation's worth of fury down from the cosmos, dealing [[2]] in a larger area, [[3]] enemies hit for 1 seconds, unleaching a massive shockwave that deals [[4]] to champions and Epic Monster and [[5]] all enemies hit by 50% for 1 second.",
                 "parseInfo": [
                     {
                         "text": {
@@ -629,6 +629,76 @@
             "W": "",
             "E": "",
             "R": ""
+        },
+        "13.6": {
+            "B": "",
+            "P": "",
+            "Q": "",
+            "W": "",
+            "E": {
+                "SpellName": "E - Singularity",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Cooldown: ",
+                            "Before": "12/11.5/11/10.5/10 seconds",
+                            "Indicator": " ⇒ ",
+                            "After": "12 seconds at all ranks"
+                        }
+                    }
+                ]
+            },
+            "R": {
+                "SpellName": "R - Falling Star / The Skies Descend",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Stardust Requirement for The Skies Descend: ",
+                            "Before": "75",
+                            "Indicator": " ⇒ ",
+                            "After": "100"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Falling Star Stun Duration: ",
+                            "Before": "1.25 seconds",
+                            "Indicator": " ⇒ ",
+                            "After": "1 second"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Falling Star Cast Range: ",
+                            "Before": "1250",
+                            "Indicator": " ⇒ ",
+                            "After": "1100"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "The Skies Descend Knock Up Duration: ",
+                            "Before": "1.25 seconds",
+                            "Indicator": " ⇒ ",
+                            "After": "1 second"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "The Skies Descend Cast Range: ",
+                            "Before": "1250",
+                            "Indicator": " ⇒ ",
+                            "After": "1100"
+                        }
+                    }
+                ]
+            }
         }
     },
     "ChangePatches": [
@@ -638,7 +708,8 @@
         "11.15",
         "12.10",
         "13.3",
-        "13.5"
+        "13.5",
+        "13.6"
     ],
     "ChampionName": "Aurelion Sol"
 }
