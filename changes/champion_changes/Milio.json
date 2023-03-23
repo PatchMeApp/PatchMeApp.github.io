@@ -1,0 +1,220 @@
+{
+    "stats": {
+        "hp": {
+            "base": 560,
+            "increment": 88
+        },
+        "mp": {
+            "base": 365,
+            "increment": 43
+        },
+        "armor": {
+            "base": 28,
+            "increment": 4.9
+        },
+        "spellBlock": {
+            "base": 30,
+            "increment": 1.2
+        },
+        "hpRegen": {
+            "base": 5,
+            "increment": 0.5
+        },
+        "mpRegen": {
+            "base": 11.5,
+            "increment": 0.4
+        },
+        "attackSpeed": {
+            "base": 0.625,
+            "increment": 0.03
+        },
+        "ms": {
+            "base": 330,
+            "increment": 0
+        },
+        "attackDamage": {
+            "base": 48,
+            "increment": 3.2
+        },
+        "attackRange": {
+            "base": 525,
+            "increment": 0
+        }
+    },
+    "spells": {
+        "P": {
+            "cooldown": "",
+            "_rawTooltip": {
+                "fullTooltip": "When Milio's Abilities touch ally champions, their next Attack or Ability deals 15% − 50% (based on level) of ally's Attack Damage as additional magic damage, plus [[0]] over 1.5 seconds..",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "25 − 80 {{0}} {{1}} magic damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(based on level)",
+                                    "scaleId": "level"
+                                },
+                                {
+                                    "scale": "(+ 20% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "magicDamage"
+                    }
+                ]
+            },
+            "name": "Fired Up!"
+        },
+        "Q": {
+            "_rawTooltip": {
+                "fullTooltip": "Milio kicks a fireball, [[0]] the first enemy hit. If it hits, the ball bounces past them and explodes, dealing [[1]] tp surrounding enemeies and [[2]] them by [[3]].",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "Knocking Back",
+                            "scaleHolders": []
+                        },
+                        "type": "status"
+                    },
+                    {
+                        "text": {
+                            "text": "90/135/180/225/270 {{0}} magic damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+ 90% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "magicDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "slowing",
+                            "scaleHolders": []
+                        },
+                        "type": "status"
+                    },
+                    {
+                        "text": {
+                            "text": "40/45/50/55/60% {{0}}",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+ 5% per 100 AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "magicDamage"
+                    }
+                ]
+            },
+            "cooldown": "12",
+            "cost": "50/55/60/65/70 Mana",
+            "name": "Ultra Mega Fire Kick"
+        },
+        "W": {
+            "_rawTooltip": {
+                "fullTooltip": "Milio creates a hearth that follows ally champions for 6 seconds. Ally champions nearby gain 10/12.5/15/17.5/20% Attack Range and restore [[0]] over the duration. The hearth also applies Fired Up! every 3 seconds.<br /><br />Recast: Change the hearth's follow ally.",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "80/110/140/170/200 {{0}}",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+ 15% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "healing"
+                    }
+                ]
+            },
+            "cooldown": "29/27/25/23/21",
+            "cost": "90/100/110/120/130 Mana",
+            "name": "Cozy Campfire"
+        },
+        "E": {
+            "_rawTooltip": {
+                "fullTooltip": "Milio wraps an ally champion in protective flames, granting [[0]] and [[1]] for 2.5 seconds.<br /><br />This ability has 2 charges and the effects stack on repeated targets.",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "60/90/120/150/180 {{0}}",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+30% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "shield"
+                    },
+                    {
+                        "text": {
+                            "text": "15/17.5/20/22.5/25%",
+                            "scaleHolders": []
+                        },
+                        "type": "speed"
+                    }
+                ]
+            },
+            "cooldown": "17/16/15/14/13 Recharge/0.5 Cooldown",
+            "cost": "50/60/70/80/90 Mana",
+            "name": "Warm Hugs"
+        },
+        "R": {
+            "_rawTooltip": {
+                "fullTooltip": "Milio unleashes a wave of soothing flames on nearby ally champions, cleansing [[0]] and [[1]] effects, restoring [[2]], and granting 65% Tenacity for 3 seconds.",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "Disabling",
+                            "scaleHolders": []
+                        },
+                        "type": "status"
+                    },
+                    {
+                        "text": {
+                            "text": "Immobilizing",
+                            "scaleHolders": []
+                        },
+                        "type": "status"
+                    },
+                    {
+                        "text": {
+                            "text": "150/250/350 {{0}} Health",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+ 30% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "healing"
+                    }
+                ]
+            },
+            "cooldown": " 160/145/130",
+            "cost": "100 Mana",
+            "name": "Breath of Life"
+        }
+    },
+    "Changes": {
+        "13.6": {
+            "B": "",
+            "P": "",
+            "Q": "",
+            "W": "",
+            "E": "",
+            "R": ""
+        }
+    },
+    "ChangePatches": [
+        "13.6"
+    ],
+    "ChampionName": "Milio"
+}
