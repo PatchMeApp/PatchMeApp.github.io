@@ -56,7 +56,7 @@
                     },
                     {
                         "text": {
-                            "text": "40% − 100% {{0}} bonus attack speed",
+                            "text": "50% − 100% {{0}} bonus attack speed",
                             "scaleHolders": [
                                 {
                                     "scale": "(based on level)",
@@ -76,7 +76,7 @@
                 "parseInfo": [
                     {
                         "text": {
-                            "text": "70/120/170/220/270 {{0}} physical damage",
+                            "text": "65/115/165/215/265 {{0}} physical damage",
                             "scaleHolders": [
                                 {
                                     "scale": "(+100% Bonus AD)",
@@ -823,6 +823,40 @@
             "W": "",
             "E": "",
             "R": ""
+        },
+        "13.7": {
+            "B": "",
+            "P": {
+                "SpellName": "Passive - Berserker’s Rage",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Attack Speed: ",
+                            "Before": "60-100% (based on level)",
+                            "Indicator": " ⇒ ",
+                            "After": "50-100% (based on level)"
+                        }
+                    }
+                ]
+            },
+            "Q": {
+                "SpellName": "Q - Undertow",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Physical Damage: ",
+                            "Before": "70/120/170/220/270 (+100% bonus AD)",
+                            "Indicator": " ⇒ ",
+                            "After": "65/115/165/215/265 (+100% bonus AD)"
+                        }
+                    }
+                ]
+            },
+            "W": "",
+            "E": "",
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -832,7 +866,8 @@
         "12.9",
         "12.10",
         "12.11",
-        "12.13"
+        "12.13",
+        "13.7"
     ],
     "ChampionName": "Olaf"
 }

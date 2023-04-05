@@ -83,7 +83,7 @@
                             "text": "{{0}} bonus physical damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(20% + 9.33345%)",
+                                    "scale": "(30% + 9.33345%)",
                                     "scaleId": "9.33345%"
                                 }
                             ]
@@ -223,7 +223,7 @@
                     }
                 ]
             },
-            "cooldown": "120/90/60",
+            "cooldown": "100/80/60",
             "cost": "100 Mana",
             "name": "Collateral Damage"
         }
@@ -592,6 +592,40 @@
                     }
                 ]
             }
+        },
+        "13.7": {
+            "B": "",
+            "P": {
+                "SpellName": "Passive - New Destiny",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Critical Strike Bonus Per Pellet: ",
+                            "Before": "20%",
+                            "Indicator": " ⇒ ",
+                            "After": "30%"
+                        }
+                    }
+                ]
+            },
+            "Q": "",
+            "W": "",
+            "E": "",
+            "R": {
+                "SpellName": "R - Collateral Damage",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Cooldown: ",
+                            "Before": "120/90/60 seconds",
+                            "Indicator": " ⇒ ",
+                            "After": "100/80/60 seconds"
+                        }
+                    }
+                ]
+            }
         }
     },
     "ChangePatches": [
@@ -606,7 +640,8 @@
         "11.21",
         "11.22",
         "12.10",
-        "12.17"
+        "12.17",
+        "13.7"
     ],
     "ChampionName": "Graves"
 }

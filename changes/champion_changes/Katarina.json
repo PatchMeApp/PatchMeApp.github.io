@@ -56,12 +56,12 @@
                                     "scaleId": "level"
                                 },
                                 {
-                                    "scale": "(+ 75% bonus AD)",
+                                    "scale": "(+ 60% bonus AD)",
                                     "scaleId": "AD"
                                 },
                                 {
-                                    "scale": "(+ 55 / 66 / 77 / 88% (based on level)",
-                                    "scaleId": "level"
+                                    "scale": "(+ 70 /80/90/100% (levels 1/6/11/16)",
+                                    "scaleId": "1/6/11/16"
                                 }
                             ]
                         },
@@ -589,6 +589,40 @@
                     }
                 ]
             }
+        },
+        "13.7": {
+            "B": "",
+            "P": {
+                "SpellName": "Passive - Voracity",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Sinister Steel Dagger Magic Damage: ",
+                            "Before": "68-240 (based on level) (+ 60% bonus AD) (+65/75/85/95% (levels 1/6/11/16) AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "68-240 (based on level) (+ 60% bonus AD) (+70/80/90/100% (levels 1/6/11/16) AP)"
+                        }
+                    }
+                ]
+            },
+            "Q": "",
+            "W": "",
+            "E": "",
+            "R": {
+                "SpellName": "R - Death Lotus",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Physical Damage per Dagger: ",
+                            "Before": "18% (+30% per 100% bonus AS) bonus AD",
+                            "Indicator": " ⇒ ",
+                            "After": "16% (+50% per 100% bonus AS) bonus AD"
+                        }
+                    }
+                ]
+            }
         }
     },
     "ChangePatches": [
@@ -598,7 +632,8 @@
         "11.4",
         "11.10",
         "12.10",
-        "12.12"
+        "12.12",
+        "13.7"
     ],
     "ChampionName": "Katarina"
 }

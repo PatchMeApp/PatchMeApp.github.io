@@ -49,7 +49,7 @@
                 "parseInfo": [
                     {
                         "text": {
-                            "text": "60% of the post-mitigation damage",
+                            "text": "45% of the post-mitigation damage",
                             "scaleHolders": []
                         },
                         "type": ""
@@ -202,7 +202,7 @@
                                     "scaleId": "AP"
                                 },
                                 {
-                                    "scale": "(+100% bonus AD)",
+                                    "scale": "(+85% bonus AD)",
                                     "scaleId": "AD"
                                 }
                             ]
@@ -1229,6 +1229,53 @@
             "W": "",
             "E": "",
             "R": ""
+        },
+        "13.7": {
+            "B": {
+                "SpellName": "Base Stats",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Health Growth: ",
+                            "Before": "115",
+                            "Indicator": " ⇒ ",
+                            "After": "100"
+                        }
+                    }
+                ]
+            },
+            "P": {
+                "SpellName": "Passive - Living Battery",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Shield Absorption: ",
+                            "Before": "60% of damage dealt",
+                            "Indicator": " ⇒ ",
+                            "After": "45% of damage dealt"
+                        }
+                    }
+                ]
+            },
+            "Q": "",
+            "W": "",
+            "E": "",
+            "R": {
+                "SpellName": "R - Lightning Crash",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Magic Damage: ",
+                            "Before": "175/275/375 (+100% bonus AD) (+110% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "175/275/375 (+85% bonus AD) (+110% AP)"
+                        }
+                    }
+                ]
+            }
         }
     },
     "ChangePatches": [
@@ -1242,7 +1289,8 @@
         "12.14",
         "12.16",
         "12.23",
-        "13.1"
+        "13.1",
+        "13.7"
     ],
     "ChampionName": "Zeri"
 }

@@ -59,8 +59,8 @@
                             "text": "80/120/160/200/240 {{0}} magic damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+60% AP)",
-                                    "scaleId": "AP"
+                                    "scale": "(+45/50/55/60/65%)",
+                                    "scaleId": "(+45/50/55/60/65%"
                                 }
                             ]
                         },
@@ -88,8 +88,8 @@
                             "text": "85/140/195/250/305 {{0}} magic damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+100% AP)",
-                                    "scaleId": "AP"
+                                    "scale": "(+70/80/90/100/110%)",
+                                    "scaleId": "(+70/80/90/100/110%"
                                 }
                             ]
                         },
@@ -134,12 +134,12 @@
                             "text": "175/250/325 {{0}} and 350/500/650 {{1}} magic damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+75% AP)",
-                                    "scaleId": "AP"
+                                    "scale": "(+65/70/75%)",
+                                    "scaleId": "(+65/70/75%"
                                 },
                                 {
-                                    "scale": "(+150% AP)",
-                                    "scaleId": "AP"
+                                    "scale": "(+130/140/150%)",
+                                    "scaleId": "(+130/140/150%"
                                 }
                             ]
                         },
@@ -530,6 +530,66 @@
             },
             "E": "",
             "R": ""
+        },
+        "13.7": {
+            "B": "",
+            "P": "",
+            "Q": {
+                "SpellName": "Q - Baleful Strike",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "AP Ratio: ",
+                            "Before": "60% at all ranks",
+                            "Indicator": " ⇒ ",
+                            "After": "45/50/55/60/65%"
+                        }
+                    }
+                ]
+            },
+            "W": {
+                "SpellName": "W - Dark Matter",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "AP Ratio: ",
+                            "Before": "100% at all ranks",
+                            "Indicator": " ⇒ ",
+                            "After": "70/80/90/100/110%"
+                        }
+                    }
+                ]
+            },
+            "E": {
+                "SpellName": "E - Event Horizon",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Sneaky Stuns: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "Veigar can no longer hide his E VFX from enemies by placing it inside certain walls."
+                        }
+                    }
+                ]
+            },
+            "R": {
+                "SpellName": "R - Primordial Burst",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "AP Ratio: ",
+                            "Before": "75% at all ranks",
+                            "Indicator": " ⇒ ",
+                            "After": "65/70/75%"
+                        }
+                    }
+                ]
+            }
         }
     },
     "ChangePatches": [
@@ -542,7 +602,8 @@
         "12.10",
         "12.11",
         "13.4",
-        "13.6"
+        "13.6",
+        "13.7"
     ],
     "ChampionName": "Veigar"
 }

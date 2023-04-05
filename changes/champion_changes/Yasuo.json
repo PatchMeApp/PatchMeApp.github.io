@@ -45,7 +45,7 @@
         "P": {
             "cooldown": "",
             "_rawTooltip": {
-                "fullTooltip": "Innate - Intent: Yasuo's total critical strike chance is multiplied by 2.5 from all other sources, but his critical strikes deal only [ 90% of the normal critical strike damage ] Additionally, [ every 1% critical strike chance in excess of 100% is converted into 0.4 bonus AD. ]<br>Innate - Resolve: Yasuo generates Flow for every 59 / 52.5 / 46 (based on level) units he travels by any means. At[ 100 stacks ]and upon taking damage from enemy champions or monsters, Yasuo consumes all Flow to shield himself for 100 − 475 (based on level) for up to 1 second.",
+                "fullTooltip": "Innate - Intent: Yasuo's total critical strike chance is multiplied by 2.5 from all other sources, but his critical strikes deal only [ 90% of the normal critical strike damage ] Additionally, [ every 1% critical strike chance in excess of 100% is converted into 0.4 bonus AD. ]<br>Innate - Resolve: Yasuo generates Flow for every 59 / 52.5 / 46 (based on level) units he travels by any means. At[ 100 stacks ]and upon taking damage from enemy champions or monsters, Yasuo consumes all Flow to shield himself for 100 − 575 (based on level) for up to 1 second.",
                 "parseInfo": []
             },
             "name": "Way of the Wanderer"
@@ -90,7 +90,7 @@
         },
         "E": {
             "_rawTooltip": {
-                "fullTooltip": "Yasuo dashes through a target, dealing [[0]]. Each use of this Ability grants 25% bonus damage to the next use for 5 seconds, stacking up to 50%.<br /><br />This Ability has a 10/9/8/7/6 second per-target Cooldown.",
+                "fullTooltip": "Yasuo dashes through a target, dealing [[0]]. Each use of this Ability increases it's damage by 15-25% (levels 1-18) of this Ability's total damage, stacking 4 times.<br /><br />This Ability has a 10/9/8/7/6 second per-target Cooldown.",
                 "parseInfo": [
                     {
                         "text": {
@@ -496,6 +496,49 @@
             "W": "",
             "E": "",
             "R": ""
+        },
+        "13.7": {
+            "B": "",
+            "P": {
+                "SpellName": "Passive - Way of the Wanderer",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Shield Amount: ",
+                            "Before": "100/105/110/115/120/130/140/150/160/170/180/200/220/250/290/350/410/475",
+                            "Indicator": " ⇒ ",
+                            "After": "100/105/110/115/125/135/145/160/175/195/220/250/275/325/375/425/500/575"
+                        }
+                    }
+                ]
+            },
+            "Q": "",
+            "W": "",
+            "E": {
+                "SpellName": "E - Sweeping Blade",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Damage Increase per Stack: ",
+                            "Before": "25% of E’s base damage",
+                            "Indicator": " ⇒ ",
+                            "After": "15-25% of E’s total damage (scales linearly, levels 1-18)"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Maximum Stack Amount: ",
+                            "Before": "2",
+                            "Indicator": " ⇒ ",
+                            "After": "4"
+                        }
+                    }
+                ]
+            },
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -508,7 +551,8 @@
         "11.7",
         "12.2",
         "12.7",
-        "12.10"
+        "12.10",
+        "13.7"
     ],
     "ChampionName": "Yasuo"
 }

@@ -100,7 +100,7 @@
                 "parseInfo": [
                     {
                         "text": {
-                            "text": "60/100/140/180/220 {{0}} Shield",
+                            "text": "60/95/130/165/200 {{0}} Shield",
                             "scaleHolders": [
                                 {
                                     "scale": "(+40% AP)",
@@ -136,7 +136,7 @@
                     }
                 ]
             },
-            "cooldown": "12/11/10/9/8",
+            "cooldown": "12/11.5/11/10.5/10",
             "cost": "60/65/70/75/80 Mana",
             "name": "Molten Shield"
         },
@@ -723,6 +723,36 @@
                     }
                 ]
             }
+        },
+        "13.7": {
+            "B": "",
+            "P": "",
+            "Q": "",
+            "W": "",
+            "E": {
+                "SpellName": "E - Molten Shield",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Cooldown: ",
+                            "Before": "12/11/10/9/8 seconds",
+                            "Indicator": " ⇒ ",
+                            "After": "12/11.5/11/10.5/10 seconds"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Shield Amount: ",
+                            "Before": "60/100/140/180/220 (+40% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "60/95/130/165/200 (+40% AP)"
+                        }
+                    }
+                ]
+            },
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -736,7 +766,8 @@
         "12.10",
         "12.12",
         "13.3",
-        "13.4"
+        "13.4",
+        "13.7"
     ],
     "ChampionName": "Annie"
 }

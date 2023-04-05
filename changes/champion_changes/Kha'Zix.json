@@ -166,7 +166,7 @@
         },
         "R": {
             "_rawTooltip": {
-                "fullTooltip": "[[0]] Kha'Zix becomes [[1]] for 1.25 seconds and gains [[2]]. Kha'zix may [[3]] this Ability once within 10 seconds.<br /><br />[[4]] Leveling up this Ability allows Kha'zix to [[5]] one of his Abilities, granting it additional effects.[[6]] Gain Ability range, Attack range, and lowers Cooldown by 45% against [[7]] targets.[[8]] Fires 3 spikes and [[9]] by 60%, increased against [[10]] targets.[[11]] Increased range and refreshes Cooldown on champion takedown.[[12]] [[13]] duration lasts 2 seconds and gains second [[14]].",
+                "fullTooltip": "[[0]] Kha'Zix becomes [[1]] for 1.25 seconds and gains [[2]]. Kha'zix may [[3]] this Ability once within 12 seconds.<br /><br />[[4]] Leveling up this Ability allows Kha'zix to [[5]] one of his Abilities, granting it additional effects.[[6]] Gain Ability range, Attack range, and lowers Cooldown by 45% against [[7]] targets.[[8]] Fires 3 spikes and [[9]] by 40%, increased against [[10]] targets.[[11]] Increased range and refreshes Cooldown on champion takedown.[[12]] [[13]] duration lasts 2 seconds and gains second [[14]].",
                 "parseInfo": [
                     {
                         "text": {
@@ -413,13 +413,70 @@
             },
             "E": "",
             "R": ""
+        },
+        "13.7": {
+            "B": "",
+            "P": "",
+            "Q": {
+                "SpellName": "Q - Taste Their Fear",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Isolation Range: ",
+                            "Before": "425",
+                            "Indicator": " ⇒ ",
+                            "After": "375"
+                        }
+                    }
+                ]
+            },
+            "W": {
+                "SpellName": "W - Void Spike",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Evolved Slow: ",
+                            "Before": "60%",
+                            "Indicator": " ⇒ ",
+                            "After": "40%"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Evolved Slow Against Isolated Targets: ",
+                            "Before": "90%",
+                            "Indicator": " ⇒ ",
+                            "After": "75%"
+                        }
+                    }
+                ]
+            },
+            "E": "",
+            "R": {
+                "SpellName": "R - Void Assault",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Buff Duration: ",
+                            "Before": "10 seconds",
+                            "Indicator": " ⇒ ",
+                            "After": "12 seconds"
+                        }
+                    }
+                ]
+            }
         }
     },
     "ChangePatches": [
         "10.14",
         "10.16",
         "11.22",
-        "12.10"
+        "12.10",
+        "13.7"
     ],
     "ChampionName": "Kha'Zix"
 }

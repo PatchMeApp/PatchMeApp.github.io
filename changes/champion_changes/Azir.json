@@ -45,7 +45,7 @@
         "P": {
             "cooldown": "90 seconds",
             "_rawTooltip": {
-                "fullTooltip": "Innate: Whenever a turret outside the enemy team's base is destroyed, a marker is placed above its ruins which can be targeted by Azir.<br>Innate - Disc of the Sun: Azir can select a marker to construct the Sun Disc above the ruins after a 0.5-second cast time. The Sun Disc will activate after being assembled over 5 seconds.<br>The Sun Disc functions the same as a standard inner turret, gains [[0]], and grants its kill credit to Azir. The Sun Disc's health decays over 60 seconds and loses [[1]] while Azir is not alive or is too far away.<br>Azir cannot construct a Sun Disc with the marker while he is unable to cast abilities.<br>See Pets for more details about the Sun Disc.",
+                "fullTooltip": "Innate: Whenever a turret outside the enemy team's base is destroyed, a marker is placed above its ruins which can be targeted by Azir.<br>Innate - Disc of the Sun: Azir can select a marker to construct the Sun Disc above the ruins after a 0.5-second cast time. The Sun Disc will activate after being assembled over 5 seconds.<br>The Sun Disc functions the same as a standard inner turret, gains [[0]], and grants its kill credit to Azir. The Sun Disc's health decays over 45 seconds and loses [[1]] while Azir is not alive or is too far away.<br>Azir cannot construct a Sun Disc with the marker while he is unable to cast abilities.<br>See Pets for more details about the Sun Disc.",
                 "parseInfo": [
                     {
                         "text": {
@@ -98,7 +98,7 @@
                 ]
             },
             "cooldown": "14/12/10/8/6",
-            "cost": "65/70/75/80/85 Mana",
+            "cost": "70/80/90/100/110 Mana",
             "name": "Conquering Sands"
         },
         "W": {
@@ -858,6 +858,116 @@
                 ]
             },
             "R": ""
+        },
+        "13.7": {
+            "B": {
+                "SpellName": "Base Stats",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Base Armor: ",
+                            "Before": "19",
+                            "Indicator": " ⇒ ",
+                            "After": "22"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Attack Speed Growth: ",
+                            "Before": "5%",
+                            "Indicator": " ⇒ ",
+                            "After": "6%"
+                        }
+                    }
+                ]
+            },
+            "P": {
+                "SpellName": "Passive - Shurima’s Legacy",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Duration: ",
+                            "Before": "30 seconds",
+                            "Indicator": " ⇒ ",
+                            "After": "45 seconds"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Cast Range: ",
+                            "Before": "500",
+                            "Indicator": " ⇒ ",
+                            "After": "700"
+                        }
+                    }
+                ]
+            },
+            "Q": {
+                "SpellName": "Q - Conquering Sands",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Mana Cost: ",
+                            "Before": "65/70/75/80/85",
+                            "Indicator": " ⇒ ",
+                            "After": "70/80/90/100/110"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Stab Range: ",
+                            "Before": "370",
+                            "Indicator": " ⇒ ",
+                            "After": "325"
+                        }
+                    }
+                ]
+            },
+            "W": {
+                "SpellName": "W - Arise!",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Magic Damage: ",
+                            "Before": "0-110 (based on level) (+50/60/70/80/90) (+55% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "0-92 (based on level) (+50/67/84/101/118) (+55% AP) (NoteAssuming W max, this is a damage per hit buff that scales from +0 to +10 by level 11 and then stays there.)"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Mana Cost: ",
+                            "Before": "40 at all ranks",
+                            "Indicator": " ⇒ ",
+                            "After": "40/35/30/25/20"
+                        }
+                    }
+                ]
+            },
+            "E": "",
+            "R": "",
+            "M": {
+                "SpellName": "Miscellaneous",
+                "Changes": [
+                    {
+                        "Tag": "NEW",
+                        "Change": {
+                            "Attribute": "Recommended Skill Order: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "The game will now recommend maxing W first."
+                        }
+                    }
+                ]
+            }
         }
     },
     "ChangePatches": [
@@ -871,7 +981,8 @@
         "12.10",
         "12.17",
         "13.4",
-        "13.5"
+        "13.5",
+        "13.7"
     ],
     "ChampionName": "Azir"
 }

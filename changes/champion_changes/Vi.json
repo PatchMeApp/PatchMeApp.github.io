@@ -85,14 +85,14 @@
                     },
                     {
                         "text": {
-                            "text": "55/80/105/130/155 {{0}} and 110/160/210/260/310 {{1}} physical damage",
+                            "text": "45/70/95/120/145 {{0}} and 90/140/190/240/290 {{1}} physical damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+70% Bonus AD)",
+                                    "scale": "(+80% bonus AD)",
                                     "scaleId": "AD"
                                 },
                                 {
-                                    "scale": "(+140% Bonus AD)",
+                                    "scale": "(+160% bonus AD)",
                                     "scaleId": "AD"
                                 }
                             ]
@@ -182,14 +182,14 @@
                 "parseInfo": [
                     {
                         "text": {
-                            "text": "10/30/50/70/90 {{0}} {{1}} physical damage",
+                            "text": "5/20/35/50/65 {{0}} {{1}} physical damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+110% AD)",
+                                    "scale": "(+120% AD)",
                                     "scaleId": "AD"
                                 },
                                 {
-                                    "scale": "(+90% AP)",
+                                    "scale": "(+100% AP)",
                                     "scaleId": "AP"
                                 }
                             ]
@@ -437,13 +437,57 @@
             "W": "",
             "E": "",
             "R": ""
+        },
+        "13.7": {
+            "B": "",
+            "P": "",
+            "Q": {
+                "SpellName": "Q - Vault Breaker",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Minimum Physical Damage: ",
+                            "Before": "55/80/105/130/155 (+70% bonus AD)",
+                            "Indicator": " ⇒ ",
+                            "After": "45/70/95/120/145 (+80% bonus AD)"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Maximum Physical Damage: ",
+                            "Before": "110/160/210/260/310 (+140% bonus AD)",
+                            "Indicator": " ⇒ ",
+                            "After": "90/140/190/240/290 (+160% bonus AD)"
+                        }
+                    }
+                ]
+            },
+            "W": "",
+            "E": {
+                "SpellName": "E - Relentless Force",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Physical Damage: ",
+                            "Before": "10/30/50/70/90 (+110% AD) (+90% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "5/20/35/50/65 (+120% AD) (+100% AP)"
+                        }
+                    }
+                ]
+            },
+            "R": ""
         }
     },
     "ChangePatches": [
         "10.1",
         "10.13",
         "11.22",
-        "12.10"
+        "12.10",
+        "13.7"
     ],
     "ChampionName": "Vi"
 }
