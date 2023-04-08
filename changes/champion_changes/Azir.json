@@ -9,7 +9,7 @@
             "increment": 40
         },
         "armor": {
-            "base": 19,
+            "base": 22,
             "increment": 5
         },
         "spellBlock": {
@@ -26,7 +26,7 @@
         },
         "attackSpeed": {
             "base": 0.625,
-            "increment": 0.05
+            "increment": 0.06
         },
         "ms": {
             "base": 335,
@@ -45,14 +45,42 @@
         "P": {
             "cooldown": "90 seconds",
             "_rawTooltip": {
-                "fullTooltip": "Innate: Whenever a turret outside the enemy team's base is destroyed, a marker is placed above its ruins which can be targeted by Azir.<br>Innate - Disc of the Sun: Azir can select a marker to construct the Sun Disc above the ruins after a 0.5-second cast time. The Sun Disc will activate after being assembled over 5 seconds.<br>The Sun Disc functions the same as a standard inner turret, gains [[0]], and grants its kill credit to Azir. The Sun Disc's health decays over 45 seconds and loses [[1]] while Azir is not alive or is too far away.<br>Azir cannot construct a Sun Disc with the marker while he is unable to cast abilities.<br>See Pets for more details about the Sun Disc.",
+                "fullTooltip": "Innate: Whenever a turret outside the enemy team's base is destroyed, a marker is placed above its ruins which can be targeted by Azir.<br>Innate - Disc of the Sun: Azir can select a marker to construct the Sun Disc above the ruins after a 0.5-second cast time. The Sun Disc will activate after being assembled over 5 seconds.<br>The Sun Disc functions the same as a standard inner turret, has [[1]], [[2]], 30-90 (based on level) magic resist, deals <magicDamage>[[0]]</magicDamage>, and grants its kill credit to Azir. The Sun Disc's health decays over 45 seconds and loses [[3]] and 100 magic resist while Azir is not alive or is too far away.<br>Azir cannot construct a Sun Disc with the marker while he is unable to cast abilities.",
                 "parseInfo": [
                     {
                         "text": {
-                            "text": "15% AP bonus attack damage",
+                            "text": "230-410 {{0}} {{1}} magic damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(based on level)",
+                                    "scaleId": "level"
+                                },
+                                {
+                                    "scale": "(+40% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "magicDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "3000 health",
                             "scaleHolders": []
                         },
-                        "type": ""
+                        "type": "Health"
+                    },
+                    {
+                        "text": {
+                            "text": "30-90 {{0}} armor",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(based on level)",
+                                    "scaleId": "level"
+                                }
+                            ]
+                        },
+                        "type": "armor"
                     },
                     {
                         "text": {
@@ -103,7 +131,7 @@
         },
         "W": {
             "_rawTooltip": {
-                "fullTooltip": "[[0]] Azir gains [[1]]. Upon having 3 or more [[2]], he gains an additional [[3]] for 5 seconds.<br /><br />[[4]] Azir summons a [[5]] for 10 seconds. When Azir Attacks an enemy near a [[6]], he instead orders the soldiers to stab, dealing [[7]] in their direction.<br /><br />This Ability has 2 charges.",
+                "fullTooltip": "[[0]] Azir gains [[1]].<br /><br />[[2]] Azir summons a [[3]] for 10 seconds. When Azir Attacks an enemy near a [[4]], he instead orders the soldiers to stab, dealing [[5]] in their direction.<br /><br />This Ability has 2 charges.",
                 "parseInfo": [
                     {
                         "text": {
@@ -114,24 +142,10 @@
                     },
                     {
                         "text": {
-                            "text": "15/25/35/45/55% Attack Speed",
+                            "text": "50/60/70/80/90 additional magic damage",
                             "scaleHolders": []
                         },
-                        "type": "attackSpeed"
-                    },
-                    {
-                        "text": {
-                            "text": "Sand Soldiers",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "15/25/35/45/55% Attack Speed",
-                            "scaleHolders": []
-                        },
-                        "type": "attackSpeed"
+                        "type": "magicDamage"
                     },
                     {
                         "text": {
@@ -156,11 +170,15 @@
                     },
                     {
                         "text": {
-                            "text": "50 - 150 {{0}} {{1}} magic damage",
+                            "text": "0-92 {{0}} {{1}} {{2}} magic damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(based on champion level)",
+                                    "scale": "(based on level)",
                                     "scaleId": "level"
+                                },
+                                {
+                                    "scale": "(+50/67/84/101/118)",
+                                    "scaleId": "(+50/67/84/101/118"
                                 },
                                 {
                                     "scale": "(+55% AP)",
