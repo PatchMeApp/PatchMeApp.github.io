@@ -93,7 +93,7 @@
                     },
                     {
                         "text": {
-                            "text": "8% max Health physical damage",
+                            "text": "9% max Health physical damage",
                             "scaleHolders": []
                         },
                         "type": "physicalDamage"
@@ -143,14 +143,14 @@
                     },
                     {
                         "text": {
-                            "text": "10% Armor Armor",
+                            "text": "12% Armor Armor",
                             "scaleHolders": []
                         },
                         "type": "scaleArmor"
                     },
                     {
                         "text": {
-                            "text": "10% MR Magic Resist",
+                            "text": "12% MR Magic Resist",
                             "scaleHolders": []
                         },
                         "type": "scaleMR"
@@ -469,13 +469,48 @@
             "W": "",
             "E": "",
             "R": ""
+        },
+        "13.8": {
+            "B": "",
+            "P": "",
+            "Q": {
+                "SpellName": "Q - Hammer Shock",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Target Health Damage: ",
+                            "Before": "8%",
+                            "Indicator": " ⇒ ",
+                            "After": "9%"
+                        }
+                    }
+                ]
+            },
+            "W": {
+                "SpellName": "W - Steadfast Presence",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Bonus Resistances: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "10% ⇒12% (Notethis will be doubled to 24% while Poppy is below 40% maximum health.)"
+                        }
+                    }
+                ]
+            },
+            "E": "",
+            "R": ""
         }
     },
     "ChangePatches": [
         "11.19",
         "12.8",
         "12.10",
-        "12.16"
+        "12.16",
+        "13.8"
     ],
     "ChampionName": "Poppy"
 }

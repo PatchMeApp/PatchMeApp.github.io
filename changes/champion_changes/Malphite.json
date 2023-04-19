@@ -166,7 +166,7 @@
                     },
                     {
                         "text": {
-                            "text": "30/45/60/75/90 {{0}} {{1}} physical damage",
+                            "text": "30/40/50/60/70 {{0}} {{1}} physical damage",
                             "scaleHolders": [
                                 {
                                     "scale": "(+20% AP)",
@@ -189,7 +189,7 @@
                                     "scaleId": "AP"
                                 },
                                 {
-                                    "scale": "(+20% armor)",
+                                    "scale": "(+ 15% armor)",
                                     "scaleId": "armor"
                                 }
                             ]
@@ -505,6 +505,36 @@
             },
             "E": "",
             "R": ""
+        },
+        "13.8": {
+            "B": "",
+            "P": "",
+            "Q": "",
+            "W": {
+                "SpellName": "W - Thunderclap",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Empowered Attack Damage: ",
+                            "Before": "30/45/60/75/90 (+20% AP)(+15% Armor)",
+                            "Indicator": " ⇒ ",
+                            "After": "30/40/50/60/70 (+20% AP)(+15% Armor)"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Cleave Physical Damage: ",
+                            "Before": "15/25/35/45/55 (+ 30% AP) (+ 20% armor)",
+                            "Indicator": " ⇒ ",
+                            "After": "15/25/35/45/55 (+ 30% AP) (+ 15% armor)"
+                        }
+                    }
+                ]
+            },
+            "E": "",
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -514,7 +544,8 @@
         "12.16",
         "12.19",
         "12.23",
-        "13.4"
+        "13.4",
+        "13.8"
     ],
     "ChampionName": "Malphite"
 }

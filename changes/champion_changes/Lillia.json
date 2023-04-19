@@ -45,11 +45,11 @@
         "P": {
             "cooldown": "",
             "_rawTooltip": {
-                "fullTooltip": "Innate: Lillia's abilities apply Dream Dust to enemies hit, which deals[ [[1]] total magic damage over 3 seconds, ]capped at [[0]] against monsters.<br>Lillia heals for 24 − 75 (based on level) (+ 5.4% AP) against large monsters and 6-120 (based on level)(+18% AP) AP) against champions over the duration of Dream Dust, reduced to 33% effectiveness for each target beyond the first. She may only heal against 1 monster at a time.",
+                "fullTooltip": "Innate: Lillia's abilities apply Dream Dust to enemies hit, which deals[ [[1]] total magic damage over 3 seconds, ]capped at [[0]] against monsters.<br>Lillia heals for 39 − 54 (based on level) (+ 15% AP) against large monsters and 6-120 (based on level) (+30% AP) against champions over the duration of Dream Dust, reduced to 33% effectiveness for each target beyond the first. She may only heal against 1 monster at a time.",
                 "parseInfo": [
                     {
                         "text": {
-                            "text": "40 − 100 {{0}} damage",
+                            "text": "70 − 150 {{0}} damage",
                             "scaleHolders": [
                                 {
                                     "scale": "(based on level)",
@@ -901,6 +901,45 @@
                 ]
             },
             "R": ""
+        },
+        "13.8": {
+            "B": "",
+            "P": {
+                "SpellName": "Passive - Dream-Laden Bough",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Monster Damage Cap: ",
+                            "Before": "50-150 (based on level)",
+                            "Indicator": " ⇒ ",
+                            "After": "70-150 (based on level) (NoteThis is up to 40% more damage at level 1 against monsters with over 1328 HP, tapering to 0% more at less than 949 HP. Raptor has 1100, while Red, Blue, Gromp, Krug, and Wolf all hit the new max HP cap.)"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Healing Against Monsters: ",
+                            "Before": "24-75 (based on level) (+5.4% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "39-54 (based on level) (+15% AP)"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Healing Against Champions: ",
+                            "Before": "6-120 (based on level) (+18% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "6-90 (based on level) (+30% AP)"
+                        }
+                    }
+                ]
+            },
+            "Q": "",
+            "W": "",
+            "E": "",
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -915,7 +954,8 @@
         "12.15",
         "12.22",
         "12.23",
-        "13.1B"
+        "13.1B",
+        "13.8"
     ],
     "ChampionName": "Lillia"
 }

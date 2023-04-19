@@ -140,10 +140,10 @@
                     },
                     {
                         "text": {
-                            "text": "70/100/130/160/190 {{0}} magic damage",
+                            "text": "80/110/140/170/200 {{0}} magic damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+50% AP)",
+                                    "scale": "(+60% AP)",
                                     "scaleId": "AP"
                                 }
                             ]
@@ -158,7 +158,7 @@
         },
         "E": {
             "_rawTooltip": {
-                "fullTooltip": "[[0]] Janna gains 15% Heal and Shield Power for 4 seconds whenever she impairs an enemy champion's movement.<br /><br />[[1]] Janna grants an ally champion or turret [[2]] decaying over 5 seconds. While shielded, they gain [[3]].",
+                "fullTooltip": "[[0]] Janna gains 15% Heal and Shield Power for 4 seconds whenever she impairs an enemy champion's movement.<br /><br />[[1]] Janna grants an ally champion or turret [[2]] decaying over  2.5 seconds. While shielded, they gain [[3]].",
                 "parseInfo": [
                     {
                         "text": {
@@ -628,6 +628,40 @@
                 ]
             }
         },
+        "13.8": {
+            "B": "",
+            "P": "",
+            "Q": "",
+            "W": {
+                "SpellName": "W - Zephyr",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Magic Damage: ",
+                            "Before": "70/100/130/160/190 (+50% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "80/110/140/170/200 (+60% AP)"
+                        }
+                    }
+                ]
+            },
+            "E": {
+                "SpellName": "E - Eye Of The Storm",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Shield Decay Timer: ",
+                            "Before": "1.25 seconds",
+                            "Indicator": " ⇒ ",
+                            "After": "2.5 seconds"
+                        }
+                    }
+                ]
+            },
+            "R": ""
+        },
         "12.23": {
             "B": "",
             "P": {
@@ -669,7 +703,8 @@
         "12.10",
         "12.12",
         "12.14",
-        "12.23"
+        "12.23",
+        "13.8"
     ],
     "ChampionName": "Janna"
 }

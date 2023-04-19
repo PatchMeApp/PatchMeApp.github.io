@@ -34,7 +34,7 @@
         },
         "attackDamage": {
             "base": 64,
-            "increment": 3.4
+            "increment": 3
         },
         "attackRange": {
             "base": 175,
@@ -64,7 +64,7 @@
                 "parseInfo": [
                     {
                         "text": {
-                            "text": "90/130/170/210/250 {{0}} physical damage",
+                            "text": "80/120/160/200/240 {{0}} physical damage",
                             "scaleHolders": [
                                 {
                                     "scale": "(+140% Bonus AD)",
@@ -543,6 +543,40 @@
             },
             "E": "",
             "R": ""
+        },
+        "13.8": {
+            "B": {
+                "SpellName": "Base Stats",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Attack Damage Growth: ",
+                            "Before": "3.4",
+                            "Indicator": " ⇒ ",
+                            "After": "3"
+                        }
+                    }
+                ]
+            },
+            "P": "",
+            "Q": {
+                "SpellName": "Q - Dragon Strike",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Physical Damage: ",
+                            "Before": "90/130/170/210/250 (+140% bonus AD)",
+                            "Indicator": " ⇒ ",
+                            "After": "80/120/160/200/240 (+140% bonus AD)"
+                        }
+                    }
+                ]
+            },
+            "W": "",
+            "E": "",
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -554,7 +588,8 @@
         "12.12",
         "12.14",
         "13.3",
-        "13.4"
+        "13.4",
+        "13.8"
     ],
     "ChampionName": "Jarvan IV"
 }

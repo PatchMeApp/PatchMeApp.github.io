@@ -49,7 +49,7 @@
                 "parseInfo": [
                     {
                         "text": {
-                            "text": "125 − 550 {{0}} true damage",
+                            "text": "140 − 650 {{0}} true damage",
                             "scaleHolders": [
                                 {
                                     "scale": "(based on level)",
@@ -123,7 +123,7 @@
                     }
                 ]
             },
-            "cooldown": "8",
+            "cooldown": "7",
             "cost": "40 Mana",
             "name": "Caustic Spittle"
         },
@@ -155,7 +155,7 @@
         },
         "E": {
             "_rawTooltip": {
-                "fullTooltip": "Kog'Maw spits bile, dealing [[0]] and leaving a trail of ooze for 4 seconds. Enemies in the ooze are [[1]] by 20/28/36/44/52%.",
+                "fullTooltip": "Kog'Maw spits bile, dealing [[0]] and leaving a trail of ooze for 4 seconds. Enemies in the ooze are [[1]] by 30/35/40/45/50%.",
                 "parseInfo": [
                     {
                         "text": {
@@ -179,7 +179,7 @@
                 ]
             },
             "cooldown": "12",
-            "cost": "60/70/80/90/100 Mana",
+            "cost": "40/55/70/85/100 Mana",
             "name": "Void Ooze"
         },
         "R": {
@@ -554,6 +554,71 @@
             },
             "E": "",
             "R": ""
+        },
+        "13.8": {
+            "B": "",
+            "P": {
+                "SpellName": "Passive - Icathian Surprise",
+                "Changes": [
+                    {
+                        "Tag": "NEW",
+                        "Change": {
+                            "Attribute": "Run Kog, Run!: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "Kog’Maw is now Ghosted while in his passive form"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "True Damage: ",
+                            "Before": "125-550 (based on level)",
+                            "Indicator": " ⇒ ",
+                            "After": "140-650 (based on level)"
+                        }
+                    }
+                ]
+            },
+            "Q": {
+                "SpellName": "Q - Caustic Spittle",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Cooldown: ",
+                            "Before": "8 seconds",
+                            "Indicator": " ⇒ ",
+                            "After": "7 seconds"
+                        }
+                    }
+                ]
+            },
+            "W": "",
+            "E": {
+                "SpellName": "E - Void Ooze",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Mana Cost: ",
+                            "Before": "60/70/80/90/100",
+                            "Indicator": " ⇒ ",
+                            "After": "40/55/70/85/100"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Slow: ",
+                            "Before": "20/28/36/44/52%",
+                            "Indicator": " ⇒ ",
+                            "After": "30/35/40/45/50%"
+                        }
+                    }
+                ]
+            },
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -565,7 +630,8 @@
         "11.9",
         "11.18",
         "12.10",
-        "12.11"
+        "12.11",
+        "13.8"
     ],
     "ChampionName": "Kog'Maw"
 }
