@@ -1,5 +1,5 @@
 {
-    "LatestGlobalPatch": "13.8",
+    "LatestGlobalPatch": "13.9",
     "Aatrox": {
         "ChampionName": "Aatrox",
         "ChangePatches": [
@@ -14,35 +14,27 @@
             "12.14",
             "12.20",
             "13.1",
-            "13.5"
+            "13.5",
+            "13.9"
         ],
         "LatestChanges": {
             "B": "",
-            "P": "",
-            "Q": "",
-            "W": {
-                "SpellName": "W - Infernal Chains",
+            "P": {
+                "SpellName": "Passive - Deathbringer Stance",
                 "Changes": [
                     {
                         "Tag": "",
                         "Change": {
-                            "Attribute": "Cooldown: ",
-                            "Before": "20/18.5/17/15.5/14 seconds",
+                            "Attribute": "Bonus Physical Damage: ",
+                            "Before": "4-10% (based on level) of target's maximum health",
                             "Indicator": " ⇒ ",
-                            "After": "20/18/16/14/12 seconds"
-                        }
-                    },
-                    {
-                        "Tag": "",
-                        "Change": {
-                            "Attribute": "Slow: ",
-                            "Before": "25% at all ranks",
-                            "Indicator": " ⇒ ",
-                            "After": "25/27.5/30/32.5/35%"
+                            "After": "4-12% (based on level) of target's maximum health"
                         }
                     }
                 ]
             },
+            "Q": "",
+            "W": "",
             "E": "",
             "R": {
                 "SpellName": "R - World Ender",
@@ -50,10 +42,10 @@
                     {
                         "Tag": "",
                         "Change": {
-                            "Attribute": "Bonus AD: ",
-                            "Before": "20/30/40% AD",
+                            "Attribute": "Bonus Movement Speed: ",
+                            "Before": "50/65/80%",
                             "Indicator": " ⇒ ",
-                            "After": "20/32.5/45% AD"
+                            "After": "60/80/100%"
                         }
                     }
                 ]
@@ -518,24 +510,12 @@
             "11.15",
             "11.24",
             "12.10",
-            "13.3"
+            "13.3",
+            "13.9"
         ],
         "LatestChanges": {
             "B": "",
-            "P": {
-                "SpellName": "Passive - Divine Ascent",
-                "Changes": [
-                    {
-                        "Tag": "",
-                        "Change": {
-                            "Attribute": "Exalted Bonus Move Speed: ",
-                            "Before": "8%",
-                            "Indicator": " ⇒ ",
-                            "After": "10%"
-                        }
-                    }
-                ]
-            },
+            "P": "",
             "Q": "",
             "W": "",
             "E": {
@@ -544,15 +524,82 @@
                     {
                         "Tag": "",
                         "Change": {
-                            "Attribute": "Passive On-hit Damage: ",
-                            "Before": "15/20/25/30/35 (+10% bonus AD) (+20% AP)",
+                            "Attribute": "On-Hit AP Ratio: ",
+                            "Before": "25% AP",
                             "Indicator": " ⇒ ",
-                            "After": "15/20/25/30/35 (+10% bonus AD) (+25% AP)"
+                            "After": "20% AP"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Passive (Divine Ascent) Wave Damage: ",
+                            "Before": "15/20/25/30/35 (based on E rank)",
+                            "Indicator": " ⇒ ",
+                            "After": "20-41 (based on champion level, levels 11-18)"
                         }
                     }
                 ]
             },
-            "R": ""
+            "R": {
+                "SpellName": "R - Divine Judgment",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Cast Time: ",
+                            "Before": "1.5 seconds",
+                            "Indicator": " ⇒ ",
+                            "After": "0.5 seconds"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Area of Effect Radius: ",
+                            "Before": "525",
+                            "Indicator": " ⇒ ",
+                            "After": "675/675/775"
+                        }
+                    },
+                    {
+                        "Tag": "REMOVED",
+                        "Change": {
+                            "Attribute": "Ascending: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "Kayle no longer lowers her range when casting ult on herself"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Invulnerability Duration: ",
+                            "Before": "2/2.5/3",
+                            "Indicator": " ⇒ ",
+                            "After": "2.5"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Time Delay until Sword Falls: ",
+                            "Before": "1.5",
+                            "Indicator": " ⇒ ",
+                            "After": "2.5"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Magic Damage: ",
+                            "Before": "200/350/500 (+100% bonus AD)(+80% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "200/300/400 (+100% bonus AD)(+70% AP)"
+                        }
+                    }
+                ]
+            }
         }
     },
     "Lee Sin": {
@@ -1723,38 +1770,26 @@
             "12.9",
             "12.10",
             "12.23",
-            "13.1"
+            "13.1",
+            "13.9"
         ],
         "LatestChanges": {
-            "B": {
-                "SpellName": "Base Stats",
+            "B": "",
+            "P": {
+                "SpellName": "Passive - Glory in Death",
                 "Changes": [
                     {
                         "Tag": "",
                         "Change": {
-                            "Attribute": "Base Health: ",
-                            "Before": "615",
+                            "Attribute": "Health Decay: ",
+                            "Before": "2-19 (1 health per level)",
                             "Indicator": " ⇒ ",
-                            "After": "655"
+                            "After": "2.3-24.4 (1.3 per level)"
                         }
                     }
                 ]
             },
-            "P": "",
-            "Q": {
-                "SpellName": "Q - Decimating Smash",
-                "Changes": [
-                    {
-                        "Tag": "",
-                        "Change": {
-                            "Attribute": "Damage When Fully Charged: ",
-                            "Before": "70/135/200/265/330",
-                            "Indicator": " ⇒ ",
-                            "After": "90/155/220/285/350"
-                        }
-                    }
-                ]
-            },
+            "Q": "",
             "W": "",
             "E": "",
             "R": ""
@@ -3630,32 +3665,11 @@
             "12.22",
             "12.23",
             "13.3",
-            "13.4"
+            "13.4",
+            "13.9"
         ],
         "LatestChanges": {
-            "B": {
-                "SpellName": "Base Stats",
-                "Changes": [
-                    {
-                        "Tag": "",
-                        "Change": {
-                            "Attribute": "Health Growth: ",
-                            "Before": "100",
-                            "Indicator": " ⇒ ",
-                            "After": "94"
-                        }
-                    },
-                    {
-                        "Tag": "",
-                        "Change": {
-                            "Attribute": "Armor Growth: ",
-                            "Before": "4.2",
-                            "Indicator": " ⇒ ",
-                            "After": "4.0"
-                        }
-                    }
-                ]
-            },
+            "B": "",
             "P": "",
             "Q": "",
             "W": {
@@ -3664,10 +3678,19 @@
                     {
                         "Tag": "",
                         "Change": {
-                            "Attribute": "Magic Damage per Tick: ",
-                            "Before": "6/8/10/12/14 (+1/1.25/1.5/1.75/2% (+ 0.25% per 100 AP) of target maximum health",
+                            "Attribute": "Flat Magic Damage per Seconds: ",
+                            "Before": "12/16/20/24/28",
                             "Indicator": " ⇒ ",
-                            "After": "6/8/10/12/14 (+ 1/1.15/1.3/1.45/1.6% (+0.25% per 100 AP) of target maximum health"
+                            "After": "20 at all ranks"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Percent Health Magic Damage per Second: ",
+                            "Before": "1/1.15/1.3/1.45/1.6%",
+                            "Indicator": " ⇒ ",
+                            "After": "1/1.25/1.5/1.75/2%"
                         }
                     }
                 ]
@@ -4780,7 +4803,8 @@
             "12.10",
             "12.19",
             "13.1B",
-            "13.5"
+            "13.5",
+            "13.9"
         ],
         "LatestChanges": {
             "B": {
@@ -4789,54 +4813,19 @@
                     {
                         "Tag": "",
                         "Change": {
-                            "Attribute": "Attack Speed Growth: ",
-                            "Before": "1%",
+                            "Attribute": "Attack Damage Growth: ",
+                            "Before": "3.4",
                             "Indicator": " ⇒ ",
-                            "After": "1.36%"
+                            "After": "3.15"
                         }
                     }
                 ]
             },
             "P": "",
             "Q": "",
-            "W": {
-                "SpellName": "W - Zap!",
-                "Changes": [
-                    {
-                        "Tag": "",
-                        "Change": {
-                            "Attribute": "Mana Cost: ",
-                            "Before": "50/55/60/65/70",
-                            "Indicator": " ⇒ ",
-                            "After": "40/45/50/55/60"
-                        }
-                    },
-                    {
-                        "Tag": "",
-                        "Change": {
-                            "Attribute": "Slow: ",
-                            "Before": "30/40/50/60/70%",
-                            "Indicator": " ⇒ ",
-                            "After": "40/50/60/70/80%"
-                        }
-                    }
-                ]
-            },
+            "W": "",
             "E": "",
-            "R": {
-                "SpellName": "R - Super Mega Death Rocket!",
-                "Changes": [
-                    {
-                        "Tag": "",
-                        "Change": {
-                            "Attribute": "Damage Cap Against Monsters: ",
-                            "Before": "800",
-                            "Indicator": " ⇒ ",
-                            "After": "1200"
-                        }
-                    }
-                ]
-            }
+            "R": ""
         }
     },
     "Trundle": {
@@ -4854,26 +4843,36 @@
             "12.10",
             "12.17",
             "12.23",
-            "13.3"
+            "13.3",
+            "13.9"
         ],
         "LatestChanges": {
-            "B": "",
-            "P": "",
-            "Q": "",
-            "W": {
-                "SpellName": "W - Frozen Domain",
+            "B": {
+                "SpellName": "Base Stats",
                 "Changes": [
                     {
                         "Tag": "",
                         "Change": {
-                            "Attribute": "Cooldown: ",
-                            "Before": "18/17/16/15/14 seconds",
+                            "Attribute": "Base Attack Speed: ",
+                            "Before": "0.6",
                             "Indicator": " ⇒ ",
-                            "After": "16/15/14/13/12 seconds"
+                            "After": "0.67"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Base Mana: ",
+                            "Before": "281",
+                            "Indicator": " ⇒ ",
+                            "After": "340"
                         }
                     }
                 ]
             },
+            "P": "",
+            "Q": "",
+            "W": "",
             "E": "",
             "R": ""
         }
@@ -5431,55 +5430,189 @@
             "10.16",
             "12.4",
             "12.7",
-            "12.10"
+            "12.10",
+            "13.9"
         ],
         "LatestChanges": {
-            "B": {
-                "SpellName": "Base Stats",
+            "B": "",
+            "P": {
+                "SpellName": "Passive - Inherent Glamour",
                 "Changes": [
                     {
                         "Tag": "",
                         "Change": {
-                            "Attribute": "BASE HEALTH: ",
+                            "Attribute": "Neeko Get Sho'Ma!: ",
                             "Before": "",
                             "Indicator": "",
-                            "After": "+70"
+                            "After": "When Neeko is near a non-epic monster, minion, trap, ward, or plant for two seconds she stores their Sho'Ma. Neeko can click on her bar to become that unit. Click on Neeko's face to return to Neeko. Click on the little “X” to clear out Neeko's current Sho'Ma. Only one unit can be stored at a time."
                         }
                     },
                     {
                         "Tag": "",
                         "Change": {
-                            "Attribute": "HEALTH GROWTH: ",
+                            "Attribute": "Neeko Disguise is Durable!: ",
                             "Before": "",
                             "Indicator": "",
-                            "After": "+14"
+                            "After": "Disguise no longer breaks on taking damage, only when the disguised self would have died or when you are crowd controlled."
+                        }
+                    },
+                    {
+                        "Tag": "REMOVED",
+                        "Change": {
+                            "Attribute": "Neeko for Speedo: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "Neeko no longer inherits base attack speed/move speed from disguised target if that stat is higher than hers."
                         }
                     },
                     {
                         "Tag": "",
                         "Change": {
-                            "Attribute": "ARMOR GROWTH: ",
-                            "Before": "",
-                            "Indicator": "",
-                            "After": "+1.2"
-                        }
-                    },
-                    {
-                        "Tag": "",
-                        "Change": {
-                            "Attribute": "MAGIC RESIST GROWTH: ",
-                            "Before": "",
-                            "Indicator": "",
-                            "After": " +0.8"
+                            "Attribute": "Cooldown: ",
+                            "Before": "25-10 seconds (based on level)",
+                            "Indicator": " ⇒ ",
+                            "After": "2 seconds"
                         }
                     }
                 ]
             },
-            "P": "",
-            "Q": "",
-            "W": "",
-            "E": "",
-            "R": ""
+            "Q": {
+                "SpellName": "Q - Blooming Burst",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Secondary/Tertiary Pop Damage: ",
+                            "Before": "40/65/90/115/140 (+20% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "35/60/85/110/135 (+25% AP)"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Area of Effect Size: ",
+                            "Before": "225",
+                            "Indicator": " ⇒ ",
+                            "After": "250 (NoteMax range E snares should always be hittable with Q now)"
+                        }
+                    },
+                    {
+                        "Tag": "NEW",
+                        "Change": {
+                            "Attribute": "Jungle Tomato: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "Q now deals 30/40/50/60/70 bonus damage to monsters"
+                        }
+                    },
+                    {
+                        "Tag": "NEW",
+                        "Change": {
+                            "Attribute": "Better Blooms: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "Casting Q beyond its maximum range will now cast the ability at maximum range instead of having Neeko walk into position to throw it."
+                        }
+                    }
+                ]
+            },
+            "W": {
+                "SpellName": "W - Shapesplitter",
+                "Changes": [
+                    {
+                        "Tag": "NEW",
+                        "Change": {
+                            "Attribute": "Neeko Move Neeko: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "After casting Neeko can reactivate to send the clone to a new location"
+                        }
+                    },
+                    {
+                        "Tag": "NEW",
+                        "Change": {
+                            "Attribute": "Neeko Funny!: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "Clone now plays animations and sounds of Q/E/Dance/Joke/Taunt/Recall/Laugh and survives for their duration"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Neeko Jungle!: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "Empowered Attacks deal 50 bonus damage to monsters"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Neeko is Become One: ",
+                            "Before": "Neeko's clone spawns 100 units in front of her",
+                            "Indicator": " ⇒ ",
+                            "After": "Neeko's clone spawns directly on top of her"
+                        }
+                    }
+                ]
+            },
+            "E": {
+                "SpellName": "E - Tangle-Barbs",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Magic Damage: ",
+                            "Before": "80/115/150/185/220 (+60% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "70/105/140/175/210 (+65% AP)"
+                        }
+                    }
+                ]
+            },
+            "R": {
+                "SpellName": "R - Pop Blossom",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Adjusted Ultimate: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "After channeling for 1.25 seconds, Neeko jumps into the air, knocking up all nearby enemies for 0.6 seconds. Neeko then crashes to the ground with all knocked up enemies, dealing magic damage to them and stunning them for 0.75 seconds."
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Cooldown: ",
+                            "Before": "90 seconds",
+                            "Indicator": " ⇒ ",
+                            "After": "120/105/90 seconds"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Magic Damage: ",
+                            "Before": "200/425/650 (+130% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "150/350/550 (+100% AP)"
+                        }
+                    },
+                    {
+                        "Tag": "REMOVED",
+                        "Change": {
+                            "Attribute": "Neeko Need No Shield!: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "Neeko no longer gains a shield when channeling her R"
+                        }
+                    }
+                ]
+            }
         }
     },
     "Anivia": {
@@ -6658,71 +6791,37 @@
             "11.6",
             "12.2",
             "12.10",
-            "12.13"
+            "12.13",
+            "13.9"
         ],
         "LatestChanges": {
             "B": "",
             "P": "",
-            "Q": {
-                "SpellName": "Q - Thundering Smash",
-                "Changes": [
-                    {
-                        "Tag": "",
-                        "Change": {
-                            "Attribute": "Bonus Move Speed: ",
-                            "Before": "10/14/18/22/26%",
-                            "Indicator": " ⇒ ",
-                            "After": "8/12/16/20/24%"
-                        }
-                    },
-                    {
-                        "Tag": "",
-                        "Change": {
-                            "Attribute": "Damage: ",
-                            "Before": "20/40/60/80/100 (+120% bonus AD)",
-                            "Indicator": " ⇒ ",
-                            "After": "10/30/50/70/90 (+120% bonus AD)"
-                        }
-                    }
-                ]
-            },
+            "Q": "",
             "W": {
                 "SpellName": "W - Frenzied Maul",
                 "Changes": [
                     {
                         "Tag": "",
                         "Change": {
-                            "Attribute": "Damage: ",
-                            "Before": "10/35/60/85/110 (+100% AD) (+ 6% bonus health)",
+                            "Attribute": "Physical Damage: ",
+                            "Before": "5/30/55/80/105 (+100% AD) (+ 5% bonus health)",
                             "Indicator": " ⇒ ",
-                            "After": "5/30/55/80/105 (+100% AD) (+5% bonus health)"
-                        }
-                    }
-                ]
-            },
-            "E": {
-                "SpellName": "E - Skysplitter",
-                "Changes": [
-                    {
-                        "Tag": "",
-                        "Change": {
-                            "Attribute": "Damage: ",
-                            "Before": "80/110/140/170/200 (+80% AP) (+11/12/13/14/15% of target's maximum health)",
-                            "Indicator": " ⇒ ",
-                            "After": "80/110/140/170/200 (+80% AP) (+9/10/11/12/13% of target's maximum health)"
+                            "After": "5/30/55/80/105 (+100% AD) (+ 6% bonus health)"
                         }
                     },
                     {
                         "Tag": "",
                         "Change": {
-                            "Attribute": "Damage Cap against Non-Champions: ",
-                            "Before": "750",
+                            "Attribute": "Heal Ratio Based on Missing Health: ",
+                            "Before": "7/8.5/10/11.5/13%",
                             "Indicator": " ⇒ ",
-                            "After": "650"
+                            "After": "8/10/12/14/16%"
                         }
                     }
                 ]
             },
+            "E": "",
             "R": ""
         }
     },
@@ -7438,54 +7537,47 @@
             "10.15",
             "12.8",
             "12.10",
-            "12.11"
+            "12.11",
+            "13.9"
         ],
         "LatestChanges": {
             "B": "",
-            "P": {
-                "SpellName": "Passive - Ravenous Flock",
-                "Changes": [
-                    {
-                        "Tag": "",
-                        "Change": {
-                            "Attribute": "Healing: ",
-                            "Before": "3.5/4.5/5.5/7%",
-                            "Indicator": " ⇒ ",
-                            "After": "3/4/5/6%"
-                        }
-                    }
-                ]
-            },
-            "Q": "",
-            "W": {
-                "SpellName": "W - Vision of Empire",
+            "P": "",
+            "Q": {
+                "SpellName": "Q - Death's Hand",
                 "Changes": [
                     {
                         "Tag": "",
                         "Change": {
                             "Attribute": "Magic Damage: ",
-                            "Before": "80/120/160/200/240 (+70% AP)",
+                            "Before": "60/80/100/120/140 (+38% AP)",
                             "Indicator": " ⇒ ",
-                            "After": "80/115/150/185/220 (+55% AP)"
+                            "After": "65/85/105/125/145 (+40% AP)"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Bonus Damage per Bolt: ",
+                            "Before": "12/22/32/42/52 (+8% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "15/25/35/45/55 (+10 % AP)"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Maximum Magic Damage: ",
+                            "Before": "108/168/228/288/348 (+70% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "125/185/245/305/365 (+80% AP)"
                         }
                     }
                 ]
             },
+            "W": "",
             "E": "",
-            "R": {
-                "SpellName": "R - Demonic Ascension",
-                "Changes": [
-                    {
-                        "Tag": "",
-                        "Change": {
-                            "Attribute": "Healing Per Tick: ",
-                            "Before": "15/30/45 (+20% AP)",
-                            "Indicator": " ⇒ ",
-                            "After": "15/27.5/40 (+18% AP)"
-                        }
-                    }
-                ]
-            }
+            "R": ""
         }
     },
     "Yone": {
@@ -8169,37 +8261,25 @@
             "12.10",
             "12.11",
             "12.13",
-            "12.15"
+            "12.15",
+            "13.9"
         ],
         "LatestChanges": {
             "B": "",
             "P": "",
             "Q": "",
             "W": "",
-            "E": {
-                "SpellName": "E - Unraveled Earth",
-                "Changes": [
-                    {
-                        "Tag": "",
-                        "Change": {
-                            "Attribute": "Cooldown: ",
-                            "Before": "16/15/14/13/12 seconds",
-                            "Indicator": " ⇒ ",
-                            "After": "18/17/16/15/14 seconds"
-                        }
-                    }
-                ]
-            },
+            "E": "",
             "R": {
-                "SpellName": "R - Weaver’s Wall",
+                "SpellName": "R - Weaver's Wall",
                 "Changes": [
                     {
                         "Tag": "",
                         "Change": {
-                            "Attribute": "Wall Duration: ",
-                            "Before": "5 seconds",
+                            "Attribute": "Cast Lockout: ",
+                            "Before": "whenever Taliyah takes or deals damage",
                             "Indicator": " ⇒ ",
-                            "After": "4 seconds"
+                            "After": "whenever Taliyah takes damage"
                         }
                     }
                 ]
@@ -8958,41 +9038,42 @@
             "12.10",
             "12.11",
             "12.12",
-            "12.21"
+            "12.21",
+            "13.9"
         ],
         "LatestChanges": {
-            "B": "",
-            "P": "",
-            "Q": "",
-            "W": "",
-            "E": {
-                "SpellName": "E - Royal Maelstrom",
+            "B": {
+                "SpellName": "Base Stats",
                 "Changes": [
                     {
                         "Tag": "",
                         "Change": {
-                            "Attribute": "Cooldown: ",
-                            "Before": "22/20.5/19/17.5/16",
+                            "Attribute": "Attack Damage Growth: ",
+                            "Before": "1.7",
                             "Indicator": " ⇒ ",
-                            "After": "24/22.5/21/19.5/18"
+                            "After": "1.5"
                         }
                     }
                 ]
             },
-            "R": {
-                "SpellName": "R - Endless Banquet",
+            "P": "",
+            "Q": {
+                "SpellName": "Q - Void Surge",
                 "Changes": [
                     {
                         "Tag": "",
                         "Change": {
-                            "Attribute": "Void Remora Health: ",
-                            "Before": "50/60/70%",
+                            "Attribute": "Monster Damage Modification: ",
+                            "Before": "120%",
                             "Indicator": " ⇒ ",
-                            "After": "40/50/60% of minion’s maximum health"
+                            "After": "140%"
                         }
                     }
                 ]
-            }
+            },
+            "W": "",
+            "E": "",
+            "R": ""
         }
     },
     "Nilah": {
@@ -9205,6 +9286,7 @@
     "Milio": {
         "ChampionName": "Milio",
         "ChangePatches": [
+            "12.10",
             "13.6"
         ],
         "LatestChanges": {
