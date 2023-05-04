@@ -43,16 +43,16 @@
     },
     "spells": {
         "P": {
-            "cooldown": "25 - 10 (Level 1-18)",
+            "cooldown": "6",
             "_rawTooltip": {
-                "fullTooltip": "Innate: Neeko is offered a selection of allied champions to take their appearance. She can choose a new champion to switch her disguise or select herself to deactivate her disguise, placing Inherent Glamour on a 2-second cooldown.<br>While disguised, Neeko can use basic attacks while keeping her form. Taking damage from enemy champions, or casting either Blooming Burst or Tangle-Barbs or performing Pop Blossom's leap breaks the illusion and puts Inherent Glamour on full cooldown.",
+                "fullTooltip": "Neeko can disguise herself as other units on the map. At any time she can disguise as an allied champion, or Neeko can stand next to any allied or neutral unit to store their Sho'ma and be able to transform into it. Your disguise will break upon receiving immobilizing crowd control, casting a damaging spell, damaging enemy towers as a non-champion, or your disguise taking damage equal to its healthbar.",
                 "parseInfo": []
             },
             "name": "Inherent Glamour"
         },
         "Q": {
             "_rawTooltip": {
-                "fullTooltip": "Neeko throws a seed that blooms to deal 80/125/170/215/260 (+50% AP) magic damage. If it kills a unit or hits a champion or large monster, it will bloom again, dealing 40/65/90/115/140 (+20% AP) magic damage. Max 2 extra blooms.",
+                "fullTooltip": "Neeko throws a seed that blooms to deal 80/125/170/215/260 (+50% AP) magic damage. If it kills a unit or hits a champion or large monster, it will bloom again, dealing 35/60/85/110/135 (+25% AP) magic damage. Max 2 extra blooms.",
                 "parseInfo": []
             },
             "cooldown": "7",
@@ -70,7 +70,7 @@
         },
         "E": {
             "_rawTooltip": {
-                "fullTooltip": "Neeko slings a tangle that deals 80/115/150/185/220 (+60% AP) magic damage and roots for 0.7/0.9/1.1/1.3 seconds.<br /><br />The tangle becomes empowered after hitting an enemy, growing larger, moving faster, and rooting for 1.8/2.1/2.4/2.7 seconds.",
+                "fullTooltip": "Neeko slings a tangle that deals 70/105/140/175/210 (+65% AP) magic damage and roots for 0.7/0.9/1.1/1.3 seconds.<br /><br />The tangle becomes empowered after hitting an enemy, growing larger, moving faster, and rooting for 1.8/2.1/2.4/2.7 seconds.",
                 "parseInfo": []
             },
             "cooldown": "12/11.5/11/10.5/10",
@@ -79,10 +79,25 @@
         },
         "R": {
             "_rawTooltip": {
-                "fullTooltip": "After 1.25 seconds Neeko leaps into the air. She gains a shield that absorbs 75/100/125 (+75% AP) damage (+40/60/80 (+40% AP) for each nearby enemy champion).<br /><br />When Neeko lands she deals 200/425/650 (+130% AP) magic damage and stuns nearby enemies for 1.25 seconds.<br /><br />This ability can be prepared in secret if Neeko is disguised.",
-                "parseInfo": []
+                "fullTooltip": "After 1.25 seconds Neeko leaps into the air. [[0]] all nearby enemies for 0.6 seconds. She then crashes down, dealing 150/350/550 (+100% AP) magic damage to all nearby enemies and [[1]] them for 0.75 seconds.<br /><br />This ability can be prepared in secret if Neeko is disguised.",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "Knocking Up",
+                            "scaleHolders": []
+                        },
+                        "type": "status"
+                    },
+                    {
+                        "text": {
+                            "text": "stunning",
+                            "scaleHolders": []
+                        },
+                        "type": "status"
+                    }
+                ]
             },
-            "cooldown": "90",
+            "cooldown": "120/105/90",
             "cost": "100 Mana",
             "name": "Pop Blossom"
         }
@@ -312,6 +327,187 @@
             "W": "",
             "E": "",
             "R": ""
+        },
+        "13.9": {
+            "B": "",
+            "P": {
+                "SpellName": "Passive - Inherent Glamour",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Neeko Get Sho'Ma!: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "When Neeko is near a non-epic monster, minion, trap, ward, or plant for two seconds she stores their Sho'Ma. Neeko can click on her bar to become that unit. Click on Neeko's face to return to Neeko. Click on the little “X” to clear out Neeko's current Sho'Ma. Only one unit can be stored at a time."
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Neeko Disguise is Durable!: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "Disguise no longer breaks on taking damage, only when the disguised self would have died or when you are crowd controlled."
+                        }
+                    },
+                    {
+                        "Tag": "REMOVED",
+                        "Change": {
+                            "Attribute": "Neeko for Speedo: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "Neeko no longer inherits base attack speed/move speed from disguised target if that stat is higher than hers."
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Cooldown: ",
+                            "Before": "25-10 seconds (based on level)",
+                            "Indicator": " ⇒ ",
+                            "After": "2 seconds"
+                        }
+                    }
+                ]
+            },
+            "Q": {
+                "SpellName": "Q - Blooming Burst",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Secondary/Tertiary Pop Damage: ",
+                            "Before": "40/65/90/115/140 (+20% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "35/60/85/110/135 (+25% AP)"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Area of Effect Size: ",
+                            "Before": "225",
+                            "Indicator": " ⇒ ",
+                            "After": "250 (NoteMax range E snares should always be hittable with Q now)"
+                        }
+                    },
+                    {
+                        "Tag": "NEW",
+                        "Change": {
+                            "Attribute": "Jungle Tomato: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "Q now deals 30/40/50/60/70 bonus damage to monsters"
+                        }
+                    },
+                    {
+                        "Tag": "NEW",
+                        "Change": {
+                            "Attribute": "Better Blooms: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "Casting Q beyond its maximum range will now cast the ability at maximum range instead of having Neeko walk into position to throw it."
+                        }
+                    }
+                ]
+            },
+            "W": {
+                "SpellName": "W - Shapesplitter",
+                "Changes": [
+                    {
+                        "Tag": "NEW",
+                        "Change": {
+                            "Attribute": "Neeko Move Neeko: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "After casting Neeko can reactivate to send the clone to a new location"
+                        }
+                    },
+                    {
+                        "Tag": "NEW",
+                        "Change": {
+                            "Attribute": "Neeko Funny!: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "Clone now plays animations and sounds of Q/E/Dance/Joke/Taunt/Recall/Laugh and survives for their duration"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Neeko Jungle!: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "Empowered Attacks deal 50 bonus damage to monsters"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Neeko is Become One: ",
+                            "Before": "Neeko's clone spawns 100 units in front of her",
+                            "Indicator": " ⇒ ",
+                            "After": "Neeko's clone spawns directly on top of her"
+                        }
+                    }
+                ]
+            },
+            "E": {
+                "SpellName": "E - Tangle-Barbs",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Magic Damage: ",
+                            "Before": "80/115/150/185/220 (+60% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "70/105/140/175/210 (+65% AP)"
+                        }
+                    }
+                ]
+            },
+            "R": {
+                "SpellName": "R - Pop Blossom",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Adjusted Ultimate: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "After channeling for 1.25 seconds, Neeko jumps into the air, knocking up all nearby enemies for 0.6 seconds. Neeko then crashes to the ground with all knocked up enemies, dealing magic damage to them and stunning them for 0.75 seconds."
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Cooldown: ",
+                            "Before": "90 seconds",
+                            "Indicator": " ⇒ ",
+                            "After": "120/105/90 seconds"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Magic Damage: ",
+                            "Before": "200/425/650 (+130% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "150/350/550 (+100% AP)"
+                        }
+                    },
+                    {
+                        "Tag": "REMOVED",
+                        "Change": {
+                            "Attribute": "Neeko Need No Shield!: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "Neeko no longer gains a shield when channeling her R"
+                        }
+                    }
+                ]
+            }
         }
     },
     "ChangePatches": [
@@ -319,7 +515,8 @@
         "10.16",
         "12.4",
         "12.7",
-        "12.10"
+        "12.10",
+        "13.9"
     ],
     "ChampionName": "Neeko"
 }

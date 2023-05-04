@@ -56,7 +56,7 @@
                     },
                     {
                         "text": {
-                            "text": "4 - 10% {{0}} of the target's maximum health",
+                            "text": "4 - 12% {{0}} of the target's maximum health",
                             "scaleHolders": [
                                 {
                                     "scale": "(based on level)",
@@ -216,7 +216,7 @@
                     },
                     {
                         "text": {
-                            "text": "50/65/80% Move Speed",
+                            "text": "60/80/100% Move Speed",
                             "scaleHolders": []
                         },
                         "type": "speed"
@@ -663,6 +663,40 @@
                     }
                 ]
             }
+        },
+        "13.9": {
+            "B": "",
+            "P": {
+                "SpellName": "Passive - Deathbringer Stance",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Bonus Physical Damage: ",
+                            "Before": "4-10% (based on level) of target's maximum health",
+                            "Indicator": " ⇒ ",
+                            "After": "4-12% (based on level) of target's maximum health"
+                        }
+                    }
+                ]
+            },
+            "Q": "",
+            "W": "",
+            "E": "",
+            "R": {
+                "SpellName": "R - World Ender",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Bonus Movement Speed: ",
+                            "Before": "50/65/80%",
+                            "Indicator": " ⇒ ",
+                            "After": "60/80/100%"
+                        }
+                    }
+                ]
+            }
         }
     },
     "ChangePatches": [
@@ -677,7 +711,8 @@
         "12.14",
         "12.20",
         "13.1",
-        "13.5"
+        "13.5",
+        "13.9"
     ],
     "ChampionName": "Aatrox"
 }

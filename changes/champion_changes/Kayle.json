@@ -191,7 +191,7 @@
                                     "scaleId": "AD"
                                 },
                                 {
-                                    "scale": "(+25% AP)",
+                                    "scale": "(+20% AP)",
                                     "scaleId": "AP"
                                 }
                             ]
@@ -225,14 +225,14 @@
         },
         "R": {
             "_rawTooltip": {
-                "fullTooltip": "Kayle makes an allied champion Invulnerable for 2/2.5 seconds. She then purifies the area around them dealing [[0]] to nearby enemies.",
+                "fullTooltip": "Kayle makes an allied champion Invulnerable for 2.5 seconds. She then purifies the area around them dealing [[0]] to nearby enemies.",
                 "parseInfo": [
                     {
                         "text": {
-                            "text": "200/350/500 {{0}} {{1}} magic damage",
+                            "text": "200/300/400 {{0}} {{1}} magic damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+80% AP)",
+                                    "scale": "(+70% AP)",
                                     "scaleId": "AP"
                                 },
                                 {
@@ -608,6 +608,94 @@
                 ]
             },
             "R": ""
+        },
+        "13.9": {
+            "B": "",
+            "P": "",
+            "Q": "",
+            "W": "",
+            "E": {
+                "SpellName": "E - Starfire Spellblade",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "On-Hit AP Ratio: ",
+                            "Before": "25% AP",
+                            "Indicator": " ⇒ ",
+                            "After": "20% AP"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Passive (Divine Ascent) Wave Damage: ",
+                            "Before": "15/20/25/30/35 (based on E rank)",
+                            "Indicator": " ⇒ ",
+                            "After": "20-41 (based on champion level, levels 11-18)"
+                        }
+                    }
+                ]
+            },
+            "R": {
+                "SpellName": "R - Divine Judgment",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Cast Time: ",
+                            "Before": "1.5 seconds",
+                            "Indicator": " ⇒ ",
+                            "After": "0.5 seconds"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Area of Effect Radius: ",
+                            "Before": "525",
+                            "Indicator": " ⇒ ",
+                            "After": "675/675/775"
+                        }
+                    },
+                    {
+                        "Tag": "REMOVED",
+                        "Change": {
+                            "Attribute": "Ascending: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "Kayle no longer lowers her range when casting ult on herself"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Invulnerability Duration: ",
+                            "Before": "2/2.5/3",
+                            "Indicator": " ⇒ ",
+                            "After": "2.5"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Time Delay until Sword Falls: ",
+                            "Before": "1.5",
+                            "Indicator": " ⇒ ",
+                            "After": "2.5"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Magic Damage: ",
+                            "Before": "200/350/500 (+100% bonus AD)(+80% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "200/300/400 (+100% bonus AD)(+70% AP)"
+                        }
+                    }
+                ]
+            }
         }
     },
     "ChangePatches": [
@@ -621,7 +709,8 @@
         "11.15",
         "11.24",
         "12.10",
-        "13.3"
+        "13.3",
+        "13.9"
     ],
     "ChampionName": "Kayle"
 }

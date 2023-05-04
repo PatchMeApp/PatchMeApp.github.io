@@ -34,7 +34,7 @@
         },
         "attackDamage": {
             "base": 60,
-            "increment": 1.7
+            "increment": 1.5
         },
         "attackRange": {
             "base": 175,
@@ -84,7 +84,7 @@
         },
         "Q": {
             "_rawTooltip": {
-                "fullTooltip": "Bel'Veth dashes, dealing [[0]] to enemies she passes through.<br /><br />Each direction has an unique Cooldown of ? seconds that scales down based on her [[1]].<br />",
+                "fullTooltip": "Bel'Veth dashes, dealing [[0]] to enemies she passes through.<br /><br />Each direction has an unique Cooldown of 16/15/14/13/12 that scales down based on her [[1]].<br />",
                 "parseInfo": [
                     {
                         "text": {
@@ -564,13 +564,48 @@
                     }
                 ]
             }
+        },
+        "13.9": {
+            "B": {
+                "SpellName": "Base Stats",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Attack Damage Growth: ",
+                            "Before": "1.7",
+                            "Indicator": " ⇒ ",
+                            "After": "1.5"
+                        }
+                    }
+                ]
+            },
+            "P": "",
+            "Q": {
+                "SpellName": "Q - Void Surge",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Monster Damage Modification: ",
+                            "Before": "120%",
+                            "Indicator": " ⇒ ",
+                            "After": "140%"
+                        }
+                    }
+                ]
+            },
+            "W": "",
+            "E": "",
+            "R": ""
         }
     },
     "ChangePatches": [
         "12.10",
         "12.11",
         "12.12",
-        "12.21"
+        "12.21",
+        "13.9"
     ],
     "ChampionName": "Bel'Veth"
 }
