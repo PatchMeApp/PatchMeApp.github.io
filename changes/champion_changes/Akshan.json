@@ -63,11 +63,15 @@
                     },
                     {
                         "text": {
-                            "text": "10 − 165 {{0}} bonus magic damage",
+                            "text": "10 − 165 {{0}} {{1}} bonus magic damage",
                             "scaleHolders": [
                                 {
                                     "scale": "(based on level)",
                                     "scaleId": "level"
+                                },
+                                {
+                                    "scale": "(+ 60% AP)",
+                                    "scaleId": "AP"
                                 }
                             ]
                         },
@@ -114,8 +118,13 @@
                     },
                     {
                         "text": {
-                            "text": "40% Move Speed",
-                            "scaleHolders": []
+                            "text": "40% {{0}} Move Speed",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+5% per 100 AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
                         },
                         "type": "speed"
                     }

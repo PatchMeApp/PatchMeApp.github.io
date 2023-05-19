@@ -64,8 +64,13 @@
                 "parseInfo": [
                     {
                         "text": {
-                            "text": "75/85/95/105/115% AD physical damage",
-                            "scaleHolders": []
+                            "text": "75/85/95/105/115% AD {{0}} physical damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+50% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
                         },
                         "type": "physicalDamage"
                     },
