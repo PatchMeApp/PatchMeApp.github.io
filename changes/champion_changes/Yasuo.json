@@ -2,7 +2,7 @@
     "stats": {
         "hp": {
             "base": 590,
-            "increment": 101
+            "increment": 110
         },
         "mp": {
             "base": 0,
@@ -45,7 +45,7 @@
         "P": {
             "cooldown": "",
             "_rawTooltip": {
-                "fullTooltip": "Innate - Intent: Yasuo's total critical strike chance is multiplied by 2.5 from all other sources, but his critical strikes deal only [ 90% of the normal critical strike damage ] Additionally, [ every 1% critical strike chance in excess of 100% is converted into 0.4 bonus AD. ]<br>Innate - Resolve: Yasuo generates Flow for every 59 / 52.5 / 46 (based on level) units he travels by any means. At[ 100 stacks ]and upon taking damage from enemy champions or monsters, Yasuo consumes all Flow to shield himself for 100 − 575 (based on level) for up to 1 second.",
+                "fullTooltip": "Innate - Intent: Yasuo's total critical strike chance is multiplied by 2.5 from all other sources, but his critical strikes deal only [ 90% of the normal critical strike damage ] Additionally, [ every 1% critical strike chance in excess of 100% is converted into 0.4 bonus AD. ]<br>Innate - Resolve: Yasuo generates Flow for every 59 / 52.5 / 46 (based on level) units he travels by any means. At[ 100 stacks ]and upon taking damage from enemy champions or monsters, Yasuo consumes all Flow to shield himself for 125 − 600 (based on level) for up to 1 second.",
                 "parseInfo": []
             },
             "name": "Way of the Wanderer"
@@ -84,7 +84,7 @@
                 "fullTooltip": "Yasuo creates a drifting wall of wind that blocks all enemy projectiles for 4 seconds.",
                 "parseInfo": []
             },
-            "cooldown": "30/27/24/21/18",
+            "cooldown": "25/23/21/19/17/15",
             "cost": "No Cost",
             "name": "Wind Wall"
         },
@@ -539,6 +539,53 @@
                 ]
             },
             "R": ""
+        },
+        "13.10": {
+            "B": {
+                "SpellName": "Base Stats",
+                "Changes": [
+                    {
+                        "Tag": "MID-PATCH",
+                        "Change": {
+                            "Attribute": "Health Growth: ",
+                            "Before": "101",
+                            "Indicator": " ⇒ ",
+                            "After": "110"
+                        }
+                    }
+                ]
+            },
+            "P": {
+                "SpellName": "P - Way of the Wanderer",
+                "Changes": [
+                    {
+                        "Tag": "MID-PATCH",
+                        "Change": {
+                            "Attribute": "Way Of The Wanderer Shield: ",
+                            "Before": "100-575",
+                            "Indicator": " ⇒ ",
+                            "After": "125-600"
+                        }
+                    }
+                ]
+            },
+            "Q": "",
+            "W": {
+                "SpellName": "W - Wind Wall",
+                "Changes": [
+                    {
+                        "Tag": "MID-PATCH",
+                        "Change": {
+                            "Attribute": "Wind Wall Cooldown: ",
+                            "Before": "30/27/24/21/18 seconds",
+                            "Indicator": " ⇒ ",
+                            "After": "25/23/21/19/17/15 seconds"
+                        }
+                    }
+                ]
+            },
+            "E": "",
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -552,7 +599,8 @@
         "12.2",
         "12.7",
         "12.10",
-        "13.7"
+        "13.7",
+        "13.10"
     ],
     "ChampionName": "Yasuo"
 }

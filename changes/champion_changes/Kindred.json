@@ -2,7 +2,7 @@
     "stats": {
         "hp": {
             "base": 610,
-            "increment": 99
+            "increment": 104
         },
         "mp": {
             "base": 300,
@@ -34,7 +34,7 @@
         },
         "attackDamage": {
             "base": 65,
-            "increment": 2.5
+            "increment": 3.25
         },
         "attackRange": {
             "base": 500,
@@ -157,7 +157,7 @@
         },
         "E": {
             "_rawTooltip": {
-                "fullTooltip": "Kindred weakens an enemy, [[0]] them by 50% (+5% per 100 AP) for 1 second.<br /><br />Kindred's third Attack against the target within 4 seconds of each other directs Wolf to pounce on the enemy, dealing [[1]] plus [[2]].<br /><br />Wolf's pounce critically strikes for [[3]] plus [[4]] instead if they are below 15% (+50% Crit Chance) Health.",
+                "fullTooltip": "Kindred weakens an enemy, [[0]] them by 50% (+5% per 100 AP) for 1 second.<br /><br />Kindred's third Attack against the target within 4 seconds of each other directs Wolf to pounce on the enemy, dealing [[1]] plus [[2]].<br /><br />Wolf's pounce critically strikes for [[3]] plus [[4]] instead if they are below 25% (+50% Crit Chance) Health.",
                 "parseInfo": [
                     {
                         "text": {
@@ -459,7 +459,29 @@
             "R": ""
         },
         "13.10": {
-            "B": "",
+            "B": {
+                "SpellName": "Base Stats",
+                "Changes": [
+                    {
+                        "Tag": "MID-PATCH",
+                        "Change": {
+                            "Attribute": "Health Growth: ",
+                            "Before": "99",
+                            "Indicator": " ⇒ ",
+                            "After": "104"
+                        }
+                    },
+                    {
+                        "Tag": "MID-PATCH",
+                        "Change": {
+                            "Attribute": "AD Growth: ",
+                            "Before": "2.5",
+                            "Indicator": " ⇒ ",
+                            "After": "3.25"
+                        }
+                    }
+                ]
+            },
             "P": "",
             "Q": "",
             "W": {
@@ -486,6 +508,15 @@
                             "Before": "50%",
                             "Indicator": " ⇒ ",
                             "After": "50% (+5% per 100 AP)"
+                        }
+                    },
+                    {
+                        "Tag": "MID-PATCH",
+                        "Change": {
+                            "Attribute": "Mounting Dread Crit Threshold: ",
+                            "Before": "15-65% target max health, scaling with crit chance",
+                            "Indicator": " ⇒ ",
+                            "After": "25-75% target max health, scaling with crit chance"
                         }
                     }
                 ]

@@ -2,14 +2,14 @@
     "stats": {
         "hp": {
             "base": 620,
-            "increment": 99
+            "increment": 105
         },
         "mp": {
             "base": 0,
             "increment": 0
         },
         "armor": {
-            "base": 28,
+            "base": 30,
             "increment": 4.6
         },
         "spellBlock": {
@@ -138,14 +138,14 @@
                     },
                     {
                         "text": {
-                            "text": "35 - 55 {{0}} {{1}} Shield",
+                            "text": "45 - 65 {{0}} {{1}} Shield",
                             "scaleHolders": [
                                 {
                                     "scale": "(based on champion level)",
                                     "scaleId": "level"
                                 },
                                 {
-                                    "scale": "(+55% Bonus AD)",
+                                    "scale": "(+65% bonus AD)",
                                     "scaleId": "AD"
                                 }
                             ]
@@ -161,7 +161,7 @@
                     }
                 ]
             },
-            "cooldown": "16",
+            "cooldown": "14",
             "cost": "No Cost",
             "name": "Spirit Cleave"
         },
@@ -510,6 +510,58 @@
             },
             "E": "",
             "R": ""
+        },
+        "13.10": {
+            "B": {
+                "SpellName": "Base Stats",
+                "Changes": [
+                    {
+                        "Tag": "MID-PATCH",
+                        "Change": {
+                            "Attribute": "Base Armor: ",
+                            "Before": "28",
+                            "Indicator": " ⇒ ",
+                            "After": "30"
+                        }
+                    },
+                    {
+                        "Tag": "MID-PATCH",
+                        "Change": {
+                            "Attribute": "Health Growth: ",
+                            "Before": "99",
+                            "Indicator": " ⇒ ",
+                            "After": "105"
+                        }
+                    }
+                ]
+            },
+            "P": "",
+            "Q": "",
+            "W": {
+                "SpellName": "W - Spirit Cleave",
+                "Changes": [
+                    {
+                        "Tag": "MID-PATCH",
+                        "Change": {
+                            "Attribute": "Spirit Cleave Cooldown: ",
+                            "Before": "16~6 seconds, scaling with bonus attack speed",
+                            "Indicator": " ⇒ ",
+                            "After": "14~6 seconds, scaling with bonus attack speed"
+                        }
+                    },
+                    {
+                        "Tag": "MID-PATCH",
+                        "Change": {
+                            "Attribute": "Spirit Cleave Shield: ",
+                            "Before": "35-55 (levels 1-18) (+55% bonus AD)",
+                            "Indicator": " ⇒ ",
+                            "After": "45-65 (levels 1-18) (+65% bonus AD)"
+                        }
+                    }
+                ]
+            },
+            "E": "",
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -522,7 +574,8 @@
         "11.18",
         "12.2",
         "12.7",
-        "12.10"
+        "12.10",
+        "13.10"
     ],
     "ChampionName": "Yone"
 }

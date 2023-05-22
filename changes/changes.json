@@ -5658,7 +5658,29 @@
             "13.10"
         ],
         "LatestChanges": {
-            "B": "",
+            "B": {
+                "SpellName": "Base Stats",
+                "Changes": [
+                    {
+                        "Tag": "MID-PATCH",
+                        "Change": {
+                            "Attribute": "Health Growth: ",
+                            "Before": "99",
+                            "Indicator": " ⇒ ",
+                            "After": "104"
+                        }
+                    },
+                    {
+                        "Tag": "MID-PATCH",
+                        "Change": {
+                            "Attribute": "AD Growth: ",
+                            "Before": "2.5",
+                            "Indicator": " ⇒ ",
+                            "After": "3.25"
+                        }
+                    }
+                ]
+            },
             "P": "",
             "Q": "",
             "W": {
@@ -5685,6 +5707,15 @@
                             "Before": "50%",
                             "Indicator": " ⇒ ",
                             "After": "50% (+5% per 100 AP)"
+                        }
+                    },
+                    {
+                        "Tag": "MID-PATCH",
+                        "Change": {
+                            "Attribute": "Mounting Dread Crit Threshold: ",
+                            "Before": "15-65% target max health, scaling with crit chance",
+                            "Indicator": " ⇒ ",
+                            "After": "25-75% target max health, scaling with crit chance"
                         }
                     }
                 ]
@@ -6952,49 +6983,54 @@
             "12.2",
             "12.7",
             "12.10",
-            "13.7"
+            "13.7",
+            "13.10"
         ],
         "LatestChanges": {
-            "B": "",
-            "P": {
-                "SpellName": "Passive - Way of the Wanderer",
+            "B": {
+                "SpellName": "Base Stats",
                 "Changes": [
                     {
-                        "Tag": "",
+                        "Tag": "MID-PATCH",
                         "Change": {
-                            "Attribute": "Shield Amount: ",
-                            "Before": "100/105/110/115/120/130/140/150/160/170/180/200/220/250/290/350/410/475",
+                            "Attribute": "Health Growth: ",
+                            "Before": "101",
                             "Indicator": " ⇒ ",
-                            "After": "100/105/110/115/125/135/145/160/175/195/220/250/275/325/375/425/500/575"
+                            "After": "110"
+                        }
+                    }
+                ]
+            },
+            "P": {
+                "SpellName": "P - Way of the Wanderer",
+                "Changes": [
+                    {
+                        "Tag": "MID-PATCH",
+                        "Change": {
+                            "Attribute": "Way Of The Wanderer Shield: ",
+                            "Before": "100-575",
+                            "Indicator": " ⇒ ",
+                            "After": "125-600"
                         }
                     }
                 ]
             },
             "Q": "",
-            "W": "",
-            "E": {
-                "SpellName": "E - Sweeping Blade",
+            "W": {
+                "SpellName": "W - Wind Wall",
                 "Changes": [
                     {
-                        "Tag": "",
+                        "Tag": "MID-PATCH",
                         "Change": {
-                            "Attribute": "Damage Increase per Stack: ",
-                            "Before": "25% of E’s base damage",
+                            "Attribute": "Wind Wall Cooldown: ",
+                            "Before": "30/27/24/21/18 seconds",
                             "Indicator": " ⇒ ",
-                            "After": "15-25% of E’s total damage (scales linearly, levels 1-18)"
-                        }
-                    },
-                    {
-                        "Tag": "",
-                        "Change": {
-                            "Attribute": "Maximum Stack Amount: ",
-                            "Before": "2",
-                            "Indicator": " ⇒ ",
-                            "After": "4"
+                            "After": "25/23/21/19/17/15 seconds"
                         }
                     }
                 ]
             },
+            "E": "",
             "R": ""
         }
     },
@@ -7436,46 +7472,29 @@
             "11.18",
             "12.2",
             "12.7",
-            "12.10"
+            "12.10",
+            "13.10"
         ],
         "LatestChanges": {
             "B": {
                 "SpellName": "Base Stats",
                 "Changes": [
                     {
-                        "Tag": "",
+                        "Tag": "MID-PATCH",
                         "Change": {
-                            "Attribute": "BASE HEALTH: ",
-                            "Before": "",
-                            "Indicator": "",
-                            "After": "+70"
+                            "Attribute": "Base Armor: ",
+                            "Before": "28",
+                            "Indicator": " ⇒ ",
+                            "After": "30"
                         }
                     },
                     {
-                        "Tag": "",
+                        "Tag": "MID-PATCH",
                         "Change": {
-                            "Attribute": "HEALTH GROWTH: ",
-                            "Before": "",
-                            "Indicator": "",
-                            "After": "+14"
-                        }
-                    },
-                    {
-                        "Tag": "",
-                        "Change": {
-                            "Attribute": "ARMOR GROWTH: ",
-                            "Before": "",
-                            "Indicator": "",
-                            "After": "+1.2"
-                        }
-                    },
-                    {
-                        "Tag": "",
-                        "Change": {
-                            "Attribute": "MAGIC RESIST GROWTH: ",
-                            "Before": "",
-                            "Indicator": "",
-                            "After": "+0.8"
+                            "Attribute": "Health Growth: ",
+                            "Before": "99",
+                            "Indicator": " ⇒ ",
+                            "After": "105"
                         }
                     }
                 ]
@@ -7486,12 +7505,21 @@
                 "SpellName": "W - Spirit Cleave",
                 "Changes": [
                     {
-                        "Tag": "",
+                        "Tag": "MID-PATCH",
                         "Change": {
-                            "Attribute": "W - Shield: ",
-                            "Before": "40-60 (levels 1-18) (+60% bonus AD)",
+                            "Attribute": "Spirit Cleave Cooldown: ",
+                            "Before": "16~6 seconds, scaling with bonus attack speed",
                             "Indicator": " ⇒ ",
-                            "After": "35-55 (levels 1-18) (+55% bonus AD)"
+                            "After": "14~6 seconds, scaling with bonus attack speed"
+                        }
+                    },
+                    {
+                        "Tag": "MID-PATCH",
+                        "Change": {
+                            "Attribute": "Spirit Cleave Shield: ",
+                            "Before": "35-55 (levels 1-18) (+55% bonus AD)",
+                            "Indicator": " ⇒ ",
+                            "After": "45-65 (levels 1-18) (+65% bonus AD)"
                         }
                     }
                 ]
