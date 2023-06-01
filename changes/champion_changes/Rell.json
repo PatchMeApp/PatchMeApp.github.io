@@ -45,114 +45,44 @@
         "P": {
             "cooldown": "",
             "_rawTooltip": {
-                "fullTooltip": "Innate: Rell's basic attacks deal [[0]] before reducing the target's armor and magic resistance by 10% for 4 seconds, refreshing on subsequent hits. Basic attacks against enemy champions will refresh the duration for all nearby afflicted enemies.<br>Rell gains bonus armor and bonus magic resistance equal to the sum resistances reduced from all afflicted enemies, and Break the Mold's bonus damage is increased equal to the sum resistances reduced from the target.<br>Break the Mold will reduce the target's armor and magic resistance by a minimum of 5 − 12 (based on level), or 0.5 / 1.25 / 2 (based on level) versus minions.<br>Rell's attack windup is reduced[ to 42% − 39% (based on level). ]",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "8 − 16 {{0}} bonus magic damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(based on level)",
-                                    "scaleId": "level"
-                                }
-                            ]
-                        },
-                        "type": "magicDamage"
-                    }
-                ]
+                "fullTooltip": "Rell's attacks and abilities steal 2.5% Armor and 2.5% Magic Resist for 5 seconds, refreshing on subsequent hits and stacking up to 5 times.",
+                "parseInfo": []
             },
             "name": "Break the Mold"
         },
         "Q": {
             "_rawTooltip": {
-                "fullTooltip": "Rell thrusts her lance, destroying all Shield and dealing [[0]]. The first unit hit takes [[1]] instead and suffers [[2]]'s defense steal. <br /><br />If Rell is bound to an ally with [[3]], they both recover [[4]] for each enemy champion hit.",
+                "fullTooltip": "Rell thrusts her lance, [[0]], and dealing [[1]].",
                 "parseInfo": [
                     {
                         "text": {
-                            "text": "35/52.5/70/87.5/105 {{0}} magic damage",
+                            "text": "Stunning/status> targets for 0.75 seconds, destroying all Shields",
+                            "scaleHolders": []
+                        },
+                        "type": "shield"
+                    },
+                    {
+                        "text": {
+                            "text": "60/95/130/165/200 {{0}} magic damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+25% AP)",
+                                    "scale": "(+ 50% AP)",
                                     "scaleId": "AP"
                                 }
                             ]
                         },
                         "type": "magicDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "70/105/140/175/210 {{0}} damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+50% AP)",
-                                    "scaleId": "AP"
-                                }
-                            ]
-                        },
-                        "type": "magicDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "Break the Mold",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "Attract and Repel",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "10/15/20/25/30 {{0}} plus 4% missing Health",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+30% AP)",
-                                    "scaleId": "AP"
-                                }
-                            ]
-                        },
-                        "type": "healing"
                     }
                 ]
             },
-            "cooldown": "9/8/7/6/5",
+            "cooldown": "11/10.5/10/9.5/9",
             "cost": "50 Mana",
             "name": "Shattering Strike"
         },
         "W": {
             "_rawTooltip": {
-                "fullTooltip": "[[0]] Rell gains [[1]], reduced when taking damage. <br /><br />[[2]] Rell leaps off her mount, [[3]] enemies for 1 second and dealing [[4]]. Rell then enters Armored form, gaining [[5]], reducing her [[6]], and allowing her to use [[7]].",
+                "fullTooltip": "Rell leaps of her mount, [[0]] enemies for 0.75 seconds and dealing [[1]]. Rell gains [[2]], which lasts until she remounts.<br /><br />Rell then enters armored form, gaining [[3]], [[4]], [[5]] and 75 Attack Range, but is [[6]] by 15%. In this form, she can use [[7]].<br /><br />[[8]]: Rell mounts up and briefly gains [[9]]. Her next attack within 3.5 seconds [[10]] and throws enemies behind her, dealing an additional [[11]]. While mounted, Rell can use [[12]].",
                 "parseInfo": [
-                    {
-                        "text": {
-                            "text": "Passive - Mounted:",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "5% - 15% {{0}} Move Speed",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(based on champion level)",
-                                    "scaleId": "level"
-                                }
-                            ]
-                        },
-                        "type": "speed"
-                    },
-                    {
-                        "text": {
-                            "text": "Active - Ferromancy: Crash Down:",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
                     {
                         "text": {
                             "text": "Knocking Up",
@@ -162,10 +92,10 @@
                     },
                     {
                         "text": {
-                            "text": "70/105/140/175/210 {{0}} magic damage",
+                            "text": "70/100/130/160/190 {{0}} magic damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+60% AP)",
+                                    "scale": "(+ 60% AP)",
                                     "scaleId": "AP"
                                 }
                             ]
@@ -174,11 +104,11 @@
                     },
                     {
                         "text": {
-                            "text": "35/60/85/110/135 {{0}} Shield",
+                            "text": "30/55/80/105/130 {{0}} Shield",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+12% Health)",
-                                    "scaleId": "Health"
+                                    "scale": "(+ 10% of maximum health)",
+                                    "scaleId": "health"
                                 }
                             ]
                         },
@@ -186,14 +116,75 @@
                     },
                     {
                         "text": {
-                            "text": "Move Speed",
+                            "text": "12% bonus Armor",
+                            "scaleHolders": []
+                        },
+                        "type": "scaleArmor"
+                    },
+                    {
+                        "text": {
+                            "text": "12% Magic Resist",
+                            "scaleHolders": []
+                        },
+                        "type": "scaleMR"
+                    },
+                    {
+                        "text": {
+                            "text": "15/20/25/30/35% Attack Speed",
+                            "scaleHolders": []
+                        },
+                        "type": "attackSpeed"
+                    },
+                    {
+                        "text": {
+                            "text": "Slowed",
+                            "scaleHolders": []
+                        },
+                        "type": "status"
+                    },
+                    {
+                        "text": {
+                            "text": "Ferromancy: Mount Up",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "Active - Ferromancy: Mount Up",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "30% Decaying Move Speed",
                             "scaleHolders": []
                         },
                         "type": "speed"
                     },
                     {
                         "text": {
-                            "text": "Ferromancy: Mount Up",
+                            "text": "Knocks Up",
+                            "scaleHolders": []
+                        },
+                        "type": "status"
+                    },
+                    {
+                        "text": {
+                            "text": "10/25/40/55/70 {{0}} magic damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+ 40% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "magicDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "Ferromancy: Crash Down",
                             "scaleHolders": []
                         },
                         "type": ""
@@ -206,35 +197,73 @@
         },
         "E": {
             "_rawTooltip": {
-                "fullTooltip": "Rell binds a piece of her Armor to another allied champion, granting them [[0]] and [[1]] while near you. Doing this has no cost and puts this Ability on Cooldown for 3 seconds.<br /><br />If Rell uses this Ability without targeting an allied champion, she snaps the binding, [[2]] enemies around and between herself and her bound ally for 0.5 seconds and dealing [[3]].",
+                "fullTooltip": "[[0]]: Rell gains [[1]] while mounted, reduced to [[2]] in combat.<br /><br />[[3]]: Rell and an ally charge, gaining ramping [[4]] over 3 seconds, this is doubled to [[5]] toward enemies or your targeted ally.<br /><br />Additionally, Rell's next attack or [[6]] explode in an area for [[7]]",
                 "parseInfo": [
                     {
                         "text": {
-                            "text": "10% Armor Armor",
+                            "text": "Passive - Mounted Alacrity",
                             "scaleHolders": []
                         },
-                        "type": "scaleArmor"
+                        "type": ""
                     },
                     {
                         "text": {
-                            "text": "10% MR Magic Resist",
-                            "scaleHolders": []
-                        },
-                        "type": "scaleMR"
-                    },
-                    {
-                        "text": {
-                            "text": "Stunning",
-                            "scaleHolders": []
-                        },
-                        "type": "status"
-                    },
-                    {
-                        "text": {
-                            "text": "80/120/160/200/240 {{0}} magic damage",
+                            "text": "5 - 50 {{0}} Move Speed",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+30% AP)",
+                                    "scale": "(based on level)",
+                                    "scaleId": "level"
+                                }
+                            ]
+                        },
+                        "type": "speed"
+                    },
+                    {
+                        "text": {
+                            "text": "2.5 - 25 {{0}} Move Speed",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(based on level)",
+                                    "scaleId": "level"
+                                }
+                            ]
+                        },
+                        "type": "speed"
+                    },
+                    {
+                        "text": {
+                            "text": "Active - Full Tilt",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "Move Speed up to 15/17.5/20/22.5/25%",
+                            "scaleHolders": []
+                        },
+                        "type": "speed"
+                    },
+                    {
+                        "text": {
+                            "text": "30/35/40/45/50%",
+                            "scaleHolders": []
+                        },
+                        "type": "speed"
+                    },
+                    {
+                        "text": {
+                            "text": "Shattering Strike",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "25/35/45/55/65 +2/2.5/3/3.5/4% of target's maximum health {{0}} magic damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+ 30% AP)",
                                     "scaleId": "AP"
                                 }
                             ]
@@ -243,9 +272,9 @@
                     }
                 ]
             },
-            "cooldown": "13",
+            "cooldown": "15",
             "cost": "40 Mana",
-            "name": "Attract and Repel"
+            "name": "Full Tilt"
         },
         "R": {
             "_rawTooltip": {

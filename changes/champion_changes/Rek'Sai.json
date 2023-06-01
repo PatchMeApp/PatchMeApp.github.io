@@ -69,7 +69,7 @@
         },
         "Q": {
             "_rawTooltip": {
-                "fullTooltip": "[[0]]: Rek'Sai's next 3 Attacks within 3 seconds deal an additional [[1]] to nearby enemies.",
+                "fullTooltip": "[[0]]: Rek'Sai's next 3 Attacks within 3 seconds deal an additional [[1]] to nearby enemies. Basic attacks refresh the duration of this ability.[[2]]: Rek'Sai launches a burst of void-charged earth that explodes on the first enemy hit, dealing [[3]] in a small area. It also relveals non-stealthed enemies for 5 seconds. If it hits a Champion, it generates [[4]]",
                 "parseInfo": [
                     {
                         "text": {
@@ -89,6 +89,36 @@
                             ]
                         },
                         "type": "physicalDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "Burrowed",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "60/95/130/165/200 {{0}} {{1}} physical damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+ 50% bonus AD)",
+                                    "scaleId": "AD"
+                                },
+                                {
+                                    "scale": "(+ 70% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "physicalDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "25 Fury",
+                            "scaleHolders": []
+                        },
+                        "type": ""
                     }
                 ]
             },
