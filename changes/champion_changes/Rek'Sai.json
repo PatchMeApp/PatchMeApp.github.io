@@ -352,6 +352,103 @@
             "W": "",
             "E": "",
             "R": ""
+        },
+        "13.11": {
+            "B": "",
+            "P": {
+                "SpellName": "Passive - Fury of the Xer’Sai",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Tremor Sense Refresh Rate: ",
+                            "Before": "1.5 seconds",
+                            "Indicator": " ⇒ ",
+                            "After": "1 second"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Heal with Maximum Fury: ",
+                            "Before": "20-190 (based on level)",
+                            "Indicator": " ⇒ ",
+                            "After": "[15 (+20 for every 3 levels)] + [2% (+2% Maximum HP for every 3 levels)]"
+                        }
+                    }
+                ]
+            },
+            "Q": {
+                "SpellName": "Q - Queen’s Wrath (Unburrowed)",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Cooldown: ",
+                            "Before": "4 seconds at all levels",
+                            "Indicator": " ⇒ ",
+                            "After": "4/3.5/3/2.5/2 based on rank"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Buff Duration: ",
+                            "Before": "5 seconds",
+                            "Indicator": " ⇒ ",
+                            "After": "3 seconds"
+                        }
+                    },
+                    {
+                        "Tag": "NEW",
+                        "Change": {
+                            "Attribute": "Hit and Buff: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "Basic attacks now refresh the buff duration of Queen's Wrath"
+                        }
+                    },
+                    {
+                        "Tag": "REMOVED",
+                        "Change": {
+                            "Attribute": "Not So Fast: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "Q’s buff no longer ends prematurely if Rek'Sai is Burrowed for more than 1.5 seconds."
+                        }
+                    }
+                ]
+            },
+            "W": {
+                "SpellName": "W - Unburrow",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "QoL Update: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "Targeted range increased to match untargeted range. (NoteThis will mean that the optimization where it was better to line Rek’Sai up to the edge of your knock up and press W at the perfect time instead of just clicking on the opponent has been removed.)"
+                        }
+                    }
+                ]
+            },
+            "E": "",
+            "R": "",
+            "Q -": {
+                "SpellName": "Q - Queen’s Wrath (Burrowed)",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Reveal Duration: ",
+                            "Before": "2.5 seconds",
+                            "Indicator": " ⇒ ",
+                            "After": "5 seconds"
+                        }
+                    }
+                ]
+            }
         }
     },
     "ChangePatches": [
@@ -359,7 +456,8 @@
         "11.14",
         "12.1",
         "12.10",
-        "12.19"
+        "12.19",
+        "13.11"
     ],
     "ChampionName": "Rek'Sai"
 }
