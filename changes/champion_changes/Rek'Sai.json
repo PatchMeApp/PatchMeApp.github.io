@@ -45,14 +45,31 @@
         "P": {
             "cooldown": "",
             "_rawTooltip": {
-                "fullTooltip": "Innate: Rek'Sai basic attacks and ability hits generate 25 Fury, which expires by 20 Fury per second after 5 seconds without generating Fury. Prey Seeker will not generate Fury against non- champions.<br>When Rek'sai becomes Burrowed, she consumes her current Fury over 3 seconds to heal for up to 20 − 190 (based on level) at 100 Fury, stopping once fully consumed or she reaches full health. If she starts generating Fury while Burrowed, the consumption occurs after 5 seconds.",
-                "parseInfo": []
+                "fullTooltip": "Innate: Rek'Sai basic attacks and ability hits generate 25 Fury, which expires by 20 Fury per second after 5 seconds without generating Fury. Prey Seeker will not generate Fury against non- champions.<br>When Rek'sai becomes Burrowed, she consumes her current Fury over 3 seconds to heal for up to [[0]] at 100 Fury, stopping once fully consumed or she reaches full health. If she starts generating Fury while Burrowed, the consumption occurs after 5 seconds.",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "15 − 125 {{0}} + 2% − 12% {{1}} maximum health",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(based on level)",
+                                    "scaleId": "level"
+                                },
+                                {
+                                    "scale": "(based on level)",
+                                    "scaleId": "level"
+                                }
+                            ]
+                        },
+                        "type": "Health"
+                    }
+                ]
             },
             "name": "Fury of the Xer'Sai"
         },
         "Q": {
             "_rawTooltip": {
-                "fullTooltip": "[[0]]: Rek'Sai's next 3 Attacks within 5 seconds deal an additional [[1]] to nearby enemies.",
+                "fullTooltip": "[[0]]: Rek'Sai's next 3 Attacks within 3 seconds deal an additional [[1]] to nearby enemies.",
                 "parseInfo": [
                     {
                         "text": {
@@ -75,7 +92,7 @@
                     }
                 ]
             },
-            "cooldown": "4",
+            "cooldown": "4/3.5/3/2.5/2",
             "cost": "No Cost",
             "name": "Queen's Wrath / Prey Seeker"
         },
