@@ -9,12 +9,12 @@
             "increment": 45
         },
         "armor": {
-            "base": 32,
-            "increment": 3
+            "base": 39,
+            "increment": 4.2
         },
         "spellBlock": {
             "base": 32,
-            "increment": 1
+            "increment": 2.05
         },
         "hpRegen": {
             "base": 7,
@@ -45,7 +45,7 @@
         "P": {
             "cooldown": "",
             "_rawTooltip": {
-                "fullTooltip": "Rell's attacks and abilities steal 2.5% Armor and 2.5% Magic Resist for 5 seconds, refreshing on subsequent hits and stacking up to 5 times.",
+                "fullTooltip": "Rell's attacks and abilities steal 3% Armor and 3% Magic Resist for 5 seconds, refreshing on subsequent hits and stacking up to 5 times.",
                 "parseInfo": []
             },
             "name": "Break the Mold"
@@ -63,10 +63,10 @@
                     },
                     {
                         "text": {
-                            "text": "60/95/130/165/200 {{0}} magic damage",
+                            "text": "70/110/150/190/230 {{0}} magic damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+ 50% AP)",
+                                    "scale": "(+ 60% AP)",
                                     "scaleId": "AP"
                                 }
                             ]
@@ -81,7 +81,7 @@
         },
         "W": {
             "_rawTooltip": {
-                "fullTooltip": "Rell leaps of her mount, [[0]] enemies for 0.75 seconds and dealing [[1]]. Rell gains [[2]], which lasts until she remounts.<br /><br />Rell then enters armored form, gaining [[3]], [[4]], [[5]] and 75 Attack Range, but is [[6]] by 15%. In this form, she can use [[7]].<br /><br />[[8]]: Rell mounts up and briefly gains [[9]]. Her next attack within 3.5 seconds [[10]] and throws enemies behind her, dealing an additional [[11]]. While mounted, Rell can use [[12]].",
+                "fullTooltip": "Rell leaps of her mount, [[0]] enemies for 1 seconds and dealing [[1]]. Rell gains [[2]], which lasts until she remounts.<br /><br />Rell then enters armored form, gaining [[3]], [[4]], [[5]] and 75 Attack Range, but is [[6]] by 10%. In this form, she can use [[7]].<br /><br />[[8]]: Rell mounts up and briefly gains [[9]]. Her next attack within 3.5 seconds [[10]] and throws enemies behind her, dealing an additional [[11]]. While mounted, Rell can use [[12]].",
                 "parseInfo": [
                     {
                         "text": {
@@ -104,10 +104,10 @@
                     },
                     {
                         "text": {
-                            "text": "30/55/80/105/130 {{0}} Shield",
+                            "text": "35/60/85/110/135 {{0}} Shield",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+ 10% of maximum health)",
+                                    "scale": "(+ 12% of maximum health)",
                                     "scaleId": "health"
                                 }
                             ]
@@ -260,10 +260,10 @@
                     },
                     {
                         "text": {
-                            "text": "25/35/45/55/65 +2/2.5/3/3.5/4% of target's maximum health {{0}} magic damage",
+                            "text": "35/50/65/80/95 +4% of target's maximum health {{0}} magic damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+ 30% AP)",
+                                    "scale": "(+50% AP)",
                                     "scaleId": "AP"
                                 }
                             ]
@@ -647,6 +647,51 @@
                             "Indicator": " ⇒ ",
                             "After": "330"
                         }
+                    },
+                    {
+                        "Tag": "MID-PATCH",
+                        "Change": {
+                            "Attribute": "Health Regeneration: ",
+                            "Before": "1.4",
+                            "Indicator": " ⇒ ",
+                            "After": "1.7"
+                        }
+                    },
+                    {
+                        "Tag": "MID-PATCH",
+                        "Change": {
+                            "Attribute": "Health Regeneration Growth: ",
+                            "Before": "0.11",
+                            "Indicator": " ⇒ ",
+                            "After": "0.17"
+                        }
+                    },
+                    {
+                        "Tag": "MID-PATCH",
+                        "Change": {
+                            "Attribute": "Base Armor: ",
+                            "Before": "32",
+                            "Indicator": " ⇒ ",
+                            "After": "39"
+                        }
+                    },
+                    {
+                        "Tag": "MID-PATCH",
+                        "Change": {
+                            "Attribute": "Armor Growth: ",
+                            "Before": "3",
+                            "Indicator": " ⇒ ",
+                            "After": "4.2"
+                        }
+                    },
+                    {
+                        "Tag": "MID-PATCH",
+                        "Change": {
+                            "Attribute": "Magic Resistance Growth: ",
+                            "Before": "1",
+                            "Indicator": " ⇒ ",
+                            "After": "2.05"
+                        }
                     }
                 ]
             },
@@ -723,6 +768,15 @@
                             "Before": "",
                             "Indicator": "",
                             "After": "Passive no longer applies to minions"
+                        }
+                    },
+                    {
+                        "Tag": "MID-PATCH",
+                        "Change": {
+                            "Attribute": "Armor and Magic Resist Steal: ",
+                            "Before": "2.5%",
+                            "Indicator": " ⇒ ",
+                            "After": "3%"
                         }
                     }
                 ]
@@ -809,6 +863,24 @@
                             "Before": "",
                             "Indicator": "",
                             "After": "On old Rell, Q did reduced damage to enemies after the first, and only applied passive to the first enemy hit. Now it does full damage and applies passive to all enemies hit"
+                        }
+                    },
+                    {
+                        "Tag": "MID-PATCH",
+                        "Change": {
+                            "Attribute": "Base Damage: ",
+                            "Before": "60/95/130/165/200 (+50% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "70/110/150/190/230 (+60% AP)"
+                        }
+                    },
+                    {
+                        "Tag": "MID-PATCH",
+                        "Change": {
+                            "Attribute": "Damage to Jungle Camps: ",
+                            "Before": "250%",
+                            "Indicator": " ⇒ ",
+                            "After": "300%"
                         }
                     }
                 ]
@@ -932,6 +1004,42 @@
                             "Indicator": "",
                             "After": "Now deals 250% damage to jungle camps"
                         }
+                    },
+                    {
+                        "Tag": "MID-PATCH",
+                        "Change": {
+                            "Attribute": "Knock Up Duration: ",
+                            "Before": "0.75 second",
+                            "Indicator": " ⇒ ",
+                            "After": "1 second"
+                        }
+                    },
+                    {
+                        "Tag": "MID-PATCH",
+                        "Change": {
+                            "Attribute": "Shield: ",
+                            "Before": "30/55/80/105/130 (+10% maximum health)",
+                            "Indicator": " ⇒ ",
+                            "After": "35/60/85/110/135 (+12% maximum health)"
+                        }
+                    },
+                    {
+                        "Tag": "MID-PATCH",
+                        "Change": {
+                            "Attribute": "Self Slow: ",
+                            "Before": "15%",
+                            "Indicator": " ⇒ ",
+                            "After": "10%"
+                        }
+                    },
+                    {
+                        "Tag": "MID-PATCH",
+                        "Change": {
+                            "Attribute": "Damage to Jungle Camps: ",
+                            "Before": "250%",
+                            "Indicator": " ⇒ ",
+                            "After": "300%"
+                        }
                     }
                 ]
             },
@@ -954,6 +1062,24 @@
                             "Before": "",
                             "Indicator": "",
                             "After": "Rell and an ally charge, gaining ramping Movement Speed up to 15/17.5/20/22.5/25% over 3 seconds, this is doubled to 30/35/40/45/50% toward enemies or each other. Additionally, Rell’s next Attack or Shattering Strike explodes in an area for 25/35/45/55/65 (+40% AP) (+2/2.5/3/3.5/4% Maximum Health Damage)."
+                        }
+                    },
+                    {
+                        "Tag": "MID-PATCH",
+                        "Change": {
+                            "Attribute": "Damage: ",
+                            "Before": "25/35/45/55/65 (+2/2.5/3/3.5/4% Maximum Health) (+30% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "35/50/65/80/95 (+4% Maximum Health) (+50% AP)"
+                        }
+                    },
+                    {
+                        "Tag": "MID-PATCH",
+                        "Change": {
+                            "Attribute": "Movement Speed: ",
+                            "Before": "Ramps up from 50% of total speed to 100% over the first 2 seconds",
+                            "Indicator": " ⇒ ",
+                            "After": "Ramps up from 75% of total speed to 100% over the first 2 seconds"
                         }
                     }
                 ]
