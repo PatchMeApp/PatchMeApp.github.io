@@ -45,7 +45,7 @@
         "P": {
             "cooldown": "",
             "_rawTooltip": {
-                "fullTooltip": "Innate: Nasus gains 9 / 14 / 19% (based on level) life steal.",
+                "fullTooltip": "Innate: Nasus gains 11 / 16 / 21% (based on level) life steal.",
                 "parseInfo": []
             },
             "name": "Soul Eater"
@@ -197,7 +197,7 @@
                     }
                 ]
             },
-            "cooldown": "120",
+            "cooldown": "120/100/80",
             "cost": "100 Mana",
             "name": "Fury of the Sands"
         }
@@ -434,6 +434,40 @@
                     }
                 ]
             }
+        },
+        "13.12": {
+            "B": "",
+            "P": {
+                "SpellName": "Passive - Soul Eater",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Life Steal: ",
+                            "Before": "9/14/19%",
+                            "Indicator": " ⇒ ",
+                            "After": "11/16/21%"
+                        }
+                    }
+                ]
+            },
+            "Q": "",
+            "W": "",
+            "E": "",
+            "R": {
+                "SpellName": "R - Fury of the Sands",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Cooldown: ",
+                            "Before": "120 seconds",
+                            "Indicator": " ⇒ ",
+                            "After": "120/100/80 seconds"
+                        }
+                    }
+                ]
+            }
         }
     },
     "ChangePatches": [
@@ -442,7 +476,8 @@
         "10.25",
         "11.12",
         "12.10",
-        "12.19"
+        "12.19",
+        "13.12"
     ],
     "ChampionName": "Nasus"
 }

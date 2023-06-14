@@ -144,7 +144,7 @@
                     },
                     {
                         "text": {
-                            "text": "10-20% heal and shield power",
+                            "text": "5/7.5/10/12.5/15% heal and shield power",
                             "scaleHolders": []
                         },
                         "type": "healing"
@@ -208,7 +208,7 @@
                     },
                     {
                         "text": {
-                            "text": "90/120/150/180/210 {{0}} damage",
+                            "text": "80/105/130/155/180 {{0}} damage",
                             "scaleHolders": [
                                 {
                                     "scale": "(+30% AP)",
@@ -220,7 +220,7 @@
                     },
                     {
                         "text": {
-                            "text": "35% {{0}}",
+                            "text": "25/27.5/30/32.5/35% {{0}}",
                             "scaleHolders": [
                                 {
                                     "scale": "(+8% per 100 AP)",
@@ -282,7 +282,7 @@
                     },
                     {
                         "text": {
-                            "text": "35/50/65 {{0}} health",
+                            "text": "25/40/55 {{0}} health",
                             "scaleHolders": [
                                 {
                                     "scale": "(+15% AP)",
@@ -1556,6 +1556,62 @@
                     }
                 ]
             }
+        },
+        "13.12": {
+            "B": "",
+            "P": "",
+            "Q": "",
+            "W": {
+                "SpellName": "W - You and Me!",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Best Friend Bonus: ",
+                            "Before": "10-20% Heal and Shield Power (based on ally level)",
+                            "Indicator": " ⇒ ",
+                            "After": "5/7.5/10/12.5/15% (based on spell rank)"
+                        }
+                    }
+                ]
+            },
+            "E": {
+                "SpellName": "E - Zoomies",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Shield Value: ",
+                            "Before": "90/120/150/180/210 (+30% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "80/105/130/155/180 (+ 30% AP)"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Attack Speed Buff: ",
+                            "Before": "35% (+8% per 100 AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "25/27.5/30/32.5/35% (+ 8% per 100 AP)"
+                        }
+                    }
+                ]
+            },
+            "R": {
+                "SpellName": "R - Final Chapter",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Heal per Hit: ",
+                            "Before": "35/50/65 (+15% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "25/40/55 (+ 15% AP)"
+                        }
+                    }
+                ]
+            }
         }
     },
     "ChangePatches": [
@@ -1575,7 +1631,8 @@
         "13.1",
         "13.1B",
         "13.5",
-        "13.6"
+        "13.6",
+        "13.12"
     ],
     "ChampionName": "Yuumi"
 }

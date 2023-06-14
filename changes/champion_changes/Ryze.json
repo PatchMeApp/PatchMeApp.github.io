@@ -45,7 +45,7 @@
         "P": {
             "cooldown": "",
             "_rawTooltip": {
-                "fullTooltip": "Innate: Ryze gains (6% per 100 AP) maximum mana.",
+                "fullTooltip": "Innate: Ryze gains (10% per 100 AP) maximum mana.",
                 "parseInfo": []
             },
             "name": "Arcane Mastery"
@@ -188,7 +188,7 @@
                             "text": "60/90/120/150/180 {{0}} {{1}} magic damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+45% AP)",
+                                    "scale": "(+ 50% AP)",
                                     "scaleId": "AP"
                                 },
                                 {
@@ -659,6 +659,49 @@
             "W": "",
             "E": "",
             "R": ""
+        },
+        "13.12": {
+            "B": "",
+            "P": {
+                "SpellName": "Passive - Arcane Mastery",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Maximum Mana Increase: ",
+                            "Before": "6% per 100 AP",
+                            "Indicator": " ⇒ ",
+                            "After": "10% per 100 AP"
+                        }
+                    }
+                ]
+            },
+            "Q": "",
+            "W": "",
+            "E": {
+                "SpellName": "E - Spell Flux",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Magic Damage: ",
+                            "Before": "60/90/120/150/180 (+ 45% AP) (+ 2% bonus mana)",
+                            "Indicator": " ⇒ ",
+                            "After": "60/90/120/150/180 (+ 50% AP) (+ 2% bonus mana)"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Missile Speed: ",
+                            "Before": "3500",
+                            "Indicator": " ⇒ ",
+                            "After": "4000"
+                        }
+                    }
+                ]
+            },
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -674,7 +717,8 @@
         "12.10",
         "12.11",
         "12.19",
-        "13.1B"
+        "13.1B",
+        "13.12"
     ],
     "ChampionName": "Ryze"
 }

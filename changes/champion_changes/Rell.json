@@ -17,8 +17,8 @@
             "increment": 2.05
         },
         "hpRegen": {
-            "base": 7,
-            "increment": 0.55
+            "base": 8.5,
+            "increment": 0.85
         },
         "mpRegen": {
             "base": 6,
@@ -63,7 +63,7 @@
                     },
                     {
                         "text": {
-                            "text": "70/110/150/190/230 {{0}} magic damage",
+                            "text": "60/100/140/180/220 {{0}} magic damage",
                             "scaleHolders": [
                                 {
                                     "scale": "(+ 60% AP)",
@@ -92,7 +92,7 @@
                     },
                     {
                         "text": {
-                            "text": "70/100/130/160/190 {{0}} magic damage",
+                            "text": "60/90/120/150/180 {{0}} magic damage",
                             "scaleHolders": [
                                 {
                                     "scale": "(+ 60% AP)",
@@ -260,7 +260,7 @@
                     },
                     {
                         "text": {
-                            "text": "35/50/65/80/95 +4% of target's maximum health {{0}} magic damage",
+                            "text": "25/35/45/55/65 +3% of target's maximum health {{0}} magic damage",
                             "scaleHolders": [
                                 {
                                     "scale": "(+50% AP)",
@@ -1108,6 +1108,125 @@
                     }
                 ]
             }
+        },
+        "13.12": {
+            "B": {
+                "SpellName": "Base Stats",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Default Adaptive Force Stat: ",
+                            "Before": "Attack Damage",
+                            "Indicator": " ⇒ ",
+                            "After": "Ability Power"
+                        }
+                    }
+                ]
+            },
+            "P": "",
+            "Q": {
+                "SpellName": "Q - Shattering Strike",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Cast Time: ",
+                            "Before": "0.5 seconds",
+                            "Indicator": " ⇒ ",
+                            "After": "0.4 seconds"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Magic Damage: ",
+                            "Before": "70/110/150/190/230 (+60%AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "60/100/140/180/220 (+60% AP)"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Jungle Monster Damage: ",
+                            "Before": "300% of base damage",
+                            "Indicator": " ⇒ ",
+                            "After": "150/220/290/360/430 bonus damage to monsters"
+                        }
+                    }
+                ]
+            },
+            "W": {
+                "SpellName": "W - Ferromancy: Crash Down",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Magic Damage: ",
+                            "Before": "70/100/130/160/190 (+60%AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "60/90/120/150/180 (+60% AP)"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Jungle Monster Damage: ",
+                            "Before": "300% of base damage",
+                            "Indicator": " ⇒ ",
+                            "After": "125/150/175/200/225 bonus damage to monsters"
+                        }
+                    }
+                ]
+            },
+            "E": {
+                "SpellName": "E - Full Tilt",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Magic Damage: ",
+                            "Before": "35/50/65/80/95 (+50% AP) (+4% of target maximum health)",
+                            "Indicator": " ⇒ ",
+                            "After": "25/35/45/55/65 (+50% AP) (+3% of target maximum health)"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Jungle Monster Damage: ",
+                            "Before": "250% of base damage",
+                            "Indicator": " ⇒ ",
+                            "After": "100/145/190/235/280 bonus damage to monsters"
+                        }
+                    },
+                    {
+                        "Tag": "NEW",
+                        "Change": {
+                            "Attribute": "Percent Damage Cap Against Monsters: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "150"
+                        }
+                    }
+                ]
+            },
+            "R": "",
+            "W -": {
+                "SpellName": "W - Ferromancy: Mount Up",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Jungle Monster Damage: ",
+                            "Before": "300% of base damage",
+                            "Indicator": " ⇒ ",
+                            "After": "55/110/165/220/275 bonus damage to monsters"
+                        }
+                    }
+                ]
+            }
         }
     },
     "ChangePatches": [
@@ -1118,7 +1237,8 @@
         "11.15",
         "12.10",
         "12.17",
-        "13.11"
+        "13.11",
+        "13.12"
     ],
     "ChampionName": "Rell"
 }

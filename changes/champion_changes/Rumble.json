@@ -1,8 +1,8 @@
 {
     "stats": {
         "hp": {
-            "base": 659,
-            "increment": 99
+            "base": 625,
+            "increment": 105
         },
         "mp": {
             "base": 0,
@@ -17,7 +17,7 @@
             "increment": 1.55
         },
         "hpRegen": {
-            "base": 8,
+            "base": 7,
             "increment": 0.6
         },
         "mpRegen": {
@@ -45,7 +45,7 @@
         "P": {
             "cooldown": "",
             "_rawTooltip": {
-                "fullTooltip": "Innate: Rumble's basic ability casts generate Heat, which refreshes on subsequent casts and expires by 10 Heat per second after not using any basic ability within 4 seconds or The Equalizer within 2 seconds. Rumble's mech enters the Danger Zone when at or above 50 Heat , and becomes Overheated while at 100 Heat.<br>Danger Zone: Rumble's mech enters the Danger Zone, empowering his basic abilities.<br>Overheated: Rumble's mech becomes Overheated, disabling his abilities as his Heat decays back down to 0 over 5.25 seconds. During this time, he gains [[1]] and his basic attacks deal [[0]] on-hit. The damage based on the target's health ratio is capped at 80 against monsters.",
+                "fullTooltip": "Innate: Rumble's basic ability casts generate Heat, which refreshes on subsequent casts and expires by 10 Heat per second after not using any basic ability within 4 seconds or The Equalizer within 2 seconds. Rumble's mech enters the Danger Zone when at or above 50 Heat , and becomes Overheated while at 150 Heat.<br>Danger Zone: Rumble's mech enters the Danger Zone, empowering his basic abilities.<br>Overheated: Rumble's mech becomes Overheated, disabling his abilities as his Heat decays back down to 0 over 4 seconds. During this time, he gains [[1]] and his basic attacks deal [[0]] on-hit. The damage based on the target's health ratio is capped at 65-150 against monsters.",
                 "parseInfo": [
                     {
                         "text": {
@@ -69,7 +69,7 @@
                     },
                     {
                         "text": {
-                            "text": "20% − 80% {{0}} bonus attack speed",
+                            "text": "50% − 130% {{0}} bonus attack speed",
                             "scaleHolders": [
                                 {
                                     "scale": "(based on level)",
@@ -89,8 +89,12 @@
                 "parseInfo": [
                     {
                         "text": {
-                            "text": "180/220/260/300/340 {{0}} magic damage",
+                            "text": "135/150/165/180/195 {{0}} {{1}} magic damage",
                             "scaleHolders": [
+                                {
+                                    "scale": "(+6/7/8/9/10% of target maximum health)",
+                                    "scaleId": "health"
+                                },
                                 {
                                     "scale": "(+110% AP)",
                                     "scaleId": "AP"
@@ -108,8 +112,8 @@
                                     "scaleId": "AP"
                                 },
                                 {
-                                    "scale": "(0.6/0.65/0.7/0.75/0.8)",
-                                    "scaleId": "(0.6/0.65/0.7/0.75/0.8"
+                                    "scale": "(0.55/0.6/0.65/0.7/0.75)",
+                                    "scaleId": "(0.55/0.6/0.65/0.7/0.75"
                                 }
                             ]
                         },
@@ -146,10 +150,14 @@
                 "parseInfo": [
                     {
                         "text": {
-                            "text": "60/90/120/150/180 {{0}} Shield",
+                            "text": "25/55/85/115/145 {{0}} {{1}} Shield",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+45% AP)",
+                                    "scale": "(+4% of maximum health)",
+                                    "scaleId": "health"
+                                },
+                                {
+                                    "scale": "(+25% AP)",
                                     "scaleId": "AP"
                                 }
                             ]
@@ -261,7 +269,7 @@
                 ]
             },
             "cooldown": "0.5",
-            "cost": "10 Heat",
+            "cost": "20 Heat",
             "name": "Electro Harpoon"
         },
         "R": {
@@ -289,7 +297,7 @@
                     }
                 ]
             },
-            "cooldown": "100/85/70",
+            "cooldown": "130/105/80",
             "cost": "No Cost",
             "name": "The Equalizer"
         }
@@ -711,6 +719,164 @@
                 ]
             },
             "R": ""
+        },
+        "13.12": {
+            "B": {
+                "SpellName": "Base Stats",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Base Health: ",
+                            "Before": "659",
+                            "Indicator": " ⇒ ",
+                            "After": "625"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Health Growth: ",
+                            "Before": "99",
+                            "Indicator": " ⇒ ",
+                            "After": "105"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Base Health Regeneration: ",
+                            "Before": "8",
+                            "Indicator": " ⇒ ",
+                            "After": "7"
+                        }
+                    }
+                ]
+            },
+            "P": {
+                "SpellName": "Passive - Junkyard Titan",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Maximum Heat: ",
+                            "Before": "100",
+                            "Indicator": " ⇒ ",
+                            "After": "150"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Danger Zone: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "50+ (NoteUnchanged)"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Overheat Monster Damage Cap: ",
+                            "Before": "80",
+                            "Indicator": " ⇒ ",
+                            "After": "65-150 (based on level)"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Overheat Attack Speed: ",
+                            "Before": "20-80% (based on level)",
+                            "Indicator": " ⇒ ",
+                            "After": "50-130% (based on level)"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Overheat Duration: ",
+                            "Before": "5.25 seconds",
+                            "Indicator": " ⇒ ",
+                            "After": "4 seconds"
+                        }
+                    }
+                ]
+            },
+            "Q": {
+                "SpellName": "Q - Flamespitter",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Magic Damage: ",
+                            "Before": "180/220/260/300/340 (+110% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "135/150/165/180/195 (+6/7/8/9/10% of target maximum health) (+110% AP)"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Minion Damage Modifier: ",
+                            "Before": "60/65/70/75/80%",
+                            "Indicator": " ⇒ ",
+                            "After": "55/60/65/70/75%"
+                        }
+                    },
+                    {
+                        "Tag": "NEW",
+                        "Change": {
+                            "Attribute": "Monster Cap on Percent Health Damage: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "65-300 (based on level)"
+                        }
+                    }
+                ]
+            },
+            "W": {
+                "SpellName": "W - Scrap Shield",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Shield Value: ",
+                            "Before": "60/90/120/150/180 (+45% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "25/55/85/115/145 (+4% of maximum health) (+25% AP)"
+                        }
+                    }
+                ]
+            },
+            "E": {
+                "SpellName": "E - Electro Harpoon",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Heat Generated: ",
+                            "Before": "10",
+                            "Indicator": " ⇒ ",
+                            "After": "20"
+                        }
+                    }
+                ]
+            },
+            "R": {
+                "SpellName": "R - The Equalizer",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Cooldown: ",
+                            "Before": "100/85/70 seconds",
+                            "Indicator": " ⇒ ",
+                            "After": "130/105/80 seconds"
+                        }
+                    }
+                ]
+            }
         }
     },
     "ChangePatches": [
@@ -724,7 +890,8 @@
         "11.18",
         "12.4",
         "12.10",
-        "13.5"
+        "13.5",
+        "13.12"
     ],
     "ChampionName": "Rumble"
 }

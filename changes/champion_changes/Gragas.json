@@ -43,7 +43,7 @@
     },
     "spells": {
         "P": {
-            "cooldown": 8,
+            "cooldown": "12",
             "_rawTooltip": {
                 "fullTooltip": "Innate: Gragas periodically heals for [[0]] upon casting an ability.",
                 "parseInfo": [
@@ -110,7 +110,7 @@
                 ]
             },
             "cooldown": "10/9/8/7/6",
-            "cost": "80 Mana",
+            "cost": "80/75/70/65/60 Mana",
             "name": "Barrel Roll"
         },
         "W": {
@@ -487,6 +487,40 @@
                 ]
             },
             "R": ""
+        },
+        "13.12": {
+            "B": "",
+            "P": {
+                "SpellName": "Passive - Happy Hour",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Cooldown: ",
+                            "Before": "8 seconds",
+                            "Indicator": " ⇒ ",
+                            "After": "12 seconds"
+                        }
+                    }
+                ]
+            },
+            "Q": {
+                "SpellName": "Q - Barrel Roll",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Mana Cost: ",
+                            "Before": "80",
+                            "Indicator": " ⇒ ",
+                            "After": "80/75/70/65/60"
+                        }
+                    }
+                ]
+            },
+            "W": "",
+            "E": "",
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -498,7 +532,8 @@
         "11.9",
         "11.19",
         "12.10",
-        "12.11"
+        "12.11",
+        "13.12"
     ],
     "ChampionName": "Gragas"
 }

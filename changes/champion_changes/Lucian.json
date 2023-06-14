@@ -61,10 +61,10 @@
                     },
                     {
                         "text": {
-                            "text": "14 {{0}} bonus magic damage",
+                            "text": "10 {{0}} bonus magic damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+ 20% AD)",
+                                    "scale": "(+ 15% AD)",
                                     "scaleId": "AD"
                                 }
                             ]
@@ -496,6 +496,36 @@
             "W": "",
             "E": "",
             "R": ""
+        },
+        "13.12": {
+            "B": "",
+            "P": {
+                "SpellName": "Passive - Lightslinger",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Vigilance Damage: ",
+                            "Before": "14 (+20% AD)",
+                            "Indicator": " ⇒ ",
+                            "After": "10(+15% AD)"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Activation Conditions: ",
+                            "Before": "When Lucian is empowered by another ally, his next two basic attacks will deal bonus magic damage",
+                            "Indicator": " ⇒ ",
+                            "After": "When Lucian is healed or shielded by an ally, or when a nearby enemy champion is immobilized, his next two basic attacks will deal bonus magic damage."
+                        }
+                    }
+                ]
+            },
+            "Q": "",
+            "W": "",
+            "E": "",
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -506,7 +536,8 @@
         "12.4",
         "12.10",
         "12.12",
-        "13.1B"
+        "13.1B",
+        "13.12"
     ],
     "ChampionName": "Lucian"
 }
