@@ -45,47 +45,18 @@
         "P": {
             "cooldown": "",
             "_rawTooltip": {
-                "fullTooltip": "Innate: Zeri absorbs the energy of shields she damages, shielding herself equal to [[0]] dealt to the shield. Each instance of shield gained by Living Battery lasts for 3 seconds.<br>Innate: Whenever Zeri receives a shield, she gains [[1]] for 2 seconds.",
+                "fullTooltip": "Innate: Zeri's attacks are treated as abilities and can be charged by moving and casting Burst Fire. Uncharged attacks consume a small amount of charge. deal [[0]] magic damage and execute enemies below [[2]] a fully charged attack deals [[1]] and consumes all charge.",
                 "parseInfo": [
                     {
                         "text": {
-                            "text": "45% of the post-mitigation damage",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "10% bonus movement speed",
-                            "scaleHolders": []
-                        },
-                        "type": "speed"
-                    }
-                ]
-            },
-            "name": "Living Battery"
-        },
-        "Q": {
-            "_rawTooltip": {
-                "fullTooltip": "[[0]] Zeri's attacks are treated as abilities and can be charrged by moving and casting this ability. Uncharged attacks consume a small amount of charge. deal [[1]] magic damage and execute enemies below 60 − 150 (based on level) (+ 18% AP) health a fully charged attack deals [[2]] and consumes all charge.<br /><br /> Active: This ablity is treated as an Attack. Zeri fires a burst of 7 rounds that deals [[3]] to the first enemy hit.",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "Passive:",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "10 − 25 {{0}} {{1}} magic damage",
+                            "text": "10−25 {{0}} {{1}} magic damage",
                             "scaleHolders": [
                                 {
                                     "scale": "(based on level)",
                                     "scaleId": "level"
                                 },
                                 {
-                                    "scale": "(+ 3% AP)",
+                                    "scale": "(+3% AP)",
                                     "scaleId": "AP"
                                 }
                             ]
@@ -110,17 +81,69 @@
                                 }
                             ]
                         },
-                        "type": "magicDamage"
+                        "type": "Health"
                     },
+                    {
+                        "text": {
+                            "text": "60−150 {{0}} {{1}} health",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(based on level)",
+                                    "scaleId": "level"
+                                },
+                                {
+                                    "scale": "(+18% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "Health"
+                    }
+                ]
+            },
+            "name": "Living Battery"
+        },
+        "Q": {
+            "_rawTooltip": {
+                "fullTooltip": "Zeri fires a burst of 7 rounds that deals [[0]] to the first enemy hit. This Ability is treated as an Attack<br /><br /> This Ability can crit, apply on-hit effects once per target, and hit anything that an Attack can. The Cooldown and cast time scale down with [[1]] (max [[2]]). 70% of excess [[3]] is converted into [[4]]",
+                "parseInfo": [
                     {
                         "text": {
                             "text": "15/17/19/21/23 {{0}} physical damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+ 104/108/112/116/120% AD)",
+                                    "scale": "(+104/108/112/116/120% AD)",
                                     "scaleId": "AD"
                                 }
                             ]
+                        },
+                        "type": "physicalDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "Attack Speed",
+                            "scaleHolders": []
+                        },
+                        "type": "attackSpeed"
+                    },
+                    {
+                        "text": {
+                            "text": "1.5 attacks per second",
+                            "scaleHolders": []
+                        },
+                        "type": "attackSpeed"
+                    },
+                    {
+                        "text": {
+                            "text": "Attack Speed",
+                            "scaleHolders": []
+                        },
+                        "type": "attackSpeed"
+                    },
+                    {
+                        "text": {
+                            "text": "Attack damage",
+                            "scaleHolders": []
                         },
                         "type": "physicalDamage"
                     }
@@ -1276,84 +1299,6 @@
                     }
                 ]
             }
-        },
-        "13.12": {
-            "B": {
-                "SpellName": "Base Stats",
-                "Changes": [
-                    {
-                        "Tag": "",
-                        "Change": {
-                            "Attribute": "Movement Speed: ",
-                            "Before": "330",
-                            "Indicator": " ⇒ ",
-                            "After": "335"
-                        }
-                    }
-                ]
-            },
-            "P": {
-                "SpellName": "Passive - Living Battery",
-                "Changes": [
-                    {
-                        "Tag": "REMOVED",
-                        "Change": {
-                            "Attribute": "Not So Fast: ",
-                            "Before": "",
-                            "Indicator": "",
-                            "After": "The passive where Zeri steals 45% of the shields she damages and gains 10% movement speed for 2 seconds whenever she receives a shield has been removed."
-                        }
-                    },
-                    {
-                        "Tag": "",
-                        "Change": {
-                            "Attribute": "Q Passive Goes Here: ",
-                            "Before": "",
-                            "Indicator": "",
-                            "After": "Q - Burst Fire's passive has been moved to be Zeri's primary passive."
-                        }
-                    }
-                ]
-            },
-            "Q": {
-                "SpellName": "Q - Burst Fire",
-                "Changes": [
-                    {
-                        "Tag": "REMOVED",
-                        "Change": {
-                            "Attribute": "Q Passive to Passive: ",
-                            "Before": "",
-                            "Indicator": "",
-                            "After": "Q's passive has been moved to be Zeri's primary passive."
-                        }
-                    },
-                    {
-                        "Tag": "",
-                        "Change": {
-                            "Attribute": "Trinity No More: ",
-                            "Before": "",
-                            "Indicator": "",
-                            "After": "Q - Burst Fire no longer activates Sheen."
-                        }
-                    }
-                ]
-            },
-            "W": "",
-            "E": {
-                "SpellName": "E - Spark Surge",
-                "Changes": [
-                    {
-                        "Tag": "",
-                        "Change": {
-                            "Attribute": "Maximum On-Hit Critical Strike Multiplier: ",
-                            "Before": "65%",
-                            "Indicator": " ⇒ ",
-                            "After": "85%"
-                        }
-                    }
-                ]
-            },
-            "R": ""
         }
     },
     "ChangePatches": [
@@ -1368,8 +1313,7 @@
         "12.16",
         "12.23",
         "13.1",
-        "13.7",
-        "13.12"
+        "13.7"
     ],
     "ChampionName": "Zeri"
 }

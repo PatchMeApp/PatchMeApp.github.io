@@ -128,8 +128,12 @@
                     },
                     {
                         "text": {
-                            "text": "270/330/390/450/510 {{0}} damage",
+                            "text": "202.5/225/247.5/270/292.5 {{0}} {{1}} damage",
                             "scaleHolders": [
+                                {
+                                    "scale": "(+9/10.5/12/13.5/15% of target's maximum health)",
+                                    "scaleId": "health"
+                                },
                                 {
                                     "scale": "(+165% AP)",
                                     "scaleId": "AP"
@@ -180,10 +184,14 @@
                     },
                     {
                         "text": {
-                            "text": "90/135/180/225/270 {{0}} Shield",
+                            "text": "37.5/82.5/127.5/172.5/217.5 {{0}} {{1}} Shield",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+67.5% AP)",
+                                    "scale": "(+4% of maximum health)",
+                                    "scaleId": "health"
+                                },
+                                {
+                                    "scale": "(+37.5% AP)",
                                     "scaleId": "AP"
                                 }
                             ]
@@ -719,164 +727,6 @@
                 ]
             },
             "R": ""
-        },
-        "13.12": {
-            "B": {
-                "SpellName": "Base Stats",
-                "Changes": [
-                    {
-                        "Tag": "",
-                        "Change": {
-                            "Attribute": "Base Health: ",
-                            "Before": "659",
-                            "Indicator": " ⇒ ",
-                            "After": "625"
-                        }
-                    },
-                    {
-                        "Tag": "",
-                        "Change": {
-                            "Attribute": "Health Growth: ",
-                            "Before": "99",
-                            "Indicator": " ⇒ ",
-                            "After": "105"
-                        }
-                    },
-                    {
-                        "Tag": "",
-                        "Change": {
-                            "Attribute": "Base Health Regeneration: ",
-                            "Before": "8",
-                            "Indicator": " ⇒ ",
-                            "After": "7"
-                        }
-                    }
-                ]
-            },
-            "P": {
-                "SpellName": "Passive - Junkyard Titan",
-                "Changes": [
-                    {
-                        "Tag": "",
-                        "Change": {
-                            "Attribute": "Maximum Heat: ",
-                            "Before": "100",
-                            "Indicator": " ⇒ ",
-                            "After": "150"
-                        }
-                    },
-                    {
-                        "Tag": "",
-                        "Change": {
-                            "Attribute": "Danger Zone: ",
-                            "Before": "",
-                            "Indicator": "",
-                            "After": "50+ (NoteUnchanged)"
-                        }
-                    },
-                    {
-                        "Tag": "",
-                        "Change": {
-                            "Attribute": "Overheat Monster Damage Cap: ",
-                            "Before": "80",
-                            "Indicator": " ⇒ ",
-                            "After": "65-150 (based on level)"
-                        }
-                    },
-                    {
-                        "Tag": "",
-                        "Change": {
-                            "Attribute": "Overheat Attack Speed: ",
-                            "Before": "20-80% (based on level)",
-                            "Indicator": " ⇒ ",
-                            "After": "50-130% (based on level)"
-                        }
-                    },
-                    {
-                        "Tag": "",
-                        "Change": {
-                            "Attribute": "Overheat Duration: ",
-                            "Before": "5.25 seconds",
-                            "Indicator": " ⇒ ",
-                            "After": "4 seconds"
-                        }
-                    }
-                ]
-            },
-            "Q": {
-                "SpellName": "Q - Flamespitter",
-                "Changes": [
-                    {
-                        "Tag": "",
-                        "Change": {
-                            "Attribute": "Magic Damage: ",
-                            "Before": "180/220/260/300/340 (+110% AP)",
-                            "Indicator": " ⇒ ",
-                            "After": "135/150/165/180/195 (+6/7/8/9/10% of target maximum health) (+110% AP)"
-                        }
-                    },
-                    {
-                        "Tag": "",
-                        "Change": {
-                            "Attribute": "Minion Damage Modifier: ",
-                            "Before": "60/65/70/75/80%",
-                            "Indicator": " ⇒ ",
-                            "After": "55/60/65/70/75%"
-                        }
-                    },
-                    {
-                        "Tag": "NEW",
-                        "Change": {
-                            "Attribute": "Monster Cap on Percent Health Damage: ",
-                            "Before": "",
-                            "Indicator": "",
-                            "After": "65-300 (based on level)"
-                        }
-                    }
-                ]
-            },
-            "W": {
-                "SpellName": "W - Scrap Shield",
-                "Changes": [
-                    {
-                        "Tag": "",
-                        "Change": {
-                            "Attribute": "Shield Value: ",
-                            "Before": "60/90/120/150/180 (+45% AP)",
-                            "Indicator": " ⇒ ",
-                            "After": "25/55/85/115/145 (+4% of maximum health) (+25% AP)"
-                        }
-                    }
-                ]
-            },
-            "E": {
-                "SpellName": "E - Electro Harpoon",
-                "Changes": [
-                    {
-                        "Tag": "",
-                        "Change": {
-                            "Attribute": "Heat Generated: ",
-                            "Before": "10",
-                            "Indicator": " ⇒ ",
-                            "After": "20"
-                        }
-                    }
-                ]
-            },
-            "R": {
-                "SpellName": "R - The Equalizer",
-                "Changes": [
-                    {
-                        "Tag": "",
-                        "Change": {
-                            "Attribute": "Cooldown: ",
-                            "Before": "100/85/70 seconds",
-                            "Indicator": " ⇒ ",
-                            "After": "130/105/80 seconds"
-                        }
-                    }
-                ]
-            }
         }
     },
     "ChangePatches": [
@@ -890,8 +740,7 @@
         "11.18",
         "12.4",
         "12.10",
-        "13.5",
-        "13.12"
+        "13.5"
     ],
     "ChampionName": "Rumble"
 }

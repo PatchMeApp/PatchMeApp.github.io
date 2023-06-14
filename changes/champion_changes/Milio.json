@@ -45,7 +45,7 @@
         "P": {
             "cooldown": "",
             "_rawTooltip": {
-                "fullTooltip": "When Milio's Abilities touch ally champions, their next Attack or Ability deals 15% − 35% (based on level) of ally's Attack Damage as additional magic damage, plus [[0]] over 1.5 seconds..",
+                "fullTooltip": "When Milio's Abilities touch ally champions, their next Attack or Ability deals 15% of ally's Attack Damage as additional magic damage, plus [[0]] over 1.5 seconds.",
                 "parseInfo": [
                     {
                         "text": {
@@ -204,6 +204,54 @@
         }
     },
     "Changes": {
+        "12.10": {
+            "B": {
+                "SpellName": "Base Stats",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "BASE HEALTH: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "+70"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "HEALTH GROWTH: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "+14"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "ARMOR GROWTH: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "+1.2"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "MAGIC RESIST GROWTH: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": " +0.8"
+                        }
+                    }
+                ]
+            },
+            "P": "",
+            "Q": "",
+            "W": "",
+            "E": "",
+            "R": ""
+        },
         "13.6": {
             "B": "",
             "P": {
@@ -259,54 +307,11 @@
                 ]
             },
             "R": ""
-        },
-        "13.12": {
-            "B": {
-                "SpellName": "Base Stats",
-                "Changes": [
-                    {
-                        "Tag": "",
-                        "Change": {
-                            "Attribute": "Armor: ",
-                            "Before": "28",
-                            "Indicator": " ⇒ ",
-                            "After": "26"
-                        }
-                    },
-                    {
-                        "Tag": "",
-                        "Change": {
-                            "Attribute": "Armor Growth: ",
-                            "Before": "4.9",
-                            "Indicator": " ⇒ ",
-                            "After": "4.6"
-                        }
-                    }
-                ]
-            },
-            "P": {
-                "SpellName": "Passive - Fired Up!",
-                "Changes": [
-                    {
-                        "Tag": "",
-                        "Change": {
-                            "Attribute": "Empowered Attack Damage: ",
-                            "Before": "15%-35% AD (based on ally's level)",
-                            "Indicator": " ⇒ ",
-                            "After": "15% AD (based on ally's level)"
-                        }
-                    }
-                ]
-            },
-            "Q": "",
-            "W": "",
-            "E": "",
-            "R": ""
         }
     },
     "ChangePatches": [
-        "13.6",
-        "13.12"
+        "12.10",
+        "13.6"
     ],
     "ChampionName": "Milio"
 }
