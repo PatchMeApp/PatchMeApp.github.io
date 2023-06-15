@@ -3596,7 +3596,8 @@
         "ItemName": "Echoes of Helia",
         "ChangePatches": [
             "13.10",
-            "13.11"
+            "13.11",
+            "13.12"
         ],
         "Changes": {
             "13.10": [
@@ -3699,6 +3700,26 @@
                         "Before": "30-200 (levels 1-18)",
                         "Indicator": " ⇒ ",
                         "After": "30-180 (levels 6-18)"
+                    }
+                }
+            ],
+            "13.12": [
+                {
+                    "Tag": "MID-PATCH",
+                    "Change": {
+                        "Attribute": "REMOVED Font of Life Interaction:",
+                        "Before": "",
+                        "Indicator": "",
+                        "After": "Removed the interaction between Echoes of Helia and Font of Life. Moving forward, Font of Life will no longer proc Echoes of Helia."
+                    }
+                },
+                {
+                    "Tag": "MID-PATCH",
+                    "Change": {
+                        "Attribute": "If Helia Procs and Noone’s Around to Hear It…:",
+                        "Before": "",
+                        "Indicator": "",
+                        "After": "Fixed a bug that was causing Echoes of Helia to activate when no enemies were nearby. This would heal allies while not consuming any stacks."
                     }
                 }
             ]
