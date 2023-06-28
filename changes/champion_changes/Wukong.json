@@ -25,7 +25,7 @@
             "increment": 0.65
         },
         "attackSpeed": {
-            "base": 0.68,
+            "base": 0.69,
             "increment": 0.03
         },
         "ms": {
@@ -172,7 +172,7 @@
         },
         "E": {
             "_rawTooltip": {
-                "fullTooltip": "Wukong dashes to an enemy, sending out [[0]] that mimic the dash to up to 2 additional enemies nearby. Each enemy struck takes [[1]]. He and his [[2]] gain [[3]] for 5 seconds.<br /><br />[[4]]</rules>",
+                "fullTooltip": "Wukong dashes to an enemy, sending out [[0]] that mimic the dash to up to 2 additional enemies nearby. Each enemy struck takes [[1]]. He and his [[2]] gain [[3]] for 5 seconds.",
                 "parseInfo": [
                     {
                         "text": {
@@ -206,18 +206,6 @@
                             "scaleHolders": []
                         },
                         "type": "attackSpeed"
-                    },
-                    {
-                        "text": {
-                            "text": "<span class=\"color8c8c8c\">Deals 96/132/168/204/240 {{0}} damage to monsters.",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+120% AP)",
-                                    "scaleId": "AP"
-                                }
-                            ]
-                        },
-                        "type": ""
                     }
                 ]
             },
@@ -1135,6 +1123,27 @@
             },
             "R": ""
         },
+        "13.13": {
+            "B": "",
+            "P": "",
+            "Q": "",
+            "W": "",
+            "E": {
+                "SpellName": "E - Nimbus Strike",
+                "Changes": [
+                    {
+                        "Tag": "REMOVED",
+                        "Change": {
+                            "Attribute": "Damage to Monsters Modifier: ",
+                            "Before": "120%",
+                            "Indicator": " ⇒ ",
+                            "After": "100% (NoteDamage to monster modifier has been removed.)"
+                        }
+                    }
+                ]
+            },
+            "R": ""
+        },
         "12.12": {
             "B": "",
             "P": "",
@@ -1185,7 +1194,8 @@
         "12.14",
         "12.17",
         "12.20",
-        "13.7"
+        "13.7",
+        "13.13"
     ],
     "ChampionName": "Wukong"
 }

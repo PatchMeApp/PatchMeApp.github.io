@@ -55,13 +55,13 @@
                 "fullTooltip": "Neeko throws a seed that blooms to deal 80/125/170/215/260 (+50% AP) magic damage. If it kills a unit or hits a champion or large monster, it will bloom again, dealing 35/60/85/110/135 (+25% AP) magic damage. Max 2 extra blooms.",
                 "parseInfo": []
             },
-            "cooldown": "7",
+            "cooldown": "9/8.5/8/7.5/7",
             "cost": "50/60/70/80/90 Mana",
             "name": "Blooming Burst"
         },
         "W": {
             "_rawTooltip": {
-                "fullTooltip": "<span class=\"colorFF9900\">Passive:</span> Every 3rd attack deals 50/80/110/140/170 (+60% AP) bonus magic damage and increases Neeko's Move Speed by 10/17.5/25/32.5% for 1 second.<br /><br /><span class=\"colorFF9900\">Active:</span> Neeko becomes invisible for 0.5 seconds and projects a clone that lasts 3 seconds. Neeko and the clone gain 20/25/30/35% Move Speed for 3 seconds.",
+                "fullTooltip": "<span class=\"colorFF9900\">Passive:</span> Every 3rd attack deals 40/75/110/145/180 (+60% AP) bonus magic damage and increases Neeko's Move Speed by 10/17.5/25/32.5% for 1 second.<br /><br /><span class=\"colorFF9900\">Active:</span> Neeko becomes invisible for 0.5 seconds and projects a clone that lasts 3 seconds. Neeko and the clone gain 20/25/30/35% Move Speed for 3 seconds.",
                 "parseInfo": []
             },
             "cooldown": "16/15/14/13/12",
@@ -79,7 +79,7 @@
         },
         "R": {
             "_rawTooltip": {
-                "fullTooltip": "After 1.25 seconds Neeko leaps into the air. [[0]] all nearby enemies for 0.6 seconds. She then crashes down, dealing 150/350/550 (+120% AP) magic damage to all nearby enemies and [[1]] them for 0.75 seconds.<br /><br />This ability can be prepared in secret if Neeko is disguised.",
+                "fullTooltip": "After 1.25 seconds Neeko leaps into the air. [[0]] all nearby enemies for 0.6 seconds. She then crashes down, dealing 150/350/550 (+120% AP) magic damage to all nearby enemies and [[1]] them for 0.75 seconds.<br /><br />This ability can be prepared in secret if Neeko is disguised. 0.5 seconds after casting this ability Neeko breaks her disguise",
                 "parseInfo": [
                     {
                         "text": {
@@ -555,6 +555,53 @@
                     }
                 ]
             }
+        },
+        "13.13": {
+            "B": "",
+            "P": "",
+            "Q": {
+                "SpellName": "Q - Blooming Burst",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Cooldown: ",
+                            "Before": "7 seconds",
+                            "Indicator": " ⇒ ",
+                            "After": "9/8.5/8/7.5/7 seconds"
+                        }
+                    }
+                ]
+            },
+            "W": {
+                "SpellName": "W - Shapesplitter",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Proc Bonus Damage: ",
+                            "Before": "50/80/110/140/170 (+60% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "40/75/110/145/180 (+60% AP)"
+                        }
+                    }
+                ]
+            },
+            "E": "",
+            "R": {
+                "SpellName": "R - Pop Blossom",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Channel Disguised Duration: ",
+                            "Before": "Neeko is disguised for the entire 1.25 second cast time",
+                            "Indicator": " ⇒ ",
+                            "After": "Neeko is disguised for the first 0.5 seconds of the cast, and is then revealed for the remaining 0.75 seconds"
+                        }
+                    }
+                ]
+            }
         }
     },
     "ChangePatches": [
@@ -564,7 +611,8 @@
         "12.7",
         "12.10",
         "13.9",
-        "13.10"
+        "13.10",
+        "13.13"
     ],
     "ChampionName": "Neeko"
 }

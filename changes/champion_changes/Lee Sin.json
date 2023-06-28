@@ -67,7 +67,7 @@
                             "text": "55/80/105/130/155 {{0}} physical damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+110% bonus AD)",
+                                    "scale": "(+115% bonus AD)",
                                     "scaleId": "AD"
                                 }
                             ]
@@ -93,11 +93,11 @@
                             "text": "55/80/105/130/155 {{0}} to 110/160/210/260/310 {{1}} physical damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+110% bonus AD)",
+                                    "scale": "(+115% bonus AD)",
                                     "scaleId": "AD"
                                 },
                                 {
-                                    "scale": "(+200% Bonus AD)",
+                                    "scale": "(+230% bonus AD)",
                                     "scaleId": "AD"
                                 }
                             ]
@@ -833,6 +833,45 @@
             "W": "",
             "E": "",
             "R": ""
+        },
+        "13.13": {
+            "B": "",
+            "P": "",
+            "Q": {
+                "SpellName": "Q - Sonic Wave/Resonating Strike",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Sonic Wave Damage: ",
+                            "Before": "55/80/105/130/155 (+110% bonus AD)",
+                            "Indicator": " ⇒ ",
+                            "After": "55/80/105/130/155 (+115% bonus AD)"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Resonating Strike Minimum Damage: ",
+                            "Before": "55/80/105/130/155 (+110% bonus AD)",
+                            "Indicator": " ⇒ ",
+                            "After": "55/80/105/130/155 (+115% bonus AD)"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Resonating Strike Maximum Damage: ",
+                            "Before": "110/160/210/260/310 (+220% bonus AD)",
+                            "Indicator": " ⇒ ",
+                            "After": "110/160/210/260/310 (+230% bonus AD)"
+                        }
+                    }
+                ]
+            },
+            "W": "",
+            "E": "",
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -852,7 +891,8 @@
         "12.15",
         "12.18",
         "13.3",
-        "13.7"
+        "13.7",
+        "13.13"
     ],
     "ChampionName": "Lee Sin"
 }

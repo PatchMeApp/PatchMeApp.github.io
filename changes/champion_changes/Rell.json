@@ -13,11 +13,11 @@
             "increment": 4.2
         },
         "spellBlock": {
-            "base": 32,
-            "increment": 2.05
+            "base": 30,
+            "increment": 1.85
         },
         "hpRegen": {
-            "base": 8.5,
+            "base": 7.5,
             "increment": 0.85
         },
         "mpRegen": {
@@ -104,7 +104,7 @@
                     },
                     {
                         "text": {
-                            "text": "35/60/85/110/135 {{0}} Shield",
+                            "text": "15/40/65/90/110 {{0}} Shield",
                             "scaleHolders": [
                                 {
                                     "scale": "(+ 12% of maximum health)",
@@ -130,7 +130,7 @@
                     },
                     {
                         "text": {
-                            "text": "15/20/25/30/35% Attack Speed",
+                            "text": "30% Attack Speed",
                             "scaleHolders": []
                         },
                         "type": "attackSpeed"
@@ -731,7 +731,7 @@
                             "Attribute": "Minimum Armor and Magic Resist Steal: ",
                             "Before": "5-12 (based on level)",
                             "Indicator": " ⇒ ",
-                            "After": "1.25-3 (based on level)"
+                            "After": "1.25-2.5 (based on level)"
                         }
                     },
                     {
@@ -1061,7 +1061,7 @@
                             "Attribute": "Active - Full Tilt: ",
                             "Before": "",
                             "Indicator": "",
-                            "After": "Rell and an ally charge, gaining ramping Movement Speed up to 15/17.5/20/22.5/25% over 3 seconds, this is doubled to 30/35/40/45/50% toward enemies or each other. Additionally, Rell’s next Attack or Shattering Strike explodes in an area for 25/35/45/55/65 (+30% AP) (+2/2.5/3/3.5/4% Maximum Health Damage)."
+                            "After": "Rell and an ally charge, gaining ramping Movement Speed up to 15/17.5/20/22.5/25% over 3 seconds, this is doubled to 30/35/40/45/50% toward enemies or each other. Additionally, Rell’s next Attack or Shattering Strike explodes in an area for 25/35/45/55/65 (+40% AP) (+2/2.5/3/3.5/4% Maximum Health Damage)."
                         }
                     },
                     {
@@ -1227,6 +1227,93 @@
                     }
                 ]
             }
+        },
+        "13.13": {
+            "B": {
+                "SpellName": "Base Stats",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Health Regeneration Growth: ",
+                            "Before": "1.7",
+                            "Indicator": " ⇒ ",
+                            "After": "1.5"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Base Magic Resistance: ",
+                            "Before": "32",
+                            "Indicator": " ⇒ ",
+                            "After": "30"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Magic Resistance Growth: ",
+                            "Before": "2.05",
+                            "Indicator": " ⇒ ",
+                            "After": "1.85"
+                        }
+                    }
+                ]
+            },
+            "P": "",
+            "Q": {
+                "SpellName": "Q - Shattering Strike",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Bonus Damage to Monsters: ",
+                            "Before": "150/220/290/360/430",
+                            "Indicator": " ⇒ ",
+                            "After": "170/245/320/395/470 (NoteMax Q first now!)"
+                        }
+                    }
+                ]
+            },
+            "W": {
+                "SpellName": "W - Ferromancy: Crash Down/Mount Up",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Crash Down Shield: ",
+                            "Before": "35/60/85/110/135 (+12% of maximum HP)",
+                            "Indicator": " ⇒ ",
+                            "After": "15/40/65/90/110 (+12% of maximum HP)"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Dismounted Attack Speed: ",
+                            "Before": "15/20/25/30/35%",
+                            "Indicator": " ⇒ ",
+                            "After": "30%"
+                        }
+                    }
+                ]
+            },
+            "E": {
+                "SpellName": "E - Full Tilt",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Bonus Damage to Monsters: ",
+                            "Before": "100/145/190/235/280",
+                            "Indicator": " ⇒ ",
+                            "After": "120/165/210/255/300"
+                        }
+                    }
+                ]
+            },
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -1238,7 +1325,8 @@
         "12.10",
         "12.17",
         "13.11",
-        "13.12"
+        "13.12",
+        "13.13"
     ],
     "ChampionName": "Rell"
 }

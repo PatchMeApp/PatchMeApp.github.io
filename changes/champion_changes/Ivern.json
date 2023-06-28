@@ -126,10 +126,10 @@
                     },
                     {
                         "text": {
-                            "text": "30/37.5/45/52.5/60 {{0}} magic damage",
+                            "text": "20/27.5/35/42.5/50 {{0}} magic damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+30% AP)",
+                                    "scale": "(+20% AP)",
                                     "scaleId": "AP"
                                 }
                             ]
@@ -227,7 +227,7 @@
                 "parseInfo": [
                     {
                         "text": {
-                            "text": "40/60/80 {{0}} {{1}} magic damage",
+                            "text": "20/40/60 {{0}} {{1}} magic damage",
                             "scaleHolders": [
                                 {
                                     "scale": "(+100% of Daisy's AD)",
@@ -907,6 +907,49 @@
                 ]
             }
         },
+        "13.13": {
+            "B": "",
+            "P": "",
+            "Q": "",
+            "W": {
+                "SpellName": "W - Brushmaker",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Bonus Magic Damage On-Hit: ",
+                            "Before": "30/37.5/45/52.5/60 (+30% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "20/27.5/35/42.5/50 (+20% AP)"
+                        }
+                    }
+                ]
+            },
+            "E": "",
+            "R": {
+                "SpellName": "R - Daisy!",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Daisy Base Movement Speed: ",
+                            "Before": "440",
+                            "Indicator": " ⇒ ",
+                            "After": "430"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Daisy, Slam! Base Damage: ",
+                            "Before": "40/60/80",
+                            "Indicator": " ⇒ ",
+                            "After": "20/40/60"
+                        }
+                    }
+                ]
+            }
+        },
         "12.22": {
             "B": "",
             "P": {
@@ -952,7 +995,8 @@
         "12.10",
         "12.12",
         "12.22",
-        "13.11"
+        "13.11",
+        "13.13"
     ],
     "ChampionName": "Ivern"
 }

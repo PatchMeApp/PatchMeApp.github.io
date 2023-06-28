@@ -155,7 +155,7 @@
                             "text": "7/12/17/22/27 {{0}} magic damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+30% AP)",
+                                    "scale": "(+35% AP)",
                                     "scaleId": "AP"
                                 }
                             ]
@@ -178,11 +178,11 @@
                     },
                     {
                         "text": {
-                            "text": "3/3.5/4/4.5/5% {{0}})% AP) max Health magic damage",
+                            "text": "3/3.5/4/4.5/5% {{0}} max Health magic damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+(100% * (250%)",
-                                    "scaleId": "(250%"
+                                    "scale": "(+ 1.5% per 100 AP)",
+                                    "scaleId": "AP"
                                 }
                             ]
                         },
@@ -190,11 +190,11 @@
                     },
                     {
                         "text": {
-                            "text": "9/10.5/12/13.5/15% {{0}})% AP) max Health damage",
+                            "text": "9/10.5/12/13.5/15% {{0}} max Health damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+(300% * (750%)",
-                                    "scaleId": "(750%"
+                                    "scale": "(+ 4.5% per 100 AP)",
+                                    "scaleId": "AP"
                                 }
                             ]
                         },
@@ -223,7 +223,7 @@
                     },
                     {
                         "text": {
-                            "text": "6% - 36% {{0}} missing Health magic damage",
+                            "text": "6% - 14% {{0}} missing Health magic damage",
                             "scaleHolders": [
                                 {
                                     "scale": "(based on champion level)",
@@ -235,7 +235,7 @@
                     },
                     {
                         "text": {
-                            "text": "9% - 54% {{0}} missing Health damage",
+                            "text": "9% - 21% {{0}} missing Health damage",
                             "scaleHolders": [
                                 {
                                     "scale": "(based on champion level)",
@@ -943,6 +943,36 @@
             "W": "",
             "E": "",
             "R": ""
+        },
+        "13.13": {
+            "B": "",
+            "P": "",
+            "Q": "",
+            "W": {
+                "SpellName": "W - Blighted Quiver",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "On-Hit Magic Damage: ",
+                            "Before": "7/12/17/22/27 (+30% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "7/12/17/22/27 (+35% AP)"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Damage per Blight Stack: ",
+                            "Before": "3/3.5/4/4.5/5% (+2.5% per 100 AP) of target's maximum HP",
+                            "Indicator": " ⇒ ",
+                            "After": "3/3.5/4/4.5/5% (+1.5% per 100 AP) of target's maximum HP"
+                        }
+                    }
+                ]
+            },
+            "E": "",
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -963,7 +993,8 @@
         "11.22",
         "12.9",
         "12.10",
-        "12.14"
+        "12.14",
+        "13.13"
     ],
     "ChampionName": "Varus"
 }
