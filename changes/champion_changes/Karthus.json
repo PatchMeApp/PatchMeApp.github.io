@@ -56,7 +56,7 @@
                 "parseInfo": [
                     {
                         "text": {
-                            "text": "45/62.5/80/97.5/115 {{0}} magic damage",
+                            "text": "43/61/79/97/115 {{0}} magic damage",
                             "scaleHolders": [
                                 {
                                     "scale": "(+35% AP)",
@@ -68,7 +68,7 @@
                     },
                     {
                         "text": {
-                            "text": "90/125/160/195/230 {{0}} magic damage",
+                            "text": "86/122/158/194/230 {{0}} magic damage",
                             "scaleHolders": [
                                 {
                                     "scale": "(+70% AP)",
@@ -503,6 +503,49 @@
             "W": "",
             "E": "",
             "R": ""
+        },
+        "13.14": {
+            "B": "",
+            "P": "",
+            "Q": {
+                "SpellName": "Q - Lay Waste",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Magic Damage: ",
+                            "Before": "45/62.5/80/97.5/115 (+35% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "43/61/79/97/115 (+35% AP)"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Monster Damage Modifier: ",
+                            "Before": "95%",
+                            "Indicator": " ⇒ ",
+                            "After": "100%"
+                        }
+                    }
+                ]
+            },
+            "W": "",
+            "E": {
+                "SpellName": "E - Defile",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Mana Restoration on Enemy Takedown: ",
+                            "Before": "15/25/35/45/55",
+                            "Indicator": " ⇒ ",
+                            "After": "10/20/30/40/50"
+                        }
+                    }
+                ]
+            },
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -516,7 +559,8 @@
         "11.21",
         "12.7",
         "12.10",
-        "12.13"
+        "12.13",
+        "13.14"
     ],
     "ChampionName": "Karthus"
 }

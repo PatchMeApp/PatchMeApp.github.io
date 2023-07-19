@@ -43,9 +43,9 @@
     },
     "spells": {
         "P": {
-            "cooldown": 12,
+            "cooldown": "16",
             "_rawTooltip": {
-                "fullTooltip": "Innate: Xerath periodically empowers his next basic attack to restore 30 − 195 (based on level) mana, doubled to 60 − 390 (based on level) against enemy champions.<br>Mana Surge does not trigger if Xerath would restore above his maximum mana.",
+                "fullTooltip": "Innate: Xerath periodically empowers his next basic attack to restore 30 − 195 (based on level) mana, doubled to 60 − 390 (based on level) against enemy champions.<br>Mana Surge does not trigger if Xerath would restore above his maximum mana.<br>Whenever Xerath kills a unit this Ability's cooldown is reduced by 2 seconds.",
                 "parseInfo": []
             },
             "name": "Mana Surge"
@@ -172,7 +172,7 @@
         },
         "R": {
             "_rawTooltip": {
-                "fullTooltip": "Xerath ascends to his true form and channels for 10 seconds. During this time he may [[0]] up to 3/4/5 times.<br /><br />[[1]] Xerath launches a magical artillery, dealing [[2]].",
+                "fullTooltip": "Xerath ascends to his true form and channels for 10 seconds. During this time he may [[0]] up to 4/5/6 times.<br /><br />[[1]] Xerath launches a magical artillery, dealing [[2]]. For each champion hit, the artilary deals an additional [[3]]",
                 "parseInfo": [
                     {
                         "text": {
@@ -190,10 +190,22 @@
                     },
                     {
                         "text": {
-                            "text": "200/250/300 {{0}} magic damage",
+                            "text": "180/230/280 {{0}} magic damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+45% AP)",
+                                    "scale": "(+40% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "magicDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "20/25/30 {{0}} magic damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+5% AP)",
                                     "scaleId": "AP"
                                 }
                             ]
@@ -353,13 +365,97 @@
             "W": "",
             "E": "",
             "R": ""
+        },
+        "13.14": {
+            "B": {
+                "SpellName": "Base Stats",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Base Mana: ",
+                            "Before": "459",
+                            "Indicator": " ⇒ ",
+                            "After": "400"
+                        }
+                    }
+                ]
+            },
+            "P": {
+                "SpellName": "Passive - Mana Surge",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Cooldown: ",
+                            "Before": "12 seconds",
+                            "Indicator": " ⇒ ",
+                            "After": "16 seconds"
+                        }
+                    },
+                    {
+                        "Tag": "NEW",
+                        "Change": {
+                            "Attribute": "Two for One: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "Mana Surge's cooldown is now reduced by 2 seconds upon killing a unit"
+                        }
+                    },
+                    {
+                        "Tag": "NEW",
+                        "Change": {
+                            "Attribute": "Tower is Power: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "Hitting Turrets will now proc Mana Surge"
+                        }
+                    }
+                ]
+            },
+            "Q": "",
+            "W": "",
+            "E": "",
+            "R": {
+                "SpellName": "R - Rite of the Arcane",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Number of Casts: ",
+                            "Before": "3/4/5",
+                            "Indicator": " ⇒ ",
+                            "After": "4/5/6"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Magic Damage: ",
+                            "Before": "200/250/300 (+45% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "180/230/280 (+40% AP)"
+                        }
+                    },
+                    {
+                        "Tag": "NEW",
+                        "Change": {
+                            "Attribute": "Successive Snipes: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "If a champion is hit with a bolt, successive bolts will deal an additional 20/25/30 (+5% AP) damage (NoteThis applies to any number of champions hit with a bolt, so whether you hit one or five you will only receive up to one stack per cast.)"
+                        }
+                    }
+                ]
+            }
         }
     },
     "ChangePatches": [
         "10.6",
         "11.9",
         "12.8",
-        "12.10"
+        "12.10",
+        "13.14"
     ],
     "ChampionName": "Xerath"
 }

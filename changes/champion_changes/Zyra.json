@@ -129,7 +129,7 @@
                     }
                 ]
             },
-            "cooldown": "0",
+            "cooldown": "0 (18/16/14/12/10 Recharge)",
             "cost": "1 Seed",
             "name": "Rampant Growth"
         },
@@ -367,13 +367,101 @@
                 ]
             },
             "R": ""
+        },
+        "13.14": {
+            "B": "",
+            "P": {
+                "SpellName": "Passive - Garden of Thorns",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Plant Damage from AoE Spells: ",
+                            "Before": "4",
+                            "Indicator": " ⇒ ",
+                            "After": "3"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Plant Damage from Ranged Auto Attacks: ",
+                            "Before": "4",
+                            "Indicator": " ⇒ ",
+                            "After": "5"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Plant Damage to Monsters: ",
+                            "Before": "150% damage to non-Epic monsters",
+                            "Indicator": " ⇒ ",
+                            "After": "40-100 bonus magic damage to all monsters (scales with champion level)"
+                        }
+                    }
+                ]
+            },
+            "Q": "",
+            "W": {
+                "SpellName": "W - Rampant Growth",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Seeds on First Rank-Up: ",
+                            "Before": "1",
+                            "Indicator": " ⇒ ",
+                            "After": "2"
+                        }
+                    }
+                ]
+            },
+            "E": {
+                "SpellName": "E - Grasping Roots",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Flash Interaction: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "E no longer locks Zyra out of using Flash during the cast time"
+                        }
+                    }
+                ]
+            },
+            "R": {
+                "SpellName": "R - Stranglethorns",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Damage Application Cadence: ",
+                            "Before": "4 times per second",
+                            "Indicator": " ⇒ ",
+                            "After": "16 times per second"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Casting Logic: ",
+                            "Before": "Zyra will walk to the position at which her R was cast",
+                            "Indicator": " ⇒ ",
+                            "After": "Zyra will immediately cast her R at its maximum range"
+                        }
+                    }
+                ]
+            }
         }
     },
     "ChangePatches": [
         "10.1",
         "11.10",
         "12.10",
-        "12.16"
+        "12.16",
+        "13.14"
     ],
     "ChampionName": "Zyra"
 }

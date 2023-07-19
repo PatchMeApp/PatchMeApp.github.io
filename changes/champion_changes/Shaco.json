@@ -69,7 +69,7 @@
         },
         "Q": {
             "_rawTooltip": {
-                "fullTooltip": "Shaco teleports and becomes [[0]] for 2.5/2.75/3/3.25 seconds. Using [[1]] or [[2]] does not break [[3]].<br /><br />Shaco's next Attack while [[4]] deals an additional [[5]]. If striking from behind, this Attack critically strikes for 140% + 100% Bonus Crit damage.",
+                "fullTooltip": "Shaco teleports and becomes [[0]] for 2.5/2.75/3/3.25 seconds. Using [[1]] or [[2]] does not break [[3]].<br /><br />Shaco's next Attack while [[4]] deals an additional [[5]]. If striking from behind, this Attack critically strikes for 155% damage.",
                 "parseInfo": [
                     {
                         "text": {
@@ -111,7 +111,7 @@
                             "text": "25/35/45/55/65 {{0}} physical damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+50% Bonus AD)",
+                                    "scale": "(+60% bonus AD)",
                                     "scaleId": "AD"
                                 }
                             ]
@@ -997,6 +997,49 @@
                 ]
             },
             "R": ""
+        },
+        "13.14": {
+            "B": "",
+            "P": "",
+            "Q": {
+                "SpellName": "Q - Deceive",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Bonus Physical Damage: ",
+                            "Before": "25/35/45/55/65 (+50% bonus AD)",
+                            "Indicator": " ⇒ ",
+                            "After": "25/35/45/55/65 (+60% bonus AD)"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Backstab Bonus Critical Strike Damage: ",
+                            "Before": "40%",
+                            "Indicator": " ⇒ ",
+                            "After": "55%"
+                        }
+                    }
+                ]
+            },
+            "W": "",
+            "E": "",
+            "R": {
+                "SpellName": "R - Hallucinate",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Prowler's Claw Bugfix: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "Prowler's Claw's passive will now properly be applied to Shaco's clone"
+                        }
+                    }
+                ]
+            }
         }
     },
     "ChangePatches": [
@@ -1011,7 +1054,8 @@
         "11.16",
         "12.10",
         "12.12",
-        "13.1"
+        "13.1",
+        "13.14"
     ],
     "ChampionName": "Shaco"
 }

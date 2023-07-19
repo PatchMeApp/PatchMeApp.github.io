@@ -76,7 +76,7 @@
         },
         "Q": {
             "_rawTooltip": {
-                "fullTooltip": "Lissandra throws a spear of ice that shatters on the first enemy hit, dealing [[0]], [[1]] them by 20/24/28/32/36% for 1.5 seconds, and also dealing the damage to enemies behind them.",
+                "fullTooltip": "Lissandra throws a spear of ice that shatters on the first enemy hit, dealing [[0]], [[1]] them by 20/24/28/32/36% for 1.5 seconds, and also damaging and slowing the enemies behind them.",
                 "parseInfo": [
                     {
                         "text": {
@@ -174,10 +174,10 @@
                     },
                     {
                         "text": {
-                            "text": "90/140/190 {{0}} Health",
+                            "text": "100/150/200 {{0}} Health",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+25% AP)",
+                                    "scale": "(+55% AP)",
                                     "scaleId": "AP"
                                 }
                             ]
@@ -462,6 +462,98 @@
             },
             "E": "",
             "R": ""
+        },
+        "13.14": {
+            "B": "",
+            "P": {
+                "SpellName": "Passive - Iceborn Subjugation",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Thrall Movement: ",
+                            "Before": "Thralls will stop at final frames before exploding",
+                            "Indicator": " ⇒ ",
+                            "After": "Thralls will continue to chase down their targets until they explode"
+                        }
+                    },
+                    {
+                        "Tag": "NEW",
+                        "Change": {
+                            "Attribute": "You Can't Hide: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "Thralls will now follow enemies into Brush if they were already being chased down by the Thrall"
+                        }
+                    },
+                    {
+                        "Tag": "NEW",
+                        "Change": {
+                            "Attribute": "I C(E) You Coming: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "Thralls are revealed to enemies through Fog of War"
+                        }
+                    }
+                ]
+            },
+            "Q": {
+                "SpellName": "Q - Ice Shard",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Slow Application: ",
+                            "Before": "Q will slow the first enemy hit",
+                            "Indicator": " ⇒ ",
+                            "After": "Q will now slow all enemies hit"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Ice Shard Missile: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "Q will cast from position post-cast rather than pre-cast"
+                        }
+                    }
+                ]
+            },
+            "W": "",
+            "E": "",
+            "R": {
+                "SpellName": "R - Frozen Tomb",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Heal Amount: ",
+                            "Before": "90/140/190 (+25% AP) (increased by 0-100% based on missing health)",
+                            "Indicator": " ⇒ ",
+                            "After": "100/150/200 (+55% AP) (increased by 0-100% based on missing health) (NoteMaximum heal value will be at 30% or less health now instead of 0% health.)"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Damage and Slow Application Cadence: ",
+                            "Before": "4 times per second",
+                            "Indicator": " ⇒ ",
+                            "After": "16 times per second"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Dash Interactions: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "Updated logic slightly around stopping dashes"
+                        }
+                    }
+                ]
+            }
         }
     },
     "ChangePatches": [
@@ -471,7 +563,8 @@
         "11.7",
         "11.17",
         "12.10",
-        "13.1"
+        "13.1",
+        "13.14"
     ],
     "ChampionName": "Lissandra"
 }

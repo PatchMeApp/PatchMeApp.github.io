@@ -138,7 +138,7 @@
                             "text": "18/30/42/54/66 {{0}} magic damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+15% AP)",
+                                    "scale": "(+18% AP)",
                                     "scaleId": "AP"
                                 }
                             ]
@@ -150,7 +150,7 @@
                             "text": "54/90/126/162/198 {{0}} damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+45% AP)",
+                                    "scale": "(+54% AP)",
                                     "scaleId": "AP"
                                 }
                             ]
@@ -159,10 +159,10 @@
                     },
                     {
                         "text": {
-                            "text": "40/55/70/85/100 {{0}} {{1}} Shield",
+                            "text": "45/60/75/90/105 {{0}} {{1}} Shield",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+25% AP)",
+                                    "scale": "(+30% AP)",
                                     "scaleId": "AP"
                                 },
                                 {
@@ -204,8 +204,8 @@
                             "text": "50/70/90/110/130 {{0}} magic damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+50% AP)",
-                                    "scaleId": "AP"
+                                    "scale": "(+60%)",
+                                    "scaleId": "(+60%"
                                 }
                             ]
                         },
@@ -788,6 +788,49 @@
                 ]
             },
             "R": ""
+        },
+        "13.14": {
+            "B": "",
+            "P": "",
+            "Q": "",
+            "W": {
+                "SpellName": "W - Pale Cascade",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Shield Strength: ",
+                            "Before": "40/55/70/85/100 (+25% AP) (+9% bonus health)",
+                            "Indicator": " ⇒ ",
+                            "After": "45/60/75/90/105 (+30% AP) (+9% bonus health)"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Magic Damage per Orb: ",
+                            "Before": "18/30/42/54/66 (+15% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "18/30/42/54/66 (+18% AP)"
+                        }
+                    }
+                ]
+            },
+            "E": {
+                "SpellName": "E - Lunar Rush",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Magic Damage: ",
+                            "Before": "50/70/90/110/130 (+50%)",
+                            "Indicator": " ⇒ ",
+                            "After": "50/70/90/110/130 (+60%)"
+                        }
+                    }
+                ]
+            },
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -798,7 +841,8 @@
         "11.16",
         "12.1",
         "12.10",
-        "12.16"
+        "12.16",
+        "13.14"
     ],
     "ChampionName": "Diana"
 }

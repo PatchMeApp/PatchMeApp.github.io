@@ -49,7 +49,7 @@
                 "parseInfo": [
                     {
                         "text": {
-                            "text": "25 − 80 {{0}} {{1}} magic damage",
+                            "text": "15 − 50 {{0}} {{1}} magic damage",
                             "scaleHolders": [
                                 {
                                     "scale": "(based on level)",
@@ -155,7 +155,7 @@
                     },
                     {
                         "text": {
-                            "text": "15/17.5/20/22.5/25% Movement Speed",
+                            "text": "12/14/16/18/20% Movement Speed",
                             "scaleHolders": []
                         },
                         "type": "speed"
@@ -302,11 +302,46 @@
             "W": "",
             "E": "",
             "R": ""
+        },
+        "13.14": {
+            "B": "",
+            "P": {
+                "SpellName": "Passive - Fired Up!",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Burn Damage: ",
+                            "Before": "25-80 (based on level) (+20% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "15-50 (based on level) (+20% AP)"
+                        }
+                    }
+                ]
+            },
+            "Q": "",
+            "W": "",
+            "E": {
+                "SpellName": "E - Warm Hugs",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Bonus Movement Speed: ",
+                            "Before": "15/17.5/20/22.5/25%",
+                            "Indicator": " ⇒ ",
+                            "After": "12/14/16/18/20%"
+                        }
+                    }
+                ]
+            },
+            "R": ""
         }
     },
     "ChangePatches": [
         "13.6",
-        "13.12"
+        "13.12",
+        "13.14"
     ],
     "ChampionName": "Milio"
 }

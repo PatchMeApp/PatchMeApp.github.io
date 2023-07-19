@@ -45,7 +45,7 @@
         "P": {
             "cooldown": "",
             "_rawTooltip": {
-                "fullTooltip": "Rell's attacks and abilities steal 3% Armor and 3% Magic Resist for 5 seconds, refreshing on subsequent hits and stacking up to 5 times.",
+                "fullTooltip": "Rell's attacks and abilities steal 2% Armor and 2% Magic Resist for 5 seconds, refreshing on subsequent hits and stacking up to 5 times.",
                 "parseInfo": []
             },
             "name": "Break the Mold"
@@ -1314,6 +1314,58 @@
                 ]
             },
             "R": ""
+        },
+        "13.14": {
+            "B": {
+                "SpellName": "Base Stats",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Base Armor: ",
+                            "Before": "39",
+                            "Indicator": " ⇒ ",
+                            "After": "36"
+                        }
+                    }
+                ]
+            },
+            "P": {
+                "SpellName": "Passive - Break the Mold",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Armor and Magic Resist Steal: ",
+                            "Before": "3%",
+                            "Indicator": " ⇒ ",
+                            "After": "2%"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Minimum Armor and Magic Resist Steal: ",
+                            "Before": "1.25-3 (based on champion level)",
+                            "Indicator": " ⇒ ",
+                            "After": "0.8-2 (based on champion level)"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Maximum Armor and Magic Resist Steal: ",
+                            "Before": "15%",
+                            "Indicator": " ⇒ ",
+                            "After": "10%"
+                        }
+                    }
+                ]
+            },
+            "Q": "",
+            "W": "",
+            "E": "",
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -1326,7 +1378,8 @@
         "12.17",
         "13.11",
         "13.12",
-        "13.13"
+        "13.13",
+        "13.14"
     ],
     "ChampionName": "Rell"
 }

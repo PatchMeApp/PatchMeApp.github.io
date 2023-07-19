@@ -63,7 +63,7 @@
                                     "scaleId": "level"
                                 },
                                 {
-                                    "scale": "(+ 40% AP)",
+                                    "scale": "(+ 50% AP)",
                                     "scaleId": "AP"
                                 }
                             ]
@@ -185,7 +185,7 @@
                     },
                     {
                         "text": {
-                            "text": "20/35/50/65 plus 8/10/12/14/16% missing Health",
+                            "text": "20/35/50/65 plus 8/11/14/17/20% missing Health",
                             "scaleHolders": []
                         },
                         "type": "healing"
@@ -834,6 +834,53 @@
             },
             "E": "",
             "R": ""
+        },
+        "13.14": {
+            "B": "",
+            "P": {
+                "SpellName": "Passive - The Relentless Storm",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Lightning Claws Magic Damage: ",
+                            "Before": "11-60 (based on level) (+40% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "11-60 (based on level) (+50% AP)"
+                        }
+                    }
+                ]
+            },
+            "Q": {
+                "SpellName": "Q - Thundering Smash",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "QoL Update: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "Removed a hitch in Volibear's auto attacks after stunning at high attack speeds."
+                        }
+                    }
+                ]
+            },
+            "W": {
+                "SpellName": "W - Frenzied Maul",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Heal: ",
+                            "Before": "20/35/50/65/80 (+8/10/12/14/16% of missing health)",
+                            "Indicator": " ⇒ ",
+                            "After": "20/35/50/65/80 (+8/11/14/17/20% of missing health)"
+                        }
+                    }
+                ]
+            },
+            "E": "",
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -846,7 +893,8 @@
         "12.2",
         "12.10",
         "12.13",
-        "13.9"
+        "13.9",
+        "13.14"
     ],
     "ChampionName": "Volibear"
 }

@@ -168,10 +168,10 @@
                     },
                     {
                         "text": {
-                            "text": "55/60/65/70/75 {{0}} physical damage",
+                            "text": "5/10/15/20/25 {{0}} physical damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+85% Bonus AD)",
+                                    "scale": "(+70% total AD)",
                                     "scaleId": "AD"
                                 }
                             ]
@@ -526,6 +526,40 @@
             "W": "",
             "E": "",
             "R": ""
+        },
+        "13.14": {
+            "B": "",
+            "P": "",
+            "Q": "",
+            "W": {
+                "SpellName": "W - Un-burrow",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Physical Damage: ",
+                            "Before": "55/70/85/100/115 (+80% bonus AD)",
+                            "Indicator": " ⇒ ",
+                            "After": "50/65/80/95/110 (+80% bonus AD)"
+                        }
+                    }
+                ]
+            },
+            "E": {
+                "SpellName": "E - Furious Bite",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Physical Damage: ",
+                            "Before": "55/60/65/70/75 (+85% bonus AD)",
+                            "Indicator": " ⇒ ",
+                            "After": "5/10/15/20/25 (+70% total AD)"
+                        }
+                    }
+                ]
+            },
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -535,7 +569,8 @@
         "12.10",
         "12.19",
         "13.11",
-        "13.13"
+        "13.13",
+        "13.14"
     ],
     "ChampionName": "Rek'Sai"
 }
