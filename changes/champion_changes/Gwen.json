@@ -17,7 +17,7 @@
             "increment": 2.05
         },
         "hpRegen": {
-            "base": 8.5,
+            "base": 9,
             "increment": 0.9
         },
         "mpRegen": {
@@ -172,7 +172,7 @@
         },
         "W": {
             "_rawTooltip": {
-                "fullTooltip": "Gwen summons the Hallowed Mist, making her Untargetable to all enemies (except towers) outside the zone for 4 seconds or until she leaves it. While in the Mist, Gwen gains 17/19/21/23/25 (+7% AP) [[0]] and [[1]].<br /><br />Gwen can [[2]] this Ability once to call the Mist to her. This will automatically [[3]] the first time Gwen attempts to leave the zone.",
+                "fullTooltip": "Gwen summons the Hallowed Mist, making her Untargetable to all enemies (except towers) outside the zone for 4 seconds or until she leaves it. While in the Mist, Gwen gains 22/24/26/28/30 (+7% AP) [[0]] and [[1]].<br /><br />Gwen can [[2]] this Ability once to call the Mist to her. This will automatically [[3]] the first time Gwen attempts to leave the zone.",
                 "parseInfo": [
                     {
                         "text": {
@@ -782,6 +782,40 @@
             "W": "",
             "E": "",
             "R": ""
+        },
+        "13.15": {
+            "B": {
+                "SpellName": "Base Stats",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Health Regeneration per 5 seconds: ",
+                            "Before": "8.5",
+                            "Indicator": " ⇒ ",
+                            "After": "9"
+                        }
+                    }
+                ]
+            },
+            "P": "",
+            "Q": "",
+            "W": {
+                "SpellName": "W - Hallowed Mist",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Bonus Armor and Magic Resistance: ",
+                            "Before": "17/19/21/23/25 (+7% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "22/24/26/28/30 (+7% AP)"
+                        }
+                    }
+                ]
+            },
+            "E": "",
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -794,7 +828,8 @@
         "12.11",
         "12.13",
         "12.15",
-        "12.20"
+        "12.20",
+        "13.15"
     ],
     "ChampionName": "Gwen"
 }

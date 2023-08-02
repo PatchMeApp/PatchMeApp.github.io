@@ -34,7 +34,7 @@
         },
         "attackDamage": {
             "base": 68,
-            "increment": 3.5
+            "increment": 3.8
         },
         "attackRange": {
             "base": 125,
@@ -228,7 +228,7 @@
                     },
                     {
                         "text": {
-                            "text": "5/10 plus 4/6% current Health magic damage",
+                            "text": "20/30/40 plus 4/6/8% current Health magic damage",
                             "scaleHolders": []
                         },
                         "type": "magicDamage"
@@ -432,6 +432,40 @@
                 ]
             },
             "R": ""
+        },
+        "13.15": {
+            "B": {
+                "SpellName": "Base Stats",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Attack Damage Growth: ",
+                            "Before": "3.5",
+                            "Indicator": " ⇒ ",
+                            "After": "3.8"
+                        }
+                    }
+                ]
+            },
+            "P": "",
+            "Q": "",
+            "W": "",
+            "E": "",
+            "R": {
+                "SpellName": "R - The Hextech Ultimatum",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Base Bonus Magic Damage per Attack: ",
+                            "Before": "5/10/15",
+                            "Indicator": " ⇒ ",
+                            "After": "20/30/40"
+                        }
+                    }
+                ]
+            }
         }
     },
     "ChangePatches": [
@@ -440,7 +474,8 @@
         "11.18",
         "11.24",
         "12.10",
-        "12.17"
+        "12.17",
+        "13.15"
     ],
     "ChampionName": "Camille"
 }

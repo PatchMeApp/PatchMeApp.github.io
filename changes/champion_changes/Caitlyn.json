@@ -174,7 +174,7 @@
                                     "scaleId": "AD"
                                 },
                                 {
-                                    "scale": "(1 + 25% Crit Chance)",
+                                    "scale": "(1 + 35% Crit Chance)",
                                     "scaleId": "Chance"
                                 }
                             ]
@@ -665,6 +665,40 @@
             "E": "",
             "R": ""
         },
+        "13.15": {
+            "B": "",
+            "P": {
+                "SpellName": "Passive - Headshot",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Critical Strike Rate Coefficient: ",
+                            "Before": "1.2",
+                            "Indicator": " ⇒ ",
+                            "After": "1.3 (Notethis will grant +27 base damage at 100% critical strike chance)"
+                        }
+                    }
+                ]
+            },
+            "Q": "",
+            "W": "",
+            "E": "",
+            "R": {
+                "SpellName": "R - Ace in the Hole",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Critical Strike Chance to Damage Ratio: ",
+                            "Before": "2.5% additional damage per 10% critical strike chance",
+                            "Indicator": " ⇒ ",
+                            "After": "3.5% additional damage per 10% critical strike chance"
+                        }
+                    }
+                ]
+            }
+        },
         "12.12": {
             "B": {
                 "SpellName": "Base Stats",
@@ -769,7 +803,8 @@
         "12.12",
         "12.16",
         "13.1B",
-        "13.5"
+        "13.5",
+        "13.15"
     ],
     "ChampionName": "Caitlyn"
 }

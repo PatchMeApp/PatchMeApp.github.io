@@ -76,10 +76,10 @@
                 "parseInfo": [
                     {
                         "text": {
-                            "text": "10/30/50/70/90 {{0}} physical damage",
+                            "text": "10/25/40/55/70 {{0}} physical damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+60/65/70/75/80% AD)",
+                                    "scale": "(+60/67.5/75/82.5/90% AD)",
                                     "scaleId": "AD"
                                 }
                             ]
@@ -727,6 +727,27 @@
             "W": "",
             "E": "",
             "R": ""
+        },
+        "13.15": {
+            "B": "",
+            "P": "",
+            "Q": {
+                "SpellName": "Q - The Darkin Blade",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "First Cast Damage: ",
+                            "Before": "10/25/40/55/70 (+60/70/80/90/100% AD)",
+                            "Indicator": " ⇒ ",
+                            "After": "10/25/40/55/70 (+60/67.5/75/82.5/90% AD) (NoteThe second cast of Q will still deal 25% more than base damage and the third cast will still deal 50% more.)"
+                        }
+                    }
+                ]
+            },
+            "W": "",
+            "E": "",
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -743,7 +764,8 @@
         "13.1",
         "13.5",
         "13.9",
-        "13.14"
+        "13.14",
+        "13.15"
     ],
     "ChampionName": "Aatrox"
 }

@@ -1,5 +1,5 @@
 {
-    "LatestGlobalPatch": "13.14",
+    "LatestGlobalPatch": "13.15",
     "Aatrox": {
         "ChampionName": "Aatrox",
         "ChangePatches": [
@@ -16,7 +16,8 @@
             "13.1",
             "13.5",
             "13.9",
-            "13.14"
+            "13.14",
+            "13.15"
         ],
         "LatestChanges": {
             "B": "",
@@ -28,18 +29,9 @@
                         "Tag": "",
                         "Change": {
                             "Attribute": "First Cast Damage: ",
-                            "Before": "10/30/50/70/90 (+60/65/70/75/80% AD)",
+                            "Before": "10/25/40/55/70 (+60/70/80/90/100% AD)",
                             "Indicator": " ⇒ ",
-                            "After": "10/25/40/55/70 (+60/70/80/90/100% AD) (NoteThis will be a buff at 0/100/100/100/100 AD. The 2nd cast of Q will still deal 25% more than base damage and the 3rd cast will still deal 50% more.)"
-                        }
-                    },
-                    {
-                        "Tag": "",
-                        "Change": {
-                            "Attribute": "Minion Damage Modifier: ",
-                            "Before": "55%",
-                            "Indicator": " ⇒ ",
-                            "After": "55/60/65/70% (levels 1/6/11/16)"
+                            "After": "10/25/40/55/70 (+60/67.5/75/82.5/90% AD) (NoteThe second cast of Q will still deal 25% more than base damage and the third cast will still deal 50% more.)"
                         }
                     }
                 ]
@@ -107,28 +99,38 @@
             "13.3",
             "13.4",
             "13.7",
-            "13.13"
+            "13.13",
+            "13.15"
         ],
         "LatestChanges": {
             "B": "",
             "P": "",
-            "Q": {
-                "SpellName": "Q - Disintegrate",
+            "Q": "",
+            "W": "",
+            "E": "",
+            "R": {
+                "SpellName": "R - Summon Tibbers",
                 "Changes": [
                     {
                         "Tag": "",
                         "Change": {
-                            "Attribute": "Magic Damage: ",
-                            "Before": "80/115/150/185/220 (+80% AP)",
+                            "Attribute": "Armor and Magic Resistance: ",
+                            "Before": "30/60/90 (+5% AP)",
                             "Indicator": " ⇒ ",
-                            "After": "70/105/140/175/210 (+75% AP)"
+                            "After": "30-90 (levels 6-18)"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Health: ",
+                            "Before": "1300/2200/3100 (+75% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "1150-3500 (+50% AP) (levels 6-18, nonlinear scaling) (Notethis is approximately a 5-10% durability decrease)"
                         }
                     }
                 ]
-            },
-            "W": "",
-            "E": "",
-            "R": ""
+            }
         }
     },
     "Aurelion Sol": {
@@ -195,37 +197,42 @@
             "12.12",
             "12.16",
             "13.1B",
-            "13.5"
+            "13.5",
+            "13.15"
         ],
         "LatestChanges": {
-            "B": {
-                "SpellName": "Base Stats",
+            "B": "",
+            "P": {
+                "SpellName": "Passive - Headshot",
                 "Changes": [
                     {
                         "Tag": "",
                         "Change": {
-                            "Attribute": "Base Armor: ",
-                            "Before": "28",
+                            "Attribute": "Critical Strike Rate Coefficient: ",
+                            "Before": "1.2",
                             "Indicator": " ⇒ ",
-                            "After": "27"
-                        }
-                    },
-                    {
-                        "Tag": "",
-                        "Change": {
-                            "Attribute": "Base Attack Damage: ",
-                            "Before": "62",
-                            "Indicator": " ⇒ ",
-                            "After": "60"
+                            "After": "1.3 (Notethis will grant +27 base damage at 100% critical strike chance)"
                         }
                     }
                 ]
             },
-            "P": "",
             "Q": "",
             "W": "",
             "E": "",
-            "R": ""
+            "R": {
+                "SpellName": "R - Ace in the Hole",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Critical Strike Chance to Damage Ratio: ",
+                            "Before": "2.5% additional damage per 10% critical strike chance",
+                            "Indicator": " ⇒ ",
+                            "After": "3.5% additional damage per 10% critical strike chance"
+                        }
+                    }
+                ]
+            }
         }
     },
     "Ekko": {
@@ -425,7 +432,8 @@
             "12.16",
             "12.19",
             "13.1B",
-            "13.12"
+            "13.12",
+            "13.15"
         ],
         "LatestChanges": {
             "B": {
@@ -434,17 +442,61 @@
                     {
                         "Tag": "",
                         "Change": {
-                            "Attribute": "Attack Damage Growth: ",
-                            "Before": "2",
+                            "Attribute": "Base Health: ",
+                            "Before": "670",
                             "Indicator": " ⇒ ",
-                            "After": "2.6"
+                            "After": "640"
                         }
                     }
                 ]
             },
             "P": "",
-            "Q": "",
-            "W": "",
+            "Q": {
+                "SpellName": "Q - Icathian Rain",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Damage per Missile: ",
+                            "Before": "40/55/70/85/100 (+50% bonus AD) (+ 30% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "40/55/70/85/100 (+50% bonus AD) (+ 20% AP)"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Maximum Single-Target Damage (Unevolved): ",
+                            "Before": "90/123.75/157.5/191.25/225 (+112.5% bonus AD) (+67.5% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "90/123.75/157.5/191.25/225 (+112.5% bonus AD) (+45% AP)"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Maximum Single-Target Damage (Evolved): ",
+                            "Before": "150/206.25/262.5/318.75/375 (+187.5% bonus AD) (+112.5% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "150/206.25/262.5/318.75/375 (+187.5% bonus AD) (+75% AP)"
+                        }
+                    }
+                ]
+            },
+            "W": {
+                "SpellName": "W - Void Seeker",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Cooldown Reduction after Evolution: ",
+                            "Before": "77%",
+                            "Indicator": " ⇒ ",
+                            "After": "75% (Notethis is functionally an 8.7% cooldown increase on hit)"
+                        }
+                    }
+                ]
+            },
             "E": "",
             "R": ""
         }
@@ -1244,41 +1296,47 @@
             "11.9",
             "12.10",
             "12.12",
-            "13.1B"
+            "13.1B",
+            "13.15"
         ],
         "LatestChanges": {
             "B": "",
             "P": "",
-            "Q": {
-                "SpellName": "Q - H-28G Evolution Turret",
+            "Q": "",
+            "W": "",
+            "E": "",
+            "R": {
+                "SpellName": "R - H-28Q Apex Turret",
                 "Changes": [
                     {
                         "Tag": "",
                         "Change": {
                             "Attribute": "Turret Health: ",
-                            "Before": "175-700 (based on level) (+5%-40% (based on level) AP)",
+                            "Before": "850-1450 (based on level) (+25-200% (based on level) AP)",
                             "Indicator": " ⇒ ",
-                            "After": "130-640 (based on level) (+5%-45% (based on level) AP)"
+                            "After": "725-1525 (based on level) (+50% AP)"
                         }
-                    }
-                ]
-            },
-            "W": {
-                "SpellName": "W - Hextech Micro-Rockets",
-                "Changes": [
+                    },
                     {
                         "Tag": "",
                         "Change": {
-                            "Attribute": "Initial Magic Damage: ",
-                            "Before": "50/75/100/125/150 (+45% AP)",
+                            "Attribute": "Turret Armor: ",
+                            "Before": "10-80 (based on level)",
                             "Indicator": " ⇒ ",
-                            "After": "40/65/90/115/140 (+55% AP)"
+                            "After": "30-90 (based on level)"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Turret Magic Resistance: ",
+                            "Before": "25-65 (based on level)",
+                            "Indicator": " ⇒ ",
+                            "After": "30-90 (based on level)"
                         }
                     }
                 ]
-            },
-            "E": "",
-            "R": ""
+            }
         }
     },
     "Karma": {
@@ -1695,54 +1753,38 @@
             "11.19",
             "12.8",
             "12.10",
-            "13.7"
+            "13.7",
+            "13.15"
         ],
         "LatestChanges": {
             "B": "",
-            "P": {
-                "SpellName": "Passive - Fury of the North",
+            "P": "",
+            "Q": "",
+            "W": {
+                "SpellName": "W - Winter’s Wrath",
                 "Changes": [
                     {
                         "Tag": "",
                         "Change": {
-                            "Attribute": "Damage Cap against Epic Monsters: ",
-                            "Before": "300",
+                            "Attribute": "Initial Cast Damage: ",
+                            "Before": "20/25/30/35/40 (+20% AP) (+2% of maximum health)",
                             "Indicator": " ⇒ ",
-                            "After": "250"
+                            "After": "10/15/20/25/30 (+20% AP) (+2% of maximum health)"
                         }
-                    }
-                ]
-            },
-            "Q": {
-                "SpellName": "Q - Arctic Assault",
-                "Changes": [
+                    },
                     {
                         "Tag": "",
                         "Change": {
-                            "Attribute": "Cooldown: ",
-                            "Before": "18/16.5/15/13.5/12 seconds",
+                            "Attribute": "Second Cast Damage: ",
+                            "Before": "30/70/110/150/190 (+60% AP) (+6% of maximum health)",
                             "Indicator": " ⇒ ",
-                            "After": "19/17.5/16/14.5/13 seconds"
+                            "After": "20/60/100/140/180 (+60% AP) (+6% of maximum health)"
                         }
                     }
                 ]
             },
-            "W": "",
             "E": "",
-            "R": {
-                "SpellName": "R - Glacial Prison",
-                "Changes": [
-                    {
-                        "Tag": "",
-                        "Change": {
-                            "Attribute": "Cooldown: ",
-                            "Before": "120/100/80 seconds",
-                            "Indicator": " ⇒ ",
-                            "After": "130/110/90 seconds"
-                        }
-                    }
-                ]
-            }
+            "R": ""
         }
     },
     "Sion": {
@@ -2335,10 +2377,24 @@
             "12.12",
             "12.22",
             "13.11",
-            "13.13"
+            "13.13",
+            "13.15"
         ],
         "LatestChanges": {
-            "B": "",
+            "B": {
+                "SpellName": "Base Stats",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Magic Resistance: ",
+                            "Before": "32 (+2.05 per level)",
+                            "Indicator": " ⇒ ",
+                            "After": "30 (+1.3 per level) (Notethis is typical for other ranged champions)"
+                        }
+                    }
+                ]
+            },
             "P": "",
             "Q": "",
             "W": {
@@ -2347,34 +2403,65 @@
                     {
                         "Tag": "",
                         "Change": {
-                            "Attribute": "Bonus Magic Damage On-Hit: ",
-                            "Before": "30/37.5/45/52.5/60 (+30% AP)",
+                            "Attribute": "Ally On-Hit Damage: ",
+                            "Before": "5/7.5/10/12.5/15 (+10% of Ivern's AP)",
                             "Indicator": " ⇒ ",
-                            "After": "20/27.5/35/42.5/50 (+20% AP)"
+                            "After": "10/15/20/25/30 (+10% of Ivern's AP)"
                         }
                     }
                 ]
             },
-            "E": "",
+            "E": {
+                "SpellName": "E - Triggerseed",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Shield Strength: ",
+                            "Before": "80/115/150/185/220 (+75% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "85/125/165/205/245 (+50% AP) (Notethis will be a buff until Ivern’s gets 20/40/60/80/100 AP)"
+                        }
+                    }
+                ]
+            },
             "R": {
                 "SpellName": "R - Daisy!",
                 "Changes": [
                     {
                         "Tag": "",
                         "Change": {
-                            "Attribute": "Daisy Base Movement Speed: ",
-                            "Before": "440",
+                            "Attribute": "Duration: ",
+                            "Before": "60 seconds",
                             "Indicator": " ⇒ ",
-                            "After": "430"
+                            "After": "45 seconds"
                         }
                     },
                     {
                         "Tag": "",
                         "Change": {
-                            "Attribute": "Daisy, Slam! Base Damage: ",
-                            "Before": "40/60/80",
+                            "Attribute": "Armor and Magic Resistance: ",
+                            "Before": "20/50/100 (+5% AP)",
                             "Indicator": " ⇒ ",
-                            "After": "20/40/60"
+                            "After": "30-90 (levels 6-18)"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Health: ",
+                            "Before": "1300/2600/3900 (+50% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "1000-4400 (levels 6-18, nonlinear scaling) (+50% AP) (Notethis is approximately a 5% durability decrease)"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Daisy! Attack Damage: ",
+                            "Before": "70/100/130 (+30% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "70/100/130 (+15% AP) (Notefinal shockwave damage is unchanged)"
                         }
                     }
                 ]
@@ -2945,7 +3032,8 @@
             "12.22",
             "12.23",
             "13.1B",
-            "13.4"
+            "13.4",
+            "13.15"
         ],
         "LatestChanges": {
             "B": "",
@@ -2956,47 +3044,16 @@
                     {
                         "Tag": "",
                         "Change": {
-                            "Attribute": "Magic Damage: ",
-                            "Before": "70/120/170/220/270 (+2/2.25/2.5/2.75/3% of target's maximum health) (+40% AP)",
+                            "Attribute": "Bonus Damage to Monsters: ",
+                            "Before": "100/120/140/160/180",
                             "Indicator": " ⇒ ",
-                            "After": "70/120/170/220/270 (+2/2.5/3/3.5/4% of target's maximum health) (+40% AP) (NoteThis nets out at about a 7% damage increase.)"
+                            "After": "80/100/120/140/160"
                         }
                     }
                 ]
             },
             "W": "",
-            "E": {
-                "SpellName": "E - Sapling Toss",
-                "Changes": [
-                    {
-                        "Tag": "",
-                        "Change": {
-                            "Attribute": "Cooldown: ",
-                            "Before": "10 seconds",
-                            "Indicator": " ⇒ ",
-                            "After": "14 seconds"
-                        }
-                    },
-                    {
-                        "Tag": "",
-                        "Change": {
-                            "Attribute": "Magic Damage: ",
-                            "Before": "55/80/105/130/155 (+5% bonus health) (+35% AP)",
-                            "Indicator": " ⇒ ",
-                            "After": "50/75/100/125/150 (+5% bonus health) (+25% AP) (Notedamage is still doubled when Saplings are placed in brush.)"
-                        }
-                    },
-                    {
-                        "Tag": "",
-                        "Change": {
-                            "Attribute": "Brush Empowered Sapling Slow: ",
-                            "Before": "45% (+0.9% per 100 bonus health) (+4% per 100 AP)",
-                            "Indicator": " ⇒ ",
-                            "After": "45% (+1% per 100 bonus health) (+1% per 100 AP)"
-                        }
-                    }
-                ]
-            },
+            "E": "",
             "R": ""
         }
     },
@@ -4469,40 +4526,41 @@
             "12.4",
             "12.10",
             "12.17",
-            "13.1B"
+            "13.1B",
+            "13.15"
         ],
         "LatestChanges": {
             "B": "",
-            "P": "",
-            "Q": "",
-            "W": {
-                "SpellName": "W - Ebb and Flow",
+            "P": {
+                "SpellName": "Passive - Surging Tides",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Bonus Movement Speed: ",
+                            "Before": "90 (+20% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "100 (+25% AP)"
+                        }
+                    }
+                ]
+            },
+            "Q": {
+                "SpellName": "Q - Aqua Prison",
                 "Changes": [
                     {
                         "Tag": "",
                         "Change": {
                             "Attribute": "Magic Damage: ",
-                            "Before": "70/110/150/190/230 (+50% AP)",
+                            "Before": "75/130/185/240/295 (+50% AP)",
                             "Indicator": " ⇒ ",
-                            "After": "60/100/140/180/220 (+55% AP)"
+                            "After": "90/145/200/255/310 (+50% AP)"
                         }
                     }
                 ]
             },
-            "E": {
-                "SpellName": "E - Tidecaller’s Blessing",
-                "Changes": [
-                    {
-                        "Tag": "",
-                        "Change": {
-                            "Attribute": "Bonus Magic Damage per Hit: ",
-                            "Before": "25/40/55/70/85 (+20% AP)",
-                            "Indicator": " ⇒ ",
-                            "After": "20/35/50/65/80 (+20% AP)"
-                        }
-                    }
-                ]
-            },
+            "W": "",
+            "E": "",
             "R": ""
         }
     },
@@ -4518,58 +4576,37 @@
             "12.10",
             "12.19",
             "12.23",
-            "13.14"
+            "13.14",
+            "13.15"
         ],
         "LatestChanges": {
-            "B": "",
+            "B": {
+                "SpellName": "Base Stats",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Attack Damage Growth: ",
+                            "Before": "3.4 per level",
+                            "Indicator": " ⇒ ",
+                            "After": "3 per level"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Health Growth: ",
+                            "Before": "109 per level",
+                            "Indicator": " ⇒ ",
+                            "After": "104 per level"
+                        }
+                    }
+                ]
+            },
             "P": "",
-            "Q": {
-                "SpellName": "Q - Twin Bite",
-                "Changes": [
-                    {
-                        "Tag": "",
-                        "Change": {
-                            "Attribute": "Bonus Physical Damage: ",
-                            "Before": "20/35/50/65/80% AD (+25% AP)",
-                            "Indicator": " ⇒ ",
-                            "After": "20/40/60/80/100% AD (+25% AP)"
-                        }
-                    },
-                    {
-                        "Tag": "NEW",
-                        "Change": {
-                            "Attribute": "Attack Speed Increase: ",
-                            "Before": "",
-                            "Indicator": "",
-                            "After": "Shyvana's next 2 attacks have 40/45/50/55/60% increased attack speed"
-                        }
-                    },
-                    {
-                        "Tag": "",
-                        "Change": {
-                            "Attribute": "Cooldown: ",
-                            "Before": "7/6.5/6/5.5/5 seconds",
-                            "Indicator": " ⇒ ",
-                            "After": "8/7.5/7/6.5/6 seconds"
-                        }
-                    }
-                ]
-            },
+            "Q": "",
             "W": "",
-            "E": {
-                "SpellName": "E - Flame Breath",
-                "Changes": [
-                    {
-                        "Tag": "",
-                        "Change": {
-                            "Attribute": "Bonus Magic Damage On-Hit vs Marked Targets: ",
-                            "Before": "3% of target's maximum health",
-                            "Indicator": " ⇒ ",
-                            "After": "3% of target's maximum health (+1% per 100 bonus AD)"
-                        }
-                    }
-                ]
-            },
+            "E": "",
             "R": ""
         }
     },
@@ -7042,84 +7079,28 @@
             "12.7",
             "12.10",
             "13.7",
-            "13.10"
+            "13.10",
+            "13.15"
         ],
         "LatestChanges": {
-            "B": {
-                "SpellName": "Base Stats",
-                "Changes": [
-                    {
-                        "Tag": "MID-PATCH",
-                        "Change": {
-                            "Attribute": "Health Growth: ",
-                            "Before": "101",
-                            "Indicator": " ⇒ ",
-                            "After": "110"
-                        }
-                    }
-                ]
-            },
+            "B": "",
             "P": {
                 "SpellName": "Passive - Way of the Wanderer",
                 "Changes": [
                     {
                         "Tag": "",
                         "Change": {
-                            "Attribute": "Shield Amount: ",
-                            "Before": "100/105/110/115/120/130/140/150/160/170/180/200/220/250/290/350/410/475",
+                            "Attribute": "Shield Strength: ",
+                            "Before": "125-600 (based on level)",
                             "Indicator": " ⇒ ",
-                            "After": "100/105/110/115/125/135/145/160/175/195/220/250/275/325/375/425/500/575"
-                        }
-                    },
-                    {
-                        "Tag": "MID-PATCH",
-                        "Change": {
-                            "Attribute": "Way Of The Wanderer Shield: ",
-                            "Before": "100-575",
-                            "Indicator": " ⇒ ",
-                            "After": "125-600"
+                            "After": "125-600 (now mirrors base stat scaling)"
                         }
                     }
                 ]
             },
             "Q": "",
-            "W": {
-                "SpellName": "W - Wind Wall",
-                "Changes": [
-                    {
-                        "Tag": "MID-PATCH",
-                        "Change": {
-                            "Attribute": "Wind Wall Cooldown: ",
-                            "Before": "30/27/24/21/18 seconds",
-                            "Indicator": " ⇒ ",
-                            "After": "25/23/21/19/17/15 seconds"
-                        }
-                    }
-                ]
-            },
-            "E": {
-                "SpellName": "E - Sweeping Blade",
-                "Changes": [
-                    {
-                        "Tag": "",
-                        "Change": {
-                            "Attribute": "Damage Increase per Stack: ",
-                            "Before": "25% of E’s base damage",
-                            "Indicator": " ⇒ ",
-                            "After": "15-25% of E’s total damage (scales linearly, levels 1-18)"
-                        }
-                    },
-                    {
-                        "Tag": "",
-                        "Change": {
-                            "Attribute": "Maximum Stack Amount: ",
-                            "Before": "2",
-                            "Indicator": " ⇒ ",
-                            "After": "4"
-                        }
-                    }
-                ]
-            },
+            "W": "",
+            "E": "",
             "R": ""
         }
     },
@@ -7219,28 +7200,47 @@
             "11.8",
             "12.10",
             "12.12",
-            "13.5"
+            "13.5",
+            "13.15"
         ],
         "LatestChanges": {
             "B": "",
             "P": "",
             "Q": "",
             "W": "",
-            "E": {
-                "SpellName": "E - Mourning Mist",
+            "E": "",
+            "R": {
+                "SpellName": "R - Eulogy of the Isles",
                 "Changes": [
+                    {
+                        "Tag": "NEW",
+                        "Change": {
+                            "Attribute": "Comeback Queen: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "Maiden of the Mist will now regenerate 2.5 health per second"
+                        }
+                    },
+                    {
+                        "Tag": "NEW",
+                        "Change": {
+                            "Attribute": "Maiden’s Armor and Magic Resistance: ",
+                            "Before": "0",
+                            "Indicator": " ⇒ ",
+                            "After": "10-50 (levels 6-18, nonlinear scaling)"
+                        }
+                    },
                     {
                         "Tag": "",
                         "Change": {
-                            "Attribute": "Ghoul Bonus Damage: ",
-                            "Before": "40%",
+                            "Attribute": "Health: ",
+                            "Before": "350/1100/3300 (+75% of Yorick’s maximum health)",
                             "Indicator": " ⇒ ",
-                            "After": "30% (Notethis is applied up to 8 times per Ghoul)."
+                            "After": "400-1950 (levels 6-18, nonlinear scaling) (+60% of Yorick’s maximum health)"
                         }
                     }
                 ]
-            },
-            "R": ""
+            }
         }
     },
     "Kha'Zix": {
@@ -7546,68 +7546,11 @@
             "12.2",
             "12.7",
             "12.10",
-            "13.10"
+            "13.10",
+            "13.15"
         ],
         "LatestChanges": {
-            "B": {
-                "SpellName": "Base Stats",
-                "Changes": [
-                    {
-                        "Tag": "",
-                        "Change": {
-                            "Attribute": "BASE HEALTH: ",
-                            "Before": "",
-                            "Indicator": "",
-                            "After": "+70"
-                        }
-                    },
-                    {
-                        "Tag": "",
-                        "Change": {
-                            "Attribute": "HEALTH GROWTH: ",
-                            "Before": "",
-                            "Indicator": "",
-                            "After": "+14"
-                        }
-                    },
-                    {
-                        "Tag": "",
-                        "Change": {
-                            "Attribute": "ARMOR GROWTH: ",
-                            "Before": "",
-                            "Indicator": "",
-                            "After": "+1.2"
-                        }
-                    },
-                    {
-                        "Tag": "",
-                        "Change": {
-                            "Attribute": "MAGIC RESIST GROWTH: ",
-                            "Before": "",
-                            "Indicator": "",
-                            "After": "+0.8"
-                        }
-                    },
-                    {
-                        "Tag": "MID-PATCH",
-                        "Change": {
-                            "Attribute": "Base Armor: ",
-                            "Before": "28",
-                            "Indicator": " ⇒ ",
-                            "After": "30"
-                        }
-                    },
-                    {
-                        "Tag": "MID-PATCH",
-                        "Change": {
-                            "Attribute": "Health Growth: ",
-                            "Before": "99",
-                            "Indicator": " ⇒ ",
-                            "After": "105"
-                        }
-                    }
-                ]
-            },
+            "B": "",
             "P": "",
             "Q": "",
             "W": {
@@ -7616,28 +7559,10 @@
                     {
                         "Tag": "",
                         "Change": {
-                            "Attribute": "W - Shield: ",
-                            "Before": "40-60 (levels 1-18) (+60% bonus AD)",
+                            "Attribute": "Shield Strength: ",
+                            "Before": "45-65 (based on level) (+65% bonus AD)",
                             "Indicator": " ⇒ ",
-                            "After": "35-55 (levels 1-18) (+55% bonus AD)"
-                        }
-                    },
-                    {
-                        "Tag": "MID-PATCH",
-                        "Change": {
-                            "Attribute": "Spirit Cleave Cooldown: ",
-                            "Before": "16~6 seconds, scaling with bonus attack speed",
-                            "Indicator": " ⇒ ",
-                            "After": "14~6 seconds, scaling with bonus attack speed"
-                        }
-                    },
-                    {
-                        "Tag": "MID-PATCH",
-                        "Change": {
-                            "Attribute": "Spirit Cleave Shield: ",
-                            "Before": "35-55 (levels 1-18) (+55% bonus AD)",
-                            "Indicator": " ⇒ ",
-                            "After": "45-65 (levels 1-18) (+65% bonus AD)"
+                            "After": "60-80 (based on level) (+75% bonus AD)"
                         }
                     }
                 ]
@@ -7908,41 +7833,42 @@
             "11.18",
             "11.24",
             "12.10",
-            "12.17"
+            "12.17",
+            "13.15"
         ],
         "LatestChanges": {
-            "B": "",
-            "P": {
-                "SpellName": "Passive - Adaptive Defenses",
+            "B": {
+                "SpellName": "Base Stats",
                 "Changes": [
                     {
                         "Tag": "",
                         "Change": {
-                            "Attribute": "Percent HP Shielded: ",
-                            "Before": "17%",
+                            "Attribute": "Attack Damage Growth: ",
+                            "Before": "3.5",
                             "Indicator": " ⇒ ",
-                            "After": "20%"
+                            "After": "3.8"
                         }
                     }
                 ]
             },
+            "P": "",
             "Q": "",
             "W": "",
-            "E": {
-                "SpellName": "E - Hookshot/Wall Dive",
+            "E": "",
+            "R": {
+                "SpellName": "R - The Hextech Ultimatum",
                 "Changes": [
                     {
                         "Tag": "",
                         "Change": {
-                            "Attribute": "Damage: ",
-                            "Before": "60/95/130/165/200 (+75% bonus AD)",
+                            "Attribute": "Base Bonus Magic Damage per Attack: ",
+                            "Before": "5/10/15",
                             "Indicator": " ⇒ ",
-                            "After": "80/110/140/170/200 (+90% bonus AD)"
+                            "After": "20/30/40"
                         }
                     }
                 ]
-            },
-            "R": ""
+            }
         }
     },
     "Seraphine": {
@@ -8152,57 +8078,62 @@
             "13.11",
             "13.12",
             "13.13",
-            "13.14"
+            "13.14",
+            "13.15"
         ],
         "LatestChanges": {
-            "B": {
-                "SpellName": "Base Stats",
-                "Changes": [
-                    {
-                        "Tag": "",
-                        "Change": {
-                            "Attribute": "Base Armor: ",
-                            "Before": "39",
-                            "Indicator": " ⇒ ",
-                            "After": "36"
-                        }
-                    }
-                ]
-            },
+            "B": "",
             "P": {
                 "SpellName": "Passive - Break the Mold",
                 "Changes": [
                     {
                         "Tag": "",
                         "Change": {
-                            "Attribute": "Armor and Magic Resist Steal: ",
-                            "Before": "3%",
-                            "Indicator": " ⇒ ",
-                            "After": "2%"
-                        }
-                    },
-                    {
-                        "Tag": "",
-                        "Change": {
-                            "Attribute": "Minimum Armor and Magic Resist Steal: ",
-                            "Before": "1.25-3 (based on champion level)",
-                            "Indicator": " ⇒ ",
-                            "After": "0.8-2 (based on champion level)"
-                        }
-                    },
-                    {
-                        "Tag": "",
-                        "Change": {
-                            "Attribute": "Maximum Armor and Magic Resist Steal: ",
-                            "Before": "15%",
-                            "Indicator": " ⇒ ",
-                            "After": "10%"
+                            "Attribute": "Consistency is Key: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "All spells and auto attacks now apply the damage first, THEN apply the passive. (NotePreviously Q, W2, and R would apply passive, then damage, but E and auto attacks would do the opposite.)"
                         }
                     }
                 ]
             },
-            "Q": "",
-            "W": "",
+            "Q": {
+                "SpellName": "Q - Shattering Strike",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Q Flash Interaction: ",
+                            "Before": "Q maintains the original target location after flashing",
+                            "Indicator": " ⇒ ",
+                            "After": "Q maintains the absolute direction after flashing. (NoteThis should feel more intuitive and in line with expected outcomes.)"
+                        }
+                    }
+                ]
+            },
+            "W": {
+                "SpellName": "W - Ferromancy: Mount Up",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "QoL Change: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "Increased dash speed before the flip once she's locked onto a target. This should both solve some bugs and make the ability feel quicker and more responsive."
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Monster Mounting Maneuver: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "Fixed a bug that was causing Rell’s W - Mount Up to not apply bonus damage to Epic monsters."
+                        }
+                    }
+                ]
+            },
             "E": "",
             "R": ""
         }
@@ -8274,28 +8205,51 @@
             "12.11",
             "12.13",
             "12.15",
-            "13.9"
+            "13.9",
+            "13.15"
         ],
         "LatestChanges": {
             "B": "",
             "P": "",
-            "Q": "",
-            "W": "",
-            "E": "",
-            "R": {
-                "SpellName": "R - Weaver's Wall",
+            "Q": {
+                "SpellName": "Q - Threaded Volley",
                 "Changes": [
                     {
                         "Tag": "",
                         "Change": {
-                            "Attribute": "Cast Lockout: ",
-                            "Before": "whenever Taliyah takes or deals damage",
+                            "Attribute": "Magic Damage: ",
+                            "Before": "45/65/85/105/125 (+50% AP)",
                             "Indicator": " ⇒ ",
-                            "After": "whenever Taliyah takes damage"
+                            "After": "50/70/90/110/130 (+50% AP)"
                         }
                     }
                 ]
-            }
+            },
+            "W": "",
+            "E": {
+                "SpellName": "E - Unraveled Earth",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Cooldown: ",
+                            "Before": "18/17/16/15/14 seconds",
+                            "Indicator": " ⇒ ",
+                            "After": "16/15.5/15/14.5/14 seconds"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Damage to Monsters Modifier: ",
+                            "Before": "150%",
+                            "Indicator": " ⇒ ",
+                            "After": "175%"
+                        }
+                    }
+                ]
+            },
+            "R": ""
         }
     },
     "Rengar": {
@@ -8656,35 +8610,40 @@
             "12.11",
             "12.13",
             "12.15",
-            "12.20"
+            "12.20",
+            "13.15"
         ],
         "LatestChanges": {
-            "B": "",
-            "P": "",
-            "Q": {
-                "SpellName": "Q - Snip Snip!",
+            "B": {
+                "SpellName": "Base Stats",
                 "Changes": [
                     {
                         "Tag": "",
                         "Change": {
-                            "Attribute": "Damage per Snip: ",
-                            "Before": "10/14/18/22/26 (+5% AP)",
+                            "Attribute": "Health Regeneration per 5 seconds: ",
+                            "Before": "8.5",
                             "Indicator": " ⇒ ",
-                            "After": "10/15/20/25/30 (+5% AP)"
-                        }
-                    },
-                    {
-                        "Tag": "",
-                        "Change": {
-                            "Attribute": "Final Snip Damage: ",
-                            "Before": "60/80/100/120/140 (+35% AP)",
-                            "Indicator": " ⇒ ",
-                            "After": "60/85/110/135/160 (+35% AP)"
+                            "After": "9"
                         }
                     }
                 ]
             },
-            "W": "",
+            "P": "",
+            "Q": "",
+            "W": {
+                "SpellName": "W - Hallowed Mist",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Bonus Armor and Magic Resistance: ",
+                            "Before": "17/19/21/23/25 (+7% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "22/24/26/28/30 (+7% AP)"
+                        }
+                    }
+                ]
+            },
             "E": "",
             "R": ""
         }

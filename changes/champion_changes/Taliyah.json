@@ -69,7 +69,7 @@
                 "parseInfo": [
                     {
                         "text": {
-                            "text": "45/65/85/105/125 {{0}} magic damage",
+                            "text": "50/70/90/110/130 {{0}} magic damage",
                             "scaleHolders": [
                                 {
                                     "scale": "(+50% AP)",
@@ -88,7 +88,7 @@
                     },
                     {
                         "text": {
-                            "text": "85.5/123.5/161.5/199.5/237.5 {{0}} magic damage",
+                            "text": "95/133/171/209/247 {{0}} magic damage",
                             "scaleHolders": [
                                 {
                                     "scale": "(+95% AP)",
@@ -179,7 +179,7 @@
                     }
                 ]
             },
-            "cooldown": "18/17/16/15/14",
+            "cooldown": "16/15.5/15/14.5/14",
             "cost": "90/95/100/105/110 Mana",
             "name": "Unraveled Earth"
         },
@@ -1137,6 +1137,49 @@
                     }
                 ]
             }
+        },
+        "13.15": {
+            "B": "",
+            "P": "",
+            "Q": {
+                "SpellName": "Q - Threaded Volley",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Magic Damage: ",
+                            "Before": "45/65/85/105/125 (+50% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "50/70/90/110/130 (+50% AP)"
+                        }
+                    }
+                ]
+            },
+            "W": "",
+            "E": {
+                "SpellName": "E - Unraveled Earth",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Cooldown: ",
+                            "Before": "18/17/16/15/14 seconds",
+                            "Indicator": " ⇒ ",
+                            "After": "16/15.5/15/14.5/14 seconds"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Damage to Monsters Modifier: ",
+                            "Before": "150%",
+                            "Indicator": " ⇒ ",
+                            "After": "175%"
+                        }
+                    }
+                ]
+            },
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -1149,7 +1192,8 @@
         "12.11",
         "12.13",
         "12.15",
-        "13.9"
+        "13.9",
+        "13.15"
     ],
     "ChampionName": "Taliyah"
 }

@@ -133,7 +133,7 @@
                 "parseInfo": [
                     {
                         "text": {
-                            "text": "20/25/30/35/40 {{0}} {{1}} physical damage",
+                            "text": "10/15/20/25/30 {{0}} {{1}} physical damage",
                             "scaleHolders": [
                                 {
                                     "scale": "(+20% AP)",
@@ -156,7 +156,7 @@
                     },
                     {
                         "text": {
-                            "text": "30/70/110/150/190 {{0}} {{1}} physical damage",
+                            "text": "20/60/100/140/180 {{0}} {{1}} physical damage",
                             "scaleHolders": [
                                 {
                                     "scale": "(+60% AP)",
@@ -704,6 +704,36 @@
                     }
                 ]
             }
+        },
+        "13.15": {
+            "B": "",
+            "P": "",
+            "Q": "",
+            "W": {
+                "SpellName": "W - Winter’s Wrath",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Initial Cast Damage: ",
+                            "Before": "20/25/30/35/40 (+20% AP) (+2% of maximum health)",
+                            "Indicator": " ⇒ ",
+                            "After": "10/15/20/25/30 (+20% AP) (+2% of maximum health)"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Second Cast Damage: ",
+                            "Before": "30/70/110/150/190 (+60% AP) (+6% of maximum health)",
+                            "Indicator": " ⇒ ",
+                            "After": "20/60/100/140/180 (+60% AP) (+6% of maximum health)"
+                        }
+                    }
+                ]
+            },
+            "E": "",
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -718,7 +748,8 @@
         "11.19",
         "12.8",
         "12.10",
-        "13.7"
+        "13.7",
+        "13.15"
     ],
     "ChampionName": "Sejuani"
 }

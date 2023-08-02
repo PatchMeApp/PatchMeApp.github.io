@@ -1,7 +1,7 @@
 {
     "stats": {
         "hp": {
-            "base": 670,
+            "base": 640,
             "increment": 102
         },
         "mp": {
@@ -92,7 +92,7 @@
                             "text": "40/55/70/85/100 {{0}} {{1}} physical damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+30% AP)",
+                                    "scale": "(+ 20% AP)",
                                     "scaleId": "AP"
                                 },
                                 {
@@ -118,7 +118,7 @@
         },
         "W": {
             "_rawTooltip": {
-                "fullTooltip": "Kai'Sa fires a void blast that deals [[0]], applies 2 stacks of [[1]], and grants [[2]] of the first enemy hit for 4 seconds.<br /><br />[[3]]: Kai'Sa instead applies 3 stacks of [[4]] and hitting a champion reduces the Cooldown by 77%.",
+                "fullTooltip": "Kai'Sa fires a void blast that deals [[0]], applies 2 stacks of [[1]], and grants [[2]] of the first enemy hit for 4 seconds.<br /><br />[[3]]: Kai'Sa instead applies 3 stacks of [[4]] and hitting a champion reduces the Cooldown by 75%.",
                 "parseInfo": [
                     {
                         "text": {
@@ -739,6 +739,71 @@
             "E": "",
             "R": ""
         },
+        "13.15": {
+            "B": {
+                "SpellName": "Base Stats",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Base Health: ",
+                            "Before": "670",
+                            "Indicator": " ⇒ ",
+                            "After": "640"
+                        }
+                    }
+                ]
+            },
+            "P": "",
+            "Q": {
+                "SpellName": "Q - Icathian Rain",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Damage per Missile: ",
+                            "Before": "40/55/70/85/100 (+50% bonus AD) (+ 30% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "40/55/70/85/100 (+50% bonus AD) (+ 20% AP)"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Maximum Single-Target Damage (Unevolved): ",
+                            "Before": "90/123.75/157.5/191.25/225 (+112.5% bonus AD) (+67.5% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "90/123.75/157.5/191.25/225 (+112.5% bonus AD) (+45% AP)"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Maximum Single-Target Damage (Evolved): ",
+                            "Before": "150/206.25/262.5/318.75/375 (+187.5% bonus AD) (+112.5% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "150/206.25/262.5/318.75/375 (+187.5% bonus AD) (+75% AP)"
+                        }
+                    }
+                ]
+            },
+            "W": {
+                "SpellName": "W - Void Seeker",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Cooldown Reduction after Evolution: ",
+                            "Before": "77%",
+                            "Indicator": " ⇒ ",
+                            "After": "75% (Notethis is functionally an 8.7% cooldown increase on hit)"
+                        }
+                    }
+                ]
+            },
+            "E": "",
+            "R": ""
+        },
         "13.1B": {
             "B": {
                 "SpellName": "Base Stats",
@@ -795,7 +860,8 @@
         "12.16",
         "12.19",
         "13.1B",
-        "13.12"
+        "13.12",
+        "13.15"
     ],
     "ChampionName": "Kai'Sa"
 }
