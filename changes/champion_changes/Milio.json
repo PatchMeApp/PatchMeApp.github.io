@@ -80,10 +80,10 @@
                     },
                     {
                         "text": {
-                            "text": "90/135/180/225/270 {{0}} magic damage",
+                            "text": "80/145/210/275/340 {{0}} magic damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+ 90% AP)",
+                                    "scale": "(+120% AP)",
                                     "scaleId": "AP"
                                 }
                             ]
@@ -143,10 +143,10 @@
                 "parseInfo": [
                     {
                         "text": {
-                            "text": "60/80/100/120/140 {{0}} Shield",
+                            "text": "60/85/110/135/160 {{0}} Shield",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+25% AP)",
+                                    "scale": "(+30% AP)",
                                     "scaleId": "AP"
                                 }
                             ]
@@ -336,12 +336,47 @@
                 ]
             },
             "R": ""
+        },
+        "13.16": {
+            "B": "",
+            "P": "",
+            "Q": {
+                "SpellName": "Q - Ultra Mega Fire Kick",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Magic Damage: ",
+                            "Before": "90/135/180/225/270 (+90% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "80/145/210/275/340 (+120% AP)"
+                        }
+                    }
+                ]
+            },
+            "W": "",
+            "E": {
+                "SpellName": "E - Warm Hugs",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Shield Strength: ",
+                            "Before": "60/80/100/120/140 (+25% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "60/85/110/135/160 (+30% AP)"
+                        }
+                    }
+                ]
+            },
+            "R": ""
         }
     },
     "ChangePatches": [
         "13.6",
         "13.12",
-        "13.14"
+        "13.14",
+        "13.16"
     ],
     "ChampionName": "Milio"
 }

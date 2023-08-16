@@ -88,11 +88,11 @@
         },
         "Q": {
             "_rawTooltip": {
-                "fullTooltip": "Ekko throws a device dealing [[0]]. On hitting a champion or reaching the end of its range, it expands into a field that [[1]] enemies inside by 32/39/46/53/60%. After it expands, Ekko recalls it, dealing [[2]].",
+                "fullTooltip": "Ekko throws a device dealing [[0]]. On hitting a champion or reaching the end of its range, it expands into a field that [[1]] enemies inside by 40/45/50/55/60%. After it expands, Ekko recalls it, dealing [[2]].",
                 "parseInfo": [
                     {
                         "text": {
-                            "text": "60/75/90/105/120 {{0}} magic damage",
+                            "text": "70/85/100/115/130 {{0}} magic damage",
                             "scaleHolders": [
                                 {
                                     "scale": "(+30% AP)",
@@ -173,7 +173,7 @@
                     },
                     {
                         "text": {
-                            "text": "70/90/110/130/150 {{0}} Shield",
+                            "text": "100/120/140/160/180 {{0}} Shield",
                             "scaleHolders": [
                                 {
                                     "scale": "(+150% AP)",
@@ -434,6 +434,49 @@
                     }
                 ]
             }
+        },
+        "13.16": {
+            "B": "",
+            "P": "",
+            "Q": {
+                "SpellName": "Q - Timewinder",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Initial Magic Damage: ",
+                            "Before": "60/75/90/105/120 (+30% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "70/85/100/115/130 (+30% AP)"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Slow: ",
+                            "Before": "32/39/46/53/60%",
+                            "Indicator": " ⇒ ",
+                            "After": "40/45/50/55/60%"
+                        }
+                    }
+                ]
+            },
+            "W": {
+                "SpellName": "W - Parallel Convergence",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Shield Strength: ",
+                            "Before": "70/90/110/130/150 (+150% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "100/120/140/160/180 (+150% AP)"
+                        }
+                    }
+                ]
+            },
+            "E": "",
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -442,7 +485,8 @@
         "10.25",
         "11.17",
         "12.10",
-        "12.19"
+        "12.19",
+        "13.16"
     ],
     "ChampionName": "Ekko"
 }

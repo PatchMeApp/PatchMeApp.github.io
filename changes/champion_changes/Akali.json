@@ -89,7 +89,7 @@
                 "parseInfo": [
                     {
                         "text": {
-                            "text": "40/65/90/115/140 {{0}} {{1}} magic damage",
+                            "text": "45/70/95/120/145 {{0}} {{1}} magic damage",
                             "scaleHolders": [
                                 {
                                     "scale": "(+65% AD)",
@@ -113,7 +113,7 @@
                 ]
             },
             "cooldown": "1.5",
-            "cost": "130/115/100/85/70 Energy",
+            "cost": "110/100/90/80/70 Energy",
             "name": "Five Point Strike"
         },
         "W": {
@@ -856,6 +856,36 @@
             "W": "",
             "E": "",
             "R": ""
+        },
+        "13.16": {
+            "B": "",
+            "P": "",
+            "Q": {
+                "SpellName": "Q - Five Point Strike",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Energy Cost: ",
+                            "Before": "130/115/100/85/70",
+                            "Indicator": " ⇒ ",
+                            "After": "110/100/90/80/70"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Damage: ",
+                            "Before": "40/65/90/115/140 (+65% AD) (+60% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "45/70/95/120/145 (+65% AD) (+60% AP)"
+                        }
+                    }
+                ]
+            },
+            "W": "",
+            "E": "",
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -875,7 +905,8 @@
         "11.22",
         "12.10",
         "12.15",
-        "13.11"
+        "13.11",
+        "13.16"
     ],
     "ChampionName": "Akali"
 }

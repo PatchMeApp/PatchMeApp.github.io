@@ -170,7 +170,7 @@
                     },
                     {
                         "text": {
-                            "text": "Malefic Visions executes minions below 15 - 45 {{0}} health.",
+                            "text": "Malefic Visions executes minions below 10 - 30 {{0}} health.",
                             "scaleHolders": [
                                 {
                                     "scale": "(based on champion level)",
@@ -335,12 +335,43 @@
                 ]
             },
             "R": ""
+        },
+        "13.16": {
+            "B": "",
+            "P": "",
+            "Q": "",
+            "W": "",
+            "E": {
+                "SpellName": "E - Malefic Visions",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Damage Tick Rate: ",
+                            "Before": "0.5 seconds",
+                            "Indicator": " ⇒ ",
+                            "After": "0.25 seconds"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Minion Execute Threshold: ",
+                            "Before": "15-45 health (based on level)",
+                            "Indicator": " ⇒ ",
+                            "After": "10-30 (based on level)"
+                        }
+                    }
+                ]
+            },
+            "R": ""
         }
     },
     "ChangePatches": [
         "11.14",
         "12.10",
-        "12.21"
+        "12.21",
+        "13.16"
     ],
     "ChampionName": "Malzahar"
 }

@@ -92,7 +92,7 @@
                             "text": "70/105/140/175/210 {{0}} magic damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+40% AP)",
+                                    "scale": "(+50% AP)",
                                     "scaleId": "AP"
                                 }
                             ]
@@ -176,7 +176,7 @@
                             "text": "80/120/160/200/240 {{0}} magic damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+40% AP)",
+                                    "scale": "(+50% AP)",
                                     "scaleId": "AP"
                                 }
                             ]
@@ -641,6 +641,53 @@
                 ]
             },
             "R": ""
+        },
+        "13.16": {
+            "B": {
+                "SpellName": "Base Stats",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Health Growth: ",
+                            "Before": "88",
+                            "Indicator": " ⇒ ",
+                            "After": "92"
+                        }
+                    }
+                ]
+            },
+            "P": "",
+            "Q": {
+                "SpellName": "Q - Glitterlance",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Magic Damage: ",
+                            "Before": "70/105/140/175/210 (+40% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "70/105/140/175/210 (+50% AP)"
+                        }
+                    }
+                ]
+            },
+            "W": "",
+            "E": {
+                "SpellName": "E - Help, Pix!",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Magic Damage: ",
+                            "Before": "80/120/160/200/240 (+40% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "80/120/160/200/240 (+50% AP)"
+                        }
+                    }
+                ]
+            },
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -654,7 +701,8 @@
         "12.2",
         "12.10",
         "12.18",
-        "13.12"
+        "13.12",
+        "13.16"
     ],
     "ChampionName": "Lulu"
 }

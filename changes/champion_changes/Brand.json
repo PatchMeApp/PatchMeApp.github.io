@@ -45,7 +45,7 @@
         "P": {
             "cooldown": "",
             "_rawTooltip": {
-                "fullTooltip": "Innate: Brand's abilities apply a stack of Ablaze to enemies hit that lasts 4 seconds, which refreshes on subsequent hits and stacks up to 3 times. Subsequent abilities used against a target with Ablaze are empowered. Killing an enemy afflicted with Ablaze or with an ability restores 20 − 40 (based on level) mana.<br>Ablaze: While afflicted with Ablaze, the target is dealt[ [[2]] over 3.25 seconds ]as magic damage. Ablaze deals [[0]] per tick to monsters, capped at 80.<br>Upon applying 3 stacks of Ablaze to a large monster or enemy champion, the fire becomes unstable, forming an area around the target that grants sight and explodes after 2 seconds, consuming all stacks. All enemies within the detonation are dealt [[3]] [[1]] and applied a stack of Ablaze. The explosion will still occur if the target dies to the ability applying the third stack or during the delay.<br>Brand cannot stack Ablaze more than once on enemies who have exploded in the last 4 seconds.",
+                "fullTooltip": "Innate: Brand's abilities apply a stack of Ablaze to enemies hit that lasts 4 seconds, which refreshes on subsequent hits and stacks up to 3 times. Subsequent abilities used against a target with Ablaze are empowered. Killing an enemy afflicted with Ablaze or with an ability restores 30 − 50 (based on level) mana.<br>Ablaze: While afflicted with Ablaze, the target is dealt[ [[2]] over 3.25 seconds ]as magic damage. Ablaze deals [[0]] per tick to monsters, capped at 80.<br>Upon applying 3 stacks of Ablaze to a large monster or enemy champion, the fire becomes unstable, forming an area around the target that grants sight and explodes after 2 seconds, consuming all stacks. All enemies within the detonation are dealt [[3]] [[1]] and applied a stack of Ablaze. The explosion will still occur if the target dies to the ability applying the third stack or during the delay.<br>Brand cannot stack Ablaze more than once on enemies who have exploded in the last 4 seconds.",
                 "parseInfo": [
                     {
                         "text": {
@@ -98,7 +98,7 @@
                             "text": "80/110/140/170/200 {{0}} magic damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+55% AP)",
+                                    "scale": "(+65% AP)",
                                     "scaleId": "AP"
                                 }
                             ]
@@ -175,7 +175,7 @@
                             "text": "70/95/120/145/170 {{0}} magic damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+45% AP)",
+                                    "scale": "(+55% AP)",
                                     "scaleId": "AP"
                                 }
                             ]
@@ -480,6 +480,53 @@
             "W": "",
             "E": "",
             "R": ""
+        },
+        "13.16": {
+            "B": "",
+            "P": {
+                "SpellName": "Passive - Blaze",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Mana Restoration: ",
+                            "Before": "20-40 (based on level)",
+                            "Indicator": " ⇒ ",
+                            "After": "30-50 (based on level)"
+                        }
+                    }
+                ]
+            },
+            "Q": {
+                "SpellName": "Q - Sear",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Magic Damage: ",
+                            "Before": "80/110/140/170/200 (+55% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "80/110/140/170/200 (+65% AP)"
+                        }
+                    }
+                ]
+            },
+            "W": "",
+            "E": {
+                "SpellName": "E - Conflagration",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Magic Damage: ",
+                            "Before": "70/95/120/145/170 (+45% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "70/95/120/145/170 (+55% AP)"
+                        }
+                    }
+                ]
+            },
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -488,7 +535,8 @@
         "10.23",
         "12.3",
         "12.10",
-        "12.11"
+        "12.11",
+        "13.16"
     ],
     "ChampionName": "Brand"
 }

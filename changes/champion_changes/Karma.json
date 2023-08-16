@@ -59,7 +59,7 @@
                             "text": "70/120/170/220/270 {{0}} magic damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+40% AP)",
+                                    "scale": "(+50% AP)",
                                     "scaleId": "AP"
                                 }
                             ]
@@ -181,10 +181,10 @@
                     },
                     {
                         "text": {
-                            "text": "35/140/245/350 {{0}} magic damage",
+                            "text": "35/140/245/350  {{0}} magic damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+60% AP)",
+                                    "scale": "(+70% AP)",
                                     "scaleId": "AP"
                                 }
                             ]
@@ -252,7 +252,7 @@
                     }
                 ]
             },
-            "cooldown": "40/38/36/34",
+            "cooldown": "40/37/34/31",
             "cost": "No Cost",
             "name": "Mantra"
         }
@@ -726,6 +726,49 @@
                 ]
             },
             "R": ""
+        },
+        "13.16": {
+            "B": "",
+            "P": "",
+            "Q": {
+                "SpellName": "Q - Inner Flame",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Magic Damage: ",
+                            "Before": "70/120/170/220/270 (+40% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "70/120/170/220/270 (+50% AP)"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Ultimate Empowered Q: ",
+                            "Before": "35/140/245/350 (+60% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "35/140/245/350 (+70% AP)"
+                        }
+                    }
+                ]
+            },
+            "W": "",
+            "E": "",
+            "R": {
+                "SpellName": "R - Mantra",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Cooldown: ",
+                            "Before": "40/38/36/34 seconds",
+                            "Indicator": " ⇒ ",
+                            "After": "40/37/34/31 seconds"
+                        }
+                    }
+                ]
+            }
         }
     },
     "ChangePatches": [
@@ -740,7 +783,8 @@
         "11.14",
         "11.16",
         "11.18",
-        "12.10"
+        "12.10",
+        "13.16"
     ],
     "ChampionName": "Karma"
 }

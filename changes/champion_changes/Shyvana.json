@@ -138,10 +138,10 @@
                     },
                     {
                         "text": {
-                            "text": "20/32/45/57/70 {{0}} magic damage per second",
+                            "text": "20/30/40/50/60 {{0}} magic damage per second",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+30% Bonus AD)",
+                                    "scale": "(+20% Bonus AD)",
                                     "scaleId": "AD"
                                 }
                             ]
@@ -150,10 +150,10 @@
                     },
                     {
                         "text": {
-                            "text": "5/8/11.25/14.25/17.5 {{0}} magic damage",
+                            "text": "5/7/9/11/13 {{0}} magic damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+7.5% Bonus AD)",
+                                    "scale": "(+5% Bonus AD)",
                                     "scaleId": "AD"
                                 }
                             ]
@@ -797,6 +797,36 @@
             "W": "",
             "E": "",
             "R": ""
+        },
+        "13.16": {
+            "B": "",
+            "P": "",
+            "Q": "",
+            "W": {
+                "SpellName": "W - Burnout",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Damage per Second: ",
+                            "Before": "20/32/45/57/70 (+30% Bonus AD)",
+                            "Indicator": " ⇒ ",
+                            "After": "20/30/40/50/60 (+20% Bonus AD)"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "On-Hit Damage: ",
+                            "Before": "5/8/11.25/14.25/17.5 (+7.5% Bonus AD)",
+                            "Indicator": " ⇒ ",
+                            "After": "5/7/9/11/13 (+5% Bonus AD)"
+                        }
+                    }
+                ]
+            },
+            "E": "",
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -810,7 +840,8 @@
         "12.19",
         "12.23",
         "13.14",
-        "13.15"
+        "13.15",
+        "13.16"
     ],
     "ChampionName": "Shyvana"
 }
