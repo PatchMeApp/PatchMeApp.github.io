@@ -21,7 +21,7 @@
             "increment": 0.55
         },
         "mpRegen": {
-            "base": 8,
+            "base": 7,
             "increment": 0.8
         },
         "attackSpeed": {
@@ -49,14 +49,14 @@
                 "parseInfo": [
                     {
                         "text": {
-                            "text": "20 − 190 {{0}} {{1}} bonus magic damage",
+                            "text": "30 − 200 {{0}} {{1}} bonus magic damage",
                             "scaleHolders": [
                                 {
                                     "scale": "(based on level)",
                                     "scaleId": "level"
                                 },
                                 {
-                                    "scale": "(+ 20% AP)",
+                                    "scale": "(+ 25% AP)",
                                     "scaleId": "AP"
                                 }
                             ]
@@ -92,7 +92,7 @@
                     }
                 ]
             },
-            "cooldown": "11",
+            "cooldown": "11/10.5/10/9.5/9",
             "cost": "50 Mana",
             "name": "Light Binding"
         },
@@ -145,10 +145,10 @@
                     },
                     {
                         "text": {
-                            "text": "70/120/170/220/270 {{0}} magic damage",
+                            "text": "65/115/165/215/265 {{0}} magic damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+ 80% AP)",
+                                    "scale": "(+80% AP)",
                                     "scaleId": "AP"
                                 }
                             ]
@@ -446,6 +446,66 @@
             "E": "",
             "R": ""
         },
+        "13.17": {
+            "B": {
+                "SpellName": "Base Stats",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Base Mana Regeneration: ",
+                            "Before": "8",
+                            "Indicator": " ⇒ ",
+                            "After": "7"
+                        }
+                    }
+                ]
+            },
+            "P": {
+                "SpellName": "Passive - Illumination",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Magic Damage: ",
+                            "Before": "20-190 (based on level) (+20% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "30-200 (based on level) (+25% AP)"
+                        }
+                    }
+                ]
+            },
+            "Q": {
+                "SpellName": "Q - Light Binding",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Cooldown: ",
+                            "Before": "11 seconds at all ranks",
+                            "Indicator": " ⇒ ",
+                            "After": "11/10.5/10/9.5/9 seconds"
+                        }
+                    }
+                ]
+            },
+            "W": "",
+            "E": {
+                "SpellName": "E - Lucent Singularity",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Magic Damage: ",
+                            "Before": "70/120/170/220/270 (+80% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "65/115/165/215/265 (+80% AP)"
+                        }
+                    }
+                ]
+            },
+            "R": ""
+        },
         "12.23": {
             "B": "",
             "P": "",
@@ -488,7 +548,8 @@
         "11.10",
         "11.21",
         "12.10",
-        "12.23"
+        "12.23",
+        "13.17"
     ],
     "ChampionName": "Lux"
 }

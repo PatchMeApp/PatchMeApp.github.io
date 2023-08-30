@@ -117,10 +117,10 @@
                 "parseInfo": [
                     {
                         "text": {
-                            "text": "90/135/180/225/270 {{0}} physical damage",
+                            "text": "85/130/175/220/265 {{0}} physical damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+130% Bonus AD)",
+                                    "scale": "(+110% bonus AD)",
                                     "scaleId": "AD"
                                 }
                             ]
@@ -859,6 +859,40 @@
                 ]
             },
             "R": ""
+        },
+        "13.17": {
+            "B": "",
+            "P": "",
+            "Q": {
+                "SpellName": "QoL Change",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "New Me, New Health and Mana Bar: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "Kayn now restores himself to maximum health and mana upon transforming into Shadow Assassin or Darkin Slayer. (NoteThis feature is disabled on ARAM.)"
+                        }
+                    }
+                ]
+            },
+            "W": {
+                "SpellName": "W - Blade's Reach",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Physical Damage: ",
+                            "Before": "90/135/180/225/270 (+130% bonus AD)",
+                            "Indicator": " ⇒ ",
+                            "After": "85/130/175/220/265 (+110% bonus AD)"
+                        }
+                    }
+                ]
+            },
+            "E": "",
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -878,7 +912,8 @@
         "12.18",
         "12.23",
         "13.3",
-        "13.8"
+        "13.8",
+        "13.17"
     ],
     "ChampionName": "Kayn"
 }

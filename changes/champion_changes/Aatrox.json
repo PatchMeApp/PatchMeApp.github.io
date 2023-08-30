@@ -45,7 +45,7 @@
         "P": {
             "cooldown": "24 - 12 (Level 1-18)",
             "_rawTooltip": {
-                "fullTooltip": "Innate: Aatrox periodically empowers his next basic attack to gain 50 bonus range and deal [[1]] as bonus physical damage, capped at 100 against monsters. Aatrox heals for [[0]] dealt, reduced to 25% against minions.<br>Whenever Aatrox hits at least one enemy champion or large monster with a basic attack on-hit or an ability, the cooldown of Deathbringer Stance is reduced by 2 seconds, modified to 4 if he hits with the Sweetspot of The Darkin Blade.",
+                "fullTooltip": "Innate: Aatrox periodically empowers his next basic attack to gain 50 bonus range and deal [[1]] as bonus magic damage, capped at 100 against monsters. Aatrox heals for [[0]] dealt, reduced to 25% against minions.<br>Whenever Aatrox hits at least one enemy champion or large monster with a basic attack on-hit or an ability, the cooldown of Deathbringer Stance is reduced by 2 seconds, modified to 4 if he hits with the Sweetspot of The Darkin Blade.",
                 "parseInfo": [
                     {
                         "text": {
@@ -135,7 +135,7 @@
                     },
                     {
                         "text": {
-                            "text": "30/40/50/60/70 {{0}} physical damage",
+                            "text": "30/40/50/60/70 {{0}} magic damage",
                             "scaleHolders": [
                                 {
                                     "scale": "(+40% AD)",
@@ -143,7 +143,7 @@
                                 }
                             ]
                         },
-                        "type": "physicalDamage"
+                        "type": "magicDamage"
                     },
                     {
                         "text": {
@@ -748,6 +748,40 @@
             "W": "",
             "E": "",
             "R": ""
+        },
+        "13.17": {
+            "B": "",
+            "P": {
+                "SpellName": "Passive - Deathbringer Stance",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Damage Type: ",
+                            "Before": "Physical",
+                            "Indicator": " ⇒ ",
+                            "After": "Magic"
+                        }
+                    }
+                ]
+            },
+            "Q": "",
+            "W": {
+                "SpellName": "W - Infernal Chains",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Damage Type: ",
+                            "Before": "Physical",
+                            "Indicator": " ⇒ ",
+                            "After": "Magic"
+                        }
+                    }
+                ]
+            },
+            "E": "",
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -765,7 +799,8 @@
         "13.5",
         "13.9",
         "13.14",
-        "13.15"
+        "13.15",
+        "13.17"
     ],
     "ChampionName": "Aatrox"
 }

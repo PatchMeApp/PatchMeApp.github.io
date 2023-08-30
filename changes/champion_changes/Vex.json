@@ -85,7 +85,7 @@
                 "parseInfo": [
                     {
                         "text": {
-                            "text": "60/105/150/195/240 {{0}} magic damage",
+                            "text": "70/115/160/205/250 {{0}} magic damage",
                             "scaleHolders": [
                                 {
                                     "scale": "(+70% AP)",
@@ -145,7 +145,7 @@
                     }
                 ]
             },
-            "cooldown": "20/18/16/14/12",
+            "cooldown": "16/15/14/13/12",
             "cost": "75 Mana",
             "name": "Personal Space"
         },
@@ -326,12 +326,47 @@
             "W": "",
             "E": "",
             "R": ""
+        },
+        "13.17": {
+            "B": "",
+            "P": "",
+            "Q": {
+                "SpellName": "Q - Mistral Bolt",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Magic Damage: ",
+                            "Before": "60/105/150/195/240 (+70% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "70/115/160/205/250 (+70% AP)"
+                        }
+                    }
+                ]
+            },
+            "W": {
+                "SpellName": "W - Personal Space",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Cooldown: ",
+                            "Before": "20/18/16/14/12 seconds",
+                            "Indicator": " ⇒ ",
+                            "After": "16/15/14/13/12 seconds"
+                        }
+                    }
+                ]
+            },
+            "E": "",
+            "R": ""
         }
     },
     "ChangePatches": [
         "11.19",
         "12.10",
-        "12.13"
+        "12.13",
+        "13.17"
     ],
     "ChampionName": "Vex"
 }

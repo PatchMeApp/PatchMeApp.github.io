@@ -49,7 +49,7 @@
                 "parseInfo": [
                     {
                         "text": {
-                            "text": "10% of her maximum health",
+                            "text": "12% of her maximum health",
                             "scaleHolders": []
                         },
                         "type": "Health"
@@ -128,7 +128,7 @@
         },
         "W": {
             "_rawTooltip": {
-                "fullTooltip": "[[0]] Every 3rd Attack on the same target deals an additional [[1]], removes [[2]] and grants Vi [[3]] for 4 seconds. It also reduces the remaining Cooldown of [[4]] by 3 seconds.",
+                "fullTooltip": "[[0]] Every 3rd Attack on the same target deals an additional [[1]], removes [[2]] and grants Vi [[3]] for 4 seconds. It also reduces the remaining Cooldown of [[4]] by 4 seconds.",
                 "parseInfo": [
                     {
                         "text": {
@@ -198,7 +198,7 @@
                     }
                 ]
             },
-            "cooldown": "1",
+            "cooldown": "1 (Recharge: 12/11/10/9/8)",
             "cost": "26/32/38/44/50 Mana",
             "name": "Relentless Force"
         },
@@ -222,10 +222,10 @@
                     },
                     {
                         "text": {
-                            "text": "150/325/500 {{0}} physical damage",
+                            "text": "150/275/400 {{0}} physical damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+110% Bonus AD)",
+                                    "scale": "(+90% Bonus AD)",
                                     "scaleId": "AD"
                                 }
                             ]
@@ -514,6 +514,66 @@
                     }
                 ]
             }
+        },
+        "13.17": {
+            "B": "",
+            "P": {
+                "SpellName": "Passive - Blast Shield",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Shield Strength: ",
+                            "Before": "10% of Vi’s maximum health",
+                            "Indicator": " ⇒ ",
+                            "After": "12% of Vi’s maximum health"
+                        }
+                    }
+                ]
+            },
+            "Q": "",
+            "W": {
+                "SpellName": "W - Denting Blows",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Passive Cooldown Reduction: ",
+                            "Before": "3 seconds",
+                            "Indicator": " ⇒ ",
+                            "After": "4 seconds"
+                        }
+                    }
+                ]
+            },
+            "E": {
+                "SpellName": "E - Relentless Force",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Cooldown: ",
+                            "Before": "14/12.5/11/9.5/8 seconds",
+                            "Indicator": " ⇒ ",
+                            "After": "12/11/10/9/8 seconds"
+                        }
+                    }
+                ]
+            },
+            "R": {
+                "SpellName": "R - Cease and Desist",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Physical Damage: ",
+                            "Before": "150/325/500 (+110% bonus AD)",
+                            "Indicator": " ⇒ ",
+                            "After": "150/275/400 (+90% bonus AD)"
+                        }
+                    }
+                ]
+            }
         }
     },
     "ChangePatches": [
@@ -522,7 +582,8 @@
         "11.22",
         "12.10",
         "13.7",
-        "13.13"
+        "13.13",
+        "13.17"
     ],
     "ChampionName": "Vi"
 }

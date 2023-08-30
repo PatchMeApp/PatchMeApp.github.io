@@ -157,7 +157,7 @@
         },
         "E": {
             "_rawTooltip": {
-                "fullTooltip": "Kindred weakens an enemy, [[0]] them by 50% (+5% per 100 AP) for 1 second.<br /><br />Kindred's third Attack against the target within 4 seconds of each other directs Wolf to pounce on the enemy, dealing [[1]] plus [[2]].<br /><br />Wolf's pounce critically strikes for [[3]] plus [[4]] instead if they are below 25% (+50% Crit Chance) Health.",
+                "fullTooltip": "Kindred weakens an enemy, [[0]] them by 30% (+5% per 100 AP) for 1 second.<br /><br />Kindred's third Attack against the target within 4 seconds of each other directs Wolf to pounce on the enemy, dealing [[1]] plus [[2]].<br /><br />Wolf's pounce critically strikes for [[3]] plus [[4]] instead if they are below 25% (+50% Crit Chance) Health.",
                 "parseInfo": [
                     {
                         "text": {
@@ -180,7 +180,7 @@
                     },
                     {
                         "text": {
-                            "text": "8% {{0}} missing Health physical damage",
+                            "text": "5% {{0}} missing Health physical damage",
                             "scaleHolders": [
                                 {
                                     "scale": "(+0.5% per stack of Mark of the Kindred)",
@@ -605,6 +605,36 @@
             "E": "",
             "R": ""
         },
+        "13.17": {
+            "B": "",
+            "P": "",
+            "Q": "",
+            "W": "",
+            "E": {
+                "SpellName": "E - Mounting Dread",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Physical Damage: ",
+                            "Before": "80/100/120/140/160 (+80% bonus AD) (+8% (+0.5% per Mark Mark) target’s missing health)",
+                            "Indicator": " ⇒ ",
+                            "After": "80/100/120/140/160 (+80% bonus AD) (+5% (+0.5% per Mark Mark) target’s missing health)"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Slow: ",
+                            "Before": "50% (+5% per 100 AP) for 1 second",
+                            "Indicator": " ⇒ ",
+                            "After": "30% (+5% per 100 AP) for 1 second"
+                        }
+                    }
+                ]
+            },
+            "R": ""
+        },
         "12.22": {
             "B": "",
             "P": "",
@@ -636,7 +666,8 @@
         "13.1B",
         "13.10",
         "13.13",
-        "13.14"
+        "13.14",
+        "13.17"
     ],
     "ChampionName": "Kindred"
 }

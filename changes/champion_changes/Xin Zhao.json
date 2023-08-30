@@ -45,7 +45,7 @@
         "P": {
             "cooldown": "",
             "_rawTooltip": {
-                "fullTooltip": "Innate: Every third basic attack or Wind Becomes Lightning strike deals [[0]] and heals Xin Zhao for 6 − 74 (based on level) (+ 7% AD) (+ 55% AP).",
+                "fullTooltip": "Innate: Every third basic attack or Wind Becomes Lightning strike deals [[0]] and heals Xin Zhao for [[1]].",
                 "parseInfo": [
                     {
                         "text": {
@@ -58,6 +58,22 @@
                             ]
                         },
                         "type": "physicalDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "3/3.5/4% {{0}} {{1}} of maximum health",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(levels 1/6/11)",
+                                    "scaleId": "1/6/11"
+                                },
+                                {
+                                    "scale": "(+65% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "Health"
                     }
                 ]
             },
@@ -734,6 +750,27 @@
                 ]
             },
             "R": ""
+        },
+        "13.17": {
+            "B": "",
+            "P": {
+                "SpellName": "Passive - Determination",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Heal on Third Stack: ",
+                            "Before": "6-74 (based on level) (+10% AD) (+65% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "3/3.5/4% (levels 1/6/11) (+65% AP) of maximum health"
+                        }
+                    }
+                ]
+            },
+            "Q": "",
+            "W": "",
+            "E": "",
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -746,7 +783,8 @@
         "12.5",
         "12.10",
         "12.11",
-        "12.21"
+        "12.21",
+        "13.17"
     ],
     "ChampionName": "Xin Zhao"
 }

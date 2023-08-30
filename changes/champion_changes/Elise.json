@@ -45,14 +45,14 @@
         "P": {
             "cooldown": "",
             "_rawTooltip": {
-                "fullTooltip": "Innate - Human Form: Elise gains one dormant Spiderling whenever she hits an enemy with an ability, storing up to 2 / 3 / 4 / 5 (based on Human Form's Rank).<br>Innate - Spider Form: Elise's basic attacks deal [[0]] and heal her for 4 / 6 / 8 / 10 (based on Spider Form's Rank) (+ 8% AP) on-hit.<br>See Pets for more details about Spiderlings.",
+                "fullTooltip": "Innate - Human Form: Elise gains one dormant Spiderling whenever she hits an enemy with an ability, storing up to 2 / 3 / 4 / 5 (based on Human Form's Rank).<br>Innate - Spider Form: Elise's basic attacks deal [[0]] and heal her for 6 / 8 / 10 / 12 (based on Spider Form's Rank) (+ 8% AP) on-hit.<br>See Pets for more details about Spiderlings.",
                 "parseInfo": [
                     {
                         "text": {
-                            "text": "10 / 20 / 30 / 40 {{0}} {{1}} bonus magic damage",
+                            "text": "12 / 22 / 32 / 42 {{0}} {{1}} bonus magic damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(based on Spider Form's Rank)",
+                                    "scale": "(based on Human Form's Rank)",
                                     "scaleId": "Rank"
                                 },
                                 {
@@ -127,7 +127,7 @@
         },
         "E": {
             "_rawTooltip": {
-                "fullTooltip": "[[0]]: Elise fires a cocoon, [[1]] and revealing the first enemy hit for 1.6/1.7/1.8/1.9/2 seconds.",
+                "fullTooltip": "[[0]]: Elise fires a cocoon, [[1]] and revealing the first enemy hit for 1.6/1.8/2/2.2/2.4 seconds.",
                 "parseInfo": [
                     {
                         "text": {
@@ -492,6 +492,49 @@
                     }
                 ]
             }
+        },
+        "13.17": {
+            "B": "",
+            "P": {
+                "SpellName": "Passive - Spider Queen",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Bonus Magic Damage on Basic Attacks: ",
+                            "Before": "10/20/30/40 (+20% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "12/22/32/42 (+20% AP)"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "On-Hit Healing on Basic Attacks: ",
+                            "Before": "4/6/8/10 (+8% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "6/8/10/12 (+8% AP)"
+                        }
+                    }
+                ]
+            },
+            "Q": "",
+            "W": "",
+            "E": {
+                "SpellName": "E - Cocoon",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Stun Duration: ",
+                            "Before": "1.6/1.7/1.8/1.9/2 seconds",
+                            "Indicator": " ⇒ ",
+                            "After": "1.6/1.8/2/2.2/2.4 seconds"
+                        }
+                    }
+                ]
+            },
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -503,7 +546,8 @@
         "12.10",
         "12.13",
         "12.20",
-        "13.4"
+        "13.4",
+        "13.17"
     ],
     "ChampionName": "Elise"
 }

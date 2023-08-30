@@ -5,8 +5,8 @@
             "increment": 99
         },
         "mp": {
-            "base": 277,
-            "increment": 60
+            "base": 280,
+            "increment": 40
         },
         "armor": {
             "base": 32,
@@ -21,8 +21,8 @@
             "increment": 0.75
         },
         "mpRegen": {
-            "base": 6.5,
-            "increment": 0.6
+            "base": 7,
+            "increment": 0.8
         },
         "attackSpeed": {
             "base": 0.67,
@@ -82,7 +82,7 @@
                 ]
             },
             "cooldown": "4",
-            "cost": "30 Mana",
+            "cost": "28/26/24/22/20 Mana",
             "name": "Rampage"
         },
         "W": {
@@ -124,32 +124,22 @@
                     },
                     {
                         "text": {
-                            "text": "25 {{0}}% of damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+2% Bonus AD)",
-                                    "scaleId": "AD"
-                                }
-                            ]
+                            "text": "20% of damage",
+                            "scaleHolders": []
                         },
                         "type": "healing"
                     },
                     {
                         "text": {
-                            "text": "12.5 {{0}}% of damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+1% Bonus AD)",
-                                    "scaleId": "AD"
-                                }
-                            ]
+                            "text": "10% of damage",
+                            "scaleHolders": []
                         },
                         "type": "healing"
                     }
                 ]
             },
             "cooldown": "16/15.5/15/14.5/14",
-            "cost": "50/60/70/80/90 Mana",
+            "cost": "50/55/60/65/70 Mana",
             "name": "Spirit of Dread"
         },
         "E": {
@@ -1012,6 +1002,89 @@
             "E": "",
             "R": ""
         },
+        "13.17": {
+            "B": {
+                "SpellName": "Base Stats",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Base Mana: ",
+                            "Before": "277",
+                            "Indicator": " ⇒ ",
+                            "After": "280"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Mana Growth: ",
+                            "Before": "60",
+                            "Indicator": " ⇒ ",
+                            "After": "40"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Base Mana Regeneration: ",
+                            "Before": "6.5",
+                            "Indicator": " ⇒ ",
+                            "After": "7"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Mana Regeneration Growth: ",
+                            "Before": "0.6",
+                            "Indicator": " ⇒ ",
+                            "After": "0.8"
+                        }
+                    }
+                ]
+            },
+            "P": "",
+            "Q": {
+                "SpellName": "Q - Rampage",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Mana Cost: ",
+                            "Before": "30 at all ranks",
+                            "Indicator": " ⇒ ",
+                            "After": "28/26/24/22/20"
+                        }
+                    }
+                ]
+            },
+            "W": {
+                "SpellName": "W - Spirit of Dread",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Mana Cost: ",
+                            "Before": "50/60/70/80/90",
+                            "Indicator": " ⇒ ",
+                            "After": "50/55/60/65/70"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Omnivamp: ",
+                            "Before": "25% (+2% of 100 bonus AD) of damage dealt",
+                            "Indicator": " ⇒ ",
+                            "After": "20% of damage dealt (Notethis is still post-mitigation damage dealt)"
+                        }
+                    }
+                ]
+            },
+            "E": "",
+            "R": ""
+        },
         "12.23": {
             "B": "",
             "P": "",
@@ -1053,7 +1126,8 @@
         "12.17",
         "12.18",
         "12.23",
-        "13.14"
+        "13.14",
+        "13.17"
     ],
     "ChampionName": "Hecarim"
 }

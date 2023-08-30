@@ -1,7 +1,7 @@
 {
     "stats": {
         "hp": {
-            "base": 633,
+            "base": 650,
             "increment": 109
         },
         "mp": {
@@ -13,7 +13,7 @@
             "increment": 4.7
         },
         "spellBlock": {
-            "base": 28,
+            "base": 32,
             "increment": 2.05
         },
         "hpRegen": {
@@ -25,7 +25,7 @@
             "increment": 0.8
         },
         "attackSpeed": {
-            "base": 0.65,
+            "base": 0.625,
             "increment": 0.0113
         },
         "ms": {
@@ -100,7 +100,7 @@
                     },
                     {
                         "text": {
-                            "text": "30/43/56/69/82% Attack Speed",
+                            "text": "30/40/50/60/70% Attack Speed",
                             "scaleHolders": []
                         },
                         "type": "attackSpeed"
@@ -129,12 +129,12 @@
                 ]
             },
             "cooldown": "15",
-            "cost": "85 Mana",
+            "cost": "75 Mana",
             "name": "Overdrive"
         },
         "E": {
             "_rawTooltip": {
-                "fullTooltip": "Blitzcrank charges up their fist, causing their next Attack to [[0]] for 1 second(s) and deal [[1]].<br /><br />Monsters and Minions take an additional [[2]] bonus damage.",
+                "fullTooltip": "Blitzcrank charges up their fist, causing their next Attack to [[0]] for 1 second(s) and deal [[1]].<br /><br />",
                 "parseInfo": [
                     {
                         "text": {
@@ -145,22 +145,10 @@
                     },
                     {
                         "text": {
-                            "text": "175% AD {{0}} physical damage",
+                            "text": "200% AD {{0}} physical damage",
                             "scaleHolders": [
                                 {
                                     "scale": "(+25% AP)",
-                                    "scaleId": "AP"
-                                }
-                            ]
-                        },
-                        "type": "physicalDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "175% AD {{0}} physical damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+125% AP)",
                                     "scaleId": "AP"
                                 }
                             ]
@@ -170,7 +158,7 @@
                 ]
             },
             "cooldown": "9/8/7/6/5",
-            "cost": "40 Mana",
+            "cost": "25 Mana",
             "name": "Power Fist"
         },
         "R": {
@@ -186,11 +174,15 @@
                     },
                     {
                         "text": {
-                            "text": "50/100/150 {{0}} magic damage",
+                            "text": "50/100/150 {{0}} {{1}} magic damage",
                             "scaleHolders": [
                                 {
                                     "scale": "(+30/40/50% AP)",
                                     "scaleId": "AP"
+                                },
+                                {
+                                    "scale": "(+2% Maximum Mana)",
+                                    "scaleId": "Mana"
                                 }
                             ]
                         },
@@ -734,6 +726,133 @@
             },
             "E": "",
             "R": ""
+        },
+        "13.17": {
+            "B": {
+                "SpellName": "Base Stats",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Base Health: ",
+                            "Before": "633",
+                            "Indicator": " ⇒ ",
+                            "After": "650"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Magic Resistance: ",
+                            "Before": "28",
+                            "Indicator": " ⇒ ",
+                            "After": "32"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Base Attack Speed: ",
+                            "Before": "0.65",
+                            "Indicator": " ⇒ ",
+                            "After": "0.625"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Attack Speed Ratio: ",
+                            "Before": "0.7",
+                            "Indicator": " ⇒ ",
+                            "After": "0.625"
+                        }
+                    }
+                ]
+            },
+            "P": {
+                "SpellName": "Passive - Mana Barrier",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Shield Strength: ",
+                            "Before": "15-45% (based on level) of Maximum Mana",
+                            "Indicator": " ⇒ ",
+                            "After": "30% of Maximum Mana"
+                        }
+                    }
+                ]
+            },
+            "Q": "",
+            "W": {
+                "SpellName": "W - Overdrive",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Mana Cost: ",
+                            "Before": "85",
+                            "Indicator": " ⇒ ",
+                            "After": "75"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Bonus Attack Speed: ",
+                            "Before": "30/43/56/69/82%",
+                            "Indicator": " ⇒ ",
+                            "After": "30/40/50/60/70%"
+                        }
+                    }
+                ]
+            },
+            "E": {
+                "SpellName": "E - Power Fist",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Bonus Physical Damage: ",
+                            "Before": "75% AD (+25% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "100% AD (+25% AP)"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Mana Cost: ",
+                            "Before": "40",
+                            "Indicator": " ⇒ ",
+                            "After": "25"
+                        }
+                    },
+                    {
+                        "Tag": "REMOVED",
+                        "Change": {
+                            "Attribute": "Bonus Damage to Non-Champions: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "E no longer deals a bonus 150% AD (+125% AP) to non-champions"
+                        }
+                    }
+                ]
+            },
+            "R": {
+                "SpellName": "R - Static Field",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Passive Damage: ",
+                            "Before": "50/100/150 (+50% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "50/100/150 (+50% AP) (+2% Maximum Mana)"
+                        }
+                    }
+                ]
+            }
         }
     },
     "ChangePatches": [
@@ -747,7 +866,8 @@
         "12.12",
         "12.19",
         "12.20",
-        "12.21"
+        "12.21",
+        "13.17"
     ],
     "ChampionName": "Blitzcrank"
 }

@@ -2,7 +2,7 @@
     "stats": {
         "hp": {
             "base": 600,
-            "increment": 105
+            "increment": 110
         },
         "mp": {
             "base": 418,
@@ -125,7 +125,7 @@
                     },
                     {
                         "text": {
-                            "text": "60/105/150/195/240 {{0}} magic damage",
+                            "text": "70/120/170/220/270 {{0}} magic damage",
                             "scaleHolders": [
                                 {
                                     "scale": "(+70% AP)",
@@ -534,6 +534,40 @@
                     }
                 ]
             }
+        },
+        "13.17": {
+            "B": {
+                "SpellName": "Base Stats",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Health Growth: ",
+                            "Before": "105",
+                            "Indicator": " ⇒ ",
+                            "After": "110"
+                        }
+                    }
+                ]
+            },
+            "P": "",
+            "Q": "",
+            "W": {
+                "SpellName": "W - Command: Dissonance",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Magic Damage: ",
+                            "Before": "60/105/150/195/240 (+70% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "70/120/170/220/270 (+70% AP)"
+                        }
+                    }
+                ]
+            },
+            "E": "",
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -543,7 +577,8 @@
         "12.10",
         "13.1B",
         "13.4",
-        "13.12"
+        "13.12",
+        "13.17"
     ],
     "ChampionName": "Orianna"
 }

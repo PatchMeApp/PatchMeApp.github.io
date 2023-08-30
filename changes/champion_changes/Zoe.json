@@ -17,7 +17,7 @@
             "increment": 1.3
         },
         "hpRegen": {
-            "base": 6.5,
+            "base": 7.5,
             "increment": 0.6
         },
         "mpRegen": {
@@ -160,7 +160,7 @@
         },
         "E": {
             "_rawTooltip": {
-                "fullTooltip": "Zoe dropkicks a bubble that deals [[0]], lingering as a trap if it hits nothing. The bubble's range is extended when flying over terrain.<br /><br />After a delay, the victim falls [[1]] for 2 seconds. Attacks and Ability hits wake them up but deal double damage, up to [[2]].<br /><br />Enemies inflicted with sleep from Zoe’s Sleepy Trouble Bubble have their Magic Resist reduced by 20/22.5/25/27.5/30%",
+                "fullTooltip": "Zoe dropkicks a bubble that deals [[0]], lingering as a trap if it hits nothing. The bubble's range is extended when flying over terrain.<br /><br />After a delay, the victim falls [[1]] for 2 seconds. Attacks and Ability hits wake them up but deal double damage, up to [[2]].<br /><br />Enemies inflicted with sleep from Zoe’s Sleepy Trouble Bubble have their Magic Resist reduced by 30%",
                 "parseInfo": [
                     {
                         "text": {
@@ -436,6 +436,40 @@
                 ]
             },
             "R": ""
+        },
+        "13.17": {
+            "B": {
+                "SpellName": "Base Stats",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Base Health Regeneration: ",
+                            "Before": "6.5",
+                            "Indicator": " ⇒ ",
+                            "After": "7.5"
+                        }
+                    }
+                ]
+            },
+            "P": "",
+            "Q": "",
+            "W": "",
+            "E": {
+                "SpellName": "E - Sleepy Trouble Bubble",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Magic Resistance Reduction: ",
+                            "Before": "20/22.5/25/27.5/30%",
+                            "Indicator": " ⇒ ",
+                            "After": "30% at all ranks"
+                        }
+                    }
+                ]
+            },
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -445,7 +479,8 @@
         "12.8",
         "12.10",
         "12.16",
-        "13.1B"
+        "13.1B",
+        "13.17"
     ],
     "ChampionName": "Zoe"
 }

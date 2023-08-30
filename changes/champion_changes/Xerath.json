@@ -21,7 +21,7 @@
             "increment": 0.55
         },
         "mpRegen": {
-            "base": 8,
+            "base": 6.85,
             "increment": 0.8
         },
         "attackSpeed": {
@@ -45,7 +45,7 @@
         "P": {
             "cooldown": "16",
             "_rawTooltip": {
-                "fullTooltip": "Innate: Xerath periodically empowers his next basic attack to restore 30 − 195 (based on level) mana, doubled to 60 − 390 (based on level) against enemy champions.<br>Mana Surge does not trigger if Xerath would restore above his maximum mana.<br>Whenever Xerath kills a unit this Ability's cooldown is reduced by 2 seconds.",
+                "fullTooltip": "Innate: Xerath periodically empowers his next basic attack to restore 30 − 195 (based on level) mana, doubled to 60 − 390 (based on level) against enemy champions.<br>Mana Surge does not trigger if Xerath would restore above his maximum mana.<br>Whenever Xerath kills a unit this Ability's cooldown is reduced by 2.5 seconds.",
                 "parseInfo": []
             },
             "name": "Mana Surge"
@@ -138,7 +138,7 @@
                 ]
             },
             "cooldown": "14/13/12/11/10",
-            "cost": "70/80/90/100/110 Mana",
+            "cost": "80/90/100/110/120 Mana",
             "name": "Eye of Destruction"
         },
         "E": {
@@ -448,6 +448,53 @@
                     }
                 ]
             }
+        },
+        "13.17": {
+            "B": {
+                "SpellName": "Base Stats",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Base Mana Regeneration: ",
+                            "Before": "8",
+                            "Indicator": " ⇒ ",
+                            "After": "6.85"
+                        }
+                    }
+                ]
+            },
+            "P": {
+                "SpellName": "Passive - Mana Surge",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Cooldown Refunded on Unit Kill: ",
+                            "Before": "2 seconds",
+                            "Indicator": " ⇒ ",
+                            "After": "2.5 seconds"
+                        }
+                    }
+                ]
+            },
+            "Q": "",
+            "W": {
+                "SpellName": "W - Eye of Destruction",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Mana Cost: ",
+                            "Before": "70/80/90/100/110",
+                            "Indicator": " ⇒ ",
+                            "After": "80/90/100/110/120"
+                        }
+                    }
+                ]
+            },
+            "E": "",
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -455,7 +502,8 @@
         "11.9",
         "12.8",
         "12.10",
-        "13.14"
+        "13.14",
+        "13.17"
     ],
     "ChampionName": "Xerath"
 }

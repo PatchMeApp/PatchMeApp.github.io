@@ -1,7 +1,7 @@
 {
     "stats": {
         "hp": {
-            "base": 650,
+            "base": 635,
             "increment": 120
         },
         "mp": {
@@ -43,7 +43,7 @@
     },
     "spells": {
         "P": {
-            "cooldown": "25/20/15/10",
+            "cooldown": "30/25/20/15",
             "_rawTooltip": {
                 "fullTooltip": "Naafiri creates a Packmate every 25/20/15/10 (based on level) seconds that will Attack enemies that she targets for [[0]], increased to 8−39 (based on level) (+5.85% bonus AD) after she uses an Ability.<br>Hitting champions and large monsters with Abilities reduces this Ability's Cooldown by 4 seconds. Killing enemies reduces it by 1 second.<br>Naafiri summons the maximum number of Packmates when the game starts and upon respawning.",
                 "parseInfo": [
@@ -104,10 +104,10 @@
                     },
                     {
                         "text": {
-                            "text": "35/50/65/80/95 {{0}}",
+                            "text": "30/45/60/75/90 {{0}}",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+70% bonus AD)",
+                                    "scale": "(+40% bonus AD)",
                                     "scaleId": "AD"
                                 }
                             ]
@@ -116,7 +116,7 @@
                     },
                     {
                         "text": {
-                            "text": "70/100/130/160/190 {{0}} physical damage",
+                            "text": "60/90/100/130/180 {{0}} physical damage",
                             "scaleHolders": [
                                 {
                                     "scale": "(+140% bonus AD)",
@@ -128,7 +128,7 @@
                     },
                     {
                         "text": {
-                            "text": "45/65/85/105/125 {{0}} Health",
+                            "text": "45/60/75/90/105 {{0}} Health",
                             "scaleHolders": [
                                 {
                                     "scale": "(+40% bonus AD)",
@@ -215,7 +215,7 @@
                             "text": "35/50/65/80/95 {{0}} physical damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+60% Bonus AD)",
+                                    "scale": "(+50% Bonus AD)",
                                     "scaleId": "AD"
                                 }
                             ]
@@ -227,7 +227,7 @@
                             "text": "65/100/135/170/205 {{0}} physical damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+90% Bonus AD)",
+                                    "scale": "(+80% Bonus AD)",
                                     "scaleId": "AD"
                                 }
                             ]
@@ -462,11 +462,108 @@
             "W": "",
             "E": "",
             "R": ""
+        },
+        "13.17": {
+            "B": {
+                "SpellName": "Base Stats",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Base Health: ",
+                            "Before": "650",
+                            "Indicator": " ⇒ ",
+                            "After": "635"
+                        }
+                    }
+                ]
+            },
+            "P": {
+                "SpellName": "Passive - We are more",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Cooldown: ",
+                            "Before": "25-10 (based on level)",
+                            "Indicator": " ⇒ ",
+                            "After": "30-15 (based on level)"
+                        }
+                    },
+                    {
+                        "Tag": "NEW",
+                        "Change": {
+                            "Attribute": "Down Doggo: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "Naafiri’s Packmates will now take 100% bonus damage from melee attacks"
+                        }
+                    }
+                ]
+            },
+            "Q": {
+                "SpellName": "Q - Darkin Daggers",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Recast Minimum Damage: ",
+                            "Before": "35/50/65/80/95 (+70% bonus AD)",
+                            "Indicator": " ⇒ ",
+                            "After": "30/45/60/75/90 (+40% bonus AD)"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Recast Maximum Damage: ",
+                            "Before": "70/100/130/160/190 (+70% bonus AD)",
+                            "Indicator": " ⇒ ",
+                            "After": "60/90/100/130/180 (+70% bonus AD)"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Recast Heal Amount: ",
+                            "Before": "45/65/85/105/125 (+40% bonus AD)",
+                            "Indicator": " ⇒ ",
+                            "After": "45/60/75/90/105 (+40% bonus AD)"
+                        }
+                    }
+                ]
+            },
+            "W": "",
+            "E": {
+                "SpellName": "E - Eviscerate",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Dash Physical Damage: ",
+                            "Before": "35/50/65/80/95 (+60% bonus AD)",
+                            "Indicator": " ⇒ ",
+                            "After": "35/50/65/80/95 (+50% bonus AD)"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Flurry Physical Damage: ",
+                            "Before": "65/100/135/170/205 (+90% bonus AD)",
+                            "Indicator": " ⇒ ",
+                            "After": "65/100/135/170/205 (+80% bonus AD)"
+                        }
+                    }
+                ]
+            },
+            "R": ""
         }
     },
     "ChangePatches": [
         "13.14",
-        "13.16"
+        "13.16",
+        "13.17"
     ],
     "ChampionName": "Naafiri"
 }
