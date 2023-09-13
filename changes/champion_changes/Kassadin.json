@@ -206,7 +206,7 @@
                             "text": "70/90/110 {{0}} {{1}} magic damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+40% AP)",
+                                    "scale": "(+60% AP)",
                                     "scaleId": "AP"
                                 },
                                 {
@@ -575,6 +575,27 @@
                     }
                 ]
             }
+        },
+        "13.18": {
+            "B": "",
+            "P": "",
+            "Q": "",
+            "W": "",
+            "E": "",
+            "R": {
+                "SpellName": "R - Riftwalk",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Magic Damage: ",
+                            "Before": "70/90/110 (+40% AP) (+2% maximum mana)",
+                            "Indicator": " ⇒ ",
+                            "After": "70/90/110 (+60% AP) (+2% maximum mana)"
+                        }
+                    }
+                ]
+            }
         }
     },
     "ChangePatches": [
@@ -586,7 +607,8 @@
         "12.17",
         "12.23",
         "13.1B",
-        "13.3"
+        "13.3",
+        "13.18"
     ],
     "ChampionName": "Kassadin"
 }

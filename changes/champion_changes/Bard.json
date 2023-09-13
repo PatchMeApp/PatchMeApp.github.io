@@ -45,7 +45,7 @@
         "P": {
             "cooldown": "",
             "_rawTooltip": {
-                "fullTooltip": "Innate - Ancient Chimes: Bard's presence causes sacred chimes to appear at random locations and linger for up to 10 minutes. Collecting a chime grants Bard [[3]] out of combat for 7 seconds, stacking up to 5 times, with every other chime collected beyond the first granting an additional [[4]], up to a total of [[5]], 20 + (1 per minute after 5 minutes) experience, and 12% maximum mana. Bard empowers his Meeps each time he collects 5 chimes.<br>Innate - Meeps: Bard's presence attracts small spirits known as Meeps to his side. On-attack he consumes a Meep, dealing [[0]].<br>At [[1]]d enemies by 25% − 75% (based on number of Chimes) for 1 second.<br>At [[2]] to enemies within 150 units of his target as well as those in a cone behind them.<br>At 35 chimes, the cone's radius increases.<br>Meeps spawn every 8 − 4 (based on number of Chimes) seconds and Bard can keep up to 1 − 9 (based on number of Chimes) of them at a time.",
+                "fullTooltip": "Innate - Ancient Chimes: Bard's presence causes sacred chimes to appear at random locations and linger for up to 10 minutes. Collecting a chime grants Bard [[3]] out of combat for 7 seconds, stacking up to 10 times, with every other chime collected beyond the first granting an additional [[4]], up to a total of [[5]], 20 + (1 per minute after 5 minutes) experience, and 12% maximum mana. Bard empowers his Meeps each time he collects 5 chimes.<br>Innate - Meeps: Bard's presence attracts small spirits known as Meeps to his side. On-attack he consumes a Meep, dealing [[0]].<br>At [[1]]d enemies by 25% − 75% (based on number of Chimes) for 1 second.<br>At [[2]] to enemies within 150 units of his target as well as those in a cone behind them.<br>At 35 chimes, the cone's radius increases.<br>Meeps spawn every 8 − 4 (based on number of Chimes) seconds and Bard can keep up to 1 − 9 (based on number of Chimes) of them at a time.",
                 "parseInfo": [
                     {
                         "text": {
@@ -93,7 +93,7 @@
                     },
                     {
                         "text": {
-                            "text": "80% bonus movement speed",
+                            "text": "150% bonus movement speed",
                             "scaleHolders": []
                         },
                         "type": "speed"
@@ -140,12 +140,17 @@
         },
         "W": {
             "_rawTooltip": {
-                "fullTooltip": "Bard creates a health shrine that grants [[0]] decaying over 1.5 seconds and restores at least [[1]] to the first ally to enter. The shrine grows to restore [[2]] after existing for 10 seconds.<br /><br />Bard can have up to 3 shrines at once. If an enemy champion enters a shrine, it is destroyed.",
+                "fullTooltip": "Bard creates a health shrine that grants [[0]] decaying over 1.5 seconds and restores at least [[1]] to the first ally to enter. The shrine grows to restore [[2]] after existing for 5 seconds.<br /><br />Bard can have up to 3 shrines at once. If an enemy champion enters a shrine, it is destroyed.<br /><br />This ability has 2 charges.",
                 "parseInfo": [
                     {
                         "text": {
-                            "text": "30% Move Speed",
-                            "scaleHolders": []
+                            "text": "20/22.5/25/27.5/30% {{0}} Move Speed",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+0.05% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
                         },
                         "type": "speed"
                     },
@@ -175,7 +180,7 @@
                     }
                 ]
             },
-            "cooldown": "14",
+            "cooldown": "18 (Charge)",
             "cost": "70 Mana",
             "name": "Caretaker's Shrine"
         },
@@ -421,6 +426,76 @@
             },
             "E": "",
             "R": ""
+        },
+        "13.18": {
+            "B": "",
+            "P": {
+                "SpellName": "Passive - Traveler’s Call",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Maximum Chime Stacks: ",
+                            "Before": "5",
+                            "Indicator": " ⇒ ",
+                            "After": "10"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Chime Stack Duration: ",
+                            "Before": "7 seconds",
+                            "Indicator": " ⇒ ",
+                            "After": "20 seconds"
+                        }
+                    }
+                ]
+            },
+            "Q": "",
+            "W": {
+                "SpellName": "W - Caretaker’s Shrine",
+                "Changes": [
+                    {
+                        "Tag": "NEW",
+                        "Change": {
+                            "Attribute": "Stacking Shrines: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "Caretaker’s Shrine now accumulates charges over time up to a maximum of 2 charges."
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Cooldown/Stack Charge Time: ",
+                            "Before": "14 seconds",
+                            "Indicator": " ⇒ ",
+                            "After": "18 seconds"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Shrine Charge Time to Full Heal: ",
+                            "Before": "10 seconds",
+                            "Indicator": " ⇒ ",
+                            "After": "5 seconds"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Shrine Movement Speed Bonus: ",
+                            "Before": "30% decaying over 1.5 seconds",
+                            "Indicator": " ⇒ ",
+                            "After": "20/22.5/25/27.5/30% (+0.05% AP) decaying over 1.5 seconds"
+                        }
+                    }
+                ]
+            },
+            "E": "",
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -429,7 +504,8 @@
         "10.16",
         "11.10",
         "12.8",
-        "12.10"
+        "12.10",
+        "13.18"
     ],
     "ChampionName": "Bard"
 }
