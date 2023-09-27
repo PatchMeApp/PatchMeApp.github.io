@@ -201,7 +201,7 @@
                             "text": "16/24/32/40/48 {{0}} magic damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+10% AP)",
+                                    "scale": "(+15% AP)",
                                     "scaleId": "AP"
                                 }
                             ]
@@ -681,6 +681,36 @@
             "W": "",
             "E": "",
             "R": ""
+        },
+        "13.19": {
+            "B": "",
+            "P": "",
+            "Q": "",
+            "W": "",
+            "E": {
+                "SpellName": "E - Snowball Barrage",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Magic Damage per Hit: ",
+                            "Before": "16/24/32/40/48 (+10% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "16/24/32/40/48 (+15% AP)"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Maximum Total Magic Damage: ",
+                            "Before": "144/216/288/360/432 (+90% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "144/216/288/360/432 (+135% AP) (Note: Including the damage upon rooting an enemy, this totals to 164/246/328/411/492 (+215% AP))"
+                        }
+                    }
+                ]
+            },
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -693,7 +723,8 @@
         "12.10",
         "12.11",
         "12.19",
-        "12.22"
+        "12.22",
+        "13.19"
     ],
     "ChampionName": "Nunu"
 }

@@ -80,7 +80,7 @@
                     },
                     {
                         "text": {
-                            "text": "34/38/42/46/50% Total AD physical damage",
+                            "text": "30/35/40/45/50% Total AD physical damage",
                             "scaleHolders": []
                         },
                         "type": "physicalDamage"
@@ -134,7 +134,7 @@
                     },
                     {
                         "text": {
-                            "text": "15 - 80 {{0}} Move Speed",
+                            "text": "5 - 15 {{0}} Move Speed",
                             "scaleHolders": [
                                 {
                                     "scale": "(based on champion level)",
@@ -576,6 +576,67 @@
             "W": "",
             "E": "",
             "R": ""
+        },
+        "13.19": {
+            "B": "",
+            "P": {
+                "SpellName": "Passive - Fury of the Xer'Sai",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Maximum Heal when Burrowed: ",
+                            "Before": "15-125 (+2-12% maximum health (increases every 3 levels))",
+                            "Indicator": " ⇒ ",
+                            "After": "10 (+2-10% maximum health (increases each individual level))"
+                        }
+                    }
+                ]
+            },
+            "Q": {
+                "SpellName": "Q - Queen's Wrath",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Bonus Physical Damage: ",
+                            "Before": "34/38/42/46/50% Total AD",
+                            "Indicator": " ⇒ ",
+                            "After": "30/35/40/45/50% Total AD"
+                        }
+                    }
+                ]
+            },
+            "W": {
+                "SpellName": "W - Burrow",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Bonus Movement Speed: ",
+                            "Before": "15/20/25/30 (levels 1/6/11/16)",
+                            "Indicator": " ⇒ ",
+                            "After": "5/10/15 (levels 1/6/11)"
+                        }
+                    }
+                ]
+            },
+            "E": "",
+            "R": "",
+            "W -": {
+                "SpellName": "W - Un-burrow",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Physical Damage: ",
+                            "Before": "50/65/80/95/110 (+80% Bonus AD)",
+                            "Indicator": " ⇒ ",
+                            "After": "50/85/120/155/190 (+80% Bonus AD)"
+                        }
+                    }
+                ]
+            }
         }
     },
     "ChangePatches": [
@@ -587,7 +648,8 @@
         "13.11",
         "13.13",
         "13.14",
-        "13.16"
+        "13.16",
+        "13.19"
     ],
     "ChampionName": "Rek'Sai"
 }

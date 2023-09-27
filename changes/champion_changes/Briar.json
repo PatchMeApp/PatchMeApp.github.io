@@ -189,7 +189,7 @@
                     },
                     {
                         "text": {
-                            "text": "heals Briar for 35/42.5/50/57.5/65% of the damage dealt",
+                            "text": "heals Briar for 36/42/48/54/60% of the damage dealt",
                             "scaleHolders": []
                         },
                         "type": "healing"
@@ -366,7 +366,7 @@
             "Q": "",
             "W": "",
             "E": {
-                "SpellName": "Chilling Scream",
+                "SpellName": "E - Chilling Scream",
                 "Changes": [
                     {
                         "Tag": "MID-PATCH",
@@ -389,10 +389,184 @@
                 ]
             },
             "R": ""
+        },
+        "13.19": {
+            "B": {
+                "SpellName": "Base Stats",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Attack Speed Growth: ",
+                            "Before": "2.5%",
+                            "Indicator": " ⇒ ",
+                            "After": "2.3%"
+                        }
+                    }
+                ]
+            },
+            "P": "",
+            "Q": {
+                "SpellName": "Q - Head Rush",
+                "Changes": [
+                    {
+                        "Tag": "NEW",
+                        "Change": {
+                            "Attribute": "Logic Update: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "Q is now properly tagged as an attack reset for interactions like Hail of Blades"
+                        }
+                    }
+                ]
+            },
+            "W": {
+                "SpellName": "W - Blood Frenzy",
+                "Changes": [
+                    {
+                        "Tag": "NEW",
+                        "Change": {
+                            "Attribute": "Show Me the Fury: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "Added a Fury Bar to display the remaining duration of Frenzy"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Tooltip Update: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "W - Blood Frenzy's tooltip now clarifies that casting W does not remove or replace the empowered Blood Frenzy granted by R."
+                        }
+                    }
+                ]
+            },
+            "E": {
+                "SpellName": "E - Chilling Scream",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Bugfix: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "Fixed a bug where knocked back enemies would sometimes not be stunned after hitting player-created terrain."
+                        }
+                    }
+                ]
+            },
+            "R": {
+                "SpellName": "R - Certain Death",
+                "Changes": [
+                    {
+                        "Tag": "NEW",
+                        "Change": {
+                            "Attribute": "INCOMING!: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "Pinging R now tells teammates which enemies are in range."
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Bugfix: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "Fixed a bug where Briar would become stuck attacking the wrong targets if Certain Death's target died during the cast time."
+                        }
+                    }
+                ]
+            },
+            "W -": {
+                "SpellName": "W - Snack Attack",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Healing: ",
+                            "Before": "35/42.5/50/57.5/65%",
+                            "Indicator": " ⇒ ",
+                            "After": "36/42/48/54/60%"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Increased Damage Against Minions and Monsters: ",
+                            "Before": "20%",
+                            "Indicator": " ⇒ ",
+                            "After": "10%"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Maximum Percent Missing Health Damage Against Minions and Monsters: ",
+                            "Before": "500",
+                            "Indicator": " ⇒ ",
+                            "After": "400"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Bugfix: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "Fixed a bug that caused the percent missing health damage to be able to critically strike."
+                        }
+                    },
+                    {
+                        "Tag": "NEW",
+                        "Change": {
+                            "Attribute": "Slow Down There: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "Added a short minimum cooldown after casting Snack Attack to prevent double casts with high haste builds."
+                        }
+                    }
+                ]
+            },
+            "M": {
+                "SpellName": "Miscellaneous",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Challenges: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "Briar is now properly tagged as a Noxian champion for ."
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Item Recommendations: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "Briar's recommended items have been updated."
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Rune Recommendations: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "Briar's recommended runes have been updated."
+                        }
+                    }
+                ]
+            }
         }
     },
     "ChangePatches": [
-        "13.18"
+        "13.18",
+        "13.19"
     ],
     "ChampionName": "Briar"
 }

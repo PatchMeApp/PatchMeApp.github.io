@@ -101,7 +101,7 @@
                             "text": "75/115/155/195/235 {{0}} magic damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+60% AP)",
+                                    "scale": "(+65% AP)",
                                     "scaleId": "AP"
                                 }
                             ]
@@ -137,7 +137,7 @@
                             "text": "50/70/90/110/130 {{0}} magic damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+30% AP)",
+                                    "scale": "(+35% AP)",
                                     "scaleId": "AP"
                                 }
                             ]
@@ -610,6 +610,89 @@
                     }
                 ]
             }
+        },
+        "13.19": {
+            "B": {
+                "SpellName": "Base Stats",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Attack Speed Ratio: ",
+                            "Before": "0.625",
+                            "Indicator": " ⇒ ",
+                            "After": "0.4"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Attack Speed Growth: ",
+                            "Before": "1.4%",
+                            "Indicator": " ⇒ ",
+                            "After": "2.2%"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Attack Damage Growth: ",
+                            "Before": "3.5",
+                            "Indicator": " ⇒ ",
+                            "After": "2.7"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Mana Growth: ",
+                            "Before": "55",
+                            "Indicator": " ⇒ ",
+                            "After": "25"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Mana Regeneration Growth: ",
+                            "Before": "1",
+                            "Indicator": " ⇒ ",
+                            "After": "0.8"
+                        }
+                    }
+                ]
+            },
+            "P": "",
+            "Q": "",
+            "W": {
+                "SpellName": "W - Distortion",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Magic Damage: ",
+                            "Before": "75/115/155/195/235 (+60% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "75/115/155/195/235 (+65% AP)"
+                        }
+                    }
+                ]
+            },
+            "E": {
+                "SpellName": "E - Ethereal Chains",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Magic Damage from Initial Cast: ",
+                            "Before": "50/70/90/110/130 (+30% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "50/70/90/110/130 (+35% AP)"
+                        }
+                    }
+                ]
+            },
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -621,7 +704,8 @@
         "12.10",
         "12.14",
         "13.3",
-        "13.5"
+        "13.5",
+        "13.19"
     ],
     "ChampionName": "LeBlanc"
 }

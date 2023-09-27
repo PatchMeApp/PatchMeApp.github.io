@@ -112,7 +112,7 @@
         },
         "W": {
             "_rawTooltip": {
-                "fullTooltip": "Lee Sin dashes to an ally or ward. If the target is a champion, Lee Sin grants them and himself [[0]] for 2 seconds and reduces this Ability's Cooldown by 50%. Lee Sin may [[1]] for the next 3 seconds.<br /><br />[[2]] Lee Sin gains 5/10.5/16/21.5/27% Life Steal and Spell Vamp for 4 seconds.",
+                "fullTooltip": "Lee Sin dashes to an ally or ward. If the target is a champion, Lee Sin grants them and himself [[0]] for 2 seconds and reduces this Ability's Cooldown by 50%. Lee Sin may [[1]] for the next 3 seconds.<br /><br />[[2]] Lee Sin gains 10/14/18/22/26% Life Steal and Spell Vamp for 4 seconds.",
                 "parseInfo": [
                     {
                         "text": {
@@ -872,6 +872,53 @@
             "W": "",
             "E": "",
             "R": ""
+        },
+        "13.19": {
+            "B": {
+                "SpellName": "Base Stats",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Base Armor: ",
+                            "Before": "34",
+                            "Indicator": " ⇒ ",
+                            "After": "36"
+                        }
+                    }
+                ]
+            },
+            "P": "",
+            "Q": "",
+            "W": {
+                "SpellName": "W - Iron Will",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Lifesteal and Spell Vamp: ",
+                            "Before": "5/10.5/16/21.5/27%",
+                            "Indicator": " ⇒ ",
+                            "After": "10/14/18/22/26%"
+                        }
+                    }
+                ]
+            },
+            "E": {
+                "SpellName": "E - Tempest",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Magic Damage: ",
+                            "Before": "35/65/95/125/155 (+100% AD)",
+                            "Indicator": " ⇒ ",
+                            "After": "35/60/85/110/135 (+100% AD)"
+                        }
+                    }
+                ]
+            },
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -892,7 +939,8 @@
         "12.18",
         "13.3",
         "13.7",
-        "13.13"
+        "13.13",
+        "13.19"
     ],
     "ChampionName": "Lee Sin"
 }
