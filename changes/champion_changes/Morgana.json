@@ -96,7 +96,7 @@
                             "text": "12/22/32/42/52 {{0}} magic damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+14% AP)",
+                                    "scale": "(+17% AP)",
                                     "scaleId": "AP"
                                 }
                             ]
@@ -148,20 +148,20 @@
                     }
                 ]
             },
-            "cooldown": "24/22/20/18/16",
+            "cooldown": "26/23.5/21/18.5/16",
             "cost": "80 Mana",
             "name": "Black Shield"
         },
         "R": {
             "_rawTooltip": {
-                "fullTooltip": "Morgana chains herself to nearby enemy Champions, dealing [[0]] and [[1]] them by 20%. After 3 seconds, enemies unable to break the chains take an additional [[2]] and are [[3]] for 1.5 seconds.<br /><br />While casting this Ability, Morgana gains [[4]] towards enemies she has chained.",
+                "fullTooltip": "Morgana chains herself to nearby enemy Champions, dealing [[0]] and [[1]] them by 20%. After 3 seconds, enemies unable to break the chains take an additional [[2]] and are [[3]] for 1.5/1.75/2 seconds.<br /><br />While casting this Ability, Morgana gains [[4]].",
                 "parseInfo": [
                     {
                         "text": {
-                            "text": "150/225/300 {{0}} magic damage",
+                            "text": "175/250/325 {{0}} magic damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+70% AP)",
+                                    "scale": "(+80% AP)",
                                     "scaleId": "AP"
                                 }
                             ]
@@ -177,10 +177,10 @@
                     },
                     {
                         "text": {
-                            "text": "150/225/300 {{0}} magic damage",
+                            "text": "175/250/325 {{0}} magic damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+70% AP)",
+                                    "scale": "(+80% AP)",
                                     "scaleId": "AP"
                                 }
                             ]
@@ -196,7 +196,7 @@
                     },
                     {
                         "text": {
-                            "text": "5/30% Move Speed",
+                            "text": "10/35/60% Move Speed",
                             "scaleHolders": []
                         },
                         "type": "speed"
@@ -408,6 +408,80 @@
             "W": "",
             "E": "",
             "R": ""
+        },
+        "13.20": {
+            "B": "",
+            "P": "",
+            "Q": "",
+            "W": {
+                "SpellName": "W - Tormented Shadow",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Magic Damage per Second: ",
+                            "Before": "12/22/32/42/52 (+14% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "12/22/32/42/52 (+17% AP)"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Monster Damage Modifier: ",
+                            "Before": "155%",
+                            "Indicator": " ⇒ ",
+                            "After": "165%"
+                        }
+                    }
+                ]
+            },
+            "E": {
+                "SpellName": "E - Black Shield",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Cooldown: ",
+                            "Before": "24/22/20/18/16 seconds",
+                            "Indicator": " ⇒ ",
+                            "After": "26/23.5/21/18.5/16 seconds"
+                        }
+                    }
+                ]
+            },
+            "R": {
+                "SpellName": "R - Soul Shackles",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Bonus Movement Speed: ",
+                            "Before": "5/30/55% while facing towards tethered enemies",
+                            "Indicator": " ⇒ ",
+                            "After": "10/35/60% in all directions"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Stun Duration: ",
+                            "Before": "1.5 seconds at all ranks",
+                            "Indicator": " ⇒ ",
+                            "After": "1.5/1.75/2 seconds"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Magic Damage: ",
+                            "Before": "150/225/300 (+70% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "175/250/325 (+80% AP) (Note: this will still hit twice, once upon initial cast and a second time when the tether stuns)"
+                        }
+                    }
+                ]
+            }
         }
     },
     "ChangePatches": [
@@ -417,7 +491,8 @@
         "11.9",
         "11.11",
         "11.18",
-        "12.10"
+        "12.10",
+        "13.20"
     ],
     "ChampionName": "Morgana"
 }

@@ -1,8 +1,8 @@
 {
     "stats": {
         "hp": {
-            "base": 610,
-            "increment": 108
+            "base": 570,
+            "increment": 115
         },
         "mp": {
             "base": 290,
@@ -10,7 +10,7 @@
         },
         "armor": {
             "base": 33,
-            "increment": 4.7
+            "increment": 5.2
         },
         "spellBlock": {
             "base": 30,
@@ -65,19 +65,10 @@
                     },
                     {
                         "text": {
-                            "text": "35% {{0}} {{1}}. The bonus damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+ 20% per 100 bonus armor)",
-                                    "scaleId": "armor"
-                                },
-                                {
-                                    "scale": "(+ 20% per 100 bonus magic resistance)",
-                                    "scaleId": "resistance"
-                                }
-                            ]
+                            "text": "35%. The bonus damage",
+                            "scaleHolders": []
                         },
-                        "type": "armor"
+                        "type": ""
                     }
                 ]
             },
@@ -89,7 +80,7 @@
                 "parseInfo": [
                     {
                         "text": {
-                            "text": "50/75/100/125/150 {{0}} {{1}} {{2}} physical damage",
+                            "text": "30/60/90/120/150 {{0}} {{1}} {{2}} physical damage",
                             "scaleHolders": [
                                 {
                                     "scale": "(+40% AD)",
@@ -150,7 +141,7 @@
         },
         "W": {
             "_rawTooltip": {
-                "fullTooltip": "[[0]] K'Sante raises his weapons defensively for up to 1 second, becoming Unstoppable and reducing incoming damage by 25% (+ 10% per 100 bonus armor) (+ 10% per 100 bonus magic resistance) (+ 1% per 100 bonus health).<br /><br />[[1]] K'Sante rams forward, dealing between [[2]] based on charge time. K'Sante [[3]] and [[4]] enemies for a duration between 0.3/0.35/0.4/0.45/0.5 and 0.85/0.95/1.05/1.15 seconds.<br /><br />[[5]] This Ability's Cooldown is refreshed. This Ability will no longer [[6]] or [[7]]. This Ability's damage reduction increases to 30% (+ 12% per 100 bonus armor) (+ 12% per 100 bonus magic resistance) (+ 1.2% per 100 bonus health), it deals additional [[8]] between [[9]], and its charge and dash speed are doubled.<br />",
+                "fullTooltip": "[[0]] K'Sante raises his weapons defensively for 0.65 - 1 second, becoming Unstoppable and reducing incoming damage by 40-65% (based on champion level).<br /><br />[[1]] K'Sante rams forward, dealing [[2]]. K'Sante [[3]] and [[4]] enemies for 1.25 seconds.<br /><br />[[5]] This Ability's Cooldown is refreshed. This Ability will no longer [[6]] or [[7]] and only requires 0.5 seconds of charge. This Ability's damage reduction increases to 50-75% (based on champion level), and its dash speed increases and it's cooldown decreases.<br />",
                 "parseInfo": [
                     {
                         "text": {
@@ -168,8 +159,25 @@
                     },
                     {
                         "text": {
-                            "text": "2/2.25/2.5/2.75/3% and 7/7.25/7.5/7.75/8% max Health physical damage",
-                            "scaleHolders": []
+                            "text": "20/40/60/80/100 {{0}} {{1}} {{2}} {{3}} physical damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+50% total AD)",
+                                    "scaleId": "AD"
+                                },
+                                {
+                                    "scale": "(+30% bonus armor)",
+                                    "scaleId": "armor"
+                                },
+                                {
+                                    "scale": "(+30% bonus magic resistance)",
+                                    "scaleId": "resistance"
+                                },
+                                {
+                                    "scale": "(+6/7/8/9/10% of target's maximum health)",
+                                    "scaleId": "health"
+                                }
+                            ]
                         },
                         "type": "physicalDamage"
                     },
@@ -207,34 +215,11 @@
                             "scaleHolders": []
                         },
                         "type": "status"
-                    },
-                    {
-                        "text": {
-                            "text": "physical damage",
-                            "scaleHolders": []
-                        },
-                        "type": "physicalDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "25/35/45/55/65 {{0}} and 110/170/230/290/350 {{1}}",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+50% AD)",
-                                    "scaleId": "AD"
-                                },
-                                {
-                                    "scale": "(+50% AD)",
-                                    "scaleId": "AD"
-                                }
-                            ]
-                        },
-                        "type": "physicalDamage"
                     }
                 ]
             },
-            "cooldown": "24/22/20/18/16",
-            "cost": "75/80/85/90/95 Mana",
+            "cooldown": "18/16.5/15/13.5/12",
+            "cost": "60/65/70/75/80 Mana",
             "name": "Path Maker"
         },
         "E": {
@@ -275,19 +260,19 @@
         },
         "R": {
             "_rawTooltip": {
-                "fullTooltip": "K'Sante shatters his ntofos, dealing [[0]] and [[1]] an enemy champion. Enemies that hit a wall instead take [[2]], are [[3]] over the wall, and are briefly [[4]]. K'Sante then dashes after the enemy and goes [[5]] for 20 seconds.<br /><br />[[6]] K'Sante loses [[7]], [[8]], and [[9]]. K'Sante gains [[10]], 10 (+ 0.75% per 100 bonus health Omnivamp, and transforms his Abilities.",
+                "fullTooltip": "K'Sante shatters his ntofos, dealing [[0]] and [[1]] an enemy champion. Enemies that hit a wall instead take [[2]], are [[3]] over the wall, and are briefly [[4]]. K'Sante then dashes after the enemy and goes [[5]] for 20 seconds.<br /><br />[[6]] K'Sante loses [[7]], [[8]], and [[9]]. K'Sante gains [[10]] [[11]], healing 10/15/20% of the damage he deals to Champions, and transforms his Abilities.",
                 "parseInfo": [
                     {
                         "text": {
-                            "text": "35/70/105 {{0}} physical damage",
+                            "text": "70/110/150 {{0}} magic damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+20% AD)",
-                                    "scaleId": "AD"
+                                    "scale": "(+65% AP)",
+                                    "scaleId": "AP"
                                 }
                             ]
                         },
-                        "type": "physicalDamage"
+                        "type": "magicDamage"
                     },
                     {
                         "text": {
@@ -298,15 +283,15 @@
                     },
                     {
                         "text": {
-                            "text": "150/250/350 {{0}} physical damage",
+                            "text": "70/110/150 {{0}} magic damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+20% AD)",
-                                    "scaleId": "AD"
+                                    "scale": "(+65% AP)",
+                                    "scaleId": "AP"
                                 }
                             ]
                         },
-                        "type": "physicalDamage"
+                        "type": "magicDamage"
                     },
                     {
                         "text": {
@@ -338,7 +323,7 @@
                     },
                     {
                         "text": {
-                            "text": "45% max Health",
+                            "text": "35% max Health",
                             "scaleHolders": []
                         },
                         "type": "healing"
@@ -359,19 +344,26 @@
                     },
                     {
                         "text": {
-                            "text": "5 {{0}} {{1}} Attack Damage",
+                            "text": "15/30/45 {{0}} {{1}} Attack Damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+ 32.5% bonus armor)",
+                                    "scale": "(+ 25% bonus armor)",
                                     "scaleId": "armor"
                                 },
                                 {
-                                    "scale": "(+ 32.5% bonus magic resistance)",
+                                    "scale": "(+ 25% bonus magic resistance)",
                                     "scaleId": "resistance"
                                 }
                             ]
                         },
                         "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "25/35/45% bonus Attack Speed",
+                            "scaleHolders": []
+                        },
+                        "type": "attackSpeed"
                     }
                 ]
             },
@@ -586,6 +578,282 @@
                 ]
             },
             "R": ""
+        },
+        "13.20": {
+            "B": {
+                "SpellName": "Base Stats",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Base Health: ",
+                            "Before": "610",
+                            "Indicator": " ⇒ ",
+                            "After": "570"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Health Growth: ",
+                            "Before": "108",
+                            "Indicator": " ⇒ ",
+                            "After": "115"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Armor Growth: ",
+                            "Before": "4.7",
+                            "Indicator": " ⇒ ",
+                            "After": "5.2"
+                        }
+                    }
+                ]
+            },
+            "P": {
+                "SpellName": "Passive - Dauntless Instinct",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "All Out Bonus Damage: ",
+                            "Before": "35% (+20% per 100 bonus armor) (+20% per 100 bonus magic resistance)",
+                            "Indicator": " ⇒ ",
+                            "After": "35%"
+                        }
+                    }
+                ]
+            },
+            "Q": {
+                "SpellName": "Q - Ntofo Strikes",
+                "Changes": [
+                    {
+                        "Tag": "NEW",
+                        "Change": {
+                            "Attribute": "Not so Flash: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "Recasting K'Sante's third Q will now disable Flash during its windup"
+                        }
+                    },
+                    {
+                        "Tag": "NEW",
+                        "Change": {
+                            "Attribute": "Stat Check: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "Shift-Tooltip now shows your progress on the Armor/MR and HP for cooldown and cast time"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Physical Damage: ",
+                            "Before": "50/75/100/125/150 (+40% AD) (+30% bonus armor) (+30% bonus magic resistance)",
+                            "Indicator": " ⇒ ",
+                            "After": "30/60/90/120/150 (+40% AD) (+30% bonus armor) (+30% bonus magic resistance)"
+                        }
+                    }
+                ]
+            },
+            "W": {
+                "SpellName": "W - Path Maker",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Mana Cost: ",
+                            "Before": "75/80/85/90/95",
+                            "Indicator": " ⇒ ",
+                            "After": "60/65/70/75/80"
+                        }
+                    },
+                    {
+                        "Tag": "NEW",
+                        "Change": {
+                            "Attribute": "Minimum Channel Time: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "0.65 seconds (Note: Maximum channel time is unchanged at 1 second)"
+                        }
+                    },
+                    {
+                        "Tag": "NEW",
+                        "Change": {
+                            "Attribute": "Maximum Damage: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "Path Maker's damage, crowd control, dash distance, and all other outputs will no longer be tied to the ability's charge time"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Damage Reduction: ",
+                            "Before": "25% (+10% per 100 bonus armor) (+10% per 100 bonus magic resistance) (+1% per 100 bonus health)",
+                            "Indicator": " ⇒ ",
+                            "After": "40-65% (based on champion level)"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Stun Duration: ",
+                            "Before": ":0.3/0.35/0.4/0.45/0.5 - 0.85/0.95/1.05/1.15/1.25 seconds",
+                            "Indicator": " ⇒ ",
+                            "After": "1.25 seconds"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Damage: ",
+                            "Before": "2/2.25/2.5/2.75/3 - 7/7.25/7.5/7.75/8% of target's maximum health",
+                            "Indicator": " ⇒ ",
+                            "After": "20/40/60/80/100 (+50% total AD) (+30% bonus armor) (+30% bonus magic resistance) (+6/7/8/9/10% of target's maximum health)"
+                        }
+                    }
+                ]
+            },
+            "E": "",
+            "R": {
+                "SpellName": "R - All Out",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Maximum Health Threshold: ",
+                            "Before": "55%",
+                            "Indicator": " ⇒ ",
+                            "After": "65%"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Knockback Distance: ",
+                            "Before": "350",
+                            "Indicator": " ⇒ ",
+                            "After": "300"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Damage on Initial Cast: ",
+                            "Before": "35/70/105 (+ 20% AD) physical damage",
+                            "Indicator": " ⇒ ",
+                            "After": "70/110/150 (+65% AP) magic damage"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Damage on Successful Wall Slam: ",
+                            "Before": "150/250/350 physical damage",
+                            "Indicator": " ⇒ ",
+                            "After": "70/110/150 (+65% AP) magic damage"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Attack Resets: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "Attack reset timing has been slowed down to match K'Sante's base form"
+                        }
+                    },
+                    {
+                        "Tag": "NEW",
+                        "Change": {
+                            "Attribute": "All Out (of stacks): ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "Casting All Out will now reset Q - Ntofo Strikes' current stacks"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Bonus Attack Damage Gained: ",
+                            "Before": "5 (+32.5% bonus armor) (+32.5% bonus magic resistance)",
+                            "Indicator": " ⇒ ",
+                            "After": "15/30/45 (+25% bonus armor) (+25% bonus magic resistance)"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Healing: ",
+                            "Before": "10% (+0.75% per 100 bonus health) omnivamp",
+                            "Indicator": " ⇒ ",
+                            "After": "10/15/20% healing on all damage versus champions"
+                        }
+                    },
+                    {
+                        "Tag": "NEW",
+                        "Change": {
+                            "Attribute": "Weights are Off: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "K'Sante now gains 25/35/45% bonus attack speed when All Out"
+                        }
+                    }
+                ]
+            },
+            "W -": {
+                "SpellName": "W - Path Maker (All Out Version)",
+                "Changes": [
+                    {
+                        "Tag": "NEW",
+                        "Change": {
+                            "Attribute": "Minimum Channel Time: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "0.5 seconds (Note: Maximum channel time is unchanged at 1 second)"
+                        }
+                    },
+                    {
+                        "Tag": "NEW",
+                        "Change": {
+                            "Attribute": "Maximum Damage: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "Path Maker's damage, crowd control, dash distance, and all other outputs will now always deal the maximum corresponding values and will no longer be tied to the ability's charge time"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Damage Reduction: ",
+                            "Before": "30% (+12% per 100 bonus armor) (+12% per 100 bonus magic resistance) (+1.2% per 100 bonus health)",
+                            "Indicator": " ⇒ ",
+                            "After": "50-75% (based on champion level)"
+                        }
+                    },
+                    {
+                        "Tag": "REMOVED",
+                        "Change": {
+                            "Attribute": "All Out of Extra Damage: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "While All Out, Path Maker will no longer deal extra damage (aside from the bonus AD provided upon entering All Out)"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Cooldown: ",
+                            "Before": "24/22/20/18/16 seconds",
+                            "Indicator": " ⇒ ",
+                            "After": "18/16.5/15/13.5/12 seconds"
+                        }
+                    }
+                ]
+            }
         }
     },
     "ChangePatches": [
@@ -593,7 +861,8 @@
         "12.23",
         "13.1",
         "13.3",
-        "13.12"
+        "13.12",
+        "13.20"
     ],
     "ChampionName": "K'Sante"
 }

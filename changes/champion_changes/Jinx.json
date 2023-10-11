@@ -2,7 +2,7 @@
     "stats": {
         "hp": {
             "base": 630,
-            "increment": 100
+            "increment": 105
         },
         "mp": {
             "base": 260,
@@ -56,7 +56,7 @@
                     },
                     {
                         "text": {
-                            "text": "25% total attack speed",
+                            "text": "25% stacking total attack speed",
                             "scaleHolders": []
                         },
                         "type": "attackSpeed"
@@ -160,14 +160,14 @@
                 "parseInfo": [
                     {
                         "text": {
-                            "text": "30/45/60 {{0}} to 300/450/600 {{1}} + 25/30% missing Health physical damage",
+                            "text": "32.5/47.5/62.5 {{0}} to 325/475/625 {{1}} + 25/30/35% missing Health physical damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+15% Bonus AD)",
+                                    "scale": "(+16.5% Bonus AD)",
                                     "scaleId": "AD"
                                 },
                                 {
-                                    "scale": "(+150% Bonus AD)",
+                                    "scale": "(+165% Bonus AD)",
                                     "scaleId": "AD"
                                 }
                             ]
@@ -183,7 +183,7 @@
                     }
                 ]
             },
-            "cooldown": "75/65/55",
+            "cooldown": "70/60/50",
             "cost": "100 Mana",
             "name": "Super Mega Death Rocket!"
         }
@@ -671,6 +671,71 @@
             "E": "",
             "R": ""
         },
+        "13.20": {
+            "B": {
+                "SpellName": "Base Stats",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Health Growth: ",
+                            "Before": "100",
+                            "Indicator": " ⇒ ",
+                            "After": "105"
+                        }
+                    }
+                ]
+            },
+            "P": {
+                "SpellName": "Passive - Get Excited!",
+                "Changes": [
+                    {
+                        "Tag": "NEW",
+                        "Change": {
+                            "Attribute": "Stacks on Stacks: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "The 25% bonus total attack speed gained from Get Excited! on takedowns now stacks."
+                        }
+                    }
+                ]
+            },
+            "Q": "",
+            "W": "",
+            "E": "",
+            "R": {
+                "SpellName": "R - Super Mega Death Rocket!",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Cooldown: ",
+                            "Before": "75/65/55 seconds",
+                            "Indicator": " ⇒ ",
+                            "After": "70/60/50 seconds"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Minimum Damage: ",
+                            "Before": "30/45/60 (+15% bonus AD) (+25/30/35% of target's missing health)",
+                            "Indicator": " ⇒ ",
+                            "After": "32.5/47.5/62.5 (+16.5% bonus AD) (+25/30/35% of target's missing health)"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Maximum Damage: ",
+                            "Before": "300/450/600 (+150% bonus AD) (+25/30/35% of target's missing health)",
+                            "Indicator": " ⇒ ",
+                            "After": "325/475/625 (+165% bonus AD) (+25/30/35% of target's missing health)"
+                        }
+                    }
+                ]
+            }
+        },
         "13.1B": {
             "B": {
                 "SpellName": "Base Stats",
@@ -731,7 +796,8 @@
         "13.1B",
         "13.5",
         "13.9",
-        "13.11"
+        "13.11",
+        "13.20"
     ],
     "ChampionName": "Jinx"
 }

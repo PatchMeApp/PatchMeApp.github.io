@@ -143,7 +143,7 @@
                 "parseInfo": [
                     {
                         "text": {
-                            "text": "60/85/110/135/160 {{0}} Shield",
+                            "text": "60/90/120/150/180 {{0}} Shield",
                             "scaleHolders": [
                                 {
                                     "scale": "(+30% AP)",
@@ -162,7 +162,7 @@
                     }
                 ]
             },
-            "cooldown": "18/17/16/15/14 Recharge/0.5 Cooldown",
+            "cooldown": "17/16/15/14/13 Recharge/0.5 Cooldown",
             "cost": "50/60/70/80/90 Mana",
             "name": "Warm Hugs"
         },
@@ -189,7 +189,7 @@
                             "text": "150/250/350 {{0}} Health",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+ 30% AP)",
+                                    "scale": "(+ 50% AP)",
                                     "scaleId": "AP"
                                 }
                             ]
@@ -370,13 +370,70 @@
                 ]
             },
             "R": ""
+        },
+        "13.20": {
+            "B": "",
+            "P": {
+                "SpellName": "Passive - Passive - Fired Up",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "On Fire: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "Burn damage now counts as Milio's damage even when applied through allies, allowing it to interact with a select number of items like Hextech Putrifier. Burn damage will still grant the ally who applied the debuff the kill, preventing Milio from accidentally kill stealing confirming kills."
+                        }
+                    }
+                ]
+            },
+            "Q": "",
+            "W": "",
+            "E": {
+                "SpellName": "E - Warm Hugs",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Cooldown: ",
+                            "Before": "18/17/16/15/14 seconds",
+                            "Indicator": " ⇒ ",
+                            "After": "17/16/15/14/13 seconds"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Shield Strength: ",
+                            "Before": "60/85/110/135/160 (+30% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "60/90/120/150/180 (+30% AP)"
+                        }
+                    }
+                ]
+            },
+            "R": {
+                "SpellName": "R - Breath Of Life",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Healing: ",
+                            "Before": "150/250/350 (+30% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "150/250/350 (+50% AP)"
+                        }
+                    }
+                ]
+            }
         }
     },
     "ChangePatches": [
         "13.6",
         "13.12",
         "13.14",
-        "13.16"
+        "13.16",
+        "13.20"
     ],
     "ChampionName": "Milio"
 }

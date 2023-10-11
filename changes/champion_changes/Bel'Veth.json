@@ -56,7 +56,7 @@
                     },
                     {
                         "text": {
-                            "text": "25% − 50% {{0}} bonus attack speed",
+                            "text": "20% − 40% {{0}} bonus attack speed",
                             "scaleHolders": [
                                 {
                                     "scale": "(based on level)",
@@ -160,7 +160,7 @@
         },
         "E": {
             "_rawTooltip": {
-                "fullTooltip": "Bel'Veth channels and slashes around herself, gaining 70% Damage Reduction, 20% (+100% Life steal) Life Steal, and Attacking multiple times over 1.5 seconds with the number of Attacks increasing based on her [[0]]. Each Attack strikes the lowest-health enemy, dealing [[1]] to [[2]] based on the target's missing Health.<br /><br />Using another Ability or [[3]] ends this Ability early.<br />",
+                "fullTooltip": "Bel'Veth channels and slashes around herself, gaining 42/49/56/63/70% Damage Reduction, 20% (+100% Life steal) Life Steal, and Attacking multiple times over 1.5 seconds with the number of Attacks increasing based on her [[0]]. Each Attack strikes the lowest-health enemy, dealing [[1]] to [[2]] based on the target's missing Health.<br /><br />Using another Ability or [[3]] ends this Ability early.<br />",
                 "parseInfo": [
                     {
                         "text": {
@@ -171,10 +171,10 @@
                     },
                     {
                         "text": {
-                            "text": "8/10/12/14/16 {{0}}",
+                            "text": "6/7/8/9/10 {{0}}",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+6% AD)",
+                                    "scale": "(+8% AD)",
                                     "scaleId": "AD"
                                 }
                             ]
@@ -183,10 +183,10 @@
                     },
                     {
                         "text": {
-                            "text": "32/40/48/56/64 {{0}} physical damage",
+                            "text": "24/28/32/36/40 {{0}} physical damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+24% AD)",
+                                    "scale": "(+32% AD)",
                                     "scaleId": "AD"
                                 }
                             ]
@@ -280,7 +280,7 @@
                     },
                     {
                         "text": {
-                            "text": "25/50 Move Speed",
+                            "text": "10/45/80 Move Speed",
                             "scaleHolders": []
                         },
                         "type": "speed"
@@ -550,13 +550,97 @@
             "W": "",
             "E": "",
             "R": ""
+        },
+        "13.20": {
+            "B": "",
+            "P": {
+                "SpellName": "Passive - Death In Lavender",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Bonus Attack Speed After Spell Cast: ",
+                            "Before": "25-50% (scales linearly based on level)",
+                            "Indicator": " ⇒ ",
+                            "After": "20-40% (scales using stat progression multiplier)"
+                        }
+                    }
+                ]
+            },
+            "Q": "",
+            "W": "",
+            "E": {
+                "SpellName": "E - Royal Maelstrom",
+                "Changes": [
+                    {
+                        "Tag": "NEW",
+                        "Change": {
+                            "Attribute": "Critical Stabby Stabs: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "Damage from Bel'Veth's E can now critically strike."
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Damage Reduction: ",
+                            "Before": "70%",
+                            "Indicator": " ⇒ ",
+                            "After": "42/49/56/63/70%"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Minimum Physical Damage: ",
+                            "Before": "8/10/12/14/16 (+6% AD)",
+                            "Indicator": " ⇒ ",
+                            "After": "6/7/8/9/10 (+8% AD)"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Minimum On Hit Damage: ",
+                            "Before": "6%",
+                            "Indicator": " ⇒ ",
+                            "After": "8%"
+                        }
+                    }
+                ]
+            },
+            "R": {
+                "SpellName": "R - Endless Banquet",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Remora Health: ",
+                            "Before": "40/50/60% of minion's maximum health",
+                            "Indicator": " ⇒ ",
+                            "After": "20/45/70% of minion's maximum health"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "True Form Out-of-Combat Movement Speed: ",
+                            "Before": "25/50/75",
+                            "Indicator": " ⇒ ",
+                            "After": "10/45/80"
+                        }
+                    }
+                ]
+            }
         }
     },
     "ChangePatches": [
         "12.11",
         "12.12",
         "12.21",
-        "13.9"
+        "13.9",
+        "13.20"
     ],
     "ChampionName": "Bel'Veth"
 }

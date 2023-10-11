@@ -118,7 +118,7 @@
                     },
                     {
                         "text": {
-                            "text": "40% {{0}} Move Speed",
+                            "text": "20/25/30/35/40% {{0}} Move Speed",
                             "scaleHolders": [
                                 {
                                     "scale": "(+5% per 100 AP)",
@@ -234,7 +234,7 @@
                     },
                     {
                         "text": {
-                            "text": "30/45/60/75/90 {{0}} * {{1}} physical damage",
+                            "text": "25/40/55/70/85 {{0}} * {{1}} physical damage",
                             "scaleHolders": [
                                 {
                                     "scale": "(+17.5% Bonus AD)",
@@ -577,6 +577,40 @@
             "W": "",
             "E": "",
             "R": ""
+        },
+        "13.20": {
+            "B": "",
+            "P": "",
+            "Q": {
+                "SpellName": "Q - Avengerang",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Bonus Movement Speed: ",
+                            "Before": "40%",
+                            "Indicator": " ⇒ ",
+                            "After": "20/25/30/35/40%"
+                        }
+                    }
+                ]
+            },
+            "W": "",
+            "E": {
+                "SpellName": "E - Heroic Swing",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Damage per Shot: ",
+                            "Before": "30/45/60/75/90 (+17.5% bonus AD) (1 + 0.3 per 100% bonus attack speed)",
+                            "Indicator": " ⇒ ",
+                            "After": "25/40/55/70/85 (+17.5% bonus AD) (1 + 0.3 per 100% bonus attack speed)"
+                        }
+                    }
+                ]
+            },
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -587,7 +621,8 @@
         "12.10",
         "12.20",
         "13.10",
-        "13.17"
+        "13.17",
+        "13.20"
     ],
     "ChampionName": "Akshan"
 }
