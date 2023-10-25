@@ -45,19 +45,39 @@
         "P": {
             "cooldown": "",
             "_rawTooltip": {
-                "fullTooltip": "Innate: Caitlyn's basic attacks generate a stack of Count on-attack, doubled when attacking from brush. At 5 stacks, or 4 while in brush, Caitlyn's next basic attack consumes all stacks to become a Headshot: it has an uncancelable windup and deals [[0]], increased to (100% + (109.375% + 21.875%) critical strike chance) AD against non-champions.<br>Caitlyn may fire more than one Headshot until it hits a target, which consumes all stacks.<br>Enemies that step over a Yordle Snap Trap or are hit by 90 Caliber Net can grant an additional Headshot against them at 1300 range within 1.8 seconds, without consuming stacks. Each method grants only one Headshot at a time.",
+                "fullTooltip": "Every 5 Attacks, Caitlyn fires a Headshot. Attacks while in brush count as 2 for building towards a Headshot.<br><br>Headshots deal an additional [[0]]. They have double range against enemies affected by 90 Caliber Net and Yordle Snap Trap. Headshots against enemies hit by Yordle Snap Trap deal a further [[1]].",
                 "parseInfo": [
                     {
                         "text": {
-                            "text": "{{0}} + {{1}} critical strike chance) AD bonus physical damage",
+                            "text": "60/90/120% {{0}} + {{1}} * {{2}} bonus physical damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(60/90/120% (based on level)",
+                                    "scale": "(based on level)",
                                     "scaleId": "level"
                                 },
                                 {
-                                    "scale": "(109.375% + 21.875%)",
-                                    "scaleId": "21.875%"
+                                    "scale": "(85% Critical Strike Chance)",
+                                    "scaleId": "Chance"
+                                },
+                                {
+                                    "scale": "(100% Critical Strike Damage)",
+                                    "scaleId": "Damage"
+                                }
+                            ]
+                        },
+                        "type": "physicalDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "40/85/130/175/220 {{0}} {{1}} physical damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+40/50/60/70/80% bonus AD)",
+                                    "scaleId": "AD"
+                                },
+                                {
+                                    "scale": "(based on Yordle Snap Trap level)",
+                                    "scaleId": "level"
                                 }
                             ]
                         },
