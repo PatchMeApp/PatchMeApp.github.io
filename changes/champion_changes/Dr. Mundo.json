@@ -174,7 +174,7 @@
         },
         "E": {
             "_rawTooltip": {
-                "fullTooltip": "[[0]] Dr Mundo gains [[1]].<br /><br />[[2]] Mundo violently swings his \"medical\" bag, causing his next Attack to deal an additional [[3]], increased by up to 160% (+100%) based on his missing Health. If the enemy is killed, Mundo swats them away, dealing the minimum damage to all enemies they pass through. Small monsters are swatted immediately.",
+                "fullTooltip": "[[0]] Dr Mundo gains [[1]].<br /><br />[[2]] Mundo violently swings his \"medical\" bag, causing his next Attack to deal an additional [[3]], increased by up to 40% based on his missing Health. If the enemy is killed, Mundo swats them away, dealing the minimum damage to all enemies they pass through. Small monsters are swatted immediately.",
                 "parseInfo": [
                     {
                         "text": {
@@ -185,7 +185,7 @@
                     },
                     {
                         "text": {
-                            "text": "2/2.5/3/3.5/4% of maximum health Attack Damage",
+                            "text": "2/2.25/2.5/2.75/3% of maximum health Attack Damage",
                             "scaleHolders": []
                         },
                         "type": "physicalDamage"
@@ -1021,6 +1021,36 @@
                 ]
             },
             "R": ""
+        },
+        "13.21": {
+            "B": "",
+            "P": "",
+            "Q": "",
+            "W": "",
+            "E": {
+                "SpellName": "E - Blunt Force Trauma",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Passive Bonus Attack Damage: ",
+                            "Before": "2/2.5/3/3.5/4% maximum health",
+                            "Indicator": " ⇒ ",
+                            "After": "2/2.25/2.5/2.75/3% maximum health"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Bonus Attack Damage based on Missing Health: ",
+                            "Before": "0-60%",
+                            "Indicator": " ⇒ ",
+                            "After": "0-40%"
+                        }
+                    }
+                ]
+            },
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -1035,7 +1065,8 @@
         "12.12",
         "12.23",
         "13.1",
-        "13.6"
+        "13.6",
+        "13.21"
     ],
     "ChampionName": "Dr. Mundo"
 }

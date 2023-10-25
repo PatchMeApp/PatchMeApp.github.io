@@ -45,14 +45,14 @@
         "P": {
             "cooldown": "",
             "_rawTooltip": {
-                "fullTooltip": "Innate: Caitlyn's basic attacks generate a stack of Count on-attack, doubled when attacking from brush. At 6 stacks, or 5 while in brush, Caitlyn's next basic attack consumes all stacks to become a Headshot: it has an uncancelable windup and deals [[0]], increased to (100% + (109.375% + 21.875%) critical strike chance) AD against non-champions.<br>Caitlyn may fire more than one Headshot until it hits a target, which consumes all stacks.<br>Enemies that step over a Yordle Snap Trap or are hit by 90 Caliber Net can grant an additional Headshot against them at 1300 range within 1.8 seconds, without consuming stacks. Each method grants only one Headshot at a time.",
+                "fullTooltip": "Innate: Caitlyn's basic attacks generate a stack of Count on-attack, doubled when attacking from brush. At 5 stacks, or 4 while in brush, Caitlyn's next basic attack consumes all stacks to become a Headshot: it has an uncancelable windup and deals [[0]], increased to (100% + (109.375% + 21.875%) critical strike chance) AD against non-champions.<br>Caitlyn may fire more than one Headshot until it hits a target, which consumes all stacks.<br>Enemies that step over a Yordle Snap Trap or are hit by 90 Caliber Net can grant an additional Headshot against them at 1300 range within 1.8 seconds, without consuming stacks. Each method grants only one Headshot at a time.",
                 "parseInfo": [
                     {
                         "text": {
                             "text": "{{0}} + {{1}} critical strike chance) AD bonus physical damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(50 / 75 / 100% (based on level)",
+                                    "scale": "(60/90/120% (based on level)",
                                     "scaleId": "level"
                                 },
                                 {
@@ -167,14 +167,14 @@
                 "parseInfo": [
                     {
                         "text": {
-                            "text": "300/525/750 {{0}} * {{1}} physical damage",
+                            "text": "300/500/700 {{0}} * {{1}} physical damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+200% Bonus AD)",
+                                    "scale": "(+170% Bonus AD)",
                                     "scaleId": "AD"
                                 },
                                 {
-                                    "scale": "(1 + 35% Crit Chance)",
+                                    "scale": "(1 + 50% Crit Chance)",
                                     "scaleId": "Chance"
                                 }
                             ]
@@ -197,7 +197,7 @@
                     }
                 ]
             },
-            "cooldown": "90/75/60",
+            "cooldown": "90",
             "cost": "100 Mana",
             "name": "Ace in the Hole"
         }
@@ -720,6 +720,58 @@
             "E": "",
             "R": ""
         },
+        "13.21": {
+            "B": "",
+            "P": {
+                "SpellName": "Passive - Headshot",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Bonus Physical Damage: ",
+                            "Before": "60/90/120% (+ (81.25% Critical Strike Chance) * (100% Critical Strike Damage)",
+                            "Indicator": " ⇒ ",
+                            "After": "60/90/120% (+ (85% Critical Strike Chance) * (100% Critical Strike Damage)"
+                        }
+                    }
+                ]
+            },
+            "Q": "",
+            "W": "",
+            "E": "",
+            "R": {
+                "SpellName": "R - Ace in the Hole",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Cooldown: ",
+                            "Before": "90/75/60 seconds",
+                            "Indicator": " ⇒ ",
+                            "After": "90 seconds at all ranks"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Physical Damage: ",
+                            "Before": "300/525/750 (+200% bonus Attack Damage)",
+                            "Indicator": " ⇒ ",
+                            "After": "300/500/700 (+170% bonus Attack Damage)"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Bonus Damage from Critical Strike Chance: ",
+                            "Before": "0-35%",
+                            "Indicator": " ⇒ ",
+                            "After": "0-50%"
+                        }
+                    }
+                ]
+            }
+        },
         "12.12": {
             "B": {
                 "SpellName": "Base Stats",
@@ -826,7 +878,8 @@
         "13.1B",
         "13.5",
         "13.15",
-        "13.16"
+        "13.16",
+        "13.21"
     ],
     "ChampionName": "Caitlyn"
 }

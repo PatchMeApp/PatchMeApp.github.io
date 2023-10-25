@@ -65,8 +65,13 @@
                     },
                     {
                         "text": {
-                            "text": "35%. The bonus damage",
-                            "scaleHolders": []
+                            "text": "45/60/75% {{0}}. The bonus damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(levels 6/11/16)",
+                                    "scaleId": "6/11/16"
+                                }
+                            ]
                         },
                         "type": ""
                     }
@@ -76,7 +81,7 @@
         },
         "Q": {
             "_rawTooltip": {
-                "fullTooltip": "K'Sante slams his weapon down, dealing [[0]] and briefly [[1]] the enemies struck by 80%.<br /><br />When an enemy is hit, K'Sante gains a stack of Ntofo Strikes for 6 seconds. At 2 stacks, K'Sante instead fires a shockwave that [[2]] and [[3]] enemies for 1 second.<br /><br />[[4]]: This Ability's Cooldown is reduced by 25%.<br />",
+                "fullTooltip": "K'Sante slams his weapon down, dealing [[0]] and briefly [[1]] the enemies struck by 80%.<br /><br />When an enemy is hit, K'Sante gains a stack of Ntofo Strikes for 6 seconds. At 2 stacks, K'Sante instead fires a shockwave that [[2]] and [[3]] enemies for 1 second.<br /><br />[[4]]: This Ability's Cooldown is reduced by 1 seconds and no longer inflicts [[5]].<br />",
                 "parseInfo": [
                     {
                         "text": {
@@ -125,6 +130,13 @@
                             "scaleHolders": []
                         },
                         "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "Slow",
+                            "scaleHolders": []
+                        },
+                        "type": "status"
                     }
                 ]
             },
@@ -134,7 +146,7 @@
         },
         "W": {
             "_rawTooltip": {
-                "fullTooltip": "[[0]] K'Sante raises his weapons defensively for 0.65 - 1 second, becoming Unstoppable and reducing incoming damage by 40-65% (based on champion level).<br /><br />[[1]] K'Sante rams forward, dealing [[2]]. K'Sante [[3]] and [[4]] enemies for 1.25 seconds.<br /><br />[[5]] This Ability's Cooldown is refreshed. This Ability will no longer [[6]] or [[7]] and only requires 0.5 seconds of charge. This Ability's damage reduction increases to 50-75% (based on champion level), and its dash speed increases and it's cooldown decreases.<br />",
+                "fullTooltip": "[[0]] K'Sante raises his weapons defensively for 0.65 - 1.5 second, becoming Unstoppable and reducing incoming damage by 40-65% (based on champion level).<br /><br />[[1]] K'Sante rams forward, dealing [[2]]. K'Sante [[3]] and [[4]] enemies for 1.25 seconds.<br /><br />[[5]] This Ability's Cooldown is refreshed. Damage reduction increases to 50-75% (based on champion level), it only requires 0.5 seconds of charge, its dash speed increases, and it's cooldown decreases.<br />This Ability will no longer [[6]] or [[7]]",
                 "parseInfo": [
                     {
                         "text": {
@@ -847,6 +859,102 @@
                     }
                 ]
             }
+        },
+        "13.21": {
+            "B": "",
+            "P": {
+                "SpellName": "Passive - Dauntless Instinct",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "All Out Bonus Damage: ",
+                            "Before": "35%",
+                            "Indicator": " ⇒ ",
+                            "After": "45/60/75% (levels 6/11/16)"
+                        }
+                    }
+                ]
+            },
+            "Q": {
+                "SpellName": "Q - Ntofo Strikes",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Required Bonus Health for Minimum Cast Time: ",
+                            "Before": "1800",
+                            "Indicator": " ⇒ ",
+                            "After": "1200"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Tooltip Update: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "Tooltip now always shows Resists/Health needed for cooldown and cast time reductions. All Out tooltip has been simplified and updated."
+                        }
+                    }
+                ]
+            },
+            "W": {
+                "SpellName": "W - Path Maker",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Disruptive Dashes: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "W - Path Maker will no longer interrupt K’Sante’s E dash when the channeling starts"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Maximum Channel Time: ",
+                            "Before": "1.0 seconds",
+                            "Indicator": " ⇒ ",
+                            "After": "1.5 seconds (Note: this will affect both the base and All Out version of W - Path Maker.)"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Tooltip Update: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "All Out tooltip has been simplified and updated."
+                        }
+                    }
+                ]
+            },
+            "E": "",
+            "R": {
+                "SpellName": "R - All Out",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Healing: ",
+                            "Before": "Calculated based on Physical and True Damage dealt to champions",
+                            "Indicator": " ⇒ ",
+                            "After": "Calculated based on all damage dealt to champions"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Q + E Attack Resets: ",
+                            "Before": "0.1 seconds",
+                            "Indicator": " ⇒ ",
+                            "After": "Instantaneous"
+                        }
+                    }
+                ]
+            }
         }
     },
     "ChangePatches": [
@@ -855,7 +963,8 @@
         "13.1",
         "13.3",
         "13.12",
-        "13.20"
+        "13.20",
+        "13.21"
     ],
     "ChampionName": "K'Sante"
 }

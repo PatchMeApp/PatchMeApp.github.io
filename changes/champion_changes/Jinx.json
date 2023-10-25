@@ -45,7 +45,7 @@
         "P": {
             "cooldown": "",
             "_rawTooltip": {
-                "fullTooltip": "Innate: Whenever Jinx scores a takedown against an enemy champion, epic monster, turret, or inhibitor within 3 seconds of damaging them, she gains [[0]] which decays over 6 seconds.<br>Additionally, she gains [[1]] and is allowed to exceed the attack speed cap for the same duration.",
+                "fullTooltip": "Innate: Whenever Jinx scores a takedown against an enemy champion, epic monster, turret, or inhibitor within 3 seconds of damaging them, she gains [[0]] which decays over 6 seconds.<br>Additionally, she gains [[1]] and is allowed to exceed the attack speed cap for the same duration.<br>Champion takedowns stack the Attack Speed up to 5 times. ",
                 "parseInfo": [
                     {
                         "text": {
@@ -56,7 +56,7 @@
                     },
                     {
                         "text": {
-                            "text": "25% stacking total attack speed",
+                            "text": "25% total attack speed",
                             "scaleHolders": []
                         },
                         "type": "attackSpeed"
@@ -736,6 +736,36 @@
                 ]
             }
         },
+        "13.21": {
+            "B": "",
+            "P": {
+                "SpellName": "Passive - Get Excited!",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Get Excited Stacks: ",
+                            "Before": "All takedowns, epic monster kills, and structures destroyed grant Get Excited! stacks and refresh the buff",
+                            "Indicator": " ⇒ ",
+                            "After": "Epic monster kills and destroying structures will grant the first stack of Get Excited! and will refresh the buff, but only champion takedowns can increase the amount of stacks Jinx can get"
+                        }
+                    },
+                    {
+                        "Tag": "NEW",
+                        "Change": {
+                            "Attribute": "Stacks Cap: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "Jinx can now only get 5 stacks of Get Excited!"
+                        }
+                    }
+                ]
+            },
+            "Q": "",
+            "W": "",
+            "E": "",
+            "R": ""
+        },
         "13.1B": {
             "B": {
                 "SpellName": "Base Stats",
@@ -797,7 +827,8 @@
         "13.5",
         "13.9",
         "13.11",
-        "13.20"
+        "13.20",
+        "13.21"
     ],
     "ChampionName": "Jinx"
 }

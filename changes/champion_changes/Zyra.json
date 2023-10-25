@@ -25,7 +25,7 @@
             "increment": 0.4
         },
         "attackSpeed": {
-            "base": 0.625,
+            "base": 0.681,
             "increment": 0.021099999999999997
         },
         "ms": {
@@ -56,10 +56,10 @@
                 "parseInfo": [
                     {
                         "text": {
-                            "text": "60/95/130/165/200 {{0}} magic damage",
+                            "text": "60/100/140/180/220 {{0}} magic damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+60% AP)",
+                                    "scale": "(+65% AP)",
                                     "scaleId": "AP"
                                 }
                             ]
@@ -146,10 +146,10 @@
                     },
                     {
                         "text": {
-                            "text": "60/105/150/195/240 {{0}} magic damage",
+                            "text": "60/95/130/165/200 {{0}} magic damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+50% AP)",
+                                    "scale": "(+60% AP)",
                                     "scaleId": "AP"
                                 }
                             ]
@@ -454,6 +454,66 @@
                     }
                 ]
             }
+        },
+        "13.21": {
+            "B": {
+                "SpellName": "Base Stats",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Level 1 Attack Speed:: ",
+                            "Before": " 0.625",
+                            "Indicator": " ⇒ ",
+                            "After": "0.681 (Note: Attack Speed Ratio is unchanged)"
+                        }
+                    }
+                ]
+            },
+            "P": {
+                "SpellName": "Passive - Garden of Thorns",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Plant Magic Damage: ",
+                            "Before": "20-100 (based on level) (+15% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "20-88 (based on level) (+18% AP)"
+                        }
+                    }
+                ]
+            },
+            "Q": {
+                "SpellName": "Q - Deadly Spines",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Magic Damage: ",
+                            "Before": "60/95/130/165/200 (+60% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "60/100/140/180/220 (+65% AP)"
+                        }
+                    }
+                ]
+            },
+            "W": "",
+            "E": {
+                "SpellName": "E - Grasping Roots",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Magic Damage: ",
+                            "Before": "60/105/150/195/240 (+50% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "60/95/130/165/200 (+60% AP)"
+                        }
+                    }
+                ]
+            },
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -461,7 +521,8 @@
         "11.10",
         "12.10",
         "12.16",
-        "13.14"
+        "13.14",
+        "13.21"
     ],
     "ChampionName": "Zyra"
 }

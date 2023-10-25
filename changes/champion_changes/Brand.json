@@ -1,16 +1,16 @@
 {
     "stats": {
         "hp": {
-            "base": 590,
-            "increment": 102
+            "base": 570,
+            "increment": 105
         },
         "mp": {
             "base": 469,
             "increment": 21
         },
         "armor": {
-            "base": 22,
-            "increment": 4.7
+            "base": 27,
+            "increment": 4.2
         },
         "spellBlock": {
             "base": 30,
@@ -25,8 +25,8 @@
             "increment": 0.6
         },
         "attackSpeed": {
-            "base": 0.625,
-            "increment": 0.013600000000000001
+            "base": 0.681,
+            "increment": 0.02
         },
         "ms": {
             "base": 340,
@@ -49,7 +49,7 @@
                 "parseInfo": [
                     {
                         "text": {
-                            "text": "120% damage",
+                            "text": "220% damage",
                             "scaleHolders": []
                         },
                         "type": ""
@@ -172,7 +172,7 @@
                 "parseInfo": [
                     {
                         "text": {
-                            "text": "70/95/120/145/170 {{0}} magic damage",
+                            "text": "65/90/115/140/165 {{0}} magic damage",
                             "scaleHolders": [
                                 {
                                     "scale": "(+55% AP)",
@@ -527,6 +527,107 @@
                 ]
             },
             "R": ""
+        },
+        "13.21": {
+            "B": {
+                "SpellName": "Base Stats",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Level 1 Attack Speed: ",
+                            "Before": "0.625",
+                            "Indicator": " ⇒ ",
+                            "After": "0.681"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Attack Speed Growth: ",
+                            "Before": "1.36%",
+                            "Indicator": " ⇒ ",
+                            "After": "2%"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Base Armor: ",
+                            "Before": "22",
+                            "Indicator": " ⇒ ",
+                            "After": "27"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Armor Growth: ",
+                            "Before": "4.7",
+                            "Indicator": " ⇒ ",
+                            "After": "4.2"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Base Health: ",
+                            "Before": "590",
+                            "Indicator": " ⇒ ",
+                            "After": "570"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Health Growth: ",
+                            "Before": "102",
+                            "Indicator": " ⇒ ",
+                            "After": "105"
+                        }
+                    }
+                ]
+            },
+            "P": {
+                "SpellName": "Passive - Blaze",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Monster Damage Modifier: ",
+                            "Before": "120%",
+                            "Indicator": " ⇒ ",
+                            "After": "220%"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Maximum Monster Damage per Tick: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "80 (Note: this is unchanged)"
+                        }
+                    }
+                ]
+            },
+            "Q": "",
+            "W": "",
+            "E": {
+                "SpellName": "E - Conflagration",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Magic Damage: ",
+                            "Before": "70/95/120/145/170 (+ 55% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "65/90/115/140/165 (+55% AP)"
+                        }
+                    }
+                ]
+            },
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -536,7 +637,8 @@
         "12.3",
         "12.10",
         "12.11",
-        "13.16"
+        "13.16",
+        "13.21"
     ],
     "ChampionName": "Brand"
 }

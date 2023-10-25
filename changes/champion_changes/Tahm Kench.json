@@ -49,14 +49,14 @@
                 "parseInfo": [
                     {
                         "text": {
-                            "text": "8-60 {{0}} {{1}} {{2}} bonus magic damage",
+                            "text": "6-48 {{0}} {{1}} {{2}} bonus magic damage",
                             "scaleHolders": [
                                 {
                                     "scale": "(based on level)",
                                     "scaleId": "level"
                                 },
                                 {
-                                    "scale": "(+ 3% bonus health)",
+                                    "scale": "(+ 5% bonus health)",
                                     "scaleId": "health"
                                 },
                                 {
@@ -144,7 +144,7 @@
         },
         "W": {
             "_rawTooltip": {
-                "fullTooltip": "Dive down and then re-appear at target location, dealing [[0]] and knock up all enemies in an area for 1 second. Hitting at least one enemy champion refunds 40% of the cooldown and mana cost.<br /><br /><span class=\"color0bf7de\">Devoured</span> allies can be taken along for the ride (but can always hop out early).",
+                "fullTooltip": "Dive down and then re-appear at target location, dealing [[0]] and knock up all enemies in an area for 1 second. Hitting at least one enemy champion refunds 40/42.5/45/47.5/50% of the cooldown and mana cost.<br /><br /><span class=\"color0bf7de\">Devoured</span> allies can be taken along for the ride (but can always hop out early).",
                 "parseInfo": [
                     {
                         "text": {
@@ -1002,6 +1002,40 @@
                 ]
             }
         },
+        "13.21": {
+            "B": "",
+            "P": {
+                "SpellName": "Passive - An Acquired Taste",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Bonus Magic Damage: ",
+                            "Before": "8-60 (based on level) (+2% AP per 100 bonus health) (+3% bonus health)",
+                            "Indicator": " ⇒ ",
+                            "After": "6-48 (based on level) (+2% AP per 100 bonus health) (+5% bonus health)"
+                        }
+                    }
+                ]
+            },
+            "Q": "",
+            "W": {
+                "SpellName": "W - Abyssal Dive",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Cooldown refund on champion hit: ",
+                            "Before": "40%",
+                            "Indicator": " ⇒ ",
+                            "After": "40/42.5/45/47.5/50%"
+                        }
+                    }
+                ]
+            },
+            "E": "",
+            "R": ""
+        },
         "12.12": {
             "B": {
                 "SpellName": "Base Stats",
@@ -1047,7 +1081,8 @@
         "12.11",
         "12.12",
         "12.19",
-        "12.23"
+        "12.23",
+        "13.21"
     ],
     "ChampionName": "Tahm Kench"
 }

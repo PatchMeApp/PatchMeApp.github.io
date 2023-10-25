@@ -69,14 +69,10 @@
                 "parseInfo": [
                     {
                         "text": {
-                            "text": "15/25/35/45/55 + 30-90 {{0}} {{1}} magic damage",
+                            "text": "45/60/75/90/105 {{0}} magic damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(scaling with level)",
-                                    "scaleId": "level"
-                                },
-                                {
-                                    "scale": "(+60% AP)",
+                                    "scale": "(+55% AP)",
                                     "scaleId": "AP"
                                 }
                             ]
@@ -85,12 +81,8 @@
                     },
                     {
                         "text": {
-                            "text": "40/50/60/70/80 + 20-40 {{0}} {{1}} magic damage plus {{2}}% ",
+                            "text": "60/70/80/90/100 {{0}} magic damage plus {{1}}% ",
                             "scaleHolders": [
-                                {
-                                    "scale": "(scaling with level)",
-                                    "scaleId": "level"
-                                },
                                 {
                                     "scale": "(+35% AP)",
                                     "scaleId": "AP"
@@ -759,6 +751,36 @@
                 ]
             },
             "R": ""
+        },
+        "13.21": {
+            "B": "",
+            "P": "",
+            "Q": {
+                "SpellName": "Q - Breath of Light",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Magic Damage per Second: ",
+                            "Before": "15/25/35/45/55 (+30-80 (based on level)) (+60% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "45/60/75/90/105 (+55% AP)"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Burst Magic Damage: ",
+                            "Before": "40/50/60/70/80 (+20-30 (based on level)) (+35% AP) (+ 3.1% Stardust) percent of target maximum health",
+                            "Indicator": " ⇒ ",
+                            "After": "60/70/80/90/100 (+35% AP) (+ 3.1% Stardust) percent of target maximum health"
+                        }
+                    }
+                ]
+            },
+            "W": "",
+            "E": "",
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -771,7 +793,8 @@
         "13.5",
         "13.6",
         "13.8",
-        "13.11"
+        "13.11",
+        "13.21"
     ],
     "ChampionName": "Aurelion Sol"
 }

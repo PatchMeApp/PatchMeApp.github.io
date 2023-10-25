@@ -26,7 +26,7 @@
         },
         "attackSpeed": {
             "base": 0.664,
-            "increment": 0.023
+            "increment": 0.02
         },
         "ms": {
             "base": 340,
@@ -45,7 +45,7 @@
         "P": {
             "cooldown": "",
             "_rawTooltip": {
-                "fullTooltip": "Briar's Attacks and Abilities apply a bleed for 5 seconds. stacking up to 9 times. The bleed deals [[0]] based on stacks, and Heals Briar for [[1]].<br>Briar gains up to 50% increased Healing based on her missing Health. She has no Base Health Regeneration and her Abilities cost 6% current Health to cast.",
+                "fullTooltip": "Briar's Attacks and Abilities apply a bleed for 5 seconds. stacking up to 9 times. The bleed deals [[0]] based on stacks, and Heals Briar for [[1]].<br>Briar gains up to 50% increased Healing based on her missing Health. She has no Base Health Regeneration and her Abilities cost 6% current Health to cast.<br>Briar heals for [[2]] when a bleeding enemy dies.",
                 "parseInfo": [
                     {
                         "text": {
@@ -74,6 +74,13 @@
                     {
                         "text": {
                             "text": "25% of the pre-mitigation damage",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "125% of the remaining bleed damage",
                             "scaleHolders": []
                         },
                         "type": ""
@@ -180,7 +187,7 @@
                                     "scaleId": "AD"
                                 },
                                 {
-                                    "scale": "(+ 10% (+ 4% per 100 bonus AD)",
+                                    "scale": "(+ 10% (+ 3.5% per 100 bonus AD)",
                                     "scaleId": "AD"
                                 }
                             ]
@@ -562,11 +569,59 @@
                     }
                 ]
             }
+        },
+        "13.21": {
+            "B": {
+                "SpellName": "Base Stats",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Attack Speed Growth: ",
+                            "Before": "2.3%",
+                            "Indicator": " ⇒ ",
+                            "After": "2.0%"
+                        }
+                    }
+                ]
+            },
+            "P": {
+                "SpellName": "Passive - Crimson Curse",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Heal if Bleeding Target Dies: ",
+                            "Before": "100% of remaining bleed",
+                            "Indicator": " ⇒ ",
+                            "After": "125% of remaining bleed"
+                        }
+                    }
+                ]
+            },
+            "Q": "",
+            "W": {
+                "SpellName": "W - Snack Attack",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Recast Bonus Physical Damage: ",
+                            "Before": "5/20/35/50/65 (+5% AD) (+10% (+4% per 100 bonus AD) of target missing health)",
+                            "Indicator": " ⇒ ",
+                            "After": "5/20/35/50/65 (+5% AD) (+10% (+3.5% per 100 bonus AD) of target missing health)"
+                        }
+                    }
+                ]
+            },
+            "E": "",
+            "R": ""
         }
     },
     "ChangePatches": [
         "13.18",
-        "13.19"
+        "13.19",
+        "13.21"
     ],
     "ChampionName": "Briar"
 }
