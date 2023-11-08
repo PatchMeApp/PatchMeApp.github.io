@@ -45,29 +45,21 @@
         "P": {
             "cooldown": "",
             "_rawTooltip": {
-                "fullTooltip": "Innate: Janna gains [[0]] while moving towards nearby allied champions, and grants them the same amount when they are moving towards her.",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "6% bonus movement speed",
-                            "scaleHolders": []
-                        },
-                        "type": "speed"
-                    }
-                ]
+                "fullTooltip": "Ally champions gain 6% Move Speed moving towards Janna.<br><br>Janna deals 20/25/30/35% (based on level) of bonus Move Speed as bonus magic damage On-Hit and with Zephyr.",
+                "parseInfo": []
             },
             "name": "Tailwind"
         },
         "Q": {
             "_rawTooltip": {
-                "fullTooltip": "Janna summons a tornado that grows stronger over 3 seconds then blows along its path. It deals [[0]] and [[1]] for 0.5 seconds. The distance, damage, and [[2]] duration increase based on how much the tornado grew. Janna can [[3]] to send the tornado early.",
+                "fullTooltip": "Janna summons a tornado that grows stronger over 3 seconds then blows along its path. It deals [[0]] and [[1]] for 0.5 seconds. The distance, damage, and [[2]] duration increase based on how much the tornado grew, dealing up to [[3]] and increasing the [[4]] duration up to 1.25 seconds. Janna can [[5]] to send the tornado early.",
                 "parseInfo": [
                     {
                         "text": {
-                            "text": "60/85/110/135/160 {{0}} magic damage",
+                            "text": "55/90/125/160/195 {{0}} magic damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+35% AP)",
+                                    "scale": "(+50% AP)",
                                     "scaleId": "AP"
                                 }
                             ]
@@ -90,6 +82,25 @@
                     },
                     {
                         "text": {
+                            "text": "30/45/60/75/90 {{0}} bonus magic damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+30% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "magicDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "Knock Up",
+                            "scaleHolders": []
+                        },
+                        "type": "status"
+                    },
+                    {
+                        "text": {
                             "text": "Recast",
                             "scaleHolders": []
                         },
@@ -97,13 +108,13 @@
                     }
                 ]
             },
-            "cooldown": "12",
-            "cost": "60/70/80/90/100 Mana",
+            "cooldown": "14",
+            "cost": "90/95/100/105/110 Mana",
             "name": "Howling Gale"
         },
         "W": {
             "_rawTooltip": {
-                "fullTooltip": "[[0]] While this Ability is available, Janna gains [[1]] and is Ghosted.<br /><br />[[2]] Janna's elemental strikes an enemy, [[3]] them by 20/24/28/32/36 (+6% AP)% for 3 seconds, and dealing [[4]].",
+                "fullTooltip": "[[0]] Janna gains [[1]] and is Ghosted.<br /><br />[[2]] Janna's elemental strikes an enemy, [[3]] them by 20/24/28/32/36% (+0.06% AP) for 2 seconds, and dealing [[4]] Bonus Damage) magic damage</magicDamage>.",
                 "parseInfo": [
                     {
                         "text": {
@@ -114,10 +125,10 @@
                     },
                     {
                         "text": {
-                            "text": "6/7/8/9/10% {{0}}% Move Speed",
+                            "text": "6/7/8/9/10% {{0}} Move Speed",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+2% per 100 AP)",
+                                    "scale": "(+0.02% AP)",
                                     "scaleId": "AP"
                                 }
                             ]
@@ -140,7 +151,7 @@
                     },
                     {
                         "text": {
-                            "text": "80/110/140/170/200 {{0}} magic damage",
+                            "text": "55/90/125/160/195 {{0}} (+ Tailwind",
                             "scaleHolders": [
                                 {
                                     "scale": "(+60% AP)",
@@ -148,35 +159,21 @@
                                 }
                             ]
                         },
-                        "type": "magicDamage"
+                        "type": ""
                     }
                 ]
             },
-            "cooldown": "12",
-            "cost": "50/60/70/80/90 Mana",
+            "cooldown": "9/8.5/8/7.5/7",
+            "cost": "50/55/60/65/70 Mana",
             "name": "Zephyr"
         },
         "E": {
             "_rawTooltip": {
-                "fullTooltip": "[[0]] Janna gains 15% Heal and Shield Power for 4 seconds whenever she impairs an enemy champion's movement.<br /><br />[[1]] Janna grants an ally champion or turret [[2]] decaying over  2.5 seconds. While shielded, they gain [[3]].",
+                "fullTooltip": "Janna grants an ally champion or turret [[0]] for 4 seconds. While shielded, they gain [[1]].<br /><br />Janna refunds 20% of the cooldown whenever she impairs an enemy champions's movement with an active ability. Max once per spell.",
                 "parseInfo": [
                     {
                         "text": {
-                            "text": "Passive:",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "Active:",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "75/100/125/150/175 {{0}} Shield",
+                            "text": "80/115/150/185/220 {{0}} Shield",
                             "scaleHolders": [
                                 {
                                     "scale": "(+55% AP)",
@@ -200,8 +197,8 @@
                     }
                 ]
             },
-            "cooldown": "15/13.5/12/10.5/9",
-            "cost": "70/80/90/100/110 Mana",
+            "cooldown": "16/15/14/13/12",
+            "cost": "70/75/80/85/90 Mana",
             "name": "Eye Of The Storm"
         },
         "R": {
@@ -662,268 +659,6 @@
             },
             "R": ""
         },
-        "13.22": {
-            "B": {
-                "SpellName": "Base Stats",
-                "Changes": [
-                    {
-                        "Tag": "",
-                        "Change": {
-                            "Attribute": "Attack Range: ",
-                            "Before": "500",
-                            "Indicator": " ⇒ ",
-                            "After": "550"
-                        }
-                    },
-                    {
-                        "Tag": "",
-                        "Change": {
-                            "Attribute": "Base Mana: ",
-                            "Before": "350",
-                            "Indicator": " ⇒ ",
-                            "After": "360"
-                        }
-                    },
-                    {
-                        "Tag": "",
-                        "Change": {
-                            "Attribute": "Mana Growth: ",
-                            "Before": "64",
-                            "Indicator": " ⇒ ",
-                            "After": "50"
-                        }
-                    },
-                    {
-                        "Tag": "",
-                        "Change": {
-                            "Attribute": "Health Growth: ",
-                            "Before": "84",
-                            "Indicator": " ⇒ ",
-                            "After": "90"
-                        }
-                    },
-                    {
-                        "Tag": "",
-                        "Change": {
-                            "Attribute": "Armor Growth: ",
-                            "Before": "5",
-                            "Indicator": " ⇒ ",
-                            "After": "4.5"
-                        }
-                    },
-                    {
-                        "Tag": "",
-                        "Change": {
-                            "Attribute": "Base Attack Damage: ",
-                            "Before": "52",
-                            "Indicator": " ⇒ ",
-                            "After": "47"
-                        }
-                    },
-                    {
-                        "Tag": "",
-                        "Change": {
-                            "Attribute": "Attack Damage Growth: ",
-                            "Before": "3",
-                            "Indicator": " ⇒ ",
-                            "After": "2.5"
-                        }
-                    },
-                    {
-                        "Tag": "",
-                        "Change": {
-                            "Attribute": "Attack Windup: ",
-                            "Before": "22%",
-                            "Indicator": " ⇒ ",
-                            "After": "20%"
-                        }
-                    }
-                ]
-            },
-            "P": {
-                "SpellName": "Passive - Tailwind",
-                "Changes": [
-                    {
-                        "Tag": "",
-                        "Change": {
-                            "Attribute": "*Removed*: ",
-                            "Before": "",
-                            "Indicator": "",
-                            "After": "Janna no longer gains bonus move speed while facing allied champions"
-                        }
-                    },
-                    {
-                        "Tag": "",
-                        "Change": {
-                            "Attribute": "*New*: ",
-                            "Before": "",
-                            "Indicator": "",
-                            "After": "Janna's basic attacks and W deal bonus magic damage equal to 20/25/30/35% (1/6/11/16) of her bonus Move Speed"
-                        }
-                    }
-                ]
-            },
-            "Q": {
-                "SpellName": "Q - Howling Gale",
-                "Changes": [
-                    {
-                        "Tag": "",
-                        "Change": {
-                            "Attribute": "Mana Cost: ",
-                            "Before": "60/70/80/90/100",
-                            "Indicator": " ⇒ ",
-                            "After": "90/95/100/105/110"
-                        }
-                    },
-                    {
-                        "Tag": "",
-                        "Change": {
-                            "Attribute": "Cooldown: ",
-                            "Before": "12",
-                            "Indicator": " ⇒ ",
-                            "After": "14"
-                        }
-                    },
-                    {
-                        "Tag": "",
-                        "Change": {
-                            "Attribute": "Minimum Damage: ",
-                            "Before": "60/85/110/135/160 (+35% AP)",
-                            "Indicator": " ⇒ ",
-                            "After": "55/90/125/160/195 (+50% AP)"
-                        }
-                    },
-                    {
-                        "Tag": "",
-                        "Change": {
-                            "Attribute": "Maximum Bonus Damage: ",
-                            "Before": "45/60/75/90/105 (+30% AP)",
-                            "Indicator": " ⇒ ",
-                            "After": "30/45/60/75/90 (+30% AP)"
-                        }
-                    }
-                ]
-            },
-            "W": {
-                "SpellName": "W - Zephyr",
-                "Changes": [
-                    {
-                        "Tag": "",
-                        "Change": {
-                            "Attribute": "Cooldown: ",
-                            "Before": "12",
-                            "Indicator": " ⇒ ",
-                            "After": "9/8.5/8/7.5/7"
-                        }
-                    },
-                    {
-                        "Tag": "",
-                        "Change": {
-                            "Attribute": "Mana: ",
-                            "Before": "50/60/70/80/90",
-                            "Indicator": " ⇒ ",
-                            "After": "50/55/60/65/70"
-                        }
-                    },
-                    {
-                        "Tag": "",
-                        "Change": {
-                            "Attribute": "Damage: ",
-                            "Before": "80/110/140/170/200 (+60% AP)",
-                            "Indicator": " ⇒ ",
-                            "After": "55/90/125/160/195 (+60% AP) (+ Tailwind Bonus Damage)"
-                        }
-                    },
-                    {
-                        "Tag": "",
-                        "Change": {
-                            "Attribute": "Slow Duration: ",
-                            "Before": "3 seconds",
-                            "Indicator": " ⇒ ",
-                            "After": "2 seconds"
-                        }
-                    },
-                    {
-                        "Tag": "",
-                        "Change": {
-                            "Attribute": "*New*: ",
-                            "Before": "",
-                            "Indicator": "",
-                            "After": "Zephyr passive move speed is no longer removed while on cooldown"
-                        }
-                    }
-                ]
-            },
-            "E": {
-                "SpellName": "E - Eye Of The Storm",
-                "Changes": [
-                    {
-                        "Tag": "",
-                        "Change": {
-                            "Attribute": "Cooldown: ",
-                            "Before": "15/13.5/12/10.5/9",
-                            "Indicator": " ⇒ ",
-                            "After": "16/15/14/13/12"
-                        }
-                    },
-                    {
-                        "Tag": "",
-                        "Change": {
-                            "Attribute": "Mana: ",
-                            "Before": "70/80/90/100/110",
-                            "Indicator": " ⇒ ",
-                            "After": "70/75/80/85/90"
-                        }
-                    },
-                    {
-                        "Tag": "",
-                        "Change": {
-                            "Attribute": "Shield: ",
-                            "Before": "75/100/125/150/175 (+55%AP)",
-                            "Indicator": " ⇒ ",
-                            "After": "80/115/150/185/220 (+55% AP)"
-                        }
-                    },
-                    {
-                        "Tag": "",
-                        "Change": {
-                            "Attribute": "Shield Duration: ",
-                            "Before": "5 seconds",
-                            "Indicator": " ⇒ ",
-                            "After": "4 seconds"
-                        }
-                    },
-                    {
-                        "Tag": "",
-                        "Change": {
-                            "Attribute": "*Removed*: ",
-                            "Before": "",
-                            "Indicator": "",
-                            "After": "Shield no longer decays"
-                        }
-                    },
-                    {
-                        "Tag": "",
-                        "Change": {
-                            "Attribute": "*Removed*: ",
-                            "Before": "",
-                            "Indicator": "",
-                            "After": "Janna no longer gains heal and shield power on CC"
-                        }
-                    },
-                    {
-                        "Tag": "",
-                        "Change": {
-                            "Attribute": "*New*: ",
-                            "Before": "",
-                            "Indicator": "",
-                            "After": "Reduce cooldown by 20% remaining cooldown on slow/knockup. Max once per spell."
-                        }
-                    }
-                ]
-            },
-            "R": ""
-        },
         "12.23": {
             "B": "",
             "P": {
@@ -966,8 +701,7 @@
         "12.12",
         "12.14",
         "12.23",
-        "13.8",
-        "13.22"
+        "13.8"
     ],
     "ChampionName": "Janna"
 }
