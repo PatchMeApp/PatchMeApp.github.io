@@ -177,7 +177,7 @@
                             "text": "60/90/120/150/180 {{0}} magic damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+85% AP)",
+                                    "scale": "(+80% AP)",
                                     "scaleId": "AP"
                                 }
                             ]
@@ -206,7 +206,7 @@
                             "text": "70/90/110 {{0}} {{1}} magic damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+60% AP)",
+                                    "scale": "(+50% AP)",
                                     "scaleId": "AP"
                                 },
                                 {
@@ -596,6 +596,40 @@
                     }
                 ]
             }
+        },
+        "13.22": {
+            "B": "",
+            "P": "",
+            "Q": "",
+            "W": "",
+            "E": {
+                "SpellName": "E - Force Pulse",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Magic Damage: ",
+                            "Before": "60/90/120/150/180 (+85% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "60/90/120/150/180 (+80% AP)"
+                        }
+                    }
+                ]
+            },
+            "R": {
+                "SpellName": "R - Riftwalk",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Zero-Stack Magic Damage: ",
+                            "Before": "70/90/110 (+60% AP) (+2% maximum mana)",
+                            "Indicator": " ⇒ ",
+                            "After": "70/90/110 (+50% AP) (+2% maximum mana)"
+                        }
+                    }
+                ]
+            }
         }
     },
     "ChangePatches": [
@@ -608,7 +642,8 @@
         "12.23",
         "13.1B",
         "13.3",
-        "13.18"
+        "13.18",
+        "13.22"
     ],
     "ChampionName": "Kassadin"
 }

@@ -100,7 +100,7 @@
                     },
                     {
                         "text": {
-                            "text": "10 - 60 {{0}}% Attack Speed",
+                            "text": "10 - 50 {{0}}% Attack Speed",
                             "scaleHolders": [
                                 {
                                     "scale": "(based on champion level)",
@@ -178,7 +178,7 @@
                             "text": "60/120/180 {{0}} physical damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+112% Bonus AD)",
+                                    "scale": "(+80% Bonus AD)",
                                     "scaleId": "AD"
                                 }
                             ]
@@ -318,6 +318,49 @@
             },
             "R": ""
         },
+        "13.22": {
+            "B": "",
+            "P": "",
+            "Q": {
+                "SpellName": "Q - Formless Blade",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Bonus Attack Speed: ",
+                            "Before": "10-60% (based on level)",
+                            "Indicator": " ⇒ ",
+                            "After": "10-50% (based on level)"
+                        }
+                    }
+                ]
+            },
+            "W": "",
+            "E": "",
+            "R": {
+                "SpellName": "R - Apotheosis",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Damage Over Time: ",
+                            "Before": "60/120/180 (+112% bonus AD)",
+                            "Indicator": " ⇒ ",
+                            "After": "60/120/180 (+80% bonus AD)"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Maximum Total Damage: ",
+                            "Before": "185/345/505 (+232% Bonus AD)",
+                            "Indicator": " ⇒ ",
+                            "After": "185/345/505 (+200% bonus AD)"
+                        }
+                    }
+                ]
+            }
+        },
         "12.23": {
             "B": "",
             "P": "",
@@ -391,7 +434,8 @@
     },
     "ChangePatches": [
         "12.13",
-        "12.23"
+        "12.23",
+        "13.22"
     ],
     "ChampionName": "Nilah"
 }
