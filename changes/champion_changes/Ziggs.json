@@ -33,7 +33,7 @@
             "increment": 0
         },
         "attackDamage": {
-            "base": 54,
+            "base": 55,
             "increment": 3.1
         },
         "attackRange": {
@@ -73,7 +73,7 @@
                 "parseInfo": [
                     {
                         "text": {
-                            "text": "95/145/195/245/295 {{0}} magic damage",
+                            "text": "85/135/185/235/285 {{0}} magic damage",
                             "scaleHolders": [
                                 {
                                     "scale": "(+65% AP)",
@@ -128,8 +128,8 @@
                     }
                 ]
             },
-            "cooldown": "20/18/16/14/12",
-            "cost": "65 Mana",
+            "cooldown": "24/21/18/15/12",
+            "cost": "80 Mana",
             "name": "Satchel Charge"
         },
         "E": {
@@ -491,6 +491,62 @@
             "W": "",
             "E": "",
             "R": ""
+        },
+        "13.23": {
+            "B": {
+                "SpellName": "Base Stats",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Base Attack Damage: ",
+                            "Before": "54",
+                            "Indicator": " ⇒ ",
+                            "After": "55"
+                        }
+                    }
+                ]
+            },
+            "P": "",
+            "Q": {
+                "SpellName": "Q - Bouncing Bomb",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Magic Damage: ",
+                            "Before": "95/145/195/245/295 (+65% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "85/135/185/235/285 (+65% AP)"
+                        }
+                    }
+                ]
+            },
+            "W": {
+                "SpellName": "W - Satchel Charge",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Cooldown: ",
+                            "Before": "20/18/16/14/12 seconds",
+                            "Indicator": " ⇒ ",
+                            "After": "24/21/18/15/12 seconds"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Mana Cost: ",
+                            "Before": "65",
+                            "Indicator": " ⇒ ",
+                            "After": "80"
+                        }
+                    }
+                ]
+            },
+            "E": "",
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -502,7 +558,8 @@
         "12.10",
         "12.20",
         "13.20",
-        "13.22"
+        "13.22",
+        "13.23"
     ],
     "ChampionName": "Ziggs"
 }

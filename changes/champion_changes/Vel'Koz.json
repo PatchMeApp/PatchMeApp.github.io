@@ -49,14 +49,14 @@
                 "parseInfo": [
                     {
                         "text": {
-                            "text": "33 − 169 {{0}} {{1}} bonus true damage",
+                            "text": "33 − 180 {{0}} {{1}} bonus true damage",
                             "scaleHolders": [
                                 {
                                     "scale": "(based on level)",
                                     "scaleId": "level"
                                 },
                                 {
-                                    "scale": "(+ 50% AP)",
+                                    "scale": "(+ 60% AP)",
                                     "scaleId": "AP"
                                 }
                             ]
@@ -350,12 +350,34 @@
             "W": "",
             "E": "",
             "R": ""
+        },
+        "13.23": {
+            "B": "",
+            "P": {
+                "SpellName": "Passive - Organic Deconstruction",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Third Stack Damage: ",
+                            "Before": "33-169 (based on level) (+50% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "35-180 (based on level) (+60% AP)"
+                        }
+                    }
+                ]
+            },
+            "Q": "",
+            "W": "",
+            "E": "",
+            "R": ""
         }
     },
     "ChangePatches": [
         "12.8",
         "12.10",
-        "13.22"
+        "13.22",
+        "13.23"
     ],
     "ChampionName": "Vel'Koz"
 }

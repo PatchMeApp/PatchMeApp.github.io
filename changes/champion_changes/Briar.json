@@ -1,7 +1,7 @@
 {
     "stats": {
         "hp": {
-            "base": 610,
+            "base": 590,
             "increment": 100
         },
         "mp": {
@@ -102,7 +102,7 @@
                     },
                     {
                         "text": {
-                            "text": "60/95/130/165/200 {{0}} physical damage",
+                            "text": "60/100/140/180/220 {{0}} physical damage",
                             "scaleHolders": [
                                 {
                                     "scale": "(+ 80% bonus AD)",
@@ -114,7 +114,7 @@
                     },
                     {
                         "text": {
-                            "text": "10/12.5/15/17.5/20% Armor",
+                            "text": "10/14/18/22/26% Armor",
                             "scaleHolders": []
                         },
                         "type": "scaleArmor"
@@ -187,7 +187,7 @@
                                     "scaleId": "AD"
                                 },
                                 {
-                                    "scale": "(+ 10% (+ 3.5% per 100 bonus AD)",
+                                    "scale": "(+ 9% (+ 2.5% per 100 bonus AD)",
                                     "scaleId": "AD"
                                 }
                             ]
@@ -297,14 +297,14 @@
                 "parseInfo": [
                     {
                         "text": {
-                            "text": "150/300/450 {{0}} {{1}} physical damage",
+                            "text": "150/325/500 {{0}} {{1}} physical damage",
                             "scaleHolders": [
                                 {
                                     "scale": "(+110% AP)",
                                     "scaleId": "AP"
                                 },
                                 {
-                                    "scale": "(+75% bonus AD)",
+                                    "scale": "(+110% bonus AD)",
                                     "scaleId": "AD"
                                 }
                             ]
@@ -659,13 +659,48 @@
                     }
                 ]
             }
+        },
+        "13.23": {
+            "B": {
+                "SpellName": "Base Stats",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Base Health: ",
+                            "Before": "610",
+                            "Indicator": " ⇒ ",
+                            "After": "590"
+                        }
+                    }
+                ]
+            },
+            "P": "",
+            "Q": "",
+            "W": {
+                "SpellName": "W - Snack Attack",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Bonus Physical Damage: ",
+                            "Before": "5/20/35/50/65 (+ 5% total AD) (+ 10% (+3.5% per 100 bonus AD) of the target's missing health)",
+                            "Indicator": " ⇒ ",
+                            "After": "5/20/35/50/65 (+ 5% total AD) (+ 9% (+2.5% per 100 bonus AD) of the target's missing health)"
+                        }
+                    }
+                ]
+            },
+            "E": "",
+            "R": ""
         }
     },
     "ChangePatches": [
         "13.18",
         "13.19",
         "13.21",
-        "13.22"
+        "13.22",
+        "13.23"
     ],
     "ChampionName": "Briar"
 }

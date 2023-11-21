@@ -105,8 +105,8 @@
                             "text": "15/35/55/75/95 {{0}}% AD) physical damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+(45/50/55/60/65)",
-                                    "scaleId": "(+(45/50/55/60/65"
+                                    "scale": "(+(50/55/60/65/70)",
+                                    "scaleId": "(+(50/55/60/65/70"
                                 }
                             ]
                         },
@@ -182,7 +182,7 @@
                 "parseInfo": [
                     {
                         "text": {
-                            "text": "20% AD Attack Damage",
+                            "text": "25% AD Attack Damage",
                             "scaleHolders": []
                         },
                         "type": "physicalDamage"
@@ -493,6 +493,40 @@
             "W": "",
             "E": "",
             "R": ""
+        },
+        "13.23": {
+            "B": "",
+            "P": "",
+            "Q": {
+                "SpellName": "Q - Broken Wings",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Damage: ",
+                            "Before": "15/35/55/75/95 (+45/50/55/60/65% AD)",
+                            "Indicator": " ⇒ ",
+                            "After": "15/35/55/75/95 (+50/55/60/65/70% AD)"
+                        }
+                    }
+                ]
+            },
+            "W": "",
+            "E": "",
+            "R": {
+                "SpellName": "R - Blade of the Exile",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Bonus Attack Damage: ",
+                            "Before": "20%",
+                            "Indicator": " ⇒ ",
+                            "After": "25%"
+                        }
+                    }
+                ]
+            }
         }
     },
     "ChangePatches": [
@@ -503,7 +537,8 @@
         "11.13",
         "11.22",
         "12.10",
-        "13.4"
+        "13.4",
+        "13.23"
     ],
     "ChampionName": "Riven"
 }

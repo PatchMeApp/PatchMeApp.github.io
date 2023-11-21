@@ -85,7 +85,7 @@
                 "parseInfo": [
                     {
                         "text": {
-                            "text": "30/60/90/120/150 {{0}} {{1}} {{2}} physical damage",
+                            "text": "30/55/80/105/130 {{0}} {{1}} {{2}} physical damage",
                             "scaleHolders": [
                                 {
                                     "scale": "(+40% AD)",
@@ -141,7 +141,7 @@
                 ]
             },
             "cooldown": "4",
-            "cost": "15 Mana",
+            "cost": "28/26/24/22/20 Mana",
             "name": "Ntofo Strikes"
         },
         "W": {
@@ -233,10 +233,10 @@
                 "parseInfo": [
                     {
                         "text": {
-                            "text": "45/65/85/105/125 {{0}} Shield",
+                            "text": "50/90/130/170/210 {{0}} Shield",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+ 15% bonus health)",
+                                    "scale": "(+ 10% bonus health)",
                                     "scaleId": "health"
                                 }
                             ]
@@ -349,7 +349,7 @@
                     },
                     {
                         "text": {
-                            "text": "15/30/45 {{0}} {{1}} Attack Damage",
+                            "text": "10/25/40 {{0}} {{1}} Attack Damage",
                             "scaleHolders": [
                                 {
                                     "scale": "(+ 25% bonus armor)",
@@ -976,6 +976,84 @@
             "W": "",
             "E": "",
             "R": ""
+        },
+        "13.23": {
+            "B": "",
+            "P": "",
+            "Q": {
+                "SpellName": "Q - Ntofo Strikes",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Mana Cost: ",
+                            "Before": "15 Mana",
+                            "Indicator": " ⇒ ",
+                            "After": "28/26/24/22/20 Mana"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Damage: ",
+                            "Before": "30/60/90/120/150 (+40% AD) (+30% bonus armor) (+30% bonus magic resistance)",
+                            "Indicator": " ⇒ ",
+                            "After": "30/55/80/105/130 (+40% AD) (+30% bonus armor) (+30% bonus magic resistance)"
+                        }
+                    }
+                ]
+            },
+            "W": {
+                "SpellName": "W - Path Maker",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Bugfix: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "Fixed a bug that allowed K'Sante to launch Path Maker's dash early. Now if Path Maker's channel is ended prematurely, the channel will simply end without a dash."
+                        }
+                    }
+                ]
+            },
+            "E": {
+                "SpellName": "E - Footwork",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Shield: ",
+                            "Before": "45/65/85/105/125 (+15% bonus health)",
+                            "Indicator": " ⇒ ",
+                            "After": "50/90/130/170/210 (+10% bonus health)"
+                        }
+                    }
+                ]
+            },
+            "R": {
+                "SpellName": "R - All Out",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Passive Bonus Damage: ",
+                            "Before": "45/60/75% (levels 6/11/16)",
+                            "Indicator": " ⇒ ",
+                            "After": "30-78% (levels 6-18, scaling linearly)"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Bonus Attack Damage: ",
+                            "Before": "15/30/45 (+25% bonus armor) (+25% bonus magic resistance)",
+                            "Indicator": " ⇒ ",
+                            "After": "10/25/40 (+25% bonus armor) (+25% bonus magic resistance)"
+                        }
+                    }
+                ]
+            }
         }
     },
     "ChangePatches": [
@@ -986,7 +1064,8 @@
         "13.12",
         "13.20",
         "13.21",
-        "13.22"
+        "13.22",
+        "13.23"
     ],
     "ChampionName": "K'Sante"
 }

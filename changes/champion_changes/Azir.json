@@ -170,18 +170,18 @@
                     },
                     {
                         "text": {
-                            "text": "0-92 {{0}} {{1}} {{2}} magic damage",
+                            "text": "2-77 {{0}} {{1}} {{2}} magic damage",
                             "scaleHolders": [
                                 {
                                     "scale": "(based on level)",
                                     "scaleId": "level"
                                 },
                                 {
-                                    "scale": "(+50/67/84/101/118)",
-                                    "scaleId": "(+50/67/84/101/118"
+                                    "scale": "(+50/65/80/95/110)",
+                                    "scaleId": "(+50/65/80/95/110"
                                 },
                                 {
-                                    "scale": "(+60% AP)",
+                                    "scale": "(+55% AP)",
                                     "scaleId": "AP"
                                 }
                             ]
@@ -1050,6 +1050,36 @@
             "W": "",
             "E": "",
             "R": ""
+        },
+        "13.23": {
+            "B": "",
+            "P": "",
+            "Q": "",
+            "W": {
+                "SpellName": "W - Arise!",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Magic Damage: ",
+                            "Before": "2-92 (levels 10-18) (+50/67/84/101/118) (+60% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "2-77 (levels 10-18) (+50/65/80/95/110) (+55% AP)"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Magic Damage: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "W Attacks on the primary target (aka whichever target you clicked on) now trigger on-hit effects at 50% damage value (100% in Arena). This includes on-attack effects such as Rageblade's Phantom Hit, Runaan's Hurricane, and Kraken Slayer."
+                        }
+                    }
+                ]
+            },
+            "E": "",
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -1066,7 +1096,8 @@
         "13.5",
         "13.7",
         "13.11",
-        "13.19"
+        "13.19",
+        "13.23"
     ],
     "ChampionName": "Azir"
 }

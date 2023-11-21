@@ -45,11 +45,11 @@
         "P": {
             "cooldown": "30/25/20/15",
             "_rawTooltip": {
-                "fullTooltip": "Naafiri creates a Packmate every 25/20/15/10 (based on level) seconds that will Attack enemies that she targets for [[0]], increased to 8−39 (based on level) (+5.85% bonus AD) after she uses an Ability.<br>Hitting champions and large monsters with Abilities reduces this Ability's Cooldown by 4 seconds. Killing enemies reduces it by 1 second.<br>Naafiri summons the maximum number of Packmates when the game starts and upon respawning.",
+                "fullTooltip": "Naafiri creates a Packmate every 25/20/15/10 (based on level) seconds that will Attack enemies that she targets for [[0]], increased to 6.25 - 32.5 (based on level) (+5.85% bonus AD) after she uses an Ability.<br>Hitting champions and large monsters with Abilities reduces this Ability's Cooldown by 4 seconds. Killing enemies reduces it by 1 second.<br>Naafiri summons the maximum number of Packmates when the game starts and upon respawning.",
                 "parseInfo": [
                     {
                         "text": {
-                            "text": "6−30 {{0}} {{1}} physical damage",
+                            "text": "5-25 {{0}} {{1}} physical damage",
                             "scaleHolders": [
                                 {
                                     "scale": "(based on level)",
@@ -224,7 +224,7 @@
                     },
                     {
                         "text": {
-                            "text": "65/100/135/170/205 {{0}} physical damage",
+                            "text": "60/90/120/150/180 {{0}} physical damage",
                             "scaleHolders": [
                                 {
                                     "scale": "(+80% Bonus AD)",
@@ -558,12 +558,56 @@
                 ]
             },
             "R": ""
+        },
+        "13.23": {
+            "B": "",
+            "P": {
+                "SpellName": "Passive - We Are More",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Packmate Attack Damage: ",
+                            "Before": "6-29.8 (based on level) (+4.5% bonus AD)",
+                            "Indicator": " ⇒ ",
+                            "After": "5-25 (based on level) (+4.5% bonus AD)"
+                        }
+                    }
+                ]
+            },
+            "Q": "",
+            "W": "",
+            "E": {
+                "SpellName": "E - Eviscerate",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Flurry Damage: ",
+                            "Before": "65/100/135/170/205 (+ 80% bonus AD)",
+                            "Indicator": " ⇒ ",
+                            "After": "60/90/120/150/180 (+ 80% bonus AD)"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Maximum Eviscerate Damage: ",
+                            "Before": "100/150/200/250/300 (+ 130% bonus AD)",
+                            "Indicator": " ⇒ ",
+                            "After": "95/140/185/230/275 (+ 130% bonus AD)"
+                        }
+                    }
+                ]
+            },
+            "R": ""
         }
     },
     "ChangePatches": [
         "13.14",
         "13.16",
-        "13.17"
+        "13.17",
+        "13.23"
     ],
     "ChampionName": "Naafiri"
 }
