@@ -102,7 +102,7 @@
                     },
                     {
                         "text": {
-                            "text": "60/95/130/165/200 {{0}} physical damage",
+                            "text": "60/90/120/150/180 {{0}} physical damage",
                             "scaleHolders": [
                                 {
                                     "scale": "(+ 80% bonus AD)",
@@ -152,7 +152,7 @@
                     },
                     {
                         "text": {
-                            "text": "60/75/90/105/120% Attack Speed",
+                            "text": "55/70/85/100/115% Attack Speed",
                             "scaleHolders": []
                         },
                         "type": "attackSpeed"
@@ -220,7 +220,7 @@
                     },
                     {
                         "text": {
-                            "text": "Blood Frenzy</keywordMajor and gathers energy, gaining 35% damage reduction and restoring 10/11.5/13/14.5/16% maximum health",
+                            "text": "Blood Frenzy</keywordMajor and gathers energy, gaining 35% damage reduction and restoring 9/10/11/12/13% maximum health",
                             "scaleHolders": []
                         },
                         "type": ""
@@ -297,19 +297,19 @@
                 "parseInfo": [
                     {
                         "text": {
-                            "text": "150/300/450 {{0}} {{1}} physical damage",
+                            "text": "200/375/550 {{0}} {{1}} magic damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+110% AP)",
+                                    "scale": "(+120% AP)",
                                     "scaleId": "AP"
                                 },
                                 {
-                                    "scale": "(+75% bonus AD)",
+                                    "scale": "(+50% bonus AD)",
                                     "scaleId": "AD"
                                 }
                             ]
                         },
-                        "type": "physicalDamage"
+                        "type": "magicDamage"
                     },
                     {
                         "text": {
@@ -693,6 +693,97 @@
             },
             "E": "",
             "R": ""
+        },
+        "13.24": {
+            "B": {
+                "SpellName": "Base Stats",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Base Armor: ",
+                            "Before": "32",
+                            "Indicator": " ⇒ ",
+                            "After": "30"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Attack Speed Ratio: ",
+                            "Before": "0.644",
+                            "Indicator": " ⇒ ",
+                            "After": "0.669 (Note: Attack speed at level 1 is unchanged.)"
+                        }
+                    }
+                ]
+            },
+            "P": "",
+            "Q": {
+                "SpellName": "Q - Head Rush",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Damage: ",
+                            "Before": "60/95/130/165/200 (+80% bonus AD)",
+                            "Indicator": " ⇒ ",
+                            "After": "60/90/120/150/180 (+80% bonus AD)"
+                        }
+                    }
+                ]
+            },
+            "W": {
+                "SpellName": "W - Blood Frenzy",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Bonus Attack Speed: ",
+                            "Before": "60/75/90/105/120%",
+                            "Indicator": " ⇒ ",
+                            "After": "55/70/85/100/115%"
+                        }
+                    }
+                ]
+            },
+            "E": {
+                "SpellName": "E - Chilling Scream",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Damage Reduction: ",
+                            "Before": "40%",
+                            "Indicator": " ⇒ ",
+                            "After": "35%"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Healing: ",
+                            "Before": "10/11.5/13/14.5/16% of Maximum Health",
+                            "Indicator": " ⇒ ",
+                            "After": "9/10/11/12/13% of Maximum Health"
+                        }
+                    }
+                ]
+            },
+            "R": {
+                "SpellName": "R - Certain Death",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Damage: ",
+                            "Before": "150/300/450 (+75% bonus AD) (+110% AP) Physical Damage",
+                            "Indicator": " ⇒ ",
+                            "After": "200/375/550 (+50% bonus AD) (+120% AP) Magic Damage"
+                        }
+                    }
+                ]
+            }
         }
     },
     "ChangePatches": [
@@ -700,7 +791,8 @@
         "13.19",
         "13.21",
         "13.22",
-        "13.23"
+        "13.23",
+        "13.24"
     ],
     "ChampionName": "Briar"
 }

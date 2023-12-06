@@ -171,11 +171,11 @@
                                     "scaleId": "AD"
                                 },
                                 {
-                                    "scale": "(+30% bonus armor)",
+                                    "scale": "(+50% bonus armor)",
                                     "scaleId": "armor"
                                 },
                                 {
-                                    "scale": "(+30% bonus magic resistance)",
+                                    "scale": "(+50% bonus magic resistance)",
                                     "scaleId": "resistance"
                                 },
                                 {
@@ -224,7 +224,7 @@
                 ]
             },
             "cooldown": "18/16.5/15/13.5/12",
-            "cost": "60/65/70/75/80 Mana",
+            "cost": "40/45/50/55/60 Mana",
             "name": "Path Maker"
         },
         "E": {
@@ -1054,6 +1054,36 @@
                     }
                 ]
             }
+        },
+        "13.24": {
+            "B": "",
+            "P": "",
+            "Q": "",
+            "W": {
+                "SpellName": "W - Path Maker",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Mana Cost: ",
+                            "Before": "60/65/70/75/80",
+                            "Indicator": " ⇒ ",
+                            "After": "40/45/50/55/60"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Damage: ",
+                            "Before": "20/40/60/80/100 (+50% AD) (+30% bonus armor) (+30% bonus magic resistance) (+6/7/8/9/10% target's maximum health)",
+                            "Indicator": " ⇒ ",
+                            "After": "20/40/60/80/100 (+50% AD) (+50% bonus armor) (+50% bonus magic resistance) (+6/7/8/9/10% target's maximum health)"
+                        }
+                    }
+                ]
+            },
+            "E": "",
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -1065,7 +1095,8 @@
         "13.20",
         "13.21",
         "13.22",
-        "13.23"
+        "13.23",
+        "13.24"
     ],
     "ChampionName": "K'Sante"
 }

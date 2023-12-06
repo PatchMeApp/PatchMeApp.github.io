@@ -43,7 +43,7 @@
     },
     "spells": {
         "P": {
-            "cooldown": "12",
+            "cooldown": "12/10/8/6",
             "_rawTooltip": {
                 "fullTooltip": "Innate: Gragas periodically heals for [[0]] upon casting an ability.",
                 "parseInfo": [
@@ -564,6 +564,27 @@
                     }
                 ]
             }
+        },
+        "13.24": {
+            "B": "",
+            "P": {
+                "SpellName": "Passive - Happy Hour",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Cooldown: ",
+                            "Before": "12 seconds",
+                            "Indicator": " ⇒ ",
+                            "After": "12/10/8/6 seconds (levels 1/6/11/16)"
+                        }
+                    }
+                ]
+            },
+            "Q": "",
+            "W": "",
+            "E": "",
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -577,7 +598,8 @@
         "12.10",
         "12.11",
         "13.12",
-        "13.22"
+        "13.22",
+        "13.24"
     ],
     "ChampionName": "Gragas"
 }

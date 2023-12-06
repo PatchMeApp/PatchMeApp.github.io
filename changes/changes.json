@@ -1,5 +1,5 @@
 {
-    "LatestGlobalPatch": "13.23",
+    "LatestGlobalPatch": "13.24",
     "Aatrox": {
         "ChampionName": "Aatrox",
         "ChangePatches": [
@@ -1234,50 +1234,29 @@
             "12.10",
             "12.11",
             "13.12",
-            "13.22"
+            "13.22",
+            "13.24"
         ],
         "LatestChanges": {
             "B": "",
-            "P": "",
-            "Q": "",
-            "W": "",
-            "E": {
-                "SpellName": "E - Body Slam",
+            "P": {
+                "SpellName": "Passive - Happy Hour",
                 "Changes": [
                     {
                         "Tag": "",
                         "Change": {
-                            "Attribute": "Cooldown Refund on Hit: ",
-                            "Before": "3",
+                            "Attribute": "Cooldown: ",
+                            "Before": "12 seconds",
                             "Indicator": " ⇒ ",
-                            "After": "40% of remaining cooldown"
-                        }
-                    },
-                    {
-                        "Tag": "",
-                        "Change": {
-                            "Attribute": "We did the math for you: ",
-                            "Before": "3",
-                            "Indicator": " ⇒ ",
-                            "After": "5.6/5.4/5.2/5/4.8, scaling with ability haste"
+                            "After": "12/10/8/6 seconds (levels 1/6/11/16)"
                         }
                     }
                 ]
             },
-            "R": {
-                "SpellName": "R - Explosive Cask",
-                "Changes": [
-                    {
-                        "Tag": "",
-                        "Change": {
-                            "Attribute": "Travel Time: ",
-                            "Before": "0.55 seconds",
-                            "Indicator": " ⇒ ",
-                            "After": "0.5 seconds"
-                        }
-                    }
-                ]
-            }
+            "Q": "",
+            "W": "",
+            "E": "",
+            "R": ""
         }
     },
     "Graves": {
@@ -1436,37 +1415,42 @@
             "11.19",
             "12.8",
             "12.10",
-            "12.23"
+            "12.23",
+            "13.24"
         ],
         "LatestChanges": {
             "B": "",
-            "P": {
-                "SpellName": "Passive - Darkness Rise",
+            "P": "",
+            "Q": {
+                "SpellName": "Q - Obliterate",
                 "Changes": [
                     {
                         "Tag": "",
                         "Change": {
-                            "Attribute": "Damage Cap against Monsters: ",
-                            "Before": "180",
+                            "Attribute": "Damage: ",
+                            "Before": "75/95/115/135/155 (+5-139 (based on level)) (+60% AP)",
                             "Indicator": " ⇒ ",
-                            "After": "28-164 (based on level)"
-                        }
-                    },
-                    {
-                        "Tag": "",
-                        "Change": {
-                            "Attribute": "Passive Proc on Monsters: ",
-                            "Before": "Generates a stack on all monster hits",
-                            "Indicator": " ⇒ ",
-                            "After": "Generates a stack on large monster hits"
+                            "After": "75/95/115/135/155 (+5-139 (based on level)) (+70% AP)"
                         }
                     }
                 ]
             },
-            "Q": "",
             "W": "",
             "E": "",
-            "R": ""
+            "R": {
+                "SpellName": "R - Realm of Death",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "You Can Run…: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "Casting Realm of Death will now reveal the target upon starting the cast. This means that walking into a brush while Mordekaiser is casting his R will no longer cancel the spell. NoteThe target will not be revealed for the entire duration of the spell, so you can still hide on bush if one comes with you to the Realm."
+                        }
+                    }
+                ]
+            }
         }
     },
     "Orianna": {
@@ -1705,7 +1689,6 @@
     },
     "Riven": {
         "ChampionName": "Riven",
-        "Balance":["buff"],
         "ChangePatches": [
             "9.19",
             "10.7",
@@ -2246,7 +2229,8 @@
             "13.11",
             "13.13",
             "13.15",
-            "13.22"
+            "13.22",
+            "13.24"
         ],
         "LatestChanges": {
             "B": {
@@ -2255,19 +2239,10 @@
                     {
                         "Tag": "",
                         "Change": {
-                            "Attribute": "Attack windup: ",
-                            "Before": "23%",
+                            "Attribute": "Base Health: ",
+                            "Before": "655",
                             "Indicator": " ⇒ ",
-                            "After": "20%"
-                        }
-                    },
-                    {
-                        "Tag": "",
-                        "Change": {
-                            "Attribute": "Attack Animations: ",
-                            "Before": "",
-                            "Indicator": "",
-                            "After": "Restored an alternate attack animation which will be used 25% of the time for regular attacks and every time for critical attacks"
+                            "After": "630"
                         }
                     }
                 ]
@@ -2275,7 +2250,20 @@
             "P": "",
             "Q": "",
             "W": "",
-            "E": "",
+            "E": {
+                "SpellName": "E - Triggerseed",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Slow: ",
+                            "Before": "50/55/60/65/70%",
+                            "Indicator": " ⇒ ",
+                            "After": "45/50/55/60/65%"
+                        }
+                    }
+                ]
+            },
             "R": ""
         }
     },
@@ -2331,40 +2319,37 @@
             "12.4",
             "12.10",
             "12.15",
-            "13.5"
+            "13.5",
+            "13.24"
         ],
         "LatestChanges": {
-            "B": "",
-            "P": "",
-            "Q": {
-                "SpellName": "Q - Edge of Ixtal/Elemental Wrath",
+            "B": {
+                "SpellName": "Base Stats",
                 "Changes": [
                     {
                         "Tag": "",
                         "Change": {
-                            "Attribute": "Physical Damage: ",
-                            "Before": "",
-                            "Indicator": "",
-                            "After": "50/80/110/140/170 (+75% bonus AD)⇒ 50/85/120/155/190 (+75% bonus AD)"
-                        }
-                    }
-                ]
-            },
-            "W": "",
-            "E": {
-                "SpellName": "E - Audacity",
-                "Changes": [
-                    {
-                        "Tag": "",
-                        "Change": {
-                            "Attribute": "Cooldown: ",
-                            "Before": "12/11/10/9/8 seconds",
+                            "Attribute": "Base Mana: ",
+                            "Before": "325",
                             "Indicator": " ⇒ ",
-                            "After": "11/10/9/8/7 seconds"
+                            "After": "375"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Mana Growth: ",
+                            "Before": "50",
+                            "Indicator": " ⇒ ",
+                            "After": "60"
                         }
                     }
                 ]
             },
+            "P": "",
+            "Q": "",
+            "W": "",
+            "E": "",
             "R": ""
         }
     },
@@ -3372,54 +3357,51 @@
             "11.7",
             "12.9",
             "12.10",
-            "13.3"
+            "13.3",
+            "13.24"
         ],
         "LatestChanges": {
-            "B": "",
-            "P": {
-                "SpellName": "P - Concussive Blows",
+            "B": {
+                "SpellName": "Base Stats",
                 "Changes": [
                     {
                         "Tag": "",
                         "Change": {
-                            "Attribute": "Target Immunity Duration: ",
-                            "Before": "8/6/4 seconds (levels 1/7/13)",
+                            "Attribute": "Base Mana Regeneration: ",
+                            "Before": "6",
                             "Indicator": " ⇒ ",
-                            "After": "8/6/4 (levels 1/6/11)"
+                            "After": "7"
                         }
                     }
                 ]
             },
-            "Q": {
-                "SpellName": "Q - Winter's Bite",
-                "Changes": [
-                    {
-                        "Tag": "",
-                        "Change": {
-                            "Attribute": "Cooldown: ",
-                            "Before": "10/9/8/7/6 seconds",
-                            "Indicator": " ⇒ ",
-                            "After": "8/7.5/7/6.5/6 seconds"
-                        }
-                    }
-                ]
-            },
-            "W": {
-                "SpellName": "W - Stand Behind Me",
-                "Changes": [
-                    {
-                        "Tag": "",
-                        "Change": {
-                            "Attribute": "Bonus Armor and Magic Resist: ",
-                            "Before": "10/14/18/22/26",
-                            "Indicator": " ⇒ ",
-                            "After": "20/25/30/35/40"
-                        }
-                    }
-                ]
-            },
+            "P": "",
+            "Q": "",
+            "W": "",
             "E": "",
-            "R": ""
+            "R": {
+                "SpellName": "R - Glacial Fissure",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Minimum Knock Up Duration: ",
+                            "Before": "0.3 seconds",
+                            "Indicator": " ⇒ ",
+                            "After": "0.6 seconds"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Secondary Target Knock Up Duration: ",
+                            "Before": "0.3 seconds",
+                            "Indicator": " ⇒ ",
+                            "After": "0.6 seconds"
+                        }
+                    }
+                ]
+            }
         }
     },
     "Diana": {
@@ -3855,7 +3837,6 @@
     },
     "Azir": {
         "ChampionName": "Azir",
-        "Balance":["adjust"],
         "ChangePatches": [
             "10.1",
             "10.3",
@@ -3871,7 +3852,8 @@
             "13.7",
             "13.11",
             "13.19",
-            "13.23"
+            "13.23",
+            "13.24"
         ],
         "LatestChanges": {
             "B": "",
@@ -3883,19 +3865,10 @@
                     {
                         "Tag": "",
                         "Change": {
-                            "Attribute": "Magic Damage: ",
-                            "Before": "2-92 (levels 10-18) (+50/67/84/101/118) (+60% AP)",
+                            "Attribute": "Damage: ",
+                            "Before": "2-77 (levels 10-18) (+50/65/80/95/110) (+55% AP)",
                             "Indicator": " ⇒ ",
-                            "After": "2-77 (levels 10-18) (+50/65/80/95/110) (+55% AP)"
-                        }
-                    },
-                    {
-                        "Tag": "",
-                        "Change": {
-                            "Attribute": "Magic Damage: ",
-                            "Before": "",
-                            "Indicator": "",
-                            "After": "W Attacks on the primary target (aka whichever target you clicked on) now trigger on-hit effects at 50% damage value (100% in Arena). This includes on-attack effects such as Rageblade's Phantom Hit, Runaan's Hurricane, and Kraken Slayer."
+                            "After": "2-77 (levels 10-18) (+50/67/84/101/118) (+55% AP)"
                         }
                     }
                 ]
@@ -4294,7 +4267,6 @@
     },
     "Draven": {
         "ChampionName": "Draven",
-        "Balance":["buff"],
         "ChangePatches": [
             "10.2",
             "10.6",
@@ -4381,7 +4353,6 @@
     },
     "Trundle": {
         "ChampionName": "Trundle",
-        "Balance":["buff"],
         "ChangePatches": [
             "10.2",
             "10.9",
@@ -4436,7 +4407,6 @@
     },
     "Ziggs": {
         "ChampionName": "Ziggs",
-        "Balance":["nerf"],
         "ChangePatches": [
             "10.2",
             "10.16",
@@ -4519,35 +4489,27 @@
             "12.13",
             "13.6",
             "13.19",
-            "13.20"
+            "13.20",
+            "13.24"
         ],
         "LatestChanges": {
             "B": "",
             "P": "",
-            "Q": "",
-            "W": {
-                "SpellName": "W - Shield of Durand",
+            "Q": {
+                "SpellName": "Q - Winds of War",
                 "Changes": [
                     {
                         "Tag": "",
                         "Change": {
                             "Attribute": "Cooldown: ",
-                            "Before": "18/17.5/17/16.5/16 seconds",
+                            "Before": "12/11.5/11/10.5/10 seconds",
                             "Indicator": " ⇒ ",
-                            "After": "18/17/16/15/14 seconds"
-                        }
-                    },
-                    {
-                        "Tag": "",
-                        "Change": {
-                            "Attribute": "Shield Out-of-Combat Timer: ",
-                            "Before": "12 seconds",
-                            "Indicator": " ⇒ ",
-                            "After": "12/11/8 seconds (levels 1/6/11)"
+                            "After": "12/11/10/9/8 seconds"
                         }
                     }
                 ]
             },
+            "W": "",
             "E": "",
             "R": ""
         }
@@ -4561,7 +4523,8 @@
             "12.10",
             "12.12",
             "12.15",
-            "13.8"
+            "13.8",
+            "13.24"
         ],
         "LatestChanges": {
             "B": "",
@@ -4574,33 +4537,37 @@
                         "Tag": "",
                         "Change": {
                             "Attribute": "Bonus Armor: ",
-                            "Before": "15/20/25/30/35 (+20% Bonus Armor)",
+                            "Before": "20/25/30/35/40 (+20% bonus armor)",
                             "Indicator": " ⇒ ",
-                            "After": "20/25/30/35/40 (+20% Bonus Armor)"
+                            "After": "20/27.5/35/42.5/50 (+20% bonus armor)"
                         }
                     },
                     {
                         "Tag": "",
                         "Change": {
                             "Attribute": "Bonus Magic Resistance: ",
-                            "Before": "15/20/25/30/35 (+20% Bonus Magic Resistance)",
+                            "Before": "20/25/30/35/40 (+20% bonus magic resistance)",
                             "Indicator": " ⇒ ",
-                            "After": "20/25/30/35/40 (+20% Bonus Magic Resistance)"
-                        }
-                    },
-                    {
-                        "Tag": "",
-                        "Change": {
-                            "Attribute": "Magic Damage: ",
-                            "Before": "45/80/115/150/185 (+ 40% AP)",
-                            "Indicator": " ⇒ ",
-                            "After": "55/90/125/160/195 (+ 40% AP)"
+                            "After": "20/27.5/35/42.5/50 (+20% bonus magic resistance)"
                         }
                     }
                 ]
             },
             "E": "",
-            "R": ""
+            "R": {
+                "SpellName": "R - Solar Flare",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Damage: ",
+                            "Before": "100/175/250 (+80% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "150/225/300 (+80% AP)"
+                        }
+                    }
+                ]
+            }
         }
     },
     "Rumble": {
@@ -5599,52 +5566,27 @@
             "11.18",
             "12.2",
             "12.10",
-            "13.6"
+            "13.6",
+            "13.24"
         ],
         "LatestChanges": {
-            "B": {
-                "SpellName": "Base Stats",
+            "B": "",
+            "P": "",
+            "Q": {
+                "SpellName": "Q - Noxian Diplomacy",
                 "Changes": [
                     {
                         "Tag": "",
                         "Change": {
-                            "Attribute": "Mana: ",
-                            "Before": "377",
-                            "Indicator": " ⇒ ",
-                            "After": "400"
+                            "Attribute": "Quality of Life Change: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "When cast at range, Q will now reset Talon's attack timer. (Note: this has been updated to match the functionality of his Q when cast at melee range.)"
                         }
                     }
                 ]
             },
-            "P": {
-                "SpellName": "Passive - Blade's End",
-                "Changes": [
-                    {
-                        "Tag": "",
-                        "Change": {
-                            "Attribute": "Damage: ",
-                            "Before": "75-255 (based on level) (+200% bonus AD)",
-                            "Indicator": " ⇒ ",
-                            "After": "80-280 (based on level) (+210% bonus AD)"
-                        }
-                    }
-                ]
-            },
-            "Q": "",
-            "W": {
-                "SpellName": "W - Rake",
-                "Changes": [
-                    {
-                        "Tag": "",
-                        "Change": {
-                            "Attribute": "Mana Cost: ",
-                            "Before": "55/60/65/70/75",
-                            "Indicator": " ⇒ ",
-                            "After": "50/55/60/65/70"
-                        }
-                    }
-                ]
-            },
+            "W": "",
             "E": "",
             "R": ""
         }
@@ -6206,7 +6148,6 @@
     },
     "Janna": {
         "ChampionName": "Janna",
-        "Balance":["buff"],
         "ChangePatches": [
             "10.11",
             "12.2",
@@ -6441,27 +6382,28 @@
             "12.12",
             "13.1B",
             "13.12",
-            "13.16"
+            "13.16",
+            "13.24"
         ],
         "LatestChanges": {
             "B": "",
-            "P": {
-                "SpellName": "Passive - Lightslinger",
+            "P": "",
+            "Q": "",
+            "W": "",
+            "E": {
+                "SpellName": "E - Relentless Pursuit",
                 "Changes": [
                     {
                         "Tag": "",
                         "Change": {
-                            "Attribute": "Bonus Magic Damage On-Hit: ",
-                            "Before": "10 (+15% AD)",
+                            "Attribute": "Cooldown: ",
+                            "Before": "22/20/18/16/14 seconds",
                             "Indicator": " ⇒ ",
-                            "After": "15 (+15% AD)"
+                            "After": "19/17.75/16.5/15.25/14 seconds"
                         }
                     }
                 ]
             },
-            "Q": "",
-            "W": "",
-            "E": "",
             "R": ""
         }
     },
@@ -6942,7 +6884,6 @@
     },
     "Jarvan IV": {
         "ChampionName": "Jarvan IV",
-        "Balance":["nerf"],
         "ChangePatches": [
             "10.18",
             "11.12",
@@ -8121,7 +8062,8 @@
             "13.1",
             "13.7",
             "13.12",
-            "13.19"
+            "13.19",
+            "13.24"
         ],
         "LatestChanges": {
             "B": {
@@ -8130,17 +8072,30 @@
                     {
                         "Tag": "",
                         "Change": {
-                            "Attribute": "Base Movement Speed: ",
-                            "Before": "335",
+                            "Attribute": "AD Growth: ",
+                            "Before": "1.3",
                             "Indicator": " ⇒ ",
-                            "After": "330"
+                            "After": "2"
                         }
                     }
                 ]
             },
             "P": "",
             "Q": "",
-            "W": "",
+            "W": {
+                "SpellName": "W - Ultrashock Laser",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Damage: ",
+                            "Before": "20/60/100/140/180 (+130% AD) (+25% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "30/70/110/150/190 (+130% AD) (+25% AP)"
+                        }
+                    }
+                ]
+            },
             "E": "",
             "R": ""
         }
@@ -8186,32 +8141,54 @@
     },
     "Vel'Koz": {
         "ChampionName": "Vel'Koz",
-        "Balance":["buff"],
         "ChangePatches": [
             "12.8",
             "12.10",
             "13.22",
-            "13.23"
+            "13.23",
+            "13.24"
         ],
         "LatestChanges": {
             "B": "",
-            "P": {
-                "SpellName": "Passive - Organic Deconstruction",
+            "P": "",
+            "Q": "",
+            "W": {
+                "SpellName": "W - Void Rift",
                 "Changes": [
                     {
                         "Tag": "",
                         "Change": {
-                            "Attribute": "Third Stack Damage: ",
-                            "Before": "33-169 (based on level) (+50% AP)",
-                            "Indicator": " ⇒ ",
-                            "After": "35-180 (based on level) (+60% AP)"
+                            "Attribute": "",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "Fixed a bug where the first half of the rift would fizzle if Vel'Koz died directly after casting."
                         }
                     }
                 ]
             },
-            "Q": "",
-            "W": "",
-            "E": "",
+            "E": {
+                "SpellName": "E - Tectonic Disruption",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "Fixed a bug where the spell would fizzle out when V'K flashes or is knocked back at max range."
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "Tectonic Disruption's missile will now spawn at Vel'koz's original location if he flashes or is knocked back during the cast."
+                        }
+                    }
+                ]
+            },
             "R": ""
         }
     },
@@ -8337,7 +8314,6 @@
     },
     "K'Sante": {
         "ChampionName": "K'Sante",
-        "Balance":["nerf"],
         "ChangePatches": [
             "12.21",
             "12.23",
@@ -8347,85 +8323,38 @@
             "13.20",
             "13.21",
             "13.22",
-            "13.23"
+            "13.23",
+            "13.24"
         ],
         "LatestChanges": {
             "B": "",
             "P": "",
-            "Q": {
-                "SpellName": "Q - Ntofo Strikes",
-                "Changes": [
-                    {
-                        "Tag": "",
-                        "Change": {
-                            "Attribute": "Mana Cost: ",
-                            "Before": "15 Mana",
-                            "Indicator": " ⇒ ",
-                            "After": "28/26/24/22/20 Mana"
-                        }
-                    },
-                    {
-                        "Tag": "",
-                        "Change": {
-                            "Attribute": "Damage: ",
-                            "Before": "30/60/90/120/150 (+40% AD) (+30% bonus armor) (+30% bonus magic resistance)",
-                            "Indicator": " ⇒ ",
-                            "After": "30/55/80/105/130 (+40% AD) (+30% bonus armor) (+30% bonus magic resistance)"
-                        }
-                    }
-                ]
-            },
+            "Q": "",
             "W": {
                 "SpellName": "W - Path Maker",
                 "Changes": [
                     {
                         "Tag": "",
                         "Change": {
-                            "Attribute": "Bugfix: ",
-                            "Before": "",
-                            "Indicator": "",
-                            "After": "Fixed a bug that allowed K'Sante to launch Path Maker's dash early. Now if Path Maker's channel is ended prematurely, the channel will simply end without a dash."
-                        }
-                    }
-                ]
-            },
-            "E": {
-                "SpellName": "E - Footwork",
-                "Changes": [
-                    {
-                        "Tag": "",
-                        "Change": {
-                            "Attribute": "Shield: ",
-                            "Before": "45/65/85/105/125 (+15% bonus health)",
+                            "Attribute": "Mana Cost: ",
+                            "Before": "60/65/70/75/80",
                             "Indicator": " ⇒ ",
-                            "After": "50/90/130/170/210 (+10% bonus health)"
-                        }
-                    }
-                ]
-            },
-            "R": {
-                "SpellName": "R - All Out",
-                "Changes": [
-                    {
-                        "Tag": "",
-                        "Change": {
-                            "Attribute": "Passive Bonus Damage: ",
-                            "Before": "45/60/75% (levels 6/11/16)",
-                            "Indicator": " ⇒ ",
-                            "After": "30-78% (levels 6-18, scaling linearly)"
+                            "After": "40/45/50/55/60"
                         }
                     },
                     {
                         "Tag": "",
                         "Change": {
-                            "Attribute": "Bonus Attack Damage: ",
-                            "Before": "15/30/45 (+25% bonus armor) (+25% bonus magic resistance)",
+                            "Attribute": "Damage: ",
+                            "Before": "20/40/60/80/100 (+50% AD) (+30% bonus armor) (+30% bonus magic resistance) (+6/7/8/9/10% target's maximum health)",
                             "Indicator": " ⇒ ",
-                            "After": "10/25/40 (+25% bonus armor) (+25% bonus magic resistance)"
+                            "After": "20/40/60/80/100 (+50% AD) (+50% bonus armor) (+50% bonus magic resistance) (+6/7/8/9/10% target's maximum health)"
                         }
                     }
                 ]
-            }
+            },
+            "E": "",
+            "R": ""
         }
     },
     "Milio": {
@@ -8496,7 +8425,6 @@
     },
     "Naafiri": {
         "ChampionName": "Naafiri",
-        "Balance":["nerf"],
         "ChangePatches": [
             "13.14",
             "13.16",
@@ -8549,13 +8477,13 @@
     },
     "Briar": {
         "ChampionName": "Briar",
-        "Balance":["nerf"],
         "ChangePatches": [
             "13.18",
             "13.19",
             "13.21",
             "13.22",
-            "13.23"
+            "13.23",
+            "13.24"
         ],
         "LatestChanges": {
             "B": {
@@ -8564,30 +8492,101 @@
                     {
                         "Tag": "",
                         "Change": {
-                            "Attribute": "Base Health: ",
-                            "Before": "610",
+                            "Attribute": "Base Armor: ",
+                            "Before": "32",
                             "Indicator": " ⇒ ",
-                            "After": "590"
+                            "After": "30"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Attack Speed Ratio: ",
+                            "Before": "0.644",
+                            "Indicator": " ⇒ ",
+                            "After": "0.669 (Note: Attack speed at level 1 is unchanged.)"
                         }
                     }
                 ]
             },
             "P": "",
-            "Q": "",
-            "W": {
-                "SpellName": "W - Snack Attack",
+            "Q": {
+                "SpellName": "Q - Head Rush",
                 "Changes": [
                     {
                         "Tag": "",
                         "Change": {
-                            "Attribute": "Bonus Physical Damage: ",
-                            "Before": "5/20/35/50/65 (+ 5% total AD) (+ 10% (+3.5% per 100 bonus AD) of the target's missing health)",
+                            "Attribute": "Damage: ",
+                            "Before": "60/95/130/165/200 (+80% bonus AD)",
                             "Indicator": " ⇒ ",
-                            "After": "5/20/35/50/65 (+ 5% total AD) (+ 9% (+2.5% per 100 bonus AD) of the target's missing health)"
+                            "After": "60/90/120/150/180 (+80% bonus AD)"
                         }
                     }
                 ]
             },
+            "W": {
+                "SpellName": "W - Blood Frenzy",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Bonus Attack Speed: ",
+                            "Before": "60/75/90/105/120%",
+                            "Indicator": " ⇒ ",
+                            "After": "55/70/85/100/115%"
+                        }
+                    }
+                ]
+            },
+            "E": {
+                "SpellName": "E - Chilling Scream",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Damage Reduction: ",
+                            "Before": "40%",
+                            "Indicator": " ⇒ ",
+                            "After": "35%"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Healing: ",
+                            "Before": "10/11.5/13/14.5/16% of Maximum Health",
+                            "Indicator": " ⇒ ",
+                            "After": "9/10/11/12/13% of Maximum Health"
+                        }
+                    }
+                ]
+            },
+            "R": {
+                "SpellName": "R - Certain Death",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Damage: ",
+                            "Before": "150/300/450 (+75% bonus AD) (+110% AP) Physical Damage",
+                            "Indicator": " ⇒ ",
+                            "After": "200/375/550 (+50% bonus AD) (+120% AP) Magic Damage"
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "Hwei": {
+        "ChampionName": "Hwei",
+        "ChangePatches": [
+            "13.24"
+        ],
+        "LatestChanges": {
+            "B": "",
+            "P": "",
+            "Q": "",
+            "W": "",
             "E": "",
             "R": ""
         }

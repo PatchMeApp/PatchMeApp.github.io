@@ -188,7 +188,7 @@
         },
         "R": {
             "_rawTooltip": {
-                "fullTooltip": "Braum slams the ground sending forth a fissure that [[0]] enemies in its path and nearby Braum, and deals [[1]]. The first target hit is [[2]] for between 0.3 and 1/1.5 seconds, increasing with distance from Braum. All others hit are [[3]] for 0.3 seconds.<br /><br />The fissure also creates a zone for 4 seconds, that [[4]] by 40/50%.<br />",
+                "fullTooltip": "Braum slams the ground sending forth a fissure that [[0]] enemies in its path and nearby Braum, and deals [[1]]. The first target hit is [[2]] for between 0.6 and 1/1.5 seconds, increasing with distance from Braum. All others hit are [[3]] for 0.6 seconds.<br /><br />The fissure also creates a zone for 4 seconds, that [[4]] by 40/50%.<br />",
                 "parseInfo": [
                     {
                         "text": {
@@ -497,6 +497,49 @@
             "E": "",
             "R": ""
         },
+        "13.24": {
+            "B": {
+                "SpellName": "Base Stats",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Base Mana Regeneration: ",
+                            "Before": "6",
+                            "Indicator": " ⇒ ",
+                            "After": "7"
+                        }
+                    }
+                ]
+            },
+            "P": "",
+            "Q": "",
+            "W": "",
+            "E": "",
+            "R": {
+                "SpellName": "R - Glacial Fissure",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Minimum Knock Up Duration: ",
+                            "Before": "0.3 seconds",
+                            "Indicator": " ⇒ ",
+                            "After": "0.6 seconds"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Secondary Target Knock Up Duration: ",
+                            "Before": "0.3 seconds",
+                            "Indicator": " ⇒ ",
+                            "After": "0.6 seconds"
+                        }
+                    }
+                ]
+            }
+        },
         "13.3": {
             "B": "",
             "P": {
@@ -552,7 +595,8 @@
         "11.7",
         "12.9",
         "12.10",
-        "13.3"
+        "13.3",
+        "13.24"
     ],
     "ChampionName": "Braum"
 }
