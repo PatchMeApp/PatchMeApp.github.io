@@ -29,7 +29,7 @@
             "increment": 0.021
         },
         "ms": {
-            "base": 335,
+            "base": 340,
             "increment": 0
         },
         "attackDamage": {
@@ -43,13 +43,13 @@
     },
     "spells": {
         "P": {
-            "cooldown": "30/25/20/15",
+            "cooldown": "30/25/20/15/10",
             "_rawTooltip": {
                 "fullTooltip": "Naafiri creates a Packmate every 25/20/15/10 (based on level) seconds that will Attack enemies that she targets for [[0]], increased to 6.25 - 32.5 (based on level) (+5.85% bonus AD) after she uses an Ability.<br>Hitting champions and large monsters with Abilities reduces this Ability's Cooldown by 4 seconds. Killing enemies reduces it by 1 second.<br>Naafiri summons the maximum number of Packmates when the game starts and upon respawning.",
                 "parseInfo": [
                     {
                         "text": {
-                            "text": "5-25 {{0}} {{1}} physical damage",
+                            "text": "6-30 {{0}} {{1}} physical damage",
                             "scaleHolders": [
                                 {
                                     "scale": "(based on level)",
@@ -622,6 +622,49 @@
                 ]
             },
             "R": ""
+        },
+        "14.1": {
+            "B": {
+                "SpellName": "Base Stats",
+                "Changes": [
+                    {
+                        "Tag": "MID-PATCH",
+                        "Change": {
+                            "Attribute": "Base Movement Speed: ",
+                            "Before": "335",
+                            "Indicator": " ⇒ ",
+                            "After": "340"
+                        }
+                    }
+                ]
+            },
+            "P": {
+                "SpellName": "P - We Are More",
+                "Changes": [
+                    {
+                        "Tag": "MID-PATCH",
+                        "Change": {
+                            "Attribute": "Packmate Damage: ",
+                            "Before": "5-25 (based on level) (+4.5% bonus AD)",
+                            "Indicator": " ⇒ ",
+                            "After": "6-30 (based on level) (+4.5% bonus AD)"
+                        }
+                    },
+                    {
+                        "Tag": "MID-PATCH",
+                        "Change": {
+                            "Attribute": "Cooldown: ",
+                            "Before": "30/25/20/15 seconds (levels 1/6/11/16)",
+                            "Indicator": " ⇒ ",
+                            "After": " 30/25/20/15/10 seconds (levels 1/6/9/12/15)"
+                        }
+                    }
+                ]
+            },
+            "Q": "",
+            "W": "",
+            "E": "",
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -629,7 +672,8 @@
         "13.16",
         "13.17",
         "13.23",
-        "13.24"
+        "13.24",
+        "14.1"
     ],
     "ChampionName": "Naafiri"
 }

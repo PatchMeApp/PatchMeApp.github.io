@@ -25,8 +25,8 @@
             "increment": 0.8
         },
         "attackSpeed": {
-            "base": 0.658,
-            "increment": 0.015
+            "base": 0.4,
+            "increment": 0.0235
         },
         "ms": {
             "base": 340,
@@ -34,7 +34,7 @@
         },
         "attackDamage": {
             "base": 55,
-            "increment": 2.7
+            "increment": 2.2
         },
         "attackRange": {
             "base": 525,
@@ -67,7 +67,7 @@
                             "text": "65/90/115/140/165 {{0}} magic damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+40% AP)",
+                                    "scale": "(+45% AP)",
                                     "scaleId": "AP"
                                 }
                             ]
@@ -137,7 +137,7 @@
                             "text": "50/70/90/110/130 {{0}} magic damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+35% AP)",
+                                    "scale": "(+40% AP)",
                                     "scaleId": "AP"
                                 }
                             ]
@@ -766,6 +766,71 @@
             "W": "",
             "E": "",
             "R": ""
+        },
+        "14.1": {
+            "B": {
+                "SpellName": "Base Stats",
+                "Changes": [
+                    {
+                        "Tag": "MID-PATCH",
+                        "Change": {
+                            "Attribute": "Attack Speed Ratio: ",
+                            "Before": "0.625",
+                            "Indicator": " ⇒ ",
+                            "After": "0.4"
+                        }
+                    },
+                    {
+                        "Tag": "MID-PATCH",
+                        "Change": {
+                            "Attribute": "Attack Speed Growth: ",
+                            "Before": "1.5%",
+                            "Indicator": " ⇒ ",
+                            "After": "2.35%"
+                        }
+                    },
+                    {
+                        "Tag": "MID-PATCH",
+                        "Change": {
+                            "Attribute": "Attack Damage Growth: ",
+                            "Before": "2.7",
+                            "Indicator": " ⇒ ",
+                            "After": "2.2"
+                        }
+                    }
+                ]
+            },
+            "P": "",
+            "Q": {
+                "SpellName": "Q - Sigil of Malice",
+                "Changes": [
+                    {
+                        "Tag": "MID-PATCH",
+                        "Change": {
+                            "Attribute": "Damage: ",
+                            "Before": "65/90/115/140/165 (+40% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "65/90/115/140/165 (+45% AP)"
+                        }
+                    }
+                ]
+            },
+            "W": "",
+            "E": {
+                "SpellName": "E - Ethereal Chains",
+                "Changes": [
+                    {
+                        "Tag": "MID-PATCH",
+                        "Change": {
+                            "Attribute": "Damage: ",
+                            "Before": "50/70/90/110/130 (+35% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "50/70/90/110/130 (+40% AP)"
+                        }
+                    }
+                ]
+            },
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -780,7 +845,8 @@
         "13.5",
         "13.19",
         "13.21",
-        "13.22"
+        "13.22",
+        "14.1"
     ],
     "ChampionName": "LeBlanc"
 }

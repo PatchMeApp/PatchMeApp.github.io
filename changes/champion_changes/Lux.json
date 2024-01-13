@@ -1,7 +1,7 @@
 {
     "stats": {
         "hp": {
-            "base": 560,
+            "base": 580,
             "increment": 99
         },
         "mp": {
@@ -9,7 +9,7 @@
             "increment": 23.5
         },
         "armor": {
-            "base": 19,
+            "base": 21,
             "increment": 5.2
         },
         "spellBlock": {
@@ -26,7 +26,7 @@
         },
         "attackSpeed": {
             "base": 0.669,
-            "increment": 0.02
+            "increment": 0.03
         },
         "ms": {
             "base": 330,
@@ -105,7 +105,7 @@
                             "text": "40/55/70/85/100 {{0}} Shield",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+35% AP)",
+                                    "scale": "(+40% AP)",
                                     "scaleId": "AP"
                                 }
                             ]
@@ -539,6 +539,58 @@
                     }
                 ]
             }
+        },
+        "14.1": {
+            "B": {
+                "SpellName": "Base Stats",
+                "Changes": [
+                    {
+                        "Tag": "MID-PATCH",
+                        "Change": {
+                            "Attribute": "Base Health: ",
+                            "Before": "560",
+                            "Indicator": " ⇒ ",
+                            "After": "580"
+                        }
+                    },
+                    {
+                        "Tag": "MID-PATCH",
+                        "Change": {
+                            "Attribute": "Base Armor: ",
+                            "Before": "19",
+                            "Indicator": " ⇒ ",
+                            "After": "21"
+                        }
+                    },
+                    {
+                        "Tag": "MID-PATCH",
+                        "Change": {
+                            "Attribute": "Attack Speed Growth: ",
+                            "Before": "2%",
+                            "Indicator": " ⇒ ",
+                            "After": "3%"
+                        }
+                    }
+                ]
+            },
+            "P": "",
+            "Q": "",
+            "W": {
+                "SpellName": "W - Prismatic Barrier",
+                "Changes": [
+                    {
+                        "Tag": "MID-PATCH",
+                        "Change": {
+                            "Attribute": "Shield Strength: ",
+                            "Before": "40/55/70/85/100 (+35% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "40/55/70/85/100 (+40% AP)"
+                        }
+                    }
+                ]
+            },
+            "E": "",
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -549,7 +601,8 @@
         "11.21",
         "12.10",
         "12.23",
-        "13.17"
+        "13.17",
+        "14.1"
     ],
     "ChampionName": "Lux"
 }

@@ -33,7 +33,7 @@
             "increment": 0
         },
         "attackDamage": {
-            "base": 59,
+            "base": 61,
             "increment": 2.5
         },
         "attackRange": {
@@ -218,7 +218,7 @@
                             "text": "80/115/150 {{0}} {{1}} magic damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+15/45/75% AD)",
+                                    "scale": "(+25/50/75% AD)",
                                     "scaleId": "AD"
                                 },
                                 {
@@ -514,7 +514,7 @@
                         "Tag": "MID-PATCH",
                         "Change": {
                             "Attribute": "Base AD: ",
-                            "Before": "5",
+                            "Before": "55",
                             "Indicator": " ⇒ ",
                             "After": "59"
                         }
@@ -553,6 +553,40 @@
             "W": "",
             "E": "",
             "R": ""
+        },
+        "14.1": {
+            "B": {
+                "SpellName": "Base Stats",
+                "Changes": [
+                    {
+                        "Tag": "MID-PATCH",
+                        "Change": {
+                            "Attribute": "Base AD: ",
+                            "Before": "59",
+                            "Indicator": " ⇒ ",
+                            "After": "61"
+                        }
+                    }
+                ]
+            },
+            "P": "",
+            "Q": "",
+            "W": "",
+            "E": "",
+            "R": {
+                "SpellName": "R - Missile Barrage",
+                "Changes": [
+                    {
+                        "Tag": "MID-PATCH",
+                        "Change": {
+                            "Attribute": "Damage: ",
+                            "Before": "80/115/150 (+15/45/75% AD) (+12% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "80/115/150 (+25/50/75% AD) (+12% AP)"
+                        }
+                    }
+                ]
+            }
         }
     },
     "ChangePatches": [
@@ -564,7 +598,8 @@
         "12.10",
         "12.13",
         "12.21",
-        "13.24"
+        "13.24",
+        "14.1"
     ],
     "ChampionName": "Corki"
 }

@@ -79,7 +79,7 @@
                             "text": "80/125/170/215/260 {{0}} magic damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+80% AP)",
+                                    "scale": "(+70% AP)",
                                     "scaleId": "AP"
                                 }
                             ]
@@ -187,7 +187,7 @@
                             "text": "200/325/450 {{0}} magic damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+55% AP)",
+                                    "scale": "(+50% AP)",
                                     "scaleId": "AP"
                                 }
                             ]
@@ -520,6 +520,40 @@
             "W": "",
             "E": "",
             "R": ""
+        },
+        "14.1": {
+            "B": "",
+            "P": "",
+            "Q": {
+                "SpellName": "Q - Blinding Dart",
+                "Changes": [
+                    {
+                        "Tag": "MID-PATCH",
+                        "Change": {
+                            "Attribute": "Damage: ",
+                            "Before": "80/125/170/215/260 (+80% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "80/125/170/215/260 (+70% AP)"
+                        }
+                    }
+                ]
+            },
+            "W": "",
+            "E": "",
+            "R": {
+                "SpellName": "R - Noxious Trap",
+                "Changes": [
+                    {
+                        "Tag": "MID-PATCH",
+                        "Change": {
+                            "Attribute": "Total Damage: ",
+                            "Before": "200/325/450 (+55% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "200/325/450 (+50% AP)"
+                        }
+                    }
+                ]
+            }
         }
     },
     "ChangePatches": [
@@ -530,7 +564,8 @@
         "11.21",
         "12.10",
         "12.14",
-        "13.22"
+        "13.22",
+        "14.1"
     ],
     "ChampionName": "Teemo"
 }

@@ -79,7 +79,7 @@
                             "text": "10/25/40/55/70 {{0}} magic damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+55% AP)",
+                                    "scale": "(+50% AP)",
                                     "scaleId": "AP"
                                 }
                             ]
@@ -127,7 +127,7 @@
                             "text": "50/70/90/110/130 {{0}} magic damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+50% AP)",
+                                    "scale": "(+40% AP)",
                                     "scaleId": "AP"
                                 }
                             ]
@@ -581,6 +581,40 @@
                 ]
             },
             "R": ""
+        },
+        "14.1": {
+            "B": "",
+            "P": "",
+            "Q": {
+                "SpellName": "Q - Urchin Strike",
+                "Changes": [
+                    {
+                        "Tag": "MID-PATCH",
+                        "Change": {
+                            "Attribute": "Damage: ",
+                            "Before": "10/25/40/55/70 (+55% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "10/25/40/55/70 (+50% AP)"
+                        }
+                    }
+                ]
+            },
+            "W": {
+                "SpellName": "W - Seastone Trident",
+                "Changes": [
+                    {
+                        "Tag": "MID-PATCH",
+                        "Change": {
+                            "Attribute": "Active Damage: ",
+                            "Before": "50/70/90/110/130 (+50% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "50/70/90/110/130 (+40% AP)"
+                        }
+                    }
+                ]
+            },
+            "E": "",
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -590,7 +624,8 @@
         "12.10",
         "12.11",
         "12.19",
-        "13.5"
+        "13.5",
+        "14.1"
     ],
     "ChampionName": "Fizz"
 }

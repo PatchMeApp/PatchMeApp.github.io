@@ -45,7 +45,7 @@
         "P": {
             "cooldown": "",
             "_rawTooltip": {
-                "fullTooltip": "Innate: Kayle ascends through four forms that each grant additional bonuses. She ascends upon spending a skill point at levels 1, 6, 11, and 16.<br>Level 1 - Zealous: Kayle's basic attacks on-attack generate a stack of Zeal that lasts 5 seconds, which refreshes on subsequent hits and stacks up to 5 times. For each stack, she gains [[1]], up to a maximum 30% (+ 5% per 100 AP). At max stacks, she becomes Exalted, gaining [[2]].<br>Level 6 - Arisen: Kayle becomes ranged and gains 350 bonus attack range for a total of 525.<br>Level 11 - Aflame: While Kayle is Exalted, her basic attacks on-attack also launch a wave of fire forward that deals [[0]] to all enemies it passes through. The wave is affected by critical strike modifiers.<br>Level 16 - Transcendent: Kayle gains an additional 100 bonus attack range for a total of 625, and permanently gains the full effects of Zealous.",
+                "fullTooltip": "Innate: Kayle ascends through four forms that each grant additional bonuses. She ascends upon spending a skill point at levels 1, 6, 11, and 16.<br>Level 1 - Zealous: Kayle's basic attacks on-attack generate a stack of Zeal that lasts 5 seconds, which refreshes on subsequent hits and stacks up to 5 times. For each stack, she gains [[1]], up to a maximum 30% (+ 2.5% per 100 AP). At max stacks, she becomes Exalted, gaining [[2]].<br>Level 6 - Arisen: Kayle becomes ranged and gains 350 bonus attack range for a total of 525.<br>Level 11 - Aflame: While Kayle is Exalted, her basic attacks on-attack also launch a wave of fire forward that deals [[0]] to all enemies it passes through. The wave is affected by critical strike modifiers.<br>Level 16 - Transcendent: Kayle gains an additional 100 bonus attack range for a total of 625, and permanently gains the full effects of Zealous.",
                 "parseInfo": [
                     {
                         "text": {
@@ -72,7 +72,7 @@
                             "text": "6% {{0}} bonus attack speed",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+ 1% per 100 AP)",
+                                    "scale": "(+ 0.5% per 100 AP)",
                                     "scaleId": "AP"
                                 }
                             ]
@@ -696,6 +696,27 @@
                     }
                 ]
             }
+        },
+        "14.1": {
+            "B": "",
+            "P": {
+                "SpellName": "P - Divine Ascent",
+                "Changes": [
+                    {
+                        "Tag": "MID-PATCH",
+                        "Change": {
+                            "Attribute": "Stack Bonus: ",
+                            "Before": "6% (+1% per 100 AP) bonus attack speed",
+                            "Indicator": " ⇒ ",
+                            "After": "6% (+0.5% per 100 AP) bonus attack speed"
+                        }
+                    }
+                ]
+            },
+            "Q": "",
+            "W": "",
+            "E": "",
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -710,7 +731,8 @@
         "11.24",
         "12.10",
         "13.3",
-        "13.9"
+        "13.9",
+        "14.1"
     ],
     "ChampionName": "Kayle"
 }

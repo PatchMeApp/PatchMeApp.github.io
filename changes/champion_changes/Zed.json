@@ -173,7 +173,7 @@
                     }
                 ]
             },
-            "cooldown": "20/19.25/18.5/17.75/17",
+            "cooldown": "20/19/18/17/16",
             "cost": "40/35/30/25/20 Energy",
             "name": "Living Shadow"
         },
@@ -190,7 +190,7 @@
                     },
                     {
                         "text": {
-                            "text": "65/85/105/125/145 {{0}} physical damage",
+                            "text": "65/90/115/140/165 {{0}} physical damage",
                             "scaleHolders": [
                                 {
                                     "scale": "(+65% Bonus AD)",
@@ -240,7 +240,7 @@
                 "parseInfo": [
                     {
                         "text": {
-                            "text": "65% AD physical damage",
+                            "text": "100% AD AD physical damage",
                             "scaleHolders": []
                         },
                         "type": "physicalDamage"
@@ -593,6 +593,53 @@
                 ]
             },
             "R": ""
+        },
+        "14.1": {
+            "B": "",
+            "P": "",
+            "Q": "",
+            "W": {
+                "SpellName": "W - Living Shadow",
+                "Changes": [
+                    {
+                        "Tag": "MID-PATCH",
+                        "Change": {
+                            "Attribute": "Cooldown: ",
+                            "Before": "20/19.25/18.5/17.75/17",
+                            "Indicator": " ⇒ ",
+                            "After": "20/19/18/17/16 seconds"
+                        }
+                    }
+                ]
+            },
+            "E": {
+                "SpellName": "E - Shadow Slash",
+                "Changes": [
+                    {
+                        "Tag": "MID-PATCH",
+                        "Change": {
+                            "Attribute": "Damage: ",
+                            "Before": "65/85/105/125/145 (+65% bonus AD)",
+                            "Indicator": " ⇒ ",
+                            "After": "65/90/115/140/165 (+65% bonus AD)"
+                        }
+                    }
+                ]
+            },
+            "R": {
+                "SpellName": "R - Death Mark",
+                "Changes": [
+                    {
+                        "Tag": "MID-PATCH",
+                        "Change": {
+                            "Attribute": "Damage: ",
+                            "Before": "65% AD (+25/40/55% of damage dealt)",
+                            "Indicator": " ⇒ ",
+                            "After": "100% AD (+25/40/55% of damage dealt)"
+                        }
+                    }
+                ]
+            }
         }
     },
     "ChangePatches": [
@@ -605,7 +652,8 @@
         "12.15",
         "12.23",
         "13.5",
-        "13.20"
+        "13.20",
+        "14.1"
     ],
     "ChampionName": "Zed"
 }

@@ -2,7 +2,7 @@
     "stats": {
         "hp": {
             "base": 580,
-            "increment": 104
+            "increment": 109
         },
         "mp": {
             "base": 480,
@@ -83,7 +83,7 @@
                                     "text": "60/90/120/150/180 {{0}} magic damage",
                                     "scaleHolders": [
                                         {
-                                            "scale": "(+70% AP)",
+                                            "scale": "(+75% AP)",
                                             "scaleId": "AP"
                                         }
                                     ]
@@ -289,7 +289,7 @@
                         "parseInfo": [
                             {
                                 "text": {
-                                    "text": "60/90/120/150/180 {{0}} magic damage",
+                                    "text": "70/110/150/190/230 {{0}} magic damage",
                                     "scaleHolders": [
                                         {
                                             "scale": "(+60% AP)",
@@ -324,7 +324,7 @@
                             },
                             {
                                 "text": {
-                                    "text": "60/90/120/150/180 {{0}} magic damage",
+                                    "text": "70/110/150/190/230 {{0}} magic damage",
                                     "scaleHolders": [
                                         {
                                             "scale": "(+60% AP)",
@@ -345,7 +345,7 @@
                         "parseInfo": [
                             {
                                 "text": {
-                                    "text": "60/90/120/150/180 {{0}} magic damage",
+                                    "text": "70/110/150/190/230 {{0}} magic damage",
                                     "scaleHolders": [
                                         {
                                             "scale": "(+60% AP)",
@@ -577,14 +577,62 @@
                             "Indicator": " ⇒ ",
                             "After": "21"
                         }
+                    },
+                    {
+                        "Tag": "MID-PATCH",
+                        "Change": {
+                            "Attribute": "Base Health: ",
+                            "Before": "104",
+                            "Indicator": " ⇒ ",
+                            "After": "109"
+                        }
                     }
                 ]
             },
             "P": "",
-            "Q": "",
+            "Q": {
+                "SpellName": "Q - Subject: Disaster",
+                "Changes": [
+                    {
+                        "Tag": "MID-PATCH",
+                        "Change": {
+                            "Attribute": "QQ Damage: ",
+                            "Before": "60/90/120/150/180 (+70% AP) (+4/5/6/7/8% of target's maximum health)",
+                            "Indicator": " ⇒ ",
+                            "After": "60/90/120/150/180 (+75% AP) (+4/5/6/7/8% of target's maximum health)"
+                        }
+                    }
+                ]
+            },
             "W": "",
-            "E": "",
-            "R": ""
+            "E": {
+                "SpellName": "E - Subject: Torment",
+                "Changes": [
+                    {
+                        "Tag": "MID-PATCH",
+                        "Change": {
+                            "Attribute": "EQ/EW/EE Damage: ",
+                            "Before": "60/90/120/150/180 (+60% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "70/110/150/190/230 (+60% AP)"
+                        }
+                    }
+                ]
+            },
+            "R": {
+                "SpellName": "R - Spiraling Despair",
+                "Changes": [
+                    {
+                        "Tag": "MID-PATCH",
+                        "Change": {
+                            "Attribute": "Missile Width: ",
+                            "Before": "80",
+                            "Indicator": " ⇒ ",
+                            "After": "90"
+                        }
+                    }
+                ]
+            }
         }
     },
     "ChangePatches": [

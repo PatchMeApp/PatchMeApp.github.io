@@ -74,7 +74,7 @@
                             "text": "20/30/40/50/60 {{0}} magic damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+45% AP)",
+                                    "scale": "(+40% AP)",
                                     "scaleId": "AP"
                                 }
                             ]
@@ -500,6 +500,27 @@
             "W": "",
             "E": "",
             "R": ""
+        },
+        "14.1": {
+            "B": "",
+            "P": "",
+            "Q": {
+                "SpellName": "Q - Poison Trail",
+                "Changes": [
+                    {
+                        "Tag": "MID-PATCH",
+                        "Change": {
+                            "Attribute": "Total Damage: ",
+                            "Before": "40/60/80/100/120 (+90% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "40/60/80/100/120 (+80% AP)"
+                        }
+                    }
+                ]
+            },
+            "W": "",
+            "E": "",
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -511,7 +532,8 @@
         "12.10",
         "12.12",
         "12.15",
-        "13.22"
+        "13.22",
+        "14.1"
     ],
     "ChampionName": "Singed"
 }
