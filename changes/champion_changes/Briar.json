@@ -784,6 +784,89 @@
                     }
                 ]
             }
+        },
+        "14.2": {
+            "B": "",
+            "P": {
+                "SpellName": "Passive - Crimson Curse",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Healing Amplification: ",
+                            "Before": "0.5% per 1% missing health",
+                            "Indicator": " ⇒ ",
+                            "After": "0.4% (+0.025% per 100 bonus health) per 1% missing health"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Bleed Tick Rate: ",
+                            "Before": "1 second",
+                            "Indicator": " ⇒ ",
+                            "After": "0.5 seconds (Note: Total bleed damage and duration are unchanged.)"
+                        }
+                    }
+                ]
+            },
+            "Q": {
+                "SpellName": "Q - Head Rush",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Damage: ",
+                            "Before": "60/90/120/150/180 (+80% bonus AD) physical damage",
+                            "Indicator": " ⇒ ",
+                            "After": "60/90/120/150/180 (+80% bonus AD) (+60% AP) magic damage"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Defensive Reductions: ",
+                            "Before": "10/12.5/15/17.5/20% armor reduction",
+                            "Indicator": " ⇒ ",
+                            "After": "10/12.5/15/17.5/20% armor and magic resistance reduction"
+                        }
+                    },
+                    {
+                        "Tag": "NEW",
+                        "Change": {
+                            "Attribute": "Healthy Hits: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "Q now applies on-hit effects and lifesteal"
+                        }
+                    }
+                ]
+            },
+            "W": {
+                "SpellName": "W - Blood Frenzy",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Bite Heal: ",
+                            "Before": "36/42/48/54/60% of damage dealt",
+                            "Indicator": " ⇒ ",
+                            "After": "25/30/35/40/45% of damage dealt (+5% of Briar’s maximum health)"
+                        }
+                    },
+                    {
+                        "Tag": "REMOVED",
+                        "Change": {
+                            "Attribute": "Less Critical Strikes: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "W no longer critically strikes for 5-65(+5% AD) bonus damage. (Note: W can still critically strike like a basic attack for 100% total AD.)"
+                        }
+                    }
+                ]
+            },
+            "E": "",
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -792,7 +875,16 @@
         "13.21",
         "13.22",
         "13.23",
-        "13.24"
+        "13.24",
+        "14.2"
     ],
-    "ChampionName": "Briar"
+    "ChampionName": "Briar",
+    "Balance": {
+        "13.24": [
+            "nerf"
+        ],
+        "14.2": [
+            "adjust"
+        ]
+    }
 }

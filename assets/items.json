@@ -1,6 +1,6 @@
 {
     "type": "item",
-    "version": "14.1.1",
+    "version": "14.2.1",
     "basic": {
         "name": "",
         "rune": {
@@ -282,7 +282,6 @@
                 "3033",
                 "3087",
                 "3036",
-                "3046",
                 "3508",
                 "3072",
                 "3095",
@@ -1075,7 +1074,7 @@
         },
         "1054": {
             "name": "Doran's Shield",
-            "description": "<mainText><stats><attention>110</attention> Health</stats><br><br><passive>Enduring Focus</passive><li>Attacks deal an additional <physicalDamage>5 physical damage</physicalDamage> to minions.<li>Regenerate <healing>4 Health</healing> every 5 seconds. After taking damage from a champion, large or epic jungle monster, restores up to <healing>45 Health</healing> over 8 seconds. Restoration increases when you are low Health.<br><br><rules>Healing is 66% effective when owned by Ranged champions or when taking damage from area of effect or periodic damage sources.</rules></mainText>",
+            "description": "<mainText><stats><attention>110</attention> Health</stats><br><br><passive>Enduring Focus</passive><li>Attacks deal an additional <physicalDamage>5 physical damage</physicalDamage> to minions.<li>Regenerate <healing>4 Health</healing> every 5 seconds. After taking damage from a champion, large or epic jungle monster, restores up to <healing>45 Health</healing> over 8 seconds. Restoration increases when you are low Health.</mainText>",
             "colloq": ";dshield",
             "plaintext": "Good defensive starting item",
             "image": {
@@ -1118,7 +1117,7 @@
         },
         "1055": {
             "name": "Doran's Blade",
-            "description": "<mainText><stats><attention>10</attention> Attack Damage<br><attention>100</attention> Health<br><attention>3.5%</attention> Life Steal</stats><br><br><br><li><passive>Warmonger:</passive> Gain Omnivamp.<br><br><rules>Omnivamp is only 33% effective when dealing area of effect damage or damage through pets.</rules></mainText>",
+            "description": "<mainText><stats><attention>10</attention> Attack Damage<br><attention>100</attention> Health<br><attention>3.5%</attention> Life Steal</stats><br><br></mainText>",
             "colloq": ";dblade",
             "plaintext": "Good starting item for attackers",
             "image": {
@@ -2423,10 +2422,10 @@
                 "h": 48
             },
             "gold": {
-                "base": 550,
+                "base": 450,
                 "purchasable": true,
-                "total": 1200,
-                "sell": 840
+                "total": 1100,
+                "sell": 770
             },
             "tags": [
                 "Armor",
@@ -2820,7 +2819,7 @@
         },
         "2065": {
             "name": "Shurelya's Battlesong",
-            "description": "<mainText><stats><attention>55</attention> Ability Power<br><attention>15</attention> Ability Haste<br><attention>8%</attention> Move Speed<br><attention>125%</attention> Base Mana Regen</stats><br><br><br><br><active>ON ACTIVATION</active> (0s cooldown)<br><active>Inspiring Speech</active><br>Grants nearby allies Move Speed.<br><br></mainText>",
+            "description": "<mainText><stats><attention>55</attention> Ability Power<br><attention>15</attention> Ability Haste<br><attention>8%</attention> Move Speed<br><attention>125%</attention> Base Mana Regen</stats><br><br><br><br><active>ACTIVE</active> (0s)<br><active>Inspiring Speech</active><br>Grants nearby allies Move Speed.<br><br></mainText>",
             "colloq": ";shurelya;reverie;",
             "plaintext": "Activate to speed up nearby allies.",
             "from": [
@@ -3113,7 +3112,7 @@
         },
         "2403": {
             "name": "Minion Dematerializer",
-            "description": "<mainText><stats></stats><br><br><active>Active - Consume:</active> Kill target lane minion (10(0s cooldown)).</mainText>",
+            "description": "<mainText><stats></stats><br><br><active>Active - Consume:</active> Kill target lane minion (10(0s)).</mainText>",
             "colloq": ";",
             "plaintext": "",
             "stacks": 10,
@@ -3185,13 +3184,13 @@
         },
         "2420": {
             "name": "Seeker's Armguard",
-            "description": "<mainText><stats><attention>45</attention> Ability Power<br><attention>25</attention> Armor</stats><br><br><active>ON ACTIVATION</active><br><active>Time Stop</active> (Single use)<br>Enter <keyword>Stasis</keyword> for 2.5 seconds.</mainText>",
+            "description": "<mainText><stats><attention>45</attention> Ability Power<br><attention>25</attention> Armor</stats><br><br><active>ACTIVE</active><br><active>Time Stop</active> (Single use)<br>Enter <keyword>Stasis</keyword> for 2.5 seconds.</mainText>",
             "colloq": ";zhg;zonyas",
             "plaintext": "Activate to become invincible but unable to take actions",
             "from": [
                 "1052",
-                "1052",
-                "1029"
+                "1029",
+                "1052"
             ],
             "into": [
                 "3157",
@@ -3325,13 +3324,13 @@
         },
         "2423": {
             "name": "Perfectly Timed Stopwatch",
-            "description": "<mainText><stats><attention>45</attention> Ability Power<br><attention>25</attention> Armor</stats><br><br><active>ON ACTIVATION</active><br><active>Time Stop</active> (Single use)<br>Enter <keyword>Stasis</keyword> for 2.5 seconds.</mainText>",
+            "description": "<mainText><stats><attention>45</attention> Ability Power<br><attention>25</attention> Armor</stats><br><br><active>ACTIVE</active><br><active>Time Stop</active> (Single use)<br>Enter <keyword>Stasis</keyword> for 2.5 seconds.</mainText>",
             "colloq": ";zhg;zonyas",
             "plaintext": "Activate to become invincible but unable to take actions",
             "from": [
                 "1052",
-                "1052",
-                "1029"
+                "1029",
+                "1052"
             ],
             "inStore": false,
             "into": [
@@ -3377,7 +3376,7 @@
         },
         "2502": {
             "name": "Unending Despair",
-            "description": "<mainText><stats><attention>400</attention> Health<br><attention>55</attention> Armor<br><attention>10</attention> Ability Haste</stats><br><br><passive>Anguish</passive><br>While in combat with champions, every 7 seconds, deal <magicDamage>0 magic damage</magicDamage> to nearby enemy champions, healing for 250% of the damage dealt.</mainText>",
+            "description": "<mainText><stats><attention>400</attention> Health<br><attention>55</attention> Armor<br><attention>10</attention> Ability Haste</stats><br><br><passive>Anguish</passive><br>While in combat with champions, every few seconds, deal magic damage to nearby enemy champions, healing based on the damage dealt.</mainText>",
             "colloq": "",
             "plaintext": "",
             "from": [
@@ -3531,10 +3530,10 @@
                 "h": 48
             },
             "gold": {
-                "base": 800,
+                "base": 900,
                 "purchasable": true,
                 "total": 2500,
-                "sell": 1680
+                "sell": 1750
             },
             "tags": [
                 "Health",
@@ -3549,7 +3548,7 @@
                 "30": false
             },
             "stats": {
-                "FlatHPPoolMod": 250,
+                "FlatHPPoolMod": 200,
                 "FlatArmorMod": 40,
                 "PercentMovementSpeedMod": 0.05
             },
@@ -3645,7 +3644,7 @@
         },
         "3005": {
             "name": "Ghostcrawlers",
-            "description": "<mainText><stats><attention>45</attention> Move Speed</stats><br><br><br><br><active>Active -</active> <active>Wall Walk:</active> Gain the ability to walk through walls for 6 seconds. While inside walls, gain 125 move speed. Casting a spell or attacking will end this effect. (60(0s cooldown)).</mainText>",
+            "description": "<mainText><stats><attention>45</attention> Move Speed</stats><br><br><br><br><active>Active -</active> <active>Wall Walk:</active> Gain the ability to walk through walls for 6 seconds. While inside walls, gain 125 move speed. Casting a spell or attacking will end this effect. (60(0s)).</mainText>",
             "colloq": ";wreckoning;Wreckoning",
             "plaintext": "Increases Attack Damage based on maximum Health",
             "from": [
@@ -4000,7 +3999,7 @@
                 "h": 48
             },
             "gold": {
-                "base": 700,
+                "base": 800,
                 "purchasable": true,
                 "total": 3200,
                 "sell": 1280
@@ -4252,7 +4251,7 @@
         },
         "3040": {
             "name": "Seraph's Embrace",
-            "description": "<mainText><stats><attention>80</attention> Ability Power<br><attention>1000</attention> Mana<br><attention>20</attention> Ability Haste</stats><br><br><passive>Awe</passive> Gain Ability Power equal to <scaleMana>2% bonus Mana</scaleMana>.<br><passive>Lifeline</passive> (90(0s cooldown))<br>Upon taking damage that would reduce your Health below 30%, gain a <shield>250 + 20% current Mana Shield</shield> for 3s.</mainText>",
+            "description": "<mainText><stats><attention>80</attention> Ability Power<br><attention>1000</attention> Mana<br><attention>20</attention> Ability Haste</stats><br><br><passive>Awe</passive> Gain Ability Power equal to <scaleMana>2% bonus Mana</scaleMana>.<br><passive>Lifeline</passive> (90(0s))<br>Upon taking damage that would reduce your Health below 30%, gain a <shield>250 + 20% current Mana Shield</shield> for 3s.</mainText>",
             "colloq": "",
             "plaintext": "",
             "specialRecipe": 3003,
@@ -4435,8 +4434,8 @@
             "colloq": ";pd",
             "plaintext": "Move faster while attacking enemies and gain a shield when on low health.",
             "from": [
-                "3051",
-                "1018"
+                "3086",
+                "6690"
             ],
             "image": {
                 "full": "3046.png",
@@ -4448,7 +4447,7 @@
                 "h": 48
             },
             "gold": {
-                "base": 1000,
+                "base": 800,
                 "purchasable": true,
                 "total": 2800,
                 "sell": 1960
@@ -4541,7 +4540,7 @@
         },
         "3050": {
             "name": "Zeke's Convergence",
-            "description": "<mainText><stats><attention>200</attention> Health<br><attention>250</attention> Mana<br><attention>30</attention> Armor<br><attention>20</attention> Ability Haste</stats><br><br><passive>Frostfire Tempest</passive> (0s cooldown)<br>Casting your Ultimate summons a storm around you for 5 seconds, dealing <magicDamage>50 magic damage</magicDamage> per second and <keyword>slows</keyword> enemies by 30%.</mainText>",
+            "description": "<mainText><stats><attention>200</attention> Health<br><attention>250</attention> Mana<br><attention>30</attention> Armor<br><attention>20</attention> Ability Haste</stats><br><br><passive>Frostfire Tempest</passive> (0s)<br>Casting your Ultimate summons a storm around you for 5 seconds, dealing <magicDamage>50 magic damage</magicDamage> per second and <keyword>Slows</keyword> enemies by 30%.</mainText>",
             "colloq": ";haroldandkumar",
             "plaintext": "Grants you and your ally bonuses when you cast your ultimate.",
             "from": [
@@ -4566,8 +4565,7 @@
             "tags": [
                 "Health",
                 "Armor",
-                "CooldownReduction",
-                "OnHit",
+                "Mana",
                 "AbilityHaste"
             ],
             "maps": {
@@ -4586,7 +4584,7 @@
         },
         "3051": {
             "name": "Hearthbound Axe",
-            "description": "<mainText><stats><attention>20</attention> Attack Damage<br><attention>25%</attention> Attack Speed</stats><br><br><br><br></mainText>",
+            "description": "<mainText><stats><attention>20</attention> Attack Damage<br><attention>25%</attention> Attack Speed</stats><br><br></mainText>",
             "colloq": "",
             "plaintext": "",
             "from": [
@@ -4596,7 +4594,7 @@
             ],
             "into": [
                 "3078",
-                "3046",
+                "3073",
                 "3124"
             ],
             "image": {
@@ -4633,7 +4631,7 @@
         },
         "3053": {
             "name": "Sterak's Gage",
-            "description": "<mainText><stats><attention>400</attention> Health<br><attention>20%</attention> Tenacity</stats><br><br><passive>The Claws that Catch</passive><br>Gain bonus Attack Damage.<br><br><passive>Lifeline</passive> (0s cooldown)<br>Upon taking damage that would reduce your Health below 30%, gain a Shield, size and Tenacity.</mainText>",
+            "description": "<mainText><stats><attention>400</attention> Health<br><attention>20%</attention> Tenacity</stats><br><br><passive>The Claws that Catch</passive><br>Gain bonus Attack Damage.<br><br><passive>Lifeline</passive> (0s)<br>Upon taking damage that would reduce your Health below 30%, gain a Shield.</mainText>",
             "colloq": ";juggernaut;primal",
             "plaintext": "Shields against large bursts of damage",
             "from": [
@@ -4954,7 +4952,7 @@
         },
         "3071": {
             "name": "Black Cleaver",
-            "description": "<mainText><stats><attention>55</attention> Attack Damage<br><attention>400</attention> Health<br><attention>20</attention> Ability Haste</stats><br><br><passive>Carve</passive><br>Dealing physical damage to a champion applies a stack of Armor reduction.<br><br><passive>Rage</passive><br>Attacking a unit grants Move Speed.</mainText>",
+            "description": "<mainText><stats><attention>55</attention> Attack Damage<br><attention>400</attention> Health<br><attention>20</attention> Ability Haste</stats><br><br><passive>Carve</passive><br>Dealing physical damage to a champion applies a stack of Armor reduction.<br><br><passive>Fervor</passive><br>Dealing physical damage grants Move Speed.</mainText>",
             "colloq": ";bc",
             "plaintext": "Dealing physical damage to enemy champions reduces their Armor",
             "from": [
@@ -5060,12 +5058,12 @@
         },
         "3073": {
             "name": "Experimental Hexplate",
-            "description": "<mainText><stats><attention>55</attention> Attack Damage<br><attention>20%</attention> Attack Speed<br><attention>300</attention> Health</stats><br><br><passive>Hexcharged</passive><br>Gain Haste for your Ultimate.<br><br><passive>Overdrive</passive><br>After casting your Ultimate, gain Attack Speed and bonus Move Speed for a short duration.<br></mainText>",
+            "description": "<mainText><stats><attention>55</attention> Attack Damage<br><attention>25%</attention> Attack Speed<br><attention>300</attention> Health</stats><br><br><passive>Hexcharged</passive><br>Gain Haste for your Ultimate.<br><br><passive>Overdrive</passive><br>After casting your Ultimate, gain Attack Speed and bonus Move Speed for a short duration.<br></mainText>",
             "colloq": ";",
             "plaintext": "Increases maximum Mana as Mana is spent",
             "from": [
                 "2021",
-                "6670"
+                "3051"
             ],
             "into": [
                 "7036"
@@ -5080,7 +5078,7 @@
                 "h": 48
             },
             "gold": {
-                "base": 600,
+                "base": 700,
                 "purchasable": true,
                 "total": 3000,
                 "sell": 2100
@@ -5090,9 +5088,7 @@
                 "Damage",
                 "AttackSpeed",
                 "CooldownReduction",
-                "OnHit",
                 "NonbootsMovement",
-                "ArmorPenetration",
                 "AbilityHaste"
             ],
             "maps": {
@@ -5105,13 +5101,13 @@
             "stats": {
                 "FlatHPPoolMod": 300,
                 "FlatPhysicalDamageMod": 55,
-                "PercentAttackSpeedMod": 0.2
+                "PercentAttackSpeedMod": 0.25
             },
             "depth": 3
         },
         "3074": {
             "name": "Ravenous Hydra",
-            "description": "<mainText><stats><attention>70</attention> Attack Damage<br><attention>20</attention> Ability Haste<br><attention>12%</attention> Life Steal</stats><br><br><passive>Cleave</passive><br>Attacks deal physical damage to nearby enemies.<br><br><active>ON ACTIVATION</active> (0s cooldown)<br><active>Ravenous Crescent</active><br>Deal physical damage to enemies around you.</mainText>",
+            "description": "<mainText><stats><attention>70</attention> Attack Damage<br><attention>20</attention> Ability Haste<br><attention>12%</attention> Life Steal</stats><br><br><passive>Cleave</passive><br>Attacks deal physical damage to nearby enemies.<br><br><active>ACTIVE</active> (0s)<br><active>Ravenous Crescent</active><br>Deal physical damage to enemies around you.</mainText>",
             "colloq": ";",
             "plaintext": "Melee attacks hit nearby enemies, dealing damage and restoring Health",
             "from": [
@@ -5150,7 +5146,7 @@
             },
             "stats": {
                 "FlatPhysicalDamageMod": 70,
-                "PercentLifeStealMod": 0.1
+                "PercentLifeStealMod": 0.12
             },
             "depth": 3
         },
@@ -5239,7 +5235,7 @@
         },
         "3077": {
             "name": "Tiamat",
-            "description": "<mainText><stats><attention>20</attention> Attack Damage</stats><br><br><passive>Cleave</passive><br>Attacks deal physical damage to nearby enemies.<br><br>Item performance differs for melee and ranged users.<br><br><br><active>ON ACTIVATION</active> (0s cooldown)<br><active>Crescent</active><br>Deal <physicalDamage>0 physical damage</physicalDamage> to enemies around you.</mainText>",
+            "description": "<mainText><stats><attention>20</attention> Attack Damage</stats><br><br><passive>Cleave</passive><br>Attacks deal physical damage to nearby enemies.<br><br>Item performance differs for melee and ranged users.<br><br><br><active>ACTIVE</active> (0s)<br><active>Crescent</active><br>Deal <physicalDamage>0 physical damage</physicalDamage> to enemies around you.</mainText>",
             "colloq": ";",
             "plaintext": "Melee attacks hit nearby enemies",
             "from": [
@@ -5428,7 +5424,7 @@
         },
         "3084": {
             "name": "Heartsteel",
-            "description": "<mainText><stats><attention>900</attention> Health<br><attention>200%</attention> Base Health Regen</stats><br><br><passive>Colossal Consumption</passive> (0s cooldown) per target<br>Charge up a powerful attack against a champion over time while near them. The charged attack deals bonus physical damage and grants permanent max Health.<br><br><passive>Goliath</passive><br>Gain increased size based on Total Health. </mainText>",
+            "description": "<mainText><stats><attention>900</attention> Health<br><attention>200%</attention> Base Health Regen</stats><br><br><passive>Colossal Consumption</passive> (0s) per target<br>Charge up a powerful attack against a champion over time while near them. The charged attack deals bonus physical damage and grants permanent max Health.<br><br><passive>Goliath</passive><br>Gain increased size based on Total Health. </mainText>",
             "colloq": ";",
             "plaintext": "Restores Health on kill or assist",
             "from": [
@@ -5467,7 +5463,7 @@
                 "30": false
             },
             "stats": {
-                "FlatHPPoolMod": 800
+                "FlatHPPoolMod": 900
             },
             "depth": 3
         },
@@ -5535,6 +5531,7 @@
             "into": [
                 "3094",
                 "6671",
+                "3046",
                 "3085",
                 "4403"
             ],
@@ -5686,7 +5683,6 @@
             },
             "tags": [
                 "SpellBlock",
-                "Damage",
                 "AttackSpeed",
                 "OnHit",
                 "Tenacity"
@@ -5800,7 +5796,7 @@
         },
         "3100": {
             "name": "Lich Bane",
-            "description": "<mainText><stats><attention>100</attention> Ability Power<br><attention>8%</attention> Move Speed<br><attention>15</attention> Ability Haste</stats><br><br><passive>Spellblade</passive> (0s cooldown)<br>After using an Ability, your next Attack is enhanced with an additional <magicDamage>0 magic damage</magicDamage> <OnHit>On-Hit</OnHit>.</mainText>",
+            "description": "<mainText><stats><attention>100</attention> Ability Power<br><attention>8%</attention> Move Speed<br><attention>15</attention> Ability Haste</stats><br><br><passive>Spellblade</passive> (0s)<br>After using an Ability, your next Attack is enhanced with an additional <magicDamage>0 magic damage</magicDamage> <OnHit>On-Hit</OnHit>.</mainText>",
             "colloq": ";",
             "plaintext": "Grants a bonus to next attack after spell cast",
             "from": [
@@ -5824,10 +5820,10 @@
                 "sell": 2170
             },
             "tags": [
-                "AttackSpeed",
                 "SpellDamage",
                 "OnHit",
-                "NonbootsMovement"
+                "NonbootsMovement",
+                "AbilityHaste"
             ],
             "maps": {
                 "11": true,
@@ -5844,7 +5840,7 @@
         },
         "3102": {
             "name": "Banshee's Veil",
-            "description": "<mainText><stats><attention>120</attention> Ability Power<br><attention>50</attention> Magic Resist</stats><br><br><passive>Annul</passive> (0s cooldown)<br>Grants a Spell Shield.<br></mainText>",
+            "description": "<mainText><stats><attention>120</attention> Ability Power<br><attention>50</attention> Magic Resist</stats><br><br><passive>Annul</passive><br>Grants a Spell Shield.<br></mainText>",
             "colloq": ";bv",
             "plaintext": "Periodically blocks enemy abilities",
             "from": [
@@ -5942,7 +5938,7 @@
         },
         "3107": {
             "name": "Redemption",
-            "description": "<mainText><stats><attention>200</attention> Health<br><attention>15</attention> Ability Haste<br><attention>100%</attention> Base Mana Regen<br><attention>15%</attention> Heal and Shield Power</stats><br><br><active>ON ACTIVATION</active> (0s cooldown)<br><active>Intervention</active><br>Target an area to restore Health to allied champions and deal true damage to enemy champions.</mainText>",
+            "description": "<mainText><stats><attention>200</attention> Health<br><attention>15</attention> Ability Haste<br><attention>100%</attention> Base Mana Regen<br><attention>15%</attention> Heal and Shield Power</stats><br><br><active>ACTIVE</active> (0s)<br><active>Intervention</active><br>Target an area to restore Health to allied champions and deal true damage to enemy champions.</mainText>",
             "colloq": ";",
             "plaintext": "Activate to heal allies and damage enemies in an area",
             "from": [
@@ -6042,7 +6038,7 @@
         },
         "3109": {
             "name": "Knight's Vow",
-            "description": "<mainText><stats><attention>300</attention> Health<br><attention>45</attention> Armor<br><attention>15</attention> Ability Haste</stats><br><br><passive>Sacrifice</passive><br>While your <attention>Worthy</attention> ally is nearby, redirect damage they take to you and heal based on the damage dealt by your <attention>Worthy</attention> ally to Champions.<br><br><br><active>ON ACTIVATION</active> (0s cooldown)<br><active>Pledge</active><br>Designate an ally who is worthy of being your <attention>Knight</attention></mainText>",
+            "description": "<mainText><stats><attention>300</attention> Health<br><attention>45</attention> Armor<br><attention>15</attention> Ability Haste</stats><br><br><passive>Sacrifice</passive><br>While your <attention>Worthy</attention> ally is nearby, redirect damage they take to you and heal based on the damage dealt by your <attention>Worthy</attention> ally to Champions.<br><br><br><active>ACTIVE</active> (0s)<br><active>Pledge</active><br>Designate an ally as <attention>Worthy</attention>.</mainText>",
             "colloq": ";",
             "plaintext": "Partner with an ally to protect each other",
             "from": [
@@ -6105,10 +6101,10 @@
                 "h": 48
             },
             "gold": {
-                "base": 400,
+                "base": 500,
                 "purchasable": true,
-                "total": 2300,
-                "sell": 1610
+                "total": 2400,
+                "sell": 1680
             },
             "tags": [
                 "Armor",
@@ -6167,8 +6163,8 @@
                 "30": false
             },
             "stats": {
-                "FlatMovementSpeedMod": 45,
-                "FlatSpellBlockMod": 25
+                "FlatSpellBlockMod": 25,
+                "FlatMovementSpeedMod": 45
             },
             "depth": 2
         },
@@ -6539,7 +6535,7 @@
         },
         "3121": {
             "name": "Fimbulwinter",
-            "description": "<mainText><stats><attention>400</attention> Health<br><attention>860</attention> Mana<br><attention>15</attention> Ability Haste</stats><br><br><passive>Awe</passive><br>Gain bonus <scaleHealth>Health equal to 0</scaleHealth>.<br><br><passive>Everlasting</passive> (0s cooldown)<br><status>Immobilizing</status> or <status>Slowing</status> (Melee only) an enemy champion grants a Shield for 3 seconds, absorbing <scaleMana>0 + 4.5% current Mana</scaleMana> damage. The Shield is increased by <attention>80%</attention> if more than one enemy is nearby.</mainText>",
+            "description": "<mainText><stats><attention>400</attention> Health<br><attention>860</attention> Mana<br><attention>15</attention> Ability Haste</stats><br><br><passive>Awe</passive><br>Gain bonus <scaleHealth>Health equal to 0</scaleHealth>.<br><br><passive>Everlasting</passive> (0s)<br><status>Immobilizing</status> or <status>Slowing</status> (Melee only) an enemy champion grants a Shield for 3 seconds, absorbing <scaleMana>0 + 4.5% current Mana</scaleMana> damage. The Shield is increased by <attention>80%</attention> if more than one enemy is nearby.</mainText>",
             "colloq": "",
             "plaintext": "",
             "specialRecipe": 3119,
@@ -6684,7 +6680,7 @@
         },
         "3128": {
             "name": "Deathfire Grasp",
-            "description": "<mainText><stats><attention>120</attention> Ability Power<br><attention>10</attention> Ability Haste</stats><br><br><br><br><active>Active -</active> <active>The Silence:</active> Deal magic damage equal to <magicDamage>15% of the Target's Max Health</magicDamage>, and then amplify damage they take by 15% for 4 seconds (90(0s cooldown)).</mainText>",
+            "description": "<mainText><stats><attention>120</attention> Ability Power<br><attention>10</attention> Ability Haste</stats><br><br><br><br><active>Active -</active> <active>The Silence:</active> Deal magic damage equal to <magicDamage>15% of the Target's Max Health</magicDamage>, and then amplify damage they take by 15% for 4 seconds (90(0s)).</mainText>",
             "colloq": ";dfg",
             "plaintext": "Activate to increase all magic damage dealt to an enemy champion",
             "from": [
@@ -6724,7 +6720,7 @@
         },
         "3131": {
             "name": "Sword of the Divine",
-            "description": "<mainText><stats><attention>30</attention> Attack Damage<br><attention>25%</attention> Attack Speed<br><attention>18</attention> Lethality</stats><br><br><br><br><active>Active -</active> <active>Divine Blessing:</active> Grants <attackSpeed>100% Attack Speed</attackSpeed> and 100% Critical Strike Chance for 3 seconds or 3 basic attacks (90(0s cooldown)).</mainText>",
+            "description": "<mainText><stats><attention>30</attention> Attack Damage<br><attention>25%</attention> Attack Speed<br><attention>18</attention> Lethality</stats><br><br><br><br><active>Active -</active> <active>Divine Blessing:</active> Grants <attackSpeed>100% Attack Speed</attackSpeed> and 100% Critical Strike Chance for 3 seconds or 3 basic attacks (90(0s)).</mainText>",
             "colloq": ";sotd;lethality",
             "plaintext": "Activate to gain 100% Critical Strike Chance for a short duration",
             "from": [
@@ -6932,7 +6928,7 @@
         },
         "3137": {
             "name": "Cryptbloom",
-            "description": "<mainText><stats><attention>70</attention> Ability Power<br><attention>30%</attention> Magic Penetration<br><attention>15</attention> Ability Haste</stats><br><br><passive>Life from Death</passive> (0s cooldown)<br>Whenever you get a takedown on an enemy champion within 3s of damaging them, create a healing nova on their location that heals allies for <healing>0</healing>.<br><br></mainText>",
+            "description": "<mainText><stats><attention>70</attention> Ability Power<br><attention>30%</attention> Magic Penetration<br><attention>15</attention> Ability Haste</stats><br><br><passive>Life from Death</passive><br>Whenever you get a takedown on an enemy champion, create a nova on their location that heals allies.</mainText>",
             "colloq": ";",
             "plaintext": "Activate to remove all debuffs and grant massive Move Speed",
             "from": [
@@ -6973,7 +6969,7 @@
         },
         "3139": {
             "name": "Mercurial Scimitar",
-            "description": "<mainText><stats><attention>40</attention> Attack Damage<br><attention>20%</attention> Critical Strike Chance<br><attention>50</attention> Magic Resist</stats><br><br><br><br><active>ON ACTIVATION</active> (0s cooldown)<br><active>Quicksilver</active><br>Removes all crowd control debuffs (excluding <keyword>Airborne</keyword>) and grants <speed>50% Move Speed</speed> for 1.5 seconds.</mainText>",
+            "description": "<mainText><stats><attention>40</attention> Attack Damage<br><attention>20%</attention> Critical Strike Chance<br><attention>50</attention> Magic Resist</stats><br><br><br><br><active>ACTIVE</active> (0s)<br><active>Quicksilver</active><br>Removes all crowd control debuffs (excluding <keyword>Airborne</keyword>) and grants <speed>50% Move Speed</speed> for 1.5 seconds.</mainText>",
             "colloq": ";",
             "plaintext": "Activate to remove all crowd control debuffs and grant massive Move Speed",
             "from": [
@@ -7025,7 +7021,7 @@
         },
         "3140": {
             "name": "Quicksilver Sash",
-            "description": "<mainText><stats><attention>30</attention> Magic Resist</stats><br><br><active>ON ACTIVATION</active> (0s cooldown)<br><active>Quicksilver</active><br>Removes all crowd control debuffs (excluding <keyword>Airborne</keyword>).</mainText>",
+            "description": "<mainText><stats><attention>30</attention> Magic Resist</stats><br><br><active>ACTIVE</active> (0s)<br><active>Quicksilver</active><br>Removes all crowd control debuffs (excluding <keyword>Airborne</keyword>).</mainText>",
             "colloq": ";qss",
             "plaintext": "Activate to remove all crowd control debuffs",
             "from": [
@@ -7068,7 +7064,7 @@
         },
         "3142": {
             "name": "Youmuu's Ghostblade",
-            "description": "<mainText><stats><attention>60</attention> Attack Damage<br><attention>18</attention> Lethality</stats><br><br><passive>Haunt</passive> <br>Gain <speed>40 Move Speed</speed> while out of combat.<br><br><active>ON ACTIVATION</active> (0s cooldown)<br><active>Wraith Step</active><br>Gain <speed>Move Speed</speed> and <keyword>Ghosting</keyword>.<br><br></mainText>",
+            "description": "<mainText><stats><attention>60</attention> Attack Damage<br><attention>18</attention> Lethality</stats><br><br><passive>Haunt</passive> <br>Gain <speed>40 Move Speed</speed> while out of combat.<br><br><active>ACTIVE</active> (0s)<br><active>Wraith Step</active><br>Gain <speed>Move Speed</speed> and <keyword>Ghosting</keyword>.</mainText>",
             "colloq": ";lethality",
             "plaintext": "Activate to greatly increase Move Speed",
             "from": [
@@ -7121,7 +7117,7 @@
         },
         "3143": {
             "name": "Randuin's Omen",
-            "description": "<mainText><stats><attention>400</attention> Health<br><attention>55</attention> Armor</stats><br><br><passive>Rock Solid</passive><br>Reduce incoming damage from attacks.<br><br><passive>Critical Resilience</passive><br>Critical Strikes deal less damage to you.<br><br><active>ON ACTIVATION</active><br><active>Humility</active><br><keyword>Slow</keyword> nearby enemies.</mainText>",
+            "description": "<mainText><stats><attention>400</attention> Health<br><attention>55</attention> Armor</stats><br><br><passive>Rock Solid</passive><br>Reduce incoming damage from attacks.<br><br><passive>Critical Resilience</passive><br>Critical Strikes deal less damage to you.<br><br><active>ACTIVE</active><br><active>Humility</active><br><keyword>Slow</keyword> nearby enemies.</mainText>",
             "colloq": ";",
             "plaintext": "Greatly increases defenses, activate to slow nearby enemies",
             "from": [
@@ -7301,7 +7297,7 @@
         },
         "3152": {
             "name": "Hextech Rocketbelt",
-            "description": "<mainText><stats><attention>60</attention> Ability Power<br><attention>300</attention> Health<br><attention>15</attention> Ability Haste</stats><br><br><active>ON ACTIVATION</active>} (0s cooldown)<br><active>Supersonic</active><br>Dash in target direction, unleashing an arc of magic missiles that deal magic damage.</mainText>",
+            "description": "<mainText><stats><attention>60</attention> Ability Power<br><attention>300</attention> Health<br><attention>15</attention> Ability Haste</stats><br><br><active>ACTIVE</active>} (0s)<br><active>Supersonic</active><br>Dash in target direction, unleashing an arc of magic missiles that deal magic damage.</mainText>",
             "colloq": "rocket belt;",
             "plaintext": "Activate to dash forward and unleash a fiery explosion",
             "from": [
@@ -7349,7 +7345,7 @@
         },
         "3153": {
             "name": "Blade of The Ruined King",
-            "description": "<mainText><stats><attention>40</attention> Attack Damage<br><attention>25%</attention> Attack Speed<br><attention>8%</attention> Life Steal</stats><br><br><passive>Mist's Edge</passive><br>Attacks apply an additional enemy current Health physical damage <OnHit>On-Hit</OnHit>.<br><br><passive>Clawing Shadows</passive> (0s cooldown)<br>Your first basic attack against a champion slows them.</mainText>",
+            "description": "<mainText><stats><attention>40</attention> Attack Damage<br><attention>25%</attention> Attack Speed<br><attention>8%</attention> Life Steal</stats><br><br><passive>Mist's Edge</passive><br>Attacks apply an additional enemy current Health physical damage <OnHit>On-Hit</OnHit>.<br><br><passive>Clawing Shadows</passive> (0s)<br>Your first basic attack against a champion Slows them.</mainText>",
             "colloq": ";brk;bork;bork;bork;botrk",
             "plaintext": "Deals damage based on target's Health, can steal Move Speed",
             "from": [
@@ -7484,7 +7480,7 @@
         },
         "3157": {
             "name": "Zhonya's Hourglass",
-            "description": "<mainText><stats><attention>120</attention> Ability Power<br><attention>50</attention> Armor</stats><br><br><active>ON ACTIVATION</active> (0s cooldown)<br><active>Time Stop</active><br>Enter <keyword>Stasis</keyword> for 2.5 seconds.</mainText>",
+            "description": "<mainText><stats><attention>120</attention> Ability Power<br><attention>50</attention> Armor</stats><br><br><active>Time Stop</active><br>Enter <keyword>Stasis</keyword> for 2.5 seconds.</mainText>",
             "colloq": ";zhg;zonyas",
             "plaintext": "Activate to become invincible but unable to take actions",
             "from": [
@@ -7792,7 +7788,7 @@
         },
         "3181": {
             "name": "Hullbreaker",
-            "description": "<mainText><stats><attention>65</attention> Attack Damage<br><attention>350</attention> Health<br><attention>5%</attention> Move Speed</stats><br><br><br><br><passive>Skipper</passive><br>Every fifth basic attack against Champions and Epic Monsters deals bonus physical damage, increased against Structures.<br><passive>Boarding Party</passive><br>Nearby allied Siege and Super Minions gain bonus Armor and Magic Resistance. <br><br><rules>Item performance differs for melee and ranged users.</rules></mainText>",
+            "description": "<mainText><stats><attention>65</attention> Attack Damage<br><attention>350</attention> Health<br><attention>5%</attention> Move Speed</stats><br><br><passive>Skipper</passive><br>Every fifth basic attack against Champions and Epic Monsters deals bonus physical damage, increased against Structures.<br><br><passive>Boarding Party</passive><br>Nearby allied Siege and Super Minions gain bonus Armor and Magic Resist. <br><br><rules>Item performance differs for melee and ranged users.</rules></mainText>",
             "colloq": "",
             "plaintext": "",
             "from": [
@@ -7817,8 +7813,6 @@
             },
             "tags": [
                 "Health",
-                "SpellBlock",
-                "Armor",
                 "Damage",
                 "NonbootsMovement"
             ],
@@ -8021,7 +8015,7 @@
         },
         "3222": {
             "name": "Mikael's Blessing",
-            "description": "<mainText><stats><attention>250</attention> Health<br><attention>100%</attention> Base Mana Regen<br><attention>12%</attention> Heal and Shield Power<br><attention>15</attention> Ability Haste</stats><br><br><active>ON ACTIVATION</active><br><active>Purify</active> (0s cooldown)<br>Remove all crowd control debuffs from an ally champion and restore Health.</mainText>",
+            "description": "<mainText><stats><attention>250</attention> Health<br><attention>100%</attention> Base Mana Regen<br><attention>12%</attention> Heal and Shield Power<br><attention>15</attention> Ability Haste</stats><br><br><active>ACTIVE</active><br><active>Purify</active> (0s)<br>Remove all crowd control debuffs from an ally champion and restore Health.</mainText>",
             "colloq": ";",
             "plaintext": "Activate to remove all disabling effects from an allied champion",
             "from": [
@@ -8065,7 +8059,7 @@
         },
         "3302": {
             "name": "Terminus",
-            "description": "<mainText><stats><attention>40</attention> Attack Damage<br><attention>30%</attention> Attack Speed</stats><br><br><passive>Shadow</passive><br>Attacks apply <magicDamage>30 magic damage</magicDamage> <OnHit>On-Hit</OnHit><br><passive>Juxtaposition</passive><br>Alternate between <keywordMajor>Light</keywordMajor> and <keywordMajor>Dark</keywordMajor> on-hits each attack: <li><keywordMajor>Light</keywordMajor> attacks grant 0 <scaleArmor>Armor</scaleArmor> and <scaleMR>Magic Resist</scaleMR> (up to 0) for 5 seconds. <li><keywordMajor>Dark</keywordMajor> attacks grant 6% <scaleArmor>Armor Penetration</scaleArmor> and <scaleMR>Magic Penetration</scaleMR> (up to 30%) for 5 seconds. </mainText>",
+            "description": "<mainText><stats><attention>40</attention> Attack Damage<br><attention>30%</attention> Attack Speed</stats><br><br><passive>Shadow</passive><br>Attacks apply <magicDamage>30 magic damage</magicDamage> <OnHit>On-Hit</OnHit><br><br><passive>Juxtaposition</passive><br>Alternate between <keywordMajor>Light</keywordMajor> and <keywordMajor>Dark</keywordMajor> on-hits when attacking champions: <li><keywordMajor>Light</keywordMajor> attacks grant 0 <scaleArmor>Armor</scaleArmor> and <scaleMR>Magic Resist</scaleMR> (up to 0) for 5 seconds. <li><keywordMajor>Dark</keywordMajor> attacks grant 6% <scaleArmor>Armor Penetration</scaleArmor> and <scaleMR>Magic Penetration</scaleMR> (up to 30%) for 5 seconds. </mainText>",
             "colloq": ";",
             "plaintext": "Kill minions periodically to heal and grant gold to a nearby ally",
             "from": [
@@ -8433,10 +8427,10 @@
                 "h": 48
             },
             "gold": {
-                "base": 300,
+                "base": 200,
                 "purchasable": true,
                 "total": 2900,
-                "sell": 2100
+                "sell": 2030
             },
             "tags": [
                 "Damage",
@@ -8613,7 +8607,7 @@
         },
         "3748": {
             "name": "Titanic Hydra",
-            "description": "<mainText><stats><attention>50</attention> Attack Damage<br><attention>500</attention> Health</stats><br><br><passive>Cleave</passive><br>Attacks apply additional damage <OnHit>On-Hit</OnHit>, creating a shockwave that deals damage to enemies behind the target.<br><br><active>ON ACTIVATION</active><br><active>Titanic Crescent</active><br>On your next attack, <passive>Cleave</passive> will deal bonus physical damage to your target and in a nearby shockwave.</mainText>",
+            "description": "<mainText><stats><attention>50</attention> Attack Damage<br><attention>500</attention> Health</stats><br><br><passive>Cleave</passive><br>Attacks apply additional damage, creating a shockwave that deals damage to enemies behind the target.<br><br><active>ACTIVE</active><br><active>Titanic Crescent</active><br>On your next attack, <passive>Cleave</passive> will deal bonus physical damage to your target and in a nearby shockwave.</mainText>",
             "colloq": ";juggernaut",
             "plaintext": "Deals area of effect damage based on owner's health",
             "from": [
@@ -8650,8 +8644,8 @@
                 "30": false
             },
             "stats": {
-                "FlatHPPoolMod": 550,
-                "FlatPhysicalDamageMod": 55
+                "FlatHPPoolMod": 500,
+                "FlatPhysicalDamageMod": 50
             },
             "depth": 3
         },
@@ -8849,7 +8843,7 @@
         },
         "3850": {
             "name": "Spellthief's Edge",
-            "description": "<mainText><stats><attention>10</attention> Ability Power<br><attention>25</attention> Health<br><attention>25%</attention> Base Mana Regen<br><attention>2</attention> Gold Per 10 Seconds</stats><br><br><br><li><passive>Tribute:</passive> While nearby an ally champion, damaging Abilities and Attacks against champions or buildings grant 20 gold. This can occur up to 3 times every 36 seconds.<li><passive>Quest:</passive> Earn 500 gold from this item to transform it into <rarityGeneric>Frostfang</rarityGeneric>, gaining <active>Active -</active> <active>Warding</active>.<br><br><rules>This item grants reduced gold from minions if you kill excessive numbers of them.</rules></mainText>",
+            "description": "<mainText><stats><attention>10</attention> Ability Power<br><attention>25</attention> Health<br><attention>25%</attention> Base Mana Regen<br><attention>2</attention> Gold Per 10 Seconds</stats><br><br><br><li><passive>Tribute:</passive> While nearby an ally champion, damaging Abilities and Attacks against champions or buildings grant 20 gold. This can occur up to 3 times every 36 seconds.<li><passive>Quest:</passive> Earn 500 gold from this item to transform it into <rarityGeneric>Frostfang</rarityGeneric>, gaining <active>Active -</active> <active>Warding</active>.<br><br><rules>This item grants reduced gold from minions if anyone on your team with this item kill excessive numbers of them.</rules></mainText>",
             "colloq": "",
             "plaintext": "Gain gold and upgrade by damaging enemy champions",
             "image": {
@@ -8898,7 +8892,7 @@
         },
         "3851": {
             "name": "Frostfang",
-            "description": "<mainText><stats><attention>15</attention> Ability Power<br><attention>70</attention> Health<br><attention>50%</attention> Base Mana Regen<br><attention>3</attention> Gold Per 10 Seconds</stats><br><br><br><br><active>Active -</active> <active>Ward:</active> Place a Stealth Ward on the ground that is <keywordStealth>Invisible</keywordStealth> to enemies but grants your team vision of the surrounding area. Stores up to 3 Stealth Wards, which refill upon visiting the shop. <br><br><br><br><li><passive>Tribute:</passive> While nearby an ally champion, damaging Abilities and Attacks against champions or buildings grant 20 gold. This can occur up to 3 times every 30 seconds.<li><passive>Quest:</passive> Earn 1000 gold from this item to transform it into <rarityLegendary>Shard of True Ice</rarityLegendary>.<br><br><active>Active -</active> <active>Ward:</active> Place a Stealth Ward on the ground that is <keywordStealth>Invisible</keywordStealth> to enemies but grants your team vision of the surrounding area. Stores up to 0 Stealth Wards, which refill upon visiting the shop. </mainText>",
+            "description": "<mainText><stats><attention>15</attention> Ability Power<br><attention>70</attention> Health<br><attention>50%</attention> Base Mana Regen<br><attention>3</attention> Gold Per 10 Seconds</stats><br><br><br><br><active>Active -</active> <active>Ward:</active> Place a Stealth Ward on the ground that is <keywordStealth>Invisible</keywordStealth> to enemies but grants your team vision of the surrounding area. Stores up to 3 Stealth Wards, which refill upon visiting the shop. <br><br><br><br><li><passive>Tribute:</passive> While nearby an ally champion, damaging Abilities and Attacks against champions or buildings grant 20 gold. This can occur up to 3 times every 30 seconds.<li><passive>Quest:</passive> Earn 1000 gold from this item to transform it into <rarityLegendary>Shard of True Ice</rarityLegendary>.<br><br><br><br><active>ACTIVE</active><br><active>Ward</active> <br>Place an <keywordStealth>Invisible</keywordStealth> Stealth Ward that grants vision. Stores 0 Stealth Wards, which refill upon visiting the shop. </mainText>",
             "colloq": "",
             "plaintext": "",
             "specialRecipe": 3850,
@@ -8947,7 +8941,7 @@
         },
         "3853": {
             "name": "Shard of True Ice",
-            "description": "<mainText><stats><attention>40</attention> Ability Power<br><attention>75</attention> Health<br><attention>100%</attention> Base Mana Regen<br><attention>3</attention> Gold Per 10 Seconds</stats><br><br><br><br><active>Active -</active> <active>Ward:</active> Place a Stealth Ward on the ground that is <keywordStealth>Invisible</keywordStealth> to enemies but grants your team vision of the surrounding area. Stores up to 4 Stealth Wards, which refill upon visiting the shop. <br><br><active>Active -</active> <active>Ward:</active> Place a Stealth Ward on the ground that is <keywordStealth>Invisible</keywordStealth> to enemies but grants your team vision of the surrounding area. Stores up to 0 Stealth Wards, which refill upon visiting the shop. </mainText>",
+            "description": "<mainText><stats><attention>40</attention> Ability Power<br><attention>75</attention> Health<br><attention>100%</attention> Base Mana Regen<br><attention>3</attention> Gold Per 10 Seconds</stats><br><br><br><br><active>Active -</active> <active>Ward:</active> Place a Stealth Ward on the ground that is <keywordStealth>Invisible</keywordStealth> to enemies but grants your team vision of the surrounding area. Stores up to 4 Stealth Wards, which refill upon visiting the shop. <br><br><br><br><active>ACTIVE</active><br><active>Ward</active> <br>Place an <keywordStealth>Invisible</keywordStealth> Stealth Ward that grants vision. Stores 0 Stealth Wards, which refill upon visiting the shop. </mainText>",
             "colloq": "",
             "plaintext": "",
             "specialRecipe": 3851,
@@ -8990,7 +8984,7 @@
         },
         "3854": {
             "name": "Steel Shoulderguards",
-            "description": "<mainText><stats><attention>4</attention> Attack Damage<br><attention>50</attention> Health<br><attention>50%</attention> Base Health Regen<br><attention>2</attention> Gold Per 10 Seconds</stats><br><br><li><passive>Spoils of War:</passive> While nearby an allied champion, Attacks execute minions below (50% for Melee Users | 30% for Ranged Users) of their max Health. Killing a minion grants the same kill gold to the nearest allied champion. These effects recharge every 35 seconds (Max 3 charges).<li><passive>Quest:</passive> Earn 500 gold from this item to transform it into <rarityGeneric>Runesteel Spaulders</rarityGeneric>, gaining <active>Active -</active> <active>Warding</active>.<br><br><rules>This item grants reduced gold from minions if you kill excessive numbers of them.</rules></mainText>",
+            "description": "<mainText><stats><attention>4</attention> Attack Damage<br><attention>50</attention> Health<br><attention>50%</attention> Base Health Regen<br><attention>2</attention> Gold Per 10 Seconds</stats><br><br><li><passive>Spoils of War:</passive> While nearby an allied champion, Attacks execute minions below (50% for Melee Users | 30% for Ranged Users) of their max Health. Killing a minion grants the same kill gold to the nearest allied champion. These effects recharge every 35 seconds (Max 3 charges).<li><passive>Quest:</passive> Earn 500 gold from this item to transform it into <rarityGeneric>Runesteel Spaulders</rarityGeneric>, gaining <active>Active -</active> <active>Warding</active>.<br><br><rules>This item grants reduced gold from minions if anyone on your team with this item kill excessive numbers of them.</rules></mainText>",
             "colloq": "",
             "plaintext": "Gain gold and upgrade by executing minions alongside allies",
             "image": {
@@ -9038,7 +9032,7 @@
         },
         "3855": {
             "name": "Runesteel Spaulders",
-            "description": "<mainText><stats><attention>6</attention> Attack Damage<br><attention>100</attention> Health<br><attention>75%</attention> Base Health Regen<br><attention>3</attention> Gold Per 10 Seconds</stats><br><br><br><br><active>Active -</active> <active>Ward:</active> Place a Stealth Ward on the ground that is <keywordStealth>Invisible</keywordStealth> to enemies but grants your team vision of the surrounding area. Stores up to 3 Stealth Wards, which refill upon visiting the shop. <br><li><passive>Spoils of War:</passive> While nearby an allied champion, Attacks execute minions below 50% of their max Health. Killing a minion grants the same kill gold to the nearest allied champion. These effects recharge every 35 seconds (Max 3 charges).<li><passive>Quest:</passive> Earn 1000 gold from this item to transform it into <rarityLegendary>Bulwark of the Mountain</rarityLegendary>. <br><br><active>Active -</active> <active>Ward:</active> Place a Stealth Ward on the ground that is <keywordStealth>Invisible</keywordStealth> to enemies but grants your team vision of the surrounding area. Stores up to 0 Stealth Wards, which refill upon visiting the shop. </mainText>",
+            "description": "<mainText><stats><attention>6</attention> Attack Damage<br><attention>100</attention> Health<br><attention>75%</attention> Base Health Regen<br><attention>3</attention> Gold Per 10 Seconds</stats><br><br><br><br><active>Active -</active> <active>Ward:</active> Place a Stealth Ward on the ground that is <keywordStealth>Invisible</keywordStealth> to enemies but grants your team vision of the surrounding area. Stores up to 3 Stealth Wards, which refill upon visiting the shop. <br><li><passive>Spoils of War:</passive> While nearby an allied champion, Attacks execute minions below 50% of their max Health. Killing a minion grants the same kill gold to the nearest allied champion. These effects recharge every 35 seconds (Max 3 charges).<li><passive>Quest:</passive> Earn 1000 gold from this item to transform it into <rarityLegendary>Bulwark of the Mountain</rarityLegendary>. <br><br><br><br><active>ACTIVE</active><br><active>Ward</active> <br>Place an <keywordStealth>Invisible</keywordStealth> Stealth Ward that grants vision. Stores 0 Stealth Wards, which refill upon visiting the shop. </mainText>",
             "colloq": "",
             "plaintext": "",
             "specialRecipe": 3854,
@@ -9086,7 +9080,7 @@
         },
         "3857": {
             "name": "Pauldrons of Whiterock",
-            "description": "<mainText><stats><attention>15</attention> Attack Damage<br><attention>250</attention> Health<br><attention>100%</attention> Base Health Regen<br><attention>3</attention> Gold Per 10 Seconds</stats><br><br><br><br><active>Active -</active> <active>Ward:</active> Place a Stealth Ward on the ground that is <keywordStealth>Invisible</keywordStealth> to enemies but grants your team vision of the surrounding area. Stores up to 4 Stealth Wards, which refill upon visiting the shop. <br><br><active>Active -</active> <active>Ward:</active> Place a Stealth Ward on the ground that is <keywordStealth>Invisible</keywordStealth> to enemies but grants your team vision of the surrounding area. Stores up to 0 Stealth Wards, which refill upon visiting the shop. </mainText>",
+            "description": "<mainText><stats><attention>15</attention> Attack Damage<br><attention>250</attention> Health<br><attention>100%</attention> Base Health Regen<br><attention>3</attention> Gold Per 10 Seconds</stats><br><br><br><br><active>Active -</active> <active>Ward:</active> Place a Stealth Ward on the ground that is <keywordStealth>Invisible</keywordStealth> to enemies but grants your team vision of the surrounding area. Stores up to 4 Stealth Wards, which refill upon visiting the shop. <br><br><br><br><active>ACTIVE</active><br><active>Ward</active> <br>Place an <keywordStealth>Invisible</keywordStealth> Stealth Ward that grants vision. Stores 0 Stealth Wards, which refill upon visiting the shop. </mainText>",
             "colloq": "",
             "plaintext": "",
             "specialRecipe": 3855,
@@ -9129,7 +9123,7 @@
         },
         "3858": {
             "name": "Relic Shield",
-            "description": "<mainText><stats><attention>7</attention> Ability Power<br><attention>50</attention> Health<br><attention>50%</attention> Base Health Regen<br><attention>2</attention> Gold Per 10 Seconds</stats><br><br><li><passive>Spoils of War:</passive> While nearby an allied champion, Attacks execute minions below (50% for Melee Users | 30% for Ranged Users) of their max Health. Killing a minion grants the same kill gold to the nearest allied champion. These effects recharge every 35 seconds (Max 3 charges).<li><passive>Quest:</passive> Earn 500 gold from this item to transform it into <rarityGeneric>Targon's Buckler</rarityGeneric>, gaining <active>Active -</active> <active>Warding</active>.<br><br><rules>This item grants reduced gold from minions if you kill excessive numbers of them.</rules></mainText>",
+            "description": "<mainText><stats><attention>7</attention> Ability Power<br><attention>50</attention> Health<br><attention>50%</attention> Base Health Regen<br><attention>2</attention> Gold Per 10 Seconds</stats><br><br><li><passive>Spoils of War:</passive> While nearby an allied champion, Attacks execute minions below (50% for Melee Users | 30% for Ranged Users) of their max Health. Killing a minion grants the same kill gold to the nearest allied champion. These effects recharge every 35 seconds (Max 3 charges).<li><passive>Quest:</passive> Earn 500 gold from this item to transform it into <rarityGeneric>Targon's Buckler</rarityGeneric>, gaining <active>Active -</active> <active>Warding</active>.<br><br><rules>This item grants reduced gold from minions if anyone on your team with this item kill excessive numbers of them.</rules></mainText>",
             "colloq": "",
             "plaintext": "Gain gold and upgrade by executing minions alongside allies",
             "image": {
@@ -9177,7 +9171,7 @@
         },
         "3859": {
             "name": "Targon's Buckler",
-            "description": "<mainText><stats><attention>10</attention> Ability Power<br><attention>100</attention> Health<br><attention>75%</attention> Base Health Regen<br><attention>3</attention> Gold Per 10 Seconds</stats><br><br><br><br><active>Active -</active> <active>Ward:</active> Place a Stealth Ward on the ground that is <keywordStealth>Invisible</keywordStealth> to enemies but grants your team vision of the surrounding area. Stores up to 3 Stealth Wards, which refill upon visiting the shop. <br><li><passive>Spoils of War:</passive> While nearby an allied champion, Attacks execute minions below 50% of their max Health. Killing a minion grants the same kill gold to the nearest allied champion. These effects recharge every 35 seconds (Max 3 charges).<li><passive>Quest:</passive> Earn 1000 gold from this item to transform it into <rarityLegendary>Bulwark of the Mountain</rarityLegendary>. <br><br><active>Active -</active> <active>Ward:</active> Place a Stealth Ward on the ground that is <keywordStealth>Invisible</keywordStealth> to enemies but grants your team vision of the surrounding area. Stores up to 0 Stealth Wards, which refill upon visiting the shop. </mainText>",
+            "description": "<mainText><stats><attention>10</attention> Ability Power<br><attention>100</attention> Health<br><attention>75%</attention> Base Health Regen<br><attention>3</attention> Gold Per 10 Seconds</stats><br><br><br><br><active>Active -</active> <active>Ward:</active> Place a Stealth Ward on the ground that is <keywordStealth>Invisible</keywordStealth> to enemies but grants your team vision of the surrounding area. Stores up to 3 Stealth Wards, which refill upon visiting the shop. <br><li><passive>Spoils of War:</passive> While nearby an allied champion, Attacks execute minions below 50% of their max Health. Killing a minion grants the same kill gold to the nearest allied champion. These effects recharge every 35 seconds (Max 3 charges).<li><passive>Quest:</passive> Earn 1000 gold from this item to transform it into <rarityLegendary>Bulwark of the Mountain</rarityLegendary>. <br><br><br><br><active>ACTIVE</active><br><active>Ward</active> <br>Place an <keywordStealth>Invisible</keywordStealth> Stealth Ward that grants vision. Stores 0 Stealth Wards, which refill upon visiting the shop. </mainText>",
             "colloq": "",
             "plaintext": "",
             "specialRecipe": 3858,
@@ -9225,7 +9219,7 @@
         },
         "3860": {
             "name": "Bulwark of the Mountain",
-            "description": "<mainText><stats><attention>20</attention> Ability Power<br><attention>250</attention> Health<br><attention>100%</attention> Base Health Regen<br><attention>3</attention> Gold Per 10 Seconds</stats><br><br><br><br><active>Active -</active> <active>Ward:</active> Place a Stealth Ward on the ground that is <keywordStealth>Invisible</keywordStealth> to enemies but grants your team vision of the surrounding area. Stores up to 4 Stealth Wards, which refill upon visiting the shop. <br><br><active>Active -</active> <active>Ward:</active> Place a Stealth Ward on the ground that is <keywordStealth>Invisible</keywordStealth> to enemies but grants your team vision of the surrounding area. Stores up to 0 Stealth Wards, which refill upon visiting the shop. </mainText>",
+            "description": "<mainText><stats><attention>20</attention> Ability Power<br><attention>250</attention> Health<br><attention>100%</attention> Base Health Regen<br><attention>3</attention> Gold Per 10 Seconds</stats><br><br><br><br><active>Active -</active> <active>Ward:</active> Place a Stealth Ward on the ground that is <keywordStealth>Invisible</keywordStealth> to enemies but grants your team vision of the surrounding area. Stores up to 4 Stealth Wards, which refill upon visiting the shop. <br><br><br><br><active>ACTIVE</active><br><active>Ward</active> <br>Place an <keywordStealth>Invisible</keywordStealth> Stealth Ward that grants vision. Stores 0 Stealth Wards, which refill upon visiting the shop. </mainText>",
             "colloq": "",
             "plaintext": "",
             "specialRecipe": 3859,
@@ -9268,7 +9262,7 @@
         },
         "3862": {
             "name": "Spectral Sickle",
-            "description": "<mainText><stats><attention>6</attention> Attack Damage<br><attention>25</attention> Health<br><attention>25%</attention> Base Mana Regen<br><attention>2</attention> Gold Per 10 Seconds</stats><br><br><br><li><passive>Tribute:</passive> While nearby an ally champion, damaging Abilities and Attacks against champions or buildings grant 20 gold. This can occur up to 3 times every 30 seconds.<li><passive>Quest:</passive> Earn 500 gold from this item to transform it into <rarityGeneric>Harrowing Crescent</rarityGeneric>, gaining <active>Active -</active> <active>Warding</active>.<br><br><rules>This item grants reduced gold from minions if you kill excessive numbers of them.</rules></mainText>",
+            "description": "<mainText><stats><attention>6</attention> Attack Damage<br><attention>25</attention> Health<br><attention>25%</attention> Base Mana Regen<br><attention>2</attention> Gold Per 10 Seconds</stats><br><br><br><li><passive>Tribute:</passive> While nearby an ally champion, damaging Abilities and Attacks against champions or buildings grant 20 gold. This can occur up to 3 times every 30 seconds.<li><passive>Quest:</passive> Earn 500 gold from this item to transform it into <rarityGeneric>Harrowing Crescent</rarityGeneric>, gaining <active>Active -</active> <active>Warding</active>.<br><br><rules>This item grants reduced gold from minions if anyone on your team with this item kill excessive numbers of them.</rules></mainText>",
             "colloq": "",
             "plaintext": "Gain gold and upgrade by damaging enemy champions",
             "image": {
@@ -9317,7 +9311,7 @@
         },
         "3863": {
             "name": "Harrowing Crescent",
-            "description": "<mainText><stats><attention>10</attention> Attack Damage<br><attention>60</attention> Health<br><attention>50%</attention> Base Mana Regen<br><attention>3</attention> Gold Per 10 Seconds</stats><br><br><br><li><passive>Tribute:</passive> While nearby an ally champion, damaging Abilities and Attacks against champions or buildings grant 20 gold. This can occur up to 3 times every 36 seconds.<li><passive>Quest:</passive> Earn 1000 gold from this item to transform it into <rarityLegendary>Black Mist Scythe</rarityLegendary>.<br><br><rules>This item grants reduced gold from minions if you kill excessive numbers of them.</rules><br><br><active>Active -</active> <active>Ward:</active> Place a Stealth Ward on the ground that is <keywordStealth>Invisible</keywordStealth> to enemies but grants your team vision of the surrounding area. Stores up to 0 Stealth Wards, which refill upon visiting the shop. </mainText>",
+            "description": "<mainText><stats><attention>10</attention> Attack Damage<br><attention>60</attention> Health<br><attention>50%</attention> Base Mana Regen<br><attention>3</attention> Gold Per 10 Seconds</stats><br><br><br><li><passive>Tribute:</passive> While nearby an ally champion, damaging Abilities and Attacks against champions or buildings grant 20 gold. This can occur up to 3 times every 36 seconds.<li><passive>Quest:</passive> Earn 1000 gold from this item to transform it into <rarityLegendary>Black Mist Scythe</rarityLegendary>.<br><br><rules>This item grants reduced gold from minions if anyone on your team with this item kill excessive numbers of them.</rules><br><br><br><br><active>ACTIVE</active><br><active>Ward</active> <br>Place an <keywordStealth>Invisible</keywordStealth> Stealth Ward that grants vision. Stores 0 Stealth Wards, which refill upon visiting the shop. </mainText>",
             "colloq": "",
             "plaintext": "",
             "specialRecipe": 3862,
@@ -9366,7 +9360,7 @@
         },
         "3864": {
             "name": "Black Mist Scythe",
-            "description": "<mainText><stats><attention>20</attention> Attack Damage<br><attention>75</attention> Health<br><attention>100%</attention> Base Mana Regen<br><attention>3</attention> Gold Per 10 Seconds</stats><br><br><br><br><active>Active -</active> <active>Ward:</active> Place a Stealth Ward on the ground that is <keywordStealth>Invisible</keywordStealth> to enemies but grants your team vision of the surrounding area. Stores up to 4 Stealth Wards, which refill upon visiting the shop. <br><br><active>Active -</active> <active>Ward:</active> Place a Stealth Ward on the ground that is <keywordStealth>Invisible</keywordStealth> to enemies but grants your team vision of the surrounding area. Stores up to 0 Stealth Wards, which refill upon visiting the shop. </mainText>",
+            "description": "<mainText><stats><attention>20</attention> Attack Damage<br><attention>75</attention> Health<br><attention>100%</attention> Base Mana Regen<br><attention>3</attention> Gold Per 10 Seconds</stats><br><br><br><br><active>Active -</active> <active>Ward:</active> Place a Stealth Ward on the ground that is <keywordStealth>Invisible</keywordStealth> to enemies but grants your team vision of the surrounding area. Stores up to 4 Stealth Wards, which refill upon visiting the shop. <br><br><br><br><active>ACTIVE</active><br><active>Ward</active> <br>Place an <keywordStealth>Invisible</keywordStealth> Stealth Ward that grants vision. Stores 0 Stealth Wards, which refill upon visiting the shop. </mainText>",
             "colloq": "",
             "plaintext": "",
             "specialRecipe": 3863,
@@ -9451,7 +9445,7 @@
         },
         "3866": {
             "name": "Runic Compass",
-            "description": "<mainText><stats><attention>5</attention> Gold Per 10 Seconds<br><attention>50%</attention> Base Health Regen<br><attention>50%</attention> Base Mana Regen<br><attention>100</attention> Health</stats><br><br><br><br><active>Active -</active> <active>Ward:</active> Place a Stealth Ward on the ground that is <keywordStealth>Invisible</keywordStealth> to enemies but grants your team vision of the surrounding area. Stores up to 3 Stealth Wards, which refill upon visiting the shop. <br><br><br><br><br><passive>Quest:</passive> Earn 1000 gold from this item to transform it into <rarityGeneric>Runic Compass</rarityGeneric>, gaining <active>Active -</active> <active>Warding</active>. Gain a charge every <passive>18</passive> seconds, up to <passive>3</passive> charges. While nearby an ally champion, consume a charge to earn gold:<br><li>Damaging Abilities and Attacks against champions or buildings grant <keywordMajor>34</keywordMajor> (melee) / <keywordMajor>32</keywordMajor> (ranged) gold;<li>Killing a minion by any means grants you <keywordMajor>28</keywordMajor> gold and the nearest allied champion kill gold.<br><br><active>Active -</active> <active>Ward:</active> Place a Stealth Ward on the ground that is <keywordStealth>Invisible</keywordStealth> to enemies but grants your team vision of the surrounding area. Stores up to 0 Stealth Wards, which refill upon visiting the shop. <br><br></mainText>",
+            "description": "<mainText><stats><attention>5</attention> Gold Per 10 Seconds<br><attention>50%</attention> Base Health Regen<br><attention>50%</attention> Base Mana Regen<br><attention>100</attention> Health</stats><br><br><br><br><active>ACTIVE</active><br><active>Ward</active> <br>Place an <keywordStealth>Invisible</keywordStealth> Stealth Ward that grants vision. Stores 0 Stealth Wards, which refill upon visiting the shop. <br><br><br><br><passive>Quest</passive> <br>Earn 1000 gold from this item to transform it into <rarityGeneric>Runic Compass</rarityGeneric>. Gain a charge every <passive>18</passive> seconds, up to <passive>3</passive> charges. While nearby an ally champion, consume a charge to earn gold:<br><li>Damaging Abilities and Attacks against champions or buildings grant <keywordMajor>34</keywordMajor> (melee) / <keywordMajor>32</keywordMajor> (ranged) gold;<li>Killing a minion by any means grants you <keywordMajor>28</keywordMajor> gold and the nearest allied champion kill gold.<br><br><active>ACTIVE</active><br><active>Ward</active> <br>Place an <keywordStealth>Invisible</keywordStealth> Stealth Ward that grants vision. Stores 0 Stealth Wards, which refill upon visiting the shop. </mainText>",
             "colloq": "",
             "plaintext": "",
             "specialRecipe": 3865,
@@ -9493,7 +9487,7 @@
         },
         "3867": {
             "name": "Bounty of Worlds",
-            "description": "<mainText><stats><attention>5</attention> Gold Per 10 Seconds<br><attention>50%</attention> Base Health Regen<br><attention>50%</attention> Base Mana Regen<br><attention>100</attention> Health</stats><br><br><br><li><passive>Upgrade:</passive> This item can be upgraded into <rarityLegendary>Bloodsong</rarityLegendary>, <rarityLegendary>Celestial Opposition</rarityLegendary>, <rarityLegendary>Dream Maker</rarityLegendary>, <rarityLegendary>Zaz'Zak's Realmspike</rarityLegendary>, or <rarityLegendary>Solstice Sleigh</rarityLegendary> for free.<br><br><active>Active -</active> <active>Ward:</active> Place a Stealth Ward on the ground that is <keywordStealth>Invisible</keywordStealth> to enemies but grants your team vision of the surrounding area. Stores up to 4 Stealth Wards, which refill upon visiting the shop. <br><br><br><active>Active -</active> <active>Ward:</active> Place a Stealth Ward on the ground that is <keywordStealth>Invisible</keywordStealth> to enemies but grants your team vision of the surrounding area. Stores up to 0 Stealth Wards, which refill upon visiting the shop. <br><br></mainText>",
+            "description": "<mainText><stats><attention>5</attention> Gold Per 10 Seconds<br><attention>50%</attention> Base Health Regen<br><attention>50%</attention> Base Mana Regen<br><attention>100</attention> Health</stats><br><br><br><li><passive>Upgrade</passive> <br>This item can be upgraded into <rarityLegendary>Bloodsong</rarityLegendary>, <rarityLegendary>Celestial Opposition</rarityLegendary>, <rarityLegendary>Dream Maker</rarityLegendary>, <rarityLegendary>Zaz'Zak's Realmspike</rarityLegendary>, or <rarityLegendary>Solstice Sleigh</rarityLegendary> for free.<br><br><active>ACTIVE</active><br><active>Ward</active> <br>Place an <keywordStealth>Invisible</keywordStealth> Stealth Ward that grants vision. Stores 0 Stealth Wards, which refill upon visiting the shop. <br><br></mainText>",
             "colloq": "",
             "plaintext": "",
             "specialRecipe": 3866,
@@ -9542,7 +9536,7 @@
         },
         "3869": {
             "name": "Celestial Opposition",
-            "description": "<mainText><stats><attention>5</attention> Gold Per 10 Seconds<br><attention>75%</attention> Base Health Regen<br><attention>75%</attention> Base Mana Regen<br><attention>200</attention> Health</stats><br><br><passive>Blessing of the Mountain:</passive> Become Blessed to reduce incoming champion damage, lingering for 2 seconds after taking damage from a champion. (Refreshes after not taking damage for 20 seconds.)<br><br><active>Active -</active> <active>Ward:</active> Place a Stealth Ward on the ground that is <keywordStealth>Invisible</keywordStealth> to enemies but grants your team vision of the surrounding area. Stores up to 4 Stealth Wards, which refill upon visiting the shop. <br><br><active>Active -</active> <active>Ward:</active> Place a Stealth Ward on the ground that is <keywordStealth>Invisible</keywordStealth> to enemies but grants your team vision of the surrounding area. Stores up to 0 Stealth Wards, which refill upon visiting the shop. <br><br></mainText>",
+            "description": "<mainText><stats><attention>5</attention> Gold Per 10 Seconds<br><attention>75%</attention> Base Health Regen<br><attention>75%</attention> Base Mana Regen<br><attention>200</attention> Health</stats><br><br><passive>Blessing of the Mountain:</passive> <br>Become Blessed to reduce incoming champion damage, lingering for 2 seconds after taking damage from a champion.<br><br><br><br><active>ACTIVE</active><br><active>Ward</active> <br>Place an <keywordStealth>Invisible</keywordStealth> Stealth Ward that grants vision. Stores 0 Stealth Wards, which refill upon visiting the shop. </mainText>",
             "colloq": "",
             "plaintext": "",
             "from": [
@@ -9587,7 +9581,7 @@
         },
         "3870": {
             "name": "Dream Maker",
-            "description": "<mainText><stats><attention>5</attention> Gold Per 10 Seconds<br><attention>75%</attention> Base Health Regen<br><attention>75%</attention> Base Mana Regen<br><attention>200</attention> Health</stats><br><br><passive>Dream Maker</passive><br>Gain a <passive>Blue Dream Bubble</passive> and a <passive>Purple Dream Bubble</passive> overtime. Healing and Shielding another ally blows both <passive>Dream Bubbles</passive> to them and empowers them, reducing incoming damage and granting outgoing damage.<br><br><active>Active -</active> <active>Ward:</active> Place a Stealth Ward on the ground that is <keywordStealth>Invisible</keywordStealth> to enemies but grants your team vision of the surrounding area. Stores up to 0 Stealth Wards, which refill upon visiting the shop. <br><br></mainText>",
+            "description": "<mainText><stats><attention>5</attention> Gold Per 10 Seconds<br><attention>75%</attention> Base Health Regen<br><attention>75%</attention> Base Mana Regen<br><attention>200</attention> Health</stats><br><br><passive>Dream Maker</passive><br>Gain a <passive>Blue Dream Bubble</passive> and a <passive>Purple Dream Bubble</passive> overtime. Healing and Shielding another ally blows both <passive>Dream Bubbles</passive> to them and empowers them, reducing incoming damage and granting outgoing damage.<br><br><active>ACTIVE</active><br><active>Ward</active> <br>Place an <keywordStealth>Invisible</keywordStealth> Stealth Ward that grants vision. Stores 0 Stealth Wards, which refill upon visiting the shop. </mainText>",
             "colloq": "",
             "plaintext": "",
             "from": [
@@ -9632,7 +9626,7 @@
         },
         "3871": {
             "name": "Zaz'Zak's Realmspike",
-            "description": "<mainText><stats><attention>5</attention> Gold Per 10 Seconds<br><attention>75%</attention> Base Health Regen<br><attention>75%</attention> Base Mana Regen<br><attention>200</attention> Health</stats><br><br><passive>Void Explosion</passive><br>Dealing ability damage causes an explosion around the target dealing magic damage and damage based on the targets max Health.<br><br><active>Active -</active> <active>Ward:</active> Place a Stealth Ward on the ground that is <keywordStealth>Invisible</keywordStealth> to enemies but grants your team vision of the surrounding area. Stores up to 4 Stealth Wards, which refill upon visiting the shop. <br><br><active>Active -</active> <active>Ward:</active> Place a Stealth Ward on the ground that is <keywordStealth>Invisible</keywordStealth> to enemies but grants your team vision of the surrounding area. Stores up to 0 Stealth Wards, which refill upon visiting the shop. <br><br></mainText>",
+            "description": "<mainText><stats><attention>5</attention> Gold Per 10 Seconds<br><attention>75%</attention> Base Health Regen<br><attention>75%</attention> Base Mana Regen<br><attention>200</attention> Health</stats><br><br><passive>Void Explosion</passive><br>Dealing ability damage causes an explosion dealing magic damage and damage based on the targets max Health.<br><br><br><br><active>ACTIVE</active><br><active>Ward</active> <br>Place an <keywordStealth>Invisible</keywordStealth> Stealth Ward that grants vision. Stores 0 Stealth Wards, which refill upon visiting the shop. </mainText>",
             "colloq": "",
             "plaintext": "",
             "from": [
@@ -9677,7 +9671,7 @@
         },
         "3876": {
             "name": "Solstice Sleigh",
-            "description": "<mainText><stats><attention>5</attention> Gold Per 10 Seconds<br><attention>75%</attention> Base Health Regen<br><attention>75%</attention> Base Mana Regen<br><attention>200</attention> Health</stats><br><br><passive>Going Sledding</passive><br><status>Slowing</status> or <status>Immobilizing</status> an enemy champion grants you and a nearby ally with lowest health bonus health and Move Speed.<br><br><active>Active -</active> <active>Ward:</active> Place a Stealth Ward on the ground that is <keywordStealth>Invisible</keywordStealth> to enemies but grants your team vision of the surrounding area. Stores up to 0 Stealth Wards, which refill upon visiting the shop. <br><br></mainText>",
+            "description": "<mainText><stats><attention>5</attention> Gold Per 10 Seconds<br><attention>75%</attention> Base Health Regen<br><attention>75%</attention> Base Mana Regen<br><attention>200</attention> Health</stats><br><br><passive>Going Sledding</passive><br><status>Slowing</status> or <status>Immobilizing</status> an enemy champion grants you and a nearby ally with lowest Health bonus Health and Move Speed.<br><br><active>ACTIVE</active><br><active>Ward</active> <br>Place an <keywordStealth>Invisible</keywordStealth> Stealth Ward that grants vision. Stores 0 Stealth Wards, which refill upon visiting the shop. </mainText>",
             "colloq": "",
             "plaintext": "",
             "from": [
@@ -9722,7 +9716,7 @@
         },
         "3877": {
             "name": "Bloodsong",
-            "description": "<mainText><stats><attention>5</attention> Gold Per 10 Seconds<br><attention>75%</attention> Base Health Regen<br><attention>75%</attention> Base Mana Regen<br><attention>200</attention> Health</stats><br><br><passive>Spellblade</passive><br>After using an ability, your next basic attack within 10 seconds deals 150% base AD bonus physical damage on-hit and inflicts Expose Weakness, increasing damage taken by the inflicted enemy champion for 6s. <br><br><br><active>Active -</active> <active>Ward:</active> Place a Stealth Ward on the ground that is <keywordStealth>Invisible</keywordStealth> to enemies but grants your team vision of the surrounding area. Stores up to 4 Stealth Wards, which refill upon visiting the shop. <br><br><active>Active -</active> <active>Ward:</active> Place a Stealth Ward on the ground that is <keywordStealth>Invisible</keywordStealth> to enemies but grants your team vision of the surrounding area. Stores up to 0 Stealth Wards, which refill upon visiting the shop. <br><br></mainText>",
+            "description": "<mainText><stats><attention>5</attention> Gold Per 10 Seconds<br><attention>75%</attention> Base Health Regen<br><attention>75%</attention> Base Mana Regen<br><attention>200</attention> Health</stats><br><br><passive>Spellblade</passive><br>After using an ability, your next basic attack within 10 seconds deals 150% base AD bonus physical damage on-hit and increases damage taken by the inflicted enemy champion for 6s. <br><br><br><br><active>ACTIVE</active><br><active>Ward</active> <br>Place an <keywordStealth>Invisible</keywordStealth> Stealth Ward that grants vision. Stores 0 Stealth Wards, which refill upon visiting the shop. </mainText>",
             "colloq": "",
             "plaintext": "",
             "from": [
@@ -9912,7 +9906,7 @@
         },
         "4003": {
             "name": "Lifeline",
-            "description": "<mainText><stats><attention>20</attention> Attack Damage<br><attention>8</attention> Lethality</stats><br><br><br><br><active>Active -</active> <active>Soul Anchor:</active> Mark your current location. After 4 seconds, return to that location (60(0s cooldown)).</mainText>",
+            "description": "<mainText><stats><attention>20</attention> Attack Damage<br><attention>8</attention> Lethality</stats><br><br><br><br><active>Active -</active> <active>Soul Anchor:</active> Mark your current location. After 4 seconds, return to that location (60(0s)).</mainText>",
             "colloq": ";lethality",
             "plaintext": "Marks the ground, and returns you there after a few moments",
             "from": [
@@ -9955,7 +9949,7 @@
         },
         "4004": {
             "name": "Spectral Cutlass",
-            "description": "<mainText><stats><attention>70</attention> Attack Damage<br><attention>21</attention> Lethality</stats><br><br><br><br><active>Active -</active> <active>Soul Anchor:</active> Mark your current location. After 4 seconds, return to that location (45(0s cooldown)).</mainText>",
+            "description": "<mainText><stats><attention>70</attention> Attack Damage<br><attention>21</attention> Lethality</stats><br><br><br><br><active>Active -</active> <active>Soul Anchor:</active> Mark your current location. After 4 seconds, return to that location (45(0s)).</mainText>",
             "colloq": ";lethality",
             "plaintext": "Marks the ground, and returns you there after a few moments",
             "from": [
@@ -10037,7 +10031,7 @@
         },
         "4012": {
             "name": "Sin Eater",
-            "description": "<mainText><stats><attention>300</attention> Health<br><attention>45</attention> Armor<br><attention>45</attention> Magic Resist<br><attention>30%</attention> Tenacity</stats><br><br><br><li><passive>The Feast:</passive> Whenever a nearby ally champion becomes affected by an immobilizing crowd control effect, instead you are stunned for that duration. (20(0s cooldown)).</mainText>",
+            "description": "<mainText><stats><attention>300</attention> Health<br><attention>45</attention> Armor<br><attention>45</attention> Magic Resist<br><attention>30%</attention> Tenacity</stats><br><br><br><li><passive>The Feast:</passive> Whenever a nearby ally champion becomes affected by an immobilizing crowd control effect, instead you are stunned for that duration. (20(0s)).</mainText>",
             "colloq": "",
             "plaintext": "",
             "image": {
@@ -10311,7 +10305,7 @@
         },
         "4628": {
             "name": "Horizon Focus",
-            "description": "<mainText><stats><attention>90</attention> Ability Power<br><attention>20</attention> Ability Haste</stats><br><br><passive>Hypershot</passive><br>When you deal damage with Abilities to champions at 700 range or greater, <keywordStealth>Reveal</keywordStealth> them for 6 seconds. Deal 10% increased damage to enemies <keywordStealth>Revealed</keywordStealth> by Hypershot.<br><br><passive>Focus</passive> (0s cooldown)<br>When <passive>Hypershot</passive> is triggered, <keywordStealth>Reveal</keywordStealth> all other enemy champions within 1200 range of them for 3 seconds.</mainText>",
+            "description": "<mainText><stats><attention>90</attention> Ability Power<br><attention>20</attention> Ability Haste</stats><br><br><passive>Hypershot</passive><br>When you deal damage with Abilities to champions at 600 range or greater, <keywordStealth>Reveal</keywordStealth> them for 6 seconds. Deal 10% increased damage to enemies <keywordStealth>Revealed</keywordStealth> by Hypershot.<br><br><passive>Focus</passive> (0s)<br>When <passive>Hypershot</passive> is triggered, <keywordStealth>Reveal</keywordStealth> all other enemy champions within 1400 range of them for 3 seconds.</mainText>",
             "colloq": "",
             "plaintext": "Immobilizing a champion causes lightning to strike them",
             "from": [
@@ -10351,7 +10345,7 @@
         },
         "4629": {
             "name": "Cosmic Drive",
-            "description": "<mainText><stats><attention>80</attention> Ability Power<br><attention>250</attention> Health<br><attention>25</attention> Ability Haste<br><attention>5%</attention> Move Speed</stats><br><br><passive>Spelldance</passive><br>Damaging an enemy champion with an Ability grants 0 Move Speed for 2s. </mainText>",
+            "description": "<mainText><stats><attention>80</attention> Ability Power<br><attention>250</attention> Health<br><attention>25</attention> Ability Haste<br><attention>5%</attention> Move Speed</stats><br><br><passive>Spelldance</passive><br>Damaging an enemy champion with an Ability grants <speed>0 Move Speed</speed> for 2s. </mainText>",
             "colloq": "",
             "plaintext": "Massive amounts of Cooldown Reduction",
             "from": [
@@ -10375,8 +10369,8 @@
                 "sell": 2100
             },
             "tags": [
+                "Health",
                 "SpellDamage",
-                "CooldownReduction",
                 "NonbootsMovement",
                 "AbilityHaste"
             ],
@@ -10439,12 +10433,12 @@
         },
         "4632": {
             "name": "Verdant Barrier",
-            "description": "<mainText><stats><attention>40</attention> Ability Power<br><attention>30</attention> Magic Resist</stats><br><br><passive>Annul</passive> (0s cooldown)<br>Grants a Spell Shield that blocks the next enemy Ability.</mainText>",
+            "description": "<mainText><stats><attention>40</attention> Ability Power<br><attention>30</attention> Magic Resist</stats><br><br><passive>Annul</passive> (0s)<br>Grants a Spell Shield that blocks the next enemy Ability.</mainText>",
             "colloq": "",
             "plaintext": "",
             "from": [
-                "1033",
                 "1052",
+                "1033",
                 "1052"
             ],
             "into": [
@@ -10504,10 +10498,10 @@
                 "h": 48
             },
             "gold": {
-                "base": 800,
+                "base": 900,
                 "purchasable": true,
-                "total": 3000,
-                "sell": 2100
+                "total": 3100,
+                "sell": 2170
             },
             "tags": [
                 "Health",
@@ -10942,7 +10936,7 @@
         },
         "4646": {
             "name": "Stormsurge",
-            "description": "<mainText><stats><attention>100</attention> Ability Power<br><attention>10</attention> Magic Penetration<br><attention>5%</attention> Move Speed</stats><br><br><passive>Stormraider</passive> (0s cooldown)<br>Dealing 35% of a champion's maximum health within a short duration applies <passive>Squall</passive> and grants Move Speed.<br><br><passive>Squall</passive><br>After a few seconds, strike the target, dealing magic damage. If the target dies before the strike, it detonates immediately, dealing damage in a large area and grants bonus gold.</mainText>",
+            "description": "<mainText><stats><attention>90</attention> Ability Power<br><attention>10</attention> Magic Penetration<br><attention>5%</attention> Move Speed</stats><br><br><passive>Stormraider</passive><br>Dealing 35% of a champion's maximum Health within a short duration applies <passive>Squall</passive> and grants Move Speed.<br><br><passive>Squall</passive><br>After a few seconds, strike the target, dealing magic damage. If the target dies before the strike, it detonates immediately, dealing damage in a large area and grants bonus gold.</mainText>",
             "colloq": "",
             "plaintext": "",
             "from": [
@@ -10978,7 +10972,7 @@
                 "30": false
             },
             "stats": {
-                "FlatMagicDamageMod": 100,
+                "FlatMagicDamageMod": 90,
                 "PercentMovementSpeedMod": 0.05
             },
             "depth": 3
@@ -11098,7 +11092,7 @@
                 "h": 48
             },
             "gold": {
-                "base": 900,
+                "base": 1000,
                 "purchasable": true,
                 "total": 3200,
                 "sell": 2240
@@ -11167,7 +11161,7 @@
         },
         "6610": {
             "name": "Sundered Sky",
-            "description": "<mainText><stats><attention>55</attention> Attack Damage<br><attention>300</attention> Health<br><attention>15</attention> Ability Haste</stats><br><br><passive>Lightshield Strike</passive> (0s cooldown) per target<br>The first basic attack against a champion Crits for 150% and heals for <physicalDamage>{{ Item_Melee_Ranged_Split }} + 6%</physicalDamage> of missing health. Excess healing is granted as temporary bonus Health.</mainText>",
+            "description": "<mainText><stats><attention>55</attention> Attack Damage<br><attention>300</attention> Health<br><attention>15</attention> Ability Haste</stats><br><br><passive>Lightshield Strike</passive><br>The first basic attack against a champion Crits and heals. Excess healing is granted as temporary bonus Health.</mainText>",
             "colloq": "",
             "plaintext": "",
             "from": [
@@ -11302,7 +11296,7 @@
         },
         "6620": {
             "name": "Echoes of Helia",
-            "description": "<mainText><stats><attention>40</attention> Ability Power<br><attention>200</attention> Health<br><attention>20</attention> Ability Haste<br><attention>125%</attention> Base Mana Regen</stats><br><br><passive>Soul Siphon</passive><br>Damaging a champion grants a <passive>Soul Shard</passive>. Healing or Shielding an ally consumes all <passive>Soul Shards</passive> to heal the ally and deal magic damage per Shard to the nearest enemy champion.<br><br></mainText>",
+            "description": "<mainText><stats><attention>40</attention> Ability Power<br><attention>200</attention> Health<br><attention>20</attention> Ability Haste<br><attention>125%</attention> Base Mana Regen</stats><br><br><passive>Soul Siphon</passive><br>Damaging a champion grants a <passive>Soul Shard</passive>. Healing or Shielding an ally consumes all <passive>Soul Shards</passive> to heal the ally and deal magic damage to the nearest enemy champion per Shard.<br><br></mainText>",
             "colloq": "",
             "plaintext": "Damage low-health enemies to trigger a cursed explosion, dealing damage and slowing nearby foes",
             "from": [
@@ -11445,7 +11439,7 @@
         },
         "6631": {
             "name": "Stridebreaker",
-            "description": "<mainText><stats><attention>55</attention> Attack Damage<br><attention>25%</attention> Attack Speed<br><attention>400</attention> Health</stats><br><br><br><br><br><br><br><active>ON ACTIVATION</active> (0s cooldown)<br><active>Breaking Shockwave</active><br><status>Slow</status> nearby enemies by 30% and gain <speed>30% bonus Move Speed</speed> per champion hit that decays over 3 seconds. Can move while casting.</mainText>",
+            "description": "<mainText><stats><attention>55</attention> Attack Damage<br><attention>30%</attention> Attack Speed<br><attention>400</attention> Health</stats><br><br><passive>Temper</passive><br>Dealing <physicalDamage>physical damage</physicalDamage> grants <speed>20 Move Speed</speed> for 2 seconds.<br><br><active>ACTIVE</active><br><active>Breaking Shockwave</active><br><status>Slow</status> nearby enemies by 35% and gain <speed>35% bonus Move Speed</speed> per champion hit that decays over 3 seconds. Can move while casting.</mainText>",
             "colloq": "",
             "plaintext": "",
             "from": [
@@ -11466,19 +11460,17 @@
                 "h": 48
             },
             "gold": {
-                "base": 825,
+                "base": 725,
                 "purchasable": true,
-                "total": 3100,
-                "sell": 2170
+                "total": 3000,
+                "sell": 2100
             },
             "tags": [
                 "Health",
                 "Damage",
                 "AttackSpeed",
-                "CooldownReduction",
                 "Slow",
-                "NonbootsMovement",
-                "AbilityHaste"
+                "NonbootsMovement"
             ],
             "maps": {
                 "11": true,
@@ -11489,8 +11481,8 @@
             },
             "stats": {
                 "FlatHPPoolMod": 400,
-                "FlatPhysicalDamageMod": 50,
-                "PercentAttackSpeedMod": 0.2
+                "FlatPhysicalDamageMod": 55,
+                "PercentAttackSpeedMod": 0.3
             },
             "effect": {
                 "Effect1Amount": "0.5",
@@ -11696,7 +11688,7 @@
         },
         "6657": {
             "name": "Rod of Ages",
-            "description": "<mainText><stats><attention>50</attention> Ability Power<br><attention>350</attention> Health<br><attention>300</attention> Mana</stats><br><br><br><br>This item gains 20 Health, 20 Mana and 4 Ability Power every 60 seconds up to 10 times, for a maximum of 200 Health, 200 Mana,  and 40 Ability Power. Upon reaching max stacks, gain a level and all effects of Eternity are increased by 0%.<br><li><passive>Eternity:</passive> Restore Mana equal to 7% of premitigation damage taken from champions, and Health equal to 25% of Mana spent, up to 20 Health per cast, per second.</mainText>",
+            "description": "<mainText><stats><attention>50</attention> Ability Power<br><attention>350</attention> Health<br><attention>300</attention> Mana</stats><br><br><passive>Timeless</passive><br>This item gains Health, Mana and Ability Power every 60 seconds. Upon reaching max stacks, gain a level.<br><br><passive>Eternity</passive><br>Taking damage from champions restores Mana.Casting an ability heals for a % of Mana spent.</mainText>",
             "colloq": "",
             "plaintext": "",
             "from": [
@@ -11726,9 +11718,7 @@
                 "HealthRegen",
                 "SpellDamage",
                 "Mana",
-                "ManaRegen",
-                "CooldownReduction",
-                "AbilityHaste"
+                "ManaRegen"
             ],
             "maps": {
                 "11": true,
@@ -11789,7 +11779,7 @@
         },
         "6662": {
             "name": "Iceborn Gauntlet",
-            "description": "<mainText><stats><attention>300</attention> Health<br><attention>50</attention> Armor<br><attention>15</attention> Ability Haste</stats><br><br><passive>Spellblade</passive> (0s cooldown)<br>After using an Ability, your next Attack is enhanced with additional damage and creates a frost field for 2s. Enemies that move across the field are <status>Slowed</status>.</mainText>",
+            "description": "<mainText><stats><attention>300</attention> Health<br><attention>50</attention> Armor<br><attention>15</attention> Ability Haste</stats><br><br><passive>Spellblade</passive> (0s)<br>After using an Ability, your next Attack is enhanced with additional damage and creates a frost field for 2s. Enemies that move across the field are <status>Slowed</status>.</mainText>",
             "colloq": "",
             "plaintext": "High Magic Resist.Passively slow nearby enemies. When spells are cast near you, release a wave of energy that damages and slows.",
             "from": [
@@ -11991,7 +11981,6 @@
             "into": [
                 "6672",
                 "3087",
-                "3073",
                 "3095"
             ],
             "image": {
@@ -12128,7 +12117,7 @@
         },
         "6673": {
             "name": "Immortal Shieldbow",
-            "description": "<mainText><stats><attention>50</attention> Attack Damage<br><attention>20%</attention> Critical Strike Chance<br><attention>12%</attention> Life Steal</stats><br><br><passive>Lifeline</passive> (0s cooldown)<br>When taking damage that would reduce you below 30% Health, gain a <shield>0 Shield</shield> for 3s.</mainText>",
+            "description": "<mainText><stats><attention>50</attention> Attack Damage<br><attention>20%</attention> Critical Strike Chance<br><attention>12%</attention> Life Steal</stats><br><br><passive>Lifeline</passive> (0s)<br>When taking damage that would reduce you below 30% Health, gain a <shield>0 Shield</shield> for 3s.</mainText>",
             "colloq": "",
             "plaintext": "",
             "from": [
@@ -12243,10 +12232,10 @@
                 "h": 48
             },
             "gold": {
-                "base": 525,
+                "base": 625,
                 "purchasable": true,
                 "total": 3100,
-                "sell": 2100
+                "sell": 2170
             },
             "tags": [
                 "Damage",
@@ -12275,6 +12264,7 @@
                 "1042",
                 "1042"
             ],
+            "inStore": false,
             "image": {
                 "full": "6677.png",
                 "sprite": "item4.png",
@@ -12286,7 +12276,7 @@
             },
             "gold": {
                 "base": 600,
-                "purchasable": true,
+                "purchasable": false,
                 "total": 1200,
                 "sell": 840
             },
@@ -12317,6 +12307,7 @@
             "into": [
                 "6701",
                 "6700",
+                "3046",
                 "3181",
                 "3142"
             ],
@@ -12354,7 +12345,7 @@
         },
         "6691": {
             "name": "Duskblade of Draktharr",
-            "description": "<mainText><stats><attention>60</attention> Attack Damage<br><attention>18</attention> Lethality<br><attention>15</attention> Ability Haste</stats><br><br><br><li><passive>Nightstalker:</passive> Your Abilities deal up to an additional percent damage based on the target's missing health. When a champion that you have damaged within the last 3 seconds dies, you become <keywordStealth>Untargetable</keywordStealth> from non-structures for 1.5 seconds (30(0s cooldown)).<br><br><rarityMythic>Mythic Passive:</rarityMythic> Grants all other <rarityLegendary>Legendary</rarityLegendary> items Ability Haste and  Move Speed.<br></mainText>",
+            "description": "<mainText><stats><attention>60</attention> Attack Damage<br><attention>18</attention> Lethality<br><attention>15</attention> Ability Haste</stats><br><br><br><li><passive>Nightstalker:</passive> Your Abilities deal up to an additional percent damage based on the target's missing health. When a champion that you have damaged within the last 3 seconds dies, you become <keywordStealth>Untargetable</keywordStealth> from non-structures for 1.5 seconds (30(0s)).<br><br><rarityMythic>Mythic Passive:</rarityMythic> Grants all other <rarityLegendary>Legendary</rarityLegendary> items Ability Haste and  Move Speed.<br></mainText>",
             "colloq": "",
             "plaintext": "",
             "from": [
@@ -12617,7 +12608,7 @@
         },
         "6697": {
             "name": "Hubris",
-            "description": "<mainText><stats><attention>60</attention> Attack Damage<br><attention>18</attention> Lethality<br><attention>15</attention> Ability Haste</stats><br><br><passive>Preparation</passive><br>Gain Lethality outside of combat. <br><br><passive>Extraction</passive><br>Gain Move Speed after killing champions.</mainText>",
+            "description": "<mainText><stats><attention>60</attention> Attack Damage<br><attention>18</attention> Lethality<br><attention>15</attention> Ability Haste</stats><br><br><passive>Ego</passive><br>Gain an upgrading statue of yourself on kill.<br><br><passive>Eminence</passive><br>Gain temporary AD based on the level of your statue on kill.</mainText>",
             "colloq": "",
             "plaintext": "",
             "from": [
@@ -12663,7 +12654,7 @@
         },
         "6698": {
             "name": "Profane Hydra",
-            "description": "<mainText><stats><attention>60</attention> Attack Damage<br><attention>18</attention> Lethality<br><attention>20</attention> Ability Haste</stats><br><br><passive>Cleave</passive><br>Attacks apply additional damage <OnHit>On-Hit</OnHit>, creating a shockwave that deals damage to enemies behind the target.<br><br><active>ON ACTIVATION</active><br><active>Heretical Cleave</active><br>Deal physical damage to nearby enemies. This damage increases on low health enemies.</mainText>",
+            "description": "<mainText><stats><attention>60</attention> Attack Damage<br><attention>18</attention> Lethality<br><attention>20</attention> Ability Haste</stats><br><br><passive>Cleave</passive><br>Attacks apply additional damage <OnHit>On-Hit</OnHit>, creating a shockwave that deals damage to enemies behind the target.<br><br><active>ACTIVE</active><br><active>Heretical Cleave</active><br>Deal physical damage to nearby enemies. This damage increases on low Health enemies.</mainText>",
             "colloq": "",
             "plaintext": "",
             "from": [
@@ -12680,10 +12671,10 @@
                 "h": 48
             },
             "gold": {
-                "base": 863,
+                "base": 763,
                 "purchasable": true,
                 "total": 3300,
-                "sell": 2380
+                "sell": 2310
             },
             "tags": [
                 "Damage",
@@ -12752,7 +12743,7 @@
         },
         "6700": {
             "name": "Shield of the Rakkor",
-            "description": "<mainText><stats><attention>50</attention> Attack Damage<br><attention>30</attention> Armor<br><attention>5%</attention> Move Speed</stats><br><br><br><li><passive>Aegis:</passive> Every 8(0s cooldown),  block the first Attack that would hit you. While the shield is broken, your first attack against a champion refunds 50% of its current Cooldown and grants <MS> 20% Movement Speed</MS> for a short duration.<br><br><br><br></mainText>",
+            "description": "<mainText><stats><attention>50</attention> Attack Damage<br><attention>30</attention> Armor<br><attention>5%</attention> Move Speed</stats><br><br><br><li><passive>Aegis:</passive> Every 8(0s),  block the first Attack that would hit you. While the shield is broken, your first attack against a champion refunds 50% of its current Cooldown and grants <MS> 20% Movement Speed</MS> for a short duration.<br><br><br><br></mainText>",
             "colloq": "",
             "plaintext": "",
             "from": [
@@ -12772,8 +12763,8 @@
             "gold": {
                 "base": 800,
                 "purchasable": false,
-                "total": 2900,
-                "sell": 2030
+                "total": 2800,
+                "sell": 1960
             },
             "tags": [
                 "Armor",
@@ -12929,7 +12920,7 @@
         },
         "7002": {
             "name": "Draktharr's Shadowcarver",
-            "description": "<mainText><stats><ornnBonus>75</ornnBonus> Attack Damage<br><ornnBonus>26</ornnBonus> Lethality<br><ornnBonus>20</ornnBonus> Ability Haste</stats><br><br><br><li><passive>Nightstalker:</passive> Your Abilities deal up to an additional percent damage based on the target's missing health. When a champion that you have damaged within the last 3 seconds dies, you become <keywordStealth>Untargetable</keywordStealth> from non-structures for 1.5 seconds (30(0s cooldown)).<br><br><rarityMythic>Mythic Passive:</rarityMythic> Grants all other <rarityLegendary>Legendary</rarityLegendary> items Ability Haste and  Move Speed.<br></mainText>",
+            "description": "<mainText><stats><ornnBonus>75</ornnBonus> Attack Damage<br><ornnBonus>26</ornnBonus> Lethality<br><ornnBonus>20</ornnBonus> Ability Haste</stats><br><br><br><li><passive>Nightstalker:</passive> Your Abilities deal up to an additional percent damage based on the target's missing health. When a champion that you have damaged within the last 3 seconds dies, you become <keywordStealth>Untargetable</keywordStealth> from non-structures for 1.5 seconds (30(0s)).<br><br><rarityMythic>Mythic Passive:</rarityMythic> Grants all other <rarityLegendary>Legendary</rarityLegendary> items Ability Haste and  Move Speed.<br></mainText>",
             "colloq": "",
             "plaintext": "",
             "from": [
@@ -12975,7 +12966,7 @@
         },
         "7003": {
             "name": "Rabadon's Deathcrown",
-            "description": "<mainText><stats><ornnBonus>190</ornnBonus> Ability Power</stats><br><br><br><li><passive>Magical Opus:</passive> Increases your total <scaleAP>Ability Power by 35%</scaleAP>.</mainText>",
+            "description": "<mainText><stats><ornnBonus>190</ornnBonus> Ability Power</stats><br><br><passive>Magical Opus</passive><br>Increases your total <scaleAP>Ability Power by 35%</scaleAP>.</mainText>",
             "colloq": "",
             "plaintext": "",
             "from": [
@@ -13014,7 +13005,7 @@
         },
         "7004": {
             "name": "Enmity of the Masses",
-            "description": "<mainText><stats><ornnBonus>110</ornnBonus> Ability Power<br><ornnBonus>800</ornnBonus> Mana<br><ornnBonus>30</ornnBonus> Ability Haste</stats><br><br><passive>Scorn</passive><br>Gain 20 Ultimate Haste.<br><br><passive>Hatefog</passive><br>Damaging a champion with your Ultimate burns the ground beneath them, dealing 0 <magic>magic damage</magic> and reducing their <MR>Magic Resist by 0</MR>. <br></mainText>",
+            "description": "<mainText><stats><ornnBonus>110</ornnBonus> Ability Power<br><ornnBonus>800</ornnBonus> Mana<br><ornnBonus>30</ornnBonus> Ability Haste</stats><br><br><passive>Scorn</passive><br>Gain Ultimate Haste.<br><br><passive>Hatefog</passive><br>Damaging a champion with your Ultimate burns the ground beneath them, dealing damage and reducing their Magic Resist. <br></mainText>",
             "colloq": "",
             "plaintext": "",
             "from": [
@@ -13056,7 +13047,7 @@
         },
         "7005": {
             "name": "Frozen Fist",
-            "description": "<mainText><stats><ornnBonus>400</ornnBonus> Health<br><ornnBonus>60</ornnBonus> Armor<br><ornnBonus>25</ornnBonus> Ability Haste</stats><br><br><passive>Spellblade</passive> (0s cooldown)<br>After using an Ability, your next Attack is enhanced with additional damage and creates a frost field for 2s. Enemies that move across the field are <status>Slowed</status>.</mainText>",
+            "description": "<mainText><stats><ornnBonus>400</ornnBonus> Health<br><ornnBonus>60</ornnBonus> Armor<br><ornnBonus>25</ornnBonus> Ability Haste</stats><br><br><passive>Spellblade</passive> (0s)<br>After using an Ability, your next Attack is enhanced with additional damage and creates a frost field for 2s. Enemies that move across the field are <status>Slowed</status>.</mainText>",
             "colloq": "",
             "plaintext": "",
             "from": [
@@ -13253,8 +13244,8 @@
             "gold": {
                 "base": 0,
                 "purchasable": true,
-                "total": 3000,
-                "sell": 2100
+                "total": 3100,
+                "sell": 2170
             },
             "tags": [
                 "Health",
@@ -13322,7 +13313,7 @@
         },
         "7011": {
             "name": "Upgraded Aeropack",
-            "description": "<mainText><stats><ornnBonus>85</ornnBonus> Ability Power<br><ornnBonus>450</ornnBonus> Health<br><ornnBonus>20</ornnBonus> Ability Haste</stats><br><br><active>ON ACTIVATION</active>} (0s cooldown)<br><active>Supersonic</active><br>Dash in target direction, unleashing an arc of magic missiles that deal magic damage.</mainText>",
+            "description": "<mainText><stats><ornnBonus>85</ornnBonus> Ability Power<br><ornnBonus>450</ornnBonus> Health<br><ornnBonus>20</ornnBonus> Ability Haste</stats><br><br><active>ACTIVE</active>} (0s)<br><active>Supersonic</active><br>Dash in target direction, unleashing an arc of magic missiles that deal magic damage.</mainText>",
             "colloq": "",
             "plaintext": "",
             "from": [
@@ -13546,7 +13537,7 @@
         },
         "7016": {
             "name": "Dreamshatter",
-            "description": "<mainText><stats><ornnBonus>65</ornnBonus> Attack Damage<br><ornnBonus>30%</ornnBonus> Attack Speed<br><ornnBonus>475</ornnBonus> Health</stats><br><br><br><br><br><br><br><active>ON ACTIVATION</active> (0s cooldown)<br><active>Breaking Shockwave</active><br><status>Slow</status> nearby enemies by 30% and gain <speed>30% bonus Move Speed</speed> per champion hit that decays over 3 seconds. Can move while casting.</mainText>",
+            "description": "<mainText><stats><ornnBonus>70</ornnBonus> Attack Damage<br><ornnBonus>40%</ornnBonus> Attack Speed<br><ornnBonus>475</ornnBonus> Health</stats><br><br><passive>Temper</passive><br>Dealing <physicalDamage>physical damage</physicalDamage> grants <speed>20 Move Speed</speed> for 2 seconds.<br><br><active>ACTIVE</active><br><active>Breaking Shockwave</active><br><status>Slow</status> nearby enemies by 35% and gain <speed>35% bonus Move Speed</speed> per champion hit that decays over 3 seconds. Can move while casting.</mainText>",
             "colloq": "",
             "plaintext": "",
             "from": [
@@ -13565,17 +13556,15 @@
             "gold": {
                 "base": 0,
                 "purchasable": true,
-                "total": 3100,
-                "sell": 2170
+                "total": 3000,
+                "sell": 2100
             },
             "tags": [
                 "Health",
                 "Damage",
                 "AttackSpeed",
-                "CooldownReduction",
                 "Slow",
-                "NonbootsMovement",
-                "AbilityHaste"
+                "NonbootsMovement"
             ],
             "maps": {
                 "11": true,
@@ -13586,8 +13575,8 @@
             },
             "stats": {
                 "FlatHPPoolMod": 475,
-                "FlatPhysicalDamageMod": 65,
-                "PercentAttackSpeedMod": 0.3
+                "FlatPhysicalDamageMod": 70,
+                "PercentAttackSpeedMod": 0.4
             },
             "effect": {
                 "Effect1Amount": "0.5",
@@ -13747,7 +13736,7 @@
         },
         "7020": {
             "name": "Shurelya's Requiem",
-            "description": "<mainText><stats><ornnBonus>70</ornnBonus> Ability Power<br><ornnBonus>25</ornnBonus> Ability Haste<br><ornnBonus>10%</ornnBonus> Move Speed<br><ornnBonus>200%</ornnBonus> Base Mana Regen</stats><br><br><br><br><active>ON ACTIVATION</active> (0s cooldown)<br><active>Inspiring Speech</active><br>Grants nearby allies Move Speed.<br><br></mainText>",
+            "description": "<mainText><stats><ornnBonus>70</ornnBonus> Ability Power<br><ornnBonus>25</ornnBonus> Ability Haste<br><ornnBonus>10%</ornnBonus> Move Speed<br><ornnBonus>200%</ornnBonus> Base Mana Regen</stats><br><br><br><br><active>ACTIVE</active> (0s)<br><active>Inspiring Speech</active><br>Grants nearby allies Move Speed.<br><br></mainText>",
             "colloq": "",
             "plaintext": "",
             "from": [
@@ -13970,7 +13959,7 @@
         },
         "7025": {
             "name": "Leviathan",
-            "description": "<mainText><stats><ornnBonus>1050</ornnBonus> Health<br><ornnBonus>300%</ornnBonus> Base Health Regen</stats><br><br><passive>Colossal Consumption</passive> (0s cooldown) per target<br>Charge up a powerful attack against a champion over time while near them. The charged attack deals bonus physical damage and grants permanent max Health.<br><br><passive>Goliath</passive><br>Gain increased size based on Total Health. </mainText>",
+            "description": "<mainText><stats><ornnBonus>1150</ornnBonus> Health<br><ornnBonus>300%</ornnBonus> Base Health Regen</stats><br><br><passive>Colossal Consumption</passive> (0s) per target<br>Charge up a powerful attack against a champion over time while near them. The charged attack deals bonus physical damage and grants permanent max Health.<br><br><passive>Goliath</passive><br>Gain increased size based on Total Health. </mainText>",
             "colloq": "",
             "plaintext": "",
             "from": [
@@ -14005,7 +13994,7 @@
                 "30": true
             },
             "stats": {
-                "FlatHPPoolMod": 1050
+                "FlatHPPoolMod": 1150
             },
             "depth": 4
         },
@@ -14101,7 +14090,7 @@
         },
         "7028": {
             "name": "Infinite Convergence",
-            "description": "<mainText><stats><ornnBonus>70</ornnBonus> Ability Power<br><ornnBonus>500</ornnBonus> Health<br><ornnBonus>550</ornnBonus> Mana</stats><br><br><br><br>This item gains 20 Health, 20 Mana and 4 Ability Power every 60 seconds up to 10 times, for a maximum of 200 Health, 200 Mana,  and 40 Ability Power. Upon reaching max stacks, gain a level and all effects of Eternity are increased by 0%.<br><li><passive>Eternity:</passive> Restore Mana equal to 7% of premitigation damage taken from champions, and Health equal to 25% of Mana spent, up to 20 Health per cast, per second.</mainText>",
+            "description": "<mainText><stats><ornnBonus>70</ornnBonus> Ability Power<br><ornnBonus>500</ornnBonus> Health<br><ornnBonus>550</ornnBonus> Mana</stats><br><br><passive>Timeless</passive><br>This item gains Health, Mana and Ability Power every 60 seconds. Upon reaching max stacks, gain a level.<br><br><passive>Eternity</passive><br>Taking damage from champions restores Mana.Casting an ability heals for a % of Mana spent.</mainText>",
             "colloq": "",
             "plaintext": "",
             "from": [
@@ -14128,9 +14117,7 @@
                 "HealthRegen",
                 "SpellDamage",
                 "Mana",
-                "ManaRegen",
-                "CooldownReduction",
-                "AbilityHaste"
+                "ManaRegen"
             ],
             "maps": {
                 "11": true,
@@ -14148,7 +14135,7 @@
         },
         "7029": {
             "name": "Youmuu's Wake",
-            "description": "<mainText><stats><ornnBonus>75</ornnBonus> Attack Damage<br><ornnBonus>26</ornnBonus> Lethality</stats><br><br><passive>Haunt</passive> <br>Gain <speed>40 Move Speed</speed> while out of combat.<br><br><active>ON ACTIVATION</active> (0s cooldown)<br><active>Wraith Step</active><br>Gain <speed>Move Speed</speed> and <keyword>Ghosting</keyword>.<br><br></mainText>",
+            "description": "<mainText><stats><ornnBonus>75</ornnBonus> Attack Damage<br><ornnBonus>26</ornnBonus> Lethality</stats><br><br><passive>Haunt</passive> <br>Gain <speed>40 Move Speed</speed> while out of combat.<br><br><active>ACTIVE</active> (0s)<br><active>Wraith Step</active><br>Gain <speed>Move Speed</speed> and <keyword>Ghosting</keyword>.</mainText>",
             "colloq": "",
             "plaintext": "",
             "from": [
@@ -14346,7 +14333,7 @@
         },
         "7033": {
             "name": "Cry of the Shrieking City",
-            "description": "<mainText><stats><ornnBonus>60</ornnBonus> Ability Power<br><ornnBonus>300</ornnBonus> Health<br><ornnBonus>25</ornnBonus> Ability Haste<br><ornnBonus>175%</ornnBonus> Base Mana Regen</stats><br><br><passive>Soul Siphon</passive><br>Damaging a champion grants a <passive>Soul Shard</passive>. Healing or Shielding an ally consumes all <passive>Soul Shards</passive> to heal the ally and deal magic damage per Shard to the nearest enemy champion.<br><br></mainText>",
+            "description": "<mainText><stats><ornnBonus>60</ornnBonus> Ability Power<br><ornnBonus>300</ornnBonus> Health<br><ornnBonus>25</ornnBonus> Ability Haste<br><ornnBonus>175%</ornnBonus> Base Mana Regen</stats><br><br><passive>Soul Siphon</passive><br>Damaging a champion grants a <passive>Soul Shard</passive>. Healing or Shielding an ally consumes all <passive>Soul Shards</passive> to heal the ally and deal magic damage to the nearest enemy champion per Shard.<br><br></mainText>",
             "colloq": "",
             "plaintext": "",
             "from": [
@@ -14390,7 +14377,7 @@
         },
         "7034": {
             "name": "Hope Adrift",
-            "description": "<mainText><stats><ornnBonus>600</ornnBonus> Health<br><ornnBonus>65</ornnBonus> Armor<br><ornnBonus>20</ornnBonus> Ability Haste</stats><br><br><passive>Anguish</passive><br>While in combat with champions, every 7 seconds, deal <magicDamage>0 magic damage</magicDamage> to nearby enemy champions, healing for 200% of the damage dealt.</mainText>",
+            "description": "<mainText><stats><ornnBonus>600</ornnBonus> Health<br><ornnBonus>65</ornnBonus> Armor<br><ornnBonus>20</ornnBonus> Ability Haste</stats><br><br><passive>Anguish</passive><br>While in combat with champions, every few seconds, deal magic damage to nearby enemy champions, healing based on the damage dealt.</mainText>",
             "colloq": "",
             "plaintext": "",
             "from": [
@@ -14522,7 +14509,7 @@
         },
         "7037": {
             "name": "Obsidian Cleaver",
-            "description": "<mainText><stats><ornnBonus>65</ornnBonus> Attack Damage<br><ornnBonus>600</ornnBonus> Health<br><ornnBonus>25</ornnBonus> Ability Haste</stats><br><br><passive>Carve</passive><br>Dealing physical damage to a champion applies a stack of Armor reduction.<br><br><passive>Rage</passive><br>Attacking a unit grants Move Speed.</mainText>",
+            "description": "<mainText><stats><ornnBonus>65</ornnBonus> Attack Damage<br><ornnBonus>600</ornnBonus> Health<br><ornnBonus>25</ornnBonus> Ability Haste</stats><br><br><passive>Carve</passive><br>Dealing physical damage to a champion applies a stack of Armor reduction.<br><br><passive>Fervor</passive><br>Dealing physical damage grants Move Speed.</mainText>",
             "colloq": "",
             "plaintext": "",
             "from": [
@@ -14623,7 +14610,7 @@
         },
         "7039": {
             "name": "Heavensfall",
-            "description": "<mainText><stats><ornnBonus>65</ornnBonus> Attack Damage<br><ornnBonus>500</ornnBonus> Health<br><ornnBonus>20</ornnBonus> Ability Haste</stats><br><br><passive>Lightshield Strike</passive> (0s cooldown) per target<br>The first basic attack against a champion Crits for 150% and heals for <physicalDamage>{{ Item_Melee_Ranged_Split }} + 8%</physicalDamage> of missing health. Excess healing is granted as temporary bonus Health.</mainText>",
+            "description": "<mainText><stats><ornnBonus>65</ornnBonus> Attack Damage<br><ornnBonus>500</ornnBonus> Health<br><ornnBonus>20</ornnBonus> Ability Haste</stats><br><br><passive>Lightshield Strike</passive> <br>The first basic attack against a champion Crits and heals. Excess healing is granted as temporary bonus Health.</mainText>",
             "colloq": "",
             "plaintext": "",
             "from": [
@@ -14832,7 +14819,7 @@
         },
         "8001": {
             "name": "Anathema's Chains",
-            "description": "<mainText><stats><attention>650</attention> Health<br><attention>20</attention> Ability Haste</stats><br><br><passive>Vendetta</passive><br>You gain Vendetta stacks over time Each stack of Vendetta grants you 1% reduced damage from your Nemesis.<br><br><passive>Vengeance</passive><br>At maximum stacks, your Nemesis has reduced Tenacity while near you.<active>Active -</active><active>Vow</active><br>Choose a Nemesis to start building a Vendetta.</mainText>",
+            "description": "<mainText><stats><attention>650</attention> Health<br><attention>20</attention> Ability Haste</stats><br><br><passive>Vendetta</passive><br>You gain Vendetta stacks over time Each stack of Vendetta grants you 1% reduced damage from your Nemesis.<br><br><passive>Vengeance</passive><br>At maximum stacks, your Nemesis has reduced Tenacity while near you.<br><br><active>ACTIVE</active> (0s)<br><active>Vow</active><br>Choose your <passive>Nemesis</passive>.</mainText>",
             "colloq": "",
             "plaintext": "",
             "from": [
