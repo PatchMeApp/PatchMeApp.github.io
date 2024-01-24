@@ -25,8 +25,8 @@
             "increment": 0.8
         },
         "attackSpeed": {
-            "base": 0.651,
-            "increment": 0.0322
+            "base": 0.625,
+            "increment": 0.3
         },
         "ms": {
             "base": 330,
@@ -45,7 +45,7 @@
         "P": {
             "cooldown": "",
             "_rawTooltip": {
-                "fullTooltip": "Innate: Every time Twisted Fate kills an enemy, he gains 1 − 6 (based on probability).<br>Since his dice are loaded, Twisted Fate has an increased chance of gaining 6.",
+                "fullTooltip": "Innate: Every time Twisted Fate kills an enemy, he gains 1 − 6 (based on probability).<br>Since his dice are loaded, Twisted Fate has an increased chance of gaining 6.<br>This ability can critically strike.",
                 "parseInfo": []
             },
             "name": "Loaded Dice"
@@ -56,11 +56,15 @@
                 "parseInfo": [
                     {
                         "text": {
-                            "text": "60/100/140/180/220 {{0}} magic damage",
+                            "text": "60/100/140/180/220 {{0}} {{1}} magic damage",
                             "scaleHolders": [
                                 {
                                     "scale": "(+90% AP)",
                                     "scaleId": "AP"
+                                },
+                                {
+                                    "scale": "(+50% bonus AD)",
+                                    "scaleId": "AD"
                                 }
                             ]
                         },
@@ -74,7 +78,7 @@
         },
         "W": {
             "_rawTooltip": {
-                "fullTooltip": "Twisted Fate begins shuffling his deck, allowing him to [[0]] to lock in one of three cards and enhance his next Attack.<br />[[1]] and restores [[2]].[[3]] to nearby enemies and [[4]] by 30/35/40/45/50% for 2.5 seconds.[[5]] and [[6]] for 1/1.25/1.5/1.75/2 seconds.",
+                "fullTooltip": "Twisted Fate begins shuffling his deck, allowing him to [[0]] to lock in one of three cards and enhance his next Attack.<br />[[1]] increased by critical strike chance up to 57.5% and restores [[2]].[[3]] increased by critical strike chance up to 35% to nearby enemies and [[4]] by 30/35/40/45/50% for 2.5 seconds.[[5]] increased by critical strike chance up to 25% and [[6]] for 1/1.25/1.5/1.75/2 seconds.",
                 "parseInfo": [
                     {
                         "text": {
@@ -171,11 +175,15 @@
                     },
                     {
                         "text": {
-                            "text": "65/90/115/140/165 {{0}} magic damage",
+                            "text": "65/90/115/140/165 {{0}} {{1}} magic damage",
                             "scaleHolders": [
                                 {
                                     "scale": "(+50% AP)",
                                     "scaleId": "AP"
+                                },
+                                {
+                                    "scale": "(+75% bonus AD)",
+                                    "scaleId": "AD"
                                 }
                             ]
                         },
@@ -183,7 +191,7 @@
                     },
                     {
                         "text": {
-                            "text": "10/17.5/25/32.5% Attack Speed",
+                            "text": "10/22.5/35/47.5/60% Attack Speed",
                             "scaleHolders": []
                         },
                         "type": "attackSpeed"

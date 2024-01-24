@@ -45,7 +45,7 @@
         "P": {
             "cooldown": "",
             "_rawTooltip": {
-                "fullTooltip": "Briar's Attacks and Abilities apply a bleed for 5 seconds. stacking up to 9 times. The bleed deals [[0]] based on stacks, and Heals Briar for [[1]].<br>Briar gains up to 50% increased Healing based on her missing Health. She has no Base Health Regeneration and her Abilities cost 6% current Health to cast.<br>Briar heals for [[2]] when a bleeding enemy dies.",
+                "fullTooltip": "Briar's Attacks and Abilities apply a bleed for 5 seconds. stacking up to 9 times. The bleed deals [[0]] based on stacks, and Heals Briar for [[1]].<br>Briar gains up to (40 +2.5% bonus Health)% increased Healing based on her missing Health. She has no Base Health Regeneration and her Abilities cost 6% current Health to cast.<br>Briar heals for [[2]] when a bleeding enemy dies.",
                 "parseInfo": [
                     {
                         "text": {
@@ -91,7 +91,7 @@
         },
         "Q": {
             "_rawTooltip": {
-                "fullTooltip": "Briar leaps to a target. [[0]] them for 0.85 seconds, dealing [[1]], and reducing [[2]] for 5 seconds.<br /><br />Briar will stop prioritizing champions if she casts this Ability on a minion or monster during [[3]].",
+                "fullTooltip": "Briar leaps to a target. [[0]] them for 0.85 seconds, dealing [[1]], and reducing 10/12.5/15/17.5/20% [[2]] and [[3]] for 5 seconds.<br /><br />Briar will stop prioritizing champions if she casts this Ability on a minion or monster during [[4]].<br /><br />This abilitiy applies on-hit effects.",
                 "parseInfo": [
                     {
                         "text": {
@@ -102,22 +102,33 @@
                     },
                     {
                         "text": {
-                            "text": "60/90/120/150/180 {{0}} physical damage",
+                            "text": "60/90/120/150/180 {{0}}{{1}} magic damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+ 80% bonus AD)",
+                                    "scale": "(+80% bonus AD)",
                                     "scaleId": "AD"
+                                },
+                                {
+                                    "scale": "(+60% AP)",
+                                    "scaleId": "AP"
                                 }
                             ]
                         },
-                        "type": "physicalDamage"
+                        "type": "magicDamage"
                     },
                     {
                         "text": {
-                            "text": "10/12.5/15/17.5/20% Armor",
+                            "text": "Armor",
                             "scaleHolders": []
                         },
                         "type": "scaleArmor"
+                    },
+                    {
+                        "text": {
+                            "text": "Magic Resist",
+                            "scaleHolders": []
+                        },
+                        "type": "scaleMR"
                     },
                     {
                         "text": {
@@ -196,7 +207,7 @@
                     },
                     {
                         "text": {
-                            "text": "heals Briar for 36/42/48/54/60% of the damage dealt",
+                            "text": "heals Briar for 25/30/35/40/45% of the damage dealt",
                             "scaleHolders": []
                         },
                         "type": "healing"

@@ -2,11 +2,11 @@
     "stats": {
         "hp": {
             "base": 656,
-            "increment": 109
+            "increment": 115
         },
         "mp": {
-            "base": 300,
-            "increment": 50
+            "base": 350,
+            "increment": 60
         },
         "armor": {
             "base": 35,
@@ -43,10 +43,45 @@
     },
     "spells": {
         "P": {
-            "cooldown": "20 - 7.25 (Level 1-18)",
+            "cooldown": "20 - 7 (Level 1-18)",
             "_rawTooltip": {
-                "fullTooltip": "Innate: Periodically, Illaoi spawns a Tentacle on the nearest terrain perpendicular to her location, if no other Tentacles are already nearby it. Tentacles fully spawn after a 2 second delay and are untargetable in the meantime. Tentacles are commanded to attack by Illaoi's abilities.<br>See Pets for more details about Tentacles.",
-                "parseInfo": []
+                "fullTooltip": "Illaoi draws the presence of her god, spawning a Tentacle on nearby terrain if no other Tentacles are nearby. Tentacles will not attack on their own, but can be made to Slam by Illaoi's Abilities.<br><br>Slam deals [[0]]. Hitting at least one enemy champion restores 5% missing Health to Illaoi.<br><br>Enemies hit by multiple Slams at once take [[1]] for the second and [[2]] for all additional Slams.<br>Tentacles last until killed or Illaoi is out of range for 30 seconds",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "10-180 {{0}}{{1}}{{2}} physical damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(Based on champion level)",
+                                    "scaleId": "level"
+                                },
+                                {
+                                    "scale": "(+120% AD)",
+                                    "scaleId": "AD"
+                                },
+                                {
+                                    "scale": "(+40% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "physicalDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "50% damage",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "25% damage",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    }
+                ]
             },
             "name": "Prophet of an Elder God"
         },
