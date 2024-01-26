@@ -33,7 +33,7 @@
             "increment": 0
         },
         "attackDamage": {
-            "base": 61,
+            "base": 64,
             "increment": 3.2
         },
         "attackRange": {
@@ -220,7 +220,7 @@
                             "text": "60/85/110/135/160 {{0}} magic damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+40% AP)",
+                                    "scale": "(+50% AP)",
                                     "scaleId": "AP"
                                 }
                             ]
@@ -260,7 +260,7 @@
                             "text": "90/127.5/165/202.5/240 {{0}} magic damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+60% AP)",
+                                    "scale": "(+75% AP)",
                                     "scaleId": "AP"
                                 }
                             ]
@@ -908,7 +908,20 @@
             "R": ""
         },
         "14.2": {
-            "B": "",
+            "B": {
+                "SpellName": "Base Stats",
+                "Changes": [
+                    {
+                        "Tag": "MID-PATCH",
+                        "Change": {
+                            "Attribute": "Attack Damage: ",
+                            "Before": "61",
+                            "Indicator": " ⇒ ",
+                            "After": "64"
+                        }
+                    }
+                ]
+            },
             "P": "",
             "Q": {
                 "SpellName": "Q - Flamespitter",
@@ -936,6 +949,15 @@
                             "Indicator": " ⇒ ",
                             "After": "10/12/14/16/18%"
                         }
+                    },
+                    {
+                        "Tag": "MID-PATCH",
+                        "Change": {
+                            "Attribute": "Damage: ",
+                            "Before": "60/85/110/135/160 (+40% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "60/85/110/135/160 (+50% AP)"
+                        }
                     }
                 ]
             },
@@ -961,7 +983,8 @@
     "ChampionName": "Rumble",
     "Balance": {
         "14.2": [
-            "nerf"
+            "nerf",
+            "adjust"
         ]
     }
 }
