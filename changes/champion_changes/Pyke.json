@@ -9,7 +9,7 @@
             "increment": 50
         },
         "armor": {
-            "base": 45,
+            "base": 47,
             "increment": 4.7
         },
         "spellBlock": {
@@ -119,7 +119,7 @@
                             "text": "100/150/200/250/300 {{0}} physical damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+60% Bonus AD)",
+                                    "scale": "(+75% bonus AD)",
                                     "scaleId": "AD"
                                 }
                             ]
@@ -169,7 +169,7 @@
                 ]
             },
             "cooldown": "10/9.5/9/8.5/8",
-            "cost": "74/78/82/86/90 Mana",
+            "cost": "70/75/80/85/90 Mana",
             "name": "Bone Skewer"
         },
         "W": {
@@ -185,10 +185,10 @@
                     },
                     {
                         "text": {
-                            "text": "40 {{0}}% Move Speed",
+                            "text": "45 {{0}}% Move Speed",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+150% Lethality)",
+                                    "scale": "(+200% Lethality)",
                                     "scaleId": "Lethality"
                                 }
                             ]
@@ -214,7 +214,7 @@
                     },
                     {
                         "text": {
-                            "text": "105/145/185/225/265 {{0}} physical damage",
+                            "text": "100/150/200/250/300 {{0}} physical damage",
                             "scaleHolders": [
                                 {
                                     "scale": "(+100% Bonus AD)",
@@ -655,6 +655,75 @@
             "E": "",
             "R": ""
         },
+        "14.3": {
+            "B": {
+                "SpellName": "Base Stats",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Base Armor: ",
+                            "Before": "45",
+                            "Indicator": " ⇒ ",
+                            "After": "47"
+                        }
+                    }
+                ]
+            },
+            "P": "",
+            "Q": {
+                "SpellName": "Q - Bone Skewer",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Damage: ",
+                            "Before": "100/150/200/250/300 (+60% bonus AD)",
+                            "Indicator": " ⇒ ",
+                            "After": "100/150/200/250/300 (+75% bonus AD)"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Mana Cost: ",
+                            "Before": "74/78/82/86/90",
+                            "Indicator": " ⇒ ",
+                            "After": "70/75/80/85/90"
+                        }
+                    }
+                ]
+            },
+            "W": {
+                "SpellName": "W - Ghostwater Dive",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Bonus Movement Speed: ",
+                            "Before": "40% (+1.5% per 1 Lethality)",
+                            "Indicator": " ⇒ ",
+                            "After": "45% (+2% per 1 Lethality)"
+                        }
+                    }
+                ]
+            },
+            "E": {
+                "SpellName": "E - Phantom Undertow",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Damage: ",
+                            "Before": "105/145/185/225/265 (+100% bonus AD)",
+                            "Indicator": " ⇒ ",
+                            "After": "100/150/200/250/300 (+100% bonus AD)"
+                        }
+                    }
+                ]
+            },
+            "R": ""
+        },
         "13.3": {
             "B": "",
             "P": "",
@@ -685,7 +754,13 @@
         "12.9",
         "12.10",
         "13.3",
-        "13.19"
+        "13.19",
+        "14.3"
     ],
-    "ChampionName": "Pyke"
+    "ChampionName": "Pyke",
+    "Balance": {
+        "14.3": [
+            "buff"
+        ]
+    }
 }

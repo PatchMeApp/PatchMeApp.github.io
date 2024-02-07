@@ -21,7 +21,7 @@
             "increment": 0.75
         },
         "mpRegen": {
-            "base": 7.2,
+            "base": 6,
             "increment": 0.6
         },
         "attackSpeed": {
@@ -45,20 +45,8 @@
         "P": {
             "cooldown": "30/25/20",
             "_rawTooltip": {
-                "fullTooltip": "Innate: Periodically, Maokai's next basic attack has an uncancelable windup and heals him for [[0]] (based on level)) after a 0.25-second delay.<br>Each time Maokai casts an ability or is struck by an enemy's ability, Sap Magic's cooldown is reduced by 4 seconds.<br>Sap Magic will not activate if Maokai is above [[1]].<br>Sap Magic resets Maokai's basic attack timer.",
+                "fullTooltip": "Innate: Periodically, Maokai's next basic attack has an uncancelable windup and heals him for 4-12.8% (based on level) after a 0.25-second delay.<br>Each time Maokai casts an ability or is struck by an enemy's ability, Sap Magic's cooldown is reduced by 4 seconds.<br>Sap Magic will not activate if Maokai is above [[0]].<br>Sap Magic resets Maokai's basic attack timer.",
                 "parseInfo": [
-                    {
-                        "text": {
-                            "text": "4-34 {{0}} + (4-12% maximum health",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(based on level)",
-                                    "scaleId": "level"
-                                }
-                            ]
-                        },
-                        "type": "Health"
-                    },
                     {
                         "text": {
                             "text": "95% maximum health",
@@ -102,8 +90,8 @@
                     }
                 ]
             },
-            "cooldown": "8/7.25/6.5/5.75/5",
-            "cost": "60 Mana",
+            "cooldown": "7/6.5/6/5.5/5",
+            "cost": "40 Mana",
             "name": "Bramble Smash"
         },
         "W": {
@@ -194,8 +182,8 @@
                     }
                 ]
             },
-            "cooldown": "14",
-            "cost": "45/55/65/75/85 Mana",
+            "cooldown": "16/15/14/13/12",
+            "cost": "60/65/70/75/80 Mana",
             "name": "Sapling Toss"
         },
         "R": {
@@ -923,6 +911,97 @@
             "E": "",
             "R": ""
         },
+        "14.3": {
+            "B": {
+                "SpellName": "Base Stats",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Base Mana Regeneration: ",
+                            "Before": "7.2",
+                            "Indicator": " ⇒ ",
+                            "After": "6"
+                        }
+                    }
+                ]
+            },
+            "P": {
+                "SpellName": "Passive - Sap Magic",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Maximum Health Heal: ",
+                            "Before": "4-34 (based on level) (+4%-12% (based on level)",
+                            "Indicator": " ⇒ ",
+                            "After": "4-12.8% (based on level)"
+                        }
+                    }
+                ]
+            },
+            "Q": {
+                "SpellName": "Q - Bramble Smash",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Cooldown: ",
+                            "Before": "8/7.25/6.5/5.75/5",
+                            "Indicator": " ⇒ ",
+                            "After": "7/6.5/6/5.5/5 seconds"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Mana Cost: ",
+                            "Before": "60",
+                            "Indicator": " ⇒ ",
+                            "After": "40"
+                        }
+                    }
+                ]
+            },
+            "W": "",
+            "E": {
+                "SpellName": "E - Sapling Toss",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Cooldown: ",
+                            "Before": "14",
+                            "Indicator": " ⇒ ",
+                            "After": "16/15/14/13/12 seconds"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Mana Cost: ",
+                            "Before": "45/55/65/75/85",
+                            "Indicator": " ⇒ ",
+                            "After": "60/65/70/75/80"
+                        }
+                    }
+                ]
+            },
+            "R": {
+                "SpellName": "R - Nature’s Grasp",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Cooldown: ",
+                            "Before": "120/110/100",
+                            "Indicator": " ⇒ ",
+                            "After": "130/110/90 seconds"
+                        }
+                    }
+                ]
+            }
+        },
         "12.22": {
             "B": "",
             "P": "",
@@ -960,7 +1039,13 @@
         "12.23",
         "13.1B",
         "13.4",
-        "13.15"
+        "13.15",
+        "14.3"
     ],
-    "ChampionName": "Maokai"
+    "ChampionName": "Maokai",
+    "Balance": {
+        "14.3": [
+            "adjust"
+        ]
+    }
 }

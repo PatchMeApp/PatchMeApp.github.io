@@ -1,7 +1,7 @@
 {
     "stats": {
         "hp": {
-            "base": 620,
+            "base": 590,
             "increment": 104
         },
         "mp": {
@@ -88,10 +88,10 @@
                     },
                     {
                         "text": {
-                            "text": "30 / 60 / 90 / 120 / 150 {{0}} {{1}}) physical damage",
+                            "text": "30 /60/90/120/150 {{0}} {{1}}) physical damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+ 0 / 5 / 10 / 15 / 20% AD)",
+                                    "scale": "(+0/3.75/7.5/11.25/15% AD)",
                                     "scaleId": "AD"
                                 },
                                 {
@@ -118,7 +118,7 @@
                                     "scaleId": "level"
                                 },
                                 {
-                                    "scale": "(+ 40% AD)",
+                                    "scale": "(+ 30% AD)",
                                     "scaleId": "AD"
                                 },
                                 {
@@ -666,6 +666,49 @@
             "W": "",
             "E": "",
             "R": ""
+        },
+        "14.3": {
+            "B": {
+                "SpellName": "Base Stats",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Base Health: ",
+                            "Before": "620",
+                            "Indicator": " ⇒ ",
+                            "After": "590"
+                        }
+                    }
+                ]
+            },
+            "P": "",
+            "Q": {
+                "SpellName": "Q - Savagery",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Bonus Damage: ",
+                            "Before": "30/60/90/120/150 (+0/5/10/15/20% AD)",
+                            "Indicator": " ⇒ ",
+                            "After": "30/60/90/120/150 (+0/3.75/7.5/11.25/15% AD)"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Empowered Bonus Damage: ",
+                            "Before": "30-235 (based on level) (+40% AD)",
+                            "Indicator": " ⇒ ",
+                            "After": "30-235 (based on level) (+30% AD)"
+                        }
+                    }
+                ]
+            },
+            "W": "",
+            "E": "",
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -676,7 +719,13 @@
         "12.9",
         "12.10",
         "12.11",
-        "13.14"
+        "13.14",
+        "14.3"
     ],
-    "ChampionName": "Rengar"
+    "ChampionName": "Rengar",
+    "Balance": {
+        "14.3": [
+            "nerf"
+        ]
+    }
 }

@@ -181,10 +181,10 @@
                     },
                     {
                         "text": {
-                            "text": "35/140/245/350  {{0}} magic damage",
+                            "text": "40/130/220/310 {{0}} magic damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+70% AP)",
+                                    "scale": "(+50% AP)",
                                     "scaleId": "AP"
                                 }
                             ]
@@ -816,6 +816,27 @@
                 ]
             },
             "R": ""
+        },
+        "14.3": {
+            "B": "",
+            "P": "",
+            "Q": "",
+            "W": "",
+            "E": "",
+            "R": {
+                "SpellName": "R - Mantra",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Soulflare Damage: ",
+                            "Before": "35/140/245/350 (+70% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "40/130/220/310 (+50% AP)"
+                        }
+                    }
+                ]
+            }
         }
     },
     "ChangePatches": [
@@ -832,12 +853,16 @@
         "11.18",
         "12.10",
         "13.16",
-        "14.2"
+        "14.2",
+        "14.3"
     ],
     "ChampionName": "Karma",
     "Balance": {
         "14.2": [
             "buff"
+        ],
+        "14.3": [
+            "nerf"
         ]
     }
 }

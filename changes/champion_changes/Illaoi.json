@@ -49,14 +49,14 @@
                 "parseInfo": [
                     {
                         "text": {
-                            "text": "10-180 {{0}}{{1}}{{2}} physical damage",
+                            "text": "9-162 {{0}}{{1}}{{2}} physical damage",
                             "scaleHolders": [
                                 {
                                     "scale": "(Based on champion level)",
                                     "scaleId": "level"
                                 },
                                 {
-                                    "scale": "(+120% AD)",
+                                    "scale": "(+115% AD)",
                                     "scaleId": "AD"
                                 },
                                 {
@@ -458,6 +458,36 @@
             "W": "",
             "E": "",
             "R": ""
+        },
+        "14.3": {
+            "B": "",
+            "P": {
+                "SpellName": "Passive - Prophet of the Elder God",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Tentacle Range: ",
+                            "Before": "800",
+                            "Indicator": " ⇒ ",
+                            "After": "925"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Tentacle Damage: ",
+                            "Before": "10-180 (based on level) (+120% AD) (+40% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "9-162 (based on level) (+115% AD) (+40% AP)"
+                        }
+                    }
+                ]
+            },
+            "Q": "",
+            "W": "",
+            "E": "",
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -467,12 +497,16 @@
         "12.4",
         "12.6",
         "12.10",
-        "14.2"
+        "14.2",
+        "14.3"
     ],
     "ChampionName": "Illaoi",
     "Balance": {
         "14.2": [
             "buff"
+        ],
+        "14.3": [
+            "adjust"
         ]
     }
 }

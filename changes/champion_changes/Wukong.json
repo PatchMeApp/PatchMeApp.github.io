@@ -91,7 +91,7 @@
         },
         "Q": {
             "_rawTooltip": {
-                "fullTooltip": "Wukong and his [[0]] next Attack gains 75/100/125/150 range, deals an additional [[1]], and removes [[2]] for 3 seconds.<br /><br />This Ability's cooldown is reduced by 0.5 seconds every time Wukong or his [[3]] hit an enemy with an Attack or Ability.<br /><br />[[4]]",
+                "fullTooltip": "Wukong and his [[0]] next Attack gains 135/145/155/165/175 range, deals an additional [[1]], and removes [[2]] for 3 seconds.<br /><br />This Ability's cooldown is reduced by 0.5 seconds every time Wukong or his [[3]] hit an enemy with an Attack or Ability.<br /><br />[[4]]",
                 "parseInfo": [
                     {
                         "text": {
@@ -105,7 +105,7 @@
                             "text": "20/45/70/95/120 {{0}} physical damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+45% Bonus AD)",
+                                    "scale": "(+55% Bonus AD)",
                                     "scaleId": "AD"
                                 }
                             ]
@@ -209,7 +209,7 @@
                     }
                 ]
             },
-            "cooldown": "10/9.5/9/8.5/8",
+            "cooldown": "10/9.25/8.5/7.75/7",
             "cost": "30/35/40/45/50 Mana",
             "name": "Nimbus Strike"
         },
@@ -1191,6 +1191,49 @@
             "E": "",
             "R": ""
         },
+        "14.3": {
+            "B": "",
+            "P": "",
+            "Q": {
+                "SpellName": "Q - Crushing Blow",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Bonus Range: ",
+                            "Before": "75/100/125/150/175",
+                            "Indicator": " ⇒ ",
+                            "After": "135/145/155/165/175"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Bonus Physical Damage: ",
+                            "Before": "20/45/70/95/120 (+45% bonus AD)",
+                            "Indicator": " ⇒ ",
+                            "After": "20/45/70/95/120 (+55% bonus AD)"
+                        }
+                    }
+                ]
+            },
+            "W": "",
+            "E": {
+                "SpellName": "E - Nimbus Strike",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Cooldown: ",
+                            "Before": "10/9.5/9/8.5/8 seconds",
+                            "Indicator": " ⇒ ",
+                            "After": "10/9.25/8.5/7.75/7 seconds"
+                        }
+                    }
+                ]
+            },
+            "R": ""
+        },
         "12.12": {
             "B": "",
             "P": "",
@@ -1243,7 +1286,13 @@
         "12.20",
         "13.7",
         "13.13",
-        "13.16"
+        "13.16",
+        "14.3"
     ],
-    "ChampionName": "Wukong"
+    "ChampionName": "Wukong",
+    "Balance": {
+        "14.3": [
+            "buff"
+        ]
+    }
 }

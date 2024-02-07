@@ -65,7 +65,7 @@
         },
         "Q": {
             "_rawTooltip": {
-                "fullTooltip": "Aurelion Sol breaths startfire for up to 3.25 seconds, dealing [[0]] per second to the first enemy hit and 50% of the damage to surrounding enemies. Each full second of breath on the same enemy deals a burst of [[1]] max Health Magic Damage and absorbds 1 stardust if they are a champion.",
+                "fullTooltip": "Aurelion Sol breaths startfire for up to 3.25 seconds, dealing [[0]] per second to the first enemy hit and 50% of the damage to surrounding enemies. Each full second of breath on the same enemy deals a burst of [[1]] max Health Magic Damage and absorbds 3 stardust if they are a champion.",
                 "parseInfo": [
                     {
                         "text": {
@@ -98,16 +98,16 @@
                 ]
             },
             "cooldown": "3",
-            "cost": "45/50/55/60/65 Mana per second",
+            "cost": "30/35/40/45/50 Mana per second",
             "name": "Breath of Light"
         },
         "W": {
             "_rawTooltip": {
-                "fullTooltip": "Aurelion Sol flies in a direction. While flying, Breath of Light has no Cooldown, no max channel duration, and it's flat damage is increased by 14/15.5/17/18.5/20%. Takedowns on champions within 3 seconds of damaging them refunds 90% of this Ability's Cooldown.<br /><br /> Recast: End flight early.",
+                "fullTooltip": "Aurelion Sol flies in a direction. While flying, Breath of Light has no Cooldown, no max channel duration, and it's flat damage is increased by 18/20/22/24/26%. Takedowns on champions within 3 seconds of damaging them refunds 90% of this Ability's Cooldown.<br /><br /> Recast: End flight early.",
                 "parseInfo": []
             },
-            "cooldown": "22/20.5/19/17.5/16",
-            "cost": "80/85/90/95/100 Mana",
+            "cooldown": "15/14/13/12/11",
+            "cost": "50/55/60/65/70 Mana",
             "name": "Astral Flight"
         },
         "E": {
@@ -781,6 +781,107 @@
             "W": "",
             "E": "",
             "R": ""
+        },
+        "14.3": {
+            "B": "",
+            "P": "",
+            "Q": {
+                "SpellName": "Q - Breath of Light",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Mana Cost per Second: ",
+                            "Before": "45/50/55/60/65",
+                            "Indicator": " ⇒ ",
+                            "After": "30/35/40/45/50"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Stardust Stacks per Champion Burst: ",
+                            "Before": "1",
+                            "Indicator": " ⇒ ",
+                            "After": "3"
+                        }
+                    }
+                ]
+            },
+            "W": {
+                "SpellName": "W - Astral Flight",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Mana Cost: ",
+                            "Before": "80/85/90/95/100",
+                            "Indicator": " ⇒ ",
+                            "After": "50/55/60/65/70"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Cooldown: ",
+                            "Before": "22/20.5/19/17.5/16 seconds",
+                            "Indicator": " ⇒ ",
+                            "After": "15/14/13/12/11 seconds"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Q - Breath of Light Bonus Damage: ",
+                            "Before": "14/15.5/17/18.5/20%",
+                            "Indicator": " ⇒ ",
+                            "After": "18/20/22/24/26%"
+                        }
+                    }
+                ]
+            },
+            "E": {
+                "SpellName": "E - Singularity",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Stardust Stacks per Champion Takedown: ",
+                            "Before": "5",
+                            "Indicator": " ⇒ ",
+                            "After": "2"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Stardust Stacks per Epic Monster Takedown: ",
+                            "Before": "5",
+                            "Indicator": " ⇒ ",
+                            "After": "2"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Stardust Stacks per Cannon Minion Takedown: ",
+                            "Before": "3",
+                            "Indicator": " ⇒ ",
+                            "After": "2"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Stardust Stacks per Large Monster Takedown: ",
+                            "Before": "3",
+                            "Indicator": " ⇒ ",
+                            "After": "2"
+                        }
+                    }
+                ]
+            },
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -794,7 +895,13 @@
         "13.6",
         "13.8",
         "13.11",
-        "13.21"
+        "13.21",
+        "14.3"
     ],
-    "ChampionName": "Aurelion Sol"
+    "ChampionName": "Aurelion Sol",
+    "Balance": {
+        "14.3": [
+            "buff"
+        ]
+    }
 }

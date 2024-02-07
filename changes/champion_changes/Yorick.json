@@ -52,7 +52,7 @@
         },
         "Q": {
             "_rawTooltip": {
-                "fullTooltip": "Yorick's next Attack deals an additional [[0]] and restores [[1]], or [[2]] if Yorick is below 50% Health. If this Attack kills the target, it leaves a grave.<br /><br />When there are 3 or more graves nearby and this Ability has already been used, Yorick can [[3]] to raise [[4]] from all nearby graves.<br /><br />[[5]]",
+                "fullTooltip": "Yorick's next Attack deals an additional [[0]] and restores [[1]], halved vs non-champions. If this Attack kills the target, it leaves a grave.<br /><br />When there are 3 or more graves nearby and this Ability has already been used, Yorick can [[2]] to raise [[3]] from all nearby graves.<br /><br />[[4]]",
                 "parseInfo": [
                     {
                         "text": {
@@ -68,23 +68,15 @@
                     },
                     {
                         "text": {
-                            "text": "10 - 68 {{0}} Health",
+                            "text": "10 - 68 {{0}}{{1}} Health",
                             "scaleHolders": [
                                 {
                                     "scale": "(based on champion level)",
                                     "scaleId": "level"
-                                }
-                            ]
-                        },
-                        "type": "healing"
-                    },
-                    {
-                        "text": {
-                            "text": "20 - 136 {{0}} Health",
-                            "scaleHolders": [
+                                },
                                 {
-                                    "scale": "(based on champion level)",
-                                    "scaleId": "level"
+                                    "scale": "(+4/5/6/7/8% missing health)",
+                                    "scaleId": "health"
                                 }
                             ]
                         },
@@ -185,7 +177,7 @@
         },
         "R": {
             "_rawTooltip": {
-                "fullTooltip": "Yorick summons the Maiden of the Mist and 2/3 [[0]]. The Maiden has [[1]], deals [[2]], and raises [[3]] from nearby enemy deaths.<br /><br />When Yorick damages the Maiden's target, he will deal [[4]]. This effect has a 2 second Cooldown.<br /><br />After 10 seconds, Yorick can [[5]] this Ability to free the Maiden, sending her down the nearest lane.",
+                "fullTooltip": "Yorick summons the Maiden of the Mist and 2/3 [[0]]. The Maiden has [[1]], deals [[2]], and raises [[3]] from nearby enemy deaths.<br /><br />When Yorick damages the Maiden's target, he will deal [[4]].<br /><br />After 10 seconds, Yorick can [[5]] this Ability to free the Maiden, sending her down the nearest lane.",
                 "parseInfo": [
                     {
                         "text": {
@@ -227,7 +219,7 @@
                     },
                     {
                         "text": {
-                            "text": "3/6% max Health magic damage",
+                            "text": "2/2.5/3% max Health magic damage",
                             "scaleHolders": []
                         },
                         "type": "magicDamage"
@@ -535,6 +527,84 @@
                     }
                 ]
             }
+        },
+        "14.3": {
+            "B": "",
+            "P": {
+                "SpellName": "Passive - Shepherd of Souls",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Summon Leash Range: ",
+                            "Before": "2000",
+                            "Indicator": " ⇒ ",
+                            "After": "1600"
+                        }
+                    },
+                    {
+                        "Tag": "NEW",
+                        "Change": {
+                            "Attribute": "Return Speed: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "Yorick’s summons now gain bonus movement speed when returning to Yorick. This movement speed bonus is based on the distance between Yorick and the summon."
+                        }
+                    }
+                ]
+            },
+            "Q": {
+                "SpellName": "Q - Last Rites",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Heal: ",
+                            "Before": "10-68 (based on level), doubled when below 50% health",
+                            "Indicator": " ⇒ ",
+                            "After": "10-68 (based on level) (+4/5/6/7/8% missing health), halved vs non-champions"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Mana Cost: ",
+                            "Before": "25",
+                            "Indicator": " ⇒ ",
+                            "After": "20"
+                        }
+                    }
+                ]
+            },
+            "W": "",
+            "E": {
+                "SpellName": "E - Mourning Mist",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Cast Time: ",
+                            "Before": "0.33",
+                            "Indicator": " ⇒ ",
+                            "After": "0.25 seconds"
+                        }
+                    }
+                ]
+            },
+            "R": {
+                "SpellName": "R - Eulogy of the Isles",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Bonus Damage when Attacking Maiden’s Target: ",
+                            "Before": "3/6/9% maximum health (capped at 100/200/300 vs monsters), 2 second cooldown",
+                            "Indicator": " ⇒ ",
+                            "After": "2/2.5/3% maximum health (capped at 100 vs monsters), no cooldown"
+                        }
+                    }
+                ]
+            }
         }
     },
     "ChangePatches": [
@@ -544,7 +614,13 @@
         "12.10",
         "12.12",
         "13.5",
-        "13.15"
+        "13.15",
+        "14.3"
     ],
-    "ChampionName": "Yorick"
+    "ChampionName": "Yorick",
+    "Balance": {
+        "14.3": [
+            "buff"
+        ]
+    }
 }

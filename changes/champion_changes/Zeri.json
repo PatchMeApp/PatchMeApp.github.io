@@ -33,7 +33,7 @@
             "increment": 0
         },
         "attackDamage": {
-            "base": 53,
+            "base": 56,
             "increment": 2
         },
         "attackRange": {
@@ -255,7 +255,7 @@
                     }
                 ]
             },
-            "cooldown": "100/85/70",
+            "cooldown": "80/75/70",
             "cost": "100 Mana",
             "name": "Lightning Crash"
         }
@@ -1432,6 +1432,40 @@
             },
             "E": "",
             "R": ""
+        },
+        "14.3": {
+            "B": {
+                "SpellName": "Base Stats",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Base AD: ",
+                            "Before": "53",
+                            "Indicator": " ⇒ ",
+                            "After": "56"
+                        }
+                    }
+                ]
+            },
+            "P": "",
+            "Q": "",
+            "W": "",
+            "E": "",
+            "R": {
+                "SpellName": "R - Lightning Crash",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Cooldown: ",
+                            "Before": "100/85/70",
+                            "Indicator": " ⇒ ",
+                            "After": "80/75/70"
+                        }
+                    }
+                ]
+            }
         }
     },
     "ChangePatches": [
@@ -1449,11 +1483,15 @@
         "13.7",
         "13.12",
         "13.19",
-        "13.24"
+        "13.24",
+        "14.3"
     ],
     "ChampionName": "Zeri",
     "Balance": {
         "13.24": [
+            "buff"
+        ],
+        "14.3": [
             "buff"
         ]
     }

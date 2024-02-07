@@ -9,8 +9,8 @@
             "increment": 23.5
         },
         "armor": {
-            "base": 18,
-            "increment": 4.5
+            "base": 21,
+            "increment": 4.7
         },
         "spellBlock": {
             "base": 30,
@@ -128,7 +128,7 @@
                     }
                 ]
             },
-            "cooldown": "24/21/18/15/12",
+            "cooldown": "20/18/16/14/12",
             "cost": "80 Mana",
             "name": "Satchel Charge"
         },
@@ -547,6 +547,49 @@
             },
             "E": "",
             "R": ""
+        },
+        "14.3": {
+            "B": {
+                "SpellName": "Base Stats",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Base Armor: ",
+                            "Before": "18",
+                            "Indicator": " ⇒ ",
+                            "After": "21"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Armor Growth: ",
+                            "Before": "4.5",
+                            "Indicator": " ⇒ ",
+                            "After": "4.7"
+                        }
+                    }
+                ]
+            },
+            "P": "",
+            "Q": "",
+            "W": {
+                "SpellName": "W - Satchel Charge",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Cooldown: ",
+                            "Before": "24/21/18/15/12",
+                            "Indicator": " ⇒ ",
+                            "After": "20/18/16/14/12 seconds"
+                        }
+                    }
+                ]
+            },
+            "E": "",
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -559,12 +602,16 @@
         "12.20",
         "13.20",
         "13.22",
-        "13.23"
+        "13.23",
+        "14.3"
     ],
     "ChampionName": "Ziggs",
     "Balance": {
         "13.24": [
             "nerf"
+        ],
+        "14.3": [
+            "buff"
         ]
     }
 }

@@ -64,7 +64,7 @@
                             "text": "5% {{0}} of the target's maximum health",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+ 1.5% per 100 AP)",
+                                    "scale": "(+ 1.25% per 100 AP)",
                                     "scaleId": "AP"
                                 }
                             ]
@@ -110,7 +110,7 @@
                             "text": "35/45/55/65/75 {{0}} magic damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+ 45% AP)",
+                                    "scale": "(+35% AP)",
                                     "scaleId": "AP"
                                 }
                             ]
@@ -122,7 +122,7 @@
                             "text": "35/45/55/65/75 {{0}} true damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+ 45% AP)",
+                                    "scale": "(+35% AP)",
                                     "scaleId": "AP"
                                 }
                             ]
@@ -940,6 +940,40 @@
             "W": "",
             "E": "",
             "R": ""
+        },
+        "14.3": {
+            "B": "",
+            "P": {
+                "SpellName": "Passive - Dream-Laden Bough",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Maximum Health Damage: ",
+                            "Before": "5% (+1.5% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "5% (+1.25% AP)"
+                        }
+                    }
+                ]
+            },
+            "Q": {
+                "SpellName": "Q - Blooming Blows",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Damage: ",
+                            "Before": "70/90/110/130/150 (+90% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "70/90/110/130/150 (+70% AP)"
+                        }
+                    }
+                ]
+            },
+            "W": "",
+            "E": "",
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -955,7 +989,13 @@
         "12.22",
         "12.23",
         "13.1B",
-        "13.8"
+        "13.8",
+        "14.3"
     ],
-    "ChampionName": "Lillia"
+    "ChampionName": "Lillia",
+    "Balance": {
+        "14.3": [
+            "nerf"
+        ]
+    }
 }

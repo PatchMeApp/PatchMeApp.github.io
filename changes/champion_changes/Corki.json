@@ -45,7 +45,7 @@
         "P": {
             "cooldown": 300,
             "_rawTooltip": {
-                "fullTooltip": "Innate - Hextech Shrapnel Shells: Corki's basic attacks are modified to deal [[0]] and [[1]].<br>Innate - The Package: After 10:00, The Package is delivered to both corners of the allied fountain, which can be selected by Corki to pick up after channeling for 1 second. Upon completion of the channel, Corki gains one cast of Special Delivery for 60 seconds, replacing Valkyrie for the duration. While holding the The Package, Corki receives [[2]] out of combat and ghosting.<br>Corki cannot pick up the package while he is unable to cast abilities.",
+                "fullTooltip": "Innate - Hextech Shrapnel Shells: Corki's basic attacks are modified to deal [[0]] and [[1]].<br>Innate - The Package: After 10:00, The Package is delivered to both corners of the allied fountain, which can be selected by Corki to pick up after channeling for 1 second. Upon completion of the channel, Corki gains one cast of Special Delivery for 45 seconds, replacing Valkyrie for the duration. While holding the The Package, Corki receives [[2]] out of combat and ghosting.<br>Corki cannot pick up the package while he is unable to cast abilities.",
                 "parseInfo": [
                     {
                         "text": {
@@ -107,7 +107,7 @@
                             "text": "60/90/120/150/180 {{0}} magic damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+40% AP)",
+                                    "scale": "(+60% AP)",
                                     "scaleId": "AP"
                                 }
                             ]
@@ -157,8 +157,8 @@
                     }
                 ]
             },
-            "cooldown": "20/19/18/17/16",
-            "cost": "100 Mana",
+            "cooldown": "20/18/16/14/12",
+            "cost": "80 Mana",
             "name": "Valkyrie"
         },
         "E": {
@@ -506,6 +506,71 @@
             "E": "",
             "R": ""
         },
+        "14.3": {
+            "B": "",
+            "P": {
+                "SpellName": "Passive - Special Delivery",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Package Duration: ",
+                            "Before": "60 seconds",
+                            "Indicator": " ⇒ ",
+                            "After": "45 seconds"
+                        }
+                    }
+                ]
+            },
+            "Q": "",
+            "W": {
+                "SpellName": "W - Valkyrie",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Cooldown: ",
+                            "Before": "20/19/18/17/16 seconds",
+                            "Indicator": " ⇒ ",
+                            "After": "20/18/16/14/12 seconds"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Mana Cost: ",
+                            "Before": "100",
+                            "Indicator": " ⇒ ",
+                            "After": "80"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Damage per Second: ",
+                            "Before": "60/90/120/150/180 (+40% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "60/90/120/150/180 (+60% AP)"
+                        }
+                    }
+                ]
+            },
+            "E": "",
+            "R": {
+                "SpellName": "R - Missile Barrage",
+                "Changes": [
+                    {
+                        "Tag": "REMOVED",
+                        "Change": {
+                            "Attribute": "Item Interaction Adjustment: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "Malignance will no longer count toward Eclipse’s passive."
+                        }
+                    }
+                ]
+            }
+        },
         "13.24": {
             "B": {
                 "SpellName": "Base Stats",
@@ -599,7 +664,8 @@
         "12.13",
         "12.21",
         "13.24",
-        "14.1"
+        "14.1",
+        "14.3"
     ],
     "ChampionName": "Corki",
     "Balance": {
@@ -608,6 +674,9 @@
         ],
         "14.1": [
             "buff"
+        ],
+        "14.3": [
+            "adjust"
         ]
     }
 }

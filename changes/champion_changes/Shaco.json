@@ -22,7 +22,7 @@
         },
         "mpRegen": {
             "base": 6,
-            "increment": 0.45
+            "increment": 0.35
         },
         "attackSpeed": {
             "base": 0.694,
@@ -161,7 +161,7 @@
                     },
                     {
                         "text": {
-                            "text": "10/20/30/40",
+                            "text": "20/35/50/65/80",
                             "scaleHolders": []
                         },
                         "type": "magicDamage"
@@ -169,7 +169,7 @@
                 ]
             },
             "cooldown": "15",
-            "cost": "70 Mana",
+            "cost": "70/65/60/55/50 Mana",
             "name": "Jack In The Box"
         },
         "E": {
@@ -239,7 +239,7 @@
                 ]
             },
             "cooldown": "8",
-            "cost": "65 Mana",
+            "cost": "75 Mana",
             "name": "Two-Shiv Poison"
         },
         "R": {
@@ -1075,6 +1075,102 @@
             "E": "",
             "R": ""
         },
+        "14.3": {
+            "B": {
+                "SpellName": "Base Stats",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Mana Regeneration Growth: ",
+                            "Before": "0.45",
+                            "Indicator": " ⇒ ",
+                            "After": "0.35"
+                        }
+                    }
+                ]
+            },
+            "P": "",
+            "Q": "",
+            "W": {
+                "SpellName": "W - Jack In The Box",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Mana Cost: ",
+                            "Before": "70 at all ranks",
+                            "Indicator": " ⇒ ",
+                            "After": "70/65/60/55/50"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Bonus Damage to Monsters: ",
+                            "Before": "10/20/30/40/50",
+                            "Indicator": " ⇒ ",
+                            "After": "20/35/50/65/80"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Grub Proof: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "Shaco’s Jack in the Boxes are no longer one-shot by Grubs."
+                        }
+                    }
+                ]
+            },
+            "E": {
+                "SpellName": "E - Two-Shiv Poison",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Mana Cost: ",
+                            "Before": "65",
+                            "Indicator": " ⇒ ",
+                            "After": "75"
+                        }
+                    }
+                ]
+            },
+            "R": {
+                "SpellName": "R - Hallucinate",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "POOF: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "Shaco’s clone now creates an orange poof when it snaps back to Shaco or teleports for any reason."
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Clone Clock: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "Shaco’s clone duration is now displayed on the HUD."
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Bugfix: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "Shaco’s clone no longer loses its auto attack target when casting spells."
+                        }
+                    }
+                ]
+            }
+        },
         "14.2": {
             "B": "",
             "P": "",
@@ -1130,11 +1226,15 @@
         "13.1",
         "13.14",
         "13.16",
-        "14.2"
+        "14.2",
+        "14.3"
     ],
     "ChampionName": "Shaco",
     "Balance": {
         "14.2": [
+            "buff"
+        ],
+        "14.3": [
             "buff"
         ]
     }

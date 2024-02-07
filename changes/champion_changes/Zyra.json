@@ -21,8 +21,8 @@
             "increment": 0.5
         },
         "mpRegen": {
-            "base": 13,
-            "increment": 0.4
+            "base": 7,
+            "increment": 0.8
         },
         "attackSpeed": {
             "base": 0.681,
@@ -99,12 +99,12 @@
                 ]
             },
             "cooldown": "7/6.5/6/5.5/5",
-            "cost": "70 Mana",
+            "cost": "55 Mana",
             "name": "Deadly Spines"
         },
         "W": {
             "_rawTooltip": {
-                "fullTooltip": "Zyra plants a [[0]] that lasts 60 seconds. These [[1]] grant [[2]] of enemy champions that step on them for 2 seconds, but are still destroyed.<br /><br />This Ability has 2 charges with a 18/16/14/12/10 second recharge time. Killing an enemy reduces the recharge time by 20%. Champion takedowns, large jungle monster kills, and large minion kills reduce the recharge time by 100% instead.",
+                "fullTooltip": "Zyra plants a [[0]] that lasts 60 seconds. These [[1]] grant [[2]] of enemy champions that step on them for 2 seconds, but are still destroyed.<br /><br />This Ability has 2 charges with a 18/16/14/12/10 second recharge time. Killing an enemy reduces the recharge time by 35%. Champion takedowns, large jungle monster kills, and large minion kills reduce the recharge time by 100% instead.",
                 "parseInfo": [
                     {
                         "text": {
@@ -514,6 +514,62 @@
                 ]
             },
             "R": ""
+        },
+        "14.3": {
+            "B": {
+                "SpellName": "Base Stats",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Base Mana Regeneration: ",
+                            "Before": "13",
+                            "Indicator": " ⇒ ",
+                            "After": "7"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Mana Regeneration Growth: ",
+                            "Before": "0.4",
+                            "Indicator": " ⇒ ",
+                            "After": "0.8"
+                        }
+                    }
+                ]
+            },
+            "P": "",
+            "Q": {
+                "SpellName": "Q - Deadly Spines",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Mana Cost: ",
+                            "Before": "70",
+                            "Indicator": " ⇒ ",
+                            "After": "55"
+                        }
+                    }
+                ]
+            },
+            "W": {
+                "SpellName": "W - Rampart Growth",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Seed Charge Progression on Minion/Monster Takedown: ",
+                            "Before": "20%",
+                            "Indicator": " ⇒ ",
+                            "After": "35%"
+                        }
+                    }
+                ]
+            },
+            "E": "",
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -522,7 +578,13 @@
         "12.10",
         "12.16",
         "13.14",
-        "13.21"
+        "13.21",
+        "14.3"
     ],
-    "ChampionName": "Zyra"
+    "ChampionName": "Zyra",
+    "Balance": {
+        "14.3": [
+            "adjust"
+        ]
+    }
 }

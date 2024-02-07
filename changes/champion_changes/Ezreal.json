@@ -67,7 +67,7 @@
                             "text": "20/45/70/95/120 {{0}} {{1}} physical damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+135% AD)",
+                                    "scale": "(+130% AD)",
                                     "scaleId": "AD"
                                 },
                                 {
@@ -156,10 +156,10 @@
                 "parseInfo": [
                     {
                         "text": {
-                            "text": "350/525/700 {{0}} {{1}} magic damage",
+                            "text": "325/500/675 {{0}} {{1}} magic damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+120% Bonus AD)",
+                                    "scale": "(+100% bonus AD)",
                                     "scaleId": "AD"
                                 },
                                 {
@@ -459,6 +459,40 @@
                 ]
             }
         },
+        "14.3": {
+            "B": "",
+            "P": "",
+            "Q": {
+                "SpellName": "Q - Mystic Shot",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Damage: ",
+                            "Before": "20/45/70/95/120 (+135% AD) (+15% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "20/45/70/95/120 (+130% AD) (+15% AP)"
+                        }
+                    }
+                ]
+            },
+            "W": "",
+            "E": "",
+            "R": {
+                "SpellName": "R - Trueshot Barrage",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Damage: ",
+                            "Before": "350/525/700 (+120% bonus AD) (+90% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "325/500/675 (+100% bonus AD) (+90% AP)"
+                        }
+                    }
+                ]
+            }
+        },
         "13.1B": {
             "B": {
                 "SpellName": "Base Stats",
@@ -527,7 +561,8 @@
         "13.1B",
         "13.8",
         "14.1",
-        "14.2"
+        "14.2",
+        "14.3"
     ],
     "ChampionName": "Ezreal",
     "Balance": {
@@ -536,6 +571,9 @@
         ],
         "14.2": [
             "buff"
+        ],
+        "14.3": [
+            "nerf"
         ]
     }
 }

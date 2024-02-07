@@ -69,7 +69,7 @@
                 "parseInfo": [
                     {
                         "text": {
-                            "text": "50/70/90/110/130 {{0}} magic damage",
+                            "text": "60/78/96/114/132 {{0}} magic damage",
                             "scaleHolders": [
                                 {
                                     "scale": "(+50% AP)",
@@ -179,7 +179,7 @@
                     }
                 ]
             },
-            "cooldown": "16/15.5/15/14.5/14",
+            "cooldown": "14",
             "cost": "90/95/100/105/110 Mana",
             "name": "Unraveled Earth"
         },
@@ -1201,6 +1201,40 @@
             "W": "",
             "E": "",
             "R": ""
+        },
+        "14.3": {
+            "B": "",
+            "P": "",
+            "Q": {
+                "SpellName": "Q - Threaded Volley",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Damage: ",
+                            "Before": "50/70/90/110/130 (+50% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "60/78/96/114/132 (+50% AP)"
+                        }
+                    }
+                ]
+            },
+            "W": "",
+            "E": {
+                "SpellName": "E - Unraveled Earth",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Cooldown: ",
+                            "Before": "16/15.5/15/14.5/14 seconds",
+                            "Indicator": " ⇒ ",
+                            "After": "14 seconds at all ranks"
+                        }
+                    }
+                ]
+            },
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -1215,7 +1249,13 @@
         "12.15",
         "13.9",
         "13.15",
-        "13.22"
+        "13.22",
+        "14.3"
     ],
-    "ChampionName": "Taliyah"
+    "ChampionName": "Taliyah",
+    "Balance": {
+        "14.3": [
+            "buff"
+        ]
+    }
 }
