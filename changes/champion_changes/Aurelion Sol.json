@@ -65,7 +65,7 @@
         },
         "Q": {
             "_rawTooltip": {
-                "fullTooltip": "Aurelion Sol breaths startfire for up to 3.25 seconds, dealing [[0]] per second to the first enemy hit and 50% of the damage to surrounding enemies. Each full second of breath on the same enemy deals a burst of [[1]] max Health Magic Damage and absorbds 3 stardust if they are a champion.",
+                "fullTooltip": "Aurelion Sol breaths startfire for up to 3.25 seconds, dealing [[0]] per second to the first enemy hit and 50% of the damage to surrounding enemies. Each full second of breath on the same enemy deals a burst of [[1]] max Health Magic Damage and absorbs 2 stardust if they are a champion.",
                 "parseInfo": [
                     {
                         "text": {
@@ -103,10 +103,10 @@
         },
         "W": {
             "_rawTooltip": {
-                "fullTooltip": "Aurelion Sol flies in a direction. While flying, Breath of Light has no Cooldown, no max channel duration, and it's flat damage is increased by 18/20/22/24/26%. Takedowns on champions within 3 seconds of damaging them refunds 90% of this Ability's Cooldown.<br /><br /> Recast: End flight early.",
+                "fullTooltip": "Aurelion Sol flies in a direction. While flying, Breath of Light has no Cooldown, no max channel duration, and it's flat damage is increased by 8/9/10/11/12%. Takedowns on champions within 3 seconds of damaging them refunds 90% of this Ability's Cooldown.<br /><br /> Recast: End flight early.",
                 "parseInfo": []
             },
-            "cooldown": "15/14/13/12/11",
+            "cooldown": "22/20.5/19/17.5/16",
             "cost": "50/55/60/65/70 Mana",
             "name": "Astral Flight"
         },
@@ -429,7 +429,7 @@
                     {
                         "Tag": "MID-PATCH",
                         "Change": {
-                            "Attribute": "Burst Proc AP Ratio ",
+                            "Attribute": "Burst Proc AP Ratio: ",
                             "Before": "50%",
                             "Indicator": " ⇒ ",
                             "After": "40%"
@@ -502,7 +502,7 @@
                     {
                         "Tag": "MID-PATCH",
                         "Change": {
-                            "Attribute": "AP Ratio ",
+                            "Attribute": "AP Ratio: ",
                             "Before": "40%",
                             "Indicator": " ⇒ ",
                             "After": "25%"
@@ -511,7 +511,7 @@
                     {
                         "Tag": "MID-PATCH",
                         "Change": {
-                            "Attribute": "Stacks from units dying inside Epic Monster",
+                            "Attribute": "Stacks from units dying inside Epic Monster: ",
                             "Before": "10",
                             "Indicator": " ⇒ ",
                             "After": "5"
@@ -520,7 +520,7 @@
                     {
                         "Tag": "MID-PATCH",
                         "Change": {
-                            "Attribute": "Stacks from units dying inside Large Monster",
+                            "Attribute": "Stacks from units dying inside Large Monster: ",
                             "Before": "5",
                             "Indicator": " ⇒ ",
                             "After": "3"
@@ -805,6 +805,15 @@
                             "Indicator": " ⇒ ",
                             "After": "3"
                         }
+                    },
+                    {
+                        "Tag": "MID-PATCH",
+                        "Change": {
+                            "Attribute": "Stardust Stacks per Champion Burst:  ",
+                            "Before": "3",
+                            "Indicator": " ⇒ ",
+                            "After": "2"
+                        }
                     }
                 ]
             },
@@ -836,6 +845,24 @@
                             "Before": "14/15.5/17/18.5/20%",
                             "Indicator": " ⇒ ",
                             "After": "18/20/22/24/26%"
+                        }
+                    },
+                    {
+                        "Tag": "MID-PATCH",
+                        "Change": {
+                            "Attribute": "Cooldown: ",
+                            "Before": "15/14/13/12/11",
+                            "Indicator": " ⇒ ",
+                            "After": "22/20.5/19/17.5/16 seconds"
+                        }
+                    },
+                    {
+                        "Tag": "MID-PATCH",
+                        "Change": {
+                            "Attribute": "Bonus Damage applied to Q: ",
+                            "Before": "18/20/22/24/26%",
+                            "Indicator": " ⇒ ",
+                            "After": "8/9/10/11/12%"
                         }
                     }
                 ]
@@ -901,7 +928,7 @@
     "ChampionName": "Aurelion Sol",
     "Balance": {
         "14.3": [
-            "buff"
+            "nerf"
         ]
     }
 }
