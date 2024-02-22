@@ -157,7 +157,7 @@
                     },
                     {
                         "text": {
-                            "text": "20/30/40/50/60 {{0}} {{1}}",
+                            "text": "10/20/30/40/50 {{0}} {{1}}",
                             "scaleHolders": [
                                 {
                                     "scale": "(+ 70% AD)",
@@ -792,6 +792,40 @@
                 ]
             },
             "R": ""
+        },
+        "14.4": {
+            "B": "",
+            "P": {
+                "SpellName": "Passive - Martial Pose",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Bugfix: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "Kalista now properly gains dash distance with basic Boots of Speed."
+                        }
+                    }
+                ]
+            },
+            "Q": "",
+            "W": "",
+            "E": {
+                "SpellName": "E - Rend",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Physical Damage: ",
+                            "Before": "20/30/40/50/60 (+70% AD) (+20% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "10/20/30/40/50 (+70% AD) (+20% AP) (Note: Per-stack damage unchanged.)"
+                        }
+                    }
+                ]
+            },
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -809,7 +843,13 @@
         "12.18",
         "13.7",
         "13.10",
-        "13.11"
+        "13.11",
+        "14.4"
     ],
-    "ChampionName": "Kalista"
+    "ChampionName": "Kalista",
+    "Balance": {
+        "14.4": [
+            "nerf"
+        ]
+    }
 }

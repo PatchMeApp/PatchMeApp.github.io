@@ -1,6 +1,6 @@
 {
     "type": "item",
-    "version": "14.3.1",
+    "version": "14.4.1",
     "basic": {
         "name": "",
         "rune": {
@@ -407,6 +407,7 @@
             "into": [
                 "3742",
                 "1011",
+                "3071",
                 "6662",
                 "2021",
                 "3012",
@@ -649,7 +650,6 @@
             "into": [
                 "2015",
                 "1053",
-                "3071",
                 "3094",
                 "2019",
                 "2021",
@@ -890,7 +890,6 @@
                 "3131",
                 "3006",
                 "3051",
-                "3302",
                 "6631",
                 "6670",
                 "6677"
@@ -3555,7 +3554,7 @@
         },
         "3003": {
             "name": "Archangel's Staff",
-            "description": "<mainText><stats><attention>80</attention> Ability Power<br><attention>600</attention> Mana<br><attention>20</attention> Ability Haste</stats><br><br><passive>Awe</passive><br>Gain Ability Power equal to your bonus Mana.<br><br><passive>Manaflow</passive><br>Strike a target with an Ability to consume a charge and gain bonus Mana. Grants a maximum of 360 Mana at which point this item transforms into <rarityLegendary>Seraph's Embrace</rarityLegendary>.<br><br></mainText>",
+            "description": "<mainText><stats><attention>80</attention> Ability Power<br><attention>600</attention> Mana<br><attention>25</attention> Ability Haste</stats><br><br><passive>Awe</passive><br>Gain Ability Power equal to your bonus Mana.<br><br><passive>Manaflow</passive><br>Strike a target with an Ability to consume a charge and gain bonus Mana. Grants a maximum of 360 Mana at which point this item transforms into <rarityLegendary>Seraph's Embrace</rarityLegendary>.<br><br></mainText>",
             "colloq": "",
             "plaintext": "Increases Ability Power based on maximum Mana",
             "from": [
@@ -4250,7 +4249,7 @@
         },
         "3040": {
             "name": "Seraph's Embrace",
-            "description": "<mainText><stats><attention>80</attention> Ability Power<br><attention>1000</attention> Mana<br><attention>20</attention> Ability Haste</stats><br><br><passive>Awe</passive> Gain Ability Power equal to <scaleMana>2% bonus Mana</scaleMana>.<br><passive>Lifeline</passive> (90(0s))<br>Upon taking damage that would reduce your Health below 30%, gain a <shield>250 + 20% current Mana Shield</shield> for 3s.</mainText>",
+            "description": "<mainText><stats><attention>80</attention> Ability Power<br><attention>1000</attention> Mana<br><attention>25</attention> Ability Haste</stats><br><br><passive>Awe</passive> Gain Ability Power equal to <scaleMana>2% bonus Mana</scaleMana>.<br><passive>Lifeline</passive> (90(0s))<br>Upon taking damage that would reduce your Health below 30%, gain a <shield>250 + 20% current Mana Shield</shield> for 3s.</mainText>",
             "colloq": "",
             "plaintext": "",
             "specialRecipe": 3003,
@@ -4539,7 +4538,7 @@
         },
         "3050": {
             "name": "Zeke's Convergence",
-            "description": "<mainText><stats><attention>200</attention> Health<br><attention>250</attention> Mana<br><attention>30</attention> Armor<br><attention>20</attention> Ability Haste</stats><br><br><passive>Frostfire Tempest</passive> (0s)<br>Casting your Ultimate summons a storm around you for 5 seconds. The storm deals <magicDamage>50 magic damage</magicDamage> per second to enemy Champions and <keyword>Slows</keyword> them by 30%.</mainText>",
+            "description": "<mainText><stats><attention>200</attention> Health<br><attention>250</attention> Mana<br><attention>30</attention> Armor<br><attention>20</attention> Ability Haste</stats><br><br><passive>Frostfire Tempest</passive> <br>Casting your Ultimate summons a storm around you. The storm deals magic damage to enemy Champions and <keyword>Slows</keyword> them.</mainText>",
             "colloq": ";haroldandkumar",
             "plaintext": "Grants you and your ally bonuses when you cast your ultimate.",
             "from": [
@@ -4700,7 +4699,8 @@
                 "sell": 630
             },
             "tags": [
-                "OnHit"
+                "OnHit",
+                "AbilityHaste"
             ],
             "maps": {
                 "11": true,
@@ -4812,7 +4812,6 @@
                 "2022"
             ],
             "into": [
-                "3071",
                 "8020",
                 "6620",
                 "3050",
@@ -4955,8 +4954,8 @@
             "plaintext": "Dealing physical damage to enemy champions reduces their Armor",
             "from": [
                 "3044",
-                "3067",
-                "1036"
+                "3133",
+                "1028"
             ],
             "into": [
                 "7037"
@@ -4971,7 +4970,7 @@
                 "h": 48
             },
             "gold": {
-                "base": 750,
+                "base": 400,
                 "purchasable": true,
                 "total": 3000,
                 "sell": 2100
@@ -4998,10 +4997,10 @@
             },
             "effect": {
                 "Effect1Amount": "-0.2",
-                "Effect2Amount": "0.04",
+                "Effect2Amount": "0.05",
                 "Effect3Amount": "6",
-                "Effect4Amount": "6",
-                "Effect5Amount": "0.24",
+                "Effect4Amount": "5",
+                "Effect5Amount": "0.25",
                 "Effect6Amount": "0",
                 "Effect7Amount": "0",
                 "Effect8Amount": "0",
@@ -5105,7 +5104,7 @@
         },
         "3074": {
             "name": "Ravenous Hydra",
-            "description": "<mainText><stats><attention>70</attention> Attack Damage<br><attention>20</attention> Ability Haste<br><attention>12%</attention> Life Steal</stats><br><br><passive>Cleave</passive><br>Attacks deal physical damage to nearby enemies.<br><br><active>ACTIVE</active> (0s)<br><active>Ravenous Crescent</active><br>Deal physical damage to enemies around you.</mainText>",
+            "description": "<mainText><stats><attention>70</attention> Attack Damage<br><attention>20</attention> Ability Haste<br><attention>12%</attention> Life Steal</stats><br><br><passive>Cleave</passive><br>Attacks deal physical damage to nearby enemies.<br><br><active>ACTIVE</active> (0s)<br><active>Ravenous Crescent</active><br>Deal physical damage to enemies around you that Lifesteals.</mainText>",
             "colloq": ";",
             "plaintext": "Melee attacks hit nearby enemies, dealing damage and restoring Health",
             "from": [
@@ -5794,7 +5793,7 @@
         },
         "3100": {
             "name": "Lich Bane",
-            "description": "<mainText><stats><attention>100</attention> Ability Power<br><attention>8%</attention> Move Speed<br><attention>15</attention> Ability Haste</stats><br><br><passive>Spellblade</passive> (0s)<br>After using an Ability, your next Attack is enhanced with an additional <magicDamage>0 magic damage</magicDamage> <OnHit>On-Hit</OnHit>.</mainText>",
+            "description": "<mainText><stats><attention>100</attention> Ability Power<br><attention>8%</attention> Move Speed<br><attention>15</attention> Ability Haste</stats><br><br><passive>Spellblade</passive><br>After using an Ability, your next Attack is enhanced with additional magic damage <OnHit>On-Hit</OnHit>.</mainText>",
             "colloq": ";",
             "plaintext": "Grants a bonus to next attack after spell cast",
             "from": [
@@ -5936,7 +5935,7 @@
         },
         "3107": {
             "name": "Redemption",
-            "description": "<mainText><stats><attention>200</attention> Health<br><attention>15</attention> Ability Haste<br><attention>100%</attention> Base Mana Regen<br><attention>15%</attention> Heal and Shield Power</stats><br><br><active>ACTIVE</active> (0s)<br><active>Intervention</active><br>Target an area to restore Health to allied champions and deal true damage to enemy champions.</mainText>",
+            "description": "<mainText><stats><attention>200</attention> Health<br><attention>15</attention> Ability Haste<br><attention>100%</attention> Base Mana Regen<br><attention>15%</attention> Heal and Shield Power</stats><br><br><active>ACTIVE</active><br><active>Intervention</active><br>Target an area to restore Health to allied champions and deal true damage to enemy champions.</mainText>",
             "colloq": ";",
             "plaintext": "Activate to heal allies and damage enemies in an area",
             "from": [
@@ -6299,7 +6298,7 @@
         },
         "3115": {
             "name": "Nashor's Tooth",
-            "description": "<mainText><stats><attention>90</attention> Ability Power<br><attention>50%</attention> Attack Speed<br><attention>15</attention> Ability Haste</stats><br><br><passive>Icathian Bite</passive><br>Attacks apply <magicDamage>0 magic damage</magicDamage> <OnHit>On-Hit</OnHit>.</mainText>",
+            "description": "<mainText><stats><attention>90</attention> Ability Power<br><attention>50%</attention> Attack Speed<br><attention>15</attention> Ability Haste</stats><br><br><passive>Icathian Bite</passive><br>Attacks apply <magicDamage>magic damage</magicDamage> <OnHit>On-Hit</OnHit>.</mainText>",
             "colloq": ";",
             "plaintext": "Increases Attack Speed, Ability Power, and Cooldown Reduction",
             "from": [
@@ -6445,7 +6444,7 @@
         },
         "3118": {
             "name": "Malignance",
-            "description": "<mainText><stats><attention>80</attention> Ability Power<br><attention>600</attention> Mana<br><attention>20</attention> Ability Haste</stats><br><br><passive>Scorn</passive><br>Your Ultimate spells gain Ability Haste.<br><br><passive>Hatefog</passive><br>Damaging a champion with your Ultimate burns the ground beneath them, dealing damage and reducing their Magic Resist. <br></mainText>",
+            "description": "<mainText><stats><attention>80</attention> Ability Power<br><attention>600</attention> Mana<br><attention>25</attention> Ability Haste</stats><br><br><passive>Scorn</passive><br>Your Ultimate spells gain Ability Haste.<br><br><passive>Hatefog</passive><br>Damaging a champion with your Ultimate burns the ground beneath them, dealing damage and reducing their Magic Resist. <br></mainText>",
             "colloq": ";",
             "plaintext": "Partner with an ally to protect each other",
             "from": [
@@ -6778,6 +6777,7 @@
                 "1036"
             ],
             "into": [
+                "3071",
                 "6333",
                 "6696",
                 "6693",
@@ -7062,7 +7062,7 @@
         },
         "3142": {
             "name": "Youmuu's Ghostblade",
-            "description": "<mainText><stats><attention>60</attention> Attack Damage<br><attention>18</attention> Lethality</stats><br><br><passive>Haunt</passive> <br>Gain <speed>{{Item_Melee_Ranged_Split_Dynamic}} Move Speed</speed> while out of combat.<br>{{ Item_OnActivation }} {{ Item_Cooldown }}<br><active>Wraith Step</active><br>Gain <speed>Move Speed</speed> and <keyword>Ghosting</keyword>.</mainText>",
+            "description": "<mainText><stats><attention>60</attention> Attack Damage<br><attention>18</attention> Lethality</stats><br><br><passive>Haunt</passive> <br>Gain <speed>Move Speed</speed> while out of combat.<br><br><br><active>ACTIVE</active> (0s)<br><active>Wraith Step</active><br>Gain <speed>Move Speed</speed> and <keyword>Ghosting</keyword>.</mainText>",
             "colloq": ";lethality",
             "plaintext": "Activate to greatly increase Move Speed",
             "from": [
@@ -7295,7 +7295,7 @@
         },
         "3152": {
             "name": "Hextech Rocketbelt",
-            "description": "<mainText><stats><attention>60</attention> Ability Power<br><attention>300</attention> Health<br><attention>15</attention> Ability Haste</stats><br><br><active>ACTIVE</active>} (0s)<br><active>Supersonic</active><br>Dash in target direction, unleashing an arc of magic missiles that deal magic damage.</mainText>",
+            "description": "<mainText><stats><attention>60</attention> Ability Power<br><attention>300</attention> Health<br><attention>15</attention> Ability Haste</stats><br><br><active>ACTIVE</active>}<br><active>Supersonic</active><br>Dash in target direction, unleashing an arc of magic missiles that deal magic damage.</mainText>",
             "colloq": "rocket belt;",
             "plaintext": "Activate to dash forward and unleash a fiery explosion",
             "from": [
@@ -8057,13 +8057,13 @@
         },
         "3302": {
             "name": "Terminus",
-            "description": "<mainText><stats><attention>40</attention> Attack Damage<br><attention>30%</attention> Attack Speed</stats><br><br><passive>Shadow</passive><br>Attacks apply <magicDamage>30 magic damage</magicDamage> <OnHit>On-Hit</OnHit>.<br><br><passive>Juxtaposition</passive><br>Alternate between <keywordMajor>Light</keywordMajor> and <keywordMajor>Dark</keywordMajor> on-hits when attacking champions: <li><keywordMajor>Light</keywordMajor> attacks grant 0 <scaleArmor>Armor</scaleArmor> and <scaleMR>Magic Resist</scaleMR> (up to 0) for 5s. <li><keywordMajor>Dark</keywordMajor> attacks grant 6% <scaleArmor>Armor Penetration</scaleArmor> and <scaleMR>Magic Penetration</scaleMR> (up to 30%) for 5s. </mainText>",
+            "description": "<mainText><stats><attention>40</attention> Attack Damage<br><attention>30%</attention> Attack Speed</stats><br><br><passive>Shadow</passive><br>Attacks apply magic damage <OnHit>On-Hit</OnHit>.<br><br><passive>Juxtaposition</passive><br>Alternate between <keywordMajor>Light</keywordMajor> and <keywordMajor>Dark</keywordMajor> on-hits when attacking champions: <li><keywordMajor>Light</keywordMajor> attacks grant <scaleArmor>Armor</scaleArmor> and <scaleMR>Magic Resist</scaleMR>.<li><keywordMajor>Dark</keywordMajor> attacks grant <scaleArmor>Armor Penetration</scaleArmor> and <scaleMR>Magic Penetration</scaleMR>.</mainText>",
             "colloq": ";",
             "plaintext": "Kill minions periodically to heal and grant gold to a nearby ally",
             "from": [
                 "1043",
                 "1038",
-                "1042"
+                "1043"
             ],
             "image": {
                 "full": "3302.png",
@@ -8075,7 +8075,7 @@
                 "h": 48
             },
             "gold": {
-                "base": 700,
+                "base": 300,
                 "purchasable": true,
                 "total": 3000,
                 "sell": 2100
@@ -9443,7 +9443,7 @@
         },
         "3866": {
             "name": "Runic Compass",
-            "description": "<mainText><stats><attention>5</attention> Gold Per 10 Seconds<br><attention>50%</attention> Base Health Regen<br><attention>50%</attention> Base Mana Regen<br><attention>100</attention> Health</stats><br><br><br><br><active>ACTIVE</active><br><active>Ward</active> <br>Place an <keywordStealth>Invisible</keywordStealth> Stealth Ward that grants vision. Stores 0 Stealth Wards, which refill upon visiting the shop. <br><br><br><br><passive>Quest</passive> <br>Earn 1000 gold from this item to transform it into <rarityGeneric>Runic Compass</rarityGeneric>. Gain a charge every <passive>18</passive> seconds, up to <passive>3</passive> charges. While nearby an ally champion, consume a charge to earn gold:<br><li>Damaging Abilities and Attacks against champions or buildings grant <keywordMajor>34</keywordMajor> (melee) / <keywordMajor>32</keywordMajor> (ranged) gold;<li>Killing a minion by any means grants you <keywordMajor>28</keywordMajor> gold and the nearest allied champion kill gold.<br><br><active>ACTIVE</active><br><active>Ward</active> <br>Place an <keywordStealth>Invisible</keywordStealth> Stealth Ward that grants vision. Stores 0 Stealth Wards, which refill upon visiting the shop. </mainText>",
+            "description": "<mainText><stats><attention>5</attention> Gold Per 10 Seconds<br><attention>50%</attention> Base Health Regen<br><attention>50%</attention> Base Mana Regen<br><attention>100</attention> Health</stats><br><br><br><br><active>ACTIVE</active><br><active>Ward</active> <br>Place an <keywordStealth>Invisible</keywordStealth> Stealth Ward that grants vision. Stores 0 Stealth Wards, which refill upon visiting the shop. <br><br><br><br><passive>Quest</passive> <br>Earn 1000 gold from this item to transform it into <rarityGeneric>Runic Compass</rarityGeneric>. Gain a charge every <passive>20</passive> seconds, up to <passive>3</passive> charges. While nearby an ally champion, consume a charge to earn gold:<br><li>Damaging Abilities and Attacks against champions or buildings grant <keywordMajor>34</keywordMajor> (melee) / <keywordMajor>32</keywordMajor> (ranged) gold;<li>Killing a minion by any means grants you <keywordMajor>28</keywordMajor> gold and the nearest allied champion kill gold.<br><br><active>ACTIVE</active><br><active>Ward</active> <br>Place an <keywordStealth>Invisible</keywordStealth> Stealth Ward that grants vision. Stores 0 Stealth Wards, which refill upon visiting the shop. </mainText>",
             "colloq": "",
             "plaintext": "",
             "specialRecipe": 3865,
@@ -9485,7 +9485,7 @@
         },
         "3867": {
             "name": "Bounty of Worlds",
-            "description": "<mainText><stats><attention>5</attention> Gold Per 10 Seconds<br><attention>50%</attention> Base Health Regen<br><attention>50%</attention> Base Mana Regen<br><attention>100</attention> Health</stats><br><br><br><li><passive>Upgrade</passive> <br>This item can be upgraded into <rarityLegendary>Bloodsong</rarityLegendary>, <rarityLegendary>Celestial Opposition</rarityLegendary>, <rarityLegendary>Dream Maker</rarityLegendary>, <rarityLegendary>Zaz'Zak's Realmspike</rarityLegendary>, or <rarityLegendary>Solstice Sleigh</rarityLegendary> for free.<br><br><active>ACTIVE</active><br><active>Ward</active> <br>Place an <keywordStealth>Invisible</keywordStealth> Stealth Ward that grants vision. Stores 0 Stealth Wards, which refill upon visiting the shop. <br><br></mainText>",
+            "description": "<mainText><stats><attention>5</attention> Gold Per 10 Seconds<br><attention>75%</attention> Base Health Regen<br><attention>75%</attention> Base Mana Regen<br><attention>200</attention> Health</stats><br><br><br><li><passive>Upgrade</passive> <br>This item can be upgraded into <rarityLegendary>Bloodsong</rarityLegendary>, <rarityLegendary>Celestial Opposition</rarityLegendary>, <rarityLegendary>Dream Maker</rarityLegendary>, <rarityLegendary>Zaz'Zak's Realmspike</rarityLegendary>, or <rarityLegendary>Solstice Sleigh</rarityLegendary> for free.<br><br><active>ACTIVE</active><br><active>Ward</active> <br>Place an <keywordStealth>Invisible</keywordStealth> Stealth Ward that grants vision. Stores 0 Stealth Wards, which refill upon visiting the shop. <br><br></mainText>",
             "colloq": "",
             "plaintext": "",
             "specialRecipe": 3866,
@@ -9526,7 +9526,7 @@
                 "30": false
             },
             "stats": {
-                "FlatHPPoolMod": 100
+                "FlatHPPoolMod": 200
             },
             "effect": {
                 "Effect1Amount": "5"
@@ -11437,7 +11437,7 @@
         },
         "6631": {
             "name": "Stridebreaker",
-            "description": "<mainText><stats><attention>50</attention> Attack Damage<br><attention>30%</attention> Attack Speed<br><attention>450</attention> Health</stats><br><br><passive>Cleave</passive><br>Attacks deal <physicalDamage>{{ Item_Melee_Ranged_Split_Dynamic }} physical damage</physicalDamage> to nearby enemies.<br><br><passive>Temper</passive><br>Dealing <physicalDamage>physical damage</physicalDamage> grants <speed>20 Move Speed</speed> for 2 seconds.{{ Item_OnActivation }} {{ Item_Cooldown }}<br><active>Breaking Shockwave</active><br>Deal <physicalDamage>0 phyiscal damage</physicalDamage> and <status>Slow</status> nearby enemies by 35% and gain <speed>35% bonus Move Speed</speed> per champion hit that decays over 3 seconds. Can move while casting.</mainText>",
+            "description": "<mainText><stats><attention>50</attention> Attack Damage<br><attention>30%</attention> Attack Speed<br><attention>450</attention> Health</stats><br><br><passive>Cleave</passive><br>Attacks deal physical damage to nearby enemies.<br><br><passive>Temper</passive><br>Dealing <physicalDamage>physical damage</physicalDamage> grants Move Speed.<br><br><active>ACTIVE</active><br><active>Breaking Shockwave</active><br>Deal physical damage and <status>Slow</status> nearby enemies and gain Move Speed per champion. Can move while casting.</mainText>",
             "colloq": "",
             "plaintext": "",
             "from": [
@@ -11467,7 +11467,6 @@
                 "Health",
                 "Damage",
                 "AttackSpeed",
-                "CooldownReduction",
                 "Slow",
                 "NonbootsMovement"
             ],
@@ -11582,7 +11581,7 @@
         },
         "6655": {
             "name": "Luden's Companion",
-            "description": "<mainText><stats><attention>95</attention> Ability Power<br><attention>600</attention> Mana<br><attention>20</attention> Ability Haste</stats><br><br><passive>Load</passive><br>Gain a Shot Charge every few seconds.<br><br><passive>Fire</passive><br>Damaging Abilities consume all Shot Charges to deal an additional magic damage to the target and one additional nearby target per charge. If there are insufficient targets in range, for each remaining shot, repeat the damage on the primary target.</mainText>",
+            "description": "<mainText><stats><attention>95</attention> Ability Power<br><attention>600</attention> Mana<br><attention>25</attention> Ability Haste</stats><br><br><passive>Load</passive><br>Gain a Shot Charge every few seconds.<br><br><passive>Fire</passive><br>Damaging Abilities consume all Shot Charges to deal an additional magic damage to the target and one additional nearby target per charge. If there are insufficient targets in range, for each remaining shot, repeat the damage on the primary target.</mainText>",
             "colloq": "",
             "plaintext": "High burst damage, good against fragile foes",
             "from": [
@@ -11771,7 +11770,7 @@
         },
         "6662": {
             "name": "Iceborn Gauntlet",
-            "description": "<mainText><stats><attention>300</attention> Health<br><attention>50</attention> Armor<br><attention>15</attention> Ability Haste</stats><br><br><passive>Spellblade</passive> (0s)<br>After using an Ability, your next Attack is enhanced with additional damage and creates a frost field for 2s. Enemies that move across the field are <status>Slowed</status>.</mainText>",
+            "description": "<mainText><stats><attention>300</attention> Health<br><attention>50</attention> Armor<br><attention>15</attention> Ability Haste</stats><br><br><passive>Spellblade</passive><br>After using an Ability, your next Attack is enhanced with additional damage and creates a frost field for 2s. Enemies that move across the field are <status>Slowed</status>.</mainText>",
             "colloq": "",
             "plaintext": "High Magic Resist.Passively slow nearby enemies. When spells are cast near you, release a wave of energy that damages and slows.",
             "from": [
@@ -11820,7 +11819,7 @@
         },
         "6664": {
             "name": "Hollow Radiance",
-            "description": "<mainText><stats><attention>600</attention> Health<br><attention>40</attention> Magic Resist<br><attention>100%</attention> Base Health Regen</stats><br><br><passive>Immolate</passive><br>Taking or dealing damage causes you to begin dealing <magicDamage>0 magic damage</magicDamage> per second to nearby enemies (increased by 25% against minions) for 3 seconds.<br><br><passive>Desolate</passive><br>Killing an enemy deals <magicDamage>0 magic damage</magicDamage> in an area around them.<br><br></mainText>",
+            "description": "<mainText><stats><attention>600</attention> Health<br><attention>40</attention> Magic Resist<br><attention>100%</attention> Base Health Regen</stats><br><br><passive>Immolate</passive><br>Taking or dealing damage causes you to begin dealing magic damage to nearby enemies.<br><br><passive>Desolate</passive><br>Killing an enemy deals magic damage in an area around them.<br><br></mainText>",
             "colloq": "",
             "plaintext": "Immobilize enemies to gain a shield. Activate to run faster at opponents.",
             "from": [
@@ -12109,7 +12108,7 @@
         },
         "6673": {
             "name": "Immortal Shieldbow",
-            "description": "<mainText><stats><attention>50</attention> Attack Damage<br><attention>20%</attention> Critical Strike Chance<br><attention>12%</attention> Life Steal</stats><br><br><passive>Lifeline</passive> (0s)<br>When taking damage that would reduce you below 30% Health, gain a <shield>0 Shield</shield> for 3s.</mainText>",
+            "description": "<mainText><stats><attention>50</attention> Attack Damage<br><attention>20%</attention> Critical Strike Chance<br><attention>12%</attention> Life Steal</stats><br><br><passive>Lifeline</passive><br>When taking damage that would reduce you below a certain amount of Health, gain a Shield.</mainText>",
             "colloq": "",
             "plaintext": "",
             "from": [
@@ -12431,7 +12430,7 @@
         },
         "6693": {
             "name": "Prowler's Claw",
-            "description": "<mainText><stats><attention>55</attention> Attack Damage<br><attention>22</attention> Lethality<br><attention>15</attention> Ability Haste</stats><br><br><passive>Preparation</passive><br>Gain Lethality outside of combat. <br><br><passive>Extraction</passive><br>Gain Move Speed after killing champions.</mainText>",
+            "description": "<mainText><stats><attention>55</attention> Attack Damage<br><attention>22</attention> Lethality<br><attention>15</attention> Ability Haste</stats><br><br><passive>Eminence</passive><br>When a champion that you have damaged dies, gain Attack Damage.<br><br><passive>Ego</passive><br>Killing champions creates a statue of yourself, if you already have a statue it upgrades.</mainText>",
             "colloq": "",
             "plaintext": "",
             "from": [
@@ -12600,7 +12599,7 @@
         },
         "6697": {
             "name": "Hubris",
-            "description": "<mainText><stats><attention>60</attention> Attack Damage<br><attention>18</attention> Lethality<br><attention>15</attention> Ability Haste</stats><br><br><passive>Eminence</passive><br>Gain temporary AD based on champion kills on kill.<br><br><passive>Ego</passive><br>Gain an upgrading statue of yourself on kill.</mainText>",
+            "description": "<mainText><stats><attention>60</attention> Attack Damage<br><attention>18</attention> Lethality<br><attention>15</attention> Ability Haste</stats><br><br><passive>Eminence</passive><br>Gain temporary AD based on champion kills on kill.</mainText>",
             "colloq": "",
             "plaintext": "",
             "from": [
@@ -12782,7 +12781,7 @@
         },
         "6701": {
             "name": "Opportunity",
-            "description": "<mainText><stats><attention>55</attention> Attack Damage<br><attention>18</attention> Lethality<br><attention>5%</attention> Move Speed</stats><br><br><passive>Preparation</passive><br>Gain Lethality outside of combat. <br><br><passive>Extraction</passive><br>Gain Move Speed after killing champions.</mainText>",
+            "description": "<mainText><stats><attention>55</attention> Attack Damage<br><attention>18</attention> Lethality<br><attention>5%</attention> Move Speed</stats><br><br><passive>Eminence</passive><br>When a champion that you have damaged dies, gain Attack Damage.<br><br><passive>Ego</passive><br>Killing champions creates a statue of yourself, if you already have a statue it upgrades.</mainText>",
             "colloq": "",
             "plaintext": "",
             "from": [
@@ -12828,7 +12827,7 @@
         },
         "7000": {
             "name": "Sandshrike's Claw",
-            "description": "<mainText><stats><ornnBonus>75</ornnBonus> Attack Damage<br><ornnBonus>26</ornnBonus> Lethality<br><ornnBonus>25</ornnBonus> Ability Haste</stats><br><br><passive>Preparation</passive><br>Gain Lethality outside of combat. <br><br><passive>Extraction</passive><br>Gain Move Speed after killing champions.</mainText>",
+            "description": "<mainText><stats><ornnBonus>75</ornnBonus> Attack Damage<br><ornnBonus>26</ornnBonus> Lethality<br><ornnBonus>25</ornnBonus> Ability Haste</stats><br><br><passive>Eminence</passive><br>When a champion that you have damaged dies, gain Attack Damage.<br><br><passive>Ego</passive><br>Killing champions creates a statue of yourself, if you already have a statue it upgrades.</mainText>",
             "colloq": "",
             "plaintext": "",
             "from": [
@@ -12997,7 +12996,7 @@
         },
         "7004": {
             "name": "Enmity of the Masses",
-            "description": "<mainText><stats><ornnBonus>110</ornnBonus> Ability Power<br><ornnBonus>800</ornnBonus> Mana<br><ornnBonus>30</ornnBonus> Ability Haste</stats><br><br><passive>Scorn</passive><br>Your Ultimate spells gain Ability Haste.<br><br><passive>Hatefog</passive><br>Damaging a champion with your Ultimate burns the ground beneath them, dealing damage and reducing their Magic Resist. <br></mainText>",
+            "description": "<mainText><stats><ornnBonus>110</ornnBonus> Ability Power<br><ornnBonus>800</ornnBonus> Mana<br><ornnBonus>35</ornnBonus> Ability Haste</stats><br><br><passive>Scorn</passive><br>Your Ultimate spells gain Ability Haste.<br><br><passive>Hatefog</passive><br>Damaging a champion with your Ultimate burns the ground beneath them, dealing damage and reducing their Magic Resist. <br></mainText>",
             "colloq": "",
             "plaintext": "",
             "from": [
@@ -13039,7 +13038,7 @@
         },
         "7005": {
             "name": "Frozen Fist",
-            "description": "<mainText><stats><ornnBonus>400</ornnBonus> Health<br><ornnBonus>60</ornnBonus> Armor<br><ornnBonus>25</ornnBonus> Ability Haste</stats><br><br><passive>Spellblade</passive> (0s)<br>After using an Ability, your next Attack is enhanced with additional damage and creates a frost field for 2s. Enemies that move across the field are <status>Slowed</status>.</mainText>",
+            "description": "<mainText><stats><ornnBonus>400</ornnBonus> Health<br><ornnBonus>60</ornnBonus> Armor<br><ornnBonus>25</ornnBonus> Ability Haste</stats><br><br><passive>Spellblade</passive><br>After using an Ability, your next Attack is enhanced with additional damage and creates a frost field for 2s. Enemies that move across the field are <status>Slowed</status>.</mainText>",
             "colloq": "",
             "plaintext": "",
             "from": [
@@ -13174,7 +13173,7 @@
         },
         "7008": {
             "name": "Ataraxia",
-            "description": "<mainText><stats><ornnBonus>75</ornnBonus> Attack Damage<br><ornnBonus>27</ornnBonus> Lethality<br><ornnBonus>20</ornnBonus> Ability Haste</stats><br><br><passive>Preparation</passive><br>Gain Lethality outside of combat. <br><br><passive>Extraction</passive><br>Gain Move Speed after killing champions.</mainText>",
+            "description": "<mainText><stats><ornnBonus>75</ornnBonus> Attack Damage<br><ornnBonus>27</ornnBonus> Lethality<br><ornnBonus>20</ornnBonus> Ability Haste</stats><br><br><passive>Eminence</passive><br>When a champion that you have damaged dies, gain Attack Damage.<br><br><passive>Ego</passive><br>Killing champions creates a statue of yourself, if you already have a statue it upgrades.</mainText>",
             "colloq": "",
             "plaintext": "",
             "from": [
@@ -13305,7 +13304,7 @@
         },
         "7011": {
             "name": "Upgraded Aeropack",
-            "description": "<mainText><stats><ornnBonus>85</ornnBonus> Ability Power<br><ornnBonus>450</ornnBonus> Health<br><ornnBonus>20</ornnBonus> Ability Haste</stats><br><br><active>ACTIVE</active>} (0s)<br><active>Supersonic</active><br>Dash in target direction, unleashing an arc of magic missiles that deal magic damage.</mainText>",
+            "description": "<mainText><stats><ornnBonus>85</ornnBonus> Ability Power<br><ornnBonus>450</ornnBonus> Health<br><ornnBonus>20</ornnBonus> Ability Haste</stats><br><br><active>ACTIVE</active>}<br><active>Supersonic</active><br>Dash in target direction, unleashing an arc of magic missiles that deal magic damage.</mainText>",
             "colloq": "",
             "plaintext": "",
             "from": [
@@ -13391,7 +13390,7 @@
         },
         "7013": {
             "name": "Force of Arms",
-            "description": "<mainText><stats><ornnBonus>120</ornnBonus> Ability Power<br><ornnBonus>950</ornnBonus> Mana<br><ornnBonus>30</ornnBonus> Ability Haste</stats><br><br><passive>Load</passive><br>Gain a Shot Charge every few seconds.<br><br><passive>Fire</passive><br>Damaging Abilities consume all Shot Charges to deal an additional magic damage to the target and one additional nearby target per charge. If there are insufficient targets in range, for each remaining shot, repeat the damage on the primary target.</mainText>",
+            "description": "<mainText><stats><ornnBonus>120</ornnBonus> Ability Power<br><ornnBonus>950</ornnBonus> Mana<br><ornnBonus>35</ornnBonus> Ability Haste</stats><br><br><passive>Load</passive><br>Gain a Shot Charge every few seconds.<br><br><passive>Fire</passive><br>Damaging Abilities consume all Shot Charges to deal an additional magic damage to the target and one additional nearby target per charge. If there are insufficient targets in range, for each remaining shot, repeat the damage on the primary target.</mainText>",
             "colloq": "",
             "plaintext": "",
             "from": [
@@ -13529,7 +13528,7 @@
         },
         "7016": {
             "name": "Dreamshatter",
-            "description": "<mainText><stats><ornnBonus>60</ornnBonus> Attack Damage<br><ornnBonus>40%</ornnBonus> Attack Speed<br><ornnBonus>600</ornnBonus> Health</stats><br><br><passive>Cleave</passive><br>Attacks deal <physicalDamage>{{ Item_Melee_Ranged_Split_Dynamic }} physical damage</physicalDamage> to nearby enemies.<br><br><passive>Temper</passive><br>Dealing <physicalDamage>physical damage</physicalDamage> grants <speed>20 Move Speed</speed> for 2 seconds.{{ Item_OnActivation }} {{ Item_Cooldown }}<br><active>Breaking Shockwave</active><br>Deal <physicalDamage>0 phyiscal damage</physicalDamage> and <status>Slow</status> nearby enemies by 35% and gain <speed>35% bonus Move Speed</speed> per champion hit that decays over 3 seconds. Can move while casting.</mainText>",
+            "description": "<mainText><stats><ornnBonus>60</ornnBonus> Attack Damage<br><ornnBonus>40%</ornnBonus> Attack Speed<br><ornnBonus>600</ornnBonus> Health</stats><br><br><passive>Cleave</passive><br>Attacks deal physical damage to nearby enemies.<br><br><passive>Temper</passive><br>Dealing <physicalDamage>physical damage</physicalDamage> grants Move Speed.<br><br><active>ACTIVE</active><br><active>Breaking Shockwave</active><br>Deal physical damage and <status>Slow</status> nearby enemies and gain Move Speed per champion. Can move while casting.</mainText>",
             "colloq": "",
             "plaintext": "",
             "from": [
@@ -13555,7 +13554,6 @@
                 "Health",
                 "Damage",
                 "AttackSpeed",
-                "CooldownReduction",
                 "Slow",
                 "NonbootsMovement"
             ],
@@ -13811,7 +13809,7 @@
         },
         "7022": {
             "name": "Certainty",
-            "description": "<mainText><stats><ornnBonus>70</ornnBonus> Attack Damage<br><ornnBonus>27</ornnBonus> Lethality<br><ornnBonus>8%</ornnBonus> Move Speed</stats><br><br><passive>Preparation</passive><br>Gain Lethality outside of combat. <br><br><passive>Extraction</passive><br>Gain Move Speed after killing champions.</mainText>",
+            "description": "<mainText><stats><ornnBonus>70</ornnBonus> Attack Damage<br><ornnBonus>27</ornnBonus> Lethality<br><ornnBonus>8%</ornnBonus> Move Speed</stats><br><br><passive>Eminence</passive><br>When a champion that you have damaged dies, gain Attack Damage.<br><br><passive>Ego</passive><br>Killing champions creates a statue of yourself, if you already have a statue it upgrades.</mainText>",
             "colloq": "",
             "plaintext": "",
             "from": [
@@ -14120,7 +14118,7 @@
         },
         "7029": {
             "name": "Youmuu's Wake",
-            "description": "<mainText><stats><ornnBonus>75</ornnBonus> Attack Damage<br><ornnBonus>26</ornnBonus> Lethality</stats><br><br><passive>Haunt</passive> <br>Gain <speed>{{Item_Melee_Ranged_Split_Dynamic}} Move Speed</speed> while out of combat.<br>{{ Item_OnActivation }} {{ Item_Cooldown }}<br><active>Wraith Step</active><br>Gain <speed>Move Speed</speed> and <keyword>Ghosting</keyword>.</mainText>",
+            "description": "<mainText><stats><ornnBonus>75</ornnBonus> Attack Damage<br><ornnBonus>26</ornnBonus> Lethality</stats><br><br><passive>Haunt</passive> <br>Gain <speed>Move Speed</speed> while out of combat.<br><br><br><active>ACTIVE</active> (0s)<br><active>Wraith Step</active><br>Gain <speed>Move Speed</speed> and <keyword>Ghosting</keyword>.</mainText>",
             "colloq": "",
             "plaintext": "",
             "from": [
@@ -14538,10 +14536,10 @@
             },
             "effect": {
                 "Effect1Amount": "-0.2",
-                "Effect2Amount": "0.04",
+                "Effect2Amount": "0.05",
                 "Effect3Amount": "6",
-                "Effect4Amount": "6",
-                "Effect5Amount": "0.24",
+                "Effect4Amount": "5",
+                "Effect5Amount": "0.25",
                 "Effect6Amount": "0",
                 "Effect7Amount": "0",
                 "Effect8Amount": "0",
@@ -14725,7 +14723,7 @@
         },
         "7042": {
             "name": "The Baron's Gift",
-            "description": "<mainText><stats><ornnBonus>120</ornnBonus> Ability Power<br><ornnBonus>60%</ornnBonus> Attack Speed<br><ornnBonus>20</ornnBonus> Ability Haste</stats><br><br><passive>Icathian Bite</passive><br>Attacks apply <magicDamage>0 magic damage</magicDamage> <OnHit>On-Hit</OnHit>.</mainText>",
+            "description": "<mainText><stats><ornnBonus>120</ornnBonus> Ability Power<br><ornnBonus>60%</ornnBonus> Attack Speed<br><ornnBonus>20</ornnBonus> Ability Haste</stats><br><br><passive>Icathian Bite</passive><br>Attacks apply <magicDamage>magic damage</magicDamage> <OnHit>On-Hit</OnHit>.</mainText>",
             "colloq": "",
             "plaintext": "",
             "from": [
@@ -14804,7 +14802,7 @@
         },
         "8001": {
             "name": "Anathema's Chains",
-            "description": "<mainText><stats><attention>650</attention> Health<br><attention>20</attention> Ability Haste</stats><br><br><passive>Vendetta</passive><br>You gain Vendetta stacks over time Each stack of Vendetta grants you 1% reduced damage from your Nemesis.<br><br><passive>Vengeance</passive><br>At maximum stacks, your Nemesis has reduced Tenacity while near you.<br><br><active>ACTIVE</active> (0s)<br><active>Vow</active><br>Choose your <passive>Nemesis</passive>.</mainText>",
+            "description": "<mainText><stats><attention>650</attention> Health<br><attention>20</attention> Ability Haste</stats><br><br><passive>Vendetta</passive><br>You gain Vendetta stacks over time Each stack of Vendetta grants you 1% reduced damage from your Nemesis.<br><br><passive>Vengeance</passive><br>At maximum stacks, your Nemesis has reduced Tenacity while near you.<active>Active -</active><active>Vow</active><br>Choose a Nemesis to start building a Vendetta.</mainText>",
             "colloq": "",
             "plaintext": "",
             "from": [

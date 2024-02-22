@@ -85,7 +85,7 @@
         },
         "Q": {
             "_rawTooltip": {
-                "fullTooltip": "Lulu and Pix each fire a piercing bolt dealing [[0]] and [[1]] by 80%, decaying over 2 seconds.<br /><br />Enemies take 25% more damage from additional bolts.",
+                "fullTooltip": "Lulu and Pix each fire a piercing bolt dealing [[0]] and [[1]] by 80%, decaying over 2 seconds.<br /><br />Enemies take 50% more damage from additional bolts.",
                 "parseInfo": [
                     {
                         "text": {
@@ -161,7 +161,7 @@
                     },
                     {
                         "text": {
-                            "text": "75/115/155/195/235 {{0}} Shield",
+                            "text": "80/125/170/215/260 {{0}} Shield",
                             "scaleHolders": [
                                 {
                                     "scale": "(+55% AP)",
@@ -173,7 +173,7 @@
                     },
                     {
                         "text": {
-                            "text": "80/120/160/200/240 {{0}} magic damage",
+                            "text": "80/125/170/215/260 {{0}} magic damage",
                             "scaleHolders": [
                                 {
                                     "scale": "(+50% AP)",
@@ -198,7 +198,7 @@
         },
         "R": {
             "_rawTooltip": {
-                "fullTooltip": "Lulu enlarges an ally, [[0]] surrounding enemies for 0.75 seconds. The enlarged ally gains [[1]] and [[2]] surrounding enemies by 30/45% for 7 seconds.",
+                "fullTooltip": "Lulu enlarges an ally, [[0]] surrounding enemies for 0.75 seconds. The enlarged ally gains [[1]] and [[2]] surrounding enemies by 30/45/60% for 7 seconds.",
                 "parseInfo": [
                     {
                         "text": {
@@ -212,7 +212,7 @@
                             "text": "275/425/575 {{0}} max Health",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+45% AP)",
+                                    "scale": "(+55% AP)",
                                     "scaleId": "AP"
                                 }
                             ]
@@ -688,6 +688,62 @@
                 ]
             },
             "R": ""
+        },
+        "14.4": {
+            "B": "",
+            "P": "",
+            "Q": {
+                "SpellName": "Q - Glitterlance",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Second Bolt Damage: ",
+                            "Before": "25% of Primary Bolt damage",
+                            "Indicator": " ⇒ ",
+                            "After": "50% of Primary Bolt damage"
+                        }
+                    }
+                ]
+            },
+            "W": "",
+            "E": {
+                "SpellName": "E - Help, Pix!",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Magic Damage: ",
+                            "Before": "80/120/160/200/240 (+50% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "80/125/170/215/260 (+50% AP)"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Shield Value: ",
+                            "Before": "75/115/155/195/235 (+55% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "80/125/170/215/260 (+55% AP)"
+                        }
+                    }
+                ]
+            },
+            "R": {
+                "SpellName": "R - Wild Growth",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Bonus Health: ",
+                            "Before": "275/525/575 (+45% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "275/525/575 (+55% AP)"
+                        }
+                    }
+                ]
+            }
         }
     },
     "ChangePatches": [
@@ -702,7 +758,13 @@
         "12.10",
         "12.18",
         "13.12",
-        "13.16"
+        "13.16",
+        "14.4"
     ],
-    "ChampionName": "Lulu"
+    "ChampionName": "Lulu",
+    "Balance": {
+        "14.4": [
+            "buff"
+        ]
+    }
 }

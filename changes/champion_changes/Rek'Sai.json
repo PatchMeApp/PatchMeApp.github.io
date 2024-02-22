@@ -17,8 +17,8 @@
             "increment": 2.05
         },
         "hpRegen": {
-            "base": 7.5,
-            "increment": 0.65
+            "base": 2.5,
+            "increment": 0.5
         },
         "mpRegen": {
             "base": 0,
@@ -29,7 +29,7 @@
             "increment": 0.02
         },
         "ms": {
-            "base": 335,
+            "base": 340,
             "increment": 0
         },
         "attackDamage": {
@@ -49,12 +49,8 @@
                 "parseInfo": [
                     {
                         "text": {
-                            "text": "15 − 125 {{0}} + 2% − 12% {{1}} maximum health",
+                            "text": "12-20% {{0}} maximum health",
                             "scaleHolders": [
-                                {
-                                    "scale": "(based on level)",
-                                    "scaleId": "level"
-                                },
                                 {
                                     "scale": "(based on level)",
                                     "scaleId": "level"
@@ -69,7 +65,7 @@
         },
         "Q": {
             "_rawTooltip": {
-                "fullTooltip": "[[0]]: Rek'Sai's next 3 Attacks within 3 seconds deal an additional [[1]] to nearby enemies. Basic attacks refresh the duration of this ability.[[2]]: Rek'Sai launches a burst of void-charged earth that explodes on the first enemy hit, dealing [[3]] in a small area. It also relveals non-stealthed enemies for 5 seconds. If it hits a Champion, it generates [[4]]",
+                "fullTooltip": "[[0]]: Rek'Sai's next 3 Attacks within 3 seconds gain [[1]] and deal an additional [[2]] to nearby enemies. Basic attacks refresh the duration of this ability.[[3]]: Rek'Sai launches a burst of void-charged earth that explodes on the first enemy hit, dealing [[4]] in a small area. It also relveals non-stealthed enemies for 5 seconds. If it hits a Champion, it generates [[5]]",
                 "parseInfo": [
                     {
                         "text": {
@@ -77,6 +73,13 @@
                             "scaleHolders": []
                         },
                         "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "45%",
+                            "scaleHolders": []
+                        },
+                        "type": "attackSpeed"
                     },
                     {
                         "text": {
@@ -94,10 +97,10 @@
                     },
                     {
                         "text": {
-                            "text": "60/95/130/165/200 {{0}} {{1}} physical damage",
+                            "text": "50/80/110/140/170 {{0}} {{1}} physical damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+ 50% bonus AD)",
+                                    "scale": "(+ 25% bonus AD)",
                                     "scaleId": "AD"
                                 },
                                 {
@@ -117,13 +120,13 @@
                     }
                 ]
             },
-            "cooldown": "4/3.5/3/2.5/2",
+            "cooldown": "18/17/16/15/14 (Burrowed: 10s)",
             "cost": "No Cost",
             "name": "Queen's Wrath / Prey Seeker"
         },
         "W": {
             "_rawTooltip": {
-                "fullTooltip": "[[0]] Rek'sai burrows into the ground, gaining access to new Abilities, and [[1]], but cannot Attack. She has reduced vision range, but nearby enemies that move and are otherwise unseen will have their positions revealed to Rek'sai and her allies.",
+                "fullTooltip": "[[0]] Rek'sai burrows into the ground, gaining access to new Abilities, and [[1]], but cannot Attack. She has reduced vision range, but nearby enemies that move and are otherwise unseen will have their positions revealed to Rek'sai and her allies.<br /><br />[[2]] Rek'Sai unburrows. dealing [[3]] to all nearby enemies. [[4]] her primary target and nearby Champions for Is. Enemies can only be affected by this Ability once every 10 seconds.",
                 "parseInfo": [
                     {
                         "text": {
@@ -134,7 +137,7 @@
                     },
                     {
                         "text": {
-                            "text": "5 - 15 {{0}} Move Speed",
+                            "text": "5/10/15/20/25 {{0}} Move Speed",
                             "scaleHolders": [
                                 {
                                     "scale": "(based on champion level)",
@@ -143,6 +146,32 @@
                             ]
                         },
                         "type": "speed"
+                    },
+                    {
+                        "text": {
+                            "text": "Burrowed:",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "50/75/100/125/150 {{0}} magic damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+80% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "magicDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "Knocking Up",
+                            "scaleHolders": []
+                        },
+                        "type": "status"
                     }
                 ]
             },
@@ -152,7 +181,7 @@
         },
         "E": {
             "_rawTooltip": {
-                "fullTooltip": "[[0]] Rek'Sai bites a target, dealing [[1]]. At max [[2]], the bite deals [[3]] instead.",
+                "fullTooltip": "[[0]] Rek'Sai bites a target, dealing [[1]]. At max [[2]], the bite deals [[3]] instead.<br /><br /><keywordMajor>Burrowed:<keywordMajor> Rek'Sai tunnels forward. leaving two connected tunnel entrances for IO minutes. Rek'Sai can click on one of the entrances to tunnel to the other one, and tunnels each have a 7 second Cooldown between uses. Rek'Sai can have up to 8 tunnels at once.",
                 "parseInfo": [
                     {
                         "text": {
@@ -194,7 +223,7 @@
                     }
                 ]
             },
-            "cooldown": "12",
+            "cooldown": "18/17/16/15/14 (Tunnel Reuse: 6/5/4/3/2)",
             "cost": "No Cost",
             "name": "Furious Bite / Tunnel"
         },
@@ -204,10 +233,10 @@
                 "parseInfo": [
                     {
                         "text": {
-                            "text": "100/250/400 {{0}} plus 20/25% missing Health physical damage",
+                            "text": "100/250/400 {{0}} plus 20/25/30% missing Health physical damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+175% Bonus AD)",
+                                    "scale": "(+100% Bonus AD)",
                                     "scaleId": "AD"
                                 }
                             ]
@@ -637,6 +666,269 @@
                     }
                 ]
             }
+        },
+        "14.4": {
+            "B": {
+                "SpellName": "Base Stats",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Base Movement Speed: ",
+                            "Before": "335",
+                            "Indicator": " ⇒ ",
+                            "After": "340"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Base Health Regeneration: ",
+                            "Before": "7.5",
+                            "Indicator": " ⇒ ",
+                            "After": "2.5"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Health Regeneration Growth: ",
+                            "Before": "0.65",
+                            "Indicator": " ⇒ ",
+                            "After": "0.5"
+                        }
+                    }
+                ]
+            },
+            "P": {
+                "SpellName": "Passive - Fury of the Xer'Sai",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Maximum Healing: ",
+                            "Before": "10 (+2-10% (based on level) maximum health)",
+                            "Indicator": " ⇒ ",
+                            "After": "12-20% (based on level) maximum health"
+                        }
+                    },
+                    {
+                        "Tag": "NEW",
+                        "Change": {
+                            "Attribute": "Fury Generation from Non-Champions: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "Attacks against minions, plants, and wards restore 50% less Fury."
+                        }
+                    }
+                ]
+            },
+            "Q": {
+                "SpellName": "Q - Queen's Wrath (Unburrowed)",
+                "Changes": [
+                    {
+                        "Tag": "NEW",
+                        "Change": {
+                            "Attribute": "Attack Type: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "Queen's Wrath now functions as a basic attack instead of a spell, meaning total attack time and time between attacks is based on Rek'Sai's actual attack speed."
+                        }
+                    },
+                    {
+                        "Tag": "NEW",
+                        "Change": {
+                            "Attribute": "Bonus Attack Speed: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "Queen's Wrath now grants 45% bonus attack speed for its 3 attacks. (Note: This results in a similar-feeling attack flow to the old spell-based version.)"
+                        }
+                    }
+                ]
+            },
+            "W": {
+                "SpellName": "W - Burrow",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Bonus Movement Speed While Burrowed: ",
+                            "Before": "5/10/15 (levels 1/6/11)",
+                            "Indicator": " ⇒ ",
+                            "After": "5/10/15/20/25 (based on rank)"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Vision Radius: ",
+                            "Before": "25%",
+                            "Indicator": " ⇒ ",
+                            "After": "35%"
+                        }
+                    }
+                ]
+            },
+            "E": {
+                "SpellName": "E - Tunnel",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Cooldown: ",
+                            "Before": "26/24/22/20/18 seconds",
+                            "Indicator": " ⇒ ",
+                            "After": "18/17/16/15/14 seconds"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Tunnel Reuse Cooldown: ",
+                            "Before": "10/8/6/4/2 seconds",
+                            "Indicator": " ⇒ ",
+                            "After": "6/5/4/3/2 seconds"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Manual Cast Dash Speed: ",
+                            "Before": "550 + Movement Speed from Boots",
+                            "Indicator": " ⇒ ",
+                            "After": "500 + Total Movement Speed (Note: Now matches right-click dash speed.)"
+                        }
+                    },
+                    {
+                        "Tag": "REMOVED",
+                        "Change": {
+                            "Attribute": "QoL Adjustment: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "Removed the 0.05 second hitch when manually casting Tunnel"
+                        }
+                    },
+                    {
+                        "Tag": "NEW",
+                        "Change": {
+                            "Attribute": "QoL Adjustment: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "Rek'Sai begins taking already-placed tunnels roughly 20% faster (Note: Final dash speed unchanged.)"
+                        }
+                    }
+                ]
+            },
+            "R": {
+                "SpellName": "R - Void Rush",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Physical Damage: ",
+                            "Before": "100/250/400 (+175% bonus AD) (+20/25/30% of target's missing health)",
+                            "Indicator": " ⇒ ",
+                            "After": "100/250/400 (+100% bonus AD) (+20/25/30% of target's missing health)"
+                        }
+                    }
+                ]
+            },
+            "Q -": {
+                "SpellName": "Q - Prey Seeker (Burrowed)",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Cooldown: ",
+                            "Before": "12/11.5/11/10.5/10 seconds",
+                            "Indicator": " ⇒ ",
+                            "After": "10 seconds at all ranks"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Damage: ",
+                            "Before": "60/95/130/165/200 (+50% bonus AD) (+70% AP) Physical Damage",
+                            "Indicator": " ⇒ ",
+                            "After": "50/80/110/140/170 (+25% bonus AD) (+70% AP) Magic Damage"
+                        }
+                    }
+                ]
+            },
+            "W -": {
+                "SpellName": "W - Unburrow",
+                "Changes": [
+                    {
+                        "Tag": "NEW",
+                        "Change": {
+                            "Attribute": "Grouping is Scary: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "Unburrow now knocks up all champions for 1 second, not just the primary target."
+                        }
+                    },
+                    {
+                        "Tag": "REMOVED",
+                        "Change": {
+                            "Attribute": "Run!: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "Unburrow no longer slows enemies by 40% for 0.5 seconds post-knockup."
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Damage: ",
+                            "Before": "50/85/120/155/190 (+80% bonus AD) Physical Damage",
+                            "Indicator": " ⇒ ",
+                            "After": "50/75/100/125/150 (+80% AP) Magic Damage"
+                        }
+                    }
+                ]
+            },
+            "E -": {
+                "SpellName": "E - Furious Bite",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Physical Damage: ",
+                            "Before": "5/10/15/20/25 (+70% AD)",
+                            "Indicator": " ⇒ ",
+                            "After": "100% of total AD"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "100 Fury Bonus: ",
+                            "Before": "2x Damage as True Damage",
+                            "Indicator": " ⇒ ",
+                            "After": "+6-14% (based on rank) of target's maximum health"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Cooldown: ",
+                            "Before": "12 seconds",
+                            "Indicator": " ⇒ ",
+                            "After": "10 seconds"
+                        }
+                    },
+                    {
+                        "Tag": "NEW",
+                        "Change": {
+                            "Attribute": "Flashy: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "E now displays a cosmetic critical strike when fully empowered."
+                        }
+                    }
+                ]
+            }
         }
     },
     "ChangePatches": [
@@ -649,7 +941,14 @@
         "13.13",
         "13.14",
         "13.16",
-        "13.19"
+        "13.19",
+        "14.4"
     ],
-    "ChampionName": "Rek'Sai"
+    "ChampionName": "Rek'Sai",
+    "Balance": {
+        "14.4": [
+            "adjust",
+            "danger"
+        ]
+    }
 }

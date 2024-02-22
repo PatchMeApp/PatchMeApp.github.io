@@ -9,7 +9,7 @@
             "increment": 43
         },
         "armor": {
-            "base": 39,
+            "base": 35,
             "increment": 5.2
         },
         "spellBlock": {
@@ -64,7 +64,7 @@
                 "parseInfo": [
                     {
                         "text": {
-                            "text": "70/120/170/220/270 {{0}} plus 2/2.5/3/3.5/4% max Health magic damage",
+                            "text": "65/115/165/215/265 {{0}} plus 2/2.5/3/3.5/4% max Health magic damage",
                             "scaleHolders": [
                                 {
                                     "scale": "(+40% AP)",
@@ -188,7 +188,7 @@
         },
         "R": {
             "_rawTooltip": {
-                "fullTooltip": "Maokai summons a colossal wave of brambles and thorns, [[0]] enemies for 0.8 to 2.6 seconds, increasing with distance travelled, and dealing [[1]]. Hitting a champion gives Maokai [[2]], decaying over 2 seconds. ",
+                "fullTooltip": "Maokai summons a colossal wave of brambles and thorns, [[0]] enemies for 0.75 to 2.25 seconds, increasing with distance travelled, and dealing [[1]]. Hitting a champion gives Maokai [[2]], decaying over 2 seconds. ",
                 "parseInfo": [
                     {
                         "text": {
@@ -1002,6 +1002,53 @@
                 ]
             }
         },
+        "14.4": {
+            "B": {
+                "SpellName": "Base Stats",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Base Armor: ",
+                            "Before": "39",
+                            "Indicator": " ⇒ ",
+                            "After": "35"
+                        }
+                    }
+                ]
+            },
+            "P": "",
+            "Q": {
+                "SpellName": "Q - Bramble Smash",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Magic Damage: ",
+                            "Before": "70/120/170/220/270 (+2/2.5/3/3.5/4% of the target's maximum health) (+40% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "65/115/165/215/265 (+2/2.5/3/3.5/4% of the target's maximum health) (+40% AP)"
+                        }
+                    }
+                ]
+            },
+            "W": "",
+            "E": "",
+            "R": {
+                "SpellName": "R - Nature's Grasp",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Root Duration: ",
+                            "Before": "0.8-2.6 seconds (based on distance traveled capped at 1000 units)",
+                            "Indicator": " ⇒ ",
+                            "After": "0.75-2.25 seconds (based on distance traveled capped at 1000 units)"
+                        }
+                    }
+                ]
+            }
+        },
         "12.22": {
             "B": "",
             "P": "",
@@ -1040,12 +1087,16 @@
         "13.1B",
         "13.4",
         "13.15",
-        "14.3"
+        "14.3",
+        "14.4"
     ],
     "ChampionName": "Maokai",
     "Balance": {
         "14.3": [
             "adjust"
+        ],
+        "14.4": [
+            "nerf"
         ]
     }
 }

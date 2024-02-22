@@ -136,7 +136,7 @@
                     },
                     {
                         "text": {
-                            "text": "Attack Speed by 50%",
+                            "text": "Attack Speed by 25%",
                             "scaleHolders": []
                         },
                         "type": "attackSpeed"
@@ -518,6 +518,27 @@
             "W": "",
             "E": "",
             "R": ""
+        },
+        "14.4": {
+            "B": "",
+            "P": "",
+            "Q": "",
+            "W": {
+                "SpellName": "W - Riposte",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Attack Speed Slow: ",
+                            "Before": "50% for 2 seconds",
+                            "Indicator": " ⇒ ",
+                            "After": "25% for 2 seconds"
+                        }
+                    }
+                ]
+            },
+            "E": "",
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -527,7 +548,13 @@
         "11.16",
         "12.10",
         "12.12",
-        "13.1"
+        "13.1",
+        "14.4"
     ],
-    "ChampionName": "Fiora"
+    "ChampionName": "Fiora",
+    "Balance": {
+        "14.4": [
+            "nerf"
+        ]
+    }
 }

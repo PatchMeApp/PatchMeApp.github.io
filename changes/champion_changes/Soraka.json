@@ -56,7 +56,7 @@
                     },
                     {
                         "text": {
-                            "text": "70% bonus movement speed",
+                            "text": "90% bonus movement speed",
                             "scaleHolders": []
                         },
                         "type": "speed"
@@ -97,7 +97,7 @@
                     },
                     {
                         "text": {
-                            "text": "50/65/80/95/110 {{0}} Health",
+                            "text": "60/75/90/105/120 {{0}} Health",
                             "scaleHolders": [
                                 {
                                     "scale": "(+30% AP)",
@@ -238,7 +238,7 @@
                     }
                 ]
             },
-            "cooldown": "160/145/130",
+            "cooldown": "150/135/120",
             "cost": "100 Mana",
             "name": "Wish"
         }
@@ -704,6 +704,66 @@
                     }
                 ]
             }
+        },
+        "14.4": {
+            "B": "",
+            "P": {
+                "SpellName": "Passive - Salvation",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Bonus Movement Speed: ",
+                            "Before": "70%",
+                            "Indicator": " ⇒ ",
+                            "After": "90%"
+                        }
+                    }
+                ]
+            },
+            "Q": {
+                "SpellName": "Q - Starcall",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Total Heal: ",
+                            "Before": "50/65/80/95/110 (+30% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "60/75/90/105/120 (+30% AP)"
+                        }
+                    }
+                ]
+            },
+            "W": "",
+            "E": {
+                "SpellName": "E - Equinox",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Bugfix: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "E now silences enemies in the area instantly rather than after a variable delay."
+                        }
+                    }
+                ]
+            },
+            "R": {
+                "SpellName": "R - Wish",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Cooldown: ",
+                            "Before": "160/145/130 seconds",
+                            "Indicator": " ⇒ ",
+                            "After": "150/135/120 seconds"
+                        }
+                    }
+                ]
+            }
         }
     },
     "ChangePatches": [
@@ -717,7 +777,13 @@
         "11.19",
         "12.8",
         "12.10",
-        "12.12"
+        "12.12",
+        "14.4"
     ],
-    "ChampionName": "Soraka"
+    "ChampionName": "Soraka",
+    "Balance": {
+        "14.4": [
+            "buff"
+        ]
+    }
 }

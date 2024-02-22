@@ -177,14 +177,14 @@
                 "parseInfo": [
                     {
                         "text": {
-                            "text": "70/90/110/130/150 {{0}} {{1}} physical damage",
+                            "text": "50/80/110/140/170 {{0}} {{1}} physical damage",
                             "scaleHolders": [
                                 {
                                     "scale": "(+25% AD)",
                                     "scaleId": "AD"
                                 },
                                 {
-                                    "scale": "(+35% AP)",
+                                    "scale": "(+20% AP)",
                                     "scaleId": "AP"
                                 }
                             ]
@@ -200,10 +200,14 @@
                     },
                     {
                         "text": {
-                            "text": "25/40/55/70/85{{0}} physical damage",
+                            "text": "25/40/55/70/85 {{0}} {{1}} physical damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+ 65% AP)",
+                                    "scale": "(+25% bonus AD)",
+                                    "scaleId": "AD"
+                                },
+                                {
+                                    "scale": "(+80% AP)",
                                     "scaleId": "AP"
                                 }
                             ]
@@ -226,7 +230,7 @@
                     }
                 ]
             },
-            "cooldown": "13/12.5/12/11.5/11",
+            "cooldown": "14/13/12/11/10",
             "cost": "60 Mana",
             "name": "Achooo!"
         },
@@ -336,10 +340,90 @@
             "W": "",
             "E": "",
             "R": ""
+        },
+        "14.4": {
+            "B": "",
+            "P": "",
+            "Q": {
+                "SpellName": "Q - Super Scorcher Breath",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Fireballs at 125 Stacks: ",
+                            "Before": "2 (+1 per 100 Dragon Patience Stacks)",
+                            "Indicator": " ⇒ ",
+                            "After": "1 (+1 per 67 Dragon Patience Stacks)"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "QoL Update: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "If a minion dies while Smolder's Q is in flight towards it, Smolder will still receive a Dragon Patience stack."
+                        }
+                    }
+                ]
+            },
+            "W": {
+                "SpellName": "W - Achooo!",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Cooldown: ",
+                            "Before": "13/12.5/12/11.5/11 seconds",
+                            "Indicator": " ⇒ ",
+                            "After": "14/13/12/11/10 seconds"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Initial Physical Damage: ",
+                            "Before": "70/90/110/130/150 (+25% AD) (+35% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "50/80/110/140/170 (+25% AD) (+20% AP)"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Explosion Physical Damage: ",
+                            "Before": "25/40/55/70/85 (+65% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "25/40/55/70/85 (+25% bonus AD) (+80% AP)"
+                        }
+                    }
+                ]
+            },
+            "E": "",
+            "R": {
+                "SpellName": "R - MMOOOMMMM!",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Fiery Fury: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "Smolder's Mom will no longer stop if Smolder dies. But she will be VERY angry. Shame on you."
+                        }
+                    }
+                ]
+            }
         }
     },
     "ChangePatches": [
-        "14.2"
+        "14.2",
+        "14.4"
     ],
-    "ChampionName": "Smolder"
+    "ChampionName": "Smolder",
+    "Balance": {
+        "14.4": [
+            "adjust"
+        ]
+    }
 }

@@ -10,7 +10,7 @@
         },
         "armor": {
             "base": 34,
-            "increment": 5.2
+            "increment": 5
         },
         "spellBlock": {
             "base": 30,
@@ -25,7 +25,7 @@
             "increment": 0.45
         },
         "attackSpeed": {
-            "base": 0.625,
+            "base": 0.658,
             "increment": 0.02
         },
         "ms": {
@@ -52,11 +52,11 @@
                             "text": "35 {{0}} {{1}} bonus magic damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+ 14 per 5 chimes collected)",
+                                    "scale": "(+ 10 per 5 chimes collected)",
                                     "scaleId": "collected"
                                 },
                                 {
-                                    "scale": "(+ 30% AP)",
+                                    "scale": "(+ 40% AP)",
                                     "scaleId": "AP"
                                 }
                             ]
@@ -104,11 +104,11 @@
         },
         "Q": {
             "_rawTooltip": {
-                "fullTooltip": "Bard fires an energy bolt, dealing [[0]] to the first two enemies hit. The first target hit is [[1]] by 60% for 1/1.2/1.4/1.6/1.8 second(s).<br /><br />If the bolt hits a second enemy or a wall, any enemies hit are [[2]] for 1/1.2/1.4/1.6/1.8 second(s).<br />",
+                "fullTooltip": "Bard fires an energy bolt, dealing [[0]] to the first two enemies hit. The first target hit is [[1]] by 80% for 1/1.2/1.4/1.6/1.8 second(s).<br /><br />If the bolt hits a second enemy or a wall, any enemies hit are [[2]] for 1/1.2/1.4/1.6/1.8 second(s).<br />",
                 "parseInfo": [
                     {
                         "text": {
-                            "text": "80/125/170/215/260 {{0}} magic damage",
+                            "text": "80/120/160/200/240 {{0}} magic damage",
                             "scaleHolders": [
                                 {
                                     "scale": "(+65% AP)",
@@ -496,6 +496,71 @@
             },
             "E": "",
             "R": ""
+        },
+        "14.4": {
+            "B": {
+                "SpellName": "Base Stats",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Armor Growth: ",
+                            "Before": "5.2",
+                            "Indicator": " ⇒ ",
+                            "After": "5"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Level 1 Attack Speed: ",
+                            "Before": "0.625",
+                            "Indicator": " ⇒ ",
+                            "After": "0.658"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Attack Speed Ratio: ",
+                            "Before": "0.625",
+                            "Indicator": " ⇒ ",
+                            "After": "0.658"
+                        }
+                    }
+                ]
+            },
+            "P": {
+                "SpellName": "Passive - Traveler's Call",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Damage: ",
+                            "Before": "35 (+14 per 5 Chimes)(+30% AP) Bonus Magic Damage",
+                            "Indicator": " ⇒ ",
+                            "After": "35 (+10 per 5 Chimes) (+40% AP) Bonus Magic Damage"
+                        }
+                    }
+                ]
+            },
+            "Q": {
+                "SpellName": "Q - Cosmic Binding",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Damage: ",
+                            "Before": "80/125/170/215/260 (+65% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "80/120/160/200/240 (+80% AP)"
+                        }
+                    }
+                ]
+            },
+            "W": "",
+            "E": "",
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -505,7 +570,13 @@
         "11.10",
         "12.8",
         "12.10",
-        "13.18"
+        "13.18",
+        "14.4"
     ],
-    "ChampionName": "Bard"
+    "ChampionName": "Bard",
+    "Balance": {
+        "14.4": [
+            "nerf"
+        ]
+    }
 }

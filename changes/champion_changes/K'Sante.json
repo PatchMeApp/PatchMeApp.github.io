@@ -1,11 +1,11 @@
 {
     "stats": {
         "hp": {
-            "base": 570,
+            "base": 625,
             "increment": 115
         },
         "mp": {
-            "base": 290,
+            "base": 320,
             "increment": 60
         },
         "armor": {
@@ -146,7 +146,7 @@
         },
         "W": {
             "_rawTooltip": {
-                "fullTooltip": "[[0]] K'Sante raises his weapons defensively for 0.65 - 1.5 second, becoming Unstoppable and reducing incoming damage by 40-65% (based on champion level).<br /><br />[[1]] K'Sante rams forward, dealing [[2]]. K'Sante [[3]] and [[4]] enemies for 1.25 seconds.<br /><br />[[5]] This Ability's Cooldown is refreshed. Damage reduction increases to 50-75% (based on champion level), it only requires 0.5 seconds of charge, its dash speed increases, and it's cooldown decreases.<br />This Ability will no longer [[6]] or [[7]]",
+                "fullTooltip": "[[0]] K'Sante raises his weapons defensively for 0.65 - 1.5 second, becoming Unstoppable and reducing incoming damage by 40-65% (based on champion level).<br /><br />[[1]] K'Sante rams forward, dealing [[2]]. K'Sante [[3]] and [[4]] enemies for 1.25 seconds.<br /><br />[[5]] This Ability's Cooldown is refreshed. Damage reduction increases to 50-75% (based on champion level) and its dash speed increases.<br />This Ability will no longer [[6]] or [[7]]",
                 "parseInfo": [
                     {
                         "text": {
@@ -171,11 +171,11 @@
                                     "scaleId": "AD"
                                 },
                                 {
-                                    "scale": "(+50% bonus armor)",
+                                    "scale": "(+85% bonus armor)",
                                     "scaleId": "armor"
                                 },
                                 {
-                                    "scale": "(+50% bonus magic resistance)",
+                                    "scale": "(+85% bonus magic resistance)",
                                     "scaleId": "resistance"
                                 },
                                 {
@@ -1084,6 +1084,120 @@
             },
             "E": "",
             "R": ""
+        },
+        "14.4": {
+            "B": {
+                "SpellName": "Base Stats",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Base Health: ",
+                            "Before": "570",
+                            "Indicator": " ⇒ ",
+                            "After": "625"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Base Mana: ",
+                            "Before": "290",
+                            "Indicator": " ⇒ ",
+                            "After": "320"
+                        }
+                    }
+                ]
+            },
+            "P": "",
+            "Q": {
+                "SpellName": "Q - Ntofo Strikes",
+                "Changes": [
+                    {
+                        "Tag": "REMOVED",
+                        "Change": {
+                            "Attribute": "All Out of Slows: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "No longer slows during All Out"
+                        }
+                    }
+                ]
+            },
+            "W": {
+                "SpellName": "W - Path Maker",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Bonus Armor Ratio: ",
+                            "Before": "50%",
+                            "Indicator": " ⇒ ",
+                            "After": "85%"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Bonus Magic Resist Ratio: ",
+                            "Before": "50%",
+                            "Indicator": " ⇒ ",
+                            "After": "85%"
+                        }
+                    },
+                    {
+                        "Tag": "REMOVED",
+                        "Change": {
+                            "Attribute": "All Out Minimum Channel Time: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "All Out no longer reduces the minimum channel to 0.5 seconds"
+                        }
+                    },
+                    {
+                        "Tag": "REMOVED",
+                        "Change": {
+                            "Attribute": "All Out Cooldown Reduction: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "All Out no longer reduces the cooldown to 18/16.5/15/13.5/12 seconds"
+                        }
+                    }
+                ]
+            },
+            "E": {
+                "SpellName": "E - Footwork",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Dash Speed: ",
+                            "Before": "1500",
+                            "Indicator": " ⇒ ",
+                            "After": "900"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Ally Dash Speed: ",
+                            "Before": "1800",
+                            "Indicator": " ⇒ ",
+                            "After": "1100 + Movement Speed"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "All Out Dash Speed: ",
+                            "Before": "2100",
+                            "Indicator": " ⇒ ",
+                            "After": "1450"
+                        }
+                    }
+                ]
+            },
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -1096,12 +1210,17 @@
         "13.21",
         "13.22",
         "13.23",
-        "13.24"
+        "13.24",
+        "14.4"
     ],
     "ChampionName": "K'Sante",
     "Balance": {
         "13.24": [
             "buff"
+        ],
+        "14.4": [
+            "adjust",
+            "danger"
         ]
     }
 }

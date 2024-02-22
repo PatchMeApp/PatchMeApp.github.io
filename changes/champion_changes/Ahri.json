@@ -2,7 +2,7 @@
     "stats": {
         "hp": {
             "base": 590,
-            "increment": 96
+            "increment": 104
         },
         "mp": {
             "base": 418,
@@ -59,7 +59,7 @@
                             "text": "40/65/90/115/140 {{0}} magic damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+45% AP)",
+                                    "scale": "(+50% AP)",
                                     "scaleId": "AP"
                                 }
                             ]
@@ -71,7 +71,7 @@
                             "text": "40/65/90/115/140 {{0}} true damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+45% AP)",
+                                    "scale": "(+50% AP)",
                                     "scaleId": "AP"
                                 }
                             ]
@@ -839,6 +839,40 @@
                 ]
             },
             "R": ""
+        },
+        "14.4": {
+            "B": {
+                "SpellName": "Base Stats",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Health Growth: ",
+                            "Before": "96",
+                            "Indicator": " ⇒ ",
+                            "After": "104"
+                        }
+                    }
+                ]
+            },
+            "P": "",
+            "Q": {
+                "SpellName": "Q - Orb of Deception",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Magic Damage per Pass: ",
+                            "Before": "40/65/90/115/140 (+45% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "40/65/90/115/140 (+50% AP)"
+                        }
+                    }
+                ]
+            },
+            "W": "",
+            "E": "",
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -852,11 +886,15 @@
         "12.21",
         "13.4",
         "13.22",
-        "14.2"
+        "14.2",
+        "14.4"
     ],
     "ChampionName": "Ahri",
     "Balance": {
         "14.2": [
+            "buff"
+        ],
+        "14.4": [
             "buff"
         ]
     }

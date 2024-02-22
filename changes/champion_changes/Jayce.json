@@ -33,7 +33,7 @@
             "increment": 0
         },
         "attackDamage": {
-            "base": 57,
+            "base": 59,
             "increment": 4.25
         },
         "attackRange": {
@@ -96,7 +96,7 @@
         },
         "W": {
             "_rawTooltip": {
-                "fullTooltip": "[[0]] Jayce's [[1]] Attacks grant [[2]].<br /><br />[[3]] Jayce creates an electric aura dealing [[4]] over 4 seconds.",
+                "fullTooltip": "[[0]] Jayce's [[1]] Attacks grant [[2]].<br /><br />[[3]] Jayce creates an electric aura dealing [[4]] over 1 seconds.",
                 "parseInfo": [
                     {
                         "text": {
@@ -114,7 +114,7 @@
                     },
                     {
                         "text": {
-                            "text": "10/12/14/16/18/20 Mana",
+                            "text": "15/17/19/21/23/25 Mana",
                             "scaleHolders": []
                         },
                         "type": ""
@@ -128,10 +128,10 @@
                     },
                     {
                         "text": {
-                            "text": "140/200/260/320/380/440 {{0}} magic damage",
+                            "text": "40/55/70/85/100/115 {{0}} magic damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+100% AP)",
+                                    "scale": "(+25% AP)",
                                     "scaleId": "AP"
                                 }
                             ]
@@ -524,6 +524,62 @@
             },
             "E": "",
             "R": ""
+        },
+        "14.4": {
+            "B": {
+                "SpellName": "Base Stats",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Attack Damage: ",
+                            "Before": "57",
+                            "Indicator": " ⇒ ",
+                            "After": "59"
+                        }
+                    }
+                ]
+            },
+            "P": "",
+            "Q": "",
+            "W": {
+                "SpellName": "W - Lightning Field",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Mana Restore: ",
+                            "Before": "10/12/14/16/18/20",
+                            "Indicator": " ⇒ ",
+                            "After": "15/17/19/21/23/25"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Magic Damage per Second: ",
+                            "Before": "35/50/65/80/95/110",
+                            "Indicator": " ⇒ ",
+                            "After": "40/55/70/85/100/115"
+                        }
+                    }
+                ]
+            },
+            "E": {
+                "SpellName": "E - Thundering Blow",
+                "Changes": [
+                    {
+                        "Tag": "NEW",
+                        "Change": {
+                            "Attribute": "Grounded in Science: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "Now roots enemies on initial cast. (Note: Similar to Lee Sin's R root.)"
+                        }
+                    }
+                ]
+            },
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -534,7 +590,13 @@
         "12.10",
         "12.16",
         "12.20",
-        "13.1"
+        "13.1",
+        "14.4"
     ],
-    "ChampionName": "Jayce"
+    "ChampionName": "Jayce",
+    "Balance": {
+        "14.4": [
+            "buff"
+        ]
+    }
 }

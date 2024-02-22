@@ -9,7 +9,7 @@
             "increment": 44
         },
         "armor": {
-            "base": 28,
+            "base": 31,
             "increment": 0
         },
         "spellBlock": {
@@ -190,7 +190,7 @@
                     },
                     {
                         "text": {
-                            "text": "75/115/155/195/235 {{0}} magic damage",
+                            "text": "75/120/165/210/255 {{0}} magic damage",
                             "scaleHolders": [
                                 {
                                     "scale": "(+ 70% AP)",
@@ -238,7 +238,7 @@
                     }
                 ]
             },
-            "cooldown": "140/120/100",
+            "cooldown": "120/100/80",
             "cost": "100 Mana",
             "name": "The Box"
         }
@@ -719,6 +719,53 @@
             "E": "",
             "R": ""
         },
+        "14.4": {
+            "B": {
+                "SpellName": "Base Stats",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Base Armor: ",
+                            "Before": "28",
+                            "Indicator": " ⇒ ",
+                            "After": "31"
+                        }
+                    }
+                ]
+            },
+            "P": "",
+            "Q": "",
+            "W": "",
+            "E": {
+                "SpellName": "E - Flay",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Magic Damage: ",
+                            "Before": "75/115/155/195/235 (+70% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "75/120/165/210/255 (+70% AP)"
+                        }
+                    }
+                ]
+            },
+            "R": {
+                "SpellName": "R - The Box",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Cooldown: ",
+                            "Before": "140/120/100 seconds",
+                            "Indicator": " ⇒ ",
+                            "After": "120/100/80 seconds"
+                        }
+                    }
+                ]
+            }
+        },
         "13.3": {
             "B": "",
             "P": "",
@@ -783,7 +830,13 @@
         "13.3",
         "13.4",
         "13.7",
-        "13.18"
+        "13.18",
+        "14.4"
     ],
-    "ChampionName": "Thresh"
+    "ChampionName": "Thresh",
+    "Balance": {
+        "14.4": [
+            "buff"
+        ]
+    }
 }

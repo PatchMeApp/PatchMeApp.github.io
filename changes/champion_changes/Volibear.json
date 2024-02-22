@@ -92,14 +92,14 @@
                 "parseInfo": [
                     {
                         "text": {
-                            "text": "8/12/16/20/24% Move Speed",
+                            "text": "12/16/20/24/28% Move Speed",
                             "scaleHolders": []
                         },
                         "type": "speed"
                     },
                     {
                         "text": {
-                            "text": "16/24/32/40/48%",
+                            "text": "24/32/40/48/56%",
                             "scaleHolders": []
                         },
                         "type": "speed"
@@ -228,13 +228,13 @@
                     }
                 ]
             },
-            "cooldown": "13",
+            "cooldown": "12",
             "cost": "60 Mana",
             "name": "Sky Splitter"
         },
         "R": {
             "_rawTooltip": {
-                "fullTooltip": "Volibear transforms and leaps, gaining [[0]] and 50 Attack Range for the next 12 seconds.<br /><br />Upon landing, Volibear cracks the earth, [[1]] nearby towers for 3/4 seconds and dealing [[2]]. Nearby enemies are [[3]] by 50%, decaying over 1 second. Enemies directly underneath Volibear suffer [[4]].",
+                "fullTooltip": "Volibear transforms and leaps, gaining [[0]] and 50 Attack Range for the next 12 seconds.<br /><br />Upon landing, Volibear cracks the earth, [[1]] nearby towers for 2/3/4 seconds and dealing [[2]]. Nearby enemies are [[3]] by 50%, decaying over 1 second. Enemies directly underneath Volibear suffer [[4]].",
                 "parseInfo": [
                     {
                         "text": {
@@ -291,7 +291,7 @@
                     }
                 ]
             },
-            "cooldown": "160/140/120",
+            "cooldown": "130/115/100",
             "cost": "100 Mana",
             "name": "Stormbringer"
         }
@@ -882,6 +882,71 @@
             "E": "",
             "R": ""
         },
+        "14.4": {
+            "B": "",
+            "P": "",
+            "Q": {
+                "SpellName": "Q - Thundering Smash",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Bonus Movement Speed: ",
+                            "Before": "8/12/16/20/24%",
+                            "Indicator": " ⇒ ",
+                            "After": "12/16/20/24/28% (Note: this bonus is still doubled when moving towards an enemy champion.)"
+                        }
+                    }
+                ]
+            },
+            "W": "",
+            "E": {
+                "SpellName": "E - Sky Splitter",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Cooldown: ",
+                            "Before": "13 seconds",
+                            "Indicator": " ⇒ ",
+                            "After": "12 seconds"
+                        }
+                    }
+                ]
+            },
+            "R": {
+                "SpellName": "R - Stormbringer",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Turret Disable Duration: ",
+                            "Before": "3/4/5 seconds",
+                            "Indicator": " ⇒ ",
+                            "After": "2/3/4 seconds"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Cooldown: ",
+                            "Before": "160/140/120 seconds",
+                            "Indicator": " ⇒ ",
+                            "After": "130/115/100 seconds"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Crowd Control Resistances during Leap: ",
+                            "Before": "Crowd Control Immune",
+                            "Indicator": " ⇒ ",
+                            "After": "Unstoppable"
+                        }
+                    }
+                ]
+            }
+        },
         "14.2": {
             "B": "",
             "P": "",
@@ -916,11 +981,15 @@
         "12.13",
         "13.9",
         "13.14",
-        "14.2"
+        "14.2",
+        "14.4"
     ],
     "ChampionName": "Volibear",
     "Balance": {
         "14.2": [
+            "buff"
+        ],
+        "14.4": [
             "buff"
         ]
     }

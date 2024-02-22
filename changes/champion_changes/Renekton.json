@@ -88,10 +88,10 @@
                     },
                     {
                         "text": {
-                            "text": "12/18/24/30/36 {{0}}",
+                            "text": "12/20/28/36/44 {{0}}",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+15% Bonus AD)",
+                                    "scale": "(+17% Bonus AD)",
                                     "scaleId": "AD"
                                 }
                             ]
@@ -344,7 +344,7 @@
                     }
                 ]
             },
-            "cooldown": "16/15/14/13/12",
+            "cooldown": "16/14.5/13/11.5/10",
             "cost": "No Cost",
             "name": "Slice and Dice"
         },
@@ -354,7 +354,7 @@
                 "parseInfo": [
                     {
                         "text": {
-                            "text": "250/400 max Health",
+                            "text": "300/500/700 max Health",
                             "scaleHolders": []
                         },
                         "type": "healing"
@@ -884,6 +884,53 @@
             "W": "",
             "E": "",
             "R": ""
+        },
+        "14.4": {
+            "B": "",
+            "P": "",
+            "Q": {
+                "SpellName": "Q - Cull the Meek",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Champion Healing: ",
+                            "Before": "12/18/24/30/36 (+15% bonus AD)",
+                            "Indicator": " ⇒ ",
+                            "After": "12/20/28/36/44 (+17% bonus AD)"
+                        }
+                    }
+                ]
+            },
+            "W": "",
+            "E": {
+                "SpellName": "E - Slice",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Cooldown: ",
+                            "Before": "16/15/14/13/12 seconds",
+                            "Indicator": " ⇒ ",
+                            "After": "16/14.5/13/11.5/10 seconds"
+                        }
+                    }
+                ]
+            },
+            "R": {
+                "SpellName": "R - Dominus",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Bonus Health: ",
+                            "Before": "250/400/550",
+                            "Indicator": " ⇒ ",
+                            "After": "300/500/700"
+                        }
+                    }
+                ]
+            }
         }
     },
     "ChangePatches": [
@@ -898,7 +945,13 @@
         "12.13",
         "12.17",
         "13.11",
-        "13.19"
+        "13.19",
+        "14.4"
     ],
-    "ChampionName": "Renekton"
+    "ChampionName": "Renekton",
+    "Balance": {
+        "14.4": [
+            "buff"
+        ]
+    }
 }
