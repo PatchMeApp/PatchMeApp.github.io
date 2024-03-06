@@ -233,7 +233,7 @@
                 "parseInfo": [
                     {
                         "text": {
-                            "text": "100/250/400 {{0}} plus 20/25/30% missing Health physical damage",
+                            "text": "150/300/450 {{0}} plus 25/30/35% missing Health physical damage",
                             "scaleHolders": [
                                 {
                                     "scale": "(+100% Bonus AD)",
@@ -929,6 +929,170 @@
                     }
                 ]
             }
+        },
+        "14.5": {
+            "B": {
+                "SpellName": "Base Stats",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Attack Windup: ",
+                            "Before": "26.67% (+100% Attack Speed)",
+                            "Indicator": " ⇒ ",
+                            "After": "20% (+60% Attack Speed) (Note: This means attacks take 25% less time to fully animate at level 1, down to 3% less time with Stridebreaker, runes, and Q active at level 18.)"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Basic Attack Cast Frame: ",
+                            "Before": "12",
+                            "Indicator": " ⇒ ",
+                            "After": "10 (Note: This means attacks deal their damage about 20% earlier in the animation.)"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Critical Strike Cast Frame: ",
+                            "Before": "9",
+                            "Indicator": " ⇒ ",
+                            "After": "10"
+                        }
+                    }
+                ]
+            },
+            "P": "",
+            "Q": {
+                "SpellName": "Q - Queen's Wrath",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "QoL Change: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "Attacks can no longer be canceled mid-attack, now matches most other empowered attacks"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Cast Frame: ",
+                            "Before": "12",
+                            "Indicator": " ⇒ ",
+                            "After": "9 (Note: This means the attack strikes the target about 33% earlier in the animation.)"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Bugfix: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "Attacks now stack Spear of Shojin when hitting only one champion"
+                        }
+                    }
+                ]
+            },
+            "W": {
+                "SpellName": "W - Burrow / Unburrow",
+                "Changes": [
+                    {
+                        "Tag": "NEW",
+                        "Change": {
+                            "Attribute": "An Uplifting Change: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "Unburrow will now knock up all Large Monsters in range if they're eligible"
+                        }
+                    },
+                    {
+                        "Tag": "NEW",
+                        "Change": {
+                            "Attribute": "An Non-Lifting Uplifting Change: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "Unburrow can now damage (but not knock up) targets who were recently knocked up and immune to Unburrow"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Bugfix: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "Fixed a bug where Rek'Sai could stop auto-attacking after burrowing and quickly unburrowing"
+                        }
+                    }
+                ]
+            },
+            "E": {
+                "SpellName": "E - Tunnel",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Bugfix In Progress: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "Reduced the frequency of a bug that caused Rek'Sai to occasionally fail to dash when crossing walls. We'll be keeping an eye out for more instances of this bug occurring and work to resolve them as we're able to."
+                        }
+                    }
+                ]
+            },
+            "R": {
+                "SpellName": "R - Void Rush",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Damage: ",
+                            "Before": "100/250/400 (+100% bonus AD) (+20/25/30% of target's missing health)",
+                            "Indicator": " ⇒ ",
+                            "After": "150/300/450 (+100% bonus AD) (+25/30/35% of target's missing health)"
+                        }
+                    }
+                ]
+            },
+            "E -": {
+                "SpellName": "E - Furious Bite",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "100 Fury Bonus Damage: ",
+                            "Before": "6/8/10/12/14% of target's maximum health",
+                            "Indicator": " ⇒ ",
+                            "After": "8/9.5/11/12.5/14% of target's maximum health"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Monster Bonus Damage Cap: ",
+                            "Before": "60-400 (based on level)",
+                            "Indicator": " ⇒ ",
+                            "After": "75-400 (based on level)"
+                        }
+                    }
+                ]
+            },
+            "M": {
+                "SpellName": "Miscellaneous",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "Made minor updates to tooltips to improve clarity."
+                        }
+                    }
+                ]
+            }
         }
     },
     "ChangePatches": [
@@ -942,13 +1106,17 @@
         "13.14",
         "13.16",
         "13.19",
-        "14.4"
+        "14.4",
+        "14.5"
     ],
     "ChampionName": "Rek'Sai",
     "Balance": {
         "14.4": [
             "adjust",
             "danger"
+        ],
+        "14.5": [
+            "buff"
         ]
     }
 }

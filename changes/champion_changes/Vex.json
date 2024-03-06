@@ -49,14 +49,14 @@
                 "parseInfo": [
                     {
                         "text": {
-                            "text": "30 − 140 {{0}} {{1}} bonus magic damage",
+                            "text": "40 − 150 {{0}} {{1}} bonus magic damage",
                             "scaleHolders": [
                                 {
                                     "scale": "(based on level)",
                                     "scaleId": "level"
                                 },
                                 {
-                                    "scale": "(+ 20% AP)",
+                                    "scale": "(+ 25% AP)",
                                     "scaleId": "AP"
                                 }
                             ]
@@ -360,13 +360,53 @@
             },
             "E": "",
             "R": ""
+        },
+        "14.5": {
+            "B": "",
+            "P": {
+                "SpellName": "Passive - Doom ‘n Gloom",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Gloom Detonation Damage: ",
+                            "Before": "30-140 (based on level) (+20% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "40-150 (based on level) (+25% AP)"
+                        }
+                    }
+                ]
+            },
+            "Q": "",
+            "W": "",
+            "E": {
+                "SpellName": "E - Looming Darkness",
+                "Changes": [
+                    {
+                        "Tag": "NEW",
+                        "Change": {
+                            "Attribute": "",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "Killing units with Looming Darkness now grants Doom ‘n Gloom's passive refund."
+                        }
+                    }
+                ]
+            },
+            "R": ""
         }
     },
     "ChangePatches": [
         "11.19",
         "12.10",
         "12.13",
-        "13.17"
+        "13.17",
+        "14.5"
     ],
-    "ChampionName": "Vex"
+    "ChampionName": "Vex",
+    "Balance": {
+        "14.5": [
+            "buff"
+        ]
+    }
 }

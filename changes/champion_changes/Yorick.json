@@ -120,7 +120,7 @@
         },
         "E": {
             "_rawTooltip": {
-                "fullTooltip": "Yorick throws a globule of Black Mist that deals [[0]], [[1]] by 30% for 2 seconds, and marks champions and monsters for 4 seconds. Marked enemies continuously [[2]] nearby graves (but not exceeding the maximum of 4), and take 30% increased damage from up to 8 attacks by [[3]].<br /><br />Yorick and his summoned units gain [[4]] toward the mark. [[5]] will leap once at marked enemies that get away from them.",
+                "fullTooltip": "Yorick throws a globule of Black Mist that deals [[0]], [[1]] by 30% for 2 seconds, and marks champions and monsters for 4 seconds. Marked enemies continuously [[2]] nearby graves (but not exceeding the maximum of 4), and take 20% increased damage from up to 8 attacks by [[3]].<br /><br />Yorick and his summoned units gain [[4]] toward the mark. [[5]] will leap once at marked enemies that get away from them.",
                 "parseInfo": [
                     {
                         "text": {
@@ -605,6 +605,80 @@
                     }
                 ]
             }
+        },
+        "14.5": {
+            "B": "",
+            "P": {
+                "SpellName": "Passive - Shepherd of Souls",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "Tooltip clarified to state that only Mist Walkers take reduced damage from monsters."
+                        }
+                    }
+                ]
+            },
+            "Q": "",
+            "W": "",
+            "E": {
+                "SpellName": "E - Mourning Mist",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Cursed Bonus Damage for 8 Attacks: ",
+                            "Before": "30%",
+                            "Indicator": " ⇒ ",
+                            "After": "20%"
+                        }
+                    }
+                ]
+            },
+            "R": {
+                "SpellName": "R - Eulogy of the Isles",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Maiden Armor and Magic Resist: ",
+                            "Before": "10-50 (based on level)",
+                            "Indicator": " ⇒ ",
+                            "After": "30-90 (based on level)"
+                        }
+                    },
+                    {
+                        "Tag": "REMOVED",
+                        "Change": {
+                            "Attribute": "",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "Maiden no longer reduces Area of Effect damage by 50%."
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "Tooltip now clarifies that Maiden takes 70% less damage from lane minions."
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Bugfix: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "Maiden's 1/2/3% maximum health damage no longer bypasses Evasion like Shen's W. (Note: Blind, Dodge, and Evasion all work appropriately against the rest of Maiden's attacks.)"
+                        }
+                    }
+                ]
+            }
         }
     },
     "ChangePatches": [
@@ -615,12 +689,16 @@
         "12.12",
         "13.5",
         "13.15",
-        "14.3"
+        "14.3",
+        "14.5"
     ],
     "ChampionName": "Yorick",
     "Balance": {
         "14.3": [
             "buff"
+        ],
+        "14.5": [
+            "nerf"
         ]
     }
 }

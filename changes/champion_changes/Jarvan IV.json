@@ -10,7 +10,7 @@
         },
         "armor": {
             "base": 36,
-            "increment": 4.8
+            "increment": 5.2
         },
         "spellBlock": {
             "base": 32,
@@ -97,7 +97,7 @@
                     }
                 ]
             },
-            "cooldown": "10/9.5/9/8.5/8",
+            "cooldown": "10/9/8/7/6",
             "cost": "45/50/55/60/65 Mana",
             "name": "Dragon Strike"
         },
@@ -619,6 +619,40 @@
             "W": "",
             "E": "",
             "R": ""
+        },
+        "14.5": {
+            "B": {
+                "SpellName": "Base Stats",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Armor Growth: ",
+                            "Before": "4.8",
+                            "Indicator": " ⇒ ",
+                            "After": "5.2"
+                        }
+                    }
+                ]
+            },
+            "P": "",
+            "Q": {
+                "SpellName": "Q - Dragon Strike",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Cooldown: ",
+                            "Before": "10/9.5/9/8.5/8 seconds",
+                            "Indicator": " ⇒ ",
+                            "After": "10/9/8/7/6 seconds"
+                        }
+                    }
+                ]
+            },
+            "W": "",
+            "E": "",
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -633,12 +667,16 @@
         "13.4",
         "13.8",
         "13.18",
-        "13.23"
+        "13.23",
+        "14.5"
     ],
     "ChampionName": "Jarvan IV",
     "Balance": {
         "13.24": [
             "nerf"
+        ],
+        "14.5": [
+            "buff"
         ]
     }
 }

@@ -49,7 +49,7 @@
                 "parseInfo": [
                     {
                         "text": {
-                            "text": "45 bonus movement speed",
+                            "text": "30 bonus movement speed",
                             "scaleHolders": []
                         },
                         "type": "speed"
@@ -83,7 +83,7 @@
                     }
                 ]
             },
-            "cooldown": "4/3.5/3/2.5/2",
+            "cooldown": "6/5/4/3/2",
             "cost": "30 Mana",
             "name": "Tumble"
         },
@@ -394,6 +394,40 @@
             "W": "",
             "E": "",
             "R": ""
+        },
+        "14.5": {
+            "B": "",
+            "P": {
+                "SpellName": "Passive - Night Hunter",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Bonus Movement Speed: ",
+                            "Before": "45",
+                            "Indicator": " ⇒ ",
+                            "After": "30 (Note: Bonus movement speed during Final Hour will be unchanged at 90.)"
+                        }
+                    }
+                ]
+            },
+            "Q": {
+                "SpellName": "Q - Tumble",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Cooldown: ",
+                            "Before": "4/3.5/3/2.5/2",
+                            "Indicator": " ⇒ ",
+                            "After": "6/5/4/3/2 seconds"
+                        }
+                    }
+                ]
+            },
+            "W": "",
+            "E": "",
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -401,7 +435,13 @@
         "10.19",
         "12.10",
         "13.6",
-        "13.10"
+        "13.10",
+        "14.5"
     ],
-    "ChampionName": "Vayne"
+    "ChampionName": "Vayne",
+    "Balance": {
+        "14.5": [
+            "nerf"
+        ]
+    }
 }

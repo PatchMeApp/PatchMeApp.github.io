@@ -182,7 +182,7 @@
                                     "scaleId": "AP"
                                 },
                                 {
-                                    "scale": "(+75% bonus AD)",
+                                    "scale": "(+20% bonus AD)",
                                     "scaleId": "AD"
                                 }
                             ]
@@ -191,7 +191,7 @@
                     },
                     {
                         "text": {
-                            "text": "10/22.5/35/47.5/60% Attack Speed",
+                            "text": "10/20/30/40/50% Attack Speed",
                             "scaleHolders": []
                         },
                         "type": "attackSpeed"
@@ -793,6 +793,36 @@
                 ]
             },
             "R": ""
+        },
+        "14.5": {
+            "B": "",
+            "P": "",
+            "Q": "",
+            "W": "",
+            "E": {
+                "SpellName": "E - Stacked Deck",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Bonus Attack Speed: ",
+                            "Before": "10/22.5/35/47.5/60%",
+                            "Indicator": " ⇒ ",
+                            "After": "10/20/30/40/50%"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Bonus Damage: ",
+                            "Before": "65/90/115/140/165 (+75% bonus AD) (+40% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "65/90/115/140/165 (+20% bonus AD) (+40% AP)"
+                        }
+                    }
+                ]
+            },
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -809,7 +839,8 @@
         "13.17",
         "13.22",
         "14.2",
-        "14.4"
+        "14.4",
+        "14.5"
     ],
     "ChampionName": "Twisted Fate",
     "Balance": {
@@ -817,6 +848,9 @@
             "buff"
         ],
         "14.4": [
+            "nerf"
+        ],
+        "14.5": [
             "nerf"
         ]
     }

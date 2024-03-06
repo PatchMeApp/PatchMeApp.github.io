@@ -83,7 +83,7 @@
                             "text": "25/30/35/40/45 {{0}} magic damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+30% AP)",
+                                    "scale": "(+25% AP)",
                                     "scaleId": "AP"
                                 }
                             ]
@@ -121,7 +121,7 @@
                             "text": "25/30/35/40/45 {{0}} magic damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+30% AP)",
+                                    "scale": "(+25% AP)",
                                     "scaleId": "AP"
                                 }
                             ]
@@ -535,6 +535,27 @@
             },
             "E": "",
             "R": ""
+        },
+        "14.5": {
+            "B": "",
+            "P": "",
+            "Q": {
+                "SpellName": "Q - Hate Spike",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Damage: ",
+                            "Before": "25/30/35/40/45 (+30% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "25/30/35/40/45 (+25% AP)"
+                        }
+                    }
+                ]
+            },
+            "W": "",
+            "E": "",
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -545,7 +566,13 @@
         "11.17",
         "12.10",
         "12.13",
-        "12.20"
+        "12.20",
+        "14.5"
     ],
-    "ChampionName": "Evelynn"
+    "ChampionName": "Evelynn",
+    "Balance": {
+        "14.5": [
+            "nerf"
+        ]
+    }
 }

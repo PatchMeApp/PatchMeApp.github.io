@@ -276,7 +276,7 @@
                 "parseInfo": [
                     {
                         "text": {
-                            "text": "225/350/475 {{0}} {{1}} physical damage",
+                            "text": "200/300/400 {{0}} {{1}} physical damage",
                             "scaleHolders": [
                                 {
                                     "scale": "(+110% bonus AD)",
@@ -292,14 +292,14 @@
                     },
                     {
                         "text": {
-                            "text": "292.5/455/617.5 {{0}} {{1}} physical damage",
+                            "text": "300/450/600 {{0}} {{1}} physical damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+ 143% bonus AD)",
+                                    "scale": "(+165% bonus AD)",
                                     "scaleId": "AD"
                                 },
                                 {
-                                    "scale": "(+ 130% AP)",
+                                    "scale": "(+150% AP)",
                                     "scaleId": "AP"
                                 }
                             ]
@@ -315,7 +315,7 @@
                     },
                     {
                         "text": {
-                            "text": "110/160/210 {{0}} Health",
+                            "text": "100/135/170 {{0}} Health",
                             "scaleHolders": [
                                 {
                                     "scale": "(+ 75% AP)",
@@ -414,15 +414,107 @@
                     }
                 ]
             }
+        },
+        "14.5": {
+            "B": "",
+            "P": "",
+            "Q": {
+                "SpellName": "Q - Super Scorcher Breath",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "3rd Upgrade Bonus True Damage: ",
+                            "Before": "6.5% of target's maximum health",
+                            "Indicator": " ⇒ ",
+                            "After": "+2% bonus AD (+1% AP) (+0.8% of Dragon Patience Stacks) of target's maximum health"
+                        }
+                    }
+                ]
+            },
+            "W": "",
+            "E": {
+                "SpellName": "E - Flap, Flap, Flap",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Number of Bolts: ",
+                            "Before": "5-10 (based on critical strike chance)",
+                            "Indicator": " ⇒ ",
+                            "After": "5 (+1 per 50 Dragon Patience Stacks)"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "Tooltip has been updated to clarify that these bolts are not attacks"
+                        }
+                    }
+                ]
+            },
+            "R": {
+                "SpellName": "R - Mmooommmm!",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Damage: ",
+                            "Before": "225/350/475 (+110% bonus AD) (+100% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "200/300/400 (+110% bonus AD) (+100% AP)"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Sweet Spot Increased Damage Multiplier: ",
+                            "Before": "30%",
+                            "Indicator": " ⇒ ",
+                            "After": "50%"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Self Heal: ",
+                            "Before": "110/160/210 (+75% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "100/135/170 (+50% bonus AD) (+75% AP)"
+                        }
+                    }
+                ]
+            },
+            "M": {
+                "SpellName": "Miscellaneous",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "Frame data on basic attacks has been adjusted to better match Smolder's animations."
+                        }
+                    }
+                ]
+            }
         }
     },
     "ChangePatches": [
         "14.2",
-        "14.4"
+        "14.4",
+        "14.5"
     ],
     "ChampionName": "Smolder",
     "Balance": {
         "14.4": [
+            "adjust"
+        ],
+        "14.5": [
             "adjust"
         ]
     }

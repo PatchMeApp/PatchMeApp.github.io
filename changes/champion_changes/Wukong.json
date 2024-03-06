@@ -45,7 +45,7 @@
         "P": {
             "cooldown": "",
             "_rawTooltip": {
-                "fullTooltip": "Innate: Wukong gains [[2]] and regenerates [[0]] per 5 seconds.<br>Stone Skin's effects are increased by 50% for 5 seconds whenever Wukong or his clone damages an enemy champion or monster, stacking up to 10 times for a maximum of [[3]] and [[1]] regeneration.",
+                "fullTooltip": "Innate: Wukong gains [[2]] and regenerates [[0]] per 5 seconds.<br>Stone Skin's effects are increased by 50% for 5 seconds whenever Wukong or his clone damages an enemy champion or monster, stacking up to 5 times for a maximum of [[3]] and [[1]] regeneration.",
                 "parseInfo": [
                     {
                         "text": {
@@ -56,7 +56,7 @@
                     },
                     {
                         "text": {
-                            "text": "3% maximum health",
+                            "text": "2.5% maximum health",
                             "scaleHolders": []
                         },
                         "type": "Health"
@@ -75,7 +75,7 @@
                     },
                     {
                         "text": {
-                            "text": "30 − 54 {{0}} bonus armor",
+                            "text": "25 − 45 {{0}} bonus armor",
                             "scaleHolders": [
                                 {
                                     "scale": "(based on level)",
@@ -1234,6 +1234,45 @@
             },
             "R": ""
         },
+        "14.5": {
+            "B": "",
+            "P": {
+                "SpellName": "Passive - Stone Skin",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Maximum Number of Stacks: ",
+                            "Before": "10",
+                            "Indicator": " ⇒ ",
+                            "After": "5"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Percent Amplification per Stack: ",
+                            "Before": "50%",
+                            "Indicator": " ⇒ ",
+                            "After": "100%"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Stack Falloff Rate: ",
+                            "Before": "All at once",
+                            "Indicator": " ⇒ ",
+                            "After": "One at a time"
+                        }
+                    }
+                ]
+            },
+            "Q": "",
+            "W": "",
+            "E": "",
+            "R": ""
+        },
         "12.12": {
             "B": "",
             "P": "",
@@ -1287,11 +1326,15 @@
         "13.7",
         "13.13",
         "13.16",
-        "14.3"
+        "14.3",
+        "14.5"
     ],
     "ChampionName": "Wukong",
     "Balance": {
         "14.3": [
+            "buff"
+        ],
+        "14.5": [
             "buff"
         ]
     }

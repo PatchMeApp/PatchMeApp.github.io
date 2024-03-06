@@ -160,7 +160,7 @@
         },
         "E": {
             "_rawTooltip": {
-                "fullTooltip": "Bel'Veth channels and slashes around herself, gaining 42/49/56/63/70% Damage Reduction, 20% (+100% Life steal) Life Steal, and Attacking multiple times over 1.5 seconds with the number of Attacks increasing based on her [[0]]. Each Attack strikes the lowest-health enemy, dealing [[1]] to [[2]] based on the target's missing Health.<br /><br />Using another Ability or [[3]] ends this Ability early.<br />",
+                "fullTooltip": "Bel'Veth channels and slashes around herself, gaining 35/40/45/50/55% Damage Reduction, 20% (+100% Life steal) Life Steal, and Attacking multiple times over 1.5 seconds with the number of Attacks increasing based on her [[0]]. Each Attack strikes the lowest-health enemy, dealing [[1]] to [[2]] based on the target's missing Health.<br /><br />Using another Ability or [[3]] ends this Ability early.<br />",
                 "parseInfo": [
                     {
                         "text": {
@@ -654,6 +654,40 @@
                 ]
             },
             "R": ""
+        },
+        "14.5": {
+            "B": "",
+            "P": {
+                "SpellName": "Passive - Death In Lavender",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Bugfix: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "Fixed a bug that caused Bel'Veth to get three stacks for each Epic Void monster. She now properly gets two Death in Lavender stacks per Void Grub (for a total of six if she gets all three of them) and two for Rift Herald."
+                        }
+                    }
+                ]
+            },
+            "Q": "",
+            "W": "",
+            "E": {
+                "SpellName": "E - Royal Maelstrom",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Damage Reduction: ",
+                            "Before": "42/49/56/63/70%",
+                            "Indicator": " ⇒ ",
+                            "After": "35/40/45/50/55%"
+                        }
+                    }
+                ]
+            },
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -662,7 +696,13 @@
         "12.21",
         "13.9",
         "13.20",
-        "13.21"
+        "13.21",
+        "14.5"
     ],
-    "ChampionName": "Bel'Veth"
+    "ChampionName": "Bel'Veth",
+    "Balance": {
+        "14.5": [
+            "nerf"
+        ]
+    }
 }

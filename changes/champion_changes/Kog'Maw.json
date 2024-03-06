@@ -61,7 +61,7 @@
                     },
                     {
                         "text": {
-                            "text": "40% bonus movement speed",
+                            "text": "10-50% bonus movement speed",
                             "scaleHolders": []
                         },
                         "type": "speed"
@@ -155,7 +155,7 @@
         },
         "E": {
             "_rawTooltip": {
-                "fullTooltip": "Kog'Maw spits bile, dealing [[0]] and leaving a trail of ooze for 4 seconds. Enemies in the ooze are [[1]] by 30/35/40/45/50%.",
+                "fullTooltip": "Kog'Maw spits bile, dealing [[0]] and leaving a trail of ooze for 4 seconds. Enemies in the ooze are [[1]] by 40/45/50/55/60%.",
                 "parseInfo": [
                     {
                         "text": {
@@ -188,14 +188,14 @@
                 "parseInfo": [
                     {
                         "text": {
-                            "text": "100/140/180 {{0}} {{1}} plus 0.83% per 1% missing Health magic damage",
+                            "text": "100/140/180 {{0}} {{1}}  plus 0.83% per 1% missing Health magic damage",
                             "scaleHolders": [
                                 {
                                     "scale": "(+35% AP)",
                                     "scaleId": "AP"
                                 },
                                 {
-                                    "scale": "(+65% Bonus AD)",
+                                    "scale": "(+75% Bonus AD)",
                                     "scaleId": "AD"
                                 }
                             ]
@@ -640,6 +640,66 @@
             },
             "E": "",
             "R": ""
+        },
+        "14.5": {
+            "B": "",
+            "P": {
+                "SpellName": "Passive - Icathian Surprise",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Bonus Movement Speed: ",
+                            "Before": "0-40% over 4 seconds",
+                            "Indicator": " ⇒ ",
+                            "After": "10-50% over 4 seconds"
+                        }
+                    }
+                ]
+            },
+            "Q": {
+                "SpellName": "Q - Caustic Spittle",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Cast Time: ",
+                            "Before": "0.25 seconds",
+                            "Indicator": " ⇒ ",
+                            "After": "now matches Kog'Maw's auto attack frame time"
+                        }
+                    }
+                ]
+            },
+            "W": "",
+            "E": {
+                "SpellName": "E - Void Ooze",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Slow: ",
+                            "Before": "30/35/40/45/50%",
+                            "Indicator": " ⇒ ",
+                            "After": "40/45/50/55/60%"
+                        }
+                    }
+                ]
+            },
+            "R": {
+                "SpellName": "R - Living Artillery",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Minimum Damage: ",
+                            "Before": "100/140/180 (+65% bonus AD) (+35% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "100/140/180 (+75% bonus AD) (+35% AP)"
+                        }
+                    }
+                ]
+            }
         }
     },
     "ChangePatches": [
@@ -653,7 +713,13 @@
         "12.10",
         "12.11",
         "13.8",
-        "13.12"
+        "13.12",
+        "14.5"
     ],
-    "ChampionName": "Kog'Maw"
+    "ChampionName": "Kog'Maw",
+    "Balance": {
+        "14.5": [
+            "buff"
+        ]
+    }
 }

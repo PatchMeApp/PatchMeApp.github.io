@@ -220,7 +220,7 @@
         },
         "R": {
             "_rawTooltip": {
-                "fullTooltip": "[[0]] Champions damaged by Kayn are marked for 3.15 seconds.<br /><br />Kayn infests a marked enemy, becoming Untargetable. After 2.5 seconds or after [[1]], Kayn bursts out, dealing [[2]] to the enemy.<br /><br />[[3]] Increases this Ability's range, the distance Kayn exits, and refreshes [[4]] Cooldown on exit.<br /><br />[[5]] Instead deals [[6]] and restores [[7]] (65% damage amount).",
+                "fullTooltip": "[[0]] Champions damaged by Kayn are marked for 3.15 seconds.<br /><br />Kayn infests a marked enemy, becoming Untargetable. After 2.5 seconds or after [[1]], Kayn bursts out, dealing [[2]] to the enemy.<br /><br />[[3]] Increases this Ability's range, the distance Kayn exits, and refreshes [[4]] Cooldown on exit.<br /><br />[[5]] Instead deals [[6]] and restores [[7]] (75% damage amount).",
                 "parseInfo": [
                     {
                         "text": {
@@ -928,6 +928,40 @@
                 ]
             }
         },
+        "14.5": {
+            "B": "",
+            "P": {
+                "SpellName": "Passive - The Darkin Scythe",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Darkin Bonus - Healing: ",
+                            "Before": "25%",
+                            "Indicator": " ⇒ ",
+                            "After": "25% (+0.5% per 100 Bonus Health)"
+                        }
+                    }
+                ]
+            },
+            "Q": "",
+            "W": "",
+            "E": "",
+            "R": {
+                "SpellName": "R - Umbral Trespass",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Darkin Form Healing: ",
+                            "Before": "65% of damage dealt",
+                            "Indicator": " ⇒ ",
+                            "After": "75% of damage dealt"
+                        }
+                    }
+                ]
+            }
+        },
         "14.2": {
             "B": "",
             "P": "",
@@ -970,12 +1004,16 @@
         "13.8",
         "13.17",
         "13.18",
-        "14.2"
+        "14.2",
+        "14.5"
     ],
     "ChampionName": "Kayn",
     "Balance": {
         "14.2": [
             "adjust"
+        ],
+        "14.5": [
+            "buff"
         ]
     }
 }

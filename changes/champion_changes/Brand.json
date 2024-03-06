@@ -49,7 +49,7 @@
                 "parseInfo": [
                     {
                         "text": {
-                            "text": "200% damage",
+                            "text": "215%  damage",
                             "scaleHolders": []
                         },
                         "type": ""
@@ -201,7 +201,7 @@
                 "parseInfo": [
                     {
                         "text": {
-                            "text": "100/200/300 {{0}} magic damage",
+                            "text": "100/175/250 {{0}} magic damage",
                             "scaleHolders": [
                                 {
                                     "scale": "(+25% AP)",
@@ -234,7 +234,7 @@
                     }
                 ]
             },
-            "cooldown": "105/90/75",
+            "cooldown": "110/100/90",
             "cost": "100 Mana",
             "name": "Pyroclasm"
         }
@@ -706,6 +706,49 @@
             "E": "",
             "R": ""
         },
+        "14.5": {
+            "B": "",
+            "P": {
+                "SpellName": "Passive - Blaze",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Damage to Monsters: ",
+                            "Before": "200%",
+                            "Indicator": " ⇒ ",
+                            "After": "215%"
+                        }
+                    }
+                ]
+            },
+            "Q": "",
+            "W": "",
+            "E": "",
+            "R": {
+                "SpellName": "R - Pyroclasm",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Damage per Hit: ",
+                            "Before": "100/200/300 (+25% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "100/175/250 (+25% AP)"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Cooldown: ",
+                            "Before": "105/90/75",
+                            "Indicator": " ⇒ ",
+                            "After": "110/100/90 seconds"
+                        }
+                    }
+                ]
+            }
+        },
         "14.2": {
             "B": "",
             "P": {
@@ -748,7 +791,8 @@
         "13.21",
         "13.22",
         "14.2",
-        "14.3"
+        "14.3",
+        "14.5"
     ],
     "ChampionName": "Brand",
     "Balance": {
@@ -756,6 +800,9 @@
             "nerf"
         ],
         "14.3": [
+            "nerf"
+        ],
+        "14.5": [
             "nerf"
         ]
     }

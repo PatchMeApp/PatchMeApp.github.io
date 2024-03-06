@@ -6,7 +6,7 @@
         },
         "mp": {
             "base": 360,
-            "increment": 50
+            "increment": 25
         },
         "armor": {
             "base": 26,
@@ -22,18 +22,18 @@
         },
         "mpRegen": {
             "base": 11.5,
-            "increment": 0.4
+            "increment": 0.95
         },
         "attackSpeed": {
             "base": 0.669,
             "increment": 0.02
         },
         "ms": {
-            "base": 325,
+            "base": 330,
             "increment": 0
         },
         "attackDamage": {
-            "base": 55,
+            "base": 50,
             "increment": 3
         },
         "attackRange": {
@@ -49,10 +49,10 @@
                 "parseInfo": [
                     {
                         "text": {
-                            "text": "5/10/18/30 {{0}} magic damage",
+                            "text": "4-25 {{0}} magic damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+5 AP)",
+                                    "scale": "(+4 AP)",
                                     "scaleId": "AP"
                                 }
                             ]
@@ -69,7 +69,7 @@
                 "parseInfo": [
                     {
                         "text": {
-                            "text": "55/80/105/130/155 {{0}} magic damage",
+                            "text": "60/85/110/135/160 {{0}} magic damage",
                             "scaleHolders": [
                                 {
                                     "scale": "(+50% AP)",
@@ -81,10 +81,10 @@
                     },
                     {
                         "text": {
-                            "text": "82.5/120/157.5/195/232.5 {{0}} damage",
+                            "text": "96/136/176/216/256 {{0}} damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(75% AP)",
+                                    "scale": "(80% AP)",
                                     "scaleId": "AP"
                                 }
                             ]
@@ -93,8 +93,8 @@
                     }
                 ]
             },
-            "cooldown": "10/8.75/7.5/6.25/5",
-            "cost": "65/70/75/80/85 Mana",
+            "cooldown": "8/7.5/7/6.5/6",
+            "cost": "60/70/80/90/100 Mana",
             "name": "High Note"
         },
         "W": {
@@ -106,7 +106,7 @@
                             "text": "20% {{0}} decaying Move Speed",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+4% per 100 AP)",
+                                    "scale": "(+2% per 100 AP)",
                                     "scaleId": "AP"
                                 }
                             ]
@@ -115,7 +115,7 @@
                     },
                     {
                         "text": {
-                            "text": "50/75/100/125/150 {{0}} Shield",
+                            "text": "60/85/110/135/160 {{0}} Shield",
                             "scaleHolders": [
                                 {
                                     "scale": "(+20% AP)",
@@ -165,20 +165,20 @@
                     }
                 ]
             },
-            "cooldown": "28/25/22/19/16",
-            "cost": "80/85/90/95/10 Mana",
+            "cooldown": "22/21/20/19/18",
+            "cost": "70/75/80/85/90 Mana",
             "name": "Surround Sound"
         },
         "E": {
             "_rawTooltip": {
-                "fullTooltip": "Seraphine unleashes a heavy soundwave, dealing [[0]] to enemies in a line and [[1]] them by 99% for 1.25 seconds.<br /><br />Enemies that are already [[2]] are [[3]] instead, and [[4]] enemies are [[5]].",
+                "fullTooltip": "Seraphine unleashes a heavy soundwave, dealing [[0]] to enemies in a line and [[1]] them by 99% for 1.1/1.2/1.3/1.4/1.5 seconds.<br /><br />Enemies that are already [[2]] are [[3]] instead, and [[4]] enemies are [[5]].",
                 "parseInfo": [
                     {
                         "text": {
-                            "text": "60/95/130/165/200 {{0}} Magic Damage",
+                            "text": "70/100/130/160/190 {{0}} Magic Damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+35% AP)",
+                                    "scale": "(+50% AP)",
                                     "scaleId": "AP"
                                 }
                             ]
@@ -222,8 +222,8 @@
                     }
                 ]
             },
-            "cooldown": "10",
-            "cost": "60/65/70/75/80 Mana",
+            "cooldown": "11/10.5/10/9.5/9",
+            "cost": "60 Mana",
             "name": "Beat Drop"
         },
         "R": {
@@ -242,7 +242,7 @@
                             "text": "150/200/250 {{0}} magic damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+60% AP)",
+                                    "scale": "(+40% AP)",
                                     "scaleId": "AP"
                                 }
                             ]
@@ -258,7 +258,7 @@
                     }
                 ]
             },
-            "cooldown": "160/130/100",
+            "cooldown": "160/140/120",
             "cost": "100 Mana",
             "name": "Encore"
         }
@@ -969,6 +969,254 @@
             },
             "E": "",
             "R": ""
+        },
+        "14.5": {
+            "B": {
+                "SpellName": "Base Stats",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Movement speed: ",
+                            "Before": "325",
+                            "Indicator": " ⇒ ",
+                            "After": "330"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Mana Growth: ",
+                            "Before": "50",
+                            "Indicator": " ⇒ ",
+                            "After": "25"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Mana Regeneration: ",
+                            "Before": "0.4",
+                            "Indicator": " ⇒ ",
+                            "After": "0.95"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Base AD: ",
+                            "Before": "55",
+                            "Indicator": " ⇒ ",
+                            "After": "50"
+                        }
+                    }
+                ]
+            },
+            "P": {
+                "SpellName": "Passive - Stage Presence",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Damage: ",
+                            "Before": "5/10/18/30 (+5% AP) (levels 1/6/11/16)",
+                            "Indicator": " ⇒ ",
+                            "After": "4-25 (based on level, linear) (+4% AP)"
+                        }
+                    },
+                    {
+                        "Tag": "REMOVED",
+                        "Change": {
+                            "Attribute": "",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "300% minion damage modifier has been removed"
+                        }
+                    }
+                ]
+            },
+            "Q": {
+                "SpellName": "Q - High Note",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Missile Speed: ",
+                            "Before": "1200",
+                            "Indicator": " ⇒ ",
+                            "After": "1300"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Cooldown: ",
+                            "Before": "10/8.75/7.5/6.25/5",
+                            "Indicator": " ⇒ ",
+                            "After": "8/7.5/7/6.5/6 seconds"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Mana Cost: ",
+                            "Before": "65/70/75/80/85",
+                            "Indicator": " ⇒ ",
+                            "After": "60/70/80/90/100"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Damage: ",
+                            "Before": "55/80/105/130/155 (+50% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "60/85/110/135/160 (+50% AP)"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Maximum Damage Amp based on Missing Health: ",
+                            "Before": "50%",
+                            "Indicator": " ⇒ ",
+                            "After": "60%"
+                        }
+                    },
+                    {
+                        "Tag": "REMOVED",
+                        "Change": {
+                            "Attribute": "",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "Damage amp no longer affects non-champions"
+                        }
+                    },
+                    {
+                        "Tag": "REMOVED",
+                        "Change": {
+                            "Attribute": "",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "No longer prevents minions from dying to other minions while in flight"
+                        }
+                    }
+                ]
+            },
+            "W": {
+                "SpellName": "W - Surround Sound",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Cooldown: ",
+                            "Before": "28/25/22/19/16",
+                            "Indicator": " ⇒ ",
+                            "After": "22/21/20/19/18 seconds"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Mana Cost: ",
+                            "Before": "80/85/90/95/100",
+                            "Indicator": " ⇒ ",
+                            "After": "70/75/80/85/90"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Shield: ",
+                            "Before": "50/75/100/125/150 (+20% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "60/85/110/135/160 (+20% AP)"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Seraphine Bonus Movement Speed: ",
+                            "Before": "20% (+4% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "20% (+2% AP)"
+                        }
+                    }
+                ]
+            },
+            "E": {
+                "SpellName": "E - Beat Drop",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Cooldown: ",
+                            "Before": "10",
+                            "Indicator": " ⇒ ",
+                            "After": "11/10.5/10/9.5/9 seconds"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Mana Cost: ",
+                            "Before": "60/65/70/75/80",
+                            "Indicator": " ⇒ ",
+                            "After": "60 at all ranks"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Damage: ",
+                            "Before": "60/95/130/165/200 (+35% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "70/100/130/160/190 (+50% AP)"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Slow Duration: ",
+                            "Before": "1.25",
+                            "Indicator": " ⇒ ",
+                            "After": "1.1/1.2/1.3/1.4/1.5 seconds"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Minion Damage: ",
+                            "Before": "100%",
+                            "Indicator": " ⇒ ",
+                            "After": "70%"
+                        }
+                    }
+                ]
+            },
+            "R": {
+                "SpellName": "R - Encore",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Damage: ",
+                            "Before": "150/200/250 (+60% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "150/200/250 (+40% AP)"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Cooldown: ",
+                            "Before": "160/130/100",
+                            "Indicator": " ⇒ ",
+                            "After": "160/140/120 seconds"
+                        }
+                    }
+                ]
+            }
         }
     },
     "ChangePatches": [
@@ -985,7 +1233,13 @@
         "12.12",
         "12.14",
         "13.21",
-        "13.22"
+        "13.22",
+        "14.5"
     ],
-    "ChampionName": "Seraphine"
+    "ChampionName": "Seraphine",
+    "Balance": {
+        "14.5": [
+            "adjust"
+        ]
+    }
 }

@@ -59,8 +59,8 @@
                             "text": "80/120/160/200/240 {{0}} magic damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+45/50/55/60/65%)",
-                                    "scaleId": "(+45/50/55/60/65%"
+                                    "scale": "(+50/55/60/65/70% AP)",
+                                    "scaleId": "AP"
                                 }
                             ]
                         },
@@ -147,7 +147,7 @@
                     }
                 ]
             },
-            "cooldown": "120/90/60",
+            "cooldown": "100/80/60",
             "cost": "100 Mana",
             "name": "Primordial Burst"
         }
@@ -632,6 +632,40 @@
             "W": "",
             "E": "",
             "R": ""
+        },
+        "14.5": {
+            "B": "",
+            "P": "",
+            "Q": {
+                "SpellName": "Q - Baleful Strike",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Damage: ",
+                            "Before": "80/120/160/200/240 (+45/50/55/60/65% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "80/120/160/200/240 (+50/55/60/65/70% AP)"
+                        }
+                    }
+                ]
+            },
+            "W": "",
+            "E": "",
+            "R": {
+                "SpellName": "R - Primordial Burst",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Cooldown: ",
+                            "Before": "120/90/60",
+                            "Indicator": " ⇒ ",
+                            "After": "100/80/60 seconds"
+                        }
+                    }
+                ]
+            }
         }
     },
     "ChangePatches": [
@@ -647,11 +681,15 @@
         "13.6",
         "13.7",
         "13.22",
-        "14.2"
+        "14.2",
+        "14.5"
     ],
     "ChampionName": "Veigar",
     "Balance": {
         "14.2": [
+            "buff"
+        ],
+        "14.5": [
             "buff"
         ]
     }
