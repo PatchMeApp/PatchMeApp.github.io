@@ -84,7 +84,7 @@
         },
         "Q": {
             "_rawTooltip": {
-                "fullTooltip": "Smolder belches flame, dealing [[0]] + [[1]] magic damage.</magicDamage><br /><br />Based on stacks of [[2]], this Ability evolves to gain the following effects:<br />[[3]]: Damages all enemies surrounding the target.<br />[[4]]: Sends (2 + [[5]]) explosions beyond the target that deal 75% of this Ability's damage.<br />[[6]]: Burns the target dealing [[7]] over 3 seconds. Enemy champions that drop below [[8]]</trueDamage> total health while burning are killed instantly.<br /><br />[[9]] is considered a basic Attack and applies On-Hit effects. This Ability can only damage each target one time per cast.<br />Damage is increased by 30% Critical Strike Chance. This Ability does 110% damage to minions and monsters.",
+                "fullTooltip": "Smolder belches flame, dealing [[0]] + [[1]] magic damage.</magicDamage><br /><br />Based on stacks of [[2]], this Ability evolves to gain the following effects:<br />[[3]]: Damages all enemies surrounding the target.<br />[[4]]: Sends (2 + [[5]]) explosions beyond the target that deal 75% of this Ability's damage.<br />[[6]]: Burns the target dealing [[7]]) max Health true damage</trueDamage> over 3 seconds. Enemy champions that drop below [[8]]</trueDamage> total health while burning are killed instantly.<br /><br />[[9]] is considered a basic Attack and applies On-Hit effects. This Ability can only damage each target one time per cast.<br />Damage is increased by 30% Critical Strike Chance. This Ability does 110% damage to minions and monsters.",
                 "parseInfo": [
                     {
                         "text": {
@@ -146,10 +146,15 @@
                     },
                     {
                         "text": {
-                            "text": "6.5% max Health true damage",
-                            "scaleHolders": []
+                            "text": "2% bonus AD {{0}} (0.8% Dragon Practice Stacks",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+1% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
                         },
-                        "type": "trueDamage"
+                        "type": ""
                     },
                     {
                         "text": {
@@ -236,7 +241,7 @@
         },
         "E": {
             "_rawTooltip": {
-                "fullTooltip": "Smolder takes flight, gaining [[0]] and ignoring terrain for 1.25 seconds.<br /><br />While flying, Smolder attacks the lowest health enemy 5 - 10 times for [[1]] + [[2]] stacks magic damage</magicDamage> each.<br /><br />Attacks made by this Ability prioritize champions. While flying, Smolder gains expanded vision.",
+                "fullTooltip": "Smolder takes flight, gaining [[0]] and ignoring terrain for 1.25 seconds.<br /><br />While flying, Smolder bombards the lowest health enemy 5 (+1 per 50 Dragon Patience Stacks) times for [[1]] + [[2]] stacks magic damage</magicDamage> each.<br /><br />Attacks made by this Ability prioritize champions. While flying, Smolder gains expanded vision.",
                 "parseInfo": [
                     {
                         "text": {
@@ -315,10 +320,14 @@
                     },
                     {
                         "text": {
-                            "text": "100/135/170 {{0}} Health",
+                            "text": "100/135/170 {{0}} {{1}} Health",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+ 75% AP)",
+                                    "scale": "(+50% bonus AD)",
+                                    "scaleId": "AD"
+                                },
+                                {
+                                    "scale": "(+75% AP)",
                                     "scaleId": "AP"
                                 }
                             ]

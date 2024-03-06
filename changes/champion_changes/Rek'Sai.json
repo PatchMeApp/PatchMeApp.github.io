@@ -181,7 +181,7 @@
         },
         "E": {
             "_rawTooltip": {
-                "fullTooltip": "[[0]] Rek'Sai bites a target, dealing [[1]]. At max [[2]], the bite deals [[3]] instead.<br /><br /><keywordMajor>Burrowed:<keywordMajor> Rek'Sai tunnels forward. leaving two connected tunnel entrances for IO minutes. Rek'Sai can click on one of the entrances to tunnel to the other one, and tunnels each have a 7 second Cooldown between uses. Rek'Sai can have up to 8 tunnels at once.",
+                "fullTooltip": "[[0]] Rek'Sai bites a target, dealing [[1]]. At max [[2]], the bite deals an additional [[3]]<br /><br /><keywordMajor>Burrowed:<keywordMajor> Rek'Sai tunnels forward. leaving two connected tunnel entrances for 10 minutes. Rek'Sai can click on one of the entrances to tunnel to the other one, and tunnels each have a 7 second Cooldown between uses. Rek'Sai can have up to 8 tunnels at once.",
                 "parseInfo": [
                     {
                         "text": {
@@ -192,13 +192,8 @@
                     },
                     {
                         "text": {
-                            "text": "5/10/15/20/25 {{0}} physical damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+70% total AD)",
-                                    "scaleId": "AD"
-                                }
-                            ]
+                            "text": "100% total AD physical damage",
+                            "scaleHolders": []
                         },
                         "type": "physicalDamage"
                     },
@@ -211,15 +206,10 @@
                     },
                     {
                         "text": {
-                            "text": "110/120/130/140/150 {{0}} true damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+170% Bonus AD)",
-                                    "scaleId": "AD"
-                                }
-                            ]
+                            "text": "8/9.5/11/12.5/14% of target's maximum health physical damage",
+                            "scaleHolders": []
                         },
-                        "type": "trueDamage"
+                        "type": "physicalDamage"
                     }
                 ]
             },
