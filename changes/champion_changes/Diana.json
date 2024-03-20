@@ -25,8 +25,8 @@
             "increment": 0.8
         },
         "attackSpeed": {
-            "base": 0.625,
-            "increment": 0.0225
+            "base": 0.694,
+            "increment": 0.02
         },
         "ms": {
             "base": 345,
@@ -45,7 +45,7 @@
         "P": {
             "cooldown": "",
             "_rawTooltip": {
-                "fullTooltip": "Innate: Diana gains [[2]]. After casting an ability, this bonus is tripled to 45% − 120% (based on level) for 3 seconds.<br>Diana's basic attacks on-hit grant a stack for 3.5 seconds, stacking up to 2 times, and refreshing the duration upon receiving the second stack. At 2 stacks, Diana's next basic attack on-hit consumes the stacks to additionally cleave nearby enemies, dealing them [[0]]. Moonsilver Blade deals [[1]] against non- epic monsters.",
+                "fullTooltip": "Innate: Diana gains [[2]]. After casting an ability, this bonus is tripled to 45% − 105% (based on level) for 5 seconds.<br>Diana's basic attacks on-hit grant a stack for 3.5 seconds, stacking up to 2 times, and refreshing the duration upon receiving the second stack. At 2 stacks, Diana's next basic attack on-hit consumes the stacks to additionally cleave nearby enemies, dealing them [[0]]. Moonsilver Blade deals [[1]] against non- epic monsters.",
                 "parseInfo": [
                     {
                         "text": {
@@ -72,7 +72,7 @@
                     },
                     {
                         "text": {
-                            "text": "15% − 40% {{0}} bonus attack speed",
+                            "text": "15% − 35% {{0}} bonus attack speed",
                             "scaleHolders": [
                                 {
                                     "scale": "(based on level)",
@@ -831,6 +831,58 @@
                 ]
             },
             "R": ""
+        },
+        "14.6": {
+            "B": {
+                "SpellName": "Base Stats",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Attack Speed Ratio: ",
+                            "Before": "0.625",
+                            "Indicator": " ⇒ ",
+                            "After": "0.694"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Attack Speed Growth: ",
+                            "Before": "2.25%",
+                            "Indicator": " ⇒ ",
+                            "After": "2%"
+                        }
+                    }
+                ]
+            },
+            "P": {
+                "SpellName": "Passive - Moonsilver Blade",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Bonus Attack Speed: ",
+                            "Before": "15-39.96% (scaling every 3 levels)",
+                            "Indicator": " ⇒ ",
+                            "After": "15-35% (scaling linearly) (Note: Added scaling past level 18 for alternate game modes.)"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Empowered Bonus Attack Speed: ",
+                            "Before": "tripled for 3 seconds",
+                            "Indicator": " ⇒ ",
+                            "After": "tripled for 5 seconds (Note: this tooltip is bugged and will not reflect the change until the next patch.)"
+                        }
+                    }
+                ]
+            },
+            "Q": "",
+            "W": "",
+            "E": "",
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -842,7 +894,13 @@
         "12.1",
         "12.10",
         "12.16",
-        "13.14"
+        "13.14",
+        "14.6"
     ],
-    "ChampionName": "Diana"
+    "ChampionName": "Diana",
+    "Balance": {
+        "14.6": [
+            "buff"
+        ]
+    }
 }

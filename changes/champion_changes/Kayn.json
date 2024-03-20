@@ -241,7 +241,7 @@
                             "text": "150/250/350 {{0}} physical damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+175% Bonus AD)",
+                                    "scale": "(+150% Bonus AD)",
                                     "scaleId": "AD"
                                 }
                             ]
@@ -962,6 +962,49 @@
                 ]
             }
         },
+        "14.6": {
+            "B": "",
+            "P": "",
+            "Q": {
+                "SpellName": "Q - Reaping Slash",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Darkin - Damage per Hit: ",
+                            "Before": "65% Total AD + 5 (+3.5% bonus AD)% target's maximum health",
+                            "Indicator": " ⇒ ",
+                            "After": "65% Total AD + 6 (+3.5% bonus AD)% target's maximum health"
+                        }
+                    },
+                    {
+                        "Tag": "NEW",
+                        "Change": {
+                            "Attribute": "",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "Reaping Slash's animation now locks Kayn out of using item actives."
+                        }
+                    }
+                ]
+            },
+            "W": "",
+            "E": "",
+            "R": {
+                "SpellName": "R - Umbral Trespass",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Damage: ",
+                            "Before": "150/250/350 (+175% Bonus AD)",
+                            "Indicator": " ⇒ ",
+                            "After": "150/250/350 (+150% Bonus AD) (Note: This does not affect Darkin form ultimate damage.)"
+                        }
+                    }
+                ]
+            }
+        },
         "14.2": {
             "B": "",
             "P": "",
@@ -1005,7 +1048,8 @@
         "13.17",
         "13.18",
         "14.2",
-        "14.5"
+        "14.5",
+        "14.6"
     ],
     "ChampionName": "Kayn",
     "Balance": {
@@ -1014,6 +1058,9 @@
         ],
         "14.5": [
             "buff"
+        ],
+        "14.6": [
+            "adjust"
         ]
     }
 }

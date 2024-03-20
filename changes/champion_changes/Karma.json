@@ -6,7 +6,7 @@
         },
         "mp": {
             "base": 374,
-            "increment": 50
+            "increment": 40
         },
         "armor": {
             "base": 28,
@@ -22,7 +22,7 @@
         },
         "mpRegen": {
             "base": 13,
-            "increment": 0.5
+            "increment": 0.8
         },
         "attackSpeed": {
             "base": 0.625,
@@ -45,7 +45,7 @@
         "P": {
             "cooldown": "",
             "_rawTooltip": {
-                "fullTooltip": "Innate: Mantra's current cooldown is reduced by 5 seconds for each enemy champion hit by Karma's damaging abilities.",
+                "fullTooltip": "Innate: Mantra's current cooldown is reduced by 4 seconds for each enemy champion hit by Karma's damaging abilities.",
                 "parseInfo": []
             },
             "name": "Gathering Fire"
@@ -76,7 +76,7 @@
                 ]
             },
             "cooldown": "9/8/7/6/5",
-            "cost": "45 Mana",
+            "cost": "40/50/60/70/80 Mana",
             "name": "Inner Flame"
         },
         "W": {
@@ -226,7 +226,7 @@
                     },
                     {
                         "text": {
-                            "text": "25/75/125/175 {{0}} more Shield",
+                            "text": "50/90/130/170 {{0}} more Shield",
                             "scaleHolders": [
                                 {
                                     "scale": "(+45% AP)",
@@ -252,7 +252,7 @@
                     }
                 ]
             },
-            "cooldown": "40/37/34/31",
+            "cooldown": "40/38/36/34",
             "cost": "No Cost",
             "name": "Mantra"
         }
@@ -837,6 +837,84 @@
                     }
                 ]
             }
+        },
+        "14.6": {
+            "B": {
+                "SpellName": "Base Stats",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Mana Growth: ",
+                            "Before": "50",
+                            "Indicator": " ⇒ ",
+                            "After": "40"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Mana Regeneration Growth: ",
+                            "Before": "0.5",
+                            "Indicator": " ⇒ ",
+                            "After": "0.8"
+                        }
+                    }
+                ]
+            },
+            "P": {
+                "SpellName": "Passive - Gathering Fire",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Cooldown Refund: ",
+                            "Before": "5 seconds",
+                            "Indicator": " ⇒ ",
+                            "After": "4 seconds"
+                        }
+                    }
+                ]
+            },
+            "Q": {
+                "SpellName": "Q - Inner Flame",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Mana Cost: ",
+                            "Before": "45",
+                            "Indicator": " ⇒ ",
+                            "After": "40/50/60/70/80"
+                        }
+                    }
+                ]
+            },
+            "W": "",
+            "E": "",
+            "R": {
+                "SpellName": "R - Mantra",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Cooldown: ",
+                            "Before": "40/37/34/31",
+                            "Indicator": " ⇒ ",
+                            "After": "40/38/36/34 seconds"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "R+E Defiance Bonus Shield: ",
+                            "Before": "25/75/125/175 (+45% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "50/90/130/170 (+45% AP)"
+                        }
+                    }
+                ]
+            }
         }
     },
     "ChangePatches": [
@@ -854,7 +932,8 @@
         "12.10",
         "13.16",
         "14.2",
-        "14.3"
+        "14.3",
+        "14.6"
     ],
     "ChampionName": "Karma",
     "Balance": {
@@ -862,6 +941,9 @@
             "buff"
         ],
         "14.3": [
+            "nerf"
+        ],
+        "14.6": [
             "nerf"
         ]
     }

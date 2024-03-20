@@ -163,7 +163,7 @@
                     },
                     {
                         "text": {
-                            "text": "55/70/85/100/115% Attack Speed",
+                            "text": "54/68/82/96/110% Attack Speed",
                             "scaleHolders": []
                         },
                         "type": "attackSpeed"
@@ -207,7 +207,7 @@
                     },
                     {
                         "text": {
-                            "text": "heals Briar for 25/30/35/40/45% of the damage dealt",
+                            "text": "heals Briar for 24/28/32/36/40% of the damage dealt",
                             "scaleHolders": []
                         },
                         "type": "healing"
@@ -308,7 +308,7 @@
                 "parseInfo": [
                     {
                         "text": {
-                            "text": "200/375/550 {{0}} {{1}} magic damage",
+                            "text": "150/250/350 {{0}} {{1}} magic damage",
                             "scaleHolders": [
                                 {
                                     "scale": "(+120% AP)",
@@ -878,6 +878,67 @@
             },
             "E": "",
             "R": ""
+        },
+        "14.6": {
+            "B": "",
+            "P": "",
+            "Q": {
+                "SpellName": "Q - Head Rush",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Ward Watch: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "Q can now jump to wards."
+                        }
+                    }
+                ]
+            },
+            "W": {
+                "SpellName": "W - Blood Frenzy",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Bonus Attack Speed: ",
+                            "Before": "55/70/85/100/115%",
+                            "Indicator": " ⇒ ",
+                            "After": "54/68/82/96/110%"
+                        }
+                    }
+                ]
+            },
+            "E": "",
+            "R": {
+                "SpellName": "R - Certain Death",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Damage: ",
+                            "Before": "150/300/450 (+50% bonus AD) (+120% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "150/250/350 (+50% bonus AD) (+120% AP)"
+                        }
+                    }
+                ]
+            },
+            "W -": {
+                "SpellName": "W - Snack Attack",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Healing Based on Damage Dealt: ",
+                            "Before": "25/30/35/40/45%",
+                            "Indicator": " ⇒ ",
+                            "After": "24/28/32/36/40%"
+                        }
+                    }
+                ]
+            }
         }
     },
     "ChangePatches": [
@@ -887,7 +948,8 @@
         "13.22",
         "13.23",
         "13.24",
-        "14.2"
+        "14.2",
+        "14.6"
     ],
     "ChampionName": "Briar",
     "Balance": {
@@ -896,6 +958,9 @@
         ],
         "14.2": [
             "adjust"
+        ],
+        "14.6": [
+            "nerf"
         ]
     }
 }

@@ -1083,6 +1083,49 @@
                     }
                 ]
             }
+        },
+        "14.6": {
+            "B": "",
+            "P": "",
+            "Q": "",
+            "W": {
+                "SpellName": "W - Burrow",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Bugfix: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "Attacks should now always damage and knock up the primary target when right-clicking, even with enhanced range via Milio or Rapid Firecannon. This was also partially fixed in a micropatch during 14.5."
+                        }
+                    }
+                ]
+            },
+            "E": "",
+            "R": {
+                "SpellName": "R - Void Rush",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "QoL Update: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "R can now be queued up from outside of cast range, prompting Rek'Sai to walk into range to cast the spell"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Bugfix: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "Fixed a bug where if Rek'Sai was stunned on the very next frame after casting R, it would fail"
+                        }
+                    }
+                ]
+            }
         }
     },
     "ChangePatches": [
@@ -1097,7 +1140,8 @@
         "13.16",
         "13.19",
         "14.4",
-        "14.5"
+        "14.5",
+        "14.6"
     ],
     "ChampionName": "Rek'Sai",
     "Balance": {
@@ -1107,6 +1151,9 @@
         ],
         "14.5": [
             "buff"
+        ],
+        "14.6": [
+            "adjust"
         ]
     }
 }

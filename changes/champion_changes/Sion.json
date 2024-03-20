@@ -121,11 +121,11 @@
                             "text": "40/60/80/100/120 {{0}} and 90/155/220/285/350 {{1}} physical damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+45/52.5/60/67.5/75% AD)",
+                                    "scale": "(+40/50/60/70/80%  AD)",
                                     "scaleId": "AD"
                                 },
                                 {
-                                    "scale": "(+135/157.5/180/202.5/225% AD)",
+                                    "scale": "(+120/150/180/210/240%  AD)",
                                     "scaleId": "AD"
                                 }
                             ]
@@ -179,14 +179,14 @@
                     },
                     {
                         "text": {
-                            "text": "60/85/110/135/160 {{0}} {{1}} Shield",
+                            "text": "60/75/90/105/120 {{0}} {{1}} Shield",
                             "scaleHolders": [
                                 {
                                     "scale": "(+40% AP)",
                                     "scaleId": "AP"
                                 },
                                 {
-                                    "scale": "(+8/9/10/11/12% Health)",
+                                    "scale": "(+8/10/12/14/16% Health)",
                                     "scaleId": "Health"
                                 }
                             ]
@@ -580,6 +580,49 @@
             "W": "",
             "E": "",
             "R": ""
+        },
+        "14.6": {
+            "B": "",
+            "P": "",
+            "Q": {
+                "SpellName": "Q - Decimating Smash",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Minimum Damage: ",
+                            "Before": "40/60/80/100/120 (+45/52.5/60/67.5/75% total AD)",
+                            "Indicator": " ⇒ ",
+                            "After": "40/60/80/100/120 (+40/50/60/70/80% total AD)"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Maximum Damage: ",
+                            "Before": "90/155/220/285/350 (+135/157.5/180/202.5/225% Total AD)",
+                            "Indicator": " ⇒ ",
+                            "After": "90/155/220/285/350 (+120/150/180/210/240% Total AD)"
+                        }
+                    }
+                ]
+            },
+            "W": {
+                "SpellName": "W - Soul Furnace",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Shield: ",
+                            "Before": "60/85/110/135/160 (+8/9/10/11/12% maximum health)",
+                            "Indicator": " ⇒ ",
+                            "After": "60/75/90/105/120 (+8/10/12/14/16% maximum health)"
+                        }
+                    }
+                ]
+            },
+            "E": "",
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -591,7 +634,13 @@
         "12.10",
         "12.23",
         "13.1",
-        "13.9"
+        "13.9",
+        "14.6"
     ],
-    "ChampionName": "Sion"
+    "ChampionName": "Sion",
+    "Balance": {
+        "14.6": [
+            "buff"
+        ]
+    }
 }

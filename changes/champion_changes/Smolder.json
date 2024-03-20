@@ -84,7 +84,7 @@
         },
         "Q": {
             "_rawTooltip": {
-                "fullTooltip": "Smolder belches flame, dealing [[0]] + [[1]] magic damage.</magicDamage><br /><br />Based on stacks of [[2]], this Ability evolves to gain the following effects:<br />[[3]]: Damages all enemies surrounding the target.<br />[[4]]: Sends (2 + [[5]]) explosions beyond the target that deal 75% of this Ability's damage.<br />[[6]]: Burns the target dealing [[7]]) max Health true damage</trueDamage> over 3 seconds. Enemy champions that drop below [[8]]</trueDamage> total health while burning are killed instantly.<br /><br />[[9]] is considered a basic Attack and applies On-Hit effects. This Ability can only damage each target one time per cast.<br />Damage is increased by 30% Critical Strike Chance. This Ability does 110% damage to minions and monsters.",
+                "fullTooltip": "Smolder belches flame, dealing [[0]] + [[1]] magic damage.</magicDamage><br /><br />Based on stacks of [[2]], this Ability evolves to gain the following effects:<br />[[3]]: Damages all enemies surrounding the target.<br />[[4]]: Sends (2 + [[5]]) explosions beyond the target that deal 75% of this Ability's damage.<br />[[6]]: Burns the target dealing [[7]]) max Health true damage</trueDamage> over 3 seconds. Enemy champions that drop below [[8]] total health while burning are killed instantly.<br /><br />[[9]] is considered a basic Attack and applies On-Hit effects. This Ability can only damage each target one time per cast.<br />Damage is increased by 30% Critical Strike Chance. This Ability does 110% damage to minions and monsters.",
                 "parseInfo": [
                     {
                         "text": {
@@ -158,10 +158,10 @@
                     },
                     {
                         "text": {
-                            "text": "1.25% + 0.025% Dragon Practice Stacks",
+                            "text": "6.5%",
                             "scaleHolders": []
                         },
-                        "type": ""
+                        "type": "trueDamage"
                     },
                     {
                         "text": {
@@ -245,7 +245,7 @@
                 "parseInfo": [
                     {
                         "text": {
-                            "text": "100% Move Speed",
+                            "text": "75% Move Speed",
                             "scaleHolders": []
                         },
                         "type": "speed"
@@ -511,12 +511,69 @@
                     }
                 ]
             }
+        },
+        "14.6": {
+            "B": "",
+            "P": "",
+            "Q": {
+                "SpellName": "Q - Super Scorcher Breath",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Execute Threshold: ",
+                            "Before": "2% (+0.025 % per stack)",
+                            "Indicator": " ⇒ ",
+                            "After": "6.5% (Note: This started at 7.625% at 225 stacks.)"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Execute Conditions: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "Smolder only checks to execute units after Smolder's damage, meaning it will no longer execute off of allies' damage."
+                        }
+                    }
+                ]
+            },
+            "W": {
+                "SpellName": "W - ACHOOO!",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Missile Radius: ",
+                            "Before": "125",
+                            "Indicator": " ⇒ ",
+                            "After": "115"
+                        }
+                    }
+                ]
+            },
+            "E": {
+                "SpellName": "E - Flap, Flap, Flap",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Movement Speed: ",
+                            "Before": "100%",
+                            "Indicator": " ⇒ ",
+                            "After": "75%"
+                        }
+                    }
+                ]
+            },
+            "R": ""
         }
     },
     "ChangePatches": [
         "14.2",
         "14.4",
-        "14.5"
+        "14.5",
+        "14.6"
     ],
     "ChampionName": "Smolder",
     "Balance": {
@@ -525,6 +582,9 @@
         ],
         "14.5": [
             "adjust"
+        ],
+        "14.6": [
+            "nerf"
         ]
     }
 }

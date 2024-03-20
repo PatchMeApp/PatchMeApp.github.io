@@ -49,7 +49,7 @@
                 "parseInfo": [
                     {
                         "text": {
-                            "text": "15 − 200 {{0}} {{1}} {{2}} {{3}} magic damage",
+                            "text": "15 − 115 {{0}} {{1}} {{2}} {{3}} magic damage",
                             "scaleHolders": [
                                 {
                                     "scale": "(based on level)",
@@ -60,7 +60,7 @@
                                     "scaleId": "AD"
                                 },
                                 {
-                                    "scale": "(+ 50% AP)",
+                                    "scale": "(+ 40% AP)",
                                     "scaleId": "AP"
                                 },
                                 {
@@ -96,7 +96,7 @@
                             "text": "70/105/140/175/210 {{0}} magic damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+75% AP)",
+                                    "scale": "(+70% AP)",
                                     "scaleId": "AP"
                                 }
                             ]
@@ -117,13 +117,13 @@
                     }
                 ]
             },
-            "cooldown": "12/11/10/9/8",
+            "cooldown": "12/10.75/9.5/8.25/7",
             "cost": "70/75/80/85/90 Mana",
             "name": "Winds of War"
         },
         "W": {
             "_rawTooltip": {
-                "fullTooltip": "[[0]] Galio gains a [[1]] after not taking damage for 12/11/8 (levels 1/6/11)  seconds.<br /><br />[[2]] Galio reduces incoming magic damage by 25/30/35/40/45% (+5% per 100 AP) (+8% per 100 Bonus MR) and incoming physical damage by 12.5/15/17.5/20/22.5% (+250% per 100 AP) (+400% per 100 Bonus MR) and [[3]] himself by 15%.<br /><br />[[4]] Galio [[5]] enemy champions for between 0.5 to 1.5 seconds, deals between [[6]] and [[7]], and refreshes the damage reduction for 2 seconds. Taunt duration, damage, and range increase with charge time.",
+                "fullTooltip": "[[0]] Galio gains a [[1]] after not taking damage for 12/11/8 (levels 1/6/11)  seconds.<br /><br />[[2]] Galio reduces incoming magic damage by 20/25/30/35/40% (+4% per 100 AP) (+8% per 100 Bonus MR) (+ 1% per 100 bonus health) and incoming physical damage by 12.5/15/17.5/20/22.5% (+250% per 100 AP) (+400% per 100 Bonus MR) and [[3]] himself by 15%.<br /><br />[[4]] Galio [[5]] enemy champions for between 0.5 to 1.5 seconds, deals between [[6]] and [[7]], and refreshes the damage reduction for 2 seconds. Taunt duration, damage, and range increase with charge time.",
                 "parseInfo": [
                     {
                         "text": {
@@ -169,7 +169,7 @@
                     },
                     {
                         "text": {
-                            "text": "20/35/50/65/80 {{0}}",
+                            "text": "20/30/40/50/60 {{0}}",
                             "scaleHolders": [
                                 {
                                     "scale": "(+30% AP)",
@@ -181,7 +181,7 @@
                     },
                     {
                         "text": {
-                            "text": "60/105/150/195/240 {{0}} magic damage",
+                            "text": "60/90/120/150/180 {{0}} magic damage",
                             "scaleHolders": [
                                 {
                                     "scale": "(+90% AP)",
@@ -210,7 +210,7 @@
                     },
                     {
                         "text": {
-                            "text": "90/130/170/210/250 {{0}} magic damage",
+                            "text": "75/115/155/195/235 {{0}} magic damage",
                             "scaleHolders": [
                                 {
                                     "scale": "(+90% AP)",
@@ -222,10 +222,10 @@
                     },
                     {
                         "text": {
-                            "text": "45/65/85/105/125 {{0}} magic damage",
+                            "text": "60/92/124/156/188 {{0}} magic damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+45% AP)",
+                                    "scale": "(+72% AP)",
                                     "scaleId": "AP"
                                 }
                             ]
@@ -632,6 +632,129 @@
             "W": "",
             "E": "",
             "R": ""
+        },
+        "14.6": {
+            "B": "",
+            "P": {
+                "SpellName": "Passive - Colossal Smash",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Magic Damage: ",
+                            "Before": "15-200 (based on level) (+100% AD) (+50% AP) (+60% bonus magic resistance)",
+                            "Indicator": " ⇒ ",
+                            "After": "15-115 (based on level) (+100% AD) (+40% AP) (+60% bonus magic resistance)"
+                        }
+                    },
+                    {
+                        "Tag": "NEW",
+                        "Change": {
+                            "Attribute": "",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "Hitting enemy champions or Epic monsters with abilities reduces this cooldown by 3 seconds, once per cast."
+                        }
+                    },
+                    {
+                        "Tag": "NEW",
+                        "Change": {
+                            "Attribute": "",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "Colossal Smash now triggers spell effects."
+                        }
+                    },
+                    {
+                        "Tag": "NEW",
+                        "Change": {
+                            "Attribute": "",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "Galio now gains 40% attack speed while his passive is available."
+                        }
+                    },
+                    {
+                        "Tag": "REMOVED",
+                        "Change": {
+                            "Attribute": "",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "Colossal Smash is no longer affected by Ability Haste."
+                        }
+                    }
+                ]
+            },
+            "Q": {
+                "SpellName": "Q - Winds of War",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Magic Damage: ",
+                            "Before": "70/105/140/175/210 (+75% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "70/105/140/175/210 (+70% AP)"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Cooldown: ",
+                            "Before": "12/11/10/9/8",
+                            "Indicator": " ⇒ ",
+                            "After": "12/10.75/9.5/8.25/7 seconds"
+                        }
+                    }
+                ]
+            },
+            "W": {
+                "SpellName": "W - Shield of Durand",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Magic Damage Reduction: ",
+                            "Before": "25/30/35/40/45% (+5% per 100 AP) (+12% per 100 bonus magic resistance)",
+                            "Indicator": " ⇒ ",
+                            "After": "20/25/30/35/40% (+4% per 100 AP) (+8% per 100 bonus magic resistance) (+ 1% per 100 bonus health)"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Minimum Magic Damage: ",
+                            "Before": "20/35/50/65/80 (+30% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "20/30/40/50/60 (+30% AP)"
+                        }
+                    }
+                ]
+            },
+            "E": {
+                "SpellName": "E - Justice Punch",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Magic Damage: ",
+                            "Before": "90/130/170/210/250 (+90% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "75/115/155/195/235 (+90% AP)"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Reduced Damage to Non-Champions: ",
+                            "Before": "50%",
+                            "Indicator": " ⇒ ",
+                            "After": "20%"
+                        }
+                    }
+                ]
+            },
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -646,12 +769,16 @@
         "13.6",
         "13.19",
         "13.20",
-        "13.24"
+        "13.24",
+        "14.6"
     ],
     "ChampionName": "Galio",
     "Balance": {
         "13.24": [
             "buff"
+        ],
+        "14.6": [
+            "adjust"
         ]
     }
 }

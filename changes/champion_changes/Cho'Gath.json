@@ -111,7 +111,7 @@
                     }
                 ]
             },
-            "cooldown": "13/12/11/10/9",
+            "cooldown": "11/10.5/10/9.5/9",
             "cost": "70/75/80/85/90 Mana",
             "name": "Feral Scream"
         },
@@ -121,7 +121,7 @@
                 "parseInfo": [
                     {
                         "text": {
-                            "text": "22/34/46/58/70 {{0}} plus 0.5% per stack of Feast {{1}} of the target's max Health magic damage",
+                            "text": "22/37/52/67/82 {{0}} plus 0.5% per stack of Feast {{1}} of the target's max Health magic damage",
                             "scaleHolders": [
                                 {
                                     "scale": "(+30% AP)",
@@ -447,6 +447,40 @@
             "E": "",
             "R": ""
         },
+        "14.6": {
+            "B": "",
+            "P": "",
+            "Q": "",
+            "W": {
+                "SpellName": "W - Feral Scream",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Cooldown: ",
+                            "Before": "13/12/11/10/9",
+                            "Indicator": " ⇒ ",
+                            "After": "11/10.5/10/9.5/9 seconds"
+                        }
+                    }
+                ]
+            },
+            "E": {
+                "SpellName": "E - Vorpal Spikes",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Damage per Spike: ",
+                            "Before": "22/34/46/58/70 (+3% (+0.5% per Feast stack) of target's maximum health)",
+                            "Indicator": " ⇒ ",
+                            "After": "22/37/52/67/82 (+3% (+0.5% per Feast stack) of target's maximum health)"
+                        }
+                    }
+                ]
+            },
+            "R": ""
+        },
         "14.2": {
             "B": "",
             "P": "",
@@ -486,11 +520,15 @@
         "12.22",
         "12.23",
         "13.4",
-        "14.2"
+        "14.2",
+        "14.6"
     ],
     "ChampionName": "Cho'Gath",
     "Balance": {
         "14.2": [
+            "buff"
+        ],
+        "14.6": [
             "buff"
         ]
     }

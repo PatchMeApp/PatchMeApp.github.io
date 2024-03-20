@@ -1,5 +1,5 @@
 {
-    "LatestGlobalPatch": "14.5",
+    "LatestGlobalPatch": "14.6",
     "Aatrox": {
         "ChampionName": "Aatrox",
         "ChangePatches": [
@@ -1049,7 +1049,8 @@
             "13.12",
             "13.22",
             "13.24",
-            "14.2"
+            "14.2",
+            "14.6"
         ],
         "LatestChanges": {
             "B": {
@@ -1058,66 +1059,35 @@
                     {
                         "Tag": "",
                         "Change": {
-                            "Attribute": "Armor Growth: ",
-                            "Before": "4.8",
+                            "Attribute": "Base Health: ",
+                            "Before": "670",
                             "Indicator": " ⇒ ",
-                            "After": "5"
-                        }
-                    },
-                    {
-                        "Tag": "",
-                        "Change": {
-                            "Attribute": "Health Growth: ",
-                            "Before": "109",
-                            "Indicator": " ⇒ ",
-                            "After": "115"
+                            "After": "640"
                         }
                     }
                 ]
             },
             "P": "",
-            "Q": "",
-            "W": {
-                "SpellName": "W - Drunken Rage",
-                "Changes": [
-                    {
-                        "Tag": "NEW",
-                        "Change": {
-                            "Attribute": "",
-                            "Before": "",
-                            "Indicator": "",
-                            "After": "Now applies against turrets and other structures, dealing 50% normal damage."
-                        }
-                    },
-                    {
-                        "Tag": "NEW",
-                        "Change": {
-                            "Attribute": "",
-                            "Before": "",
-                            "Indicator": "",
-                            "After": "now applies damage in an AoE when targeting structures and includes them in its AoE when targeting units nearby."
-                        }
-                    }
-                ]
-            },
-            "E": "",
-            "R": {
-                "SpellName": "R - Explosive Cask",
+            "Q": {
+                "SpellName": "Q - Barrel Roll",
                 "Changes": [
                     {
                         "Tag": "",
                         "Change": {
-                            "Attribute": "Cooldown: ",
-                            "Before": "120/100/80 seconds",
+                            "Attribute": "Mana Cost: ",
+                            "Before": "80/75/70/65/60",
                             "Indicator": " ⇒ ",
-                            "After": "100/85/70 seconds"
+                            "After": "80 at all ranks"
                         }
                     }
                 ]
-            }
+            },
+            "W": "",
+            "E": "",
+            "R": ""
         },
         "Balance": [
-            "buff"
+            "nerf"
         ]
     },
     "Graves": {
@@ -1220,12 +1190,61 @@
             "12.10",
             "13.16",
             "14.2",
-            "14.3"
+            "14.3",
+            "14.6"
         ],
         "LatestChanges": {
-            "B": "",
-            "P": "",
-            "Q": "",
+            "B": {
+                "SpellName": "Base Stats",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Mana Growth: ",
+                            "Before": "50",
+                            "Indicator": " ⇒ ",
+                            "After": "40"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Mana Regeneration Growth: ",
+                            "Before": "0.5",
+                            "Indicator": " ⇒ ",
+                            "After": "0.8"
+                        }
+                    }
+                ]
+            },
+            "P": {
+                "SpellName": "Passive - Gathering Fire",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Cooldown Refund: ",
+                            "Before": "5 seconds",
+                            "Indicator": " ⇒ ",
+                            "After": "4 seconds"
+                        }
+                    }
+                ]
+            },
+            "Q": {
+                "SpellName": "Q - Inner Flame",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Mana Cost: ",
+                            "Before": "45",
+                            "Indicator": " ⇒ ",
+                            "After": "40/50/60/70/80"
+                        }
+                    }
+                ]
+            },
             "W": "",
             "E": "",
             "R": {
@@ -1234,10 +1253,19 @@
                     {
                         "Tag": "",
                         "Change": {
-                            "Attribute": "Soulflare Damage: ",
-                            "Before": "35/140/245/350 (+70% AP)",
+                            "Attribute": "Cooldown: ",
+                            "Before": "40/37/34/31",
                             "Indicator": " ⇒ ",
-                            "After": "40/130/220/310 (+50% AP)"
+                            "After": "40/38/36/34 seconds"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "R+E Defiance Bonus Shield: ",
+                            "Before": "25/75/125/175 (+45% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "50/90/130/170 (+45% AP)"
                         }
                     }
                 ]
@@ -1358,29 +1386,33 @@
             "10.15",
             "10.23",
             "12.10",
-            "12.21"
+            "12.21",
+            "14.6"
         ],
         "LatestChanges": {
             "B": "",
             "P": "",
             "Q": "",
             "W": "",
-            "E": "",
-            "R": {
-                "SpellName": "R - Call of the Forge God",
+            "E": {
+                "SpellName": "E - Searing Charge",
                 "Changes": [
                     {
                         "Tag": "",
                         "Change": {
-                            "Attribute": "Maximum Slow: ",
-                            "Before": "40/50/60%",
+                            "Attribute": "Cooldown: ",
+                            "Before": "16/15/14/13/12",
                             "Indicator": " ⇒ ",
-                            "After": "60% at all ranks"
+                            "After": "14/13.5/13/12.5/12 seconds"
                         }
                     }
                 ]
-            }
-        }
+            },
+            "R": ""
+        },
+        "Balance": [
+            "buff"
+        ]
     },
     "Pantheon": {
         "ChampionName": "Pantheon",
@@ -1486,174 +1518,54 @@
             "13.16",
             "13.19",
             "14.4",
-            "14.5"
+            "14.5",
+            "14.6"
         ],
         "LatestChanges": {
-            "B": {
-                "SpellName": "Base Stats",
-                "Changes": [
-                    {
-                        "Tag": "",
-                        "Change": {
-                            "Attribute": "Attack Windup: ",
-                            "Before": "26.67% (+100% Attack Speed)",
-                            "Indicator": " ⇒ ",
-                            "After": "20% (+60% Attack Speed) (Note: This means attacks take 25% less time to fully animate at level 1, down to 3% less time with Stridebreaker, runes, and Q active at level 18.)"
-                        }
-                    },
-                    {
-                        "Tag": "",
-                        "Change": {
-                            "Attribute": "Basic Attack Cast Frame: ",
-                            "Before": "12",
-                            "Indicator": " ⇒ ",
-                            "After": "10 (Note: This means attacks deal their damage about 20% earlier in the animation.)"
-                        }
-                    },
-                    {
-                        "Tag": "",
-                        "Change": {
-                            "Attribute": "Critical Strike Cast Frame: ",
-                            "Before": "9",
-                            "Indicator": " ⇒ ",
-                            "After": "10"
-                        }
-                    }
-                ]
-            },
+            "B": "",
             "P": "",
-            "Q": {
-                "SpellName": "Q - Queen's Wrath",
-                "Changes": [
-                    {
-                        "Tag": "",
-                        "Change": {
-                            "Attribute": "QoL Change: ",
-                            "Before": "",
-                            "Indicator": "",
-                            "After": "Attacks can no longer be canceled mid-attack, now matches most other empowered attacks"
-                        }
-                    },
-                    {
-                        "Tag": "",
-                        "Change": {
-                            "Attribute": "Cast Frame: ",
-                            "Before": "12",
-                            "Indicator": " ⇒ ",
-                            "After": "9 (Note: This means the attack strikes the target about 33% earlier in the animation.)"
-                        }
-                    },
-                    {
-                        "Tag": "",
-                        "Change": {
-                            "Attribute": "Bugfix: ",
-                            "Before": "",
-                            "Indicator": "",
-                            "After": "Attacks now stack Spear of Shojin when hitting only one champion"
-                        }
-                    }
-                ]
-            },
+            "Q": "",
             "W": {
-                "SpellName": "W - Burrow / Unburrow",
+                "SpellName": "W - Burrow",
                 "Changes": [
-                    {
-                        "Tag": "NEW",
-                        "Change": {
-                            "Attribute": "An Uplifting Change: ",
-                            "Before": "",
-                            "Indicator": "",
-                            "After": "Unburrow will now knock up all Large Monsters in range if they're eligible"
-                        }
-                    },
-                    {
-                        "Tag": "NEW",
-                        "Change": {
-                            "Attribute": "An Non-Lifting Uplifting Change: ",
-                            "Before": "",
-                            "Indicator": "",
-                            "After": "Unburrow can now damage (but not knock up) targets who were recently knocked up and immune to Unburrow"
-                        }
-                    },
                     {
                         "Tag": "",
                         "Change": {
                             "Attribute": "Bugfix: ",
                             "Before": "",
                             "Indicator": "",
-                            "After": "Fixed a bug where Rek'Sai could stop auto-attacking after burrowing and quickly unburrowing"
+                            "After": "Attacks should now always damage and knock up the primary target when right-clicking, even with enhanced range via Milio or Rapid Firecannon. This was also partially fixed in a micropatch during 14.5."
                         }
                     }
                 ]
             },
-            "E": {
-                "SpellName": "E - Tunnel",
-                "Changes": [
-                    {
-                        "Tag": "",
-                        "Change": {
-                            "Attribute": "Bugfix In Progress: ",
-                            "Before": "",
-                            "Indicator": "",
-                            "After": "Reduced the frequency of a bug that caused Rek'Sai to occasionally fail to dash when crossing walls. We'll be keeping an eye out for more instances of this bug occurring and work to resolve them as we're able to."
-                        }
-                    }
-                ]
-            },
+            "E": "",
             "R": {
                 "SpellName": "R - Void Rush",
                 "Changes": [
                     {
                         "Tag": "",
                         "Change": {
-                            "Attribute": "Damage: ",
-                            "Before": "100/250/400 (+100% bonus AD) (+20/25/30% of target's missing health)",
-                            "Indicator": " ⇒ ",
-                            "After": "150/300/450 (+100% bonus AD) (+25/30/35% of target's missing health)"
-                        }
-                    }
-                ]
-            },
-            "E -": {
-                "SpellName": "E - Furious Bite",
-                "Changes": [
-                    {
-                        "Tag": "",
-                        "Change": {
-                            "Attribute": "100 Fury Bonus Damage: ",
-                            "Before": "6/8/10/12/14% of target's maximum health",
-                            "Indicator": " ⇒ ",
-                            "After": "8/9.5/11/12.5/14% of target's maximum health"
+                            "Attribute": "QoL Update: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "R can now be queued up from outside of cast range, prompting Rek'Sai to walk into range to cast the spell"
                         }
                     },
                     {
                         "Tag": "",
                         "Change": {
-                            "Attribute": "Monster Bonus Damage Cap: ",
-                            "Before": "60-400 (based on level)",
-                            "Indicator": " ⇒ ",
-                            "After": "75-400 (based on level)"
-                        }
-                    }
-                ]
-            },
-            "M": {
-                "SpellName": "Miscellaneous",
-                "Changes": [
-                    {
-                        "Tag": "",
-                        "Change": {
-                            "Attribute": "",
+                            "Attribute": "Bugfix: ",
                             "Before": "",
                             "Indicator": "",
-                            "After": "Made minor updates to tooltips to improve clarity."
+                            "After": "Fixed a bug where if Rek'Sai was stunned on the very next frame after casting R, it would fail"
                         }
                     }
                 ]
             }
         },
         "Balance": [
-            "buff"
+            "adjust"
         ]
     },
     "Riven": {
@@ -1763,29 +1675,55 @@
             "12.10",
             "12.23",
             "13.1",
-            "13.9"
+            "13.9",
+            "14.6"
         ],
         "LatestChanges": {
             "B": "",
-            "P": {
-                "SpellName": "Passive - Glory in Death",
+            "P": "",
+            "Q": {
+                "SpellName": "Q - Decimating Smash",
                 "Changes": [
                     {
                         "Tag": "",
                         "Change": {
-                            "Attribute": "Health Decay: ",
-                            "Before": "2-19 (1 health per level)",
+                            "Attribute": "Minimum Damage: ",
+                            "Before": "40/60/80/100/120 (+45/52.5/60/67.5/75% total AD)",
                             "Indicator": " ⇒ ",
-                            "After": "2.3-24.4 (1.3 per level)"
+                            "After": "40/60/80/100/120 (+40/50/60/70/80% total AD)"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Maximum Damage: ",
+                            "Before": "90/155/220/285/350 (+135/157.5/180/202.5/225% Total AD)",
+                            "Indicator": " ⇒ ",
+                            "After": "90/155/220/285/350 (+120/150/180/210/240% Total AD)"
                         }
                     }
                 ]
             },
-            "Q": "",
-            "W": "",
+            "W": {
+                "SpellName": "W - Soul Furnace",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Shield: ",
+                            "Before": "60/85/110/135/160 (+8/9/10/11/12% maximum health)",
+                            "Indicator": " ⇒ ",
+                            "After": "60/75/90/105/120 (+8/10/12/14/16% maximum health)"
+                        }
+                    }
+                ]
+            },
             "E": "",
             "R": ""
-        }
+        },
+        "Balance": [
+            "buff"
+        ]
     },
     "Sylas": {
         "ChampionName": "Sylas",
@@ -2707,25 +2645,35 @@
             "13.17",
             "13.18",
             "14.2",
-            "14.5"
+            "14.5",
+            "14.6"
         ],
         "LatestChanges": {
             "B": "",
-            "P": {
-                "SpellName": "Passive - The Darkin Scythe",
+            "P": "",
+            "Q": {
+                "SpellName": "Q - Reaping Slash",
                 "Changes": [
                     {
                         "Tag": "",
                         "Change": {
-                            "Attribute": "Darkin Bonus - Healing: ",
-                            "Before": "25%",
+                            "Attribute": "Darkin - Damage per Hit: ",
+                            "Before": "65% Total AD + 5 (+3.5% bonus AD)% target's maximum health",
                             "Indicator": " ⇒ ",
-                            "After": "25% (+0.5% per 100 Bonus Health)"
+                            "After": "65% Total AD + 6 (+3.5% bonus AD)% target's maximum health"
+                        }
+                    },
+                    {
+                        "Tag": "NEW",
+                        "Change": {
+                            "Attribute": "",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "Reaping Slash's animation now locks Kayn out of using item actives."
                         }
                     }
                 ]
             },
-            "Q": "",
             "W": "",
             "E": "",
             "R": {
@@ -2734,17 +2682,17 @@
                     {
                         "Tag": "",
                         "Change": {
-                            "Attribute": "Darkin Form Healing: ",
-                            "Before": "65% of damage dealt",
+                            "Attribute": "Damage: ",
+                            "Before": "150/250/350 (+175% Bonus AD)",
                             "Indicator": " ⇒ ",
-                            "After": "75% of damage dealt"
+                            "After": "150/250/350 (+150% Bonus AD) (Note: This does not affect Darkin form ultimate damage.)"
                         }
                     }
                 ]
             }
         },
         "Balance": [
-            "buff"
+            "adjust"
         ]
     },
     "Kog'Maw": {
@@ -3126,25 +3074,26 @@
             "13.4",
             "13.18",
             "13.22",
-            "14.5"
+            "14.5",
+            "14.6"
         ],
         "LatestChanges": {
             "B": "",
-            "P": "",
-            "Q": {
-                "SpellName": "Q - Piercing Darkness",
+            "P": {
+                "SpellName": "Passive - Absolution",
                 "Changes": [
                     {
                         "Tag": "",
                         "Change": {
-                            "Attribute": "Damage: ",
-                            "Before": "30/60/90/120/150 (+50% bonus AD)",
+                            "Attribute": "Mist Wraith Spawn Rate on Minion Kill: ",
+                            "Before": "8.333%",
                             "Indicator": " ⇒ ",
-                            "After": "30/60/90/120/150 (+40% bonus AD)"
+                            "After": "2.8%"
                         }
                     }
                 ]
             },
+            "Q": "",
             "W": "",
             "E": "",
             "R": ""
@@ -3561,51 +3510,64 @@
             "12.1",
             "12.10",
             "12.16",
-            "13.14"
+            "13.14",
+            "14.6"
         ],
         "LatestChanges": {
-            "B": "",
-            "P": "",
-            "Q": "",
-            "W": {
-                "SpellName": "W - Pale Cascade",
+            "B": {
+                "SpellName": "Base Stats",
                 "Changes": [
                     {
                         "Tag": "",
                         "Change": {
-                            "Attribute": "Shield Strength: ",
-                            "Before": "40/55/70/85/100 (+25% AP) (+9% bonus health)",
+                            "Attribute": "Attack Speed Ratio: ",
+                            "Before": "0.625",
                             "Indicator": " ⇒ ",
-                            "After": "45/60/75/90/105 (+30% AP) (+9% bonus health)"
+                            "After": "0.694"
                         }
                     },
                     {
                         "Tag": "",
                         "Change": {
-                            "Attribute": "Magic Damage per Orb: ",
-                            "Before": "18/30/42/54/66 (+15% AP)",
+                            "Attribute": "Attack Speed Growth: ",
+                            "Before": "2.25%",
                             "Indicator": " ⇒ ",
-                            "After": "18/30/42/54/66 (+18% AP)"
+                            "After": "2%"
                         }
                     }
                 ]
             },
-            "E": {
-                "SpellName": "E - Lunar Rush",
+            "P": {
+                "SpellName": "Passive - Moonsilver Blade",
                 "Changes": [
                     {
                         "Tag": "",
                         "Change": {
-                            "Attribute": "Magic Damage: ",
-                            "Before": "50/70/90/110/130 (+50%)",
+                            "Attribute": "Bonus Attack Speed: ",
+                            "Before": "15-39.96% (scaling every 3 levels)",
                             "Indicator": " ⇒ ",
-                            "After": "50/70/90/110/130 (+60%)"
+                            "After": "15-35% (scaling linearly) (Note: Added scaling past level 18 for alternate game modes.)"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Empowered Bonus Attack Speed: ",
+                            "Before": "tripled for 3 seconds",
+                            "Indicator": " ⇒ ",
+                            "After": "tripled for 5 seconds (Note: this tooltip is bugged and will not reflect the change until the next patch.)"
                         }
                     }
                 ]
             },
+            "Q": "",
+            "W": "",
+            "E": "",
             "R": ""
-        }
+        },
+        "Balance": [
+            "buff"
+        ]
     },
     "Kassadin": {
         "ChampionName": "Kassadin",
@@ -4709,31 +4671,134 @@
             "13.6",
             "13.19",
             "13.20",
-            "13.24"
+            "13.24",
+            "14.6"
         ],
         "LatestChanges": {
             "B": "",
-            "P": "",
+            "P": {
+                "SpellName": "Passive - Colossal Smash",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Magic Damage: ",
+                            "Before": "15-200 (based on level) (+100% AD) (+50% AP) (+60% bonus magic resistance)",
+                            "Indicator": " ⇒ ",
+                            "After": "15-115 (based on level) (+100% AD) (+40% AP) (+60% bonus magic resistance)"
+                        }
+                    },
+                    {
+                        "Tag": "NEW",
+                        "Change": {
+                            "Attribute": "",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "Hitting enemy champions or Epic monsters with abilities reduces this cooldown by 3 seconds, once per cast."
+                        }
+                    },
+                    {
+                        "Tag": "NEW",
+                        "Change": {
+                            "Attribute": "",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "Colossal Smash now triggers spell effects."
+                        }
+                    },
+                    {
+                        "Tag": "NEW",
+                        "Change": {
+                            "Attribute": "",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "Galio now gains 40% attack speed while his passive is available."
+                        }
+                    },
+                    {
+                        "Tag": "REMOVED",
+                        "Change": {
+                            "Attribute": "",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "Colossal Smash is no longer affected by Ability Haste."
+                        }
+                    }
+                ]
+            },
             "Q": {
                 "SpellName": "Q - Winds of War",
                 "Changes": [
                     {
                         "Tag": "",
                         "Change": {
-                            "Attribute": "Cooldown: ",
-                            "Before": "12/11.5/11/10.5/10 seconds",
+                            "Attribute": "Magic Damage: ",
+                            "Before": "70/105/140/175/210 (+75% AP)",
                             "Indicator": " ⇒ ",
-                            "After": "12/11/10/9/8 seconds"
+                            "After": "70/105/140/175/210 (+70% AP)"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Cooldown: ",
+                            "Before": "12/11/10/9/8",
+                            "Indicator": " ⇒ ",
+                            "After": "12/10.75/9.5/8.25/7 seconds"
                         }
                     }
                 ]
             },
-            "W": "",
-            "E": "",
+            "W": {
+                "SpellName": "W - Shield of Durand",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Magic Damage Reduction: ",
+                            "Before": "25/30/35/40/45% (+5% per 100 AP) (+12% per 100 bonus magic resistance)",
+                            "Indicator": " ⇒ ",
+                            "After": "20/25/30/35/40% (+4% per 100 AP) (+8% per 100 bonus magic resistance) (+ 1% per 100 bonus health)"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Minimum Magic Damage: ",
+                            "Before": "20/35/50/65/80 (+30% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "20/30/40/50/60 (+30% AP)"
+                        }
+                    }
+                ]
+            },
+            "E": {
+                "SpellName": "E - Justice Punch",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Magic Damage: ",
+                            "Before": "90/130/170/210/250 (+90% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "75/115/155/195/235 (+90% AP)"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Reduced Damage to Non-Champions: ",
+                            "Before": "50%",
+                            "Indicator": " ⇒ ",
+                            "After": "20%"
+                        }
+                    }
+                ]
+            },
             "R": ""
         },
         "Balance": [
-            "buff"
+            "adjust"
         ]
     },
     "Leona": {
@@ -5925,37 +5990,42 @@
             "12.22",
             "12.23",
             "13.4",
-            "14.2"
+            "14.2",
+            "14.6"
         ],
         "LatestChanges": {
             "B": "",
             "P": "",
             "Q": "",
-            "W": "",
-            "E": "",
-            "R": {
-                "SpellName": "R - Feast",
+            "W": {
+                "SpellName": "W - Feral Scream",
                 "Changes": [
                     {
                         "Tag": "",
                         "Change": {
-                            "Attribute": "Attack range per stack increased: ",
-                            "Before": "4.62/6.15/7.69",
+                            "Attribute": "Cooldown: ",
+                            "Before": "13/12/11/10/9",
                             "Indicator": " ⇒ ",
-                            "After": "4.7/6.2/7.7"
-                        }
-                    },
-                    {
-                        "Tag": "NEW",
-                        "Change": {
-                            "Attribute": "",
-                            "Before": "",
-                            "Indicator": "",
-                            "After": "Now grants +2.5 cast range per stack, maximum +25 range at 10 stacks."
+                            "After": "11/10.5/10/9.5/9 seconds"
                         }
                     }
                 ]
-            }
+            },
+            "E": {
+                "SpellName": "E - Vorpal Spikes",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Damage per Spike: ",
+                            "Before": "22/34/46/58/70 (+3% (+0.5% per Feast stack) of target's maximum health)",
+                            "Indicator": " ⇒ ",
+                            "After": "22/37/52/67/82 (+3% (+0.5% per Feast stack) of target's maximum health)"
+                        }
+                    }
+                ]
+            },
+            "R": ""
         },
         "Balance": [
             "buff"
@@ -6293,7 +6363,8 @@
             "13.9",
             "13.14",
             "14.2",
-            "14.4"
+            "14.4",
+            "14.6"
         ],
         "LatestChanges": {
             "B": "",
@@ -6305,63 +6376,32 @@
                         "Tag": "",
                         "Change": {
                             "Attribute": "Bonus Movement Speed: ",
-                            "Before": "8/12/16/20/24%",
+                            "Before": "12/17/22/27/32%",
                             "Indicator": " ⇒ ",
-                            "After": "12/16/20/24/28% (Note: this bonus is still doubled when moving towards an enemy champion.)"
+                            "After": "12/16/20/24/28% (Note: This is doubled when moving towards visible enemy champions.)"
                         }
                     }
                 ]
             },
             "W": "",
-            "E": {
-                "SpellName": "E - Sky Splitter",
-                "Changes": [
-                    {
-                        "Tag": "",
-                        "Change": {
-                            "Attribute": "Cooldown: ",
-                            "Before": "13 seconds",
-                            "Indicator": " ⇒ ",
-                            "After": "12 seconds"
-                        }
-                    }
-                ]
-            },
+            "E": "",
             "R": {
                 "SpellName": "R - Stormbringer",
                 "Changes": [
                     {
                         "Tag": "",
                         "Change": {
-                            "Attribute": "Turret Disable Duration: ",
-                            "Before": "3/4/5 seconds",
-                            "Indicator": " ⇒ ",
-                            "After": "2/3/4 seconds"
-                        }
-                    },
-                    {
-                        "Tag": "",
-                        "Change": {
                             "Attribute": "Cooldown: ",
-                            "Before": "160/140/120 seconds",
+                            "Before": "130/115/100",
                             "Indicator": " ⇒ ",
-                            "After": "130/115/100 seconds"
-                        }
-                    },
-                    {
-                        "Tag": "",
-                        "Change": {
-                            "Attribute": "Crowd Control Resistances during Leap: ",
-                            "Before": "Crowd Control Immune",
-                            "Indicator": " ⇒ ",
-                            "After": "Unstoppable"
+                            "After": "140/120/100 seconds"
                         }
                     }
                 ]
             }
         },
         "Balance": [
-            "buff"
+            "nerf"
         ]
     },
     "Gangplank": {
@@ -7003,24 +7043,25 @@
             "12.2",
             "12.10",
             "12.15",
-            "14.2"
+            "14.2",
+            "14.6"
         ],
         "LatestChanges": {
-            "B": {
-                "SpellName": "Base Stats",
+            "B": "",
+            "P": {
+                "SpellName": "Passive - Ki Barrier",
                 "Changes": [
                     {
                         "Tag": "",
                         "Change": {
-                            "Attribute": "Base Attack Damage: ",
-                            "Before": "60",
+                            "Attribute": "Cooldown Refund: ",
+                            "Before": "4/4.5/5/5.5/6/6.5/7/7.5 (levels 1/6/9/12/14/16/17/18)",
                             "Indicator": " ⇒ ",
-                            "After": "64"
+                            "After": "4-7.5 (linear level scaling) (Note: This is a buff from levels 2-17 and is most pronounced at levels 8-16.)"
                         }
                     }
                 ]
             },
-            "P": "",
             "Q": "",
             "W": "",
             "E": "",
@@ -7903,7 +7944,8 @@
             "12.11",
             "13.5",
             "13.17",
-            "13.18"
+            "13.18",
+            "14.6"
         ],
         "LatestChanges": {
             "B": {
@@ -7912,19 +7954,10 @@
                     {
                         "Tag": "",
                         "Change": {
-                            "Attribute": "Health Growth: ",
-                            "Before": "115",
+                            "Attribute": "Attack Speed Growth: ",
+                            "Before": "2.9%",
                             "Indicator": " ⇒ ",
-                            "After": "108"
-                        }
-                    },
-                    {
-                        "Tag": "",
-                        "Change": {
-                            "Attribute": "Base Attack Damage: ",
-                            "Before": "68",
-                            "Indicator": " ⇒ ",
-                            "After": "66"
+                            "After": "3.4%"
                         }
                     }
                 ]
@@ -7934,7 +7967,10 @@
             "W": "",
             "E": "",
             "R": ""
-        }
+        },
+        "Balance": [
+            "buff"
+        ]
     },
     "Rell": {
         "ChampionName": "Rell",
@@ -9244,61 +9280,22 @@
             "13.22",
             "13.23",
             "13.24",
-            "14.2"
+            "14.2",
+            "14.6"
         ],
         "LatestChanges": {
             "B": "",
-            "P": {
-                "SpellName": "Passive - Crimson Curse",
-                "Changes": [
-                    {
-                        "Tag": "",
-                        "Change": {
-                            "Attribute": "Healing Amplification: ",
-                            "Before": "0.5% per 1% missing health",
-                            "Indicator": " ⇒ ",
-                            "After": "0.4% (+0.025% per 100 bonus health) per 1% missing health"
-                        }
-                    },
-                    {
-                        "Tag": "",
-                        "Change": {
-                            "Attribute": "Bleed Tick Rate: ",
-                            "Before": "1 second",
-                            "Indicator": " ⇒ ",
-                            "After": "0.5 seconds (Note: Total bleed damage and duration are unchanged.)"
-                        }
-                    }
-                ]
-            },
+            "P": "",
             "Q": {
                 "SpellName": "Q - Head Rush",
                 "Changes": [
                     {
                         "Tag": "",
                         "Change": {
-                            "Attribute": "Damage: ",
-                            "Before": "60/90/120/150/180 (+80% bonus AD) physical damage",
-                            "Indicator": " ⇒ ",
-                            "After": "60/90/120/150/180 (+80% bonus AD) (+60% AP) magic damage"
-                        }
-                    },
-                    {
-                        "Tag": "",
-                        "Change": {
-                            "Attribute": "Defensive Reductions: ",
-                            "Before": "10/12.5/15/17.5/20% armor reduction",
-                            "Indicator": " ⇒ ",
-                            "After": "10/12.5/15/17.5/20% armor and magic resistance reduction"
-                        }
-                    },
-                    {
-                        "Tag": "NEW",
-                        "Change": {
-                            "Attribute": "Healthy Hits: ",
+                            "Attribute": "Ward Watch: ",
                             "Before": "",
                             "Indicator": "",
-                            "After": "Q now applies on-hit effects and lifesteal"
+                            "After": "Q can now jump to wards."
                         }
                     }
                 ]
@@ -9309,28 +9306,46 @@
                     {
                         "Tag": "",
                         "Change": {
-                            "Attribute": "Bite Heal: ",
-                            "Before": "36/42/48/54/60% of damage dealt",
+                            "Attribute": "Bonus Attack Speed: ",
+                            "Before": "55/70/85/100/115%",
                             "Indicator": " ⇒ ",
-                            "After": "25/30/35/40/45% of damage dealt (+5% of Briar’s maximum health)"
-                        }
-                    },
-                    {
-                        "Tag": "REMOVED",
-                        "Change": {
-                            "Attribute": "Less Critical Strikes: ",
-                            "Before": "",
-                            "Indicator": "",
-                            "After": "W no longer critically strikes for 5-65(+5% AD) bonus damage. (Note: W can still critically strike like a basic attack for 100% total AD.)"
+                            "After": "54/68/82/96/110%"
                         }
                     }
                 ]
             },
             "E": "",
-            "R": ""
+            "R": {
+                "SpellName": "R - Certain Death",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Damage: ",
+                            "Before": "150/300/450 (+50% bonus AD) (+120% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "150/250/350 (+50% bonus AD) (+120% AP)"
+                        }
+                    }
+                ]
+            },
+            "W -": {
+                "SpellName": "W - Snack Attack",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Healing Based on Damage Dealt: ",
+                            "Before": "25/30/35/40/45%",
+                            "Indicator": " ⇒ ",
+                            "After": "24/28/32/36/40%"
+                        }
+                    }
+                ]
+            }
         },
         "Balance": [
-            "adjust"
+            "nerf"
         ]
     },
     "Hwei": {
@@ -9384,7 +9399,8 @@
         "ChangePatches": [
             "14.2",
             "14.4",
-            "14.5"
+            "14.5",
+            "14.6"
         ],
         "LatestChanges": {
             "B": "",
@@ -9395,87 +9411,55 @@
                     {
                         "Tag": "",
                         "Change": {
-                            "Attribute": "3rd Upgrade Bonus True Damage: ",
-                            "Before": "6.5% of target's maximum health",
+                            "Attribute": "Execute Threshold: ",
+                            "Before": "2% (+0.025 % per stack)",
                             "Indicator": " ⇒ ",
-                            "After": "+2% bonus AD (+1% AP) (+0.8% of Dragon Patience Stacks) of target's maximum health"
+                            "After": "6.5% (Note: This started at 7.625% at 225 stacks.)"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Execute Conditions: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "Smolder only checks to execute units after Smolder's damage, meaning it will no longer execute off of allies' damage."
                         }
                     }
                 ]
             },
-            "W": "",
+            "W": {
+                "SpellName": "W - ACHOOO!",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Missile Radius: ",
+                            "Before": "125",
+                            "Indicator": " ⇒ ",
+                            "After": "115"
+                        }
+                    }
+                ]
+            },
             "E": {
                 "SpellName": "E - Flap, Flap, Flap",
                 "Changes": [
                     {
                         "Tag": "",
                         "Change": {
-                            "Attribute": "Number of Bolts: ",
-                            "Before": "5-10 (based on critical strike chance)",
+                            "Attribute": "Movement Speed: ",
+                            "Before": "100%",
                             "Indicator": " ⇒ ",
-                            "After": "5 (+1 per 50 Dragon Patience Stacks)"
-                        }
-                    },
-                    {
-                        "Tag": "",
-                        "Change": {
-                            "Attribute": "",
-                            "Before": "",
-                            "Indicator": "",
-                            "After": "Tooltip has been updated to clarify that these bolts are not attacks"
+                            "After": "75%"
                         }
                     }
                 ]
             },
-            "R": {
-                "SpellName": "R - Mmooommmm!",
-                "Changes": [
-                    {
-                        "Tag": "",
-                        "Change": {
-                            "Attribute": "Damage: ",
-                            "Before": "225/350/475 (+110% bonus AD) (+100% AP)",
-                            "Indicator": " ⇒ ",
-                            "After": "200/300/400 (+110% bonus AD) (+100% AP)"
-                        }
-                    },
-                    {
-                        "Tag": "",
-                        "Change": {
-                            "Attribute": "Sweet Spot Increased Damage Multiplier: ",
-                            "Before": "30%",
-                            "Indicator": " ⇒ ",
-                            "After": "50%"
-                        }
-                    },
-                    {
-                        "Tag": "",
-                        "Change": {
-                            "Attribute": "Self Heal: ",
-                            "Before": "110/160/210 (+75% AP)",
-                            "Indicator": " ⇒ ",
-                            "After": "100/135/170 (+50% bonus AD) (+75% AP)"
-                        }
-                    }
-                ]
-            },
-            "M": {
-                "SpellName": "Miscellaneous",
-                "Changes": [
-                    {
-                        "Tag": "",
-                        "Change": {
-                            "Attribute": "",
-                            "Before": "",
-                            "Indicator": "",
-                            "After": "Frame data on basic attacks has been adjusted to better match Smolder's animations."
-                        }
-                    }
-                ]
-            }
+            "R": ""
         },
         "Balance": [
-            "adjust"
+            "nerf"
         ]
     }
 }

@@ -1,7 +1,7 @@
 {
     "stats": {
         "hp": {
-            "base": 670,
+            "base": 640,
             "increment": 115
         },
         "mp": {
@@ -110,7 +110,7 @@
                 ]
             },
             "cooldown": "10/9/8/7/6",
-            "cost": "80/75/70/65/60 Mana",
+            "cost": "80 Mana",
             "name": "Barrel Roll"
         },
         "W": {
@@ -650,6 +650,40 @@
                     }
                 ]
             }
+        },
+        "14.6": {
+            "B": {
+                "SpellName": "Base Stats",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Base Health: ",
+                            "Before": "670",
+                            "Indicator": " ⇒ ",
+                            "After": "640"
+                        }
+                    }
+                ]
+            },
+            "P": "",
+            "Q": {
+                "SpellName": "Q - Barrel Roll",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Mana Cost: ",
+                            "Before": "80/75/70/65/60",
+                            "Indicator": " ⇒ ",
+                            "After": "80 at all ranks"
+                        }
+                    }
+                ]
+            },
+            "W": "",
+            "E": "",
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -665,7 +699,8 @@
         "13.12",
         "13.22",
         "13.24",
-        "14.2"
+        "14.2",
+        "14.6"
     ],
     "ChampionName": "Gragas",
     "Balance": {
@@ -674,6 +709,9 @@
         ],
         "14.2": [
             "buff"
+        ],
+        "14.6": [
+            "nerf"
         ]
     }
 }
