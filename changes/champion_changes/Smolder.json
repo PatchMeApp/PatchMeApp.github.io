@@ -9,7 +9,7 @@
             "increment": 40
         },
         "armor": {
-            "base": 24,
+            "base": 26,
             "increment": 4.7
         },
         "spellBlock": {
@@ -84,7 +84,7 @@
         },
         "Q": {
             "_rawTooltip": {
-                "fullTooltip": "Smolder belches flame, dealing [[0]] + [[1]] magic damage.</magicDamage><br /><br />Based on stacks of [[2]], this Ability evolves to gain the following effects:<br />[[3]]: Damages all enemies surrounding the target.<br />[[4]]: Sends (2 + [[5]]) explosions beyond the target that deal 75% of this Ability's damage.<br />[[6]]: Burns the target dealing [[7]]) max Health true damage</trueDamage> over 3 seconds. Enemy champions that drop below [[8]] total health while burning are killed instantly.<br /><br />[[9]] is considered a basic Attack and applies On-Hit effects. This Ability can only damage each target one time per cast.<br />Damage is increased by 30% Critical Strike Chance. This Ability does 110% damage to minions and monsters.",
+                "fullTooltip": "Smolder belches flame, dealing [[0]] + [[1]] magic damage.</magicDamage><br /><br />Based on stacks of [[2]], this Ability evolves to gain the following effects:<br />[[3]]: Damages all enemies surrounding the target.<br />[[4]]: Sends (2 + [[5]]) explosions beyond the target that deal 75% of this Ability's damage.<br />[[6]]: Burns the target dealing [[7]]) max Health true damage</trueDamage> over 3 seconds. Enemy champions that drop below [[8]] total health while burning are killed instantly.<br /><br />[[9]] is considered a basic Attack and applies On-Hit effects. This Ability can only damage each target one time per cast.<br />Damage is increased by 50% Critical Strike Chance. This Ability does 110% damage to minions and monsters.",
                 "parseInfo": [
                     {
                         "text": {
@@ -567,13 +567,48 @@
                 ]
             },
             "R": ""
+        },
+        "14.7": {
+            "B": {
+                "SpellName": "Base Stats",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Armor: ",
+                            "Before": "24",
+                            "Indicator": " ⇒ ",
+                            "After": "26"
+                        }
+                    }
+                ]
+            },
+            "P": "",
+            "Q": {
+                "SpellName": "Q - Super Scorcher Breath",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Bonus Physical Damage based on Crit Chance: ",
+                            "Before": "0-30%",
+                            "Indicator": " ⇒ ",
+                            "After": "0-50%"
+                        }
+                    }
+                ]
+            },
+            "W": "",
+            "E": "",
+            "R": ""
         }
     },
     "ChangePatches": [
         "14.2",
         "14.4",
         "14.5",
-        "14.6"
+        "14.6",
+        "14.7"
     ],
     "ChampionName": "Smolder",
     "Balance": {
@@ -585,6 +620,9 @@
         ],
         "14.6": [
             "nerf"
+        ],
+        "14.7": [
+            "buff"
         ]
     }
 }

@@ -56,7 +56,7 @@
                                     "scaleId": "level"
                                 },
                                 {
-                                    "scale": "(+ 25% AP)",
+                                    "scale": "(+ 30% AP)",
                                     "scaleId": "AP"
                                 }
                             ]
@@ -83,7 +83,7 @@
                             "text": "80/120/160/200/240 {{0}} magic damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+60% AP)",
+                                    "scale": "(+65% AP)",
                                     "scaleId": "AP"
                                 }
                             ]
@@ -506,6 +506,40 @@
             },
             "R": ""
         },
+        "14.7": {
+            "B": "",
+            "P": {
+                "SpellName": "Passive - Illumination",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Magic Damage: ",
+                            "Before": "30-200 (based on level) (+25% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "30-200 (based on level) (+30%AP)"
+                        }
+                    }
+                ]
+            },
+            "Q": {
+                "SpellName": "Q - Light Binding",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Magic Damage: ",
+                            "Before": "80/120/160/200/240 (+60% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "80/120/160/200/240 (+65% AP)"
+                        }
+                    }
+                ]
+            },
+            "W": "",
+            "E": "",
+            "R": ""
+        },
         "12.23": {
             "B": "",
             "P": "",
@@ -602,11 +636,15 @@
         "12.10",
         "12.23",
         "13.17",
-        "14.1"
+        "14.1",
+        "14.7"
     ],
     "ChampionName": "Lux",
     "Balance": {
         "14.1": [
+            "buff"
+        ],
+        "14.7": [
             "buff"
         ]
     }

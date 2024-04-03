@@ -109,7 +109,7 @@
                             "text": "10/15/20/25/30 {{0}} magic damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+20% AP)",
+                                    "scale": "(+10% AP)",
                                     "scaleId": "AP"
                                 }
                             ]
@@ -161,7 +161,7 @@
                             "text": "30/45/60/75/90 {{0}} Health",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+15% AP)",
+                                    "scale": "(+30% AP)",
                                     "scaleId": "AP"
                                 }
                             ]
@@ -253,7 +253,7 @@
                     },
                     {
                         "text": {
-                            "text": "10/11/12/13/14% {{0}} Move Speed",
+                            "text": "10/12/14/16/18% {{0}} Move Speed",
                             "scaleHolders": [
                                 {
                                     "scale": "(+2% per 100 AP)",
@@ -923,6 +923,66 @@
                 ]
             },
             "R": ""
+        },
+        "14.7": {
+            "B": "",
+            "P": {
+                "SpellName": "Passive - Power Chord",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Staccato Damage Bonus: ",
+                            "Before": "40%",
+                            "Indicator": " ⇒ ",
+                            "After": "50%"
+                        }
+                    }
+                ]
+            },
+            "Q": {
+                "SpellName": "Q - Hymn of Valor",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Ally Bonus Magic Damage: ",
+                            "Before": "10/15/20/25/30 (+20% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "10/15/20/25/30 (+10%AP)"
+                        }
+                    }
+                ]
+            },
+            "W": {
+                "SpellName": "W - Aria of Perseverance",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Heal: ",
+                            "Before": "30/45/60/75/90 (+15% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "30/45/60/75/90 (+30% AP)"
+                        }
+                    }
+                ]
+            },
+            "E": {
+                "SpellName": "E - Song of Celerity",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Ally Move Speed: ",
+                            "Before": "10/11/12/13/14% (+2% per 100 AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "10/12/14/16/18% (+2% per 100 AP)"
+                        }
+                    }
+                ]
+            },
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -937,7 +997,13 @@
         "11.19",
         "12.1",
         "12.10",
-        "12.19"
+        "12.19",
+        "14.7"
     ],
-    "ChampionName": "Sona"
+    "ChampionName": "Sona",
+    "Balance": {
+        "14.7": [
+            "buff"
+        ]
+    }
 }

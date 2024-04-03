@@ -81,7 +81,7 @@
         },
         "W": {
             "_rawTooltip": {
-                "fullTooltip": "Karma tethers herself to a champion or jungle monster, dealing [[0]] and revealing them for 2 seconds. If the tether remains unbroken, the target takes [[1]] again and is [[2]] for 1.4/1.55/1.7/1.85/2 seconds.",
+                "fullTooltip": "Karma tethers herself to a champion or jungle monster, dealing [[0]] and revealing them for 2 seconds. If the tether remains unbroken, the target takes [[1]] again and is [[2]] for 1.6/1.7/1.8/1.9/2 seconds.",
                 "parseInfo": [
                     {
                         "text": {
@@ -915,6 +915,40 @@
                     }
                 ]
             }
+        },
+        "14.7": {
+            "B": "",
+            "P": "",
+            "Q": "",
+            "W": {
+                "SpellName": "W - Focused Resolve",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Root Duration: ",
+                            "Before": "1.4/1.55/1.7/1.85/2",
+                            "Indicator": " ⇒ ",
+                            "After": "1.6/1.7/1.8/1.9/2"
+                        }
+                    }
+                ]
+            },
+            "E": "",
+            "R": {
+                "SpellName": "R - Mantra",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "R+E AoE Shield: ",
+                            "Before": "39-129 (based on E and R ranks) (+31.5% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "45/81/117/153 (based on R ranks) (+40.5% AP). (Note: Move speed and single-target shield unchanged)"
+                        }
+                    }
+                ]
+            }
         }
     },
     "ChangePatches": [
@@ -933,7 +967,8 @@
         "13.16",
         "14.2",
         "14.3",
-        "14.6"
+        "14.6",
+        "14.7"
     ],
     "ChampionName": "Karma",
     "Balance": {
@@ -945,6 +980,9 @@
         ],
         "14.6": [
             "nerf"
+        ],
+        "14.7": [
+            "buff"
         ]
     }
 }

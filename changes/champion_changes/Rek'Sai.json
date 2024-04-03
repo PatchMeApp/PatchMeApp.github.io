@@ -49,7 +49,7 @@
                 "parseInfo": [
                     {
                         "text": {
-                            "text": "12-20% {{0}} maximum health",
+                            "text": "10-20% {{0}} maximum health",
                             "scaleHolders": [
                                 {
                                     "scale": "(based on level)",
@@ -1126,6 +1126,36 @@
                     }
                 ]
             }
+        },
+        "14.7": {
+            "B": "",
+            "P": {
+                "SpellName": "Passive - Fury of the Xer’Sai",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Fury gain from minions, wards, and plants: ",
+                            "Before": "12.5",
+                            "Indicator": " ⇒ ",
+                            "After": "5"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Heal: ",
+                            "Before": "12-20% Max HP (based on level)",
+                            "Indicator": " ⇒ ",
+                            "After": "10-20% Max HP (based on level)"
+                        }
+                    }
+                ]
+            },
+            "Q": "",
+            "W": "",
+            "E": "",
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -1141,7 +1171,8 @@
         "13.19",
         "14.4",
         "14.5",
-        "14.6"
+        "14.6",
+        "14.7"
     ],
     "ChampionName": "Rek'Sai",
     "Balance": {
@@ -1154,6 +1185,9 @@
         ],
         "14.6": [
             "adjust"
+        ],
+        "14.7": [
+            "nerf"
         ]
     }
 }

@@ -14,7 +14,7 @@
         },
         "spellBlock": {
             "base": 30,
-            "increment": 1.85
+            "increment": 2.05
         },
         "hpRegen": {
             "base": 7.5,
@@ -1452,6 +1452,75 @@
                 ]
             },
             "R": ""
+        },
+        "14.7": {
+            "B": {
+                "SpellName": "Base Stats",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Magic Resist Growth: ",
+                            "Before": "1.85",
+                            "Indicator": " ⇒ ",
+                            "After": "2.05"
+                        }
+                    }
+                ]
+            },
+            "P": "",
+            "Q": {
+                "SpellName": "Q - Shattering Strike",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Bonus Monster Damage: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "Removed"
+                        }
+                    }
+                ]
+            },
+            "W": {
+                "SpellName": "W - Crash Down / Mount Up",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Crash Down - Bonus Monster Damage: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "Removed"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Mount Up - Bonus Monster Damage: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "Removed"
+                        }
+                    }
+                ]
+            },
+            "E": {
+                "SpellName": "E - Full Tilt",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Bonus Monster Damage: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "Removed"
+                        }
+                    }
+                ]
+            },
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -1467,7 +1536,13 @@
         "13.13",
         "13.14",
         "13.15",
-        "13.18"
+        "13.18",
+        "14.7"
     ],
-    "ChampionName": "Rell"
+    "ChampionName": "Rell",
+    "Balance": {
+        "14.7": [
+            "nerf"
+        ]
+    }
 }

@@ -108,7 +108,7 @@
         },
         "W": {
             "_rawTooltip": {
-                "fullTooltip": "Olaf gains [[0]] for 4 seconds, and [[1]] for 2.5 seconds.",
+                "fullTooltip": "Olaf gains [[0]] for 5 seconds, and [[1]] for 2.5 seconds.",
                 "parseInfo": [
                     {
                         "text": {
@@ -132,12 +132,12 @@
                 ]
             },
             "cooldown": "16/15/14/13/12",
-            "cost": "30 Mana",
+            "cost": "50 Mana",
             "name": "Tough It Out"
         },
         "E": {
             "_rawTooltip": {
-                "fullTooltip": "Olaf ferociously swings his axes, dealing [[0]]. If the enemy dies, the cost is refunded.<br /><br />Attacks lower the Cooldown of this Ability by 1 second.",
+                "fullTooltip": "Olaf ferociously swings his axes, dealing [[0]]. If the enemy dies, the cost is refunded.<br /><br />Attacks lower the Cooldown of this Ability by 1 second, increased to 2 seconds when hitting monsters.",
                 "parseInfo": [
                     {
                         "text": {
@@ -232,7 +232,7 @@
                 ]
             },
             "cooldown": "100/90/80",
-            "cost": "No Cost",
+            "cost": "100 Mana",
             "name": "Ragnarok"
         }
     },
@@ -857,6 +857,75 @@
             "W": "",
             "E": "",
             "R": ""
+        },
+        "14.7": {
+            "B": "",
+            "P": "",
+            "Q": {
+                "SpellName": "Q - Undertow",
+                "Changes": [
+                    {
+                        "Tag": "NEW",
+                        "Change": {
+                            "Attribute": "Bonus Monster damage: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "5/10/15/20/25"
+                        }
+                    }
+                ]
+            },
+            "W": {
+                "SpellName": "W - Tough it Out",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Bonus Attack Speed Duration: ",
+                            "Before": "4 seconds",
+                            "Indicator": " ⇒ ",
+                            "After": "5 seconds"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Mana Cost: ",
+                            "Before": "30",
+                            "Indicator": " ⇒ ",
+                            "After": "50"
+                        }
+                    }
+                ]
+            },
+            "E": {
+                "SpellName": "E - Reckless Swing",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Cooldown Refund: ",
+                            "Before": "1 second per basic attack",
+                            "Indicator": " ⇒ ",
+                            "After": "1s per basic attack, increased to 2 seconds when hitting monsters"
+                        }
+                    }
+                ]
+            },
+            "R": {
+                "SpellName": "R - Ragnarok",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Mana Cost: ",
+                            "Before": "0",
+                            "Indicator": " ⇒ ",
+                            "After": "100"
+                        }
+                    }
+                ]
+            }
         }
     },
     "ChangePatches": [
@@ -867,7 +936,13 @@
         "12.10",
         "12.11",
         "12.13",
-        "13.7"
+        "13.7",
+        "14.7"
     ],
-    "ChampionName": "Olaf"
+    "ChampionName": "Olaf",
+    "Balance": {
+        "14.7": [
+            "buff"
+        ]
+    }
 }

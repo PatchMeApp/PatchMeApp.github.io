@@ -71,7 +71,7 @@
                     },
                     {
                         "text": {
-                            "text": "30/32.5/35/37.5/40% Move Speed",
+                            "text": "30/35/40/45/50% Move Speed",
                             "scaleHolders": []
                         },
                         "type": "speed"
@@ -113,7 +113,7 @@
                     }
                 ]
             },
-            "cooldown": "9/8.25/7.5/6.75/6",
+            "cooldown": "9/8/7/6/5",
             "cost": "25 Mana",
             "name": "Precision Protocol"
         },
@@ -142,7 +142,7 @@
                     },
                     {
                         "text": {
-                            "text": "5/5.5/6/6.5/7% {{0}} max Health physical damage",
+                            "text": "6/6.5/7/7.5/8% {{0}} max Health physical damage",
                             "scaleHolders": [
                                 {
                                     "scale": "(+2.5% per 100 Bonus AD)",
@@ -185,7 +185,7 @@
                     },
                     {
                         "text": {
-                            "text": "80/110/140/170/200 {{0}} physical damage",
+                            "text": "60/90/120/150/180 {{0}} physical damage",
                             "scaleHolders": [
                                 {
                                     "scale": "(+90% Bonus AD)",
@@ -513,6 +513,62 @@
             "W": "",
             "E": "",
             "R": ""
+        },
+        "14.7": {
+            "B": "",
+            "P": "",
+            "Q": {
+                "SpellName": "Q - Precision Protocol",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Bonus Move Speed: ",
+                            "Before": "30/32.5/35/37.5/40%",
+                            "Indicator": " ⇒ ",
+                            "After": "30/35/40/45/50%"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Cooldown: ",
+                            "Before": "9/8.25/7.5/6.75/6",
+                            "Indicator": " ⇒ ",
+                            "After": "9/8/7/6/5"
+                        }
+                    }
+                ]
+            },
+            "W": {
+                "SpellName": "W - Tactical Sweep",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Outer Cone Base Damage: ",
+                            "Before": "5/5.5/6/6.5/7% Max HP",
+                            "Indicator": " ⇒ ",
+                            "After": "6/6.5/7/7.5/8% Max HP"
+                        }
+                    }
+                ]
+            },
+            "E": {
+                "SpellName": "E - Hookshot",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Damage: ",
+                            "Before": "80/110/140/170/200 (+90% bonus AD)",
+                            "Indicator": " ⇒ ",
+                            "After": "60/90/120/150/180 (+90% bonus AD)"
+                        }
+                    }
+                ]
+            },
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -523,12 +579,16 @@
         "12.10",
         "12.17",
         "13.15",
-        "14.2"
+        "14.2",
+        "14.7"
     ],
     "ChampionName": "Camille",
     "Balance": {
         "14.2": [
             "buff"
+        ],
+        "14.7": [
+            "adjust"
         ]
     }
 }
