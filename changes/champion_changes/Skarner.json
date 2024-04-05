@@ -6,7 +6,7 @@
         },
         "mp": {
             "base": 320,
-            "increment": 60
+            "increment": 45
         },
         "armor": {
             "base": 33,
@@ -168,7 +168,7 @@
                 ]
             },
             "cooldown": "10/9/8/7/6",
-            "cost": "40/45/50/55/60 Mana",
+            "cost": "50/55/60/65/70 Mana",
             "name": "Seismic Bastion"
         },
         "E": {
@@ -196,7 +196,7 @@
                     }
                 ]
             },
-            "cooldown": "24/22/20/18/16",
+            "cooldown": "20/19/18/17/16",
             "cost": "50/55/60/65/70 Mana",
             "name": "Ixtal's Impact"
         },
@@ -441,13 +441,74 @@
                             "Indicator": "",
                             "After": "Champion full rework"
                         }
+                    },
+                    {
+                        "Tag": "MID-PATCH",
+                        "Change": {
+                            "Attribute": "Mana Growth: ",
+                            "Before": "60",
+                            "Indicator": " ⇒ ",
+                            "After": "45"
+                        }
                     }
                 ]
             },
-            "P": "",
-            "Q": "",
-            "W": "",
-            "E": "",
+            "P": {
+                "SpellName": "P - Threads of Vibration",
+                "Changes": [
+                    {
+                        "Tag": "MID-PATCH",
+                        "Change": {
+                            "Attribute": "Monster Damage Cap: ",
+                            "Before": "75-250",
+                            "Indicator": " ⇒ ",
+                            "After": "100-300"
+                        }
+                    }
+                ]
+            },
+            "Q": {
+                "SpellName": "Q - Shattered Earth / Upheaval",
+                "Changes": [
+                    {
+                        "Tag": "MID-PATCH",
+                        "Change": {
+                            "Attribute": "Monster Damage Cap: ",
+                            "Before": "100/175/250/325/400",
+                            "Indicator": " ⇒ ",
+                            "After": "150/225/300/375/450"
+                        }
+                    }
+                ]
+            },
+            "W": {
+                "SpellName": "W - Seismic Bastion",
+                "Changes": [
+                    {
+                        "Tag": "MID-PATCH",
+                        "Change": {
+                            "Attribute": "Mana Cost: ",
+                            "Before": "40/45/50/55/60",
+                            "Indicator": " ⇒ ",
+                            "After": "50/55/60/65/70"
+                        }
+                    }
+                ]
+            },
+            "E": {
+                "SpellName": "E - Ixtal's Impact",
+                "Changes": [
+                    {
+                        "Tag": "MID-PATCH",
+                        "Change": {
+                            "Attribute": "Cooldown: ",
+                            "Before": "24/22/20/18/16",
+                            "Indicator": " ⇒ ",
+                            "After": "20/19/18/17/16"
+                        }
+                    }
+                ]
+            },
             "R": ""
         }
     },
@@ -461,7 +522,8 @@
     "ChampionName": "Skarner",
     "Balance": {
         "14.7": [
-            "danger"
+            "danger",
+            "adjust"
         ]
     }
 }
