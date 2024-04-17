@@ -127,7 +127,7 @@
         },
         "W": {
             "_rawTooltip": {
-                "fullTooltip": "Ryze deals [[0]] and [[1]] by 35% for 1.5 seconds. If the target has [[2]], it is consumed and this Ability [[3]] instead of [[4]].",
+                "fullTooltip": "Ryze deals [[0]] and [[1]] by 50% for 1.5 seconds. If the target has [[2]], it is consumed and this Ability [[3]] instead of [[4]].",
                 "parseInfo": [
                     {
                         "text": {
@@ -175,7 +175,7 @@
                     }
                 ]
             },
-            "cooldown": "13/12/11/10/9",
+            "cooldown": "11/10.5/10/9.5/9",
             "cost": "40/55/70/85/100 Mana",
             "name": "Rune Prison"
         },
@@ -723,6 +723,36 @@
             "W": "",
             "E": "",
             "R": ""
+        },
+        "14.8": {
+            "B": "",
+            "P": "",
+            "Q": "",
+            "W": {
+                "SpellName": "W - Rune Prison",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Slow: ",
+                            "Before": "35%",
+                            "Indicator": " ⇒ ",
+                            "After": "50%"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Cooldown: ",
+                            "Before": "13/12/11/10/9",
+                            "Indicator": " ⇒ ",
+                            "After": "11/10.5/10/9.5/9 seconds"
+                        }
+                    }
+                ]
+            },
+            "E": "",
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -740,7 +770,13 @@
         "12.19",
         "13.1B",
         "13.12",
-        "13.22"
+        "13.22",
+        "14.8"
     ],
-    "ChampionName": "Ryze"
+    "ChampionName": "Ryze",
+    "Balance": {
+        "14.8": [
+            "buff"
+        ]
+    }
 }

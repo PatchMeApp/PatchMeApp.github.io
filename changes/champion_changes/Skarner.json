@@ -6,7 +6,7 @@
         },
         "mp": {
             "base": 320,
-            "increment": 45
+            "increment": 40
         },
         "armor": {
             "base": 33,
@@ -22,7 +22,7 @@
         },
         "mpRegen": {
             "base": 7.2,
-            "increment": 0.45
+            "increment": 0.6
         },
         "attackSpeed": {
             "base": 0.625,
@@ -71,10 +71,10 @@
                     },
                     {
                         "text": {
-                            "text": "10/20/30/40/50 {{0}} {{1}} physical damage",
+                            "text": "10/25/40/55/70 {{0}} {{1}} physical damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+40% Bonus AD)",
+                                    "scale": "(+60% Bonus AD)",
                                     "scaleId": "AD"
                                 },
                                 {
@@ -132,7 +132,7 @@
                 ]
             },
             "cooldown": "13/11.5/10/8.5/7",
-            "cost": "40/45/50/55/60 Mana",
+            "cost": "30/35/40/45/50 Mana",
             "name": "Shattered Earth / Upheaval"
         },
         "W": {
@@ -148,7 +148,7 @@
                     },
                     {
                         "text": {
-                            "text": "60/90/120/150/180 {{0}} magic damage",
+                            "text": "50/75/100/125/150 {{0}} magic damage",
                             "scaleHolders": [
                                 {
                                     "scale": "(+80% AP)",
@@ -168,7 +168,7 @@
                 ]
             },
             "cooldown": "10/9/8/7/6",
-            "cost": "50/55/60/65/70 Mana",
+            "cost": "60/65/70/75/80 Mana",
             "name": "Seismic Bastion"
         },
         "E": {
@@ -429,6 +429,107 @@
             "E": "",
             "R": ""
         },
+        "14.8": {
+            "B": {
+                "SpellName": "Base Stats",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Mana Growth: ",
+                            "Before": "45",
+                            "Indicator": " ⇒ ",
+                            "After": "40"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Mana Regeneration Growth: ",
+                            "Before": "0.45",
+                            "Indicator": " ⇒ ",
+                            "After": "0.6"
+                        }
+                    }
+                ]
+            },
+            "P": "",
+            "Q": {
+                "SpellName": "Q - Shattered Earth / Upheaval",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Damage per Hit: ",
+                            "Before": "10/20/30/40/50 (+40% bonus AD) (+6% of his bonus health)",
+                            "Indicator": " ⇒ ",
+                            "After": "10/25/40/55/70 (+60% bonus AD) (+6% of his bonus health)"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Mana Cost: ",
+                            "Before": "40/45/50/55/60",
+                            "Indicator": " ⇒ ",
+                            "After": "30/35/40/45/50"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Buff Duration: ",
+                            "Before": "3.5",
+                            "Indicator": " ⇒ ",
+                            "After": "5 seconds (Note: the buff will still refresh on attacks and upon casting E)"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Upheaval Recast Lockout Time: ",
+                            "Before": "0.75",
+                            "Indicator": " ⇒ ",
+                            "After": "0.5 seconds"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Shattered Earth Cast Time: ",
+                            "Before": "0.5",
+                            "Indicator": " ⇒ ",
+                            "After": "0.35 seconds (Note: this is how long Skarner stands in place pulling the boulder out of the ground before being able to move or attack)"
+                        }
+                    }
+                ]
+            },
+            "W": {
+                "SpellName": "W - Seismic Bastion",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Mana Cost: ",
+                            "Before": "50/55/60/65/70",
+                            "Indicator": " ⇒ ",
+                            "After": "60/65/70/75/80"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Magic Damage: ",
+                            "Before": "60/90/120/150/180 (+80% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "50/75/100/125/150 (+80% AP)"
+                        }
+                    }
+                ]
+            },
+            "E": "",
+            "R": ""
+        },
         "14.7": {
             "B": {
                 "SpellName": "Base Stats",
@@ -517,12 +618,16 @@
         "10.16",
         "11.4",
         "12.10",
-        "14.7"
+        "14.7",
+        "14.8"
     ],
     "ChampionName": "Skarner",
     "Balance": {
         "14.7": [
             "danger",
+            "adjust"
+        ],
+        "14.8": [
             "adjust"
         ]
     }

@@ -73,7 +73,7 @@
                     },
                     {
                         "text": {
-                            "text": "10% (+ 0.4% per 1% bonus attack speed",
+                            "text": "14% (+ 0.4% per 1% bonus attack speed",
                             "scaleHolders": []
                         },
                         "type": "attackSpeed"
@@ -95,10 +95,10 @@
                 "parseInfo": [
                     {
                         "text": {
-                            "text": "45/70/95/120/145 {{0}} {{1}} physical damage",
+                            "text": "44/69/94/119/144 {{0}} {{1}} physical damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+35/42.5/50/57.5/65% AD)",
+                                    "scale": "(+44/51.5/59/66.5/74% AD)",
                                     "scaleId": "AD"
                                 },
                                 {
@@ -493,6 +493,40 @@
                 ]
             }
         },
+        "14.8": {
+            "B": "",
+            "P": {
+                "SpellName": "Passive - Whisper",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Bonus Movement Speed on Critical Strike: ",
+                            "Before": "10% (+0.4% bonus Attack Speed)",
+                            "Indicator": " ⇒ ",
+                            "After": "14% (+0.4% bonus Attack Speed)"
+                        }
+                    }
+                ]
+            },
+            "Q": {
+                "SpellName": "Q - Dancing Grenade",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Minimum Physical Damage: ",
+                            "Before": "45/70/95/120/145 (+35/42.5/50/57.5/65% AD) (+60% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "44/69/94/119/144 (+44/51.5/59/66.5/74% AD) (+60% AP)"
+                        }
+                    }
+                ]
+            },
+            "W": "",
+            "E": "",
+            "R": ""
+        },
         "13.1B": {
             "B": "",
             "P": "",
@@ -537,7 +571,13 @@
         "12.8",
         "12.10",
         "13.1B",
-        "13.19"
+        "13.19",
+        "14.8"
     ],
-    "ChampionName": "Jhin"
+    "ChampionName": "Jhin",
+    "Balance": {
+        "14.8": [
+            "buff"
+        ]
+    }
 }

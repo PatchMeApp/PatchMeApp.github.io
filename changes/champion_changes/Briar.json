@@ -2,7 +2,7 @@
     "stats": {
         "hp": {
             "base": 590,
-            "increment": 100
+            "increment": 95
         },
         "mp": {
             "base": 0,
@@ -163,7 +163,7 @@
                     },
                     {
                         "text": {
-                            "text": "54/68/82/96/110% Attack Speed",
+                            "text": "55/65/75/85/95% Attack Speed",
                             "scaleHolders": []
                         },
                         "type": "attackSpeed"
@@ -939,6 +939,53 @@
                     }
                 ]
             }
+        },
+        "14.8": {
+            "B": {
+                "SpellName": "Base Stats",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Health Growth: ",
+                            "Before": "100",
+                            "Indicator": " ⇒ ",
+                            "After": "95"
+                        }
+                    }
+                ]
+            },
+            "P": "",
+            "Q": {
+                "SpellName": "Q - Head Rush",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Range: ",
+                            "Before": "450",
+                            "Indicator": " ⇒ ",
+                            "After": "475"
+                        }
+                    }
+                ]
+            },
+            "W": {
+                "SpellName": "W - Blood Frenzy",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Bonus Attack Speed: ",
+                            "Before": "54/68/82/96/110%",
+                            "Indicator": " ⇒ ",
+                            "After": "55/65/75/85/95%"
+                        }
+                    }
+                ]
+            },
+            "E": "",
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -949,7 +996,8 @@
         "13.23",
         "13.24",
         "14.2",
-        "14.6"
+        "14.6",
+        "14.8"
     ],
     "ChampionName": "Briar",
     "Balance": {
@@ -960,6 +1008,9 @@
             "adjust"
         ],
         "14.6": [
+            "nerf"
+        ],
+        "14.8": [
             "nerf"
         ]
     }

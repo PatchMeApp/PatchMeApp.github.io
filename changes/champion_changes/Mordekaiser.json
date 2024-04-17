@@ -132,7 +132,7 @@
                     }
                 ]
             },
-            "cooldown": "9/7.75/6.5/5.25/4",
+            "cooldown": "8/7/6/5/4",
             "cost": "No Cost",
             "name": "Obliterate"
         },
@@ -215,7 +215,7 @@
                     },
                     {
                         "text": {
-                            "text": "80/95/110/125/140 {{0}} magic damage.",
+                            "text": "70/85/100/115/130 {{0}} magic damage.",
                             "scaleHolders": [
                                 {
                                     "scale": "(+60% AP)",
@@ -565,6 +565,53 @@
                     }
                 ]
             }
+        },
+        "14.8": {
+            "B": "",
+            "P": "",
+            "Q": {
+                "SpellName": "Q - Obliterate",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Cooldown: ",
+                            "Before": "9/7.75/6.5/5.25/4",
+                            "Indicator": " ⇒ ",
+                            "After": "8/7/6/5/4 seconds"
+                        }
+                    }
+                ]
+            },
+            "W": "",
+            "E": {
+                "SpellName": "E - Death's Grasp",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Magic Damage: ",
+                            "Before": "80/95/110/125/140 (+60% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "70/85/100/115/130 (+60% AP)"
+                        }
+                    }
+                ]
+            },
+            "R": {
+                "SpellName": "R - Realm of Death",
+                "Changes": [
+                    {
+                        "Tag": "NEW",
+                        "Change": {
+                            "Attribute": "Death Realm Escape Interactions: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "Champions can no longer escape Mordekaiser's Death Realm by using Quicksilver Sash, Mercurial Scimitar, Alistar's Unbreakable Will, Gangplank's Remove Scurvy, Milio's Breath of Life, Olaf's Ragnarok, or Rengar's Ferocity Battle Roar. However, crowd control immunity will still prevent the application of Realm of Death."
+                        }
+                    }
+                ]
+            }
         }
     },
     "ChangePatches": [
@@ -578,7 +625,8 @@
         "12.8",
         "12.10",
         "12.23",
-        "13.24"
+        "13.24",
+        "14.8"
     ],
     "ChampionName": "Mordekaiser"
 }
