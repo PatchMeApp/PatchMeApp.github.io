@@ -49,7 +49,7 @@
                 "parseInfo": [
                     {
                         "text": {
-                            "text": "7.0% - 12.0% max-Health magic damage",
+                            "text": "7.0% - 10.0% max-Health magic damage",
                             "scaleHolders": []
                         },
                         "type": "magicDamage"
@@ -78,7 +78,7 @@
                                     "scaleId": "AD"
                                 },
                                 {
-                                    "scale": "(+6% bonus Health)",
+                                    "scale": "(+5% Bonus Health)",
                                     "scaleId": "Health"
                                 }
                             ]
@@ -108,14 +108,14 @@
                     },
                     {
                         "text": {
-                            "text": "10/20/30/40/50 {{0}} {{1}} + 15% max-Health physical damage",
+                            "text": "10/25/40/55/70 {{0}} {{1}} + 15% max-Health physical damage",
                             "scaleHolders": [
                                 {
                                     "scale": "(+40% Bonus AD)",
                                     "scaleId": "AD"
                                 },
                                 {
-                                    "scale": "(+6% bonus Health)",
+                                    "scale": "(+5% Bonus Health)",
                                     "scaleId": "Health"
                                 }
                             ]
@@ -148,7 +148,7 @@
                     },
                     {
                         "text": {
-                            "text": "50/75/100/125/150 {{0}} magic damage",
+                            "text": "50/70/90/110/130 {{0}} magic damage",
                             "scaleHolders": [
                                 {
                                     "scale": "(+80% AP)",
@@ -453,7 +453,20 @@
                     }
                 ]
             },
-            "P": "",
+            "P": {
+                "SpellName": "P - Threads of Vibration",
+                "Changes": [
+                    {
+                        "Tag": "MID-PATCH",
+                        "Change": {
+                            "Attribute": "Damage: ",
+                            "Before": "7-12% of target's maximum health",
+                            "Indicator": " ⇒ ",
+                            "After": "7-10% of target's maximum health"
+                        }
+                    }
+                ]
+            },
             "Q": {
                 "SpellName": "Q - Shattered Earth / Upheaval",
                 "Changes": [
@@ -501,6 +514,24 @@
                             "Indicator": " ⇒ ",
                             "After": "0.35 seconds (Note: this is how long Skarner stands in place pulling the boulder out of the ground before being able to move or attack)"
                         }
+                    },
+                    {
+                        "Tag": "MID-PATCH",
+                        "Change": {
+                            "Attribute": "Shattered Earth Damage: ",
+                            "Before": "10/25/40/55/70 (+60% bonus AD) (+6% of Skarner's bonus health)",
+                            "Indicator": " ⇒ ",
+                            "After": "10/25/40/55/70 (+60% bonus AD) (+5% of Skarner's bonus health)"
+                        }
+                    },
+                    {
+                        "Tag": "MID-PATCH",
+                        "Change": {
+                            "Attribute": "Upheaval Damage: ",
+                            "Before": "10/25/40/55/70 (+60% bonus AD) (+6% of Skarner’s bonus health) (+15% of the target's maximum health)",
+                            "Indicator": " ⇒ ",
+                            "After": "10/25/40/55/70 (+60% bonus AD) (+5% of Skarner’s bonus health) (+15% of the target's maximum health)"
+                        }
                     }
                 ]
             },
@@ -523,6 +554,15 @@
                             "Before": "60/90/120/150/180 (+80% AP)",
                             "Indicator": " ⇒ ",
                             "After": "50/75/100/125/150 (+80% AP)"
+                        }
+                    },
+                    {
+                        "Tag": "MID-PATCH",
+                        "Change": {
+                            "Attribute": "Seismic Bastion Damage: ",
+                            "Before": "50/75/100/125/150 (+80% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "50/70/90/110/130 (+80% AP)"
                         }
                     }
                 ]
@@ -628,7 +668,8 @@
             "adjust"
         ],
         "14.8": [
-            "adjust"
+            "adjust",
+            "nerf"
         ]
     }
 }

@@ -1124,7 +1124,20 @@
             "14.8"
         ],
         "LatestChanges": {
-            "B": "",
+            "B": {
+                "SpellName": "Base Stats",
+                "Changes": [
+                    {
+                        "Tag": "MID-PATCH",
+                        "Change": {
+                            "Attribute": "Attack Speed Growth: ",
+                            "Before": "2.6%",
+                            "Indicator": " ⇒ ",
+                            "After": "3.0%"
+                        }
+                    }
+                ]
+            },
             "P": {
                 "SpellName": "Passive - New Destiny",
                 "Changes": [
@@ -1145,6 +1158,15 @@
                             "Indicator": " ⇒ ",
                             "After": "45%"
                         }
+                    },
+                    {
+                        "Tag": "MID-PATCH",
+                        "Change": {
+                            "Attribute": "Attack Speed Scaling: ",
+                            "Before": "Increased Attack Speed scaling from non-level sources towards reload time by 35%",
+                            "Indicator": " ⇒ ",
+                            "After": "REMOVED"
+                        }
                     }
                 ]
             },
@@ -1154,7 +1176,8 @@
             "R": ""
         },
         "Balance": [
-            "buff"
+            "buff",
+            "adjust"
         ]
     },
     "Heimerdinger": {
@@ -7045,7 +7068,20 @@
                     }
                 ]
             },
-            "P": "",
+            "P": {
+                "SpellName": "P - Threads of Vibration",
+                "Changes": [
+                    {
+                        "Tag": "MID-PATCH",
+                        "Change": {
+                            "Attribute": "Damage: ",
+                            "Before": "7-12% of target's maximum health",
+                            "Indicator": " ⇒ ",
+                            "After": "7-10% of target's maximum health"
+                        }
+                    }
+                ]
+            },
             "Q": {
                 "SpellName": "Q - Shattered Earth / Upheaval",
                 "Changes": [
@@ -7093,6 +7129,24 @@
                             "Indicator": " ⇒ ",
                             "After": "0.35 seconds (Note: this is how long Skarner stands in place pulling the boulder out of the ground before being able to move or attack)"
                         }
+                    },
+                    {
+                        "Tag": "MID-PATCH",
+                        "Change": {
+                            "Attribute": "Shattered Earth Damage: ",
+                            "Before": "10/25/40/55/70 (+60% bonus AD) (+6% of Skarner's bonus health)",
+                            "Indicator": " ⇒ ",
+                            "After": "10/25/40/55/70 (+60% bonus AD) (+5% of Skarner's bonus health)"
+                        }
+                    },
+                    {
+                        "Tag": "MID-PATCH",
+                        "Change": {
+                            "Attribute": "Upheaval Damage: ",
+                            "Before": "10/25/40/55/70 (+60% bonus AD) (+6% of Skarner’s bonus health) (+15% of the target's maximum health)",
+                            "Indicator": " ⇒ ",
+                            "After": "10/25/40/55/70 (+60% bonus AD) (+5% of Skarner’s bonus health) (+15% of the target's maximum health)"
+                        }
                     }
                 ]
             },
@@ -7116,6 +7170,15 @@
                             "Indicator": " ⇒ ",
                             "After": "50/75/100/125/150 (+80% AP)"
                         }
+                    },
+                    {
+                        "Tag": "MID-PATCH",
+                        "Change": {
+                            "Attribute": "Seismic Bastion Damage: ",
+                            "Before": "50/75/100/125/150 (+80% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "50/70/90/110/130 (+80% AP)"
+                        }
                     }
                 ]
             },
@@ -7123,7 +7186,8 @@
             "R": ""
         },
         "Balance": [
-            "adjust"
+            "adjust",
+            "nerf"
         ]
     },
     "Swain": {

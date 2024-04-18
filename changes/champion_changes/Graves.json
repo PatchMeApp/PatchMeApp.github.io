@@ -26,7 +26,7 @@
         },
         "attackSpeed": {
             "base": 0.475,
-            "increment": 0.026000000000000002
+            "increment": 0.03
         },
         "ms": {
             "base": 340,
@@ -620,7 +620,20 @@
             "R": ""
         },
         "14.8": {
-            "B": "",
+            "B": {
+                "SpellName": "Base Stats",
+                "Changes": [
+                    {
+                        "Tag": "MID-PATCH",
+                        "Change": {
+                            "Attribute": "Attack Speed Growth: ",
+                            "Before": "2.6%",
+                            "Indicator": " ⇒ ",
+                            "After": "3.0%"
+                        }
+                    }
+                ]
+            },
             "P": {
                 "SpellName": "Passive - New Destiny",
                 "Changes": [
@@ -640,6 +653,15 @@
                             "Before": "40%",
                             "Indicator": " ⇒ ",
                             "After": "45%"
+                        }
+                    },
+                    {
+                        "Tag": "MID-PATCH",
+                        "Change": {
+                            "Attribute": "Attack Speed Scaling: ",
+                            "Before": "Increased Attack Speed scaling from non-level sources towards reload time by 35%",
+                            "Indicator": " ⇒ ",
+                            "After": "REMOVED"
                         }
                     }
                 ]
@@ -670,7 +692,8 @@
     "ChampionName": "Graves",
     "Balance": {
         "14.8": [
-            "buff"
+            "buff",
+            "adjust"
         ]
     }
 }
