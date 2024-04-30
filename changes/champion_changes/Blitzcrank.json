@@ -45,7 +45,7 @@
         "P": {
             "cooldown": 90,
             "_rawTooltip": {
-                "fullTooltip": "Innate: Periodically, when Blitzcrank is damaged to [[0]], a shield is first generated that is equal to 30% of maximum mana, lasting up to 10 seconds.",
+                "fullTooltip": "Innate: Periodically, when Blitzcrank is damaged to [[0]], a shield is first generated that is equal to 30% of maximum mana, lasting up to 4 seconds.",
                 "parseInfo": [
                     {
                         "text": {
@@ -93,7 +93,7 @@
                 "parseInfo": [
                     {
                         "text": {
-                            "text": "70/75/80/85/90% decaying Move Speed",
+                            "text": "60/65/70/75/80% decaying Move Speed",
                             "scaleHolders": []
                         },
                         "type": "speed"
@@ -887,6 +887,40 @@
                 ]
             },
             "R": ""
+        },
+        "14.9": {
+            "B": "",
+            "P": {
+                "SpellName": "Passive - Mana Barrier",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Passive Shield Duration: ",
+                            "Before": "10 seconds",
+                            "Indicator": " ⇒ ",
+                            "After": "4 seconds"
+                        }
+                    }
+                ]
+            },
+            "Q": "",
+            "W": {
+                "SpellName": "W - Overdrive",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Initial Bonus Movement Speed: ",
+                            "Before": "70/75/80/85/90%",
+                            "Indicator": " ⇒ ",
+                            "After": "60/65/70/75/80%"
+                        }
+                    }
+                ]
+            },
+            "E": "",
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -902,11 +936,15 @@
         "12.20",
         "12.21",
         "13.17",
-        "14.2"
+        "14.2",
+        "14.9"
     ],
     "ChampionName": "Blitzcrank",
     "Balance": {
         "14.2": [
+            "nerf"
+        ],
+        "14.9": [
             "nerf"
         ]
     }

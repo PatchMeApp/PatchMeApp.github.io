@@ -91,7 +91,7 @@
                             "text": "10/15/20/25/30 {{0}} physical damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+110% AD)",
+                                    "scale": "(+100% AD)",
                                     "scaleId": "AD"
                                 }
                             ]
@@ -688,6 +688,49 @@
                 ]
             },
             "R": ""
+        },
+        "14.9": {
+            "B": "",
+            "P": {
+                "SpellName": "Passive - Death in Lavender",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Bonus Attack Speed per Stack: ",
+                            "Before": "0.28%-1% (levels 1-13)",
+                            "Indicator": " ⇒ ",
+                            "After": "0.28%-1% (levels 1-17) (Note: This means that at levels 2-16, Bel’Veth will have slightly less attack speed, this is most pronounced at level 13.)"
+                        }
+                    }
+                ]
+            },
+            "Q": {
+                "SpellName": "Q - Void Surge",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Damage: ",
+                            "Before": "10/15/20/25/30 (+110% total AD)",
+                            "Indicator": " ⇒ ",
+                            "After": "10/15/20/25/30 (+100% Total AD)"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Monster Damage Modifier: ",
+                            "Before": "140% total damage",
+                            "Indicator": " ⇒ ",
+                            "After": "+45/55/65/75/85 flat damage (Note: This is a buff until 136 total attack damage.)"
+                        }
+                    }
+                ]
+            },
+            "W": "",
+            "E": "",
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -697,12 +740,16 @@
         "13.9",
         "13.20",
         "13.21",
-        "14.5"
+        "14.5",
+        "14.9"
     ],
     "ChampionName": "Bel'Veth",
     "Balance": {
         "14.5": [
             "nerf"
+        ],
+        "14.9": [
+            "adjust"
         ]
     }
 }

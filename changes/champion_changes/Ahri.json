@@ -90,7 +90,7 @@
                 "parseInfo": [
                     {
                         "text": {
-                            "text": "50/75/100/125/150 {{0}} magic damage",
+                            "text": "45/70/95/120/145 {{0}} magic damage",
                             "scaleHolders": [
                                 {
                                     "scale": "(+30% AP)",
@@ -102,7 +102,7 @@
                     },
                     {
                         "text": {
-                            "text": "15/22.5/30/37.5/45 {{0}} damage",
+                            "text": "13.5/21/28.5/36/43.5 {{0}} damage",
                             "scaleHolders": [
                                 {
                                     "scale": "(+9% AP)",
@@ -172,7 +172,7 @@
                     }
                 ]
             },
-            "cooldown": "130/105/80",
+            "cooldown": "130/115/100",
             "cost": "100 Mana",
             "name": "Spirit Rush"
         }
@@ -873,6 +873,40 @@
             "W": "",
             "E": "",
             "R": ""
+        },
+        "14.9": {
+            "B": "",
+            "P": "",
+            "Q": "",
+            "W": {
+                "SpellName": "W - Fox-Fire",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Damage: ",
+                            "Before": "50/75/100/125/150 (+30% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "45/70/95/120/145 (+30% AP)"
+                        }
+                    }
+                ]
+            },
+            "E": "",
+            "R": {
+                "SpellName": "R - Spirit Rush",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Cooldown: ",
+                            "Before": "130/105/80",
+                            "Indicator": " ⇒ ",
+                            "After": "130/115/100 seconds"
+                        }
+                    }
+                ]
+            }
         }
     },
     "ChangePatches": [
@@ -887,7 +921,8 @@
         "13.4",
         "13.22",
         "14.2",
-        "14.4"
+        "14.4",
+        "14.9"
     ],
     "ChampionName": "Ahri",
     "Balance": {
@@ -896,6 +931,9 @@
         ],
         "14.4": [
             "buff"
+        ],
+        "14.9": [
+            "nerf"
         ]
     }
 }

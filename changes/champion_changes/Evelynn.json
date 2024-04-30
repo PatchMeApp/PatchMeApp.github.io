@@ -136,7 +136,7 @@
         },
         "W": {
             "_rawTooltip": {
-                "fullTooltip": "Evelynn marks a champion or monster for 5 seconds. If Evelynn hits the target with an Attack or Ability, she will expunge the mark, refund its cost, and [[0]] the target by 65% for 0.75 seconds.<br /><br />If the mark lasts at least 2.5 seconds, expunging it has extra effects:[[1]] them for 1.25/1.5/1.75/2 second(s) and removes [[2]] for 4 seconds.[[3]] them for 3/3.25/3.5/3.75 seconds and deals [[4]].",
+                "fullTooltip": "Evelynn marks a champion or monster for 5 seconds. If Evelynn hits the target with an Attack or Ability, she will expunge the mark, refund its cost, and [[0]] the target by 45% for 0.75 seconds.<br /><br />If the mark lasts at least 2.5 seconds, expunging it has extra effects:[[1]] them for 1.25/1.5/1.75/2 second(s) and removes [[2]] for 4 seconds.[[3]] them for 3/3.25/3.5/3.75 seconds and deals [[4]].",
                 "parseInfo": [
                     {
                         "text": {
@@ -241,7 +241,7 @@
                             "text": "125/250/375 {{0}} magic damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+75% AP)",
+                                    "scale": "(+65% AP)",
                                     "scaleId": "AP"
                                 }
                             ]
@@ -556,6 +556,40 @@
             "W": "",
             "E": "",
             "R": ""
+        },
+        "14.9": {
+            "B": "",
+            "P": "",
+            "Q": "",
+            "W": {
+                "SpellName": "W - Allure",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Slow: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "65%⇒ 45%"
+                        }
+                    }
+                ]
+            },
+            "E": "",
+            "R": {
+                "SpellName": "R - Last Caress",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Damage: ",
+                            "Before": "125/250/375 (+75% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "125/250/375 (+65%)"
+                        }
+                    }
+                ]
+            }
         }
     },
     "ChangePatches": [
@@ -567,11 +601,15 @@
         "12.10",
         "12.13",
         "12.20",
-        "14.5"
+        "14.5",
+        "14.9"
     ],
     "ChampionName": "Evelynn",
     "Balance": {
         "14.5": [
+            "nerf"
+        ],
+        "14.9": [
             "nerf"
         ]
     }

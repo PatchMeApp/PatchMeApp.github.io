@@ -22,7 +22,7 @@
         },
         "mpRegen": {
             "base": 7.2,
-            "increment": 0.6
+            "increment": 0.75
         },
         "attackSpeed": {
             "base": 0.625,
@@ -71,7 +71,7 @@
                     },
                     {
                         "text": {
-                            "text": "10/25/40/55/70 {{0}} {{1}} physical damage",
+                            "text": "10/20/30/40/50 {{0}} {{1}} physical damage",
                             "scaleHolders": [
                                 {
                                     "scale": "(+60% Bonus AD)",
@@ -137,11 +137,11 @@
         },
         "W": {
             "_rawTooltip": {
-                "fullTooltip": "Skarner gains [[0]]Shield</shield> for 2.5s and triggers an earthquake that deals [[1]] and [[2]] nearby enemies by 20/25/30/35/40% for 1s.",
+                "fullTooltip": "Skarner gains [[0]]Shield</shield> for 2.5s and triggers an earthquake that deals [[1]] and [[2]] nearby enemies by 20% for 1s.",
                 "parseInfo": [
                     {
                         "text": {
-                            "text": "9% max Health ",
+                            "text": "8% max Health ",
                             "scaleHolders": []
                         },
                         "type": ""
@@ -570,6 +570,71 @@
             "E": "",
             "R": ""
         },
+        "14.9": {
+            "B": {
+                "SpellName": "Base Stats",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Mana Regeneration Growth: ",
+                            "Before": "0.6",
+                            "Indicator": " ⇒ ",
+                            "After": "0.75"
+                        }
+                    }
+                ]
+            },
+            "P": "",
+            "Q": {
+                "SpellName": "Q - Shattered Earth / Upheaval",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Damage per Hit: ",
+                            "Before": "10/25/40/55/70 (+60% bonus AD) (+5% of his bonus health)",
+                            "Indicator": " ⇒ ",
+                            "After": "10/20/30/40/50 (+60% bonus AD) (+5% of his bonus health)"
+                        }
+                    },
+                    {
+                        "Tag": "REMOVED",
+                        "Change": {
+                            "Attribute": "",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "Q no longer refreshes the buff duration upon attacking Wards or Plants."
+                        }
+                    }
+                ]
+            },
+            "W": {
+                "SpellName": "W - Seismic Bastion",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Slow: ",
+                            "Before": "20/25/30/35/40%",
+                            "Indicator": " ⇒ ",
+                            "After": "20% at all ranks"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Shield: ",
+                            "Before": "9% maximum health",
+                            "Indicator": " ⇒ ",
+                            "After": "8% maximum health"
+                        }
+                    }
+                ]
+            },
+            "E": "",
+            "R": ""
+        },
         "14.7": {
             "B": {
                 "SpellName": "Base Stats",
@@ -659,7 +724,8 @@
         "11.4",
         "12.10",
         "14.7",
-        "14.8"
+        "14.8",
+        "14.9"
     ],
     "ChampionName": "Skarner",
     "Balance": {
@@ -669,6 +735,9 @@
         ],
         "14.8": [
             "adjust",
+            "nerf"
+        ],
+        "14.9": [
             "nerf"
         ]
     }

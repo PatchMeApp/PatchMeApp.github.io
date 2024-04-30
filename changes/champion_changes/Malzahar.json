@@ -84,7 +84,7 @@
                 ]
             },
             "cooldown": "6",
-            "cost": "80 Mana",
+            "cost": "60/65/70/75/80 Mana",
             "name": "Call of the Void"
         },
         "W": {
@@ -182,7 +182,7 @@
                     }
                 ]
             },
-            "cooldown": "15/13/11/9/7",
+            "cooldown": "11/10/9/8/7",
             "cost": "60/70/80/90/100 Mana",
             "name": "Malefic Visions"
         },
@@ -365,13 +365,53 @@
                 ]
             },
             "R": ""
+        },
+        "14.9": {
+            "B": "",
+            "P": "",
+            "Q": {
+                "SpellName": "Q - Call of the Void",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Mana Cost: ",
+                            "Before": "80",
+                            "Indicator": " ⇒ ",
+                            "After": "60/65/70/75/80"
+                        }
+                    }
+                ]
+            },
+            "W": "",
+            "E": {
+                "SpellName": "E - Malefic Visions",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Cooldown: ",
+                            "Before": "15/13/11/9/7",
+                            "Indicator": " ⇒ ",
+                            "After": "11/10/9/8/7 seconds"
+                        }
+                    }
+                ]
+            },
+            "R": ""
         }
     },
     "ChangePatches": [
         "11.14",
         "12.10",
         "12.21",
-        "13.16"
+        "13.16",
+        "14.9"
     ],
-    "ChampionName": "Malzahar"
+    "ChampionName": "Malzahar",
+    "Balance": {
+        "14.9": [
+            "buff"
+        ]
+    }
 }

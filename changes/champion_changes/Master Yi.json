@@ -131,7 +131,7 @@
                 "parseInfo": [
                     {
                         "text": {
-                            "text": "30/35/40/45/50 {{0}} true damage",
+                            "text": "20/25/30/35/40 {{0}} true damage",
                             "scaleHolders": [
                                 {
                                     "scale": "(+30% Bonus AD)",
@@ -688,6 +688,27 @@
                 ]
             },
             "R": ""
+        },
+        "14.9": {
+            "B": "",
+            "P": "",
+            "Q": "",
+            "W": "",
+            "E": {
+                "SpellName": "E - Wuju Style",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Bonus True Damage: ",
+                            "Before": "30/35/40/45/50 (+30% bonus AD)",
+                            "Indicator": " ⇒ ",
+                            "After": "20/25/30/35/40 (+30% bonus AD)"
+                        }
+                    }
+                ]
+            },
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -703,7 +724,13 @@
         "12.13",
         "12.15",
         "12.19",
-        "13.21"
+        "13.21",
+        "14.9"
     ],
-    "ChampionName": "Master Yi"
+    "ChampionName": "Master Yi",
+    "Balance": {
+        "14.9": [
+            "nerf"
+        ]
+    }
 }

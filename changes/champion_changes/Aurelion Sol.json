@@ -119,7 +119,7 @@
                             "text": "10/15/20/25/30 {{0}} magic damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+20% AP)",
+                                    "scale": "(+16% AP)",
                                     "scaleId": "AP"
                                 }
                             ]
@@ -930,6 +930,27 @@
             "W": "",
             "E": "",
             "R": ""
+        },
+        "14.9": {
+            "B": "",
+            "P": "",
+            "Q": "",
+            "W": "",
+            "E": {
+                "SpellName": "E - Singularity",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Total Damage: ",
+                            "Before": "50/75/100/125/150 (+100% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "50/75/100/125/150 (+80% AP)"
+                        }
+                    }
+                ]
+            },
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -945,7 +966,8 @@
         "13.11",
         "13.21",
         "14.3",
-        "14.4"
+        "14.4",
+        "14.9"
     ],
     "ChampionName": "Aurelion Sol",
     "Balance": {
@@ -953,6 +975,9 @@
             "nerf"
         ],
         "14.4": [
+            "nerf"
+        ],
+        "14.9": [
             "nerf"
         ]
     }

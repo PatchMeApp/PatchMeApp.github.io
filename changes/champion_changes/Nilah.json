@@ -87,11 +87,11 @@
                             "text": "5/10/15/20/25 {{0}} * {{1}} physical damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+90/97.5/105/112.5/120% total AD)",
+                                    "scale": "(+90/95/100/105/110% AD)",
                                     "scaleId": "AD"
                                 },
                                 {
-                                    "scale": "(1 + 120% Crit Chance)",
+                                    "scale": "(1 + 100% Crit Chance)",
                                     "scaleId": "Chance"
                                 }
                             ]
@@ -100,7 +100,7 @@
                     },
                     {
                         "text": {
-                            "text": "10 - 50 {{0}}% Attack Speed",
+                            "text": "10 - 60 {{0}}% Attack Speed",
                             "scaleHolders": [
                                 {
                                     "scale": "(based on champion level)",
@@ -361,6 +361,45 @@
                 ]
             }
         },
+        "14.9": {
+            "B": "",
+            "P": "",
+            "Q": {
+                "SpellName": "Q - Formless Blade",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Minimum Damage: ",
+                            "Before": "5/10/15/20/25 (+90/97.5/105/112.5/120% total AD)",
+                            "Indicator": " ⇒ ",
+                            "After": "5/10/15/20/25 (+90/95/100/105/110% total AD)"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Bonus Attack Speed: ",
+                            "Before": "10-50% (based on level)",
+                            "Indicator": " ⇒ ",
+                            "After": "10-60% (based on level)"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Critical Strike Chance Damage Modifier: ",
+                            "Before": "100-220% (based on critical strike chance)",
+                            "Indicator": " ⇒ ",
+                            "After": "100-200% (based on critical strike chance)"
+                        }
+                    }
+                ]
+            },
+            "W": "",
+            "E": "",
+            "R": ""
+        },
         "12.23": {
             "B": "",
             "P": "",
@@ -435,7 +474,13 @@
     "ChangePatches": [
         "12.13",
         "12.23",
-        "13.22"
+        "13.22",
+        "14.9"
     ],
-    "ChampionName": "Nilah"
+    "ChampionName": "Nilah",
+    "Balance": {
+        "14.9": [
+            "adjust"
+        ]
+    }
 }

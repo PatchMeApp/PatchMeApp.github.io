@@ -76,7 +76,7 @@
                 "parseInfo": [
                     {
                         "text": {
-                            "text": "65/115/165/215/265 {{0}} physical damage",
+                            "text": "60/110/160/210/260 {{0}} physical damage",
                             "scaleHolders": [
                                 {
                                     "scale": "(+100% Bonus AD)",
@@ -177,7 +177,7 @@
                     },
                     {
                         "text": {
-                            "text": "10/20 Magic Resist",
+                            "text": "10/15/20 Magic Resist",
                             "scaleHolders": []
                         },
                         "type": "scaleMR"
@@ -947,6 +947,49 @@
             "W": "",
             "E": "",
             "R": ""
+        },
+        "14.9": {
+            "B": "",
+            "P": "",
+            "Q": {
+                "SpellName": "Q - Undertow",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Damage: ",
+                            "Before": "65/115/165/215/265 (+100% bonus AD)",
+                            "Indicator": " ⇒ ",
+                            "After": "60/110/160/210/260 (+100% bonus AD)"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Bonus Damage to Monsters: ",
+                            "Before": "5/15/25/35/45",
+                            "Indicator": " ⇒ ",
+                            "After": "10/25/40/55/70"
+                        }
+                    }
+                ]
+            },
+            "W": "",
+            "E": "",
+            "R": {
+                "SpellName": "R - Ragnarok",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Passive Resistances: ",
+                            "Before": "10/20/30",
+                            "Indicator": " ⇒ ",
+                            "After": "10/15/20"
+                        }
+                    }
+                ]
+            }
         }
     },
     "ChangePatches": [
@@ -959,7 +1002,8 @@
         "12.13",
         "13.7",
         "14.7",
-        "14.8"
+        "14.8",
+        "14.9"
     ],
     "ChampionName": "Olaf",
     "Balance": {
@@ -968,6 +1012,9 @@
         ],
         "14.8": [
             "buff"
+        ],
+        "14.9": [
+            "nerf"
         ]
     }
 }

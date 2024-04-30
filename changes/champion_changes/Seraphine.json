@@ -72,7 +72,7 @@
                             "text": "60/85/110/135/160 {{0}} magic damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+50% AP)",
+                                    "scale": "(+60% AP)",
                                     "scaleId": "AP"
                                 }
                             ]
@@ -1217,6 +1217,27 @@
                     }
                 ]
             }
+        },
+        "14.9": {
+            "B": "",
+            "P": "",
+            "Q": {
+                "SpellName": "Q - High Note",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Damage: ",
+                            "Before": "60/85/110/135/160 (+50% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "60/85/110/135/160 (+60% AP)"
+                        }
+                    }
+                ]
+            },
+            "W": "",
+            "E": "",
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -1234,12 +1255,16 @@
         "12.14",
         "13.21",
         "13.22",
-        "14.5"
+        "14.5",
+        "14.9"
     ],
     "ChampionName": "Seraphine",
     "Balance": {
         "14.5": [
             "adjust"
+        ],
+        "14.9": [
+            "buff"
         ]
     }
 }

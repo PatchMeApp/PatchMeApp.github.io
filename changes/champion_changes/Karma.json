@@ -52,7 +52,7 @@
         },
         "Q": {
             "_rawTooltip": {
-                "fullTooltip": "Karma fires a blast of energy, dealing [[0]] to the first target hit and surrounding enemies, and [[1]] them by 35% for 1.5 seconds.",
+                "fullTooltip": "Karma fires a blast of energy, dealing [[0]] to the first target hit and surrounding enemies, and [[1]] them by 40% for 1.5 seconds.",
                 "parseInfo": [
                     {
                         "text": {
@@ -949,6 +949,49 @@
                     }
                 ]
             }
+        },
+        "14.9": {
+            "B": "",
+            "P": "",
+            "Q": {
+                "SpellName": "Q - Inner Flame",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Slow: ",
+                            "Before": "35%",
+                            "Indicator": " ⇒ ",
+                            "After": "40% (Note: Mantra Q slow is unchanged at 50%.)"
+                        }
+                    }
+                ]
+            },
+            "W": "",
+            "E": "",
+            "R": {
+                "SpellName": "R + E - Mantra Defiance",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "AoE Shielding on Secondary Targets: ",
+                            "Before": "90% of Primary Target’s Extra Shield",
+                            "Indicator": " ⇒ ",
+                            "After": "100% of Primary Target’s Extra Shield"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "AoE Movement Speed Bonus: ",
+                            "Before": "12%",
+                            "Indicator": " ⇒ ",
+                            "After": "15%"
+                        }
+                    }
+                ]
+            }
         }
     },
     "ChangePatches": [
@@ -968,7 +1011,8 @@
         "14.2",
         "14.3",
         "14.6",
-        "14.7"
+        "14.7",
+        "14.9"
     ],
     "ChampionName": "Karma",
     "Balance": {
@@ -982,6 +1026,9 @@
             "nerf"
         ],
         "14.7": [
+            "buff"
+        ],
+        "14.9": [
             "buff"
         ]
     }

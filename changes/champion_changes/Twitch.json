@@ -1,8 +1,8 @@
 {
     "stats": {
         "hp": {
-            "base": 682,
-            "increment": 100
+            "base": 630,
+            "increment": 104
         },
         "mp": {
             "base": 300,
@@ -130,7 +130,7 @@
         },
         "W": {
             "_rawTooltip": {
-                "fullTooltip": "Twitch hurls a cask that adds a stack of [[0]] to all enemies struck and leaves behind a toxic cloud that persists for 3 seconds.<br /><br />Enemies that remain within the cloud are [[1]] by 30/35/40/45/50 (+6% AP)% and receive an additional stack of [[2]] each second.",
+                "fullTooltip": "Twitch hurls a cask that adds a stack of [[0]] to all enemies struck and leaves behind a toxic cloud that persists for 3 seconds.<br /><br />Enemies that remain within the cloud are [[1]] by 30/35/40/45/50 (+5% AP)% and receive an additional stack of [[2]] each second.",
                 "parseInfo": [
                     {
                         "text": {
@@ -238,7 +238,7 @@
                 "parseInfo": [
                     {
                         "text": {
-                            "text": "40/55 Attack Damage",
+                            "text": "30/45/60 Attack Damage",
                             "scaleHolders": []
                         },
                         "type": ""
@@ -609,6 +609,62 @@
             },
             "R": ""
         },
+        "14.9": {
+            "B": {
+                "SpellName": "Base Stats",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Base Health: ",
+                            "Before": "682",
+                            "Indicator": " ⇒ ",
+                            "After": "630"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Health Growth: ",
+                            "Before": "100",
+                            "Indicator": " ⇒ ",
+                            "After": "104"
+                        }
+                    }
+                ]
+            },
+            "P": "",
+            "Q": "",
+            "W": {
+                "SpellName": "W - Venom Cask",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Slow: ",
+                            "Before": "30/35/40/45/50% (+6% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "30/35/40/45/50 (+5% AP)"
+                        }
+                    }
+                ]
+            },
+            "E": "",
+            "R": {
+                "SpellName": "R - Spray and Pray",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Bonus Attack Damage: ",
+                            "Before": "40/55/70",
+                            "Indicator": " ⇒ ",
+                            "After": "30/45/60"
+                        }
+                    }
+                ]
+            }
+        },
         "13.1B": {
             "B": {
                 "SpellName": "Base Stats",
@@ -652,7 +708,13 @@
         "13.1B",
         "13.5",
         "13.19",
-        "14.3"
+        "14.3",
+        "14.9"
     ],
-    "ChampionName": "Twitch"
+    "ChampionName": "Twitch",
+    "Balance": {
+        "14.9": [
+            "nerf"
+        ]
+    }
 }

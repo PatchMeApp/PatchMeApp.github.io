@@ -177,7 +177,7 @@
                             "text": "60/90/120/150/180 {{0}} magic damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+80% AP)",
+                                    "scale": "(+70% AP)",
                                     "scaleId": "AP"
                                 }
                             ]
@@ -630,6 +630,27 @@
                     }
                 ]
             }
+        },
+        "14.9": {
+            "B": "",
+            "P": "",
+            "Q": "",
+            "W": "",
+            "E": {
+                "SpellName": "E - Force Pulse",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Damage: ",
+                            "Before": "60/90/120/150/180 (+80% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "60/90/120/150/180 (+70% AP)"
+                        }
+                    }
+                ]
+            },
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -643,7 +664,13 @@
         "13.1B",
         "13.3",
         "13.18",
-        "13.22"
+        "13.22",
+        "14.9"
     ],
-    "ChampionName": "Kassadin"
+    "ChampionName": "Kassadin",
+    "Balance": {
+        "14.9": [
+            "nerf"
+        ]
+    }
 }
