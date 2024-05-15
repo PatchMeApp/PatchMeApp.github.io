@@ -233,7 +233,7 @@
                 "parseInfo": [
                     {
                         "text": {
-                            "text": "50/90/130/170/210 {{0}} Shield",
+                            "text": "50/100/150/200/250 {{0}} Shield",
                             "scaleHolders": [
                                 {
                                     "scale": "(+ 10% bonus health)",
@@ -1198,6 +1198,49 @@
                 ]
             },
             "R": ""
+        },
+        "14.10": {
+            "B": {
+                "SpellName": "Base Stats",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Health Regeneration Growth: ",
+                            "Before": ".85",
+                            "Indicator": " ⇒ ",
+                            "After": "1"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Health Growth: ",
+                            "Before": "115",
+                            "Indicator": " ⇒ ",
+                            "After": "120"
+                        }
+                    }
+                ]
+            },
+            "P": "",
+            "Q": "",
+            "W": "",
+            "E": {
+                "SpellName": "E - Footwork",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Base Shield: ",
+                            "Before": "50/90/130/170/210 (+10% bonus health)",
+                            "Indicator": " ⇒ ",
+                            "After": "50/100/150/200/250 (+10% bonus health)"
+                        }
+                    }
+                ]
+            },
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -1211,7 +1254,8 @@
         "13.22",
         "13.23",
         "13.24",
-        "14.4"
+        "14.4",
+        "14.10"
     ],
     "ChampionName": "K'Sante",
     "Balance": {
@@ -1221,6 +1265,9 @@
         "14.4": [
             "adjust",
             "danger"
+        ],
+        "14.10": [
+            "buff"
         ]
     }
 }

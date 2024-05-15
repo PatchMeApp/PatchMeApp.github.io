@@ -78,7 +78,7 @@
                                     "scaleId": "AD"
                                 },
                                 {
-                                    "scale": "(+5% Bonus Health)",
+                                    "scale": "(+4% Bonus Health)",
                                     "scaleId": "Health"
                                 }
                             ]
@@ -132,7 +132,7 @@
                 ]
             },
             "cooldown": "13/11.5/10/8.5/7",
-            "cost": "30/35/40/45/50 Mana",
+            "cost": "30 Mana",
             "name": "Shattered Earth / Upheaval"
         },
         "W": {
@@ -180,7 +180,7 @@
                             "text": "30/60/90/120/150 {{0}} physical damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+10% Health)",
+                                    "scale": "(+8% Health)",
                                     "scaleId": "Health"
                                 }
                             ]
@@ -635,6 +635,107 @@
             "E": "",
             "R": ""
         },
+        "14.10": {
+            "B": "",
+            "P": "",
+            "Q": {
+                "SpellName": "Q - Shattered Earth / Upheaval",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Damage: ",
+                            "Before": "10/20/30/40/50 (+60% Bonus AD) (+5% Bonus HP)",
+                            "Indicator": " ⇒ ",
+                            "After": "10/20/30/40/50 (+60% Bonus AD) (+4% Bonus HP)"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Mana Cost: ",
+                            "Before": "30/35/40/45/50",
+                            "Indicator": " ⇒ ",
+                            "After": "30"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Damage to Structures: ",
+                            "Before": "50%",
+                            "Indicator": " ⇒ ",
+                            "After": "100%"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "% Max HP Monster Cap: ",
+                            "Before": "150/225/300/375/450",
+                            "Indicator": " ⇒ ",
+                            "After": "150/200/250/300/350"
+                        }
+                    }
+                ]
+            },
+            "W": "",
+            "E": {
+                "SpellName": "E - Ixtal's Impact",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Damage: ",
+                            "Before": "30/60/90/120/150 (+10% Skarner's Max HP)",
+                            "Indicator": " ⇒ ",
+                            "After": "30/60/90/120/150 (+8% Skarner's Max HP)"
+                        }
+                    }
+                ]
+            },
+            "R": {
+                "SpellName": "R - Impale",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Cast Time: ",
+                            "Before": ".75",
+                            "Indicator": " ⇒ ",
+                            "After": ".65"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "Skarner is no longer unstoppable while winding up Impale"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "Skarner can now queue his other skills while winding up Impale. Q/E still cannot be cast while impaling an enemy champion."
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "Fixed a bug where Mark/Dash could be re/cast during Impale"
+                        }
+                    }
+                ]
+            }
+        },
         "14.7": {
             "B": {
                 "SpellName": "Base Stats",
@@ -725,7 +826,8 @@
         "12.10",
         "14.7",
         "14.8",
-        "14.9"
+        "14.9",
+        "14.10"
     ],
     "ChampionName": "Skarner",
     "Balance": {
@@ -739,6 +841,9 @@
         ],
         "14.9": [
             "nerf"
+        ],
+        "14.10": [
+            "adjust"
         ]
     }
 }

@@ -45,7 +45,7 @@
         "P": {
             "cooldown": "",
             "_rawTooltip": {
-                "fullTooltip": "Innate: Tryndamere gains 5 Fury each time he lands a basic attack, and 10 Fury on critical strikes and each time he kills an enemy. After not dealing or receiving damage for 8 seconds, Tryndamere loses 5 Fury per second.<br>Tryndamere gains 0% − 40% (based on Fury) critical strike chance.",
+                "fullTooltip": "Innate: Tryndamere gains 5 Fury each time he lands a basic attack, and 10 Fury on critical strikes and each time he kills an enemy. After not dealing or receiving damage for 8 seconds, Tryndamere loses 5 Fury per second.<br>Tryndamere gains 0% − 50% (based on Fury) critical strike chance.",
                 "parseInfo": []
             },
             "name": "Battle Fury"
@@ -505,6 +505,27 @@
             "W": "",
             "E": "",
             "R": ""
+        },
+        "14.10": {
+            "B": "",
+            "P": {
+                "SpellName": "Passive - Battle Fury",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Fury Bonus Critical Strike Chance: ",
+                            "Before": "0-40% (based on Fury)",
+                            "Indicator": " ⇒ ",
+                            "After": "0-50% (based on Fury)"
+                        }
+                    }
+                ]
+            },
+            "Q": "",
+            "W": "",
+            "E": "",
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -517,12 +538,16 @@
         "13.5",
         "13.17",
         "13.18",
-        "14.6"
+        "14.6",
+        "14.10"
     ],
     "ChampionName": "Tryndamere",
     "Balance": {
         "14.6": [
             "buff"
+        ],
+        "14.10": [
+            "adjust"
         ]
     }
 }

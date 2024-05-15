@@ -45,7 +45,7 @@
         "P": {
             "cooldown": "",
             "_rawTooltip": {
-                "fullTooltip": "Innate - Intent: Yasuo's total critical strike chance is multiplied by 2.5 from all other sources, but his critical strikes deal only [ 90% of the normal critical strike damage ] Additionally, [ every 1% critical strike chance in excess of 100% is converted into 0.4 bonus AD. ]<br>Innate - Resolve: Yasuo generates Flow for every 59 / 52.5 / 46 (based on level) units he travels by any means. At[ 100 stacks ]and upon taking damage from enemy champions or monsters, Yasuo consumes all Flow to shield himself for 125 − 600 (based on level) for up to 1 second.",
+                "fullTooltip": "Innate - Intent: Yasuo's total critical strike chance is multiplied by 2 from all other sources, but his critical strikes deal only [ 90% of the normal critical strike damage ] Additionally, [ every 1% critical strike chance in excess of 100% is converted into 0.5 bonus AD. ]<br>Innate - Resolve: Yasuo generates Flow for every 59 / 52.5 / 46 (based on level) units he travels by any means. At[ 100 stacks ]and upon taking damage from enemy champions or monsters, Yasuo consumes all Flow to shield himself for 125 − 600 (based on level) for up to 1 second.",
                 "parseInfo": []
             },
             "name": "Way of the Wanderer"
@@ -561,6 +561,36 @@
             "E": "",
             "R": ""
         },
+        "14.10": {
+            "B": "",
+            "P": {
+                "SpellName": "Passive - Way of the Wanderer",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Critical Strike Chance Multiplier: ",
+                            "Before": "2.5",
+                            "Indicator": " ⇒ ",
+                            "After": "2"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Bonus AD for Excess Critical Strike Chance: ",
+                            "Before": "40%",
+                            "Indicator": " ⇒ ",
+                            "After": "50%"
+                        }
+                    }
+                ]
+            },
+            "Q": "",
+            "W": "",
+            "E": "",
+            "R": ""
+        },
         "13.10": {
             "B": {
                 "SpellName": "Base Stats",
@@ -622,7 +652,13 @@
         "12.10",
         "13.7",
         "13.10",
-        "13.15"
+        "13.15",
+        "14.10"
     ],
-    "ChampionName": "Yasuo"
+    "ChampionName": "Yasuo",
+    "Balance": {
+        "14.10": [
+            "adjust"
+        ]
+    }
 }
