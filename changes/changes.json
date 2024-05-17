@@ -3974,7 +3974,10 @@
                 ]
             },
             "R": ""
-        }
+        },
+        "Balance": [
+            "adjust"
+        ]
     },
     "Azir": {
         "ChampionName": "Azir",
@@ -4209,6 +4212,15 @@
                             "Indicator": "",
                             "After": "Re-timed the animation to fire at a more appropriate point in the animation. 0.25s cast time unchanged."
                         }
+                    },
+                    {
+                        "Tag": "MID-PATCH",
+                        "Change": {
+                            "Attribute": "Damage: ",
+                            "Before": "70-230",
+                            "Indicator": " ⇒ ",
+                            "After": "70-250"
+                        }
                     }
                 ]
             },
@@ -4327,6 +4339,15 @@
                             "Indicator": " ⇒ ",
                             "After": "50/55/60/65/70"
                         }
+                    },
+                    {
+                        "Tag": "MID-PATCH",
+                        "Change": {
+                            "Attribute": "Bonus AD Ratio: ",
+                            "Before": "200%",
+                            "Indicator": " ⇒ ",
+                            "After": "250%"
+                        }
                     }
                 ]
             },
@@ -4386,12 +4407,22 @@
                             "Indicator": "",
                             "After": "New - Leveling the ability for the first time grants 2 ammo"
                         }
+                    },
+                    {
+                        "Tag": "MID-PATCH",
+                        "Change": {
+                            "Attribute": "Bonus AD Ratio: ",
+                            "Before": "70%",
+                            "Indicator": " ⇒ ",
+                            "After": "80%"
+                        }
                     }
                 ]
             }
         },
         "Balance": [
-            "danger"
+            "danger",
+            "buff"
         ]
     },
     "Jax": {
@@ -4793,21 +4824,35 @@
             "12.10",
             "12.16",
             "13.23",
-            "14.8"
+            "14.8",
+            "14.10"
         ],
         "LatestChanges": {
             "B": "",
-            "P": "",
+            "P": {
+                "SpellName": "P - League of Draven",
+                "Changes": [
+                    {
+                        "Tag": "MID-PATCH",
+                        "Change": {
+                            "Attribute": "Bonus Gold: ",
+                            "Before": "40 + 2.5 per Adoration",
+                            "Indicator": " ⇒ ",
+                            "After": "10 + 2 per Adoration"
+                        }
+                    }
+                ]
+            },
             "Q": {
                 "SpellName": "Q - Spinning Axe",
                 "Changes": [
                     {
-                        "Tag": "",
+                        "Tag": "MID-PATCH",
                         "Change": {
-                            "Attribute": "Bonus Physical Damage: ",
-                            "Before": "40/45/50/55/60 (+75/85/95/105/115% bonus AD)",
+                            "Attribute": "Damage: ",
+                            "Before": "45-65",
                             "Indicator": " ⇒ ",
-                            "After": "45/50/55/60/65 (+75/85/95/105/115% bonus AD)"
+                            "After": "40-60"
                         }
                     }
                 ]
@@ -4817,7 +4862,7 @@
             "R": ""
         },
         "Balance": [
-            "buff"
+            "nerf"
         ]
     },
     "Jinx": {
@@ -7670,29 +7715,59 @@
             "12.11",
             "13.4",
             "13.5",
-            "13.17"
+            "13.17",
+            "14.10"
         ],
         "LatestChanges": {
             "B": {
                 "SpellName": "Base Stats",
                 "Changes": [
                     {
-                        "Tag": "",
+                        "Tag": "MID-PATCH",
                         "Change": {
-                            "Attribute": "Base Health: ",
-                            "Before": "600",
+                            "Attribute": "AD Growth: ",
+                            "Before": "3.3",
                             "Indicator": " ⇒ ",
-                            "After": "630"
+                            "After": "3.0"
                         }
                     }
                 ]
             },
             "P": "",
             "Q": "",
-            "W": "",
+            "W": {
+                "SpellName": "W - Blade Whirl",
+                "Changes": [
+                    {
+                        "Tag": "MID-PATCH",
+                        "Change": {
+                            "Attribute": "Damage: ",
+                            "Before": "20-80 + 80% Bonus AD",
+                            "Indicator": " ⇒ ",
+                            "After": "20-80 + 60% Bonus AD"
+                        }
+                    }
+                ]
+            },
             "E": "",
-            "R": ""
-        }
+            "R": {
+                "SpellName": "R - Inferno Trigger",
+                "Changes": [
+                    {
+                        "Tag": "MID-PATCH",
+                        "Change": {
+                            "Attribute": "Damage: ",
+                            "Before": "5/15/25 +50% Total AD",
+                            "Indicator": " ⇒ ",
+                            "After": "5/15/25 + 45% Total AD"
+                        }
+                    }
+                ]
+            }
+        },
+        "Balance": [
+            "nerf"
+        ]
     },
     "Illaoi": {
         "ChampionName": "Illaoi",
@@ -8301,7 +8376,10 @@
             "W": "",
             "E": "",
             "R": ""
-        }
+        },
+        "Balance": [
+            "buff"
+        ]
     },
     "Dr. Mundo": {
         "ChampionName": "Dr. Mundo",
@@ -9420,38 +9498,44 @@
             "14.4",
             "14.5",
             "14.6",
-            "14.7"
+            "14.7",
+            "14.10"
         ],
         "LatestChanges": {
             "B": {
                 "SpellName": "Base Stats",
                 "Changes": [
                     {
-                        "Tag": "",
+                        "Tag": "MID-PATCH",
                         "Change": {
-                            "Attribute": "Armor: ",
-                            "Before": "24",
+                            "Attribute": "Base AD: ",
+                            "Before": "55",
                             "Indicator": " ⇒ ",
-                            "After": "26"
+                            "After": "57"
+                        }
+                    },
+                    {
+                        "Tag": "MID-PATCH",
+                        "Change": {
+                            "Attribute": "Base Health:  ",
+                            "Before": "575",
+                            "Indicator": " ⇒ ",
+                            "After": "605"
+                        }
+                    },
+                    {
+                        "Tag": "MID-PATCH",
+                        "Change": {
+                            "Attribute": "Base HP5: ",
+                            "Before": "3",
+                            "Indicator": " ⇒ ",
+                            "After": "4.5"
                         }
                     }
                 ]
             },
             "P": "",
-            "Q": {
-                "SpellName": "Q - Super Scorcher Breath",
-                "Changes": [
-                    {
-                        "Tag": "",
-                        "Change": {
-                            "Attribute": "Bonus Physical Damage based on Crit Chance: ",
-                            "Before": "0-30%",
-                            "Indicator": " ⇒ ",
-                            "After": "0-50%"
-                        }
-                    }
-                ]
-            },
+            "Q": "",
             "W": "",
             "E": "",
             "R": ""

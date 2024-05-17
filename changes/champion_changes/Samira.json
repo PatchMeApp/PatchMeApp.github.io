@@ -34,7 +34,7 @@
         },
         "attackDamage": {
             "base": 57,
-            "increment": 3.3
+            "increment": 3
         },
         "attackRange": {
             "base": 500,
@@ -124,7 +124,7 @@
                             "text": "20/35/50/65/80 {{0}} physical damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+80% Bonus AD)",
+                                    "scale": "(+60% Bonus AD)",
                                     "scaleId": "AD"
                                 }
                             ]
@@ -182,7 +182,7 @@
                             "text": "5/15/25 {{0}} physical damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+50% AD)",
+                                    "scale": "(+45% AD)",
                                     "scaleId": "AD"
                                 }
                             ]
@@ -754,6 +754,53 @@
             "W": "",
             "E": "",
             "R": ""
+        },
+        "14.10": {
+            "B": {
+                "SpellName": "Base Stats",
+                "Changes": [
+                    {
+                        "Tag": "MID-PATCH",
+                        "Change": {
+                            "Attribute": "AD Growth: ",
+                            "Before": "3.3",
+                            "Indicator": " ⇒ ",
+                            "After": "3.0"
+                        }
+                    }
+                ]
+            },
+            "P": "",
+            "Q": "",
+            "W": {
+                "SpellName": "W - Blade Whirl",
+                "Changes": [
+                    {
+                        "Tag": "MID-PATCH",
+                        "Change": {
+                            "Attribute": "Damage: ",
+                            "Before": "20-80 + 80% Bonus AD",
+                            "Indicator": " ⇒ ",
+                            "After": "20-80 + 60% Bonus AD"
+                        }
+                    }
+                ]
+            },
+            "E": "",
+            "R": {
+                "SpellName": "R - Inferno Trigger",
+                "Changes": [
+                    {
+                        "Tag": "MID-PATCH",
+                        "Change": {
+                            "Attribute": "Damage: ",
+                            "Before": "5/15/25 +50% Total AD",
+                            "Indicator": " ⇒ ",
+                            "After": "5/15/25 + 45% Total AD"
+                        }
+                    }
+                ]
+            }
         }
     },
     "ChangePatches": [
@@ -771,7 +818,13 @@
         "12.11",
         "13.4",
         "13.5",
-        "13.17"
+        "13.17",
+        "14.10"
     ],
-    "ChampionName": "Samira"
+    "ChampionName": "Samira",
+    "Balance": {
+        "14.10": [
+            "nerf"
+        ]
+    }
 }

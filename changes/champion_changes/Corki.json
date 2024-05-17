@@ -71,7 +71,7 @@
                 "parseInfo": [
                     {
                         "text": {
-                            "text": "70/110/150/290/230 {{0}} {{1}} magic damage",
+                            "text": "70/115/160/205/250 {{0}} {{1}} magic damage",
                             "scaleHolders": [
                                 {
                                     "scale": "(+70% AP)",
@@ -163,7 +163,7 @@
                             "text": "100/150/200/250/300 {{0}} physical damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+200% Bonus AD)",
+                                    "scale": "(+250% Bonus AD)",
                                     "scaleId": "AD"
                                 }
                             ]
@@ -192,39 +192,31 @@
         },
         "R": {
             "_rawTooltip": {
-                "fullTooltip": "Corki fires a missile that explodes on the first enemy hit, dealing [[0]] to surrounding enemies. Every third missile instead deals [[1]].<br /><br />This Ability has 4 charges.",
+                "fullTooltip": "Corki fires a missile that explodes on the first enemy hit, dealing [[0]] to surrounding enemies. Every third missile instead deals [[1]].<br /><br />This Ability has 4 charges. Basic attacks against champions reduce the time between charges by 2 - 4 (based on critical strike chance) seconds.",
                 "parseInfo": [
                     {
                         "text": {
-                            "text": "80/180/280 {{0}} {{1}} magic damage",
+                            "text": "80/180/280 {{0}} physical damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+25/50/75% AD)",
+                                    "scale": "(+80% AD)",
                                     "scaleId": "AD"
-                                },
-                                {
-                                    "scale": "(+12% AP)",
-                                    "scaleId": "AP"
                                 }
                             ]
                         },
-                        "type": "magicDamage"
+                        "type": "physicalDamage"
                     },
                     {
                         "text": {
-                            "text": "160/230/300 {{0}} {{1}} magic damage",
+                            "text": "160/320/560 {{0}} physical damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+70% AD)",
+                                    "scale": "(+160% AD)",
                                     "scaleId": "AD"
-                                },
-                                {
-                                    "scale": "(+24% AP)",
-                                    "scaleId": "AP"
                                 }
                             ]
                         },
-                        "type": "magicDamage"
+                        "type": "physicalDamage"
                     }
                 ]
             },
@@ -709,6 +701,15 @@
                             "Indicator": "",
                             "After": "Re-timed the animation to fire at a more appropriate point in the animation. 0.25s cast time unchanged."
                         }
+                    },
+                    {
+                        "Tag": "MID-PATCH",
+                        "Change": {
+                            "Attribute": "Damage: ",
+                            "Before": "70-230",
+                            "Indicator": " ⇒ ",
+                            "After": "70-250"
+                        }
                     }
                 ]
             },
@@ -827,6 +828,15 @@
                             "Indicator": " ⇒ ",
                             "After": "50/55/60/65/70"
                         }
+                    },
+                    {
+                        "Tag": "MID-PATCH",
+                        "Change": {
+                            "Attribute": "Bonus AD Ratio: ",
+                            "Before": "200%",
+                            "Indicator": " ⇒ ",
+                            "After": "250%"
+                        }
                     }
                 ]
             },
@@ -885,6 +895,15 @@
                             "Before": "",
                             "Indicator": "",
                             "After": "New - Leveling the ability for the first time grants 2 ammo"
+                        }
+                    },
+                    {
+                        "Tag": "MID-PATCH",
+                        "Change": {
+                            "Attribute": "Bonus AD Ratio: ",
+                            "Before": "70%",
+                            "Indicator": " ⇒ ",
+                            "After": "80%"
                         }
                     }
                 ]
@@ -999,7 +1018,8 @@
             "adjust"
         ],
         "14.10": [
-            "danger"
+            "danger",
+            "buff"
         ]
     }
 }

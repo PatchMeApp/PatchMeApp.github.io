@@ -45,7 +45,7 @@
         "P": {
             "cooldown": "",
             "_rawTooltip": {
-                "fullTooltip": "Innate: When Draven catches a Spinning Axe, kills a non-champion, or destroys a turret, he gains a stack of Adoration.<br>In addition, killing a minion or destroying a ward or trap grants a Strike stack for 10 seconds, stacking up to 6 times. If he drops an axe or a nearby minion dies without Draven killing it he loses all Strike stacks. At 6 stacks, he consumes all of his Strike stacks and gains 2 Adoration stacks.<br>When Draven kills an enemy champion, he consumes all of his Adoration stacks and gains 40 + (2.5 × stacks) bonus gold.<br>Draven loses 75% of his Adoration stacks upon death.",
+                "fullTooltip": "Innate: When Draven catches a Spinning Axe, kills a non-champion, or destroys a turret, he gains a stack of Adoration.<br>In addition, killing a minion or destroying a ward or trap grants a Strike stack for 10 seconds, stacking up to 6 times. If he drops an axe or a nearby minion dies without Draven killing it he loses all Strike stacks. At 6 stacks, he consumes all of his Strike stacks and gains 2 Adoration stacks.<br>When Draven kills an enemy champion, he consumes all of his Adoration stacks and gains 10 + (2 × stacks) bonus gold.<br>Draven loses 75% of his Adoration stacks upon death.",
                 "parseInfo": []
             },
             "name": "League of Draven"
@@ -63,7 +63,7 @@
                     },
                     {
                         "text": {
-                            "text": "45/50/55/60/65 {{0}} physical damage",
+                            "text": "40/45/50/55/60 {{0}} physical damage",
                             "scaleHolders": [
                                 {
                                     "scale": "(+75/85/95/105/115% Bonus AD)",
@@ -438,6 +438,40 @@
             "W": "",
             "E": "",
             "R": ""
+        },
+        "14.10": {
+            "B": "",
+            "P": {
+                "SpellName": "P - League of Draven",
+                "Changes": [
+                    {
+                        "Tag": "MID-PATCH",
+                        "Change": {
+                            "Attribute": "Bonus Gold: ",
+                            "Before": "40 + 2.5 per Adoration",
+                            "Indicator": " ⇒ ",
+                            "After": "10 + 2 per Adoration"
+                        }
+                    }
+                ]
+            },
+            "Q": {
+                "SpellName": "Q - Spinning Axe",
+                "Changes": [
+                    {
+                        "Tag": "MID-PATCH",
+                        "Change": {
+                            "Attribute": "Damage: ",
+                            "Before": "45-65",
+                            "Indicator": " ⇒ ",
+                            "After": "40-60"
+                        }
+                    }
+                ]
+            },
+            "W": "",
+            "E": "",
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -448,12 +482,16 @@
         "12.10",
         "12.16",
         "13.23",
-        "14.8"
+        "14.8",
+        "14.10"
     ],
     "ChampionName": "Draven",
     "Balance": {
         "14.8": [
             "buff"
+        ],
+        "14.10": [
+            "nerf"
         ]
     }
 }
