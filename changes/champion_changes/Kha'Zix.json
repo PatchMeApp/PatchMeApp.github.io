@@ -73,7 +73,7 @@
                 "parseInfo": [
                     {
                         "text": {
-                            "text": "70/95/120/145/170 {{0}} physical damage",
+                            "text": "80/105/130/155/180 {{0}} physical damage",
                             "scaleHolders": [
                                 {
                                     "scale": "(+110% Bonus AD)",
@@ -85,7 +85,7 @@
                     },
                     {
                         "text": {
-                            "text": "147/199.5/252/304.5/357 {{0}} damage",
+                            "text": "168/220.5/273/325.5/378 {{0}} damage",
                             "scaleHolders": [
                                 {
                                     "scale": "(+231% Bonus AD)",
@@ -532,6 +532,27 @@
             "W": "",
             "E": "",
             "R": ""
+        },
+        "14.11": {
+            "B": "",
+            "P": "",
+            "Q": {
+                "SpellName": "Q - Taste Their Fear",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Physical Damage: ",
+                            "Before": "70/95/120/145/170 (+110% Bonus AD)",
+                            "Indicator": " ⇒ ",
+                            "After": "80/105/130/155/180 (+110% Bonus AD)"
+                        }
+                    }
+                ]
+            },
+            "W": "",
+            "E": "",
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -542,7 +563,13 @@
         "13.7",
         "13.8",
         "13.12",
-        "13.17"
+        "13.17",
+        "14.11"
     ],
-    "ChampionName": "Kha'Zix"
+    "ChampionName": "Kha'Zix",
+    "Balance": {
+        "14.11": [
+            "buff"
+        ]
+    }
 }

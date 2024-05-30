@@ -45,7 +45,7 @@
         "P": {
             "cooldown": "",
             "_rawTooltip": {
-                "fullTooltip": "Innate: Mordekaiser's basic attacks deal [[0]] on-hit.<br>Morderkaiser generates a stack for each enemy champion or large monster hit by his basic attacks and basic abilities, which lasts 4 seconds, refreshing on subsequent hits and stacking up to 3 times. At 3 stacks, Mordekaiser gains Darkness Rise.<br>Darkness Rise: Mordekaiser gains [[2]] and creates an aura that deals[ [[1]] per second ]to nearby enemies. The damage per second against monsters is capped at 28-164 (based on level).",
+                "fullTooltip": "Innate: Mordekaiser's basic attacks deal [[0]] on-hit.<br>Morderkaiser generates a stack for each enemy champion or large monster hit by his basic attacks and basic abilities, which lasts 4 seconds, refreshing on subsequent hits and stacking up to 3 times. At 3 stacks, Mordekaiser gains Darkness Rise.<br>Darkness Rise: Mordekaiser gains [[2]] and creates an aura that deals[ [[1]] per second ]to nearby enemies. The damage per second against monsters is capped at 40-200 (based on level).",
                 "parseInfo": [
                     {
                         "text": {
@@ -56,7 +56,7 @@
                     },
                     {
                         "text": {
-                            "text": "5 − 15.2 {{0}} {{1}} {{2}} of target's maximum health) magic damage",
+                            "text": "5 {{0}} {{1}} {{2}} of target's maximum health) magic damage",
                             "scaleHolders": [
                                 {
                                     "scale": "(based on level)",
@@ -96,10 +96,10 @@
                 "parseInfo": [
                     {
                         "text": {
-                            "text": "75/95/115/135/155 {{0}}) {{1}} magic damage",
+                            "text": "80/110/140/170/200 {{0}}) {{1}} magic damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+5 - 139 (based on champion level)",
+                                    "scale": "(+0 - 45 (based on champion level)",
                                     "scaleId": "level"
                                 },
                                 {
@@ -112,14 +112,14 @@
                     },
                     {
                         "text": {
-                            "text": "75/95/115/135/155 {{0}}) {{1}} * {{2}}",
+                            "text": "80/110/140/170/200 {{0}}) {{1}} * {{2}}",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+5 - 139 (based on champion level)",
+                                    "scale": "(+0 - 45 (based on champion level)",
                                     "scaleId": "level"
                                 },
                                 {
-                                    "scale": "(+60% AP)",
+                                    "scale": "(+70% AP)",
                                     "scaleId": "AP"
                                 },
                                 {
@@ -612,6 +612,49 @@
                     }
                 ]
             }
+        },
+        "14.11": {
+            "B": "",
+            "P": {
+                "SpellName": "Passive - Darkness Rise",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Monster damage cap: ",
+                            "Before": "28-164 (based on level)",
+                            "Indicator": " ⇒ ",
+                            "After": "40-200 (based on level)"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Damage per second: ",
+                            "Before": "5-15.2 (based on level) + 30% AP + 1-5% target max HP (based on level)",
+                            "Indicator": " ⇒ ",
+                            "After": "5 + 30% AP + 1-5% target max HP (based on level)"
+                        }
+                    }
+                ]
+            },
+            "Q": {
+                "SpellName": "Q - Obliterate",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Damage: ",
+                            "Before": "75/95/115/135/155 + 5-139 (based on level) (+70% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "80/110/140/170/200 + 0-45 (based on level) (+70% AP)"
+                        }
+                    }
+                ]
+            },
+            "W": "",
+            "E": "",
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -626,7 +669,8 @@
         "12.10",
         "12.23",
         "13.24",
-        "14.8"
+        "14.8",
+        "14.11"
     ],
     "ChampionName": "Mordekaiser",
     "Balance": {
@@ -635,6 +679,9 @@
         ],
         "14.8": [
             "adjust"
+        ],
+        "14.11": [
+            "nerf"
         ]
     }
 }

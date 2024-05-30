@@ -1,6 +1,6 @@
 {
     "type": "item",
-    "version": "14.10.1",
+    "version": "14.11.1",
     "basic": {
         "name": "",
         "rune": {
@@ -1542,14 +1542,14 @@
             },
             "stats": {},
             "effect": {
-                "Effect1Amount": "0.5",
+                "Effect1Amount": "0.75",
                 "Effect2Amount": "5",
                 "Effect3Amount": "0.35"
             }
         },
         "1502": {
             "name": "Reinforced Armor",
-            "description": "<mainText><stats></stats><br><br><mainText><unique>Reinforced:</unique> Reduces incoming damage by 66.66% and becomes immune to True Damage when no enemy minions are nearby.</mainText></mainText>",
+            "description": "<mainText><stats></stats><br><br><mainText><unique>Reinforced:</unique> Reduces incoming damage by 80% and becomes immune to True Damage when no enemy minions are nearby.</mainText></mainText>",
             "colloq": "",
             "plaintext": "",
             "inStore": false,
@@ -1582,7 +1582,7 @@
             },
             "stats": {},
             "effect": {
-                "Effect1Amount": "66.66"
+                "Effect1Amount": "80"
             }
         },
         "1503": {
@@ -2324,7 +2324,7 @@
         },
         "2020": {
             "name": "The Brutalizer",
-            "description": "<mainText><stats><attention>25</attention> Attack Damage<br><attention>10</attention> Ability Haste</stats><br><br></mainText>",
+            "description": "<mainText><stats><attention>25</attention> Attack Damage<br><attention>10</attention> Ability Haste<br><attention>5</attention> Lethality</stats><br><br></mainText>",
             "colloq": "",
             "plaintext": "",
             "from": [
@@ -3251,7 +3251,7 @@
         },
         "2503": {
             "name": "Blackfire Torch",
-            "description": "<mainText><stats><attention>90</attention> Ability Power<br><attention>600</attention> Mana<br><attention>25</attention> Ability Haste</stats><br><br><passive>Baleful Blaze</passive><br>Dealing damage with Abilities causes enemies to burn. This damage increases to Monsters.<br><br><passive>Blackfire</passive><br>For each enemy Champion, Epic Monster, and Large Monster affected by your Baleful Blaze, gain <scaleAP>Ability Power</scaleAP>. </mainText>",
+            "description": "<mainText><stats><attention>90</attention> Ability Power<br><attention>600</attention> Mana<br><attention>25</attention> Ability Haste</stats><br><br><passive>Baleful Blaze</passive><br>Dealing damage with Abilities causes enemies to burn. This damage increases to Monsters.<br><br><passive>Blackfire</passive><br>For each enemy Champion, Epic Monster, and Large Monster affected by your <passive>Baleful Blaze</passive>, gain <scaleAP>Ability Power</scaleAP>. </mainText>",
             "colloq": "",
             "plaintext": "",
             "from": [
@@ -3336,7 +3336,7 @@
         },
         "2508": {
             "name": "Fated Ashes",
-            "description": "<mainText><stats><attention>30</attention> Ability Power</stats><br><br><passive>Inflame</passive>\\nDealing damage with Abilities causes enemies to burn. This damage increases to Monsters.</mainText>",
+            "description": "<mainText><stats><attention>30</attention> Ability Power</stats><br><br><passive>Inflame</passive><br>Dealing damage with Abilities causes enemies to burn. This damage increases to Monsters.</mainText>",
             "colloq": "",
             "plaintext": "",
             "from": [
@@ -3372,7 +3372,7 @@
                 "30": false
             },
             "stats": {
-                "FlatMagicDamageMod": 40
+                "FlatMagicDamageMod": 30
             },
             "depth": 2
         },
@@ -3849,7 +3849,7 @@
         },
         "3031": {
             "name": "Infinity Edge",
-            "description": "<mainText><stats><attention>80</attention> Attack Damage<br><attention>25%</attention> Critical Strike Chance<br><attention>50%</attention> Critical Strike Damage</stats><br><br></mainText>",
+            "description": "<mainText><stats><attention>80</attention> Attack Damage<br><attention>25%</attention> Critical Strike Chance<br><attention>40%</attention> Critical Strike Damage</stats><br><br></mainText>",
             "colloq": ";ie",
             "plaintext": "Massively enhances critical strikes",
             "from": [
@@ -4391,7 +4391,6 @@
             "into": [
                 "3078",
                 "6672",
-                "3087",
                 "3073",
                 "3302"
             ],
@@ -5265,7 +5264,7 @@
         },
         "3085": {
             "name": "Runaan's Hurricane",
-            "description": "<mainText><stats><attention>40%</attention> Attack Speed<br><attention>25%</attention> Critical Strike Chance<br><attention>7%</attention> Move Speed</stats><br><br><passive>Peck</passive><br>Attacks apply bonus magic damage on-hit.<br><br><passive>Wind's Fury</passive><br>When Attacking, bolts are fired at up to 2 enemies near the target. Bolts apply On-Hit effects and can Critically Strike.<br><br><rules>Item is for Ranged champions only.</rules></mainText>",
+            "description": "<mainText><stats><attention>40%</attention> Attack Speed<br><attention>25%</attention> Critical Strike Chance<br><attention>7%</attention> Move Speed</stats><br><br><passive>Wind's Fury</passive><br>When Attacking, bolts are fired at up to 2 enemies near the target. Bolts apply On-Hit effects and can Critically Strike.<br><br><rules>Item is for Ranged champions only.</rules></mainText>",
             "colloq": ";",
             "plaintext": "Ranged attacks fire two bolts at nearby enemies",
             "from": [
@@ -5360,7 +5359,7 @@
                 "30": false
             },
             "stats": {
-                "FlatCritChanceMod": 0.2,
+                "FlatCritChanceMod": 0.15,
                 "PercentAttackSpeedMod": 0.15,
                 "PercentMovementSpeedMod": 0.05
             },
@@ -5368,12 +5367,12 @@
         },
         "3087": {
             "name": "Statikk Shiv",
-            "description": "<mainText><stats><attention>50</attention> Attack Damage<br><attention>40%</attention> Attack Speed</stats><br><br><passive>Electroshock</passive><br>Your Energized Attack fires a chain lightning that deals magic damage. </mainText>",
+            "description": "<mainText><stats><attention>55</attention> Attack Damage<br><attention>45%</attention> Attack Speed<br><attention>7%</attention> Move Speed</stats><br><br><passive>Electroshock</passive><br>Your Energized Attack fires a chain lightning that deals magic damage. </mainText>",
             "colloq": ";",
             "plaintext": "Movement builds charges that release chain lightning on basic attack",
             "from": [
                 "3144",
-                "3051"
+                "6690"
             ],
             "image": {
                 "full": "3087.png",
@@ -5385,15 +5384,16 @@
                 "h": 48
             },
             "gold": {
-                "base": 700,
+                "base": 1000,
                 "purchasable": true,
-                "total": 2900,
-                "sell": 2030
+                "total": 2800,
+                "sell": 1960
             },
             "tags": [
                 "Damage",
                 "AttackSpeed",
-                "OnHit"
+                "OnHit",
+                "NonbootsMovement"
             ],
             "maps": {
                 "11": true,
@@ -5403,8 +5403,9 @@
                 "30": false
             },
             "stats": {
-                "FlatPhysicalDamageMod": 50,
-                "PercentAttackSpeedMod": 0.4
+                "FlatPhysicalDamageMod": 55,
+                "PercentAttackSpeedMod": 0.45,
+                "PercentMovementSpeedMod": 0.07
             },
             "depth": 3
         },
@@ -5772,7 +5773,7 @@
                 "30": false
             },
             "stats": {
-                "FlatHPPoolMod": 300,
+                "FlatHPPoolMod": 200,
                 "FlatArmorMod": 40
             },
             "depth": 3
@@ -6981,8 +6982,7 @@
                 "AttackSpeed",
                 "LifeSteal",
                 "Slow",
-                "OnHit",
-                "NonbootsMovement"
+                "OnHit"
             ],
             "maps": {
                 "11": true,
@@ -7265,7 +7265,7 @@
         },
         "3172": {
             "name": "Zephyr",
-            "description": "<mainText><stats><attention>45%</attention> Attack Speed<br><attention>45</attention> Move Speed</stats><br><br><passive>Like the Wind</passive><br>Gain 5% Move Speed <OnHit>On-Hit</OnHit> for 6 seconds, stacking up to 15% Move Speed.</mainText>",
+            "description": "<mainText><stats><attention>45%</attention> Attack Speed<br><attention>45</attention> Move Speed</stats><br><br><passive>Like the Wind</passive><br>Gain <speed>5% Move Speed</speed> <OnHit>On-Hit</OnHit> for 6 seconds, stacking up to <speed>15% Move Speed</speed>.</mainText>",
             "colloq": ";",
             "plaintext": "Mobility and Tenacity",
             "from": [
@@ -7438,7 +7438,7 @@
         },
         "3184": {
             "name": "Guardian's Hammer",
-            "description": "<mainText><stats><attention>25</attention> Attack Damage<br><attention>150</attention> Health<br><attention>7%</attention> Life Steal</stats><br><br><br><li><passive>Legendary:</passive> This item counts as a <rarityLegendary>Legendary</rarityLegendary> item.</mainText>",
+            "description": "<mainText><stats><attention>25</attention> Attack Damage<br><attention>150</attention> Health<br><attention>5%</attention> Life Steal</stats><br><br><br><li><passive>Legendary:</passive> This item counts as a <rarityLegendary>Legendary</rarityLegendary> item.</mainText>",
             "colloq": ";dblade",
             "plaintext": "Good starting item for attackers",
             "image": {
@@ -7472,7 +7472,7 @@
             "stats": {
                 "FlatHPPoolMod": 150,
                 "FlatPhysicalDamageMod": 25,
-                "PercentLifeStealMod": 0.07
+                "PercentLifeStealMod": 0.05
             }
         },
         "3190": {
@@ -7932,7 +7932,7 @@
         },
         "3508": {
             "name": "Essence Reaver",
-            "description": "<mainText><stats><attention>70</attention> Attack Damage<br><attention>25</attention> Ability Haste<br><attention>25%</attention> Critical Strike Chance</stats><br><br><passive>Essence Drain</passive><br>Basic attacks refund <scaleMana>mana</scaleMana> on-hit.</mainText>",
+            "description": "<mainText><stats><attention>70</attention> Attack Damage<br><attention>25</attention> Ability Haste<br><attention>25%</attention> Critical Strike Chance</stats><br><br><passive>Essence Drain</passive><br>Basic attacks grant <scaleMana> Mana</scaleMana> <OnHit>On-Hit</OnHit>.</mainText>",
             "colloq": "",
             "plaintext": "",
             "from": [
@@ -7950,10 +7950,10 @@
                 "h": 48
             },
             "gold": {
-                "base": 200,
+                "base": 100,
                 "purchasable": true,
-                "total": 3200,
-                "sell": 2240
+                "total": 3100,
+                "sell": 2170
             },
             "tags": [
                 "Damage",
@@ -7972,7 +7972,7 @@
             },
             "stats": {
                 "FlatCritChanceMod": 0.25,
-                "FlatPhysicalDamageMod": 65
+                "FlatPhysicalDamageMod": 70
             },
             "depth": 3
         },
@@ -9945,7 +9945,7 @@
         },
         "6655": {
             "name": "Luden's Companion",
-            "description": "<mainText><stats><attention>95</attention> Ability Power<br><attention>600</attention> Mana<br><attention>25</attention> Ability Haste</stats><br><br><passive>Fire</passive><br>Damaging Abilities consume all the charges to deal an additional magic damage to the target and one additional nearby target per charge. If there are insufficient targets in range, for each remaining shot, repeat the damage on the primary target.</mainText>",
+            "description": "<mainText><stats><attention>95</attention> Ability Power<br><attention>600</attention> Mana<br><attention>25</attention> Ability Haste</stats><br><br><passive>Fire</passive><br>Damaging Abilities fire Shots that deal additional damage to the target and nearby enemies. Remaining Shots fire on the primary target, dealing reduced damage.</mainText>",
             "colloq": "",
             "plaintext": "High burst damage, good against fragile foes",
             "from": [
@@ -10412,7 +10412,7 @@
         },
         "6676": {
             "name": "The Collector",
-            "description": "<mainText><stats><attention>60</attention> Attack Damage<br><attention>15</attention> Lethality<br><attention>25%</attention> Critical Strike Chance</stats><br><br><passive>Death</passive><br>Your damage executes champions that are below 5% Health.<br><br><passive>Taxes</passive><br>Champion kills grant an additional <gold>25 gold</gold>.</mainText>",
+            "description": "<mainText><stats><attention>60</attention> Attack Damage<br><attention>12</attention> Lethality<br><attention>25%</attention> Critical Strike Chance</stats><br><br><passive>Death</passive><br>Your damage executes champions that are below 5% Health.<br><br><passive>Taxes</passive><br>Champion kills grant an additional <gold>25 gold</gold>.</mainText>",
             "colloq": "",
             "plaintext": "",
             "from": [
@@ -10466,6 +10466,7 @@
                 "6700",
                 "6672",
                 "3142",
+                "3087",
                 "3181"
             ],
             "image": {
@@ -10904,6 +10905,7 @@
             "from": [
                 "6692"
             ],
+            "inStore": false,
             "requiredAlly": "Ornn",
             "image": {
                 "full": "7001.png",
@@ -10916,7 +10918,7 @@
             },
             "gold": {
                 "base": 0,
-                "purchasable": true,
+                "purchasable": false,
                 "total": 2800,
                 "sell": 1960
             },
@@ -10945,6 +10947,7 @@
             "from": [
                 "3089"
             ],
+            "inStore": false,
             "requiredAlly": "Ornn",
             "image": {
                 "full": "7003.png",
@@ -10957,7 +10960,7 @@
             },
             "gold": {
                 "base": 0,
-                "purchasable": true,
+                "purchasable": false,
                 "total": 3600,
                 "sell": 2520
             },
@@ -10984,6 +10987,7 @@
             "from": [
                 "3118"
             ],
+            "inStore": false,
             "requiredAlly": "Ornn",
             "image": {
                 "full": "7004.png",
@@ -10996,7 +11000,7 @@
             },
             "gold": {
                 "base": 0,
-                "purchasable": true,
+                "purchasable": false,
                 "total": 2700,
                 "sell": 1890
             },
@@ -11026,6 +11030,7 @@
             "from": [
                 "6662"
             ],
+            "inStore": false,
             "requiredAlly": "Ornn",
             "image": {
                 "full": "7005.png",
@@ -11038,7 +11043,7 @@
             },
             "gold": {
                 "base": 0,
-                "purchasable": true,
+                "purchasable": false,
                 "total": 2600,
                 "sell": 1820
             },
@@ -11118,6 +11123,7 @@
             "from": [
                 "6699"
             ],
+            "inStore": false,
             "requiredAlly": "Ornn",
             "image": {
                 "full": "7007.png",
@@ -11130,7 +11136,7 @@
             },
             "gold": {
                 "base": 0,
-                "purchasable": true,
+                "purchasable": false,
                 "total": 2900,
                 "sell": 2030
             },
@@ -11161,6 +11167,7 @@
             "from": [
                 "6697"
             ],
+            "inStore": false,
             "requiredAlly": "Ornn",
             "image": {
                 "full": "7008.png",
@@ -11173,7 +11180,7 @@
             },
             "gold": {
                 "base": 0,
-                "purchasable": true,
+                "purchasable": false,
                 "total": 3000,
                 "sell": 2100
             },
@@ -11204,6 +11211,7 @@
             "from": [
                 "4633"
             ],
+            "inStore": false,
             "requiredAlly": "Ornn",
             "image": {
                 "full": "7009.png",
@@ -11216,7 +11224,7 @@
             },
             "gold": {
                 "base": 0,
-                "purchasable": true,
+                "purchasable": false,
                 "total": 3100,
                 "sell": 2170
             },
@@ -11292,6 +11300,7 @@
             "from": [
                 "3152"
             ],
+            "inStore": false,
             "requiredAlly": "Ornn",
             "image": {
                 "full": "7011.png",
@@ -11304,7 +11313,7 @@
             },
             "gold": {
                 "base": 0,
-                "purchasable": true,
+                "purchasable": false,
                 "total": 2600,
                 "sell": 1820
             },
@@ -11337,6 +11346,7 @@
             "from": [
                 "6653"
             ],
+            "inStore": false,
             "requiredAlly": "Ornn",
             "image": {
                 "full": "7012.png",
@@ -11349,7 +11359,7 @@
             },
             "gold": {
                 "base": 0,
-                "purchasable": true,
+                "purchasable": false,
                 "total": 3000,
                 "sell": 2100
             },
@@ -11372,12 +11382,13 @@
         },
         "7013": {
             "name": "Force of Arms",
-            "description": "<mainText><stats><ornnBonus>120</ornnBonus> Ability Power<br><ornnBonus>950</ornnBonus> Mana<br><ornnBonus>35</ornnBonus> Ability Haste</stats><br><br><passive>Fire</passive><br>Damaging Abilities consume all the charges to deal an additional magic damage to the target and one additional nearby target per charge. If there are insufficient targets in range, for each remaining shot, repeat the damage on the primary target.</mainText>",
+            "description": "<mainText><stats><ornnBonus>120</ornnBonus> Ability Power<br><ornnBonus>950</ornnBonus> Mana<br><ornnBonus>35</ornnBonus> Ability Haste</stats><br><br><passive>Fire</passive><br>Damaging Abilities fire Shots that deal additional damage to the target and nearby enemies. Remaining Shots fire on the primary target, dealing reduced damage.</mainText>",
             "colloq": "",
             "plaintext": "",
             "from": [
                 "6655"
             ],
+            "inStore": false,
             "requiredAlly": "Ornn",
             "image": {
                 "full": "7013.png",
@@ -11390,7 +11401,7 @@
             },
             "gold": {
                 "base": 0,
-                "purchasable": true,
+                "purchasable": false,
                 "total": 2900,
                 "sell": 2030
             },
@@ -11421,6 +11432,7 @@
             "from": [
                 "6631"
             ],
+            "inStore": false,
             "requiredAlly": "Ornn",
             "image": {
                 "full": "7016.png",
@@ -11433,7 +11445,7 @@
             },
             "gold": {
                 "base": 0,
-                "purchasable": true,
+                "purchasable": false,
                 "total": 3300,
                 "sell": 2310
             },
@@ -11466,6 +11478,7 @@
             "from": [
                 "3078"
             ],
+            "inStore": false,
             "requiredAlly": "Ornn",
             "image": {
                 "full": "7018.png",
@@ -11478,7 +11491,7 @@
             },
             "gold": {
                 "base": 0,
-                "purchasable": true,
+                "purchasable": false,
                 "total": 3333,
                 "sell": 2333
             },
@@ -11520,6 +11533,7 @@
             "from": [
                 "3190"
             ],
+            "inStore": false,
             "requiredAlly": "Ornn",
             "image": {
                 "full": "7019.png",
@@ -11532,7 +11546,7 @@
             },
             "gold": {
                 "base": 0,
-                "purchasable": true,
+                "purchasable": false,
                 "total": 2200,
                 "sell": 1540
             },
@@ -11566,6 +11580,7 @@
             "from": [
                 "2065"
             ],
+            "inStore": false,
             "requiredAlly": "Ornn",
             "image": {
                 "full": "7020.png",
@@ -11578,7 +11593,7 @@
             },
             "gold": {
                 "base": 0,
-                "purchasable": true,
+                "purchasable": false,
                 "total": 2200,
                 "sell": 1540
             },
@@ -11611,6 +11626,7 @@
             "from": [
                 "6617"
             ],
+            "inStore": false,
             "requiredAlly": "Ornn",
             "image": {
                 "full": "7021.png",
@@ -11623,7 +11639,7 @@
             },
             "gold": {
                 "base": 0,
-                "purchasable": true,
+                "purchasable": false,
                 "total": 2200,
                 "sell": 1540
             },
@@ -11655,6 +11671,7 @@
             "from": [
                 "6701"
             ],
+            "inStore": false,
             "requiredAlly": "Ornn",
             "image": {
                 "full": "7022.png",
@@ -11667,7 +11684,7 @@
             },
             "gold": {
                 "base": 0,
-                "purchasable": true,
+                "purchasable": false,
                 "total": 2700,
                 "sell": 1890
             },
@@ -11699,6 +11716,7 @@
             "from": [
                 "3084"
             ],
+            "inStore": false,
             "requiredAlly": "Ornn",
             "image": {
                 "full": "7025.png",
@@ -11711,7 +11729,7 @@
             },
             "gold": {
                 "base": 0,
-                "purchasable": true,
+                "purchasable": false,
                 "total": 3000,
                 "sell": 2100
             },
@@ -11739,6 +11757,7 @@
             "from": [
                 "6665"
             ],
+            "inStore": false,
             "requiredAlly": "Ornn",
             "image": {
                 "full": "7026.png",
@@ -11751,7 +11770,7 @@
             },
             "gold": {
                 "base": 0,
-                "purchasable": true,
+                "purchasable": false,
                 "total": 3200,
                 "sell": 2240
             },
@@ -11783,6 +11802,7 @@
             "from": [
                 "6657"
             ],
+            "inStore": false,
             "requiredAlly": "Ornn",
             "image": {
                 "full": "7028.png",
@@ -11795,7 +11815,7 @@
             },
             "gold": {
                 "base": 0,
-                "purchasable": true,
+                "purchasable": false,
                 "total": 2600,
                 "sell": 1820
             },
@@ -11828,6 +11848,7 @@
             "from": [
                 "3142"
             ],
+            "inStore": false,
             "requiredAlly": "Ornn",
             "image": {
                 "full": "7029.png",
@@ -11840,7 +11861,7 @@
             },
             "gold": {
                 "base": 0,
-                "purchasable": true,
+                "purchasable": false,
                 "total": 2700,
                 "sell": 1890
             },
@@ -11878,6 +11899,7 @@
             "from": [
                 "3124"
             ],
+            "inStore": false,
             "requiredAlly": "Ornn",
             "image": {
                 "full": "7030.png",
@@ -11890,7 +11912,7 @@
             },
             "gold": {
                 "base": 0,
-                "purchasable": true,
+                "purchasable": false,
                 "total": 3000,
                 "sell": 2100
             },
@@ -11931,12 +11953,13 @@
         },
         "7031": {
             "name": "Edge of Finality",
-            "description": "<mainText><stats><ornnBonus>95</ornnBonus> Attack Damage<br><attention>25%</attention> Critical Strike Chance<br><attention>50%</attention> Critical Strike Damage</stats><br><br></mainText>",
+            "description": "<mainText><stats><ornnBonus>95</ornnBonus> Attack Damage<br><attention>25%</attention> Critical Strike Chance<br><attention>40%</attention> Critical Strike Damage</stats><br><br></mainText>",
             "colloq": "",
             "plaintext": "",
             "from": [
                 "3031"
             ],
+            "inStore": false,
             "requiredAlly": "Ornn",
             "image": {
                 "full": "7031.png",
@@ -11949,7 +11972,7 @@
             },
             "gold": {
                 "base": 0,
-                "purchasable": true,
+                "purchasable": false,
                 "total": 3400,
                 "sell": 2380
             },
@@ -12028,6 +12051,7 @@
             "from": [
                 "6620"
             ],
+            "inStore": false,
             "requiredAlly": "Ornn",
             "image": {
                 "full": "7033.png",
@@ -12040,7 +12064,7 @@
             },
             "gold": {
                 "base": 0,
-                "purchasable": true,
+                "purchasable": false,
                 "total": 2200,
                 "sell": 1540
             },
@@ -12072,6 +12096,7 @@
             "from": [
                 "2502"
             ],
+            "inStore": false,
             "requiredAlly": "Ornn",
             "image": {
                 "full": "7034.png",
@@ -12084,7 +12109,7 @@
             },
             "gold": {
                 "base": 0,
-                "purchasable": true,
+                "purchasable": false,
                 "total": 2800,
                 "sell": 1960
             },
@@ -12115,6 +12140,7 @@
             "from": [
                 "6621"
             ],
+            "inStore": false,
             "requiredAlly": "Ornn",
             "image": {
                 "full": "7035.png",
@@ -12127,7 +12153,7 @@
             },
             "gold": {
                 "base": 0,
-                "purchasable": true,
+                "purchasable": false,
                 "total": 2700,
                 "sell": 1890
             },
@@ -12155,6 +12181,7 @@
             "from": [
                 "3073"
             ],
+            "inStore": false,
             "requiredAlly": "Ornn",
             "image": {
                 "full": "7036.png",
@@ -12167,7 +12194,7 @@
             },
             "gold": {
                 "base": 0,
-                "purchasable": true,
+                "purchasable": false,
                 "total": 3000,
                 "sell": 2100
             },
@@ -12202,6 +12229,7 @@
             "from": [
                 "3071"
             ],
+            "inStore": false,
             "requiredAlly": "Ornn",
             "image": {
                 "full": "7037.png",
@@ -12214,7 +12242,7 @@
             },
             "gold": {
                 "base": 0,
-                "purchasable": true,
+                "purchasable": false,
                 "total": 3000,
                 "sell": 2100
             },
@@ -12260,6 +12288,7 @@
             "from": [
                 "3161"
             ],
+            "inStore": false,
             "requiredAlly": "Ornn",
             "image": {
                 "full": "7038.png",
@@ -12272,7 +12301,7 @@
             },
             "gold": {
                 "base": 0,
-                "purchasable": true,
+                "purchasable": false,
                 "total": 3100,
                 "sell": 2170
             },
@@ -12303,6 +12332,7 @@
             "from": [
                 "6610"
             ],
+            "inStore": false,
             "requiredAlly": "Ornn",
             "image": {
                 "full": "7039.png",
@@ -12315,7 +12345,7 @@
             },
             "gold": {
                 "base": 0,
-                "purchasable": true,
+                "purchasable": false,
                 "total": 3100,
                 "sell": 2170
             },
@@ -12391,6 +12421,7 @@
             "from": [
                 "6672"
             ],
+            "inStore": false,
             "requiredAlly": "Ornn",
             "image": {
                 "full": "7041.png",
@@ -12403,7 +12434,7 @@
             },
             "gold": {
                 "base": 0,
-                "purchasable": true,
+                "purchasable": false,
                 "total": 3100,
                 "sell": 2170
             },
@@ -12434,6 +12465,7 @@
             "from": [
                 "3115"
             ],
+            "inStore": false,
             "requiredAlly": "Ornn",
             "image": {
                 "full": "7042.png",
@@ -12446,7 +12478,7 @@
             },
             "gold": {
                 "base": 0,
-                "purchasable": true,
+                "purchasable": false,
                 "total": 3000,
                 "sell": 2100
             },
@@ -13185,6 +13217,10 @@
         },
         {
             "id": "3131",
+            "MaxGroupOwnable": "1"
+        },
+        {
+            "id": "3134",
             "MaxGroupOwnable": "1"
         },
         {

@@ -71,10 +71,10 @@
                     },
                     {
                         "text": {
-                            "text": "20/30/40/50/60 {{0}} magic damage",
+                            "text": "20/30/40/50/60  {{0}} magic damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+40% AP)",
+                                    "scale": "(+42.5% AP)",
                                     "scaleId": "AP"
                                 }
                             ]
@@ -195,7 +195,7 @@
                     }
                 ]
             },
-            "cooldown": "120/110/100",
+            "cooldown": "100",
             "cost": "100 Mana",
             "name": "Insanity Potion"
         }
@@ -501,6 +501,40 @@
             "E": "",
             "R": ""
         },
+        "14.11": {
+            "B": "",
+            "P": "",
+            "Q": {
+                "SpellName": "Q - Poison Trail",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Total Magic Damage: ",
+                            "Before": "40/60/80/100/120 (+80% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "40/60/80/100/120 (+85% AP)"
+                        }
+                    }
+                ]
+            },
+            "W": "",
+            "E": "",
+            "R": {
+                "SpellName": "R - Insanity Potion",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Cooldown: ",
+                            "Before": "120/110/100",
+                            "Indicator": " ⇒ ",
+                            "After": "100"
+                        }
+                    }
+                ]
+            }
+        },
         "14.1": {
             "B": "",
             "P": "",
@@ -533,12 +567,16 @@
         "12.12",
         "12.15",
         "13.22",
-        "14.1"
+        "14.1",
+        "14.11"
     ],
     "ChampionName": "Singed",
     "Balance": {
         "14.1": [
             "nerf"
+        ],
+        "14.11": [
+            "buff"
         ]
     }
 }

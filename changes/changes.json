@@ -1,5 +1,5 @@
 {
-    "LatestGlobalPatch": "14.10",
+    "LatestGlobalPatch": "14.11",
     "Aatrox": {
         "ChampionName": "Aatrox",
         "ChangePatches": [
@@ -227,26 +227,40 @@
             "13.5",
             "13.15",
             "13.16",
-            "13.21"
+            "13.21",
+            "14.11"
         ],
         "LatestChanges": {
-            "B": "",
-            "P": {
-                "SpellName": "Passive - Headshot",
+            "B": {
+                "SpellName": "Base Stats",
                 "Changes": [
                     {
                         "Tag": "",
                         "Change": {
-                            "Attribute": "Bonus Physical Damage: ",
-                            "Before": "60/90/120% (+ (81.25% Critical Strike Chance) * (100% Critical Strike Damage)",
+                            "Attribute": "Attack Speed Growth: ",
+                            "Before": ".568",
                             "Indicator": " ⇒ ",
-                            "After": "60/90/120% (+ (85% Critical Strike Chance) * (100% Critical Strike Damage)"
+                            "After": ".594"
                         }
                     }
                 ]
             },
+            "P": "",
             "Q": "",
-            "W": "",
+            "W": {
+                "SpellName": "W - Yordle Snap Trap",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Headshot damage decreased: ",
+                            "Before": "40/85/130/175/220 (+40/50/60/70/80% bonus AD)",
+                            "Indicator": " ⇒ ",
+                            "After": "40/85/130/175/220 (+40% bonus AD)"
+                        }
+                    }
+                ]
+            },
             "E": "",
             "R": {
                 "SpellName": "R - Ace in the Hole",
@@ -254,33 +268,18 @@
                     {
                         "Tag": "",
                         "Change": {
-                            "Attribute": "Cooldown: ",
-                            "Before": "90/75/60 seconds",
-                            "Indicator": " ⇒ ",
-                            "After": "90 seconds at all ranks"
-                        }
-                    },
-                    {
-                        "Tag": "",
-                        "Change": {
                             "Attribute": "Physical Damage: ",
-                            "Before": "300/525/750 (+200% bonus Attack Damage)",
+                            "Before": "300/500/700 (+170% bonus AD)",
                             "Indicator": " ⇒ ",
-                            "After": "300/500/700 (+170% bonus Attack Damage)"
-                        }
-                    },
-                    {
-                        "Tag": "",
-                        "Change": {
-                            "Attribute": "Bonus Damage from Critical Strike Chance: ",
-                            "Before": "0-35%",
-                            "Indicator": " ⇒ ",
-                            "After": "0-50%"
+                            "After": "300/500/700 (+150% bonus AD)"
                         }
                     }
                 ]
             }
-        }
+        },
+        "Balance": [
+            "adjust"
+        ]
     },
     "Ekko": {
         "ChampionName": "Ekko",
@@ -1322,57 +1321,54 @@
             "12.10",
             "12.23",
             "13.24",
-            "14.8"
+            "14.8",
+            "14.11"
         ],
         "LatestChanges": {
             "B": "",
-            "P": "",
+            "P": {
+                "SpellName": "Passive - Darkness Rise",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Monster damage cap: ",
+                            "Before": "28-164 (based on level)",
+                            "Indicator": " ⇒ ",
+                            "After": "40-200 (based on level)"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Damage per second: ",
+                            "Before": "5-15.2 (based on level) + 30% AP + 1-5% target max HP (based on level)",
+                            "Indicator": " ⇒ ",
+                            "After": "5 + 30% AP + 1-5% target max HP (based on level)"
+                        }
+                    }
+                ]
+            },
             "Q": {
                 "SpellName": "Q - Obliterate",
                 "Changes": [
                     {
                         "Tag": "",
                         "Change": {
-                            "Attribute": "Cooldown: ",
-                            "Before": "9/7.75/6.5/5.25/4",
+                            "Attribute": "Damage: ",
+                            "Before": "75/95/115/135/155 + 5-139 (based on level) (+70% AP)",
                             "Indicator": " ⇒ ",
-                            "After": "8/7/6/5/4 seconds"
+                            "After": "80/110/140/170/200 + 0-45 (based on level) (+70% AP)"
                         }
                     }
                 ]
             },
             "W": "",
-            "E": {
-                "SpellName": "E - Death's Grasp",
-                "Changes": [
-                    {
-                        "Tag": "",
-                        "Change": {
-                            "Attribute": "Magic Damage: ",
-                            "Before": "80/95/110/125/140 (+60% AP)",
-                            "Indicator": " ⇒ ",
-                            "After": "70/85/100/115/130 (+60% AP)"
-                        }
-                    }
-                ]
-            },
-            "R": {
-                "SpellName": "R - Realm of Death",
-                "Changes": [
-                    {
-                        "Tag": "NEW",
-                        "Change": {
-                            "Attribute": "Death Realm Escape Interactions: ",
-                            "Before": "",
-                            "Indicator": "",
-                            "After": "Champions can no longer escape Mordekaiser's Death Realm by using Quicksilver Sash, Mercurial Scimitar, Alistar's Unbreakable Will, Gangplank's Remove Scurvy, Milio's Breath of Life, Olaf's Ragnarok, or Rengar's Ferocity Battle Roar. However, crowd control immunity will still prevent the application of Realm of Death."
-                        }
-                    }
-                ]
-            }
+            "E": "",
+            "R": ""
         },
         "Balance": [
-            "adjust"
+            "nerf"
         ]
     },
     "Orianna": {
@@ -1437,31 +1433,41 @@
             "10.23",
             "12.10",
             "12.21",
-            "14.6"
+            "14.6",
+            "14.11"
         ],
         "LatestChanges": {
             "B": "",
-            "P": "",
-            "Q": "",
-            "W": "",
-            "E": {
-                "SpellName": "E - Searing Charge",
+            "P": {
+                "SpellName": "Passive - Living Forge",
                 "Changes": [
                     {
                         "Tag": "",
                         "Change": {
-                            "Attribute": "Cooldown: ",
-                            "Before": "16/15/14/13/12",
-                            "Indicator": " ⇒ ",
-                            "After": "14/13.5/13/12.5/12 seconds"
+                            "Attribute": "",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "Ornn can now upgrade all (minus a few exceptions like Mejai's Soulstealer, Archangel's Staff, and similar items) Legendary items to Masterwork items."
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "Masterwork Items gain extra stats based on the stats the original Legendary item provides. (If an item gives AD and HP, the upgrade will give you more AD and HP etc.)"
                         }
                     }
                 ]
             },
+            "Q": "",
+            "W": "",
+            "E": "",
             "R": ""
         },
         "Balance": [
-            "buff"
+            "adjust"
         ]
     },
     "Pantheon": {
@@ -1477,32 +1483,11 @@
             "12.7",
             "12.10",
             "12.14",
-            "13.5"
+            "13.5",
+            "14.11"
         ],
         "LatestChanges": {
-            "B": {
-                "SpellName": "Base Stats",
-                "Changes": [
-                    {
-                        "Tag": "",
-                        "Change": {
-                            "Attribute": "Base Health Regeneration per 5 Seconds: ",
-                            "Before": "7.5",
-                            "Indicator": " ⇒ ",
-                            "After": "6"
-                        }
-                    },
-                    {
-                        "Tag": "",
-                        "Change": {
-                            "Attribute": "Attack Speed: ",
-                            "Before": "0.644",
-                            "Indicator": " ⇒ ",
-                            "After": "0.658"
-                        }
-                    }
-                ]
-            },
+            "B": "",
             "P": "",
             "Q": {
                 "SpellName": "Q - Comet Spear",
@@ -1510,49 +1495,105 @@
                     {
                         "Tag": "",
                         "Change": {
-                            "Attribute": "Cooldown: ",
-                            "Before": "13/11.75/10.5/9.25/8 seconds",
-                            "Indicator": " ⇒ ",
-                            "After": "11/10.25/9.5/8.75/8 seconds"
+                            "Attribute": "Charged Damage: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "70/100/130/160/190 (+115% bonus AD) (+50% AP)"
                         }
                     },
                     {
                         "Tag": "",
                         "Change": {
-                            "Attribute": "Mana Cost: ",
-                            "Before": "30",
-                            "Indicator": " ⇒ ",
-                            "After": "25"
-                        }
-                    },
-                    {
-                        "Tag": "",
-                        "Change": {
-                            "Attribute": "Q Tap Windup Time: ",
-                            "Before": "0.25 seconds",
-                            "Indicator": " ⇒ ",
-                            "After": "0.2 seconds"
+                            "Attribute": "Uncharged Damage: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "Unchanged"
                         }
                     }
                 ]
             },
-            "W": "",
+            "W": {
+                "SpellName": "W - Shield Vault",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Physical Damage: ",
+                            "Before": "60/100/140/180/220 (+100% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "5/5.5/6/6.5/7% max HP (+1% per 250 bonus HP) (+1.5% per 100 AP)"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "[NEW] Min damage against Monsters and Minions: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "50"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "[NEW] Max damage against Monsters and Minions: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "200"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "The new addition of damage against monsters and minions won't be reflected in the tooltip in 14.11 but will be added in 14.12"
+                        }
+                    }
+                ]
+            },
             "E": {
                 "SpellName": "E - Aegis Assault",
                 "Changes": [
                     {
                         "Tag": "",
                         "Change": {
-                            "Attribute": "Cooldown: ",
-                            "Before": "22/20.5/19/17.5/16 seconds",
-                            "Indicator": " ⇒ ",
-                            "After": "22/21/20/19/18 seconds"
+                            "Attribute": "[NEW]: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": " Now also grants 5-30 (depending on level) (+2.5% bonus HP) Armor and Magic Resist for 4 seconds after spell finishes"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "A new VFX element will be added to represent this buff being active on Pantheon"
                         }
                     }
                 ]
             },
-            "R": ""
-        }
+            "R": {
+                "SpellName": "R - Grand Starfall",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "The spear hit will gain the bonus AP addition noted above in the change and will have its tooltip adjusted"
+                        }
+                    }
+                ]
+            }
+        },
+        "Balance": [
+            "buff"
+        ]
     },
     "Rek'Sai": {
         "ChampionName": "Rek'Sai",
@@ -2857,59 +2898,34 @@
             "12.18",
             "13.12",
             "13.16",
-            "14.4"
+            "14.4",
+            "14.11"
         ],
         "LatestChanges": {
             "B": "",
             "P": "",
-            "Q": {
-                "SpellName": "Q - Glitterlance",
-                "Changes": [
-                    {
-                        "Tag": "",
-                        "Change": {
-                            "Attribute": "Second Bolt Damage: ",
-                            "Before": "25% of Primary Bolt damage",
-                            "Indicator": " ⇒ ",
-                            "After": "50% of Primary Bolt damage"
-                        }
-                    }
-                ]
-            },
+            "Q": "",
             "W": "",
-            "E": {
-                "SpellName": "E - Help, Pix!",
-                "Changes": [
-                    {
-                        "Tag": "",
-                        "Change": {
-                            "Attribute": "Magic Damage: ",
-                            "Before": "80/120/160/200/240 (+50% AP)",
-                            "Indicator": " ⇒ ",
-                            "After": "80/125/170/215/260 (+50% AP)"
-                        }
-                    },
-                    {
-                        "Tag": "",
-                        "Change": {
-                            "Attribute": "Shield Value: ",
-                            "Before": "75/115/155/195/235 (+55% AP)",
-                            "Indicator": " ⇒ ",
-                            "After": "80/125/170/215/260 (+55% AP)"
-                        }
-                    }
-                ]
-            },
+            "E": "",
             "R": {
                 "SpellName": "R - Wild Growth",
                 "Changes": [
                     {
                         "Tag": "",
                         "Change": {
-                            "Attribute": "Bonus Health: ",
-                            "Before": "275/525/575 (+45% AP)",
+                            "Attribute": "Knockup Duration: ",
+                            "Before": "0.75",
                             "Indicator": " ⇒ ",
-                            "After": "275/525/575 (+55% AP)"
+                            "After": "1"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Cooldown: ",
+                            "Before": "120/100/80",
+                            "Indicator": " ⇒ ",
+                            "After": "100/90/80"
                         }
                     }
                 ]
@@ -3008,31 +3024,59 @@
             "12.15",
             "12.19",
             "13.21",
-            "14.9"
+            "14.9",
+            "14.11"
         ],
         "LatestChanges": {
-            "B": "",
-            "P": "",
-            "Q": "",
-            "W": "",
-            "E": {
-                "SpellName": "E - Wuju Style",
+            "B": {
+                "SpellName": "Base Stats",
                 "Changes": [
                     {
                         "Tag": "",
                         "Change": {
-                            "Attribute": "Bonus True Damage: ",
-                            "Before": "30/35/40/45/50 (+30% bonus AD)",
+                            "Attribute": "Health Growth: ",
+                            "Before": "100",
                             "Indicator": " ⇒ ",
-                            "After": "20/25/30/35/40 (+30% bonus AD)"
+                            "After": "105"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Armor Growth: ",
+                            "Before": "4.2",
+                            "Indicator": " ⇒ ",
+                            "After": "4.7"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Attack Damage Growth: ",
+                            "Before": "2.2",
+                            "Indicator": " ⇒ ",
+                            "After": "2.5"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Attack Speed Growth: ",
+                            "Before": "2%",
+                            "Indicator": " ⇒ ",
+                            "After": "2.5%"
                         }
                     }
                 ]
             },
+            "P": "",
+            "Q": "",
+            "W": "",
+            "E": "",
             "R": ""
         },
         "Balance": [
-            "nerf"
+            "buff"
         ]
     },
     "Pyke": {
@@ -3901,42 +3945,46 @@
             "11.12",
             "12.10",
             "12.14",
-            "13.17"
+            "13.17",
+            "14.11"
         ],
         "LatestChanges": {
-            "B": "",
+            "B": {
+                "SpellName": "Base Stats",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Attack Damage Growth: ",
+                            "Before": "3",
+                            "Indicator": " ⇒ ",
+                            "After": "3.2"
+                        }
+                    }
+                ]
+            },
             "P": "",
             "Q": {
-                "SpellName": "Q - Boulder Toss (Mega Gnar)",
+                "SpellName": "Q - Boomerang Throw",
                 "Changes": [
                     {
                         "Tag": "",
                         "Change": {
                             "Attribute": "Physical Damage: ",
-                            "Before": "25/70/115/160/205 (+140% AD)",
+                            "Before": "5/45/85/125/165 (+115% AD)",
                             "Indicator": " ⇒ ",
-                            "After": "45/90/135/180/225 (+140% AD)"
+                            "After": "5/45/85/125/165 (+125% AD)"
                         }
                     }
                 ]
             },
-            "W": {
-                "SpellName": "W - Wallop (Mega Gnar)",
-                "Changes": [
-                    {
-                        "Tag": "",
-                        "Change": {
-                            "Attribute": "Physical Damage: ",
-                            "Before": "",
-                            "Indicator": "",
-                            "After": "25/55/85/115/145 (+100% AD) ⇒45/75/105/135/165 (+100% AD)"
-                        }
-                    }
-                ]
-            },
+            "W": "",
             "E": "",
             "R": ""
-        }
+        },
+        "Balance": [
+            "buff"
+        ]
     },
     "Sett": {
         "ChampionName": "Sett",
@@ -4053,118 +4101,12 @@
             "13.24",
             "14.1",
             "14.3",
-            "14.10"
+            "14.10",
+            "14.11"
         ],
         "LatestChanges": {
-            "B": {
-                "SpellName": "Base Stats",
-                "Changes": [
-                    {
-                        "Tag": "",
-                        "Change": {
-                            "Attribute": "Base Health: ",
-                            "Before": "610",
-                            "Indicator": " ⇒ ",
-                            "After": "640"
-                        }
-                    },
-                    {
-                        "Tag": "",
-                        "Change": {
-                            "Attribute": "Health Growth: ",
-                            "Before": "103",
-                            "Indicator": " ⇒ ",
-                            "After": "100"
-                        }
-                    },
-                    {
-                        "Tag": "",
-                        "Change": {
-                            "Attribute": "Base Armor: ",
-                            "Before": "28",
-                            "Indicator": " ⇒ ",
-                            "After": "30"
-                        }
-                    },
-                    {
-                        "Tag": "",
-                        "Change": {
-                            "Attribute": "Armor Growth: ",
-                            "Before": "4.7",
-                            "Indicator": " ⇒ ",
-                            "After": "4.5"
-                        }
-                    },
-                    {
-                        "Tag": "",
-                        "Change": {
-                            "Attribute": "Base Attack: ",
-                            "Before": "61",
-                            "Indicator": " ⇒ ",
-                            "After": "55"
-                        }
-                    },
-                    {
-                        "Tag": "",
-                        "Change": {
-                            "Attribute": "Attack Speed: ",
-                            "Before": ".638",
-                            "Indicator": " ⇒ ",
-                            "After": ".644"
-                        }
-                    },
-                    {
-                        "Tag": "",
-                        "Change": {
-                            "Attribute": "Mana Regeneration Growth: ",
-                            "Before": ".55",
-                            "Indicator": " ⇒ ",
-                            "After": ".7"
-                        }
-                    },
-                    {
-                        "Tag": "",
-                        "Change": {
-                            "Attribute": "Acquisition Range: ",
-                            "Before": "500",
-                            "Indicator": " ⇒ ",
-                            "After": "550 . This is the range at which Corki acquires targets when attack-moving past them."
-                        }
-                    },
-                    {
-                        "Tag": "",
-                        "Change": {
-                            "Attribute": "",
-                            "Before": "",
-                            "Indicator": "",
-                            "After": "Re-timed Corki's basic attacks to launch the attack at a more appropriate frame of his attack animation. Basic attacks come out slightly more slowly."
-                        }
-                    }
-                ]
-            },
-            "P": {
-                "SpellName": "Passive - Hextech Munitions",
-                "Changes": [
-                    {
-                        "Tag": "",
-                        "Change": {
-                            "Attribute": "Damage: ",
-                            "Before": "20% Physical & 80% Magic",
-                            "Indicator": " ⇒ ",
-                            "After": "100% Physical & 15% True"
-                        }
-                    },
-                    {
-                        "Tag": "",
-                        "Change": {
-                            "Attribute": "The Package: ",
-                            "Before": "",
-                            "Indicator": "",
-                            "After": "Removed"
-                        }
-                    }
-                ]
-            },
+            "B": "",
+            "P": "",
             "Q": {
                 "SpellName": "Q - Phosphorus Bomb",
                 "Changes": [
@@ -4172,181 +4114,24 @@
                         "Tag": "",
                         "Change": {
                             "Attribute": "Damage: ",
-                            "Before": "75/120/165/210/255 (+70% bonus AD) (+50% AP)",
+                            "Before": "70/110/150/190/230",
                             "Indicator": " ⇒ ",
-                            "After": "70/110/150/290/230 (+120% Bonus AD) (+70% AP)"
-                        }
-                    },
-                    {
-                        "Tag": "",
-                        "Change": {
-                            "Attribute": "Cooldown: ",
-                            "Before": "8",
-                            "Indicator": " ⇒ ",
-                            "After": "9/8.5/8/7.5/7"
-                        }
-                    },
-                    {
-                        "Tag": "",
-                        "Change": {
-                            "Attribute": "Mana: ",
-                            "Before": "60/70/80/90/100",
-                            "Indicator": " ⇒ ",
-                            "After": "60/65/70/75/80"
-                        }
-                    },
-                    {
-                        "Tag": "",
-                        "Change": {
-                            "Attribute": "Missile Speed: ",
-                            "Before": "1000",
-                            "Indicator": " ⇒ ",
-                            "After": "1100"
-                        }
-                    },
-                    {
-                        "Tag": "",
-                        "Change": {
-                            "Attribute": "",
-                            "Before": "",
-                            "Indicator": "",
-                            "After": "Re-timed the animation to fire at a more appropriate point in the animation. 0.25s cast time unchanged."
-                        }
-                    },
-                    {
-                        "Tag": "MID-PATCH",
-                        "Change": {
-                            "Attribute": "Damage: ",
-                            "Before": "70-230",
-                            "Indicator": " ⇒ ",
-                            "After": "70-250"
+                            "After": "70/115/160/205/250 (this was a micropatch change and is already live)"
                         }
                     }
                 ]
             },
-            "W": {
-                "SpellName": "W - Valkyrie",
-                "Changes": [
-                    {
-                        "Tag": "",
-                        "Change": {
-                            "Attribute": "Mana: ",
-                            "Before": "80",
-                            "Indicator": " ⇒ ",
-                            "After": "80/85/90/95/100"
-                        }
-                    },
-                    {
-                        "Tag": "",
-                        "Change": {
-                            "Attribute": "",
-                            "Before": "",
-                            "Indicator": "",
-                            "After": "Now more consistently deals all its damage ticks. This is usually 10% more damage if your target was in the zone the whole time."
-                        }
-                    },
-                    {
-                        "Tag": "",
-                        "Change": {
-                            "Attribute": "",
-                            "Before": "",
-                            "Indicator": "",
-                            "After": "Damage over time now lingers for 1 second after leaving the zone"
-                        }
-                    },
-                    {
-                        "Tag": "",
-                        "Change": {
-                            "Attribute": "",
-                            "Before": "",
-                            "Indicator": "",
-                            "After": "Can no longer deal more than the maximum damage if a target runs alongside Valkyrie's damaging zone"
-                        }
-                    },
-                    {
-                        "Tag": "",
-                        "Change": {
-                            "Attribute": "",
-                            "Before": "",
-                            "Indicator": "",
-                            "After": "Particle effects have been scaled up to match the damage radius"
-                        }
-                    },
-                    {
-                        "Tag": "",
-                        "Change": {
-                            "Attribute": "",
-                            "Before": "",
-                            "Indicator": "",
-                            "After": "Damage particles have been made less spammy"
-                        }
-                    }
-                ]
-            },
+            "W": "",
             "E": {
                 "SpellName": "E - Gatling Gun",
                 "Changes": [
                     {
                         "Tag": "",
                         "Change": {
-                            "Attribute": "Damage Type: ",
-                            "Before": "50% magic & 50% physical",
-                            "Indicator": " ⇒ ",
-                            "After": "100% Physical"
-                        }
-                    },
-                    {
-                        "Tag": "",
-                        "Change": {
-                            "Attribute": "Damage: ",
-                            "Before": "120/170/230/280/320 (+250% bonus AD)",
-                            "Indicator": " ⇒ ",
-                            "After": "100/150/200/250/300 (+200% bonus AD)"
-                        }
-                    },
-                    {
-                        "Tag": "",
-                        "Change": {
-                            "Attribute": "Cooldown: ",
-                            "Before": "16",
-                            "Indicator": " ⇒ ",
-                            "After": "12"
-                        }
-                    },
-                    {
-                        "Tag": "",
-                        "Change": {
-                            "Attribute": "Armor/MR Shred: ",
-                            "Before": "8/11/14/17/20",
-                            "Indicator": " ⇒ ",
-                            "After": "12/15/18/21/24"
-                        }
-                    },
-                    {
-                        "Tag": "",
-                        "Change": {
-                            "Attribute": "Time to reach max shred: ",
-                            "Before": "8 hits (2 seconds)",
-                            "Indicator": " ⇒ ",
-                            "After": "4 hits (1 second)"
-                        }
-                    },
-                    {
-                        "Tag": "",
-                        "Change": {
-                            "Attribute": "Mana: ",
-                            "Before": "50",
-                            "Indicator": " ⇒ ",
-                            "After": "50/55/60/65/70"
-                        }
-                    },
-                    {
-                        "Tag": "MID-PATCH",
-                        "Change": {
                             "Attribute": "Bonus AD Ratio: ",
                             "Before": "200%",
                             "Indicator": " ⇒ ",
-                            "After": "250%"
+                            "After": "250% (this was a micropatch change and is already live)"
                         }
                     }
                 ]
@@ -4357,73 +4142,15 @@
                     {
                         "Tag": "",
                         "Change": {
-                            "Attribute": "Damage: ",
-                            "Before": "80/115/150 (+25/50/75% AD) (+12%AP)",
-                            "Indicator": " ⇒ ",
-                            "After": "80/180/280 (+70% AD) (AP ratio removed)"
-                        }
-                    },
-                    {
-                        "Tag": "",
-                        "Change": {
-                            "Attribute": "Mana: ",
-                            "Before": "20",
-                            "Indicator": " ⇒ ",
-                            "After": "35"
-                        }
-                    },
-                    {
-                        "Tag": "",
-                        "Change": {
-                            "Attribute": "Max Ammo: ",
-                            "Before": "7",
-                            "Indicator": " ⇒ ",
-                            "After": "4"
-                        }
-                    },
-                    {
-                        "Tag": "",
-                        "Change": {
-                            "Attribute": "Recharge Rate: ",
-                            "Before": "12/11/10",
-                            "Indicator": " ⇒ ",
-                            "After": "20"
-                        }
-                    },
-                    {
-                        "Tag": "",
-                        "Change": {
-                            "Attribute": "",
-                            "Before": "",
-                            "Indicator": "",
-                            "After": "New - Basic attacks on-hit against champions reduce the recharge time of Missile Barrage by 2-4s based on critical strike chance"
-                        }
-                    },
-                    {
-                        "Tag": "",
-                        "Change": {
-                            "Attribute": "",
-                            "Before": "",
-                            "Indicator": "",
-                            "After": "New - Leveling the ability for the first time grants 2 ammo"
-                        }
-                    },
-                    {
-                        "Tag": "MID-PATCH",
-                        "Change": {
                             "Attribute": "Bonus AD Ratio: ",
                             "Before": "70%",
                             "Indicator": " ⇒ ",
-                            "After": "80%"
+                            "After": "80% (this was a micropatch change and is already live)"
                         }
                     }
                 ]
             }
-        },
-        "Balance": [
-            "danger",
-            "buff"
-        ]
+        }
     },
     "Jax": {
         "ChampionName": "Jax",
@@ -4574,10 +4301,24 @@
             "12.17",
             "13.1B",
             "13.15",
-            "14.7"
+            "14.7",
+            "14.11"
         ],
         "LatestChanges": {
-            "B": "",
+            "B": {
+                "SpellName": "Base Stats",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Attack Damage: ",
+                            "Before": "51",
+                            "Indicator": " ⇒ ",
+                            "After": "54"
+                        }
+                    }
+                ]
+            },
             "P": "",
             "Q": "",
             "W": {
@@ -4586,47 +4327,29 @@
                     {
                         "Tag": "",
                         "Change": {
-                            "Attribute": "Magic Damage: ",
-                            "Before": "60/100/140/180/220 (+55% AP)",
+                            "Attribute": "Mana Cost: ",
+                            "Before": "70/80/90/100/110",
                             "Indicator": " ⇒ ",
-                            "After": "60/95/130/165/200 (+50% AP)"
-                        }
-                    },
-                    {
-                        "Tag": "",
-                        "Change": {
-                            "Attribute": "Healing: ",
-                            "Before": "55/75/95/115/135 (+25% AP)",
-                            "Indicator": " ⇒ ",
-                            "After": "55/80/105/130/155 (+40% AP)"
-                        }
-                    },
-                    {
-                        "Tag": "",
-                        "Change": {
-                            "Attribute": "Bounce Falloff: ",
-                            "Before": "-15% (+7.5% per 100 AP)",
-                            "Indicator": " ⇒ ",
-                            "After": "-10% (+10% per 100 AP)"
+                            "After": "70/75/80/85/90"
                         }
                     }
                 ]
             },
-            "E": {
-                "SpellName": "E - Tidecaller’s Blessing",
+            "E": "",
+            "R": {
+                "SpellName": "R - Tidal Wave",
                 "Changes": [
                     {
                         "Tag": "",
                         "Change": {
-                            "Attribute": "Magic Damage: ",
-                            "Before": "20/35/50/65/80 (+20%AP)",
+                            "Attribute": "Slow: ",
+                            "Before": "50/60/70%",
                             "Indicator": " ⇒ ",
-                            "After": "20/30/40/50/60 (+20%AP)"
+                            "After": "70%"
                         }
                     }
                 ]
-            },
-            "R": ""
+            }
         },
         "Balance": [
             "buff"
@@ -4825,20 +4548,30 @@
             "12.16",
             "13.23",
             "14.8",
-            "14.10"
+            "14.10",
+            "14.11"
         ],
         "LatestChanges": {
             "B": "",
             "P": {
-                "SpellName": "P - League of Draven",
+                "SpellName": "Passive - League of Draven",
                 "Changes": [
                     {
-                        "Tag": "MID-PATCH",
+                        "Tag": "",
                         "Change": {
-                            "Attribute": "Bonus Gold: ",
-                            "Before": "40 + 2.5 per Adoration",
+                            "Attribute": "Adoration lost on death: ",
+                            "Before": "75%",
                             "Indicator": " ⇒ ",
-                            "After": "10 + 2 per Adoration"
+                            "After": "50%"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Bonus gold per kill: ",
+                            "Before": "10 + 2 per Adoration",
+                            "Indicator": " ⇒ ",
+                            "After": "25 + 2 per Adoration"
                         }
                     }
                 ]
@@ -4847,12 +4580,12 @@
                 "SpellName": "Q - Spinning Axe",
                 "Changes": [
                     {
-                        "Tag": "MID-PATCH",
+                        "Tag": "",
                         "Change": {
-                            "Attribute": "Damage: ",
-                            "Before": "45-65",
+                            "Attribute": "Base Damage: ",
+                            "Before": "45/50/55/60/65",
                             "Indicator": " ⇒ ",
-                            "After": "40-60"
+                            "After": "40/45/50/55/60"
                         }
                     }
                 ]
@@ -4862,7 +4595,7 @@
             "R": ""
         },
         "Balance": [
-            "nerf"
+            "buff"
         ]
     },
     "Jinx": {
@@ -4886,28 +4619,29 @@
             "13.11",
             "13.20",
             "13.21",
-            "14.9"
+            "14.9",
+            "14.11"
         ],
         "LatestChanges": {
-            "B": "",
-            "P": "",
-            "Q": "",
-            "W": "",
-            "E": "",
-            "R": {
-                "SpellName": "R - Super Mega Death Rocket",
+            "B": {
+                "SpellName": "Base Stats",
                 "Changes": [
                     {
                         "Tag": "",
                         "Change": {
-                            "Attribute": "Cooldown: ",
-                            "Before": "70/55/40",
+                            "Attribute": "Attack Damage Growth: ",
+                            "Before": "3.15",
                             "Indicator": " ⇒ ",
-                            "After": "85/65/45 seconds"
+                            "After": "2.9"
                         }
                     }
                 ]
-            }
+            },
+            "P": "",
+            "Q": "",
+            "W": "",
+            "E": "",
+            "R": ""
         },
         "Balance": [
             "nerf"
@@ -5293,7 +5027,8 @@
             "12.12",
             "12.15",
             "13.22",
-            "14.1"
+            "14.1",
+            "14.11"
         ],
         "LatestChanges": {
             "B": "",
@@ -5302,22 +5037,35 @@
                 "SpellName": "Q - Poison Trail",
                 "Changes": [
                     {
-                        "Tag": "MID-PATCH",
+                        "Tag": "",
                         "Change": {
-                            "Attribute": "Total Damage: ",
-                            "Before": "40/60/80/100/120 (+90% AP)",
+                            "Attribute": "Total Magic Damage: ",
+                            "Before": "40/60/80/100/120 (+80% AP)",
                             "Indicator": " ⇒ ",
-                            "After": "40/60/80/100/120 (+80% AP)"
+                            "After": "40/60/80/100/120 (+85% AP)"
                         }
                     }
                 ]
             },
             "W": "",
             "E": "",
-            "R": ""
+            "R": {
+                "SpellName": "R - Insanity Potion",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Cooldown: ",
+                            "Before": "120/110/100",
+                            "Indicator": " ⇒ ",
+                            "After": "100"
+                        }
+                    }
+                ]
+            }
         },
         "Balance": [
-            "nerf"
+            "buff"
         ]
     },
     "Soraka": {
@@ -6047,40 +5795,50 @@
             "12.10",
             "12.19",
             "13.12",
-            "14.7"
+            "14.7",
+            "14.11"
         ],
         "LatestChanges": {
-            "B": "",
-            "P": {
-                "SpellName": "Passive - Soul Eater",
+            "B": {
+                "SpellName": "Base Stats",
                 "Changes": [
                     {
                         "Tag": "",
                         "Change": {
-                            "Attribute": "Life Steal: ",
-                            "Before": "11/16/21% (based on level)",
+                            "Attribute": "Attack Damage Growth: ",
+                            "Before": "3.5",
                             "Indicator": " ⇒ ",
-                            "After": "12/18/24% (based on level)"
+                            "After": "4"
                         }
                     }
                 ]
             },
-            "Q": {
-                "SpellName": "Q - Siphoning Strike",
-                "Changes": [
-                    {
-                        "Tag": "",
-                        "Change": {
-                            "Attribute": "Bonus Physical Damage: ",
-                            "Before": "30/50/70/90/110 (+Siphoning Strike stacks)",
-                            "Indicator": " ⇒ ",
-                            "After": "40/60/80/100/120 (+Siphoning Strike stacks)"
-                        }
-                    }
-                ]
-            },
+            "P": "",
+            "Q": "",
             "W": "",
-            "E": "",
+            "E": {
+                "SpellName": "E - Spirit Fire",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Mana Cost: ",
+                            "Before": "70/85/100/115/130",
+                            "Indicator": " ⇒ ",
+                            "After": "60/70/80/90/100"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Armor Reduction: ",
+                            "Before": "25/30/35/40/45%",
+                            "Indicator": " ⇒ ",
+                            "After": "30/35/40/45/50%"
+                        }
+                    }
+                ]
+            },
             "R": ""
         },
         "Balance": [
@@ -6285,7 +6043,8 @@
             "12.13",
             "13.14",
             "13.22",
-            "14.2"
+            "14.2",
+            "14.11"
         ],
         "LatestChanges": {
             "B": "",
@@ -6296,33 +6055,20 @@
                     {
                         "Tag": "",
                         "Change": {
-                            "Attribute": "Damage: ",
-                            "Before": "43/61/79/97/115 (+35% AP)",
+                            "Attribute": "Magic Damage: ",
+                            "Before": "45/65/85/105/125 (+35% AP)",
                             "Indicator": " ⇒ ",
-                            "After": "45/65/85/105/125 (+35% AP)"
+                            "After": "43/62/81/100/119 (+35% AP)"
                         }
                     }
                 ]
             },
-            "W": {
-                "SpellName": "W - Wall of Pain",
-                "Changes": [
-                    {
-                        "Tag": "",
-                        "Change": {
-                            "Attribute": "Magic Resist Reduction: ",
-                            "Before": "15%",
-                            "Indicator": " ⇒ ",
-                            "After": "25%"
-                        }
-                    }
-                ]
-            },
+            "W": "",
             "E": "",
             "R": ""
         },
         "Balance": [
-            "buff"
+            "nerf"
         ]
     },
     "Quinn": {
@@ -6389,29 +6135,33 @@
             "12.10",
             "12.11",
             "12.16",
-            "13.18"
+            "13.18",
+            "14.11"
         ],
         "LatestChanges": {
-            "B": "",
-            "P": "",
-            "Q": "",
-            "W": "",
-            "E": "",
-            "R": {
-                "SpellName": "R - Vanguard’s Edge",
+            "B": {
+                "SpellName": "Base States",
                 "Changes": [
                     {
                         "Tag": "",
                         "Change": {
-                            "Attribute": "Cooldown: ",
-                            "Before": "140/120/100 seconds",
+                            "Attribute": "Health Growth: ",
+                            "Before": "124",
                             "Indicator": " ⇒ ",
-                            "After": "125/105/85 seconds"
+                            "After": "115"
                         }
                     }
                 ]
-            }
-        }
+            },
+            "P": "",
+            "Q": "",
+            "W": "",
+            "E": "",
+            "R": ""
+        },
+        "Balance": [
+            "nerf"
+        ]
     },
     "Katarina": {
         "ChampionName": "Katarina",
@@ -6656,47 +6406,42 @@
             "13.1B",
             "13.5",
             "13.12",
-            "13.19"
+            "13.19",
+            "14.11"
         ],
         "LatestChanges": {
-            "B": "",
-            "P": "",
-            "Q": "",
-            "W": "",
-            "E": "",
-            "R": {
-                "SpellName": "R - Cannon Barrage",
+            "B": {
+                "SpellName": "Base Stats",
                 "Changes": [
                     {
                         "Tag": "",
                         "Change": {
-                            "Attribute": "Cooldown: ",
-                            "Before": "180/160/140 seconds",
+                            "Attribute": "Base Health: ",
+                            "Before": "600",
                             "Indicator": " ⇒ ",
-                            "After": "170/150/130 seconds"
+                            "After": "630"
                         }
                     },
                     {
                         "Tag": "",
                         "Change": {
-                            "Attribute": "Upgrade - Death's Daughter Slow: ",
-                            "Before": "60% for 1 second",
+                            "Attribute": "Armor Growth: ",
+                            "Before": "4.2",
                             "Indicator": " ⇒ ",
-                            "After": "75% for 1 second"
-                        }
-                    },
-                    {
-                        "Tag": "",
-                        "Change": {
-                            "Attribute": "Upgrade - Raise Morale Movement Speed: ",
-                            "Before": "30% for 2 seconds",
-                            "Indicator": " ⇒ ",
-                            "After": "40% for 2 seconds"
+                            "After": "4.7"
                         }
                     }
                 ]
-            }
-        }
+            },
+            "P": "",
+            "Q": "",
+            "W": "",
+            "E": "",
+            "R": ""
+        },
+        "Balance": [
+            "buff"
+        ]
     },
     "Janna": {
         "ChampionName": "Janna",
@@ -7121,7 +6866,8 @@
             "13.7",
             "13.8",
             "13.12",
-            "13.17"
+            "13.17",
+            "14.11"
         ],
         "LatestChanges": {
             "B": "",
@@ -7133,9 +6879,9 @@
                         "Tag": "",
                         "Change": {
                             "Attribute": "Physical Damage: ",
-                            "Before": "70/95/120/145/170 (+115% bonus AD)",
+                            "Before": "70/95/120/145/170 (+110% Bonus AD)",
                             "Indicator": " ⇒ ",
-                            "After": "70/95/120/145/170 (+110% bonus AD)"
+                            "After": "80/105/130/155/180 (+110% Bonus AD)"
                         }
                     }
                 ]
@@ -7143,7 +6889,10 @@
             "W": "",
             "E": "",
             "R": ""
-        }
+        },
+        "Balance": [
+            "buff"
+        ]
     },
     "Zed": {
         "ChampionName": "Zed",
@@ -7716,19 +7465,20 @@
             "13.4",
             "13.5",
             "13.17",
-            "14.10"
+            "14.10",
+            "14.11"
         ],
         "LatestChanges": {
             "B": {
                 "SpellName": "Base Stats",
                 "Changes": [
                     {
-                        "Tag": "MID-PATCH",
+                        "Tag": "",
                         "Change": {
                             "Attribute": "AD Growth: ",
                             "Before": "3.3",
                             "Indicator": " ⇒ ",
-                            "After": "3.0"
+                            "After": "3 (this was a micropatch change and is already live)"
                         }
                     }
                 ]
@@ -7739,12 +7489,12 @@
                 "SpellName": "W - Blade Whirl",
                 "Changes": [
                     {
-                        "Tag": "MID-PATCH",
+                        "Tag": "",
                         "Change": {
                             "Attribute": "Damage: ",
-                            "Before": "20-80 + 80% Bonus AD",
+                            "Before": "20/35/50/65/80 (+80% Bonus AD)",
                             "Indicator": " ⇒ ",
-                            "After": "20-80 + 60% Bonus AD"
+                            "After": "20/35/50/65/80 (+60% Bonus AD) (this was a micropatch change and is already live)"
                         }
                     }
                 ]
@@ -7754,20 +7504,17 @@
                 "SpellName": "R - Inferno Trigger",
                 "Changes": [
                     {
-                        "Tag": "MID-PATCH",
+                        "Tag": "",
                         "Change": {
                             "Attribute": "Damage: ",
-                            "Before": "5/15/25 +50% Total AD",
+                            "Before": "5/15/25 (+50% total AD)",
                             "Indicator": " ⇒ ",
-                            "After": "5/15/25 + 45% Total AD"
+                            "After": "5/15/25 (45% Total AD) (this was a micropatch change and is already live)"
                         }
                     }
                 ]
             }
-        },
-        "Balance": [
-            "nerf"
-        ]
+        }
     },
     "Illaoi": {
         "ChampionName": "Illaoi",
@@ -7818,7 +7565,8 @@
             "12.17",
             "13.15",
             "14.2",
-            "14.7"
+            "14.7",
+            "14.11"
         ],
         "LatestChanges": {
             "B": "",
@@ -7829,55 +7577,33 @@
                     {
                         "Tag": "",
                         "Change": {
-                            "Attribute": "Bonus Move Speed: ",
-                            "Before": "30/32.5/35/37.5/40%",
+                            "Attribute": "Move Speed: ",
+                            "Before": "30/35/40/45/50%",
                             "Indicator": " ⇒ ",
-                            "After": "30/35/40/45/50%"
-                        }
-                    },
-                    {
-                        "Tag": "",
-                        "Change": {
-                            "Attribute": "Cooldown: ",
-                            "Before": "9/8.25/7.5/6.75/6",
-                            "Indicator": " ⇒ ",
-                            "After": "9/8/7/6/5"
+                            "After": "25/30/35/40/45%"
                         }
                     }
                 ]
             },
-            "W": {
-                "SpellName": "W - Tactical Sweep",
+            "W": "",
+            "E": "",
+            "R": {
+                "SpellName": "R - Hextech Ultimatum",
                 "Changes": [
                     {
                         "Tag": "",
                         "Change": {
-                            "Attribute": "Outer Cone Base Damage: ",
-                            "Before": "5/5.5/6/6.5/7% Max HP",
+                            "Attribute": "On-hit Damage: ",
+                            "Before": "10/30/40 (+4/6/8% current HP)",
                             "Indicator": " ⇒ ",
-                            "After": "6/6.5/7/7.5/8% Max HP"
+                            "After": "5/10/15 (+4/6/8% current HP)"
                         }
                     }
                 ]
-            },
-            "E": {
-                "SpellName": "E - Hookshot",
-                "Changes": [
-                    {
-                        "Tag": "",
-                        "Change": {
-                            "Attribute": "Damage: ",
-                            "Before": "80/110/140/170/200 (+90% bonus AD)",
-                            "Indicator": " ⇒ ",
-                            "After": "60/90/120/150/180 (+90% bonus AD)"
-                        }
-                    }
-                ]
-            },
-            "R": ""
+            }
         },
         "Balance": [
-            "adjust"
+            "nerf"
         ]
     },
     "Seraphine": {
@@ -8246,7 +7972,8 @@
             "13.15",
             "13.22",
             "14.3",
-            "14.9"
+            "14.9",
+            "14.11"
         ],
         "LatestChanges": {
             "B": "",
@@ -8257,19 +7984,10 @@
                     {
                         "Tag": "",
                         "Change": {
-                            "Attribute": "Mana Cost: ",
-                            "Before": "55/60/65/70/75",
+                            "Attribute": "Damage Per Rock: ",
+                            "Before": "60/78/96/114/132 (+50% AP)",
                             "Indicator": " ⇒ ",
-                            "After": "65/70/75/80/85 (Note: Mana cost of 20 on Worked Ground unchanged.)"
-                        }
-                    },
-                    {
-                        "Tag": "",
-                        "Change": {
-                            "Attribute": "Bonus Damage to Monsters: ",
-                            "Before": "25 (+10% AP)",
-                            "Indicator": " ⇒ ",
-                            "After": "25 (+5% AP)"
+                            "After": "56/74.5/93/111.5/130 (+50% AP)"
                         }
                     }
                 ]
@@ -9222,53 +8940,76 @@
             "13.23",
             "13.24",
             "14.4",
-            "14.10"
+            "14.10",
+            "14.11"
         ],
         "LatestChanges": {
-            "B": {
-                "SpellName": "Base Stats",
+            "B": "",
+            "P": "",
+            "Q": {
+                "SpellName": "Q - Ntofo Strikes",
                 "Changes": [
                     {
                         "Tag": "",
                         "Change": {
-                            "Attribute": "Health Regeneration Growth: ",
-                            "Before": ".85",
+                            "Attribute": "Mana Cost: ",
+                            "Before": "28/26/24/22/20",
                             "Indicator": " ⇒ ",
-                            "After": "1"
+                            "After": "20"
+                        }
+                    }
+                ]
+            },
+            "W": {
+                "SpellName": "W - Path Maker",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Damage Reduction: ",
+                            "Before": "40-65% based on level",
+                            "Indicator": " ⇒ ",
+                            "After": "30%"
                         }
                     },
                     {
                         "Tag": "",
                         "Change": {
-                            "Attribute": "Health Growth: ",
-                            "Before": "115",
+                            "Attribute": "Maximum Hold Duration: ",
+                            "Before": "1.5 seconds",
                             "Indicator": " ⇒ ",
-                            "After": "120"
+                            "After": "1 second"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "All Out Damage Reduction: ",
+                            "Before": "57.35-75% based on level",
+                            "Indicator": " ⇒ ",
+                            "After": "60%"
                         }
                     }
                 ]
             },
-            "P": "",
-            "Q": "",
-            "W": "",
-            "E": {
-                "SpellName": "E - Footwork",
+            "E": "",
+            "R": {
+                "SpellName": "R - All Out",
                 "Changes": [
                     {
                         "Tag": "",
                         "Change": {
-                            "Attribute": "Base Shield: ",
-                            "Before": "50/90/130/170/210 (+10% bonus health)",
+                            "Attribute": "Healing: ",
+                            "Before": "10/15/20%",
                             "Indicator": " ⇒ ",
-                            "After": "50/100/150/200/250 (+10% bonus health)"
+                            "After": "15/20/25%"
                         }
                     }
                 ]
-            },
-            "R": ""
+            }
         },
         "Balance": [
-            "buff"
+            "adjust"
         ]
     },
     "Milio": {
@@ -9464,31 +9205,46 @@
             "13.24",
             "14.1",
             "14.2",
-            "14.8"
+            "14.8",
+            "14.11"
         ],
         "LatestChanges": {
             "B": "",
-            "P": {
-                "SpellName": "Passive - Signature of the Visionary",
+            "P": "",
+            "Q": {
+                "SpellName": "QQ - Devastating Fire",
                 "Changes": [
                     {
                         "Tag": "",
                         "Change": {
-                            "Attribute": "Bonus Magic Damage: ",
-                            "Before": "35-180 (based on level) (+30% AP)",
+                            "Attribute": "Max Health Damage: ",
+                            "Before": "4/5/6/7/8%",
                             "Indicator": " ⇒ ",
-                            "After": "35-180 (based on level) (+35% AP)"
+                            "After": "3/4/5/6/7%"
                         }
                     }
                 ]
             },
-            "Q": "",
             "W": "",
             "E": "",
-            "R": ""
+            "R": "",
+            "QE ": {
+                "SpellName": "QE - Molten Fissure",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Damage per second: ",
+                            "Before": "20/40/60/80/100 (+25% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "20/40/60/80/100 (+20% AP)"
+                        }
+                    }
+                ]
+            }
         },
         "Balance": [
-            "buff"
+            "nerf"
         ]
     },
     "Smolder": {
@@ -9499,43 +9255,79 @@
             "14.5",
             "14.6",
             "14.7",
-            "14.10"
+            "14.10",
+            "14.11"
         ],
         "LatestChanges": {
             "B": {
                 "SpellName": "Base Stats",
                 "Changes": [
                     {
-                        "Tag": "MID-PATCH",
+                        "Tag": "",
                         "Change": {
-                            "Attribute": "Base AD: ",
-                            "Before": "55",
+                            "Attribute": "Attack Damage: ",
+                            "Before": "57",
                             "Indicator": " ⇒ ",
-                            "After": "57"
+                            "After": "60"
                         }
                     },
                     {
-                        "Tag": "MID-PATCH",
+                        "Tag": "",
                         "Change": {
-                            "Attribute": "Base Health:  ",
+                            "Attribute": "Base Health: ",
                             "Before": "575",
                             "Indicator": " ⇒ ",
-                            "After": "605"
+                            "After": "605 (this was a micropatch change and is already live)"
                         }
                     },
                     {
-                        "Tag": "MID-PATCH",
+                        "Tag": "",
                         "Change": {
-                            "Attribute": "Base HP5: ",
+                            "Attribute": "Base Health Regeneration: ",
                             "Before": "3",
                             "Indicator": " ⇒ ",
-                            "After": "4.5"
+                            "After": "4.5 (this was a micropatch change and is already live)"
                         }
                     }
                 ]
             },
-            "P": "",
-            "Q": "",
+            "P": {
+                "SpellName": "Passive - Dragon Practice",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Super Scorcher Breath: ",
+                            "Before": "40-52% (based on critical strike chance)",
+                            "Indicator": " ⇒ ",
+                            "After": "40%-70% (based on critical strike chance)"
+                        }
+                    }
+                ]
+            },
+            "Q": {
+                "SpellName": "Q - Super Scorcher Breath",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Mana Cost: ",
+                            "Before": "23/26/29/32/35",
+                            "Indicator": " ⇒ ",
+                            "After": "25"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Critical Strike scaling: ",
+                            "Before": "0-50% (based on critical strike chance)",
+                            "Indicator": " ⇒ ",
+                            "After": "0-75% (based on critical strike chance)"
+                        }
+                    }
+                ]
+            },
             "W": "",
             "E": "",
             "R": ""

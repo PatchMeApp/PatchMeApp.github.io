@@ -52,7 +52,7 @@
                             "text": "{{0}} magic damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(1 + 30% Crit Chance)",
+                                    "scale": "(1 + 75% Crit Chance)",
                                     "scaleId": "Chance"
                                 }
                             ]
@@ -68,13 +68,8 @@
                     },
                     {
                         "text": {
-                            "text": "20% * {{0}} magic damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(5 + 5% Crit Chance)",
-                                    "scaleId": "Chance"
-                                }
-                            ]
+                            "text": "20% stacks magic damage",
+                            "scaleHolders": []
                         },
                         "type": "magicDamage"
                     }
@@ -84,7 +79,7 @@
         },
         "Q": {
             "_rawTooltip": {
-                "fullTooltip": "Smolder belches flame, dealing [[0]] + [[1]] magic damage.</magicDamage><br /><br />Based on stacks of [[2]], this Ability evolves to gain the following effects:<br />[[3]]: Damages all enemies surrounding the target.<br />[[4]]: Sends (2 + [[5]]) explosions beyond the target that deal 75% of this Ability's damage.<br />[[6]]: Burns the target dealing [[7]]) max Health true damage</trueDamage> over 3 seconds. Enemy champions that drop below [[8]] total health while burning are killed instantly.<br /><br />[[9]] is considered a basic Attack and applies On-Hit effects. This Ability can only damage each target one time per cast.<br />Damage is increased by 50% Critical Strike Chance. This Ability does 110% damage to minions and monsters.",
+                "fullTooltip": "Smolder belches flame, dealing [[0]] + [[1]] magic damage.</magicDamage><br /><br />Based on stacks of [[2]], this Ability evolves to gain the following effects:<br />[[3]]: Damages all enemies surrounding the target.<br />[[4]]: Sends (2 + [[5]]) explosions beyond the target that deal 75% of this Ability's damage.<br />[[6]]: Burns the target dealing [[7]]) max Health true damage</trueDamage> over 3 seconds. Enemy champions that drop below [[8]] total health while burning are killed instantly.<br /><br />[[9]] is considered a basic Attack and applies On-Hit effects. This Ability can only damage each target one time per cast.<br />Damage is increased by 75% Critical Strike Chance. This Ability does 110% damage to minions and monsters.",
                 "parseInfo": [
                     {
                         "text": {
@@ -173,7 +168,7 @@
                 ]
             },
             "cooldown": "5.5/5/4.5/4/3.5",
-            "cost": "23",
+            "cost": "25 Mana",
             "name": "Super Scorcher Breath"
         },
         "W": {
@@ -602,6 +597,80 @@
             "E": "",
             "R": ""
         },
+        "14.11": {
+            "B": {
+                "SpellName": "Base Stats",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Attack Damage: ",
+                            "Before": "57",
+                            "Indicator": " ⇒ ",
+                            "After": "60"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Base Health: ",
+                            "Before": "575",
+                            "Indicator": " ⇒ ",
+                            "After": "605 (this was a micropatch change and is already live)"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Base Health Regeneration: ",
+                            "Before": "3",
+                            "Indicator": " ⇒ ",
+                            "After": "4.5 (this was a micropatch change and is already live)"
+                        }
+                    }
+                ]
+            },
+            "P": {
+                "SpellName": "Passive - Dragon Practice",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Super Scorcher Breath: ",
+                            "Before": "40-52% (based on critical strike chance)",
+                            "Indicator": " ⇒ ",
+                            "After": "40%-70% (based on critical strike chance)"
+                        }
+                    }
+                ]
+            },
+            "Q": {
+                "SpellName": "Q - Super Scorcher Breath",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Mana Cost: ",
+                            "Before": "23/26/29/32/35",
+                            "Indicator": " ⇒ ",
+                            "After": "25"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Critical Strike scaling: ",
+                            "Before": "0-50% (based on critical strike chance)",
+                            "Indicator": " ⇒ ",
+                            "After": "0-75% (based on critical strike chance)"
+                        }
+                    }
+                ]
+            },
+            "W": "",
+            "E": "",
+            "R": ""
+        },
         "14.10": {
             "B": {
                 "SpellName": "Base Stats",
@@ -648,7 +717,8 @@
         "14.5",
         "14.6",
         "14.7",
-        "14.10"
+        "14.10",
+        "14.11"
     ],
     "ChampionName": "Smolder",
     "Balance": {
@@ -665,6 +735,9 @@
             "buff"
         ],
         "14.10": [
+            "buff"
+        ],
+        "14.11": [
             "buff"
         ]
     }

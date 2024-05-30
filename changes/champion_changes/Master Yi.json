@@ -2,7 +2,7 @@
     "stats": {
         "hp": {
             "base": 669,
-            "increment": 100
+            "increment": 105
         },
         "mp": {
             "base": 251,
@@ -10,7 +10,7 @@
         },
         "armor": {
             "base": 33,
-            "increment": 4.2
+            "increment": 4.7
         },
         "spellBlock": {
             "base": 32,
@@ -26,7 +26,7 @@
         },
         "attackSpeed": {
             "base": 0.679,
-            "increment": 0.02
+            "increment": 0.025
         },
         "ms": {
             "base": 355,
@@ -34,7 +34,7 @@
         },
         "attackDamage": {
             "base": 65,
-            "increment": 2.2
+            "increment": 2.5
         },
         "attackRange": {
             "base": 175,
@@ -709,6 +709,54 @@
                 ]
             },
             "R": ""
+        },
+        "14.11": {
+            "B": {
+                "SpellName": "Base Stats",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Health Growth: ",
+                            "Before": "100",
+                            "Indicator": " ⇒ ",
+                            "After": "105"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Armor Growth: ",
+                            "Before": "4.2",
+                            "Indicator": " ⇒ ",
+                            "After": "4.7"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Attack Damage Growth: ",
+                            "Before": "2.2",
+                            "Indicator": " ⇒ ",
+                            "After": "2.5"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Attack Speed Growth: ",
+                            "Before": "2%",
+                            "Indicator": " ⇒ ",
+                            "After": "2.5%"
+                        }
+                    }
+                ]
+            },
+            "P": "",
+            "Q": "",
+            "W": "",
+            "E": "",
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -725,12 +773,16 @@
         "12.15",
         "12.19",
         "13.21",
-        "14.9"
+        "14.9",
+        "14.11"
     ],
     "ChampionName": "Master Yi",
     "Balance": {
         "14.9": [
             "nerf"
+        ],
+        "14.11": [
+            "buff"
         ]
     }
 }

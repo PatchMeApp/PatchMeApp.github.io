@@ -141,12 +141,12 @@
                 ]
             },
             "cooldown": "4",
-            "cost": "28/26/24/22/20 Mana",
+            "cost": "20 Mana",
             "name": "Ntofo Strikes"
         },
         "W": {
             "_rawTooltip": {
-                "fullTooltip": "[[0]] K'Sante raises his weapons defensively for 0.65 - 1.5 second, becoming Unstoppable and reducing incoming damage by 40-65% (based on champion level).<br /><br />[[1]] K'Sante rams forward, dealing [[2]]. K'Sante [[3]] and [[4]] enemies for 1.25 seconds.<br /><br />[[5]] This Ability's Cooldown is refreshed. Damage reduction increases to 50-75% (based on champion level) and its dash speed increases.<br />This Ability will no longer [[6]] or [[7]]",
+                "fullTooltip": "[[0]] K'Sante raises his weapons defensively for 0.65 - 1 second, becoming Unstoppable and reducing incoming damage by 30%.<br /><br />[[1]] K'Sante rams forward, dealing [[2]]. K'Sante [[3]] and [[4]] enemies for 1.25 seconds.<br /><br />[[5]] This Ability's Cooldown is refreshed. Damage reduction increases to 60% (based on champion level) and its dash speed increases.<br />This Ability will no longer [[6]] or [[7]]",
                 "parseInfo": [
                     {
                         "text": {
@@ -265,7 +265,7 @@
         },
         "R": {
             "_rawTooltip": {
-                "fullTooltip": "K'Sante shatters his ntofos, dealing [[0]] and [[1]] an enemy champion. Enemies that hit a wall instead take [[2]], are [[3]] over the wall, and are briefly [[4]]. K'Sante then dashes after the enemy and goes [[5]] for 20 seconds.<br /><br />[[6]] K'Sante loses [[7]], [[8]], and [[9]]. K'Sante gains [[10]] [[11]], healing 10/15/20% of the damage he deals to Champions, and transforms his Abilities.",
+                "fullTooltip": "K'Sante shatters his ntofos, dealing [[0]] and [[1]] an enemy champion. Enemies that hit a wall instead take [[2]], are [[3]] over the wall, and are briefly [[4]]. K'Sante then dashes after the enemy and goes [[5]] for 20 seconds.<br /><br />[[6]] K'Sante loses [[7]], [[8]], and [[9]]. K'Sante gains [[10]] [[11]], healing 15/20/25% of the damage he deals to Champions, and transforms his Abilities.",
                 "parseInfo": [
                     {
                         "text": {
@@ -1241,6 +1241,71 @@
                 ]
             },
             "R": ""
+        },
+        "14.11": {
+            "B": "",
+            "P": "",
+            "Q": {
+                "SpellName": "Q - Ntofo Strikes",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Mana Cost: ",
+                            "Before": "28/26/24/22/20",
+                            "Indicator": " ⇒ ",
+                            "After": "20"
+                        }
+                    }
+                ]
+            },
+            "W": {
+                "SpellName": "W - Path Maker",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Damage Reduction: ",
+                            "Before": "40-65% based on level",
+                            "Indicator": " ⇒ ",
+                            "After": "30%"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Maximum Hold Duration: ",
+                            "Before": "1.5 seconds",
+                            "Indicator": " ⇒ ",
+                            "After": "1 second"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "All Out Damage Reduction: ",
+                            "Before": "57.35-75% based on level",
+                            "Indicator": " ⇒ ",
+                            "After": "60%"
+                        }
+                    }
+                ]
+            },
+            "E": "",
+            "R": {
+                "SpellName": "R - All Out",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Healing: ",
+                            "Before": "10/15/20%",
+                            "Indicator": " ⇒ ",
+                            "After": "15/20/25%"
+                        }
+                    }
+                ]
+            }
         }
     },
     "ChangePatches": [
@@ -1255,7 +1320,8 @@
         "13.23",
         "13.24",
         "14.4",
-        "14.10"
+        "14.10",
+        "14.11"
     ],
     "ChampionName": "K'Sante",
     "Balance": {
@@ -1268,6 +1334,9 @@
         ],
         "14.10": [
             "buff"
+        ],
+        "14.11": [
+            "adjust"
         ]
     }
 }

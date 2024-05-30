@@ -198,7 +198,7 @@
         },
         "R": {
             "_rawTooltip": {
-                "fullTooltip": "Lulu enlarges an ally, [[0]] surrounding enemies for 0.75 seconds. The enlarged ally gains [[1]] and [[2]] surrounding enemies by 30/45/60% for 7 seconds.",
+                "fullTooltip": "Lulu enlarges an ally, [[0]] surrounding enemies for 1 seconds. The enlarged ally gains [[1]] and [[2]] surrounding enemies by 30/45/60% for 7 seconds.",
                 "parseInfo": [
                     {
                         "text": {
@@ -228,7 +228,7 @@
                     }
                 ]
             },
-            "cooldown": "120/100/80",
+            "cooldown": "100/90/80",
             "cost": "100 Mana",
             "name": "Wild Growth"
         }
@@ -744,6 +744,36 @@
                     }
                 ]
             }
+        },
+        "14.11": {
+            "B": "",
+            "P": "",
+            "Q": "",
+            "W": "",
+            "E": "",
+            "R": {
+                "SpellName": "R - Wild Growth",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Knockup Duration: ",
+                            "Before": "0.75",
+                            "Indicator": " ⇒ ",
+                            "After": "1"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Cooldown: ",
+                            "Before": "120/100/80",
+                            "Indicator": " ⇒ ",
+                            "After": "100/90/80"
+                        }
+                    }
+                ]
+            }
         }
     },
     "ChangePatches": [
@@ -759,11 +789,15 @@
         "12.18",
         "13.12",
         "13.16",
-        "14.4"
+        "14.4",
+        "14.11"
     ],
     "ChampionName": "Lulu",
     "Balance": {
         "14.4": [
+            "buff"
+        ],
+        "14.11": [
             "buff"
         ]
     }

@@ -33,7 +33,7 @@
             "increment": 0
         },
         "attackDamage": {
-            "base": 51,
+            "base": 54,
             "increment": 3.1
         },
         "attackRange": {
@@ -123,7 +123,7 @@
                 ]
             },
             "cooldown": "10",
-            "cost": "70/80/90/100/110 Mana",
+            "cost": "70/75/80/85/90 Mana",
             "name": "Ebb and Flow"
         },
         "E": {
@@ -157,7 +157,7 @@
         },
         "R": {
             "_rawTooltip": {
-                "fullTooltip": "Nami summons a tidal wave, [[0]] for 0.5 seconds, [[1]] by 50/60/70%, and dealing [[2]]. The duration of the [[3]] increases based on distance the wave traveled, up to 4 seconds.<br /><br />Allies hit by the wave gain double the effect of [[4]].",
+                "fullTooltip": "Nami summons a tidal wave, [[0]] for 0.5 seconds, [[1]] by 70%, and dealing [[2]]. The duration of the [[3]] increases based on distance the wave traveled, up to 4 seconds.<br /><br />Allies hit by the wave gain double the effect of [[4]].",
                 "parseInfo": [
                     {
                         "text": {
@@ -561,6 +561,53 @@
                 ]
             },
             "R": ""
+        },
+        "14.11": {
+            "B": {
+                "SpellName": "Base Stats",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Attack Damage: ",
+                            "Before": "51",
+                            "Indicator": " ⇒ ",
+                            "After": "54"
+                        }
+                    }
+                ]
+            },
+            "P": "",
+            "Q": "",
+            "W": {
+                "SpellName": "W - Ebb and Flow",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Mana Cost: ",
+                            "Before": "70/80/90/100/110",
+                            "Indicator": " ⇒ ",
+                            "After": "70/75/80/85/90"
+                        }
+                    }
+                ]
+            },
+            "E": "",
+            "R": {
+                "SpellName": "R - Tidal Wave",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Slow: ",
+                            "Before": "50/60/70%",
+                            "Indicator": " ⇒ ",
+                            "After": "70%"
+                        }
+                    }
+                ]
+            }
         }
     },
     "ChangePatches": [
@@ -573,11 +620,15 @@
         "12.17",
         "13.1B",
         "13.15",
-        "14.7"
+        "14.7",
+        "14.11"
     ],
     "ChampionName": "Nami",
     "Balance": {
         "14.7": [
+            "buff"
+        ],
+        "14.11": [
             "buff"
         ]
     }

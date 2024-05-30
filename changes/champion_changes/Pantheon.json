@@ -68,11 +68,15 @@
                     },
                     {
                         "text": {
-                            "text": "70/100/130/160/190 {{0}} physical damage",
+                            "text": "70/100/130/160/190 {{0}} {{1}} physical damage",
                             "scaleHolders": [
                                 {
                                     "scale": "(+115% Bonus AD)",
                                     "scaleId": "AD"
+                                },
+                                {
+                                    "scale": "(+50% AP)",
+                                    "scaleId": "AP"
                                 }
                             ]
                         },
@@ -125,10 +129,14 @@
                     },
                     {
                         "text": {
-                            "text": "60/100/140/180/220 {{0}} physical damage",
+                            "text": "5/5.5/6/6.5/7% {{0}} {{1}} max Health physical damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+100% AP)",
+                                    "scale": "(+1% per 250 bonus HP)",
+                                    "scaleId": "HP"
+                                },
+                                {
+                                    "scale": "(+1.5% per 100 AP)",
                                     "scaleId": "AP"
                                 }
                             ]
@@ -162,7 +170,7 @@
         },
         "E": {
             "_rawTooltip": {
-                "fullTooltip": "Pantheon braces his shield and engages enemies in a chosen direction for 1.5 seconds, becoming immune to non-tower damage from that direction and dealing [[0]] over the duration. After channeling Pantheon slams with his shield, dealing [[1]].<br /><br /><span class=\"colorEDDA74\">Mortal Will Bonus:</span> When Pantheon slams his shield he gains [[2]] for 1.5 seconds. <br />",
+                "fullTooltip": "Pantheon braces his shield and engages enemies in a chosen direction for 1.5 seconds, becoming immune to non-tower damage from that direction and dealing [[0]] over the duration. After channeling Pantheon slams with his shield, dealing [[1]].<br /><br /><span class=\"colorEDDA74\">Mortal Will Bonus:</span> When Pantheon slams his shield he gains 5-30 (depending on level) (+2.5% bonus HP) [[2]] [[3]] for 4 seconds and [[4]] for 1.5 seconds. <br />",
                 "parseInfo": [
                     {
                         "text": {
@@ -182,6 +190,20 @@
                             ]
                         },
                         "type": "physicalDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "Armor",
+                            "scaleHolders": []
+                        },
+                        "type": "scaleArmor"
+                    },
+                    {
+                        "text": {
+                            "text": "Magic Resist",
+                            "scaleHolders": []
+                        },
+                        "type": "scaleMR"
                     },
                     {
                         "text": {
@@ -216,11 +238,15 @@
                     },
                     {
                         "text": {
-                            "text": "70/100/130 {{0}} physical damage",
+                            "text": "70/100/130 {{0}} {{1}} physical damage",
                             "scaleHolders": [
                                 {
                                     "scale": "(+115% Bonus AD)",
                                     "scaleId": "AD"
+                                },
+                                {
+                                    "scale": "(+50% AP)",
+                                    "scaleId": "AP"
                                 }
                             ]
                         },
@@ -837,6 +863,111 @@
                 ]
             },
             "R": ""
+        },
+        "14.11": {
+            "B": "",
+            "P": "",
+            "Q": {
+                "SpellName": "Q - Comet Spear",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Charged Damage: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "70/100/130/160/190 (+115% bonus AD) (+50% AP)"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Uncharged Damage: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "Unchanged"
+                        }
+                    }
+                ]
+            },
+            "W": {
+                "SpellName": "W - Shield Vault",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Physical Damage: ",
+                            "Before": "60/100/140/180/220 (+100% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "5/5.5/6/6.5/7% max HP (+1% per 250 bonus HP) (+1.5% per 100 AP)"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "[NEW] Min damage against Monsters and Minions: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "50"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "[NEW] Max damage against Monsters and Minions: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "200"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "The new addition of damage against monsters and minions won't be reflected in the tooltip in 14.11 but will be added in 14.12"
+                        }
+                    }
+                ]
+            },
+            "E": {
+                "SpellName": "E - Aegis Assault",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "[NEW]: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": " Now also grants 5-30 (depending on level) (+2.5% bonus HP) Armor and Magic Resist for 4 seconds after spell finishes"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "A new VFX element will be added to represent this buff being active on Pantheon"
+                        }
+                    }
+                ]
+            },
+            "R": {
+                "SpellName": "R - Grand Starfall",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "The spear hit will gain the bonus AP addition noted above in the change and will have its tooltip adjusted"
+                        }
+                    }
+                ]
+            }
         }
     },
     "ChangePatches": [
@@ -850,7 +981,13 @@
         "12.7",
         "12.10",
         "12.14",
-        "13.5"
+        "13.5",
+        "14.11"
     ],
-    "ChampionName": "Pantheon"
+    "ChampionName": "Pantheon",
+    "Balance": {
+        "14.11": [
+            "buff"
+        ]
+    }
 }
