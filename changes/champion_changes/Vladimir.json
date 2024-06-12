@@ -167,7 +167,7 @@
                             "text": "80/135/190/245/300 {{0}} magic damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+10% Bonus Health)",
+                                    "scale": "(+15% Bonus Health)",
                                     "scaleId": "Health"
                                 }
                             ]
@@ -176,7 +176,7 @@
                     },
                     {
                         "text": {
-                            "text": "Health equal to 15% of the damage dealt",
+                            "text": "Health equal to 30% of the pre-mitigation damage dealt",
                             "scaleHolders": []
                         },
                         "type": "healing"
@@ -184,7 +184,7 @@
                 ]
             },
             "cooldown": "28/25/22/19/16",
-            "cost": "20% of current Health",
+            "cost": "15% of current Health",
             "name": "Sanguine Pool"
         },
         "E": {
@@ -479,6 +479,45 @@
                     }
                 ]
             }
+        },
+        "14.12": {
+            "B": "",
+            "P": "",
+            "Q": "",
+            "W": {
+                "SpellName": "W - Sanguine Pool",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Current Health Cost: ",
+                            "Before": "20%",
+                            "Indicator": " ⇒ ",
+                            "After": "15%"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Healing: ",
+                            "Before": "15%",
+                            "Indicator": " ⇒ ",
+                            "After": "30% of Pre-Mitigation Damage"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Bonus Health Ratio: ",
+                            "Before": "80/135/190/245/300 (+10% bonus health)",
+                            "Indicator": " ⇒ ",
+                            "After": "80/135/190/245/300 (+15% bonus health)"
+                        }
+                    }
+                ]
+            },
+            "E": "",
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -487,7 +526,13 @@
         "11.9",
         "11.16",
         "12.8",
-        "12.10"
+        "12.10",
+        "14.12"
     ],
-    "ChampionName": "Vladimir"
+    "ChampionName": "Vladimir",
+    "Balance": {
+        "14.12": [
+            "buff"
+        ]
+    }
 }

@@ -130,7 +130,7 @@
                 "parseInfo": [
                     {
                         "text": {
-                            "text": "40/50/60/70/80 {{0}} physical damage",
+                            "text": "50/60/70/80/90 {{0}} physical damage",
                             "scaleHolders": [
                                 {
                                     "scale": "(+40% Bonus AD)",
@@ -590,6 +590,49 @@
             "W": "",
             "E": "",
             "R": ""
+        },
+        "14.12": {
+            "B": "",
+            "P": "",
+            "Q": {
+                "SpellName": "Q - Noxian Diplomacy",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "Q's cast time now scales with attack speed."
+                        }
+                    }
+                ]
+            },
+            "W": {
+                "SpellName": "W - Rake",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "",
+                            "Before": "Jungle Modifier105%",
+                            "Indicator": " ⇒ ",
+                            "After": "100%"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "",
+                            "Before": "Outgoing Damage40/50/60/70/80",
+                            "Indicator": " ⇒ ",
+                            "After": "50/60/70/80/90"
+                        }
+                    }
+                ]
+            },
+            "E": "",
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -603,7 +646,13 @@
         "12.2",
         "12.10",
         "13.6",
-        "13.24"
+        "13.24",
+        "14.12"
     ],
-    "ChampionName": "Talon"
+    "ChampionName": "Talon",
+    "Balance": {
+        "14.12": [
+            "buff"
+        ]
+    }
 }

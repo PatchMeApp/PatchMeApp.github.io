@@ -146,14 +146,14 @@
                 "parseInfo": [
                     {
                         "text": {
-                            "text": "30/56.25/82.5/108.75/135 {{0}} {{1}} magic damage",
+                            "text": "21/42/63/84/105 {{0}} {{1}} magic damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+25.5% AD)",
+                                    "scale": "(+30 AD)",
                                     "scaleId": "AD"
                                 },
                                 {
-                                    "scale": "(+36% AP)",
+                                    "scale": "(+33% AP)",
                                     "scaleId": "AP"
                                 }
                             ]
@@ -169,14 +169,14 @@
                     },
                     {
                         "text": {
-                            "text": "70/131.25/192.5/253.75/315 {{0}} {{1}} magic damage",
+                            "text": "49/98/147/196/245 {{0}} {{1}} magic damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+59.5% AD)",
+                                    "scale": "(+70% AD)",
                                     "scaleId": "AD"
                                 },
                                 {
-                                    "scale": "(+84% AP)",
+                                    "scale": "(+77% AP)",
                                     "scaleId": "AP"
                                 }
                             ]
@@ -907,6 +907,36 @@
             "W": "",
             "E": "",
             "R": ""
+        },
+        "14.12": {
+            "B": "",
+            "P": "",
+            "Q": "",
+            "W": "",
+            "E": {
+                "SpellName": "E - Shuriken Flip",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Total Damage: ",
+                            "Before": "100/187.5/275/362.5/450 (+85% Total AD) (+120% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "70/140/210/280/350 (+100% Total AD) (+110% AP)"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "(Note: The first hit of Akali's Shuriken Flip deals 30% of the ability's total damage and the second hit deals the remaining 70%.)"
+                        }
+                    }
+                ]
+            },
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -928,12 +958,16 @@
         "12.15",
         "13.11",
         "13.16",
-        "14.8"
+        "14.8",
+        "14.12"
     ],
     "ChampionName": "Akali",
     "Balance": {
         "14.8": [
             "buff"
+        ],
+        "14.12": [
+            "nerf"
         ]
     }
 }

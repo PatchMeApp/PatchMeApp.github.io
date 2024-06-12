@@ -1,5 +1,5 @@
 {
-    "LatestGlobalPatch": "14.11",
+    "LatestGlobalPatch": "14.12",
     "447107": {
         "ItemName": "Decapitator",
         "ChangePatches": [
@@ -515,7 +515,7 @@
           ]
         }
     },
-    "446656": {
+      "Everfrost": {
         "ItemName": "Everfrost",
         "ChangePatches": [
           "14.11"
@@ -909,37 +909,52 @@
         }
     },
     "4017": {
-        "ItemName": "Hellfire Hatchet",
-        "ChangePatches": [
-          "14.11"
+      "ItemName": "Hellfire Hatchet",
+      "ChangePatches": [
+        "14.11",
+        "14.12"
+      ],
+      "Balance": {
+        "14.11": [
+          "nerf"
         ],
-        "Balance": {
-          "14.11": [
-            "nerf"
-          ]
-        },
-        "Changes": {
-          "14.11": [
-            {
-              "Tag": "",
-              "Change": {
-                "Attribute": "Heal: ",
-                "Before": "2% of target's current health",
-                "Indicator": " ⇒ ",
-                "After": "1.5% of target's current health"
-              }
-            },
-            {
-              "Tag": "",
-              "Change": {
-                "Attribute": "Omnivamp: ",
-                "Before": "12%",
-                "Indicator": " ⇒ ",
-                "After": "10%"
-              }
+        "14.12": [
+          "nerf"
+        ]
+      },
+      "Changes": {
+        "14.11": [
+          {
+            "Tag": "",
+            "Change": {
+              "Attribute": "Heal: ",
+              "Before": "2% of target's current health",
+              "Indicator": " ⇒ ",
+              "After": "1.5% of target's current health"
             }
-          ]
-        }
+          },
+          {
+            "Tag": "",
+            "Change": {
+              "Attribute": "Omnivamp: ",
+              "Before": "12%",
+              "Indicator": " ⇒ ",
+              "After": "10%"
+            }
+          }
+        ],
+        "14.12": [
+          {
+            "Tag": "",
+            "Change": {
+              "Attribute": "Passive Burn Damage: ",
+              "Before": "4 (+12% bonus AD) (+10% AP)",
+              "Indicator": " ⇒ ",
+              "After": "4 (+8% bonus AD) (+8% AP)"
+            }
+          }
+        ]
+      }
     },
     "2049": {
         "ItemName": "Guardian's Amulet",
@@ -1013,28 +1028,277 @@
           ]
         }
     },
-    "447103": {
-        "ItemName": "Hemomancer's Helm",
-        "ChangePatches": [
-          "14.11"
-        ],
-        "Balance": {
-          "14.11": [
-            "nerf"
-          ]
-        },
-        "Changes": {
-          "14.11": [
-            {
-              "Tag": "",
-              "Change": {
-                "Attribute": "Heal: ",
-                "Before": "12% of the damage nearby enemies take",
-                "Indicator": " ⇒ ",
-                "After": "10%"
-              }
+    "447101": {
+      "ItemName": "Gambler's Blade",
+      "ChangePatches": [
+        "14.12"
+      ],
+      "Balance": {
+        "14.12": [
+          "buff"
+        ]
+      },
+      "Changes": {
+        "14.12": [
+          {
+            "Tag": "",
+            "Change": {
+              "Attribute": "Chance to Gain Gold: ",
+              "Before": "10%",
+              "Indicator": " ⇒ ",
+              "After": "12%"
             }
-          ]
-        }
+          },
+          {
+            "Tag": "",
+            "Change": {
+              "Attribute": "Attack Speed: ",
+              "Before": "60%",
+              "Indicator": " ⇒ ",
+              "After": "70%"
+            }
+          }
+        ]
+      }
+    },
+    "447112": {
+      "ItemName": "Flesheater",
+      "ChangePatches": [
+        "14.12"
+      ],
+      "Balance": {
+        "14.12": [
+          "buff"
+        ]
+      },
+      "Changes": {
+        "14.12": [
+          {
+            "Tag": "",
+            "Change": {
+              "Attribute": "Armor/Magic Resist Shred per Stack: ",
+              "Before": "2",
+              "Indicator": " ⇒ ",
+              "After": "3"
+            }
+          },
+          {
+            "Tag": "",
+            "Change": {
+              "Attribute": "Max Health Heal on Takedown: ",
+              "Before": "12%",
+              "Indicator": " ⇒ ",
+              "After": "18%"
+            }
+          }
+        ]
+      }
+    },
+    "443079": {
+      "ItemName": "Turbo Chemtank",
+      "ChangePatches": [
+        "14.12"
+      ],
+      "Balance": {
+        "14.12": [
+          "buff"
+        ]
+      },
+      "Changes": {
+        "14.12": [
+          {
+            "Tag": "",
+            "Change": {
+              "Attribute": "Cooldown: ",
+              "Before": "30 seconds",
+              "Indicator": " ⇒ ",
+              "After": "25 seconds"
+            }
+          },
+          {
+            "Tag": "",
+            "Change": {
+              "Attribute": "Active Speed Buff: ",
+              "Before": "60%",
+              "Indicator": " ⇒ ",
+              "After": "80%"
+            }
+          }
+        ]
+      }
+    },
+    "447110": {
+      "ItemName": "Moonflair",
+      "ChangePatches": [
+        "14.12"
+      ],
+      "Balance": {
+        "14.12": [
+          "buff"
+        ]
+      },
+      "Changes": {
+        "14.12": [
+          {
+            "Tag": "",
+            "Change": {
+              "Attribute": "AP: ",
+              "Before": "70",
+              "Indicator": " ⇒ ",
+              "After": "85"
+            }
+          },
+          {
+            "Tag": "",
+            "Change": {
+              "Attribute": "Health: ",
+              "Before": "350",
+              "Indicator": " ⇒ ",
+              "After": "400"
+            }
+          }
+        ]
+      }
+    },
+    "446691": {
+      "ItemName": "Duskblade of Draktharr",
+      "ChangePatches": [
+        "14.12"
+      ],
+      "Balance": {
+        "14.12": [
+          "nerf"
+        ]
+      },
+      "Changes": {
+        "14.12": [
+          {
+            "Tag": "",
+            "Change": {
+              "Attribute": "Attack Damage: ",
+              "Before": "60",
+              "Indicator": " ⇒ ",
+              "After": "55"
+            }
+          },
+          {
+            "Tag": "",
+            "Change": {
+              "Attribute": "Ability Damage Amp: ",
+              "Before": "25/15% (melee/ranged)",
+              "Indicator": " ⇒ ",
+              "After": "22.25/12.25% (melee/ranged)"
+            }
+          }
+        ]
+      }
+    },
+    "446693": {
+      "ItemName": "Prowler's Claw",
+      "ChangePatches": [
+        "14.12"
+      ],
+      "Balance": {
+        "14.12": [
+          "nerf"
+        ]
+      },
+      "Changes": {
+        "14.12": [
+          {
+            "Tag": "",
+            "Change": {
+              "Attribute": "Ability Haste: ",
+              "Before": "25",
+              "Indicator": " ⇒ ",
+              "After": "20"
+            }
+          },
+          {
+            "Tag": "",
+            "Change": {
+              "Attribute": "Attack Damage: ",
+              "Before": "70",
+              "Indicator": " ⇒ ",
+              "After": "65"
+            }
+          }
+        ]
+      }
+    },
+    "443193": {
+      "ItemName": "Gargoyle Stoneplate",
+      "ChangePatches": [
+        "14.12"
+      ],
+      "Balance": {
+        "14.12": [
+          "nerf"
+        ]
+      },
+      "Changes": {
+        "14.12": [
+          {
+            "Tag": "",
+            "Change": {
+              "Attribute": "Armor: ",
+              "Before": "90",
+              "Indicator": " ⇒ ",
+              "After": "75"
+            }
+          },
+          {
+            "Tag": "",
+            "Change": {
+              "Attribute": "Magic Resistance: ",
+              "Before": "90",
+              "Indicator": " ⇒ ",
+              "After": "75"
+            }
+          }
+        ]
+      }
+    },
+    "226621": {
+      "ItemName": "Dawncore",
+      "ChangePatches": [
+        "14.12"
+      ],
+      "Balance": {
+        "14.12": [
+          "buff"
+        ]
+      },
+      "Changes": {
+        "14.12": [
+          {
+            "Tag": "",
+            "Change": {
+              "Attribute": "Ability Power: ",
+              "Before": "40",
+              "Indicator": " ⇒ ",
+              "After": "60"
+            }
+          },
+          {
+            "Tag": "",
+            "Change": {
+              "Attribute": "Heal/Shield Power: ",
+              "Before": "12",
+              "Indicator": " ⇒ ",
+              "After": "16"
+            }
+          },
+          {
+            "Tag": "",
+            "Change": {
+              "Attribute": "First Light Heal/Shield Power and AP per 100 base Mana Regeneration: ",
+              "Before": "3% and 5 AP",
+              "Indicator": " ⇒ ",
+              "After": "2% and 10 AP"
+            }
+          }
+        ]
+      }
     }
 }

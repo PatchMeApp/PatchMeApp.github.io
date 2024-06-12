@@ -26,14 +26,14 @@
         },
         "attackSpeed": {
             "base": 0.644,
-            "increment": 0.023
+            "increment": 0.028
         },
         "ms": {
             "base": 325,
             "increment": 0
         },
         "attackDamage": {
-            "base": 55,
+            "base": 52,
             "increment": 2.5
         },
         "attackRange": {
@@ -71,10 +71,10 @@
                 "parseInfo": [
                     {
                         "text": {
-                            "text": "70/115/160/205/250 {{0}} {{1}} magic damage",
+                            "text": "70/120/170/220/270 {{0}} {{1}} magic damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+70% AP)",
+                                    "scale": "(+100% AP)",
                                     "scaleId": "AP"
                                 },
                                 {
@@ -87,7 +87,7 @@
                     }
                 ]
             },
-            "cooldown": "9/8.5/8/7.5/7",
+            "cooldown": "8/7.5/7/6.5/6",
             "cost": "60/65/70/75/80 Mana",
             "name": "Phosphorus Bomb"
         },
@@ -160,7 +160,7 @@
                 "parseInfo": [
                     {
                         "text": {
-                            "text": "100/150/200/250/300 {{0}} physical damage",
+                            "text": "100/145/190/235/280 {{0}} physical damage",
                             "scaleHolders": [
                                 {
                                     "scale": "(+250% Bonus AD)",
@@ -172,7 +172,7 @@
                     },
                     {
                         "text": {
-                            "text": "12/15/18/21/24 Armor",
+                            "text": "12/14/16/18/20 Armor",
                             "scaleHolders": []
                         },
                         "type": "scaleArmor"
@@ -187,7 +187,7 @@
                 ]
             },
             "cooldown": "12",
-            "cost": "50/55/60/65/70 Mana",
+            "cost": "50/60/70/80/90 Mana",
             "name": "Gatling Gun"
         },
         "R": {
@@ -956,6 +956,89 @@
                 ]
             }
         },
+        "14.12": {
+            "B": {
+                "SpellName": "Base Stats",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Base Attack Damage: ",
+                            "Before": "55",
+                            "Indicator": " ⇒ ",
+                            "After": "52"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Attack Speed Growth: ",
+                            "Before": "2.3%",
+                            "Indicator": " ⇒ ",
+                            "After": "2.8%"
+                        }
+                    }
+                ]
+            },
+            "P": "",
+            "Q": {
+                "SpellName": "Q - Phosphorus Bomb",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Magic Damage: ",
+                            "Before": "70/115/160/205/250 (+120% bonus AD) (+70% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "70/120/170/220/270 (+120% bonus AD) (+100% AP)"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Cooldown: ",
+                            "Before": "9/8.5/8/7.5/7",
+                            "Indicator": " ⇒ ",
+                            "After": "8/7.5/7/6.5/6 seconds"
+                        }
+                    }
+                ]
+            },
+            "W": "",
+            "E": {
+                "SpellName": "E - Gatling Gun",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Physical Damage: ",
+                            "Before": "100/150/200/250/300 (+250% bonus AD)",
+                            "Indicator": " ⇒ ",
+                            "After": "100/145/190/235/280 (+250% bonus AD)"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Armor/MR Shred Cap: ",
+                            "Before": "12/15/18/21/24",
+                            "Indicator": " ⇒ ",
+                            "After": "12/14/16/18/20"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Mana Cost: ",
+                            "Before": "50/55/60/65/70",
+                            "Indicator": " ⇒ ",
+                            "After": "50/60/70/80/90"
+                        }
+                    }
+                ]
+            },
+            "R": ""
+        },
         "13.24": {
             "B": {
                 "SpellName": "Base Stats",
@@ -1052,7 +1135,8 @@
         "14.1",
         "14.3",
         "14.10",
-        "14.11"
+        "14.11",
+        "14.12"
     ],
     "ChampionName": "Corki",
     "Balance": {
@@ -1068,6 +1152,9 @@
         "14.10": [
             "danger",
             "buff"
+        ],
+        "14.12": [
+            "adjust"
         ]
     }
 }

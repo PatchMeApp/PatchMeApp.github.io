@@ -105,7 +105,7 @@
         },
         "W": {
             "_rawTooltip": {
-                "fullTooltip": "Master Yi channels, restoring [[0]] over 4 seconds. This healing is increased by up to 100% based on Master Yi's missing Health.<br /><br />While channeling and for 0.5 seconds afterwards, he takes 45/47.5/50/52.5/55% + 45/42.5/40/37.5/35% reduced damage, decreased to 45/47.5/50/52.5/55% after the first 0.5 seconds.",
+                "fullTooltip": "Master Yi channels, restoring [[0]] over 4 seconds. This healing is increased by up to 100% based on Master Yi's missing Health.<br /><br />While channeling and for 0.5 seconds afterwards, he takes 70% reduced damage, decreased to 45/47.5/50/52.5/55% after the first 0.5 seconds.",
                 "parseInfo": [
                     {
                         "text": {
@@ -122,7 +122,7 @@
                 ]
             },
             "cooldown": "9",
-            "cost": "40 Mana (+{{ percentmanacostpersecond*100 }}% Max Mana per second)",
+            "cost": "40 + 6% Max Mana per second",
             "name": "Meditate"
         },
         "E": {
@@ -757,6 +757,49 @@
             "W": "",
             "E": "",
             "R": ""
+        },
+        "14.12": {
+            "B": "",
+            "P": "",
+            "Q": {
+                "SpellName": "Q - Alpha Strike",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Bonus Damage to Monsters: ",
+                            "Before": "75/100/125/150/175",
+                            "Indicator": " ⇒ ",
+                            "After": "65/90/115/140/165"
+                        }
+                    }
+                ]
+            },
+            "W": {
+                "SpellName": "W - Meditate",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Initial Damage Reduction: ",
+                            "Before": "90%",
+                            "Indicator": " ⇒ ",
+                            "After": "70%"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Cooldown: ",
+                            "Before": "9 seconds",
+                            "Indicator": " ⇒ ",
+                            "After": "10 seconds"
+                        }
+                    }
+                ]
+            },
+            "E": "",
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -774,7 +817,8 @@
         "12.19",
         "13.21",
         "14.9",
-        "14.11"
+        "14.11",
+        "14.12"
     ],
     "ChampionName": "Master Yi",
     "Balance": {
@@ -783,6 +827,9 @@
         ],
         "14.11": [
             "buff"
+        ],
+        "14.12": [
+            "nerf"
         ]
     }
 }

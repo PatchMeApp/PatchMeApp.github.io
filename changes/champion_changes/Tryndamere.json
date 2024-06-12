@@ -63,7 +63,7 @@
                     },
                     {
                         "text": {
-                            "text": "10/15/20/25/30 Attack Damage",
+                            "text": "5/10/15/20/25 Attack Damage",
                             "scaleHolders": []
                         },
                         "type": ""
@@ -130,7 +130,7 @@
                 "parseInfo": [
                     {
                         "text": {
-                            "text": "80/110/140/170/200 {{0}} {{1}} physical damage",
+                            "text": "75/105/135/165/195 {{0}} {{1}} physical damage",
                             "scaleHolders": [
                                 {
                                     "scale": "(+130% Bonus AD)",
@@ -526,6 +526,40 @@
             "W": "",
             "E": "",
             "R": ""
+        },
+        "14.12": {
+            "B": "",
+            "P": "",
+            "Q": {
+                "SpellName": "Q - Bloodlust",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Bonus Attack Damage: ",
+                            "Before": "10/15/20/25/30",
+                            "Indicator": " ⇒ ",
+                            "After": "5/10/15/20/25"
+                        }
+                    }
+                ]
+            },
+            "W": "",
+            "E": {
+                "SpellName": "E - Spinning Slash",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Physical Damage: ",
+                            "Before": "80/110/140/170/200 (+130% Bonus AD)",
+                            "Indicator": " ⇒ ",
+                            "After": "75/105/135/165/195 (+130% Bonus AD)"
+                        }
+                    }
+                ]
+            },
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -539,7 +573,8 @@
         "13.17",
         "13.18",
         "14.6",
-        "14.10"
+        "14.10",
+        "14.12"
     ],
     "ChampionName": "Tryndamere",
     "Balance": {
@@ -548,6 +583,9 @@
         ],
         "14.10": [
             "adjust"
+        ],
+        "14.12": [
+            "nerf"
         ]
     }
 }

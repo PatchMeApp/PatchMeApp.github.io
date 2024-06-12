@@ -1,7 +1,7 @@
 {
     "stats": {
         "hp": {
-            "base": 650,
+            "base": 600,
             "increment": 109
         },
         "mp": {
@@ -45,7 +45,7 @@
         "P": {
             "cooldown": 90,
             "_rawTooltip": {
-                "fullTooltip": "Innate: Periodically, when Blitzcrank is damaged to [[0]], a shield is first generated that is equal to 30% of maximum mana, lasting up to 4 seconds.",
+                "fullTooltip": "Innate: Periodically, when Blitzcrank is damaged to [[0]], a shield is first generated that is equal to 30% of maximum mana, lasting up to 10 seconds.",
                 "parseInfo": [
                     {
                         "text": {
@@ -921,6 +921,40 @@
             },
             "E": "",
             "R": ""
+        },
+        "14.12": {
+            "B": {
+                "SpellName": "Base Stats",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Base Health: ",
+                            "Before": "650",
+                            "Indicator": " ⇒ ",
+                            "After": "600"
+                        }
+                    }
+                ]
+            },
+            "P": {
+                "SpellName": "Passive - Mana Barrier",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Duration: ",
+                            "Before": "4",
+                            "Indicator": " ⇒ ",
+                            "After": "10 seconds"
+                        }
+                    }
+                ]
+            },
+            "Q": "",
+            "W": "",
+            "E": "",
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -937,7 +971,8 @@
         "12.21",
         "13.17",
         "14.2",
-        "14.9"
+        "14.9",
+        "14.12"
     ],
     "ChampionName": "Blitzcrank",
     "Balance": {
@@ -945,6 +980,9 @@
             "nerf"
         ],
         "14.9": [
+            "nerf"
+        ],
+        "14.12": [
             "nerf"
         ]
     }

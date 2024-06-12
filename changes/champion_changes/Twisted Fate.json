@@ -34,7 +34,7 @@
         },
         "attackDamage": {
             "base": 52,
-            "increment": 3.3
+            "increment": 2.5
         },
         "attackRange": {
             "base": 525,
@@ -59,7 +59,7 @@
                             "text": "60/100/140/180/220 {{0}} {{1}} magic damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+90% AP)",
+                                    "scale": "(+85% AP)",
                                     "scaleId": "AP"
                                 },
                                 {
@@ -105,7 +105,7 @@
                     },
                     {
                         "text": {
-                            "text": "50/75/100/125/150 Mana",
+                            "text": "70/90/110/130/150 Mana",
                             "scaleHolders": []
                         },
                         "type": ""
@@ -159,7 +159,7 @@
                 ]
             },
             "cooldown": "6",
-            "cost": "30/40/50/60/70 Mana",
+            "cost": "50/55/60/65/70 Mana",
             "name": "Pick a Card"
         },
         "E": {
@@ -823,6 +823,62 @@
                 ]
             },
             "R": ""
+        },
+        "14.12": {
+            "B": {
+                "SpellName": "Base Stats",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Attack Damage Growth: ",
+                            "Before": "3.3",
+                            "Indicator": " ⇒ ",
+                            "After": "2.5"
+                        }
+                    }
+                ]
+            },
+            "P": "",
+            "Q": {
+                "SpellName": "Q - Wild Cards",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Magic Damage: ",
+                            "Before": "60/100/140/180/220 (+50% bonus AD) (+90% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "60/100/140/180/220 (+50% bonus AD) (+85% AP)"
+                        }
+                    }
+                ]
+            },
+            "W": {
+                "SpellName": "W - Pick A Card",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Mana Cost: ",
+                            "Before": "30/40/50/60/70",
+                            "Indicator": " ⇒ ",
+                            "After": "50/55/60/65/70"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Blue Card Mana Restored: ",
+                            "Before": "50/75/100/125/150",
+                            "Indicator": " ⇒ ",
+                            "After": "70/90/110/130/150"
+                        }
+                    }
+                ]
+            },
+            "E": "",
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -840,7 +896,8 @@
         "13.22",
         "14.2",
         "14.4",
-        "14.5"
+        "14.5",
+        "14.12"
     ],
     "ChampionName": "Twisted Fate",
     "Balance": {
@@ -851,6 +908,9 @@
             "nerf"
         ],
         "14.5": [
+            "nerf"
+        ],
+        "14.12": [
             "nerf"
         ]
     }

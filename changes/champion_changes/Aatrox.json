@@ -10,7 +10,7 @@
         },
         "armor": {
             "base": 38,
-            "increment": 4.45
+            "increment": 4.8
         },
         "spellBlock": {
             "base": 32,
@@ -18,7 +18,7 @@
         },
         "hpRegen": {
             "base": 3,
-            "increment": 1
+            "increment": 0.5
         },
         "mpRegen": {
             "base": 0,
@@ -160,7 +160,7 @@
         },
         "E": {
             "_rawTooltip": {
-                "fullTooltip": "[[0]] Aatrox gains [[1]] against champions, increased to [[2]] during [[3]].<br /><br />[[4]] Aatrox dashes. He can use this Ability while winding up his other Abilities.",
+                "fullTooltip": "[[0]] Aatrox gains [[1]] against champions.<br /><br />[[2]] Aatrox dashes. He can use this Ability while winding up his other Abilities.",
                 "parseInfo": [
                     {
                         "text": {
@@ -171,22 +171,13 @@
                     },
                     {
                         "text": {
-                            "text": "18/19.5/21/22.5% Omnivamp",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "20/24/28/32/36% Omnivamp",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "World Ender",
-                            "scaleHolders": []
+                            "text": "16% {{0}} Omnivamp",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+0.9% bonus Health)",
+                                    "scaleId": "Health"
+                                }
+                            ]
                         },
                         "type": ""
                     },
@@ -230,7 +221,7 @@
                     },
                     {
                         "text": {
-                            "text": "self-healing by 25/35/45%",
+                            "text": "self-healing by 50/75/100%",
                             "scaleHolders": []
                         },
                         "type": "healing"
@@ -782,6 +773,71 @@
             },
             "E": "",
             "R": ""
+        },
+        "14.12": {
+            "B": {
+                "SpellName": "Base Stats",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Health Regeneration Growth: ",
+                            "Before": "1",
+                            "Indicator": " ⇒ ",
+                            "After": "0.5"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Armor Growth: ",
+                            "Before": "4.45",
+                            "Indicator": " ⇒ ",
+                            "After": "4.8"
+                        }
+                    }
+                ]
+            },
+            "P": "",
+            "Q": "",
+            "W": "",
+            "E": {
+                "SpellName": "E - Umbral Dash",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Healing: ",
+                            "Before": "18/19.5/21/22.5/24%",
+                            "Indicator": " ⇒ ",
+                            "After": "16% (+0.9% bonus Health)"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "Umbral Dash's healing is no longer increased by 20/24/28/32/36% during World Ender"
+                        }
+                    }
+                ]
+            },
+            "R": {
+                "SpellName": "R - World Ender",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Increased Healing: ",
+                            "Before": "25/35/45%",
+                            "Indicator": " ⇒ ",
+                            "After": "50/75/100%"
+                        }
+                    }
+                ]
+            }
         }
     },
     "ChangePatches": [
@@ -800,7 +856,13 @@
         "13.9",
         "13.14",
         "13.15",
-        "13.17"
+        "13.17",
+        "14.12"
     ],
-    "ChampionName": "Aatrox"
+    "ChampionName": "Aatrox",
+    "Balance": {
+        "14.12": [
+            "adjust"
+        ]
+    }
 }

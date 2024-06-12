@@ -49,14 +49,14 @@
                 "parseInfo": [
                     {
                         "text": {
-                            "text": "6-30 {{0}} {{1}} physical damage",
+                            "text": "12-32 {{0}} {{1}} physical damage",
                             "scaleHolders": [
                                 {
                                     "scale": "(based on level)",
                                     "scaleId": "level"
                                 },
                                 {
-                                    "scale": "(+4.5% bonus AD)",
+                                    "scale": "(+5% Bonus AD)",
                                     "scaleId": "AD"
                                 }
                             ]
@@ -69,7 +69,7 @@
         },
         "Q": {
             "_rawTooltip": {
-                "fullTooltip": "Naafiri hurls Darkin-tainted blades, dealing [[0]] and inflicting a bleed, dealing [[1]] over 5 seconds.<br /><br />Naafiri can [[2]] this Ability. If enemies hit are already bleeding from the Ability, it instead deals the remaining bleed damage plus between [[3]] and [[4]], based on their missing Health. If that target was a champion, Naafiri restores [[5]].<br /><br />[[6]] will leap at the first champion hit and attack them for 3 seconds.",
+                "fullTooltip": "Naafiri hurls Darkin-tainted blades, dealing [[0]] and inflicting a bleed, dealing [[1]] over 5 seconds.<br /><br />Naafiri can [[2]] this Ability. If enemies hit are already bleeding from the Ability, it instead deals the remaining bleed damage plus between [[3]] and [[4]], based on their missing Health. If that target was a champion or a Large/Epic monster, Naafiri restores [[5]].<br /><br />[[6]] will leap at the first champion hit and attack them for 3 seconds.",
                 "parseInfo": [
                     {
                         "text": {
@@ -147,7 +147,7 @@
                     }
                 ]
             },
-            "cooldown": "11/10/9/8/7",
+            "cooldown": "9/8.5/8/7.5/7",
             "cost": "55/60/65/70/75 Mana",
             "name": "Darkin Daggers"
         },
@@ -602,6 +602,58 @@
             },
             "R": ""
         },
+        "14.12": {
+            "B": "",
+            "P": {
+                "SpellName": "Passive - We Are More",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Packmate Attack Damage: ",
+                            "Before": "6-30 (based on level) (+4.5% bonus AD)",
+                            "Indicator": " ⇒ ",
+                            "After": "12-32 (based on level) (+5% bonus AD)"
+                        }
+                    }
+                ]
+            },
+            "Q": {
+                "SpellName": "Q - Darkin Daggers",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Execute: ",
+                            "Before": "30-70 (based on level) vs Minions and Medium/Large Monsters",
+                            "Indicator": " ⇒ ",
+                            "After": "30-70 (based on level) vs Minions and non-Epic Monsters"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Heal on Bleeding Target: ",
+                            "Before": "Champions only",
+                            "Indicator": " ⇒ ",
+                            "After": "Champions and Large/Epic Monsters"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Cooldown: ",
+                            "Before": "11/10/9/8/7",
+                            "Indicator": " ⇒ ",
+                            "After": "9/8.5/8/7.5/7 seconds"
+                        }
+                    }
+                ]
+            },
+            "W": "",
+            "E": "",
+            "R": ""
+        },
         "13.24": {
             "B": "",
             "P": "",
@@ -673,7 +725,8 @@
         "13.17",
         "13.23",
         "13.24",
-        "14.1"
+        "14.1",
+        "14.12"
     ],
     "ChampionName": "Naafiri",
     "Balance": {
@@ -681,6 +734,9 @@
             "buff"
         ],
         "14.1": [
+            "buff"
+        ],
+        "14.12": [
             "buff"
         ]
     }

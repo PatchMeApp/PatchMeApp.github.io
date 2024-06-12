@@ -246,7 +246,7 @@
                     }
                 ]
             },
-            "cooldown": "12/11.5/11/10.5/10",
+            "cooldown": "10",
             "cost": "80/90/100/110/120 Mana",
             "name": "Zoomies"
         },
@@ -282,7 +282,7 @@
                     },
                     {
                         "text": {
-                            "text": "25/40/55 {{0}} health",
+                            "text": "35/50/65 {{0}} health",
                             "scaleHolders": [
                                 {
                                     "scale": "(+15% AP)",
@@ -1612,6 +1612,40 @@
                     }
                 ]
             }
+        },
+        "14.12": {
+            "B": "",
+            "P": "",
+            "Q": "",
+            "W": "",
+            "E": {
+                "SpellName": "E - Zoomies",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Cooldown: ",
+                            "Before": "12/11.5/11/10.5/10",
+                            "Indicator": " ⇒ ",
+                            "After": "10 seconds at all ranks"
+                        }
+                    }
+                ]
+            },
+            "R": {
+                "SpellName": "R - Final Chapter",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Heal per Hit: ",
+                            "Before": "25/40/55",
+                            "Indicator": " ⇒ ",
+                            "After": "35/50/65"
+                        }
+                    }
+                ]
+            }
         }
     },
     "ChangePatches": [
@@ -1632,7 +1666,13 @@
         "13.1B",
         "13.5",
         "13.6",
-        "13.12"
+        "13.12",
+        "14.12"
     ],
-    "ChampionName": "Yuumi"
+    "ChampionName": "Yuumi",
+    "Balance": {
+        "14.12": [
+            "buff"
+        ]
+    }
 }

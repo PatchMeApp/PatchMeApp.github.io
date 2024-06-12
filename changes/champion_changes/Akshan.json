@@ -63,15 +63,11 @@
                     },
                     {
                         "text": {
-                            "text": "10 − 165 {{0}} {{1}} bonus magic damage",
+                            "text": "15/40/80/150 {{0}} bonus magic damage",
                             "scaleHolders": [
                                 {
                                     "scale": "(based on level)",
                                     "scaleId": "level"
-                                },
-                                {
-                                    "scale": "(+ 60% AP)",
-                                    "scaleId": "AP"
                                 }
                             ]
                         },
@@ -234,10 +230,10 @@
                     },
                     {
                         "text": {
-                            "text": "25/40/55/70/85 {{0}} * {{1}} physical damage",
+                            "text": "15/30/45/60/75 {{0}} * {{1}} physical damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+17.5% Bonus AD)",
+                                    "scale": "(+15% total AD)",
                                     "scaleId": "AD"
                                 },
                                 {
@@ -663,6 +659,40 @@
                     }
                 ]
             }
+        },
+        "14.12": {
+            "B": "",
+            "P": {
+                "SpellName": "Passive - Dirty Fighting",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Damage: ",
+                            "Before": "10-165 (levels 1-18) (+60% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "15/40/80/150 (levels 1-5, 6-10, 11-15, 16-18)"
+                        }
+                    }
+                ]
+            },
+            "Q": "",
+            "W": "",
+            "E": {
+                "SpellName": "E - Heroic Swing",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Damage per Shot: ",
+                            "Before": "25/40/55/70/85 (+17.5% bonus AD)",
+                            "Indicator": " ⇒ ",
+                            "After": "15/30/45/60/75 (+15% total AD)"
+                        }
+                    }
+                ]
+            },
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -675,12 +705,16 @@
         "13.10",
         "13.17",
         "13.20",
-        "14.9"
+        "14.9",
+        "14.12"
     ],
     "ChampionName": "Akshan",
     "Balance": {
         "14.9": [
             "adjust"
+        ],
+        "14.12": [
+            "nerf"
         ]
     }
 }

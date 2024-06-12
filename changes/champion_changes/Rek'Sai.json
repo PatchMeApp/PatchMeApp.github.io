@@ -126,7 +126,7 @@
         },
         "W": {
             "_rawTooltip": {
-                "fullTooltip": "[[0]] Rek'sai burrows into the ground, gaining access to new Abilities, and [[1]], but cannot Attack. She has reduced vision range, but nearby enemies that move and are otherwise unseen will have their positions revealed to Rek'sai and her allies.<br /><br />[[2]] Rek'Sai unburrows. dealing [[3]] to all nearby enemies. [[4]] her primary target and nearby Champions for Is. Enemies can only be affected by this Ability once every 10 seconds.",
+                "fullTooltip": "[[0]] Rek'sai burrows into the ground, gaining access to new Abilities, and [[1]], but cannot Attack. She has reduced vision range, but nearby enemies that move and are otherwise unseen will have their positions revealed to Rek'sai and her allies.<br /><br />[[2]] Rek'Sai unburrows. dealing [[3]] to all nearby enemies. [[4]] her primary target and nearby Champions for 1 second. Enemies can only be affected by this Ability once every 10 seconds.",
                 "parseInfo": [
                     {
                         "text": {
@@ -156,7 +156,7 @@
                     },
                     {
                         "text": {
-                            "text": "50/75/100/125/150 {{0}} magic damage",
+                            "text": "30/55/80/105/130 {{0}} magic damage",
                             "scaleHolders": [
                                 {
                                     "scale": "(+80% AP)",
@@ -1156,6 +1156,40 @@
             "W": "",
             "E": "",
             "R": ""
+        },
+        "14.12": {
+            "B": "",
+            "P": "",
+            "Q": {
+                "SpellName": "Q - Queen's Wrath",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Bonus Attack Speed: ",
+                            "Before": "45%",
+                            "Indicator": " ⇒ ",
+                            "After": "35%"
+                        }
+                    }
+                ]
+            },
+            "W": {
+                "SpellName": "W - Unburrow",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Damage: ",
+                            "Before": "50/75/100/125/150 (+80% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "30/55/80/105/130 (+80% AP)"
+                        }
+                    }
+                ]
+            },
+            "E": "",
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -1172,7 +1206,8 @@
         "14.4",
         "14.5",
         "14.6",
-        "14.7"
+        "14.7",
+        "14.12"
     ],
     "ChampionName": "Rek'Sai",
     "Balance": {
@@ -1187,6 +1222,9 @@
             "adjust"
         ],
         "14.7": [
+            "nerf"
+        ],
+        "14.12": [
             "nerf"
         ]
     }
