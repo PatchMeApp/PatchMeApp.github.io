@@ -83,7 +83,7 @@
                             "text": "80/110/140/170/200 {{0}} magic damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+80% AP)",
+                                    "scale": "(+85% AP)",
                                     "scaleId": "AP"
                                 }
                             ]
@@ -128,7 +128,7 @@
                     }
                 ]
             },
-            "cooldown": "12/11/10/9/8",
+            "cooldown": "10/9.5/9/8.5/8",
             "cost": "40 Mana",
             "name": "Ring of Frost"
         },
@@ -596,6 +596,40 @@
             "W": "",
             "E": "",
             "R": ""
+        },
+        "14.13": {
+            "B": "",
+            "P": "",
+            "Q": {
+                "SpellName": "Q - Ice Shard",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Magic Damage: ",
+                            "Before": "80/110/140/170/200 (+80% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "80/110/140/170/200 (+85% AP)"
+                        }
+                    }
+                ]
+            },
+            "W": {
+                "SpellName": "W - Ring of Frost",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Cooldown: ",
+                            "Before": "12/11/10/9/8",
+                            "Indicator": " ⇒ ",
+                            "After": "10/9.5/9/8.5/8"
+                        }
+                    }
+                ]
+            },
+            "E": "",
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -608,7 +642,13 @@
         "13.1",
         "13.14",
         "13.19",
-        "13.22"
+        "13.22",
+        "14.13"
     ],
-    "ChampionName": "Lissandra"
+    "ChampionName": "Lissandra",
+    "Balance": {
+        "14.13": [
+            "buff"
+        ]
+    }
 }

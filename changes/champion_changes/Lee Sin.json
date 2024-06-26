@@ -2,7 +2,7 @@
     "stats": {
         "hp": {
             "base": 645,
-            "increment": 105
+            "increment": 108
         },
         "mp": {
             "base": 0,
@@ -116,7 +116,7 @@
                 "parseInfo": [
                     {
                         "text": {
-                            "text": "50/100/150/200/250 {{0}} Shield",
+                            "text": "70/115/160/205/250 {{0}} Shield",
                             "scaleHolders": [
                                 {
                                     "scale": "(+80% AP)",
@@ -919,6 +919,40 @@
                 ]
             },
             "R": ""
+        },
+        "14.13": {
+            "B": {
+                "SpellName": "Base Stats",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Health Growth: ",
+                            "Before": "105",
+                            "Indicator": " ⇒ ",
+                            "After": "108"
+                        }
+                    }
+                ]
+            },
+            "P": "",
+            "Q": "",
+            "W": {
+                "SpellName": "W - Safeguard / Iron Will",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Shield: ",
+                            "Before": "50/100/150/200/250 (+80 AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "70/115/160/205/250 (+80% AP)"
+                        }
+                    }
+                ]
+            },
+            "E": "",
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -940,7 +974,13 @@
         "13.3",
         "13.7",
         "13.13",
-        "13.19"
+        "13.19",
+        "14.13"
     ],
-    "ChampionName": "Lee Sin"
+    "ChampionName": "Lee Sin",
+    "Balance": {
+        "14.13": [
+            "buff"
+        ]
+    }
 }

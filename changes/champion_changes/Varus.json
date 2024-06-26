@@ -26,14 +26,14 @@
         },
         "attackSpeed": {
             "base": 0.658,
-            "increment": 0.04
+            "increment": 0.035
         },
         "ms": {
             "base": 330,
             "increment": 0
         },
         "attackDamage": {
-            "base": 60,
+            "base": 57,
             "increment": 3.4
         },
         "attackRange": {
@@ -45,35 +45,8 @@
         "P": {
             "cooldown": "",
             "_rawTooltip": {
-                "fullTooltip": "Innate: Varus gains [[0]][[1]] for 5 / 7 / 9 / 11 (based on level) seconds on non-champion kills, increased to [[2]]) whenever he scores a takedown against an enemy champion.",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "10 / 15 / 20% {{0}} (+ 20% bonus attack speed",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(based on level)",
-                                    "scaleId": "level"
-                                }
-                            ]
-                        },
-                        "type": "attackSpeed"
-                    },
-                    {
-                        "text": {
-                            "text": ") bonus attack speed",
-                            "scaleHolders": []
-                        },
-                        "type": "attackSpeed"
-                    },
-                    {
-                        "text": {
-                            "text": "40% (+ 40% bonus attack speed",
-                            "scaleHolders": []
-                        },
-                        "type": "attackSpeed"
-                    }
-                ]
+                "fullTooltip": "When Varus kills an enemy, he gains 10% Attack Speed, (10% Attack Speed) AD, and (10% Attack Speed) AP for 5-11 seconds (based on level).<br>Champion takedowns grant 40% Attack Speed that can bypass the attack speed gap, (15% Attack Speed) AD, and (15% Attack Speed) AP instead",
+                "parseInfo": []
             },
             "name": "Living Vengeance"
         },
@@ -141,7 +114,7 @@
         },
         "W": {
             "_rawTooltip": {
-                "fullTooltip": "[[0]]Varus' Attacks deal an additional [[1]] and apply a [[2]] stack for 6 seconds (max 3 stacks).<br /><br />Varus' other Abilities detonate [[3]] stacks dealing [[4]] per stack (max [[5]]). Detonating [[6]] on champions and epic monsters also reduces his basic Abilities' Cooldowns by 12% of their Maximum per stack.<br /><br />[[7]] Varus' next [[8]] deals an additonal [[9]], increased up to [[10]] based on charge time.",
+                "fullTooltip": "[[0]]Varus' Attacks deal an additional [[1]] and apply a [[2]] stack for 6 seconds (max 3 stacks).<br /><br />Varus' other Abilities detonate [[3]] stacks dealing [[4]] per stack (max [[5]]). Detonating [[6]] on champions and epic monsters also reduces his basic Abilities' Cooldowns by 13% of their Maximum per stack.<br /><br />[[7]] Varus' next [[8]] deals an additonal [[9]], increased up to [[10]] based on charge time.",
                 "parseInfo": [
                     {
                         "text": {
@@ -152,7 +125,7 @@
                     },
                     {
                         "text": {
-                            "text": "7/13/19/25/31 {{0}} magic damage",
+                            "text": "7/14/21/28/35 {{0}} magic damage",
                             "scaleHolders": [
                                 {
                                     "scale": "(+35% AP)",
@@ -1028,6 +1001,116 @@
             "W": "",
             "E": "",
             "R": ""
+        },
+        "14.13": {
+            "B": {
+                "SpellName": "Base Stats",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Attack Damage: ",
+                            "Before": "60",
+                            "Indicator": " ⇒ ",
+                            "After": "57"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Attack Speed Growth: ",
+                            "Before": "4%",
+                            "Indicator": " ⇒ ",
+                            "After": "3.5%"
+                        }
+                    }
+                ]
+            },
+            "P": {
+                "SpellName": "Passive - Living Vengeance",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Minion kill: ",
+                            "Before": "10/15/20% (+20% Bonus AS)",
+                            "Indicator": " ⇒ ",
+                            "After": "10% Attack Speed, (10% Attack Speed) AD, and (10% Attack Speed) AP"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Champion Takedown: ",
+                            "Before": "40% (+40% Bonus AS)",
+                            "Indicator": " ⇒ ",
+                            "After": "40% Attack Speed, (15% Attack Speed) AD, and (15% Attack Speed) AP"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "[NEW] Attack Speed scaling: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "Now includes attack speed from champion levels"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "Attack Speed cap increased from 2.5 to 2.763 during champion takedown passive, meaning the passive itself can bypass the AS cap"
+                        }
+                    }
+                ]
+            },
+            "Q": "",
+            "W": {
+                "SpellName": "W - Blighted Quiver",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Damage: ",
+                            "Before": "7/13/19/25/31",
+                            "Indicator": " ⇒ ",
+                            "After": "7/14/21/28/35"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Missing Health Damage: ",
+                            "Before": "6/8/10/12/14% at levels 1/4/7/10/13",
+                            "Indicator": " ⇒ ",
+                            "After": "6/8/10/12/14% based on rank"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Q cast lockout: ",
+                            "Before": ".25 seconds",
+                            "Indicator": " ⇒ ",
+                            "After": ".85 seconds"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Basic Ability Cooldown Refund per blight pop: ",
+                            "Before": "12%",
+                            "Indicator": " ⇒ ",
+                            "After": "13%"
+                        }
+                    }
+                ]
+            },
+            "E": "",
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -1051,12 +1134,17 @@
         "12.14",
         "13.13",
         "13.21",
-        "14.4"
+        "14.4",
+        "14.13"
     ],
     "ChampionName": "Varus",
     "Balance": {
         "14.4": [
             "nerf"
+        ],
+        "14.13": [
+            "adjust",
+            "danger"
         ]
     }
 }

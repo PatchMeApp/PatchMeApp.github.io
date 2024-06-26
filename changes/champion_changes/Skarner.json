@@ -87,7 +87,7 @@
                     },
                     {
                         "text": {
-                            "text": "15% max-Health physical damage",
+                            "text": "10% max-Health physical damage",
                             "scaleHolders": []
                         },
                         "type": "physicalDamage"
@@ -108,7 +108,7 @@
                     },
                     {
                         "text": {
-                            "text": "10/25/40/55/70 {{0}} {{1}} + 15% max-Health physical damage",
+                            "text": "10/25/40/55/70 {{0}} {{1}} + 10% max-Health physical damage",
                             "scaleHolders": [
                                 {
                                     "scale": "(+40% Bonus AD)",
@@ -132,7 +132,7 @@
                 ]
             },
             "cooldown": "13/11.5/10/8.5/7",
-            "cost": "30 Mana",
+            "cost": "50 Mana",
             "name": "Shattered Earth / Upheaval"
         },
         "W": {
@@ -779,6 +779,36 @@
             "E": "",
             "R": ""
         },
+        "14.13": {
+            "B": "",
+            "P": "",
+            "Q": {
+                "SpellName": "Q - Shattered Earth / Upheaval",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Mana Cost: ",
+                            "Before": "30",
+                            "Indicator": " ⇒ ",
+                            "After": "50"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Max Health Damage: ",
+                            "Before": "15%",
+                            "Indicator": " ⇒ ",
+                            "After": "10%"
+                        }
+                    }
+                ]
+            },
+            "W": "",
+            "E": "",
+            "R": ""
+        },
         "14.7": {
             "B": {
                 "SpellName": "Base Stats",
@@ -871,7 +901,8 @@
         "14.8",
         "14.9",
         "14.10",
-        "14.12"
+        "14.12",
+        "14.13"
     ],
     "ChampionName": "Skarner",
     "Balance": {
@@ -890,6 +921,9 @@
             "adjust"
         ],
         "14.12": [
+            "nerf"
+        ],
+        "14.13": [
             "nerf"
         ]
     }

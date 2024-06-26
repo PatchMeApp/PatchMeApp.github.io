@@ -33,7 +33,7 @@
             "increment": 0
         },
         "attackDamage": {
-            "base": 52,
+            "base": 55,
             "increment": 2.4
         },
         "attackRange": {
@@ -91,7 +91,7 @@
         },
         "W": {
             "_rawTooltip": {
-                "fullTooltip": "[[0]] After 5 seconds of not taking damage, Miss Fortune gains [[1]]. After another 5 seconds, this increases to [[2]].<br /><br />[[3]] Gain the passive effect's full [[4]] bonus and [[5]] for 4 seconds.<br /><br />[[6]] reduce the Cooldown of this Ability by 2 seconds.",
+                "fullTooltip": "[[0]] After 4 seconds of not taking damage, Miss Fortune gains [[1]]. After another 3 seconds, this increases to [[2]].<br /><br />[[3]] Gain the passive effect's full [[4]] bonus and [[5]] for 4 seconds.<br /><br />[[6]] reduce the Cooldown of this Ability by 2 seconds.",
                 "parseInfo": [
                     {
                         "text": {
@@ -102,14 +102,14 @@
                     },
                     {
                         "text": {
-                            "text": "25 Move Speed",
+                            "text": "30/35/40/45/50 Move Speed",
                             "scaleHolders": []
                         },
                         "type": "speed"
                     },
                     {
                         "text": {
-                            "text": "55/65/75/85",
+                            "text": "60/70/80/90/100",
                             "scaleHolders": []
                         },
                         "type": "speed"
@@ -669,6 +669,67 @@
                 ]
             }
         },
+        "14.13": {
+            "B": {
+                "SpellName": "Base Stats",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Base Attack Damage: ",
+                            "Before": "52",
+                            "Indicator": " ⇒ ",
+                            "After": "55"
+                        }
+                    }
+                ]
+            },
+            "P": "",
+            "Q": "",
+            "W": {
+                "SpellName": "W - Strut",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Damage Lock-out: ",
+                            "Before": "5 seconds",
+                            "Indicator": " ⇒ ",
+                            "After": "4 seconds"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Upgraded Move speed delay: ",
+                            "Before": "5 seconds",
+                            "Indicator": " ⇒ ",
+                            "After": "3 seconds"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Max bonus move speed: ",
+                            "Before": "55/65/75/85/95",
+                            "Indicator": " ⇒ ",
+                            "After": "60/70/80/90/100"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Initial Bonus move speed: ",
+                            "Before": "25",
+                            "Indicator": " ⇒ ",
+                            "After": "30/35/40/45/50"
+                        }
+                    }
+                ]
+            },
+            "E": "",
+            "R": ""
+        },
         "13.1B": {
             "B": {
                 "SpellName": "Base Stats",
@@ -722,7 +783,13 @@
         "12.17",
         "12.18",
         "12.21",
-        "13.1B"
+        "13.1B",
+        "14.13"
     ],
-    "ChampionName": "Miss Fortune"
+    "ChampionName": "Miss Fortune",
+    "Balance": {
+        "14.13": [
+            "buff"
+        ]
+    }
 }

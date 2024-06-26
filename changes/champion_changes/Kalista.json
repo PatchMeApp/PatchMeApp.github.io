@@ -33,7 +33,7 @@
             "increment": 0
         },
         "attackDamage": {
-            "base": 61,
+            "base": 59,
             "increment": 3.25
         },
         "attackRange": {
@@ -241,7 +241,7 @@
                     }
                 ]
             },
-            "cooldown": "150/120/90",
+            "cooldown": "160/140/120",
             "cost": "100 Mana",
             "name": "Fate's Call"
         }
@@ -826,6 +826,71 @@
                 ]
             },
             "R": ""
+        },
+        "14.13": {
+            "B": {
+                "SpellName": "Base Stats",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Attack Damage: ",
+                            "Before": "61",
+                            "Indicator": " ⇒ ",
+                            "After": "59"
+                        }
+                    }
+                ]
+            },
+            "P": "",
+            "Q": "",
+            "W": {
+                "SpellName": "W - Sentinel",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "[REMOVED] Minimum non champion damage: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "75/100/125/150/175"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "[REMOVED] Non-Champion execute threshold: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "125/150/175/200/250"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Non-Champion Damage cap: ",
+                            "Before": "250/300/350/400/450",
+                            "Indicator": " ⇒ ",
+                            "After": "100/125/150/175/200"
+                        }
+                    }
+                ]
+            },
+            "E": "",
+            "R": {
+                "SpellName": "R - Fate's Call",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Cooldown: ",
+                            "Before": "150/120/90",
+                            "Indicator": " ⇒ ",
+                            "After": "160/140/120"
+                        }
+                    }
+                ]
+            }
         }
     },
     "ChangePatches": [
@@ -844,11 +909,15 @@
         "13.7",
         "13.10",
         "13.11",
-        "14.4"
+        "14.4",
+        "14.13"
     ],
     "ChampionName": "Kalista",
     "Balance": {
         "14.4": [
+            "nerf"
+        ],
+        "14.13": [
             "nerf"
         ]
     }

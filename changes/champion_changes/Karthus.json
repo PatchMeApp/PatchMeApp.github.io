@@ -56,7 +56,7 @@
                 "parseInfo": [
                     {
                         "text": {
-                            "text": "43/62/81/100/119 {{0}} magic damage",
+                            "text": "40/59/78/97/116 {{0}} magic damage",
                             "scaleHolders": [
                                 {
                                     "scale": "(+35% AP)",
@@ -68,7 +68,7 @@
                     },
                     {
                         "text": {
-                            "text": "86/124/162/200/238 {{0}} magic damage",
+                            "text": "80/118/156/194/232 {{0}} magic damage",
                             "scaleHolders": [
                                 {
                                     "scale": "(+70% AP)",
@@ -622,6 +622,27 @@
             "W": "",
             "E": "",
             "R": ""
+        },
+        "14.13": {
+            "B": "",
+            "P": "",
+            "Q": {
+                "SpellName": "Q - Lay Waste",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Magic Damage: ",
+                            "Before": "43/62/81/100/119 (+35% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "40/59/78/97/116 (+35% AP)"
+                        }
+                    }
+                ]
+            },
+            "W": "",
+            "E": "",
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -639,7 +660,8 @@
         "13.14",
         "13.22",
         "14.2",
-        "14.11"
+        "14.11",
+        "14.13"
     ],
     "ChampionName": "Karthus",
     "Balance": {
@@ -647,6 +669,9 @@
             "buff"
         ],
         "14.11": [
+            "nerf"
+        ],
+        "14.13": [
             "nerf"
         ]
     }

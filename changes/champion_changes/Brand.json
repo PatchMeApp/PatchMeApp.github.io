@@ -45,7 +45,7 @@
         "P": {
             "cooldown": "",
             "_rawTooltip": {
-                "fullTooltip": "Innate: Brand's abilities apply a stack of Ablaze to enemies hit that lasts 4 seconds, which refreshes on subsequent hits and stacks up to 3 times. Subsequent abilities used against a target with Ablaze are empowered. Killing an enemy afflicted with Ablaze or with an ability restores 30 − 50 (based on level) mana.<br>Ablaze: While afflicted with Ablaze, the target is dealt[ [[2]] over 3.25 seconds ]as magic damage. Ablaze deals [[0]] per tick to monsters, capped at 80.<br>Upon applying 3 stacks of Ablaze to a large monster or enemy champion, the fire becomes unstable, forming an area around the target that grants sight and explodes after 2 seconds, consuming all stacks. All enemies within the detonation are dealt [[3]] [[1]] and applied a stack of Ablaze. The explosion will still occur if the target dies to the ability applying the third stack or during the delay.<br>Brand cannot stack Ablaze more than once on enemies who have exploded in the last 4 seconds.",
+                "fullTooltip": "Innate: Brand's abilities apply a stack of Ablaze to enemies hit that lasts 4 seconds, which refreshes on subsequent hits and stacks up to 3 times. Subsequent abilities used against a target with Ablaze are empowered. Killing an enemy afflicted with Ablaze or with an ability restores 20 − 40 (based on level) mana.<br>Ablaze: While afflicted with Ablaze, the target is dealt[ [[2]] over 3.25 seconds ]as magic damage. Ablaze deals [[0]] per tick to monsters, capped at 80.<br>Upon applying 3 stacks of Ablaze to a large monster or enemy champion, the fire becomes unstable, forming an area around the target that grants sight and explodes after 2 seconds, consuming all stacks. All enemies within the detonation are dealt [[3]] [[1]] and applied a stack of Ablaze. The explosion will still occur if the target dies to the ability applying the third stack or during the delay.<br>Brand cannot stack Ablaze more than once on enemies who have exploded in the last 4 seconds.",
                 "parseInfo": [
                     {
                         "text": {
@@ -172,7 +172,7 @@
                 "parseInfo": [
                     {
                         "text": {
-                            "text": "60/90/120/150/180 {{0}} magic damage",
+                            "text": "60/85/110/135/160 {{0}} magic damage",
                             "scaleHolders": [
                                 {
                                     "scale": "(+60% AP)",
@@ -749,6 +749,40 @@
                 ]
             }
         },
+        "14.13": {
+            "B": "",
+            "P": {
+                "SpellName": "Passive - Blaze",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Mana Restore: ",
+                            "Before": "30-50 (based on level)",
+                            "Indicator": " ⇒ ",
+                            "After": "20-40 (based on level)"
+                        }
+                    }
+                ]
+            },
+            "Q": "",
+            "W": "",
+            "E": {
+                "SpellName": "E - Conflagration",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Magic Damage: ",
+                            "Before": "60/90/120/150/180 (+60% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "60/85/110/135/160 (+60% AP)"
+                        }
+                    }
+                ]
+            },
+            "R": ""
+        },
         "14.2": {
             "B": "",
             "P": {
@@ -792,7 +826,8 @@
         "13.22",
         "14.2",
         "14.3",
-        "14.5"
+        "14.5",
+        "14.13"
     ],
     "ChampionName": "Brand",
     "Balance": {
@@ -803,6 +838,9 @@
             "nerf"
         ],
         "14.5": [
+            "nerf"
+        ],
+        "14.13": [
             "nerf"
         ]
     }
