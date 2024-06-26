@@ -1,5 +1,5 @@
 {
-    "LatestGlobalPatch": "14.12",
+    "LatestGlobalPatch": "14.13",
     "447107": {
         "ItemName": "Decapitator",
         "ChangePatches": [
@@ -25,29 +25,44 @@
         } 
     },
     "443069": {
-        "ItemName": "Hamstringer",
-        "ChangePatches": [
-            "14.10"
+      "ItemName": "Hamstringer",
+      "ChangePatches": [
+          "14.10",
+          "14.13"
 
-        ],
-        "Balance": {
-            "14.10": [
-                "buff"
-            ]
-        },
-        "Changes": {
-            "14.10": [
-                {
-                    "Tag": "",
-                    "Change": {
-                        "Attribute": "Critical Strike Chance: ",
-                        "Before": "20%",
-                        "Indicator": " ⇒ ",
-                        "After": "25%"
-                    }
+      ],
+      "Balance": {
+          "14.10": [
+              "buff"
+          ],
+          "14.13": [
+            "nerf"
+        ]
+      },
+      "Changes": {
+          "14.10": [
+              {
+                  "Tag": "",
+                  "Change": {
+                      "Attribute": "Critical Strike Chance: ",
+                      "Before": "20%",
+                      "Indicator": " ⇒ ",
+                      "After": "25%"
+                  }
+              }
+          ],
+          "14.13": [
+            {
+                "Tag": "",
+                "Change": {
+                    "Attribute": "Attack Damage: ",
+                    "Before": "50",
+                    "Indicator": " ⇒ ",
+                    "After": "45"
                 }
-            ]
-        }
+            }
+        ]
+      }
     },
     "447109": {
         "ItemName": "Cruelty",
@@ -599,29 +614,53 @@
           ]
         }
     },
-      "444637": {
-        "ItemName": "Demonic Embrace",
-        "ChangePatches": [
-          "14.11"
+    "444637": {
+      "ItemName": "Demonic Embrace",
+      "ChangePatches": [
+        "14.11",
+        "14.13"
+      ],
+      "Balance": {
+        "14.11": [
+          "buff"
         ],
-        "Balance": {
-          "14.11": [
-            "buff"
-          ]
-        },
-        "Changes": {
-          "14.11": [
-            {
-              "Tag": "",
-              "Change": {
-                "Attribute": "Ability Power: ",
-                "Before": "70",
-                "Indicator": " ⇒ ",
-                "After": "80"
-              }
+        "14.13": [
+          "buff"
+        ]
+      },
+      "Changes": {
+        "14.11": [
+          {
+            "Tag": "",
+            "Change": {
+              "Attribute": "Ability Power: ",
+              "Before": "70",
+              "Indicator": " ⇒ ",
+              "After": "80"
             }
-          ]
-        }
+          }
+        ],
+        "14.13": [
+          {
+            "Tag": "",
+            "Change": {
+              "Attribute": "Ability Haste: ",
+              "Before": "20",
+              "Indicator": " ⇒ ",
+              "After": "25"
+            }
+          },
+          {
+            "Tag": "",
+            "Change": {
+              "Attribute": "Decaying Movement Speed Duration: ",
+              "Before": "2",
+              "Indicator": " ⇒ ",
+              "After": "3 seconds"
+            }
+          }
+        ]
+      }
     },
     "447100": {
         "ItemName": "Mirage Blade",
@@ -1300,5 +1339,53 @@
           }
         ]
       }
+    },
+    "447111": {
+      "ItemName": "Overlord's Bloodmail",
+      "ChangePatches": [
+        "14.13"
+      ],
+      "Balance": {
+        "14.13": [
+          "buff"
+        ]
+      },
+      "Changes": {
+        "14.13": [
+          {
+            "Tag": "",
+            "Change": {
+              "Attribute": "Attack Damage: ",
+              "Before": "45",
+              "Indicator": " ⇒ ",
+              "After": "55"
+            }
+          }
+        ]
+      }
+  },
+  "447113": {
+    "ItemName": "Detonation Orb",
+    "ChangePatches": [
+      "14.13"
+    ],
+    "Balance": {
+      "14.13": [
+        "buff"
+      ]
+    },
+    "Changes": {
+      "14.13": [
+        {
+          "Tag": "",
+          "Change": {
+            "Attribute": "Damage Stored: ",
+            "Before": "20%",
+            "Indicator": " ⇒ ",
+            "After": "25%"
+          }
+        }
+      ]
     }
+  }
 }
