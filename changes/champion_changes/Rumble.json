@@ -85,35 +85,19 @@
         },
         "Q": {
             "_rawTooltip": {
-                "fullTooltip": "Rumble ignites his flamethrower, dealing [[0]] over 3 seconds, reduced to [[1]] against minions.<br /><br />[[2]] Damage is increased to [[3]].",
+                "fullTooltip": "Rumble ignites his flamethrower, dealing [[0]] over 3 seconds, reduced to 70% against minions.<br /><br />[[1]] Damage is increased to [[2]].",
                 "parseInfo": [
                     {
                         "text": {
-                            "text": "125/140/155/170/185 {{0}} {{1}} magic damage",
+                            "text": "80/105/130/155/180 {{0}} {{1}} magic damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+6/7/8/9/10% of target's maximum health)",
+                                    "scale": "(+ 6/7/8/9/10% of target's maximum health)",
                                     "scaleId": "health"
                                 },
                                 {
                                     "scale": "(+110% AP)",
                                     "scaleId": "AP"
-                                }
-                            ]
-                        },
-                        "type": "magicDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "180/220/260/300/340 {{0}} * {{1}} damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+110% AP)",
-                                    "scaleId": "AP"
-                                },
-                                {
-                                    "scale": "(0.55/0.6/0.65/0.7/0.75)",
-                                    "scaleId": "(0.55/0.6/0.65/0.7/0.75"
                                 }
                             ]
                         },
@@ -128,7 +112,7 @@
                     },
                     {
                         "text": {
-                            "text": "202.5/225/247.5/270/292.5 {{0}} {{1}} damage",
+                            "text": "120/157.5/195/232.5/270 {{0}} {{1}} damage",
                             "scaleHolders": [
                                 {
                                     "scale": "(+9/10.5/12/13.5/15% of target's maximum health)",
@@ -962,6 +946,54 @@
                 ]
             },
             "R": ""
+        },
+        "14.14": {
+            "B": "",
+            "P": "",
+            "Q": {
+                "SpellName": "Q - Flamespitter",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Total Magic Damage: ",
+                            "Before": "125/140/155/170/185 (+110% AP) (+ 6/7/8/9/10% of target's maximum health)",
+                            "Indicator": " ⇒ ",
+                            "After": "80/105/130/155/180 (+110% AP) (+ 6/7/8/9/10% of target's maximum health)"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Minion Damage Modifier: ",
+                            "Before": "55/60/65/70/75%",
+                            "Indicator": " ⇒ ",
+                            "After": "70% at all ranks"
+                        }
+                    },
+                    {
+                        "Tag": "REMOVED",
+                        "Change": {
+                            "Attribute": "REMOVED: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "Flame Spitter no longer prevents minions from dying to other minions if they would die to one more tick of Flame Spitter."
+                        }
+                    },
+                    {
+                        "Tag": "NEW",
+                        "Change": {
+                            "Attribute": "NEW: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "Flame Spitter now deals 1 bonus tick of damage (ability duration permitting) if it would kill a lane minion."
+                        }
+                    }
+                ]
+            },
+            "W": "",
+            "E": "",
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -978,13 +1010,17 @@
         "13.5",
         "13.12",
         "13.22",
-        "14.2"
+        "14.2",
+        "14.14"
     ],
     "ChampionName": "Rumble",
     "Balance": {
         "14.2": [
             "nerf",
             "adjust"
+        ],
+        "14.14": [
+            "nerf"
         ]
     }
 }

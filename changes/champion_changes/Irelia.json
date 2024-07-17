@@ -34,7 +34,7 @@
         },
         "attackDamage": {
             "base": 65,
-            "increment": 4
+            "increment": 3.5
         },
         "attackRange": {
             "base": 200,
@@ -45,7 +45,7 @@
         "P": {
             "cooldown": "",
             "_rawTooltip": {
-                "fullTooltip": "Innate: Irelia generates a stack of Ionian Fervor for each enemy champion hit by her abilities, or if she hits at least one non-champion. Ionian Fervor lasts for 6 seconds, refreshing with basic attacks and ability hits against enemy champions and large monsters, and stacking up to 4 times.<br>Ionian Fervor: For each stack, Irelia gains [[1]], up to a maximum of 30% − 80% (based on level). At maximum stacks, Irelia's basic attacks deal [[0]] on-hit.<br>Innate - Unsteady: Enemy champions and large monsters hit by Flawless Duet and Vanguard's Edge's initial barrage are marked as Unsteady for 5 seconds. The mark can be consumed by Bladesurge.",
+                "fullTooltip": "Innate: Irelia generates a stack of Ionian Fervor for each enemy champion hit by her abilities, or if she hits at least one non-champion. Ionian Fervor lasts for 6 seconds, refreshing with basic attacks and ability hits against enemy champions and large monsters, and stacking up to 4 times.<br>Ionian Fervor: For each stack, Irelia gains [[1]], up to a maximum of 30% − 100% (based on level). At maximum stacks, Irelia's basic attacks deal [[0]] on-hit.<br>Innate - Unsteady: Enemy champions and large monsters hit by Flawless Duet and Vanguard's Edge's initial barrage are marked as Unsteady for 5 seconds. The mark can be consumed by Bladesurge.",
                 "parseInfo": [
                     {
                         "text": {
@@ -65,7 +65,7 @@
                     },
                     {
                         "text": {
-                            "text": "7.5% − 20% {{0}} bonus attack speed",
+                            "text": "7.5% − 25% {{0}} bonus attack speed",
                             "scaleHolders": [
                                 {
                                     "scale": "(based on level)",
@@ -265,7 +265,7 @@
                     },
                     {
                         "text": {
-                            "text": "Bladesurge's base cooldown is reduced by 0.5/1.5 seconds.",
+                            "text": "Bladesurge's base cooldown is reduced by 0.5/1/1.5  seconds.",
                             "scaleHolders": []
                         },
                         "type": ""
@@ -771,6 +771,40 @@
             "W": "",
             "E": "",
             "R": ""
+        },
+        "14.14": {
+            "B": "",
+            "P": {
+                "SpellName": "Passive - Ionian Fervor",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Attack Speed: ",
+                            "Before": "7.5/13.75/20% (levels 1/7/13)",
+                            "Indicator": " ⇒ ",
+                            "After": "7.5-25% (levels 1-18)"
+                        }
+                    }
+                ]
+            },
+            "Q": "",
+            "W": "",
+            "E": "",
+            "R": {
+                "SpellName": "R - Vanguard's Edge",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Bladesurge Cooldown Reduction: ",
+                            "Before": "0.5/1.5/2.5",
+                            "Indicator": " ⇒ ",
+                            "After": "0.5/1/1.5 seconds"
+                        }
+                    }
+                ]
+            }
         }
     },
     "ChangePatches": [
@@ -786,12 +820,16 @@
         "12.11",
         "12.16",
         "13.18",
-        "14.11"
+        "14.11",
+        "14.14"
     ],
     "ChampionName": "Irelia",
     "Balance": {
         "14.11": [
             "nerf"
+        ],
+        "14.14": [
+            "adjust"
         ]
     }
 }

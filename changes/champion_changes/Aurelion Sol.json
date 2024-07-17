@@ -33,7 +33,7 @@
             "increment": 0
         },
         "attackDamage": {
-            "base": 55,
+            "base": 58,
             "increment": 3.2
         },
         "attackRange": {
@@ -45,7 +45,7 @@
         "P": {
             "cooldown": "",
             "_rawTooltip": {
-                "fullTooltip": "INNATE: Aurelion Sol's damaging abilities against enemies grant him stacks of Stardust, which improve each of his abilities. The amount of Stardust collected by each ability may vary by target.<br>Breath of Light: Bursts deal bonus magic damage equal to [[0]].<br>Astral Flight: Range is increased by 62.5% Stardust stacks.<br>Singularity: Outer and inner radius increased by 15% Stardust stacks, and execution threshold increased by 2.6% Stardust stacks.<br>Falling Star and The Skies Descend The Skies Descend: Effect radius increased by 15% Stardust stacks.",
+                "fullTooltip": "INNATE: Aurelion Sol's damaging abilities against enemies grant him stacks of Stardust, which improve each of his abilities. The amount of Stardust collected by each ability may vary by target.<br>Breath of Light: Bursts deal bonus magic damage equal to [[0]].<br>Astral Flight: Range is increased by +7.5 Per Stardust stack.<br>Singularity: Outer and inner radius increased by 15% Stardust stacks, and execution threshold increased by 2.6% Stardust stacks.<br>Falling Star and The Skies Descend The Skies Descend: Effect radius increased by 15% Stardust stacks.",
                 "parseInfo": [
                     {
                         "text": {
@@ -136,19 +136,19 @@
                 ]
             },
             "cooldown": "12",
-            "cost": "80/85/90/95/100 Mana",
+            "cost": "80 Mana",
             "name": "Singularity"
         },
         "R": {
             "_rawTooltip": {
-                "fullTooltip": "Aurelion Sol plucks a star from the heavens and crashes it into the earth, dealing [[0]], [[1]] enemies for 1 seconds, and absorbing 5 stardust for each champion hit.<br /><br />Gathering 100 stardust transform the next Falling Star into The Skies Descend.<br /><br />The Skies Descend: Aurelion Sol drags a constellation's worth of fury down from the cosmos, dealing [[2]] in a larger area, [[3]] enemies hit for 1 seconds, unleaching a massive shockwave that deals [[4]] to champions and Epic Monster and [[5]] all enemies hit by 50% for 1 second.",
+                "fullTooltip": "Aurelion Sol plucks a star from the heavens and crashes it into the earth, dealing [[0]], [[1]] enemies for 1 seconds, and absorbing 5 stardust for each champion hit.<br /><br />Gathering 75 stardust transform the next Falling Star into The Skies Descend.<br /><br />The Skies Descend: Aurelion Sol drags a constellation's worth of fury down from the cosmos, dealing [[2]] in a larger area, [[3]] enemies hit for 1 seconds, unleaching a massive shockwave that deals [[4]] to champions and Epic Monster and [[5]] all enemies hit by 50% for 1 second.",
                 "parseInfo": [
                     {
                         "text": {
                             "text": "150/250/350 {{0}} magic damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+65% AP)",
+                                    "scale": "(+75% AP)",
                                     "scaleId": "AP"
                                 }
                             ]
@@ -167,7 +167,7 @@
                             "text": "187.5/312.5/437.5 {{0}} magic damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+81.25% AP)",
+                                    "scale": "(+93.75% AP)",
                                     "scaleId": "AP"
                                 }
                             ]
@@ -183,10 +183,10 @@
                     },
                     {
                         "text": {
-                            "text": "150/250/350 {{0}} magic damage",
+                            "text": "135/225/315 {{0}} magic damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+65% AP)",
+                                    "scale": "(+67.5% AP)",
                                     "scaleId": "AP"
                                 }
                             ]
@@ -951,6 +951,124 @@
                 ]
             },
             "R": ""
+        },
+        "14.14": {
+            "B": {
+                "SpellName": "Base Stats",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Base AD: ",
+                            "Before": "55",
+                            "Indicator": " ⇒ ",
+                            "After": "58"
+                        }
+                    }
+                ]
+            },
+            "P": "",
+            "Q": {
+                "SpellName": "Q - Breath of Light",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Initial Mana Cost: ",
+                            "Before": "7.5/8.75/10/11.25/12.5",
+                            "Indicator": " ⇒ ",
+                            "After": "30/35/40/45/50 (Note: After paying the initial cost, additional sustained mana cost is triggered.)"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Sustained Mana Cost: ",
+                            "Before": "Every 0.5 seconds, starting 0.5 seconds into the channel",
+                            "Indicator": " ⇒ ",
+                            "After": "Every 0.25 seconds, starting 1.25 seconds into the channel"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Mana Cost during W: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "This mana cost adjustment is unchanged while using Breath of Light during W."
+                        }
+                    }
+                ]
+            },
+            "W": {
+                "SpellName": "W - Astral Flight",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Range: ",
+                            "Before": "1200 (+7.5 per Stardust)",
+                            "Indicator": " ⇒ ",
+                            "After": "1500/1600/1700/1800/1900 (+7.5 per Stardust)"
+                        }
+                    }
+                ]
+            },
+            "E": {
+                "SpellName": "E - Singularity",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Mana Cost: ",
+                            "Before": "80/85/90/95/100",
+                            "Indicator": " ⇒ ",
+                            "After": "80 at all ranks"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Movement Speed Debuff: ",
+                            "Before": "Non-champions are slowed to 0 movement speed",
+                            "Indicator": " ⇒ ",
+                            "After": "Lane Minions and Jungle Monsters are slowed to 0 movement speed"
+                        }
+                    }
+                ]
+            },
+            "R": {
+                "SpellName": "R - Falling Star/The Skies Descend",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Falling Star Damage: ",
+                            "Before": "150/250/350 (+65% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "150/250/350 (+75% AP)"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "The Skies Descend: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "Deals 125% of Falling Star's damage"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "The Skies Descend Shockwave Damage: ",
+                            "Before": "100% of Falling Star's damage",
+                            "Indicator": " ⇒ ",
+                            "After": "90% of Falling Star's damage"
+                        }
+                    }
+                ]
+            }
         }
     },
     "ChangePatches": [
@@ -967,7 +1085,8 @@
         "13.21",
         "14.3",
         "14.4",
-        "14.9"
+        "14.9",
+        "14.14"
     ],
     "ChampionName": "Aurelion Sol",
     "Balance": {
@@ -979,6 +1098,9 @@
         ],
         "14.9": [
             "nerf"
+        ],
+        "14.14": [
+            "adjust"
         ]
     }
 }

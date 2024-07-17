@@ -71,10 +71,10 @@
                     },
                     {
                         "text": {
-                            "text": "60/110/160/210/260/310 {{0}} physical damage",
+                            "text": "60/115/170/225/280/335  {{0}} physical damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+120% Bonus AD)",
+                                    "scale": "(+125% Bonus AD)",
                                     "scaleId": "AD"
                                 }
                             ]
@@ -580,6 +580,27 @@
                 ]
             },
             "R": ""
+        },
+        "14.14": {
+            "B": "",
+            "P": "",
+            "Q": {
+                "SpellName": "Q - Shock Blast",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Physical Damage: ",
+                            "Before": "55/110/165/220/275/330 (+120% bonus AD)",
+                            "Indicator": " ⇒ ",
+                            "After": "60/115/170/225/280/335 (+125% bonus AD)"
+                        }
+                    }
+                ]
+            },
+            "W": "",
+            "E": "",
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -591,11 +612,15 @@
         "12.16",
         "12.20",
         "13.1",
-        "14.4"
+        "14.4",
+        "14.14"
     ],
     "ChampionName": "Jayce",
     "Balance": {
         "14.4": [
+            "buff"
+        ],
+        "14.14": [
             "buff"
         ]
     }

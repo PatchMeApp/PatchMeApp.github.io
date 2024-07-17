@@ -90,7 +90,7 @@
                     },
                     {
                         "text": {
-                            "text": "70/105/140/175/210 {{0}} physical damage",
+                            "text": "80/115/150/185/220 {{0}} physical damage",
                             "scaleHolders": [
                                 {
                                     "scale": "(+110% Bonus AD)",
@@ -179,7 +179,7 @@
         },
         "E": {
             "_rawTooltip": {
-                "fullTooltip": "Zed and his [[0]] slash, dealing [[1]] to nearby enemies.<br /><br />Each enemy champion hit by Zed's slash reduces [[2]]'s Cooldown by 2 seconds.<br /><br />Enemies hit by a [[3]]'s slash are [[4]] by 20/25/30/35/40% for 1.5 seconds. Enemies hit by multiple slashes take no additional damage but are [[5]] by 30/37.5/45/52.5/60% instead.",
+                "fullTooltip": "Zed and his [[0]] slash, dealing [[1]] to nearby enemies.<br /><br />Each enemy champion hit by Zed's slash reduces [[2]]'s Cooldown by 3 seconds.<br /><br />Enemies hit by a [[3]]'s slash are [[4]] by 20/25/30/35/40% for 1.5 seconds. Enemies hit by multiple slashes take no additional damage but are [[5]] by 30/37.5/45/52.5/60% instead.",
                 "parseInfo": [
                     {
                         "text": {
@@ -551,6 +551,40 @@
             "E": "",
             "R": ""
         },
+        "14.14": {
+            "B": "",
+            "P": "",
+            "Q": {
+                "SpellName": "Q - Razor Shuriken",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Damage: ",
+                            "Before": "70/105/140/175/210 (+110% bonus AD)",
+                            "Indicator": " ⇒ ",
+                            "After": "80/115/150/185/220 (+110% bonus AD)"
+                        }
+                    }
+                ]
+            },
+            "W": "",
+            "E": {
+                "SpellName": "E - Shadow Slash",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Cooldown Reduction per Enemy Champion Hit: ",
+                            "Before": "2",
+                            "Indicator": " ⇒ ",
+                            "After": "3 seconds"
+                        }
+                    }
+                ]
+            },
+            "R": ""
+        },
         "12.23": {
             "B": "",
             "P": "",
@@ -653,11 +687,15 @@
         "12.23",
         "13.5",
         "13.20",
-        "14.1"
+        "14.1",
+        "14.14"
     ],
     "ChampionName": "Zed",
     "Balance": {
         "14.1": [
+            "buff"
+        ],
+        "14.14": [
             "buff"
         ]
     }

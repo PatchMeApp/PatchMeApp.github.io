@@ -45,11 +45,11 @@
         "P": {
             "cooldown": "",
             "_rawTooltip": {
-                "fullTooltip": "When Milio's Abilities touch ally champions, their next Attack or Ability deals 15% of ally's Attack Damage as additional magic damage, plus [[0]] over 1.5 seconds.",
+                "fullTooltip": "When Milio's Abilities touch ally champions, their next Attack or Ability deals 7/11/15% (levels 1/6/9) of ally's Attack Damage as additional magic damage, plus [[0]] over 1.5 seconds.",
                 "parseInfo": [
                     {
                         "text": {
-                            "text": "15 − 50 {{0}} {{1}} magic damage",
+                            "text": "10 − 50 {{0}} {{1}} magic damage",
                             "scaleHolders": [
                                 {
                                     "scale": "(based on level)",
@@ -69,7 +69,7 @@
         },
         "Q": {
             "_rawTooltip": {
-                "fullTooltip": "Milio kicks a fireball, [[0]] the first enemy hit. If it hits, the ball bounces past them and explodes, dealing [[1]] to surrounding enemeies and [[2]] them by [[3]].",
+                "fullTooltip": "Milio kicks a fireball, [[0]] the first enemy hit. If it hits, the ball bounces past them and explodes, dealing [[1]] to surrounding enemeies and [[2]] them by [[3]].<br /><br />Hitting at least one enemy champion with Ultra Mega Fire Kick refunds 50% of its Mana cost.",
                 "parseInfo": [
                     {
                         "text": {
@@ -111,7 +111,7 @@
                     }
                 ]
             },
-            "cooldown": "12",
+            "cooldown": "10",
             "cost": "50/55/60/65/70 Mana",
             "name": "Ultra Mega Fire Kick"
         },
@@ -143,10 +143,10 @@
                 "parseInfo": [
                     {
                         "text": {
-                            "text": "60/90/120/150/180 {{0}} Shield",
+                            "text": "45/75/105/135/165 {{0}} Shield",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+30% AP)",
+                                    "scale": "(+45% AP)",
                                     "scaleId": "AP"
                                 }
                             ]
@@ -426,6 +426,93 @@
                     }
                 ]
             }
+        },
+        "14.14": {
+            "B": "",
+            "P": {
+                "SpellName": "Passive - Fired Up!",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Damage: ",
+                            "Before": "15% of ally's AD, followed by 15-50 (based on level) (+20% of Milio's AP) burn damage over 1.5 seconds",
+                            "Indicator": " ⇒ ",
+                            "After": "7/11/15% (levels 1/6/9) of ally's AD, followed by 10-50 (based on level) (+20% of Milio's AP) burn damage over 1.5 seconds"
+                        }
+                    }
+                ]
+            },
+            "Q": {
+                "SpellName": "Q - Ultra Mega Fire Kick",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Cooldown: ",
+                            "Before": "12",
+                            "Indicator": " ⇒ ",
+                            "After": "10 seconds"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Range: ",
+                            "Before": "1000",
+                            "Indicator": " ⇒ ",
+                            "After": "1200"
+                        }
+                    },
+                    {
+                        "Tag": "NEW",
+                        "Change": {
+                            "Attribute": "NEW: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "Hitting at least one enemy champion with Ultra Mega Fire Kick refunds 50% of its mana cost."
+                        }
+                    }
+                ]
+            },
+            "W": {
+                "SpellName": "W - Cozy Campfire",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Recast Range: ",
+                            "Before": "700",
+                            "Indicator": " ⇒ ",
+                            "After": "3000 units"
+                        }
+                    },
+                    {
+                        "Tag": "NEW",
+                        "Change": {
+                            "Attribute": "NEW: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "Cozy Campfire is slower when following targets that are more than 2500 units from Milio."
+                        }
+                    }
+                ]
+            },
+            "E": {
+                "SpellName": "E - Warm Hugs",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Shield Strength: ",
+                            "Before": "60/90/120/150/180 (30% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "45/75/105/135/165 (+45% AP)"
+                        }
+                    }
+                ]
+            },
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -433,7 +520,13 @@
         "13.12",
         "13.14",
         "13.16",
-        "13.20"
+        "13.20",
+        "14.14"
     ],
-    "ChampionName": "Milio"
+    "ChampionName": "Milio",
+    "Balance": {
+        "14.14": [
+            "adjust"
+        ]
+    }
 }

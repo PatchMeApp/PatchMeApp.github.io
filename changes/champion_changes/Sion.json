@@ -202,11 +202,15 @@
                     },
                     {
                         "text": {
-                            "text": "40/65/90/115/140 {{0}} plus 10/11/12/13/14% max Health magic damage",
+                            "text": "40/65/90/115/140 {{0}} plus {{1}} max Health magic damage",
                             "scaleHolders": [
                                 {
                                     "scale": "(+40% AP)",
                                     "scaleId": "AP"
+                                },
+                                {
+                                    "scale": "(+14% target's max HP)",
+                                    "scaleId": "HP"
                                 }
                             ]
                         },
@@ -623,6 +627,27 @@
             },
             "E": "",
             "R": ""
+        },
+        "14.14": {
+            "B": "",
+            "P": "",
+            "Q": "",
+            "W": {
+                "SpellName": "W - Soul Furnace",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Magic Damage: ",
+                            "Before": "40/65/90/115/140 (+10/11/12/13/14% target's max HP)",
+                            "Indicator": " ⇒ ",
+                            "After": "40/65/90/115/140 (+14% target's max HP)"
+                        }
+                    }
+                ]
+            },
+            "E": "",
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -635,11 +660,15 @@
         "12.23",
         "13.1",
         "13.9",
-        "14.6"
+        "14.6",
+        "14.14"
     ],
     "ChampionName": "Sion",
     "Balance": {
         "14.6": [
+            "buff"
+        ],
+        "14.14": [
             "buff"
         ]
     }

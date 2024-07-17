@@ -45,7 +45,7 @@
         "P": {
             "cooldown": "",
             "_rawTooltip": {
-                "fullTooltip": "Innate: Lillia's abilities apply Dream Dust to enemies hit, which deals[ [[1]] total magic damage over 3 seconds, ]capped at [[0]] against monsters.<br>Lillia heals for 39 − 54 (based on level) (+ 15% AP) against large monsters and 6-120 (based on level) (+30% AP) against champions over the duration of Dream Dust, reduced to 33% effectiveness for each target beyond the first. She may only heal against 1 monster at a time.",
+                "fullTooltip": "Innate: Lillia's abilities apply Dream Dust to enemies hit, which deals[ [[1]] total magic damage over 3 seconds, ]capped at [[0]] against monsters.<br>Lillia heals for 39 − 54 (based on level) (+ 15% AP) against large monsters and 6-120 (based on level) (+30% AP) against champions over the duration of Dream Dust, reduced to 15% effectiveness for each target beyond the first. She may only heal against 1 monster at a time.",
                 "parseInfo": [
                     {
                         "text": {
@@ -175,10 +175,10 @@
                 "parseInfo": [
                     {
                         "text": {
-                            "text": "70/95/120/145/170 {{0}} magic damage",
+                            "text": "60/85/110/135/160 {{0}} magic damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+60% AP)",
+                                    "scale": "(+50% AP)",
                                     "scaleId": "AP"
                                 }
                             ]
@@ -974,6 +974,40 @@
             "W": "",
             "E": "",
             "R": ""
+        },
+        "14.14": {
+            "B": "",
+            "P": {
+                "SpellName": "Passive - Dream-Laden Bough",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Healing Effectiveness vs Champions: ",
+                            "Before": "100% for the first, reduced to 33% for successive champions",
+                            "Indicator": " ⇒ ",
+                            "After": "100% for the first, reduced to 15% for successive champions"
+                        }
+                    }
+                ]
+            },
+            "Q": "",
+            "W": "",
+            "E": {
+                "SpellName": "E - Swirlseed",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Damage: ",
+                            "Before": "70/95/120/145/170 (+60% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "60/85/110/135/160 (+50% AP)"
+                        }
+                    }
+                ]
+            },
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -990,11 +1024,15 @@
         "12.23",
         "13.1B",
         "13.8",
-        "14.3"
+        "14.3",
+        "14.14"
     ],
     "ChampionName": "Lillia",
     "Balance": {
         "14.3": [
+            "nerf"
+        ],
+        "14.14": [
             "nerf"
         ]
     }

@@ -82,14 +82,14 @@
                     },
                     {
                         "text": {
-                            "text": "20 - 100 {{0}} {{1}} magic damage",
+                            "text": "15 - 75 {{0}} {{1}} magic damage",
                             "scaleHolders": [
                                 {
                                     "scale": "(based on champion level)",
                                     "scaleId": "level"
                                 },
                                 {
-                                    "scale": "(+15% AP)",
+                                    "scale": "(+20% AP)",
                                     "scaleId": "AP"
                                 }
                             ]
@@ -172,14 +172,14 @@
                     },
                     {
                         "text": {
-                            "text": "20 - 100 {{0}} {{1}} magic damage",
+                            "text": "15 - 75 {{0}} {{1}} magic damage",
                             "scaleHolders": [
                                 {
                                     "scale": "(based on champion level)",
                                     "scaleId": "level"
                                 },
                                 {
-                                    "scale": "(+15% AP)",
+                                    "scale": "(+20% AP)",
                                     "scaleId": "AP"
                                 }
                             ]
@@ -600,6 +600,45 @@
             "W": "",
             "E": "",
             "R": ""
+        },
+        "14.14": {
+            "B": "",
+            "P": {
+                "SpellName": "Passive - Garden of Thorns",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Plant Damage: ",
+                            "Before": "16-84 (based on level) (+18% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "15-75 (based on level) (+20% AP)"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Bonus Damage to Monsters: ",
+                            "Before": "60-100 (based on level)",
+                            "Indicator": " ⇒ ",
+                            "After": "50-100 (based on level)"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "Updated the tooltip and cooldown display to more accurately align with seed spawn times"
+                        }
+                    }
+                ]
+            },
+            "Q": "",
+            "W": "",
+            "E": "",
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -610,7 +649,8 @@
         "13.14",
         "13.21",
         "14.3",
-        "14.4"
+        "14.4",
+        "14.14"
     ],
     "ChampionName": "Zyra",
     "Balance": {
@@ -618,6 +658,9 @@
             "adjust"
         ],
         "14.4": [
+            "nerf"
+        ],
+        "14.14": [
             "nerf"
         ]
     }

@@ -59,7 +59,7 @@
                             "text": "40/65/90/115/140 {{0}} physical damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+75% Bonus AD)",
+                                    "scale": "(+65% Bonus AD)",
                                     "scaleId": "AD"
                                 }
                             ]
@@ -68,7 +68,7 @@
                     },
                     {
                         "text": {
-                            "text": "35% {{0}}% Attack Speed",
+                            "text": "30% {{0}}% Attack Speed",
                             "scaleHolders": [
                                 {
                                     "scale": "(+5% per stack of Mark of the Kindred)",
@@ -635,6 +635,36 @@
             },
             "R": ""
         },
+        "14.14": {
+            "B": "",
+            "P": "",
+            "Q": {
+                "SpellName": "Q - Dance of Arrows",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Bonus Attack Speed: ",
+                            "Before": "35%",
+                            "Indicator": " ⇒ ",
+                            "After": "30%"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Magic Damage: ",
+                            "Before": "40/65/90/115/140 (+75% bonus AD)",
+                            "Indicator": " ⇒ ",
+                            "After": "40/65/90/115/140 (+65% bonus AD)"
+                        }
+                    }
+                ]
+            },
+            "W": "",
+            "E": "",
+            "R": ""
+        },
         "12.22": {
             "B": "",
             "P": "",
@@ -667,7 +697,13 @@
         "13.10",
         "13.13",
         "13.14",
-        "13.17"
+        "13.17",
+        "14.14"
     ],
-    "ChampionName": "Kindred"
+    "ChampionName": "Kindred",
+    "Balance": {
+        "14.14": [
+            "nerf"
+        ]
+    }
 }

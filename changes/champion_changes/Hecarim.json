@@ -2,7 +2,7 @@
     "stats": {
         "hp": {
             "base": 625,
-            "increment": 99
+            "increment": 106
         },
         "mp": {
             "base": 280,
@@ -87,7 +87,7 @@
         },
         "W": {
             "_rawTooltip": {
-                "fullTooltip": "Hecarim deals [[0]] over 5 seconds to nearby enemies. <br /><br />Hecarim gains [[1]] [[2]] and [[3]] and heals for [[4]] nearby enemies take from Hecarim and [[5]] taken from his allies.",
+                "fullTooltip": "Hecarim deals [[0]] over 4 seconds to nearby enemies. <br /><br />Hecarim gains [[1]] [[2]] and [[3]] and heals for [[4]] nearby enemies take from Hecarim and [[5]] taken from his allies.",
                 "parseInfo": [
                     {
                         "text": {
@@ -124,21 +124,21 @@
                     },
                     {
                         "text": {
-                            "text": "20% of damage",
+                            "text": "25% of damage",
                             "scaleHolders": []
                         },
                         "type": "healing"
                     },
                     {
                         "text": {
-                            "text": "10% of damage",
+                            "text": "12.5% of damage",
                             "scaleHolders": []
                         },
                         "type": "healing"
                     }
                 ]
             },
-            "cooldown": "16/15.5/15/14.5/14",
+            "cooldown": "14",
             "cost": "50/55/60/65/70 Mana",
             "name": "Spirit of Dread"
         },
@@ -200,7 +200,7 @@
                     }
                 ]
             },
-            "cooldown": "18",
+            "cooldown": "20/19/18/17/16",
             "cost": "60 Mana",
             "name": "Devastating Charge"
         },
@@ -1119,6 +1119,71 @@
             "E": "",
             "R": ""
         },
+        "14.14": {
+            "B": {
+                "SpellName": "Base Stats",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Health Growth: ",
+                            "Before": "99",
+                            "Indicator": " ⇒ ",
+                            "After": "106"
+                        }
+                    }
+                ]
+            },
+            "P": "",
+            "Q": "",
+            "W": {
+                "SpellName": "W - Spirit of Dread",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Duration: ",
+                            "Before": "5",
+                            "Indicator": " ⇒ ",
+                            "After": "4 seconds"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Healing: ",
+                            "Before": "20%, halved to 10% for damage dealt by allies",
+                            "Indicator": " ⇒ ",
+                            "After": "25%, halved to 12.5% for damage dealt by allies"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Cooldown: ",
+                            "Before": "16/15.5/15/14.5/14",
+                            "Indicator": " ⇒ ",
+                            "After": "14 seconds at all ranks"
+                        }
+                    }
+                ]
+            },
+            "E": {
+                "SpellName": "E - Devastating Charge",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Cooldown: ",
+                            "Before": "18 seconds at all ranks",
+                            "Indicator": " ⇒ ",
+                            "After": "20/19/18/17/16 seconds"
+                        }
+                    }
+                ]
+            },
+            "R": ""
+        },
         "12.23": {
             "B": "",
             "P": "",
@@ -1162,7 +1227,13 @@
         "12.23",
         "13.14",
         "13.17",
-        "13.21"
+        "13.21",
+        "14.14"
     ],
-    "ChampionName": "Hecarim"
+    "ChampionName": "Hecarim",
+    "Balance": {
+        "14.14": [
+            "adjust"
+        ]
+    }
 }
