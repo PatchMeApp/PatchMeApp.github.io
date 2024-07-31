@@ -49,7 +49,7 @@
                 "parseInfo": [
                     {
                         "text": {
-                            "text": "25 − 144 {{0}} bonus magic damage",
+                            "text": "32 − 151 {{0}} bonus magic damage",
                             "scaleHolders": [
                                 {
                                     "scale": "(based on level)",
@@ -94,7 +94,7 @@
         },
         "W": {
             "_rawTooltip": {
-                "fullTooltip": "Leona raises her shield, reducing incoming damage by 8/12/16/20 and gaining [[0]] and [[1]] for 3 seconds. Afterwards, her shield detonates, dealing [[2]] to nearby enemies. If she hits at least one, she retains the [[3]] and [[4]] bonuses for an additional 3 seconds.<br />",
+                "fullTooltip": "Leona raises her shield, reducing incoming damage by 8/12/16/20/24 and gaining [[0]] and [[1]] for 3 seconds. Afterwards, her shield detonates, dealing [[2]] to nearby enemies. If she hits at least one, she retains the [[3]] and [[4]] bonuses for an additional 3 seconds.<br />",
                 "parseInfo": [
                     {
                         "text": {
@@ -122,7 +122,7 @@
                     },
                     {
                         "text": {
-                            "text": "55/90/125/160/195 {{0}} magic damage",
+                            "text": "55/85/115/145/175 {{0}} magic damage",
                             "scaleHolders": [
                                 {
                                     "scale": "(+40% AP)",
@@ -466,6 +466,40 @@
                 ]
             }
         },
+        "14.15": {
+            "B": "",
+            "P": {
+                "SpellName": "Passive - Sunlight",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Magic Damage: ",
+                            "Before": "32-168",
+                            "Indicator": " ⇒ ",
+                            "After": "32-151"
+                        }
+                    }
+                ]
+            },
+            "Q": "",
+            "W": {
+                "SpellName": "W - Eclipse",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Magic Damage: ",
+                            "Before": "55/90/125/160/195 (+40% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "55/85/115/145/175 (+40% AP)"
+                        }
+                    }
+                ]
+            },
+            "E": "",
+            "R": ""
+        },
         "12.12": {
             "B": "",
             "P": {
@@ -496,12 +530,16 @@
         "12.12",
         "12.15",
         "13.8",
-        "13.24"
+        "13.24",
+        "14.15"
     ],
     "ChampionName": "Leona",
     "Balance": {
         "13.24": [
             "buff"
+        ],
+        "14.15": [
+            "nerf"
         ]
     }
 }

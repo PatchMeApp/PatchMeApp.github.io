@@ -98,7 +98,7 @@
                 ]
             },
             "cooldown": "3",
-            "cost": "30/35/40/45/50 Mana per second",
+            "cost": "35/40/45/50/55 Mana per second",
             "name": "Breath of Light"
         },
         "W": {
@@ -136,7 +136,7 @@
                 ]
             },
             "cooldown": "12",
-            "cost": "80 Mana",
+            "cost": "90 Mana",
             "name": "Singularity"
         },
         "R": {
@@ -1069,6 +1069,53 @@
                     }
                 ]
             }
+        },
+        "14.15": {
+            "B": "",
+            "P": "",
+            "Q": {
+                "SpellName": "Q - Breath of Light",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Cost per Second: ",
+                            "Before": "30/35/40/45/50",
+                            "Indicator": " ⇒ ",
+                            "After": "35/40/45/50/55"
+                        }
+                    }
+                ]
+            },
+            "W": {
+                "SpellName": "W - Astral Flight",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Range: ",
+                            "Before": "1500/1600/1700/1800/1900",
+                            "Indicator": " ⇒ ",
+                            "After": "1500"
+                        }
+                    }
+                ]
+            },
+            "E": {
+                "SpellName": "E - Singularity",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Mana Cost: ",
+                            "Before": "80",
+                            "Indicator": " ⇒ ",
+                            "After": "90"
+                        }
+                    }
+                ]
+            },
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -1086,7 +1133,8 @@
         "14.3",
         "14.4",
         "14.9",
-        "14.14"
+        "14.14",
+        "14.15"
     ],
     "ChampionName": "Aurelion Sol",
     "Balance": {
@@ -1101,6 +1149,9 @@
         ],
         "14.14": [
             "adjust"
+        ],
+        "14.15": [
+            "nerf"
         ]
     }
 }

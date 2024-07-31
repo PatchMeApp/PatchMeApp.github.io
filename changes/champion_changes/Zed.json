@@ -90,10 +90,10 @@
                     },
                     {
                         "text": {
-                            "text": "80/115/150/185/220 {{0}} physical damage",
+                            "text": "80/120/160/200/240 {{0}} physical damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+110% Bonus AD)",
+                                    "scale": "(+100% Bonus AD)",
                                     "scaleId": "AD"
                                 }
                             ]
@@ -268,7 +268,7 @@
                     }
                 ]
             },
-            "cooldown": "120/100/80",
+            "cooldown": "120/110/100",
             "cost": "No Cost",
             "name": "Death Mark"
         }
@@ -585,6 +585,40 @@
             },
             "R": ""
         },
+        "14.15": {
+            "B": "",
+            "P": "",
+            "Q": {
+                "SpellName": "Q - Razor Shuriken",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Damage: ",
+                            "Before": "80/115/150/185/220 (+110% Bonus AD)",
+                            "Indicator": " ⇒ ",
+                            "After": "80/120/160/200/240 (+100% Bonus AD)"
+                        }
+                    }
+                ]
+            },
+            "W": "",
+            "E": "",
+            "R": {
+                "SpellName": "R - Death Mark",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Cooldown: ",
+                            "Before": "120/100/80",
+                            "Indicator": " ⇒ ",
+                            "After": "120/110/100"
+                        }
+                    }
+                ]
+            }
+        },
         "12.23": {
             "B": "",
             "P": "",
@@ -688,7 +722,8 @@
         "13.5",
         "13.20",
         "14.1",
-        "14.14"
+        "14.14",
+        "14.15"
     ],
     "ChampionName": "Zed",
     "Balance": {
@@ -697,6 +732,9 @@
         ],
         "14.14": [
             "buff"
+        ],
+        "14.15": [
+            "adjust"
         ]
     }
 }

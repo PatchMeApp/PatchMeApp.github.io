@@ -179,14 +179,14 @@
                 "parseInfo": [
                     {
                         "text": {
-                            "text": "60/100/140/180/220 {{0}} {{1}} magic damage",
+                            "text": "85/125/165/205/245 {{0}} {{1}} magic damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+90% AP)",
+                                    "scale": "(+80% AP)",
                                     "scaleId": "AP"
                                 },
                                 {
-                                    "scale": "(+40% AD)",
+                                    "scale": "(+50% Bonus AD)",
                                     "scaleId": "AD"
                                 }
                             ]
@@ -221,11 +221,11 @@
                                     "scaleId": "level"
                                 },
                                 {
-                                    "scale": "(+30% AP)",
+                                    "scale": "(+20% AP)",
                                     "scaleId": "AP"
                                 },
                                 {
-                                    "scale": "(+30% AD)",
+                                    "scale": "(+50% AD)",
                                     "scaleId": "AD"
                                 }
                             ]
@@ -234,18 +234,18 @@
                     },
                     {
                         "text": {
-                            "text": "270 - 540 {{0}} {{1}} {{2}} magic damage",
+                            "text": "240 - 480 {{0}} {{1}} {{2}} magic damage",
                             "scaleHolders": [
                                 {
                                     "scale": "(based on champion level)",
                                     "scaleId": "level"
                                 },
                                 {
-                                    "scale": "(+90% AP)",
+                                    "scale": "(+80% AP)",
                                     "scaleId": "AP"
                                 },
                                 {
-                                    "scale": "(+45% AD)",
+                                    "scale": "(+120% AD)",
                                     "scaleId": "AD"
                                 }
                             ]
@@ -870,6 +870,54 @@
             },
             "E": "",
             "R": ""
+        },
+        "14.15": {
+            "B": "",
+            "P": "",
+            "Q": "",
+            "W": "",
+            "E": {
+                "SpellName": "E - Flame Breath",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Base Damage: ",
+                            "Before": "60/100/140/180/220 (+40% Total AD) (+90% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "85/125/165/205/245 (+50% Bonus AD) (+80% AP)"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "R-Empowered Damage: ",
+                            "Before": "60/100/140/180/220 (+75-135 based on level) (+70% Total AD) (+120% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "85/125/165/205/245 (+75-135 based on level) (+100% Total AD) (+100% AP)"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "R-Empowered Damage-over-Time: ",
+                            "Before": "30-60 based on level (+5% Total AD) (+10% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "30-60 based on level (+15% Bonus AD) (+10% AP)"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "BugfixDamage over time no longer states that it deals 12% more damage than it really does"
+                        }
+                    }
+                ]
+            },
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -885,12 +933,16 @@
         "13.14",
         "13.15",
         "13.16",
-        "14.3"
+        "14.3",
+        "14.15"
     ],
     "ChampionName": "Shyvana",
     "Balance": {
         "14.3": [
             "buff"
+        ],
+        "14.15": [
+            "nerf"
         ]
     }
 }

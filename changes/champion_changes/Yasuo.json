@@ -9,7 +9,7 @@
             "increment": 0
         },
         "armor": {
-            "base": 30,
+            "base": 32,
             "increment": 4.6
         },
         "spellBlock": {
@@ -90,11 +90,11 @@
         },
         "E": {
             "_rawTooltip": {
-                "fullTooltip": "Yasuo dashes through a target, dealing [[0]]. Each use of this Ability increases it's damage by 15-25% (levels 1-18) of this Ability's total damage, stacking 4 times.<br /><br />This Ability has a 10/9/8/7/6 second per-target Cooldown.",
+                "fullTooltip": "Yasuo dashes through a target, dealing [[0]]. Each use of this Ability increases it's damage by 25%  of this Ability's total damage, stacking 4 times.<br /><br />This Ability has a 10/9/8/7/6 second per-target Cooldown.",
                 "parseInfo": [
                     {
                         "text": {
-                            "text": "60/70/80/90/100 {{0}} {{1}} magic damage",
+                            "text": "70/85/100/115/130 {{0}} {{1}} magic damage",
                             "scaleHolders": [
                                 {
                                     "scale": "(+20% Bonus AD)",
@@ -591,6 +591,58 @@
             "E": "",
             "R": ""
         },
+        "14.15": {
+            "B": {
+                "SpellName": "Base Stats",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Armor: ",
+                            "Before": "30",
+                            "Indicator": " ⇒ ",
+                            "After": "32"
+                        }
+                    }
+                ]
+            },
+            "P": "",
+            "Q": "",
+            "W": "",
+            "E": {
+                "SpellName": "E - Sweeping Blade",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Damage: ",
+                            "Before": "60/70/80/90/100 (+20% Bonus AD)",
+                            "Indicator": " ⇒ ",
+                            "After": "70/85/100/115/130 (+20% Bonus AD)"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Bonus Damage Per Stack: ",
+                            "Before": "15-25% (60-100% max)",
+                            "Indicator": " ⇒ ",
+                            "After": "25% (100% max)"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Rune Recommendations: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "Top and mid lane recommended runes have been updated"
+                        }
+                    }
+                ]
+            },
+            "R": ""
+        },
         "13.10": {
             "B": {
                 "SpellName": "Base Stats",
@@ -653,12 +705,16 @@
         "13.7",
         "13.10",
         "13.15",
-        "14.10"
+        "14.10",
+        "14.15"
     ],
     "ChampionName": "Yasuo",
     "Balance": {
         "14.10": [
             "adjust"
+        ],
+        "14.15": [
+            "buff"
         ]
     }
 }

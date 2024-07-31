@@ -2,7 +2,7 @@
     "stats": {
         "hp": {
             "base": 610,
-            "increment": 105
+            "increment": 110
         },
         "mp": {
             "base": 320,
@@ -132,7 +132,7 @@
                 ]
             },
             "cooldown": "13/11.5/10/8.5/7",
-            "cost": "50 Mana",
+            "cost": "40 Mana",
             "name": "Shattered Earth / Upheaval"
         },
         "W": {
@@ -809,6 +809,62 @@
             "E": "",
             "R": ""
         },
+        "14.15": {
+            "B": {
+                "SpellName": "Base Stats",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Health Growth: ",
+                            "Before": "105",
+                            "Indicator": " ⇒ ",
+                            "After": "110"
+                        }
+                    }
+                ]
+            },
+            "P": "",
+            "Q": {
+                "SpellName": "Q - Upheaval",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Mana Cost: ",
+                            "Before": "50",
+                            "Indicator": " ⇒ ",
+                            "After": "45"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "The first attack after casting the spell should come out more quickly and smoothly without player intervention"
+                        }
+                    }
+                ]
+            },
+            "W": "",
+            "E": {
+                "SpellName": "E - Ixtal’s Impact",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "NEWCan no longer grab units behind him"
+                        }
+                    }
+                ]
+            },
+            "R": ""
+        },
         "14.7": {
             "B": {
                 "SpellName": "Base Stats",
@@ -902,7 +958,8 @@
         "14.9",
         "14.10",
         "14.12",
-        "14.13"
+        "14.13",
+        "14.15"
     ],
     "ChampionName": "Skarner",
     "Balance": {
@@ -925,6 +982,9 @@
         ],
         "14.13": [
             "nerf"
+        ],
+        "14.15": [
+            "adjust"
         ]
     }
 }

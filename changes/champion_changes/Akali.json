@@ -136,7 +136,7 @@
                     }
                 ]
             },
-            "cooldown": "20",
+            "cooldown": "20/19/18/17/16",
             "cost": "Restores 100 Energy",
             "name": "Twilight Shroud"
         },
@@ -195,7 +195,7 @@
                 "parseInfo": [
                     {
                         "text": {
-                            "text": "80/220/360 {{0}} {{1}} magic damage",
+                            "text": "110/220/330 {{0}} {{1}} magic damage",
                             "scaleHolders": [
                                 {
                                     "scale": "(+50% Bonus AD)",
@@ -218,7 +218,7 @@
                     },
                     {
                         "text": {
-                            "text": "60/130/200 {{0}}",
+                            "text": "70/140/210 {{0}}",
                             "scaleHolders": [
                                 {
                                     "scale": "(+30% AP)",
@@ -230,7 +230,7 @@
                     },
                     {
                         "text": {
-                            "text": "180/390/600 {{0}} magic damage",
+                            "text": "210/420/630 {{0}} magic damage",
                             "scaleHolders": [
                                 {
                                     "scale": "(+90% AP)",
@@ -242,7 +242,7 @@
                     }
                 ]
             },
-            "cooldown": "100/80/60",
+            "cooldown": "120/90/60",
             "cost": "No Cost",
             "name": "Perfect Execution"
         }
@@ -937,6 +937,67 @@
                 ]
             },
             "R": ""
+        },
+        "14.15": {
+            "B": "",
+            "P": "",
+            "Q": "",
+            "W": {
+                "SpellName": "W - Twilight Shroud",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Cooldown: ",
+                            "Before": "20",
+                            "Indicator": " ⇒ ",
+                            "After": "20/19/18/17/16"
+                        }
+                    }
+                ]
+            },
+            "E": "",
+            "R": {
+                "SpellName": "R - Perfect Execution",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Initial Damage: ",
+                            "Before": "80/220/360 (+30% AP) (+50% Bonus AD)",
+                            "Indicator": " ⇒ ",
+                            "After": "110/220/330 (+30% AP) (+50% Bonus AD)"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Second Cast Minimum Damage: ",
+                            "Before": "60/130/200 (+30% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "70/140/210 (+30% AP)"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Second Cast Maximum Damage: ",
+                            "Before": "180/390/600 (+90% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "210/420/630 (+90% AP)"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Cooldown: ",
+                            "Before": "100/80/60",
+                            "Indicator": " ⇒ ",
+                            "After": "120/90/60"
+                        }
+                    }
+                ]
+            }
         }
     },
     "ChangePatches": [
@@ -959,7 +1020,8 @@
         "13.11",
         "13.16",
         "14.8",
-        "14.12"
+        "14.12",
+        "14.15"
     ],
     "ChampionName": "Akali",
     "Balance": {
@@ -968,6 +1030,9 @@
         ],
         "14.12": [
             "nerf"
+        ],
+        "14.15": [
+            "adjust"
         ]
     }
 }

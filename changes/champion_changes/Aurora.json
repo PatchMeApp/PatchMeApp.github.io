@@ -124,7 +124,7 @@
                     }
                 ]
             },
-            "cooldown": "20/19/18/17/16",
+            "cooldown": "22/21/20/19/18",
             "cost": "80 Mana",
             "name": "BAcross the Veil"
         },
@@ -163,10 +163,10 @@
                 "parseInfo": [
                     {
                         "text": {
-                            "text": "250/375/500 {{0}} magic damage",
+                            "text": "200/325/450 {{0}} magic damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+65% AP)",
+                                    "scale": "(+60% AP)",
                                     "scaleId": "AP"
                                 }
                             ]
@@ -214,10 +214,115 @@
         "Q": "",
         "W": "",
         "E": "",
-        "R": ""
+        "R": "",
+        "14.15": {
+            "B": "",
+            "P": {
+                "SpellName": "Passive - Spirit Abjuration",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Base Movement Speed: ",
+                            "Before": "5 (+0.25% per level)",
+                            "Indicator": " ⇒ ",
+                            "After": "5 (+0.2% per level)"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Bonus Movement Speed per spirit: ",
+                            "Before": "5%",
+                            "Indicator": " ⇒ ",
+                            "After": "2% (+.015% AP)"
+                        }
+                    }
+                ]
+            },
+            "Q": {
+                "SpellName": "Q - Twofold Hex",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Recast Cooldown: ",
+                            "Before": "0.5 seconds",
+                            "Indicator": " ⇒ ",
+                            "After": "0.1 seconds"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "Q2 can no longer miss its original target"
+                        }
+                    }
+                ]
+            },
+            "W": {
+                "SpellName": "W - Across the Veil",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Cooldown: ",
+                            "Before": "18/17/16/15/14",
+                            "Indicator": " ⇒ ",
+                            "After": "22/21/20/19/18"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "Invisibility breaking on auto attacks will now happen on launch of auto attack instead of pre-attack"
+                        }
+                    }
+                ]
+            },
+            "E": {
+                "SpellName": "E - The Weirding",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Dash Speed: ",
+                            "Before": "800 speed",
+                            "Indicator": " ⇒ ",
+                            "After": "150+2x move speed"
+                        }
+                    }
+                ]
+            },
+            "R": {
+                "SpellName": "R - Between Worlds",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Damage: ",
+                            "Before": "250/375/500 (+65% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "200/325/450 (+60% AP)"
+                        }
+                    }
+                ]
+            }
+        }
     },
     "ChangePatches": [
-        "14.14"
+        "14.15"
     ],
-    "ChampionName": "Aurora"
+    "ChampionName": "Aurora",
+    "Balance": {
+        "14.15": [
+            "nerf"
+        ]
+    }
 }

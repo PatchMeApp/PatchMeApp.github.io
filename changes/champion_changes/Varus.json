@@ -33,7 +33,7 @@
             "increment": 0
         },
         "attackDamage": {
-            "base": 57,
+            "base": 59,
             "increment": 3.4
         },
         "attackRange": {
@@ -45,7 +45,7 @@
         "P": {
             "cooldown": "",
             "_rawTooltip": {
-                "fullTooltip": "When Varus kills an enemy, he gains 10% Attack Speed, (10% Attack Speed) AD, and (10% Attack Speed) AP for 5-11 seconds (based on level).<br>Champion takedowns grant 40% Attack Speed that can bypass the attack speed gap, (15% Attack Speed) AD, and (15% Attack Speed) AP instead",
+                "fullTooltip": "When Varus kills an enemy, he gains 10/15/20% (at level 1/7/13) Attack Speed, (10% Attack Speed) AD, and (10% Attack Speed) AP for 5-11 seconds (based on level).<br>Champion takedowns grant 50% Attack Speed that can bypass the attack speed gap, (25% Attack Speed) AD, and (25% Attack Speed) AP instead",
                 "parseInfo": []
             },
             "name": "Living Vengeance"
@@ -125,7 +125,7 @@
                     },
                     {
                         "text": {
-                            "text": "7/14/21/28/35 {{0}} magic damage",
+                            "text": "5/10/15/20/25 {{0}} magic damage",
                             "scaleHolders": [
                                 {
                                     "scale": "(+35% AP)",
@@ -1111,6 +1111,71 @@
             },
             "E": "",
             "R": ""
+        },
+        "14.15": {
+            "B": {
+                "SpellName": "Base Stats",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Attack Damage: ",
+                            "Before": "57",
+                            "Indicator": " ⇒ ",
+                            "After": "59"
+                        }
+                    }
+                ]
+            },
+            "P": {
+                "SpellName": "Passive - Living Vengeance",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Minion Kill Attack Speed: ",
+                            "Before": "10%",
+                            "Indicator": " ⇒ ",
+                            "After": "10/15/20% (at level 1/7/13)"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Champion Takedown: ",
+                            "Before": "40% Attack Speed and 15% Attack Speed as Attack Damage",
+                            "Indicator": " ⇒ ",
+                            "After": "50% Attack Speed and 25% Attack Speed as Attack Damage and Ability Power"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Champion Takedown AS cap: ",
+                            "Before": "2.763",
+                            "Indicator": " ⇒ ",
+                            "After": "3.0"
+                        }
+                    }
+                ]
+            },
+            "Q": "",
+            "W": {
+                "SpellName": "W - Blighted Quiver",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "On-hit Damage: ",
+                            "Before": "7/14/21/28/35",
+                            "Indicator": " ⇒ ",
+                            "After": "5/10/15/20/25"
+                        }
+                    }
+                ]
+            },
+            "E": "",
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -1135,7 +1200,8 @@
         "13.13",
         "13.21",
         "14.4",
-        "14.13"
+        "14.13",
+        "14.15"
     ],
     "ChampionName": "Varus",
     "Balance": {
@@ -1145,6 +1211,9 @@
         "14.13": [
             "adjust",
             "danger"
+        ],
+        "14.15": [
+            "buff"
         ]
     }
 }
