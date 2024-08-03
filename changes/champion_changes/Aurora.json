@@ -9,7 +9,7 @@
             "increment": 30
         },
         "armor": {
-            "base": 27,
+            "base": 23,
             "increment": 4.5
         },
         "spellBlock": {
@@ -49,7 +49,7 @@
                 "parseInfo": [
                     {
                         "text": {
-                            "text": "4% {{0}} of the target's maximum health",
+                            "text": "2.5% {{0}} of the target's maximum health",
                             "scaleHolders": [
                                 {
                                     "scale": "(+ 1.5% per 100 AP)",
@@ -65,7 +65,7 @@
         },
         "Q": {
             "_rawTooltip": {
-                "fullTooltip": "Fire curesed energy in a direction, dealing [[0]] and cursing them for 3.5 seconds.<br /><br />[[1]] End the curse, drawing back part of the enemy's spirit to Aurora, dealing up to [[2]] to enemies based on their missing health.<br /><br />Damage beyond the first hit is reduced to 20%.<br /><br /><br /><br />Recast deals 50% damage to minions and monsters.",
+                "fullTooltip": "Fire curesed energy in a direction, dealing [[0]] and cursing them for 3.5 seconds.<br /><br />[[1]] End the curse, drawing back part of the enemy's spirit to Aurora, dealing up to [[2]] to enemies based on their missing health.<br /><br />Damage beyond the first hit is reduced to 20%.<br /><br /><br /><br />Recast deals 25% damage to minions and monsters.",
                 "parseInfo": [
                     {
                         "text": {
@@ -100,7 +100,7 @@
                     }
                 ]
             },
-            "cooldown": "8/7.5/7/6.5/6",
+            "cooldown": "9/8.5/8/7.5/7",
             "cost": "60 Mana",
             "name": "Twofold Hex"
         },
@@ -216,7 +216,20 @@
         "E": "",
         "R": "",
         "14.15": {
-            "B": "",
+            "B": {
+                "SpellName": "Base Stats",
+                "Changes": [
+                    {
+                        "Tag": "MID-PATCH",
+                        "Change": {
+                            "Attribute": "Armor: ",
+                            "Before": "27",
+                            "Indicator": " ⇒ ",
+                            "After": "23"
+                        }
+                    }
+                ]
+            },
             "P": {
                 "SpellName": "Passive - Spirit Abjuration",
                 "Changes": [
@@ -236,6 +249,15 @@
                             "Before": "5%",
                             "Indicator": " ⇒ ",
                             "After": "2% (+.015% AP)"
+                        }
+                    },
+                    {
+                        "Tag": "MID-PATCH",
+                        "Change": {
+                            "Attribute": "Percent Health Damage: ",
+                            "Before": " 4% (+1.5% per 100 AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "2.5% (+1.5% per 100 AP)"
                         }
                     }
                 ]
@@ -259,6 +281,24 @@
                             "Before": "",
                             "Indicator": "",
                             "After": "Q2 can no longer miss its original target"
+                        }
+                    },
+                    {
+                        "Tag": "MID-PATCH",
+                        "Change": {
+                            "Attribute": "Cooldown: ",
+                            "Before": "8/7.5/7/6.5/6",
+                            "Indicator": " ⇒ ",
+                            "After": "9/8.5/8/7.5/7"
+                        }
+                    },
+                    {
+                        "Tag": "MID-PATCH",
+                        "Change": {
+                            "Attribute": "Recast Reduced Damage to Minions: ",
+                            "Before": "50%",
+                            "Indicator": " ⇒ ",
+                            "After": "75% reduced damage"
                         }
                     }
                 ]
