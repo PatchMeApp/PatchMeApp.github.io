@@ -52,7 +52,7 @@
                             "text": "2.5% {{0}} of the target's maximum health",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+ 1.5% per 100 AP)",
+                                    "scale": "(+2% per 100 AP)",
                                     "scaleId": "AP"
                                 }
                             ]
@@ -100,7 +100,7 @@
                     }
                 ]
             },
-            "cooldown": "9/8.5/8/7.5/7",
+            "cooldown": "8/7.5/7/6.5/6",
             "cost": "60 Mana",
             "name": "Twofold Hex"
         },
@@ -255,9 +255,18 @@
                         "Tag": "MID-PATCH",
                         "Change": {
                             "Attribute": "Percent Health Damage: ",
-                            "Before": " 4% (+1.5% per 100 AP)",
+                            "Before": "4% (+1.5% per 100 AP)",
                             "Indicator": " ⇒ ",
                             "After": "2.5% (+1.5% per 100 AP)"
+                        }
+                    },
+                    {
+                        "Tag": "MID-PATCH",
+                        "Change": {
+                            "Attribute": "Percent Health Damage: ",
+                            "Before": "2.5% (+1.5% per 100 AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "2.5% (+2% per 100 AP)"
                         }
                     }
                 ]
@@ -299,6 +308,24 @@
                             "Before": "50%",
                             "Indicator": " ⇒ ",
                             "After": "75% reduced damage"
+                        }
+                    },
+                    {
+                        "Tag": "MID-PATCH",
+                        "Change": {
+                            "Attribute": "Cooldown (Revert): ",
+                            "Before": "9/8.5/8/7.5/7",
+                            "Indicator": " ⇒ ",
+                            "After": "8/7.5/7/6.5/6"
+                        }
+                    },
+                    {
+                        "Tag": "MID-PATCH",
+                        "Change": {
+                            "Attribute": "Recast Reduced Damage to Minions: ",
+                            "Before": "75%",
+                            "Indicator": " ⇒ ",
+                            "After": "60% reduced damage"
                         }
                     }
                 ]
