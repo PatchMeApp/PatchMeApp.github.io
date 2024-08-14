@@ -26,7 +26,7 @@
         },
         "attackSpeed": {
             "base": 0.625,
-            "increment": 0.04
+            "increment": 0.02
         },
         "ms": {
             "base": 330,
@@ -45,7 +45,7 @@
         "P": {
             "cooldown": "",
             "_rawTooltip": {
-                "fullTooltip": "Innate - Weakened Soul: Senna's basic attacks on-hit and damaging abilities on enemy champions apply a stack of Mist for 4 seconds, modified to 0.75 seconds if Senna starts winding up a basic attack on them. Subsequent hits will collect Mist, dealing [[3]] as bonus physical damage, and rendering the target immune to further Mist applications for a few seconds. This damage applies life steal at 100% effectiveness.<br>Enemy units that die near Senna have a chance to spawn a Mist Wraith from their corpse, increased to 2 Mist Wraiths for epic monsters. Mist Wraiths last 8 seconds and Senna can basic attack or hit them with Piercing Darkness or Dawning Shadow to kill them instantly, granting her 8 and collecting their Mist.<br>Enemy champions and large monsters are guaranteed to spawn a Mist Wraith.<br> Minions and lesser monsters that Senna kills have a 8.4% chance to spawn a Mist Wraith.<br>Large minions that Senna doesn't kill are guaranteed to spawn a Mist Wraith, while lesser minions and lesser monsters that Senna doesn't kill have a 8.4% chance to do so.<br>Mist: For each stack of Mist, Senna gains [[0]]. For every 20 stacks, she also gains 20 bonus attack range and 10% critical strike chance, capped at 100% critical strike chance. Additionally, 35% of the generated excess critical strike chance is converted into life steal.<br>Innate - Relic Cannon: Senna's basic attacks on-hit deal [[1]] and grant her [[4]] as bonus movement speed for [[2]] applies life steal at 100% effectiveness.",
+                "fullTooltip": "Innate - Weakened Soul: Senna's basic attacks on-hit and damaging abilities on enemy champions apply a stack of Mist for 4 seconds, modified to 0.75 seconds if Senna starts winding up a basic attack on them. Subsequent hits will collect Mist, dealing [[3]] as bonus physical damage, and rendering the target immune to further Mist applications for a few seconds. This damage applies life steal at 100% effectiveness.<br>Enemy units that die near Senna have a chance to spawn a Mist Wraith from their corpse, increased to 2 Mist Wraiths for epic monsters. Mist Wraiths last 8 seconds and Senna can basic attack or hit them with Piercing Darkness or Dawning Shadow to kill them instantly, granting her 8 and collecting their Mist.<br>Enemy champions and large monsters are guaranteed to spawn a Mist Wraith.<br> Minions and lesser monsters that Senna kills have a 8.4% chance to spawn a Mist Wraith.<br>Large minions that Senna doesn't kill are guaranteed to spawn a Mist Wraith, while lesser minions and lesser monsters that Senna doesn't kill have a 8.4% chance to do so.<br>Mist: For each stack of Mist, Senna gains [[0]]. For every 20 stacks, she also gains 20 bonus attack range and 8% critical strike chance, capped at 100% critical strike chance. Additionally, 35% of the generated excess critical strike chance is converted into life steal.<br>Innate - Relic Cannon: Senna's basic attacks on-hit deal [[1]] and grant her [[4]] as bonus movement speed for [[2]] applies life steal at 100% effectiveness.",
                 "parseInfo": [
                     {
                         "text": {
@@ -98,7 +98,7 @@
         },
         "Q": {
             "_rawTooltip": {
-                "fullTooltip": "Senna shoots a bolt of piercing shadow through an ally or enemy, dealing [[0]] to enemies and [[1]] them by 15% (+6% per 100 AP) (+10% per 100 Bonus AD) for 1/1.25/1.5/1.75 second(s). Restores [[2]] to allied champions. <br /><br />Attacks reduce this Ability's Cooldown by 1 second.",
+                "fullTooltip": "Senna shoots a bolt of piercing shadow through an ally or enemy, dealing [[0]] to enemies and [[1]] them by 15% (+10% per 100 AP) (+15% per 100 Bonus AD) for 1/1.25/1.5/1.75 second(s). Restores [[2]] to allied champions. <br /><br />Attacks reduce this Ability's Cooldown by 1 second.",
                 "parseInfo": [
                     {
                         "text": {
@@ -121,19 +121,15 @@
                     },
                     {
                         "text": {
-                            "text": "40/50/60/70/80 {{0}} {{1}} {{2}} Health",
+                            "text": "40/60/80/100/120 {{0}} {{1}} Health",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+40% AP)",
+                                    "scale": "(+80% AP)",
                                     "scaleId": "AP"
                                 },
                                 {
-                                    "scale": "(+30% Bonus AD)",
+                                    "scale": "(+40% Bonus AD)",
                                     "scaleId": "AD"
-                                },
-                                {
-                                    "scale": "(+160% Bonus Lethality)",
-                                    "scaleId": "Lethality"
                                 }
                             ]
                         },
@@ -147,7 +143,7 @@
         },
         "W": {
             "_rawTooltip": {
-                "fullTooltip": "Senna sends forth the Black Mist, dealing [[0]] to the first enemy hit. After a 1 second delay the target and other nearby enemies are [[1]] for 1/1.25/1.5/1.75 second(s).",
+                "fullTooltip": "Senna sends forth the Black Mist, dealing [[0]] to the first enemy hit. After a 1 second delay the target and other nearby enemies are [[1]] for 1.25/1.5/1.75/2/2.25 second(s).",
                 "parseInfo": [
                     {
                         "text": {
@@ -225,10 +221,10 @@
                     },
                     {
                         "text": {
-                            "text": "100/150/200 {{0}} {{1}} Shield",
+                            "text": "120/160/200 {{0}} {{1}} Shield",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+40% AP)",
+                                    "scale": "(+70% AP)",
                                     "scaleId": "AP"
                                 },
                                 {
@@ -1053,6 +1049,102 @@
             "E": "",
             "R": ""
         },
+        "14.16": {
+            "B": {
+                "SpellName": "Base Stats",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Attack Speed Growth: ",
+                            "Before": "4%",
+                            "Indicator": " ⇒ ",
+                            "After": "2%"
+                        }
+                    }
+                ]
+            },
+            "P": {
+                "SpellName": "Passive - Absolution",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Critical Strike Chance per 20 Stacks: ",
+                            "Before": "10%",
+                            "Indicator": " ⇒ ",
+                            "After": "8%"
+                        }
+                    }
+                ]
+            },
+            "Q": {
+                "SpellName": "Q - Piercing Darkness",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Healing: ",
+                            "Before": "40/50/60/70/80 (+30% bonus AD) (+40% AP) (+160% Lethality)",
+                            "Indicator": " ⇒ ",
+                            "After": "40/60/80/100/120 (+40% bonus AD) (+80% AP)"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Slow: ",
+                            "Before": "15% (+0.1% per bonus AD) (+0.06% per AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "15% (+0.15% per bonus AD) (+0.1% per AP)"
+                        }
+                    }
+                ]
+            },
+            "W": {
+                "SpellName": "W - Last Embrace",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Root Duration: ",
+                            "Before": "1/1.25/1.5/1.75/2",
+                            "Indicator": " ⇒ ",
+                            "After": "1.25/1.5/1.75/2/2.25 seconds"
+                        }
+                    }
+                ]
+            },
+            "E": "",
+            "R": {
+                "SpellName": "R - Dawning Shadow",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Shield: ",
+                            "Before": "100/150/200 (+40% AP) (+1.5 per Mist collected)",
+                            "Indicator": " ⇒ ",
+                            "After": "120/160/200 (+70% AP) (+1.5 per Mist collected)"
+                        }
+                    }
+                ]
+            },
+            "M": {
+                "SpellName": "Miscellaneous",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "Now that Black Cleaver now always applies a stack on-hit, this means Senna applies 2 stacks on Auto and Q"
+                        }
+                    }
+                ]
+            }
+        },
         "12.12": {
             "B": {
                 "SpellName": "Base Stats",
@@ -1146,7 +1238,8 @@
         "13.22",
         "14.5",
         "14.6",
-        "14.7"
+        "14.7",
+        "14.16"
     ],
     "ChampionName": "Senna",
     "Balance": {
@@ -1158,6 +1251,9 @@
         ],
         "14.7": [
             "nerf"
+        ],
+        "14.16": [
+            "adjust"
         ]
     }
 }

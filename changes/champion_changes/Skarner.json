@@ -1,7 +1,7 @@
 {
     "stats": {
         "hp": {
-            "base": 610,
+            "base": 630,
             "increment": 110
         },
         "mp": {
@@ -33,7 +33,7 @@
             "increment": 0
         },
         "attackDamage": {
-            "base": 60,
+            "base": 63,
             "increment": 3
         },
         "attackRange": {
@@ -74,7 +74,7 @@
                             "text": "10/20/30/40/50 {{0}} {{1}} physical damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+60% Bonus AD)",
+                                    "scale": "(+75% Bonus AD)",
                                     "scaleId": "AD"
                                 },
                                 {
@@ -454,7 +454,7 @@
                 ]
             },
             "P": {
-                "SpellName": "P - Threads of Vibration",
+                "SpellName": "Passive - Threads of Vibration",
                 "Changes": [
                     {
                         "Tag": "MID-PATCH",
@@ -865,6 +865,49 @@
             },
             "R": ""
         },
+        "14.16": {
+            "B": {
+                "SpellName": "Base Stats",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Base Health: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "610 ⇒630"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Base Attack Damage: ",
+                            "Before": "60",
+                            "Indicator": " ⇒ ",
+                            "After": "63"
+                        }
+                    }
+                ]
+            },
+            "P": "",
+            "Q": {
+                "SpellName": "Q - Shattered Earth / Upheaval",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Bonus AD Ratio: ",
+                            "Before": "60%",
+                            "Indicator": " ⇒ ",
+                            "After": "75%"
+                        }
+                    }
+                ]
+            },
+            "W": "",
+            "E": "",
+            "R": ""
+        },
         "14.7": {
             "B": {
                 "SpellName": "Base Stats",
@@ -890,7 +933,7 @@
                 ]
             },
             "P": {
-                "SpellName": "P - Threads of Vibration",
+                "SpellName": "Passive - Threads of Vibration",
                 "Changes": [
                     {
                         "Tag": "MID-PATCH",
@@ -959,7 +1002,8 @@
         "14.10",
         "14.12",
         "14.13",
-        "14.15"
+        "14.15",
+        "14.16"
     ],
     "ChampionName": "Skarner",
     "Balance": {
@@ -985,6 +1029,9 @@
         ],
         "14.15": [
             "adjust"
+        ],
+        "14.16": [
+            "nerf"
         ]
     }
 }

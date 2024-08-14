@@ -84,10 +84,10 @@
                     },
                     {
                         "text": {
-                            "text": "80/110/140/170/200 {{0}} magic damage",
+                            "text": "80/120/160/200/240 {{0}} magic damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+35% AP)",
+                                    "scale": "(+45% AP)",
                                     "scaleId": "AP"
                                 }
                             ]
@@ -144,7 +144,7 @@
                     },
                     {
                         "text": {
-                            "text": "20/35/50/65/80 {{0}} {{1}} magic damage",
+                            "text": "20/30/40/50/60 {{0}} {{1}} magic damage",
                             "scaleHolders": [
                                 {
                                     "scale": "(+25% AP)",
@@ -623,6 +623,53 @@
                     }
                 ]
             }
+        },
+        "14.16": {
+            "B": "",
+            "P": "",
+            "Q": {
+                "SpellName": "Q - Bouncing Blade",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Damage: ",
+                            "Before": "80/110/140/170/200 (+35% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "80/120/160/200/240 (+45% AP)"
+                        }
+                    }
+                ]
+            },
+            "W": "",
+            "E": {
+                "SpellName": "E - Shunpo",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Damage: ",
+                            "Before": "20/35/50/65/80 (+40% AD) (+25% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "20/30/40/50/60 (+40% AD) (+25% AP)"
+                        }
+                    }
+                ]
+            },
+            "R": {
+                "SpellName": "R - Death Lotus",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "On-Hit Effectiveness: ",
+                            "Before": "30/35/40%",
+                            "Indicator": " ⇒ ",
+                            "After": "25/30/35%"
+                        }
+                    }
+                ]
+            }
         }
     },
     "ChangePatches": [
@@ -633,7 +680,13 @@
         "11.10",
         "12.10",
         "12.12",
-        "13.7"
+        "13.7",
+        "14.16"
     ],
-    "ChampionName": "Katarina"
+    "ChampionName": "Katarina",
+    "Balance": {
+        "14.16": [
+            "buff"
+        ]
+    }
 }

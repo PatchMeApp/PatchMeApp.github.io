@@ -9,7 +9,7 @@
             "increment": 60
         },
         "armor": {
-            "base": 28,
+            "base": 31,
             "increment": 4.7
         },
         "spellBlock": {
@@ -84,10 +84,10 @@
                     },
                     {
                         "text": {
-                            "text": "50/85/120/155/190 {{0}} physical damage",
+                            "text": "60/90/120/150/180 {{0}} physical damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+75% Bonus AD)",
+                                    "scale": "(+90% Bonus AD)",
                                     "scaleId": "AD"
                                 }
                             ]
@@ -195,7 +195,7 @@
                     },
                     {
                         "text": {
-                            "text": "8/22/36/50/64 {{0}} {{1}} magic damage",
+                            "text": "8/16/24/32/40 {{0}} {{1}} magic damage",
                             "scaleHolders": [
                                 {
                                     "scale": "(+45% AP)",
@@ -832,6 +832,84 @@
             "W": "",
             "E": "",
             "R": ""
+        },
+        "14.16": {
+            "B": {
+                "SpellName": "Base Stats",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Base Armor: ",
+                            "Before": "28",
+                            "Indicator": " ⇒ ",
+                            "After": "31"
+                        }
+                    }
+                ]
+            },
+            "P": "",
+            "Q": {
+                "SpellName": "Q - Edge of Ixtal / Elemental Wrath",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Damage: ",
+                            "Before": "50/85/120/155/190 (+75% bonus AD)",
+                            "Indicator": " ⇒ ",
+                            "After": "60/90/120/150/180 (+90% bonus AD)"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Bonus Damage to Monsters: ",
+                            "Before": "50%",
+                            "Indicator": " ⇒ ",
+                            "After": "75%"
+                        }
+                    }
+                ]
+            },
+            "W": {
+                "SpellName": "W - Terrashape",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Bonus On-Hit Damage: ",
+                            "Before": "8/22/36/50/64 (+10% bonus AD) (+45% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "8/16/24/32/40 (+10% bonus AD) (+45% AP)"
+                        }
+                    }
+                ]
+            },
+            "E": "",
+            "R": {
+                "SpellName": "R - Supreme Display of Talent",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Damage: ",
+                            "Before": "100/200/300 (+170% bonus AD) (+10% of target's maximum health)",
+                            "Indicator": " ⇒ ",
+                            "After": "100/200/300 (+150% bonus AD) (+10% of target's maximum health)"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Monster Damage Cap: ",
+                            "Before": "500/750/1000 (+150% bonus AD)",
+                            "Indicator": " ⇒ ",
+                            "After": "500/750/1000 (+125% bonus AD)"
+                        }
+                    }
+                ]
+            }
         }
     },
     "ChangePatches": [
@@ -849,12 +927,16 @@
         "12.10",
         "12.15",
         "13.5",
-        "13.24"
+        "13.24",
+        "14.16"
     ],
     "ChampionName": "Qiyana",
     "Balance": {
         "13.24": [
             "buff"
+        ],
+        "14.16": [
+            "adjust"
         ]
     }
 }

@@ -64,7 +64,7 @@
                             "text": "15 {{0}} bonus magic damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+ 15% AD)",
+                                    "scale": "(+ 20% AD)",
                                     "scaleId": "AD"
                                 }
                             ]
@@ -81,7 +81,7 @@
                 "parseInfo": [
                     {
                         "text": {
-                            "text": "95/125/155/185/215 {{0}} physical damage",
+                            "text": "85/115/145/175/205 {{0}} physical damage",
                             "scaleHolders": [
                                 {
                                     "scale": "(+60/75/90/105/120% Bonus AD)",
@@ -568,6 +568,40 @@
                 ]
             },
             "R": ""
+        },
+        "14.16": {
+            "B": "",
+            "P": {
+                "SpellName": "Passive - Lightslinger",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Vigilance Damage: ",
+                            "Before": "15 (+15% total AD)",
+                            "Indicator": " ⇒ ",
+                            "After": "15 (+20% total AD)"
+                        }
+                    }
+                ]
+            },
+            "Q": {
+                "SpellName": "Q - Piercing Light",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Damage: ",
+                            "Before": "95/125/155/185/215 (+60/75/90/105/120% bonus AD)",
+                            "Indicator": " ⇒ ",
+                            "After": "85/115/145/175/205 (+60/75/90/105/120% bonus AD)"
+                        }
+                    }
+                ]
+            },
+            "W": "",
+            "E": "",
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -581,12 +615,16 @@
         "13.1B",
         "13.12",
         "13.16",
-        "13.24"
+        "13.24",
+        "14.16"
     ],
     "ChampionName": "Lucian",
     "Balance": {
         "13.24": [
             "buff"
+        ],
+        "14.16": [
+            "adjust"
         ]
     }
 }

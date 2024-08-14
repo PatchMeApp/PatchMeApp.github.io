@@ -1,7 +1,7 @@
 {
     "stats": {
         "hp": {
-            "base": 575,
+            "base": 600,
             "increment": 129
         },
         "mp": {
@@ -52,7 +52,7 @@
                             "text": "130% AD {{0}} magic damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+ 25% AP)",
+                                    "scale": "(+ 30% AP)",
                                     "scaleId": "AP"
                                 }
                             ]
@@ -136,7 +136,7 @@
                 "parseInfo": [
                     {
                         "text": {
-                            "text": "65/100/135/170/205 {{0}} magic damage",
+                            "text": "75/110/145/180/215 {{0}} magic damage",
                             "scaleHolders": [
                                 {
                                     "scale": "(+70% AP)",
@@ -1136,6 +1136,53 @@
             },
             "R": ""
         },
+        "14.16": {
+            "B": {
+                "SpellName": "Base Stats",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Base Health: ",
+                            "Before": "575",
+                            "Indicator": " ⇒ ",
+                            "After": "600"
+                        }
+                    }
+                ]
+            },
+            "P": {
+                "SpellName": "Passive - Petricite Burst",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Damage to Primary Target: ",
+                            "Before": "130% AD (+25% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "130% AD (+30% AP)"
+                        }
+                    }
+                ]
+            },
+            "Q": "",
+            "W": {
+                "SpellName": "W - Kingslayer",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Damage: ",
+                            "Before": "65/100/135/170/205 (+70% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "75/110/145/180/215 (+70% AP)"
+                        }
+                    }
+                ]
+            },
+            "E": "",
+            "R": ""
+        },
         "13.24": {
             "B": "",
             "P": "",
@@ -1185,7 +1232,8 @@
         "13.24",
         "14.7",
         "14.8",
-        "14.15"
+        "14.15",
+        "14.16"
     ],
     "ChampionName": "Sylas",
     "Balance": {
@@ -1200,6 +1248,9 @@
         ],
         "14.15": [
             "adjust"
+        ],
+        "14.16": [
+            "buff"
         ]
     }
 }
