@@ -77,10 +77,10 @@
                     },
                     {
                         "text": {
-                            "text": "10/46.67/83.34/120.01/156.68 {{0}} physical damage",
+                            "text": "60/106.66/153.33/200/246.66 {{0}} physical damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+83.33/86.66/90/93.33/96.67% AD)",
+                                    "scale": "(+99.99/106.66/113.33/119.99/126.66 Bonus AD)",
                                     "scaleId": "AD"
                                 }
                             ]
@@ -96,10 +96,10 @@
                     },
                     {
                         "text": {
-                            "text": "15/70/125/180/235 {{0}}",
+                            "text": "90/160/230/300/370 {{0}}",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+125/130/135/140/145% AD)",
+                                    "scale": "(+150/160/170/180/190% Bonus AD)",
                                     "scaleId": "AD"
                                 }
                             ]
@@ -233,7 +233,7 @@
                             "text": "60/100/140/180/220 {{0}} physical damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+90% Bonus AD)",
+                                    "scale": "(+110% Bonus AD)",
                                     "scaleId": "AD"
                                 }
                             ]
@@ -1176,6 +1176,49 @@
             },
             "E": "",
             "R": ""
+        },
+        "14.17": {
+            "B": "",
+            "P": "",
+            "Q": {
+                "SpellName": "Q - Piercing Arrow",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Max Damage: ",
+                            "Before": "15/70/125/180/235 (+125/130/135/140/145% Total AD)",
+                            "Indicator": " ⇒ ",
+                            "After": "90/160/230/300/370 (+150/160/170/180/190% Bonus AD)"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "Minimum damage still 2/3 of maximum damage"
+                        }
+                    }
+                ]
+            },
+            "W": "",
+            "E": {
+                "SpellName": "E - Hail of Arrows",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Damage: ",
+                            "Before": "60/100/140/180/220 (+90% Bonus AD)",
+                            "Indicator": " ⇒ ",
+                            "After": "60/100/140/180/220 (+110% Bonus AD)"
+                        }
+                    }
+                ]
+            },
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -1201,7 +1244,8 @@
         "13.21",
         "14.4",
         "14.13",
-        "14.15"
+        "14.15",
+        "14.17"
     ],
     "ChampionName": "Varus",
     "Balance": {
@@ -1213,6 +1257,9 @@
             "danger"
         ],
         "14.15": [
+            "buff"
+        ],
+        "14.17": [
             "buff"
         ]
     }

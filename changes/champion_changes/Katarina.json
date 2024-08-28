@@ -84,10 +84,10 @@
                     },
                     {
                         "text": {
-                            "text": "80/120/160/200/240 {{0}} magic damage",
+                            "text": "80/115/150/185/220 {{0}} magic damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+45% AP)",
+                                    "scale": "(+40% AP)",
                                     "scaleId": "AP"
                                 }
                             ]
@@ -670,6 +670,27 @@
                     }
                 ]
             }
+        },
+        "14.17": {
+            "B": "",
+            "P": "",
+            "Q": {
+                "SpellName": "Q - Bouncing Blade",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Damage: ",
+                            "Before": "80/120/160/200/240 (+45% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "80/115/150/185/220 (+40% AP)"
+                        }
+                    }
+                ]
+            },
+            "W": "",
+            "E": "",
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -681,12 +702,16 @@
         "12.10",
         "12.12",
         "13.7",
-        "14.16"
+        "14.16",
+        "14.17"
     ],
     "ChampionName": "Katarina",
     "Balance": {
         "14.16": [
             "buff"
+        ],
+        "14.17": [
+            "nerf"
         ]
     }
 }

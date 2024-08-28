@@ -67,7 +67,7 @@
                             "text": "70/95/120/145/170 {{0}} magic damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+45% AP)",
+                                    "scale": "(+40% AP)",
                                     "scaleId": "AP"
                                 }
                             ]
@@ -101,7 +101,7 @@
                             "text": "75/115/155/195/235 {{0}} magic damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+75% AP)",
+                                    "scale": "(+70% AP)",
                                     "scaleId": "AP"
                                 }
                             ]
@@ -801,6 +801,40 @@
             "E": "",
             "R": ""
         },
+        "14.17": {
+            "B": "",
+            "P": "",
+            "Q": {
+                "SpellName": "Q - Sigil of Malice",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Magic Damage: ",
+                            "Before": "70/95/120/145/170 (+45% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "70/95/120/145/170 (+40% AP)"
+                        }
+                    }
+                ]
+            },
+            "W": {
+                "SpellName": "W - Distortion",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Magic Damage: ",
+                            "Before": "75/115/155/195/235 (+75% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "75/115/155/195/235 (+70% AP)"
+                        }
+                    }
+                ]
+            },
+            "E": "",
+            "R": ""
+        },
         "14.1": {
             "B": {
                 "SpellName": "Base Stats",
@@ -881,7 +915,8 @@
         "13.21",
         "13.22",
         "14.1",
-        "14.8"
+        "14.8",
+        "14.17"
     ],
     "ChampionName": "LeBlanc",
     "Balance": {
@@ -890,6 +925,9 @@
         ],
         "14.8": [
             "buff"
+        ],
+        "14.17": [
+            "nerf"
         ]
     }
 }

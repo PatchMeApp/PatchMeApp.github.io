@@ -9,7 +9,7 @@
             "increment": 50
         },
         "armor": {
-            "base": 47,
+            "base": 43,
             "increment": 4.7
         },
         "spellBlock": {
@@ -119,7 +119,7 @@
                             "text": "100/150/200/250/300 {{0}} physical damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+75% bonus AD)",
+                                    "scale": "(+75% Bonus AD)",
                                     "scaleId": "AD"
                                 }
                             ]
@@ -145,7 +145,7 @@
                             "text": "100/150/200/250/300 {{0}} physical damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+60% Bonus AD)",
+                                    "scale": "(+75% Bonus AD)",
                                     "scaleId": "AD"
                                 }
                             ]
@@ -754,6 +754,27 @@
             "E": "",
             "R": ""
         },
+        "14.17": {
+            "B": {
+                "SpellName": "Base Stats",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Armor: ",
+                            "Before": "47",
+                            "Indicator": " ⇒ ",
+                            "After": "43"
+                        }
+                    }
+                ]
+            },
+            "P": "",
+            "Q": "",
+            "W": "",
+            "E": "",
+            "R": ""
+        },
         "13.3": {
             "B": "",
             "P": "",
@@ -786,7 +807,8 @@
         "13.3",
         "13.19",
         "14.3",
-        "14.9"
+        "14.9",
+        "14.17"
     ],
     "ChampionName": "Pyke",
     "Balance": {
@@ -794,6 +816,9 @@
             "buff"
         ],
         "14.9": [
+            "nerf"
+        ],
+        "14.17": [
             "nerf"
         ]
     }

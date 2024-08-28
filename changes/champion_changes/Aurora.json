@@ -163,7 +163,7 @@
                 "parseInfo": [
                     {
                         "text": {
-                            "text": "200/325/450 {{0}} magic damage",
+                            "text": "175/275/375 {{0}} magic damage",
                             "scaleHolders": [
                                 {
                                     "scale": "(+60% AP)",
@@ -381,14 +381,39 @@
                     }
                 ]
             }
+        },
+        "14.17": {
+            "B": "",
+            "P": "",
+            "Q": "",
+            "W": "",
+            "E": "",
+            "R": {
+                "SpellName": "R - Between Worlds",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Damage: ",
+                            "Before": "200/325/450 (+60% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "175/275/375 (+60% AP)"
+                        }
+                    }
+                ]
+            }
         }
     },
     "ChangePatches": [
-        "14.15"
+        "14.15",
+        "14.17"
     ],
     "ChampionName": "Aurora",
     "Balance": {
         "14.15": [
+            "nerf"
+        ],
+        "14.17": [
             "nerf"
         ]
     }

@@ -59,7 +59,7 @@
                             "text": "75/125/175/225/275 {{0}} magic damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+ 85% AP)",
+                                    "scale": "(+75% AP)",
                                     "scaleId": "AP"
                                 }
                             ]
@@ -561,6 +561,27 @@
             "W": "",
             "E": "",
             "R": ""
+        },
+        "14.17": {
+            "B": "",
+            "P": "",
+            "Q": {
+                "SpellName": "Q - Thundering Shuriken",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Magic Damage: ",
+                            "Before": "75/125/175/225/275 (+85% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "75/125/175/225/275 (+75% AP)"
+                        }
+                    }
+                ]
+            },
+            "W": "",
+            "E": "",
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -574,7 +595,8 @@
         "13.5",
         "13.18",
         "14.9",
-        "14.13"
+        "14.13",
+        "14.17"
     ],
     "ChampionName": "Kennen",
     "Balance": {
@@ -582,6 +604,9 @@
             "buff"
         ],
         "14.13": [
+            "nerf"
+        ],
+        "14.17": [
             "nerf"
         ]
     }

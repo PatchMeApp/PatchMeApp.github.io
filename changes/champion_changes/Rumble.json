@@ -60,7 +60,7 @@
                                     "scaleId": "AP"
                                 },
                                 {
-                                    "scale": "(+ 6% of the target's maximum health)",
+                                    "scale": "(+ 5% of the target's maximum health)",
                                     "scaleId": "health"
                                 }
                             ]
@@ -994,6 +994,27 @@
             "W": "",
             "E": "",
             "R": ""
+        },
+        "14.17": {
+            "B": "",
+            "P": {
+                "SpellName": "Passive - Junkyard Titan",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "On-Hit Damage: ",
+                            "Before": "5-40 (based on level) (+25% AP) (+6% Target Max Health)",
+                            "Indicator": " ⇒ ",
+                            "After": "5-40 (based on level) (+25% AP) (+5% Target Max Health)"
+                        }
+                    }
+                ]
+            },
+            "Q": "",
+            "W": "",
+            "E": "",
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -1011,7 +1032,8 @@
         "13.12",
         "13.22",
         "14.2",
-        "14.14"
+        "14.14",
+        "14.17"
     ],
     "ChampionName": "Rumble",
     "Balance": {
@@ -1020,6 +1042,9 @@
             "adjust"
         ],
         "14.14": [
+            "nerf"
+        ],
+        "14.17": [
             "nerf"
         ]
     }

@@ -80,7 +80,7 @@
                 "parseInfo": [
                     {
                         "text": {
-                            "text": "80/110/140/170/200 {{0}} magic damage",
+                            "text": "80/115/150/185/220 {{0}} magic damage",
                             "scaleHolders": [
                                 {
                                     "scale": "(+85% AP)",
@@ -163,7 +163,7 @@
         },
         "R": {
             "_rawTooltip": {
-                "fullTooltip": "Lissandra encases herself or an enemy champion in ice. Enemies are [[0]] for 1.5 seconds. When self cast, Lissandra enters Stasis for 2.5 seconds and restores [[1]], increased by 1% for each 1% missing Health.<br /><br />In either case, dark ice eminates from the target, dealing [[2]]. The ice persists for 3 seconds, [[3]] enemies by 30/45/75%.",
+                "fullTooltip": "Lissandra encases herself or an enemy champion in ice. Enemies are [[0]] for 1.5 seconds. When self cast, Lissandra enters Stasis for 2.5 seconds and restores [[1]], increased by 1% for each 1% missing Health.<br /><br />In either case, dark ice eminates from the target, dealing [[2]]. The ice persists for 3 seconds, [[3]] enemies by 45/60/75%.",
                 "parseInfo": [
                     {
                         "text": {
@@ -630,6 +630,40 @@
             },
             "E": "",
             "R": ""
+        },
+        "14.17": {
+            "B": "",
+            "P": "",
+            "Q": {
+                "SpellName": "Q - Ice Shard",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Damage: ",
+                            "Before": "80/110/140/170/200 (+85% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "80/115/150/185/220 (+85% AP)"
+                        }
+                    }
+                ]
+            },
+            "W": "",
+            "E": "",
+            "R": {
+                "SpellName": "R - Frozen Tomb",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Slow: ",
+                            "Before": "30/45/75%",
+                            "Indicator": " ⇒ ",
+                            "After": "45/60/75%"
+                        }
+                    }
+                ]
+            }
         }
     },
     "ChangePatches": [
@@ -643,11 +677,15 @@
         "13.14",
         "13.19",
         "13.22",
-        "14.13"
+        "14.13",
+        "14.17"
     ],
     "ChampionName": "Lissandra",
     "Balance": {
         "14.13": [
+            "buff"
+        ],
+        "14.17": [
             "buff"
         ]
     }

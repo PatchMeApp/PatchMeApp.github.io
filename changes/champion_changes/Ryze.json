@@ -84,7 +84,7 @@
                     },
                     {
                         "text": {
-                            "text": "70/90/110/130/150 {{0}} {{1}} magic damage",
+                            "text": "75/95/115/135/155 {{0}} {{1}} magic damage",
                             "scaleHolders": [
                                 {
                                     "scale": "(+55% AP)",
@@ -253,7 +253,7 @@
                     }
                 ]
             },
-            "cooldown": "210/180/150",
+            "cooldown": "180/160/140 ",
             "cost": "100 Mana",
             "name": "Realm Warp"
         }
@@ -753,6 +753,40 @@
             },
             "E": "",
             "R": ""
+        },
+        "14.17": {
+            "B": "",
+            "P": "",
+            "Q": {
+                "SpellName": "Q - Overload",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Magic Damage: ",
+                            "Before": "70/90/110/130/150 (+55% AP) (+2% Bonus Mana)",
+                            "Indicator": " ⇒ ",
+                            "After": "75/95/115/135/155 (+55% AP) (+2% Bonus Mana)"
+                        }
+                    }
+                ]
+            },
+            "W": "",
+            "E": "",
+            "R": {
+                "SpellName": "R - Realm Warp",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Cooldown: ",
+                            "Before": "210/180/150",
+                            "Indicator": " ⇒ ",
+                            "After": "180/160/140"
+                        }
+                    }
+                ]
+            }
         }
     },
     "ChangePatches": [
@@ -771,11 +805,15 @@
         "13.1B",
         "13.12",
         "13.22",
-        "14.8"
+        "14.8",
+        "14.17"
     ],
     "ChampionName": "Ryze",
     "Balance": {
         "14.8": [
+            "buff"
+        ],
+        "14.17": [
             "buff"
         ]
     }

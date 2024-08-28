@@ -56,7 +56,7 @@
                 "parseInfo": [
                     {
                         "text": {
-                            "text": "60/100/140/180/220 {{0}} {{1}} magic damage",
+                            "text": "60/105/150/195/240 {{0}} {{1}} magic damage",
                             "scaleHolders": [
                                 {
                                     "scale": "(+85% AP)",
@@ -879,6 +879,27 @@
             },
             "E": "",
             "R": ""
+        },
+        "14.17": {
+            "B": "",
+            "P": "",
+            "Q": {
+                "SpellName": "Q - Wild Cards",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Damage: ",
+                            "Before": "60/100/140/180/220 (+50% Bonus AD) (+85% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "60/105/150/195/240 (+50% Bonus AD) (+85% AP)"
+                        }
+                    }
+                ]
+            },
+            "W": "",
+            "E": "",
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -897,7 +918,8 @@
         "14.2",
         "14.4",
         "14.5",
-        "14.12"
+        "14.12",
+        "14.17"
     ],
     "ChampionName": "Twisted Fate",
     "Balance": {
@@ -912,6 +934,9 @@
         ],
         "14.12": [
             "nerf"
+        ],
+        "14.17": [
+            "buff"
         ]
     }
 }
