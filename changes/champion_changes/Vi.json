@@ -85,7 +85,7 @@
                     },
                     {
                         "text": {
-                            "text": "50/75/100/125/150 {{0}} and 100/150/200/250/300 {{1}} physical damage",
+                            "text": "45/70/95/120/145 {{0}} and 90/140/190/240/290 {{1}} physical damage",
                             "scaleHolders": [
                                 {
                                     "scale": "(+80% bonus AD)",
@@ -604,6 +604,36 @@
             "W": "",
             "E": "",
             "R": ""
+        },
+        "14.18": {
+            "B": "",
+            "P": "",
+            "Q": {
+                "SpellName": "Q - Vault Breaker",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Minimum Damage: ",
+                            "Before": " 50/75/100/125/150 (+ 80% bonus AD)",
+                            "Indicator": " ⇒ ",
+                            "After": "45/70/95/120/145 (+ 80% bonus AD)"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Maximum Damage: ",
+                            "Before": " 100/150/200/250/300 (+160% bonus AD)",
+                            "Indicator": " ⇒ ",
+                            "After": "90/140/190/240/290 (+160% bonus AD)"
+                        }
+                    }
+                ]
+            },
+            "W": "",
+            "E": "",
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -614,12 +644,16 @@
         "13.7",
         "13.13",
         "13.17",
-        "14.16"
+        "14.16",
+        "14.18"
     ],
     "ChampionName": "Vi",
     "Balance": {
         "14.16": [
             "buff"
+        ],
+        "14.18": [
+            "nerf"
         ]
     }
 }

@@ -83,7 +83,7 @@
                             "text": "80/115/150/185/220 {{0}} magic damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+85% AP)",
+                                    "scale": "(+75% AP)",
                                     "scaleId": "AP"
                                 }
                             ]
@@ -664,6 +664,27 @@
                     }
                 ]
             }
+        },
+        "14.18": {
+            "B": "",
+            "P": "",
+            "Q": {
+                "SpellName": "Q - Ice Shard",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Damage: ",
+                            "Before": " 80/115/150/185/220 (+85% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "80/115/150/185/220 (+75% AP)"
+                        }
+                    }
+                ]
+            },
+            "W": "",
+            "E": "",
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -678,7 +699,8 @@
         "13.19",
         "13.22",
         "14.13",
-        "14.17"
+        "14.17",
+        "14.18"
     ],
     "ChampionName": "Lissandra",
     "Balance": {
@@ -687,6 +709,9 @@
         ],
         "14.17": [
             "buff"
+        ],
+        "14.18": [
+            "nerf"
         ]
     }
 }

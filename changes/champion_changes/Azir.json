@@ -170,7 +170,7 @@
                     },
                     {
                         "text": {
-                            "text": "2-77 {{0}} {{1}} {{2}} magic damage",
+                            "text": "0-45 {{0}} {{1}} {{2}} magic damage",
                             "scaleHolders": [
                                 {
                                     "scale": "(based on level)",
@@ -181,7 +181,7 @@
                                     "scaleId": "(+50/65/80/95/110"
                                 },
                                 {
-                                    "scale": "(+55% AP)",
+                                    "scale": "(+35/40/45/50/55% AP)",
                                     "scaleId": "AP"
                                 }
                             ]
@@ -1186,6 +1186,27 @@
             "W": "",
             "E": "",
             "R": ""
+        },
+        "14.18": {
+            "B": "",
+            "P": "",
+            "Q": "",
+            "W": {
+                "SpellName": "W - Arise!",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Damage: ",
+                            "Before": " 50/65/80/95/110 + 0-77 (based on level) (+55% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "50/65/80/95/110 + 0-45 (based on level) (+35/40/45/50/55% AP)"
+                        }
+                    }
+                ]
+            },
+            "E": "",
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -1207,7 +1228,8 @@
         "13.24",
         "14.3",
         "14.8",
-        "14.16"
+        "14.16",
+        "14.18"
     ],
     "ChampionName": "Azir",
     "Balance": {
@@ -1222,6 +1244,9 @@
         ],
         "14.16": [
             "buff"
+        ],
+        "14.18": [
+            "nerf"
         ]
     }
 }

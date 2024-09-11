@@ -138,10 +138,10 @@
                     },
                     {
                         "text": {
-                            "text": "80/110/140/170/200 {{0}} magic damage",
+                            "text": "80/120/160/200/240 {{0}} magic damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+60% AP)",
+                                    "scale": "(+75% AP)",
                                     "scaleId": "AP"
                                 }
                             ]
@@ -907,6 +907,27 @@
                     }
                 ]
             }
+        },
+        "14.18": {
+            "B": "",
+            "P": "",
+            "Q": "",
+            "W": "",
+            "E": {
+                "SpellName": "E - Charm",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Damage: ",
+                            "Before": " 80/110/140/170/200 (+60% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "80/120/160/200/240 (+75% AP)"
+                        }
+                    }
+                ]
+            },
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -922,7 +943,8 @@
         "13.22",
         "14.2",
         "14.4",
-        "14.9"
+        "14.9",
+        "14.18"
     ],
     "ChampionName": "Ahri",
     "Balance": {
@@ -934,6 +956,9 @@
         ],
         "14.9": [
             "nerf"
+        ],
+        "14.18": [
+            "buff"
         ]
     }
 }

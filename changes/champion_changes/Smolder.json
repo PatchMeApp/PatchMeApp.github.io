@@ -1,7 +1,7 @@
 {
     "stats": {
         "hp": {
-            "base": 605,
+            "base": 575,
             "increment": 100
         },
         "mp": {
@@ -83,15 +83,11 @@
                 "parseInfo": [
                     {
                         "text": {
-                            "text": "20/30/40/50/60  {{0}} {{1}} physical damage",
+                            "text": "15/25/35/45/55 {{0}} physical damage",
                             "scaleHolders": [
                                 {
                                     "scale": "(+100% AD)",
                                     "scaleId": "AD"
-                                },
-                                {
-                                    "scale": "(+15% AP)",
-                                    "scaleId": "AP"
                                 }
                             ]
                         },
@@ -177,10 +173,10 @@
                 "parseInfo": [
                     {
                         "text": {
-                            "text": "50/80/110/140/170 {{0}} {{1}} physical damage",
+                            "text": "45/75/105/135/165 {{0}} {{1}} physical damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+25% AD)",
+                                    "scale": "(+25% Bonus AD)",
                                     "scaleId": "AD"
                                 },
                                 {
@@ -692,6 +688,62 @@
             "E": "",
             "R": ""
         },
+        "14.18": {
+            "B": {
+                "SpellName": "Base Stats",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Health: ",
+                            "Before": " 605",
+                            "Indicator": " ⇒ ",
+                            "After": "575"
+                        }
+                    }
+                ]
+            },
+            "P": "",
+            "Q": {
+                "SpellName": "Q - Super Scorcher Breath",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Damage: ",
+                            "Before": " 20/30/40/50/60 (+100% AD) (+15% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "15/25/35/45/55 (+100% AD)"
+                        }
+                    }
+                ]
+            },
+            "W": {
+                "SpellName": "W - ACHOOO!",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Glob Damage: ",
+                            "Before": " 50/80/110/140/170 (+25% bonus AD) (+20% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "45/75/105/135/165 (+25% bonus AD) (+20% AP)"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Minion/Monster Damage: ",
+                            "Before": " 70/112/154/196/238 (+35% bonus AD) (+28% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "63/105/147/189/231 (+35% bonus AD) (+28% AP)"
+                        }
+                    }
+                ]
+            },
+            "E": "",
+            "R": ""
+        },
         "14.10": {
             "B": {
                 "SpellName": "Base Stats",
@@ -740,7 +792,8 @@
         "14.7",
         "14.10",
         "14.11",
-        "14.14"
+        "14.14",
+        "14.18"
     ],
     "ChampionName": "Smolder",
     "Balance": {
@@ -764,6 +817,9 @@
         ],
         "14.14": [
             "buff"
+        ],
+        "14.18": [
+            "nerf"
         ]
     }
 }

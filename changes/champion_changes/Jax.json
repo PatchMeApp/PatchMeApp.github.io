@@ -163,7 +163,7 @@
         },
         "R": {
             "_rawTooltip": {
-                "fullTooltip": "[[0]] Every third Attack deals an additional [[1]].<br /><br />[[2]] Jax swings his lantern dealing [[3]] to nearby enemies. If he hits a champion he gains [[4]] plus [[5]] per champion hit. as well as 60% of that value as Magic Resist for the next 8 seconds. During this time the passive damage applies every 2nd attack instead of every 3rd.",
+                "fullTooltip": "[[0]] Every third Attack deals an additional [[1]].<br /><br />[[2]] Jax swings his lantern dealing [[3]] to nearby enemies. If he hits a champion he gains [[4]] and [[5]] plus [[6]] and  [[7]] per additional champion hit for 8 seconds. During this time the passive damage applies every 2nd attack instead of every 3rd.",
                 "parseInfo": [
                     {
                         "text": {
@@ -174,7 +174,7 @@
                     },
                     {
                         "text": {
-                            "text": "60/110/160 {{0}} magic damage",
+                            "text": "70/120/170 {{0}} magic damage",
                             "scaleHolders": [
                                 {
                                     "scale": "(+60% AP)",
@@ -193,7 +193,7 @@
                     },
                     {
                         "text": {
-                            "text": "50/250/350 {{0}} magic damage",
+                            "text": "150/250/350 {{0}} magic damage",
                             "scaleHolders": [
                                 {
                                     "scale": "(+100% AP)",
@@ -205,7 +205,7 @@
                     },
                     {
                         "text": {
-                            "text": " 15/40/65 {{0}} Armor ",
+                            "text": "25/50/75 {{0}} Armor",
                             "scaleHolders": [
                                 {
                                     "scale": "(+40% bonus AD)",
@@ -217,15 +217,39 @@
                     },
                     {
                         "text": {
-                            "text": "15/20/25% {{0}} Magic resist",
+                            "text": "15/30/45 {{0}} Magic resist",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+10% bonus AD)",
+                                    "scale": "(+24% bonus AD)",
+                                    "scaleId": "AD"
+                                }
+                            ]
+                        },
+                        "type": "scaleMR"
+                    },
+                    {
+                        "text": {
+                            "text": "20/25/30 {{0}}",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+10% Bonus AD)",
                                     "scaleId": "AD"
                                 }
                             ]
                         },
                         "type": "scaleArmor"
+                    },
+                    {
+                        "text": {
+                            "text": "12/15/18 {{0}}",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+6% Bonus AD)",
+                                    "scaleId": "AD"
+                                }
+                            ]
+                        },
+                        "type": "scaleMR"
                     }
                 ]
             },
@@ -656,6 +680,54 @@
                 ]
             },
             "R": ""
+        },
+        "14.18": {
+            "B": "",
+            "P": "",
+            "Q": "",
+            "W": "",
+            "E": "",
+            "R": {
+                "SpellName": "R - Grandmaster-At-Arms",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Base Armor Granted: ",
+                            "Before": " 15/40/65",
+                            "Indicator": " ⇒ ",
+                            "After": "25/50/75"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Base Magic Resist Granted: ",
+                            "Before": " 9/24/39",
+                            "Indicator": " ⇒ ",
+                            "After": "15/30/45"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "On-Hit Magic Damage: ",
+                            "Before": " 60/110/160 (+60% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "70/120/170 (+60% AP)"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Armor Per Additional Champion Hit: ",
+                            "Before": " 15/20/25 (+10% bonus AD)",
+                            "Indicator": " ⇒ ",
+                            "After": "20/25/30 (+10% bonus AD) (note60% of this bonus is still gained as MR)"
+                        }
+                    }
+                ]
+            }
         }
     },
     "ChangePatches": [
@@ -668,7 +740,8 @@
         "13.4",
         "13.14",
         "14.2",
-        "14.14"
+        "14.14",
+        "14.18"
     ],
     "ChampionName": "Jax",
     "Balance": {
@@ -677,6 +750,9 @@
         ],
         "14.14": [
             "nerf"
+        ],
+        "14.18": [
+            "buff"
         ]
     }
 }

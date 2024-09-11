@@ -10,7 +10,7 @@
         },
         "armor": {
             "base": 35,
-            "increment": 4.7
+            "increment": 5
         },
         "spellBlock": {
             "base": 32,
@@ -85,7 +85,7 @@
                 "parseInfo": [
                     {
                         "text": {
-                            "text": "16/25/34/43/52 {{0}} physical damage",
+                            "text": "16/29/42/55/68 {{0}} physical damage",
                             "scaleHolders": [
                                 {
                                     "scale": "(+40% Bonus AD)",
@@ -771,6 +771,40 @@
             "W": "",
             "E": "",
             "R": ""
+        },
+        "14.18": {
+            "B": {
+                "SpellName": "Base Stats",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Armor Growth: ",
+                            "Before": " 4.7",
+                            "Indicator": " ⇒ ",
+                            "After": "5.0"
+                        }
+                    }
+                ]
+            },
+            "P": "",
+            "Q": {
+                "SpellName": "Q - Three Talon Strike",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Bonus Damage per Hit: ",
+                            "Before": " 16/25/34/43/52 (+40% bonus AD)",
+                            "Indicator": " ⇒ ",
+                            "After": "16/29/42/55/68 (+40% bonus AD)"
+                        }
+                    }
+                ]
+            },
+            "W": "",
+            "E": "",
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -784,7 +818,13 @@
         "12.10",
         "12.11",
         "12.21",
-        "13.17"
+        "13.17",
+        "14.18"
     ],
-    "ChampionName": "Xin Zhao"
+    "ChampionName": "Xin Zhao",
+    "Balance": {
+        "14.18": [
+            "buff"
+        ]
+    }
 }

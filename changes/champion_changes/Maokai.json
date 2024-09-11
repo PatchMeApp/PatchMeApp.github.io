@@ -64,7 +64,7 @@
                 "parseInfo": [
                     {
                         "text": {
-                            "text": "65/115/165/215/265 {{0}} plus 2/2.5/3/3.5/4% max Health magic damage",
+                            "text": "65/110/155/200/245 {{0}} plus 2/2.5/3/3.5/4% max Health magic damage",
                             "scaleHolders": [
                                 {
                                     "scale": "(+40% AP)",
@@ -125,7 +125,7 @@
         },
         "E": {
             "_rawTooltip": {
-                "fullTooltip": "Maokai flings a sapling, which stands watch for 30 seconds. Saplings chase nearby enemies, detonating on arrival to deal [[0]] and [[1]] surrounding enemies by 45% for 2 seconds. [[2]] Cooldown is reduced by an additional 4 seconds if the sapling hits an enemy champion or epic monster.<br /><br />If placed in brush, Saplings instead last for 30 (+2.5% Bonus Health) seconds and cause a larger explosion, dealing [[3]] over 2 seconds and [[4]] enemies by 45% (+1% per 100 bonus health) (+1% per 100 AP))% Bonus Health).",
+                "fullTooltip": "Maokai flings a sapling, which stands watch for 30 seconds. Saplings chase nearby enemies, detonating on arrival to deal [[0]] and [[1]] surrounding enemies by 45% for 2 seconds. [[2]] Cooldown is reduced by an additional 4 seconds if the sapling hits an enemy champion or epic monster.<br /><br />If placed in brush, Saplings instead last for 30 (+1.5% Bonus Health) seconds and cause a larger explosion, dealing [[3]] over 2 seconds and [[4]] enemies by 45% (+1% per 100 bonus health) (+1% per 100 AP))% Bonus Health).",
                 "parseInfo": [
                     {
                         "text": {
@@ -182,7 +182,7 @@
                     }
                 ]
             },
-            "cooldown": "16/15/14/13/12",
+            "cooldown": "18/17/16/15/14",
             "cost": "60/65/70/75/80 Mana",
             "name": "Sapling Toss"
         },
@@ -1096,6 +1096,49 @@
             "E": "",
             "R": ""
         },
+        "14.18": {
+            "B": "",
+            "P": "",
+            "Q": {
+                "SpellName": "Q - Bramble Smash",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Damage: ",
+                            "Before": " 65/115/165/215/265 (+40% AP) + 2/2.5/3/3.5/4% target max HP",
+                            "Indicator": " ⇒ ",
+                            "After": "65/110/155/200/245 (+40% AP) + 2/2.5/3/3.5/4% target max HP"
+                        }
+                    }
+                ]
+            },
+            "W": "",
+            "E": {
+                "SpellName": "E - Sapling Toss",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Cooldown: ",
+                            "Before": " 16/15/14/13/12 seconds",
+                            "Indicator": " ⇒ ",
+                            "After": "18/17/16/15/14 seconds"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Sapling Duration in Brushes: ",
+                            "Before": " 30 (+2.5% bonus HP) seconds",
+                            "Indicator": " ⇒ ",
+                            "After": "30 (+1.5% bonus HP) seconds"
+                        }
+                    }
+                ]
+            },
+            "R": ""
+        },
         "12.22": {
             "B": "",
             "P": "",
@@ -1136,7 +1179,8 @@
         "13.15",
         "14.3",
         "14.4",
-        "14.5"
+        "14.5",
+        "14.18"
     ],
     "ChampionName": "Maokai",
     "Balance": {
@@ -1147,6 +1191,9 @@
             "nerf"
         ],
         "14.5": [
+            "nerf"
+        ],
+        "14.18": [
             "nerf"
         ]
     }

@@ -60,7 +60,7 @@
         },
         "Q": {
             "_rawTooltip": {
-                "fullTooltip": "[[0]] Jayce leaps to an enemy, dealing [[1]] to surrounding enemies and [[2]] them by 30/35/40/45/50/55% for 2 seconds.",
+                "fullTooltip": "[[0]] Jayce leaps to an enemy, dealing [[1]] to surrounding enemies and [[2]] them by 35/40/45/50/55/60% for 2 seconds.",
                 "parseInfo": [
                     {
                         "text": {
@@ -601,6 +601,40 @@
             "W": "",
             "E": "",
             "R": ""
+        },
+        "14.18": {
+            "B": "",
+            "P": "",
+            "Q": {
+                "SpellName": "Q - To the Skies!",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Slow: ",
+                            "Before": " 30/35/40/45/50/55%",
+                            "Indicator": " ⇒ ",
+                            "After": "35/40/45/50/55/60%"
+                        }
+                    }
+                ]
+            },
+            "W": "",
+            "E": {
+                "SpellName": "E - Acceleration Gate",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Bonus Movement Speed: ",
+                            "Before": " 30/35/40/45/50/55%",
+                            "Indicator": " ⇒ ",
+                            "After": "35/40/45/50/55/60%"
+                        }
+                    }
+                ]
+            },
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -613,7 +647,8 @@
         "12.20",
         "13.1",
         "14.4",
-        "14.14"
+        "14.14",
+        "14.18"
     ],
     "ChampionName": "Jayce",
     "Balance": {
@@ -621,6 +656,9 @@
             "buff"
         ],
         "14.14": [
+            "buff"
+        ],
+        "14.18": [
             "buff"
         ]
     }

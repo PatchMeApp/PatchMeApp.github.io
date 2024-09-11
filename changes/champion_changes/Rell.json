@@ -239,14 +239,14 @@
                     },
                     {
                         "text": {
-                            "text": "Move Speed up to 12/14/16/18/20%",
+                            "text": "Move Speed up to 12/13/14/15/16%",
                             "scaleHolders": []
                         },
                         "type": "speed"
                     },
                     {
                         "text": {
-                            "text": "24/28/32/36/40%",
+                            "text": "24/26/28/30/32%",
                             "scaleHolders": []
                         },
                         "type": "speed"
@@ -1521,6 +1521,45 @@
                 ]
             },
             "R": ""
+        },
+        "14.18": {
+            "B": "",
+            "P": "",
+            "Q": "",
+            "W": "",
+            "E": {
+                "SpellName": "E - Full Tilt",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Maximum Bonus Movement Speed: ",
+                            "Before": " 12/14/16/18/20%",
+                            "Indicator": " ⇒ ",
+                            "After": "12/13/14/15/16%"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Maximum Bonus Movement Speed Toward Enemies or Targeted Ally: ",
+                            "Before": " 24/28/32/36/40%",
+                            "Indicator": " ⇒ ",
+                            "After": "24/26/28/30/32%"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Initial Bonus Movement Speed: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": " 75% of the maximum (unchanged)"
+                        }
+                    }
+                ]
+            },
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -1537,11 +1576,15 @@
         "13.14",
         "13.15",
         "13.18",
-        "14.7"
+        "14.7",
+        "14.18"
     ],
     "ChampionName": "Rell",
     "Balance": {
         "14.7": [
+            "nerf"
+        ],
+        "14.18": [
             "nerf"
         ]
     }

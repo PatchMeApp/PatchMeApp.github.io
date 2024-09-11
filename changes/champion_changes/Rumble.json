@@ -89,14 +89,14 @@
                 "parseInfo": [
                     {
                         "text": {
-                            "text": "80/105/130/155/180 {{0}} {{1}} magic damage",
+                            "text": "60/90/120/150/180 {{0}} {{1}} magic damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+ 6/7/8/9/10% of target's maximum health)",
+                                    "scale": "(+6/7/8/9/10% of target's maximum health)",
                                     "scaleId": "health"
                                 },
                                 {
-                                    "scale": "(+110% AP)",
+                                    "scale": "(+100% AP)",
                                     "scaleId": "AP"
                                 }
                             ]
@@ -201,7 +201,7 @@
                 "parseInfo": [
                     {
                         "text": {
-                            "text": "60/85/110/135/160 {{0}} magic damage",
+                            "text": "55/80/105/130/155 {{0}} magic damage",
                             "scaleHolders": [
                                 {
                                     "scale": "(+50% AP)",
@@ -1015,6 +1015,40 @@
             "W": "",
             "E": "",
             "R": ""
+        },
+        "14.18": {
+            "B": "",
+            "P": "",
+            "Q": {
+                "SpellName": "Q - Flamespitter",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Damage: ",
+                            "Before": " 80/105/130/155/180 (+ 110% AP) (+6/7/8/9/10% of target's maximum health)",
+                            "Indicator": " ⇒ ",
+                            "After": "60/90/120/150/180 (+ 100% AP) (+6/7/8/9/10% of target's maximum health)"
+                        }
+                    }
+                ]
+            },
+            "W": "",
+            "E": {
+                "SpellName": "E - Electro Harpoon",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Damage: ",
+                            "Before": " 60/85/110/135/160 (+50% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "55/80/105/130/155 (+50% AP)"
+                        }
+                    }
+                ]
+            },
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -1033,7 +1067,8 @@
         "13.22",
         "14.2",
         "14.14",
-        "14.17"
+        "14.17",
+        "14.18"
     ],
     "ChampionName": "Rumble",
     "Balance": {
@@ -1045,6 +1080,9 @@
             "nerf"
         ],
         "14.17": [
+            "nerf"
+        ],
+        "14.18": [
             "nerf"
         ]
     }

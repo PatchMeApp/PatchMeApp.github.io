@@ -45,7 +45,7 @@
         "P": {
             "cooldown": 12,
             "_rawTooltip": {
-                "fullTooltip": "Innate: Periodically, Ziggs' next basic attack deals [[0]],[ increased by 150% against structures. ]<br>Short Fuse's cooldown is reduced by 4 / 5 / 6 (based on level) seconds whenever Ziggs casts an ability.",
+                "fullTooltip": "Innate: Periodically, Ziggs' next basic attack deals [[0]],[ increased by 75% against structures. ]<br>Short Fuse's cooldown is reduced by 4 / 5 / 6 (based on level) seconds whenever Ziggs casts an ability.",
                 "parseInfo": [
                     {
                         "text": {
@@ -590,6 +590,27 @@
             },
             "E": "",
             "R": ""
+        },
+        "14.18": {
+            "B": "",
+            "P": {
+                "SpellName": "Passive - Short Fuse",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Increased Damage to Structures: ",
+                            "Before": " 150%",
+                            "Indicator": " ⇒ ",
+                            "After": "75%"
+                        }
+                    }
+                ]
+            },
+            "Q": "",
+            "W": "",
+            "E": "",
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -603,7 +624,8 @@
         "13.20",
         "13.22",
         "13.23",
-        "14.3"
+        "14.3",
+        "14.18"
     ],
     "ChampionName": "Ziggs",
     "Balance": {
@@ -612,6 +634,9 @@
         ],
         "14.3": [
             "buff"
+        ],
+        "14.18": [
+            "nerf"
         ]
     }
 }

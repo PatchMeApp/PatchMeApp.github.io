@@ -71,7 +71,7 @@
                 "parseInfo": [
                     {
                         "text": {
-                            "text": "70/120/170/220/270 {{0}} {{1}} magic damage",
+                            "text": "70/115/160/205/250 {{0}} {{1}} magic damage",
                             "scaleHolders": [
                                 {
                                     "scale": "(+100% AP)",
@@ -196,10 +196,10 @@
                 "parseInfo": [
                     {
                         "text": {
-                            "text": "80/180/280 {{0}} physical damage",
+                            "text": "80/160/240 {{0}} physical damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+80% AD)",
+                                    "scale": "(+70% Bonus AD)",
                                     "scaleId": "AD"
                                 }
                             ]
@@ -1103,6 +1103,40 @@
             "E": "",
             "R": ""
         },
+        "14.18": {
+            "B": "",
+            "P": "",
+            "Q": {
+                "SpellName": "Q - Phosphorus Bomb",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Damage: ",
+                            "Before": " 70/120/170/220/270 (+120% bonus AD) (+100% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "70/115/160/205/250 (+120% bonus AD) (+100% AP)"
+                        }
+                    }
+                ]
+            },
+            "W": "",
+            "E": "",
+            "R": {
+                "SpellName": "R - Missile Barrage",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Damage: ",
+                            "Before": " 80/180/280 (+80% bonus AD)",
+                            "Indicator": " ⇒ ",
+                            "After": "80/160/240 (+70% bonus AD)"
+                        }
+                    }
+                ]
+            }
+        },
         "13.24": {
             "B": {
                 "SpellName": "Base Stats",
@@ -1202,7 +1236,8 @@
         "14.11",
         "14.12",
         "14.14",
-        "14.16"
+        "14.16",
+        "14.18"
     ],
     "ChampionName": "Corki",
     "Balance": {
@@ -1226,6 +1261,9 @@
             "nerf"
         ],
         "14.16": [
+            "nerf"
+        ],
+        "14.18": [
             "nerf"
         ]
     }

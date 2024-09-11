@@ -49,7 +49,7 @@
                 "parseInfo": [
                     {
                         "text": {
-                            "text": "70 − 150 {{0}} damage",
+                            "text": "65 {{0}} damage",
                             "scaleHolders": [
                                 {
                                     "scale": "(based on level)",
@@ -200,7 +200,7 @@
         },
         "R": {
             "_rawTooltip": {
-                "fullTooltip": "Lillia causes all enemy champions with [[0]] to become [[1]] for 1.5 seconds. Afterward, they fall [[2]] for 2/2.25 seconds.<br /><br />When awakened by damage, they take an additional [[3]].",
+                "fullTooltip": "Lillia causes all enemy champions with [[0]] to become [[1]] for 1.5 seconds. Afterward, they fall [[2]] for 2 seconds.<br /><br />When awakened by damage, they take an additional [[3]].",
                 "parseInfo": [
                     {
                         "text": {
@@ -1008,6 +1008,40 @@
                 ]
             },
             "R": ""
+        },
+        "14.18": {
+            "B": "",
+            "P": {
+                "SpellName": "Passive - Dream-Laden Bough",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Monster Damage Cap: ",
+                            "Before": " 70-100 (based on level)",
+                            "Indicator": " ⇒ ",
+                            "After": "65 at all levels"
+                        }
+                    }
+                ]
+            },
+            "Q": "",
+            "W": "",
+            "E": "",
+            "R": {
+                "SpellName": "R - Lilting Lullaby",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Sleep Duration: ",
+                            "Before": " 2/2.25/2.5 seconds",
+                            "Indicator": " ⇒ ",
+                            "After": "2 seconds at all ranks"
+                        }
+                    }
+                ]
+            }
         }
     },
     "ChangePatches": [
@@ -1025,7 +1059,8 @@
         "13.1B",
         "13.8",
         "14.3",
-        "14.14"
+        "14.14",
+        "14.18"
     ],
     "ChampionName": "Lillia",
     "Balance": {
@@ -1033,6 +1068,9 @@
             "nerf"
         ],
         "14.14": [
+            "nerf"
+        ],
+        "14.18": [
             "nerf"
         ]
     }

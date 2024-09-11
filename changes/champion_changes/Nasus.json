@@ -116,7 +116,7 @@
                 "parseInfo": [
                     {
                         "text": {
-                            "text": "55/95/135/175/215 {{0}} magic damage",
+                            "text": "50/80/110/140/170 {{0}} magic damage",
                             "scaleHolders": [
                                 {
                                     "scale": "(+60% AP)",
@@ -135,7 +135,7 @@
                     },
                     {
                         "text": {
-                            "text": "55/95/135/175/215 {{0}} magic damage",
+                            "text": "50/80/110/140/170 {{0}} magic damage",
                             "scaleHolders": [
                                 {
                                     "scale": "(+60% AP)",
@@ -545,6 +545,36 @@
                 ]
             },
             "R": ""
+        },
+        "14.18": {
+            "B": "",
+            "P": "",
+            "Q": "",
+            "W": "",
+            "E": {
+                "SpellName": "E - Spirit Fire",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Initial Damage: ",
+                            "Before": " 55/95/135/175/215 (+60% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "50/80/110/140/170 (+60% AP)"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Damage per Second: ",
+                            "Before": " 11/19/27/35/43 (+12% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "10/16/22/28/34 (+12% AP)"
+                        }
+                    }
+                ]
+            },
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -556,7 +586,8 @@
         "12.19",
         "13.12",
         "14.7",
-        "14.11"
+        "14.11",
+        "14.18"
     ],
     "ChampionName": "Nasus",
     "Balance": {
@@ -565,6 +596,9 @@
         ],
         "14.11": [
             "buff"
+        ],
+        "14.18": [
+            "nerf"
         ]
     }
 }
