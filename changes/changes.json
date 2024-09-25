@@ -1,5 +1,5 @@
 {
-    "LatestGlobalPatch": "14.18",
+    "LatestGlobalPatch": "14.19",
     "Aatrox": {
         "ChampionName": "Aatrox",
         "ChangePatches": [
@@ -5804,7 +5804,8 @@
             "12.10",
             "12.16",
             "13.16",
-            "14.14"
+            "14.14",
+            "14.19"
         ],
         "LatestChanges": {
             "B": {
@@ -5813,34 +5814,83 @@
                     {
                         "Tag": "",
                         "Change": {
-                            "Attribute": "Base Mana: ",
-                            "Before": "250",
+                            "Attribute": "Attack Range: ",
+                            "Before": " 525",
                             "Indicator": " ⇒ ",
-                            "After": "300"
+                            "After": "550"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Basic Attack Damage: ",
+                            "Before": " 59",
+                            "Indicator": " ⇒ ",
+                            "After": "60"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Attack Damage Growth: ",
+                            "Before": " 3.7",
+                            "Indicator": " ⇒ ",
+                            "After": "2.5"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Health Regen Growth: ",
+                            "Before": " .65",
+                            "Indicator": " ⇒ ",
+                            "After": ".5"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Armor Growth: ",
+                            "Before": " 4.5",
+                            "Indicator": " ⇒ ",
+                            "After": "4"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Attack Speed Ratio: ",
+                            "Before": " .679",
+                            "Indicator": " ⇒ ",
+                            "After": ".694"
                         }
                     }
                 ]
             },
-            "P": "",
+            "P": {
+                "SpellName": "Passive - Draw a Bead",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Bonus Range: ",
+                            "Before": " 0-136",
+                            "Indicator": " ⇒ ",
+                            "After": "0-125"
+                        }
+                    }
+                ]
+            },
             "Q": {
                 "SpellName": "Q - Rapid Fire",
                 "Changes": [
                     {
                         "Tag": "",
                         "Change": {
-                            "Attribute": "Mana Cost: ",
-                            "Before": "0",
-                            "Indicator": " ⇒ ",
-                            "After": "50"
-                        }
-                    },
-                    {
-                        "Tag": "",
-                        "Change": {
                             "Attribute": "Attack Speed: ",
-                            "Before": "65/80/95/110/125%",
+                            "Before": " 50/65/80/95/110%",
                             "Indicator": " ⇒ ",
-                            "After": "50/65/80/95/110%"
+                            "After": "60/75/90/105/120%"
                         }
                     }
                 ]
@@ -5851,19 +5901,99 @@
                     {
                         "Tag": "",
                         "Change": {
-                            "Attribute": "Mana Cost: ",
-                            "Before": "60",
+                            "Attribute": "Slow: ",
+                            "Before": " 60%",
                             "Indicator": " ⇒ ",
-                            "After": "50"
+                            "After": "40%"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Slow Duration: ",
+                            "Before": " 1/1.5/2/2.5/3 seconds",
+                            "Indicator": " ⇒ ",
+                            "After": "2 seconds"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Damage: ",
+                            "Before": " 95/145/195/245/295 (+50% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "70/105/140/175/210 (+75% Bonus AD) (+50% AP)"
                         }
                     }
                 ]
             },
-            "E": "",
-            "R": ""
+            "E": {
+                "SpellName": "E - Explosive Charge",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Passive Explosion Damage: ",
+                            "Before": " 55/80/105/130/155",
+                            "Indicator": " ⇒ ",
+                            "After": "45/60/75/90/105"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Active Damage: ",
+                            "Before": " 70/80/90/100/110 (+50/75/100/125/150% Bonus AD) (+50% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "60/70/80/90/100 (+100/110/120/130/140% Bonus AD) (+50% AP)"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Critical Strike Modifier: ",
+                            "Before": " Damage is multiplied by 1.0 - 1.33x based on critical strike chance (33% more damage at 100% critical strike chance)",
+                            "Indicator": " ⇒ ",
+                            "After": "Damage is multiplied by 1.0 - 2.15x based on critical strike chance and critical strike damage (75% more at 100% critical strike chance, 115% more damage at 100% crit chance and an Infinity Edge)"
+                        }
+                    }
+                ]
+            },
+            "R": {
+                "SpellName": "R - Buster Shot",
+                "Changes": [
+                    {
+                        "Tag": "NEW",
+                        "Change": {
+                            "Attribute": "NEW: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": " Stun0.4/.55/.7 seconds "
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Cooldown: ",
+                            "Before": " 120/110/100",
+                            "Indicator": " ⇒ ",
+                            "After": "100"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Damage: ",
+                            "Before": " 300/400/500",
+                            "Indicator": " ⇒ ",
+                            "After": "275/325/375 (+70% Bonus AD)"
+                        }
+                    }
+                ]
+            }
         },
         "Balance": [
-            "nerf"
+            "adjust"
         ]
     },
     "Cho'Gath": {
@@ -7627,7 +7757,8 @@
             "12.13",
             "12.20",
             "13.4",
-            "13.17"
+            "13.17",
+            "14.19"
         ],
         "LatestChanges": {
             "B": "",
@@ -7637,24 +7768,37 @@
                     {
                         "Tag": "",
                         "Change": {
-                            "Attribute": "Bonus Magic Damage on Basic Attacks: ",
-                            "Before": "10/20/30/40 (+20% AP)",
-                            "Indicator": " ⇒ ",
-                            "After": "12/22/32/42 (+20% AP)"
+                            "Attribute": "",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": " Spiderlings always regenerate to full health when resummoned"
                         }
                     },
                     {
                         "Tag": "",
                         "Change": {
-                            "Attribute": "On-Hit Healing on Basic Attacks: ",
-                            "Before": "4/6/8/10 (+8% AP)",
-                            "Indicator": " ⇒ ",
-                            "After": "6/8/10/12 (+8% AP)"
+                            "Attribute": "",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": " Spiderlings jump on Q spell cast rather than waiting for Elise to land on target"
                         }
                     }
                 ]
             },
-            "Q": "",
+            "Q": {
+                "SpellName": "Q - Venomous Bite",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": " Target gets revealed for a short duration while Elise gets to them"
+                        }
+                    }
+                ]
+            },
             "W": "",
             "E": {
                 "SpellName": "E - Cocoon",
@@ -7662,16 +7806,64 @@
                     {
                         "Tag": "",
                         "Change": {
-                            "Attribute": "Stun Duration: ",
-                            "Before": "1.6/1.7/1.8/1.9/2 seconds",
-                            "Indicator": " ⇒ ",
-                            "After": "1.6/1.8/2/2.2/2.4 seconds"
+                            "Attribute": "",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": " Now reveals stealthed units and shares its duration with stun duration"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": " You can now Flash during the cast to redirect Cocoon"
                         }
                     }
                 ]
             },
-            "R": ""
-        }
+            "R": {
+                "SpellName": "R - Spider Form",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Cooldown: ",
+                            "Before": " 4",
+                            "Indicator": " ⇒ ",
+                            "After": "3"
+                        }
+                    }
+                ]
+            },
+            "E -": {
+                "SpellName": "E - Rappel",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": " Rappel Buff is now always applied after descending"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": " After 1 second in the air, Elise can recast E or target the ground to immediately drop back at her location"
+                        }
+                    }
+                ]
+            }
+        },
+        "Balance": [
+            "adjust"
+        ]
     },
     "Tryndamere": {
         "ChampionName": "Tryndamere",
@@ -8118,7 +8310,8 @@
             "11.16",
             "12.8",
             "12.10",
-            "14.12"
+            "14.12",
+            "14.19"
         ],
         "LatestChanges": {
             "B": "",
@@ -8130,28 +8323,19 @@
                     {
                         "Tag": "",
                         "Change": {
-                            "Attribute": "Current Health Cost: ",
-                            "Before": "20%",
-                            "Indicator": " ⇒ ",
-                            "After": "15%"
+                            "Attribute": "",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": " Healing is now 60% effective against minions"
                         }
                     },
                     {
                         "Tag": "",
                         "Change": {
-                            "Attribute": "Healing: ",
-                            "Before": "15%",
-                            "Indicator": " ⇒ ",
-                            "After": "30% of Pre-Mitigation Damage"
-                        }
-                    },
-                    {
-                        "Tag": "",
-                        "Change": {
-                            "Attribute": "Bonus Health Ratio: ",
-                            "Before": "80/135/190/245/300 (+10% bonus health)",
-                            "Indicator": " ⇒ ",
-                            "After": "80/135/190/245/300 (+15% bonus health)"
+                            "Attribute": "",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": " Updated tooltip to clarify that healing is not mitigated by target resistances"
                         }
                     }
                 ]
@@ -8160,7 +8344,7 @@
             "R": ""
         },
         "Balance": [
-            "buff"
+            "nerf"
         ]
     },
     "Renekton": {
@@ -8779,11 +8963,74 @@
             "13.24",
             "14.4",
             "14.10",
-            "14.11"
+            "14.11",
+            "14.19"
         ],
         "LatestChanges": {
-            "B": "",
-            "P": "",
+            "B": {
+                "SpellName": "Base Stats",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Attack Range: ",
+                            "Before": " 175",
+                            "Indicator": " ⇒ ",
+                            "After": "150"
+                        }
+                    }
+                ]
+            },
+            "P": {
+                "SpellName": "Passive - Dauntless Instinct",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Damage: ",
+                            "Before": " 5-20 (+1/1.33/1.66/2% target's maximum health) (based on level)",
+                            "Indicator": " ⇒ ",
+                            "After": "20 (+1-2% target's maximum health) (based on level)"
+                        }
+                    },
+                    {
+                        "Tag": "NEW",
+                        "Change": {
+                            "Attribute": "NEW: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": " Now causes K'Sante's attacks abilities, and passive to deal an additional 1% (+1% per 100 bonus resists) of the target's maximum health as physical damage while All Out"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": " No longer deals True Damage while All Out"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": " No longer deals increased damage while All Out"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": " No longer grants 25 attack range against marked targets"
+                        }
+                    }
+                ]
+            },
             "Q": {
                 "SpellName": "Q - Ntofo Strikes",
                 "Changes": [
@@ -8791,9 +9038,90 @@
                         "Tag": "",
                         "Change": {
                             "Attribute": "Mana Cost: ",
-                            "Before": "28/26/24/22/20",
+                            "Before": " 28/26/24/22/20",
                             "Indicator": " ⇒ ",
                             "After": "20"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Damage: ",
+                            "Before": " 30/55/80/105/130 (+40% AD) (+30% bonus resistances)",
+                            "Indicator": " ⇒ ",
+                            "After": "70/100/130/160/190 (+35% bonus resistances)"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Cooldown: ",
+                            "Before": " 3.5-1.75s (from 0-250 bonus resistances)",
+                            "Indicator": " ⇒ ",
+                            "After": "3.5-2 (from 0-120 bonus resistances)"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "All Out Cooldown Modifier: ",
+                            "Before": " Reduced by 1 second with a 1.33 second minimum",
+                            "Indicator": " ⇒ ",
+                            "After": "Reduced by 33%"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Cast Time: ",
+                            "Before": " 0.45 - 0.25 (from 0-1600 bonus health)",
+                            "Indicator": " ⇒ ",
+                            "After": "0.45 seconds - 0.35 seconds (from 0-120 bonus resistances)"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": " No longer has reduced cast time while All Out"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": " Once again slows enemies hit while All Out"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Width: ",
+                            "Before": " 150",
+                            "Indicator": " ⇒ ",
+                            "After": "100"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": " Removed 100 unit circle hitbox around K'Sante for Q1"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": " No longer resets upon casting R"
                         }
                     }
                 ]
@@ -8804,43 +9132,281 @@
                     {
                         "Tag": "",
                         "Change": {
-                            "Attribute": "Damage Reduction: ",
-                            "Before": "40-65% based on level",
+                            "Attribute": "Damage: ",
+                            "Before": " 20/40/60/80/100 (+50% AD) (+85% bonus resistances) (+6/7/8/9/10% target's maximum health)",
                             "Indicator": " ⇒ ",
-                            "After": "30%"
+                            "After": "40/60/80/100/120 (+8% (+2% per 100 bonus resistances) target's maximum health)"
                         }
                     },
                     {
                         "Tag": "",
                         "Change": {
-                            "Attribute": "Maximum Hold Duration: ",
-                            "Before": "1.5 seconds",
+                            "Attribute": "",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": " Now deals a maximum of 180/260/340/420/500 damage against monsters"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Cooldown: ",
+                            "Before": " 24/22/20/18/16",
                             "Indicator": " ⇒ ",
-                            "After": "1 second"
+                            "After": "14/13/12/11/10"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Minimum Cast Time: ",
+                            "Before": " 0.75",
+                            "Indicator": " ⇒ ",
+                            "After": "0.4"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Maximum Cast Time: ",
+                            "Before": " 1.5",
+                            "Indicator": " ⇒ ",
+                            "After": "1 "
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": " Will now go partial distance if not fully charged"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Stun Duration: ",
+                            "Before": " 1.25",
+                            "Indicator": " ⇒ ",
+                            "After": "0.5-1.5 (based on charge duration)"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": " K'Sante can no longer change his direction after casting this spell"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": " While in All Out, now deals an additional 0-110% of its damage as true damage (based on charge time)"
                         }
                     },
                     {
                         "Tag": "",
                         "Change": {
                             "Attribute": "All Out Damage Reduction: ",
-                            "Before": "57.35-75% based on level",
+                            "Before": " 60%",
                             "Indicator": " ⇒ ",
-                            "After": "60%"
+                            "After": "75%"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": " No longer charges more quickly in All Out"
                         }
                     }
                 ]
             },
-            "E": "",
+            "E": {
+                "SpellName": "E - Footwork",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Cooldown: ",
+                            "Before": " 10.5/10/9.5/8/8.5",
+                            "Indicator": " ⇒ ",
+                            "After": "10/9.5/9/8.5/8"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": " Now has a 50% reduced cooldown while All Out"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": " No longer grants increased range while All Out"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": " No longer resets K'Sante's basic attack"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": " No longer goes over walls while All Out"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Dash Speed: ",
+                            "Before": " 900",
+                            "Indicator": " ⇒ ",
+                            "After": "500 (+ Movement Speed)"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Dash Speed to Ally: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": " 1100 (+ Movement Speed) (unchanged)"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "All Out Dash Speed: ",
+                            "Before": " 900",
+                            "Indicator": " ⇒ ",
+                            "After": "950 (+ Movement Speed)"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "All Out Dash Speed to Ally: ",
+                            "Before": " 1100 (+ Movement Speed)",
+                            "Indicator": " ⇒ ",
+                            "After": "1400 (+ Movement Speed)"
+                        }
+                    }
+                ]
+            },
             "R": {
                 "SpellName": "R - All Out",
                 "Changes": [
                     {
                         "Tag": "",
                         "Change": {
-                            "Attribute": "Healing: ",
-                            "Before": "10/15/20%",
+                            "Attribute": "Damage: ",
+                            "Before": " 70/110/150 (+65% AP) magic damage",
                             "Indicator": " ⇒ ",
-                            "After": "15/20/25%"
+                            "After": "80/115/150 physical damage"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Follow-up Damage: ",
+                            "Before": " 70/110/150 (65% AP) magic damage",
+                            "Indicator": " ⇒ ",
+                            "After": "80/115/150 (+5% bonus health) physical damage"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Duration: ",
+                            "Before": " 20",
+                            "Indicator": " ⇒ ",
+                            "After": "15"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Attack Speed: ",
+                            "Before": " 25/35/45%",
+                            "Indicator": " ⇒ ",
+                            "After": "40/60/80%"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": " Now grants 50% bonus armor penetration"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": " Now grants 20% omnivamp"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": " No longer grants attack damage based on bonus resistances"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": " No longer grants healing equal to 10/15/20% damage dealt to champions"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": " Can no longer be reactivated to end early"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": " Will now properly reduce bonus resistances from Jak'Sho the Protean"
                         }
                     }
                 ]

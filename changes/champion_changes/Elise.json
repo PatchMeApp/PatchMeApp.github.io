@@ -45,7 +45,7 @@
         "P": {
             "cooldown": "",
             "_rawTooltip": {
-                "fullTooltip": "Innate - Human Form: Elise gains one dormant Spiderling whenever she hits an enemy with an ability, storing up to 2 / 3 / 4 / 5 (based on Human Form's Rank).<br>Innate - Spider Form: Elise's basic attacks deal [[0]] and heal her for 6 / 8 / 10 / 12 (based on Spider Form's Rank) (+ 8% AP) on-hit.<br>See Pets for more details about Spiderlings.",
+                "fullTooltip": "Innate - Human Form: Elise gains one dormant Spiderling whenever she hits an enemy with an ability, storing up to 2 / 3 / 4 / 5 (based on Human Form's Rank).<br>Innate - Spider Form: Elise's basic attacks deal [[0]] and heal her for 6 / 8 / 10 / 12 (based on Spider Form's Rank) (+ 8% AP) on-hit",
                 "parseInfo": [
                     {
                         "text": {
@@ -183,7 +183,7 @@
                     }
                 ]
             },
-            "cooldown": "4",
+            "cooldown": "3",
             "cost": "No Cost",
             "name": "Spider Form"
         }
@@ -535,6 +535,107 @@
                 ]
             },
             "R": ""
+        },
+        "14.19": {
+            "B": "",
+            "P": {
+                "SpellName": "Passive - Spider Queen",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": " Spiderlings always regenerate to full health when resummoned"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": " Spiderlings jump on Q spell cast rather than waiting for Elise to land on target"
+                        }
+                    }
+                ]
+            },
+            "Q": {
+                "SpellName": "Q - Venomous Bite",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": " Target gets revealed for a short duration while Elise gets to them"
+                        }
+                    }
+                ]
+            },
+            "W": "",
+            "E": {
+                "SpellName": "E - Cocoon",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": " Now reveals stealthed units and shares its duration with stun duration"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": " You can now Flash during the cast to redirect Cocoon"
+                        }
+                    }
+                ]
+            },
+            "R": {
+                "SpellName": "R - Spider Form",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Cooldown: ",
+                            "Before": " 4",
+                            "Indicator": " ⇒ ",
+                            "After": "3"
+                        }
+                    }
+                ]
+            },
+            "E -": {
+                "SpellName": "E - Rappel",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": " Rappel Buff is now always applied after descending"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": " After 1 second in the air, Elise can recast E or target the ground to immediately drop back at her location"
+                        }
+                    }
+                ]
+            }
         }
     },
     "ChangePatches": [
@@ -547,7 +648,13 @@
         "12.13",
         "12.20",
         "13.4",
-        "13.17"
+        "13.17",
+        "14.19"
     ],
-    "ChampionName": "Elise"
+    "ChampionName": "Elise",
+    "Balance": {
+        "14.19": [
+            "adjust"
+        ]
+    }
 }

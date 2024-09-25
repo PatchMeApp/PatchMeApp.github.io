@@ -10,7 +10,7 @@
         },
         "armor": {
             "base": 30,
-            "increment": 4.5
+            "increment": 4
         },
         "spellBlock": {
             "base": 28,
@@ -18,7 +18,7 @@
         },
         "hpRegen": {
             "base": 4,
-            "increment": 0.65
+            "increment": 0.5
         },
         "mpRegen": {
             "base": 7.2,
@@ -33,11 +33,11 @@
             "increment": 0
         },
         "attackDamage": {
-            "base": 59,
-            "increment": 3.7
+            "base": 60,
+            "increment": 2.5
         },
         "attackRange": {
-            "base": 525,
+            "base": 550,
             "increment": 0
         }
     },
@@ -45,7 +45,7 @@
         "P": {
             "cooldown": "",
             "_rawTooltip": {
-                "fullTooltip": "Innate: Tristana's basic attacks, Explosive Charge and Buster Shot gain 0 − 136 (based on level) bonus range, for a total of 525 − 661 (based on level).",
+                "fullTooltip": "Tristana's basic attacks, Explosive Charge and Buster Shot gain 0 − 125 (based on level) bonus range.",
                 "parseInfo": []
             },
             "name": "Draw a Bead"
@@ -56,7 +56,7 @@
                 "parseInfo": [
                     {
                         "text": {
-                            "text": "50/65/80/95/110% Attack Speed",
+                            "text": "60/75/90/105/120% Attack Speed",
                             "scaleHolders": []
                         },
                         "type": "attackSpeed"
@@ -69,12 +69,16 @@
         },
         "W": {
             "_rawTooltip": {
-                "fullTooltip": "Tristana launches herself, dealing [[0]] and [[1]] by 60% for 1/1.5/2/2.5/3 seconds upon landing.<br /><br />Champion takedowns and max stack [[2]] detonations on champions refresh this Ability's Cooldown.",
+                "fullTooltip": "Tristana launches herself, dealing [[0]] and [[1]] by 40% for 2 seconds upon landing.<br /><br />Champion takedowns and max stack [[2]] detonations on champions refresh this Ability's Cooldown.",
                 "parseInfo": [
                     {
                         "text": {
-                            "text": "95/145/195/245/295 {{0}} magic damage",
+                            "text": "70/105/140/175/210 {{0}} {{1}} magic damage",
                             "scaleHolders": [
+                                {
+                                    "scale": "(+75% Bonus AD)",
+                                    "scaleId": "AD"
+                                },
                                 {
                                     "scale": "(+50% AP)",
                                     "scaleId": "AP"
@@ -105,7 +109,7 @@
         },
         "E": {
             "_rawTooltip": {
-                "fullTooltip": "[[0]]Tristana's Attacks that kill enemies deal [[1]] to surrounding enemies.<br /><br />[[2]] Tristana attaches a bomb to an enemy or turret that deals [[3]] to surrounding enemies after 4 seconds. The damage is increased by 33.33% Critical Strike Chance and by 30% each time Tristana hits an Attack or Ability (max 4 stacks).<br /><br />At 4 stacks, the bomb explodes immediately (max [[4]]).",
+                "fullTooltip": "[[0]]Tristana's Attacks that kill enemies deal [[1]] to surrounding enemies.<br /><br />[[2]] Tristana attaches a bomb to an enemy or turret that deals [[3]] to surrounding enemies after 4 seconds. The damage is increased by 75% Critical Strike Chance and by 25% each time Tristana hits an Attack or Ability (max 4 stacks).<br /><br />At 4 stacks, the bomb explodes immediately (max [[4]]).",
                 "parseInfo": [
                     {
                         "text": {
@@ -116,7 +120,7 @@
                     },
                     {
                         "text": {
-                            "text": "55/80/105/130/155 {{0}} magic damage",
+                            "text": "45/60/75/90/105 {{0}} magic damage",
                             "scaleHolders": [
                                 {
                                     "scale": "(+25% AP)",
@@ -135,19 +139,15 @@
                     },
                     {
                         "text": {
-                            "text": "70/80/90/100/110 {{0}}% Bonus AD) {{1}} * {{2}} physical damage",
+                            "text": "60/70/80/90/100 {{0}} {{1}} physical damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+(50/75/100/125/150)",
-                                    "scaleId": "(+(50/75/100/125/150"
+                                    "scale": "(+100/110/120/130/140% Bonus AD)",
+                                    "scaleId": "AD"
                                 },
                                 {
                                     "scale": "(+50% AP)",
                                     "scaleId": "AP"
-                                },
-                                {
-                                    "scale": "(1 + 33.33% Crit Chance)",
-                                    "scaleId": "Chance"
                                 }
                             ]
                         },
@@ -155,19 +155,15 @@
                     },
                     {
                         "text": {
-                            "text": "70/80/90/100/110 {{0}}% Bonus AD) {{1}} * {{2}} physical damage",
+                            "text": "120/140/160/180/200 {{0}} {{1}} physical damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+(50/75/100/125/150)",
-                                    "scaleId": "(+(50/75/100/125/150"
+                                    "scale": "(+200/220/240/260/280% Bonus AD)",
+                                    "scaleId": "AD"
                                 },
                                 {
-                                    "scale": "(+50% AP)",
+                                    "scale": "(+100% AP)",
                                     "scaleId": "AP"
-                                },
-                                {
-                                    "scale": "(1 + 1.2)",
-                                    "scaleId": "1.2"
                                 }
                             ]
                         },
@@ -181,12 +177,16 @@
         },
         "R": {
             "_rawTooltip": {
-                "fullTooltip": "Tristana fires a massive cannonball, dealing [[0]] to the target and [[1]] them [[2]] along with surrounding enemies.",
+                "fullTooltip": "Tristana fires a massive cannonball, dealing [[0]] to the target, [[1]] and [[2]] them and surrounding enemies for 0.4/0.55/0.7 seconds.",
                 "parseInfo": [
                     {
                         "text": {
-                            "text": "300/400/500 {{0}} magic damage",
+                            "text": "275/325/375 {{0}} {{1}} magic damage",
                             "scaleHolders": [
+                                {
+                                    "scale": "(+70% Bonus AD)",
+                                    "scaleId": "AD"
+                                },
                                 {
                                     "scale": "(+100% AP)",
                                     "scaleId": "AP"
@@ -197,14 +197,14 @@
                     },
                     {
                         "text": {
-                            "text": "Knocking",
+                            "text": "Knocking Back",
                             "scaleHolders": []
                         },
                         "type": "status"
                     },
                     {
                         "text": {
-                            "text": "Back",
+                            "text": "Stunning",
                             "scaleHolders": []
                         },
                         "type": "status"
@@ -512,6 +512,191 @@
             },
             "E": "",
             "R": ""
+        },
+        "14.19": {
+            "B": {
+                "SpellName": "Base Stats",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Attack Range: ",
+                            "Before": " 525",
+                            "Indicator": " ⇒ ",
+                            "After": "550"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Basic Attack Damage: ",
+                            "Before": " 59",
+                            "Indicator": " ⇒ ",
+                            "After": "60"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Attack Damage Growth: ",
+                            "Before": " 3.7",
+                            "Indicator": " ⇒ ",
+                            "After": "2.5"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Health Regen Growth: ",
+                            "Before": " .65",
+                            "Indicator": " ⇒ ",
+                            "After": ".5"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Armor Growth: ",
+                            "Before": " 4.5",
+                            "Indicator": " ⇒ ",
+                            "After": "4"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Attack Speed Ratio: ",
+                            "Before": " .679",
+                            "Indicator": " ⇒ ",
+                            "After": ".694"
+                        }
+                    }
+                ]
+            },
+            "P": {
+                "SpellName": "Passive - Draw a Bead",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Bonus Range: ",
+                            "Before": " 0-136",
+                            "Indicator": " ⇒ ",
+                            "After": "0-125"
+                        }
+                    }
+                ]
+            },
+            "Q": {
+                "SpellName": "Q - Rapid Fire",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Attack Speed: ",
+                            "Before": " 50/65/80/95/110%",
+                            "Indicator": " ⇒ ",
+                            "After": "60/75/90/105/120%"
+                        }
+                    }
+                ]
+            },
+            "W": {
+                "SpellName": "W - Rocket Jump",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Slow: ",
+                            "Before": " 60%",
+                            "Indicator": " ⇒ ",
+                            "After": "40%"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Slow Duration: ",
+                            "Before": " 1/1.5/2/2.5/3 seconds",
+                            "Indicator": " ⇒ ",
+                            "After": "2 seconds"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Damage: ",
+                            "Before": " 95/145/195/245/295 (+50% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "70/105/140/175/210 (+75% Bonus AD) (+50% AP)"
+                        }
+                    }
+                ]
+            },
+            "E": {
+                "SpellName": "E - Explosive Charge",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Passive Explosion Damage: ",
+                            "Before": " 55/80/105/130/155",
+                            "Indicator": " ⇒ ",
+                            "After": "45/60/75/90/105"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Active Damage: ",
+                            "Before": " 70/80/90/100/110 (+50/75/100/125/150% Bonus AD) (+50% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "60/70/80/90/100 (+100/110/120/130/140% Bonus AD) (+50% AP)"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Critical Strike Modifier: ",
+                            "Before": " Damage is multiplied by 1.0 - 1.33x based on critical strike chance (33% more damage at 100% critical strike chance)",
+                            "Indicator": " ⇒ ",
+                            "After": "Damage is multiplied by 1.0 - 2.15x based on critical strike chance and critical strike damage (75% more at 100% critical strike chance, 115% more damage at 100% crit chance and an Infinity Edge)"
+                        }
+                    }
+                ]
+            },
+            "R": {
+                "SpellName": "R - Buster Shot",
+                "Changes": [
+                    {
+                        "Tag": "NEW",
+                        "Change": {
+                            "Attribute": "NEW: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": " Stun0.4/.55/.7 seconds "
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Cooldown: ",
+                            "Before": " 120/110/100",
+                            "Indicator": " ⇒ ",
+                            "After": "100"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Damage: ",
+                            "Before": " 300/400/500",
+                            "Indicator": " ⇒ ",
+                            "After": "275/325/375 (+70% Bonus AD)"
+                        }
+                    }
+                ]
+            }
         }
     },
     "ChangePatches": [
@@ -523,12 +708,16 @@
         "12.10",
         "12.16",
         "13.16",
-        "14.14"
+        "14.14",
+        "14.19"
     ],
     "ChampionName": "Tristana",
     "Balance": {
         "14.14": [
             "nerf"
+        ],
+        "14.19": [
+            "adjust"
         ]
     }
 }
