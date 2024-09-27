@@ -45,7 +45,7 @@
         "P": {
             "cooldown": "",
             "_rawTooltip": {
-                "fullTooltip": "Tristana's basic attacks, Explosive Charge and Buster Shot gain 0 − 125 (based on level) bonus range.",
+                "fullTooltip": "Tristana's basic attacks, Explosive Charge and Buster Shot gain 0 − 150 (based on level) bonus range.",
                 "parseInfo": []
             },
             "name": "Draw a Bead"
@@ -64,7 +64,7 @@
                 ]
             },
             "cooldown": "20/19/18/17/16",
-            "cost": "50 Mana",
+            "cost": "30/35/40/45/50 Mana",
             "name": "Rapid Fire"
         },
         "W": {
@@ -76,7 +76,7 @@
                             "text": "70/105/140/175/210 {{0}} {{1}} magic damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+75% Bonus AD)",
+                                    "scale": "(+100% Bonus AD)",
                                     "scaleId": "AD"
                                 },
                                 {
@@ -104,7 +104,7 @@
                 ]
             },
             "cooldown": "22/20/18/16/14",
-            "cost": "50 Mana",
+            "cost": "30/35/40/45/50 Mana",
             "name": "Rocket Jump"
         },
         "E": {
@@ -584,6 +584,15 @@
                             "Indicator": " ⇒ ",
                             "After": "0-125"
                         }
+                    },
+                    {
+                        "Tag": "MID-PATCH",
+                        "Change": {
+                            "Attribute": "Range: ",
+                            "Before": " 0-125",
+                            "Indicator": " ⇒ ",
+                            "After": " 0-150 (based on level 1-18, linear)"
+                        }
                     }
                 ]
             },
@@ -597,6 +606,15 @@
                             "Before": " 50/65/80/95/110%",
                             "Indicator": " ⇒ ",
                             "After": "60/75/90/105/120%"
+                        }
+                    },
+                    {
+                        "Tag": "MID-PATCH",
+                        "Change": {
+                            "Attribute": "Mana Cost: ",
+                            "Before": "50",
+                            "Indicator": " ⇒ ",
+                            "After": "30/35/40/45/50"
                         }
                     }
                 ]
@@ -630,6 +648,24 @@
                             "Indicator": " ⇒ ",
                             "After": "70/105/140/175/210 (+75% Bonus AD) (+50% AP)"
                         }
+                    },
+                    {
+                        "Tag": "MID-PATCH",
+                        "Change": {
+                            "Attribute": "Bonus AD ratio: ",
+                            "Before": "75%",
+                            "Indicator": " ⇒ ",
+                            "After": "100%"
+                        }
+                    },
+                    {
+                        "Tag": "MID-PATCH",
+                        "Change": {
+                            "Attribute": "Mana Cost: ",
+                            "Before": "50",
+                            "Indicator": " ⇒ ",
+                            "After": "30/35/40/45/50"
+                        }
                     }
                 ]
             },
@@ -661,6 +697,15 @@
                             "Before": " Damage is multiplied by 1.0 - 1.33x based on critical strike chance (33% more damage at 100% critical strike chance)",
                             "Indicator": " ⇒ ",
                             "After": "Damage is multiplied by 1.0 - 2.15x based on critical strike chance and critical strike damage (75% more at 100% critical strike chance, 115% more damage at 100% crit chance and an Infinity Edge)"
+                        }
+                    },
+                    {
+                        "Tag": "MID-PATCH",
+                        "Change": {
+                            "Attribute": "Shield: ",
+                            "Before": "50/100/150/200/250 (+10% bonus HP)",
+                            "Indicator": " ⇒ ",
+                            "After": "80/120/160/200/240 (+15% bonus HP)"
                         }
                     }
                 ]
@@ -717,7 +762,8 @@
             "nerf"
         ],
         "14.19": [
-            "adjust"
+            "adjust",
+            "buff"
         ]
     }
 }

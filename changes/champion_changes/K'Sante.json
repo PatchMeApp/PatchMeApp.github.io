@@ -9,7 +9,7 @@
             "increment": 60
         },
         "armor": {
-            "base": 33,
+            "base": 36,
             "increment": 5.2
         },
         "spellBlock": {
@@ -73,14 +73,14 @@
                 "parseInfo": [
                     {
                         "text": {
-                            "text": "70/100/130/160/190 {{0}} {{1}} physical damage",
+                            "text": "80/110/140/170/200 {{0}} {{1}} physical damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+0.35 bonus armor)",
+                                    "scale": "(+0.4 bonus armor)",
                                     "scaleId": "armor"
                                 },
                                 {
-                                    "scale": "(+0.35 bonus magic resistance)",
+                                    "scale": "(+0.4 bonus magic resistance)",
                                     "scaleId": "resistance"
                                 }
                             ]
@@ -123,7 +123,7 @@
         },
         "W": {
             "_rawTooltip": {
-                "fullTooltip": "[[0]] K'Sante raises his weapons defensively for 0.4 - 1 second, becoming Unstoppable and reducing incoming damage by 30%.<br /><br />[[1]] K'Sante rams forward, dealing [[2]]. K'Sante [[3]] and [[4]] enemies for 0.5 - 1.5 (based on charge duration) seconds.<br /><br />[[5]] This Ability's Cooldown is refreshed. Deals an additional 10-100% damage as [[6]] (Based on charge time) Damage reduction increases to 75% (based on champion level) and its dash speed increases.<br />This Ability will no longer [[7]] or [[8]]",
+                "fullTooltip": "[[0]] K'Sante raises his weapons defensively for 0.4 - 1 second, becoming Unstoppable and reducing incoming damage by 30%.<br /><br />[[1]] K'Sante rams forward, dealing [[2]]. K'Sante [[3]] and [[4]] enemies for 0.5 - 1.75 (based on charge duration) seconds.<br /><br />[[5]] This Ability's Cooldown is refreshed. Deals an additional 10-100% damage as [[6]] (Based on charge time) Damage reduction increases to 75% (based on champion level) and its dash speed increases.<br />This Ability will no longer [[7]] or [[8]]",
                 "parseInfo": [
                     {
                         "text": {
@@ -213,10 +213,10 @@
                 "parseInfo": [
                     {
                         "text": {
-                            "text": "50/100/150/200/250 {{0}} Shield",
+                            "text": "80/120/160/200/240 {{0}} Shield",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+ 10% bonus health)",
+                                    "scale": "(+ 15% bonus health)",
                                     "scaleId": "health"
                                 }
                             ]
@@ -1278,6 +1278,15 @@
                             "Indicator": " ⇒ ",
                             "After": "150"
                         }
+                    },
+                    {
+                        "Tag": "MID-PATCH",
+                        "Change": {
+                            "Attribute": "Armor: ",
+                            "Before": "33",
+                            "Indicator": " ⇒ ",
+                            "After": "36"
+                        }
                     }
                 ]
             },
@@ -1423,6 +1432,15 @@
                             "Indicator": "",
                             "After": " No longer resets upon casting R"
                         }
+                    },
+                    {
+                        "Tag": "MID-PATCH",
+                        "Change": {
+                            "Attribute": "Damage: ",
+                            "Before": "70/100/130/160/190 (+35% bonus Armor and Magic Resistance)",
+                            "Indicator": " ⇒ ",
+                            "After": "80/110/140/170/200 (+40% bonus Armor and Magic Resistance)"
+                        }
                     }
                 ]
             },
@@ -1527,6 +1545,15 @@
                             "Indicator": "",
                             "After": " No longer charges more quickly in All Out"
                         }
+                    },
+                    {
+                        "Tag": "MID-PATCH",
+                        "Change": {
+                            "Attribute": "Stun Duration: ",
+                            "Before": "0.5-1.5",
+                            "Indicator": " ⇒ ",
+                            "After": "0.5-1.75 seconds (based on channel time)"
+                        }
                     }
                 ]
             },
@@ -1612,6 +1639,15 @@
                             "Before": " 1100 (+ Movement Speed)",
                             "Indicator": " ⇒ ",
                             "After": "1400 (+ Movement Speed)"
+                        }
+                    },
+                    {
+                        "Tag": "MID-PATCH",
+                        "Change": {
+                            "Attribute": "Shield: ",
+                            "Before": "50/100/150/200/250 (+10% bonus HP)",
+                            "Indicator": " ⇒ ",
+                            "After": "80/120/160/200/240 (+15% bonus HP)"
                         }
                     }
                 ]
@@ -1745,7 +1781,8 @@
             "adjust"
         ],
         "14.19": [
-            "adjust"
+            "adjust",
+            "buff"
         ]
     }
 }

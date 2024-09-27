@@ -71,7 +71,7 @@
                 "parseInfo": [
                     {
                         "text": {
-                            "text": "70/115/160/205/250 {{0}} {{1}} magic damage",
+                            "text": "70/120/170/220/270 {{0}} {{1}} magic damage",
                             "scaleHolders": [
                                 {
                                     "scale": "(+100% AP)",
@@ -160,7 +160,7 @@
                 "parseInfo": [
                     {
                         "text": {
-                            "text": "100/145/190/235/280 {{0}} physical damage",
+                            "text": "100/150/200/250/300 {{0}} physical damage",
                             "scaleHolders": [
                                 {
                                     "scale": "(+250% Bonus AD)",
@@ -1218,6 +1218,40 @@
                     }
                 ]
             }
+        },
+        "14.19": {
+            "B": "",
+            "P": "",
+            "Q": {
+                "SpellName": "Q - Phosphorus Bomb",
+                "Changes": [
+                    {
+                        "Tag": "MID-PATCH",
+                        "Change": {
+                            "Attribute": "Base Damage: ",
+                            "Before": " 70/115/160/205/250",
+                            "Indicator": " ⇒ ",
+                            "After": "70/120/170/220/270"
+                        }
+                    }
+                ]
+            },
+            "W": "",
+            "E": {
+                "SpellName": "E - Gatling Gun",
+                "Changes": [
+                    {
+                        "Tag": "MID-PATCH",
+                        "Change": {
+                            "Attribute": "Base Damage per tick ",
+                            "Before": "6.25/9.375/12.5/15.625/18.75 (100/150/200/250/300 total)",
+                            "Indicator": " ⇒ ",
+                            "After": "6.25/9.0625/11.875/14.6875/17.5 (100/145/190/235/280 Total)"
+                        }
+                    }
+                ]
+            },
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -1237,7 +1271,8 @@
         "14.12",
         "14.14",
         "14.16",
-        "14.18"
+        "14.18",
+        "14.19"
     ],
     "ChampionName": "Corki",
     "Balance": {
@@ -1265,6 +1300,9 @@
         ],
         "14.18": [
             "nerf"
+        ],
+        "14.19": [
+            "buff"
         ]
     }
 }

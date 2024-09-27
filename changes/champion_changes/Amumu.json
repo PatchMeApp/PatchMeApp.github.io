@@ -100,7 +100,7 @@
                     },
                     {
                         "text": {
-                            "text": "14 plus 1/1.25/1.5/1.75/2% {{0}} max Health magic damage",
+                            "text": "10 plus 1/1.25/1.5/1.75/2% {{0}} max Health magic damage",
                             "scaleHolders": [
                                 {
                                     "scale": "(+0.5% per 100 AP)",
@@ -143,14 +143,10 @@
                     },
                     {
                         "text": {
-                            "text": "865/100/135/170/205 {{0}}0/110/140/170/200 {{1}} magic damage",
+                            "text": "65/95/125/155/185 {{0}} magic damage",
                             "scaleHolders": [
                                 {
                                     "scale": "(+50% AP)",
-                                    "scaleId": "AP"
-                                },
-                                {
-                                    "scale": "(+ 50% AP)",
                                     "scaleId": "AP"
                                 }
                             ]
@@ -1028,6 +1024,40 @@
                 ]
             },
             "R": ""
+        },
+        "14.19": {
+            "B": "",
+            "P": "",
+            "Q": "",
+            "W": {
+                "SpellName": "W - Despair",
+                "Changes": [
+                    {
+                        "Tag": "MID-PATCH",
+                        "Change": {
+                            "Attribute": "Base Damage per tick: ",
+                            "Before": "7",
+                            "Indicator": " ⇒ ",
+                            "After": "5 (14 >>> 10 per second)"
+                        }
+                    }
+                ]
+            },
+            "E": {
+                "SpellName": "E - Tantrum",
+                "Changes": [
+                    {
+                        "Tag": "MID-PATCH",
+                        "Change": {
+                            "Attribute": "Base Damage: ",
+                            "Before": "65/100/135/170/205",
+                            "Indicator": " ⇒ ",
+                            "After": "65/95/125/155/185"
+                        }
+                    }
+                ]
+            },
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -1052,12 +1082,16 @@
         "13.4",
         "13.9",
         "13.11",
-        "14.9"
+        "14.9",
+        "14.19"
     ],
     "ChampionName": "Amumu",
     "Balance": {
         "14.9": [
             "buff"
+        ],
+        "14.19": [
+            "nerf"
         ]
     }
 }
