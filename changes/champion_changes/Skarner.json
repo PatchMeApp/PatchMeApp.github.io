@@ -49,7 +49,7 @@
                 "parseInfo": [
                     {
                         "text": {
-                            "text": "5% - 11% max-Health magic damage",
+                            "text": "5-9% max-Health magic damage",
                             "scaleHolders": []
                         },
                         "type": "magicDamage"
@@ -180,7 +180,7 @@
                             "text": "30/60/90/120/150 {{0}} physical damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+8% Health)",
+                                    "scale": "(+6% Health)",
                                     "scaleId": "Health"
                                 }
                             ]
@@ -908,6 +908,40 @@
             "E": "",
             "R": ""
         },
+        "14.20": {
+            "B": "",
+            "P": {
+                "SpellName": "Passive - Threads of Vibration",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Max Health Damage: ",
+                            "Before": " 5-11% (based on level)",
+                            "Indicator": " ⇒ ",
+                            "After": "5-9% (based on level)"
+                        }
+                    }
+                ]
+            },
+            "Q": "",
+            "W": "",
+            "E": {
+                "SpellName": "E - Ixtal's Impact",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Damage: ",
+                            "Before": " 30/60/90/120/150 (+8% of Skarner's max health)",
+                            "Indicator": " ⇒ ",
+                            "After": "30/60/90/120/150 (+6% of Skarner's max health)"
+                        }
+                    }
+                ]
+            },
+            "R": ""
+        },
         "14.7": {
             "B": {
                 "SpellName": "Base Stats",
@@ -1003,7 +1037,8 @@
         "14.12",
         "14.13",
         "14.15",
-        "14.16"
+        "14.16",
+        "14.20"
     ],
     "ChampionName": "Skarner",
     "Balance": {
@@ -1031,6 +1066,9 @@
             "adjust"
         ],
         "14.16": [
+            "nerf"
+        ],
+        "14.20": [
             "nerf"
         ]
     }

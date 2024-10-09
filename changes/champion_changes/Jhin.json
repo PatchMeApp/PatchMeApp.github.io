@@ -34,7 +34,7 @@
         },
         "attackDamage": {
             "base": 59,
-            "increment": 4.7
+            "increment": 4.4
         },
         "attackRange": {
             "base": 550,
@@ -204,7 +204,7 @@
                 "parseInfo": [
                     {
                         "text": {
-                            "text": "64/154/244  {{0}}",
+                            "text": "64/128/192 {{0}}",
                             "scaleHolders": [
                                 {
                                     "scale": "(+25% AD)",
@@ -527,6 +527,40 @@
             "E": "",
             "R": ""
         },
+        "14.20": {
+            "B": {
+                "SpellName": "Base Stats",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Attack Damage Growth: ",
+                            "Before": " 4.7",
+                            "Indicator": " ⇒ ",
+                            "After": "4.4"
+                        }
+                    }
+                ]
+            },
+            "P": "",
+            "Q": "",
+            "W": "",
+            "E": "",
+            "R": {
+                "SpellName": "R - Curtain Call",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Minimum Damage: ",
+                            "Before": " 64/154/244 (+25% AD)",
+                            "Indicator": " ⇒ ",
+                            "After": "64/128/192 (+25% AD)"
+                        }
+                    }
+                ]
+            }
+        },
         "13.1B": {
             "B": "",
             "P": "",
@@ -572,12 +606,16 @@
         "12.10",
         "13.1B",
         "13.19",
-        "14.8"
+        "14.8",
+        "14.20"
     ],
     "ChampionName": "Jhin",
     "Balance": {
         "14.8": [
             "buff"
+        ],
+        "14.20": [
+            "nerf"
         ]
     }
 }

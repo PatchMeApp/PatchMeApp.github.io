@@ -69,11 +69,11 @@
                 "parseInfo": [
                     {
                         "text": {
-                            "text": "15/35/55/75/95 {{0}}% AD) physical damage",
+                            "text": "45/75/105/135/165 {{0}} physical damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+(45/50/55/60/65)",
-                                    "scaleId": "(+(45/50/55/60/65"
+                                    "scale": "(+65/70/75/80/85% Bonus% AD)",
+                                    "scaleId": "AD"
                                 }
                             ]
                         },
@@ -102,11 +102,11 @@
                     },
                     {
                         "text": {
-                            "text": "15/35/55/75/95 {{0}}% AD) physical damage",
+                            "text": "45/75/105/135/165 {{0}} physical damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+(50/55/60/65/70)",
-                                    "scaleId": "(+(50/55/60/65/70"
+                                    "scale": "(+65/70/75/80/85% Bonus% AD)",
+                                    "scaleId": "AD"
                                 }
                             ]
                         },
@@ -527,6 +527,81 @@
                     }
                 ]
             }
+        },
+        "14.20": {
+            "B": "",
+            "P": "",
+            "Q": {
+                "SpellName": "Q - Broken Wings",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Damage: ",
+                            "Before": " 15/35/55/75/95 (+50/55/60/65/70% total AD)",
+                            "Indicator": " ⇒ ",
+                            "After": "45/75/105/135/165 (+65/70/75/80/85% bonus AD)"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Recommended Runes: ",
+                            "Before": "\n\n LegendAlacrity",
+                            "Indicator": " ⇒ ",
+                            "After": "LegendHaste\n Last Stand"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "",
+                            "Before": " LegendAlacrity",
+                            "Indicator": " ⇒ ",
+                            "After": "LegendHaste"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "",
+                            "Before": " Last Stand",
+                            "Indicator": " ⇒ ",
+                            "After": "Cut Down"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "",
+                            "Before": " Nimbus Cloak",
+                            "Indicator": " ⇒ ",
+                            "After": "Gathering Storm"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "",
+                            "Before": " Bone Plating",
+                            "Indicator": " ⇒ ",
+                            "After": "Second Wind"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "",
+                            "Before": " Unflinching",
+                            "Indicator": " ⇒ ",
+                            "After": "Shield Bash"
+                        }
+                    }
+                ]
+            },
+            "W": "",
+            "E": "",
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -538,11 +613,15 @@
         "11.22",
         "12.10",
         "13.4",
-        "13.23"
+        "13.23",
+        "14.20"
     ],
     "ChampionName": "Riven",
     "Balance": {
         "13.24": [
+            "buff"
+        ],
+        "14.20": [
             "buff"
         ]
     }

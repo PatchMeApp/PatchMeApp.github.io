@@ -93,11 +93,11 @@
                 "parseInfo": [
                     {
                         "text": {
-                            "text": "50/90/130/170/210 {{0}}% AD) physical damage",
+                            "text": "50/90/130/170/210 {{0}} physical damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+(125/145/165/185/205)",
-                                    "scaleId": "(+(125/145/165/185/205"
+                                    "scale": "(+125/145/165/185/205% AD)",
+                                    "scaleId": "AD"
                                 }
                             ]
                         },
@@ -105,11 +105,11 @@
                     },
                     {
                         "text": {
-                            "text": "25/45/65/85/105 {{0}}% AD) physical damage",
+                            "text": "30/54/78/102/126 {{0}} physical damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+(62.5/72.5/82.5/92.5/102.5)",
-                                    "scaleId": "(+(62.5/72.5/82.5/92.5/102.5"
+                                    "scale": "(+75/87/99/111/123% AD)",
+                                    "scaleId": "AD"
                                 }
                             ]
                         },
@@ -873,6 +873,40 @@
             "E": "",
             "R": ""
         },
+        "14.20": {
+            "B": {
+                "SpellName": "Base Stats",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Attack Speed Ratio: ",
+                            "Before": " 0.61",
+                            "Indicator": " ⇒ ",
+                            "After": "0.625"
+                        }
+                    }
+                ]
+            },
+            "P": "",
+            "Q": {
+                "SpellName": "Q - Piltover Peacemaker",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Damage to Secondary Targets: ",
+                            "Before": " 50%",
+                            "Indicator": " ⇒ ",
+                            "After": "60% of total damage"
+                        }
+                    }
+                ]
+            },
+            "W": "",
+            "E": "",
+            "R": ""
+        },
         "12.12": {
             "B": {
                 "SpellName": "Base Stats",
@@ -982,7 +1016,8 @@
         "13.16",
         "13.21",
         "14.11",
-        "14.17"
+        "14.17",
+        "14.20"
     ],
     "ChampionName": "Caitlyn",
     "Balance": {
@@ -990,6 +1025,9 @@
             "adjust"
         ],
         "14.17": [
+            "buff"
+        ],
+        "14.20": [
             "buff"
         ]
     }

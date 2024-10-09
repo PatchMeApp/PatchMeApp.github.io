@@ -88,7 +88,7 @@
                 ]
             },
             "cooldown": "9/8.5/8/7.5/7",
-            "cost": "80 Mana",
+            "cost": "60/65/70/75/80 Mana",
             "name": "Phosphorus Bomb"
         },
         "W": {
@@ -97,11 +97,15 @@
                 "parseInfo": [
                     {
                         "text": {
-                            "text": "60/90/120/150/180 {{0}} magic damage",
+                            "text": "60/90/120/150/180 {{0}} {{1}} magic damage",
                             "scaleHolders": [
                                 {
                                     "scale": "(+60% AP)",
                                     "scaleId": "AP"
+                                },
+                                {
+                                    "scale": "(+60% bonus AD)",
+                                    "scaleId": "AD"
                                 }
                             ]
                         },
@@ -187,7 +191,7 @@
                 ]
             },
             "cooldown": "12",
-            "cost": "50/60/70/80/90 Mana",
+            "cost": "50/55/60/65/70 Mana",
             "name": "Gatling Gun"
         },
         "R": {
@@ -1137,6 +1141,53 @@
                 ]
             }
         },
+        "14.20": {
+            "B": "",
+            "P": "",
+            "Q": {
+                "SpellName": "Q - Phosphorus Bomb",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Mana Cost: ",
+                            "Before": " 80 at all ranks",
+                            "Indicator": " ⇒ ",
+                            "After": "60/65/70/75/80"
+                        }
+                    }
+                ]
+            },
+            "W": {
+                "SpellName": "W - Valkyrie",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Maximum Damage: ",
+                            "Before": " 150/225/300/375/450 (+150% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "150/225/300/375/450 (+150% bonus AD) (+150% AP)"
+                        }
+                    }
+                ]
+            },
+            "E": {
+                "SpellName": "E - Gatling Gun",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Mana Cost: ",
+                            "Before": " 50/60/70/80/90",
+                            "Indicator": " ⇒ ",
+                            "After": "50/55/60/65/70"
+                        }
+                    }
+                ]
+            },
+            "R": ""
+        },
         "13.24": {
             "B": {
                 "SpellName": "Base Stats",
@@ -1272,7 +1323,8 @@
         "14.14",
         "14.16",
         "14.18",
-        "14.19"
+        "14.19",
+        "14.20"
     ],
     "ChampionName": "Corki",
     "Balance": {
@@ -1302,6 +1354,9 @@
             "nerf"
         ],
         "14.19": [
+            "buff"
+        ],
+        "14.20": [
             "buff"
         ]
     }

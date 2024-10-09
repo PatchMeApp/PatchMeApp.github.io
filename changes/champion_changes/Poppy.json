@@ -43,7 +43,7 @@
     },
     "spells": {
         "P": {
-            "cooldown": "13/10/7",
+            "cooldown": "16/12/8 (levels 1/7/13)",
             "_rawTooltip": {
                 "fullTooltip": "Innate: Periodically, Poppy throws her buckler as her next basic attack, which has 350 bonus range and deals [[0]]. The buckler then falls near the target after 1 second, where it remains for up to 4 seconds.<br>Upon retrieving the buckler, Poppy shields herself for [[1]] for 3 seconds. If the buckler kills the target, it bounces back to Poppy automatically. Enemy champions can step on the buckler to destroy it.",
                 "parseInfo": [
@@ -186,7 +186,7 @@
                 "parseInfo": [
                     {
                         "text": {
-                            "text": "60/80/100/120/140 {{0}} physical damage",
+                            "text": "50/70/90/110/130 {{0}} physical damage",
                             "scaleHolders": [
                                 {
                                     "scale": "(+50% Bonus AD)",
@@ -205,7 +205,7 @@
                     },
                     {
                         "text": {
-                            "text": "60/80/100/120/140 {{0}} physical damage",
+                            "text": "50/70/90/110/130 {{0}} physical damage",
                             "scaleHolders": [
                                 {
                                     "scale": "(+50% Bonus AD)",
@@ -503,6 +503,53 @@
             },
             "E": "",
             "R": ""
+        },
+        "14.20": {
+            "B": "",
+            "P": {
+                "SpellName": "Passive - Iron Ambassador",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Cooldown: ",
+                            "Before": " 13/10/7 (levels 1/7/13)",
+                            "Indicator": " ⇒ ",
+                            "After": "16/12/8 (levels 1/7/13)"
+                        }
+                    }
+                ]
+            },
+            "Q": {
+                "SpellName": "Q - Hammer Shock",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Damage Cap vs Monsters: ",
+                            "Before": " 30/60/90/120/150",
+                            "Indicator": " ⇒ ",
+                            "After": "50/80/110/140/170"
+                        }
+                    }
+                ]
+            },
+            "W": "",
+            "E": {
+                "SpellName": "E - Heroic Charge",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Damage: ",
+                            "Before": " 60/80/100/120/140 (+50% bonus AD)",
+                            "Indicator": " ⇒ ",
+                            "After": "50/70/90/110/130 (+50% bonus AD)"
+                        }
+                    }
+                ]
+            },
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -510,7 +557,13 @@
         "12.8",
         "12.10",
         "12.16",
-        "13.8"
+        "13.8",
+        "14.20"
     ],
-    "ChampionName": "Poppy"
+    "ChampionName": "Poppy",
+    "Balance": {
+        "14.20": [
+            "nerf"
+        ]
+    }
 }

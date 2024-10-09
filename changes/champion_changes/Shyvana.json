@@ -129,7 +129,7 @@
                             "text": "30/35/40/45/50% {{0}} decaying Move Speed",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+12% per 100 AP)",
+                                    "scale": "(+10% per 100 AP)",
                                     "scaleId": "AP"
                                 }
                             ]
@@ -234,7 +234,7 @@
                     },
                     {
                         "text": {
-                            "text": "240 - 480 {{0}} {{1}} {{2}} magic damage",
+                            "text": "160 - 400 {{0}} {{1}} {{2}} magic damage",
                             "scaleHolders": [
                                 {
                                     "scale": "(based on champion level)",
@@ -309,7 +309,7 @@
                             "text": "150/250/350 {{0}} magic damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+130% AP)",
+                                    "scale": "(+100% AP)",
                                     "scaleId": "AP"
                                 }
                             ]
@@ -918,6 +918,53 @@
                 ]
             },
             "R": ""
+        },
+        "14.20": {
+            "B": "",
+            "P": "",
+            "Q": "",
+            "W": {
+                "SpellName": "W - Burnout",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Move Speed: ",
+                            "Before": " 30/35/40/45/50% + 12% per 100 AP",
+                            "Indicator": " ⇒ ",
+                            "After": "30/35/40/45/50% + 10% per 100 AP"
+                        }
+                    }
+                ]
+            },
+            "E": {
+                "SpellName": "E - Flame Breath",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Dragon Form Ground DPS: ",
+                            "Before": " 60-120 (Level 6-18) + 15% bonus AD + 20% AP",
+                            "Indicator": " ⇒ ",
+                            "After": "40-100 (Level 6-18) + 15% bonus AD + 20% AP "
+                        }
+                    }
+                ]
+            },
+            "R": {
+                "SpellName": "R - Dragon's Descent",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Damage: ",
+                            "Before": " 150/250/350 + 130% AP",
+                            "Indicator": " ⇒ ",
+                            "After": "150/250/350 + 100% AP "
+                        }
+                    }
+                ]
+            }
         }
     },
     "ChangePatches": [
@@ -934,7 +981,8 @@
         "13.15",
         "13.16",
         "14.3",
-        "14.15"
+        "14.15",
+        "14.20"
     ],
     "ChampionName": "Shyvana",
     "Balance": {
@@ -942,6 +990,9 @@
             "buff"
         ],
         "14.15": [
+            "nerf"
+        ],
+        "14.20": [
             "nerf"
         ]
     }
