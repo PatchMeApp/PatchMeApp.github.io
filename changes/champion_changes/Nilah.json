@@ -153,7 +153,7 @@
                 "parseInfo": [
                     {
                         "text": {
-                            "text": "65/90/115/140/165 {{0}} physical damage",
+                            "text": "60/70/80/90/100 {{0}} physical damage",
                             "scaleHolders": [
                                 {
                                     "scale": "(+20% Bonus AD)",
@@ -175,10 +175,10 @@
                 "parseInfo": [
                     {
                         "text": {
-                            "text": "60/120/180 {{0}} physical damage",
+                            "text": "60/100/140 {{0}} physical damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+80% Bonus AD)",
+                                    "scale": "(+40% Bonus AD)",
                                     "scaleId": "AD"
                                 }
                             ]
@@ -190,7 +190,7 @@
                             "text": "125/225/325 {{0}} physical damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+120% Bonus AD)",
+                                    "scale": "(+100% Bonus AD)",
                                     "scaleId": "AD"
                                 }
                             ]
@@ -446,10 +446,50 @@
                             "Indicator": " ⇒ ",
                             "After": "Instant"
                         }
+                    },
+                    {
+                        "Tag": "MID-PATCH",
+                        "Change": {
+                            "Attribute": "Damage: ",
+                            "Before": "65/90/115/140/165 (+20% bonus AD)",
+                            "Indicator": " ⇒ ",
+                            "After": "60/70/80/90/100 (+20% bonus AD)"
+                        }
                     }
                 ]
             },
-            "R": ""
+            "R": {
+                "SpellName": "R - Apotheosis",
+                "Changes": [
+                    {
+                        "Tag": "MID-PATCH",
+                        "Change": {
+                            "Attribute": "Damage Over Time: ",
+                            "Before": "60/120/180 (+80% bonus AD)",
+                            "Indicator": " ⇒ ",
+                            "After": "60/100/140 (+40% bonus AD)"
+                        }
+                    },
+                    {
+                        "Tag": "MID-PATCH",
+                        "Change": {
+                            "Attribute": "Burst Damage: ",
+                            "Before": "125/225/325 (+120% bonus AD)",
+                            "Indicator": " ⇒ ",
+                            "After": "125/225/325 (+100% bonus AD)"
+                        }
+                    },
+                    {
+                        "Tag": "MID-PATCH",
+                        "Change": {
+                            "Attribute": "Maximum Damage: ",
+                            "Before": "185/345/505 (+200% bonus AD)",
+                            "Indicator": " ⇒ ",
+                            "After": "185/325/465 (+140% bonus AD)"
+                        }
+                    }
+                ]
+            }
         },
         "12.23": {
             "B": "",
@@ -539,7 +579,8 @@
             "buff"
         ],
         "14.20": [
-            "buff"
+            "buff",
+            "nerf"
         ]
     }
 }
