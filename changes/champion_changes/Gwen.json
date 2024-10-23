@@ -83,7 +83,7 @@
                             "text": "1% {{0}} of the target's maximum health",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+ 0.72% per 100 AP)",
+                                    "scale": "(+ 0.6% per 100 AP)",
                                     "scaleId": "AP"
                                 }
                             ]
@@ -872,6 +872,27 @@
             "E": "",
             "R": ""
         },
+        "14.21": {
+            "B": "",
+            "P": {
+                "SpellName": "Passive - Thousand Cuts",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Damage: ",
+                            "Before": " 1% (+0.72% per 100 AP) of the target’s maximum health",
+                            "Indicator": " ⇒ ",
+                            "After": "1% (+0.6% per 100 AP) of the target’s maximum health"
+                        }
+                    }
+                ]
+            },
+            "Q": "",
+            "W": "",
+            "E": "",
+            "R": ""
+        },
         "14.1": {
             "B": "",
             "P": {
@@ -908,7 +929,8 @@
         "13.15",
         "13.18",
         "14.1",
-        "14.2"
+        "14.2",
+        "14.21"
     ],
     "ChampionName": "Gwen",
     "Balance": {
@@ -917,6 +939,9 @@
         ],
         "14.2": [
             "buff"
+        ],
+        "14.21": [
+            "nerf"
         ]
     }
 }

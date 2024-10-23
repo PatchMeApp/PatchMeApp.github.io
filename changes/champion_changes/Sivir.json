@@ -76,10 +76,10 @@
                 "parseInfo": [
                     {
                         "text": {
-                            "text": "15/30/45/60/75 {{0}} {{1}} * {{2}}",
+                            "text": "60/85/110/135/160 {{0}} {{1}} * {{2}}",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+80/85/90/95/100% AD)",
+                                    "scale": "(+100% bonus AD)",
                                     "scaleId": "AD"
                                 },
                                 {
@@ -893,6 +893,40 @@
             "E": "",
             "R": ""
         },
+        "14.21": {
+            "B": {
+                "SpellName": "Base Stats",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Attack Damage: ",
+                            "Before": " 58",
+                            "Indicator": " ⇒ ",
+                            "After": "60"
+                        }
+                    }
+                ]
+            },
+            "P": "",
+            "Q": {
+                "SpellName": "Q - Boomerang Blade",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Damage: ",
+                            "Before": " 15/30/45/60/75 (+80/85/90/95/100% total AD) (+60% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "60/85/110/135/160 (+100% bonus AD) (+60% AP)"
+                        }
+                    }
+                ]
+            },
+            "W": "",
+            "E": "",
+            "R": ""
+        },
         "13.1B": {
             "B": {
                 "SpellName": "Base Stats",
@@ -941,11 +975,15 @@
         "12.17",
         "13.1B",
         "13.12",
-        "14.5"
+        "14.5",
+        "14.21"
     ],
     "ChampionName": "Sivir",
     "Balance": {
         "14.5": [
+            "buff"
+        ],
+        "14.21": [
             "buff"
         ]
     }

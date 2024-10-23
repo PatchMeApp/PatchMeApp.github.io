@@ -88,7 +88,7 @@
                             "text": "5/25/45/65/85 {{0}} physical damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+60% AD)",
+                                    "scale": "(+70% AD)",
                                     "scaleId": "AD"
                                 }
                             ]
@@ -111,8 +111,8 @@
                     }
                 ]
             },
-            "cooldown": "11/10/9/8/7",
-            "cost": "20 Mana",
+            "cooldown": "10/9/8/7/6",
+            "cost": "15 Mana",
             "name": "Bladesurge"
         },
         "W": {
@@ -223,7 +223,7 @@
         },
         "R": {
             "_rawTooltip": {
-                "fullTooltip": "Irelia launches a barrage of blades, dealing [[0]] and making champions and large jungle monsters [[1]] for 5 seconds. The barrage explodes into a cage around the first champion hit for 2.5 seconds. The cage deals [[2]] and [[3]] by 90% for 1.5 seconds.<br /><br />[[4]]",
+                "fullTooltip": "Irelia launches a barrage of blades, dealing [[0]] and making champions and large jungle monsters [[1]] for 5 seconds. The barrage explodes into a cage around the first champion hit for 2.5 seconds. The cage deals [[2]] and [[3]] by 90% for 1.5 seconds.",
                 "parseInfo": [
                     {
                         "text": {
@@ -262,13 +262,6 @@
                             "scaleHolders": []
                         },
                         "type": "status"
-                    },
-                    {
-                        "text": {
-                            "text": "Bladesurge's base cooldown is reduced by 0.5/1/1.5  seconds.",
-                            "scaleHolders": []
-                        },
-                        "type": ""
                     }
                 ]
             },
@@ -835,6 +828,67 @@
             "W": "",
             "E": "",
             "R": ""
+        },
+        "14.21": {
+            "B": "",
+            "P": "",
+            "Q": {
+                "SpellName": "Q - Bladesurge",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Cooldown: ",
+                            "Before": " 11/10/9/8/7",
+                            "Indicator": " ⇒ ",
+                            "After": "10/9/8/7/6"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Mana: ",
+                            "Before": " 20",
+                            "Indicator": " ⇒ ",
+                            "After": "15"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Damage: ",
+                            "Before": " 5/25/45/65/80 (+60% AD)",
+                            "Indicator": " ⇒ ",
+                            "After": "5/25/45/65/80 (+70% AD)"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Bonus damage to minions: ",
+                            "Before": " 50-259 (based on level)",
+                            "Indicator": " ⇒ ",
+                            "After": "50-237 (based on level)"
+                        }
+                    }
+                ]
+            },
+            "W": "",
+            "E": "",
+            "R": {
+                "SpellName": "R - Vanguard’s Edge",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Q Cooldown reduction: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": " Removed"
+                        }
+                    }
+                ]
+            }
         }
     },
     "ChangePatches": [
@@ -852,7 +906,8 @@
         "13.18",
         "14.11",
         "14.14",
-        "14.15"
+        "14.15",
+        "14.21"
     ],
     "ChampionName": "Irelia",
     "Balance": {
@@ -864,6 +919,9 @@
         ],
         "14.15": [
             "adjust"
+        ],
+        "14.21": [
+            "buff"
         ]
     }
 }

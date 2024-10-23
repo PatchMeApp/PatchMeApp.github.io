@@ -17,7 +17,7 @@
             "increment": 2.05
         },
         "hpRegen": {
-            "base": 6,
+            "base": 8,
             "increment": 0.9
         },
         "mpRegen": {
@@ -202,7 +202,7 @@
                                     "scaleId": "AP"
                                 },
                                 {
-                                    "scale": "(+10% Bonus AD)",
+                                    "scale": "(+20% Bonus AD)",
                                     "scaleId": "AD"
                                 }
                             ]
@@ -910,6 +910,40 @@
                     }
                 ]
             }
+        },
+        "14.21": {
+            "B": {
+                "SpellName": "Base Stats",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Health Regen: ",
+                            "Before": " 6",
+                            "Indicator": " ⇒ ",
+                            "After": "8"
+                        }
+                    }
+                ]
+            },
+            "P": "",
+            "Q": "",
+            "W": {
+                "SpellName": "W - Terrashape",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Damage: ",
+                            "Before": " 8/16/24/32/40 (+10% Bonus AD) (+45% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "8/16/24/32/40 (+20% Bonus AD) (+45% AP)"
+                        }
+                    }
+                ]
+            },
+            "E": "",
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -928,7 +962,8 @@
         "12.15",
         "13.5",
         "13.24",
-        "14.16"
+        "14.16",
+        "14.21"
     ],
     "ChampionName": "Qiyana",
     "Balance": {
@@ -937,6 +972,9 @@
         ],
         "14.16": [
             "adjust"
+        ],
+        "14.21": [
+            "buff"
         ]
     }
 }

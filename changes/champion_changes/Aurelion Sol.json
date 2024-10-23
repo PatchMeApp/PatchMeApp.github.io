@@ -1,7 +1,7 @@
 {
     "stats": {
         "hp": {
-            "base": 620,
+            "base": 600,
             "increment": 90
         },
         "mp": {
@@ -119,7 +119,7 @@
                             "text": "10/15/20/25/30 {{0}} magic damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+16% AP)",
+                                    "scale": "(+12% AP)",
                                     "scaleId": "AP"
                                 }
                             ]
@@ -1116,6 +1116,40 @@
                 ]
             },
             "R": ""
+        },
+        "14.21": {
+            "B": {
+                "SpellName": "Base Stats",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Base Health: ",
+                            "Before": " 620",
+                            "Indicator": " ⇒ ",
+                            "After": "600"
+                        }
+                    }
+                ]
+            },
+            "P": "",
+            "Q": "",
+            "W": "",
+            "E": {
+                "SpellName": "E - Singularity",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Magic Damage: ",
+                            "Before": " 50/75/100/125/150 (+80% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "50/75/100/125/150 (+60% AP)"
+                        }
+                    }
+                ]
+            },
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -1134,7 +1168,8 @@
         "14.4",
         "14.9",
         "14.14",
-        "14.15"
+        "14.15",
+        "14.21"
     ],
     "ChampionName": "Aurelion Sol",
     "Balance": {
@@ -1151,6 +1186,9 @@
             "adjust"
         ],
         "14.15": [
+            "nerf"
+        ],
+        "14.21": [
             "nerf"
         ]
     }

@@ -106,7 +106,7 @@
         },
         "W": {
             "_rawTooltip": {
-                "fullTooltip": "Xayah creates a storm of blades for 4 seconds that grants her [[0]] and cause her Attacks to fire a secondary blade that deals 20% damage.<br /><br />When the secondary blade hits a champion, she grants herself [[1]] for 1.5 seconds.<br /><br />If Rakan is nearby he will also gain the effects of this Ability, except he gains [[2]] when [[3]] strikes a target.",
+                "fullTooltip": "Xayah creates a storm of blades for 4 seconds that grants her [[0]] and cause her Attacks to fire a secondary blade that deals 25% damage.<br /><br />When the secondary blade hits a champion, she grants herself [[1]] for 1.5 seconds.<br /><br />If Rakan is nearby he will also gain the effects of this Ability, except he gains [[2]] when [[3]] strikes a target.",
                 "parseInfo": [
                     {
                         "text": {
@@ -731,6 +731,27 @@
             },
             "R": ""
         },
+        "14.21": {
+            "B": "",
+            "P": "",
+            "Q": "",
+            "W": {
+                "SpellName": "W - Deadly Plumage",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Bonus Strike Damage: ",
+                            "Before": " 20%",
+                            "Indicator": " ⇒ ",
+                            "After": "25%"
+                        }
+                    }
+                ]
+            },
+            "E": "",
+            "R": ""
+        },
         "13.1B": {
             "B": {
                 "SpellName": "Base Stats",
@@ -772,11 +793,15 @@
         "13.1B",
         "13.5",
         "13.18",
-        "14.13"
+        "14.13",
+        "14.21"
     ],
     "ChampionName": "Xayah",
     "Balance": {
         "14.13": [
+            "buff"
+        ],
+        "14.21": [
             "buff"
         ]
     }

@@ -160,7 +160,7 @@
                             "text": "200/350/500 {{0}} magic damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+75% AP)",
+                                    "scale": "(+70% AP)",
                                     "scaleId": "AP"
                                 }
                             ]
@@ -643,6 +643,27 @@
             "W": "",
             "E": "",
             "R": ""
+        },
+        "14.21": {
+            "B": "",
+            "P": "",
+            "Q": "",
+            "W": "",
+            "E": "",
+            "R": {
+                "SpellName": "R - Requiem",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Magic Damage: ",
+                            "Before": " 200/350/500 (+75% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "200/350/500 (+70% AP)"
+                        }
+                    }
+                ]
+            }
         }
     },
     "ChangePatches": [
@@ -661,7 +682,8 @@
         "13.22",
         "14.2",
         "14.11",
-        "14.13"
+        "14.13",
+        "14.21"
     ],
     "ChampionName": "Karthus",
     "Balance": {
@@ -672,6 +694,9 @@
             "nerf"
         ],
         "14.13": [
+            "nerf"
+        ],
+        "14.21": [
             "nerf"
         ]
     }

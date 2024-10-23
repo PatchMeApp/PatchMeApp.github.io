@@ -67,7 +67,7 @@
                             "text": "65/95/125/155/185 {{0}} magic damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+70% AP)",
+                                    "scale": "(+60% AP)",
                                     "scaleId": "AP"
                                 }
                             ]
@@ -177,7 +177,7 @@
                             "text": "60/90/120/150/180 {{0}} magic damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+70% AP)",
+                                    "scale": "(+65% AP)",
                                     "scaleId": "AP"
                                 }
                             ]
@@ -651,6 +651,40 @@
                 ]
             },
             "R": ""
+        },
+        "14.21": {
+            "B": "",
+            "P": "",
+            "Q": {
+                "SpellName": "Q - Null Sphere",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Magic Damage: ",
+                            "Before": " 65/95/125/155/185 (+70% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "65/95/125/155/185 (+60% AP)"
+                        }
+                    }
+                ]
+            },
+            "W": "",
+            "E": {
+                "SpellName": "E - Force Pulse",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Magic Damage: ",
+                            "Before": " 60/90/120/150/180 (+70% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "60/90/120/150/180 (+65% AP)"
+                        }
+                    }
+                ]
+            },
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -665,11 +699,15 @@
         "13.3",
         "13.18",
         "13.22",
-        "14.9"
+        "14.9",
+        "14.21"
     ],
     "ChampionName": "Kassadin",
     "Balance": {
         "14.9": [
+            "nerf"
+        ],
+        "14.21": [
             "nerf"
         ]
     }

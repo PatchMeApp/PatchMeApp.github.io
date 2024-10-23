@@ -142,10 +142,10 @@
                     },
                     {
                         "text": {
-                            "text": "50/80/110/140/170 {{0}} physical damage",
+                            "text": "60/90/120/150/180 {{0}} physical damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+80% Bonus AD)",
+                                    "scale": "(+90% Bonus AD)",
                                     "scaleId": "AD"
                                 }
                             ]
@@ -654,6 +654,27 @@
             "W": "",
             "E": "",
             "R": ""
+        },
+        "14.21": {
+            "B": "",
+            "P": "",
+            "Q": "",
+            "W": {
+                "SpellName": "W - Rake",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Return Damage: ",
+                            "Before": " 50/80/110/140/170 (+80% Bonus AD)",
+                            "Indicator": " ⇒ ",
+                            "After": "60/90/120/150/180 (+90% Bonus AD)"
+                        }
+                    }
+                ]
+            },
+            "E": "",
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -669,7 +690,8 @@
         "13.6",
         "13.24",
         "14.12",
-        "14.15"
+        "14.15",
+        "14.21"
     ],
     "ChampionName": "Talon",
     "Balance": {
@@ -677,6 +699,9 @@
             "buff"
         ],
         "14.15": [
+            "buff"
+        ],
+        "14.21": [
             "buff"
         ]
     }

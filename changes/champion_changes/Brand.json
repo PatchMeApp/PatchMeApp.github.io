@@ -21,7 +21,7 @@
             "increment": 0.55
         },
         "mpRegen": {
-            "base": 10.65,
+            "base": 9,
             "increment": 0.6
         },
         "attackSpeed": {
@@ -75,7 +75,7 @@
                     },
                     {
                         "text": {
-                            "text": "10% − 14% {{0}} of their maximum health",
+                            "text": "8% − 12% {{0}} of their maximum health",
                             "scaleHolders": [
                                 {
                                     "scale": "(based on level)",
@@ -122,7 +122,7 @@
                 ]
             },
             "cooldown": "8/7.5/7/6.5/6",
-            "cost": "50 Mana",
+            "cost": "70 Mana",
             "name": "Sear"
         },
         "W": {
@@ -813,6 +813,53 @@
             },
             "R": ""
         },
+        "14.21": {
+            "B": {
+                "SpellName": "Base Stats",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Mana Regen: ",
+                            "Before": " 10.65",
+                            "Indicator": " ⇒ ",
+                            "After": "9"
+                        }
+                    }
+                ]
+            },
+            "P": {
+                "SpellName": "Passive - Blaze",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Detonation Damage: ",
+                            "Before": " 9-13% (based on level) maximum health (+2% per 100 AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "8-12% (based on level) maximum health (+2% per 100 AP)"
+                        }
+                    }
+                ]
+            },
+            "Q": {
+                "SpellName": "Q - Sear",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Mana Cost: ",
+                            "Before": " 50",
+                            "Indicator": " ⇒ ",
+                            "After": "70"
+                        }
+                    }
+                ]
+            },
+            "W": "",
+            "E": "",
+            "R": ""
+        },
         "14.2": {
             "B": "",
             "P": {
@@ -858,7 +905,8 @@
         "14.3",
         "14.5",
         "14.13",
-        "14.14"
+        "14.14",
+        "14.21"
     ],
     "ChampionName": "Brand",
     "Balance": {
@@ -875,6 +923,9 @@
             "nerf"
         ],
         "14.14": [
+            "nerf"
+        ],
+        "14.21": [
             "nerf"
         ]
     }

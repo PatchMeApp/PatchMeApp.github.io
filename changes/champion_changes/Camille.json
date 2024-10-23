@@ -1,7 +1,7 @@
 {
     "stats": {
         "hp": {
-            "base": 670,
+            "base": 650,
             "increment": 99
         },
         "mp": {
@@ -123,7 +123,7 @@
                 "parseInfo": [
                     {
                         "text": {
-                            "text": "70/100/130/160/190 {{0}} physical damage",
+                            "text": "50/75/100/125/150 {{0}} physical damage",
                             "scaleHolders": [
                                 {
                                     "scale": "(+60% Bonus AD)",
@@ -188,7 +188,7 @@
                             "text": "60/90/120/150/180 {{0}} physical damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+90% Bonus AD)",
+                                    "scale": "(+75% Bonus AD)",
                                     "scaleId": "AD"
                                 }
                             ]
@@ -228,7 +228,7 @@
                     },
                     {
                         "text": {
-                            "text": "5/10/15 plus 4/6/8% current Health magic damage",
+                            "text": "4/6/8% current Health magic damage",
                             "scaleHolders": []
                         },
                         "type": "magicDamage"
@@ -603,6 +603,84 @@
                     }
                 ]
             }
+        },
+        "14.21": {
+            "B": {
+                "SpellName": "Base Stats",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Base Health: ",
+                            "Before": " 670",
+                            "Indicator": " ⇒ ",
+                            "After": "650"
+                        }
+                    }
+                ]
+            },
+            "P": "",
+            "Q": "",
+            "W": {
+                "SpellName": "W - Tactical Sweep",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Minimum Damage: ",
+                            "Before": " 70/100/130/160/190 (+60% bonus AD)",
+                            "Indicator": " ⇒ ",
+                            "After": "50/75/100/125/150 (+60% bonus AD)"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": " Outer bonus cone damage unchanged."
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": " Clarified in the tooltip that the max health damage has a 300 monster damage cap."
+                        }
+                    }
+                ]
+            },
+            "E": {
+                "SpellName": "E - Wall Dive",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Damage: ",
+                            "Before": " 60/90/120/150/180 (+90% bonus AD)",
+                            "Indicator": " ⇒ ",
+                            "After": "60/90/120/150/180 (+75% Bonus AD)"
+                        }
+                    }
+                ]
+            },
+            "R": {
+                "SpellName": "R - Hextech Ultimatum",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Bonus Damage: ",
+                            "Before": " 5/10/15 (+4/6/8% current HP)",
+                            "Indicator": " ⇒ ",
+                            "After": "4/6/8% of current HP"
+                        }
+                    }
+                ]
+            }
         }
     },
     "ChangePatches": [
@@ -615,7 +693,8 @@
         "13.15",
         "14.2",
         "14.7",
-        "14.11"
+        "14.11",
+        "14.21"
     ],
     "ChampionName": "Camille",
     "Balance": {
@@ -626,6 +705,9 @@
             "adjust"
         ],
         "14.11": [
+            "nerf"
+        ],
+        "14.21": [
             "nerf"
         ]
     }

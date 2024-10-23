@@ -91,7 +91,7 @@
                     },
                     {
                         "text": {
-                            "text": "6/7/8/9/10% {{0}} current Health magic damage",
+                            "text": "5/6/7/8/9% {{0}} current Health magic damage",
                             "scaleHolders": [
                                 {
                                     "scale": "(+2% per 100 AP)",
@@ -110,7 +110,7 @@
                     },
                     {
                         "text": {
-                            "text": "12/14/16/18/20% {{0}} current Health magic damage",
+                            "text": "10/12/14/16/18% {{0}} current Health magic damage",
                             "scaleHolders": [
                                 {
                                     "scale": "(+4% per 100 AP)",
@@ -506,6 +506,36 @@
             "W": "",
             "E": "",
             "R": ""
+        },
+        "14.21": {
+            "B": "",
+            "P": "",
+            "Q": {
+                "SpellName": "Q - Terrify",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Damage: ",
+                            "Before": " 6/7/8/9/10% (+2% per 100 AP) of target’s current health",
+                            "Indicator": " ⇒ ",
+                            "After": "5/6/7/8/9% (+2% per 100 AP) of target’s current health"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Amp Damage: ",
+                            "Before": " 12/14/16/18/20% (+4% per 100 AP) of target’s current health",
+                            "Indicator": " ⇒ ",
+                            "After": "10/12/14/16/18% (+4% per 100 AP) of target’s current health"
+                        }
+                    }
+                ]
+            },
+            "W": "",
+            "E": "",
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -518,7 +548,13 @@
         "12.8",
         "12.10",
         "12.13",
-        "14.14"
+        "14.14",
+        "14.21"
     ],
-    "ChampionName": "Fiddlesticks"
+    "ChampionName": "Fiddlesticks",
+    "Balance": {
+        "14.21": [
+            "nerf"
+        ]
+    }
 }

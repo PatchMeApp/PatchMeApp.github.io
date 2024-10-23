@@ -21,7 +21,7 @@
             "increment": 0.6
         },
         "mpRegen": {
-            "base": 7.5,
+            "base": 8,
             "increment": 0.7
         },
         "attackSpeed": {
@@ -178,7 +178,7 @@
                     }
                 ]
             },
-            "cooldown": "18/17/16/15/14 (Recharge Time)",
+            "cooldown": "17/16/15/14/13 (Recharge Time)",
             "cost": "No Cost",
             "name": "Powder Keg"
         },
@@ -757,6 +757,40 @@
                 ]
             },
             "R": ""
+        },
+        "14.21": {
+            "B": {
+                "SpellName": "Base Stats",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Mana Regen: ",
+                            "Before": " 7.5",
+                            "Indicator": " ⇒ ",
+                            "After": "8"
+                        }
+                    }
+                ]
+            },
+            "P": "",
+            "Q": "",
+            "W": "",
+            "E": {
+                "SpellName": "E - Powder Keg",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Recharge Time: ",
+                            "Before": " 18/17/16/15/14",
+                            "Indicator": " ⇒ ",
+                            "After": "17/16/15/14/13"
+                        }
+                    }
+                ]
+            },
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -772,7 +806,8 @@
         "13.12",
         "13.19",
         "14.11",
-        "14.13"
+        "14.13",
+        "14.21"
     ],
     "ChampionName": "Gangplank",
     "Balance": {
@@ -780,6 +815,9 @@
             "buff"
         ],
         "14.13": [
+            "buff"
+        ],
+        "14.21": [
             "buff"
         ]
     }

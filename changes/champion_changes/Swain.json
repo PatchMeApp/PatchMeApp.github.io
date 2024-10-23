@@ -5,7 +5,7 @@
             "increment": 99
         },
         "mp": {
-            "base": 468,
+            "base": 400,
             "increment": 29
         },
         "armor": {
@@ -17,11 +17,11 @@
             "increment": 1.3
         },
         "hpRegen": {
-            "base": 7,
-            "increment": 0.65
+            "base": 3,
+            "increment": 0.5
         },
         "mpRegen": {
-            "base": 8,
+            "base": 10,
             "increment": 0.8
         },
         "attackSpeed": {
@@ -76,10 +76,10 @@
                 "parseInfo": [
                     {
                         "text": {
-                            "text": "65/85/105/125/145 {{0}} magic damage",
+                            "text": "60/85/110/135/160 {{0}} magic damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+40% AP)",
+                                    "scale": "(+45% AP)",
                                     "scaleId": "AP"
                                 }
                             ]
@@ -88,10 +88,10 @@
                     },
                     {
                         "text": {
-                            "text": "15/25/35/45/55 {{0}} magic damage",
+                            "text": "15/21.25/27.5/33.75/40 {{0}} magic damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+10 % AP)",
+                                    "scale": "(+11.25% AP)",
                                     "scaleId": "AP"
                                 }
                             ]
@@ -100,10 +100,10 @@
                     },
                     {
                         "text": {
-                            "text": "125/185/245/305/365 {{0}} magic damage",
+                            "text": "120/170/220/270/320 {{0}} magic damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+80% AP)",
+                                    "scale": "(+90% AP)",
                                     "scaleId": "AP"
                                 }
                             ]
@@ -113,124 +113,16 @@
                 ]
             },
             "cooldown": "7/6/5/4/3",
-            "cost": "45/50/55/60/65 Mana",
+            "cost": "40/45/50/55/60 Mana",
             "name": "Death's Hand"
         },
         "W": {
             "_rawTooltip": {
-                "fullTooltip": "Swain opens a demon eye, revealing a location for 1.5 seconds, then deals [[0]] and [[1]] by 25/35/45/55/65% for 2.5 seconds. Champions hit grant Swain a <span class=\"size18 colorFF3F3F\">Soul Fragment</span> and are revealed for 4/5/6/7/8 seconds.",
+                "fullTooltip": "Swain opens a demon eye, revealing a location for 1.5 seconds, then deals [[0]] and [[1]] by 50/55/60/65/70% for 1.5 seconds.<br /><br />Champions hit grant Swain a [[2]] and are revealed for 6 seconds.",
                 "parseInfo": [
                     {
                         "text": {
-                            "text": "80/115/150/185/220 {{0}} magic damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+55% AP)",
-                                    "scaleId": "AP"
-                                }
-                            ]
-                        },
-                        "type": "magicDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "Slows",
-                            "scaleHolders": []
-                        },
-                        "type": "status"
-                    }
-                ]
-            },
-            "cooldown": "22/21/20/19/18",
-            "cost": "60/65/70/75/80 Mana",
-            "name": "Vision of Empire"
-        },
-        "E": {
-            "_rawTooltip": {
-                "fullTooltip": "Swain launches a wave of demonic power, dealing [[0]]. The wave then returns, detonating on the first enemy hit dealing [[1]] and [[2]] enemies in an area for 1.5 seconds. During [[3]], this ability's cooldown is reduced by 20%.<br /><br />Hitting a champion with Nevermove allows Swain to reactivate this ability to pull all champions hit by Nevermove, gaining a <span class=\"size18 colorFF3F3F\">Soul Fragment</span> for each.",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "35/70/105/140/175 {{0}} magic damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+25% AP)",
-                                    "scaleId": "AP"
-                                }
-                            ]
-                        },
-                        "type": "magicDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "35/45/55/65/75 {{0}} magic damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+25% AP)",
-                                    "scaleId": "AP"
-                                }
-                            ]
-                        },
-                        "type": "magicDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "Rooting",
-                            "scaleHolders": []
-                        },
-                        "type": "status"
-                    },
-                    {
-                        "text": {
-                            "text": "Demonic Ascension",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    }
-                ]
-            },
-            "cooldown": "10",
-            "cost": "50 Mana",
-            "name": "Nevermove"
-        },
-        "R": {
-            "_rawTooltip": {
-                "fullTooltip": "Swain frees the demon, dealing [[0]] each second and restoring [[1]] per target damaged. His Demonic Energy depletes over time, and can be recharged indefinitely by draining enemy Champions and is fully restored on Champion takedowns.<br /><br />After 2 seconds, Swain can cast [[2]] which deals [[3]] and [[4]] enemies by 60% for 1.5s.<br /><br />[[5]] against non-champions.<br />After 5 seconds, Swain's Demonic Energy depletes faster.</rules>",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "20/40/60 {{0}} magic damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+10% AP)",
-                                    "scaleId": "AP"
-                                }
-                            ]
-                        },
-                        "type": "magicDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "15/27.5/40 {{0}} Health",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+18% AP)",
-                                    "scaleId": "AP"
-                                }
-                            ]
-                        },
-                        "type": "healing"
-                    },
-                    {
-                        "text": {
-                            "text": "Demonflare",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "150/225/300 {{0}} magic damage",
+                            "text": "70/105/140/175/210 {{0}} magic damage",
                             "scaleHolders": [
                                 {
                                     "scale": "(+60% AP)",
@@ -249,19 +141,138 @@
                     },
                     {
                         "text": {
-                            "text": "Healing is reduced to 1.5/2.75/4 {{0}}",
+                            "text": "Soul Fragment",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    }
+                ]
+            },
+            "cooldown": "22/21/20/19/18",
+            "cost": "60/65/70/75/80 Mana",
+            "name": "Vision of Empire"
+        },
+        "E": {
+            "_rawTooltip": {
+                "fullTooltip": "Swain launches a wave of demonic power that returns, detonating on the first enemy hit dealing [[0]] and [[1]] enemies in an area for 1.5 seconds. <br /><br />[[2]] a champion allows Swain to reactivate this ability to pull all champions [[3]] by [[4]], gaining a [[5]] for each.",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "80/120/160/200/240 {{0}} magic damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+1.8% AP)",
+                                    "scale": "(+60% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "magicDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "Rooting",
+                            "scaleHolders": []
+                        },
+                        "type": "status"
+                    },
+                    {
+                        "text": {
+                            "text": "Rooting",
+                            "scaleHolders": []
+                        },
+                        "type": "status"
+                    },
+                    {
+                        "text": {
+                            "text": "Rooted",
+                            "scaleHolders": []
+                        },
+                        "type": "status"
+                    },
+                    {
+                        "text": {
+                            "text": "Nevermove",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "Soul Fragment",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    }
+                ]
+            },
+            "cooldown": "14/13/12/11/10",
+            "cost": "60/65/70/75/80 Mana",
+            "name": "Nevermove"
+        },
+        "R": {
+            "_rawTooltip": {
+                "fullTooltip": "Swain frees the demon, dealing [[0]] each second and restoring [[1]] per target damaged. His Demonic Energy depletes over time, and can be recharged indefinitely by draining enemy Champions and is fully restored on Champion takedowns.<br /><br />After 2 seconds and every 8 seconds thereafter, Swain can cast [[2]] which deals [[3]] and [[4]] enemies by 75% decaying over 1.5s.<br /><br />[[5]] against non-champions.<br />After 5 seconds, Swain's Demonic Energy depletes faster.</rules>",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "15/25/35 {{0}} magic damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+5% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "magicDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "15/30/45 {{0}} Health",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+5% AP)",
                                     "scaleId": "AP"
                                 }
                             ]
                         },
                         "type": "healing"
+                    },
+                    {
+                        "text": {
+                            "text": "Demonflare",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "150/250/350 {{0}} magic damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+50% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
+                        },
+                        "type": "magicDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "Slows",
+                            "scaleHolders": []
+                        },
+                        "type": "status"
+                    },
+                    {
+                        "text": {
+                            "text": "Healing is reduced to 10%",
+                            "scaleHolders": []
+                        },
+                        "type": "healing"
                     }
                 ]
             },
-            "cooldown": "100/80/60",
+            "cooldown": "120",
             "cost": "",
             "name": "Demonic Ascension"
         }
@@ -847,6 +858,308 @@
             "W": "",
             "E": "",
             "R": ""
+        },
+        "14.21": {
+            "B": {
+                "SpellName": "Base Stats",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Health Regen: ",
+                            "Before": " 7 (+0.65)",
+                            "Indicator": " ⇒ ",
+                            "After": "3 (+0.5)"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Mana: ",
+                            "Before": " 468",
+                            "Indicator": " ⇒ ",
+                            "After": "400"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Mana Regen: ",
+                            "Before": " 8",
+                            "Indicator": " ⇒ ",
+                            "After": "10"
+                        }
+                    }
+                ]
+            },
+            "P": {
+                "SpellName": "Passive - Ravenous Flock",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Healing: ",
+                            "Before": " 3/4/5/6% Max HP (level 1/6/11/16)",
+                            "Indicator": " ⇒ ",
+                            "After": "3-6% Max HP (linear)"
+                        }
+                    }
+                ]
+            },
+            "Q": {
+                "SpellName": "Q - Death’s Hand",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Mana Cost: ",
+                            "Before": " 45/50/55/60/65",
+                            "Indicator": " ⇒ ",
+                            "After": "40/45/50/55/60"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "One Bolt Damage: ",
+                            "Before": " 65/85/105/125/145 (+40% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "60/85/110/135/160 (+45% AP)"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Extra Bolt Damage: ",
+                            "Before": " 15/25/35/45/55 (+10% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "25% of initial hit"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Maximum Damage: ",
+                            "Before": " 125/185/245/305/365 (+80% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "120/170/220/270/320 (+90% AP)"
+                        }
+                    }
+                ]
+            },
+            "W": {
+                "SpellName": "W- Vision of Empire",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Damage: ",
+                            "Before": " 80/115/150/185/220 (+55% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "70/105/140/175/210 (+60% AP)"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Slow Duration: ",
+                            "Before": " 2.5",
+                            "Indicator": " ⇒ ",
+                            "After": "1.5"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Slow: ",
+                            "Before": " 25/35/45/55/65%",
+                            "Indicator": " ⇒ ",
+                            "After": "50/55/60/65/70%"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Reveal Duration: ",
+                            "Before": " 4/5/6/7/8",
+                            "Indicator": " ⇒ ",
+                            "After": "6"
+                        }
+                    }
+                ]
+            },
+            "E": {
+                "SpellName": "E - Nevermore",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Cooldown: ",
+                            "Before": " 10",
+                            "Indicator": " ⇒ ",
+                            "After": "14/13/12/11/10"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Mana: ",
+                            "Before": " 50",
+                            "Indicator": " ⇒ ",
+                            "After": "60/65/70/75/80"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Outgoing Missile Speed: ",
+                            "Before": " 935-2735",
+                            "Indicator": " ⇒ ",
+                            "After": "1125-1800"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Outgoing Missile Travel Time: ",
+                            "Before": " 0.533 - 0.667",
+                            "Indicator": " ⇒ ",
+                            "After": "0.6"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Return Missile Speed: ",
+                            "Before": " 600-2200",
+                            "Indicator": " ⇒ ",
+                            "After": "2000-2800"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Return Missile Speed Travel Time: ",
+                            "Before": " 0.533 - 0.667",
+                            "Indicator": " ⇒ ",
+                            "After": "0.4"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Return Missile Width: ",
+                            "Before": " 170",
+                            "Indicator": " ⇒ ",
+                            "After": "180"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Maximum Damage: ",
+                            "Before": " 70/115/160/205/250 (+50% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "80/120/160/200/240 (+60% AP)"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Pass Through Damage: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": " Removed"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Detonation Damage: ",
+                            "Before": " 35/45/55/65/75 (+25% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "80/120/160/200/240 (+60% AP)"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": " No longer displays root particles on targets killed by the explosion"
+                        }
+                    }
+                ]
+            },
+            "R": {
+                "SpellName": "R - Demonic Ascension",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": " Demonflare may be repeatedly cast every 8 seconds, unaffected by ability haste, up to 100 times (good luck). First cast is still available after 2 seconds."
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Cooldown: ",
+                            "Before": " 100/80/60 after transform ends",
+                            "Indicator": " ⇒ ",
+                            "After": "120, when transform begins"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Demonflare Damage: ",
+                            "Before": " 150/225/300 (+60% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "150/250/350 (+50% AP)"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Demonflare Decaying Slow: ",
+                            "Before": " 60%",
+                            "Indicator": " ⇒ ",
+                            "After": "75%"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Damage per Second: ",
+                            "Before": " 20/40/60 (+10% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "15/25/35 (+5% AP)"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Heal per Second: ",
+                            "Before": " 15/27.5/40 (+18% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "15/30/45 (+5% AP) (+1.25% Bonus HP)"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "E Cooldown Reduction: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": " Removed"
+                        }
+                    }
+                ]
+            }
         }
     },
     "ChangePatches": [
@@ -854,7 +1167,14 @@
         "12.8",
         "12.10",
         "12.11",
-        "13.9"
+        "13.9",
+        "14.21"
     ],
-    "ChampionName": "Swain"
+    "ChampionName": "Swain",
+    "Balance": {
+        "14.21": [
+            "adjusted",
+            "danger"
+        ]
+    }
 }
