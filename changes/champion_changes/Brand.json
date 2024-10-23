@@ -45,8 +45,15 @@
         "P": {
             "cooldown": "",
             "_rawTooltip": {
-                "fullTooltip": "Innate: Brand's abilities apply a stack of Ablaze to enemies hit that lasts 4 seconds, which refreshes on subsequent hits and stacks up to 3 times. Subsequent abilities used against a target with Ablaze are empowered. Killing an enemy afflicted with Ablaze or with an ability restores 20 − 40 (based on level) mana.<br>Ablaze: While afflicted with Ablaze, the target is dealt[ [[2]] over 3.25 seconds ]as magic damage. Ablaze deals [[0]] per tick to monsters, capped at 80.<br>Upon applying 3 stacks of Ablaze to a large monster or enemy champion, the fire becomes unstable, forming an area around the target that grants sight and explodes after 2 seconds, consuming all stacks. All enemies within the detonation are dealt [[3]] [[1]] and applied a stack of Ablaze. The explosion will still occur if the target dies to the ability applying the third stack or during the delay.<br>Brand cannot stack Ablaze more than once on enemies who have exploded in the last 4 seconds.",
+                "fullTooltip": "Innate: Brand's abilities apply a stack of Ablaze to enemies hit that lasts 4 seconds, which refreshes on subsequent hits and stacks up to 3 times. Subsequent abilities used against a target with Ablaze are empowered. Killing an enemy afflicted with Ablaze or with an ability restores 20 − 40 (based on level) mana.<br>Ablaze: While afflicted with Ablaze, the target is dealt [[3]] over [[0]]. Ablaze deals [[1]] per tick to monsters, capped at 80.<br>Upon applying 3 stacks of Ablaze to a large monster or enemy champion, the fire becomes unstable, forming an area around the target that grants sight and explodes after 2 seconds, consuming all stacks. All enemies within the detonation are dealt [[4]] [[2]] and applied a stack of Ablaze. The explosion will still occur if the target dies to the ability applying the third stack or during the delay.<br>Brand cannot stack Ablaze more than once on enemies who have exploded in the last 4 seconds.",
                 "parseInfo": [
+                    {
+                        "text": {
+                            "text": "4 seconds as magic damage",
+                            "scaleHolders": []
+                        },
+                        "type": "magicDamage"
+                    },
                     {
                         "text": {
                             "text": "215%  damage",
@@ -68,7 +75,7 @@
                     },
                     {
                         "text": {
-                            "text": "3% of their maximum health",
+                            "text": "2% of their maximum health",
                             "scaleHolders": []
                         },
                         "type": "Health"

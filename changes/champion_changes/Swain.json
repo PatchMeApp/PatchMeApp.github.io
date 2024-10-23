@@ -45,34 +45,14 @@
         "P": {
             "cooldown": "",
             "_rawTooltip": {
-                "fullTooltip": "Innate: Enemy champions leave behind a Soul Fragment for 16 seconds upon their death, which can be harvested by Swain after 1 second.<br>Swain's ravens bring nearby Soul Fragments to him, healing him for [[0]]. Each Soul Fragment collected grants him [[1]].",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "3.5 / 4.5 / 5.5 / 7% {{0}} of his maximum health",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(based on level)",
-                                    "scaleId": "level"
-                                }
-                            ]
-                        },
-                        "type": "Health"
-                    },
-                    {
-                        "text": {
-                            "text": "12 bonus health",
-                            "scaleHolders": []
-                        },
-                        "type": "Health"
-                    }
-                ]
+                "fullTooltip": "Swain collects Soul Fragments from Vision of Empire, Nevermove, and enemy champion deaths. Soul Fragments restore 3.0% - 6.0% (based on level) maximum Health and permanently grant swain 12 max Health.",
+                "parseInfo": []
             },
             "name": "Ravenous Flock"
         },
         "Q": {
             "_rawTooltip": {
-                "fullTooltip": "Swain unleashes eldritch bolts, dealing [[0]] plus [[1]] per bolt past the first (max [[2]]).",
+                "fullTooltip": "Swain unleashes 5 eldritch bolts, dealing [[0]] plus [[1]] per bolt past the first (max [[2]]).",
                 "parseInfo": [
                     {
                         "text": {
@@ -154,7 +134,7 @@
         },
         "E": {
             "_rawTooltip": {
-                "fullTooltip": "Swain launches a wave of demonic power that returns, detonating on the first enemy hit dealing [[0]] and [[1]] enemies in an area for 1.5 seconds. <br /><br />[[2]] a champion allows Swain to reactivate this ability to pull all champions [[3]] by [[4]], gaining a [[5]] for each.",
+                "fullTooltip": "Swain launches a wave of demonic power that returns, detonating on the first enemy hit dealing [[0]] and [[1]] enemies in an area for 1.5 seconds. <br /><br />[[2]] a champion allows Swain to reactivate this ability to pull all champions [[3]] by [[4]] toward him, gaining a [[5]] for each.",
                 "parseInfo": [
                     {
                         "text": {
@@ -211,7 +191,7 @@
         },
         "R": {
             "_rawTooltip": {
-                "fullTooltip": "Swain frees the demon, dealing [[0]] each second and restoring [[1]] per target damaged. His Demonic Energy depletes over time, and can be recharged indefinitely by draining enemy Champions and is fully restored on Champion takedowns.<br /><br />After 2 seconds and every 8 seconds thereafter, Swain can cast [[2]] which deals [[3]] and [[4]] enemies by 75% decaying over 1.5s.<br /><br />[[5]] against non-champions.<br />After 5 seconds, Swain's Demonic Energy depletes faster.</rules>",
+                "fullTooltip": "Swain frees the demon, which deals [[0]] and drains [[1]] per second from nearby enemies. His Demonic Energy depletes over time but can be recharged indefinitely by draining enemy Champions and is fully restored on Champion takedowns.<br /><br />After 2 seconds and every 8 seconds thereafter, Swain can cast [[2]] while transformed, which deals [[3]] and [[4]] enemies by 75% decaying over 1.5s.<br /><br />[[5]] against non-champions.<br />Depletes 10 Demonic Energy per second. After 5 seconds, this increases to 15.<br />Regenerates 20 Demonic Energy per second while draining from champions.</rules>",
                 "parseInfo": [
                     {
                         "text": {
@@ -227,11 +207,15 @@
                     },
                     {
                         "text": {
-                            "text": "15/30/45 {{0}} Health",
+                            "text": "15/30/45 {{0}} {{1}} Health",
                             "scaleHolders": [
                                 {
                                     "scale": "(+5% AP)",
                                     "scaleId": "AP"
+                                },
+                                {
+                                    "scale": "(+1.25% bonus health)",
+                                    "scaleId": "health"
                                 }
                             ]
                         },
@@ -273,7 +257,7 @@
                 ]
             },
             "cooldown": "120",
-            "cost": "",
+            "cost": "100 Mana",
             "name": "Demonic Ascension"
         }
     },
