@@ -79,7 +79,7 @@
                             "text": "10/25/40/55/70 {{0}} magic damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+45% AP)",
+                                    "scale": "(+55% AP)",
                                     "scaleId": "AP"
                                 }
                             ]
@@ -127,7 +127,7 @@
                             "text": "50/70/90/110/130 {{0}} magic damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+40% AP)",
+                                    "scale": "(+45% AP)",
                                     "scaleId": "AP"
                                 }
                             ]
@@ -625,6 +625,40 @@
             "E": "",
             "R": ""
         },
+        "14.22": {
+            "B": "",
+            "P": "",
+            "Q": {
+                "SpellName": "Q - Urchin Strike",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Damage: ",
+                            "Before": " 10/25/40/55/70 (+45% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "10/25/40/55/70 (+55% AP)"
+                        }
+                    }
+                ]
+            },
+            "W": {
+                "SpellName": "W - Seastone Trident",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Active Damage: ",
+                            "Before": " 50/70/90/110/130 (+40% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "50/70/90/110/130 (+45% AP)"
+                        }
+                    }
+                ]
+            },
+            "E": "",
+            "R": ""
+        },
         "14.1": {
             "B": "",
             "P": "",
@@ -669,7 +703,8 @@
         "12.19",
         "13.5",
         "14.1",
-        "14.2"
+        "14.2",
+        "14.22"
     ],
     "ChampionName": "Fizz",
     "Balance": {
@@ -678,6 +713,9 @@
         ],
         "14.2": [
             "nerf"
+        ],
+        "14.22": [
+            "buff"
         ]
     }
 }

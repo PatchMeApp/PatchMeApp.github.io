@@ -13,8 +13,8 @@
             "increment": 5.2
         },
         "spellBlock": {
-            "base": 30,
-            "increment": 1.3
+            "base": 31,
+            "increment": 1.55
         },
         "hpRegen": {
             "base": 3,
@@ -56,7 +56,7 @@
                 "parseInfo": [
                     {
                         "text": {
-                            "text": "60/85/110/135/160 {{0}} magic damage",
+                            "text": "60/90/120/150/180 {{0}} magic damage",
                             "scaleHolders": [
                                 {
                                     "scale": "(+45% AP)",
@@ -68,7 +68,7 @@
                     },
                     {
                         "text": {
-                            "text": "15/21.25/27.5/33.75/40 {{0}} magic damage",
+                            "text": "15/22.5/30/37.5/45 {{0}} magic damage",
                             "scaleHolders": [
                                 {
                                     "scale": "(+11.25% AP)",
@@ -185,7 +185,7 @@
                     }
                 ]
             },
-            "cooldown": "14/13/12/11/10",
+            "cooldown": "12/11.5/11/10.5/10",
             "cost": "60/65/70/75/80 Mana",
             "name": "Nevermove"
         },
@@ -214,8 +214,8 @@
                                     "scaleId": "AP"
                                 },
                                 {
-                                    "scale": "(+1.25% bonus health)",
-                                    "scaleId": "health"
+                                    "scale": "(+1.5% Bonus Health)",
+                                    "scaleId": "Health"
                                 }
                             ]
                         },
@@ -1144,6 +1144,84 @@
                     }
                 ]
             }
+        },
+        "14.22": {
+            "B": {
+                "SpellName": "Base Stats",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Magic Resist: ",
+                            "Before": " 30",
+                            "Indicator": " ⇒ ",
+                            "After": "31"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Magic Resist Growth: ",
+                            "Before": " 1.3",
+                            "Indicator": " ⇒ ",
+                            "After": "1.55"
+                        }
+                    }
+                ]
+            },
+            "P": "",
+            "Q": {
+                "SpellName": "Q - Death's Hand",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Damage: ",
+                            "Before": " 60/85/110/135/160 (+45% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "60/90/120/150/180 (+45% AP)"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Max Damage: ",
+                            "Before": " 120/170/220/270/320 (+90% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "120/180/240/300/360 (+90% AP)"
+                        }
+                    }
+                ]
+            },
+            "W": "",
+            "E": {
+                "SpellName": "E - Nevermove",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Cooldown: ",
+                            "Before": " 14/13/12/11/10",
+                            "Indicator": " ⇒ ",
+                            "After": "12/11.5/11/10.5/10"
+                        }
+                    }
+                ]
+            },
+            "R": {
+                "SpellName": "R - Demonic Ascension",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Heal per Second: ",
+                            "Before": " 15/30/45 (+5% AP) (+1.25% Bonus HP)",
+                            "Indicator": " ⇒ ",
+                            "After": "15/30/45 (+5% AP) (+1.5% Bonus HP)"
+                        }
+                    }
+                ]
+            }
         }
     },
     "ChangePatches": [
@@ -1152,13 +1230,17 @@
         "12.10",
         "12.11",
         "13.9",
-        "14.21"
+        "14.21",
+        "14.22"
     ],
     "ChampionName": "Swain",
     "Balance": {
         "14.21": [
             "adjusted",
             "danger"
+        ],
+        "14.22": [
+            "buff"
         ]
     }
 }

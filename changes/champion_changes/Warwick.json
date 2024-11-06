@@ -137,7 +137,7 @@
         },
         "W": {
             "_rawTooltip": {
-                "fullTooltip": "[[0]] Warwick can sense champions below 50% Health, gaining [[1]] towards them and gaining [[2]] against them. These bonuses are increased by 250% against enemies below 20% Health.<br /><br />[[3]] Warwick can briefly sense all enemies, and gains this Ability's passive effect against the closest champion for 8 seconds, regardless of Health. Warwick cannot use this Ability while in combat with champions.",
+                "fullTooltip": "[[0]] Warwick can sense champions below 50% Health, gaining [[1]] towards them and gaining [[2]] against them. These bonuses are increased by 250% against enemies below 20% Health.<br /><br />[[3]] Warwick can briefly sense all enemies, and gains this Ability's passive effect against the closest champion for 8 seconds, regardless of Health. If no champions are found, this ability's cooldown is reduced by 30%",
                 "parseInfo": [
                     {
                         "text": {
@@ -169,8 +169,8 @@
                     }
                 ]
             },
-            "cooldown": "100/85/70/55/40",
-            "cost": "70 Mana",
+            "cooldown": "80/70/60/50/40",
+            "cost": "55 Mana",
             "name": "Blood Hunt"
         },
         "E": {
@@ -388,6 +388,111 @@
             "E": "",
             "R": ""
         },
+        "14.22": {
+            "B": {
+                "SpellName": "Base Stats",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Model Size: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": " Increased by 15%"
+                        }
+                    }
+                ]
+            },
+            "P": "",
+            "Q": "",
+            "W": {
+                "SpellName": "W - Blood Hunt",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Mana Cost: ",
+                            "Before": " 70",
+                            "Indicator": " ⇒ ",
+                            "After": "55"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Cooldown: ",
+                            "Before": " 100/85/70/55/40",
+                            "Indicator": " ⇒ ",
+                            "After": "80/70/60/50/40"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Passive: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": " Spells now also trigger the attack speed when used to damage enemies under 50% Health. The attack speed granted by attacks and spells now linger between attacks."
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Cooldown Reduction: ",
+                            "Before": " Ticks twice as fast while no one is hunted",
+                            "Indicator": " ⇒ ",
+                            "After": "Refunds 30% if no one is found by the active"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Active Lockout Removed: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": " No longer locks out casting while in champion combat"
+                        }
+                    }
+                ]
+            },
+            "E": {
+                "SpellName": "E - Primal Howl",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Auto attack lockout after casting E2: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "  0.5s⇒ 0.25s"
+                        }
+                    }
+                ]
+            },
+            "R": {
+                "SpellName": "R - Infinite Duress",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Hit Radius: ",
+                            "Before": " 100",
+                            "Indicator": " ⇒ ",
+                            "After": "150"
+                        }
+                    },
+                    {
+                        "Tag": "NEW",
+                        "Change": {
+                            "Attribute": "NEW: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "  Claws in FrontNow only latches onto champions in front of Warwick"
+                        }
+                    }
+                ]
+            }
+        },
         "13.24": {
             "B": "",
             "P": "",
@@ -437,12 +542,16 @@
         "9.21",
         "10.25",
         "12.10",
-        "13.24"
+        "13.24",
+        "14.22"
     ],
     "ChampionName": "Warwick",
     "Balance": {
         "13.24": [
             "buff"
+        ],
+        "14.22": [
+            "adjusted"
         ]
     }
 }

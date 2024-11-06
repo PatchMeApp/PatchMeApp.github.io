@@ -145,7 +145,7 @@
                     },
                     {
                         "text": {
-                            "text": "180% AD {{0}} physical damage",
+                            "text": "200% AD {{0}} physical damage",
                             "scaleHolders": [
                                 {
                                     "scale": "(+25% AP)",
@@ -955,6 +955,27 @@
             "W": "",
             "E": "",
             "R": ""
+        },
+        "14.22": {
+            "B": "",
+            "P": "",
+            "Q": "",
+            "W": "",
+            "E": {
+                "SpellName": "E - Power Fist",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Damage: ",
+                            "Before": " 180% Total AD (+25% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "200% Total AD (+25% AP)"
+                        }
+                    }
+                ]
+            },
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -972,7 +993,8 @@
         "13.17",
         "14.2",
         "14.9",
-        "14.12"
+        "14.12",
+        "14.22"
     ],
     "ChampionName": "Blitzcrank",
     "Balance": {
@@ -984,6 +1006,9 @@
         ],
         "14.12": [
             "nerf"
+        ],
+        "14.22": [
+            "buff"
         ]
     }
 }

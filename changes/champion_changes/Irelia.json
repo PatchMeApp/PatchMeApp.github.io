@@ -45,7 +45,7 @@
         "P": {
             "cooldown": "",
             "_rawTooltip": {
-                "fullTooltip": "Innate: Irelia generates a stack of Ionian Fervor for each enemy champion hit by her abilities, or if she hits at least one non-champion. Ionian Fervor lasts for 6 seconds, refreshing with basic attacks and ability hits against enemy champions and large monsters, and stacking up to 4 times.<br>Ionian Fervor: For each stack, Irelia gains [[1]], up to a maximum of 30% − 100% (based on level). At maximum stacks, Irelia's basic attacks deal [[0]] on-hit.<br>Innate - Unsteady: Enemy champions and large monsters hit by Flawless Duet and Vanguard's Edge's initial barrage are marked as Unsteady for 5 seconds. The mark can be consumed by Bladesurge.",
+                "fullTooltip": "Innate: Irelia generates a stack of Ionian Fervor for each enemy champion hit by her abilities, or if she hits at least one non-champion. Ionian Fervor lasts for 6 seconds, refreshing with basic attacks and ability hits against enemy champions, structurues and large monsters, and stacking up to 4 times.<br>Ionian Fervor: For each stack, Irelia gains [[1]], up to a maximum of 30% − 100% (based on level). At maximum stacks, Irelia's basic attacks deal [[0]] on-hit.<br>Innate - Unsteady: Enemy champions and large monsters hit by Flawless Duet and Vanguard's Edge's initial barrage are marked as Unsteady for 5 seconds. The mark can be consumed by Bladesurge.",
                 "parseInfo": [
                     {
                         "text": {
@@ -889,6 +889,36 @@
                     }
                 ]
             }
+        },
+        "14.22": {
+            "B": "",
+            "P": {
+                "SpellName": "Passive - Ionian Fervor",
+                "Changes": [
+                    {
+                        "Tag": "NEW",
+                        "Change": {
+                            "Attribute": "NEW: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": " Stacks now refresh upon attacking structures"
+                        }
+                    },
+                    {
+                        "Tag": "NEW",
+                        "Change": {
+                            "Attribute": "NEW: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": " Damage now applies to structures at 50% effectiveness"
+                        }
+                    }
+                ]
+            },
+            "Q": "",
+            "W": "",
+            "E": "",
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -907,7 +937,8 @@
         "14.11",
         "14.14",
         "14.15",
-        "14.21"
+        "14.21",
+        "14.22"
     ],
     "ChampionName": "Irelia",
     "Balance": {
@@ -921,6 +952,10 @@
             "adjust"
         ],
         "14.21": [
+            "buff"
+        ],
+        "14.22": [
+            "adjusted",
             "buff"
         ]
     }

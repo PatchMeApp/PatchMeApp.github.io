@@ -161,11 +161,11 @@
         },
         "R": {
             "_rawTooltip": {
-                "fullTooltip": "Vayne gains [[0]] for 8/10 seconds, extended by 4 seconds whenever a champion damaged by Vayne dies within 3 seconds. Additionally, during the duration:[[1]] instead grants [[2]].[[3]] is reduced by 30/40%, and grants [[4]] for 1 second.",
+                "fullTooltip": "Vayne gains [[0]] for 8/10/12 seconds, extended by 4 seconds whenever a champion damaged by Vayne dies within 3 seconds. Additionally, during the duration:[[1]] instead grants [[2]].[[3]] is reduced by 30/40%, and grants [[4]] for 1 second.",
                 "parseInfo": [
                     {
                         "text": {
-                            "text": "25/40 Attack Damage",
+                            "text": "35/50/65 Attack Damage",
                             "scaleHolders": []
                         },
                         "type": "physicalDamage"
@@ -428,6 +428,27 @@
             "W": "",
             "E": "",
             "R": ""
+        },
+        "14.22": {
+            "B": "",
+            "P": "",
+            "Q": "",
+            "W": "",
+            "E": "",
+            "R": {
+                "SpellName": "R - Final Hour",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Bonus Attack Damage: ",
+                            "Before": " 25/40/55",
+                            "Indicator": " ⇒ ",
+                            "After": "35/50/65"
+                        }
+                    }
+                ]
+            }
         }
     },
     "ChangePatches": [
@@ -436,12 +457,16 @@
         "12.10",
         "13.6",
         "13.10",
-        "14.5"
+        "14.5",
+        "14.22"
     ],
     "ChampionName": "Vayne",
     "Balance": {
         "14.5": [
             "nerf"
+        ],
+        "14.22": [
+            "buff"
         ]
     }
 }

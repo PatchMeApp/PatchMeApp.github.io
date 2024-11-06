@@ -211,10 +211,10 @@
                     },
                     {
                         "text": {
-                            "text": "70/85/100/115/130 {{0}} magic damage.",
+                            "text": "60/75/90/105/120 {{0}} magic damage.",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+60% AP)",
+                                    "scale": "(+40% AP)",
                                     "scaleId": "AP"
                                 }
                             ]
@@ -672,6 +672,27 @@
             "W": "",
             "E": "",
             "R": ""
+        },
+        "14.22": {
+            "B": "",
+            "P": "",
+            "Q": "",
+            "W": "",
+            "E": {
+                "SpellName": "E - Death's Grasp",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Damage: ",
+                            "Before": " 70/85/100/115/130 (+60% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "60/75/90/105/120 (+40% AP)"
+                        }
+                    }
+                ]
+            },
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -688,7 +709,8 @@
         "13.24",
         "14.8",
         "14.11",
-        "14.20"
+        "14.20",
+        "14.22"
     ],
     "ChampionName": "Mordekaiser",
     "Balance": {
@@ -702,6 +724,9 @@
             "nerf"
         ],
         "14.20": [
+            "nerf"
+        ],
+        "14.22": [
             "nerf"
         ]
     }

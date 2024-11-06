@@ -43,9 +43,9 @@
     },
     "spells": {
         "P": {
-            "cooldown": 10,
+            "cooldown": "11",
             "_rawTooltip": {
-                "fullTooltip": "Innate: Shen manifests a Spirit Blade that he can control with Twilight Assault and Spirit's Refuge.<br>Passive: After completing an ability's effects, Shen shields himself for [[0]]) for 2.5 seconds. If the triggering ability successfully affected at least one enemy champion, Ki Barrier's cooldown is reduced by 4 − 7.5 (based on level) seconds.",
+                "fullTooltip": "Innate: Shen manifests a Spirit Blade that he can control with Twilight Assault and Spirit's Refuge.<br>Passive: After completing an ability's effects, Shen shields himself for [[0]]) for 2.5 seconds. If the triggering ability successfully affected at least one enemy champion, Ki Barrier's cooldown is reduced by 4 − 8 (based on level) seconds.",
                 "parseInfo": [
                     {
                         "text": {
@@ -234,10 +234,10 @@
                 "parseInfo": [
                     {
                         "text": {
-                            "text": "130/290/450 {{0}} {{1}}",
+                            "text": "120/220/320 {{0}} {{1}}",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+16% Bonus Health)",
+                                    "scale": "(+15% Bonus Health)",
                                     "scaleId": "Health"
                                 },
                                 {
@@ -250,10 +250,10 @@
                     },
                     {
                         "text": {
-                            "text": "208/464/720 {{0}} {{1}} Shield",
+                            "text": "192/352/512 {{0}} {{1}} Shield",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+25.6% Bonus Health)",
+                                    "scale": "(+24% Bonus Health)",
                                     "scaleId": "Health"
                                 },
                                 {
@@ -550,6 +550,58 @@
             "W": "",
             "E": "",
             "R": ""
+        },
+        "14.22": {
+            "B": "",
+            "P": {
+                "SpellName": "Passive - Ki Barrier",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Cooldown: ",
+                            "Before": " 10",
+                            "Indicator": " ⇒ ",
+                            "After": "11"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Cooldown Refund: ",
+                            "Before": " 4-7.5 (based on level)",
+                            "Indicator": " ⇒ ",
+                            "After": "4-8 (based on level)"
+                        }
+                    }
+                ]
+            },
+            "Q": "",
+            "W": "",
+            "E": "",
+            "R": {
+                "SpellName": "R - Stand United",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Shield: ",
+                            "Before": " 130/290/450 (+16 bonus HP)",
+                            "Indicator": " ⇒ ",
+                            "After": "120/220/320 (+15% bonus HP"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Max Shield: ",
+                            "Before": " 208/464/720 (+25.6% bonus HP)",
+                            "Indicator": " ⇒ ",
+                            "After": "192/352/512 (+24% bonus HP)"
+                        }
+                    }
+                ]
+            }
         }
     },
     "ChangePatches": [
@@ -562,7 +614,8 @@
         "12.15",
         "14.2",
         "14.6",
-        "14.18"
+        "14.18",
+        "14.22"
     ],
     "ChampionName": "Shen",
     "Balance": {
@@ -574,6 +627,9 @@
         ],
         "14.18": [
             "buff"
+        ],
+        "14.22": [
+            "nerf"
         ]
     }
 }

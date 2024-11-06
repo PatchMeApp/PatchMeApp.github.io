@@ -183,7 +183,7 @@
                     }
                 ]
             },
-            "cooldown": "16/15/14/13/12",
+            "cooldown": "14/13.5/13/12.5/12",
             "cost": "50/55/60/65/70 Mana",
             "name": "Tectonic Disruption"
         },
@@ -233,7 +233,7 @@
                     }
                 ]
             },
-            "cooldown": "120/100/80",
+            "cooldown": "100/90/80",
             "cost": "100 Mana",
             "name": "Life Form Disintegration Ray"
         }
@@ -444,6 +444,40 @@
                 ]
             },
             "R": ""
+        },
+        "14.22": {
+            "B": "",
+            "P": "",
+            "Q": "",
+            "W": "",
+            "E": {
+                "SpellName": "E - Tectonic Disruption",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Cooldown: ",
+                            "Before": " 16/15/14/13/12",
+                            "Indicator": " ⇒ ",
+                            "After": "14/13.5/13/12.5/12"
+                        }
+                    }
+                ]
+            },
+            "R": {
+                "SpellName": "R - Life Form Disintegration Ray",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Cooldown: ",
+                            "Before": " 120/100/80",
+                            "Indicator": " ⇒ ",
+                            "After": "100/90/80"
+                        }
+                    }
+                ]
+            }
         }
     },
     "ChangePatches": [
@@ -452,7 +486,13 @@
         "13.22",
         "13.23",
         "13.24",
-        "14.1"
+        "14.1",
+        "14.22"
     ],
-    "ChampionName": "Vel'Koz"
+    "ChampionName": "Vel'Koz",
+    "Balance": {
+        "14.22": [
+            "buff"
+        ]
+    }
 }

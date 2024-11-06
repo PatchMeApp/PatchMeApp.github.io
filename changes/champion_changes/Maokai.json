@@ -1,7 +1,7 @@
 {
     "stats": {
         "hp": {
-            "base": 635,
+            "base": 665,
             "increment": 109
         },
         "mp": {
@@ -29,7 +29,7 @@
             "increment": 0.02125
         },
         "ms": {
-            "base": 330,
+            "base": 335,
             "increment": 0
         },
         "attackDamage": {
@@ -1139,6 +1139,49 @@
             },
             "R": ""
         },
+        "14.22": {
+            "B": {
+                "SpellName": "Base Stats",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Move Speed: ",
+                            "Before": " 330",
+                            "Indicator": " ⇒ ",
+                            "After": "335"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Base Health: ",
+                            "Before": " 635",
+                            "Indicator": " ⇒ ",
+                            "After": "665"
+                        }
+                    }
+                ]
+            },
+            "P": "",
+            "Q": "",
+            "W": "",
+            "E": {
+                "SpellName": "E - Sapling Toss",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Sapling Move Speed: ",
+                            "Before": " 400/425/445/460 (based on boots)",
+                            "Indicator": " ⇒ ",
+                            "After": "400-460 (linear scaling 1-13)"
+                        }
+                    }
+                ]
+            },
+            "R": ""
+        },
         "12.22": {
             "B": "",
             "P": "",
@@ -1180,7 +1223,8 @@
         "14.3",
         "14.4",
         "14.5",
-        "14.18"
+        "14.18",
+        "14.22"
     ],
     "ChampionName": "Maokai",
     "Balance": {
@@ -1195,6 +1239,9 @@
         ],
         "14.18": [
             "nerf"
+        ],
+        "14.22": [
+            "adjusted"
         ]
     }
 }

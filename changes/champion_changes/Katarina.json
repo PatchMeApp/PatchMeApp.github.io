@@ -202,7 +202,7 @@
                     }
                 ]
             },
-            "cooldown": "14/12.5/11/9.5/8",
+            "cooldown": "12/11/10/9/8",
             "cost": "No Cost",
             "name": "Shunpo"
         },
@@ -260,7 +260,7 @@
                     }
                 ]
             },
-            "cooldown": "90/60/45",
+            "cooldown": "75/60/45",
             "cost": "No Cost",
             "name": "Death Lotus"
         }
@@ -691,6 +691,40 @@
             "W": "",
             "E": "",
             "R": ""
+        },
+        "14.22": {
+            "B": "",
+            "P": "",
+            "Q": "",
+            "W": "",
+            "E": {
+                "SpellName": "E - Shunpo",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Cooldown: ",
+                            "Before": " 14/12.5/11/9.5/8",
+                            "Indicator": " ⇒ ",
+                            "After": "12/11/10/9/8"
+                        }
+                    }
+                ]
+            },
+            "R": {
+                "SpellName": "R - Death Lotus",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Cooldown: ",
+                            "Before": " 90/60/45",
+                            "Indicator": " ⇒ ",
+                            "After": "75/60/45"
+                        }
+                    }
+                ]
+            }
         }
     },
     "ChangePatches": [
@@ -703,7 +737,8 @@
         "12.12",
         "13.7",
         "14.16",
-        "14.17"
+        "14.17",
+        "14.22"
     ],
     "ChampionName": "Katarina",
     "Balance": {
@@ -712,6 +747,9 @@
         ],
         "14.17": [
             "nerf"
+        ],
+        "14.22": [
+            "buff"
         ]
     }
 }

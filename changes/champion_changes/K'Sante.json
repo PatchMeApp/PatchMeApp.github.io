@@ -73,7 +73,7 @@
                 "parseInfo": [
                     {
                         "text": {
-                            "text": "80/110/140/170/200 {{0}} {{1}} physical damage",
+                            "text": "70/100/130/160/190 {{0}} {{1}} physical damage",
                             "scaleHolders": [
                                 {
                                     "scale": "(+0.4 bonus armor)",
@@ -1747,6 +1747,40 @@
                     }
                 ]
             }
+        },
+        "14.22": {
+            "B": "",
+            "P": "",
+            "Q": {
+                "SpellName": "Q - Ntofo Strikes",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Damage: ",
+                            "Before": " 80/110/140/170/200 (+40% bonus resistances)",
+                            "Indicator": " ⇒ ",
+                            "After": "70/100/130/160/190 (+40% bonus resistances)"
+                        }
+                    }
+                ]
+            },
+            "W": "",
+            "E": {
+                "SpellName": "E - Footwork",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "All Out Dash Speed: ",
+                            "Before": " 950 + Movement Speed",
+                            "Indicator": " ⇒ ",
+                            "After": "1250 + Movement Speed"
+                        }
+                    }
+                ]
+            },
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -1763,7 +1797,8 @@
         "14.4",
         "14.10",
         "14.11",
-        "14.19"
+        "14.19",
+        "14.22"
     ],
     "ChampionName": "K'Sante",
     "Balance": {
@@ -1783,6 +1818,9 @@
         "14.19": [
             "adjust",
             "buff"
+        ],
+        "14.22": [
+            "nerf"
         ]
     }
 }

@@ -10,7 +10,7 @@
         },
         "armor": {
             "base": 21,
-            "increment": 4.9
+            "increment": 4.5
         },
         "spellBlock": {
             "base": 30,
@@ -143,7 +143,7 @@
                             "text": "50/75/100/125/150 {{0}} magic damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+60% AP)",
+                                    "scale": "(+55% AP)",
                                     "scaleId": "AP"
                                 }
                             ]
@@ -568,6 +568,40 @@
             "W": "",
             "E": "",
             "R": ""
+        },
+        "14.22": {
+            "B": {
+                "SpellName": "Base Stats",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Armor Growth: ",
+                            "Before": " 4.9",
+                            "Indicator": " ⇒ ",
+                            "After": "4.5"
+                        }
+                    }
+                ]
+            },
+            "P": "",
+            "Q": "",
+            "W": "",
+            "E": {
+                "SpellName": "E - Frostbite",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Damage: ",
+                            "Before": " 50/75/100/125/150 (+60% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "50/75/100/125/150 (+55% AP)"
+                        }
+                    }
+                ]
+            },
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -576,7 +610,13 @@
         "11.3",
         "12.10",
         "13.4",
-        "13.22"
+        "13.22",
+        "14.22"
     ],
-    "ChampionName": "Anivia"
+    "ChampionName": "Anivia",
+    "Balance": {
+        "14.22": [
+            "nerf"
+        ]
+    }
 }

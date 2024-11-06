@@ -193,7 +193,7 @@
                     },
                     {
                         "text": {
-                            "text": "150/250/350 {{0}} magic damage",
+                            "text": "100/175/250 {{0}} magic damage",
                             "scaleHolders": [
                                 {
                                     "scale": "(+100% AP)",
@@ -253,7 +253,7 @@
                     }
                 ]
             },
-            "cooldown": "100/90/80",
+            "cooldown": "110/100/90",
             "cost": "100 Mana",
             "name": "Grandmaster's Might"
         }
@@ -728,6 +728,36 @@
                     }
                 ]
             }
+        },
+        "14.22": {
+            "B": "",
+            "P": "",
+            "Q": "",
+            "W": "",
+            "E": "",
+            "R": {
+                "SpellName": "R - Grandmaster-At-Arms",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Cooldown: ",
+                            "Before": " 100/90/80",
+                            "Indicator": " ⇒ ",
+                            "After": "110/100/90"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Damage: ",
+                            "Before": " 150/250/350 (+100% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "100/175/250 (+100% AP)"
+                        }
+                    }
+                ]
+            }
         }
     },
     "ChangePatches": [
@@ -741,7 +771,8 @@
         "13.14",
         "14.2",
         "14.14",
-        "14.18"
+        "14.18",
+        "14.22"
     ],
     "ChampionName": "Jax",
     "Balance": {
@@ -753,6 +784,9 @@
         ],
         "14.18": [
             "buff"
+        ],
+        "14.22": [
+            "nerf"
         ]
     }
 }

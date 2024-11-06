@@ -10,7 +10,7 @@
         },
         "armor": {
             "base": 22,
-            "increment": 5.2
+            "increment": 4.5
         },
         "spellBlock": {
             "base": 32,
@@ -45,7 +45,7 @@
         "P": {
             "cooldown": "",
             "_rawTooltip": {
-                "fullTooltip": "Innate: Lillia's abilities apply Dream Dust to enemies hit, which deals[ [[1]] total magic damage over 3 seconds, ]capped at [[0]] against monsters.<br>Lillia heals for 39 − 54 (based on level) (+ 15% AP) against large monsters and 6-120 (based on level) (+30% AP) against champions over the duration of Dream Dust, reduced to 15% effectiveness for each target beyond the first. She may only heal against 1 monster at a time.",
+                "fullTooltip": "Innate: Lillia's abilities apply Dream Dust to enemies hit, which deals[ [[1]] total magic damage over 3 seconds, ]capped at [[0]] against monsters.<br>Lillia heals for 39 (+ 15% AP) against large monsters and 6-120 (based on level) (+30% AP) against champions over the duration of Dream Dust, reduced to 15% effectiveness for each target beyond the first. She may only heal against 1 monster at a time.",
                 "parseInfo": [
                     {
                         "text": {
@@ -1042,6 +1042,40 @@
                     }
                 ]
             }
+        },
+        "14.22": {
+            "B": {
+                "SpellName": "Base Stats",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Armor Growth: ",
+                            "Before": " 5.2",
+                            "Indicator": " ⇒ ",
+                            "After": "4.5"
+                        }
+                    }
+                ]
+            },
+            "P": {
+                "SpellName": "Passive - Dream-Laden Bough",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Monster heal over time: ",
+                            "Before": " 39-54 (based on level) (+15% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "39 (+15% AP)"
+                        }
+                    }
+                ]
+            },
+            "Q": "",
+            "W": "",
+            "E": "",
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -1060,7 +1094,8 @@
         "13.8",
         "14.3",
         "14.14",
-        "14.18"
+        "14.18",
+        "14.22"
     ],
     "ChampionName": "Lillia",
     "Balance": {
@@ -1071,6 +1106,9 @@
             "nerf"
         ],
         "14.18": [
+            "nerf"
+        ],
+        "14.22": [
             "nerf"
         ]
     }

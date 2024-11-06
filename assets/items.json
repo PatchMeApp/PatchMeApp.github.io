@@ -1,6 +1,6 @@
 {
     "type": "item",
-    "version": "14.21.1",
+    "version": "14.22.1",
     "basic": {
         "name": "",
         "rune": {
@@ -622,12 +622,15 @@
             "into": [
                 "2015",
                 "1053",
+                "6701",
                 "2019",
                 "2021",
                 "6670",
                 "3133",
                 "6671",
+                "3142",
                 "3004",
+                "3032",
                 "3035",
                 "3044",
                 "3051",
@@ -681,10 +684,9 @@
                 "6333",
                 "2020",
                 "3031",
-                "3142",
+                "6701",
                 "3153",
                 "6676",
-                "3032",
                 "3039",
                 "3053",
                 "3508",
@@ -740,6 +742,7 @@
                 "6671",
                 "3146",
                 "3026",
+                "3032",
                 "3072",
                 "4403"
             ],
@@ -2516,7 +2519,6 @@
                 "4642",
                 "3024",
                 "3133",
-                "223057",
                 "3802",
                 "3057",
                 "3067",
@@ -4014,12 +4016,13 @@
         },
         "3032": {
             "name": "Yun Tal Wildarrows",
-            "description": "<mainText><stats><attention>60</attention> Attack Damage<br><attention>25%</attention> Critical Strike Chance</stats><br><br><passive>Serrated Edge</passive><br>Attacks that Critically Strike deal <scaleAD>bonus physical damage</scaleAD> over 2 seconds.</mainText>",
+            "description": "<mainText><stats><attention>50</attention> Attack Damage<br><attention>25%</attention> Attack Speed</stats><br><br><passive>Practice Makes Lethal</passive><br>On-Attack, gain 20% Critical Strike Chance permanently up to 25%.<br><br><passive>Flurry</passive><br>On-Attacking an enemy champion, gain 30% Attack Speed for 4 seconds (40 second cooldown). <br>Attacks reduce this cooldown by 1 second, increased to 2 seconds for Critical Strikes.</mainText>",
             "colloq": "",
             "plaintext": "",
             "from": [
-                "1037",
-                "6670"
+                "1038",
+                "3144",
+                "1036"
             ],
             "image": {
                 "full": "3032.png",
@@ -4031,14 +4034,15 @@
                 "h": 48
             },
             "gold": {
-                "base": 775,
+                "base": 750,
                 "purchasable": true,
-                "total": 2950,
-                "sell": 2065
+                "total": 3000,
+                "sell": 2100
             },
             "tags": [
                 "Damage",
-                "CriticalStrike"
+                "CriticalStrike",
+                "AttackSpeed"
             ],
             "maps": {
                 "11": true,
@@ -4049,8 +4053,8 @@
                 "33": false
             },
             "stats": {
-                "FlatCritChanceMod": 0.25,
-                "FlatPhysicalDamageMod": 60
+                "FlatPhysicalDamageMod": 50,
+                "PercentAttackSpeedMod": 0.25
             },
             "depth": 3
         },
@@ -5511,7 +5515,7 @@
         },
         "3087": {
             "name": "Statikk Shiv",
-            "description": "<mainText><stats><attention>50</attention> Attack Damage<br><attention>35%</attention> Attack Speed<br><attention>4%</attention> Move Speed</stats><br><br><passive>Electrospark</passive><br>Killing minions or monsters fires chain lightning that deals <magicDamage>magic damage</magicDamage>.<br><br><passive>Electroshock</passive> <br>Takedowns fire chain lightning that deals <magicDamage>magic damage</magicDamage>, hitting unlimited targets.<br><br><rules>On Howling Abyss, <passive>Electroshock</passive> has a cooldown.</rules></mainText>",
+            "description": "<mainText><stats><attention>45</attention> Attack Damage<br><attention>30%</attention> Attack Speed<br><attention>4%</attention> Move Speed</stats><br><br><passive>Electrospark</passive><br>Attacks trigger chain lightning <OnHit>On-Hit</OnHit>, dealing <magicDamage>magic damage</magicDamage> with a cooldown.<br><br><passive>Electroshock</passive> <br>Takedowns within 3 seconds of damaging the target reset Electrospark's cooldown.</mainText>",
             "colloq": ";",
             "plaintext": "Movement builds charges that release chain lightning on basic attack",
             "from": [
@@ -5529,10 +5533,10 @@
                 "h": 48
             },
             "gold": {
-                "base": 650,
+                "base": 450,
                 "purchasable": true,
-                "total": 2900,
-                "sell": 2030
+                "total": 2700,
+                "sell": 1890
             },
             "tags": [
                 "Damage",
@@ -5549,8 +5553,8 @@
                 "33": false
             },
             "stats": {
-                "FlatPhysicalDamageMod": 50,
-                "PercentAttackSpeedMod": 0.35,
+                "FlatPhysicalDamageMod": 45,
+                "PercentAttackSpeedMod": 0.3,
                 "PercentMovementSpeedMod": 0.04
             },
             "depth": 3
@@ -6114,6 +6118,7 @@
                 "1004"
             ],
             "into": [
+                "223011",
                 "3011",
                 "6616",
                 "3107",
@@ -6832,13 +6837,13 @@
         },
         "3142": {
             "name": "Youmuu's Ghostblade",
-            "description": "<mainText><stats><attention>60</attention> Attack Damage<br><attention>18</attention> Lethality</stats><br><br><passive>Haunt</passive> <br>Gain <speed>20 Move Speed</speed> while out of combat.<br><active>Wraith Step</active><br>Gain <speed>Move Speed</speed> and <keyword>Ghosting</keyword> for 6 seconds.</mainText>",
+            "description": "<mainText><stats><attention>55</attention> Attack Damage<br><attention>18</attention> Lethality<br><attention>4%</attention> Move Speed</stats><br><br><passive>Haunt</passive> <br>Gain <speed>20 Move Speed</speed> while out of combat.<br><br><active>Wraith Step</active><br>Gain <speed>Move Speed</speed> and <keyword>Ghosting</keyword> for 6 seconds.</mainText>",
             "colloq": ";lethality",
             "plaintext": "Activate to greatly increase Move Speed",
             "from": [
                 "3134",
                 "6690",
-                "1037"
+                "1036"
             ],
             "image": {
                 "full": "3142.png",
@@ -6850,7 +6855,7 @@
                 "h": 48
             },
             "gold": {
-                "base": 150,
+                "base": 675,
                 "purchasable": true,
                 "total": 2800,
                 "sell": 1960
@@ -6870,7 +6875,8 @@
                 "33": false
             },
             "stats": {
-                "FlatPhysicalDamageMod": 60
+                "FlatPhysicalDamageMod": 55,
+                "PercentMovementSpeedMod": 0.04
             },
             "depth": 3
         },
@@ -6929,6 +6935,7 @@
             ],
             "into": [
                 "3094",
+                "3032",
                 "3085",
                 "3087"
             ],
@@ -7333,7 +7340,7 @@
         },
         "3161": {
             "name": "Spear of Shojin",
-            "description": "<mainText><stats><attention>45</attention> Attack Damage<br><attention>450</attention> Health</stats><br><br><passive>Dragonforce</passive> <br>Gain 25 Basic Ability Haste.<br><br><passive>Focused Will</passive> <br>Dealing damage with Abilities increase your Champion Ability and Passive damage by 3% for 6 seconds. (stacks 4 times).</mainText>",
+            "description": "<mainText><stats><attention>45</attention> Attack Damage<br><attention>450</attention> Health</stats><br><br><passive>Dragonforce</passive> <br>Gain 25 Basic Ability Haste.<br><br><passive>Focused Will</passive> <br>Dealing damage with Abilities increases your Champion's Ability and Passive damage by 3% for 6 seconds. (stacks 4 times).</mainText>",
             "colloq": ";",
             "plaintext": "Reduce damage taken from champions by a flat amount. Attack while near multiple enemy champions to increase this amount for a short time.",
             "from": [
@@ -8990,6 +8997,7 @@
                 "1052"
             ],
             "into": [
+                "223011",
                 "3011",
                 "3165"
             ],
@@ -10427,7 +10435,6 @@
                 "1018"
             ],
             "into": [
-                "3032",
                 "3036",
                 "3095",
                 "6673"
@@ -10656,7 +10663,6 @@
                 "1036"
             ],
             "into": [
-                "6701",
                 "6700",
                 "6672",
                 "3142",
@@ -11043,12 +11049,13 @@
         },
         "6701": {
             "name": "Opportunity",
-            "description": "<mainText><stats><attention>50</attention> Attack Damage<br><attention>15</attention> Lethality<br><attention>4%</attention> Move Speed</stats><br><br><passive>Preparation</passive><br>After being out of combat with Champions for 8 seconds gain <scaleLethality>Lethality</scaleLethality>. This Lethality lasts for 3 seconds after dealing damage to champions.<br><br><passive>Extraction</passive><br>When a champion that you damaged within 3 seconds dies, gain <speed>200 decaying Move Speed</speed> for 1.5 seconds.<br></mainText>",
+            "description": "<mainText><stats><attention>55</attention> Attack Damage<br><attention>15</attention> Lethality</stats><br><br><passive>Preparation</passive><br>After being out of combat with Champions for 8 seconds gain <scaleLethality>Lethality</scaleLethality>. This Lethality lasts for 3 seconds after dealing damage to champions.<br><br><passive>Extraction</passive><br>When a champion that you damaged within 3 seconds dies, gain <speed>200 decaying Move Speed</speed> for 1.5 seconds.<br></mainText>",
             "colloq": "",
             "plaintext": "",
             "from": [
+                "1037",
                 "3134",
-                "6690"
+                "1036"
             ],
             "image": {
                 "full": "6701.png",
@@ -11060,7 +11067,7 @@
                 "h": 48
             },
             "gold": {
-                "base": 925,
+                "base": 475,
                 "purchasable": true,
                 "total": 2700,
                 "sell": 1890
@@ -11080,8 +11087,7 @@
                 "33": false
             },
             "stats": {
-                "FlatPhysicalDamageMod": 50,
-                "PercentMovementSpeedMod": 0.04
+                "FlatPhysicalDamageMod": 55
             },
             "depth": 3
         },
