@@ -109,7 +109,7 @@
                     },
                     {
                         "text": {
-                            "text": "23/25/27/29/31% Armor",
+                            "text": "16/20/24/28/32% Armor",
                             "scaleHolders": []
                         },
                         "type": "scaleArmor"
@@ -159,10 +159,10 @@
                 "parseInfo": [
                     {
                         "text": {
-                            "text": "75/120/165/210/255 {{0}} magic damage",
+                            "text": "70/110/150/190/230 {{0}} magic damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+70% AP)",
+                                    "scale": "(+65% AP)",
                                     "scaleId": "AP"
                                 }
                             ]
@@ -700,6 +700,40 @@
                     }
                 ]
             }
+        },
+        "14.23": {
+            "B": "",
+            "P": "",
+            "Q": {
+                "SpellName": "Q - Caustic Spittle",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Armor and Magic Resist Shred: ",
+                            "Before": "23/25/27/29/31%",
+                            "Indicator": " ⇒ ",
+                            "After": "16/20/24/28/32%"
+                        }
+                    }
+                ]
+            },
+            "W": "",
+            "E": {
+                "SpellName": "E - Void Ooze",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Damage: ",
+                            "Before": "75/120/165/210/255 (+70% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "70/110/150/190/230 (+65% AP)"
+                        }
+                    }
+                ]
+            },
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -714,12 +748,16 @@
         "12.11",
         "13.8",
         "13.12",
-        "14.5"
+        "14.5",
+        "14.23"
     ],
     "ChampionName": "Kog'Maw",
     "Balance": {
         "14.5": [
             "buff"
+        ],
+        "14.23": [
+            "nerf"
         ]
     }
 }

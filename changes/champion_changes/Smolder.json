@@ -79,14 +79,14 @@
         },
         "Q": {
             "_rawTooltip": {
-                "fullTooltip": "Smolder belches flame, dealing [[0]] + [[1]] magic damage.</magicDamage><br /><br />Based on stacks of [[2]], this Ability evolves to gain the following effects:<br />[[3]]: Damages all enemies surrounding the target.<br />[[4]]: Sends (2 + [[5]]) explosions beyond the target that deal 75% of this Ability's damage.<br />[[6]]: Burns the target dealing [[7]]) max Health true damage</trueDamage> over 3 seconds. Enemy champions that drop below [[8]] total health while burning are killed instantly.<br /><br />[[9]] is considered a basic Attack and applies On-Hit effects. This Ability can only damage each target one time per cast.<br />Damage is increased by 75% Critical Strike Chance. This Ability does 110% damage to minions and monsters.",
+                "fullTooltip": "Smolder belches flame, dealing [[0]] + [[1]] magic damage. If the target dies, Smolder refunds 15 mana, once per cast.</magicDamage><br /><br />Based on stacks of [[2]], this Ability evolves to gain the following effects:<br />[[3]]: Damages all enemies surrounding the target.<br />[[4]]: Sends (2 + [[5]]) explosions beyond the target that deal 50% of this Ability's damage.<br />[[6]]: Burns the target dealing [[7]]) max Health true damage</trueDamage> over 3 seconds. Enemy champions that drop below [[8]] total health while burning are killed instantly.<br /><br />[[9]] is considered a basic Attack and applies On-Hit effects. This Ability can only damage each target one time per cast.<br />Damage is increased by 75% Critical Strike Chance. This Ability does 110% damage to minions and monsters.",
                 "parseInfo": [
                     {
                         "text": {
-                            "text": "15/25/35/45/55 {{0}} physical damage",
+                            "text": "65/80/95/110/125 {{0}} physical damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+100% AD)",
+                                    "scale": "(+130% Bonus AD)",
                                     "scaleId": "AD"
                                 }
                             ]
@@ -95,7 +95,7 @@
                     },
                     {
                         "text": {
-                            "text": "40% Dragon Practice Stacks",
+                            "text": "30% Dragon Practice Stacks",
                             "scaleHolders": []
                         },
                         "type": ""
@@ -123,7 +123,7 @@
                     },
                     {
                         "text": {
-                            "text": "1% Dragon Practice Stacks",
+                            "text": "1 per 125 Dragon Practice Stacks",
                             "scaleHolders": []
                         },
                         "type": ""
@@ -137,13 +137,8 @@
                     },
                     {
                         "text": {
-                            "text": "2% bonus AD {{0}} (0.8% Dragon Practice Stacks",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+1% AP)",
-                                    "scaleId": "AP"
-                                }
-                            ]
+                            "text": "2.5% bonus AD (+0.4% Dragon Practice Stacks",
+                            "scaleHolders": []
                         },
                         "type": ""
                     },
@@ -169,19 +164,15 @@
         },
         "W": {
             "_rawTooltip": {
-                "fullTooltip": "Smolder lets out an adorable flaming sneeze, dealing [[0]] and [[1]] by 35% for 1.5 seconds.<br /><br />Hitting champions causes an explosion, dealing [[2]] + [[3]] stacks magic damage</magicDamage>.<br /><br />Each consecutive exp/osion does 75% damage Smolder can only gam one [[4]] stack per champion hit. This Ability does 140% damage to minions and monsters.",
+                "fullTooltip": "Smolder lets out an adorable flaming sneeze, dealing [[0]] and [[1]] by 35% for 1.5 seconds.<br /><br />Hitting champions causes an explosion, dealing [[2]] + [[3]] stacks magic damage</magicDamage>.<br /><br />Each consecutive explosion does 75% damage Smolder can only gain one [[4]] stack per champion hit. This Ability does 100% damage to minions and monsters.",
                 "parseInfo": [
                     {
                         "text": {
-                            "text": "45/75/105/135/165 {{0}} {{1}} physical damage",
+                            "text": "30/50/70/90/110 {{0}} physical damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+25% Bonus AD)",
+                                    "scale": "(+60% Bonus AD)",
                                     "scaleId": "AD"
-                                },
-                                {
-                                    "scale": "(+20% AP)",
-                                    "scaleId": "AP"
                                 }
                             ]
                         },
@@ -196,10 +187,10 @@
                     },
                     {
                         "text": {
-                            "text": "25/40/55/70/85 {{0}} {{1}} physical damage",
+                            "text": "30/50/70/90/110 {{0}} {{1}} physical damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+25% bonus AD)",
+                                    "scale": "(+60% bonus AD)",
                                     "scaleId": "AD"
                                 },
                                 {
@@ -227,12 +218,12 @@
                 ]
             },
             "cooldown": "14/13/12/11/10",
-            "cost": "60 Mana",
+            "cost": "50/55/60/65/70 Mana",
             "name": "Achooo!"
         },
         "E": {
             "_rawTooltip": {
-                "fullTooltip": "Smolder takes flight, gaining [[0]] and ignoring terrain for 1.25 seconds.<br /><br />While flying, Smolder bombards the lowest health enemy 5 (+1 per 50 Dragon Patience Stacks) times for [[1]] + [[2]] stacks magic damage</magicDamage> each.<br /><br />Attacks made by this Ability prioritize champions. While flying, Smolder gains expanded vision.",
+                "fullTooltip": "Smolder takes flight, gaining [[0]] and ignoring terrain for 1.25 seconds.<br /><br />While flying, Smolder bombards the lowest health enemy 5 (+1 per 100 Dragon Patience Stacks) times for [[1]] + [[2]] stacks magic damage</magicDamage> each.<br /><br />Attacks made by this Ability prioritize champions. While flying, Smolder gains expanded vision.",
                 "parseInfo": [
                     {
                         "text": {
@@ -243,10 +234,10 @@
                     },
                     {
                         "text": {
-                            "text": "15/20/25/30/35 {{0}} physical damage",
+                            "text": "5/10/15/20/25 {{0}} physical damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+10% AD)",
+                                    "scale": "(+25% AD)",
                                     "scaleId": "AD"
                                 }
                             ]
@@ -255,7 +246,7 @@
                     },
                     {
                         "text": {
-                            "text": "20% of Dragon Practice",
+                            "text": "10% of Dragon Practice",
                             "scaleHolders": []
                         },
                         "type": ""
@@ -268,7 +259,7 @@
         },
         "R": {
             "_rawTooltip": {
-                "fullTooltip": "Smolder's mom breathes fire from above, dealing [[0]]. Enemies in the center instead take [[1]] and are [[2]] by 40% for 2 seconds. Smolder's mom heals her son for [[3]] if she hits him.",
+                "fullTooltip": "Smolder's mom breathes fire from above, dealing [[0]]. Enemies in the center instead take [[1]] and are [[2]] by 40% for 2 seconds. Smolder's mom heals her son for [[3]] if she hits him.<br /><br />[[4]]",
                 "parseInfo": [
                     {
                         "text": {
@@ -324,10 +315,17 @@
                             ]
                         },
                         "type": "healing"
+                    },
+                    {
+                        "text": {
+                            "text": "Deals 50% damage to minions and monsters.",
+                            "scaleHolders": []
+                        },
+                        "type": ""
                     }
                 ]
             },
-            "cooldown": "120/110/100",
+            "cooldown": "120",
             "cost": "100 Mana",
             "name": "MMOOOMMMM!"
         }
@@ -744,6 +742,174 @@
             "E": "",
             "R": ""
         },
+        "14.23": {
+            "B": "",
+            "P": "",
+            "Q": {
+                "SpellName": "Q - Super Scorcher Breath",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Damage: ",
+                            "Before": "15/25/35/45/55 (+100% total AD) (+0.4 per Dragon Practice)",
+                            "Indicator": " ⇒ ",
+                            "After": "65/80/95/110/125 (+130% bonus AD) (+0.3 per Dragon Practice)"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Minion/Monster Damage Modifier: ",
+                            "Before": "110%",
+                            "Indicator": " ⇒ ",
+                            "After": "100%"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "[NEW]:: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": " Q now restores 15 mana to Smolder if it kills a unit (once per cast)"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Tier 2 - 125 Stacks Additional Projectiles Damage: ",
+                            "Before": "75%",
+                            "Indicator": " ⇒ ",
+                            "After": "50%"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Tier 2 - 125 Stacks Number of Projectiles: ",
+                            "Before": "1 (+1 per 67 stacks)",
+                            "Indicator": " ⇒ ",
+                            "After": "2 (+1 per 125 stacks)"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Tier 3 - 225 Stacks Burn Damage: ",
+                            "Before": "0.8% per 100 stacks (+1% per 100 AP) (+2% per 100 bonus AD)",
+                            "Indicator": " ⇒ ",
+                            "After": "0.4% per 100 stacks (+2.5% per 100 bonus AD)"
+                        }
+                    }
+                ]
+            },
+            "W": {
+                "SpellName": "W - ACHOOO!",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Mana Cost: ",
+                            "Before": "60",
+                            "Indicator": " ⇒ ",
+                            "After": "50/55/60/65/70"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Glob Damage: ",
+                            "Before": "45/75/105/135/165 (+25% bonus AD) (+20% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "30/50/70/90/110 (+60% bonus AD)"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Explosion Damage: ",
+                            "Before": "25/40/55/70/85 (+25% bonus AD) (+80% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "30/50/70/90/110 (+60% bonus AD) (+80% AP)"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Combined Damage vs Champions: ",
+                            "Before": "70/115/160/205/250 (+50% bonus AD) (+100% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "60/100/140/180/220 (+120% bonus AD) (+80% AP)"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Minion/Monster Damage Modifier: ",
+                            "Before": "140%",
+                            "Indicator": " ⇒ ",
+                            "After": "100%"
+                        }
+                    }
+                ]
+            },
+            "E": {
+                "SpellName": "E - Flap, Flap, Flap",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Damage per Hit: ",
+                            "Before": "15/20/25/30/35 (+10% total AD) (+.2 per Dragon Practice)",
+                            "Indicator": " ⇒ ",
+                            "After": "5/10/15/20/25 (+25% total AD) (+.1 per Dragon Practice)"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Number of Attacks: ",
+                            "Before": "5 (+1 per 150 stacks)",
+                            "Indicator": " ⇒ ",
+                            "After": "5 (+1 per 100 stacks)"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "[NEW]:: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": " Damage indicator tracks combined damage."
+                        }
+                    }
+                ]
+            },
+            "R": {
+                "SpellName": "R - MMOOOMMMM!",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Cooldown: ",
+                            "Before": "140/130/120",
+                            "Indicator": " ⇒ ",
+                            "After": "120 seconds at all ranks"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "[NEW]:: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": " 50% minion damage modifier added"
+                        }
+                    }
+                ]
+            }
+        },
         "14.10": {
             "B": {
                 "SpellName": "Base Stats",
@@ -793,7 +959,8 @@
         "14.10",
         "14.11",
         "14.14",
-        "14.18"
+        "14.18",
+        "14.23"
     ],
     "ChampionName": "Smolder",
     "Balance": {
@@ -820,6 +987,10 @@
         ],
         "14.18": [
             "nerf"
+        ],
+        "14.23": [
+            "adjust",
+            "danger"
         ]
     }
 }

@@ -14,7 +14,7 @@
         },
         "spellBlock": {
             "base": 32,
-            "increment": 2.05
+            "increment": 1.5
         },
         "hpRegen": {
             "base": 8.5,
@@ -182,7 +182,7 @@
                             "text": "85/125/165/205/245 {{0}} {{1}} magic damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+80% AP)",
+                                    "scale": "(+70% AP)",
                                     "scaleId": "AP"
                                 },
                                 {
@@ -965,6 +965,40 @@
                     }
                 ]
             }
+        },
+        "14.23": {
+            "B": {
+                "SpellName": "Base Stats",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Magic Resist Growth: ",
+                            "Before": "2.05",
+                            "Indicator": " ⇒ ",
+                            "After": "1.5"
+                        }
+                    }
+                ]
+            },
+            "P": "",
+            "Q": "",
+            "W": "",
+            "E": {
+                "SpellName": "E - Flame Breath",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Damage: ",
+                            "Before": "85/125/165/205/245 (+50% bonus AD) (+80% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "85/125/165/205/245 (+50% bonus AD) (+70% AP)"
+                        }
+                    }
+                ]
+            },
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -982,7 +1016,8 @@
         "13.16",
         "14.3",
         "14.15",
-        "14.20"
+        "14.20",
+        "14.23"
     ],
     "ChampionName": "Shyvana",
     "Balance": {
@@ -993,6 +1028,9 @@
             "nerf"
         ],
         "14.20": [
+            "nerf"
+        ],
+        "14.23": [
             "nerf"
         ]
     }

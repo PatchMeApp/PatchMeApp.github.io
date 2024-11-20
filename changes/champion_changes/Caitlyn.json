@@ -190,7 +190,7 @@
                             "text": "300/500/700 {{0}} * {{1}} physical damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+150% Bonus AD)",
+                                    "scale": "(+100% Bonus AD)",
                                     "scaleId": "AD"
                                 },
                                 {
@@ -907,6 +907,27 @@
             "E": "",
             "R": ""
         },
+        "14.23": {
+            "B": "",
+            "P": "",
+            "Q": "",
+            "W": "",
+            "E": "",
+            "R": {
+                "SpellName": "R - Ace in the Hole",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Damage: ",
+                            "Before": "300/500/700 (+150% bonus AD)",
+                            "Indicator": " ⇒ ",
+                            "After": "300/500/700 (+100% bonus AD)"
+                        }
+                    }
+                ]
+            }
+        },
         "12.12": {
             "B": {
                 "SpellName": "Base Stats",
@@ -1017,7 +1038,8 @@
         "13.21",
         "14.11",
         "14.17",
-        "14.20"
+        "14.20",
+        "14.23"
     ],
     "ChampionName": "Caitlyn",
     "Balance": {
@@ -1029,6 +1051,9 @@
         ],
         "14.20": [
             "buff"
+        ],
+        "14.23": [
+            "nerf"
         ]
     }
 }

@@ -34,7 +34,7 @@
         },
         "attackDamage": {
             "base": 59,
-            "increment": 2.9
+            "increment": 3.15
         },
         "attackRange": {
             "base": 525,
@@ -105,7 +105,7 @@
                             "text": "10/60/110/160/210 {{0}} physical damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+160% AD)",
+                                    "scale": "(+140% AD)",
                                     "scaleId": "AD"
                                 }
                             ]
@@ -829,6 +829,40 @@
             "E": "",
             "R": ""
         },
+        "14.23": {
+            "B": {
+                "SpellName": "Base Stats",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Attack Damage Growth: ",
+                            "Before": "2.9",
+                            "Indicator": " ⇒ ",
+                            "After": "3.15"
+                        }
+                    }
+                ]
+            },
+            "P": "",
+            "Q": "",
+            "W": {
+                "SpellName": "W - Zap!",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Damage: ",
+                            "Before": "10/60/110/160/210 (+160% total AD)",
+                            "Indicator": " ⇒ ",
+                            "After": "10/60/110/160/210 (+140% total AD)"
+                        }
+                    }
+                ]
+            },
+            "E": "",
+            "R": ""
+        },
         "13.1B": {
             "B": {
                 "SpellName": "Base Stats",
@@ -894,7 +928,8 @@
         "13.21",
         "14.9",
         "14.11",
-        "14.18"
+        "14.18",
+        "14.23"
     ],
     "ChampionName": "Jinx",
     "Balance": {
@@ -906,6 +941,9 @@
         ],
         "14.18": [
             "buff"
+        ],
+        "14.23": [
+            "adjust"
         ]
     }
 }

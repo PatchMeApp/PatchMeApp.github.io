@@ -256,7 +256,7 @@
         },
         "R": {
             "_rawTooltip": {
-                "fullTooltip": "[[0]] Rengar will also leap attack when [[1]].<br /><br />[[2]] Rengar gains [[3]] and [[4]] in a small area around the nearest enemy champion for 12/16 seconds.<br /><br />After 2 seconds, Rengar becomes [[5]] and can leap without being in Brush. Leaping to the nearest champion deals an additional [[6]], shreds [[7]] for 4 seconds, and ends this Ability.",
+                "fullTooltip": "[[0]] Rengar will also leap attack when [[1]].<br /><br />[[2]] Rengar gains [[3]] and [[4]] in a small area around the nearest enemy champion for 12/16/20 seconds.<br /><br />After 2 seconds, Rengar becomes [[5]] and can leap without being in Brush. Leaping to the nearest champion deals an additional [[6]], shreds [[7]] for 4 seconds, and ends this Ability.",
                 "parseInfo": [
                     {
                         "text": {
@@ -281,7 +281,7 @@
                     },
                     {
                         "text": {
-                            "text": "40/50% Move Speed",
+                            "text": "40/50/60% Move Speed",
                             "scaleHolders": []
                         },
                         "type": "speed"
@@ -302,14 +302,14 @@
                     },
                     {
                         "text": {
-                            "text": "50% AD physical damage",
+                            "text": "100% AD physical damage",
                             "scaleHolders": []
                         },
                         "type": "physicalDamage"
                     },
                     {
                         "text": {
-                            "text": "12/18 Armor",
+                            "text": "15/20/25 Armor",
                             "scaleHolders": []
                         },
                         "type": "scaleArmor"
@@ -709,6 +709,36 @@
             "W": "",
             "E": "",
             "R": ""
+        },
+        "14.23": {
+            "B": "",
+            "P": "",
+            "Q": "",
+            "W": "",
+            "E": "",
+            "R": {
+                "SpellName": "R - Thrill of the Hunt",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Armor Shred: ",
+                            "Before": "12/18/24",
+                            "Indicator": " ⇒ ",
+                            "After": "15/20/25"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Bonus Damage: ",
+                            "Before": "50%",
+                            "Indicator": " ⇒ ",
+                            "After": "100% total AD"
+                        }
+                    }
+                ]
+            }
         }
     },
     "ChangePatches": [
@@ -720,12 +750,16 @@
         "12.10",
         "12.11",
         "13.14",
-        "14.3"
+        "14.3",
+        "14.23"
     ],
     "ChampionName": "Rengar",
     "Balance": {
         "14.3": [
             "nerf"
+        ],
+        "14.23": [
+            "buff"
         ]
     }
 }

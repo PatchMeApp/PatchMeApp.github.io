@@ -9,7 +9,7 @@
             "increment": 40
         },
         "armor": {
-            "base": 36,
+            "base": 32,
             "increment": 4.2
         },
         "spellBlock": {
@@ -166,7 +166,7 @@
         },
         "R": {
             "_rawTooltip": {
-                "fullTooltip": "[[0]] Kha'Zix becomes [[1]] for 1.25 seconds and gains [[2]]. Kha'zix may [[3]] this Ability once within 12 seconds.<br /><br />[[4]] Leveling up this Ability allows Kha'zix to [[5]] one of his Abilities, granting it additional effects.[[6]] Gain Ability range, Attack range, and lowers Cooldown by 45% against [[7]] targets.[[8]] Fires 3 spikes and [[9]] by 40%, increased against [[10]] targets.[[11]] Increased range and refreshes Cooldown on champion takedown.[[12]] [[13]] duration lasts 2 seconds and gains second [[14]].",
+                "fullTooltip": "[[0]] Kha'Zix becomes [[1]] for 1.25 seconds and gains [[2]]. Kha'zix may [[3]] this Ability once within 12 seconds.<br /><br />[[4]] Leveling up this Ability allows Kha'zix to [[5]] one of his Abilities, granting it additional effects.[[6]] Gain Ability range, Attack range, and lowers Cooldown by 45% against [[7]] targets.[[8]] Fires 3 spikes and [[9]] by 40%, increased to 60% against [[10]] targets.[[11]] Increased range and refreshes Cooldown on champion takedown.[[12]] [[13]] duration lasts 2 seconds and gains second [[14]].",
                 "parseInfo": [
                     {
                         "text": {
@@ -553,6 +553,40 @@
             "W": "",
             "E": "",
             "R": ""
+        },
+        "14.23": {
+            "B": {
+                "SpellName": "Base Stats",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Base Armor: ",
+                            "Before": "36",
+                            "Indicator": " ⇒ ",
+                            "After": "32"
+                        }
+                    }
+                ]
+            },
+            "P": "",
+            "Q": "",
+            "W": {
+                "SpellName": "W - Void Spike",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Evolved W Slow to Isolated Targets: ",
+                            "Before": "75%",
+                            "Indicator": " ⇒ ",
+                            "After": "60%"
+                        }
+                    }
+                ]
+            },
+            "E": "",
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -564,12 +598,16 @@
         "13.8",
         "13.12",
         "13.17",
-        "14.11"
+        "14.11",
+        "14.23"
     ],
     "ChampionName": "Kha'Zix",
     "Balance": {
         "14.11": [
             "buff"
+        ],
+        "14.23": [
+            "nerf"
         ]
     }
 }
