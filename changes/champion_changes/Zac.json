@@ -106,7 +106,7 @@
                                     "scaleId": "AP"
                                 },
                                 {
-                                    "scale": "(+3% Health)",
+                                    "scale": "(+4% Health)",
                                     "scaleId": "Health"
                                 }
                             ]
@@ -382,7 +382,8 @@
                             "Attribute": "DAMAGE: ",
                             "Before": "25/40/55/70/85 (+4/5/6/7/8% of target’s maximum health) (+2% per 100 AP)",
                             "Indicator": " ⇒ ",
-                            "After": "35/50/65/80/95 (+4/5/6/7/8% of target’s maximum health) (+4% per 100 AP)"
+                            "After": "35/50/65/80/95 (+4/5/6/7/8% of target’s maximum health) (+4% per 100 AP)",
+                            "parsedAfter": "<span class=\"green\">35</span>/<span class=\"green\">50</span>/<span class=\"green\">65</span>/<span class=\"green\">80</span>/<span class=\"green\">95</span> (+4/5/6/7/8% of target's maximum health) (+<span class=\"green\">4</span>% per 100 AP)"
                         }
                     }
                 ]
@@ -441,7 +442,8 @@
                             "Attribute": "Passive - Healing Upon Consuming Chunks: ",
                             "Before": "5/6/7/8%",
                             "Indicator": " ⇒ ",
-                            "After": "4/4.75/5.5/6.25% maximum health"
+                            "After": "4/4.75/5.5/6.25% maximum health",
+                            "parsedAfter": "<span class=\"red\">4</span>/<span class=\"red\">4.75</span>/<span class=\"red\">5.5</span>/<span class=\"red\">6.25</span>% <span class=\"gold\">maximum health</span>"
                         }
                     }
                 ]
@@ -462,7 +464,8 @@
                             "Attribute": "Healing per Chunk: ",
                             "Before": "4/4.75/5.5/6.25% (based on R Rank) maximum HP",
                             "Indicator": " ⇒ ",
-                            "After": "4/5/6/7% (based on R Rank) maximum HP"
+                            "After": "4/5/6/7% (based on R Rank) maximum HP",
+                            "parsedAfter": "4/<span class=\"green\">5</span>/<span class=\"green\">6</span>/<span class=\"green\">7</span>% (based on R Rank) maximum HP"
                         }
                     }
                 ]
@@ -476,7 +479,8 @@
                             "Attribute": "Cooldown: ",
                             "Before": "15/13.5/12/10.5/9 seconds",
                             "Indicator": " ⇒ ",
-                            "After": "14/12.5/11/9.5/8 seconds"
+                            "After": "14/12.5/11/9.5/8 seconds",
+                            "parsedAfter": "<span class=\"green\">14</span>/<span class=\"green\">12.5</span>/<span class=\"green\">11</span>/<span class=\"green\">9.5</span>/<span class=\"green\">8</span> seconds"
                         }
                     },
                     {
@@ -485,7 +489,8 @@
                             "Attribute": "Base Damage: ",
                             "Before": "40/55/70/85/100 (+2.5% of Zac's maximum health)",
                             "Indicator": " ⇒ ",
-                            "After": "40/55/70/85/100 (+4% of Zac's maximum health)"
+                            "After": "40/55/70/85/100 (+4% of Zac's maximum health)",
+                            "parsedAfter": "40/55/70/85/100 (+<span class=\"green\">4</span>% of Zac's maximum health)"
                         }
                     }
                 ]
@@ -507,7 +512,8 @@
                             "Attribute": "Magic Damage: ",
                             "Before": "35/50/65/80/95 (+4/5/6/7/8% (+4% per 100 AP) of target's maximum health",
                             "Indicator": " ⇒ ",
-                            "After": "35/50/65/80/95 (+4/5/6/7/8% (+3% per 100 AP) of target's maximum health"
+                            "After": "35/50/65/80/95 (+4/5/6/7/8% (+3% per 100 AP) of target's maximum health",
+                            "parsedAfter": "35/50/65/80/95 (+4/5/6/7/8% (+<span class=\"red\">3</span>% per 100 AP) of target's maximum health"
                         }
                     }
                 ]
@@ -521,7 +527,8 @@
                             "Attribute": "Magic Damage: ",
                             "Before": "60/110/160/210/260 (+90% AP)",
                             "Indicator": " ⇒ ",
-                            "After": "60/105/150/195/240 (+80% AP)"
+                            "After": "60/105/150/195/240 (+80% AP)",
+                            "parsedAfter": "60/<span class=\"red\">105</span>/<span class=\"red\">150</span>/<span class=\"red\">195</span>/<span class=\"red\">240</span> (+<span class=\"red\">80</span>% AP)"
                         }
                     }
                 ]
@@ -541,7 +548,8 @@
                             "Attribute": "Damage: ",
                             "Before": "35/50/65/80/95 (+4/5/6/7/8% (+3% per 100 AP) of target's maximum health)",
                             "Indicator": " ⇒ ",
-                            "After": "40/50/60/70/80 (+4/5/6/7/8% (+3% per 100 AP) of target's maximum health)"
+                            "After": "40/50/60/70/80 (+4/5/6/7/8% (+3% per 100 AP) of target's maximum health)",
+                            "parsedAfter": "<span class=\"green\">40</span>/50/<span class=\"red\">60</span>/<span class=\"red\">70</span>/<span class=\"red\">80</span> (+4/5/6/7/8% (+3% per 100 AP) of target's maximum health)"
                         }
                     }
                 ]
@@ -559,7 +567,8 @@
                             "Attribute": "Base Health Regeneration per 5 Seconds: ",
                             "Before": "8",
                             "Indicator": " ⇒ ",
-                            "After": "5"
+                            "After": "5",
+                            "parsedAfter": "<span class=\"red\">5</span>"
                         }
                     }
                 ]
@@ -581,33 +590,13 @@
                             "Attribute": "Healing from blobs: ",
                             "Before": "5/6/7/8% Max HP (based on R ranks)",
                             "Indicator": " ⇒ ",
-                            "After": "4-8% (based on level)"
+                            "After": "4-8% (based on level)",
+                            "parsedAfter": "<span class=\"red\">4</span>-8% (based on level)"
                         }
                     }
                 ]
             },
             "Q": "",
-            "W": "",
-            "E": "",
-            "R": ""
-        },
-        "14.23": {
-            "B": "",
-            "P": "",
-            "Q": {
-                "SpellName": "Q - Stretching Strikes",
-                "Changes": [
-                    {
-                        "Tag": "",
-                        "Change": {
-                            "Attribute": "Damage: ",
-                            "Before": "40/55/70/85/100 (+30% AP) (+4% of Zac's maximum health)",
-                            "Indicator": " ⇒ ",
-                            "After": "40/55/70/85/100 (+30% AP) (+3% of Zac's maximum health)"
-                        }
-                    }
-                ]
-            },
             "W": "",
             "E": "",
             "R": ""
@@ -623,7 +612,8 @@
                             "Attribute": "Heal per Chunk: ",
                             "Before": "4/5/6/7%",
                             "Indicator": " ⇒ ",
-                            "After": "5/6/7/8%"
+                            "After": "5/6/7/8%",
+                            "parsedAfter": "<span class=\"green\">5</span>/<span class=\"green\">6</span>/<span class=\"green\">7</span>/<span class=\"green\">8</span>%"
                         }
                     }
                 ]
@@ -639,7 +629,8 @@
                             "Attribute": "Cooldown: ",
                             "Before": "24/21/18/15/12",
                             "Indicator": " ⇒ ",
-                            "After": "22/19/16/13/10 seconds"
+                            "After": "22/19/16/13/10 seconds",
+                            "parsedAfter": "<span class=\"green\">22</span>/<span class=\"green\">19</span>/<span class=\"green\">16</span>/<span class=\"green\">13</span>/<span class=\"green\">10</span> seconds"
                         }
                     }
                 ]
@@ -653,11 +644,34 @@
                             "Attribute": "Cooldown: ",
                             "Before": "130/115/100",
                             "Indicator": " ⇒ ",
-                            "After": "120/105/90 seconds"
+                            "After": "120/105/90 seconds",
+                            "parsedAfter": "<span class=\"green\">120</span>/<span class=\"green\">105</span>/<span class=\"green\">90</span> seconds"
                         }
                     }
                 ]
             }
+        },
+        "14.23": {
+            "B": "",
+            "P": "",
+            "Q": {
+                "SpellName": "Q - Stretching Strikes",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Damage: ",
+                            "Before": "40/55/70/85/100 (+30% AP) (+4% of Zac's maximum health)",
+                            "Indicator": " ⇒ ",
+                            "After": "40/55/70/85/100 (+30% AP) (+3% of Zac's maximum health)",
+                            "parsedAfter": "40/55/70/85/100 (+30% AP) (+<span class=\"red\">3</span>% of Zac's maximum health)"
+                        }
+                    }
+                ]
+            },
+            "W": "",
+            "E": "",
+            "R": ""
         }
     },
     "ChangePatches": [

@@ -79,14 +79,14 @@
         },
         "Q": {
             "_rawTooltip": {
-                "fullTooltip": "Smolder belches flame, dealing [[0]] + [[1]] magic damage. If the target dies, Smolder refunds 15 mana, once per cast.</magicDamage><br /><br />Based on stacks of [[2]], this Ability evolves to gain the following effects:<br />[[3]]: Damages all enemies surrounding the target.<br />[[4]]: Sends (2 + [[5]]) explosions beyond the target that deal 50% of this Ability's damage.<br />[[6]]: Burns the target dealing [[7]]) max Health true damage</trueDamage> over 3 seconds. Enemy champions that drop below [[8]] total health while burning are killed instantly.<br /><br />[[9]] is considered a basic Attack and applies On-Hit effects. This Ability can only damage each target one time per cast.<br />Damage is increased by 75% Critical Strike Chance. This Ability does 110% damage to minions and monsters.",
+                "fullTooltip": "Smolder belches flame, dealing [[0]] + [[1]] magic damage.</magicDamage><br /><br />Based on stacks of [[2]], this Ability evolves to gain the following effects:<br />[[3]]: Damages all enemies surrounding the target.<br />[[4]]: Sends (2 + [[5]]) explosions beyond the target that deal 75% of this Ability's damage.<br />[[6]]: Burns the target dealing [[7]]) max Health true damage</trueDamage> over 3 seconds. Enemy champions that drop below [[8]] total health while burning are killed instantly.<br /><br />[[9]] is considered a basic Attack and applies On-Hit effects. This Ability can only damage each target one time per cast.<br />Damage is increased by 75% Critical Strike Chance. This Ability does 110% damage to minions and monsters.",
                 "parseInfo": [
                     {
                         "text": {
-                            "text": "65/80/95/110/125 {{0}} physical damage",
+                            "text": "15/25/35/45/55 {{0}} physical damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+130% Bonus AD)",
+                                    "scale": "(+100% AD)",
                                     "scaleId": "AD"
                                 }
                             ]
@@ -95,7 +95,7 @@
                     },
                     {
                         "text": {
-                            "text": "30% Dragon Practice Stacks",
+                            "text": "40% Dragon Practice Stacks",
                             "scaleHolders": []
                         },
                         "type": ""
@@ -123,7 +123,7 @@
                     },
                     {
                         "text": {
-                            "text": "1 per 125 Dragon Practice Stacks",
+                            "text": "1% Dragon Practice Stacks",
                             "scaleHolders": []
                         },
                         "type": ""
@@ -137,8 +137,13 @@
                     },
                     {
                         "text": {
-                            "text": "2.5% bonus AD (+0.4% Dragon Practice Stacks",
-                            "scaleHolders": []
+                            "text": "2% bonus AD {{0}} (0.8% Dragon Practice Stacks",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+1% AP)",
+                                    "scaleId": "AP"
+                                }
+                            ]
                         },
                         "type": ""
                     },
@@ -164,15 +169,19 @@
         },
         "W": {
             "_rawTooltip": {
-                "fullTooltip": "Smolder lets out an adorable flaming sneeze, dealing [[0]] and [[1]] by 35% for 1.5 seconds.<br /><br />Hitting champions causes an explosion, dealing [[2]] + [[3]] stacks magic damage</magicDamage>.<br /><br />Each consecutive explosion does 75% damage Smolder can only gain one [[4]] stack per champion hit. This Ability does 100% damage to minions and monsters.",
+                "fullTooltip": "Smolder lets out an adorable flaming sneeze, dealing [[0]] and [[1]] by 35% for 1.5 seconds.<br /><br />Hitting champions causes an explosion, dealing [[2]] + [[3]] stacks magic damage</magicDamage>.<br /><br />Each consecutive exp/osion does 75% damage Smolder can only gam one [[4]] stack per champion hit. This Ability does 140% damage to minions and monsters.",
                 "parseInfo": [
                     {
                         "text": {
-                            "text": "30/50/70/90/110 {{0}} physical damage",
+                            "text": "45/75/105/135/165 {{0}} {{1}} physical damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+60% Bonus AD)",
+                                    "scale": "(+25% Bonus AD)",
                                     "scaleId": "AD"
+                                },
+                                {
+                                    "scale": "(+20% AP)",
+                                    "scaleId": "AP"
                                 }
                             ]
                         },
@@ -187,10 +196,10 @@
                     },
                     {
                         "text": {
-                            "text": "30/50/70/90/110 {{0}} {{1}} physical damage",
+                            "text": "25/40/55/70/85 {{0}} {{1}} physical damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+60% bonus AD)",
+                                    "scale": "(+25% bonus AD)",
                                     "scaleId": "AD"
                                 },
                                 {
@@ -218,12 +227,12 @@
                 ]
             },
             "cooldown": "14/13/12/11/10",
-            "cost": "50/55/60/65/70 Mana",
+            "cost": "60 Mana",
             "name": "Achooo!"
         },
         "E": {
             "_rawTooltip": {
-                "fullTooltip": "Smolder takes flight, gaining [[0]] and ignoring terrain for 1.25 seconds.<br /><br />While flying, Smolder bombards the lowest health enemy 5 (+1 per 100 Dragon Patience Stacks) times for [[1]] + [[2]] stacks magic damage</magicDamage> each.<br /><br />Attacks made by this Ability prioritize champions. While flying, Smolder gains expanded vision.",
+                "fullTooltip": "Smolder takes flight, gaining [[0]] and ignoring terrain for 1.25 seconds.<br /><br />While flying, Smolder bombards the lowest health enemy 5 (+1 per 50 Dragon Patience Stacks) times for [[1]] + [[2]] stacks magic damage</magicDamage> each.<br /><br />Attacks made by this Ability prioritize champions. While flying, Smolder gains expanded vision.",
                 "parseInfo": [
                     {
                         "text": {
@@ -234,10 +243,10 @@
                     },
                     {
                         "text": {
-                            "text": "5/10/15/20/25 {{0}} physical damage",
+                            "text": "15/20/25/30/35 {{0}} physical damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+25% AD)",
+                                    "scale": "(+10% AD)",
                                     "scaleId": "AD"
                                 }
                             ]
@@ -246,7 +255,7 @@
                     },
                     {
                         "text": {
-                            "text": "10% of Dragon Practice",
+                            "text": "20% of Dragon Practice",
                             "scaleHolders": []
                         },
                         "type": ""
@@ -259,7 +268,7 @@
         },
         "R": {
             "_rawTooltip": {
-                "fullTooltip": "Smolder's mom breathes fire from above, dealing [[0]]. Enemies in the center instead take [[1]] and are [[2]] by 40% for 2 seconds. Smolder's mom heals her son for [[3]] if she hits him.<br /><br />[[4]]",
+                "fullTooltip": "Smolder's mom breathes fire from above, dealing [[0]]. Enemies in the center instead take [[1]] and are [[2]] by 40% for 2 seconds. Smolder's mom heals her son for [[3]] if she hits him.",
                 "parseInfo": [
                     {
                         "text": {
@@ -315,17 +324,10 @@
                             ]
                         },
                         "type": "healing"
-                    },
-                    {
-                        "text": {
-                            "text": "Deals 50% damage to minions and monsters.",
-                            "scaleHolders": []
-                        },
-                        "type": ""
                     }
                 ]
             },
-            "cooldown": "120",
+            "cooldown": "120/110/100",
             "cost": "100 Mana",
             "name": "MMOOOMMMM!"
         }
@@ -351,7 +353,8 @@
                             "Attribute": "Fireballs at 125 Stacks: ",
                             "Before": "2 (+1 per 100 Dragon Patience Stacks)",
                             "Indicator": " ⇒ ",
-                            "After": "1 (+1 per 67 Dragon Patience Stacks)"
+                            "After": "1 (+1 per 67 Dragon Patience Stacks)",
+                            "parsedAfter": "<span class=\"red\">1</span> (+1 per <span class=\"green\">67</span> Dragon Patience Stacks)"
                         }
                     },
                     {
@@ -374,7 +377,8 @@
                             "Attribute": "Cooldown: ",
                             "Before": "13/12.5/12/11.5/11 seconds",
                             "Indicator": " ⇒ ",
-                            "After": "14/13/12/11/10 seconds"
+                            "After": "14/13/12/11/10 seconds",
+                            "parsedAfter": "<span class=\"red\">14</span>/<span class=\"red\">13</span>/12/<span class=\"green\">11</span>/<span class=\"green\">10</span> seconds"
                         }
                     },
                     {
@@ -383,7 +387,8 @@
                             "Attribute": "Initial Physical Damage: ",
                             "Before": "70/90/110/130/150 (+25% AD) (+35% AP)",
                             "Indicator": " ⇒ ",
-                            "After": "50/80/110/140/170 (+25% AD) (+20% AP)"
+                            "After": "50/80/110/140/170 (+25% AD) (+20% AP)",
+                            "parsedAfter": "<span class=\"red\">50</span>/<span class=\"red\">80</span>/110/<span class=\"green\">140</span>/<span class=\"green\">170</span> (+25% AD) (+<span class=\"red\">20</span>% AP)"
                         }
                     },
                     {
@@ -392,7 +397,8 @@
                             "Attribute": "Explosion Physical Damage: ",
                             "Before": "25/40/55/70/85 (+65% AP)",
                             "Indicator": " ⇒ ",
-                            "After": "25/40/55/70/85 (+25% bonus AD) (+80% AP)"
+                            "After": "25/40/55/70/85 (+25% bonus AD) (+80% AP)",
+                            "parsedAfter": "25/40/55/70/85 (+<span class=\"gold\">25</span>% bonus AD) (+<span class=\"green\">80</span>% AP)"
                         }
                     }
                 ]
@@ -425,7 +431,8 @@
                             "Attribute": "3rd Upgrade Bonus True Damage: ",
                             "Before": "6.5% of target's maximum health",
                             "Indicator": " ⇒ ",
-                            "After": "+2% bonus AD (+1% AP) (+0.8% of Dragon Patience Stacks) of target's maximum health"
+                            "After": "+2% bonus AD (+1% AP) (+0.8% of Dragon Patience Stacks) of target's maximum health",
+                            "parsedAfter": "+<span class=\"red\">2</span>% bonus AD (+<span class=\"gold\">1</span>% AP) (+<span class=\"gold\">0.8</span>% of Dragon Patience Stacks) of target's maximum health"
                         }
                     }
                 ]
@@ -440,7 +447,8 @@
                             "Attribute": "Number of Bolts: ",
                             "Before": "5-10 (based on critical strike chance)",
                             "Indicator": " ⇒ ",
-                            "After": "5 (+1 per 50 Dragon Patience Stacks)"
+                            "After": "5 (+1 per 50 Dragon Patience Stacks)",
+                            "parsedAfter": "5 (+<span class=\"gold\">1</span> per <span class=\"gold\">50</span> Dragon Patience Stacks)"
                         }
                     },
                     {
@@ -463,7 +471,8 @@
                             "Attribute": "Damage: ",
                             "Before": "225/350/475 (+110% bonus AD) (+100% AP)",
                             "Indicator": " ⇒ ",
-                            "After": "200/300/400 (+110% bonus AD) (+100% AP)"
+                            "After": "200/300/400 (+110% bonus AD) (+100% AP)",
+                            "parsedAfter": "<span class=\"red\">200</span>/<span class=\"red\">300</span>/<span class=\"red\">400</span> (+110% bonus AD) (+100% AP)"
                         }
                     },
                     {
@@ -472,7 +481,8 @@
                             "Attribute": "Sweet Spot Increased Damage Multiplier: ",
                             "Before": "30%",
                             "Indicator": " ⇒ ",
-                            "After": "50%"
+                            "After": "50%",
+                            "parsedAfter": "<span class=\"green\">50</span>%"
                         }
                     },
                     {
@@ -481,7 +491,8 @@
                             "Attribute": "Self Heal: ",
                             "Before": "110/160/210 (+75% AP)",
                             "Indicator": " ⇒ ",
-                            "After": "100/135/170 (+50% bonus AD) (+75% AP)"
+                            "After": "100/135/170 (+50% bonus AD) (+75% AP)",
+                            "parsedAfter": "<span class=\"red\">100</span>/<span class=\"red\">135</span>/<span class=\"red\">170</span> (+<span class=\"gold\">50</span>% bonus AD) (+75% AP)"
                         }
                     }
                 ]
@@ -513,7 +524,8 @@
                             "Attribute": "Execute Threshold: ",
                             "Before": "2% (+0.025 % per stack)",
                             "Indicator": " ⇒ ",
-                            "After": "6.5% (Note: This started at 7.625% at 225 stacks.)"
+                            "After": "6.5% (Note: This started at 7.625% at 225 stacks.)",
+                            "parsedAfter": "<span class=\"green\">6.5</span>% (Note: This started at <span class=\"gold\">7.625</span>% at <span class=\"gold\">225</span> stacks.)"
                         }
                     },
                     {
@@ -536,7 +548,8 @@
                             "Attribute": "Missile Radius: ",
                             "Before": "125",
                             "Indicator": " ⇒ ",
-                            "After": "115"
+                            "After": "115",
+                            "parsedAfter": "<span class=\"red\">115</span>"
                         }
                     }
                 ]
@@ -550,7 +563,8 @@
                             "Attribute": "Movement Speed: ",
                             "Before": "100%",
                             "Indicator": " ⇒ ",
-                            "After": "75%"
+                            "After": "75%",
+                            "parsedAfter": "<span class=\"red\">75</span>%"
                         }
                     }
                 ]
@@ -567,7 +581,8 @@
                             "Attribute": "Armor: ",
                             "Before": "24",
                             "Indicator": " ⇒ ",
-                            "After": "26"
+                            "After": "26",
+                            "parsedAfter": "<span class=\"green\">26</span>"
                         }
                     }
                 ]
@@ -582,7 +597,8 @@
                             "Attribute": "Bonus Physical Damage based on Crit Chance: ",
                             "Before": "0-30%",
                             "Indicator": " ⇒ ",
-                            "After": "0-50%"
+                            "After": "0-50%",
+                            "parsedAfter": "0-<span class=\"green\">50</span>%"
                         }
                     }
                 ]
@@ -601,7 +617,8 @@
                             "Attribute": "Attack Damage: ",
                             "Before": "57",
                             "Indicator": " ⇒ ",
-                            "After": "60"
+                            "After": "60",
+                            "parsedAfter": "<span class=\"green\">60</span>"
                         }
                     },
                     {
@@ -610,7 +627,8 @@
                             "Attribute": "Base Health: ",
                             "Before": "575",
                             "Indicator": " ⇒ ",
-                            "After": "605 (this was a micropatch change and is already live)"
+                            "After": "605 (this was a micropatch change and is already live)",
+                            "parsedAfter": "<span class=\"green\">605</span> (this was a micropatch change and is already live)"
                         }
                     },
                     {
@@ -619,7 +637,8 @@
                             "Attribute": "Base Health Regeneration: ",
                             "Before": "3",
                             "Indicator": " ⇒ ",
-                            "After": "4.5 (this was a micropatch change and is already live)"
+                            "After": "4.5 (this was a micropatch change and is already live)",
+                            "parsedAfter": "<span class=\"green\">4.5</span> (this was a micropatch change and is already live)"
                         }
                     }
                 ]
@@ -633,7 +652,8 @@
                             "Attribute": "Super Scorcher Breath: ",
                             "Before": "40-52% (based on critical strike chance)",
                             "Indicator": " ⇒ ",
-                            "After": "40%-70% (based on critical strike chance)"
+                            "After": "40%-70% (based on critical strike chance)",
+                            "parsedAfter": "40%/<span class=\"green\">70</span>% (based on critical strike chance)"
                         }
                     }
                 ]
@@ -647,7 +667,8 @@
                             "Attribute": "Mana Cost: ",
                             "Before": "23/26/29/32/35",
                             "Indicator": " ⇒ ",
-                            "After": "25"
+                            "After": "25",
+                            "parsedAfter": "<span class=\"green\">25</span>"
                         }
                     },
                     {
@@ -656,7 +677,8 @@
                             "Attribute": "Critical Strike scaling: ",
                             "Before": "0-50% (based on critical strike chance)",
                             "Indicator": " ⇒ ",
-                            "After": "0-75% (based on critical strike chance)"
+                            "After": "0-75% (based on critical strike chance)",
+                            "parsedAfter": "0-<span class=\"green\">75</span>% (based on critical strike chance)"
                         }
                     }
                 ]
@@ -677,7 +699,8 @@
                             "Attribute": "Damage: ",
                             "Before": "15/25/35/45/55 (+100% AD) (+15% AP)",
                             "Indicator": " ⇒ ",
-                            "After": "20/30/40/50/60 (+100% AD) (+15% AP)"
+                            "After": "20/30/40/50/60 (+100% AD) (+15% AP)",
+                            "parsedAfter": "<span class=\"green\">20</span>/<span class=\"green\">30</span>/<span class=\"green\">40</span>/<span class=\"green\">50</span>/<span class=\"green\">60</span> (+100% AD) (+15% AP)"
                         }
                     }
                 ]
@@ -696,7 +719,8 @@
                             "Attribute": "Health: ",
                             "Before": " 605",
                             "Indicator": " ⇒ ",
-                            "After": "575"
+                            "After": "575",
+                            "parsedAfter": "<span class=\"red\">575</span>"
                         }
                     }
                 ]
@@ -711,7 +735,8 @@
                             "Attribute": "Damage: ",
                             "Before": " 20/30/40/50/60 (+100% AD) (+15% AP)",
                             "Indicator": " ⇒ ",
-                            "After": "15/25/35/45/55 (+100% AD)"
+                            "After": "15/25/35/45/55 (+100% AD)",
+                            "parsedAfter": "<span class=\"red\">15</span>/<span class=\"red\">25</span>/<span class=\"red\">35</span>/<span class=\"red\">45</span>/<span class=\"red\">55</span> (+100% AD)"
                         }
                     }
                 ]
@@ -725,7 +750,8 @@
                             "Attribute": "Glob Damage: ",
                             "Before": " 50/80/110/140/170 (+25% bonus AD) (+20% AP)",
                             "Indicator": " ⇒ ",
-                            "After": "45/75/105/135/165 (+25% bonus AD) (+20% AP)"
+                            "After": "45/75/105/135/165 (+25% bonus AD) (+20% AP)",
+                            "parsedAfter": "<span class=\"red\">45</span>/<span class=\"red\">75</span>/<span class=\"red\">105</span>/<span class=\"red\">135</span>/<span class=\"red\">165</span> (+25% bonus AD) (+20% AP)"
                         }
                     },
                     {
@@ -734,11 +760,54 @@
                             "Attribute": "Minion/Monster Damage: ",
                             "Before": " 70/112/154/196/238 (+35% bonus AD) (+28% AP)",
                             "Indicator": " ⇒ ",
-                            "After": "63/105/147/189/231 (+35% bonus AD) (+28% AP)"
+                            "After": "63/105/147/189/231 (+35% bonus AD) (+28% AP)",
+                            "parsedAfter": "<span class=\"red\">63</span>/<span class=\"red\">105</span>/<span class=\"red\">147</span>/<span class=\"red\">189</span>/<span class=\"red\">231</span> (+35% bonus AD) (+28% AP)"
                         }
                     }
                 ]
             },
+            "E": "",
+            "R": ""
+        },
+        "14.10": {
+            "B": {
+                "SpellName": "Base Stats",
+                "Changes": [
+                    {
+                        "Tag": "MID-PATCH",
+                        "Change": {
+                            "Attribute": "Base AD: ",
+                            "Before": "55",
+                            "Indicator": " ⇒ ",
+                            "After": "57",
+                            "parsedAfter": "<span class=\"green\">57</span>"
+                        }
+                    },
+                    {
+                        "Tag": "MID-PATCH",
+                        "Change": {
+                            "Attribute": "Base Health:  ",
+                            "Before": "575",
+                            "Indicator": " ⇒ ",
+                            "After": "605",
+                            "parsedAfter": "<span class=\"green\">605</span>"
+                        }
+                    },
+                    {
+                        "Tag": "MID-PATCH",
+                        "Change": {
+                            "Attribute": "Base HP5: ",
+                            "Before": "3",
+                            "Indicator": " ⇒ ",
+                            "After": "4.5",
+                            "parsedAfter": "<span class=\"green\">4.5</span>"
+                        }
+                    }
+                ]
+            },
+            "P": "",
+            "Q": "",
+            "W": "",
             "E": "",
             "R": ""
         },
@@ -754,7 +823,8 @@
                             "Attribute": "Damage: ",
                             "Before": "15/25/35/45/55 (+100% total AD) (+0.4 per Dragon Practice)",
                             "Indicator": " ⇒ ",
-                            "After": "65/80/95/110/125 (+130% bonus AD) (+0.3 per Dragon Practice)"
+                            "After": "65/80/95/110/125 (+130% bonus AD) (+0.3 per Dragon Practice)",
+                            "parsedAfter": "<span class=\"green\">65</span>/<span class=\"green\">80</span>/<span class=\"green\">95</span>/<span class=\"green\">110</span>/<span class=\"green\">125</span> (+<span class=\"green\">130</span>% bonus AD) (+<span class=\"red\">0.3</span> per Dragon Practice)"
                         }
                     },
                     {
@@ -763,7 +833,8 @@
                             "Attribute": "Minion/Monster Damage Modifier: ",
                             "Before": "110%",
                             "Indicator": " ⇒ ",
-                            "After": "100%"
+                            "After": "100%",
+                            "parsedAfter": "<span class=\"red\">100</span>%"
                         }
                     },
                     {
@@ -781,7 +852,8 @@
                             "Attribute": "Tier 2 - 125 Stacks Additional Projectiles Damage: ",
                             "Before": "75%",
                             "Indicator": " ⇒ ",
-                            "After": "50%"
+                            "After": "50%",
+                            "parsedAfter": "<span class=\"red\">50</span>%"
                         }
                     },
                     {
@@ -790,7 +862,8 @@
                             "Attribute": "Tier 2 - 125 Stacks Number of Projectiles: ",
                             "Before": "1 (+1 per 67 stacks)",
                             "Indicator": " ⇒ ",
-                            "After": "2 (+1 per 125 stacks)"
+                            "After": "2 (+1 per 125 stacks)",
+                            "parsedAfter": "<span class=\"green\">2</span> (+1 per <span class=\"red\">125</span> stacks)"
                         }
                     },
                     {
@@ -799,7 +872,8 @@
                             "Attribute": "Tier 3 - 225 Stacks Burn Damage: ",
                             "Before": "0.8% per 100 stacks (+1% per 100 AP) (+2% per 100 bonus AD)",
                             "Indicator": " ⇒ ",
-                            "After": "0.4% per 100 stacks (+2.5% per 100 bonus AD)"
+                            "After": "0.4% per 100 stacks (+2.5% per 100 bonus AD)",
+                            "parsedAfter": "<span class=\"red\">0.4</span>% per 100 stacks (+<span class=\"green\">2.5</span>% per 100 bonus AD)"
                         }
                     }
                 ]
@@ -813,7 +887,8 @@
                             "Attribute": "Mana Cost: ",
                             "Before": "60",
                             "Indicator": " ⇒ ",
-                            "After": "50/55/60/65/70"
+                            "After": "50/55/60/65/70",
+                            "parsedAfter": "<span class=\"red\">50</span>/<span class=\"red\">55</span>/60/<span class=\"red\">65</span>/<span class=\"red\">70</span>"
                         }
                     },
                     {
@@ -822,7 +897,8 @@
                             "Attribute": "Glob Damage: ",
                             "Before": "45/75/105/135/165 (+25% bonus AD) (+20% AP)",
                             "Indicator": " ⇒ ",
-                            "After": "30/50/70/90/110 (+60% bonus AD)"
+                            "After": "30/50/70/90/110 (+60% bonus AD)",
+                            "parsedAfter": "<span class=\"red\">30</span>/<span class=\"red\">50</span>/<span class=\"red\">70</span>/<span class=\"red\">90</span>/<span class=\"red\">110</span> (+<span class=\"green\">60</span>% bonus AD)"
                         }
                     },
                     {
@@ -831,7 +907,8 @@
                             "Attribute": "Explosion Damage: ",
                             "Before": "25/40/55/70/85 (+25% bonus AD) (+80% AP)",
                             "Indicator": " ⇒ ",
-                            "After": "30/50/70/90/110 (+60% bonus AD) (+80% AP)"
+                            "After": "30/50/70/90/110 (+60% bonus AD) (+80% AP)",
+                            "parsedAfter": "<span class=\"green\">30</span>/<span class=\"green\">50</span>/<span class=\"green\">70</span>/<span class=\"green\">90</span>/<span class=\"green\">110</span> (+<span class=\"green\">60</span>% bonus AD) (+80% AP)"
                         }
                     },
                     {
@@ -840,7 +917,8 @@
                             "Attribute": "Combined Damage vs Champions: ",
                             "Before": "70/115/160/205/250 (+50% bonus AD) (+100% AP)",
                             "Indicator": " ⇒ ",
-                            "After": "60/100/140/180/220 (+120% bonus AD) (+80% AP)"
+                            "After": "60/100/140/180/220 (+120% bonus AD) (+80% AP)",
+                            "parsedAfter": "<span class=\"red\">60</span>/<span class=\"red\">100</span>/<span class=\"red\">140</span>/<span class=\"red\">180</span>/<span class=\"red\">220</span> (+<span class=\"green\">120</span>% bonus AD) (+<span class=\"red\">80</span>% AP)"
                         }
                     },
                     {
@@ -849,7 +927,8 @@
                             "Attribute": "Minion/Monster Damage Modifier: ",
                             "Before": "140%",
                             "Indicator": " ⇒ ",
-                            "After": "100%"
+                            "After": "100%",
+                            "parsedAfter": "<span class=\"red\">100</span>%"
                         }
                     }
                 ]
@@ -863,7 +942,8 @@
                             "Attribute": "Damage per Hit: ",
                             "Before": "15/20/25/30/35 (+10% total AD) (+.2 per Dragon Practice)",
                             "Indicator": " ⇒ ",
-                            "After": "5/10/15/20/25 (+25% total AD) (+.1 per Dragon Practice)"
+                            "After": "5/10/15/20/25 (+25% total AD) (+.1 per Dragon Practice)",
+                            "parsedAfter": "<span class=\"red\">5</span>/<span class=\"red\">10</span>/<span class=\"red\">15</span>/<span class=\"red\">20</span>/<span class=\"red\">25</span> (+<span class=\"green\">25</span>% total AD) (+<span class=\"red\">.1</span> per Dragon Practice)"
                         }
                     },
                     {
@@ -872,7 +952,8 @@
                             "Attribute": "Number of Attacks: ",
                             "Before": "5 (+1 per 150 stacks)",
                             "Indicator": " ⇒ ",
-                            "After": "5 (+1 per 100 stacks)"
+                            "After": "5 (+1 per 100 stacks)",
+                            "parsedAfter": "5 (+1 per <span class=\"green\">100</span> stacks)"
                         }
                     },
                     {
@@ -895,7 +976,8 @@
                             "Attribute": "Cooldown: ",
                             "Before": "140/130/120",
                             "Indicator": " ⇒ ",
-                            "After": "120 seconds at all ranks"
+                            "After": "120 seconds at all ranks",
+                            "parsedAfter": "<span class=\"green\">120</span> seconds at all ranks"
                         }
                     },
                     {
@@ -909,45 +991,6 @@
                     }
                 ]
             }
-        },
-        "14.10": {
-            "B": {
-                "SpellName": "Base Stats",
-                "Changes": [
-                    {
-                        "Tag": "MID-PATCH",
-                        "Change": {
-                            "Attribute": "Base AD: ",
-                            "Before": "55",
-                            "Indicator": " ⇒ ",
-                            "After": "57"
-                        }
-                    },
-                    {
-                        "Tag": "MID-PATCH",
-                        "Change": {
-                            "Attribute": "Base Health:  ",
-                            "Before": "575",
-                            "Indicator": " ⇒ ",
-                            "After": "605"
-                        }
-                    },
-                    {
-                        "Tag": "MID-PATCH",
-                        "Change": {
-                            "Attribute": "Base HP5: ",
-                            "Before": "3",
-                            "Indicator": " ⇒ ",
-                            "After": "4.5"
-                        }
-                    }
-                ]
-            },
-            "P": "",
-            "Q": "",
-            "W": "",
-            "E": "",
-            "R": ""
         }
     },
     "ChangePatches": [

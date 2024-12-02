@@ -5,31 +5,31 @@
             "increment": 104
         },
         "mp": {
-            "base": 320,
-            "increment": 40
+            "base": 350,
+            "increment": 45
         },
         "armor": {
-            "base": 30,
-            "increment": 4.3
+            "base": 36,
+            "increment": 4.2
         },
         "spellBlock": {
-            "base": 28,
-            "increment": 1.8
+            "base": 30,
+            "increment": 2.05
         },
         "hpRegen": {
             "base": 7.5,
             "increment": 0.85
         },
         "mpRegen": {
-            "base": 7,
-            "increment": 0.7
+            "base": 6,
+            "increment": 0.35
         },
         "attackSpeed": {
             "base": 0.625,
-            "increment": 0.02
+            "increment": 0.015
         },
         "ms": {
-            "base": 315,
+            "base": 330,
             "increment": 0
         },
         "attackDamage": {
@@ -45,21 +45,8 @@
         "P": {
             "cooldown": "",
             "_rawTooltip": {
-                "fullTooltip": "Rell's attacks and abilities steal 2% Armor and 2% Magic Resist for 5 seconds. Max (10%).<br>Basic attacks deal [[0]] on-hit.",
-                "parseInfo": [
-                    {
-                        "text": {
-                            "text": "{{0}} magic damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(5% armor + 5% magic resistance)",
-                                    "scaleId": "resistance"
-                                }
-                            ]
-                        },
-                        "type": "armor"
-                    }
-                ]
+                "fullTooltip": "Rell's attacks and abilities steal 2% Armor and 2% Magic Resist for 5 seconds, refreshing on subsequent hits and stacking up to 5 times.",
+                "parseInfo": []
             },
             "name": "Break the Mold"
         },
@@ -69,7 +56,7 @@
                 "parseInfo": [
                     {
                         "text": {
-                            "text": "Stunning/status> targets for 0.65 seconds, destroying all Shields",
+                            "text": "Stunning/status> targets for 0.75 seconds, destroying all Shields",
                             "scaleHolders": []
                         },
                         "type": "shield"
@@ -94,32 +81,11 @@
         },
         "W": {
             "_rawTooltip": {
-                "fullTooltip": "[[0]]: Rell gains [[1]] while mounted.<br /><br />Rell leaps of her mount, [[2]] enemies for 0.4 seconds then [[3]] them for 0.8 seconds and dealing [[4]]. Rell gains [[5]], which lasts until she remounts.<br /><br />Rell then enters armored form, gaining [[6]], [[7]], [[8]] and 75 Attack Range. In this armored form, she can use [[9]].<br /><br />[[10]]: Rell mounts up and briefly gains [[11]]. Her next attack within 3.5 seconds [[12]] and throws enemies behind her, dealing an additional [[13]]. While mounted, Rell can use [[14]].",
+                "fullTooltip": "Rell leaps of her mount, [[0]] enemies for 1 seconds and dealing [[1]]. Rell gains [[2]], which lasts until she remounts.<br /><br />Rell then enters armored form, gaining [[3]], [[4]], [[5]] and 75 Attack Range, but is [[6]] by 10%. In this form, she can use [[7]].<br /><br />[[8]]: Rell mounts up and briefly gains [[9]]. Her next attack within 3.5 seconds [[10]] and throws enemies behind her, dealing an additional [[11]]. While mounted, Rell can use [[12]].",
                 "parseInfo": [
                     {
                         "text": {
-                            "text": "Passive - Mounted Alacrity",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "20% Move Speed",
-                            "scaleHolders": []
-                        },
-                        "type": "speed"
-                    },
-                    {
-                        "text": {
                             "text": "Knocking Up",
-                            "scaleHolders": []
-                        },
-                        "type": "status"
-                    },
-                    {
-                        "text": {
-                            "text": "Stunning",
                             "scaleHolders": []
                         },
                         "type": "status"
@@ -150,14 +116,14 @@
                     },
                     {
                         "text": {
-                            "text": "15% bonus Armor",
+                            "text": "12% bonus Armor",
                             "scaleHolders": []
                         },
                         "type": "scaleArmor"
                     },
                     {
                         "text": {
-                            "text": "15% Magic Resist",
+                            "text": "12% Magic Resist",
                             "scaleHolders": []
                         },
                         "type": "scaleMR"
@@ -168,6 +134,13 @@
                             "scaleHolders": []
                         },
                         "type": "attackSpeed"
+                    },
+                    {
+                        "text": {
+                            "text": "Slowed",
+                            "scaleHolders": []
+                        },
+                        "type": "status"
                     },
                     {
                         "text": {
@@ -218,14 +191,45 @@
                     }
                 ]
             },
-            "cooldown": "10",
+            "cooldown": "11",
             "cost": "40 Mana",
             "name": "Ferromancy: Crash Down"
         },
         "E": {
             "_rawTooltip": {
-                "fullTooltip": "[[0]]: Rell and an ally charge, gaining [[1]] increased to [[2]] when facing enemy champions or each other for 3 seconds.<br /><br />Additionally, Rell's next attack or [[3]] explode in an area for [[4]]",
+                "fullTooltip": "[[0]]: Rell gains [[1]] while mounted, reduced to [[2]] in combat.<br /><br />[[3]]: Rell and an ally charge, gaining ramping [[4]] over 3 seconds, this is doubled to [[5]] toward enemies or your targeted ally.<br /><br />Additionally, Rell's next attack or [[6]] explode in an area for [[7]]",
                 "parseInfo": [
+                    {
+                        "text": {
+                            "text": "Passive - Mounted Alacrity",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "5 - 50 {{0}} Move Speed",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(based on level)",
+                                    "scaleId": "level"
+                                }
+                            ]
+                        },
+                        "type": "speed"
+                    },
+                    {
+                        "text": {
+                            "text": "2.5 - 25 {{0}} Move Speed",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(based on level)",
+                                    "scaleId": "level"
+                                }
+                            ]
+                        },
+                        "type": "speed"
+                    },
                     {
                         "text": {
                             "text": "Active - Full Tilt",
@@ -235,14 +239,14 @@
                     },
                     {
                         "text": {
-                            "text": "10% Move Speed",
+                            "text": "Move Speed up to 12/13/14/15/16%",
                             "scaleHolders": []
                         },
                         "type": "speed"
                     },
                     {
                         "text": {
-                            "text": "25%",
+                            "text": "24/26/28/30/32%",
                             "scaleHolders": []
                         },
                         "type": "speed"
@@ -256,10 +260,10 @@
                     },
                     {
                         "text": {
-                            "text": "5/5.5/6/6.5/7% {{0}} of the target's maximum health ",
+                            "text": "25/35/45/55/65 +3% of target's maximum health {{0}} magic damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+3% per 100 AP)",
+                                    "scale": "(+50% AP)",
                                     "scaleId": "AP"
                                 }
                             ]
@@ -268,7 +272,7 @@
                     }
                 ]
             },
-            "cooldown": "14/13/12/11/10",
+            "cooldown": "15",
             "cost": "40 Mana",
             "name": "Full Tilt"
         },
@@ -331,7 +335,8 @@
                             "Attribute": "DAMAGE RATIO: ",
                             "Before": "40% AP",
                             "Indicator": " ⇒ ",
-                            "After": "60% AP"
+                            "After": "60% AP",
+                            "parsedAfter": "<span class=\"green\">60</span>% AP"
                         }
                     }
                 ]
@@ -345,7 +350,8 @@
                             "Attribute": "UNBIND COOLDOWN: ",
                             "Before": "3 seconds",
                             "Indicator": " ⇒ ",
-                            "After": "1 second"
+                            "After": "1 second",
+                            "parsedAfter": "<span class=\"green\">1</span> second"
                         }
                     },
                     {
@@ -377,7 +383,8 @@
                             "Attribute": "DAMAGE RATIO: ",
                             "Before": "70% AP",
                             "Indicator": " ⇒ ",
-                            "After": "110% AP"
+                            "After": "110% AP",
+                            "parsedAfter": "<span class=\"green\">110</span>% AP"
                         }
                     }
                 ]
@@ -391,7 +398,8 @@
                             "Attribute": "DAMAGE RATIO: ",
                             "Before": "30% AP",
                             "Indicator": " ⇒ ",
-                            "After": "40% AP"
+                            "After": "40% AP",
+                            "parsedAfter": "<span class=\"green\">40</span>% AP"
                         }
                     }
                 ]
@@ -407,7 +415,8 @@
                             "Attribute": "ARMOR: ",
                             "Before": "35",
                             "Indicator": " ⇒ ",
-                            "After": "32"
+                            "After": "32",
+                            "parsedAfter": "<span class=\"red\">32</span>"
                         }
                     }
                 ]
@@ -423,7 +432,8 @@
                             "Attribute": "COOLDOWN: ",
                             "Before": "11 seconds",
                             "Indicator": " ⇒ ",
-                            "After": "13 seconds"
+                            "After": "13 seconds",
+                            "parsedAfter": "<span class=\"red\">13</span> seconds"
                         }
                     }
                 ]
@@ -439,7 +449,8 @@
                             "Attribute": "COOLDOWN: ",
                             "Before": "11 seconds",
                             "Indicator": " ⇒ ",
-                            "After": "13 seconds"
+                            "After": "13 seconds",
+                            "parsedAfter": "<span class=\"red\">13</span> seconds"
                         }
                     }
                 ]
@@ -459,7 +470,8 @@
                             "Attribute": "STUN DURATION: ",
                             "Before": "0.75 seconds",
                             "Indicator": " ⇒ ",
-                            "After": "0.5 seconds"
+                            "After": "0.5 seconds",
+                            "parsedAfter": "<span class=\"red\">0.5</span> seconds"
                         }
                     }
                 ]
@@ -479,7 +491,8 @@
                             "Attribute": "COOLDOWN: ",
                             "Before": "13 seconds",
                             "Indicator": " ⇒ ",
-                            "After": "11 seconds"
+                            "After": "11 seconds",
+                            "parsedAfter": "<span class=\"green\">11</span> seconds"
                         }
                     }
                 ]
@@ -539,7 +552,8 @@
                             "Attribute": "Q - Heal Per Champion Hit: ",
                             "Before": "10/15/20/25/30 (+5% missing health)",
                             "Indicator": " ⇒ ",
-                            "After": "10/15/20/25/30 (+4% missing health)"
+                            "After": "10/15/20/25/30 (+4% missing health)",
+                            "parsedAfter": "10/15/20/25/30 (+<span class=\"red\">4</span>% missing health)"
                         }
                     }
                 ]
@@ -553,7 +567,8 @@
                             "Attribute": "W (Crash Down) - Shield: ",
                             "Before": "40/70/100/130/160 (+13% maximum health)",
                             "Indicator": " ⇒ ",
-                            "After": "35/60/85/110/135 (+12% maximum health)"
+                            "After": "35/60/85/110/135 (+12% maximum health)",
+                            "parsedAfter": "<span class=\"red\">35</span>/<span class=\"red\">60</span>/<span class=\"red\">85</span>/<span class=\"red\">110</span>/<span class=\"red\">135</span> (+<span class=\"red\">12</span>% maximum health)"
                         }
                     }
                 ]
@@ -574,7 +589,8 @@
                             "Attribute": "Move Speed while Dismounted: ",
                             "Before": "250",
                             "Indicator": " ⇒ ",
-                            "After": "280"
+                            "After": "280",
+                            "parsedAfter": "<span class=\"green\">280</span>"
                         }
                     }
                 ]
@@ -588,7 +604,8 @@
                             "Attribute": "Cooldown: ",
                             "Before": "18/16.25/14.5/12.75/11 seconds",
                             "Indicator": " ⇒ ",
-                            "After": "13 seconds"
+                            "After": "13 seconds",
+                            "parsedAfter": "<span class=\"green\">13</span> seconds"
                         }
                     }
                 ]
@@ -605,7 +622,8 @@
                             "Attribute": "Attack Speed: ",
                             "Before": "0.55",
                             "Indicator": " ⇒ ",
-                            "After": "0.625"
+                            "After": "0.625",
+                            "parsedAfter": "<span class=\"green\">0.625</span>"
                         }
                     },
                     {
@@ -614,7 +632,8 @@
                             "Attribute": "Attack Speed Growth: ",
                             "Before": "0.02",
                             "Indicator": " ⇒ ",
-                            "After": "0.015"
+                            "After": "0.015",
+                            "parsedAfter": "<span class=\"red\">0.015</span>"
                         }
                     },
                     {
@@ -623,7 +642,8 @@
                             "Attribute": "Armor Growth: ",
                             "Before": "4.2",
                             "Indicator": " ⇒ ",
-                            "After": "3"
+                            "After": "3",
+                            "parsedAfter": "<span class=\"red\">3</span>"
                         }
                     },
                     {
@@ -632,7 +652,8 @@
                             "Attribute": "Magic Resist Growth: ",
                             "Before": "2.05",
                             "Indicator": " ⇒ ",
-                            "After": "1"
+                            "After": "1",
+                            "parsedAfter": "<span class=\"red\">1</span>"
                         }
                     },
                     {
@@ -641,7 +662,8 @@
                             "Attribute": "Movement Speed: ",
                             "Before": "335",
                             "Indicator": " ⇒ ",
-                            "After": "330"
+                            "After": "330",
+                            "parsedAfter": "<span class=\"red\">330</span>"
                         }
                     },
                     {
@@ -650,7 +672,8 @@
                             "Attribute": "Health Regeneration: ",
                             "Before": "1.4",
                             "Indicator": " ⇒ ",
-                            "After": "1.7"
+                            "After": "1.7",
+                            "parsedAfter": "<span class=\"green\">1.7</span>"
                         }
                     },
                     {
@@ -659,7 +682,8 @@
                             "Attribute": "Health Regeneration Growth: ",
                             "Before": "0.11",
                             "Indicator": " ⇒ ",
-                            "After": "0.17"
+                            "After": "0.17",
+                            "parsedAfter": "<span class=\"green\">0.17</span>"
                         }
                     },
                     {
@@ -668,7 +692,8 @@
                             "Attribute": "Base Armor: ",
                             "Before": "32",
                             "Indicator": " ⇒ ",
-                            "After": "39"
+                            "After": "39",
+                            "parsedAfter": "<span class=\"green\">39</span>"
                         }
                     },
                     {
@@ -677,7 +702,8 @@
                             "Attribute": "Armor Growth: ",
                             "Before": "3",
                             "Indicator": " ⇒ ",
-                            "After": "4.2"
+                            "After": "4.2",
+                            "parsedAfter": "<span class=\"green\">4.2</span>"
                         }
                     },
                     {
@@ -686,7 +712,8 @@
                             "Attribute": "Magic Resistance Growth: ",
                             "Before": "1",
                             "Indicator": " ⇒ ",
-                            "After": "2.05"
+                            "After": "2.05",
+                            "parsedAfter": "<span class=\"green\">2.05</span>"
                         }
                     }
                 ]
@@ -700,7 +727,8 @@
                             "Attribute": "Passive Duration: ",
                             "Before": "4 seconds",
                             "Indicator": " ⇒ ",
-                            "After": "5 seconds"
+                            "After": "5 seconds",
+                            "parsedAfter": "<span class=\"green\">5</span> seconds"
                         }
                     },
                     {
@@ -709,7 +737,8 @@
                             "Attribute": "Armor and Magic Resist Shred: ",
                             "Before": "10%",
                             "Indicator": " ⇒ ",
-                            "After": "2.5%"
+                            "After": "2.5%",
+                            "parsedAfter": "<span class=\"red\">2.5</span>%"
                         }
                     },
                     {
@@ -727,7 +756,8 @@
                             "Attribute": "Minimum Armor and Magic Resist Steal: ",
                             "Before": "5-12 (based on level)",
                             "Indicator": " ⇒ ",
-                            "After": "1.25-2.5 (based on level)"
+                            "After": "1.25-2.5 (based on level)",
+                            "parsedAfter": "<span class=\"red\">1.25</span>-<span class=\"red\">2.5</span> (based on level)"
                         }
                     },
                     {
@@ -772,7 +802,8 @@
                             "Attribute": "Armor and Magic Resist Steal: ",
                             "Before": "2.5%",
                             "Indicator": " ⇒ ",
-                            "After": "3%"
+                            "After": "3%",
+                            "parsedAfter": "<span class=\"green\">3</span>%"
                         }
                     }
                 ]
@@ -804,7 +835,8 @@
                             "Attribute": "Range: ",
                             "Before": "685 units in front of Rell, 150 behind Rell",
                             "Indicator": " ⇒ ",
-                            "After": "520 in front of Rell, 220 behind Rell"
+                            "After": "520 in front of Rell, 220 behind Rell",
+                            "parsedAfter": "<span class=\"red\">520</span> in front of Rell, <span class=\"green\">220</span> behind Rell"
                         }
                     },
                     {
@@ -813,7 +845,8 @@
                             "Attribute": "Cooldown: ",
                             "Before": "9/8/7/6/5 seconds",
                             "Indicator": " ⇒ ",
-                            "After": "11/10.5/10/9.5/9 seconds"
+                            "After": "11/10.5/10/9.5/9 seconds",
+                            "parsedAfter": "<span class=\"red\">11</span>/<span class=\"red\">10.5</span>/<span class=\"red\">10</span>/<span class=\"red\">9.5</span>/<span class=\"red\">9</span> seconds"
                         }
                     },
                     {
@@ -822,7 +855,8 @@
                             "Attribute": "Magic Damage: ",
                             "Before": "70/115/160/205/250 (+50% AP)",
                             "Indicator": " ⇒ ",
-                            "After": "60/95/130/165/200 (+50% AP)"
+                            "After": "60/95/130/165/200 (+50% AP)",
+                            "parsedAfter": "<span class=\"red\">60</span>/<span class=\"red\">95</span>/<span class=\"red\">130</span>/<span class=\"red\">165</span>/<span class=\"red\">200</span> (+50% AP)"
                         }
                     },
                     {
@@ -831,7 +865,8 @@
                             "Attribute": "Cast Time: ",
                             "Before": "0.35 seconds",
                             "Indicator": " ⇒ ",
-                            "After": "0.5 seconds"
+                            "After": "0.5 seconds",
+                            "parsedAfter": "<span class=\"red\">0.5</span> seconds"
                         }
                     },
                     {
@@ -867,7 +902,8 @@
                             "Attribute": "Base Damage: ",
                             "Before": "60/95/130/165/200 (+50% AP)",
                             "Indicator": " ⇒ ",
-                            "After": "70/110/150/190/230 (+60% AP)"
+                            "After": "70/110/150/190/230 (+60% AP)",
+                            "parsedAfter": "<span class=\"green\">70</span>/<span class=\"green\">110</span>/<span class=\"green\">150</span>/<span class=\"green\">190</span>/<span class=\"green\">230</span> (+<span class=\"green\">60</span>% AP)"
                         }
                     },
                     {
@@ -876,7 +912,8 @@
                             "Attribute": "Damage to Jungle Camps: ",
                             "Before": "250%",
                             "Indicator": " ⇒ ",
-                            "After": "300%"
+                            "After": "300%",
+                            "parsedAfter": "<span class=\"green\">300</span>%"
                         }
                     }
                 ]
@@ -908,7 +945,8 @@
                             "Attribute": "Dismounted Bonus Armor and Magic Resist: ",
                             "Before": "10%",
                             "Indicator": " ⇒ ",
-                            "After": "12%"
+                            "After": "12%",
+                            "parsedAfter": "<span class=\"green\">12</span>%"
                         }
                     },
                     {
@@ -917,7 +955,8 @@
                             "Attribute": "Dismounted Movement Speed: ",
                             "Before": " Reduced to 280 flat",
                             "Indicator": " ⇒ ",
-                            "After": "Reduced by 15% (Note: this will be a nerf early game and a buff late game.)"
+                            "After": "Reduced by 15% (Note: this will be a nerf early game and a buff late game.)",
+                            "parsedAfter": "Reduced by <span class=\"gold\">15</span>% (Note: this will be a nerf early game and a buff late game.)"
                         }
                     },
                     {
@@ -935,7 +974,8 @@
                             "Attribute": "Magic Damage: ",
                             "Before": "70/105/140/175/210 (+60%AP)",
                             "Indicator": " ⇒ ",
-                            "After": "70/100/130/160/190 (+60%AP)"
+                            "After": "70/100/130/160/190 (+60%AP)",
+                            "parsedAfter": "70/<span class=\"red\">100</span>/<span class=\"red\">130</span>/<span class=\"red\">160</span>/<span class=\"red\">190</span> (+60%AP)"
                         }
                     },
                     {
@@ -944,7 +984,8 @@
                             "Attribute": "Shield Value: ",
                             "Before": "35/60/85/110/135 (+12% maximum health)",
                             "Indicator": " ⇒ ",
-                            "After": "30/55/80/105/130 (+10% maximum health)"
+                            "After": "30/55/80/105/130 (+10% maximum health)",
+                            "parsedAfter": "<span class=\"red\">30</span>/<span class=\"red\">55</span>/<span class=\"red\">80</span>/<span class=\"red\">105</span>/<span class=\"red\">130</span> (+<span class=\"red\">10</span>% maximum health)"
                         }
                     },
                     {
@@ -953,7 +994,8 @@
                             "Attribute": "Maximum Slide Distance: ",
                             "Before": "375",
                             "Indicator": " ⇒ ",
-                            "After": "320"
+                            "After": "320",
+                            "parsedAfter": "<span class=\"red\">320</span>"
                         }
                     },
                     {
@@ -962,7 +1004,8 @@
                             "Attribute": "AoE Radius Form: ",
                             "Before": "200",
                             "Indicator": " ⇒ ",
-                            "After": "180"
+                            "After": "180",
+                            "parsedAfter": "<span class=\"red\">180</span>"
                         }
                     },
                     {
@@ -971,7 +1014,8 @@
                             "Attribute": "Jump Range: ",
                             "Before": "500",
                             "Indicator": " ⇒ ",
-                            "After": "400"
+                            "After": "400",
+                            "parsedAfter": "<span class=\"red\">400</span>"
                         }
                     },
                     {
@@ -980,7 +1024,8 @@
                             "Attribute": "Knock Up Duration: ",
                             "Before": "1 second",
                             "Indicator": " ⇒ ",
-                            "After": "0.75 seconds"
+                            "After": "0.75 seconds",
+                            "parsedAfter": "<span class=\"red\">0.75</span> seconds"
                         }
                     },
                     {
@@ -989,7 +1034,8 @@
                             "Attribute": "Slidespeed: ",
                             "Before": "85% of jump speed",
                             "Indicator": " ⇒ ",
-                            "After": "100% of jump speed"
+                            "After": "100% of jump speed",
+                            "parsedAfter": "<span class=\"green\">100</span>% of jump speed"
                         }
                     },
                     {
@@ -1007,7 +1053,8 @@
                             "Attribute": "Knock Up Duration: ",
                             "Before": "0.75 second",
                             "Indicator": " ⇒ ",
-                            "After": "1 second"
+                            "After": "1 second",
+                            "parsedAfter": "<span class=\"green\">1</span> second"
                         }
                     },
                     {
@@ -1016,7 +1063,8 @@
                             "Attribute": "Shield: ",
                             "Before": "30/55/80/105/130 (+10% maximum health)",
                             "Indicator": " ⇒ ",
-                            "After": "35/60/85/110/135 (+12% maximum health)"
+                            "After": "35/60/85/110/135 (+12% maximum health)",
+                            "parsedAfter": "<span class=\"green\">35</span>/<span class=\"green\">60</span>/<span class=\"green\">85</span>/<span class=\"green\">110</span>/<span class=\"green\">135</span> (+<span class=\"green\">12</span>% maximum health)"
                         }
                     },
                     {
@@ -1025,7 +1073,8 @@
                             "Attribute": "Self Slow: ",
                             "Before": "15%",
                             "Indicator": " ⇒ ",
-                            "After": "10%"
+                            "After": "10%",
+                            "parsedAfter": "<span class=\"red\">10</span>%"
                         }
                     },
                     {
@@ -1034,7 +1083,8 @@
                             "Attribute": "Damage to Jungle Camps: ",
                             "Before": "250%",
                             "Indicator": " ⇒ ",
-                            "After": "300%"
+                            "After": "300%",
+                            "parsedAfter": "<span class=\"green\">300</span>%"
                         }
                     }
                 ]
@@ -1066,7 +1116,8 @@
                             "Attribute": "Damage: ",
                             "Before": "25/35/45/55/65 (+2/2.5/3/3.5/4% Maximum Health) (+30% AP)",
                             "Indicator": " ⇒ ",
-                            "After": "35/50/65/80/95 (+4% Maximum Health) (+50% AP)"
+                            "After": "35/50/65/80/95 (+4% Maximum Health) (+50% AP)",
+                            "parsedAfter": "<span class=\"green\">35</span>/<span class=\"green\">50</span>/<span class=\"green\">65</span>/<span class=\"green\">80</span>/<span class=\"green\">95</span> (+<span class=\"green\">4</span>% Maximum Health) (+<span class=\"green\">50</span>% AP)"
                         }
                     },
                     {
@@ -1075,7 +1126,8 @@
                             "Attribute": "Movement Speed: ",
                             "Before": "Ramps up from 50% of total speed to 100% over the first 2 seconds",
                             "Indicator": " ⇒ ",
-                            "After": "Ramps up from 75% of total speed to 100% over the first 2 seconds"
+                            "After": "Ramps up from 75% of total speed to 100% over the first 2 seconds",
+                            "parsedAfter": "Ramps up from <span class=\"green\">75</span>% of total speed to 100% over the first 2 seconds"
                         }
                     }
                 ]
@@ -1099,7 +1151,8 @@
                             "Attribute": "Initial Movement Speed Bonus: ",
                             "Before": "25/30/45/40/45% for 3.5 seconds",
                             "Indicator": " ⇒ ",
-                            "After": "30% that rapidly decays over 1 second"
+                            "After": "30% that rapidly decays over 1 second",
+                            "parsedAfter": "<span class=\"red\">30</span>% that rapidly decays over <span class=\"red\">1</span> second"
                         }
                     }
                 ]
@@ -1115,7 +1168,8 @@
                             "Attribute": "Default Adaptive Force Stat: ",
                             "Before": "Attack Damage",
                             "Indicator": " ⇒ ",
-                            "After": "Ability Power"
+                            "After": "Ability Power",
+                            "parsedAfter": "Ability Power"
                         }
                     }
                 ]
@@ -1130,7 +1184,8 @@
                             "Attribute": "Cast Time: ",
                             "Before": "0.5 seconds",
                             "Indicator": " ⇒ ",
-                            "After": "0.4 seconds"
+                            "After": "0.4 seconds",
+                            "parsedAfter": "<span class=\"green\">0.4</span> seconds"
                         }
                     },
                     {
@@ -1139,7 +1194,8 @@
                             "Attribute": "Magic Damage: ",
                             "Before": "70/110/150/190/230 (+60%AP)",
                             "Indicator": " ⇒ ",
-                            "After": "60/100/140/180/220 (+60% AP)"
+                            "After": "60/100/140/180/220 (+60% AP)",
+                            "parsedAfter": "<span class=\"red\">60</span>/<span class=\"red\">100</span>/<span class=\"red\">140</span>/<span class=\"red\">180</span>/<span class=\"red\">220</span> (+60% AP)"
                         }
                     },
                     {
@@ -1148,7 +1204,8 @@
                             "Attribute": "Jungle Monster Damage: ",
                             "Before": "300% of base damage",
                             "Indicator": " ⇒ ",
-                            "After": "150/220/290/360/430 bonus damage to monsters"
+                            "After": "150/220/290/360/430 bonus damage to monsters",
+                            "parsedAfter": "<span class=\"gold\">150</span>/<span class=\"gold\">220</span>/<span class=\"gold\">290</span>/<span class=\"gold\">360</span>/<span class=\"gold\">430</span> bonus damage to monsters"
                         }
                     }
                 ]
@@ -1162,7 +1219,8 @@
                             "Attribute": "Magic Damage: ",
                             "Before": "70/100/130/160/190 (+60%AP)",
                             "Indicator": " ⇒ ",
-                            "After": "60/90/120/150/180 (+60% AP)"
+                            "After": "60/90/120/150/180 (+60% AP)",
+                            "parsedAfter": "<span class=\"red\">60</span>/<span class=\"red\">90</span>/<span class=\"red\">120</span>/<span class=\"red\">150</span>/<span class=\"red\">180</span> (+60% AP)"
                         }
                     },
                     {
@@ -1171,7 +1229,8 @@
                             "Attribute": "Jungle Monster Damage: ",
                             "Before": "300% of base damage",
                             "Indicator": " ⇒ ",
-                            "After": "125/150/175/200/225 bonus damage to monsters"
+                            "After": "125/150/175/200/225 bonus damage to monsters",
+                            "parsedAfter": "<span class=\"gold\">125</span>/<span class=\"gold\">150</span>/<span class=\"gold\">175</span>/<span class=\"gold\">200</span>/<span class=\"gold\">225</span> bonus damage to monsters"
                         }
                     }
                 ]
@@ -1185,7 +1244,8 @@
                             "Attribute": "Magic Damage: ",
                             "Before": "35/50/65/80/95 (+50% AP) (+4% of target maximum health)",
                             "Indicator": " ⇒ ",
-                            "After": "25/35/45/55/65 (+50% AP) (+3% of target maximum health)"
+                            "After": "25/35/45/55/65 (+50% AP) (+3% of target maximum health)",
+                            "parsedAfter": "<span class=\"red\">25</span>/<span class=\"red\">35</span>/<span class=\"red\">45</span>/<span class=\"red\">55</span>/<span class=\"red\">65</span> (+50% AP) (+<span class=\"red\">3</span>% of target maximum health)"
                         }
                     },
                     {
@@ -1194,7 +1254,8 @@
                             "Attribute": "Jungle Monster Damage: ",
                             "Before": "250% of base damage",
                             "Indicator": " ⇒ ",
-                            "After": "100/145/190/235/280 bonus damage to monsters"
+                            "After": "100/145/190/235/280 bonus damage to monsters",
+                            "parsedAfter": "<span class=\"gold\">100</span>/<span class=\"gold\">145</span>/<span class=\"gold\">190</span>/<span class=\"gold\">235</span>/<span class=\"gold\">280</span> bonus damage to monsters"
                         }
                     },
                     {
@@ -1218,7 +1279,8 @@
                             "Attribute": "Jungle Monster Damage: ",
                             "Before": "300% of base damage",
                             "Indicator": " ⇒ ",
-                            "After": "55/110/165/220/275 bonus damage to monsters"
+                            "After": "55/110/165/220/275 bonus damage to monsters",
+                            "parsedAfter": "<span class=\"gold\">55</span>/<span class=\"gold\">110</span>/<span class=\"gold\">165</span>/<span class=\"gold\">220</span>/<span class=\"gold\">275</span> bonus damage to monsters"
                         }
                     }
                 ]
@@ -1234,7 +1296,8 @@
                             "Attribute": "Health Regeneration Growth: ",
                             "Before": "1.7",
                             "Indicator": " ⇒ ",
-                            "After": "1.5"
+                            "After": "1.5",
+                            "parsedAfter": "<span class=\"red\">1.5</span>"
                         }
                     },
                     {
@@ -1243,7 +1306,8 @@
                             "Attribute": "Base Magic Resistance: ",
                             "Before": "32",
                             "Indicator": " ⇒ ",
-                            "After": "30"
+                            "After": "30",
+                            "parsedAfter": "<span class=\"red\">30</span>"
                         }
                     },
                     {
@@ -1252,7 +1316,8 @@
                             "Attribute": "Magic Resistance Growth: ",
                             "Before": "2.05",
                             "Indicator": " ⇒ ",
-                            "After": "1.85"
+                            "After": "1.85",
+                            "parsedAfter": "<span class=\"red\">1.85</span>"
                         }
                     }
                 ]
@@ -1267,7 +1332,8 @@
                             "Attribute": "Bonus Damage to Monsters: ",
                             "Before": "150/220/290/360/430",
                             "Indicator": " ⇒ ",
-                            "After": "170/245/320/395/470 (Note: Max Q first now!)"
+                            "After": "170/245/320/395/470 (Note: Max Q first now!)",
+                            "parsedAfter": "<span class=\"green\">170</span>/<span class=\"green\">245</span>/<span class=\"green\">320</span>/<span class=\"green\">395</span>/<span class=\"green\">470</span> (Note: Max Q first now!)"
                         }
                     }
                 ]
@@ -1281,7 +1347,8 @@
                             "Attribute": "Crash Down Shield: ",
                             "Before": "35/60/85/110/135 (+12% of maximum HP)",
                             "Indicator": " ⇒ ",
-                            "After": "15/40/65/90/110 (+12% of maximum HP)"
+                            "After": "15/40/65/90/110 (+12% of maximum HP)",
+                            "parsedAfter": "<span class=\"red\">15</span>/<span class=\"red\">40</span>/<span class=\"red\">65</span>/<span class=\"red\">90</span>/<span class=\"red\">110</span> (+12% of maximum HP)"
                         }
                     },
                     {
@@ -1290,7 +1357,8 @@
                             "Attribute": "Dismounted Attack Speed: ",
                             "Before": "15/20/25/30/35%",
                             "Indicator": " ⇒ ",
-                            "After": "30%"
+                            "After": "30%",
+                            "parsedAfter": "<span class=\"green\">30</span>%"
                         }
                     }
                 ]
@@ -1304,7 +1372,8 @@
                             "Attribute": "Bonus Damage to Monsters: ",
                             "Before": "100/145/190/235/280",
                             "Indicator": " ⇒ ",
-                            "After": "120/165/210/255/300"
+                            "After": "120/165/210/255/300",
+                            "parsedAfter": "<span class=\"green\">120</span>/<span class=\"green\">165</span>/<span class=\"green\">210</span>/<span class=\"green\">255</span>/<span class=\"green\">300</span>"
                         }
                     }
                 ]
@@ -1321,7 +1390,8 @@
                             "Attribute": "Base Armor: ",
                             "Before": "39",
                             "Indicator": " ⇒ ",
-                            "After": "36"
+                            "After": "36",
+                            "parsedAfter": "<span class=\"red\">36</span>"
                         }
                     }
                 ]
@@ -1335,7 +1405,8 @@
                             "Attribute": "Armor and Magic Resist Steal: ",
                             "Before": "3%",
                             "Indicator": " ⇒ ",
-                            "After": "2%"
+                            "After": "2%",
+                            "parsedAfter": "<span class=\"red\">2</span>%"
                         }
                     },
                     {
@@ -1344,7 +1415,8 @@
                             "Attribute": "Minimum Armor and Magic Resist Steal: ",
                             "Before": "1.25-3 (based on champion level)",
                             "Indicator": " ⇒ ",
-                            "After": "0.8-2 (based on champion level)"
+                            "After": "0.8-2 (based on champion level)",
+                            "parsedAfter": "<span class=\"red\">0.8</span>-<span class=\"red\">2</span> (based on champion level)"
                         }
                     },
                     {
@@ -1353,7 +1425,8 @@
                             "Attribute": "Maximum Armor and Magic Resist Steal: ",
                             "Before": "15%",
                             "Indicator": " ⇒ ",
-                            "After": "10%"
+                            "After": "10%",
+                            "parsedAfter": "<span class=\"red\">10</span>%"
                         }
                     }
                 ]
@@ -1388,7 +1461,8 @@
                             "Attribute": "Q Flash Interaction: ",
                             "Before": "Q maintains the original target location after flashing",
                             "Indicator": " ⇒ ",
-                            "After": "Q maintains the absolute direction after flashing. (Note: This should feel more intuitive and in line with expected outcomes.)"
+                            "After": "Q maintains the absolute direction after flashing. (Note: This should feel more intuitive and in line with expected outcomes.)",
+                            "parsedAfter": "Q maintains the absolute direction after flashing. (<span class=\"gold\">Note: This should feel more intuitive and in line with expected outcomes.</span>)"
                         }
                     }
                 ]
@@ -1433,7 +1507,8 @@
                             "Attribute": "Bonus Movement Speed (Away from Enemies): ",
                             "Before": "15/17.5/20/22.5/25%",
                             "Indicator": " ⇒ ",
-                            "After": "12/14/16/18/20%"
+                            "After": "12/14/16/18/20%",
+                            "parsedAfter": "<span class=\"red\">12</span>/<span class=\"red\">14</span>/<span class=\"red\">16</span>/<span class=\"red\">18</span>/<span class=\"red\">20</span>%"
                         }
                     },
                     {
@@ -1442,7 +1517,8 @@
                             "Attribute": "Bonus Movement Speed (Towards Enemies): ",
                             "Before": "30/35/40/45/50%",
                             "Indicator": " ⇒ ",
-                            "After": "24/28/32/36/40%"
+                            "After": "24/28/32/36/40%",
+                            "parsedAfter": "<span class=\"red\">24</span>/<span class=\"red\">28</span>/<span class=\"red\">32</span>/<span class=\"red\">36</span>/<span class=\"red\">40</span>%"
                         }
                     }
                 ]
@@ -1459,7 +1535,8 @@
                             "Attribute": "Magic Resist Growth: ",
                             "Before": "1.85",
                             "Indicator": " ⇒ ",
-                            "After": "2.05"
+                            "After": "2.05",
+                            "parsedAfter": "<span class=\"green\">2.05</span>"
                         }
                     }
                 ]
@@ -1532,7 +1609,8 @@
                             "Attribute": "Maximum Bonus Movement Speed: ",
                             "Before": " 12/14/16/18/20%",
                             "Indicator": " ⇒ ",
-                            "After": "12/13/14/15/16%"
+                            "After": "12/13/14/15/16%",
+                            "parsedAfter": "12/<span class=\"red\">13</span>/<span class=\"red\">14</span>/<span class=\"red\">15</span>/<span class=\"red\">16</span>%"
                         }
                     },
                     {
@@ -1541,7 +1619,8 @@
                             "Attribute": "Maximum Bonus Movement Speed Toward Enemies or Targeted Ally: ",
                             "Before": " 24/28/32/36/40%",
                             "Indicator": " ⇒ ",
-                            "After": "24/26/28/30/32%"
+                            "After": "24/26/28/30/32%",
+                            "parsedAfter": "24/<span class=\"red\">26</span>/<span class=\"red\">28</span>/<span class=\"red\">30</span>/<span class=\"red\">32</span>%"
                         }
                     },
                     {
@@ -1567,7 +1646,8 @@
                             "Attribute": "Armor / Armor Growth: ",
                             "Before": "36 + 4.2",
                             "Indicator": " ⇒ ",
-                            "After": "30 + 4.3"
+                            "After": "30 + 4.3",
+                            "parsedAfter": "<span class=\"red\">30</span> + <span class=\"green\">4.3</span>"
                         }
                     },
                     {
@@ -1576,7 +1656,8 @@
                             "Attribute": "MR / MR Growth: ",
                             "Before": "30 + 2.05",
                             "Indicator": " ⇒ ",
-                            "After": "28 + 1.8"
+                            "After": "28 + 1.8",
+                            "parsedAfter": "<span class=\"red\">28</span> + <span class=\"red\">1.8</span>"
                         }
                     },
                     {
@@ -1585,7 +1666,8 @@
                             "Attribute": "Mana / Mana Growth: ",
                             "Before": "350 + 45",
                             "Indicator": " ⇒ ",
-                            "After": "320 + 40"
+                            "After": "320 + 40",
+                            "parsedAfter": "<span class=\"red\">320</span> + <span class=\"red\">40</span>"
                         }
                     },
                     {
@@ -1594,7 +1676,8 @@
                             "Attribute": "Mana Regeneration and Growth: ",
                             "Before": "6 + 0.35",
                             "Indicator": " ⇒ ",
-                            "After": "7 + 0.7"
+                            "After": "7 + 0.7",
+                            "parsedAfter": "<span class=\"green\">7</span> + <span class=\"green\">0.7</span>"
                         }
                     },
                     {
@@ -1603,7 +1686,8 @@
                             "Attribute": "Movement Speed: ",
                             "Before": "330",
                             "Indicator": " ⇒ ",
-                            "After": "315"
+                            "After": "315",
+                            "parsedAfter": "<span class=\"red\">315</span>"
                         }
                     },
                     {
@@ -1612,7 +1696,8 @@
                             "Attribute": "Attack Speed Growth: ",
                             "Before": "1.5%",
                             "Indicator": " ⇒ ",
-                            "After": "2%"
+                            "After": "2%",
+                            "parsedAfter": "<span class=\"green\">2</span>%"
                         }
                     },
                     {
@@ -1621,7 +1706,8 @@
                             "Attribute": "Attack Windup: ",
                             "Before": "0.336-0.312 (based on level)",
                             "Indicator": " ⇒ ",
-                            "After": "0.3"
+                            "After": "0.3",
+                            "parsedAfter": "<span class=\"red\">0.3</span>"
                         }
                     },
                     {
@@ -1630,7 +1716,8 @@
                             "Attribute": "Attack Speed Animation Scaling: ",
                             "Before": "40%",
                             "Indicator": " ⇒ ",
-                            "After": "100% (noteAttack Speed will animate Rell's attacks faster.)"
+                            "After": "100% (noteAttack Speed will animate Rell's attacks faster.)",
+                            "parsedAfter": "<span class=\"green\">100</span>% (noteAttack Speed will animate Rell's attacks faster.)"
                         }
                     }
                 ]
@@ -1653,7 +1740,8 @@
                             "Attribute": "Minimum Resists Stolen: ",
                             "Before": "0.8-2",
                             "Indicator": " ⇒ ",
-                            "After": "1-2"
+                            "After": "1-2",
+                            "parsedAfter": "<span class=\"green\">1</span>-2"
                         }
                     }
                 ]
@@ -1667,7 +1755,8 @@
                             "Attribute": "Stun Duration: ",
                             "Before": "0.75",
                             "Indicator": " ⇒ ",
-                            "After": "0.65 seconds"
+                            "After": "0.65 seconds",
+                            "parsedAfter": "<span class=\"red\">0.65</span> seconds"
                         }
                     }
                 ]
@@ -1699,7 +1788,8 @@
                             "Attribute": "Cooldown: ",
                             "Before": "11",
                             "Indicator": " ⇒ ",
-                            "After": "10 seconds"
+                            "After": "10 seconds",
+                            "parsedAfter": "<span class=\"green\">10</span> seconds"
                         }
                     },
                     {
@@ -1708,7 +1798,8 @@
                             "Attribute": "Knock-Up Duration: ",
                             "Before": "1",
                             "Indicator": " ⇒ ",
-                            "After": "0.4 seconds"
+                            "After": "0.4 seconds",
+                            "parsedAfter": "<span class=\"red\">0.4</span> seconds"
                         }
                     },
                     {
@@ -1717,7 +1808,8 @@
                             "Attribute": "Dismounted Armor / MR: ",
                             "Before": "12%",
                             "Indicator": " ⇒ ",
-                            "After": "15%"
+                            "After": "15%",
+                            "parsedAfter": "<span class=\"green\">15</span>%"
                         }
                     },
                     {
@@ -1726,7 +1818,8 @@
                             "Attribute": "Dismounted Attack Speed: ",
                             "Before": "30%",
                             "Indicator": " ⇒ ",
-                            "After": "20%"
+                            "After": "20%",
+                            "parsedAfter": "<span class=\"red\">20</span>%"
                         }
                     }
                 ]
@@ -1749,7 +1842,8 @@
                             "Attribute": "Cooldown: ",
                             "Before": "15",
                             "Indicator": " ⇒ ",
-                            "After": "14/13/12/11/10 seconds (based on ability rank)"
+                            "After": "14/13/12/11/10 seconds (based on ability rank)",
+                            "parsedAfter": "<span class=\"green\">14</span>/<span class=\"green\">13</span>/<span class=\"green\">12</span>/<span class=\"green\">11</span>/<span class=\"green\">10</span> seconds (based on ability rank)"
                         }
                     },
                     {
@@ -1758,7 +1852,8 @@
                             "Attribute": "Damage: ",
                             "Before": "25/35/45/55/65 (+50% AP) (+3% of target's maximum health)",
                             "Indicator": " ⇒ ",
-                            "After": "5/5.5/6/6.5/7% of the target's maximum health (+3% per 100 AP)"
+                            "After": "5/5.5/6/6.5/7% of the target's maximum health (+3% per 100 AP)",
+                            "parsedAfter": "<span class=\"gold\">5</span>/<span class=\"gold\">5.5</span>/<span class=\"gold\">6</span>/<span class=\"gold\">6.5</span>/<span class=\"gold\">7</span>% of the target's maximum health (+<span class=\"gold\">3</span>% per 100 AP)"
                         }
                     },
                     {
@@ -1767,7 +1862,8 @@
                             "Attribute": "Damage Cap: ",
                             "Before": "150",
                             "Indicator": " ⇒ ",
-                            "After": "150-300 (based on levels 1-18)"
+                            "After": "150-300 (based on levels 1-18)",
+                            "parsedAfter": "150-<span class=\"green\">300</span> (based on levels 1-18)"
                         }
                     },
                     {
@@ -1776,7 +1872,8 @@
                             "Attribute": "Initial Movement Speed Towards Enemies: ",
                             "Before": "18/19.5/21/22.5/24%",
                             "Indicator": " ⇒ ",
-                            "After": "25%"
+                            "After": "25%",
+                            "parsedAfter": "<span class=\"green\">25</span>%"
                         }
                     },
                     {
@@ -1785,7 +1882,8 @@
                             "Attribute": "Initial Movement Speed Running Away: ",
                             "Before": "9/9.75/10.5/11.25/12%",
                             "Indicator": " ⇒ ",
-                            "After": "10%"
+                            "After": "10%",
+                            "parsedAfter": "<span class=\"green\">10</span>%"
                         }
                     },
                     {
@@ -1794,7 +1892,8 @@
                             "Attribute": "Maximum Movement Speed Toward Enemies: ",
                             "Before": "24/26/28/30/32%",
                             "Indicator": " ⇒ ",
-                            "After": "25%"
+                            "After": "25%",
+                            "parsedAfter": "<span class=\"red\">25</span>%"
                         }
                     },
                     {
@@ -1803,7 +1902,8 @@
                             "Attribute": "Maximum Movement Speed Running Away: ",
                             "Before": "12/13/14/15/16%",
                             "Indicator": " ⇒ ",
-                            "After": "10%"
+                            "After": "10%",
+                            "parsedAfter": "<span class=\"red\">10</span>%"
                         }
                     }
                 ]
@@ -1818,7 +1918,8 @@
                             "Attribute": "Cooldown: ",
                             "Before": "11",
                             "Indicator": " ⇒ ",
-                            "After": "10 seconds"
+                            "After": "10 seconds",
+                            "parsedAfter": "<span class=\"green\">10</span> seconds"
                         }
                     },
                     {
@@ -1836,7 +1937,8 @@
                             "Attribute": "Stun Duration: ",
                             "Before": "1",
                             "Indicator": " ⇒ ",
-                            "After": "0.6 seconds"
+                            "After": "0.6 seconds",
+                            "parsedAfter": "<span class=\"red\">0.6</span> seconds"
                         }
                     },
                     {
@@ -1845,7 +1947,8 @@
                             "Attribute": "Mounted Movement Speed: ",
                             "Before": "335-380 out of combat, 332.5-355 in combat (levels 1-13)",
                             "Indicator": " ⇒ ",
-                            "After": "330/335/340/345/350/355 (based on ability rank)"
+                            "After": "330/335/340/345/350/355 (based on ability rank)",
+                            "parsedAfter": "<span class=\"red\">330</span>/<span class=\"red\">335</span>/<span class=\"green\">340</span>/<span class=\"green\">345</span>/<span class=\"green\">350</span>/<span class=\"green\">355</span> (based on ability rank)"
                         }
                     }
                 ]

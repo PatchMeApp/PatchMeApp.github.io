@@ -45,7 +45,7 @@
         "P": {
             "cooldown": "",
             "_rawTooltip": {
-                "fullTooltip": "Innate: Tahm Kench's basic attacks on-hit and Tongue Lash deal [[0]].<br>Passive: Basic attacks on-hit and Tongue Lash against enemy champions apply An Acquired Taste stack for 5 seconds, stacking up to 3 times, with the duration refreshing on Tongue Lash and subsequent attacks. The stacks decay once every 0.67 seconds when the duration ends.<br>Tongue Lash and Devour gain additional effects against enemies with 3 stacks.",
+                "fullTooltip": "Innate: Tahm Kench's basic attacks on-hit and Tongue Lash deal Value: [[0]].<br>Passive: Basic attacks on-hit and Tongue Lash against enemy champions apply An Acquired Taste stack for 5 seconds, stacking up to 3 times, with the duration refreshing on Tongue Lash and subsequent attacks. The stacks decay once every 0.67 seconds when the duration ends.<br>Tongue Lash and Devour gain additional effects against enemies with 3 stacks.",
                 "parseInfo": [
                     {
                         "text": {
@@ -56,16 +56,16 @@
                                     "scaleId": "level"
                                 },
                                 {
-                                    "scale": "(+1.5% AP per 100 Bonus Health)",
-                                    "scaleId": "Health"
+                                    "scale": "(+ 4% bonus health)",
+                                    "scaleId": "health"
                                 },
                                 {
-                                    "scale": "(+4% of his Bonus Health)",
-                                    "scaleId": "Health"
+                                    "scale": "(+ 2% AP per 100 bonus health)",
+                                    "scaleId": "health"
                                 }
                             ]
                         },
-                        "type": "magicDamage"
+                        "type": "Health"
                     }
                 ]
             },
@@ -265,7 +265,7 @@
                             "text": "650/800/950 {{0}} Shield",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+100% AP)",
+                                    "scale": "(+150% AP)",
                                     "scaleId": "AP"
                                 }
                             ]
@@ -315,7 +315,8 @@
                             "Attribute": "GREY HEALTH HEAL: ",
                             "Before": "75% of Grey Health at all ranks",
                             "Indicator": " ⇒ ",
-                            "After": "30-100% of Grey Health (levels 1-18)"
+                            "After": "30-100% of Grey Health (levels 1-18)",
+                            "parsedAfter": "<span class=\"red\">30</span>-<span class=\"green\">100</span>% of Grey Health (levels 1-18)"
                         }
                     }
                 ]
@@ -332,7 +333,8 @@
                             "Attribute": "HEALTH: ",
                             "Before": "600",
                             "Indicator": " ⇒ ",
-                            "After": "570"
+                            "After": "570",
+                            "parsedAfter": "<span class=\"red\">570</span>"
                         }
                     },
                     {
@@ -341,7 +343,8 @@
                             "Attribute": "HEALTH GROWTH: ",
                             "Before": "100",
                             "Indicator": " ⇒ ",
-                            "After": "95"
+                            "After": "95",
+                            "parsedAfter": "<span class=\"red\">95</span>"
                         }
                     },
                     {
@@ -350,7 +353,8 @@
                             "Attribute": "MANA GROWTH: ",
                             "Before": "40",
                             "Indicator": " ⇒ ",
-                            "After": "50"
+                            "After": "50",
+                            "parsedAfter": "<span class=\"green\">50</span>"
                         }
                     },
                     {
@@ -359,7 +363,8 @@
                             "Attribute": "ARMOR: ",
                             "Before": "47",
                             "Indicator": " ⇒ ",
-                            "After": "42"
+                            "After": "42",
+                            "parsedAfter": "<span class=\"red\">42</span>"
                         }
                     },
                     {
@@ -368,7 +373,8 @@
                             "Attribute": "MAGIC RESIST: ",
                             "Before": "32.1",
                             "Indicator": " ⇒ ",
-                            "After": "32"
+                            "After": "32",
+                            "parsedAfter": "<span class=\"red\">32</span>"
                         }
                     }
                 ]
@@ -382,7 +388,8 @@
                             "Attribute": "BONUS DAMAGE: ",
                             "Before": "4% of maximum health",
                             "Indicator": " ⇒ ",
-                            "After": "2.5% of maximum health"
+                            "After": "2.5% of maximum health",
+                            "parsedAfter": "<span class=\"red\">2.5</span>% of maximum health"
                         }
                     }
                 ]
@@ -423,7 +430,8 @@
                             "Attribute": "SLOW: ",
                             "Before": "30/40/50/60/70%",
                             "Indicator": " ⇒ ",
-                            "After": "40%"
+                            "After": "40%",
+                            "parsedAfter": "<span class=\"green\">40</span>%"
                         }
                     },
                     {
@@ -432,7 +440,8 @@
                             "Attribute": "SLOW DURATION: ",
                             "Before": "3 seconds",
                             "Indicator": " ⇒ ",
-                            "After": "2 seconds"
+                            "After": "2 seconds",
+                            "parsedAfter": "<span class=\"red\">2</span> seconds"
                         }
                     },
                     {
@@ -441,7 +450,8 @@
                             "Attribute": "COOLDOWN: ",
                             "Before": "5 seconds",
                             "Indicator": " ⇒ ",
-                            "After": "7/6.5/6/5.5/5 seconds"
+                            "After": "7/6.5/6/5.5/5 seconds",
+                            "parsedAfter": "<span class=\"red\">7</span>/<span class=\"red\">6.5</span>/<span class=\"red\">6</span>/<span class=\"red\">5.5</span>/5 seconds"
                         }
                     },
                     {
@@ -450,7 +460,8 @@
                             "Attribute": "COST: ",
                             "Before": "50 mana",
                             "Indicator": " ⇒ ",
-                            "After": "50/46/42/38/34 mana"
+                            "After": "50/46/42/38/34 mana",
+                            "parsedAfter": "<span class=\"green\">50</span>/<span class=\"green\">46</span>/<span class=\"green\">42</span>/<span class=\"green\">38</span>/<span class=\"green\">34</span> mana"
                         }
                     },
                     {
@@ -482,7 +493,8 @@
                             "Attribute": "COOLDOWN: ",
                             "Before": "24/23/22/21/20 seconds",
                             "Indicator": " ⇒ ",
-                            "After": "21/20/19/18/17 seconds"
+                            "After": "21/20/19/18/17 seconds",
+                            "parsedAfter": "<span class=\"green\">21</span>/<span class=\"green\">20</span>/<span class=\"green\">19</span>/<span class=\"green\">18</span>/<span class=\"green\">17</span> seconds"
                         }
                     },
                     {
@@ -505,7 +517,8 @@
                             "Attribute": "SHIELD DURATION: ",
                             "Before": "2 seconds",
                             "Indicator": " ⇒ ",
-                            "After": "2.5 seconds"
+                            "After": "2.5 seconds",
+                            "parsedAfter": "<span class=\"green\">2.5</span> seconds"
                         }
                     },
                     {
@@ -523,7 +536,8 @@
                             "Attribute": "TIME BEFORE GREY HEALTH HEALING: ",
                             "Before": "2.5 seconds of not taking damage",
                             "Indicator": " ⇒ ",
-                            "After": "4 seconds of not taking damage"
+                            "After": "4 seconds of not taking damage",
+                            "parsedAfter": "<span class=\"red\">4</span> seconds of not taking damage"
                         }
                     }
                 ]
@@ -554,7 +568,8 @@
                             "Attribute": "BONUS DAMAGE: ",
                             "Before": "2.5% of maximum health",
                             "Indicator": " ⇒ ",
-                            "After": "12-60 (+2.5% bonus health) (levels 1-18)"
+                            "After": "12-60 (+2.5% bonus health) (levels 1-18)",
+                            "parsedAfter": "<span class=\"gold\">12-60</span> (+2.5% bonus health) (<span class=\"gold\">levels 1-18</span>)"
                         }
                     }
                 ]
@@ -577,7 +592,8 @@
                             "Attribute": "HEAL: ",
                             "Before": "6/7/8/9/10% of missing health",
                             "Indicator": " ⇒ ",
-                            "After": "15/20/25/30/35 (+4/4.5/5/5.5/6% of missing health)"
+                            "After": "15/20/25/30/35 (+4/4.5/5/5.5/6% of missing health)",
+                            "parsedAfter": "<span class=\"gold\">15</span>/<span class=\"gold\">20</span>/<span class=\"gold\">25</span>/<span class=\"gold\">30</span>/<span class=\"gold\">35</span> (+<span class=\"red\">4</span>/<span class=\"red\">4.5</span>/<span class=\"red\">5</span>/<span class=\"red\">5.5</span>/<span class=\"red\">6</span>% of missing health)"
                         }
                     }
                 ]
@@ -600,7 +616,8 @@
                             "Attribute": "COOLDOWN AND MANA COST REFUND: ",
                             "Before": "30%",
                             "Indicator": " ⇒ ",
-                            "After": "40%"
+                            "After": "40%",
+                            "parsedAfter": "<span class=\"green\">40</span>%"
                         }
                     }
                 ]
@@ -615,7 +632,8 @@
                             "Attribute": "BASE SHIELD: ",
                             "Before": "300/450/600",
                             "Indicator": " ⇒ ",
-                            "After": "400/500/600"
+                            "After": "400/500/600",
+                            "parsedAfter": "<span class=\"green\">400</span>/<span class=\"green\">500</span>/600"
                         }
                     },
                     {
@@ -624,7 +642,8 @@
                             "Attribute": "ALLY SELF SLOW: ",
                             "Before": "40/25/10%",
                             "Indicator": " ⇒ ",
-                            "After": "30/20/10%"
+                            "After": "30/20/10%",
+                            "parsedAfter": "<span class=\"red\">30</span>/<span class=\"red\">20</span>/10%"
                         }
                     },
                     {
@@ -650,7 +669,8 @@
                             "Attribute": "BASE DAMAGE: ",
                             "Before": "12-60 (level 1-18)",
                             "Indicator": " ⇒ ",
-                            "After": "8-60 (level 1-18)"
+                            "After": "8-60 (level 1-18)",
+                            "parsedAfter": "<span class=\"red\">8</span>-60 (level 1-18)"
                         }
                     }
                 ]
@@ -664,7 +684,8 @@
                             "Attribute": "BASE HEAL: ",
                             "Before": "15/20/25/30/35",
                             "Indicator": " ⇒ ",
-                            "After": "10/15/20/25/30"
+                            "After": "10/15/20/25/30",
+                            "parsedAfter": "<span class=\"red\">10</span>/<span class=\"red\">15</span>/<span class=\"red\">20</span>/<span class=\"red\">25</span>/<span class=\"red\">30</span>"
                         }
                     }
                 ]
@@ -685,7 +706,8 @@
                             "Attribute": "Enemy Slow: ",
                             "Before": "40%",
                             "Indicator": " ⇒ ",
-                            "After": "50%"
+                            "After": "50%",
+                            "parsedAfter": "<span class=\"green\">50</span>%"
                         }
                     }
                 ]
@@ -700,7 +722,8 @@
                             "Attribute": "Amount of Damage Stored into Grey Health: ",
                             "Before": "45/50/55/60/65%",
                             "Indicator": " ⇒ ",
-                            "After": "15/25/35/45/55%, increased to 45/50/55/60/65% if there are 2 or more visible enemy champions nearby (dead or alive)"
+                            "After": "15/25/35/45/55%, increased to 45/50/55/60/65% if there are 2 or more visible enemy champions nearby (dead or alive)",
+                            "parsedAfter": "<span class=\"red\">15</span>/<span class=\"red\">25</span>/<span class=\"red\">35</span>/<span class=\"red\">45</span>/<span class=\"red\">55</span>%, increased to 45/50/55/60/65% if there are <span class=\"gold\">2</span> or more visible enemy champions nearby (dead or alive)"
                         }
                     },
                     {
@@ -709,7 +732,8 @@
                             "Attribute": "Amount of Healing Restored from Grey Health: ",
                             "Before": "30-100% (levels 1-18)",
                             "Indicator": " ⇒ ",
-                            "After": "45-100% (levels 1-18)"
+                            "After": "45-100% (levels 1-18)",
+                            "parsedAfter": "<span class=\"green\">45</span>-100% (levels 1-18)"
                         }
                     }
                 ]
@@ -723,7 +747,8 @@
                             "Attribute": "Ally Shield Upon Devour: ",
                             "Before": "400/500/600 (+100% AP)",
                             "Indicator": " ⇒ ",
-                            "After": "500/700/900 (+150% AP)"
+                            "After": "500/700/900 (+150% AP)",
+                            "parsedAfter": "<span class=\"green\">500</span>/<span class=\"green\">700</span>/<span class=\"green\">900</span> (+<span class=\"green\">150</span>% AP)"
                         }
                     },
                     {
@@ -732,7 +757,8 @@
                             "Attribute": "Move Speed Upon Devouring Ally: ",
                             "Before": "Slows Tahm Kench by 30/20/10% while ally is swallowed",
                             "Indicator": " ⇒ ",
-                            "After": "Grants Tahm Kench 40% move speed for 3 seconds (regardless of swallow duration)"
+                            "After": "Grants Tahm Kench 40% move speed for 3 seconds (regardless of swallow duration)",
+                            "parsedAfter": "Grants Tahm Kench <span class=\"green\">40</span>% move speed for <span class=\"gold\">3</span> seconds (regardless of swallow duration)"
                         }
                     }
                 ]
@@ -790,7 +816,8 @@
                             "Attribute": "Q - Heal: ",
                             "Before": "10/15/20/25/30 (+4/4.5/5/5.5/6% missing health)",
                             "Indicator": " ⇒ ",
-                            "After": "10/12.5/15/17.5/20 (+3/3.5/4/4.5/5% missing health)"
+                            "After": "10/12.5/15/17.5/20 (+3/3.5/4/4.5/5% missing health)",
+                            "parsedAfter": "10/<span class=\"red\">12.5</span>/<span class=\"red\">15</span>/<span class=\"red\">17.5</span>/<span class=\"red\">20</span> (+<span class=\"red\">3</span>/<span class=\"red\">3.5</span>/<span class=\"red\">4</span>/<span class=\"red\">4.5</span>/<span class=\"red\">5</span>% missing health)"
                         }
                     }
                 ]
@@ -805,7 +832,8 @@
                             "Attribute": "E - Damage Stored Into Grey Health: ",
                             "Before": "15/25/35/45/55%",
                             "Indicator": " ⇒ ",
-                            "After": "13/21/29/37/45%"
+                            "After": "13/21/29/37/45%",
+                            "parsedAfter": "<span class=\"red\">13</span>/<span class=\"red\">21</span>/<span class=\"red\">29</span>/<span class=\"red\">37</span>/<span class=\"red\">45</span>%"
                         }
                     },
                     {
@@ -814,7 +842,8 @@
                             "Attribute": "E - Increased Damage Stored Into Grey Health: ",
                             "Before": "45/50/55/60/65%",
                             "Indicator": " ⇒ ",
-                            "After": "40/42.5/45/47.5/50%"
+                            "After": "40/42.5/45/47.5/50%",
+                            "parsedAfter": "<span class=\"red\">40</span>/<span class=\"red\">42.5</span>/<span class=\"red\">45</span>/<span class=\"red\">47.5</span>/<span class=\"red\">50</span>%"
                         }
                     }
                 ]
@@ -832,7 +861,8 @@
                             "Attribute": "Bonus Magic Damage On-hit: ",
                             "Before": "8-60 (levels 1-18) (+2.5% bonus health)",
                             "Indicator": " ⇒ ",
-                            "After": "8-60 (levels 1-18) (+4% bonus health)"
+                            "After": "8-60 (levels 1-18) (+4% bonus health)",
+                            "parsedAfter": "8-60 (levels 1-18) (+<span class=\"green\">4</span>% bonus health)"
                         }
                     }
                 ]
@@ -846,7 +876,8 @@
                             "Attribute": "Heal upon landing: ",
                             "Before": "10/12.5/15/17.5/20 (+3/3.5/4/4.5/5% missing health)",
                             "Indicator": " ⇒ ",
-                            "After": "10/15/20/25/30 (+3/3.5/4/4.5/5% missing health)"
+                            "After": "10/15/20/25/30 (+3/3.5/4/4.5/5% missing health)",
+                            "parsedAfter": "10/<span class=\"green\">15</span>/<span class=\"green\">20</span>/<span class=\"green\">25</span>/<span class=\"green\">30</span> (+3/3.5/4/4.5/5% missing health)"
                         }
                     }
                 ]
@@ -862,7 +893,8 @@
                             "Attribute": "Shield Strength: ",
                             "Before": "500/700/900",
                             "Indicator": " ⇒ ",
-                            "After": "650/800/950"
+                            "After": "650/800/950",
+                            "parsedAfter": "<span class=\"green\">650</span>/<span class=\"green\">800</span>/<span class=\"green\">950</span>"
                         }
                     }
                 ]
@@ -880,7 +912,8 @@
                             "Attribute": "Magic Damage: ",
                             "Before": "80/130/180/230/280 (+ 70% AP) (+ An Acquired Taste proc 8-60 (based on level)) (+ 3% bonus health)",
                             "Indicator": " ⇒ ",
-                            "After": "80/130/180/230/280 (+ 90% AP) (+ An Acquired Taste proc 8-60 (based on level)) (+ 3% bonus health)"
+                            "After": "80/130/180/230/280 (+ 90% AP) (+ An Acquired Taste proc 8-60 (based on level)) (+ 3% bonus health)",
+                            "parsedAfter": "80/130/180/230/280 (+ <span class=\"green\">90</span>% AP) (+ An Acquired Taste proc 8-60 (based on level)) (+ 3% bonus health)"
                         }
                     }
                 ]
@@ -894,7 +927,8 @@
                             "Attribute": "Damage Per Stack: ",
                             "Before": "100/135/170/205/240 (+ 100% AP)",
                             "Indicator": " ⇒ ",
-                            "After": "100/135/170/205/240 (+ 125% AP)"
+                            "After": "100/135/170/205/240 (+ 125% AP)",
+                            "parsedAfter": "100/135/170/205/240 (+ <span class=\"green\">125</span>% AP)"
                         }
                     }
                 ]
@@ -913,7 +947,8 @@
                             "Attribute": "On-Hit and On-Q Bonus Magic Damage: ",
                             "Before": "8-60 (based on level) (+ 3% bonus health)",
                             "Indicator": " ⇒ ",
-                            "After": "8-60 (based on level) (+ 3% bonus health) (+ 2% AP per 100 bonus health)"
+                            "After": "8-60 (based on level) (+ 3% bonus health) (+ 2% AP per 100 bonus health)",
+                            "parsedAfter": "8-60 (based on level) (+ 3% bonus health) (+ <span class=\"gold\">2</span>% AP per 100 bonus health)"
                         }
                     }
                 ]
@@ -927,7 +962,8 @@
                             "Attribute": "Magic Damage: ",
                             "Before": "80/130/180/230/280 (+ 90% AP)",
                             "Indicator": " ⇒ ",
-                            "After": "80/130/180/230/280 (+ 100% AP)"
+                            "After": "80/130/180/230/280 (+ 100% AP)",
+                            "parsedAfter": "80/130/180/230/280 (+ <span class=\"green\">100</span>% AP)"
                         }
                     },
                     {
@@ -936,7 +972,8 @@
                             "Attribute": "Self Heal: ",
                             "Before": "10/15/20/25/30 (+ 3/3.5/4/4.5/5% missing Health)",
                             "Indicator": " ⇒ ",
-                            "After": "10/15/20/25/30 (+ 5/5.5/6/6.5/7% missing Health)"
+                            "After": "10/15/20/25/30 (+ 5/5.5/6/6.5/7% missing Health)",
+                            "parsedAfter": "10/15/20/25/30 (+ <span class=\"green\">5</span>/<span class=\"green\">5.5</span>/<span class=\"green\">6</span>/<span class=\"green\">6.5</span>/<span class=\"green\">7</span>% missing Health)"
                         }
                     }
                 ]
@@ -950,7 +987,8 @@
                             "Attribute": "Magic Damage: ",
                             "Before": "100/135/170/205/240 (+ 125% AP)",
                             "Indicator": " ⇒ ",
-                            "After": "100/135/170/205/240 (+ 150% AP)"
+                            "After": "100/135/170/205/240 (+ 150% AP)",
+                            "parsedAfter": "100/135/170/205/240 (+ <span class=\"green\">150</span>% AP)"
                         }
                     }
                 ]
@@ -964,7 +1002,8 @@
                             "Attribute": "Damage Stored to Gray Health: ",
                             "Before": "13/21/29/37/45%",
                             "Indicator": " ⇒ ",
-                            "After": "15/23/31/39/47%"
+                            "After": "15/23/31/39/47%",
+                            "parsedAfter": "<span class=\"green\">15</span>/<span class=\"green\">23</span>/<span class=\"green\">31</span>/<span class=\"green\">39</span>/<span class=\"green\">47</span>%"
                         }
                     },
                     {
@@ -973,7 +1012,8 @@
                             "Attribute": "Increased Damage Stored to Gray Health: ",
                             "Before": "40/42.5/45/47.5/50%",
                             "Indicator": " ⇒ ",
-                            "After": "42/44/46/48/50%"
+                            "After": "42/44/46/48/50%",
+                            "parsedAfter": "<span class=\"green\">42</span>/<span class=\"green\">44</span>/<span class=\"green\">46</span>/<span class=\"green\">48</span>/50%"
                         }
                     }
                 ]
@@ -987,7 +1027,8 @@
                             "Attribute": "Magic Damage: ",
                             "Before": "100/250/400 (+ 15% (+ 5% per 100 AP) of target's maximum health)",
                             "Indicator": " ⇒ ",
-                            "After": "100/250/400 (+ 15% (+ 7% per 100 AP) of target's maximum health)"
+                            "After": "100/250/400 (+ 15% (+ 7% per 100 AP) of target's maximum health)",
+                            "parsedAfter": "100/250/400 (+ 15% (+ <span class=\"green\">7</span>% per 100 AP) of target's maximum health)"
                         }
                     },
                     {
@@ -996,7 +1037,8 @@
                             "Attribute": "Shield: ",
                             "Before": "Lasts 2.5 seconds after Devour ends",
                             "Indicator": " ⇒ ",
-                            "After": "Decays by 50 health per 0.25 seconds after Devour has ended until gone"
+                            "After": "Decays by 50 health per 0.25 seconds after Devour has ended until gone",
+                            "parsedAfter": "Decays by <span class=\"gold\">50</span> health per <span class=\"gold\">0.25</span> seconds after Devour has ended until gone"
                         }
                     }
                 ]
@@ -1013,7 +1055,8 @@
                             "Attribute": "Bonus Magic Damage: ",
                             "Before": "8-60 (based on level) (+2% AP per 100 bonus health) (+3% bonus health)",
                             "Indicator": " ⇒ ",
-                            "After": "6-48 (based on level) (+2% AP per 100 bonus health) (+5% bonus health)"
+                            "After": "6-48 (based on level) (+2% AP per 100 bonus health) (+5% bonus health)",
+                            "parsedAfter": "<span class=\"red\">6</span>-<span class=\"red\">48</span> (based on level) (+2% AP per 100 bonus health) (+<span class=\"green\">5</span>% bonus health)"
                         }
                     }
                 ]
@@ -1028,7 +1071,8 @@
                             "Attribute": "Cooldown refund on champion hit: ",
                             "Before": "40%",
                             "Indicator": " ⇒ ",
-                            "After": "40/42.5/45/47.5/50%"
+                            "After": "40/42.5/45/47.5/50%",
+                            "parsedAfter": "<span class=\"green\">40</span>/<span class=\"green\">42.5</span>/<span class=\"green\">45</span>/<span class=\"green\">47.5</span>/<span class=\"green\">50</span>%"
                         }
                     }
                 ]
@@ -1047,7 +1091,44 @@
                             "Attribute": "Bonus Magic Damage: ",
                             "Before": "6-48 (based on level) (+2% AP per 100 bonus health) (+5% of his bonus health)",
                             "Indicator": " ⇒ ",
-                            "After": "6-48 (based on level) (+2% AP per 100 bonus health) (+4% of his bonus health)"
+                            "After": "6-48 (based on level) (+2% AP per 100 bonus health) (+4% of his bonus health)",
+                            "parsedAfter": "6-48 (based on level) (+2% AP per 100 bonus health) (+<span class=\"red\">4</span>% of his bonus health)"
+                        }
+                    }
+                ]
+            },
+            "Q": "",
+            "W": "",
+            "E": "",
+            "R": ""
+        },
+        "12.12": {
+            "B": {
+                "SpellName": "Base Stats",
+                "Changes": [
+                    {
+                        "Tag": "MID-PATCH",
+                        "Change": {
+                            "Attribute": "HEALTH GROWTH: ",
+                            "Before": "109",
+                            "Indicator": " ⇒ ",
+                            "After": "103",
+                            "parsedAfter": "<span class=\"red\">103</span>"
+                        }
+                    }
+                ]
+            },
+            "P": {
+                "SpellName": "Passive - An Acquired Taste",
+                "Changes": [
+                    {
+                        "Tag": "MID-PATCH",
+                        "Change": {
+                            "Attribute": "BONUS MAGIC DAMAGE ON-HIT: ",
+                            "Before": "8-60 (levels 1-18) (+4% bonus health)",
+                            "Indicator": " ⇒ ",
+                            "After": "8-60 (levels 1-18) (+3% bonus health)",
+                            "parsedAfter": "8-60 (levels 1-18) (+<span class=\"red\">3</span>% bonus health)"
                         }
                     }
                 ]
@@ -1068,7 +1149,8 @@
                             "Attribute": "Base Health: ",
                             "Before": "6-48 (based on level) (+2% AP per 100 bonus health) (+4% of his bonus health)",
                             "Indicator": " ⇒ ",
-                            "After": "6-48 (based on level) (+1.5% AP per 100 bonus health) (+4% of his bonus health)"
+                            "After": "6-48 (based on level) (+1.5% AP per 100 bonus health) (+4% of his bonus health)",
+                            "parsedAfter": "6-48 (based on level) (+<span class=\"red\">1.5</span>% AP per 100 bonus health) (+4% of his bonus health)"
                         }
                     }
                 ]
@@ -1085,45 +1167,12 @@
                             "Attribute": "Shield Strength: ",
                             "Before": "650/800/950 (+150% AP)",
                             "Indicator": " ⇒ ",
-                            "After": "650/800/950 (+100% AP)"
+                            "After": "650/800/950 (+100% AP)",
+                            "parsedAfter": "650/800/950 (+<span class=\"red\">100</span>% AP)"
                         }
                     }
                 ]
             }
-        },
-        "12.12": {
-            "B": {
-                "SpellName": "Base Stats",
-                "Changes": [
-                    {
-                        "Tag": "MID-PATCH",
-                        "Change": {
-                            "Attribute": "HEALTH GROWTH: ",
-                            "Before": "109",
-                            "Indicator": " ⇒ ",
-                            "After": "103"
-                        }
-                    }
-                ]
-            },
-            "P": {
-                "SpellName": "Passive - An Acquired Taste",
-                "Changes": [
-                    {
-                        "Tag": "MID-PATCH",
-                        "Change": {
-                            "Attribute": "BONUS MAGIC DAMAGE ON-HIT: ",
-                            "Before": "8-60 (levels 1-18) (+4% bonus health)",
-                            "Indicator": " ⇒ ",
-                            "After": "8-60 (levels 1-18) (+3% bonus health)"
-                        }
-                    }
-                ]
-            },
-            "Q": "",
-            "W": "",
-            "E": "",
-            "R": ""
         }
     },
     "ChangePatches": [

@@ -9,7 +9,7 @@
             "increment": 40
         },
         "armor": {
-            "base": 32,
+            "base": 36,
             "increment": 4.2
         },
         "spellBlock": {
@@ -166,7 +166,7 @@
         },
         "R": {
             "_rawTooltip": {
-                "fullTooltip": "[[0]] Kha'Zix becomes [[1]] for 1.25 seconds and gains [[2]]. Kha'zix may [[3]] this Ability once within 12 seconds.<br /><br />[[4]] Leveling up this Ability allows Kha'zix to [[5]] one of his Abilities, granting it additional effects.[[6]] Gain Ability range, Attack range, and lowers Cooldown by 45% against [[7]] targets.[[8]] Fires 3 spikes and [[9]] by 40%, increased to 60% against [[10]] targets.[[11]] Increased range and refreshes Cooldown on champion takedown.[[12]] [[13]] duration lasts 2 seconds and gains second [[14]].",
+                "fullTooltip": "[[0]] Kha'Zix becomes [[1]] for 1.25 seconds and gains [[2]]. Kha'zix may [[3]] this Ability once within 12 seconds.<br /><br />[[4]] Leveling up this Ability allows Kha'zix to [[5]] one of his Abilities, granting it additional effects.[[6]] Gain Ability range, Attack range, and lowers Cooldown by 45% against [[7]] targets.[[8]] Fires 3 spikes and [[9]] by 40%, increased against [[10]] targets.[[11]] Increased range and refreshes Cooldown on champion takedown.[[12]] [[13]] duration lasts 2 seconds and gains second [[14]].",
                 "parseInfo": [
                     {
                         "text": {
@@ -293,7 +293,8 @@
                             "Attribute": "ISOLATED TARGET BONUS DAMAGE: ",
                             "Before": "100%",
                             "Indicator": " ⇒ ",
-                            "After": "120%"
+                            "After": "120%",
+                            "parsedAfter": "<span class=\"green\">120</span>%"
                         }
                     }
                 ]
@@ -314,7 +315,8 @@
                             "Attribute": "ISOLATED TARGET BONUS DAMAGE: ",
                             "Before": "120%",
                             "Indicator": " ⇒ ",
-                            "After": "110%"
+                            "After": "110%",
+                            "parsedAfter": "<span class=\"red\">110</span>%"
                         }
                     }
                 ]
@@ -335,7 +337,8 @@
                             "Attribute": "Total Damage: ",
                             "Before": "60/85/110/135/160 (+130% bonus AD)",
                             "Indicator": " ⇒ ",
-                            "After": "60/85/110/135/160 (+115% bonus AD)"
+                            "After": "60/85/110/135/160 (+115% bonus AD)",
+                            "parsedAfter": "60/85/110/135/160 (+<span class=\"red\">115</span>% bonus AD)"
                         }
                     },
                     {
@@ -344,7 +347,8 @@
                             "Attribute": "Isolated Damage: ",
                             "Before": "126/178.5/231/283.55/336 (+273% bonus AD)",
                             "Indicator": " ⇒ ",
-                            "After": "126/178.5/231/283.55/336 (+241.5% bonus AD)"
+                            "After": "126/178.5/231/283.55/336 (+241.5% bonus AD)",
+                            "parsedAfter": "126/178.5/231/283.55/336 (+<span class=\"red\">241.5</span>% bonus AD)"
                         }
                     }
                 ]
@@ -406,7 +410,8 @@
                             "Attribute": "W - Heal: ",
                             "Before": "60/85/110/135/160 (+50% AP)",
                             "Indicator": " ⇒ ",
-                            "After": "55/75/95/115/135 (+50% AP)"
+                            "After": "55/75/95/115/135 (+50% AP)",
+                            "parsedAfter": "<span class=\"red\">55</span>/<span class=\"red\">75</span>/<span class=\"red\">95</span>/<span class=\"red\">115</span>/<span class=\"red\">135</span> (+50% AP)"
                         }
                     }
                 ]
@@ -426,7 +431,8 @@
                             "Attribute": "Isolation Range: ",
                             "Before": "425",
                             "Indicator": " ⇒ ",
-                            "After": "375"
+                            "After": "375",
+                            "parsedAfter": "<span class=\"red\">375</span>"
                         }
                     }
                 ]
@@ -440,7 +446,8 @@
                             "Attribute": "Evolved Slow: ",
                             "Before": "60%",
                             "Indicator": " ⇒ ",
-                            "After": "40%"
+                            "After": "40%",
+                            "parsedAfter": "<span class=\"red\">40</span>%"
                         }
                     },
                     {
@@ -449,7 +456,8 @@
                             "Attribute": "Evolved Slow Against Isolated Targets: ",
                             "Before": "90%",
                             "Indicator": " ⇒ ",
-                            "After": "75%"
+                            "After": "75%",
+                            "parsedAfter": "<span class=\"red\">75</span>%"
                         }
                     }
                 ]
@@ -464,7 +472,8 @@
                             "Attribute": "Buff Duration: ",
                             "Before": "10 seconds",
                             "Indicator": " ⇒ ",
-                            "After": "12 seconds"
+                            "After": "12 seconds",
+                            "parsedAfter": "<span class=\"green\">12</span> seconds"
                         }
                     }
                 ]
@@ -482,7 +491,8 @@
                             "Attribute": "Physical Damage: ",
                             "Before": "60/85/110/135/160 (+115% bonus AD)",
                             "Indicator": " ⇒ ",
-                            "After": "70/95/120/145/170 (+ 115% bonus AD)"
+                            "After": "70/95/120/145/170 (+ 115% bonus AD)",
+                            "parsedAfter": "<span class=\"green\">70</span>/<span class=\"green\">95</span>/<span class=\"green\">120</span>/<span class=\"green\">145</span>/<span class=\"green\">170</span> (+ 115% bonus AD)"
                         }
                     }
                 ]
@@ -501,7 +511,8 @@
                             "Attribute": "Base Attack Damage: ",
                             "Before": "63",
                             "Indicator": " ⇒ ",
-                            "After": "60"
+                            "After": "60",
+                            "parsedAfter": "<span class=\"red\">60</span>"
                         }
                     }
                 ]
@@ -524,7 +535,8 @@
                             "Attribute": "Physical Damage: ",
                             "Before": "70/95/120/145/170 (+115% bonus AD)",
                             "Indicator": " ⇒ ",
-                            "After": "70/95/120/145/170 (+110% bonus AD)"
+                            "After": "70/95/120/145/170 (+110% bonus AD)",
+                            "parsedAfter": "70/95/120/145/170 (+<span class=\"red\">110</span>% bonus AD)"
                         }
                     }
                 ]
@@ -545,7 +557,8 @@
                             "Attribute": "Physical Damage: ",
                             "Before": "70/95/120/145/170 (+110% Bonus AD)",
                             "Indicator": " ⇒ ",
-                            "After": "80/105/130/155/180 (+110% Bonus AD)"
+                            "After": "80/105/130/155/180 (+110% Bonus AD)",
+                            "parsedAfter": "<span class=\"green\">80</span>/<span class=\"green\">105</span>/<span class=\"green\">130</span>/<span class=\"green\">155</span>/<span class=\"green\">180</span> (+110% Bonus AD)"
                         }
                     }
                 ]
@@ -564,7 +577,8 @@
                             "Attribute": "Base Armor: ",
                             "Before": "36",
                             "Indicator": " ⇒ ",
-                            "After": "32"
+                            "After": "32",
+                            "parsedAfter": "<span class=\"red\">32</span>"
                         }
                     }
                 ]
@@ -580,7 +594,8 @@
                             "Attribute": "Evolved W Slow to Isolated Targets: ",
                             "Before": "75%",
                             "Indicator": " ⇒ ",
-                            "After": "60%"
+                            "After": "60%",
+                            "parsedAfter": "<span class=\"red\">60</span>%"
                         }
                     }
                 ]

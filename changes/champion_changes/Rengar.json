@@ -256,7 +256,7 @@
         },
         "R": {
             "_rawTooltip": {
-                "fullTooltip": "[[0]] Rengar will also leap attack when [[1]].<br /><br />[[2]] Rengar gains [[3]] and [[4]] in a small area around the nearest enemy champion for 12/16/20 seconds.<br /><br />After 2 seconds, Rengar becomes [[5]] and can leap without being in Brush. Leaping to the nearest champion deals an additional [[6]], shreds [[7]] for 4 seconds, and ends this Ability.",
+                "fullTooltip": "[[0]] Rengar will also leap attack when [[1]].<br /><br />[[2]] Rengar gains [[3]] and [[4]] in a small area around the nearest enemy champion for 12/16 seconds.<br /><br />After 2 seconds, Rengar becomes [[5]] and can leap without being in Brush. Leaping to the nearest champion deals an additional [[6]], shreds [[7]] for 4 seconds, and ends this Ability.",
                 "parseInfo": [
                     {
                         "text": {
@@ -281,7 +281,7 @@
                     },
                     {
                         "text": {
-                            "text": "40/50/60% Move Speed",
+                            "text": "40/50% Move Speed",
                             "scaleHolders": []
                         },
                         "type": "speed"
@@ -302,14 +302,14 @@
                     },
                     {
                         "text": {
-                            "text": "100% AD physical damage",
+                            "text": "50% AD physical damage",
                             "scaleHolders": []
                         },
                         "type": "physicalDamage"
                     },
                     {
                         "text": {
-                            "text": "15/20/25 Armor",
+                            "text": "12/18 Armor",
                             "scaleHolders": []
                         },
                         "type": "scaleArmor"
@@ -335,7 +335,8 @@
                             "Attribute": "HEALING FROM MONSTERS: ",
                             "Before": "75% of the damage he's taken from monsters",
                             "Indicator": " ⇒ ",
-                            "After": "100% of the damage he's taken from monsters"
+                            "After": "100% of the damage he's taken from monsters",
+                            "parsedAfter": "<span class=\"green\">100</span>% of the damage he's taken from monsters"
                         }
                     },
                     {
@@ -384,7 +385,8 @@
                             "Attribute": "HERE, KITTY KITTY: ",
                             "Before": "only if he has 0 Ferocity",
                             "Indicator": " ⇒ ",
-                            "After": "upon losing all Ferocity stacks (no matter how much Ferocity he gains before his next leap)"
+                            "After": "upon losing all Ferocity stacks (no matter how much Ferocity he gains before his next leap)",
+                            "parsedAfter": "upon losing all Ferocity stacks (no matter how much Ferocity he gains before his next leap)"
                         }
                     },
                     {
@@ -411,7 +413,8 @@
                             "Attribute": "All Ferocity Stacks Fall Off After: ",
                             "Before": "8 seconds",
                             "Indicator": " ⇒ ",
-                            "After": "10 seconds out of combat"
+                            "After": "10 seconds out of combat",
+                            "parsedAfter": "<span class=\"red\">10</span> seconds <span class=\"gold\">out of combat</span>"
                         }
                     },
                     {
@@ -420,7 +423,8 @@
                             "Attribute": "Bonetooth Necklace Takedown Timer: ",
                             "Before": "1.5 seconds",
                             "Indicator": " ⇒ ",
-                            "After": "3 seconds of damaging an enemy champion"
+                            "After": "3 seconds of damaging an enemy champion",
+                            "parsedAfter": "<span class=\"red\">3</span> seconds of damaging an enemy champion"
                         }
                     }
                 ]
@@ -522,7 +526,8 @@
                             "Attribute": "Bonus Magic Damage Against Monsters: ",
                             "Before": "65-130 (levels 1-18)",
                             "Indicator": " ⇒ ",
-                            "After": "85-150 (levels 1-18)"
+                            "After": "85-150 (levels 1-18)",
+                            "parsedAfter": "<span class=\"green\">85</span>-<span class=\"green\">150</span> (levels 1-18)"
                         }
                     }
                 ]
@@ -543,7 +548,8 @@
                             "Attribute": "Damage to Monsters: ",
                             "Before": "85-150 (levels 1-18)",
                             "Indicator": " ⇒ ",
-                            "After": "65-130 (levels 1-18)"
+                            "After": "65-130 (levels 1-18)",
+                            "parsedAfter": "<span class=\"red\">65</span>-<span class=\"red\">130</span> (levels 1-18)"
                         }
                     }
                 ]
@@ -609,7 +615,8 @@
                             "Attribute": "Base Health: ",
                             "Before": "655",
                             "Indicator": " ⇒ ",
-                            "After": "620"
+                            "After": "620",
+                            "parsedAfter": "<span class=\"red\">620</span>"
                         }
                     }
                 ]
@@ -627,7 +634,8 @@
                             "Attribute": "Cooldown: ",
                             "Before": "110/90/70",
                             "Indicator": " ⇒ ",
-                            "After": "110/100/90 seconds"
+                            "After": "110/100/90 seconds",
+                            "parsedAfter": "110/<span class=\"red\">100</span>/<span class=\"red\">90</span> seconds"
                         }
                     }
                 ]
@@ -643,7 +651,8 @@
                             "Attribute": "Health Regeneration per 5 seconds: ",
                             "Before": "7",
                             "Indicator": " ⇒ ",
-                            "After": "6"
+                            "After": "6",
+                            "parsedAfter": "<span class=\"red\">6</span>"
                         }
                     }
                 ]
@@ -658,7 +667,8 @@
                             "Attribute": "Critical Strike Damage Conversion: ",
                             "Before": "95%",
                             "Indicator": " ⇒ ",
-                            "After": "75%"
+                            "After": "75%",
+                            "parsedAfter": "<span class=\"red\">75</span>%"
                         }
                     }
                 ]
@@ -677,7 +687,8 @@
                             "Attribute": "Base Health: ",
                             "Before": "620",
                             "Indicator": " ⇒ ",
-                            "After": "590"
+                            "After": "590",
+                            "parsedAfter": "<span class=\"red\">590</span>"
                         }
                     }
                 ]
@@ -692,7 +703,8 @@
                             "Attribute": "Bonus Damage: ",
                             "Before": "30/60/90/120/150 (+0/5/10/15/20% AD)",
                             "Indicator": " ⇒ ",
-                            "After": "30/60/90/120/150 (+0/3.75/7.5/11.25/15% AD)"
+                            "After": "30/60/90/120/150 (+0/3.75/7.5/11.25/15% AD)",
+                            "parsedAfter": "30/60/90/120/150 (+0/<span class=\"red\">3.75</span>/<span class=\"red\">7.5</span>/<span class=\"red\">11.25</span>/<span class=\"red\">15</span>% AD)"
                         }
                     },
                     {
@@ -701,7 +713,8 @@
                             "Attribute": "Empowered Bonus Damage: ",
                             "Before": "30-235 (based on level) (+40% AD)",
                             "Indicator": " ⇒ ",
-                            "After": "30-235 (based on level) (+30% AD)"
+                            "After": "30-235 (based on level) (+30% AD)",
+                            "parsedAfter": "30-235 (based on level) (+<span class=\"red\">30</span>% AD)"
                         }
                     }
                 ]
@@ -725,7 +738,8 @@
                             "Attribute": "Armor Shred: ",
                             "Before": "12/18/24",
                             "Indicator": " ⇒ ",
-                            "After": "15/20/25"
+                            "After": "15/20/25",
+                            "parsedAfter": "<span class=\"green\">15</span>/<span class=\"green\">20</span>/<span class=\"green\">25</span>"
                         }
                     },
                     {
@@ -734,7 +748,8 @@
                             "Attribute": "Bonus Damage: ",
                             "Before": "50%",
                             "Indicator": " ⇒ ",
-                            "After": "100% total AD"
+                            "After": "100% total AD",
+                            "parsedAfter": "<span class=\"green\">100</span>% total AD"
                         }
                     }
                 ]
