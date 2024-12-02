@@ -5,31 +5,31 @@
             "increment": 104
         },
         "mp": {
-            "base": 350,
-            "increment": 45
+            "base": 320,
+            "increment": 40
         },
         "armor": {
-            "base": 36,
-            "increment": 4.2
+            "base": 30,
+            "increment": 4.3
         },
         "spellBlock": {
-            "base": 30,
-            "increment": 2.05
+            "base": 28,
+            "increment": 1.8
         },
         "hpRegen": {
             "base": 7.5,
             "increment": 0.85
         },
         "mpRegen": {
-            "base": 6,
-            "increment": 0.35
+            "base": 7,
+            "increment": 0.7
         },
         "attackSpeed": {
             "base": 0.625,
-            "increment": 0.015
+            "increment": 0.02
         },
         "ms": {
-            "base": 330,
+            "base": 315,
             "increment": 0
         },
         "attackDamage": {
@@ -45,8 +45,21 @@
         "P": {
             "cooldown": "",
             "_rawTooltip": {
-                "fullTooltip": "Rell's attacks and abilities steal 2% Armor and 2% Magic Resist for 5 seconds, refreshing on subsequent hits and stacking up to 5 times.",
-                "parseInfo": []
+                "fullTooltip": "Rell's attacks and abilities steal 2% Armor and 2% Magic Resist for 5 seconds. Max (10%).<br>Basic attacks deal [[0]] on-hit.",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "{{0}} magic damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(5% armor + 5% magic resistance)",
+                                    "scaleId": "resistance"
+                                }
+                            ]
+                        },
+                        "type": "armor"
+                    }
+                ]
             },
             "name": "Break the Mold"
         },
@@ -56,7 +69,7 @@
                 "parseInfo": [
                     {
                         "text": {
-                            "text": "Stunning/status> targets for 0.75 seconds, destroying all Shields",
+                            "text": "Stunning/status> targets for 0.65 seconds, destroying all Shields",
                             "scaleHolders": []
                         },
                         "type": "shield"
@@ -81,11 +94,32 @@
         },
         "W": {
             "_rawTooltip": {
-                "fullTooltip": "Rell leaps of her mount, [[0]] enemies for 1 seconds and dealing [[1]]. Rell gains [[2]], which lasts until she remounts.<br /><br />Rell then enters armored form, gaining [[3]], [[4]], [[5]] and 75 Attack Range, but is [[6]] by 10%. In this form, she can use [[7]].<br /><br />[[8]]: Rell mounts up and briefly gains [[9]]. Her next attack within 3.5 seconds [[10]] and throws enemies behind her, dealing an additional [[11]]. While mounted, Rell can use [[12]].",
+                "fullTooltip": "[[0]]: Rell gains [[1]] while mounted.<br /><br />Rell leaps of her mount, [[2]] enemies for 0.4 seconds then [[3]] them for 0.8 seconds and dealing [[4]]. Rell gains [[5]], which lasts until she remounts.<br /><br />Rell then enters armored form, gaining [[6]], [[7]], [[8]] and 75 Attack Range. In this armored form, she can use [[9]].<br /><br />[[10]]: Rell mounts up and briefly gains [[11]]. Her next attack within 3.5 seconds [[12]] and throws enemies behind her, dealing an additional [[13]]. While mounted, Rell can use [[14]].",
                 "parseInfo": [
                     {
                         "text": {
+                            "text": "Passive - Mounted Alacrity",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "20% Move Speed",
+                            "scaleHolders": []
+                        },
+                        "type": "speed"
+                    },
+                    {
+                        "text": {
                             "text": "Knocking Up",
+                            "scaleHolders": []
+                        },
+                        "type": "status"
+                    },
+                    {
+                        "text": {
+                            "text": "Stunning",
                             "scaleHolders": []
                         },
                         "type": "status"
@@ -116,14 +150,14 @@
                     },
                     {
                         "text": {
-                            "text": "12% bonus Armor",
+                            "text": "15% bonus Armor",
                             "scaleHolders": []
                         },
                         "type": "scaleArmor"
                     },
                     {
                         "text": {
-                            "text": "12% Magic Resist",
+                            "text": "15% Magic Resist",
                             "scaleHolders": []
                         },
                         "type": "scaleMR"
@@ -134,13 +168,6 @@
                             "scaleHolders": []
                         },
                         "type": "attackSpeed"
-                    },
-                    {
-                        "text": {
-                            "text": "Slowed",
-                            "scaleHolders": []
-                        },
-                        "type": "status"
                     },
                     {
                         "text": {
@@ -191,45 +218,14 @@
                     }
                 ]
             },
-            "cooldown": "11",
+            "cooldown": "10",
             "cost": "40 Mana",
             "name": "Ferromancy: Crash Down"
         },
         "E": {
             "_rawTooltip": {
-                "fullTooltip": "[[0]]: Rell gains [[1]] while mounted, reduced to [[2]] in combat.<br /><br />[[3]]: Rell and an ally charge, gaining ramping [[4]] over 3 seconds, this is doubled to [[5]] toward enemies or your targeted ally.<br /><br />Additionally, Rell's next attack or [[6]] explode in an area for [[7]]",
+                "fullTooltip": "[[0]]: Rell and an ally charge, gaining [[1]] increased to [[2]] when facing enemy champions or each other for 3 seconds.<br /><br />Additionally, Rell's next attack or [[3]] explode in an area for [[4]]",
                 "parseInfo": [
-                    {
-                        "text": {
-                            "text": "Passive - Mounted Alacrity",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "5 - 50 {{0}} Move Speed",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(based on level)",
-                                    "scaleId": "level"
-                                }
-                            ]
-                        },
-                        "type": "speed"
-                    },
-                    {
-                        "text": {
-                            "text": "2.5 - 25 {{0}} Move Speed",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(based on level)",
-                                    "scaleId": "level"
-                                }
-                            ]
-                        },
-                        "type": "speed"
-                    },
                     {
                         "text": {
                             "text": "Active - Full Tilt",
@@ -239,14 +235,14 @@
                     },
                     {
                         "text": {
-                            "text": "Move Speed up to 12/13/14/15/16%",
+                            "text": "10% Move Speed",
                             "scaleHolders": []
                         },
                         "type": "speed"
                     },
                     {
                         "text": {
-                            "text": "24/26/28/30/32%",
+                            "text": "25%",
                             "scaleHolders": []
                         },
                         "type": "speed"
@@ -260,10 +256,10 @@
                     },
                     {
                         "text": {
-                            "text": "25/35/45/55/65 +3% of target's maximum health {{0}} magic damage",
+                            "text": "5/5.5/6/6.5/7% {{0}} of the target's maximum health ",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+50% AP)",
+                                    "scale": "(+3% per 100 AP)",
                                     "scaleId": "AP"
                                 }
                             ]
@@ -272,7 +268,7 @@
                     }
                 ]
             },
-            "cooldown": "15",
+            "cooldown": "14/13/12/11/10",
             "cost": "40 Mana",
             "name": "Full Tilt"
         },
