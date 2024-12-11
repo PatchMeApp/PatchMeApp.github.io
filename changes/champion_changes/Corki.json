@@ -164,10 +164,10 @@
                 "parseInfo": [
                     {
                         "text": {
-                            "text": "100/150/200/250/300 {{0}} physical damage",
+                            "text": "80/130/180/230/280 {{0}} physical damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+250% Bonus AD)",
+                                    "scale": "(+240% Bonus AD)",
                                     "scaleId": "AD"
                                 }
                             ]
@@ -1454,6 +1454,28 @@
                 ]
             },
             "R": ""
+        },
+        "14.24": {
+            "B": "",
+            "P": "",
+            "Q": "",
+            "W": "",
+            "E": {
+                "SpellName": "E - Gatling Gun",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Damage: ",
+                            "Before": "100/150/200/250/300 (+250% bonus AD)",
+                            "Indicator": " ⇒ ",
+                            "After": "80/130/180/230/280 (+240% bonus AD)",
+                            "parsedAfter": "<span class=\"red\">80</span>/<span class=\"red\">130</span>/<span class=\"red\">180</span>/<span class=\"red\">230</span>/<span class=\"red\">280</span> (+<span class=\"red\">240</span>% bonus AD)"
+                        }
+                    }
+                ]
+            },
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -1477,7 +1499,8 @@
         "14.19",
         "14.20",
         "14.21",
-        "14.22"
+        "14.22",
+        "14.24"
     ],
     "ChampionName": "Corki",
     "Balance": {
@@ -1516,6 +1539,9 @@
             "buff"
         ],
         "14.22": [
+            "nerf"
+        ],
+        "14.24": [
             "nerf"
         ]
     }

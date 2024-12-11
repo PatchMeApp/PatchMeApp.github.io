@@ -64,7 +64,7 @@
                 "parseInfo": [
                     {
                         "text": {
-                            "text": "70/95/120/145/170 {{0}} magic damage",
+                            "text": "65/90/115/140/165 {{0}} magic damage",
                             "scaleHolders": [
                                 {
                                     "scale": "(+40% AP)",
@@ -76,10 +76,10 @@
                     },
                     {
                         "text": {
-                            "text": "70/95/120/145/170 {{0}} magic damage",
+                            "text": "65/90/115/140/165 {{0}} magic damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+45% AP)",
+                                    "scale": "(+40% AP)",
                                     "scaleId": "AP"
                                 }
                             ]
@@ -936,6 +936,28 @@
                 ]
             },
             "R": ""
+        },
+        "14.24": {
+            "B": "",
+            "P": "",
+            "Q": {
+                "SpellName": "Q - Sigil of Malice",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Damage: ",
+                            "Before": "70/95/120/145/170 (+ 40% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "65/90/115/140/165 (+40% AP)",
+                            "parsedAfter": "<span class=\"red\">65</span>/<span class=\"red\">90</span>/<span class=\"red\">115</span>/<span class=\"red\">140</span>/<span class=\"red\">165</span> (+40% AP)"
+                        }
+                    }
+                ]
+            },
+            "W": "",
+            "E": "",
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -953,7 +975,8 @@
         "13.22",
         "14.1",
         "14.8",
-        "14.17"
+        "14.17",
+        "14.24"
     ],
     "ChampionName": "LeBlanc",
     "Balance": {
@@ -964,6 +987,9 @@
             "buff"
         ],
         "14.17": [
+            "nerf"
+        ],
+        "14.24": [
             "nerf"
         ]
     }

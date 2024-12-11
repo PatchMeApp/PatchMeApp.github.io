@@ -1,5 +1,5 @@
 {
-    "LatestGlobalPatch": "14.23",
+    "LatestGlobalPatch": "14.24",
     "Aatrox": {
         "ChampionName": "Aatrox",
         "ChangePatches": [
@@ -808,7 +808,8 @@
             "10.25",
             "12.10",
             "13.24",
-            "14.22"
+            "14.22",
+            "14.24"
         ],
         "LatestChanges": {
             "B": {
@@ -817,110 +818,69 @@
                     {
                         "Tag": "",
                         "Change": {
-                            "Attribute": "Model Size: ",
-                            "Before": "",
-                            "Indicator": "",
-                            "After": " Increased by 15%"
+                            "Attribute": "Base Attack Damage: ",
+                            "Before": "65",
+                            "Indicator": " ⇒ ",
+                            "After": "63",
+                            "parsedAfter": "<span class=\"red\">63</span>"
                         }
                     }
                 ]
             },
             "P": "",
-            "Q": "",
+            "Q": {
+                "SpellName": "Q - Jaws of the Beast",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Cast Range: ",
+                            "Before": "350",
+                            "Indicator": " ⇒ ",
+                            "After": "365",
+                            "parsedAfter": "<span class=\"green\">365</span>"
+                        }
+                    }
+                ]
+            },
             "W": {
                 "SpellName": "W - Blood Hunt",
                 "Changes": [
                     {
                         "Tag": "",
                         "Change": {
-                            "Attribute": "Mana Cost: ",
-                            "Before": " 70",
+                            "Attribute": "Attack Speed Buff Duration: ",
+                            "Before": "0.75",
                             "Indicator": " ⇒ ",
-                            "After": "55",
-                            "parsedAfter": "<span class=\"green\">55</span>"
+                            "After": "2 seconds",
+                            "parsedAfter": "<span class=\"green\">2</span> seconds"
                         }
                     },
                     {
                         "Tag": "",
                         "Change": {
-                            "Attribute": "Cooldown: ",
-                            "Before": " 100/85/70/55/40",
-                            "Indicator": " ⇒ ",
-                            "After": "80/70/60/50/40",
-                            "parsedAfter": "<span class=\"green\">80</span>/<span class=\"green\">70</span>/<span class=\"green\">60</span>/<span class=\"green\">50</span>/40"
-                        }
-                    },
-                    {
-                        "Tag": "",
-                        "Change": {
-                            "Attribute": "Passive: ",
+                            "Attribute": "",
                             "Before": "",
                             "Indicator": "",
-                            "After": " Spells now also trigger the attack speed when used to damage enemies under 50% Health. The attack speed granted by attacks and spells now linger between attacks."
+                            "After": "Attack speed buff is now granted on the attack or spell that puts the target below the health threshold"
                         }
                     },
                     {
                         "Tag": "",
                         "Change": {
-                            "Attribute": "Cooldown Reduction: ",
-                            "Before": " Ticks twice as fast while no one is hunted",
-                            "Indicator": " ⇒ ",
-                            "After": "Refunds 30% if no one is found by the active",
-                            "parsedAfter": "Refunds <span class=\"gold\">30</span>% if no one is found by the active"
-                        }
-                    },
-                    {
-                        "Tag": "",
-                        "Change": {
-                            "Attribute": "Active Lockout Removed: ",
+                            "Attribute": "",
                             "Before": "",
                             "Indicator": "",
-                            "After": " No longer locks out casting while in champion combat"
+                            "After": "Warwick's attack speed is now granted on the first attack on a new target that is below the health threshold"
                         }
                     }
                 ]
             },
-            "E": {
-                "SpellName": "E - Primal Howl",
-                "Changes": [
-                    {
-                        "Tag": "",
-                        "Change": {
-                            "Attribute": "Auto attack lockout after casting E2: ",
-                            "Before": "",
-                            "Indicator": "",
-                            "After": "  0.5s⇒ 0.25s"
-                        }
-                    }
-                ]
-            },
-            "R": {
-                "SpellName": "R - Infinite Duress",
-                "Changes": [
-                    {
-                        "Tag": "",
-                        "Change": {
-                            "Attribute": "Hit Radius: ",
-                            "Before": " 100",
-                            "Indicator": " ⇒ ",
-                            "After": "150",
-                            "parsedAfter": "<span class=\"green\">150</span>"
-                        }
-                    },
-                    {
-                        "Tag": "NEW",
-                        "Change": {
-                            "Attribute": "NEW: ",
-                            "Before": "",
-                            "Indicator": "",
-                            "After": "  Claws in FrontNow only latches onto champions in front of Warwick"
-                        }
-                    }
-                ]
-            }
+            "E": "",
+            "R": ""
         },
         "Balance": [
-            "adjusted"
+            "adjust"
         ]
     },
     "Xayah": {
@@ -1205,7 +1165,8 @@
             "13.22",
             "14.8",
             "14.13",
-            "14.17"
+            "14.17",
+            "14.24"
         ],
         "LatestChanges": {
             "B": "",
@@ -1216,31 +1177,21 @@
                     {
                         "Tag": "",
                         "Change": {
-                            "Attribute": "Cooldown: ",
-                            "Before": "13/11.5/10/8.5/7",
-                            "Indicator": " ⇒ ",
-                            "After": "13/11.25/9.5/7.75/6",
-                            "parsedAfter": "13/<span class=\"red\">11.25</span>/<span class=\"green\">9.5</span>/<span class=\"green\">7.75</span>/<span class=\"green\">6</span>"
-                        }
-                    },
-                    {
-                        "Tag": "",
-                        "Change": {
                             "Attribute": "Initial Damage: ",
-                            "Before": "45/60/75/90/105 (+80% Bonus AD)",
+                            "Before": "45 / 65 / 85 / 105 / 125 (+ 80% bonus AD)",
                             "Indicator": " ⇒ ",
-                            "After": "45/65/85/105/125 (+80% Bonus AD)",
-                            "parsedAfter": "45/<span class=\"green\">65</span>/<span class=\"green\">85</span>/<span class=\"green\">105</span>/<span class=\"green\">125</span> (+80% Bonus AD)"
+                            "After": "Unchanged",
+                            "parsedAfter": "45/65/85/105/125 (+ 80% bonus AD)"
                         }
                     },
                     {
                         "Tag": "",
                         "Change": {
-                            "Attribute": "Maximum Damage: ",
-                            "Before": "130/180/230/280/330 (+120/150/180/210/240% Bonus AD)",
+                            "Attribute": "Secondary Damage: ",
+                            "Before": "85/120/155/190/225 (+40/70/100/130/160% bonus AD)",
                             "Indicator": " ⇒ ",
-                            "After": "130/185/240/295/350 (+120/150/180/210/240% Bonus AD)",
-                            "parsedAfter": "130/<span class=\"green\">185</span>/<span class=\"green\">240</span>/<span class=\"green\">295</span>/<span class=\"green\">350</span> (+120/150/180/210/240% Bonus AD)"
+                            "After": "85/120/155/190/225 (+40/65/90/115/140% bonus AD)",
+                            "parsedAfter": "85/120/155/190/225 (+40/<span class=\"red\">65</span>/<span class=\"red\">90</span>/<span class=\"red\">115</span>/<span class=\"red\">140</span>% bonus AD)"
                         }
                     }
                 ]
@@ -1250,7 +1201,7 @@
             "R": ""
         },
         "Balance": [
-            "buff"
+            "nerf"
         ]
     },
     "Heimerdinger": {
@@ -1626,92 +1577,33 @@
             "12.10",
             "13.4",
             "13.23",
-            "14.20"
+            "14.20",
+            "14.24"
         ],
         "LatestChanges": {
             "B": "",
             "P": "",
-            "Q": {
-                "SpellName": "Q - Broken Wings",
+            "Q": "",
+            "W": "",
+            "E": {
+                "SpellName": "E - Valor",
                 "Changes": [
                     {
                         "Tag": "",
                         "Change": {
-                            "Attribute": "Damage: ",
-                            "Before": " 15/35/55/75/95 (+50/55/60/65/70% total AD)",
+                            "Attribute": "Shield: ",
+                            "Before": "80/105/130/155/180 (+110% bonus AD)",
                             "Indicator": " ⇒ ",
-                            "After": "45/75/105/135/165 (+65/70/75/80/85% bonus AD)",
-                            "parsedAfter": "<span class=\"green\">45</span>/<span class=\"green\">75</span>/<span class=\"green\">105</span>/<span class=\"green\">135</span>/<span class=\"green\">165</span> (+<span class=\"green\">65</span>/<span class=\"green\">70</span>/<span class=\"green\">75</span>/<span class=\"green\">80</span>/<span class=\"green\">85</span>% bonus AD)"
-                        }
-                    },
-                    {
-                        "Tag": "",
-                        "Change": {
-                            "Attribute": "Recommended Runes: ",
-                            "Before": "\n\n LegendAlacrity",
-                            "Indicator": " ⇒ ",
-                            "After": "LegendHaste\n Last Stand",
-                            "parsedAfter": "LegendHaste\n Last Stand"
-                        }
-                    },
-                    {
-                        "Tag": "",
-                        "Change": {
-                            "Attribute": "",
-                            "Before": " LegendAlacrity",
-                            "Indicator": " ⇒ ",
-                            "After": "LegendHaste",
-                            "parsedAfter": "LegendHaste"
-                        }
-                    },
-                    {
-                        "Tag": "",
-                        "Change": {
-                            "Attribute": "",
-                            "Before": " Last Stand",
-                            "Indicator": " ⇒ ",
-                            "After": "Cut Down",
-                            "parsedAfter": "Cut Down"
-                        }
-                    },
-                    {
-                        "Tag": "",
-                        "Change": {
-                            "Attribute": "",
-                            "Before": " Nimbus Cloak",
-                            "Indicator": " ⇒ ",
-                            "After": "Gathering Storm",
-                            "parsedAfter": "Gathering Storm"
-                        }
-                    },
-                    {
-                        "Tag": "",
-                        "Change": {
-                            "Attribute": "",
-                            "Before": " Bone Plating",
-                            "Indicator": " ⇒ ",
-                            "After": "Second Wind",
-                            "parsedAfter": "Second Wind"
-                        }
-                    },
-                    {
-                        "Tag": "",
-                        "Change": {
-                            "Attribute": "",
-                            "Before": " Unflinching",
-                            "Indicator": " ⇒ ",
-                            "After": "Shield Bash",
-                            "parsedAfter": "Shield Bash"
+                            "After": "70/95/120/145/170 (+ 110% bonus AD)",
+                            "parsedAfter": "<span class=\"red\">70</span>/<span class=\"red\">95</span>/<span class=\"red\">120</span>/<span class=\"red\">145</span>/<span class=\"red\">170</span> (+ 110% bonus AD)"
                         }
                     }
                 ]
             },
-            "W": "",
-            "E": "",
             "R": ""
         },
         "Balance": [
-            "buff"
+            "nerf"
         ]
     },
     "Sejuani": {
@@ -2147,43 +2039,50 @@
             "13.5",
             "13.6",
             "13.12",
-            "14.12"
+            "14.12",
+            "14.24"
         ],
         "LatestChanges": {
             "B": "",
             "P": "",
-            "Q": "",
-            "W": "",
-            "E": {
-                "SpellName": "E - Zoomies",
+            "Q": {
+                "SpellName": "Q - Prowling Projectile",
                 "Changes": [
                     {
                         "Tag": "",
                         "Change": {
-                            "Attribute": "Cooldown: ",
-                            "Before": "12/11.5/11/10.5/10",
+                            "Attribute": "Mana Cost: ",
+                            "Before": "50/60/70/80/90/100",
                             "Indicator": " ⇒ ",
-                            "After": "10 seconds at all ranks",
-                            "parsedAfter": "<span class=\"green\">10</span> seconds at all ranks"
+                            "After": "50/55/60/65/70/75 mana",
+                            "parsedAfter": "50/<span class=\"green\">55</span>/<span class=\"green\">60</span>/<span class=\"green\">65</span>/<span class=\"green\">70</span>/<span class=\"green\">75</span> mana"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Minimum Damage: ",
+                            "Before": "60/90/120/150/180/210 (+20% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "60/95/130/165/200/235 (+20% AP)",
+                            "parsedAfter": "60/<span class=\"green\">95</span>/<span class=\"green\">130</span>/<span class=\"green\">165</span>/<span class=\"green\">200</span>/<span class=\"green\">235</span> (+20% AP)"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Maximum Damage: ",
+                            "Before": "80/135/190/245/300/355 (+30% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "80/140/200/260/320/380 (+30% AP)",
+                            "parsedAfter": "80/<span class=\"green\">140</span>/<span class=\"green\">200</span>/<span class=\"green\">260</span>/<span class=\"green\">320</span>/<span class=\"green\">380</span> (+30% AP)"
                         }
                     }
                 ]
             },
-            "R": {
-                "SpellName": "R - Final Chapter",
-                "Changes": [
-                    {
-                        "Tag": "",
-                        "Change": {
-                            "Attribute": "Heal per Hit: ",
-                            "Before": "25/40/55",
-                            "Indicator": " ⇒ ",
-                            "After": "35/50/65",
-                            "parsedAfter": "<span class=\"green\">35</span>/<span class=\"green\">50</span>/<span class=\"green\">65</span>"
-                        }
-                    }
-                ]
-            }
+            "W": "",
+            "E": "",
+            "R": ""
         },
         "Balance": [
             "buff"
@@ -2723,29 +2622,155 @@
             "10.12",
             "10.23",
             "12.10",
-            "14.12"
+            "14.12",
+            "14.24"
         ],
         "LatestChanges": {
             "B": "",
-            "P": "",
+            "P": {
+                "SpellName": "Passive - Glorious Evolution",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Hex Fragments from Cannon Minions: ",
+                            "Before": "5",
+                            "Indicator": " ⇒ ",
+                            "After": "10",
+                            "parsedAfter": "<span class=\"green\">10</span>"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Hex Fragments from Takedowns: ",
+                            "Before": "25",
+                            "Indicator": " ⇒ ",
+                            "After": "20",
+                            "parsedAfter": "<span class=\"red\">20</span>"
+                        }
+                    }
+                ]
+            },
             "Q": {
                 "SpellName": "Q - Siphon Power",
                 "Changes": [
                     {
                         "Tag": "",
                         "Change": {
-                            "Attribute": "Discharge: ",
-                            "Before": "",
-                            "Indicator": "",
-                            "After": "Viktor's Q empowered auto attack now applies to towers."
+                            "Attribute": "Shield: ",
+                            "Before": "25-105 (based on level) (+18% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "40-115 (based on level) (+18% AP)",
+                            "parsedAfter": "<span class=\"green\">40</span>-<span class=\"green\">115</span> (based on level) (+18% AP)"
                         }
                     }
                 ]
             },
-            "W": "",
-            "E": "",
-            "R": ""
-        }
+            "W": {
+                "SpellName": "W - Gravity Field",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Slow: ",
+                            "Before": "30/33/37/40/45",
+                            "Indicator": " ⇒ ",
+                            "After": "33/36/39/42/45",
+                            "parsedAfter": "<span class=\"green\">33</span>/<span class=\"green\">36</span>/<span class=\"green\">39</span>/<span class=\"green\">42</span>/45"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Time Spent in Gravity Field before Stun: ",
+                            "Before": "1.1",
+                            "Indicator": " ⇒ ",
+                            "After": "2.5 seconds",
+                            "parsedAfter": "<span class=\"green\">2.5</span> seconds"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Bugfix: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "Gravity Field will no longer fail to stun in the appropriate amount of time"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Slow Application: ",
+                            "Before": "Can no longer be slowed after being stunned by W",
+                            "Indicator": " ⇒ ",
+                            "After": "Slow now applies as long as you are within the Gravity Field"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Slow Debuff Duration: ",
+                            "Before": "1",
+                            "Indicator": " ⇒ ",
+                            "After": "0.25 seconds",
+                            "parsedAfter": "<span class=\"red\">0.25</span> seconds"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "QoL Improvement: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "Improved reliability and consistency in addition to a few bugfixes"
+                        }
+                    }
+                ]
+            },
+            "E": {
+                "SpellName": "E - Hextech Ray",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Mana Cost: ",
+                            "Before": "70/80/90/100/110",
+                            "Indicator": " ⇒ ",
+                            "After": "60/70/80/90/100",
+                            "parsedAfter": "<span class=\"red\">60</span>/<span class=\"red\">70</span>/<span class=\"red\">80</span>/<span class=\"red\">90</span>/<span class=\"red\">100</span>"
+                        }
+                    }
+                ]
+            },
+            "R": {
+                "SpellName": "R - Arcane Storm",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Glorious Evolution: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "Ultimate can now evolve after evolving all other abilities and collecting 100 more hex fragments"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Obliterate: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "Evolving Arcane Storm now makes the storm grow 40% in size and gain +3 seconds of duration if it damages an enemy that dies. Maximum of 6 size increases and maximum of +6 second overall duration increase."
+                        }
+                    }
+                ]
+            }
+        },
+        "Balance": [
+            "adjust"
+        ]
     },
     "Kayn": {
         "ChampionName": "Kayn",
@@ -2973,7 +2998,7 @@
             "R": ""
         },
         "Balance": [
-            "adjusted"
+            "adjust"
         ]
     },
     "Master Yi": {
@@ -2995,29 +3020,39 @@
             "14.9",
             "14.11",
             "14.12",
-            "14.23"
+            "14.23",
+            "14.24"
         ],
         "LatestChanges": {
             "B": "",
             "P": "",
-            "Q": "",
-            "W": "",
-            "E": "",
-            "R": {
-                "SpellName": "R - Highlander",
+            "Q": {
+                "SpellName": "Q - Alpha Strike",
                 "Changes": [
                     {
                         "Tag": "",
                         "Change": {
-                            "Attribute": "Attack Speed: ",
-                            "Before": "25/35/45%",
+                            "Attribute": "Critical Strike Scaling: ",
+                            "Before": "35%, 49% with Infinity Edge",
                             "Indicator": " ⇒ ",
-                            "After": "25/45/65%",
-                            "parsedAfter": "25/<span class=\"green\">45</span>/<span class=\"green\">65</span>%"
+                            "After": "56.25%, 86.25% with Infinity Edge",
+                            "parsedAfter": "<span class=\"green\">56.25</span>%, <span class=\"green\">86.25</span>% with Infinity Edge"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "Floating damage display now sums total damage on a single target alongside the individual hits."
                         }
                     }
                 ]
-            }
+            },
+            "W": "",
+            "E": "",
+            "R": ""
         },
         "Balance": [
             "buff"
@@ -4139,38 +4174,29 @@
             "14.19",
             "14.20",
             "14.21",
-            "14.22"
+            "14.22",
+            "14.24"
         ],
         "LatestChanges": {
-            "B": {
-                "SpellName": "Base Stats",
+            "B": "",
+            "P": "",
+            "Q": "",
+            "W": "",
+            "E": {
+                "SpellName": "E - Gatling Gun",
                 "Changes": [
                     {
                         "Tag": "",
                         "Change": {
-                            "Attribute": "Attack Damage Growth: ",
-                            "Before": " 2.5",
+                            "Attribute": "Damage: ",
+                            "Before": "100/150/200/250/300 (+250% bonus AD)",
                             "Indicator": " ⇒ ",
-                            "After": "2",
-                            "parsedAfter": "<span class=\"red\">2</span>"
-                        }
-                    },
-                    {
-                        "Tag": "",
-                        "Change": {
-                            "Attribute": "Mana Growth: ",
-                            "Before": " 54",
-                            "Indicator": " ⇒ ",
-                            "After": "40",
-                            "parsedAfter": "<span class=\"red\">40</span>"
+                            "After": "80/130/180/230/280 (+240% bonus AD)",
+                            "parsedAfter": "<span class=\"red\">80</span>/<span class=\"red\">130</span>/<span class=\"red\">180</span>/<span class=\"red\">230</span>/<span class=\"red\">280</span> (+<span class=\"red\">240</span>% bonus AD)"
                         }
                     }
                 ]
             },
-            "P": "",
-            "Q": "",
-            "W": "",
-            "E": "",
             "R": ""
         },
         "Balance": [
@@ -4850,27 +4876,42 @@
             "14.14",
             "14.17",
             "14.18",
-            "14.22"
+            "14.22",
+            "14.24"
         ],
         "LatestChanges": {
-            "B": {
-                "SpellName": "Base Stats",
+            "B": "",
+            "P": "",
+            "Q": {
+                "SpellName": "Q - Flamespitter",
                 "Changes": [
                     {
                         "Tag": "",
                         "Change": {
-                            "Attribute": "Base Health: ",
-                            "Before": " 625",
+                            "Attribute": "Total Damage: ",
+                            "Before": "60/90/120/150/180 (+100% AP) (+6/7/8/9/10% of target's maximum health)",
                             "Indicator": " ⇒ ",
-                            "After": "655",
-                            "parsedAfter": "<span class=\"green\">655</span>"
+                            "After": "60/90/120/150/180 (+110% AP) (+6/7/8/9/10% of target's maximum health)",
+                            "parsedAfter": "60/90/120/150/180 (+<span class=\"green\">110</span>% AP) (+6/7/8/9/10% of target's maximum health)"
                         }
                     }
                 ]
             },
-            "P": "",
-            "Q": "",
-            "W": "",
+            "W": {
+                "SpellName": "W - Scrap Shield",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Shield: ",
+                            "Before": "25/55/85/115/145 (+25% AP) (+4% of maximum health)",
+                            "Indicator": " ⇒ ",
+                            "After": "25/55/85/115/145 (+ 30% AP) (+ 4% of maximum health)",
+                            "parsedAfter": "25/55/85/115/145 (+ <span class=\"green\">30</span> seconds% AP) (+ 4% of maximum health)"
+                        }
+                    }
+                ]
+            },
             "E": "",
             "R": ""
         },
@@ -5889,32 +5930,47 @@
             "13.24",
             "14.12",
             "14.15",
-            "14.21"
+            "14.21",
+            "14.24"
         ],
         "LatestChanges": {
-            "B": "",
-            "P": "",
-            "Q": "",
-            "W": {
-                "SpellName": "W - Rake",
+            "B": {
+                "SpellName": "Base Stats",
                 "Changes": [
                     {
                         "Tag": "",
                         "Change": {
-                            "Attribute": "Return Damage: ",
-                            "Before": " 50/80/110/140/170 (+80% Bonus AD)",
+                            "Attribute": "Base Magic Resistance: ",
+                            "Before": "39",
                             "Indicator": " ⇒ ",
-                            "After": "60/90/120/150/180 (+90% Bonus AD)",
-                            "parsedAfter": "<span class=\"green\">60</span>/<span class=\"green\">90</span>/<span class=\"green\">120</span>/<span class=\"green\">150</span>/<span class=\"green\">180</span> (+<span class=\"green\">90</span>% Bonus AD)"
+                            "After": "36",
+                            "parsedAfter": "<span class=\"red\">36</span>"
                         }
                     }
                 ]
             },
+            "P": {
+                "SpellName": "Passive - Blade's End",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Monster Damage Modifier: ",
+                            "Before": "120%",
+                            "Indicator": " ⇒ ",
+                            "After": "110%",
+                            "parsedAfter": "<span class=\"red\">110</span>%"
+                        }
+                    }
+                ]
+            },
+            "Q": "",
+            "W": "",
             "E": "",
             "R": ""
         },
         "Balance": [
-            "buff"
+            "nerf"
         ]
     },
     "Tristana": {
@@ -6179,7 +6235,7 @@
             "R": ""
         },
         "Balance": [
-            "adjusted",
+            "adjust",
             "buff"
         ]
     },
@@ -7253,7 +7309,8 @@
             "12.11",
             "13.9",
             "14.21",
-            "14.22"
+            "14.22",
+            "14.24"
         ],
         "LatestChanges": {
             "B": {
@@ -7262,85 +7319,33 @@
                     {
                         "Tag": "",
                         "Change": {
-                            "Attribute": "Magic Resist: ",
-                            "Before": " 30",
+                            "Attribute": "Base Armor: ",
+                            "Before": "26",
                             "Indicator": " ⇒ ",
-                            "After": "31",
-                            "parsedAfter": "<span class=\"green\">31</span>"
+                            "After": "25",
+                            "parsedAfter": "<span class=\"red\">25</span>"
                         }
                     },
                     {
                         "Tag": "",
                         "Change": {
-                            "Attribute": "Magic Resist Growth: ",
-                            "Before": " 1.3",
+                            "Attribute": "Armor Growth: ",
+                            "Before": "5.2",
                             "Indicator": " ⇒ ",
-                            "After": "1.55",
-                            "parsedAfter": "<span class=\"green\">1.55</span>"
+                            "After": "4.7",
+                            "parsedAfter": "<span class=\"red\">4.7</span>"
                         }
                     }
                 ]
             },
             "P": "",
-            "Q": {
-                "SpellName": "Q - Death's Hand",
-                "Changes": [
-                    {
-                        "Tag": "",
-                        "Change": {
-                            "Attribute": "Damage: ",
-                            "Before": " 60/85/110/135/160 (+45% AP)",
-                            "Indicator": " ⇒ ",
-                            "After": "60/90/120/150/180 (+45% AP)",
-                            "parsedAfter": "60/<span class=\"green\">90</span>/<span class=\"green\">120</span>/<span class=\"green\">150</span>/<span class=\"green\">180</span> (+45% AP)"
-                        }
-                    },
-                    {
-                        "Tag": "",
-                        "Change": {
-                            "Attribute": "Max Damage: ",
-                            "Before": " 120/170/220/270/320 (+90% AP)",
-                            "Indicator": " ⇒ ",
-                            "After": "120/180/240/300/360 (+90% AP)",
-                            "parsedAfter": "120/<span class=\"green\">180</span>/<span class=\"green\">240</span>/<span class=\"green\">300</span>/<span class=\"green\">360</span> (+90% AP)"
-                        }
-                    }
-                ]
-            },
+            "Q": "",
             "W": "",
-            "E": {
-                "SpellName": "E - Nevermove",
-                "Changes": [
-                    {
-                        "Tag": "",
-                        "Change": {
-                            "Attribute": "Cooldown: ",
-                            "Before": " 14/13/12/11/10",
-                            "Indicator": " ⇒ ",
-                            "After": "12/11.5/11/10.5/10",
-                            "parsedAfter": "<span class=\"green\">12</span>/<span class=\"green\">11.5</span>/<span class=\"green\">11</span>/<span class=\"green\">10.5</span>/10"
-                        }
-                    }
-                ]
-            },
-            "R": {
-                "SpellName": "R - Demonic Ascension",
-                "Changes": [
-                    {
-                        "Tag": "",
-                        "Change": {
-                            "Attribute": "Heal per Second: ",
-                            "Before": " 15/30/45 (+5% AP) (+1.25% Bonus HP)",
-                            "Indicator": " ⇒ ",
-                            "After": "15/30/45 (+5% AP) (+1.5% Bonus HP)",
-                            "parsedAfter": "15/30/45 (+5% AP) (+<span class=\"green\">1.5</span>% Bonus HP)"
-                        }
-                    }
-                ]
-            }
+            "E": "",
+            "R": ""
         },
         "Balance": [
-            "buff"
+            "nerf"
         ]
     },
     "Yone": {
@@ -7495,70 +7500,43 @@
             "13.5",
             "13.19",
             "14.3",
-            "14.9"
+            "14.9",
+            "14.24"
         ],
         "LatestChanges": {
-            "B": {
-                "SpellName": "Base Stats",
+            "B": "",
+            "P": "",
+            "Q": {
+                "SpellName": "Q - Ambush",
                 "Changes": [
                     {
                         "Tag": "",
                         "Change": {
-                            "Attribute": "Base Health: ",
-                            "Before": "682",
+                            "Attribute": "Attack Speed Duration: ",
+                            "Before": "5",
                             "Indicator": " ⇒ ",
-                            "After": "630",
-                            "parsedAfter": "<span class=\"red\">630</span>"
+                            "After": "6 seconds",
+                            "parsedAfter": "<span class=\"green\">6</span> seconds"
                         }
                     },
                     {
                         "Tag": "",
                         "Change": {
-                            "Attribute": "Health Growth: ",
-                            "Before": "100",
+                            "Attribute": "Attack Speed: ",
+                            "Before": "40/45/50/55/60%",
                             "Indicator": " ⇒ ",
-                            "After": "104",
-                            "parsedAfter": "<span class=\"green\">104</span>"
+                            "After": "45/50/55/60/65%",
+                            "parsedAfter": "<span class=\"green\">45</span>/<span class=\"green\">50</span>/<span class=\"green\">55</span>/<span class=\"green\">60</span>/<span class=\"green\">65</span>%"
                         }
                     }
                 ]
             },
-            "P": "",
-            "Q": "",
-            "W": {
-                "SpellName": "W - Venom Cask",
-                "Changes": [
-                    {
-                        "Tag": "",
-                        "Change": {
-                            "Attribute": "Slow: ",
-                            "Before": "30/35/40/45/50% (+6% AP)",
-                            "Indicator": " ⇒ ",
-                            "After": "30/35/40/45/50 (+5% AP)",
-                            "parsedAfter": "30/35/40/45/50 (+<span class=\"red\">5</span>% AP)"
-                        }
-                    }
-                ]
-            },
+            "W": "",
             "E": "",
-            "R": {
-                "SpellName": "R - Spray and Pray",
-                "Changes": [
-                    {
-                        "Tag": "",
-                        "Change": {
-                            "Attribute": "Bonus Attack Damage: ",
-                            "Before": "40/55/70",
-                            "Indicator": " ⇒ ",
-                            "After": "30/45/60",
-                            "parsedAfter": "<span class=\"red\">30</span>/<span class=\"red\">45</span>/<span class=\"red\">60</span>"
-                        }
-                    }
-                ]
-            }
+            "R": ""
         },
         "Balance": [
-            "nerf"
+            "buff"
         ]
     },
     "Samira": {
@@ -7825,7 +7803,8 @@
             "13.22",
             "14.1",
             "14.8",
-            "14.17"
+            "14.17",
+            "14.24"
         ],
         "LatestChanges": {
             "B": "",
@@ -7836,30 +7815,16 @@
                     {
                         "Tag": "",
                         "Change": {
-                            "Attribute": "Magic Damage: ",
-                            "Before": "70/95/120/145/170 (+45% AP)",
+                            "Attribute": "Damage: ",
+                            "Before": "70/95/120/145/170 (+ 40% AP)",
                             "Indicator": " ⇒ ",
-                            "After": "70/95/120/145/170 (+40% AP)",
-                            "parsedAfter": "70/95/120/145/170 (+<span class=\"red\">40</span>% AP)"
+                            "After": "65/90/115/140/165 (+40% AP)",
+                            "parsedAfter": "<span class=\"red\">65</span>/<span class=\"red\">90</span>/<span class=\"red\">115</span>/<span class=\"red\">140</span>/<span class=\"red\">165</span> (+40% AP)"
                         }
                     }
                 ]
             },
-            "W": {
-                "SpellName": "W - Distortion",
-                "Changes": [
-                    {
-                        "Tag": "",
-                        "Change": {
-                            "Attribute": "Magic Damage: ",
-                            "Before": "75/115/155/195/235 (+75% AP)",
-                            "Indicator": " ⇒ ",
-                            "After": "75/115/155/195/235 (+70% AP)",
-                            "parsedAfter": "75/115/155/195/235 (+<span class=\"red\">70</span>% AP)"
-                        }
-                    }
-                ]
-            },
+            "W": "",
             "E": "",
             "R": ""
         },
@@ -7881,7 +7846,8 @@
             "13.4",
             "13.17",
             "14.19",
-            "14.21"
+            "14.21",
+            "14.24"
         ],
         "LatestChanges": {
             "B": {
@@ -7890,11 +7856,11 @@
                     {
                         "Tag": "",
                         "Change": {
-                            "Attribute": "Armor Growth: ",
-                            "Before": " 5.2",
+                            "Attribute": "Base Health: ",
+                            "Before": "650",
                             "Indicator": " ⇒ ",
-                            "After": "4.5",
-                            "parsedAfter": "<span class=\"red\">4.5</span>"
+                            "After": "620",
+                            "parsedAfter": "<span class=\"red\">620</span>"
                         }
                     }
                 ]
@@ -7980,7 +7946,8 @@
             "13.18",
             "14.7",
             "14.18",
-            "14.23"
+            "14.23",
+            "14.24"
         ],
         "LatestChanges": {
             "B": {
@@ -7989,81 +7956,11 @@
                     {
                         "Tag": "",
                         "Change": {
-                            "Attribute": "Armor / Armor Growth: ",
-                            "Before": "36 + 4.2",
+                            "Attribute": "Base Health: ",
+                            "Before": "610",
                             "Indicator": " ⇒ ",
-                            "After": "30 + 4.3",
-                            "parsedAfter": "<span class=\"red\">30</span> + <span class=\"green\">4.3</span>"
-                        }
-                    },
-                    {
-                        "Tag": "",
-                        "Change": {
-                            "Attribute": "MR / MR Growth: ",
-                            "Before": "30 + 2.05",
-                            "Indicator": " ⇒ ",
-                            "After": "28 + 1.8",
-                            "parsedAfter": "<span class=\"red\">28</span> + <span class=\"red\">1.8</span>"
-                        }
-                    },
-                    {
-                        "Tag": "",
-                        "Change": {
-                            "Attribute": "Mana / Mana Growth: ",
-                            "Before": "350 + 45",
-                            "Indicator": " ⇒ ",
-                            "After": "320 + 40",
-                            "parsedAfter": "<span class=\"red\">320</span> + <span class=\"red\">40</span>"
-                        }
-                    },
-                    {
-                        "Tag": "",
-                        "Change": {
-                            "Attribute": "Mana Regeneration and Growth: ",
-                            "Before": "6 + 0.35",
-                            "Indicator": " ⇒ ",
-                            "After": "7 + 0.7",
-                            "parsedAfter": "<span class=\"green\">7</span> + <span class=\"green\">0.7</span>"
-                        }
-                    },
-                    {
-                        "Tag": "",
-                        "Change": {
-                            "Attribute": "Movement Speed: ",
-                            "Before": "330",
-                            "Indicator": " ⇒ ",
-                            "After": "315",
-                            "parsedAfter": "<span class=\"red\">315</span>"
-                        }
-                    },
-                    {
-                        "Tag": "",
-                        "Change": {
-                            "Attribute": "Attack Speed Growth: ",
-                            "Before": "1.5%",
-                            "Indicator": " ⇒ ",
-                            "After": "2%",
-                            "parsedAfter": "<span class=\"green\">2</span>%"
-                        }
-                    },
-                    {
-                        "Tag": "",
-                        "Change": {
-                            "Attribute": "Attack Windup: ",
-                            "Before": "0.336-0.312 (based on level)",
-                            "Indicator": " ⇒ ",
-                            "After": "0.3",
-                            "parsedAfter": "<span class=\"red\">0.3</span>"
-                        }
-                    },
-                    {
-                        "Tag": "",
-                        "Change": {
-                            "Attribute": "Attack Speed Animation Scaling: ",
-                            "Before": "40%",
-                            "Indicator": " ⇒ ",
-                            "After": "100% (noteAttack Speed will animate Rell's attacks faster.)",
-                            "parsedAfter": "<span class=\"green\">100</span>% (noteAttack Speed will animate Rell's attacks faster.)"
+                            "After": "640",
+                            "parsedAfter": "<span class=\"green\">640</span>"
                         }
                     }
                 ]
@@ -8074,235 +7971,46 @@
                     {
                         "Tag": "",
                         "Change": {
-                            "Attribute": "[NEW]:: ",
-                            "Before": "",
-                            "Indicator": "",
-                            "After": " Now deals 5% total Armor/MR magic damage on-hit"
+                            "Attribute": "Resistances Stolen: ",
+                            "Before": "2%",
+                            "Indicator": " ⇒ ",
+                            "After": "3%",
+                            "parsedAfter": "<span class=\"green\">3</span>%"
                         }
                     },
                     {
                         "Tag": "",
                         "Change": {
-                            "Attribute": "Minimum Resists Stolen: ",
-                            "Before": "0.8-2",
+                            "Attribute": "Minimum Steal: ",
+                            "Before": "1-2",
                             "Indicator": " ⇒ ",
-                            "After": "1-2",
-                            "parsedAfter": "<span class=\"green\">1</span>-2"
+                            "After": "1.5 - 3 (linear scaling)",
+                            "parsedAfter": "<span class=\"green\">1.5</span> - <span class=\"green\">3</span> (linear scaling)"
                         }
                     }
                 ]
             },
-            "Q": {
-                "SpellName": "Q - Shattering Strike",
-                "Changes": [
-                    {
-                        "Tag": "",
-                        "Change": {
-                            "Attribute": "Stun Duration: ",
-                            "Before": "0.75",
-                            "Indicator": " ⇒ ",
-                            "After": "0.65 seconds",
-                            "parsedAfter": "<span class=\"red\">0.65</span> seconds"
-                        }
-                    }
-                ]
-            },
+            "Q": "",
             "W": {
                 "SpellName": "W - Ferromancy: Crash Down",
                 "Changes": [
                     {
                         "Tag": "",
                         "Change": {
-                            "Attribute": "[NEW]:: ",
-                            "Before": "",
-                            "Indicator": "",
-                            "After": " Now stuns enemies for 0.8 seconds"
-                        }
-                    },
-                    {
-                        "Tag": "",
-                        "Change": {
-                            "Attribute": "[REMOVED]:: ",
-                            "Before": "",
-                            "Indicator": "",
-                            "After": " Dismounted 10% slow has been removed"
-                        }
-                    },
-                    {
-                        "Tag": "",
-                        "Change": {
-                            "Attribute": "Cooldown: ",
-                            "Before": "11",
+                            "Attribute": "Shield: ",
+                            "Before": "15/40/65/90/115 (+12% of maximum health)",
                             "Indicator": " ⇒ ",
-                            "After": "10 seconds",
-                            "parsedAfter": "<span class=\"green\">10</span> seconds"
-                        }
-                    },
-                    {
-                        "Tag": "",
-                        "Change": {
-                            "Attribute": "Knock-Up Duration: ",
-                            "Before": "1",
-                            "Indicator": " ⇒ ",
-                            "After": "0.4 seconds",
-                            "parsedAfter": "<span class=\"red\">0.4</span> seconds"
-                        }
-                    },
-                    {
-                        "Tag": "",
-                        "Change": {
-                            "Attribute": "Dismounted Armor / MR: ",
-                            "Before": "12%",
-                            "Indicator": " ⇒ ",
-                            "After": "15%",
-                            "parsedAfter": "<span class=\"green\">15</span>%"
-                        }
-                    },
-                    {
-                        "Tag": "",
-                        "Change": {
-                            "Attribute": "Dismounted Attack Speed: ",
-                            "Before": "30%",
-                            "Indicator": " ⇒ ",
-                            "After": "20%",
-                            "parsedAfter": "<span class=\"red\">20</span>%"
+                            "After": "25/50/75/100/125 (+13% of maximum health)",
+                            "parsedAfter": "<span class=\"green\">25</span>/<span class=\"green\">50</span>/<span class=\"green\">75</span>/<span class=\"green\">100</span>/<span class=\"green\">125</span> (+<span class=\"green\">13</span>% of maximum health)"
                         }
                     }
                 ]
             },
-            "E": {
-                "SpellName": "E - Full Tilt",
-                "Changes": [
-                    {
-                        "Tag": "",
-                        "Change": {
-                            "Attribute": "[REMOVED]:: ",
-                            "Before": "",
-                            "Indicator": "",
-                            "After": " Movement Speed no longer ramps up from 75% effectiveness over 2 seconds"
-                        }
-                    },
-                    {
-                        "Tag": "",
-                        "Change": {
-                            "Attribute": "Cooldown: ",
-                            "Before": "15",
-                            "Indicator": " ⇒ ",
-                            "After": "14/13/12/11/10 seconds (based on ability rank)",
-                            "parsedAfter": "<span class=\"green\">14</span>/<span class=\"green\">13</span>/<span class=\"green\">12</span>/<span class=\"green\">11</span>/<span class=\"green\">10</span> seconds (based on ability rank)"
-                        }
-                    },
-                    {
-                        "Tag": "",
-                        "Change": {
-                            "Attribute": "Damage: ",
-                            "Before": "25/35/45/55/65 (+50% AP) (+3% of target's maximum health)",
-                            "Indicator": " ⇒ ",
-                            "After": "5/5.5/6/6.5/7% of the target's maximum health (+3% per 100 AP)",
-                            "parsedAfter": "<span class=\"gold\">5</span>/<span class=\"gold\">5.5</span>/<span class=\"gold\">6</span>/<span class=\"gold\">6.5</span>/<span class=\"gold\">7</span>% of the target's maximum health (+<span class=\"gold\">3</span>% per 100 AP)"
-                        }
-                    },
-                    {
-                        "Tag": "",
-                        "Change": {
-                            "Attribute": "Damage Cap: ",
-                            "Before": "150",
-                            "Indicator": " ⇒ ",
-                            "After": "150-300 (based on levels 1-18)",
-                            "parsedAfter": "150-<span class=\"green\">300</span> (based on levels 1-18)"
-                        }
-                    },
-                    {
-                        "Tag": "",
-                        "Change": {
-                            "Attribute": "Initial Movement Speed Towards Enemies: ",
-                            "Before": "18/19.5/21/22.5/24%",
-                            "Indicator": " ⇒ ",
-                            "After": "25%",
-                            "parsedAfter": "<span class=\"green\">25</span>%"
-                        }
-                    },
-                    {
-                        "Tag": "",
-                        "Change": {
-                            "Attribute": "Initial Movement Speed Running Away: ",
-                            "Before": "9/9.75/10.5/11.25/12%",
-                            "Indicator": " ⇒ ",
-                            "After": "10%",
-                            "parsedAfter": "<span class=\"green\">10</span>%"
-                        }
-                    },
-                    {
-                        "Tag": "",
-                        "Change": {
-                            "Attribute": "Maximum Movement Speed Toward Enemies: ",
-                            "Before": "24/26/28/30/32%",
-                            "Indicator": " ⇒ ",
-                            "After": "25%",
-                            "parsedAfter": "<span class=\"red\">25</span>%"
-                        }
-                    },
-                    {
-                        "Tag": "",
-                        "Change": {
-                            "Attribute": "Maximum Movement Speed Running Away: ",
-                            "Before": "12/13/14/15/16%",
-                            "Indicator": " ⇒ ",
-                            "After": "10%",
-                            "parsedAfter": "<span class=\"red\">10</span>%"
-                        }
-                    }
-                ]
-            },
-            "R": "",
-            "W -": {
-                "SpellName": "W - Ferromancy: Mount Up",
-                "Changes": [
-                    {
-                        "Tag": "",
-                        "Change": {
-                            "Attribute": "Cooldown: ",
-                            "Before": "11",
-                            "Indicator": " ⇒ ",
-                            "After": "10 seconds",
-                            "parsedAfter": "<span class=\"green\">10</span> seconds"
-                        }
-                    },
-                    {
-                        "Tag": "",
-                        "Change": {
-                            "Attribute": "Knock-Up Duration: ",
-                            "Before": "",
-                            "Indicator": "",
-                            "After": "0.4 seconds (noteunchanged)"
-                        }
-                    },
-                    {
-                        "Tag": "",
-                        "Change": {
-                            "Attribute": "Stun Duration: ",
-                            "Before": "1",
-                            "Indicator": " ⇒ ",
-                            "After": "0.6 seconds",
-                            "parsedAfter": "<span class=\"red\">0.6</span> seconds"
-                        }
-                    },
-                    {
-                        "Tag": "",
-                        "Change": {
-                            "Attribute": "Mounted Movement Speed: ",
-                            "Before": "335-380 out of combat, 332.5-355 in combat (levels 1-13)",
-                            "Indicator": " ⇒ ",
-                            "After": "330/335/340/345/350/355 (based on ability rank)",
-                            "parsedAfter": "<span class=\"red\">330</span>/<span class=\"red\">335</span>/<span class=\"green\">340</span>/<span class=\"green\">345</span>/<span class=\"green\">350</span>/<span class=\"green\">355</span> (based on ability rank)"
-                        }
-                    }
-                ]
-            }
+            "E": "",
+            "R": ""
         },
         "Balance": [
-            "adjust",
-            "danger"
+            "buff"
         ]
     },
     "Fizz": {
@@ -8514,7 +8222,8 @@
             "13.6",
             "13.21",
             "13.22",
-            "14.20"
+            "14.20",
+            "14.24"
         ],
         "LatestChanges": {
             "B": "",
@@ -8528,10 +8237,10 @@
                         "Tag": "",
                         "Change": {
                             "Attribute": "Bonus Attack Damage: ",
-                            "Before": " 2/2.35/2.7/3.05/3.4% max health",
+                            "Before": "2/2.25/2.5/2.75/3% maximum health",
                             "Indicator": " ⇒ ",
-                            "After": "2/2.25/2.5/2.75/3% max health",
-                            "parsedAfter": "2/<span class=\"red\">2.25</span>/<span class=\"red\">2.5</span>/<span class=\"red\">2.75</span>/<span class=\"red\">3</span>% max health"
+                            "After": "2/2.2/2.4/2.6/2.8% maximum health",
+                            "parsedAfter": "2/<span class=\"red\">2.2</span>/<span class=\"red\">2.4</span>/<span class=\"red\">2.6</span>/<span class=\"red\">2.8</span>% maximum health"
                         }
                     }
                 ]
@@ -8972,7 +8681,8 @@
             "12.16",
             "13.8",
             "14.20",
-            "14.22"
+            "14.22",
+            "14.24"
         ],
         "LatestChanges": {
             "B": {
@@ -8981,33 +8691,47 @@
                     {
                         "Tag": "",
                         "Change": {
-                            "Attribute": "Attack Damage: ",
-                            "Before": " 64",
+                            "Attribute": "Base Armor: ",
+                            "Before": "38",
                             "Indicator": " ⇒ ",
-                            "After": "60",
-                            "parsedAfter": "<span class=\"red\">60</span>"
+                            "After": "35",
+                            "parsedAfter": "<span class=\"red\">35</span>"
                         }
                     },
                     {
                         "Tag": "",
                         "Change": {
-                            "Attribute": "Level 1 Attack Speed: ",
-                            "Before": " .625",
+                            "Attribute": "Armor Growth: ",
+                            "Before": "4.7",
                             "Indicator": " ⇒ ",
-                            "After": ".658",
-                            "parsedAfter": "<span class=\"green\">.658</span>"
+                            "After": "5",
+                            "parsedAfter": "<span class=\"green\">5</span>"
                         }
                     }
                 ]
             },
             "P": "",
-            "Q": "",
+            "Q": {
+                "SpellName": "Q - Hammer Shock",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Damage: ",
+                            "Before": "40/60/80/100/120 (+90% bonus AD) (+9% of target's maximum health)",
+                            "Indicator": " ⇒ ",
+                            "After": "30/55/80/105/130 (+100% bonus AD) (+9% of target's maximum health)",
+                            "parsedAfter": "<span class=\"red\">30</span>/<span class=\"red\">55</span>/80/<span class=\"green\">105</span>/<span class=\"green\">130</span> (+<span class=\"green\">100</span>% bonus AD) (+9% of target's maximum health)"
+                        }
+                    }
+                ]
+            },
             "W": "",
             "E": "",
             "R": ""
         },
         "Balance": [
-            "nerf"
+            "adjust"
         ]
     },
     "Zeri": {
@@ -9830,6 +9554,7 @@
     "Aurora": {
         "ChampionName": "Aurora",
         "ChangePatches": [
+            "14.14",
             "14.15",
             "14.17",
             "14.18",
@@ -9966,32 +9691,59 @@
     "Ambessa": {
         "ChampionName": "Ambessa",
         "ChangePatches": [
-            "14.23"
+            "14.22",
+            "14.23",
+            "14.24"
         ],
         "LatestChanges": {
             "B": "",
             "P": "",
-            "Q": {
-                "SpellName": "Q - Cunning Sweep / Sundering Slam",
+            "Q": "",
+            "W": {
+                "SpellName": "W - Repudiation",
                 "Changes": [
                     {
                         "Tag": "",
                         "Change": {
-                            "Attribute": "Sundering Slam Cast Window: ",
-                            "Before": "3.5",
+                            "Attribute": "Shield Duration: ",
+                            "Before": "2",
                             "Indicator": " ⇒ ",
-                            "After": "4 seconds",
-                            "parsedAfter": "<span class=\"red\">4</span> seconds"
+                            "After": "1.5 seconds",
+                            "parsedAfter": "<span class=\"red\">1.5</span> seconds"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Shield Value: ",
+                            "Before": "85-350 (based on level) (+175% bonus AD)",
+                            "Indicator": " ⇒ ",
+                            "After": "50-320 (based on level) (+150% bonus AD)",
+                            "parsedAfter": "<span class=\"red\">50</span>-<span class=\"red\">320</span> (based on level) (+<span class=\"red\">150</span>% bonus AD)"
                         }
                     }
                 ]
             },
-            "W": "",
-            "E": "",
+            "E": {
+                "SpellName": "E - Lacerate",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Damage: ",
+                            "Before": "40/65/90/115/140 (+40/50/60/70/80% bonus AD)",
+                            "Indicator": " ⇒ ",
+                            "After": "40/65/90/115/140 (+40/45/50/55/60% bonus AD)",
+                            "parsedAfter": "40/65/90/115/140 (+40/<span class=\"red\">45</span>/<span class=\"red\">50</span>/<span class=\"red\">55</span>/<span class=\"red\">60</span>% bonus AD)"
+
+                        }
+                    }
+                ]
+            },
             "R": ""
         },
         "Balance": [
-            "adjust"
+            "nerf"
         ]
     }
 }

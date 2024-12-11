@@ -56,7 +56,7 @@
                 "parseInfo": [
                     {
                         "text": {
-                            "text": "60/90/120/150/180/210 {{0}} magic damage",
+                            "text": "60/95/130/165/200/235 {{0}} magic damage",
                             "scaleHolders": [
                                 {
                                     "scale": "(+20% AP)",
@@ -121,7 +121,7 @@
                 ]
             },
             "cooldown": "6.5",
-            "cost": "50/60/70/80/90/100 Mana",
+            "cost": "50/55/60/65/70/75 Mana",
             "name": "Prowling Projectile"
         },
         "W": {
@@ -1711,6 +1711,48 @@
                     }
                 ]
             }
+        },
+        "14.24": {
+            "B": "",
+            "P": "",
+            "Q": {
+                "SpellName": "Q - Prowling Projectile",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Mana Cost: ",
+                            "Before": "50/60/70/80/90/100",
+                            "Indicator": " ⇒ ",
+                            "After": "50/55/60/65/70/75 mana",
+                            "parsedAfter": "50/<span class=\"green\">55</span>/<span class=\"green\">60</span>/<span class=\"green\">65</span>/<span class=\"green\">70</span>/<span class=\"green\">75</span> mana"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Minimum Damage: ",
+                            "Before": "60/90/120/150/180/210 (+20% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "60/95/130/165/200/235 (+20% AP)",
+                            "parsedAfter": "60/<span class=\"green\">95</span>/<span class=\"green\">130</span>/<span class=\"green\">165</span>/<span class=\"green\">200</span>/<span class=\"green\">235</span> (+20% AP)"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Maximum Damage: ",
+                            "Before": "80/135/190/245/300/355 (+30% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "80/140/200/260/320/380 (+30% AP)",
+                            "parsedAfter": "80/<span class=\"green\">140</span>/<span class=\"green\">200</span>/<span class=\"green\">260</span>/<span class=\"green\">320</span>/<span class=\"green\">380</span> (+30% AP)"
+                        }
+                    }
+                ]
+            },
+            "W": "",
+            "E": "",
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -1732,11 +1774,15 @@
         "13.5",
         "13.6",
         "13.12",
-        "14.12"
+        "14.12",
+        "14.24"
     ],
     "ChampionName": "Yuumi",
     "Balance": {
         "14.12": [
+            "buff"
+        ],
+        "14.24": [
             "buff"
         ]
     }

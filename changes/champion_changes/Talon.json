@@ -13,7 +13,7 @@
             "increment": 4.7
         },
         "spellBlock": {
-            "base": 39,
+            "base": 36,
             "increment": 2.05
         },
         "hpRegen": {
@@ -65,7 +65,7 @@
                     },
                     {
                         "text": {
-                            "text": "120% damage",
+                            "text": "110% damage",
                             "scaleHolders": []
                         },
                         "type": ""
@@ -694,6 +694,42 @@
             },
             "E": "",
             "R": ""
+        },
+        "14.24": {
+            "B": {
+                "SpellName": "Base Stats",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Base Magic Resistance: ",
+                            "Before": "39",
+                            "Indicator": " ⇒ ",
+                            "After": "36",
+                            "parsedAfter": "<span class=\"red\">36</span>"
+                        }
+                    }
+                ]
+            },
+            "P": {
+                "SpellName": "Passive - Blade's End",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Monster Damage Modifier: ",
+                            "Before": "120%",
+                            "Indicator": " ⇒ ",
+                            "After": "110%",
+                            "parsedAfter": "<span class=\"red\">110</span>%"
+                        }
+                    }
+                ]
+            },
+            "Q": "",
+            "W": "",
+            "E": "",
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -710,7 +746,8 @@
         "13.24",
         "14.12",
         "14.15",
-        "14.21"
+        "14.21",
+        "14.24"
     ],
     "ChampionName": "Talon",
     "Balance": {
@@ -722,6 +759,9 @@
         ],
         "14.21": [
             "buff"
+        ],
+        "14.24": [
+            "nerf"
         ]
     }
 }

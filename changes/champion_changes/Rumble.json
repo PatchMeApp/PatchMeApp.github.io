@@ -96,7 +96,7 @@
                                     "scaleId": "health"
                                 },
                                 {
-                                    "scale": "(+100% AP)",
+                                    "scale": "(+110% AP)",
                                     "scaleId": "AP"
                                 }
                             ]
@@ -145,7 +145,7 @@
                                     "scaleId": "health"
                                 },
                                 {
-                                    "scale": "(+25% AP)",
+                                    "scale": "(+30% AP)",
                                     "scaleId": "AP"
                                 }
                             ]
@@ -1111,6 +1111,42 @@
             "W": "",
             "E": "",
             "R": ""
+        },
+        "14.24": {
+            "B": "",
+            "P": "",
+            "Q": {
+                "SpellName": "Q - Flamespitter",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Total Damage: ",
+                            "Before": "60/90/120/150/180 (+100% AP) (+6/7/8/9/10% of target's maximum health)",
+                            "Indicator": " ⇒ ",
+                            "After": "60/90/120/150/180 (+110% AP) (+6/7/8/9/10% of target's maximum health)",
+                            "parsedAfter": "60/90/120/150/180 (+<span class=\"green\">110</span>% AP) (+6/7/8/9/10% of target's maximum health)"
+                        }
+                    }
+                ]
+            },
+            "W": {
+                "SpellName": "W - Scrap Shield",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Shield: ",
+                            "Before": "25/55/85/115/145 (+25% AP) (+4% of maximum health)",
+                            "Indicator": " ⇒ ",
+                            "After": "25/55/85/115/145 (+ 30% AP) (+ 4% of maximum health)",
+                            "parsedAfter": "25/55/85/115/145 (+ <span class=\"green\">30</span> seconds% AP) (+ 4% of maximum health)"
+                        }
+                    }
+                ]
+            },
+            "E": "",
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -1131,7 +1167,8 @@
         "14.14",
         "14.17",
         "14.18",
-        "14.22"
+        "14.22",
+        "14.24"
     ],
     "ChampionName": "Rumble",
     "Balance": {
@@ -1149,6 +1186,9 @@
             "nerf"
         ],
         "14.22": [
+            "buff"
+        ],
+        "14.24": [
             "buff"
         ]
     }

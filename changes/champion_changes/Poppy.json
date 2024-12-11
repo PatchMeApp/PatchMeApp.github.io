@@ -9,8 +9,8 @@
             "increment": 40
         },
         "armor": {
-            "base": 38,
-            "increment": 4.7
+            "base": 35,
+            "increment": 5
         },
         "spellBlock": {
             "base": 32,
@@ -81,10 +81,10 @@
                 "parseInfo": [
                     {
                         "text": {
-                            "text": "40/60/80/100/120 {{0}}",
+                            "text": "30/55/80/105/130 {{0}}",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+90% Bonus AD)",
+                                    "scale": "(+100% Bonus AD)",
                                     "scaleId": "AD"
                                 }
                             ]
@@ -594,6 +594,52 @@
             "W": "",
             "E": "",
             "R": ""
+        },
+        "14.24": {
+            "B": {
+                "SpellName": "Base Stats",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Base Armor: ",
+                            "Before": "38",
+                            "Indicator": " ⇒ ",
+                            "After": "35",
+                            "parsedAfter": "<span class=\"red\">35</span>"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Armor Growth: ",
+                            "Before": "4.7",
+                            "Indicator": " ⇒ ",
+                            "After": "5",
+                            "parsedAfter": "<span class=\"green\">5</span>"
+                        }
+                    }
+                ]
+            },
+            "P": "",
+            "Q": {
+                "SpellName": "Q - Hammer Shock",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Damage: ",
+                            "Before": "40/60/80/100/120 (+90% bonus AD) (+9% of target's maximum health)",
+                            "Indicator": " ⇒ ",
+                            "After": "30/55/80/105/130 (+100% bonus AD) (+9% of target's maximum health)",
+                            "parsedAfter": "<span class=\"red\">30</span>/<span class=\"red\">55</span>/80/<span class=\"green\">105</span>/<span class=\"green\">130</span> (+<span class=\"green\">100</span>% bonus AD) (+9% of target's maximum health)"
+                        }
+                    }
+                ]
+            },
+            "W": "",
+            "E": "",
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -603,7 +649,8 @@
         "12.16",
         "13.8",
         "14.20",
-        "14.22"
+        "14.22",
+        "14.24"
     ],
     "ChampionName": "Poppy",
     "Balance": {
@@ -612,6 +659,9 @@
         ],
         "14.22": [
             "nerf"
+        ],
+        "14.24": [
+            "adjust"
         ]
     }
 }

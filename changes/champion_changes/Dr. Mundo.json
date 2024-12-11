@@ -185,7 +185,7 @@
                     },
                     {
                         "text": {
-                            "text": "2/2.25/2.5/2.75/3% of maximum health Attack Damage",
+                            "text": "2/2.2/2.4/2.6/2.8% of maximum health Attack Damage",
                             "scaleHolders": []
                         },
                         "type": "physicalDamage"
@@ -1151,6 +1151,28 @@
                 ]
             },
             "R": ""
+        },
+        "14.24": {
+            "B": "",
+            "P": "",
+            "Q": "",
+            "W": "",
+            "E": {
+                "SpellName": "E - Blunt Force Trauma",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Bonus Attack Damage: ",
+                            "Before": "2/2.25/2.5/2.75/3% maximum health",
+                            "Indicator": " ⇒ ",
+                            "After": "2/2.2/2.4/2.6/2.8% maximum health",
+                            "parsedAfter": "2/<span class=\"red\">2.2</span>/<span class=\"red\">2.4</span>/<span class=\"red\">2.6</span>/<span class=\"red\">2.8</span>% maximum health"
+                        }
+                    }
+                ]
+            },
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -1168,11 +1190,15 @@
         "13.6",
         "13.21",
         "13.22",
-        "14.20"
+        "14.20",
+        "14.24"
     ],
     "ChampionName": "Dr. Mundo",
     "Balance": {
         "14.20": [
+            "nerf"
+        ],
+        "14.24": [
             "nerf"
         ]
     }

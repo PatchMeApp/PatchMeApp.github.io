@@ -1,7 +1,7 @@
 {
     "stats": {
         "hp": {
-            "base": 610,
+            "base": 640,
             "increment": 104
         },
         "mp": {
@@ -45,7 +45,7 @@
         "P": {
             "cooldown": "",
             "_rawTooltip": {
-                "fullTooltip": "Rell's attacks and abilities steal 2% Armor and 2% Magic Resist for 5 seconds. Max (10%).<br>Basic attacks deal [[0]] on-hit.",
+                "fullTooltip": "Rell's attacks and abilities steal 3% Armor and 3% Magic Resist for 5 seconds. Max (10%).<br>Basic attacks deal [[0]] on-hit.",
                 "parseInfo": [
                     {
                         "text": {
@@ -1949,6 +1949,66 @@
                     }
                 ]
             }
+        },
+        "14.24": {
+            "B": {
+                "SpellName": "Base Stats",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Base Health: ",
+                            "Before": "610",
+                            "Indicator": " ⇒ ",
+                            "After": "640",
+                            "parsedAfter": "<span class=\"green\">640</span>"
+                        }
+                    }
+                ]
+            },
+            "P": {
+                "SpellName": "Passive - Break The Mold",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Resistances Stolen: ",
+                            "Before": "2%",
+                            "Indicator": " ⇒ ",
+                            "After": "3%",
+                            "parsedAfter": "<span class=\"green\">3</span>%"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Minimum Steal: ",
+                            "Before": "1-2",
+                            "Indicator": " ⇒ ",
+                            "After": "1.5 - 3 (linear scaling)",
+                            "parsedAfter": "<span class=\"green\">1.5</span> - <span class=\"green\">3</span> (linear scaling)"
+                        }
+                    }
+                ]
+            },
+            "Q": "",
+            "W": {
+                "SpellName": "W - Ferromancy: Crash Down",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Shield: ",
+                            "Before": "15/40/65/90/115 (+12% of maximum health)",
+                            "Indicator": " ⇒ ",
+                            "After": "25/50/75/100/125 (+13% of maximum health)",
+                            "parsedAfter": "<span class=\"green\">25</span>/<span class=\"green\">50</span>/<span class=\"green\">75</span>/<span class=\"green\">100</span>/<span class=\"green\">125</span> (+<span class=\"green\">13</span>% of maximum health)"
+                        }
+                    }
+                ]
+            },
+            "E": "",
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -1967,7 +2027,8 @@
         "13.18",
         "14.7",
         "14.18",
-        "14.23"
+        "14.23",
+        "14.24"
     ],
     "ChampionName": "Rell",
     "Balance": {
@@ -1980,6 +2041,9 @@
         "14.23": [
             "adjust",
             "danger"
+        ],
+        "14.24": [
+            "buff"
         ]
     }
 }

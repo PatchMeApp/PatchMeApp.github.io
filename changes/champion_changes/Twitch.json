@@ -85,7 +85,7 @@
         },
         "Q": {
             "_rawTooltip": {
-                "fullTooltip": "Twitch [[0]] and gains [[1]] for 10/11/12/13/14 seconds. The Move Speed increases to 30% while near an enemy champion that can't see him. After exiting [[2]], Twitch gains [[3]] for 5 seconds.<br /><br />When an enemy champion dies while afflicted with [[4]], this Ability's Cooldown is refreshed.",
+                "fullTooltip": "Twitch [[0]] and gains [[1]] for 10/11/12/13/14 seconds. The Move Speed increases to 30% while near an enemy champion that can't see him. After exiting [[2]], Twitch gains [[3]] for 6 seconds.<br /><br />When an enemy champion dies while afflicted with [[4]], this Ability's Cooldown is refreshed.",
                 "parseInfo": [
                     {
                         "text": {
@@ -110,7 +110,7 @@
                     },
                     {
                         "text": {
-                            "text": "40/45/50/55/60% Attack Speed",
+                            "text": "45/50/55/60/65% Attack Speed",
                             "scaleHolders": []
                         },
                         "type": "attackSpeed"
@@ -714,6 +714,38 @@
             "W": "",
             "E": "",
             "R": ""
+        },
+        "14.24": {
+            "B": "",
+            "P": "",
+            "Q": {
+                "SpellName": "Q - Ambush",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Attack Speed Duration: ",
+                            "Before": "5",
+                            "Indicator": " ⇒ ",
+                            "After": "6 seconds",
+                            "parsedAfter": "<span class=\"green\">6</span> seconds"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Attack Speed: ",
+                            "Before": "40/45/50/55/60%",
+                            "Indicator": " ⇒ ",
+                            "After": "45/50/55/60/65%",
+                            "parsedAfter": "<span class=\"green\">45</span>/<span class=\"green\">50</span>/<span class=\"green\">55</span>/<span class=\"green\">60</span>/<span class=\"green\">65</span>%"
+                        }
+                    }
+                ]
+            },
+            "W": "",
+            "E": "",
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -729,12 +761,16 @@
         "13.5",
         "13.19",
         "14.3",
-        "14.9"
+        "14.9",
+        "14.24"
     ],
     "ChampionName": "Twitch",
     "Balance": {
         "14.9": [
             "nerf"
+        ],
+        "14.24": [
+            "buff"
         ]
     }
 }

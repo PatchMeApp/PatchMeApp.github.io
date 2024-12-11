@@ -95,10 +95,10 @@
                     },
                     {
                         "text": {
-                            "text": "130/185/240/295/350 {{0}} physical damage",
+                            "text": "85/120/155/190/225 {{0}}  physical damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+40/70/100/130/160% Bonus AD)",
+                                    "scale": "(+40/65/90/115/140% Bonus AD)",
                                     "scaleId": "AD"
                                 }
                             ]
@@ -758,6 +758,38 @@
             "W": "",
             "E": "",
             "R": ""
+        },
+        "14.24": {
+            "B": "",
+            "P": "",
+            "Q": {
+                "SpellName": "Q - End of the Line",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Initial Damage: ",
+                            "Before": "45 / 65 / 85 / 105 / 125 (+ 80% bonus AD)",
+                            "Indicator": " ⇒ ",
+                            "After": "Unchanged",
+                            "parsedAfter": "45/65/85/105/125 (+ 80% bonus AD)"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Secondary Damage: ",
+                            "Before": "85/120/155/190/225 (+40/70/100/130/160% bonus AD)",
+                            "Indicator": " ⇒ ",
+                            "After": "85/120/155/190/225 (+40/65/90/115/140% bonus AD)",
+                            "parsedAfter": "85/120/155/190/225 (+40/<span class=\"red\">65</span>/<span class=\"red\">90</span>/<span class=\"red\">115</span>/<span class=\"red\">140</span>% bonus AD)"
+                        }
+                    }
+                ]
+            },
+            "W": "",
+            "E": "",
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -777,7 +809,8 @@
         "13.22",
         "14.8",
         "14.13",
-        "14.17"
+        "14.17",
+        "14.24"
     ],
     "ChampionName": "Graves",
     "Balance": {
@@ -790,6 +823,9 @@
         ],
         "14.17": [
             "buff"
+        ],
+        "14.24": [
+            "nerf"
         ]
     }
 }

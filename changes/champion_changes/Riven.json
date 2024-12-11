@@ -160,7 +160,7 @@
                 "parseInfo": [
                     {
                         "text": {
-                            "text": "80/105/130/155/180 {{0}} Shield",
+                            "text": "70/95/120/145/170 {{0}} Shield",
                             "scaleHolders": [
                                 {
                                     "scale": "(+110% Bonus AD)",
@@ -622,6 +622,28 @@
             "W": "",
             "E": "",
             "R": ""
+        },
+        "14.24": {
+            "B": "",
+            "P": "",
+            "Q": "",
+            "W": "",
+            "E": {
+                "SpellName": "E - Valor",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Shield: ",
+                            "Before": "80/105/130/155/180 (+110% bonus AD)",
+                            "Indicator": " ⇒ ",
+                            "After": "70/95/120/145/170 (+ 110% bonus AD)",
+                            "parsedAfter": "<span class=\"red\">70</span>/<span class=\"red\">95</span>/<span class=\"red\">120</span>/<span class=\"red\">145</span>/<span class=\"red\">170</span> (+ 110% bonus AD)"
+                        }
+                    }
+                ]
+            },
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -634,7 +656,8 @@
         "12.10",
         "13.4",
         "13.23",
-        "14.20"
+        "14.20",
+        "14.24"
     ],
     "ChampionName": "Riven",
     "Balance": {
@@ -643,6 +666,9 @@
         ],
         "14.20": [
             "buff"
+        ],
+        "14.24": [
+            "nerf"
         ]
     }
 }

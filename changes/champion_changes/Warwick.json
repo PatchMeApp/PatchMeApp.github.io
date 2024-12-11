@@ -33,7 +33,7 @@
             "increment": 0
         },
         "attackDamage": {
-            "base": 65,
+            "base": 63,
             "increment": 3
         },
         "attackRange": {
@@ -546,6 +546,74 @@
             },
             "E": "",
             "R": ""
+        },
+        "14.24": {
+            "B": {
+                "SpellName": "Base Stats",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Base Attack Damage: ",
+                            "Before": "65",
+                            "Indicator": " ⇒ ",
+                            "After": "63",
+                            "parsedAfter": "<span class=\"red\">63</span>"
+                        }
+                    }
+                ]
+            },
+            "P": "",
+            "Q": {
+                "SpellName": "Q - Jaws of the Beast",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Cast Range: ",
+                            "Before": "350",
+                            "Indicator": " ⇒ ",
+                            "After": "365",
+                            "parsedAfter": "<span class=\"green\">365</span>"
+                        }
+                    }
+                ]
+            },
+            "W": {
+                "SpellName": "W - Blood Hunt",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Attack Speed Buff Duration: ",
+                            "Before": "0.75",
+                            "Indicator": " ⇒ ",
+                            "After": "2 seconds",
+                            "parsedAfter": "<span class=\"green\">2</span> seconds"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "Attack speed buff is now granted on the attack or spell that puts the target below the health threshold"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "Warwick's attack speed is now granted on the first attack on a new target that is below the health threshold"
+                        }
+                    }
+                ]
+            },
+            "E": "",
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -554,7 +622,8 @@
         "10.25",
         "12.10",
         "13.24",
-        "14.22"
+        "14.22",
+        "14.24"
     ],
     "ChampionName": "Warwick",
     "Balance": {
@@ -563,6 +632,9 @@
         ],
         "14.22": [
             "adjusted"
+        ],
+        "14.24": [
+            "adjust"
         ]
     }
 }
