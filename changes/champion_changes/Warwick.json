@@ -131,8 +131,8 @@
                     }
                 ]
             },
-            "cooldown": "6",
-            "cost": "50/60/70/80/90 Mana",
+            "cooldown": "8/7.5/7/6.5/6",
+            "cost": "70/75/80/85/90 Mana",
             "name": "Jaws of the Beast"
         },
         "W": {
@@ -576,6 +576,26 @@
                             "After": "365",
                             "parsedAfter": "<span class=\"green\">365</span>"
                         }
+                    },
+                    {
+                        "Tag": "MID-PATCH",
+                        "Change": {
+                            "Attribute": "Mana Cost: ",
+                            "Before": "50/60/70/80/90",
+                            "Indicator": " ⇒ ",
+                            "After": "70/75/80/85/90",
+                            "parsedAfter": "<span class=\"red\">70</span>/<span class=\"red\">75</span>/<span class=\"red\">80</span>/<span class=\"red\">85</span>/90"
+                        }
+                    },
+                    {
+                        "Tag": "MID-PATCH",
+                        "Change": {
+                            "Attribute": "Cooldown: ",
+                            "Before": "6",
+                            "Indicator": " ⇒ ",
+                            "After": "8/7.5/7/6.5/6 seconds",
+                            "parsedAfter": "<span class=\"red\">8</span>/<span class=\"red\">7.5</span>/<span class=\"red\">7</span>/<span class=\"red\">6.5</span>/6 seconds"
+                        }
                     }
                 ]
             },
@@ -609,6 +629,16 @@
                             "Indicator": "",
                             "After": "Warwick's attack speed is now granted on the first attack on a new target that is below the health threshold"
                         }
+                    },
+                    {
+                        "Tag": "MID-PATCH",
+                        "Change": {
+                            "Attribute": "Attack Speed Duration: ",
+                            "Before": "2.5",
+                            "Indicator": " ⇒ ",
+                            "After": "1.25 seconds",
+                            "parsedAfter": "<span class=\"red\">1.25</span> seconds"
+                        }
                     }
                 ]
             },
@@ -634,7 +664,8 @@
             "adjusted"
         ],
         "14.24": [
-            "adjust"
+            "adjust",
+            "nerf"
         ]
     }
 }
