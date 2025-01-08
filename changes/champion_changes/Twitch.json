@@ -130,7 +130,7 @@
         },
         "W": {
             "_rawTooltip": {
-                "fullTooltip": "Twitch hurls a cask that adds a stack of [[0]] to all enemies struck and leaves behind a toxic cloud that persists for 3 seconds.<br /><br />Enemies that remain within the cloud are [[1]] by 30/35/40/45/50 (+5% AP)% and receive an additional stack of [[2]] each second.",
+                "fullTooltip": "Twitch hurls a cask that adds a stack of [[0]] to all enemies struck and leaves behind a toxic cloud that persists for 3 seconds.<br /><br />Enemies that remain within the cloud are [[1]] by 30/35/40/45/50 (+6% AP)% and receive an additional stack of [[2]] each second.",
                 "parseInfo": [
                     {
                         "text": {
@@ -746,6 +746,28 @@
             "W": "",
             "E": "",
             "R": ""
+        },
+        "15.1": {
+            "B": "",
+            "P": "",
+            "Q": "",
+            "W": {
+                "SpellName": "W - Venom Cask",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Slow Amount: ",
+                            "Before": "30/35/40/45/50%  (+5% per 100 AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "30/35/40/45/50%  (+6% per 100 AP)",
+                            "parsedAfter": "30/35/40/45/50%  (+<span class=\"green\">6</span>% per 100 AP)"
+                        }
+                    }
+                ]
+            },
+            "E": "",
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -762,7 +784,8 @@
         "13.19",
         "14.3",
         "14.9",
-        "14.24"
+        "14.24",
+        "15.1"
     ],
     "ChampionName": "Twitch",
     "Balance": {
@@ -770,6 +793,9 @@
             "nerf"
         ],
         "14.24": [
+            "buff"
+        ],
+        "15.1": [
             "buff"
         ]
     }

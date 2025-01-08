@@ -49,7 +49,7 @@
                 "parseInfo": [
                     {
                         "text": {
-                            "text": "115% {{0}} of critical strike chance) modified damage",
+                            "text": "100% {{0}} of critical strike chance) modified damage",
                             "scaleHolders": [
                                 {
                                     "scale": "(+ (75% + 35%)",
@@ -83,14 +83,14 @@
                     },
                     {
                         "text": {
-                            "text": "25/32.5/40/47.5/55% Attack Speed",
+                            "text": "25/35/45/55/65% Attack Speed",
                             "scaleHolders": []
                         },
                         "type": "attackSpeed"
                     },
                     {
                         "text": {
-                            "text": "105/110/115/120/125% AD damage",
+                            "text": "110/115/120/125/130% AD damage",
                             "scaleHolders": []
                         },
                         "type": "physicalDamage"
@@ -107,10 +107,10 @@
                 "parseInfo": [
                     {
                         "text": {
-                            "text": "20/35/50/65/80 {{0}} physical damage",
+                            "text": "60/95/130/165/200 {{0}} physical damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+100% AD)",
+                                    "scale": "(+100% Bonus AD)",
                                     "scaleId": "AD"
                                 }
                             ]
@@ -680,6 +680,76 @@
             "W": "",
             "E": "",
             "R": ""
+        },
+        "15.1": {
+            "B": "",
+            "P": {
+                "SpellName": "Passive - Frost Shot",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Damage: ",
+                            "Before": "115% + Crit%",
+                            "Indicator": " ⇒ ",
+                            "After": "100% + Crit%",
+                            "parsedAfter": "<span class=\"red\">100</span>% + Crit%"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Damage Condition: ",
+                            "Before": "Slowed by Frost Shot",
+                            "Indicator": " ⇒ ",
+                            "After": "Always",
+                            "parsedAfter": "Always"
+                        }
+                    }
+                ]
+            },
+            "Q": {
+                "SpellName": "Q - Ranger's Focus",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Damage: ",
+                            "Before": "105/110/115/120/125%",
+                            "Indicator": " ⇒ ",
+                            "After": "110/115/120/125/130%",
+                            "parsedAfter": "<span class=\"green\">110</span>/<span class=\"green\">115</span>/<span class=\"green\">120</span>/<span class=\"green\">125</span>/<span class=\"green\">130</span>%"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Attack Speed: ",
+                            "Before": "25/32.5/40/47.5/55%",
+                            "Indicator": " ⇒ ",
+                            "After": "25/35/45/55/65%",
+                            "parsedAfter": "25/<span class=\"green\">35</span>/<span class=\"green\">45</span>/<span class=\"green\">55</span>/<span class=\"green\">65</span>%"
+                        }
+                    }
+                ]
+            },
+            "W": {
+                "SpellName": "W - Volley",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Damage: ",
+                            "Before": "20/35/50/65/80 + 100% total AD",
+                            "Indicator": " ⇒ ",
+                            "After": "60/95/130/165/200 + 100% bonus AD",
+                            "parsedAfter": "<span class=\"green\">60</span>/<span class=\"green\">95</span>/<span class=\"green\">130</span>/<span class=\"green\">165</span>/<span class=\"green\">200</span> + 100% <span class=\"gold\">bonus</span> AD"
+                        }
+                    }
+                ]
+            },
+            "E": "",
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -699,7 +769,8 @@
         "13.6",
         "13.12",
         "14.12",
-        "14.17"
+        "14.17",
+        "15.1"
     ],
     "ChampionName": "Ashe",
     "Balance": {
@@ -708,6 +779,9 @@
         ],
         "14.17": [
             "nerf"
+        ],
+        "15.1": [
+            "adjust"
         ]
     }
 }

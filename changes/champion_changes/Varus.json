@@ -5,7 +5,7 @@
             "increment": 105
         },
         "mp": {
-            "base": 360,
+            "base": 320,
             "increment": 40
         },
         "armor": {
@@ -109,7 +109,7 @@
                 ]
             },
             "cooldown": "16/15/14/13/12",
-            "cost": "65/70/75/80/85 Mana",
+            "cost": "50/55/60/65/70 Mana",
             "name": "Piercing Arrow"
         },
         "W": {
@@ -125,7 +125,7 @@
                     },
                     {
                         "text": {
-                            "text": "8/13/18/23/28 {{0}} magic damage",
+                            "text": "6/12/18/24/30 {{0}} magic damage",
                             "scaleHolders": [
                                 {
                                     "scale": "(+35% AP)",
@@ -250,7 +250,7 @@
                 ]
             },
             "cooldown": "18/16/14/12/10",
-            "cost": "80 Mana",
+            "cost": "90 Mana",
             "name": "Hail of Arrows"
         },
         "R": {
@@ -1328,6 +1328,70 @@
             },
             "E": "",
             "R": ""
+        },
+        "15.1": {
+            "B": {
+                "SpellName": "Base Stats",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Mana: ",
+                            "Before": "360",
+                            "Indicator": " ⇒ ",
+                            "After": "320",
+                            "parsedAfter": "<span class=\"red\">320</span>"
+                        }
+                    }
+                ]
+            },
+            "P": "",
+            "Q": {
+                "SpellName": "Q - Piercing Arrow",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Mana Cost: ",
+                            "Before": "65/70/75/80/85",
+                            "Indicator": " ⇒ ",
+                            "After": "50/55/60/65/70",
+                            "parsedAfter": "<span class=\"green\">50</span>/<span class=\"green\">55</span>/<span class=\"green\">60</span>/<span class=\"green\">65</span>/<span class=\"green\">70</span>"
+                        }
+                    }
+                ]
+            },
+            "W": {
+                "SpellName": "W - Blighted Quiver",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "On-hit Damage: ",
+                            "Before": "8/13/18/23/28",
+                            "Indicator": " ⇒ ",
+                            "After": "6/12/18/24/30",
+                            "parsedAfter": "<span class=\"red\">6</span>/<span class=\"red\">12</span>/18/<span class=\"green\">24</span>/<span class=\"green\">30</span>"
+                        }
+                    }
+                ]
+            },
+            "E": {
+                "SpellName": "E - Hail of Arrows",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Mana Cost: ",
+                            "Before": "80",
+                            "Indicator": " ⇒ ",
+                            "After": "90",
+                            "parsedAfter": "<span class=\"red\">90</span>"
+                        }
+                    }
+                ]
+            },
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -1356,7 +1420,8 @@
         "14.15",
         "14.17",
         "14.18",
-        "14.22"
+        "14.22",
+        "15.1"
     ],
     "ChampionName": "Varus",
     "Balance": {
@@ -1378,6 +1443,9 @@
         ],
         "14.22": [
             "buff"
+        ],
+        "15.1": [
+            "adjust"
         ]
     }
 }

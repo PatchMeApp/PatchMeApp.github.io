@@ -1,5 +1,5 @@
 {
-    "LatestGlobalPatch": "14.24",
+    "LatestGlobalPatch": "15.1",
     "Aatrox": {
         "ChampionName": "Aatrox",
         "ChangePatches": [
@@ -1019,32 +1019,81 @@
             "13.6",
             "13.12",
             "14.12",
-            "14.17"
+            "14.17",
+            "15.1"
         ],
         "LatestChanges": {
-            "B": {
-                "SpellName": "Base Stats",
+            "B": "",
+            "P": {
+                "SpellName": "Passive - Frost Shot",
                 "Changes": [
                     {
                         "Tag": "",
                         "Change": {
-                            "Attribute": "Base Health: ",
-                            "Before": "640",
+                            "Attribute": "Damage: ",
+                            "Before": "115% + Crit%",
                             "Indicator": " ⇒ ",
-                            "After": "610",
-                            "parsedAfter": "<span class=\"red\">610</span>"
+                            "After": "100% + Crit%",
+                            "parsedAfter": "<span class=\"red\">100</span>% + Crit%"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Damage Condition: ",
+                            "Before": "Slowed by Frost Shot",
+                            "Indicator": " ⇒ ",
+                            "After": "Always",
+                            "parsedAfter": "Always"
                         }
                     }
                 ]
             },
-            "P": "",
-            "Q": "",
-            "W": "",
+            "Q": {
+                "SpellName": "Q - Ranger's Focus",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Damage: ",
+                            "Before": "105/110/115/120/125%",
+                            "Indicator": " ⇒ ",
+                            "After": "110/115/120/125/130%",
+                            "parsedAfter": "<span class=\"green\">110</span>/<span class=\"green\">115</span>/<span class=\"green\">120</span>/<span class=\"green\">125</span>/<span class=\"green\">130</span>%"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Attack Speed: ",
+                            "Before": "25/32.5/40/47.5/55%",
+                            "Indicator": " ⇒ ",
+                            "After": "25/35/45/55/65%",
+                            "parsedAfter": "25/<span class=\"green\">35</span>/<span class=\"green\">45</span>/<span class=\"green\">55</span>/<span class=\"green\">65</span>%"
+                        }
+                    }
+                ]
+            },
+            "W": {
+                "SpellName": "W - Volley",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Damage: ",
+                            "Before": "20/35/50/65/80 + 100% total AD",
+                            "Indicator": " ⇒ ",
+                            "After": "60/95/130/165/200 + 100% bonus AD",
+                            "parsedAfter": "<span class=\"green\">60</span>/<span class=\"green\">95</span>/<span class=\"green\">130</span>/<span class=\"green\">165</span>/<span class=\"green\">200</span> + 100% <span class=\"gold\">bonus</span> AD"
+                        }
+                    }
+                ]
+            },
             "E": "",
             "R": ""
         },
         "Balance": [
-            "nerf"
+            "adjust"
         ]
     },
     "Blitzcrank": {
@@ -2616,12 +2665,41 @@
             "14.15",
             "14.17",
             "14.18",
-            "14.22"
+            "14.22",
+            "15.1"
         ],
         "LatestChanges": {
-            "B": "",
+            "B": {
+                "SpellName": "Base Stats",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Mana: ",
+                            "Before": "360",
+                            "Indicator": " ⇒ ",
+                            "After": "320",
+                            "parsedAfter": "<span class=\"red\">320</span>"
+                        }
+                    }
+                ]
+            },
             "P": "",
-            "Q": "",
+            "Q": {
+                "SpellName": "Q - Piercing Arrow",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Mana Cost: ",
+                            "Before": "65/70/75/80/85",
+                            "Indicator": " ⇒ ",
+                            "After": "50/55/60/65/70",
+                            "parsedAfter": "<span class=\"green\">50</span>/<span class=\"green\">55</span>/<span class=\"green\">60</span>/<span class=\"green\">65</span>/<span class=\"green\">70</span>"
+                        }
+                    }
+                ]
+            },
             "W": {
                 "SpellName": "W - Blighted Quiver",
                 "Changes": [
@@ -2629,19 +2707,33 @@
                         "Tag": "",
                         "Change": {
                             "Attribute": "On-hit Damage: ",
-                            "Before": " 5/10/15/20/25",
+                            "Before": "8/13/18/23/28",
                             "Indicator": " ⇒ ",
-                            "After": "8/13/18/23/28",
-                            "parsedAfter": "<span class=\"green\">8</span>/<span class=\"green\">13</span>/<span class=\"green\">18</span>/<span class=\"green\">23</span>/<span class=\"green\">28</span>"
+                            "After": "6/12/18/24/30",
+                            "parsedAfter": "<span class=\"red\">6</span>/<span class=\"red\">12</span>/18/<span class=\"green\">24</span>/<span class=\"green\">30</span>"
                         }
                     }
                 ]
             },
-            "E": "",
+            "E": {
+                "SpellName": "E - Hail of Arrows",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Mana Cost: ",
+                            "Before": "80",
+                            "Indicator": " ⇒ ",
+                            "After": "90",
+                            "parsedAfter": "<span class=\"red\">90</span>"
+                        }
+                    }
+                ]
+            },
             "R": ""
         },
         "Balance": [
-            "buff"
+            "adjust"
         ]
     },
     "Viktor": {
@@ -3216,7 +3308,8 @@
             "13.10",
             "13.11",
             "14.4",
-            "14.13"
+            "14.13",
+            "15.1"
         ],
         "LatestChanges": {
             "B": {
@@ -3225,69 +3318,111 @@
                     {
                         "Tag": "",
                         "Change": {
-                            "Attribute": "Attack Damage: ",
-                            "Before": "61",
+                            "Attribute": "Mana Regen Growth: ",
+                            "Before": "0.4",
                             "Indicator": " ⇒ ",
-                            "After": "59",
-                            "parsedAfter": "<span class=\"red\">59</span>"
+                            "After": "0.8",
+                            "parsedAfter": "<span class=\"green\">0.8</span>"
                         }
                     }
                 ]
             },
-            "P": "",
-            "Q": "",
-            "W": {
-                "SpellName": "W - Sentinel",
+            "P": {
+                "SpellName": "Passive - Martial Poise",
                 "Changes": [
                     {
                         "Tag": "",
                         "Change": {
-                            "Attribute": "[REMOVED] Minimum non champion damage: ",
+                            "Attribute": "Dash Calculation Rebuilt: ",
                             "Before": "",
                             "Indicator": "",
-                            "After": "75/100/125/150/175"
+                            "After": "Trust us on this one."
                         }
                     },
                     {
                         "Tag": "",
                         "Change": {
-                            "Attribute": "[REMOVED] Non-Champion execute threshold: ",
+                            "Attribute": "Base Attack Speed: ",
                             "Before": "",
                             "Indicator": "",
-                            "After": "125/150/175/200/250"
+                            "After": "Now properly referenced. This is a buff of around 8%."
                         }
                     },
                     {
                         "Tag": "",
                         "Change": {
-                            "Attribute": "Non-Champion Damage cap: ",
-                            "Before": "250/300/350/400/450",
+                            "Attribute": "Attack Speed Factor: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "Influence of attack speed slows has been halved. Attack speed increases still have full influence."
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "movement speed Multiplier: ",
+                            "Before": "Multiplied by  (1 - Slowed%)",
                             "Indicator": " ⇒ ",
-                            "After": "100/125/150/175/200",
-                            "parsedAfter": "<span class=\"red\">100</span>/<span class=\"red\">125</span>/<span class=\"red\">150</span>/<span class=\"red\">175</span>/<span class=\"red\">200</span>"
+                            "After": "Multiplied by (0.2% total movement speed + 0.28). This is typically close to 100% but now benefits from bonus movement speed and is more resilient to slows. The minimum multiplier is 48%.",
+                            "parsedAfter": "Multiplied by (<span class=\"gold\">0.2</span>% total movement speed + <span class=\"gold\">0.28</span>). This is typically close to 100% but now benefits from bonus movement speed and is more resilient to slows. The minimum multiplier is <span class=\"gold\">48</span>%"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Dash Animation: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "Restored Kalista's dash animation when basic attacking"
                         }
                     }
                 ]
             },
-            "E": "",
-            "R": {
-                "SpellName": "R - Fate's Call",
+            "Q": {
+                "SpellName": "Q - Pierce",
                 "Changes": [
                     {
                         "Tag": "",
                         "Change": {
-                            "Attribute": "Cooldown: ",
-                            "Before": "150/120/90",
+                            "Attribute": "Damage: ",
+                            "Before": "20/85/150/215/280 + 105% total AD",
                             "Indicator": " ⇒ ",
-                            "After": "160/140/120",
-                            "parsedAfter": "<span class=\"red\">160</span>/<span class=\"red\">140</span>/<span class=\"red\">120</span>"
+                            "After": "10/75/140/205/270 + 105% total AD",
+                            "parsedAfter": "<span class=\"red\">10</span>/<span class=\"red\">75</span>/<span class=\"red\">140</span>/<span class=\"red\">205</span>/<span class=\"red\">270</span> + 105% total AD"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Mana Cost: ",
+                            "Before": "50/55/60/65/70",
+                            "Indicator": " ⇒ ",
+                            "After": "60/65/70/75/80",
+                            "parsedAfter": "<span class=\"red\">60</span>/<span class=\"red\">65</span>/<span class=\"red\">70</span>/<span class=\"red\">75</span>/<span class=\"red\">80</span>"
                         }
                     }
                 ]
-            }
+            },
+            "W": "",
+            "E": {
+                "SpellName": "E - Rend",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Damage per Additional Stack: ",
+                            "Before": "8/12/16/20/24 + 25/30/35/40/45% total AD",
+                            "Indicator": " ⇒ ",
+                            "After": "7/14/21/28/35 + 20/25/30/35/40% total AD",
+                            "parsedAfter": "<span class=\"red\">7</span>/<span class=\"green\">14</span>/<span class=\"green\">21</span>/<span class=\"green\">28</span>/<span class=\"green\">35</span> + <span class=\"red\">20</span>/<span class=\"red\">25</span>/<span class=\"red\">30</span>/<span class=\"red\">35</span>/<span class=\"red\">40</span>% total AD"
+                        }
+                    }
+                ]
+            },
+            "R": ""
         },
         "Balance": [
-            "nerf"
+            "adjust"
         ]
     },
     "Malphite": {
@@ -7532,37 +7667,28 @@
             "13.19",
             "14.3",
             "14.9",
-            "14.24"
+            "14.24",
+            "15.1"
         ],
         "LatestChanges": {
             "B": "",
             "P": "",
-            "Q": {
-                "SpellName": "Q - Ambush",
+            "Q": "",
+            "W": {
+                "SpellName": "W - Venom Cask",
                 "Changes": [
                     {
                         "Tag": "",
                         "Change": {
-                            "Attribute": "Attack Speed Duration: ",
-                            "Before": "5",
+                            "Attribute": "Slow Amount: ",
+                            "Before": "30/35/40/45/50%  (+5% per 100 AP)",
                             "Indicator": " ⇒ ",
-                            "After": "6 seconds",
-                            "parsedAfter": "<span class=\"green\">6</span> seconds"
-                        }
-                    },
-                    {
-                        "Tag": "",
-                        "Change": {
-                            "Attribute": "Attack Speed: ",
-                            "Before": "40/45/50/55/60%",
-                            "Indicator": " ⇒ ",
-                            "After": "45/50/55/60/65%",
-                            "parsedAfter": "<span class=\"green\">45</span>/<span class=\"green\">50</span>/<span class=\"green\">55</span>/<span class=\"green\">60</span>/<span class=\"green\">65</span>%"
+                            "After": "30/35/40/45/50%  (+6% per 100 AP)",
+                            "parsedAfter": "30/35/40/45/50%  (+<span class=\"green\">6</span>% per 100 AP)"
                         }
                     }
                 ]
             },
-            "W": "",
             "E": "",
             "R": ""
         },
@@ -9766,7 +9892,6 @@
                             "Indicator": " ⇒ ",
                             "After": "40/65/90/115/140 (+40/45/50/55/60% bonus AD)",
                             "parsedAfter": "40/65/90/115/140 (+40/<span class=\"red\">45</span>/<span class=\"red\">50</span>/<span class=\"red\">55</span>/<span class=\"red\">60</span>% bonus AD)"
-
                         }
                     }
                 ]
