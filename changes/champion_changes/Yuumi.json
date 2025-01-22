@@ -43,9 +43,9 @@
     },
     "spells": {
         "P": {
-            "cooldown": "20-10 seconds (levels 1-11)",
+            "cooldown": "20-8 seconds (levels 1-13)",
             "_rawTooltip": {
-                "fullTooltip": "INNATE: Periodically, Yuumi's next basic attack, which gains 50 bonus range, or ability hit against enemy champions will heal her for 25 − 110 (based on level) (+ 15% AP). If she is attached to an ally within 4 seconds, they are healed for the same amount.<br>INNATE: While attached to an ally, Yuumi grants them 2 permanent Friendship stacks for killing enemy champions and minions. The ally with the highest Friendship stacks becomes Yuumi's Best Friend, which empowers her abilities with additional effects while she is attached to them.",
+                "fullTooltip": "INNATE: Periodically, Yuumi's next basic attack, which gains 50 bonus range, or ability hit against enemy champions will heal her for 25 − 110 (based on level) (+25% AP). If she is attached to an ally within 4 seconds, they are healed for the same amount.<br>INNATE: While attached to an ally, Yuumi grants them 2 permanent Friendship stacks for killing enemy champions and minions. The ally with the highest Friendship stacks becomes Yuumi's Best Friend, which empowers her abilities with additional effects while she is attached to them.",
                 "parseInfo": []
             },
             "name": "Feline Friendship"
@@ -263,10 +263,10 @@
                     },
                     {
                         "text": {
-                            "text": "75/100/125 {{0}} magic damage",
+                            "text": "75/125/175 {{0}} magic damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+20% AP)",
+                                    "scale": "(+25% AP)",
                                     "scaleId": "AP"
                                 }
                             ]
@@ -1753,6 +1753,62 @@
             "W": "",
             "E": "",
             "R": ""
+        },
+        "15.2": {
+            "B": "",
+            "P": {
+                "SpellName": "Passive - Feline Friendship",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Heal: ",
+                            "Before": "25-110 (based on level) (+15% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "25-110 (based on level) (+25% AP)",
+                            "parsedAfter": "25-110 (based on level) (+<span class=\"green\">25</span>% AP)"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Cooldown: ",
+                            "Before": "20-10 (based on level) (by level 11)",
+                            "Indicator": " ⇒ ",
+                            "After": "20-8 (based on level) (by level 13)",
+                            "parsedAfter": "20-<span class=\"green\">8</span> (based on level) (by level <span class=\"gold\">13</span>)"
+                        }
+                    }
+                ]
+            },
+            "Q": "",
+            "W": "",
+            "E": "",
+            "R": {
+                "SpellName": "R - Final Chapter",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Damage: ",
+                            "Before": "75/100/125 (+20% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "75/125/175 (+25% AP)",
+                            "parsedAfter": "75/<span class=\"green\">125</span>/<span class=\"green\">175</span> (+<span class=\"green\">25</span>% AP)"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Max Damage over 5 waves: ",
+                            "Before": "75-250 (+40% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "75-350 (+50% AP)",
+                            "parsedAfter": "75-<span class=\"green\">350</span> (+<span class=\"green\">50</span>% AP)"
+                        }
+                    }
+                ]
+            }
         }
     },
     "ChangePatches": [
@@ -1775,7 +1831,8 @@
         "13.6",
         "13.12",
         "14.12",
-        "14.24"
+        "14.24",
+        "15.2"
     ],
     "ChampionName": "Yuumi",
     "Balance": {
@@ -1783,6 +1840,9 @@
             "buff"
         ],
         "14.24": [
+            "buff"
+        ],
+        "15.2": [
             "buff"
         ]
     }

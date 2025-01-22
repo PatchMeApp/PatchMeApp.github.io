@@ -135,7 +135,7 @@
                     },
                     {
                         "text": {
-                            "text": "10/25/40/55/70 {{0}} {{1}} physical damage",
+                            "text": "10/20/30/40/50 {{0}} {{1}} physical damage",
                             "scaleHolders": [
                                 {
                                     "scale": "(+40% AD)",
@@ -151,7 +151,7 @@
                     },
                     {
                         "text": {
-                            "text": "30/75/120/165/210 {{0}} {{1}}",
+                            "text": "30/60/90/120/150 {{0}} {{1}}",
                             "scaleHolders": [
                                 {
                                     "scale": "(+120% AD)",
@@ -198,7 +198,7 @@
                     },
                     {
                         "text": {
-                            "text": "80/125/170/215/260 {{0}} magic damage",
+                            "text": "70/110/150/190/230 {{0}} magic damage",
                             "scaleHolders": [
                                 {
                                     "scale": "(+80% AP)",
@@ -246,7 +246,7 @@
                     },
                     {
                         "text": {
-                            "text": "125/250/375 {{0}} magic damage",
+                            "text": "125/200/275 {{0}} magic damage",
                             "scaleHolders": [
                                 {
                                     "scale": "(+70% AP)",
@@ -955,6 +955,66 @@
             "W": "",
             "E": "",
             "R": ""
+        },
+        "15.2": {
+            "B": "",
+            "P": "",
+            "Q": "",
+            "W": {
+                "SpellName": "W - Defiant Dance",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Minimum Damage: ",
+                            "Before": "10/25/40/55/70 (+40% Total AD)",
+                            "Indicator": " ⇒ ",
+                            "After": "10/20/30/40/50 (+40% Total AD)",
+                            "parsedAfter": "10/<span class=\"red\">20</span>/<span class=\"red\">30</span>/<span class=\"red\">40</span>/<span class=\"red\">50</span> (+40% Total AD)"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Maximum Damage: ",
+                            "Before": "30/75/120/165/210 (+120% Total AD)",
+                            "Indicator": " ⇒ ",
+                            "After": "30/60/90/120/150 (+120% Total AD)",
+                            "parsedAfter": "30/<span class=\"red\">60</span>/<span class=\"red\">90</span>/<span class=\"red\">120</span>/<span class=\"red\">150</span> (+120% Total AD)"
+                        }
+                    }
+                ]
+            },
+            "E": {
+                "SpellName": "E - Flawless Duet",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Damage: ",
+                            "Before": "80/125/170/215/260 (+80% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "70/110/150/190/230 (+80% AP)",
+                            "parsedAfter": "<span class=\"red\">70</span>/<span class=\"red\">110</span>/<span class=\"red\">150</span>/<span class=\"red\">190</span>/<span class=\"red\">230</span> (+80% AP)"
+                        }
+                    }
+                ]
+            },
+            "R": {
+                "SpellName": "R - Vanguard's Edge",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Damage: ",
+                            "Before": "125/250/375 (+70% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "125/200/275 (+70% AP)",
+                            "parsedAfter": "125/<span class=\"red\">200</span>/<span class=\"red\">275</span> (+70% AP)"
+                        }
+                    }
+                ]
+            }
         }
     },
     "ChangePatches": [
@@ -974,7 +1034,8 @@
         "14.14",
         "14.15",
         "14.21",
-        "14.22"
+        "14.22",
+        "15.2"
     ],
     "ChampionName": "Irelia",
     "Balance": {
@@ -993,6 +1054,9 @@
         "14.22": [
             "adjusted",
             "buff"
+        ],
+        "15.2": [
+            "nerf"
         ]
     }
 }

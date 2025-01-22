@@ -87,7 +87,7 @@
                             "text": "20/45/70/95/120 {{0}} {{1}} magic damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+60% AP)",
+                                    "scale": "(+50% AP)",
                                     "scaleId": "AP"
                                 },
                                 {
@@ -234,7 +234,7 @@
                             "text": "65/105/145 {{0}} magic damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+45% AP)",
+                                    "scale": "(+35% AP)",
                                     "scaleId": "AP"
                                 }
                             ]
@@ -808,6 +808,42 @@
                     }
                 ]
             }
+        },
+        "15.2": {
+            "B": "",
+            "P": "",
+            "Q": {
+                "SpellName": "Q - Siphon Power",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Empowered Attack Bonus Damage: ",
+                            "Before": "20/45/70/95/120 (+100% AD) (+60% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "20/45/70/95/120 (+100% AD) (+50% AP)",
+                            "parsedAfter": "20/45/70/95/120 (+100% AD) (+<span class=\"red\">50</span>% AP)"
+                        }
+                    }
+                ]
+            },
+            "W": "",
+            "E": "",
+            "R": {
+                "SpellName": "R - Arcane Storm",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Damage per tick: ",
+                            "Before": "65/105/145 (+45% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "65/105/145 (+35% AP)",
+                            "parsedAfter": "65/105/145 (+<span class=\"red\">35</span>% AP)"
+                        }
+                    }
+                ]
+            }
         }
     },
     "ChangePatches": [
@@ -818,12 +854,16 @@
         "10.23",
         "12.10",
         "14.12",
-        "14.24"
+        "14.24",
+        "15.2"
     ],
     "ChampionName": "Viktor",
     "Balance": {
         "14.24": [
             "adjust"
+        ],
+        "15.2": [
+            "nerf"
         ]
     }
 }

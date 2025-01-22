@@ -202,7 +202,7 @@
                     },
                     {
                         "text": {
-                            "text": "30% Move Speed",
+                            "text": "30/35/40/45/50% Move Speed",
                             "scaleHolders": []
                         },
                         "type": "speed"
@@ -241,7 +241,7 @@
                             "text": "125/250/375 {{0}} magic damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+65% AP)",
+                                    "scale": "(+75% AP)",
                                     "scaleId": "AP"
                                 }
                             ]
@@ -603,6 +603,52 @@
                     }
                 ]
             }
+        },
+        "15.2": {
+            "B": "",
+            "P": "",
+            "Q": "",
+            "W": "",
+            "E": {
+                "SpellName": "E - Whiplash",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Move Speed: ",
+                            "Before": "30%",
+                            "Indicator": " ⇒ ",
+                            "After": "30/35/40/45/50%",
+                            "parsedAfter": "<span class=\"green\">30</span>/<span class=\"green\">35</span>/<span class=\"green\">40</span>/<span class=\"green\">45</span>/<span class=\"green\">50</span>%"
+                        }
+                    }
+                ]
+            },
+            "R": {
+                "SpellName": "R - Last Caress",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Unempowered AP Ratio: ",
+                            "Before": "(+65% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "(+75% AP)",
+                            "parsedAfter": "(+<span class=\"green\">75</span>% AP)"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Empowered AP Ratio: ",
+                            "Before": "(+156% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "(+180% AP)",
+                            "parsedAfter": "(+<span class=\"green\">180</span>% AP)"
+                        }
+                    }
+                ]
+            }
         }
     },
     "ChangePatches": [
@@ -615,7 +661,8 @@
         "12.13",
         "12.20",
         "14.5",
-        "14.9"
+        "14.9",
+        "15.2"
     ],
     "ChampionName": "Evelynn",
     "Balance": {
@@ -624,6 +671,9 @@
         ],
         "14.9": [
             "nerf"
+        ],
+        "15.2": [
+            "buff"
         ]
     }
 }

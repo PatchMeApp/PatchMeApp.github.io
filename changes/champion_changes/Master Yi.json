@@ -34,7 +34,7 @@
         },
         "attackDamage": {
             "base": 65,
-            "increment": 2.5
+            "increment": 2.8
         },
         "attackRange": {
             "base": 175,
@@ -130,7 +130,7 @@
                             "text": "20/25/30/35/40 {{0}} true damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+30% Bonus AD)",
+                                    "scale": "(+35% Bonus AD)",
                                     "scaleId": "AD"
                                 }
                             ]
@@ -883,6 +883,42 @@
             "W": "",
             "E": "",
             "R": ""
+        },
+        "15.2": {
+            "B": {
+                "SpellName": "Base Stats",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Attack Damage Growth: ",
+                            "Before": "2.5",
+                            "Indicator": " ⇒ ",
+                            "After": "2.8",
+                            "parsedAfter": "<span class=\"green\">2.8</span>"
+                        }
+                    }
+                ]
+            },
+            "P": "",
+            "Q": "",
+            "W": "",
+            "E": {
+                "SpellName": "E - Wuju Style",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "On-hit True Damage: ",
+                            "Before": "20/25/30/35/40 (+30% Bonus AD)",
+                            "Indicator": " ⇒ ",
+                            "After": "20/25/30/35/40 (+35% Bonus AD)",
+                            "parsedAfter": "20/25/30/35/40 (+<span class=\"green\">35</span>% Bonus AD)"
+                        }
+                    }
+                ]
+            },
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -903,7 +939,8 @@
         "14.11",
         "14.12",
         "14.23",
-        "14.24"
+        "14.24",
+        "15.2"
     ],
     "ChampionName": "Master Yi",
     "Balance": {
@@ -920,6 +957,9 @@
             "buff"
         ],
         "14.24": [
+            "buff"
+        ],
+        "15.2": [
             "buff"
         ]
     }
