@@ -56,7 +56,7 @@
                                     "scaleId": "level"
                                 },
                                 {
-                                    "scale": "(+25% AP)",
+                                    "scale": "(+10% AP)",
                                     "scaleId": "AP"
                                 },
                                 {
@@ -97,7 +97,7 @@
                 "parseInfo": [
                     {
                         "text": {
-                            "text": "13/16/19/22/25 {{0}} magic damage",
+                            "text": "13/15.5/18/20.5/23 {{0}} magic damage",
                             "scaleHolders": [
                                 {
                                     "scale": "(+8.5% AP)",
@@ -109,7 +109,7 @@
                     },
                     {
                         "text": {
-                            "text": "78/112/152/198/250 {{0}}",
+                            "text": "78/108.5/144/184.5/230 {{0}}",
                             "scaleHolders": [
                                 {
                                     "scale": "(+51% AP)",
@@ -222,10 +222,10 @@
                     },
                     {
                         "text": {
-                            "text": "65/80/95 {{0}} magic damage plus 3/4/5 {{1}} magic damage per stack",
+                            "text": "60/70/80 {{0}} magic damage plus 3/4/5 {{1}} magic damage per stack",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+25 AP)",
+                                    "scale": "(+10% AP)",
                                     "scaleId": "AP"
                                 },
                                 {
@@ -252,10 +252,10 @@
                     },
                     {
                         "text": {
-                            "text": "125/175/225 {{0}} magic damage plus 4/7/10 {{1}} magic damage per Overwhelm",
+                            "text": "100/150/200 {{0}} magic damage plus 4/7/10 {{1}} magic damage per Overwhelm",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+40% AP)",
+                                    "scale": "(+30% AP)",
                                     "scaleId": "AP"
                                 },
                                 {
@@ -283,11 +283,73 @@
     "Changes": {
         "15.2": {
             "B": "",
-            "P": "",
-            "Q": "",
+            "P": {
+                "SpellName": "Passive - Searing Brilliance",
+                "Changes": [
+                    {
+                        "Tag": "MID-PATCH",
+                        "Change": {
+                            "Attribute": "Overwhelm Damage AP Ratio: ",
+                            "Before": " 25%",
+                            "Indicator": " ⇒ ",
+                            "After": "10",
+                            "parsedAfter": "<span class=\"red\">10</span>"
+                        }
+                    }
+                ]
+            },
+            "Q": {
+                "SpellName": "Q - Radiant Volley",
+                "Changes": [
+                    {
+                        "Tag": "MID-PATCH",
+                        "Change": {
+                            "Attribute": "Damage",
+                            "Before": "13/16/19/22/25",
+                            "Indicator": " ⇒ ",
+                            "After": "13/15.5/18/20.5/23",
+                            "parsedAfter": "13/<span class=\"red\">15.5</span>/<span class=\"red\">18</span>/<span class=\"red\">20.5</span>/<span class=\"red\">23</span>"
+                        }
+                    },
+                    {
+                        "Tag": "MID-PATCH",
+                        "Change": {
+                            "Attribute": "Total Damage",
+                            "Before": "78/112/152/198/250",
+                            "Indicator": " ⇒ ",
+                            "After": "78/108.5/144/184.5/230",
+                            "parsedAfter": "78/<span class=\"red\">108.5</span>/<span class=\"red\">144</span>/<span class=\"red\">184.5</span>/<span class=\"red\">230</span>"
+                        }
+                    }
+                ]
+            },
             "W": "",
             "E": "",
-            "R": ""
+            "R": {
+                "SpellName": "R - Golden Eclipse",
+                "Changes": [
+                    {
+                        "Tag": "MID-PATCH",
+                        "Change": {
+                            "Attribute": "OverWhelm Flat Damage Increase: ",
+                            "Before": "65/80/95 +25% AP",
+                            "Indicator": " ⇒ ",
+                            "After": "60/70/80 +10% AP",
+                            "parsedAfter": "<span class=\"red\">60</span>/<span class=\"red\">70</span>/<span class=\"red\">80</span> +<span class=\"red\">10</span>% AP"
+                        }
+                    },
+                    {
+                        "Tag": "MID-PATCH",
+                        "Change": {
+                            "Attribute": "Ult FLat Damage: ",
+                            "Before": "125/175/225 +40% AP",
+                            "Indicator": " ⇒ ",
+                            "After": "100/150/200 +30% AP",
+                            "parsedAfter": "<span class=\"red\">100</span>/<span class=\"red\">150</span>/<span class=\"red\">200</span> +<span class=\"red\">30</span>% AP"
+                        }
+                    }
+                ]
+            }
         }
     },
     "ChangePatches": [
