@@ -103,7 +103,7 @@
                             "text": "75/110/145/180/215 {{0}} magic damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+70% AP)",
+                                    "scale": "(+65% AP)",
                                     "scaleId": "AP"
                                 }
                             ]
@@ -132,7 +132,7 @@
                             "text": "20/25/30/35/40 {{0}} magic damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+15% AP)",
+                                    "scale": "(+10% AP)",
                                     "scaleId": "AP"
                                 }
                             ]
@@ -579,6 +579,42 @@
             "W": "",
             "E": "",
             "R": ""
+        },
+        "15.3": {
+            "B": "",
+            "P": "",
+            "Q": {
+                "SpellName": "Q - Noxious Blast",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Damage: ",
+                            "Before": "75/110/145/180/215 (+70% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "75/110/145/180/215 (+65% AP)",
+                            "parsedAfter": "75/110/145/180/215 (+<span class=\"red\">65</span>% AP)"
+                        }
+                    }
+                ]
+            },
+            "W": {
+                "SpellName": "W - Miasma",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Damage per second: ",
+                            "Before": "20/25/30/35/40 (+15% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "20/25/30/35/40 (+10 AP)",
+                            "parsedAfter": "20/25/30/35/40 (+<span class=\"red\">10</span> AP)"
+                        }
+                    }
+                ]
+            },
+            "E": "",
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -589,7 +625,8 @@
         "12.10",
         "13.22",
         "14.15",
-        "15.2"
+        "15.2",
+        "15.3"
     ],
     "ChampionName": "Cassiopeia",
     "Balance": {
@@ -597,6 +634,9 @@
             "adjust"
         ],
         "15.2": [
+            "nerf"
+        ],
+        "15.3": [
             "nerf"
         ]
     }

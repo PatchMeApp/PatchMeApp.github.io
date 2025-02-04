@@ -190,7 +190,7 @@
                 "parseInfo": [
                     {
                         "text": {
-                            "text": "55/70/85/100 plus 3% {{0}} max Health magic damage",
+                            "text": "60/90/120/150/180 plus 3% {{0}} max Health magic damage",
                             "scaleHolders": [
                                 {
                                     "scale": "(+1.5% per 100 AP)",
@@ -216,7 +216,7 @@
                     },
                     {
                         "text": {
-                            "text": "75/100/125/150 plus 4% {{0}} max Health magic damage",
+                            "text": "80/120/160/200/240 plus 4% {{0}} max Health magic damage",
                             "scaleHolders": [
                                 {
                                     "scale": "(+2.5% per 100 AP)",
@@ -649,6 +649,38 @@
                     }
                 ]
             }
+        },
+        "15.3": {
+            "B": "",
+            "P": "",
+            "Q": "",
+            "W": "",
+            "E": {
+                "SpellName": "E - Whiplash",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Basic Damage: ",
+                            "Before": "55/70/85/100/115 (+3% (+1.5% AP) target max HP)",
+                            "Indicator": " ⇒ ",
+                            "After": "60/90/120/150/180 (+3% (+1.5% per 100 AP) target max HP)",
+                            "parsedAfter": "<span class=\"green\">60</span>/<span class=\"green\">90</span>/<span class=\"green\">120</span>/<span class=\"green\">150</span>/<span class=\"green\">180</span> (+3% (+1.5% per 100 AP) target max HP)"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Empowered Damage: ",
+                            "Before": "75/100/125/150/175 (+4% (+2.5% AP) target max HP)",
+                            "Indicator": " ⇒ ",
+                            "After": "80/120/160/200/240 (+4% (+2.5% per 100 AP) target max HP)",
+                            "parsedAfter": "<span class=\"green\">80</span>/<span class=\"green\">120</span>/<span class=\"green\">160</span>/<span class=\"green\">200</span>/<span class=\"green\">240</span> (+4% (+2.5% per <span class=\"gold\">100</span> AP) target max HP)"
+                        }
+                    }
+                ]
+            },
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -662,7 +694,8 @@
         "12.20",
         "14.5",
         "14.9",
-        "15.2"
+        "15.2",
+        "15.3"
     ],
     "ChampionName": "Evelynn",
     "Balance": {
@@ -673,6 +706,9 @@
             "nerf"
         ],
         "15.2": [
+            "buff"
+        ],
+        "15.3": [
             "buff"
         ]
     }

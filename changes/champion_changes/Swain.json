@@ -45,7 +45,7 @@
         "P": {
             "cooldown": "",
             "_rawTooltip": {
-                "fullTooltip": "Swain collects Soul Fragments from Vision of Empire, Nevermove, and enemy champion deaths. Soul Fragments restore 3.0% - 6.0% (based on level) maximum Health and permanently grant swain 12 max Health.",
+                "fullTooltip": "Swain collects Soul Fragments from Vision of Empire, Nevermove, and enemy champion deaths. Soul Fragments restore 3.0% - 6.0% (based on level) maximum Health and permanently grant swain 15 max Health.",
                 "parseInfo": []
             },
             "name": "Ravenous Flock"
@@ -141,7 +141,7 @@
                             "text": "80/120/160/200/240 {{0}} magic damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+60% AP)",
+                                    "scale": "(+70% AP)",
                                     "scaleId": "AP"
                                 }
                             ]
@@ -1316,6 +1316,42 @@
             "W": "",
             "E": "",
             "R": ""
+        },
+        "15.3": {
+            "B": "",
+            "P": {
+                "SpellName": "Passive - Ravenous Flock",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Max Health per Soul Fragment: ",
+                            "Before": "12",
+                            "Indicator": " ⇒ ",
+                            "After": "15",
+                            "parsedAfter": "<span class=\"green\">15</span>"
+                        }
+                    }
+                ]
+            },
+            "Q": "",
+            "W": "",
+            "E": {
+                "SpellName": "E - Nevermove",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Damage: ",
+                            "Before": "80/120/160/200/240 (+60% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "80/120/160/200/240 (+70% AP)",
+                            "parsedAfter": "80/120/160/200/240 (+<span class=\"green\">70</span>% AP)"
+                        }
+                    }
+                ]
+            },
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -1326,7 +1362,8 @@
         "13.9",
         "14.21",
         "14.22",
-        "14.24"
+        "14.24",
+        "15.3"
     ],
     "ChampionName": "Swain",
     "Balance": {
@@ -1339,6 +1376,9 @@
         ],
         "14.24": [
             "nerf"
+        ],
+        "15.3": [
+            "buff"
         ]
     }
 }

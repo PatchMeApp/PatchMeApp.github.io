@@ -45,7 +45,7 @@
         "P": {
             "cooldown": "",
             "_rawTooltip": {
-                "fullTooltip": "Innate: Nasus gains 9 / 15 / 21% (based on level) life steal.",
+                "fullTooltip": "Innate: Nasus gains 12 / 18 / 24% (based on level) life steal.",
                 "parseInfo": []
             },
             "name": "Soul Eater"
@@ -629,6 +629,28 @@
             "W": "",
             "E": "",
             "R": ""
+        },
+        "15.3": {
+            "B": "",
+            "P": {
+                "SpellName": "Passive - Soul Eater",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Life Steal: ",
+                            "Before": "9/15/21% (based on level)",
+                            "Indicator": " ⇒ ",
+                            "After": "12/18/24% (based on level)",
+                            "parsedAfter": "<span class=\"green\">12</span>/<span class=\"green\">18</span>/<span class=\"green\">24</span>% (based on level)"
+                        }
+                    }
+                ]
+            },
+            "Q": "",
+            "W": "",
+            "E": "",
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -642,7 +664,8 @@
         "14.7",
         "14.11",
         "14.18",
-        "14.21"
+        "14.21",
+        "15.3"
     ],
     "ChampionName": "Nasus",
     "Balance": {
@@ -657,6 +680,9 @@
         ],
         "14.21": [
             "nerf"
+        ],
+        "15.3": [
+            "buff"
         ]
     }
 }

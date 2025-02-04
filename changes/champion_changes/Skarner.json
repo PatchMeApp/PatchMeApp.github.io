@@ -10,7 +10,7 @@
         },
         "armor": {
             "base": 33,
-            "increment": 4.8
+            "increment": 4.5
         },
         "spellBlock": {
             "base": 32,
@@ -173,7 +173,7 @@
         },
         "E": {
             "_rawTooltip": {
-                "fullTooltip": "Skarner charges forward, steering toward the chosen direction and ignoring terrain. If he runs into a Champion or large monster, Skarner drags them along for the rest of his charge.<br /><br />Colliding into a wall with an enemy in tow deals [[0]] to the enemy and [[1]] them for 1.5s.<br /><br />Skarner can Recast this Ability to end his charge early. Successful wall collisions reduce this Ability's cooldown to 65%.",
+                "fullTooltip": "Skarner charges forward, steering toward the chosen direction and ignoring terrain. If he runs into a Champion or large monster, Skarner drags them along for the rest of his charge.<br /><br />Colliding into a wall with an enemy in tow deals [[0]] to the enemy and [[1]] them for 1s.<br /><br />Skarner can Recast this Ability to end his charge early. Successful wall collisions reduce this Ability's cooldown to 65%.",
                 "parseInfo": [
                     {
                         "text": {
@@ -1093,6 +1093,42 @@
             "W": "",
             "E": "",
             "R": ""
+        },
+        "15.3": {
+            "B": {
+                "SpellName": "Base Stats",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Armor Growth: ",
+                            "Before": "4.8",
+                            "Indicator": " ⇒ ",
+                            "After": "4.5",
+                            "parsedAfter": "<span class=\"red\">4.5</span>"
+                        }
+                    }
+                ]
+            },
+            "P": "",
+            "Q": "",
+            "W": "",
+            "E": {
+                "SpellName": "E - Ixtal’s Impact",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Stun Duration: ",
+                            "Before": "1.5 seconds",
+                            "Indicator": " ⇒ ",
+                            "After": "1 second",
+                            "parsedAfter": "<span class=\"red\">1</span> second"
+                        }
+                    }
+                ]
+            },
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -1109,7 +1145,8 @@
         "14.15",
         "14.16",
         "14.20",
-        "14.23"
+        "14.23",
+        "15.3"
     ],
     "ChampionName": "Skarner",
     "Balance": {
@@ -1143,6 +1180,9 @@
             "nerf"
         ],
         "14.23": [
+            "nerf"
+        ],
+        "15.3": [
             "nerf"
         ]
     }

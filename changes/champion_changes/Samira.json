@@ -139,7 +139,7 @@
         },
         "E": {
             "_rawTooltip": {
-                "fullTooltip": "Samira dashes through an enemy (including structures), slashing enemies she passes through dealing [[0]] and gaining [[1]] for 3 seconds. <br /><br />If an enemy champion is killed within 3 seconds of Samira damaging them, Wild Rush's cooldown is reset.",
+                "fullTooltip": "Samira dashes through an enemy (including structures), slashing enemies she passes through dealing [[0]] and gaining [[1]] for 5 seconds. <br /><br />If an enemy champion is killed within 3 seconds of Samira damaging them, Wild Rush's cooldown is reset.",
                 "parseInfo": [
                     {
                         "text": {
@@ -906,6 +906,28 @@
                     }
                 ]
             }
+        },
+        "15.3": {
+            "B": "",
+            "P": "",
+            "Q": "",
+            "W": "",
+            "E": {
+                "SpellName": "E - Wild Rush",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Attack Speed Duration: ",
+                            "Before": "3 seconds",
+                            "Indicator": " ⇒ ",
+                            "After": "5 seconds",
+                            "parsedAfter": "<span class=\"green\">5</span> seconds"
+                        }
+                    }
+                ]
+            },
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -926,7 +948,8 @@
         "13.17",
         "14.10",
         "14.11",
-        "14.18"
+        "14.18",
+        "15.3"
     ],
     "ChampionName": "Samira",
     "Balance": {
@@ -934,6 +957,9 @@
             "nerf"
         ],
         "14.18": [
+            "buff"
+        ],
+        "15.3": [
             "buff"
         ]
     }

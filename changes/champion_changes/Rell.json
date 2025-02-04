@@ -1,7 +1,7 @@
 {
     "stats": {
         "hp": {
-            "base": 640,
+            "base": 620,
             "increment": 104
         },
         "mp": {
@@ -10,7 +10,7 @@
         },
         "armor": {
             "base": 30,
-            "increment": 4.3
+            "increment": 4
         },
         "spellBlock": {
             "base": 28,
@@ -1724,10 +1724,10 @@
                     {
                         "Tag": "",
                         "Change": {
-                            "Attribute": "[NEW]:: ",
+                            "Attribute": "",
                             "Before": "",
                             "Indicator": "",
-                            "After": " Now deals 5% total Armor/MR magic damage on-hit"
+                            "After": "Now deals 5% total Armor/MR magic damage on-hit"
                         }
                     },
                     {
@@ -1763,19 +1763,19 @@
                     {
                         "Tag": "",
                         "Change": {
-                            "Attribute": "[NEW]:: ",
+                            "Attribute": "",
                             "Before": "",
                             "Indicator": "",
-                            "After": " Now stuns enemies for 0.8 seconds"
+                            "After": "Now stuns enemies for 0.8 seconds"
                         }
                     },
                     {
                         "Tag": "",
                         "Change": {
-                            "Attribute": "[REMOVED]:: ",
+                            "Attribute": "",
                             "Before": "",
                             "Indicator": "",
-                            "After": " Dismounted 10% slow has been removed"
+                            "After": "Dismounted 10% slow has been"
                         }
                     },
                     {
@@ -1826,10 +1826,10 @@
                     {
                         "Tag": "",
                         "Change": {
-                            "Attribute": "[REMOVED]:: ",
+                            "Attribute": "",
                             "Before": "",
                             "Indicator": "",
-                            "After": " Movement Speed no longer ramps up from 75% effectiveness over 2 seconds"
+                            "After": "Movement Speed no longer ramps up from 75% effectiveness over 2 seconds"
                         }
                     },
                     {
@@ -2009,6 +2009,38 @@
             },
             "E": "",
             "R": ""
+        },
+        "15.3": {
+            "B": {
+                "SpellName": "Base Stats",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Health: ",
+                            "Before": "640",
+                            "Indicator": " ⇒ ",
+                            "After": "620",
+                            "parsedAfter": "<span class=\"red\">620</span>"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Armor Growth: ",
+                            "Before": "4.3",
+                            "Indicator": " ⇒ ",
+                            "After": "4",
+                            "parsedAfter": "<span class=\"red\">4</span>"
+                        }
+                    }
+                ]
+            },
+            "P": "",
+            "Q": "",
+            "W": "",
+            "E": "",
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -2028,7 +2060,8 @@
         "14.7",
         "14.18",
         "14.23",
-        "14.24"
+        "14.24",
+        "15.3"
     ],
     "ChampionName": "Rell",
     "Balance": {
@@ -2044,6 +2077,9 @@
         ],
         "14.24": [
             "buff"
+        ],
+        "15.3": [
+            "nerf"
         ]
     }
 }

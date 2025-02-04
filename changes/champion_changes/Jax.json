@@ -2,7 +2,7 @@
     "stats": {
         "hp": {
             "base": 665,
-            "increment": 100
+            "increment": 103
         },
         "mp": {
             "base": 339,
@@ -21,7 +21,7 @@
             "increment": 0.55
         },
         "mpRegen": {
-            "base": 7.6,
+            "base": 8.2,
             "increment": 0.7
         },
         "attackSpeed": {
@@ -174,7 +174,7 @@
                     },
                     {
                         "text": {
-                            "text": "70/120/170 {{0}} magic damage",
+                            "text": "75/130/185 {{0}} magic damage",
                             "scaleHolders": [
                                 {
                                     "scale": "(+60% AP)",
@@ -784,6 +784,52 @@
                     }
                 ]
             }
+        },
+        "15.3": {
+            "B": {
+                "SpellName": "Base Stats",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Health Growth: ",
+                            "Before": "100",
+                            "Indicator": " ⇒ ",
+                            "After": "103",
+                            "parsedAfter": "<span class=\"green\">103</span>"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Base Mana Regen: ",
+                            "Before": "7.6",
+                            "Indicator": " ⇒ ",
+                            "After": "8.2",
+                            "parsedAfter": "<span class=\"green\">8.2</span>"
+                        }
+                    }
+                ]
+            },
+            "P": "",
+            "Q": "",
+            "W": "",
+            "E": "",
+            "R": {
+                "SpellName": "R - Grandmaster At Arms",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "3 Hit Damage: ",
+                            "Before": "70/120/170 (+60% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "75/130/185 (+60% AP)",
+                            "parsedAfter": "<span class=\"green\">75</span>/<span class=\"green\">130</span>/<span class=\"green\">185</span> (+60% AP)"
+                        }
+                    }
+                ]
+            }
         }
     },
     "ChangePatches": [
@@ -798,7 +844,8 @@
         "14.2",
         "14.14",
         "14.18",
-        "14.22"
+        "14.22",
+        "15.3"
     ],
     "ChampionName": "Jax",
     "Balance": {
@@ -813,6 +860,9 @@
         ],
         "14.22": [
             "nerf"
+        ],
+        "15.3": [
+            "buff"
         ]
     }
 }

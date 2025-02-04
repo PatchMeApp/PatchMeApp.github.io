@@ -166,7 +166,7 @@
                     }
                 ]
             },
-            "cooldown": "18/17/16/15/14",
+            "cooldown": "20/19/18/17/16",
             "cost": "60/55/50/45/40 Mana",
             "name": "Warrior Trickster"
         },
@@ -202,7 +202,7 @@
                     },
                     {
                         "text": {
-                            "text": "40/45/50/55/60% Attack Speed",
+                            "text": "35/40/45/50/55% Attack Speed",
                             "scaleHolders": []
                         },
                         "type": "attackSpeed"
@@ -1437,6 +1437,42 @@
                     }
                 ]
             }
+        },
+        "15.3": {
+            "B": "",
+            "P": "",
+            "Q": "",
+            "W": {
+                "SpellName": "W - Decoy",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Cooldown: ",
+                            "Before": "18/17/16/15/14",
+                            "Indicator": " ⇒ ",
+                            "After": "20/19/18/17/16",
+                            "parsedAfter": "<span class=\"red\">20</span>/<span class=\"red\">19</span>/<span class=\"red\">18</span>/<span class=\"red\">17</span>/<span class=\"red\">16</span>"
+                        }
+                    }
+                ]
+            },
+            "E": {
+                "SpellName": "E - Nimbus Strike",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Attack Speed: ",
+                            "Before": "40/45/50/55/60%",
+                            "Indicator": " ⇒ ",
+                            "After": "35/40/45/50/55%",
+                            "parsedAfter": "<span class=\"red\">35</span>/<span class=\"red\">40</span>/<span class=\"red\">45</span>/<span class=\"red\">50</span>/<span class=\"red\">55</span>%"
+                        }
+                    }
+                ]
+            },
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -1460,7 +1496,8 @@
         "14.3",
         "14.5",
         "14.16",
-        "14.22"
+        "14.22",
+        "15.3"
     ],
     "ChampionName": "Wukong",
     "Balance": {
@@ -1475,6 +1512,9 @@
         ],
         "14.22": [
             "buff"
+        ],
+        "15.3": [
+            "nerf"
         ]
     }
 }

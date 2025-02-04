@@ -1,7 +1,7 @@
 {
     "stats": {
         "hp": {
-            "base": 600,
+            "base": 620,
             "increment": 120
         },
         "mp": {
@@ -143,14 +143,14 @@
                     },
                     {
                         "text": {
-                            "text": "1.5 per Soul collected",
+                            "text": "1.7 per Soul collected",
                             "scaleHolders": []
                         },
                         "type": "magicDamage"
                     },
                     {
                         "text": {
-                            "text": "1.5 per Soul collected {{0}} magic damage",
+                            "text": "1.7 per Soul collected {{0}} magic damage",
                             "scaleHolders": [
                                 {
                                     "scale": "(+80/110/140/170/200% AD)",
@@ -873,6 +873,42 @@
                 ]
             },
             "R": ""
+        },
+        "15.3": {
+            "B": {
+                "SpellName": "Base Stats",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Health: ",
+                            "Before": "600",
+                            "Indicator": " ⇒ ",
+                            "After": "620",
+                            "parsedAfter": "<span class=\"green\">620</span>"
+                        }
+                    }
+                ]
+            },
+            "P": "",
+            "Q": "",
+            "W": "",
+            "E": {
+                "SpellName": "E - Flay",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Basic Attack Damage: ",
+                            "Before": "1.5 per Soul (+ up to 80/110/140/170/200%)",
+                            "Indicator": " ⇒ ",
+                            "After": "1.7 per Soul (+ up to 90/120/150/180/210% total AD)",
+                            "parsedAfter": "<span class=\"green\">1.7</span> per Soul (+ up to <span class=\"green\">90</span>/<span class=\"green\">120</span>/<span class=\"green\">150</span>/<span class=\"green\">180</span>/<span class=\"green\">210</span>% <span class=\"gold\">total AD</span>)"
+                        }
+                    }
+                ]
+            },
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -893,7 +929,8 @@
         "13.7",
         "13.18",
         "14.4",
-        "14.8"
+        "14.8",
+        "15.3"
     ],
     "ChampionName": "Thresh",
     "Balance": {
@@ -901,6 +938,9 @@
             "buff"
         ],
         "14.8": [
+            "buff"
+        ],
+        "15.3": [
             "buff"
         ]
     }

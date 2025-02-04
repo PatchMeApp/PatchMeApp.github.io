@@ -76,7 +76,7 @@
                 "parseInfo": [
                     {
                         "text": {
-                            "text": "75/95/115/135/155 {{0}} physical damage",
+                            "text": "75/100/125/150/175 {{0}} physical damage",
                             "scaleHolders": [
                                 {
                                     "scale": "(+85% bonus AD)",
@@ -1104,6 +1104,28 @@
             "W": "",
             "E": "",
             "R": ""
+        },
+        "15.3": {
+            "B": "",
+            "P": "",
+            "Q": {
+                "SpellName": "Q - Reaping Slash",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Damage: ",
+                            "Before": "75/95/115/135/155 (+85% Bonus AD)",
+                            "Indicator": " ⇒ ",
+                            "After": "75/100/125/150/175 (+85% Bonus AD)",
+                            "parsedAfter": "75/<span class=\"green\">100</span>/<span class=\"green\">125</span>/<span class=\"green\">150</span>/<span class=\"green\">175</span> (+85% Bonus AD)"
+                        }
+                    }
+                ]
+            },
+            "W": "",
+            "E": "",
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -1130,7 +1152,8 @@
         "14.5",
         "14.6",
         "14.7",
-        "15.2"
+        "15.2",
+        "15.3"
     ],
     "ChampionName": "Kayn",
     "Balance": {
@@ -1144,6 +1167,9 @@
             "adjust"
         ],
         "14.7": [
+            "buff"
+        ],
+        "15.3": [
             "buff"
         ]
     }

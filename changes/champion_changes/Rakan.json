@@ -113,7 +113,7 @@
                     }
                 ]
             },
-            "cooldown": "16/14.5/13/11.5/10",
+            "cooldown": "14/13/12/11/10",
             "cost": "50/60/70/80/90 Mana",
             "name": "Grand Entrance"
         },
@@ -552,6 +552,28 @@
             },
             "E": "",
             "R": ""
+        },
+        "15.3": {
+            "B": "",
+            "P": "",
+            "Q": "",
+            "W": {
+                "SpellName": "W - Grand Entrance",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Cooldown: ",
+                            "Before": "16/14.5/13/11.5/10",
+                            "Indicator": " ⇒ ",
+                            "After": "14/13/12/11/10",
+                            "parsedAfter": "<span class=\"green\">14</span>/<span class=\"green\">13</span>/<span class=\"green\">12</span>/<span class=\"green\">11</span>/10"
+                        }
+                    }
+                ]
+            },
+            "E": "",
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -563,7 +585,13 @@
         "12.19",
         "12.22",
         "13.3",
-        "13.8"
+        "13.8",
+        "15.3"
     ],
-    "ChampionName": "Rakan"
+    "ChampionName": "Rakan",
+    "Balance": {
+        "15.3": [
+            "buff"
+        ]
+    }
 }

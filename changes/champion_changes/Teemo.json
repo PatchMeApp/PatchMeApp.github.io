@@ -143,10 +143,10 @@
                     },
                     {
                         "text": {
-                            "text": "14/27/40/53/66 {{0}} magic damage",
+                            "text": "9/23/37/51/65 {{0}} magic damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+25% AP)",
+                                    "scale": "(+30% AP)",
                                     "scaleId": "AP"
                                 }
                             ]
@@ -715,6 +715,28 @@
                 ]
             },
             "R": ""
+        },
+        "15.3": {
+            "B": "",
+            "P": "",
+            "Q": "",
+            "W": "",
+            "E": {
+                "SpellName": "E - Toxic Shot",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "On-Hit Damage: ",
+                            "Before": "14/27/40/53/66 (+30% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "9/23/37/51/65 (+30% AP)",
+                            "parsedAfter": "<span class=\"red\">9</span>/<span class=\"red\">23</span>/<span class=\"red\">37</span>/<span class=\"red\">51</span>/<span class=\"red\">65</span> (+30% AP)"
+                        }
+                    }
+                ]
+            },
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -730,7 +752,8 @@
         "14.2",
         "14.3",
         "14.21",
-        "14.23"
+        "14.23",
+        "15.3"
     ],
     "ChampionName": "Teemo",
     "Balance": {
@@ -748,6 +771,9 @@
             "buff"
         ],
         "14.23": [
+            "nerf"
+        ],
+        "15.3": [
             "nerf"
         ]
     }
