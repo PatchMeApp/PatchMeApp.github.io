@@ -132,7 +132,7 @@
                 ]
             },
             "cooldown": "6",
-            "cost": "50/60/70/80/90 Mana",
+            "cost": "80/85/90/95/100 Mana",
             "name": "Jaws of the Beast"
         },
         "W": {
@@ -644,6 +644,28 @@
             },
             "E": "",
             "R": ""
+        },
+        "15.4": {
+            "B": "",
+            "P": "",
+            "Q": {
+                "SpellName": "Q - Jaws of the Beast",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Mana Cost: ",
+                            "Before": "70/75/80/85/90",
+                            "Indicator": " ⇒ ",
+                            "After": "80/85/90/95/100",
+                            "parsedAfter": "<span class=\"red\">80</span>/<span class=\"red\">85</span>/<span class=\"red\">90</span>/<span class=\"red\">95</span>/<span class=\"red\">100</span>"
+                        }
+                    }
+                ]
+            },
+            "W": "",
+            "E": "",
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -653,7 +675,8 @@
         "12.10",
         "13.24",
         "14.22",
-        "14.24"
+        "14.24",
+        "15.4"
     ],
     "ChampionName": "Warwick",
     "Balance": {
@@ -665,6 +688,9 @@
         ],
         "14.24": [
             "adjust",
+            "nerf"
+        ],
+        "15.4": [
             "nerf"
         ]
     }

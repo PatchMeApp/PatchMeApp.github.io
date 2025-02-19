@@ -69,7 +69,7 @@
                 "parseInfo": [
                     {
                         "text": {
-                            "text": "70/115/160/205/250 {{0}} magic damage",
+                            "text": "85/130/175/220/265 {{0}} magic damage",
                             "scaleHolders": [
                                 {
                                     "scale": "(+90% AP)",
@@ -441,6 +441,28 @@
                 ]
             },
             "R": ""
+        },
+        "15.4": {
+            "B": "",
+            "P": "",
+            "Q": {
+                "SpellName": "Q - Dredge Line",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Damage: ",
+                            "Before": "70/115/160/205/250 (+90% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "85/130/175/220/265 (+90% AP)",
+                            "parsedAfter": "<span class=\"green\">85</span>/<span class=\"green\">130</span>/<span class=\"green\">175</span>/<span class=\"green\">220</span>/<span class=\"green\">265</span> (+90% AP)"
+                        }
+                    }
+                ]
+            },
+            "W": "",
+            "E": "",
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -449,7 +471,13 @@
         "10.16",
         "11.11",
         "12.10",
-        "13.3"
+        "13.3",
+        "15.4"
     ],
-    "ChampionName": "Nautilus"
+    "ChampionName": "Nautilus",
+    "Balance": {
+        "15.4": [
+            "buff"
+        ]
+    }
 }

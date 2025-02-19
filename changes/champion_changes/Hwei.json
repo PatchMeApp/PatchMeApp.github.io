@@ -113,7 +113,7 @@
                         "parseInfo": [
                             {
                                 "text": {
-                                    "text": "80/100/120/140/160 {{0}} magic damage",
+                                    "text": "60/85/110/135/160 {{0}} magic damage",
                                     "scaleHolders": [
                                         {
                                             "scale": "(+25% AP)",
@@ -139,7 +139,7 @@
                             },
                             {
                                 "text": {
-                                    "text": "160/237.5/330/437.5/560 {{0}} magic damage",
+                                    "text": "120/201.875/302.5/421.875/560  {{0}} magic damage",
                                     "scaleHolders": [
                                         {
                                             "scale": "(+50/59.375/68.75/78.125/87.5% AP)",
@@ -261,10 +261,10 @@
                         "parseInfo": [
                             {
                                 "text": {
-                                    "text": "25/35/45/55/65 {{0}} bonus magic damage",
+                                    "text": "20/30/40/50/60 {{0}} bonus magic damage",
                                     "scaleHolders": [
                                         {
-                                            "scale": "(+20% AP)",
+                                            "scale": "(+15% AP)",
                                             "scaleId": "AP"
                                         }
                                     ]
@@ -805,6 +805,56 @@
                 ]
             },
             "R": ""
+        },
+        "15.4": {
+            "B": "",
+            "P": {
+                "SpellName": "Passive - Signature of the Visionary",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Damage: ",
+                            "Before": "35–180 (based on level) (+35% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "35–180 (based on level) (+30% AP)",
+                            "parsedAfter": "35–180 (based on level) (+<span class=\"red\">30</span>% AP)"
+                        }
+                    }
+                ]
+            },
+            "Q": {
+                "SpellName": "QW - Severing Bolt",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Damage: ",
+                            "Before": "80/100/120/140/160 (+25% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "60/85/110/135/160 (+25% AP)",
+                            "parsedAfter": "<span class=\"red\">60</span>/<span class=\"red\">85</span>/<span class=\"red\">110</span>/<span class=\"red\">135</span>/160 (+25% AP)"
+                        }
+                    }
+                ]
+            },
+            "W": {
+                "SpellName": "WE - Stirring Lights",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Damage: ",
+                            "Before": "25/35/45/55/65 (+20% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "20/30/40/50/60 (+15% AP)",
+                            "parsedAfter": "<span class=\"red\">20</span>/<span class=\"red\">30</span>/<span class=\"red\">40</span>/<span class=\"red\">50</span>/<span class=\"red\">60</span> (+<span class=\"red\">15</span>% AP)"
+                        }
+                    }
+                ]
+            },
+            "E": "",
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -814,7 +864,8 @@
         "14.8",
         "14.11",
         "14.18",
-        "14.21"
+        "14.21",
+        "15.4"
     ],
     "ChampionName": "Hwei",
     "Balance": {
@@ -838,6 +889,9 @@
             "buff"
         ],
         "14.21": [
+            "nerf"
+        ],
+        "15.4": [
             "nerf"
         ]
     }

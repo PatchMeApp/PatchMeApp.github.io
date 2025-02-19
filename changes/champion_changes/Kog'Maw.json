@@ -97,10 +97,10 @@
                     },
                     {
                         "text": {
-                            "text": "90/140/190/240/290 {{0}} magic damage",
+                            "text": "80/125/170/215/260 {{0}} magic damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+70% AP)",
+                                    "scale": "(+80% AP)",
                                     "scaleId": "AP"
                                 }
                             ]
@@ -760,6 +760,28 @@
                 ]
             },
             "R": ""
+        },
+        "15.4": {
+            "B": "",
+            "P": "",
+            "Q": {
+                "SpellName": "Q - Caustic Spittle",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Damage: ",
+                            "Before": "90/140/190/240/290 (+70% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "80/125/170/215/260 (+80% AP)",
+                            "parsedAfter": "<span class=\"red\">80</span>/<span class=\"red\">125</span>/<span class=\"red\">170</span>/<span class=\"red\">215</span>/<span class=\"red\">260</span> (+<span class=\"green\">80</span>% AP)"
+                        }
+                    }
+                ]
+            },
+            "W": "",
+            "E": "",
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -775,7 +797,8 @@
         "13.8",
         "13.12",
         "14.5",
-        "14.23"
+        "14.23",
+        "15.4"
     ],
     "ChampionName": "Kog'Maw",
     "Balance": {
@@ -783,6 +806,9 @@
             "buff"
         ],
         "14.23": [
+            "nerf"
+        ],
+        "15.4": [
             "nerf"
         ]
     }

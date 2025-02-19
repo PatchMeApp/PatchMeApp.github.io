@@ -127,7 +127,7 @@
         },
         "W": {
             "_rawTooltip": {
-                "fullTooltip": "Mel forms a barrier around herself that reflects projectiles from enemy champions, prevents her from taking damage, and gives her [[0]] for 1 second(s).<br /><br />Reflected projectiles deal [[1]]",
+                "fullTooltip": "Mel forms a barrier around herself that reflects projectiles from enemy champions, prevents her from taking damage, and gives her [[0]] for 0.75 second(s).<br /><br />Reflected projectiles deal [[1]]",
                 "parseInfo": [
                     {
                         "text": {
@@ -138,7 +138,7 @@
                     },
                     {
                         "text": {
-                            "text": "40%/47.5%/55%/62.5%/70% {{0}} original damage as magic damage.",
+                            "text": "40/45/50/55/60% {{0}} original damage as magic damage.",
                             "scaleHolders": [
                                 {
                                     "scale": "(+0.05% AP)",
@@ -151,12 +151,12 @@
                 ]
             },
             "cooldown": "35/32/29/26/23",
-            "cost": "60/45/30/15/0",
+            "cost": "80/60/40/20/0 Mana",
             "name": "Rebuttal"
         },
         "E": {
             "_rawTooltip": {
-                "fullTooltip": "Mel fires a radiating orb, [[0]] enemies at its center for 1.75/1.875/2/2.125/2.25 seconds and dealing [[1]]. The orb building up a hostile area around it that [[2]] enemies by 30% and deals [[3]].",
+                "fullTooltip": "Mel fires a radiating orb, [[0]] enemies at its center for 1.25/1.5/1.75/2/2.25 seconds and dealing [[1]]. The orb building up a hostile area around it that [[2]] enemies by 30% and deals [[3]].",
                 "parseInfo": [
                     {
                         "text": {
@@ -167,7 +167,7 @@
                     },
                     {
                         "text": {
-                            "text": "60/100/140/180/220 {{0}} magic damage",
+                            "text": "60/105/150/195/240 {{0}} magic damage",
                             "scaleHolders": [
                                 {
                                     "scale": "(+50% AP)",
@@ -259,7 +259,7 @@
                                     "scaleId": "AP"
                                 },
                                 {
-                                    "scale": "(+2.5% AP)",
+                                    "scale": "(+3.5% AP)",
                                     "scaleId": "AP"
                                 }
                             ]
@@ -350,10 +350,120 @@
                     }
                 ]
             }
+        },
+        "15.4": {
+            "B": "",
+            "P": "",
+            "Q": {
+                "SpellName": "Q - Radiant Volley",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Cast Range: ",
+                            "Before": "1000",
+                            "Indicator": " ⇒ ",
+                            "After": "950",
+                            "parsedAfter": "<span class=\"red\">950</span>"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Projectile Speed: ",
+                            "Before": "5000",
+                            "Indicator": " ⇒ ",
+                            "After": "4500",
+                            "parsedAfter": "<span class=\"red\">4500</span>"
+                        }
+                    }
+                ]
+            },
+            "W": {
+                "SpellName": "W - Rebuttal",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Duration: ",
+                            "Before": "1",
+                            "Indicator": " ⇒ ",
+                            "After": "0.75 seconds",
+                            "parsedAfter": "<span class=\"red\">0.75</span> seconds"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Mana Cost: ",
+                            "Before": "60/45/30/15/0",
+                            "Indicator": " ⇒ ",
+                            "After": "80/60/40/20/0",
+                            "parsedAfter": "<span class=\"red\">80</span>/<span class=\"red\">60</span>/<span class=\"red\">40</span>/<span class=\"red\">20</span>/0"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Reflected Damage: ",
+                            "Before": "40/47.5/55/62.5/70%",
+                            "Indicator": " ⇒ ",
+                            "After": "40/45/50/55/60%",
+                            "parsedAfter": "40/<span class=\"red\">45</span>/<span class=\"red\">50</span>/<span class=\"red\">55</span>/<span class=\"red\">60</span>%"
+                        }
+                    }
+                ]
+            },
+            "E": {
+                "SpellName": "E - Solar Snare",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Root Duration: ",
+                            "Before": "1.75/1.88/2/2.13/2.25",
+                            "Indicator": " ⇒ ",
+                            "After": "1.25/1.5/1.75/2/2.25 seconds",
+                            "parsedAfter": "<span class=\"red\">1.25</span>/<span class=\"red\">1.5</span>/<span class=\"red\">1.75</span>/<span class=\"red\">2</span>/2.25 seconds"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Direct Hit Damage: ",
+                            "Before": "60/100/140/180/220 (+50% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "60/105/150/195/240 (+60% AP)",
+                            "parsedAfter": "60/<span class=\"green\">105</span>/<span class=\"green\">150</span>/<span class=\"green\">195</span>/<span class=\"green\">240</span> (+<span class=\"green\">60</span>% AP)"
+                        }
+                    }
+                ]
+            },
+            "R": {
+                "SpellName": "R - Golden Eclipse",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Damage per Overwhelm Stack: ",
+                            "Before": "4/7/10 (+2.5% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "4/7/10 (+3.5% AP)",
+                            "parsedAfter": "4/7/10 (+<span class=\"green\">3.5</span>% AP)"
+                        }
+                    }
+                ]
+            }
         }
     },
     "ChangePatches": [
-        "15.2"
+        "15.2",
+        "15.4"
     ],
-    "ChampionName": "Mel"
+    "ChampionName": "Mel",
+    "Balance": {
+        "15.4": [
+            "adjust"
+        ]
+    }
 }

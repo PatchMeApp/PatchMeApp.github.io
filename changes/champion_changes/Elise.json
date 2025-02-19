@@ -109,10 +109,10 @@
                     },
                     {
                         "text": {
-                            "text": "60/105/150/195/240 {{0}} magic damage",
+                            "text": "60/100/140/180/220 {{0}} magic damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+95% AP)",
+                                    "scale": "(+75% AP)",
                                     "scaleId": "AP"
                                 }
                             ]
@@ -699,6 +699,67 @@
             "W": "",
             "E": "",
             "R": ""
+        },
+        "15.4": {
+            "B": "",
+            "P": "",
+            "Q": "",
+            "W": {
+                "SpellName": "W - Volatile Spiderling",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Damage: ",
+                            "Before": "60/105/150/195/240 (+95% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "60/100/140/180/220 (+75% AP)",
+                            "parsedAfter": "60/<span class=\"red\">100</span>/<span class=\"red\">140</span>/<span class=\"red\">180</span>/<span class=\"red\">220</span> (+<span class=\"red\">75</span>% AP)"
+                        }
+                    }
+                ]
+            },
+            "E": "",
+            "R": {
+                "SpellName": "R - Spider Form",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Spiderling Damage: ",
+                            "Before": "8/14/20/26 (+15% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "10/20/30/40 (+15% AP)",
+                            "parsedAfter": "<span class=\"green\">10</span>/<span class=\"green\">20</span>/<span class=\"green\">30</span>/<span class=\"green\">40</span> (+15% AP)"
+                        }
+                    }
+                ]
+            },
+            "W -": {
+                "SpellName": "W - Skittering Frenzy",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Cooldown: ",
+                            "Before": "10",
+                            "Indicator": " ⇒ ",
+                            "After": "6 seconds",
+                            "parsedAfter": "<span class=\"green\">6</span> seconds"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Bonus Attack Speed: ",
+                            "Before": "60/70/80/90/100%",
+                            "Indicator": " ⇒ ",
+                            "After": "60/75/90/105/120%",
+                            "parsedAfter": "60/<span class=\"green\">75</span>/<span class=\"green\">90</span>/<span class=\"green\">105</span>/<span class=\"green\">120</span>%"
+                        }
+                    }
+                ]
+            }
         }
     },
     "ChangePatches": [
@@ -714,7 +775,8 @@
         "13.17",
         "14.19",
         "14.21",
-        "14.24"
+        "14.24",
+        "15.4"
     ],
     "ChampionName": "Elise",
     "Balance": {
@@ -726,6 +788,9 @@
         ],
         "14.24": [
             "nerf"
+        ],
+        "15.4": [
+            "adjust"
         ]
     }
 }

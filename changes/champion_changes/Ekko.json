@@ -92,7 +92,7 @@
                 "parseInfo": [
                     {
                         "text": {
-                            "text": "70/85/100/115/130 {{0}} magic damage",
+                            "text": "80/95/110/125/140 {{0}} magic damage",
                             "scaleHolders": [
                                 {
                                     "scale": "(+30% AP)",
@@ -488,6 +488,28 @@
             },
             "E": "",
             "R": ""
+        },
+        "15.4": {
+            "B": "",
+            "P": "",
+            "Q": {
+                "SpellName": "Q - Timewinder",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Damage: ",
+                            "Before": "70/85/100/115/130 (+30% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "80/95/110/125/140 (+30% AP)",
+                            "parsedAfter": "<span class=\"green\">80</span>/<span class=\"green\">95</span>/<span class=\"green\">110</span>/<span class=\"green\">125</span>/<span class=\"green\">140</span> (+30% AP)"
+                        }
+                    }
+                ]
+            },
+            "W": "",
+            "E": "",
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -497,7 +519,13 @@
         "11.17",
         "12.10",
         "12.19",
-        "13.16"
+        "13.16",
+        "15.4"
     ],
-    "ChampionName": "Ekko"
+    "ChampionName": "Ekko",
+    "Balance": {
+        "15.4": [
+            "buff"
+        ]
+    }
 }

@@ -119,7 +119,7 @@
                     },
                     {
                         "text": {
-                            "text": "14/15/16/17/18% max Health magic damage",
+                            "text": "10/12/14/16/18% max Health magic damage",
                             "scaleHolders": []
                         },
                         "type": "magicDamage"
@@ -1035,6 +1035,28 @@
                 ]
             },
             "R": ""
+        },
+        "15.4": {
+            "B": "",
+            "P": "",
+            "Q": "",
+            "W": {
+                "SpellName": "W - Sentinel",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Target Max Health Damage: ",
+                            "Before": "14/15/16/17/18%",
+                            "Indicator": " ⇒ ",
+                            "After": "10/12/14/16/18%",
+                            "parsedAfter": "<span class=\"red\">10</span>/<span class=\"red\">12</span>/<span class=\"red\">14</span>/<span class=\"red\">16</span>/18%"
+                        }
+                    }
+                ]
+            },
+            "E": "",
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -1055,7 +1077,8 @@
         "13.11",
         "14.4",
         "14.13",
-        "15.1"
+        "15.1",
+        "15.4"
     ],
     "ChampionName": "Kalista",
     "Balance": {
@@ -1067,6 +1090,9 @@
         ],
         "15.1": [
             "adjust"
+        ],
+        "15.4": [
+            "nerf"
         ]
     }
 }

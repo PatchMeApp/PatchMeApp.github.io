@@ -130,7 +130,7 @@
                     },
                     {
                         "text": {
-                            "text": "25/27.5/30/32.5/35% Attack Speed",
+                            "text": "20/22.5/25/27.5/30% Attack Speed",
                             "scaleHolders": []
                         },
                         "type": "attackSpeed"
@@ -144,7 +144,7 @@
                     }
                 ]
             },
-            "cooldown": "17/16.5/16/15.5/15",
+            "cooldown": "18/17.5/17/16.5/16",
             "cost": "65 Mana",
             "name": "Whimsy"
         },
@@ -161,7 +161,7 @@
                     },
                     {
                         "text": {
-                            "text": "80/125/170/215/260 {{0}} Shield",
+                            "text": "80/120/160/200/240 {{0}} Shield",
                             "scaleHolders": [
                                 {
                                     "scale": "(+55% AP)",
@@ -173,7 +173,7 @@
                     },
                     {
                         "text": {
-                            "text": "80/125/170/215/260 {{0}} magic damage",
+                            "text": "80/120/160/200/240 {{0}} magic damage",
                             "scaleHolders": [
                                 {
                                     "scale": "(+50% AP)",
@@ -826,6 +826,52 @@
             "W": "",
             "E": "",
             "R": ""
+        },
+        "15.4": {
+            "B": "",
+            "P": "",
+            "Q": "",
+            "W": {
+                "SpellName": "W - Whimsy",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Bonus Attack Speed: ",
+                            "Before": "25/27.5/30/32.5/35%",
+                            "Indicator": " ⇒ ",
+                            "After": "20/22.5/25/27.5/30%",
+                            "parsedAfter": "<span class=\"red\">20</span>/<span class=\"red\">22.5</span>/<span class=\"red\">25</span>/<span class=\"red\">27.5</span>/<span class=\"red\">30</span>%"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Cooldown: ",
+                            "Before": "17/16.5/16/15.5/15",
+                            "Indicator": " ⇒ ",
+                            "After": "18/17.5/17/16.5/16 seconds",
+                            "parsedAfter": "<span class=\"red\">18</span>/<span class=\"red\">17.5</span>/<span class=\"red\">17</span>/<span class=\"red\">16.5</span>/<span class=\"red\">16</span> seconds"
+                        }
+                    }
+                ]
+            },
+            "E": {
+                "SpellName": "E - Help, Pix!",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Base Damage/Shield Strength: ",
+                            "Before": "80/125/170/215/260",
+                            "Indicator": " ⇒ ",
+                            "After": "80/120/160/200/240",
+                            "parsedAfter": "80/<span class=\"red\">120</span>/<span class=\"red\">160</span>/<span class=\"red\">200</span>/<span class=\"red\">240</span>"
+                        }
+                    }
+                ]
+            },
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -843,7 +889,8 @@
         "13.16",
         "14.4",
         "14.11",
-        "14.18"
+        "14.18",
+        "15.4"
     ],
     "ChampionName": "Lulu",
     "Balance": {
@@ -855,6 +902,9 @@
         ],
         "14.18": [
             "buff"
+        ],
+        "15.4": [
+            "nerf"
         ]
     }
 }

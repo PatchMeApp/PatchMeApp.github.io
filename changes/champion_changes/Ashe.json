@@ -90,7 +90,7 @@
                     },
                     {
                         "text": {
-                            "text": "110/115/120/125/130% AD damage",
+                            "text": "111/117/123/129/135% AD damage",
                             "scaleHolders": []
                         },
                         "type": "physicalDamage"
@@ -110,7 +110,7 @@
                             "text": "60/95/130/165/200 {{0}} physical damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+100% Bonus AD)",
+                                    "scale": "(+110% Bonus AD)",
                                     "scaleId": "AD"
                                 }
                             ]
@@ -145,7 +145,7 @@
                     },
                     {
                         "text": {
-                            "text": "200/400/600 {{0}} magic damage",
+                            "text": "250/450/650 {{0}} magic damage",
                             "scaleHolders": [
                                 {
                                     "scale": "(+120% AP)",
@@ -750,6 +750,66 @@
             },
             "E": "",
             "R": ""
+        },
+        "15.4": {
+            "B": "",
+            "P": "",
+            "Q": {
+                "SpellName": "Q - Ranger's Focus",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Total Damage per Flurry: ",
+                            "Before": "110/115/120/125/130% AD",
+                            "Indicator": " ⇒ ",
+                            "After": "111/117/123/129/135% AD",
+                            "parsedAfter": "<span class=\"green\">111</span>/<span class=\"green\">117</span>/<span class=\"green\">123</span>/<span class=\"green\">129</span>/<span class=\"green\">135</span>% AD"
+                        }
+                    }
+                ]
+            },
+            "W": {
+                "SpellName": "W - Volley",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "AD Ratio: ",
+                            "Before": "100% bonus AD",
+                            "Indicator": " ⇒ ",
+                            "After": "110% bonus AD",
+                            "parsedAfter": "<span class=\"green\">110</span>% bonus AD"
+                        }
+                    }
+                ]
+            },
+            "E": "",
+            "R": {
+                "SpellName": "R - Enchanted Crystal Arrow",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Damage: ",
+                            "Before": "200/400/600 (+120% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "250/450/650 (+120% AP)",
+                            "parsedAfter": "<span class=\"green\">250</span>/<span class=\"green\">450</span>/<span class=\"green\">650</span> (+120% AP)"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Secondary Target Damage: ",
+                            "Before": "50%",
+                            "Indicator": " ⇒ ",
+                            "After": "100%",
+                            "parsedAfter": "<span class=\"green\">100</span>%"
+                        }
+                    }
+                ]
+            }
         }
     },
     "ChangePatches": [
@@ -770,7 +830,8 @@
         "13.12",
         "14.12",
         "14.17",
-        "15.1"
+        "15.1",
+        "15.4"
     ],
     "ChampionName": "Ashe",
     "Balance": {
@@ -782,6 +843,9 @@
         ],
         "15.1": [
             "adjust"
+        ],
+        "15.4": [
+            "buff"
         ]
     }
 }

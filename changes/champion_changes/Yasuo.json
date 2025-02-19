@@ -45,8 +45,21 @@
         "P": {
             "cooldown": "",
             "_rawTooltip": {
-                "fullTooltip": "Innate - Intent: Yasuo's total critical strike chance is multiplied by 2 from all other sources, but his critical strikes deal only [ 90% of the normal critical strike damage ] Additionally, [ every 1% critical strike chance in excess of 100% is converted into 0.5 bonus AD. ]<br>Innate - Resolve: Yasuo generates Flow for every 59 / 52.5 / 46 (based on level) units he travels by any means. At[ 100 stacks ]and upon taking damage from enemy champions or monsters, Yasuo consumes all Flow to shield himself for 125 − 600 (based on level) for up to 1 second.",
-                "parseInfo": []
+                "fullTooltip": "Innate - Intent: Yasuo's total critical strike chance is multiplied by 2 from all other sources, but his critical strikes deal only [ [[0]]. ] Additionally, [ every 1% critical strike chance in excess of 100% is converted into 0.5 bonus AD. ]<br>Innate - Resolve: Yasuo generates Flow for every 59 / 52.5 / 46 (based on level) units he travels by any means. At[ 100 stacks ]and upon taking damage from enemy champions or monsters, Yasuo consumes all Flow to shield himself for 125 − 600 (based on level) for up to 1 second.",
+                "parseInfo": [
+                    {
+                        "text": {
+                            "text": "{{0}} AD bonus physical damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(57.5% + 31.5%)",
+                                    "scaleId": "31.5%"
+                                }
+                            ]
+                        },
+                        "type": "physicalDamage"
+                    }
+                ]
             },
             "name": "Way of the Wanderer"
         },
@@ -751,6 +764,28 @@
             },
             "E": "",
             "R": ""
+        },
+        "15.4": {
+            "B": "",
+            "P": {
+                "SpellName": "Passive - Way of the Wanderer",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Critical Damage Reduction: ",
+                            "Before": "10%",
+                            "Indicator": " ⇒ ",
+                            "After": "REMOVED",
+                            "parsedAfter": "REMOVED"
+                        }
+                    }
+                ]
+            },
+            "Q": "",
+            "W": "",
+            "E": "",
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -769,7 +804,8 @@
         "13.15",
         "14.10",
         "14.15",
-        "14.20"
+        "14.20",
+        "15.4"
     ],
     "ChampionName": "Yasuo",
     "Balance": {
@@ -780,6 +816,9 @@
             "buff"
         ],
         "14.20": [
+            "buff"
+        ],
+        "15.4": [
             "buff"
         ]
     }
