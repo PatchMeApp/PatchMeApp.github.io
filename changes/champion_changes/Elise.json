@@ -760,6 +760,44 @@
                     }
                 ]
             }
+        },
+        "15.5": {
+            "B": "",
+            "P": "",
+            "Q": "",
+            "W": "",
+            "E": "",
+            "R": "",
+            "H": {
+                "SpellName": "Human Q - Neurotoxin",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Damage: ",
+                            "Before": "40/75/110/145/180 (+4 % of targets health)(+3% per 100 AP))",
+                            "Indicator": " ⇒ ",
+                            "After": "40/70/100/130/160 (+4 % of targets health)(+3% per 100 AP))",
+                            "parsedAfter": "40/<span class=\"red\">70</span>/<span class=\"red\">100</span>/<span class=\"red\">130</span>/<span class=\"red\">160</span> (+4 % of targets health)(+3% per 100 AP))"
+                        }
+                    }
+                ]
+            },
+            "S": {
+                "SpellName": "Spider Q - Venomous Bite",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Damage: ",
+                            "Before": "60/90/120/150/180 (+8 of targets missing HP (+3% per 100 AP))",
+                            "Indicator": " ⇒ ",
+                            "After": "50/80/110/140/180 (+8 of targets missing HP (+3% per 100 AP))",
+                            "parsedAfter": "<span class=\"red\">50</span>/<span class=\"red\">80</span>/<span class=\"red\">110</span>/<span class=\"red\">140</span>/180 (+8 of targets missing HP (+3% per 100 AP))"
+                        }
+                    }
+                ]
+            }
         }
     },
     "ChangePatches": [
@@ -776,7 +814,8 @@
         "14.19",
         "14.21",
         "14.24",
-        "15.4"
+        "15.4",
+        "15.5"
     ],
     "ChampionName": "Elise",
     "Balance": {
@@ -791,6 +830,9 @@
         ],
         "15.4": [
             "adjust"
+        ],
+        "15.5": [
+            "nerf"
         ]
     }
 }

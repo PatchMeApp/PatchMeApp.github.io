@@ -590,6 +590,42 @@
                     }
                 ]
             }
+        },
+        "15.5": {
+            "B": "",
+            "P": "",
+            "Q": "",
+            "W": "",
+            "E": {
+                "SpellName": "E - The Weirding",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Damage: ",
+                            "Before": "70/110/150/190/230 (+80% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "70/110/150/190/230 (+70% AP)",
+                            "parsedAfter": "70/110/150/190/230 (+<span class=\"red\">70</span>% AP)"
+                        }
+                    }
+                ]
+            },
+            "R": {
+                "SpellName": "R - Between Worlds",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Border Collision Slow: ",
+                            "Before": "75%",
+                            "Indicator": " ⇒ ",
+                            "After": "50%",
+                            "parsedAfter": "<span class=\"red\">50</span>%"
+                        }
+                    }
+                ]
+            }
         }
     },
     "ChangePatches": [
@@ -597,7 +633,8 @@
         "14.15",
         "14.17",
         "14.18",
-        "14.23"
+        "14.23",
+        "15.5"
     ],
     "ChampionName": "Aurora",
     "Balance": {
@@ -613,6 +650,9 @@
         "14.23": [
             "adjust",
             "danger"
+        ],
+        "15.5": [
+            "nerf"
         ]
     }
 }
