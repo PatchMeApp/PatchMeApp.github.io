@@ -25,7 +25,7 @@
             "increment": 0.55
         },
         "attackSpeed": {
-            "base": 0.625,
+            "base": 0.7,
             "increment": 0.019
         },
         "ms": {
@@ -120,7 +120,7 @@
                             "text": "50/60/70/80/90 {{0}} plus 6/6.5/7/7.5/8% max Health magic damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+60% AP)",
+                                    "scale": "(+55% AP)",
                                     "scaleId": "AP"
                                 }
                             ]
@@ -595,6 +595,55 @@
             "W": "",
             "E": "",
             "R": ""
+        },
+        "15.6": {
+            "B": {
+                "SpellName": "Base Stats",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Base Attack Speed: ",
+                            "Before": "0.625",
+                            "Indicator": " ⇒ ",
+                            "After": "0.7 (Note: This is equivalent to gaining 12% AS at level 1.)",
+                            "parsedAfter": "<span class=\"green\">0.7</span> (Note: This is equivalent to gaining 12% AS at level 1.)"
+                        }
+                    }
+                ]
+            },
+            "P": "",
+            "Q": {
+                "SpellName": "Q - Poison Trail",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Respect the Dibs: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "If a minion would die to another minion while affected by Poison Trail, Singed gets the kill credit instead"
+                        }
+                    }
+                ]
+            },
+            "W": "",
+            "E": {
+                "SpellName": "E - Fling",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Damage: ",
+                            "Before": "50 / 60 / 70 / 80 / 90 (+ 6 / 6.5 / 7 / 7.5 / 8% of target's maximum health) (+ 60% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "50 / 60 / 70 / 80 / 90 (+ 6 / 6.5 / 7 / 7.5 / 8% of target's maximum health) (+ 55% AP)",
+                            "parsedAfter": "50/60/70/80/90 (+6/6.5/7/7.5/8% of target's maximum health) (+<span class=\"red\">55</span>% AP)"
+                        }
+                    }
+                ]
+            },
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -609,7 +658,8 @@
         "13.22",
         "14.1",
         "14.11",
-        "14.20"
+        "14.20",
+        "15.6"
     ],
     "ChampionName": "Singed",
     "Balance": {
@@ -621,6 +671,9 @@
         ],
         "14.20": [
             "nerf"
+        ],
+        "15.6": [
+            "adjust"
         ]
     }
 }

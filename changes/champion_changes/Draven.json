@@ -45,7 +45,7 @@
         "P": {
             "cooldown": "",
             "_rawTooltip": {
-                "fullTooltip": "Innate: When Draven catches a Spinning Axe, kills a non-champion, or destroys a turret, he gains a stack of Adoration.<br>In addition, killing a minion or destroying a ward or trap grants a Strike stack for 10 seconds, stacking up to 6 times. If he drops an axe or a nearby minion dies without Draven killing it he loses all Strike stacks. At 6 stacks, he consumes all of his Strike stacks and gains 2 Adoration stacks.<br>When Draven kills an enemy champion, he consumes all of his Adoration stacks and gains 25 + (2 × stacks) bonus gold.<br>Draven loses 50% of his Adoration stacks upon death.",
+                "fullTooltip": "Innate: When Draven catches a Spinning Axe, kills a non-champion, or destroys a turret, he gains a stack of Adoration.<br>In addition, killing a minion or destroying a ward or trap grants a Strike stack for 10 seconds, stacking up to 6 times. If he drops an axe or a nearby minion dies without Draven killing it he loses all Strike stacks.<br>When Draven kills an enemy champion, he consumes all of his Adoration stacks and gains 25 + (2 × stacks) bonus gold.<br>Draven loses 50% of his Adoration stacks upon death.",
                 "parseInfo": []
             },
             "name": "League of Draven"
@@ -527,6 +527,27 @@
             "W": "",
             "E": "",
             "R": ""
+        },
+        "15.6": {
+            "B": "",
+            "P": {
+                "SpellName": "Passive - League of Draven",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "Draven no longer gains 2 Bonus Adoration stacks for every 6 kills"
+                        }
+                    }
+                ]
+            },
+            "Q": "",
+            "W": "",
+            "E": "",
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -539,7 +560,8 @@
         "13.23",
         "14.8",
         "14.10",
-        "14.11"
+        "14.11",
+        "15.6"
     ],
     "ChampionName": "Draven",
     "Balance": {
@@ -551,6 +573,9 @@
         ],
         "14.11": [
             "buff"
+        ],
+        "15.6": [
+            "nerf"
         ]
     }
 }

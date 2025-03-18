@@ -146,7 +146,7 @@
                     }
                 ]
             },
-            "cooldown": "19/17.75/16.5/15.25/14",
+            "cooldown": "16/15.5/15/14.5/14",
             "cost": "40/30/20/10/0 Mana",
             "name": "Relentless Pursuit"
         },
@@ -623,6 +623,28 @@
             "W": "",
             "E": "",
             "R": ""
+        },
+        "15.6": {
+            "B": "",
+            "P": "",
+            "Q": "",
+            "W": "",
+            "E": {
+                "SpellName": "E - Relentless Pursuit",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Cooldown: ",
+                            "Before": "19 / 17.75 / 16.5 / 15.25 / 14",
+                            "Indicator": " ⇒ ",
+                            "After": "16 / 15.5 / 15 / 14.5 / 14 seconds",
+                            "parsedAfter": "<span class=\"green\">16</span> / <span class=\"green\">15.5</span> / <span class=\"green\">15</span> / <span class=\"green\">14.5</span> / 14 seconds"
+                        }
+                    }
+                ]
+            },
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -637,7 +659,8 @@
         "13.12",
         "13.16",
         "13.24",
-        "14.16"
+        "14.16",
+        "15.6"
     ],
     "ChampionName": "Lucian",
     "Balance": {
@@ -646,6 +669,9 @@
         ],
         "14.16": [
             "adjust"
+        ],
+        "15.6": [
+            "buff"
         ]
     }
 }

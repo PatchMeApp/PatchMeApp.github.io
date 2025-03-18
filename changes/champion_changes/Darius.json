@@ -81,7 +81,7 @@
                     },
                     {
                         "text": {
-                            "text": "300% damage",
+                            "text": "200% damage",
                             "scaleHolders": []
                         },
                         "type": ""
@@ -565,6 +565,28 @@
                 ]
             },
             "R": ""
+        },
+        "15.6": {
+            "B": "",
+            "P": {
+                "SpellName": "Passive - Hemorrhage",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Monster Damage Modifier: ",
+                            "Before": "300%",
+                            "Indicator": " ⇒ ",
+                            "After": "200%",
+                            "parsedAfter": "<span class=\"red\">200</span>%"
+                        }
+                    }
+                ]
+            },
+            "Q": "",
+            "W": "",
+            "E": "",
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -575,12 +597,16 @@
         "11.20",
         "12.6",
         "12.10",
-        "14.2"
+        "14.2",
+        "15.6"
     ],
     "ChampionName": "Darius",
     "Balance": {
         "14.2": [
             "buff"
+        ],
+        "15.6": [
+            "nerf"
         ]
     }
 }

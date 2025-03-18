@@ -160,14 +160,14 @@
                 "parseInfo": [
                     {
                         "text": {
-                            "text": "32.5/47.5/62.5 {{0}} to 325/475/625 {{1}} + 25/30/35% missing Health physical damage",
+                            "text": "32.5/47.5/62.5 {{0}} to 300/450/600 {{1}} + 25/30/35% missing Health physical damage",
                             "scaleHolders": [
                                 {
                                     "scale": "(+16.5% Bonus AD)",
                                     "scaleId": "AD"
                                 },
                                 {
-                                    "scale": "(+165% Bonus AD)",
+                                    "scale": "(+155% Bonus AD)",
                                     "scaleId": "AD"
                                 }
                             ]
@@ -942,6 +942,28 @@
             },
             "E": "",
             "R": ""
+        },
+        "15.6": {
+            "B": "",
+            "P": "",
+            "Q": "",
+            "W": "",
+            "E": "",
+            "R": {
+                "SpellName": "R - Super Mega Death Rocket!",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Damage: ",
+                            "Before": "325 / 475 / 625 (+ 165% bonus AD) (+ 25 / 30 / 35% of target's missing health)",
+                            "Indicator": " ⇒ ",
+                            "After": "300 / 450 / 600 (+ 155% bonus AD) (+ 25 / 30 / 35% of target's missing health)",
+                            "parsedAfter": "<span class=\"red\">300</span> / <span class=\"red\">450</span> / <span class=\"red\">600</span> (+ <span class=\"red\">155</span>% bonus AD) (+ 25 / 30 / 35% of target's missing health)"
+                        }
+                    }
+                ]
+            }
         }
     },
     "ChangePatches": [
@@ -966,7 +988,8 @@
         "14.9",
         "14.11",
         "14.18",
-        "14.23"
+        "14.23",
+        "15.6"
     ],
     "ChampionName": "Jinx",
     "Balance": {
@@ -981,6 +1004,9 @@
         ],
         "14.23": [
             "adjust"
+        ],
+        "15.6": [
+            "nerf"
         ]
     }
 }

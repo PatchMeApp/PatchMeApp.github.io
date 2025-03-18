@@ -64,10 +64,10 @@
                 "parseInfo": [
                     {
                         "text": {
-                            "text": "80/120/160/200/240 {{0}} physical damage",
+                            "text": "90/130/170/210/250 {{0}} physical damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+140% Bonus AD)",
+                                    "scale": "(+145% Bonus AD)",
                                     "scaleId": "AD"
                                 }
                             ]
@@ -721,6 +721,28 @@
             "W": "",
             "E": "",
             "R": ""
+        },
+        "15.6": {
+            "B": "",
+            "P": "",
+            "Q": {
+                "SpellName": "Q - Dragon Strike",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Damage: ",
+                            "Before": "80 / 120 / 160 / 200 / 240 (+ 140% bonus AD)",
+                            "Indicator": " ⇒ ",
+                            "After": "90 / 130 / 170 / 210 / 250 (+ 145% bonus AD)",
+                            "parsedAfter": "<span class=\"green\">90</span> / <span class=\"green\">130</span> / <span class=\"green\">170</span> / <span class=\"green\">210</span> / <span class=\"green\">250</span> (+ <span class=\"green\">145</span>% bonus AD)"
+                        }
+                    }
+                ]
+            },
+            "W": "",
+            "E": "",
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -738,7 +760,8 @@
         "13.23",
         "14.5",
         "14.8",
-        "14.18"
+        "14.18",
+        "15.6"
     ],
     "ChampionName": "Jarvan IV",
     "Balance": {
@@ -752,6 +775,9 @@
             "buff"
         ],
         "14.18": [
+            "buff"
+        ],
+        "15.6": [
             "buff"
         ]
     }

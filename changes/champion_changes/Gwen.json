@@ -1,8 +1,8 @@
 {
     "stats": {
         "hp": {
-            "base": 620,
-            "increment": 115
+            "base": 650,
+            "increment": 100
         },
         "mp": {
             "base": 330,
@@ -68,7 +68,7 @@
                     },
                     {
                         "text": {
-                            "text": "10 {{0}} magic damage",
+                            "text": "5 {{0}} magic damage",
                             "scaleHolders": [
                                 {
                                     "scale": "(+ 15% AP)",
@@ -83,7 +83,7 @@
                             "text": "1% {{0}} of the target's maximum health",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+ 0.6% per 100 AP)",
+                                    "scale": "(+ 0.55% per 100 AP)",
                                     "scaleId": "AP"
                                 }
                             ]
@@ -133,7 +133,7 @@
                     },
                     {
                         "text": {
-                            "text": "60/85/110/135/160 {{0}} magic damage",
+                            "text": "70/95/120/145/170 {{0}} magic damage",
                             "scaleHolders": [
                                 {
                                     "scale": "(+35% AP)",
@@ -172,7 +172,7 @@
         },
         "W": {
             "_rawTooltip": {
-                "fullTooltip": "Gwen summons the Hallowed Mist, making her Untargetable to all enemies (except towers) outside the zone for 4 seconds or until she leaves it. While in the Mist, Gwen gains 22/24/26/28/30 (+7% AP) [[0]] and [[1]].<br /><br />Gwen can [[2]] this Ability once to call the Mist to her. This will automatically [[3]] the first time Gwen attempts to leave the zone.",
+                "fullTooltip": "Gwen summons the Hallowed Mist, making her Untargetable to all enemies (except towers) outside the zone for 4 seconds or until she leaves it. While in the Mist, Gwen gains 25 (+5% AP) [[0]] and [[1]].<br /><br />Gwen can [[2]] this Ability once to call the Mist to her. This will automatically [[3]] the first time Gwen attempts to leave the zone.",
                 "parseInfo": [
                     {
                         "text": {
@@ -210,7 +210,7 @@
         },
         "E": {
             "_rawTooltip": {
-                "fullTooltip": "Gwen dashes and empowers her Attacks for 4 seconds.<br /><br />Empowered Attacks gain [[0]], [[1]]  [[2]], 75 range, and the first one to hit an enemy refunds 25/35/45/55/65% of this Ability's Cooldown.",
+                "fullTooltip": "Gwen dashes and empowers her Attacks for 4 seconds.<br /><br />Empowered Attacks gain [[0]], [[1]]  [[2]], 75 range, and the first one to hit an enemy refunds 50% of this Ability's Cooldown.",
                 "parseInfo": [
                     {
                         "text": {
@@ -221,7 +221,7 @@
                     },
                     {
                         "text": {
-                            "text": "15 {{0}} magic damage",
+                            "text": "12/14/16/18/20 {{0}} magic damage",
                             "scaleHolders": [
                                 {
                                     "scale": "(+20% AP)",
@@ -240,13 +240,13 @@
                     }
                 ]
             },
-            "cooldown": "13/12.5/12/11.5/11",
+            "cooldown": "12/11/10/9/8",
             "cost": "35 Mana",
             "name": "Skip 'n Slash"
         },
         "R": {
             "_rawTooltip": {
-                "fullTooltip": "[[0]] Hurl a needle that deals [[1]], [[2]] by 40/50/60% for 1.5 seconds, and applies [[3]] to all enemies hit. Gwen can [[4]] this ability up to 2 additional times within 6 seconds (1s cooldown between casts).<br /><br />[[5]] Fire three needles to deal [[6]]<br />[[7]] Fire five needles to deal [[8]]",
+                "fullTooltip": "[[0]] Hurl a needle that deals [[1]], [[2]] by 60% for 1.5 seconds, and applies [[3]] to all enemies hit. Gwen can [[4]] this ability up to 2 additional times within 6 seconds (1s cooldown between casts).<br /><br />[[5]] Fire three needles to deal [[6]]<br />[[7]] Fire five needles to deal [[8]]",
                 "parseInfo": [
                     {
                         "text": {
@@ -257,10 +257,10 @@
                     },
                     {
                         "text": {
-                            "text": "35/65/95 {{0}} magic damage",
+                            "text": "30/60/90 {{0}} magic damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+10% AP)",
+                                    "scale": "(+8% AP)",
                                     "scaleId": "AP"
                                 }
                             ]
@@ -297,10 +297,10 @@
                     },
                     {
                         "text": {
-                            "text": "105/195/285 {{0}} magic damage",
+                            "text": "90/180/270 {{0}} magic damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+30% AP)",
+                                    "scale": "(+24% AP)",
                                     "scaleId": "AP"
                                 }
                             ]
@@ -316,10 +316,10 @@
                     },
                     {
                         "text": {
-                            "text": "175/325/475 {{0}} magic damage",
+                            "text": "150/300/450 {{0}} magic damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+50% AP)",
+                                    "scale": "(+38% AP)",
                                     "scaleId": "AP"
                                 }
                             ]
@@ -947,6 +947,168 @@
             "W": "",
             "E": "",
             "R": ""
+        },
+        "15.6": {
+            "B": {
+                "SpellName": "Base Stats",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Health Growth: ",
+                            "Before": "115",
+                            "Indicator": " ⇒ ",
+                            "After": "100",
+                            "parsedAfter": "<span class=\"red\">100</span>"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Base Health: ",
+                            "Before": "620",
+                            "Indicator": " ⇒ ",
+                            "After": "650",
+                            "parsedAfter": "<span class=\"green\">650</span>"
+                        }
+                    }
+                ]
+            },
+            "P": {
+                "SpellName": "P - Thousand Cuts",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Damage: ",
+                            "Before": "1% (+ 0.6% per 100 AP) of target's HP",
+                            "Indicator": " ⇒ ",
+                            "After": "1% (+ 0.55% per 100 AP) of target's HP",
+                            "parsedAfter": "1% (+ <span class=\"red\">0.55</span>% per 100 AP) of target's HP"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Damage to Monsters Modifier: ",
+                            "Before": "10 (+15% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "5 (+15% AP)",
+                            "parsedAfter": "<span class=\"red\">5</span> (+15% AP)"
+                        }
+                    }
+                ]
+            },
+            "Q": {
+                "SpellName": "Q - Snip Snip!",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Final Snip Damage: ",
+                            "Before": "60 / 85 / 110 / 135 / 160 (+ 35% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "70 / 95 / 120 / 145 / 170 (+ 35% AP)",
+                            "parsedAfter": "<span class=\"green\">70</span> / <span class=\"green\">95</span> / <span class=\"green\">120</span> / <span class=\"green\">145</span> / <span class=\"green\">170</span> (+ 35% AP)"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Maximum Damage: ",
+                            "Before": "110 / 160 / 210 / 260 / 310 (+ 60% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "120 / 170 / 220 / 270 / 320 (+ 60% AP)",
+                            "parsedAfter": "<span class=\"green\">120</span> / <span class=\"green\">170</span> / <span class=\"green\">220</span> / <span class=\"green\">270</span> / <span class=\"green\">320</span> (+ 60% AP)"
+                        }
+                    }
+                ]
+            },
+            "W": {
+                "SpellName": "W - Hallowed Mist",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Bonus Resistances: ",
+                            "Before": "22 / 24 / 26 / 28 / 30 (+ 7% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "25 (+ 5% AP)",
+                            "parsedAfter": "<span class=\"green\">25</span> (+ <span class=\"red\">5</span>% AP)"
+                        }
+                    }
+                ]
+            },
+            "E": {
+                "SpellName": "E - Skip 'N Slash",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Cooldown: ",
+                            "Before": "13 / 12.5 / 12 / 11.5 / 11",
+                            "Indicator": " ⇒ ",
+                            "After": "12 / 11 / 10 / 9 / 8 seconds",
+                            "parsedAfter": "<span class=\"green\">12</span> / <span class=\"green\">11</span> / <span class=\"green\">10</span> / <span class=\"green\">9</span> / <span class=\"green\">8</span> seconds"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Cooldown Refund: ",
+                            "Before": "25 / 35 / 45 / 55 / 65%",
+                            "Indicator": " ⇒ ",
+                            "After": "50% at all ranks",
+                            "parsedAfter": "<span class=\"green\">50</span>% at all ranks"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "On-Hit Damage: ",
+                            "Before": "15 (+ 20% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "12 / 14 / 16 / 18 / 20 (+ 20% AP)",
+                            "parsedAfter": "<span class=\"red\">12</span> / <span class=\"red\">14</span> / <span class=\"green\">16</span> / <span class=\"green\">18</span> / <span class=\"green\">20</span> (+ 20% AP)"
+                        }
+                    }
+                ]
+            },
+            "R": {
+                "SpellName": "R - Needlework",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Damage per Needle: ",
+                            "Before": "35 / 65 / 95 (+ 10% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "30 / 60 / 90 (+ 8% AP)",
+                            "parsedAfter": "<span class=\"red\">30</span> / <span class=\"red\">60</span> / <span class=\"red\">90</span> (+ <span class=\"red\">8</span>% AP)"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Initial Slow: ",
+                            "Before": "40 / 50 / 60%",
+                            "Indicator": " ⇒ ",
+                            "After": "60% at all ranks",
+                            "parsedAfter": "<span class=\"green\">60</span>% at all ranks"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Reduced Slow: ",
+                            "Before": "15 / 20 / 25%",
+                            "Indicator": " ⇒ ",
+                            "After": "25% at all ranks",
+                            "parsedAfter": "<span class=\"green\">25</span>% at all ranks"
+                        }
+                    }
+                ]
+            }
         }
     },
     "ChangePatches": [
@@ -964,7 +1126,8 @@
         "13.18",
         "14.1",
         "14.2",
-        "14.21"
+        "14.21",
+        "15.6"
     ],
     "ChampionName": "Gwen",
     "Balance": {
@@ -976,6 +1139,9 @@
         ],
         "14.21": [
             "nerf"
+        ],
+        "15.6": [
+            "adjust"
         ]
     }
 }

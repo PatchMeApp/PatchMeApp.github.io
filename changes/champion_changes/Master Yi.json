@@ -10,7 +10,7 @@
         },
         "armor": {
             "base": 33,
-            "increment": 4.7
+            "increment": 4.2
         },
         "spellBlock": {
             "base": 32,
@@ -919,6 +919,42 @@
                 ]
             },
             "R": ""
+        },
+        "15.6": {
+            "B": {
+                "SpellName": "Base Stats",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Armor Growth: ",
+                            "Before": "4.7",
+                            "Indicator": " ⇒ ",
+                            "After": "4.2",
+                            "parsedAfter": "<span class=\"red\">4.2</span>"
+                        }
+                    }
+                ]
+            },
+            "P": "",
+            "Q": {
+                "SpellName": "Q - Alpha Strike",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Bonus Critical Strike Damage: ",
+                            "Before": "75%",
+                            "Indicator": " ⇒ ",
+                            "After": "100%",
+                            "parsedAfter": "<span class=\"green\">100</span>%"
+                        }
+                    }
+                ]
+            },
+            "W": "",
+            "E": "",
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -940,7 +976,8 @@
         "14.12",
         "14.23",
         "14.24",
-        "15.2"
+        "15.2",
+        "15.6"
     ],
     "ChampionName": "Master Yi",
     "Balance": {
@@ -961,6 +998,9 @@
         ],
         "15.2": [
             "buff"
+        ],
+        "15.6": [
+            "adjust"
         ]
     }
 }

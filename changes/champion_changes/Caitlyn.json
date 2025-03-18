@@ -187,7 +187,7 @@
                 "parseInfo": [
                     {
                         "text": {
-                            "text": "300/500/700 {{0}} * {{1}} physical damage",
+                            "text": "300/475/650 {{0}} * {{1}} physical damage",
                             "scaleHolders": [
                                 {
                                     "scale": "(+100% Bonus AD)",
@@ -1056,6 +1056,42 @@
                     }
                 ]
             }
+        },
+        "15.6": {
+            "B": "",
+            "P": "",
+            "Q": "",
+            "W": {
+                "SpellName": "W - Yordle Snap Trap",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Headshot Damage Increase vs Trapped Targets: ",
+                            "Before": "40 / 85 / 130 / 175 / 220 (+ 40% bonus AD)",
+                            "Indicator": " ⇒ ",
+                            "After": "35 / 80 / 125 / 170 / 215 (+ 30% bonus AD)",
+                            "parsedAfter": "<span class=\"red\">35</span> / <span class=\"red\">80</span> / <span class=\"red\">125</span> / <span class=\"red\">170</span> / <span class=\"red\">215</span> (+ <span class=\"red\">30</span>% bonus AD)"
+                        }
+                    }
+                ]
+            },
+            "E": "",
+            "R": {
+                "SpellName": "R - Ace in the Hole",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Damage: ",
+                            "Before": "300 / 500 / 700 (+ 100% bonus AD)",
+                            "Indicator": " ⇒ ",
+                            "After": "300 / 475 / 650 (+ 100% bonus AD)",
+                            "parsedAfter": "300 / <span class=\"red\">475</span> / <span class=\"red\">650</span> (+ 100% bonus AD)"
+                        }
+                    }
+                ]
+            }
         }
     },
     "ChangePatches": [
@@ -1082,7 +1118,8 @@
         "14.11",
         "14.17",
         "14.20",
-        "14.23"
+        "14.23",
+        "15.6"
     ],
     "ChampionName": "Caitlyn",
     "Balance": {
@@ -1096,6 +1133,9 @@
             "buff"
         ],
         "14.23": [
+            "nerf"
+        ],
+        "15.6": [
             "nerf"
         ]
     }

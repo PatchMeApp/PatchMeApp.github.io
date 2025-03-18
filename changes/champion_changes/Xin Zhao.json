@@ -85,7 +85,7 @@
                 "parseInfo": [
                     {
                         "text": {
-                            "text": "16/29/42/55/68 {{0}} physical damage",
+                            "text": "20/35/50/65/80 {{0}} physical damage",
                             "scaleHolders": [
                                 {
                                     "scale": "(+40% Bonus AD)",
@@ -833,6 +833,28 @@
             "W": "",
             "E": "",
             "R": ""
+        },
+        "15.6": {
+            "B": "",
+            "P": "",
+            "Q": {
+                "SpellName": "Q - Three Talon Strike",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Bonus Damage: ",
+                            "Before": "16 / 29 / 42 / 55 / 68 (+ 40% bonus AD)",
+                            "Indicator": " ⇒ ",
+                            "After": "20 / 35 / 50 / 65 / 80 (+ 40% bonus AD)",
+                            "parsedAfter": "<span class=\"green\">20</span> / <span class=\"green\">35</span> / <span class=\"green\">50</span> / <span class=\"green\">65</span> / <span class=\"green\">80</span> (+ 40% bonus AD)"
+                        }
+                    }
+                ]
+            },
+            "W": "",
+            "E": "",
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -847,11 +869,15 @@
         "12.11",
         "12.21",
         "13.17",
-        "14.18"
+        "14.18",
+        "15.6"
     ],
     "ChampionName": "Xin Zhao",
     "Balance": {
         "14.18": [
+            "buff"
+        ],
+        "15.6": [
             "buff"
         ]
     }

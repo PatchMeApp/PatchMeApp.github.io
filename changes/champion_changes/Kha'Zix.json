@@ -49,14 +49,14 @@
                 "parseInfo": [
                     {
                         "text": {
-                            "text": "14 − 116 {{0}} {{1}} bonus magic damage",
+                            "text": "17 − 136 {{0}} {{1}} bonus magic damage",
                             "scaleHolders": [
                                 {
                                     "scale": "(based on level)",
                                     "scaleId": "level"
                                 },
                                 {
-                                    "scale": "(+ 40% bonus AD)",
+                                    "scale": "(+ 50% bonus AD)",
                                     "scaleId": "AD"
                                 }
                             ]
@@ -151,7 +151,7 @@
                             "text": "65/100/135/170/205 {{0}} physical damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+20% Bonus AD)",
+                                    "scale": "(+40% Bonus AD)",
                                     "scaleId": "AD"
                                 }
                             ]
@@ -602,6 +602,42 @@
             },
             "E": "",
             "R": ""
+        },
+        "15.6": {
+            "B": "",
+            "P": {
+                "SpellName": "Passive - Unseen Threat",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Bonus Damage: ",
+                            "Before": "14 - 116 (based on level) (+40% bonus AD)",
+                            "Indicator": " ⇒ ",
+                            "After": "17 - 136 (based on level) (+50% bonus AD)",
+                            "parsedAfter": "<span class=\"green\">17</span> - <span class=\"green\">136</span> (based on level) (+<span class=\"green\">50</span>% bonus AD)"
+                        }
+                    }
+                ]
+            },
+            "Q": "",
+            "W": "",
+            "E": {
+                "SpellName": "E - Leap",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Damage: ",
+                            "Before": "65 / 100 / 135 / 170 / 205 (+ 20% bonus AD)",
+                            "Indicator": " ⇒ ",
+                            "After": "65 / 100 / 135 / 170 / 205 (+ 40% bonus AD)",
+                            "parsedAfter": "65/100/135/170/205 (+<span class=\"green\">40</span>% bonus AD)"
+                        }
+                    }
+                ]
+            },
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -614,7 +650,8 @@
         "13.12",
         "13.17",
         "14.11",
-        "14.23"
+        "14.23",
+        "15.6"
     ],
     "ChampionName": "Kha'Zix",
     "Balance": {
@@ -623,6 +660,9 @@
         ],
         "14.23": [
             "nerf"
+        ],
+        "15.6": [
+            "buff"
         ]
     }
 }

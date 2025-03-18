@@ -168,7 +168,7 @@
                 "parseInfo": [
                     {
                         "text": {
-                            "text": "30/50/70/90/110 {{0}} physical damage",
+                            "text": "60/70/80/90/100 {{0}} physical damage",
                             "scaleHolders": [
                                 {
                                     "scale": "(+60% Bonus AD)",
@@ -187,10 +187,10 @@
                     },
                     {
                         "text": {
-                            "text": "30/50/70/90/110 {{0}} {{1}} physical damage",
+                            "text": "10/35/60/85/110 {{0}} {{1}} physical damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+60% bonus AD)",
+                                    "scale": "(+65% Bonus AD)",
                                     "scaleId": "AD"
                                 },
                                 {
@@ -234,10 +234,10 @@
                     },
                     {
                         "text": {
-                            "text": "5/10/15/20/25 {{0}} physical damage",
+                            "text": "10/15/20/25/30 {{0}} physical damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+25% AD)",
+                                    "scale": "(+30% AD)",
                                     "scaleId": "AD"
                                 }
                             ]
@@ -325,7 +325,7 @@
                     }
                 ]
             },
-            "cooldown": "120",
+            "cooldown": "120/110/100",
             "cost": "100 Mana",
             "name": "MMOOOMMMM!"
         }
@@ -1010,6 +1010,66 @@
             "W": "",
             "E": "",
             "R": ""
+        },
+        "15.6": {
+            "B": "",
+            "P": "",
+            "Q": "",
+            "W": {
+                "SpellName": "W - ACHOOO!",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Glob Damage: ",
+                            "Before": "30 / 50 / 70 / 90 / 110 (+ 60% bonus AD)",
+                            "Indicator": " ⇒ ",
+                            "After": "60 / 70 / 80 / 90 / 100 (+ 60% bonus AD)",
+                            "parsedAfter": "<span class=\"green\">60</span> / <span class=\"green\">70</span> / <span class=\"green\">80</span> / 90 / <span class=\"red\">100</span> (+ 60% bonus AD)"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Explosion Damage: ",
+                            "Before": "30 / 50 / 70 / 90 / 110 (+ 60% bonus AD) (+ 80% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "10 / 35 / 60 / 85 / 110 (+ 65% bonus AD) (+ 80% AP)",
+                            "parsedAfter": "<span class=\"red\">10</span> / <span class=\"red\">35</span> / <span class=\"red\">60</span> / <span class=\"red\">85</span> / 110 (+ <span class=\"green\">65</span>% bonus AD) (+ 80% AP)"
+                        }
+                    }
+                ]
+            },
+            "E": {
+                "SpellName": "E - Flap, Flap, Flap",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Damage per Bolt: ",
+                            "Before": "5 / 10 / 15 / 20 / 25 (+ 25% AD)",
+                            "Indicator": " ⇒ ",
+                            "After": "10 / 15 / 20 / 25 / 30 (+ 30% AD)",
+                            "parsedAfter": "<span class=\"green\">10</span>/<span class=\"green\">15</span>/<span class=\"green\">20</span>/<span class=\"green\">25</span>/<span class=\"green\">30</span> (+<span class=\"green\">30</span>% AD)"
+                        }
+                    }
+                ]
+            },
+            "R": {
+                "SpellName": "R - MMOOOMMMM!",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Cooldown: ",
+                            "Before": "120",
+                            "Indicator": " ⇒ ",
+                            "After": "120 / 110 / 100 seconds",
+                            "parsedAfter": "120 / <span class=\"green\">110</span> / <span class=\"green\">100</span> seconds"
+                        }
+                    }
+                ]
+            }
         }
     },
     "ChangePatches": [
@@ -1023,7 +1083,8 @@
         "14.14",
         "14.18",
         "14.23",
-        "15.2"
+        "15.2",
+        "15.6"
     ],
     "ChampionName": "Smolder",
     "Balance": {
@@ -1056,6 +1117,9 @@
             "danger"
         ],
         "15.2": [
+            "buff"
+        ],
+        "15.6": [
             "buff"
         ]
     }

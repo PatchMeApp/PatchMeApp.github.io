@@ -178,7 +178,7 @@
                             "text": "60/85/110/135/160 {{0}} magic damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+50% AP)",
+                                    "scale": "(+60% AP)",
                                     "scaleId": "AP"
                                 }
                             ]
@@ -194,7 +194,7 @@
                     }
                 ]
             },
-            "cooldown": "14",
+            "cooldown": "12",
             "cost": "70 Mana",
             "name": "Swirlseed"
         },
@@ -1132,6 +1132,38 @@
             "W": "",
             "E": "",
             "R": ""
+        },
+        "15.6": {
+            "B": "",
+            "P": "",
+            "Q": "",
+            "W": "",
+            "E": {
+                "SpellName": "E - Swirlseed",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Cooldown: ",
+                            "Before": "14",
+                            "Indicator": " ⇒ ",
+                            "After": "12 seconds",
+                            "parsedAfter": "<span class=\"green\">12</span> seconds"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Damage: ",
+                            "Before": "60 / 85 / 110 / 135 / 160 (+ 50% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "60 / 85 / 110 / 135 / 160 (+ 60% AP)",
+                            "parsedAfter": "60/85/110/135/160 (+<span class=\"green\">60</span>% AP)"
+                        }
+                    }
+                ]
+            },
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -1151,7 +1183,8 @@
         "14.3",
         "14.14",
         "14.18",
-        "14.22"
+        "14.22",
+        "15.6"
     ],
     "ChampionName": "Lillia",
     "Balance": {
@@ -1166,6 +1199,9 @@
         ],
         "14.22": [
             "nerf"
+        ],
+        "15.6": [
+            "buff"
         ]
     }
 }

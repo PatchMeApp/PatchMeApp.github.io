@@ -101,7 +101,7 @@
                 ]
             },
             "cooldown": "13/11.25/9.5/7.75/6",
-            "cost": "20/25/30/35/40 Mana",
+            "cost": "20 Mana",
             "name": "Lunge"
         },
         "W": {
@@ -571,6 +571,28 @@
             "W": "",
             "E": "",
             "R": ""
+        },
+        "15.6": {
+            "B": "",
+            "P": "",
+            "Q": {
+                "SpellName": "Q - Lunge",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Mana Cost: ",
+                            "Before": "20/25/30/35/40",
+                            "Indicator": " ⇒ ",
+                            "After": "20 at all ranks",
+                            "parsedAfter": "<span class=\"red\">20</span> at all ranks"
+                        }
+                    }
+                ]
+            },
+            "W": "",
+            "E": "",
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -582,7 +604,8 @@
         "12.12",
         "13.1",
         "14.4",
-        "14.7"
+        "14.7",
+        "15.6"
     ],
     "ChampionName": "Fiora",
     "Balance": {
@@ -591,6 +614,9 @@
         ],
         "14.7": [
             "nerf"
+        ],
+        "15.6": [
+            "adjust"
         ]
     }
 }
