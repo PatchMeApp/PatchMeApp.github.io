@@ -45,23 +45,63 @@
         "P": {
             "cooldown": "30/25/20/15/10",
             "_rawTooltip": {
-                "fullTooltip": "Naafiri creates a Packmate every 25/20/15/10 (based on level) seconds that will Attack enemies that she targets for [[0]], increased to 6.25 - 32.5 (based on level) (+5.85% bonus AD) after she uses an Ability.<br>Hitting champions and large monsters with Abilities reduces this Ability's Cooldown by 4 seconds. Killing enemies reduces it by 1 second.<br>Naafiri summons the maximum number of Packmates when the game starts and upon respawning.",
+                "fullTooltip": "Naafiri creates a Packmate every 30/25/20/15/1 (based on level) seconds that will Attack enemies that she targets for [[0]], increased to 13-26 (based on level) (+4% bonus AD) after she uses an Ability.<br>Hitting champions and large monsters with Abilities reduces this Ability's Cooldown by 4 seconds. Killing enemies reduces it by 1 second.<br><br>Packmates deal [[1]] to Monsters and [[2]] to structures.<br>Packmates take [[3]] from AOE abilities and effects.<br>Packmates take [[4]] from non-epic monsters and minions.<br>Packmates take [[5]] from melee champion attacks.",
                 "parseInfo": [
                     {
                         "text": {
-                            "text": "12-32 {{0}} {{1}} physical damage",
+                            "text": "10-20 {{0}} {{1}} physical damage",
                             "scaleHolders": [
                                 {
                                     "scale": "(based on level)",
                                     "scaleId": "level"
                                 },
                                 {
-                                    "scale": "(+5% Bonus AD)",
+                                    "scale": "(+4% Bonus AD)",
                                     "scaleId": "AD"
                                 }
                             ]
                         },
                         "type": "physicalDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "165% damage",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "50% damage",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "76% - {{0}} damage",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(76% - 55%)",
+                                    "scaleId": "55%"
+                                }
+                            ]
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "50% bonus damage",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "200% damage",
+                            "scaleHolders": []
+                        },
+                        "type": ""
                     }
                 ]
             },
@@ -69,7 +109,7 @@
         },
         "Q": {
             "_rawTooltip": {
-                "fullTooltip": "Naafiri hurls Darkin-tainted blades, dealing [[0]] and inflicting a bleed, dealing [[1]] over 5 seconds.<br /><br />Naafiri can [[2]] this Ability. If enemies hit are already bleeding from the Ability, it instead deals the remaining bleed damage plus between [[3]] and [[4]], based on their missing Health. If that target was a champion or a Large/Epic monster, Naafiri restores [[5]].<br /><br />[[6]] will leap at the first champion hit and attack them for 3 seconds.",
+                "fullTooltip": "Naafiri hurls Darkin-tainted blades, dealing [[0]] and inflicting a bleed, dealing [[1]] over 5 seconds.<br /><br />Naafiri can [[2]] this Ability. If enemies hit are already bleeding from the Ability, it instead deals the remaining bleed damage plus between [[3]] and [[4]], based on their missing Health. If that target was a champion or a Large/Epic monster, Naafiri restores [[5]].<br /><br />[[6]] will leap at the first champion hit and attack them for 2 seconds.",
                 "parseInfo": [
                     {
                         "text": {
@@ -153,26 +193,28 @@
         },
         "W": {
             "_rawTooltip": {
-                "fullTooltip": "Naafiri dashes at the enemy, stopping at the first champion she hits, dealing [[0]] and briefly [[1]] them.<br /><br />[[2]] become Untargetable and dash alongside Naafiri, dealing [[3]] per [[4]].<br /><br />This Ability gains range based on Ultimate rank.",
+                "fullTooltip": "Naafiri becomes Untargetable for 1 second and prepares to hunt, spawining [[0]] and gaining [[1]] and [[2]] for 5 seconds.<br /><br />[[3]] become Untargetable and are recalled to Naafiri.",
                 "parseInfo": [
                     {
                         "text": {
-                            "text": "30/70/110/150/190 {{0}} physical damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+80% bonus AD)",
-                                    "scaleId": "AD"
-                                }
-                            ]
+                            "text": "2 additional Packmates",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "20% Attack Damage",
+                            "scaleHolders": []
                         },
                         "type": "physicalDamage"
                     },
                     {
                         "text": {
-                            "text": "Slowing",
+                            "text": "20/22.5/25/27/30% Move Speed",
                             "scaleHolders": []
                         },
-                        "type": "status"
+                        "type": "speed"
                     },
                     {
                         "text": {
@@ -180,39 +222,20 @@
                             "scaleHolders": []
                         },
                         "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "3/7/11/15/19 {{0}} physical damage",
-                            "scaleHolders": [
-                                {
-                                    "scale": "(+8% bonus AD)",
-                                    "scaleId": "AD"
-                                }
-                            ]
-                        },
-                        "type": "physicalDamage"
-                    },
-                    {
-                        "text": {
-                            "text": "Packmate",
-                            "scaleHolders": []
-                        },
-                        "type": ""
                     }
                 ]
             },
-            "cooldown": "22/20/18/16/14",
-            "cost": "70/60/50/40/30 Mana",
-            "name": "Hounds' Pursuit"
+            "cooldown": "20/19.5/19/18.5/18",
+            "cost": "60 Mana",
+            "name": "The Call of the Pack"
         },
         "E": {
             "_rawTooltip": {
-                "fullTooltip": "Naafiri surges forward, dealing [[0]], then explodes in a flurry of blades, dealing [[1]].<br /><br />[[2]] are recalled to Naafiri and [[3]].",
+                "fullTooltip": "Naafiri surges forward, dealing [[0]], then explodes in a flurry of blades, dealing [[1]].<br /><br />[[2]] become Untargetable and are recalled to Naafiri [[3]].",
                 "parseInfo": [
                     {
                         "text": {
-                            "text": "35/50/65/80/95 {{0}} physical damage",
+                            "text": "15/25/35/45/55 {{0}} physical damage",
                             "scaleHolders": [
                                 {
                                     "scale": "(+50% Bonus AD)",
@@ -243,7 +266,7 @@
                     },
                     {
                         "text": {
-                            "text": "restore their Health to 100%",
+                            "text": "restoring their Health to 100%",
                             "scaleHolders": []
                         },
                         "type": "healing"
@@ -256,28 +279,14 @@
         },
         "R": {
             "_rawTooltip": {
-                "fullTooltip": "[[0]] gains 80 range.<br /><br />[[1]] Naafiri prepares to hunt, gaining [[2]], [[3]] and spawning [[4]] for 15 seconds.<br /><br />Naafiri also gains vision of her surroundings and [[5]], reduced to [[6]]. The first time she hits a champion, she gains [[7]] for 3 seconds.<br /><br />On first Champion takedown, all effects are refreshed.<br /><br />[[8]] gain [[9]] and their spawn Cooldown is reduced by 50%.",
+                "fullTooltip": "Naafiri dashes at an enemy champion, dealing [[0]], and briefly [[1]] them. Packmates become [[2]] and dash alongside Naafiri, dealing [[3]] per [[4]]. If Naafiri scores a Takedown within 7 seconds, she reveals nearby enemies for 4 seconds and can recast this ability once within 12 seconds. The second cast grants [[5]] for 3 seconds.",
                 "parseInfo": [
                     {
                         "text": {
-                            "text": "Passive: Hounds' Persuit",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "Active:",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "5/15/25 {{0}} Attack Damage",
+                            "text": "150/250/350 {{0}} physical damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+8/16/24% AD)",
+                                    "scale": "(+120% bonus AD)",
                                     "scaleId": "AD"
                                 }
                             ]
@@ -286,63 +295,54 @@
                     },
                     {
                         "text": {
-                            "text": "empowring her pack",
+                            "text": "Slowing",
+                            "scaleHolders": []
+                        },
+                        "type": "status"
+                    },
+                    {
+                        "text": {
+                            "text": "Untargetable",
                             "scaleHolders": []
                         },
                         "type": ""
                     },
                     {
                         "text": {
-                            "text": "2 additional Packmates",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "70/85/100% Decaying Move Speed for 4 seconds",
-                            "scaleHolders": []
-                        },
-                        "type": "speed"
-                    },
-                    {
-                        "text": {
-                            "text": "35/42.5/50% on taking damage",
-                            "scaleHolders": []
-                        },
-                        "type": "speed"
-                    },
-                    {
-                        "text": {
-                            "text": "125/325/525 {{0}} Shield",
+                            "text": "15/25/35 {{0}} physical damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+50% bonus AD)",
+                                    "scale": "(+12% bonus AD)",
+                                    "scaleId": "AD"
+                                }
+                            ]
+                        },
+                        "type": "physicalDamage"
+                    },
+                    {
+                        "text": {
+                            "text": "Untargetable",
+                            "scaleHolders": []
+                        },
+                        "type": ""
+                    },
+                    {
+                        "text": {
+                            "text": "100/150/200 {{0}} Shield",
+                            "scaleHolders": [
+                                {
+                                    "scale": "(+150% bonus AD)",
                                     "scaleId": "AD"
                                 }
                             ]
                         },
                         "type": "shield"
-                    },
-                    {
-                        "text": {
-                            "text": "Empowered Packmates",
-                            "scaleHolders": []
-                        },
-                        "type": ""
-                    },
-                    {
-                        "text": {
-                            "text": "25% Health",
-                            "scaleHolders": []
-                        },
-                        "type": "healing"
                     }
                 ]
             },
-            "cooldown": "120/110/100",
+            "cooldown": "110/95/80",
             "cost": "100 Mana",
-            "name": "The Call of the Pack"
+            "name": "Hounds'Persuit"
         }
     },
     "Changes": {
