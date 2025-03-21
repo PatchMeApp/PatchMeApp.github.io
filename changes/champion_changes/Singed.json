@@ -74,7 +74,7 @@
                             "text": "20/30/40/50/60  {{0}} magic damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+42.5% AP)",
+                                    "scale": "(+40% AP)",
                                     "scaleId": "AP"
                                 }
                             ]
@@ -616,6 +616,16 @@
             "Q": {
                 "SpellName": "Q - Poison Trail",
                 "Changes": [
+                    {
+                        "Tag": "MID-PATCH",
+                        "Change": {
+                            "Attribute": "AP Ratio: ",
+                            "Before": "42.5%",
+                            "Indicator": " ⇒ ",
+                            "After": "40%",
+                            "parsedAfter": "<span class=\"red\">40</span>%"
+                        }
+                    },
                     {
                         "Tag": "",
                         "Change": {
