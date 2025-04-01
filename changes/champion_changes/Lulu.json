@@ -89,7 +89,7 @@
                 "parseInfo": [
                     {
                         "text": {
-                            "text": "70/105/140/175/210 {{0}} magic damage",
+                            "text": "60/95/130/165/200 {{0}} magic damage",
                             "scaleHolders": [
                                 {
                                     "scale": "(+50% AP)",
@@ -144,7 +144,7 @@
                     }
                 ]
             },
-            "cooldown": "18/17.5/17/16.5/16",
+            "cooldown": "18",
             "cost": "65 Mana",
             "name": "Whimsy"
         },
@@ -872,6 +872,70 @@
                 ]
             },
             "R": ""
+        },
+        "15.7": {
+            "B": "",
+            "P": "",
+            "Q": {
+                "SpellName": "Q - Glitterlance",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Minimum Damage: ",
+                            "Before": "70 / 105 / 140 / 175 / 210 (+ 50% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "60 / 95 / 130 / 165 / 200 (+ 50% AP)",
+                            "parsedAfter": "<span class=\"red\">60</span> / <span class=\"red\">95</span> / <span class=\"red\">130</span> / <span class=\"red\">165</span> / <span class=\"red\">200</span> (+ 50% AP)"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Maximum Damage: ",
+                            "Before": "105 / 157.5 / 210 / 262.5 / 315 (+ 75% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "90 / 142.5 / 195 / 247.5 / 300 (+ 75% AP)",
+                            "parsedAfter": "<span class=\"red\">90</span> / <span class=\"red\">142.5</span> / <span class=\"red\">195</span> / <span class=\"red\">247.5</span> / <span class=\"red\">300</span> (+ 75% AP)"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "Fixed a bug that would occasionally make the slow decay faster than intended."
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "Slow is now applied immediately instead of after a variable duration."
+                        }
+                    }
+                ]
+            },
+            "W": {
+                "SpellName": "W - Whimsy",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Cooldown: ",
+                            "Before": ":18 / 17.5 / 17 / 16.5 / 16",
+                            "Indicator": " ⇒ ",
+                            "After": "18",
+                            "parsedAfter": "18"
+                        }
+                    }
+                ]
+            },
+            "E": "",
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -890,7 +954,8 @@
         "14.4",
         "14.11",
         "14.18",
-        "15.4"
+        "15.4",
+        "15.7"
     ],
     "ChampionName": "Lulu",
     "Balance": {
@@ -904,6 +969,9 @@
             "buff"
         ],
         "15.4": [
+            "nerf"
+        ],
+        "15.7": [
             "nerf"
         ]
     }

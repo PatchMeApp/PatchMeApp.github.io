@@ -139,7 +139,7 @@
         },
         "E": {
             "_rawTooltip": {
-                "fullTooltip": "Trundle creates an icy pillar for 6 seconds, briefly [[0]] enemies directly over it and [[1]] nearby enemies by 30/34/38/42/46%.",
+                "fullTooltip": "Trundle creates an icy pillar for 6 seconds, briefly [[0]] enemies directly over it and [[1]] nearby enemies by 34/38/42/46/50%.",
                 "parseInfo": [
                     {
                         "text": {
@@ -157,7 +157,7 @@
                     }
                 ]
             },
-            "cooldown": "24/22/20/18/16",
+            "cooldown": "21/19.5/18/16.5/15",
             "cost": "75 Mana",
             "name": "Pillar of Ice"
         },
@@ -739,6 +739,38 @@
             "W": "",
             "E": "",
             "R": ""
+        },
+        "15.7": {
+            "B": "",
+            "P": "",
+            "Q": "",
+            "W": "",
+            "E": {
+                "SpellName": "E - Pillar of Ice",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Slow: ",
+                            "Before": "30 / 34 / 38 / 42 / 46%",
+                            "Indicator": " ⇒ ",
+                            "After": "34 / 38 / 42 / 46 / 50%",
+                            "parsedAfter": "<span class=\"green\">34</span> / <span class=\"green\">38</span> / <span class=\"green\">42</span> / <span class=\"green\">46</span> / <span class=\"green\">50</span>%"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Cooldown: ",
+                            "Before": "24 / 22 / 20 / 18 / 16",
+                            "Indicator": " ⇒ ",
+                            "After": "21 / 19.5 / 18 / 16.5 / 15",
+                            "parsedAfter": "<span class=\"green\">21</span> / <span class=\"green\">19.5</span> / <span class=\"green\">18</span> / <span class=\"green\">16.5</span> / <span class=\"green\">15</span>"
+                        }
+                    }
+                ]
+            },
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -758,7 +790,8 @@
         "13.9",
         "13.23",
         "14.2",
-        "14.3"
+        "14.3",
+        "15.7"
     ],
     "ChampionName": "Trundle",
     "Balance": {
@@ -770,6 +803,9 @@
         ],
         "14.3": [
             "nerf"
+        ],
+        "15.7": [
+            "buff"
         ]
     }
 }

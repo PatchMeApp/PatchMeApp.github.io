@@ -56,7 +56,7 @@
                                     "scaleId": "level"
                                 },
                                 {
-                                    "scale": "(+ 15% bonus AD)",
+                                    "scale": "(+ 30% bonus AD)",
                                     "scaleId": "AD"
                                 }
                             ]
@@ -111,7 +111,7 @@
                             "text": "25/35/45/55/65 {{0}} physical damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+60% bonus AD)",
+                                    "scale": "(+65% bonus AD)",
                                     "scaleId": "AD"
                                 }
                             ]
@@ -1256,6 +1256,42 @@
                     }
                 ]
             }
+        },
+        "15.7": {
+            "B": "",
+            "P": {
+                "SpellName": "Passive - Backstab",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Damage: ",
+                            "Before": "20-35 (based on level) (+ 25% Bonus AD) Bonus Physical Damage",
+                            "Indicator": " ⇒ ",
+                            "After": "20-35 (based on level) (+ 30% Bonus AD) Bonus Physical Damage",
+                            "parsedAfter": "20-35 (based on level) (+ <span class=\"green\">30</span>% Bonus AD) Bonus Physical Damage"
+                        }
+                    }
+                ]
+            },
+            "Q": {
+                "SpellName": "Q - Deceive",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Damage: ",
+                            "Before": "25 / 35 / 45 / 55 / 65 (+ 60% Bonus AD)",
+                            "Indicator": " ⇒ ",
+                            "After": "25 / 35 / 45 / 55 / 65 (+ 65% Bonus AD)",
+                            "parsedAfter": "25/35/45/55/65 (+<span class=\"green\">65</span>% Bonus AD)"
+                        }
+                    }
+                ]
+            },
+            "W": "",
+            "E": "",
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -1274,7 +1310,8 @@
         "13.14",
         "13.16",
         "14.2",
-        "14.3"
+        "14.3",
+        "15.7"
     ],
     "ChampionName": "Shaco",
     "Balance": {
@@ -1282,6 +1319,9 @@
             "buff"
         ],
         "14.3": [
+            "buff"
+        ],
+        "15.7": [
             "buff"
         ]
     }

@@ -1,7 +1,7 @@
 {
     "stats": {
         "hp": {
-            "base": 635,
+            "base": 610,
             "increment": 105
         },
         "mp": {
@@ -9,7 +9,7 @@
             "increment": 55
         },
         "armor": {
-            "base": 32,
+            "base": 28,
             "increment": 4.2
         },
         "spellBlock": {
@@ -65,7 +65,7 @@
                     },
                     {
                         "text": {
-                            "text": "165% damage",
+                            "text": "155% damage",
                             "scaleHolders": []
                         },
                         "type": ""
@@ -225,7 +225,7 @@
                     }
                 ]
             },
-            "cooldown": "20/19.5/19/18.5/18",
+            "cooldown": "22/21/20/19/18",
             "cost": "60 Mana",
             "name": "The Call of the Pack"
         },
@@ -1076,6 +1076,102 @@
                     }
                 ]
             }
+        },
+        "15.7": {
+            "B": {
+                "SpellName": "Base Stats",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Health: ",
+                            "Before": "635",
+                            "Indicator": " ⇒ ",
+                            "After": "610",
+                            "parsedAfter": "<span class=\"red\">610</span>"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Armor: ",
+                            "Before": "30",
+                            "Indicator": " ⇒ ",
+                            "After": "28",
+                            "parsedAfter": "<span class=\"red\">28</span>"
+                        }
+                    }
+                ]
+            },
+            "P": {
+                "SpellName": "Passive - We Are More",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Damage to Monsters: ",
+                            "Before": "165%",
+                            "Indicator": " ⇒ ",
+                            "After": "155%",
+                            "parsedAfter": "<span class=\"red\">155</span>%"
+                        }
+                    }
+                ]
+            },
+            "Q": {
+                "SpellName": "Q - Darkin Daggers",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Damage to Minions: ",
+                            "Before": "80%",
+                            "Indicator": " ⇒ ",
+                            "After": "100%",
+                            "parsedAfter": "<span class=\"green\">100</span>%"
+                        }
+                    }
+                ]
+            },
+            "W": {
+                "SpellName": "W - The Call of the Pack",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Cooldown: ",
+                            "Before": "20 / 19.5 / 19 / 18.5 / 18",
+                            "Indicator": " ⇒ ",
+                            "After": "22 / 21 / 20 / 19 / 18",
+                            "parsedAfter": "<span class=\"red\">22</span> / <span class=\"red\">21</span> / <span class=\"red\">20</span> / <span class=\"red\">19</span> / 18"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "Fixed a bug where W would sometimes not destroy tower shots while Naafiri was untargetable."
+                        }
+                    }
+                ]
+            },
+            "E": "",
+            "R": {
+                "SpellName": "R - Hounds' Pursuit",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "Fixed a bug where a Sylas who stole Naafiri ult would become untargetable during the cast."
+                        }
+                    }
+                ]
+            }
         }
     },
     "ChangePatches": [
@@ -1086,7 +1182,8 @@
         "13.24",
         "14.1",
         "14.12",
-        "15.6"
+        "15.6",
+        "15.7"
     ],
     "ChampionName": "Naafiri",
     "Balance": {
@@ -1101,6 +1198,9 @@
         ],
         "15.6": [
             "adjust"
+        ],
+        "15.7": [
+            "nerf"
         ]
     }
 }

@@ -71,10 +71,10 @@
                     },
                     {
                         "text": {
-                            "text": "20/30/40/50/60  {{0}} magic damage",
+                            "text": "20/30/40/50/60 {{0}} magic damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+40% AP)",
+                                    "scale": "(+42.5% AP)",
                                     "scaleId": "AP"
                                 }
                             ]
@@ -149,7 +149,7 @@
         },
         "R": {
             "_rawTooltip": {
-                "fullTooltip": "Singed drinks a potent brew of chemicals, granting him 30/65 [[0]], [[1]], [[2]], [[3]], [[4]], and [[5]] for 25 seconds. During this effect, Singed's Poison Trail also applies 25% Grievous Wounds for 1 second.",
+                "fullTooltip": "Singed drinks a potent brew of chemicals, granting him 25/60/95 [[0]], [[1]], [[2]], [[3]], [[4]], and [[5]] for 25 seconds. During this effect, Singed's Poison Trail also applies 25% Grievous Wounds for 1 second.",
                 "parseInfo": [
                     {
                         "text": {
@@ -654,6 +654,56 @@
                 ]
             },
             "R": ""
+        },
+        "15.7": {
+            "B": "",
+            "P": {
+                "SpellName": "Passive - Noxus Slipstream",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Per-Target Cooldown: ",
+                            "Before": "8",
+                            "Indicator": " ⇒ ",
+                            "After": "10",
+                            "parsedAfter": "<span class=\"red\">10</span>"
+                        }
+                    }
+                ]
+            },
+            "Q": {
+                "SpellName": "Q - Poison Trail",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Damage per Second: ",
+                            "Before": "20 / 30 / 40 / 50 / 60 (+ 40% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "20 / 30 / 40 / 50 / 60 (+ 42.5% AP)",
+                            "parsedAfter": "20/30/40/50/60 (+<span class=\"green\">42.5</span>% AP)"
+                        }
+                    }
+                ]
+            },
+            "W": "",
+            "E": "",
+            "R": {
+                "SpellName": "R - Insanity Potion",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Bonus Stats: ",
+                            "Before": "30 / 65 / 100",
+                            "Indicator": " ⇒ ",
+                            "After": "25 / 60 / 95",
+                            "parsedAfter": "<span class=\"red\">25</span> / <span class=\"red\">60</span> / <span class=\"red\">95</span>"
+                        }
+                    }
+                ]
+            }
         }
     },
     "ChangePatches": [
@@ -669,7 +719,8 @@
         "14.1",
         "14.11",
         "14.20",
-        "15.6"
+        "15.6",
+        "15.7"
     ],
     "ChampionName": "Singed",
     "Balance": {
@@ -683,6 +734,9 @@
             "nerf"
         ],
         "15.6": [
+            "adjust"
+        ],
+        "15.7": [
             "adjust"
         ]
     }

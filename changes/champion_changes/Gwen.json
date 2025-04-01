@@ -133,7 +133,7 @@
                     },
                     {
                         "text": {
-                            "text": "70/95/120/145/170 {{0}} magic damage",
+                            "text": "60/85/110/135/160 {{0}} magic damage",
                             "scaleHolders": [
                                 {
                                     "scale": "(+35% AP)",
@@ -172,7 +172,7 @@
         },
         "W": {
             "_rawTooltip": {
-                "fullTooltip": "Gwen summons the Hallowed Mist, making her Untargetable to all enemies (except towers) outside the zone for 4 seconds or until she leaves it. While in the Mist, Gwen gains 25 (+5% AP) [[0]] and [[1]].<br /><br />Gwen can [[2]] this Ability once to call the Mist to her. This will automatically [[3]] the first time Gwen attempts to leave the zone.",
+                "fullTooltip": "Gwen summons the Hallowed Mist, making her Untargetable to all enemies (except towers) outside the zone for 4 seconds or until she leaves it. While in the Mist, Gwen gains 22 (+7% AP) [[0]] and [[1]].<br /><br />Gwen can [[2]] this Ability once to call the Mist to her. This will automatically [[3]] the first time Gwen attempts to leave the zone.",
                 "parseInfo": [
                     {
                         "text": {
@@ -1129,6 +1129,42 @@
                     }
                 ]
             }
+        },
+        "15.7": {
+            "B": "",
+            "P": "",
+            "Q": {
+                "SpellName": "Q - Snip Snip",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Final Snip Damage: ",
+                            "Before": "70 / 95 / 120 / 145 / 170 (+ 35% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "60 / 85 / 110 / 135 / 160(+ 35% AP)",
+                            "parsedAfter": "<span class=\"red\">60</span> / <span class=\"red\">85</span> / <span class=\"red\">110</span> / <span class=\"red\">135</span> / <span class=\"red\">160</span>(+ 35% AP)"
+                        }
+                    }
+                ]
+            },
+            "W": {
+                "SpellName": "W - Hallowed Mist",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Resists: ",
+                            "Before": "25 (+ 5% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "22 (+ 7% AP)",
+                            "parsedAfter": "<span class=\"red\">22</span> (+ <span class=\"green\">7</span>% AP)"
+                        }
+                    }
+                ]
+            },
+            "E": "",
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -1147,7 +1183,8 @@
         "14.1",
         "14.2",
         "14.21",
-        "15.6"
+        "15.6",
+        "15.7"
     ],
     "ChampionName": "Gwen",
     "Balance": {
@@ -1162,6 +1199,9 @@
         ],
         "15.6": [
             "adjust"
+        ],
+        "15.7": [
+            "nerf"
         ]
     }
 }

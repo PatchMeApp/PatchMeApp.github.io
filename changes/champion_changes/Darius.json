@@ -9,7 +9,7 @@
             "increment": 58
         },
         "armor": {
-            "base": 39,
+            "base": 37,
             "increment": 5.2
         },
         "spellBlock": {
@@ -234,7 +234,7 @@
                     }
                 ]
             },
-            "cooldown": "24/21.5/19/16.5/14",
+            "cooldown": "26/23.5/21/18.5/16",
             "cost": "70/60/50/40/30 Mana",
             "name": "Apprehend"
         },
@@ -587,6 +587,42 @@
             "W": "",
             "E": "",
             "R": ""
+        },
+        "15.7": {
+            "B": {
+                "SpellName": "Base Stats",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Armor: ",
+                            "Before": "39",
+                            "Indicator": " ⇒ ",
+                            "After": "37",
+                            "parsedAfter": "<span class=\"red\">37</span>"
+                        }
+                    }
+                ]
+            },
+            "P": "",
+            "Q": "",
+            "W": "",
+            "E": {
+                "SpellName": "E - Apprehend",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Cooldown: ",
+                            "Before": "24 / 21.5 / 19 / 16.5 / 14",
+                            "Indicator": " ⇒ ",
+                            "After": "26 / 23.5 / 21 / 18.5 / 16",
+                            "parsedAfter": "<span class=\"red\">26</span> / <span class=\"red\">23.5</span> / <span class=\"red\">21</span> / <span class=\"red\">18.5</span> / <span class=\"red\">16</span>"
+                        }
+                    }
+                ]
+            },
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -598,7 +634,8 @@
         "12.6",
         "12.10",
         "14.2",
-        "15.6"
+        "15.6",
+        "15.7"
     ],
     "ChampionName": "Darius",
     "Balance": {
@@ -606,6 +643,9 @@
             "buff"
         ],
         "15.6": [
+            "nerf"
+        ],
+        "15.7": [
             "nerf"
         ]
     }

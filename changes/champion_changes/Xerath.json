@@ -80,7 +80,7 @@
                             "text": "70/110/150/190/230 {{0}} magic damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+85% AP)",
+                                    "scale": "(+90% AP)",
                                     "scaleId": "AP"
                                 }
                             ]
@@ -99,10 +99,10 @@
                 "parseInfo": [
                     {
                         "text": {
-                            "text": "60/95/130/165/200 {{0}} magic damage",
+                            "text": "50/85/120/155/190 {{0}} magic damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+60% AP)",
+                                    "scale": "(+65% AP)",
                                     "scaleId": "AP"
                                 }
                             ]
@@ -154,7 +154,7 @@
                     },
                     {
                         "text": {
-                            "text": "80/110/140/170/200 {{0}} magic damage",
+                            "text": "70/100/130/160/190 {{0}} magic damage",
                             "scaleHolders": [
                                 {
                                     "scale": "(+45% AP)",
@@ -190,10 +190,10 @@
                     },
                     {
                         "text": {
-                            "text": "180/230/280 {{0}} magic damage",
+                            "text": "170/220/270 {{0}} magic damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+40% AP)",
+                                    "scale": "(+45% AP)",
                                     "scaleId": "AP"
                                 }
                             ]
@@ -549,6 +549,70 @@
             "W": "",
             "E": "",
             "R": ""
+        },
+        "15.7": {
+            "B": "",
+            "P": "",
+            "Q": {
+                "SpellName": "Q - Arcanopulse",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Damage: ",
+                            "Before": "70 / 110 / 150 / 190 / 230 (+ 85% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "70 / 110 / 150 / 190 / 230 (+ 90% AP)",
+                            "parsedAfter": "70/110/150/190/230 (+<span class=\"green\">90</span>% AP)"
+                        }
+                    }
+                ]
+            },
+            "W": {
+                "SpellName": "W - Eye of Destruction",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Damage: ",
+                            "Before": "60 / 95 / 130 / 165 / 200 (+ 60 % AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "50 / 85 / 120 / 155 / 190 (+ 65% bonus AP)",
+                            "parsedAfter": "<span class=\"red\">50</span> / <span class=\"red\">85</span> / <span class=\"red\">120</span> / <span class=\"red\">155</span> / <span class=\"red\">190</span> (+ <span class=\"green\">65</span>% bonus AP)"
+                        }
+                    }
+                ]
+            },
+            "E": {
+                "SpellName": "E - Shocking Orb",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Damage: ",
+                            "Before": "80 / 110 / 140 / 170 / 200 (+ 45% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "70 / 100 / 130 / 160 / 190 (+ 45% AP)",
+                            "parsedAfter": "<span class=\"red\">70</span> / <span class=\"red\">100</span> / <span class=\"red\">130</span> / <span class=\"red\">160</span> / <span class=\"red\">190</span> (+ 45% AP)"
+                        }
+                    }
+                ]
+            },
+            "R": {
+                "SpellName": "R - Rite of the Arcane",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Damage: ",
+                            "Before": "180 / 230 /280 (+ 40% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "170 / 220 / 270 (+ 45% AP)",
+                            "parsedAfter": "<span class=\"red\">170</span> / <span class=\"red\">220</span> / <span class=\"red\">270</span> (+ <span class=\"green\">45</span>% AP)"
+                        }
+                    }
+                ]
+            }
         }
     },
     "ChangePatches": [
@@ -558,7 +622,13 @@
         "12.10",
         "13.14",
         "13.17",
-        "13.22"
+        "13.22",
+        "15.7"
     ],
-    "ChampionName": "Xerath"
+    "ChampionName": "Xerath",
+    "Balance": {
+        "15.7": [
+            "adjust"
+        ]
+    }
 }

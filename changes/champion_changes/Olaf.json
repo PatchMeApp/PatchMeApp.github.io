@@ -1036,6 +1036,37 @@
                     }
                 ]
             }
+        },
+        "15.7": {
+            "B": "",
+            "P": "",
+            "Q": "",
+            "W": "",
+            "E": {
+                "SpellName": "E - Reckless Swing",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "Now scales cast time based on attack speed."
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Cast Time: ",
+                            "Before": ".25s",
+                            "Indicator": " ⇒ ",
+                            "After": ".25-.175 (0-125% bonus attack speed (includes W))",
+                            "parsedAfter": ".25-<span class=\"green\">.175</span> (<span class=\"gold\">0-125% bonus attack speed (includes W)</span>)"
+                        }
+                    }
+                ]
+            },
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -1049,7 +1080,8 @@
         "13.7",
         "14.7",
         "14.8",
-        "14.9"
+        "14.9",
+        "15.7"
     ],
     "ChampionName": "Olaf",
     "Balance": {
@@ -1061,6 +1093,9 @@
         ],
         "14.9": [
             "nerf"
+        ],
+        "15.7": [
+            "buff"
         ]
     }
 }

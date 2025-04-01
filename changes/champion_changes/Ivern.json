@@ -65,7 +65,7 @@
         },
         "Q": {
             "_rawTooltip": {
-                "fullTooltip": "Ivern conjures a vine dealing [[0]] and [[1]] the first enemy hit for 1.2/1.4/1.6/1.8/2 seconds. Allies that Attack a [[2]] enemy dash into attack range.<br /><br />[[3]] Ivern dashes directly onto the [[4]] enemy.",
+                "fullTooltip": "Ivern conjures a vine dealing [[0]] and [[1]] the first enemy hit for 1.6/1.7/1.8/1.9/2 seconds. Allies that Attack a [[2]] enemy dash into attack range.<br /><br />[[3]] Ivern dashes directly onto the [[4]] enemy.",
                 "parseInfo": [
                     {
                         "text": {
@@ -1207,6 +1207,28 @@
             "W": "",
             "E": "",
             "R": ""
+        },
+        "15.7": {
+            "B": "",
+            "P": "",
+            "Q": {
+                "SpellName": "Q - Rootcaller",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Root Duration: ",
+                            "Before": "1.2 / 1.4 / 1.6 / 1.8 / 2",
+                            "Indicator": " ⇒ ",
+                            "After": "1.6 / 1.7 / 1.8 / 1.9 / 2",
+                            "parsedAfter": "<span class=\"green\">1.6</span>/<span class=\"green\">1.7</span>/<span class=\"green\">1.8</span>/<span class=\"green\">1.9</span>/2"
+                        }
+                    }
+                ]
+            },
+            "W": "",
+            "E": "",
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -1228,7 +1250,8 @@
         "13.15",
         "13.22",
         "13.24",
-        "14.18"
+        "14.18",
+        "15.7"
     ],
     "ChampionName": "Ivern",
     "Balance": {
@@ -1237,6 +1260,9 @@
         ],
         "14.18": [
             "nerf"
+        ],
+        "15.7": [
+            "buff"
         ]
     }
 }
