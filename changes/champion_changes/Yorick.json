@@ -52,14 +52,14 @@
         },
         "Q": {
             "_rawTooltip": {
-                "fullTooltip": "Yorick's next Attack deals an additional [[0]] and restores [[1]], halved vs non-champions. If this Attack kills the target, it leaves a grave.<br /><br />When there are 3 or more graves nearby and this Ability has already been used, Yorick can [[2]] to raise [[3]] from all nearby graves.<br /><br />[[4]]",
+                "fullTooltip": "Yorick's next Attack deals an additional [[0]] and restores [[1]], halved vs non-champions. If this Attack hits a Champion or large Monster or kills the target, it leaves a grave.<br /><br />When there are 3 or more graves nearby and this Ability has already been used, Yorick can [[2]] to raise [[3]] from all nearby graves.<br /><br />[[4]]",
                 "parseInfo": [
                     {
                         "text": {
                             "text": "30/55/80/105/130 {{0}} physical damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+40% AD)",
+                                    "scale": "(+50% AD)",
                                     "scaleId": "AD"
                                 }
                             ]
@@ -120,14 +120,14 @@
         },
         "E": {
             "_rawTooltip": {
-                "fullTooltip": "Yorick throws a globule of Black Mist that deals [[0]], [[1]] by 30% for 2 seconds, and marks champions and monsters for 4 seconds. Marked enemies continuously [[2]] nearby graves (but not exceeding the maximum of 4), and take 20% increased damage from up to 8 attacks by [[3]].<br /><br />Yorick and his summoned units gain [[4]] toward the mark. [[5]] will leap once at marked enemies that get away from them.",
+                "fullTooltip": "Yorick throws a globule of Black Mist that deals [[0]], [[1]] by 30% for 2 seconds, and marks champions and monsters for 4 seconds. Marked enemies continuously [[2]] nearby graves (but not exceeding the maximum of 4), and suffer 18/21/24/27/30% reduced [[3]].<br /><br />Yorick and his summoned units gain [[4]] toward the mark. [[5]] will leap once at marked enemies that get away from them.",
                 "parseInfo": [
                     {
                         "text": {
-                            "text": "15% current Health magic damage {{0}})",
+                            "text": "70/105/140/175/210 {{0}} magic damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(min: 70/105/140/175/210 (+70% AP)",
+                                    "scale": "(+100% AP)",
                                     "scaleId": "AP"
                                 }
                             ]
@@ -150,14 +150,14 @@
                     },
                     {
                         "text": {
-                            "text": "Mist Walkers",
+                            "text": "Armor",
                             "scaleHolders": []
                         },
-                        "type": ""
+                        "type": "scaleArmor"
                     },
                     {
                         "text": {
-                            "text": "20% Move Speed",
+                            "text": "30% Move Speed",
                             "scaleHolders": []
                         },
                         "type": "speed"
@@ -188,11 +188,15 @@
                     },
                     {
                         "text": {
-                            "text": "350/1100/3300 {{0}} Health",
+                            "text": "1050-3200 {{0}} {{1}} Health",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+75% Health)",
-                                    "scaleId": "Health"
+                                    "scale": "(based on level)",
+                                    "scaleId": "level"
+                                },
+                                {
+                                    "scale": "(+ 60% Bonus HP)",
+                                    "scaleId": "HP"
                                 }
                             ]
                         },
@@ -200,10 +204,10 @@
                     },
                     {
                         "text": {
-                            "text": "0/10/40 {{0}} magic damage",
+                            "text": "50/75/100 {{0}} magic damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+50% AD)",
+                                    "scale": "(+30% Bonus AD)",
                                     "scaleId": "AD"
                                 }
                             ]
