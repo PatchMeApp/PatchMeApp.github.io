@@ -113,7 +113,7 @@
                 "parseInfo": [
                     {
                         "text": {
-                            "text": "35/45/55/65/75 {{0}} physical damage",
+                            "text": "35/40/45/50/55 {{0}} physical damage",
                             "scaleHolders": [
                                 {
                                     "scale": "(+20% bonus AD)",
@@ -125,7 +125,7 @@
                     },
                     {
                         "text": {
-                            "text": "30/60/90/120/150 {{0}} physical damage",
+                            "text": "35/60/85/110/135 {{0}} physical damage",
                             "scaleHolders": [
                                 {
                                     "scale": "(+80% bonus AD)",
@@ -247,7 +247,7 @@
                     },
                     {
                         "text": {
-                            "text": "60/90/120/150/180 {{0}} physical damage",
+                            "text": "60/85/110/135/160 {{0}} physical damage",
                             "scaleHolders": [
                                 {
                                     "scale": "(+80% Bonus AD)",
@@ -273,7 +273,7 @@
                     }
                 ]
             },
-            "cooldown": "10/9.5/9/8.5/8",
+            "cooldown": "11/10/9/8/7",
             "cost": "35 Mana",
             "name": "Eviscerate"
         },
@@ -1177,7 +1177,31 @@
                     }
                 ]
             },
-            "E": "",
+            "E": {
+                "SpellName": "E - Eviscerate",
+                "Changes": [
+                    {
+                        "Tag": "MID-PATCH",
+                        "Change": {
+                            "Attribute": "Second hit Damage: ",
+                            "Before": "60-180",
+                            "Indicator": " ⇒ ",
+                            "After": "60-160",
+                            "parsedAfter": "60-<span class=\"red\">160</span>"
+                        }
+                    },
+                    {
+                        "Tag": "MID-PATCH",
+                        "Change": {
+                            "Attribute": "Cooldown: ",
+                            "Before": "9-7",
+                            "Indicator": " ⇒ ",
+                            "After": "11-7",
+                            "parsedAfter": "<span class=\"red\">11</span>-7"
+                        }
+                    }
+                ]
+            },
             "R": {
                 "SpellName": "R - Hounds' Pursuit",
                 "Changes": [

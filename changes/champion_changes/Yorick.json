@@ -75,7 +75,7 @@
                                     "scaleId": "level"
                                 },
                                 {
-                                    "scale": "(+4/5/6/7/8% missing health)",
+                                    "scale": "(+6/7/8/9/10% missing health)",
                                     "scaleId": "health"
                                 }
                             ]
@@ -120,7 +120,7 @@
         },
         "E": {
             "_rawTooltip": {
-                "fullTooltip": "Yorick throws a globule of Black Mist that deals [[0]], [[1]] by 30% for 2 seconds, and marks champions and monsters for 4 seconds. Marked enemies continuously [[2]] nearby graves (but not exceeding the maximum of 4), and suffer 18/21/24/27/30% reduced [[3]].<br /><br />Yorick and his summoned units gain [[4]] toward the mark. [[5]] will leap once at marked enemies that get away from them.",
+                "fullTooltip": "Yorick throws a globule of Black Mist that deals [[0]], [[1]] by 30% for 1.5 seconds, and marks champions and monsters for 4 seconds. Marked enemies continuously [[2]] nearby graves (but not exceeding the maximum of 4), and suffer 13/16/19/22/25% reduced [[3]].<br /><br />Yorick and his summoned units gain [[4]] toward the mark. [[5]] will leap once at marked enemies that get away from them.",
                 "parseInfo": [
                     {
                         "text": {
@@ -157,7 +157,7 @@
                     },
                     {
                         "text": {
-                            "text": "30% Move Speed",
+                            "text": "18/21/24/27/30% Move Speed",
                             "scaleHolders": []
                         },
                         "type": "speed"
@@ -810,6 +810,25 @@
                         }
                     },
                     {
+                        "Tag": "MID-PATCH",
+                        "Change": {
+                            "Attribute": "Damage taken from minions and monsters: ",
+                            "Before": "40%",
+                            "Indicator": " ⇒ ",
+                            "After": "70%",
+                            "parsedAfter": "<span class=\"red\">70</span>%"
+                        }
+                    },
+                    {
+                        "Tag": "MID-PATCH",
+                        "Change": {
+                            "Attribute": "",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "Fixed a bug where Mist Walkers would fail to deal 60% damage to monsters with the leap."
+                        }
+                    },
+                    {
                         "Tag": "",
                         "Change": {
                             "Attribute": "Nearby deaths per grave: ",
@@ -967,6 +986,36 @@
                 "SpellName": "E - Mourning Mist",
                 "Changes": [
                     {
+                        "Tag": "MID-PATCH",
+                        "Change": {
+                            "Attribute": "Slow: ",
+                            "Before": "30% for 2 seconds",
+                            "Indicator": " ⇒ ",
+                            "After": "30% for 1.5 seconds",
+                            "parsedAfter": "30% for <span class=\"red\">1.5</span> seconds"
+                        }
+                    },
+                    {
+                        "Tag": "MID-PATCH",
+                        "Change": {
+                            "Attribute": "Movement Speed:  ⇒ ",
+                            "Before": "30% for 4 seconds",
+                            "Indicator": " ⇒ ",
+                            "After": "18/21/24/27/30% for 4 seconds",
+                            "parsedAfter": "<span class=\"red\">18</span>/<span class=\"red\">21</span>/<span class=\"red\">24</span>/<span class=\"red\">27</span>/30% for 4 seconds"
+                        }
+                    },
+                    {
+                        "Tag": "MID-PATCH",
+                        "Change": {
+                            "Attribute": "Armor Shred: ",
+                            "Before": "18/21/24/27/30%",
+                            "Indicator": " ⇒ ",
+                            "After": "13/16/19/22/25%",
+                            "parsedAfter": "<span class=\"red\">13</span>/<span class=\"red\">16</span>/<span class=\"red\">19</span>/<span class=\"red\">22</span>/<span class=\"red\">25</span>%"
+                        }
+                    },
+                    {
                         "Tag": "",
                         "Change": {
                             "Attribute": "Damage: ",
@@ -1018,6 +1067,16 @@
             "R": {
                 "SpellName": "R - Maiden of the Mist",
                 "Changes": [
+                    {
+                        "Tag": "MID-PATCH",
+                        "Change": {
+                            "Attribute": "Monster Damage Cap: ",
+                            "Before": "50",
+                            "Indicator": " ⇒ ",
+                            "After": "30",
+                            "parsedAfter": "<span class=\"red\">30</span>"
+                        }
+                    },
                     {
                         "Tag": "",
                         "Change": {
@@ -1076,7 +1135,8 @@
         ],
         "15.7": [
             "danger",
-            "adjust"
+            "adjust",
+            "nerf"
         ]
     }
 }
