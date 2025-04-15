@@ -45,7 +45,7 @@
         "P": {
             "cooldown": 90,
             "_rawTooltip": {
-                "fullTooltip": "Innate: Periodically, when Blitzcrank is damaged to [[0]], a shield is first generated that is equal to 30% of maximum mana, lasting up to 10 seconds.",
+                "fullTooltip": "Innate: Periodically, when Blitzcrank is damaged to [[0]], a shield is first generated that is equal to 35% of maximum mana, lasting up to 10 seconds.",
                 "parseInfo": [
                     {
                         "text": {
@@ -71,7 +71,7 @@
                     },
                     {
                         "text": {
-                            "text": "105/150/195/240/285 {{0}} magic damage",
+                            "text": "110/160/210/260/310 {{0}} magic damage",
                             "scaleHolders": [
                                 {
                                     "scale": "(+120% AP)",
@@ -1022,6 +1022,42 @@
                 ]
             },
             "R": ""
+        },
+        "15.8": {
+            "B": "",
+            "P": {
+                "SpellName": "Passive - Mana Barrier",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Shield: ",
+                            "Before": "30% of Max Mana",
+                            "Indicator": " ⇒ ",
+                            "After": "35% of Max Mana",
+                            "parsedAfter": "<span class=\"green\">35</span>% of Max Mana"
+                        }
+                    }
+                ]
+            },
+            "Q": {
+                "SpellName": "Q - Rocket Grab",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Damage: ",
+                            "Before": "105 / 150 / 195 / 240 / 285 (+ 120% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "110 / 160 / 210 / 260 / 310 (+ 120% AP)",
+                            "parsedAfter": "<span class=\"green\">110</span> / <span class=\"green\">160</span> / <span class=\"green\">210</span> / <span class=\"green\">260</span> / <span class=\"green\">310</span> (+ 120% AP)"
+                        }
+                    }
+                ]
+            },
+            "W": "",
+            "E": "",
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -1040,7 +1076,8 @@
         "14.2",
         "14.9",
         "14.12",
-        "14.22"
+        "14.22",
+        "15.8"
     ],
     "ChampionName": "Blitzcrank",
     "Balance": {
@@ -1054,6 +1091,9 @@
             "nerf"
         ],
         "14.22": [
+            "buff"
+        ],
+        "15.8": [
             "buff"
         ]
     }

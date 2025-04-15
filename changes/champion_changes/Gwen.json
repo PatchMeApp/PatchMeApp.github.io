@@ -221,7 +221,7 @@
                     },
                     {
                         "text": {
-                            "text": "12/14/16/18/20 {{0}} magic damage",
+                            "text": "8/11/14/17/20 {{0}} magic damage",
                             "scaleHolders": [
                                 {
                                     "scale": "(+20% AP)",
@@ -1165,6 +1165,28 @@
             },
             "E": "",
             "R": ""
+        },
+        "15.8": {
+            "B": "",
+            "P": "",
+            "Q": "",
+            "W": "",
+            "E": {
+                "SpellName": "E - Skip 'N Slash",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "On-Hit Damage: ",
+                            "Before": "12 / 14 / 16 / 18 / 20 (+ 25% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "8 / 11 / 14 / 17 / 20 (+ 25% AP)",
+                            "parsedAfter": "<span class=\"red\">8</span> / <span class=\"red\">11</span> / <span class=\"red\">14</span> / <span class=\"red\">17</span> / 20 (+ 25% AP)"
+                        }
+                    }
+                ]
+            },
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -1184,7 +1206,8 @@
         "14.2",
         "14.21",
         "15.6",
-        "15.7"
+        "15.7",
+        "15.8"
     ],
     "ChampionName": "Gwen",
     "Balance": {
@@ -1201,6 +1224,9 @@
             "adjust"
         ],
         "15.7": [
+            "nerf"
+        ],
+        "15.8": [
             "nerf"
         ]
     }

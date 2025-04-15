@@ -45,7 +45,7 @@
         "P": {
             "cooldown": "20-8 seconds (levels 1-13)",
             "_rawTooltip": {
-                "fullTooltip": "INNATE: Periodically, Yuumi's next basic attack, which gains 50 bonus range, or ability hit against enemy champions will heal her for 25 − 110 (based on level) (+25% AP). If she is attached to an ally within 4 seconds, they are healed for the same amount.<br>INNATE: While attached to an ally, Yuumi grants them 2 permanent Friendship stacks for killing enemy champions and minions. The ally with the highest Friendship stacks becomes Yuumi's Best Friend, which empowers her abilities with additional effects while she is attached to them.",
+                "fullTooltip": "INNATE: Periodically, Yuumi's next basic attack, which gains 50 bonus range, or ability hit against enemy champions will heal her for 20 − 110 (based on level) (+25% AP). If she is attached to an ally within 4 seconds, they are healed for the same amount.<br>INNATE: While attached to an ally, Yuumi grants them 2 permanent Friendship stacks for killing enemy champions and minions. The ally with the highest Friendship stacks becomes Yuumi's Best Friend, which empowers her abilities with additional effects while she is attached to them.",
                 "parseInfo": []
             },
             "name": "Feline Friendship"
@@ -208,7 +208,7 @@
                     },
                     {
                         "text": {
-                            "text": "80/105/130/155/180 {{0}} damage",
+                            "text": "65/90/115/140/165 {{0}} damage",
                             "scaleHolders": [
                                 {
                                     "scale": "(+30% AP)",
@@ -1809,6 +1809,42 @@
                     }
                 ]
             }
+        },
+        "15.8": {
+            "B": "",
+            "P": {
+                "SpellName": "Passive - Feline Friendship",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Heal: ",
+                            "Before": "25-110 (based on level) (+ 25% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "20-110 (based on level) (+ 25% AP)",
+                            "parsedAfter": "<span class=\"red\">20</span>-110 (based on level) (+ 25% AP)"
+                        }
+                    }
+                ]
+            },
+            "Q": "",
+            "W": "",
+            "E": {
+                "SpellName": "E - Zoomies",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Shield: ",
+                            "Before": "80 / 105 / 130 / 155 / 180 (+ 30% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "65 / 90 / 115 / 140 / 165 (+ 30% AP)",
+                            "parsedAfter": "<span class=\"red\">65</span> / <span class=\"red\">90</span> / <span class=\"red\">115</span> / <span class=\"red\">140</span> / <span class=\"red\">165</span> (+ 30% AP)"
+                        }
+                    }
+                ]
+            },
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -1832,7 +1868,8 @@
         "13.12",
         "14.12",
         "14.24",
-        "15.2"
+        "15.2",
+        "15.8"
     ],
     "ChampionName": "Yuumi",
     "Balance": {
@@ -1844,6 +1881,9 @@
         ],
         "15.2": [
             "buff"
+        ],
+        "15.8": [
+            "nerf"
         ]
     }
 }

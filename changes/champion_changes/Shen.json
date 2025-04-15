@@ -65,7 +65,7 @@
         },
         "Q": {
             "_rawTooltip": {
-                "fullTooltip": "Shen recalls his [[0]]. Enemies hit by the pull are [[1]] by 15/20/25/30/35% while moving away from Shen for the next 2 seconds.<br /><br />Additionally, Shen's next 3 Attacks deal an additional [[2]] plus [[3]]. If Shen hit an enemy champion with the [[4]], the damage is increased to [[5]] plus [[6]] and he gains [[7]] for those Attacks.",
+                "fullTooltip": "Shen recalls his [[0]]. Enemies hit by the pull are [[1]] by 25/30/35/40/45% while moving away from Shen for the next 2 seconds.<br /><br />Additionally, Shen's next 3 Attacks deal an additional [[2]] plus [[3]]. If Shen hit an enemy champion with the [[4]], the damage is increased to [[5]] plus [[6]] and he gains [[7]] for those Attacks.",
                 "parseInfo": [
                     {
                         "text": {
@@ -162,7 +162,7 @@
                     }
                 ]
             },
-            "cooldown": "18/16.5/15/13.5/12",
+            "cooldown": "16/14.5/13/11.5/10",
             "cost": "40 Energy",
             "name": "Spirit's Refuge"
         },
@@ -639,6 +639,42 @@
             "W": "",
             "E": "",
             "R": ""
+        },
+        "15.8": {
+            "B": "",
+            "P": "",
+            "Q": {
+                "SpellName": "Q - Twilight Assault",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Slow when moving away from Shen: ",
+                            "Before": "15 / 20 / 25 / 30 / 35%",
+                            "Indicator": " ⇒ ",
+                            "After": "25 / 30 / 35 / 40 / 45%",
+                            "parsedAfter": "<span class=\"green\">25</span> / <span class=\"green\">30</span> / <span class=\"green\">35</span> / <span class=\"green\">40</span> / <span class=\"green\">45</span>%"
+                        }
+                    }
+                ]
+            },
+            "W": {
+                "SpellName": "W - Spirit's Refuge",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Cooldown: ",
+                            "Before": "18 / 16.5 / 15 / 13.5 / 12",
+                            "Indicator": " ⇒ ",
+                            "After": "16 / 14.5 / 13 / 11.5 / 10",
+                            "parsedAfter": "<span class=\"green\">16</span> / <span class=\"green\">14.5</span> / <span class=\"green\">13</span> / <span class=\"green\">11.5</span> / <span class=\"green\">10</span>"
+                        }
+                    }
+                ]
+            },
+            "E": "",
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -653,7 +689,8 @@
         "14.6",
         "14.18",
         "14.22",
-        "15.7"
+        "15.7",
+        "15.8"
     ],
     "ChampionName": "Shen",
     "Balance": {
@@ -670,6 +707,9 @@
             "nerf"
         ],
         "15.7": [
+            "buff"
+        ],
+        "15.8": [
             "buff"
         ]
     }

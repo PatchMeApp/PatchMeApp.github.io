@@ -248,7 +248,7 @@
                     },
                     {
                         "text": {
-                            "text": "25% AD physical damage",
+                            "text": "30% AD physical damage",
                             "scaleHolders": []
                         },
                         "type": "physicalDamage"
@@ -1588,6 +1588,28 @@
             "W": "",
             "E": "",
             "R": ""
+        },
+        "15.8": {
+            "B": "",
+            "P": "",
+            "Q": "",
+            "W": "",
+            "E": "",
+            "R": {
+                "SpellName": "R - Lightning Crash",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Chain Lightning Damage: ",
+                            "Before": "25% Total AD",
+                            "Indicator": " ⇒ ",
+                            "After": "30% Total AD",
+                            "parsedAfter": "<span class=\"green\">30</span>% Total AD"
+                        }
+                    }
+                ]
+            }
         }
     },
     "ChangePatches": [
@@ -1608,7 +1630,8 @@
         "13.24",
         "14.3",
         "14.8",
-        "14.18"
+        "14.18",
+        "15.8"
     ],
     "ChampionName": "Zeri",
     "Balance": {
@@ -1623,6 +1646,9 @@
         ],
         "14.18": [
             "nerf"
+        ],
+        "15.8": [
+            "buff"
         ]
     }
 }

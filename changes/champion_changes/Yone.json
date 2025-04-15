@@ -124,14 +124,14 @@
                 "parseInfo": [
                     {
                         "text": {
-                            "text": "5/10/15/20/25 + 5/5.5/6/6.5/7% max Health physical damage",
+                            "text": "5/10/15/20/25 + 4/4.5/5/5.5/6% max Health physical damage",
                             "scaleHolders": []
                         },
                         "type": "physicalDamage"
                     },
                     {
                         "text": {
-                            "text": "5/10/15/20/25 + 5/5.5/6/6.5/7% max Health magic damage",
+                            "text": "5/10/15/20/25 + 4/4.5/5/5.5/6% max Health magic damage",
                             "scaleHolders": []
                         },
                         "type": "magicDamage"
@@ -796,6 +796,28 @@
                 ]
             },
             "R": ""
+        },
+        "15.8": {
+            "B": "",
+            "P": "",
+            "Q": "",
+            "W": {
+                "SpellName": "W - Spirit Cleave",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Damage: ",
+                            "Before": "10 / 20 / 30 / 40 / 50 (+ 10 / 11 / 12 / 13 / 14% target max HP)",
+                            "Indicator": " ⇒ ",
+                            "After": "10 / 20 / 30 / 40 / 50(+ 8 / 9 / 10 / 11 / 12% target max HP)",
+                            "parsedAfter": "10 / 20 / 30 / 40 / 50(+ <span class=\"red\">8</span> / <span class=\"red\">9</span> / <span class=\"red\">10</span> / <span class=\"red\">11</span> / <span class=\"red\">12</span>% target max HP)"
+                        }
+                    }
+                ]
+            },
+            "E": "",
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -817,7 +839,8 @@
         "14.15",
         "14.20",
         "14.21",
-        "15.7"
+        "15.7",
+        "15.8"
     ],
     "ChampionName": "Yone",
     "Balance": {
@@ -841,6 +864,9 @@
         ],
         "15.7": [
             "adjust"
+        ],
+        "15.8": [
+            "nerf"
         ]
     }
 }

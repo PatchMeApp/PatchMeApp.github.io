@@ -102,7 +102,7 @@
         },
         "W": {
             "_rawTooltip": {
-                "fullTooltip": "Syndra grabs a [[0]], enemy minion, or non-epic monster. She drags it with her and can [[1]] for up to 5 seconds.<br /><br />[[2]]: Syndra hurls the object, dealing [[3]] and [[4]] by 25/30/35/40/45% for 1.5 seconds.<br /><br />[[5]]: This Ability deals an additional [[6]].<br />",
+                "fullTooltip": "Syndra grabs a [[0]], enemy minion, or non-epic monster. She drags it with her and can [[1]] for up to 5 seconds.<br /><br />[[2]]: Syndra hurls the object, dealing [[3]] and [[4]] by 25% for 1.5 seconds.<br /><br />[[5]]: This Ability deals an additional [[6]].<br />",
                 "parseInfo": [
                     {
                         "text": {
@@ -215,10 +215,10 @@
                     },
                     {
                         "text": {
-                            "text": "75/115/155/195/235 {{0}} magic damage",
+                            "text": "60/95/130/165/200 {{0}} magic damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+45% AP)",
+                                    "scale": "(+ 60% AP)",
                                     "scaleId": "AP"
                                 }
                             ]
@@ -293,10 +293,10 @@
                     },
                     {
                         "text": {
-                            "text": "100/140/180 {{0}} magic damage",
+                            "text": "90/130/170 {{0}} magic damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+17% AP)",
+                                    "scale": "(+20% AP)",
                                     "scaleId": "AP"
                                 }
                             ]
@@ -905,6 +905,56 @@
             "W": "",
             "E": "",
             "R": ""
+        },
+        "15.8": {
+            "B": "",
+            "P": "",
+            "Q": "",
+            "W": {
+                "SpellName": "W - Force of Will",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Slow: ",
+                            "Before": "25 / 30 / 35 / 40 / 45%",
+                            "Indicator": " ⇒ ",
+                            "After": "25%",
+                            "parsedAfter": "<span class=\"red\">25</span>%"
+                        }
+                    }
+                ]
+            },
+            "E": {
+                "SpellName": "E - Scatter the Weak",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Damage: ",
+                            "Before": "75 / 115 / 155 / 195 / 235 (+ 45% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "60 / 95 / 130 / 165 / 200 (+ 60% AP)",
+                            "parsedAfter": "<span class=\"red\">60</span> / <span class=\"red\">95</span> / <span class=\"red\">130</span> / <span class=\"red\">165</span> / <span class=\"red\">200</span> (+ <span class=\"green\">60</span>% AP)"
+                        }
+                    }
+                ]
+            },
+            "R": {
+                "SpellName": "R - Unleashed Power",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Damage per Sphere: ",
+                            "Before": "100 / 140 / 180 (+17% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "90 / 130 / 170 (+ 20% AP)",
+                            "parsedAfter": "<span class=\"red\">90</span> / <span class=\"red\">130</span> / <span class=\"red\">170</span> (+ <span class=\"green\">20</span>% AP)"
+                        }
+                    }
+                ]
+            }
         }
     },
     "ChangePatches": [
@@ -919,7 +969,8 @@
         "13.22",
         "13.24",
         "14.16",
-        "14.22"
+        "14.22",
+        "15.8"
     ],
     "ChampionName": "Syndra",
     "Balance": {
@@ -931,6 +982,9 @@
         ],
         "14.22": [
             "nerf"
+        ],
+        "15.8": [
+            "adjust"
         ]
     }
 }

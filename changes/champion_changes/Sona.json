@@ -73,7 +73,7 @@
                 "parseInfo": [
                     {
                         "text": {
-                            "text": "50/80/110/140/170 {{0}} magic damage",
+                            "text": "50/85/120/155/190 {{0}} magic damage",
                             "scaleHolders": [
                                 {
                                     "scale": "(+40% AP)",
@@ -158,7 +158,7 @@
                     },
                     {
                         "text": {
-                            "text": "30/45/60/75/90 {{0}} Health",
+                            "text": "35/50/65/80/95 {{0}} Health",
                             "scaleHolders": [
                                 {
                                     "scale": "(+30% AP)",
@@ -1013,6 +1013,42 @@
                 ]
             },
             "R": ""
+        },
+        "15.8": {
+            "B": "",
+            "P": "",
+            "Q": {
+                "SpellName": "Q - Hymn of Valor",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Bolt Damage: ",
+                            "Before": "50 / 80 / 110 / 140 / 170 (+ 40% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "50 / 85 / 120 / 155 / 190 (+ 40% AP)",
+                            "parsedAfter": "50/<span class=\"green\">85</span>/<span class=\"green\">120</span>/<span class=\"green\">155</span>/<span class=\"green\">190</span> (+ 40% AP)"
+                        }
+                    }
+                ]
+            },
+            "W": {
+                "SpellName": "W - Aria of Perseverance",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Heal: ",
+                            "Before": "30 / 45 / 60 / 75 / 90 (+ 30% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "35 / 50 / 65 / 80 / 95 (+ 30% AP)",
+                            "parsedAfter": "<span class=\"green\">35</span> / <span class=\"green\">50</span> / <span class=\"green\">65</span> / <span class=\"green\">80</span> / <span class=\"green\">95</span> (+ 30% AP)"
+                        }
+                    }
+                ]
+            },
+            "E": "",
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -1028,11 +1064,15 @@
         "12.1",
         "12.10",
         "12.19",
-        "14.7"
+        "14.7",
+        "15.8"
     ],
     "ChampionName": "Sona",
     "Balance": {
         "14.7": [
+            "buff"
+        ],
+        "15.8": [
             "buff"
         ]
     }

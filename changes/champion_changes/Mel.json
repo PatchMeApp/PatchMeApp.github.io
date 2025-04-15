@@ -1,7 +1,7 @@
 {
     "stats": {
         "hp": {
-            "base": 600,
+            "base": 630,
             "increment": 93
         },
         "mp": {
@@ -73,7 +73,7 @@
                     },
                     {
                         "text": {
-                            "text": "5-20 {{0}} {{1}} magic damage",
+                            "text": "8-25 {{0}} {{1}} magic damage",
                             "scaleHolders": [
                                 {
                                     "scale": "(based on level)",
@@ -454,16 +454,56 @@
                     }
                 ]
             }
+        },
+        "15.8": {
+            "B": {
+                "SpellName": "Base Stats",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Health: ",
+                            "Before": "600",
+                            "Indicator": " ⇒ ",
+                            "After": "630",
+                            "parsedAfter": "<span class=\"green\">630</span>"
+                        }
+                    }
+                ]
+            },
+            "P": {
+                "SpellName": "Passive - Searing Brillance",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Damage per Stack: ",
+                            "Before": "5-20 (based on level) (+1% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "8-25 (based on level) (+ 1% AP)",
+                            "parsedAfter": "<span class=\"green\">8</span>-<span class=\"green\">25</span> (based on level) (+ 1% AP)"
+                        }
+                    }
+                ]
+            },
+            "Q": "",
+            "W": "",
+            "E": "",
+            "R": ""
         }
     },
     "ChangePatches": [
         "15.2",
-        "15.4"
+        "15.4",
+        "15.8"
     ],
     "ChampionName": "Mel",
     "Balance": {
         "15.4": [
             "adjust"
+        ],
+        "15.8": [
+            "buff"
         ]
     }
 }

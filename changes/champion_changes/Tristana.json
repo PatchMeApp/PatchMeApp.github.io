@@ -181,7 +181,7 @@
                 "parseInfo": [
                     {
                         "text": {
-                            "text": "275/325/375 {{0}} {{1}} magic damage",
+                            "text": "225/275/325 {{0}} {{1}} magic damage",
                             "scaleHolders": [
                                 {
                                     "scale": "(+70% Bonus AD)",
@@ -814,6 +814,28 @@
                     }
                 ]
             }
+        },
+        "15.8": {
+            "B": "",
+            "P": "",
+            "Q": "",
+            "W": "",
+            "E": "",
+            "R": {
+                "SpellName": "R - Buster Shot",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Damage: ",
+                            "Before": "275 / 325 / 375 (+ 70% Bonus AD) (+ 100% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "225 / 275 / 325 (+ 70% Bonus AD) (+ 100% AP)",
+                            "parsedAfter": "<span class=\"red\">225</span> / <span class=\"red\">275</span> / <span class=\"red\">325</span> (+ 70% Bonus AD) (+ 100% AP)"
+                        }
+                    }
+                ]
+            }
         }
     },
     "ChangePatches": [
@@ -827,7 +849,8 @@
         "13.16",
         "14.14",
         "14.19",
-        "14.20"
+        "14.20",
+        "15.8"
     ],
     "ChampionName": "Tristana",
     "Balance": {
@@ -840,6 +863,9 @@
         ],
         "14.20": [
             "buff"
+        ],
+        "15.8": [
+            "nerf"
         ]
     }
 }

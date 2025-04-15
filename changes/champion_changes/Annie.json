@@ -2,7 +2,7 @@
     "stats": {
         "hp": {
             "base": 560,
-            "increment": 102
+            "increment": 96
         },
         "mp": {
             "base": 418,
@@ -56,10 +56,10 @@
                 "parseInfo": [
                     {
                         "text": {
-                            "text": "70/105/140/175/210 {{0}} magic damage",
+                            "text": "80/115/150/185/220 {{0}} magic damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+75% AP)",
+                                    "scale": "(+80% AP)",
                                     "scaleId": "AP"
                                 }
                             ]
@@ -78,7 +78,7 @@
                 "parseInfo": [
                     {
                         "text": {
-                            "text": "70/115/160/205/250 {{0}} magic damage",
+                            "text": "70/120/170/220/270 {{0}} magic damage",
                             "scaleHolders": [
                                 {
                                     "scale": "(+85% AP)",
@@ -90,7 +90,7 @@
                     }
                 ]
             },
-            "cooldown": "8",
+            "cooldown": "7",
             "cost": "90/95/100/105/110 Mana",
             "name": "Incinerate"
         },
@@ -158,10 +158,10 @@
                     },
                     {
                         "text": {
-                            "text": "20/30/40 {{0}} magic damage per second",
+                            "text": "8/12/16 {{0}} magic damage per second",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+12% AP)",
+                                    "scale": "(+4% AP)",
                                     "scaleId": "AP"
                                 }
                             ]
@@ -170,10 +170,10 @@
                     },
                     {
                         "text": {
-                            "text": "50/75/100 {{0}} magic damage",
+                            "text": "30/45/60 {{0}} magic damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+15% AP)",
+                                    "scale": "(+10% AP)",
                                     "scaleId": "AP"
                                 }
                             ]
@@ -880,6 +880,99 @@
             "W": "",
             "E": "",
             "R": ""
+        },
+        "15.8": {
+            "B": {
+                "SpellName": "Base Stats",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Health Growth: ",
+                            "Before": "102",
+                            "Indicator": " ⇒ ",
+                            "After": "96",
+                            "parsedAfter": "<span class=\"red\">96</span>"
+                        }
+                    }
+                ]
+            },
+            "P": "",
+            "Q": {
+                "SpellName": "Q - Disintegrate",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Damage: ",
+                            "Before": "70 / 105 / 140 / 175 / 210 (+ 75% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "80 / 115 / 150 / 185 / 220 (+ 80% AP)",
+                            "parsedAfter": "<span class=\"green\">80</span> / <span class=\"green\">115</span> / <span class=\"green\">150</span> / <span class=\"green\">185</span> / <span class=\"green\">220</span> (+ <span class=\"green\">80</span>% AP)"
+                        }
+                    }
+                ]
+            },
+            "W": {
+                "SpellName": "W - Incinerate",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Damage: ",
+                            "Before": "70 / 115 / 160 / 205 / 250 (+ 85% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "70 / 120 / 170 / 220 / 270 (+ 85% AP)",
+                            "parsedAfter": "70/<span class=\"green\">120</span>/<span class=\"green\">170</span>/<span class=\"green\">220</span>/<span class=\"green\">270</span> (+ 85% AP)"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Cooldown: ",
+                            "Before": "8",
+                            "Indicator": " ⇒ ",
+                            "After": "7",
+                            "parsedAfter": "<span class=\"green\">7</span>"
+                        }
+                    }
+                ]
+            },
+            "E": "",
+            "R": {
+                "SpellName": "R - Summon: Tibbers",
+                "Changes": [
+                    {
+                        "Tag": "NEW",
+                        "Change": {
+                            "Attribute": "",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "Passive Bonus Magic Penetration10 / 12.5 / 15%"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Flame Aura: ",
+                            "Before": "20/ 30 / 40 (+ 12% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "8 / 12 / 16 (+ 4% AP)",
+                            "parsedAfter": "<span class=\"red\">8</span> / <span class=\"red\">12</span> / <span class=\"red\">16</span> (+ <span class=\"red\">4</span>% AP)"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Tibbers Auto Attack Damage: ",
+                            "Before": "50 / 75 / 100 (+ 15% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "30 / 45 / 60 (+ 10% AP)",
+                            "parsedAfter": "<span class=\"red\">30</span> / <span class=\"red\">45</span> / <span class=\"red\">60</span> (+ <span class=\"red\">10</span>% AP)"
+                        }
+                    }
+                ]
+            }
         }
     },
     "ChangePatches": [
@@ -897,7 +990,13 @@
         "13.7",
         "13.13",
         "13.15",
-        "13.22"
+        "13.22",
+        "15.8"
     ],
-    "ChampionName": "Annie"
+    "ChampionName": "Annie",
+    "Balance": {
+        "15.8": [
+            "adjust"
+        ]
+    }
 }

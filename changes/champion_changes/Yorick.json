@@ -124,10 +124,10 @@
                 "parseInfo": [
                     {
                         "text": {
-                            "text": "70/105/140/175/210 {{0}} magic damage",
+                            "text": "10% of target max HP {{0}} magic damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+100% AP)",
+                                    "scale": "(+ 3% per 100 AP)",
                                     "scaleId": "AP"
                                 }
                             ]
@@ -1099,6 +1099,92 @@
                     }
                 ]
             }
+        },
+        "15.8": {
+            "B": "",
+            "P": {
+                "SpellName": "Passive - Shepherd of Souls",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Monster Damage Taken: ",
+                            "Before": "60%",
+                            "Indicator": " ⇒ ",
+                            "After": "100%",
+                            "parsedAfter": "<span class=\"red\">100</span>%"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Damage to Monsters: ",
+                            "Before": "60%",
+                            "Indicator": " ⇒ ",
+                            "After": "70%",
+                            "parsedAfter": "<span class=\"green\">70</span>%"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Minion damage taken: ",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "Unchanged."
+                        }
+                    }
+                ]
+            },
+            "Q": "",
+            "W": "",
+            "E": {
+                "SpellName": "E - Mourning Mist",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Damage: ",
+                            "Before": "70 / 105 / 140 / 175 / 210 (+ 100% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "10% of target max HP (+ 3% per 100 AP)",
+                            "parsedAfter": "<span class=\"gold\">10</span>% of target max HP (+ <span class=\"gold\">3</span>% per 100 AP)"
+                        }
+                    },
+                    {
+                        "Tag": "NEW",
+                        "Change": {
+                            "Attribute": "",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "Monster Damage Cap50 / 75 / 100 / 125 / 150 (+ 100% AP)"
+                        }
+                    },
+                    {
+                        "Tag": "NEW",
+                        "Change": {
+                            "Attribute": "",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "Lane Minion Minimum Damage70 / 105 / 140 / 175 / 210 (+ 100% AP)"
+                        }
+                    }
+                ]
+            },
+            "R": {
+                "SpellName": "R - Eulogy of the Isles",
+                "Changes": [
+                    {
+                        "Tag": "NEW",
+                        "Change": {
+                            "Attribute": "",
+                            "Before": "",
+                            "Indicator": "",
+                            "After": "Mark only affects champions."
+                        }
+                    }
+                ]
+            }
         }
     },
     "ChangePatches": [
@@ -1114,7 +1200,8 @@
         "14.21",
         "15.5",
         "15.6",
-        "15.7"
+        "15.7",
+        "15.8"
     ],
     "ChampionName": "Yorick",
     "Balance": {
@@ -1136,6 +1223,9 @@
         "15.7": [
             "danger",
             "adjust",
+            "nerf"
+        ],
+        "15.8": [
             "nerf"
         ]
     }
