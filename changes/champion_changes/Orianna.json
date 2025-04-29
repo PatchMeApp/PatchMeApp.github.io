@@ -109,7 +109,7 @@
                 ]
             },
             "cooldown": "6/5.25/4.5/3.75/3",
-            "cost": "30/35/40/45/50 Mana",
+            "cost": "35 Mana",
             "name": "Command: Attack"
         },
         "W": {
@@ -684,6 +684,28 @@
             },
             "E": "",
             "R": ""
+        },
+        "15.9": {
+            "B": "",
+            "P": "",
+            "Q": {
+                "SpellName": "Q - Command: Attack",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Mana Cost: ",
+                            "Before": "30 / 35 / 40 / 45 / 50",
+                            "Indicator": " ⇒ ",
+                            "After": "35 at all ranks",
+                            "parsedAfter": "<span class=\"red\">35</span> at all ranks"
+                        }
+                    }
+                ]
+            },
+            "W": "",
+            "E": "",
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -698,7 +720,8 @@
         "13.22",
         "13.24",
         "14.13",
-        "14.16"
+        "14.16",
+        "15.9"
     ],
     "ChampionName": "Orianna",
     "Balance": {
@@ -709,6 +732,9 @@
             "buff"
         ],
         "14.16": [
+            "buff"
+        ],
+        "15.9": [
             "buff"
         ]
     }

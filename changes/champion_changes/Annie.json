@@ -56,10 +56,10 @@
                 "parseInfo": [
                     {
                         "text": {
-                            "text": "80/115/150/185/220 {{0}} magic damage",
+                            "text": "80/120/160/200/240 {{0}} magic damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+80% AP)",
+                                    "scale": "(+ 80% AP)",
                                     "scaleId": "AP"
                                 }
                             ]
@@ -91,7 +91,7 @@
                 ]
             },
             "cooldown": "7",
-            "cost": "90/95/100/105/110 Mana",
+            "cost": "70/75/80/85/90 Mana",
             "name": "Incinerate"
         },
         "E": {
@@ -142,7 +142,7 @@
         },
         "R": {
             "_rawTooltip": {
-                "fullTooltip": "[[0]]: Annie gains 10/12.5/15% Magic Penetration.<br /><br />Annie summons her bear Tibbers, dealing [[1]]. For the next 45 seconds, Tibbers burns nearby enemies for [[2]] and his Attacks deal [[3]]. Annie can [[4]] this ability to direct Tibbers.<br /><br />Tibbers becomes enraged when summoned, if Annie stuns an enemy champion, and if Annie dies. When enraged, Tibbers gains [[5]] and [[6]] decaying over 3 seconds.",
+                "fullTooltip": "[[0]]: Annie gains 15/17.5/20% Magic Penetration.<br /><br />Annie summons her bear Tibbers, dealing [[1]]. For the next 45 seconds, Tibbers burns nearby enemies for [[2]] and his Attacks deal [[3]]. Annie can [[4]] this ability to direct Tibbers.<br /><br />Tibbers becomes enraged when summoned, if Annie stuns an enemy champion, and if Annie dies. When enraged, Tibbers gains [[5]] and [[6]] decaying over 3 seconds.",
                 "parseInfo": [
                     {
                         "text": {
@@ -980,6 +980,56 @@
                     }
                 ]
             }
+        },
+        "15.9": {
+            "B": "",
+            "P": "",
+            "Q": {
+                "SpellName": "Q - Disintegrate",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Damage: ",
+                            "Before": "70 / 105 / 140 / 175 / 210 (+ 80% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "80 / 120 / 160 / 200 / 240 (+ 80% AP)",
+                            "parsedAfter": "<span class=\"green\">80</span> / <span class=\"green\">120</span> / <span class=\"green\">160</span> / <span class=\"green\">200</span> / <span class=\"green\">240</span> (+ 80% AP)"
+                        }
+                    }
+                ]
+            },
+            "W": {
+                "SpellName": "W - Incinerate",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Mana Cost: ",
+                            "Before": "90 / 95 / 100 / 105 / 110",
+                            "Indicator": " ⇒ ",
+                            "After": "70 / 75 / 80 / 85 / 90",
+                            "parsedAfter": "<span class=\"green\">70</span> / <span class=\"green\">75</span> / <span class=\"green\">80</span> / <span class=\"green\">85</span> / <span class=\"green\">90</span>"
+                        }
+                    }
+                ]
+            },
+            "E": "",
+            "R": {
+                "SpellName": "R - Summon: Tibbers",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Passive Magic Penetration: ",
+                            "Before": "10 / 12.5 / 15%",
+                            "Indicator": " ⇒ ",
+                            "After": "15 / 17.5 / 20%",
+                            "parsedAfter": "<span class=\"green\">15</span> / <span class=\"green\">17.5</span> / <span class=\"green\">20</span>%"
+                        }
+                    }
+                ]
+            }
         }
     },
     "ChangePatches": [
@@ -998,12 +1048,16 @@
         "13.13",
         "13.15",
         "13.22",
-        "15.8"
+        "15.8",
+        "15.9"
     ],
     "ChampionName": "Annie",
     "Balance": {
         "15.8": [
             "adjust"
+        ],
+        "15.9": [
+            "buff"
         ]
     }
 }

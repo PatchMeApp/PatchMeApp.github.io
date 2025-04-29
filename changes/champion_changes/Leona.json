@@ -45,7 +45,7 @@
         "P": {
             "cooldown": "",
             "_rawTooltip": {
-                "fullTooltip": "Innate: Leona's abilities against enemies apply a mark that lasts 1.5 seconds, which refreshes on subsequent hits. Allied champions' damaging attacks and abilities against a marked target will consume the mark to deal [[0]].",
+                "fullTooltip": "Innate: Leona's abilities against enemies apply a mark that lasts 2.5 seconds, which refreshes on subsequent hits. Allied champions' damaging attacks and abilities against a marked target will consume the mark to deal [[0]].",
                 "parseInfo": [
                     {
                         "text": {
@@ -89,7 +89,7 @@
                 ]
             },
             "cooldown": "5",
-            "cost": "35/40/45/50/55 Mana",
+            "cost": "30/35/40/45/50 Mana",
             "name": "Shield of Daybreak"
         },
         "W": {
@@ -178,7 +178,7 @@
                 ]
             },
             "cooldown": "12/10.5/9/7.5/6",
-            "cost": "60 Mana",
+            "cost": "40/45/50/55/60 Mana",
             "name": "Zenith Blade"
         },
         "R": {
@@ -557,6 +557,56 @@
             "W": "",
             "E": "",
             "R": ""
+        },
+        "15.9": {
+            "B": "",
+            "P": {
+                "SpellName": "Passive - Sunlight",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Duration: ",
+                            "Before": "1.5",
+                            "Indicator": " ⇒ ",
+                            "After": "2.5 seconds",
+                            "parsedAfter": "<span class=\"green\">2.5</span> seconds"
+                        }
+                    }
+                ]
+            },
+            "Q": {
+                "SpellName": "Q - Shield of Daybreak",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Mana Cost: ",
+                            "Before": "35 / 40 / 45 / 50 / 55",
+                            "Indicator": " ⇒ ",
+                            "After": "30 / 35 / 40 / 45 / 50",
+                            "parsedAfter": "<span class=\"green\">30</span> / <span class=\"green\">35</span> / <span class=\"green\">40</span> / <span class=\"green\">45</span> / <span class=\"green\">50</span>"
+                        }
+                    }
+                ]
+            },
+            "W": "",
+            "E": {
+                "SpellName": "E - Zenith Blade",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Mana Cost: ",
+                            "Before": "60",
+                            "Indicator": " ⇒ ",
+                            "After": "40 / 45 / 50 / 55 / 60",
+                            "parsedAfter": "<span class=\"green\">40</span> / <span class=\"green\">45</span> / <span class=\"green\">50</span> / <span class=\"green\">55</span> / 60"
+                        }
+                    }
+                ]
+            },
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -569,7 +619,8 @@
         "13.8",
         "13.24",
         "14.15",
-        "14.18"
+        "14.18",
+        "15.9"
     ],
     "ChampionName": "Leona",
     "Balance": {
@@ -581,6 +632,9 @@
         ],
         "14.18": [
             "nerf"
+        ],
+        "15.9": [
+            "buff"
         ]
     }
 }

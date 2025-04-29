@@ -122,7 +122,7 @@
                 "parseInfo": [
                     {
                         "text": {
-                            "text": "80/135/190/245/300 {{0}} Magic Shield",
+                            "text": "100/155/210/265/320 {{0}} Magic Shield",
                             "scaleHolders": [
                                 {
                                     "scale": "(+70% AP)",
@@ -158,7 +158,7 @@
                 "parseInfo": [
                     {
                         "text": {
-                            "text": "175/250/325 {{0}} magic damage",
+                            "text": "200/275/350 {{0}} magic damage",
                             "scaleHolders": [
                                 {
                                     "scale": "(+80% AP)",
@@ -177,7 +177,7 @@
                     },
                     {
                         "text": {
-                            "text": "175/250/325 {{0}} magic damage",
+                            "text": "200/275/350 {{0}} magic damage",
                             "scaleHolders": [
                                 {
                                     "scale": "(+80% AP)",
@@ -196,7 +196,7 @@
                     },
                     {
                         "text": {
-                            "text": "10/35/60% Move Speed",
+                            "text": "20/40/60% Move Speed",
                             "scaleHolders": []
                         },
                         "type": "speed"
@@ -528,6 +528,52 @@
             },
             "E": "",
             "R": ""
+        },
+        "15.9": {
+            "B": "",
+            "P": "",
+            "Q": "",
+            "W": "",
+            "E": {
+                "SpellName": "E - Black Shield",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Shield Strength: ",
+                            "Before": "80 / 135 / 190 / 245 / 300 (+70% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "100 / 155 / 210 / 265 / 320 (+70% AP)",
+                            "parsedAfter": "<span class=\"green\">100</span> / <span class=\"green\">155</span> / <span class=\"green\">210</span> / <span class=\"green\">265</span> / <span class=\"green\">320</span> (+70% AP)"
+                        }
+                    }
+                ]
+            },
+            "R": {
+                "SpellName": "R - Soul Shackles",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Damage: ",
+                            "Before": "175 / 250 / 325 (+ 80% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "200 / 275 / 350 (+ 80% AP)",
+                            "parsedAfter": "<span class=\"green\">200</span> / <span class=\"green\">275</span> / <span class=\"green\">350</span> (+ 80% AP)"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Bonus Movement Speed: ",
+                            "Before": "10 / 35 / 60%",
+                            "Indicator": " ⇒ ",
+                            "After": "20 / 40 / 60%",
+                            "parsedAfter": "<span class=\"green\">20</span> / <span class=\"green\">40</span> / 60%"
+                        }
+                    }
+                ]
+            }
         }
     },
     "ChangePatches": [
@@ -539,7 +585,13 @@
         "11.18",
         "12.10",
         "13.20",
-        "13.21"
+        "13.21",
+        "15.9"
     ],
-    "ChampionName": "Morgana"
+    "ChampionName": "Morgana",
+    "Balance": {
+        "15.9": [
+            "buff"
+        ]
+    }
 }

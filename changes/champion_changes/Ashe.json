@@ -83,14 +83,14 @@
                     },
                     {
                         "text": {
-                            "text": "25/35/45/55/65% Attack Speed",
+                            "text": "25/37.5/50/67.5/75% Attack Speed",
                             "scaleHolders": []
                         },
                         "type": "attackSpeed"
                     },
                     {
                         "text": {
-                            "text": "111/117/123/129/135% AD damage",
+                            "text": "110/117.5/125/132.5/140% AD damage",
                             "scaleHolders": []
                         },
                         "type": "physicalDamage"
@@ -832,6 +832,38 @@
                     }
                 ]
             }
+        },
+        "15.9": {
+            "B": "",
+            "P": "",
+            "Q": {
+                "SpellName": "Q - Ranger’s Focus",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "AD Ratio: ",
+                            "Before": "111 / 117 / 123 / 129 / 135%",
+                            "Indicator": " ⇒ ",
+                            "After": "110 / 117.5 / 125 / 132.5 / 140%",
+                            "parsedAfter": "<span class=\"red\">110</span> / <span class=\"green\">117.5</span> / <span class=\"green\">125</span> / <span class=\"green\">132.5</span> / <span class=\"green\">140</span>%"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Bonus Attack Speed: ",
+                            "Before": "25 / 35 / 45 / 55 / 65%",
+                            "Indicator": " ⇒ ",
+                            "After": "25 / 37.5 / 50 / 67.5 / 75%",
+                            "parsedAfter": "25 /<span class=\"green\">37.5</span> /<span class=\"green\">50</span> /<span class=\"green\">67.5</span> /<span class=\"green\">75</span>%"
+                        }
+                    }
+                ]
+            },
+            "W": "",
+            "E": "",
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -854,7 +886,8 @@
         "14.17",
         "15.1",
         "15.4",
-        "15.5"
+        "15.5",
+        "15.9"
     ],
     "ChampionName": "Ashe",
     "Balance": {
@@ -872,6 +905,9 @@
         ],
         "15.5": [
             "nerf"
+        ],
+        "15.9": [
+            "buff"
         ]
     }
 }

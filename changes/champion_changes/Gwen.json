@@ -10,7 +10,7 @@
         },
         "armor": {
             "base": 39,
-            "increment": 5.2
+            "increment": 4.9
         },
         "spellBlock": {
             "base": 32,
@@ -71,7 +71,7 @@
                             "text": "5 {{0}} magic damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+ 15% AP)",
+                                    "scale": "(+ 10% AP)",
                                     "scaleId": "AP"
                                 }
                             ]
@@ -124,7 +124,7 @@
                             "text": "10/15/20/25/30 {{0}} magic damage",
                             "scaleHolders": [
                                 {
-                                    "scale": "(+5% AP)",
+                                    "scale": "(+2% AP)",
                                     "scaleId": "AP"
                                 }
                             ]
@@ -1187,6 +1187,66 @@
                 ]
             },
             "R": ""
+        },
+        "15.9": {
+            "B": {
+                "SpellName": "Base Stats",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Armor Growth: ",
+                            "Before": "5.2",
+                            "Indicator": " ⇒ ",
+                            "After": "4.9",
+                            "parsedAfter": "<span class=\"red\">4.9</span>"
+                        }
+                    }
+                ]
+            },
+            "P": {
+                "SpellName": "Passive - A Thousand Cuts",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Monster Damage Cap: ",
+                            "Before": "5 (+ 15% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "5 (+ 10% AP)",
+                            "parsedAfter": "5 (+ <span class=\"red\">10</span>% AP)"
+                        }
+                    }
+                ]
+            },
+            "Q": {
+                "SpellName": "Q - Snip Snip!",
+                "Changes": [
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Damage per Snip: ",
+                            "Before": "10 / 15 / 20 / 25 / 30 (+ 5% AP)",
+                            "Indicator": " ⇒ ",
+                            "After": "10 / 15 / 20 / 25 / 30 (+ 2% AP)",
+                            "parsedAfter": "10/15/20/25/30 (+<span class=\"red\">2</span>% AP)"
+                        }
+                    },
+                    {
+                        "Tag": "",
+                        "Change": {
+                            "Attribute": "Maximum Damage: ",
+                            "Before": "110 / 160 / 210 / 260 / 310 (+ 60% AP) (+ 6x Passive)",
+                            "Indicator": " ⇒ ",
+                            "After": "110 / 160 / 210 / 260 / 310 (+ 45% AP) (+ 6x Passive)",
+                            "parsedAfter": "110/160/210/260/310 (+<span class=\"red\">45</span>% AP) (+6x Passive)"
+                        }
+                    }
+                ]
+            },
+            "W": "",
+            "E": "",
+            "R": ""
         }
     },
     "ChangePatches": [
@@ -1207,7 +1267,8 @@
         "14.21",
         "15.6",
         "15.7",
-        "15.8"
+        "15.8",
+        "15.9"
     ],
     "ChampionName": "Gwen",
     "Balance": {
@@ -1227,6 +1288,9 @@
             "nerf"
         ],
         "15.8": [
+            "nerf"
+        ],
+        "15.9": [
             "nerf"
         ]
     }
