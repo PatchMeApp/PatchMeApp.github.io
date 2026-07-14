@@ -1,5 +1,5 @@
 {
-    "LatestGlobalPatch": "16.13",
+    "LatestGlobalPatch": "16.14",
     "Laser Eyes": {
         "AugmentName": "Laser Eyes",
         "Tier": "Prismatic",
@@ -1666,11 +1666,15 @@
         "AugmentName": "Jeweled Gauntlet",
         "Tier": "Prismatic",
         "ChangePatches": [
-            "16.10"
+            "16.10",
+            "16.14"
         ],
         "Balance": {
             "16.10": [
                 "nerf"
+            ],
+            "16.14": [
+                "buff"
             ]
         },
         "Changes": {
@@ -1683,6 +1687,35 @@
                         "Indicator": " ⇒ ",
                         "After": "140/150/160%",
                         "parsedAfter": "140/<span class=\"red\">150</span>/<span class=\"red\">160</span>%"
+                    }
+                }
+            ],
+            "16.14": [
+                {
+                    "Tag": "",
+                    "Change": {
+                        "Attribute": " ",
+                        "Before": "",
+                        "Indicator": "",
+                        "After": "Bug Fix: Fixed an issue where having both Jeweled Gauntlet and Vulnerability would sometimes prevent a spell from critting"
+                    }
+                },
+                {
+                    "Tag": "NEW",
+                    "Change": {
+                        "Attribute": " ",
+                        "Before": "",
+                        "Indicator": "",
+                        "After": "Double Tap Interaction: 5 second per spell cooldown"
+                    }
+                },
+                {
+                    "Tag": "NEW",
+                    "Change": {
+                        "Attribute": " ",
+                        "Before": "",
+                        "Indicator": "",
+                        "After": "Critical Rhythm Interaction: 4 second per spell cooldown"
                     }
                 }
             ]
@@ -1972,7 +2005,8 @@
         "Tier": "Silver",
         "ChangePatches": [
             "16.12",
-            "16.13"
+            "16.13",
+            "16.14"
         ],
         "Changes": {
             "16.12": [
@@ -2017,6 +2051,28 @@
                         "parsedAfter": "<span class=\"red\">23.75</span>%"
                     }
                 }
+            ],
+            "16.14": [
+                {
+                    "Tag": "",
+                    "Change": {
+                        "Attribute": "Execute Threshold Level 1: ",
+                        "Before": "0.75 (16.25%)",
+                        "Indicator": " ⇒ ",
+                        "After": "0.5 (12.5%)",
+                        "parsedAfter": "<span class=\"red\">0.5</span> (<span class=\"red\">12.5</span>%)"
+                    }
+                },
+                {
+                    "Tag": "",
+                    "Change": {
+                        "Attribute": "Execute Threshold Level 2: ",
+                        "Before": "1.25 (23.75%)",
+                        "Indicator": " ⇒ ",
+                        "After": "1 (20%)",
+                        "parsedAfter": "<span class=\"red\">1</span> (<span class=\"red\">20</span>%)"
+                    }
+                }
             ]
         },
         "Balance": {
@@ -2024,6 +2080,9 @@
                 "nerf"
             ],
             "16.13": [
+                "nerf"
+            ],
+            "16.14": [
                 "nerf"
             ]
         }
@@ -2357,6 +2416,117 @@
         },
         "Balance": {
             "16.13": [
+                "nerf"
+            ]
+        }
+    },
+    "Divine Intervention": {
+        "AugmentName": "Divine Intervention",
+        "Tier": "Gold",
+        "ChangePatches": [
+            "16.14"
+        ],
+        "Changes": {
+            "16.14": [
+                {
+                    "Tag": "NEW",
+                    "Change": {
+                        "Attribute": " ",
+                        "Before": "",
+                        "Indicator": "",
+                        "After": "Hexbolt Interaction: Cooldown is now reduced by 2 seconds when you trigger Hexbolt"
+                    }
+                },
+                {
+                    "Tag": "NEW",
+                    "Change": {
+                        "Attribute": " ",
+                        "Before": "",
+                        "Indicator": "",
+                        "After": "Capstone Interaction: Max Level capstone now triggers even if you are already invulnerable from Divine Intervention"
+                    }
+                },
+                {
+                    "Tag": "NEW",
+                    "Change": {
+                        "Attribute": " ",
+                        "Before": "",
+                        "Indicator": "",
+                        "After": "Quantum Computing Interaction: Now properly works with Quantum Computing, and will multicast with a 0.25 second delay between casts, for a max invulnerability duration of 3.5 seconds"
+                    }
+                }
+            ]
+        },
+        "Balance": {
+            "16.14": [
+                "buff"
+            ]
+        }
+    },
+    "Vulnerability": {
+        "AugmentName": "Vulnerability",
+        "Tier": "Gold",
+        "ChangePatches": [
+            "16.14"
+        ],
+        "Changes": {
+            "16.14": [
+                {
+                    "Tag": "",
+                    "Change": {
+                        "Attribute": " ",
+                        "Before": "",
+                        "Indicator": "",
+                        "After": "Bug Fix: Fixed an issue where having both Jeweled Gauntlet and Vulnerability would sometimes prevent a spell from critting"
+                    }
+                },
+                {
+                    "Tag": "NEW",
+                    "Change": {
+                        "Attribute": " ",
+                        "Before": "",
+                        "Indicator": "",
+                        "After": "Double Tap Interaction: 5 second per spell cooldown"
+                    }
+                },
+                {
+                    "Tag": "NEW",
+                    "Change": {
+                        "Attribute": " ",
+                        "Before": "",
+                        "Indicator": "",
+                        "After": "Critical Rhythm Interaction: 4 second per spell cooldown"
+                    }
+                }
+            ]
+        },
+        "Balance": {
+            "16.14": [
+                "buff"
+            ]
+        }
+    },
+    "Twin Fire": {
+        "AugmentName": "Twin Fire",
+        "Tier": "Silver",
+        "ChangePatches": [
+            "16.14"
+        ],
+        "Changes": {
+            "16.14": [
+                {
+                    "Tag": "DISABLED",
+                    "Change": {
+                        "Attribute": " ",
+                        "Before": "",
+                        "Indicator": "",
+                        "After": "Disabled this patch."
+                    }
+                }
+            ]
+        },
+        "Balance": {
+            "16.14": [
                 "nerf"
             ]
         }
